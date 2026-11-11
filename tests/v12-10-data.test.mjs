@@ -114,7 +114,9 @@ test("Calendar family art, original year, shared skill evidence and variant acqu
       assert(runtime[variant.id].acquisition.methods.length);
       assert(
         runtime[variant.id].acquisition.methods.every(
-          (m) => m.source === variant.source,
+          (m) => m.source === variant.source ||
+            (m.type === "merge" && m.variantName.replace(/\s*\([^)]*\)/g, "").trim().toLowerCase() === variant.name.toLowerCase() &&
+              bodies.get(variant.classId).acquisition.methods.some(original => original.id === m.id && original.source === m.source)),
         ),
       );
     }

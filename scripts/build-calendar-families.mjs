@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { normalizeCalendarMethods } from "../src/lib/calendar-acquisition.mjs";
 import { parseClassPage } from "./lib/calendar-class-parser.mjs";
 const read = (path) => JSON.parse(fs.readFileSync(path, "utf8"));
 const families = read("src/content/classes/calendar-families.json");
@@ -50,7 +51,8 @@ for (const family of families) {
     const body = read("public" + profile.bodyUrl);
     const record = body.acquisition;
     const methods =
-      record?.methods.filter((method) => method.source === variant.source) ||
+      record?.methods.filter((method) => method.source === variant.source ||
+        method.variantName.replace(/\s*\([^)]*\)/g, "").trim().toLowerCase() === variant.name.toLowerCase()) ||
       [];
     const skillNameOverrides=[];
     if(review){
@@ -69,7 +71,7 @@ for (const family of families) {
         height: art.height,
         source: art.source || art.sourceUrl,
       },
-      acquisition: record ? { ...record, methods } : null,
+      acquisition: record ? { ...record, methods: normalizeCalendarMethods(methods) } : null,
       sourceHash: page.sourceHash,
     };
   }

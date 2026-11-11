@@ -23,9 +23,11 @@ export function ClassCombos({
   const original = combos[selected] || combos[0];
   const active = original ? selectedComboContent(combos, original) : undefined;
   const canonical = (line: string) => line.toLowerCase().replace(/^[→◆*\s]+/, "").replace(/^[^:\n]{1,42}:\s*/, "").replace(/\s+/g, " ").trim();
+  const flows = active ? comboFlow(active) : [];
+  const flowText = new Set(flows.map(flow => canonical(flow.sourceText)));
   const extraNotes = (active?.notes || []).filter((note, index, all) => {
     const normalized = canonical(note);
-    return normalized.length > 0 && normalized !== canonical(active?.explanation || "") && all.findIndex((n) => canonical(n) === normalized) === index;
+    return normalized.length > 0 && !flowText.has(normalized) && normalized !== canonical(active?.explanation || "") && all.findIndex((n) => canonical(n) === normalized) === index;
   });
   return (
     <section className="class-section" id="combo" aria-labelledby="combo-title">
@@ -92,7 +94,7 @@ export function ClassCombos({
             <div className="class-combo-reveal" key={active.id}>
               {active.verificationStatus !== "needs_review" && (
                 <div className="combo-flow-groups">
-                  {comboFlow(active)
+                  {flows
                     .filter(
                       (f) =>
                         f.sequences.length > 0 ||
@@ -110,12 +112,12 @@ export function ClassCombos({
                           label={flow.kind === "warning" ? "Lưu ý" : flow.label}
                           kind={flow.kind}
                         />
-                        {flow.kind === "spam" && flow.stopCondition && (
+                        {(flow.kind === "spam" || flow.kind === "loop") && flow.stopCondition && (
                           <span className="spam-stop-condition">
-                            DỪNG SPAM · {flow.stopCondition}
+                            Dừng · {flow.stopCondition}
                           </span>
                         )}
-                        {!flow.sequences.length && <CalendarSetup classId={classId} comboTitle={active.title} text={flow.sourceText} />}
+                        {!flow.sequences.length && <CalendarSetup classId={classId} comboTitle={active.title} text={flow.label} />}
                         {flow.sequences.map((sequence, i) => (
                           <div key={i}>
                             {i > 0 && <span className="combo-or">HOẶC</span>}
@@ -131,10 +133,10 @@ export function ClassCombos({
                           </div>
                         ))}
                         <AbyssalConditionIcons classId={classId} text={flow.sourceText} skills={skills} onSelect={(s) => { setStepId(s.id); onSelectSkill?.(s.id); }} />
-                        <details className="combo-flow-condition">
+                        {flows.find(f => f.sourceText === flow.sourceText)?.id === flow.id && <details className="combo-flow-condition">
                           <summary>Timing & điều kiện</summary>
                           <p>{flow.sourceText}</p>
-                        </details>
+                        </details>}
                       </article>
                     ))}
                 </div>

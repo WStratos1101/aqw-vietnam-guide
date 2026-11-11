@@ -18,3 +18,8 @@
 .combo-conditional-guide .skill-sequence-flow{margin:0}.combo-conditional-guide .skill-sequence-flow button{width:58px}
 .combo-source-notes{margin-top:16px}.combo-source-notes[hidden]{display:none}
 @media(max-width:700px){.calendar-item-groups{grid-template-columns:1fr}.calendar-item-guide{padding:12px}}
+
+.calendar-item-choice{padding:0;border:2px solid transparent;background:none;cursor:pointer}
+.calendar-item-choice[aria-pressed=true]{border-color:var(--class-accent)}
+.calendar-item-choice:focus-visible{outline:2px solid var(--class-accent);outline-offset:3px}
+.combo-flow-group.loop .combo-flow-label::before{content:'LOOP';font-size:12px;margin-right:8px}

@@ -142,7 +142,7 @@ function MethodPanel({
             </p>
           )}
           <Requirements method={method} />
-          {method.unlockSteps && (
+          {method.unlockSteps && !code && (
             <details className="acquisition-unlock-route">
               <summary>Quest / lộ trình mở khóa phương án này</summary>
               <ClassObtain
@@ -338,6 +338,7 @@ export function ClassAcquisitionPanel({
   return (
     <section
       className="class-section class-acquisition"
+      data-calendar={profile.id.startsWith("calendar-") ? "true" : undefined}
       id="cach-lay"
       aria-labelledby="class-acquisition-title"
     >
@@ -391,17 +392,7 @@ export function ClassAcquisitionPanel({
                       {m.isAvailable === false ? " · Legacy" : ""}
                     </small>
                   </span>
-                  {m.shop && (
-                    <b>
-                      {m.acquisitionKind === "free"
-                        ? "Free"
-                        : m.shop.price.amount.toLocaleString("en-US") +
-                          " " +
-                          (m.shop.price.currency === "AC"
-                            ? "ACs"
-                            : m.shop.price.currency)}
-                    </b>
-                  )}
+
                 </button>
               );
             })}

@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import { normalizeCalendarMethods } from "../src/lib/calendar-acquisition.mjs";
 import {
   parsePrice,
   sourceHash,
@@ -35,7 +36,7 @@ test("All 113 Class acquisition records retain source evidence, scoped identitie
     assert.equal(record.classId, c.id);
     assert.deepEqual(
       body.acquisition.methods.map((m) => m.id),
-      record.methods.map((m) => m.id),
+      (c.id.startsWith("calendar-") ? normalizeCalendarMethods(record.methods) : record.methods).map((m) => m.id),
     );
     assert.equal(
       new Set(record.methods.map((m) => m.id)).size,

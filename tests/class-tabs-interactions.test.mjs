@@ -260,7 +260,7 @@ test("Calendar variant keeps the active tab and selected skill while changing ar
   const selected = host.querySelector(".ability-detail").dataset.selectedSkill;
   const before = host.querySelector(".class-hero-portrait img").src;
   const hunter = [...host.querySelectorAll(".class-art-switch button")].find(
-    (b) => b.textContent === "Chrono ShadowHunter",
+    (b) => b.textContent.startsWith("Chrono ShadowHunter"),
   );
   await click(hunter);
   assert.match(host.querySelector("h1").textContent, /Chrono ShadowHunter/);
@@ -280,7 +280,7 @@ test("Calendar variant keeps the active tab and selected skill while changing ar
     "merge",
   );
   const slayer = [...host.querySelectorAll(".class-art-switch button")].find(
-    (b) => b.textContent === "Chrono ShadowSlayer",
+    (b) => b.textContent.startsWith("Chrono ShadowSlayer"),
   );
   await click(slayer);
   assert.equal(

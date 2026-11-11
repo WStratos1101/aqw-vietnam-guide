@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { normalizeCalendarMethods } from "../src/lib/calendar-acquisition.mjs";
 import { materialId } from "../src/lib/material-requirements.mjs";
 const catalog = JSON.parse(fs.readFileSync("src/content/classes/catalog.json")),
   data = JSON.parse(fs.readFileSync("src/content/classes/acquisition.json"));
@@ -20,6 +21,7 @@ for (const c of catalog) {
       ],
     },
   );
+  if (c.id.startsWith("calendar-")) acquisition.methods = normalizeCalendarMethods(acquisition.methods);
   for (const m of acquisition.methods) {
     // Curated progression belongs only to a source-explicit unlock requirement,
     // never to all alternative purchase methods for this Class.

@@ -538,7 +538,7 @@ rotations.push(
       [
         "Power + Entropic · Short",
         [
-          setup("Hourglass và Entropic Corruption", 10708),
+          setup("Kích hoạt Hourglass of Power rồi trang bị Entropic Corruption", 10708),
           setup("Dùng Entropic Corruption", 10709),
           opening([3, 4, 2, 2, 2], 10709),
           finish([5], 10709),
@@ -548,7 +548,7 @@ rotations.push(
       [
         "Power + Entropic · Standard",
         [
-          setup("Hourglass và Entropic Corruption", 10708),
+          setup("Kích hoạt Hourglass of Power rồi trang bị Entropic Corruption", 10708),
           setup("Dùng Entropic Corruption", 10710),
           opening([3, 4, 2, 2, 2, 4, 2], 10710),
           finish([5], 10710),
@@ -558,7 +558,7 @@ rotations.push(
       [
         "Power + Entropic · Extreme",
         [
-          setup("Hourglass và Entropic Corruption", 10708),
+          setup("Kích hoạt Hourglass of Power rồi trang bị Entropic Corruption", 10708),
           setup("Dùng Entropic Corruption", 10711),
           opening([3, 4, 2, 2, 2, 4, 2, 2, 2, 4], 10711),
           finish([5], 10711),
@@ -568,7 +568,7 @@ rotations.push(
       [
         "Transience + Foresee · High Nuke",
         [
-          setup("Hourglass và Foresee Corruption", 10738),
+          setup("Kích hoạt Hourglass of Transience rồi trang bị Foresee Corruption", 10738),
           setup("Dùng Foresee Corruption", 10739),
           opening([4, 3, 2, 2, 2, 2, 5], 10739),
           loop([4, 3, 2, 2, 2, 2, 5], 10739, "Lặp thêm 2 lần"),
@@ -608,7 +608,7 @@ rotations.push(
       [
         "Power + Madness · Quick Nuke",
         [
-          setup("Hourglass và Timepiece of Madness", 10910),
+          setup("Kích hoạt Hourglass of Power rồi trang bị Timepiece of Madness", 10910),
           setup("Dùng Timepiece of Madness", 10911),
           opening([4, 3, 2, 2, 2, 2], 10911),
           {
@@ -622,7 +622,7 @@ rotations.push(
       [
         "Power + Pestilence · Standard",
         [
-          setup("Hourglass và Timepiece of Pestilence", 10940),
+          setup("Kích hoạt Hourglass of Power rồi trang bị Timepiece of Pestilence", 10940),
           setup("Dùng Timepiece of Pestilence", 10941),
           opening([4, 3, 2, 4, 2, 2, 2, 4], 10941),
           finish([5], 10941),
@@ -632,7 +632,7 @@ rotations.push(
       [
         "Power + Pestilence · Extended",
         [
-          setup("Hourglass và Timepiece of Pestilence", 10940),
+          setup("Kích hoạt Hourglass of Power rồi trang bị Timepiece of Pestilence", 10940),
           setup("Dùng Timepiece of Pestilence", 10942),
           opening([4, 3, 2, 4, 2, 2, 2, 4, 2, 2, 2], 10942),
           finish([5], 10942),
@@ -749,7 +749,18 @@ for (const profile of catalog) {
       },
     ];
   }
-  if (rotation || (openingCombo && openings.has(profile.id))) {
+  if (profile.id === "abyssal-angel-aa-abyssal-angel-s-shadow-aas") {
+    for (const [line, expected] of [[1476, "5 - 3 - 1"], [1478, "5 - 3 - 2"], [1477, "10-15 stacks"]]) {
+      if (!lines.get(line)?.includes(expected)) throw Error("Abyssal combo source changed: " + line);
+    }
+    body.combos = [["Farming", 1476, [5, 3, 1]], ["Soloing", 1478, [5, 3, 2]]].map(([title, line, sequence], index) => ({
+      id: "abyssal-doc-" + index, title, situation: title, sequence,
+      explanation: lines.get(line), notes: [], source, verificationStatus: "verified",
+      flow: [{ id: "abyssal-flow-" + index, kind: "sequence", label: title === "Soloing" ? "Mở đầu" : "Farming", sequences: [sequence], sourceText: lines.get(line), sourceLine: line },
+        { id: "abyssal-acheron-" + index, kind: "warning", label: "Acheron · Hạn chế skill 3 (10–15 stacks)", sequences: [], sourceText: lines.get(1477), sourceLine: 1477 }].filter(step => step.sourceText),
+    }));
+  }
+  if (profile.id === "abyssal-angel-aa-abyssal-angel-s-shadow-aas" || rotation || (openingCombo && openings.has(profile.id))) {
     fs.writeFileSync(path, JSON.stringify(body) + "\n");
     changes.push({
       classId: profile.id,

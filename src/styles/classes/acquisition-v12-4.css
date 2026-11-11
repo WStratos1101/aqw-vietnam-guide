@@ -7,6 +7,10 @@
   overflow: auto;
   padding: 3px;
 }
+.class-acquisition[data-calendar] .acquisition-method-tabs {
+  max-height: none;
+  overflow: visible;
+}
 .acquisition-method-tabs > button {
   display: flex;
   align-items: center;
@@ -302,6 +306,9 @@
   .acquisition-method-tabs > button {
     flex: 1 1 160px;
     font-size: 13px;
+  }
+  .class-acquisition[data-calendar] .acquisition-method-tabs > button {
+    flex: 1 1 100%;
   }
   .acquisition-materials > summary {
     padding: 13px;

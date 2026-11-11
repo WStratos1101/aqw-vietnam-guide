@@ -2055,65 +2055,31 @@
             "availability": "available",
             "sourceUrl": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
             "verificationStatus": "verified"
-          }
-        },
-        {
-          "id": "corrupted-chronomancer-class-shop-1",
-          "classId": "calendar-corrupted-chronomancer",
-          "type": "shop",
-          "variantName": "Corrupted Chronomancer (Class)",
-          "isAvailable": true,
-          "availability": "available",
-          "verificationStatus": "verified",
-          "detailsStatus": "complete",
-          "source": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
-          "sourceHash": "d8e34674c3a7353fed6fc4f990052fa61a0f293dc4009f5e24ea5898a66be27c",
-          "prerequisites": [
-            "Must have purchased the Calendar \"Epic Villains of Lore\" from HeroMart in order to access this shop."
-          ],
-          "notes": [],
-          "membershipRequirement": null,
-          "levelRequirement": null,
-          "baseLevel": null,
-          "evidence": {
-            "classPage": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
-            "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar",
-            "priceText": "0 AC",
-            "locationText": [
-              "2019 Calendar - Hourglass Pet (1)"
-            ],
-            "linkedSourceHash": "2e0897bbd86f4153589c539d7e68ac115d39e88a72a187bf18d9979dccd3ea2f",
-            "availabilityTags": [],
-            "issues": []
           },
-          "shop": {
-            "shopName": "2019 Calendar",
-            "source": "https://aqwwiki.wikidot.com/2019-calendar",
-            "npc": null,
-            "map": "2019 Calendar / Book of Lore",
-            "price": {
-              "amount": 0,
-              "currency": "AC",
-              "sourceText": "0 AC"
+          "importEvidence": [
+            {
+              "classPage": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+              "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar",
+              "priceText": "0 AC",
+              "locationText": [
+                "2019 Calendar - Book of Lore"
+              ],
+              "linkedSourceHash": "2e0897bbd86f4153589c539d7e68ac115d39e88a72a187bf18d9979dccd3ea2f",
+              "availabilityTags": [],
+              "issues": []
+            },
+            {
+              "classPage": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+              "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar",
+              "priceText": "0 AC",
+              "locationText": [
+                "2019 Calendar - Hourglass Pet (1)"
+              ],
+              "linkedSourceHash": "2e0897bbd86f4153589c539d7e68ac115d39e88a72a187bf18d9979dccd3ea2f",
+              "availabilityTags": [],
+              "issues": []
             }
-          },
-          "acquisitionKind": "calendar_code",
-          "purchaseKind": "ac_purchase",
-          "verifiedFields": {
-            "shopName": "2019 Calendar",
-            "npc": null,
-            "map": "2019 Calendar / Book of Lore",
-            "currency": "AC",
-            "price": 0,
-            "requiredQuest": null,
-            "materials": null,
-            "prerequisites": [
-              "Must have purchased the Calendar \"Epic Villains of Lore\" from HeroMart in order to access this shop."
-            ],
-            "availability": "available",
-            "sourceUrl": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
-            "verificationStatus": "verified"
-          }
+          ]
         },
         {
           "id": "corrupted-chronomancer-class-shop-2",
@@ -2171,65 +2137,31 @@
             "availability": "available",
             "sourceUrl": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
             "verificationStatus": "verified"
-          }
-        },
-        {
-          "id": "corrupted-chronomancer-class-shop-3",
-          "classId": "calendar-corrupted-chronomancer",
-          "type": "shop",
-          "variantName": "Corrupted Chronomancer (Class)",
-          "isAvailable": true,
-          "availability": "available",
-          "verificationStatus": "verified",
-          "detailsStatus": "complete",
-          "source": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
-          "sourceHash": "d8e34674c3a7353fed6fc4f990052fa61a0f293dc4009f5e24ea5898a66be27c",
-          "prerequisites": [
-            "Must have purchased the Collector's Edition 2019 Calendar \"Epic Villains of Lore\" from HeroMart in order to access this shop."
-          ],
-          "notes": [],
-          "membershipRequirement": null,
-          "levelRequirement": null,
-          "baseLevel": null,
-          "evidence": {
-            "classPage": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
-            "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar-collectors",
-            "priceText": "0 AC",
-            "locationText": [
-              "2019 Calendar Collectors - Hourglass Pet (2)"
-            ],
-            "linkedSourceHash": "9b2c64c4bf91ea4a735bbb669251c3a7fd5db59e1b00c048d7ccfcd270873469",
-            "availabilityTags": [],
-            "issues": []
           },
-          "shop": {
-            "shopName": "2019 Calendar Collectors",
-            "source": "https://aqwwiki.wikidot.com/2019-calendar-collectors",
-            "npc": null,
-            "map": "2019 Calendar Collectors / Book of Lore",
-            "price": {
-              "amount": 0,
-              "currency": "AC",
-              "sourceText": "0 AC"
+          "importEvidence": [
+            {
+              "classPage": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+              "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar-collectors",
+              "priceText": "0 AC",
+              "locationText": [
+                "2019 Calendar Collectors - Book of Lore"
+              ],
+              "linkedSourceHash": "9b2c64c4bf91ea4a735bbb669251c3a7fd5db59e1b00c048d7ccfcd270873469",
+              "availabilityTags": [],
+              "issues": []
+            },
+            {
+              "classPage": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+              "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar-collectors",
+              "priceText": "0 AC",
+              "locationText": [
+                "2019 Calendar Collectors - Hourglass Pet (2)"
+              ],
+              "linkedSourceHash": "9b2c64c4bf91ea4a735bbb669251c3a7fd5db59e1b00c048d7ccfcd270873469",
+              "availabilityTags": [],
+              "issues": []
             }
-          },
-          "acquisitionKind": "calendar_code",
-          "purchaseKind": "ac_purchase",
-          "verifiedFields": {
-            "shopName": "2019 Calendar Collectors",
-            "npc": null,
-            "map": "2019 Calendar Collectors / Book of Lore",
-            "currency": "AC",
-            "price": 0,
-            "requiredQuest": null,
-            "materials": null,
-            "prerequisites": [
-              "Must have purchased the Collector's Edition 2019 Calendar \"Epic Villains of Lore\" from HeroMart in order to access this shop."
-            ],
-            "availability": "available",
-            "sourceUrl": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
-            "verificationStatus": "verified"
-          }
+          ]
         }
       ],
       "reviewStatus": "reviewed",
@@ -2308,65 +2240,31 @@
             "availability": "available",
             "sourceUrl": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
             "verificationStatus": "verified"
-          }
-        },
-        {
-          "id": "timeless-chronomancer-class-ac-shop-1",
-          "classId": "calendar-timeless-chronomancer",
-          "type": "shop",
-          "variantName": "Timeless Chronomancer (Class) (AC)",
-          "isAvailable": true,
-          "availability": "available",
-          "verificationStatus": "verified",
-          "detailsStatus": "complete",
-          "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
-          "sourceHash": "2095cc640fa7225ef833109efd17df605ef827acd611542ec6464b36ce2222d4",
-          "prerequisites": [
-            "Must have purchased the Calendar \"Epic Villains of Lore\" from HeroMart in order to access this shop."
-          ],
-          "notes": [],
-          "membershipRequirement": null,
-          "levelRequirement": null,
-          "baseLevel": null,
-          "evidence": {
-            "classPage": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
-            "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar",
-            "priceText": "0 AC",
-            "locationText": [
-              "2019 Calendar - Hourglass Pet (1)"
-            ],
-            "linkedSourceHash": "2e0897bbd86f4153589c539d7e68ac115d39e88a72a187bf18d9979dccd3ea2f",
-            "availabilityTags": [],
-            "issues": []
           },
-          "shop": {
-            "shopName": "2019 Calendar",
-            "source": "https://aqwwiki.wikidot.com/2019-calendar",
-            "npc": null,
-            "map": "2019 Calendar / Book of Lore",
-            "price": {
-              "amount": 0,
-              "currency": "AC",
-              "sourceText": "0 AC"
+          "importEvidence": [
+            {
+              "classPage": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+              "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar",
+              "priceText": "0 AC",
+              "locationText": [
+                "2019 Calendar - Book of Lore"
+              ],
+              "linkedSourceHash": "2e0897bbd86f4153589c539d7e68ac115d39e88a72a187bf18d9979dccd3ea2f",
+              "availabilityTags": [],
+              "issues": []
+            },
+            {
+              "classPage": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+              "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar",
+              "priceText": "0 AC",
+              "locationText": [
+                "2019 Calendar - Hourglass Pet (1)"
+              ],
+              "linkedSourceHash": "2e0897bbd86f4153589c539d7e68ac115d39e88a72a187bf18d9979dccd3ea2f",
+              "availabilityTags": [],
+              "issues": []
             }
-          },
-          "acquisitionKind": "calendar_code",
-          "purchaseKind": "ac_purchase",
-          "verifiedFields": {
-            "shopName": "2019 Calendar",
-            "npc": null,
-            "map": "2019 Calendar / Book of Lore",
-            "currency": "AC",
-            "price": 0,
-            "requiredQuest": null,
-            "materials": null,
-            "prerequisites": [
-              "Must have purchased the Calendar \"Epic Villains of Lore\" from HeroMart in order to access this shop."
-            ],
-            "availability": "available",
-            "sourceUrl": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
-            "verificationStatus": "verified"
-          }
+          ]
         },
         {
           "id": "timeless-chronomancer-class-ac-shop-2",
@@ -2424,65 +2322,31 @@
             "availability": "available",
             "sourceUrl": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
             "verificationStatus": "verified"
-          }
-        },
-        {
-          "id": "timeless-chronomancer-class-ac-shop-3",
-          "classId": "calendar-timeless-chronomancer",
-          "type": "shop",
-          "variantName": "Timeless Chronomancer (Class) (AC)",
-          "isAvailable": true,
-          "availability": "available",
-          "verificationStatus": "verified",
-          "detailsStatus": "complete",
-          "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
-          "sourceHash": "2095cc640fa7225ef833109efd17df605ef827acd611542ec6464b36ce2222d4",
-          "prerequisites": [
-            "Must have purchased the Collector's Edition 2019 Calendar \"Epic Villains of Lore\" from HeroMart in order to access this shop."
-          ],
-          "notes": [],
-          "membershipRequirement": null,
-          "levelRequirement": null,
-          "baseLevel": null,
-          "evidence": {
-            "classPage": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
-            "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar-collectors",
-            "priceText": "0 AC",
-            "locationText": [
-              "2019 Calendar Collectors - Hourglass Pet (2)"
-            ],
-            "linkedSourceHash": "9b2c64c4bf91ea4a735bbb669251c3a7fd5db59e1b00c048d7ccfcd270873469",
-            "availabilityTags": [],
-            "issues": []
           },
-          "shop": {
-            "shopName": "2019 Calendar Collectors",
-            "source": "https://aqwwiki.wikidot.com/2019-calendar-collectors",
-            "npc": null,
-            "map": "2019 Calendar Collectors / Book of Lore",
-            "price": {
-              "amount": 0,
-              "currency": "AC",
-              "sourceText": "0 AC"
+          "importEvidence": [
+            {
+              "classPage": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+              "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar-collectors",
+              "priceText": "0 AC",
+              "locationText": [
+                "2019 Calendar Collectors - Book of Lore"
+              ],
+              "linkedSourceHash": "9b2c64c4bf91ea4a735bbb669251c3a7fd5db59e1b00c048d7ccfcd270873469",
+              "availabilityTags": [],
+              "issues": []
+            },
+            {
+              "classPage": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+              "linkedSource": "https://aqwwiki.wikidot.com/2019-calendar-collectors",
+              "priceText": "0 AC",
+              "locationText": [
+                "2019 Calendar Collectors - Hourglass Pet (2)"
+              ],
+              "linkedSourceHash": "9b2c64c4bf91ea4a735bbb669251c3a7fd5db59e1b00c048d7ccfcd270873469",
+              "availabilityTags": [],
+              "issues": []
             }
-          },
-          "acquisitionKind": "calendar_code",
-          "purchaseKind": "ac_purchase",
-          "verifiedFields": {
-            "shopName": "2019 Calendar Collectors",
-            "npc": null,
-            "map": "2019 Calendar Collectors / Book of Lore",
-            "currency": "AC",
-            "price": 0,
-            "requiredQuest": null,
-            "materials": null,
-            "prerequisites": [
-              "Must have purchased the Collector's Edition 2019 Calendar \"Epic Villains of Lore\" from HeroMart in order to access this shop."
-            ],
-            "availability": "available",
-            "sourceUrl": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
-            "verificationStatus": "verified"
-          }
+          ]
         },
         {
           "id": "timeless-chronomancer-class-ac-shop-4",
@@ -2539,6 +2403,83 @@
             ],
             "availability": "available",
             "sourceUrl": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "timeless-chronomancer-class-merge-merge-0",
+          "classId": "calendar-timeless-chronomancer",
+          "type": "merge",
+          "variantName": "Timeless Chronomancer (Class) (Merge)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge",
+          "sourceHash": "e66d5e4596a5c75cb680a39299ab46ba8b3f9c967496954fcbd11349c4cf9450",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": "N/A",
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge",
             "verificationStatus": "verified"
           }
         }
@@ -2872,6 +2813,83 @@
             ],
             "availability": "available",
             "sourceUrl": "https://aqwwiki.wikidot.com/overworld-chronomancer-ac",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "overworld-chronomancer-merge-merge-0",
+          "classId": "calendar-overworld-chronomancer",
+          "type": "merge",
+          "variantName": "Overworld Chronomancer (Merge)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/overworld-chronomancer-merge",
+          "sourceHash": "18e96ae2d913f6901cec14634f350d2781efb651c957f3b2cd243a2cf4982ac9",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/overworld-chronomancer-merge",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": "N/A",
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/overworld-chronomancer-merge",
             "verificationStatus": "verified"
           }
         }

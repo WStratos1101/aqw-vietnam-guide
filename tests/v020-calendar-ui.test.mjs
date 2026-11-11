@@ -8,7 +8,7 @@ test('v0.2.0 remains scoped to calendar acquisition', () => {
   const helper=text('src/lib/calendar-acquisition-v020.ts');
   assert.match(ui,/presentedCalendarMethods\(profile\.id/);
   assert.match(helper,/if \(!classId\.startsWith\("calendar-"\)\) return methods/);
-  assert.match(helper,/HeroPoint/);
+  assert.match(helper,/HeroPoints/);
   assert.match(ui,/acquisitionTabLabel\(m\)/);
 });
 test('calendar consumables are verified 3+3 per year', () => {

@@ -93,6 +93,7 @@ export interface ClassAcquisitionMethod {
   };
   other?: { label: string; description: string };
   drop?: { from: string; source: string | null };
+  importEvidence?: ClassAcquisitionMethod["evidence"][];
   evidence: {
     classPage: string;
     linkedSource?: string | null;
