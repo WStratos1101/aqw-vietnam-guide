@@ -30,3 +30,7 @@ body.dark .aqw-ac-currency-gold,
   .aqw-collectors-header-brand { min-width: 44px !important; min-height: 44px !important; }
   .aqw-collectors-header-brand::before { width: 44px; height: 44px; }
 }
+
+/* AQW_HEADER_DIRECT_LOGO_V2 */
+.aqw-collectors-header-brand > img.aqw-collectors-logo-v2 { display: block !important; }
+.aqw-collectors-header-brand:has(> img.aqw-collectors-logo-v2)::before { display: none !important; }

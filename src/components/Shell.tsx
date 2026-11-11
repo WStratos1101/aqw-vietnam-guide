@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ThemeToggle } from './ThemeToggle';
 import { APP_VERSION } from '../config/version';
-import { Menu, X, Search, ArrowUp, ArrowUpRight, Swords } from "lucide-react";
+import { Menu, X, Search, ArrowUp, ArrowUpRight } from "lucide-react";
 export const nav = [
   ["/huong-dan", "Hướng dẫn"],
   ["/class", "Class"],
@@ -34,12 +34,9 @@ export function Header({ path }: { path: string }) {
         <a
           className="brand"
           href="/"
-          aria-label="AQW Vietnam Guide — Trang chủ"
+          aria-label="AQW Vietnam Collectors — Trang chủ"
         >
-          <Swords size={28} />
-          <span>
-            AQW<span className="brand-sub">Vietnam Guide</span>
-          </span>
+          <img src="/aqw-branding/aqw-vietnam-collectors-logo-v2.png" alt="AQW Vietnam Collectors" className="aqw-collectors-logo-v2" style={{ display: "block", width: "clamp(56px, 5.5vw, 88px)", height: "auto", maxHeight: "92px", objectFit: "contain", flexShrink: 0 }} />
         </a>
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           {nav.map(([url, title]) => (
