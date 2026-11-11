@@ -290,5 +290,5 @@ test("External QA reuses valid routes and covers four sizes, both engines, and p
   ])
     assert(pkg.scripts[command]);
   assert(fs.statSync("QA-AQW-Browser.command").mode & 0o111);
-  assert.equal(pkg.version, "0.1.0");
+  assert.equal(pkg.version, "0.2.0");
 });

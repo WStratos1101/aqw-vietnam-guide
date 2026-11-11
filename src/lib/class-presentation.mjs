@@ -1,6 +1,6 @@
 export function acquisitionLabel(method){
  const location=method.shop?.shopName&&!/chưa xác minh/i.test(method.shop.shopName)?method.shop.shopName:method.merge?.mergeShop&&!/chưa xác minh/i.test(method.merge.mergeShop)?method.merge.mergeShop:method.evidence?.locationText?.[0]||method.shop?.map||method.merge?.map;
- if(method.acquisitionKind==="calendar_code")return `Calendar Code · ${location||method.variantName}`;
+ if(method.acquisitionKind==="calendar_code")return method.shop?.price?.amount===0?`0 ACs · ${location||method.variantName}`:`Calendar Code · ${location||method.variantName}`;
  if(method.shop){const p=method.shop.price;const gated=/calendar|book of lore|badge|upgrade|heromart/i.test([location,...(method.evidence?.locationText||[])].join(' '));const free=p.amount===0&&method.detailsStatus==='complete'&&!method.prerequisites.length&&!method.membershipRequirement&&!gated;return `${free?'Free':`${p.amount.toLocaleString('en-US')} ${p.currency==='AC'?'ACs':p.currency}`} · ${location||method.variantName}${method.shop.map&&!String(location).includes(method.shop.map)?' · '+method.shop.map:''}`;}
  if(method.quest)return `Hoàn thành Quest: ${method.quest.questName}`;
  if(method.merge)return `Merge tại: ${location||method.variantName}`;

@@ -3,6 +3,7 @@ import { Swords, GitBranch, ScrollText } from "lucide-react";
 import type { AqwClass, ClassBody } from "../../types/classes";
 import { ClassSkills } from "./ClassSkills";
 import { ClassCombos } from "./ClassCombos";
+import { CalendarConsumables } from "./CalendarConsumables";
 import { ClassAcquisitionPanel } from "./ClassAcquisitionPanel";
 import "../../styles/classes/inspection-v12-4.css";
 type Tab = "skills" | "combo" | "acquisition";
@@ -104,9 +105,11 @@ export function ClassInspectionTabs({
                   selectedSkillId={selectedSkillId}
                   onSelect={setSelectedSkillId}
                 />
+                <CalendarConsumables classId={profile.id} />
               </>
             ) : tab.id === "combo" ? (
               <ClassCombos
+                classId={profile.id}
                 combos={body.combos}
                 skills={skills}
                 onSelectSkill={setSelectedSkillId}

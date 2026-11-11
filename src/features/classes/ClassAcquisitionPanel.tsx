@@ -13,6 +13,7 @@ import type { AqwClass, ClassBody } from "../../types/classes";
 import type { ClassAcquisitionMethod } from "../../types/class-acquisition";
 import { ClassObtain } from "./ClassObtain";
 import { AcquisitionMaterials } from "./AcquisitionMaterials";
+import { presentedCalendarMethods, acquisitionTabLabel } from "../../lib/calendar-acquisition-v020";
 import "../../styles/classes/acquisition-v12-4.css";
 const labels = {
   shop: "SHOP",
@@ -119,12 +120,12 @@ function MethodPanel({
             <Coins size={25} aria-label="Biểu tượng tiền tệ minh họa" />
             <strong>
               {code
-                ? "Calendar Code"
+                ? method.shop.price.amount.toLocaleString("en-US")
                 : method.acquisitionKind === "free"
                   ? "Free"
                   : method.shop.price.amount.toLocaleString("en-US")}
             </strong>
-            {!code && method.acquisitionKind !== "free" && (
+            {method.acquisitionKind !== "free" && (
               <span>
                 {method.shop.price.currency === "AC"
                   ? "ACs"
@@ -325,10 +326,9 @@ export function ClassAcquisitionPanel({
   profile: AqwClass;
   body: ClassBody;
 }) {
-  const methods =
-    body.acquisition?.methods.filter(
-      (m) => m.verificationStatus === "verified",
-    ) || [];
+  const methods = presentedCalendarMethods(profile.id,
+    body.acquisition?.methods.filter((m) => m.verificationStatus === "verified") || []
+  );
   const [selectedId, setSelectedId] = useState<string>();
   const method =
     methods.find((m) => m.id === selectedId) ||
@@ -371,7 +371,7 @@ export function ClassAcquisitionPanel({
             }}
           >
             {methods.map((m) => {
-              const Icon = icons[m.type];
+              const Icon = icons[m.type as ClassAcquisitionMethod["type"]];
               return (
                 <button
                   type="button"
@@ -385,15 +385,13 @@ export function ClassAcquisitionPanel({
                 >
                   <Icon size={16} />
                   <span>
-                    {m.acquisitionKind === "calendar_code"
-                      ? "CALENDAR CODE"
-                      : labels[m.type]}
+                    {acquisitionTabLabel(m)}
                     <small>
                       {m.variantName}
                       {m.isAvailable === false ? " · Legacy" : ""}
                     </small>
                   </span>
-                  {m.shop && m.acquisitionKind !== "calendar_code" && (
+                  {m.shop && (
                     <b>
                       {m.acquisitionKind === "free"
                         ? "Free"

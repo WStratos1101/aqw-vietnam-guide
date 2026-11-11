@@ -1,14 +1,17 @@
 import { selectedComboContent } from "../../lib/class-ui-v12-8.mjs";
 import { comboFlow } from "../../lib/class-presentation.mjs";
 import { TargetEffects } from "./TargetEffects";
+import { CalendarSetup, AbyssalConditionIcons } from "./CalendarConsumables";
 import { SkillSequenceFlow, FlowLabel } from "./SkillSequenceFlow";
 import { useId, useRef, useState } from "react";
 import type { ClassCombo, ClassSkill } from "../../types/classes";
 export function ClassCombos({
+  classId,
   combos,
   skills,
   onSelectSkill,
 }: {
+  classId?: string;
   combos: ClassCombo[];
   skills: ClassSkill[];
   onSelectSkill?: (id: string) => void;
@@ -19,6 +22,11 @@ export function ClassCombos({
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
   const original = combos[selected] || combos[0];
   const active = original ? selectedComboContent(combos, original) : undefined;
+  const canonical = (line: string) => line.toLowerCase().replace(/^[→◆*\s]+/, "").replace(/^[^:\n]{1,42}:\s*/, "").replace(/\s+/g, " ").trim();
+  const extraNotes = (active?.notes || []).filter((note, index, all) => {
+    const normalized = canonical(note);
+    return normalized.length > 0 && normalized !== canonical(active?.explanation || "") && all.findIndex((n) => canonical(n) === normalized) === index;
+  });
   return (
     <section className="class-section" id="combo" aria-labelledby="combo-title">
       <div className="class-section-title">
@@ -107,7 +115,7 @@ export function ClassCombos({
                             DỪNG SPAM · {flow.stopCondition}
                           </span>
                         )}
-                        {!flow.sequences.length && <p>{flow.sourceText}</p>}
+                        {!flow.sequences.length && <CalendarSetup classId={classId} comboTitle={active.title} text={flow.sourceText} />}
                         {flow.sequences.map((sequence, i) => (
                           <div key={i}>
                             {i > 0 && <span className="combo-or">HOẶC</span>}
@@ -122,6 +130,7 @@ export function ClassCombos({
                             />
                           </div>
                         ))}
+                        <AbyssalConditionIcons classId={classId} text={flow.sourceText} skills={skills} onSelect={(s) => { setStepId(s.id); onSelectSkill?.(s.id); }} />
                         <details className="combo-flow-condition">
                           <summary>Timing & điều kiện</summary>
                           <p>{flow.sourceText}</p>
@@ -141,17 +150,10 @@ export function ClassCombos({
                   {active.verificationNote}
                 </p>
               )}
-              <details className="combo-source-notes">
-                <summary>
-                  Lưu ý & hướng dẫn đầy đủ ({active.notes.length + 1})
-                </summary>
-                <p>{active.explanation}</p>
-                <ul>
-                  {active.notes.map((n, i) => (
-                    <li key={i}>{n}</li>
-                  ))}
-                </ul>
-              </details>
+              {extraNotes.length > 0 && <details className="combo-source-notes">
+                <summary>Lưu ý bổ sung ({extraNotes.length})</summary>
+                <ul>{extraNotes.map((n,i) => <li key={i}>{n}</li>)}</ul>
+              </details>}
             </div>
           </div>
         </div>
