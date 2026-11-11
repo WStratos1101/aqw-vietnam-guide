@@ -1,0 +1,152 @@
+/*
+ * V12.12 – scoped Boss palette and uncropped Class artwork.
+ * Actual Boss colors live in src/content/presentation/bosses.json.
+ * This file does not change game data, skill mechanics, or D1.
+ */
+
+/* The legacy dark Chaos palette must not override a Boss's own accent.
+   These variables are set on the UltraDetail root using BossPresentation. */
+:root[data-theme="dark"] .ultra-codex.ultra-detail {
+  --boss-accent: var(--boss-accent-dark);
+  --ultra-gold: var(--boss-accent);
+  --u-gold: var(--boss-accent);
+  --gold: var(--boss-accent);
+  --accent: var(--boss-accent);
+  --theme-accent: var(--boss-accent);
+  --theme-focus: var(--boss-accent);
+  --chaos-accent: var(--boss-accent);
+  --chaos-hover: color-mix(in srgb, var(--boss-accent) 86%, white);
+  --theme-hover: color-mix(in srgb, var(--boss-accent) 82%, white);
+  --ultra-control-border: var(--boss-accent);
+  --ultra-border: color-mix(in srgb, var(--boss-accent) 42%, #322b39);
+  --boss-border: var(--ultra-border);
+  --boss-accent-muted: color-mix(in srgb, var(--boss-accent) 14%, #130d1d);
+  --boss-active-background: var(--boss-accent-muted);
+}
+
+:root[data-theme="light"] .ultra-codex.ultra-detail {
+  --boss-accent: var(--boss-accent-light);
+  --ultra-gold: var(--boss-accent);
+  --u-gold: var(--boss-accent);
+  --gold: var(--boss-accent);
+  --accent: var(--boss-accent);
+  --theme-accent: var(--boss-accent);
+  --theme-focus: var(--boss-accent);
+  --chaos-accent: var(--boss-accent);
+  --theme-hover: color-mix(in srgb, var(--boss-accent) 85%, black);
+  --ultra-control-border: var(--boss-accent);
+  --ultra-border: color-mix(in srgb, var(--boss-accent) 38%, #d2d4d0);
+  --boss-border: var(--ultra-border);
+  --boss-accent-muted: color-mix(in srgb, var(--boss-accent) 10%, white);
+  --boss-active-background: var(--boss-accent-muted);
+}
+
+/* Keep gold Codex branding and target-category colors independent of Boss themes. */
+:root[data-theme="dark"] .codex-heading,
+:root[data-theme="light"] .codex-heading {
+  color: var(--codex-title-gold);
+}
+
+/* Directory cards need enough height to show full-body artwork.
+   Contain (never cover) prevents losing a head, weapon, or feet. */
+.class-directory .class-grid .class-card > .class-art,
+.class-detail .class-related .class-card > .class-art {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: clamp(185px, 20vw, 275px) !important;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.class-directory .class-grid .class-card .class-character-art,
+.class-detail .class-related .class-card .class-character-art {
+  position: static !important;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+}
+
+/* Variant selectors stay above the artwork and do not overlap content. */
+.class-detail .class-hero-portrait {
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.class-detail .class-hero-portrait .class-art-selector {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 100%;
+  gap: 8px;
+}
+.class-detail .class-hero-portrait .class-art-switch {
+  order: -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 8px;
+}
+.class-detail .class-hero-portrait .class-art {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: min(66vh, 620px);
+  min-height: 260px;
+  max-height: 620px;
+  overflow: hidden;
+}
+.class-detail .class-hero-portrait .class-character-art {
+  display: block;
+  position: static !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+}
+
+/* Home: full-body starter Class art instead of a cropped center portrait. */
+.class-showcase .starter-class-art {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-width: 0;
+  height: clamp(330px, 42vw, 630px);
+  max-height: min(72vh, 630px);
+  overflow: hidden;
+}
+.class-showcase .starter-class-art > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain !important;
+  object-position: center center;
+  transform: none !important;
+}
+
+@media (max-width: 767px) {
+  .class-directory .class-grid .class-card > .class-art,
+  .class-detail .class-related .class-card > .class-art {
+    height: clamp(168px, 41vw, 225px) !important;
+  }
+  .class-detail .class-hero-portrait .class-art {
+    height: min(52vh, 440px);
+    min-height: 260px;
+  }
+  .class-showcase .starter-class-art {
+    height: min(58vh, 460px);
+    max-height: none;
+  }
+}

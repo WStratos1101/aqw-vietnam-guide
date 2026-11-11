@@ -11,6 +11,7 @@ import "@fontsource/source-sans-3/vietnamese-900.css";
 
 import "./styles/global.css";
 import './styles/themes.css';
+import "./styles/v12-12-overrides.css";
 import { App } from "./App";
 import {loadRouteViews} from './features/route-views';
 // Keep prerendered Hero visible while its route code loads. All route CSS is
