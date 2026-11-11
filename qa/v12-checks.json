@@ -1,0 +1,10 @@
+{
+  "Lint": "PASS (focused project syntax/accessibility/link linter)",
+  "Typecheck": "PASS (tsc --noEmit)",
+  "Unit and DOM integration tests": "PASS — 76 tests, including 7 new phase/model/damage/interaction cases",
+  "Semantic data validation": "PASS — 22 tests: content, materials and phase semantics",
+  "Production build": "PASS — 363 routes and 404 prerendered; existing large-chunk warnings remain",
+  "Build route tests": "PASS — 9 tests",
+  "Server tests": "PASS — 4 tests",
+  "Real browser": "BLOCKED — Chromium permission denied; WebKit aborts at launch; 0 screenshots"
+}

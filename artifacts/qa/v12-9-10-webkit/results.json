@@ -1,0 +1,15 @@
+{
+  "kind": "v12-9-10-webkit",
+  "status": "browser_launch_blocked",
+  "startedAt": "2026-11-11T05:28:16.638Z",
+  "browser": "webkit",
+  "browserPath": "/Users/wstratos/Desktop/Project/aqw-vietnam-guide/.playwright-browsers",
+  "cases": [],
+  "screenshots": [],
+  "errors": [
+    "browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /Users/wstratos/Desktop/Project/aqw-vietnam-guide/.playwright-browsers/webkit-2388/pw_run.sh --inspector-pipe --headless --no-startup-window\n<launched> pid=61967\n[pid=61967][err] /Users/wstratos/Desktop/Project/aqw-vietnam-guide/.playwright-browsers/webkit-2388/pw_run.sh: line 7: 61973 Abort trap: 6           DYLD_FRAMEWORK_PATH=\"$DYLIB_PATH\" DYLD_LIBRARY_PATH=\"$DYLIB_PATH\" \"$PLAYWRIGHT\" \"$@\"\nCall log:\n\u001b[2m  - <launching> /Users/wstratos/Desktop/Project/aqw-vietnam-guide/.playwright-browsers/webkit-2388/pw_run.sh --inspector-pipe --headless --no-startup-window\u001b[22m\n\u001b[2m  - <launched> pid=61967\u001b[22m\n\u001b[2m  - [pid=61967][err] /Users/wstratos/Desktop/Project/aqw-vietnam-guide/.playwright-browsers/webkit-2388/pw_run.sh: line 7: 61973 Abort trap: 6           DYLD_FRAMEWORK_PATH=\"$DYLIB_PATH\" DYLD_LIBRARY_PATH=\"$DYLIB_PATH\" \"$PLAYWRIGHT\" \"$@\"\u001b[22m\n\u001b[2m  - [pid=61967] <gracefully close start>\u001b[22m\n\u001b[2m  - [pid=61967] <kill>\u001b[22m\n\u001b[2m  - [pid=61967] <will force kill>\u001b[22m\n\u001b[2m  - [pid=61967] exception while trying to kill process: Error: kill ESRCH\u001b[22m\n\u001b[2m  - [pid=61967] <process did exit: exitCode=134, signal=null>\u001b[22m\n\u001b[2m  - [pid=61967] starting temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=61967] finished temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=61967] <gracefully close end>\u001b[22m\n\n    at runQa (/Users/wstratos/Desktop/Project/aqw-vietnam-guide/scripts/qa-runtime.mjs:101:30)\n    at async runSuite (/Users/wstratos/Desktop/Project/aqw-vietnam-guide/scripts/qa-v12-9-10.mjs:54:8)\n    at async file:///Users/wstratos/Desktop/Project/aqw-vietnam-guide/scripts/qa-v12-9-10.mjs:275:86"
+  ],
+  "baseUrl": "http://127.0.0.1:62054",
+  "cause": "browser_process_crash",
+  "finishedAt": "2026-11-11T05:28:17.361Z"
+}

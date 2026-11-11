@@ -1,0 +1,879 @@
+{
+  "challengeContent": true,
+  "id": "firebird-anqa",
+  "name": "Firebird Anqa",
+  "type": "other_challenge",
+  "map": "sunsetdunes",
+  "levelRequirement": 80,
+  "partySize": 7,
+  "description": "Phượng hoàng với ngọn lửa quyền năng, có khả năng hồi sinh từ tro tàn và kiểm soát sự sống, nhưng cũng không quá khó để đánh bại. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+  "bodyUrl": "/content/challenges/firebird-anqa.json",
+  "href": "/other-challenges/firebird-anqa",
+  "image": null,
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "firebird-anqa-stage-1",
+      "name": "Firebird Anqa",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Firebird Anqa",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "firebird-anqa-0",
+            "canonicalName": "Firebird Anqa",
+            "role": "Monster",
+            "level": 85,
+            "maxHp": 2000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/firebird-anqa"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "firebird-anqa-0-hot-surface-0",
+            "monsterId": "firebird-anqa-0",
+            "name": "Hot Surface",
+            "type": "True Damage",
+            "damage": "15% Max HP",
+            "damageType": "True Damage",
+            "cooldown": "1.5 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Bỏ qua Focus.",
+              "Luôn trúng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/firebird-anqa"
+          },
+          {
+            "id": "firebird-anqa-0-sea-of-flames-1",
+            "monsterId": "firebird-anqa-0",
+            "name": "Sea of Flames",
+            "type": "Magical",
+            "damage": "2250 - 2500",
+            "damageType": "Magical",
+            "cooldown": "5 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "If Rebirth isn't active, Áp Scorching Flames lên người chơi, a DoT trong 10 giây.",
+              "Nếu có Rebirth, Áp Searing Flames lên người chơi, an even stronger DoT that also reduces hồi máu nhận vào 75% trong 10 giây.",
+              "Bỏ qua Focus.",
+              "Luôn trúng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/firebird-anqa"
+          },
+          {
+            "id": "firebird-anqa-0-rebirth-2",
+            "monsterId": "firebird-anqa-0",
+            "name": "Rebirth",
+            "targets": "Self",
+            "activation": "",
+            "playerEffects": [
+              "Áp Divine Recovery lên bản thân, becoming invincible và stunned while fully healing over 5 giây.",
+              "Áp Rebirth lên bản thân, tăng sát thương gây ra 200%.",
+              "Dùng tại 20% HP còn lại"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/firebird-anqa"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Phượng hoàng với ngọn lửa quyền năng, có khả năng hồi sinh từ tro tàn và kiểm soát sự sống, nhưng cũng không quá khó để đánh bại. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+        "- Firebird's Fury Blade, Firebird's Fury Blades và Firebird's Fury Spear (tăng 60% DMG với Elemental) merge trong Sunset Treasures tại đây. Đánh Anqa và hoàn thành “Anqa al-Mughrib” quest để lấy nguyên liệu.",
+        "Boss này nằm ở map /join sunsetdunes - Room limit: 7",
+        "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 2,000,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.7).",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Tất cả đón đánh đều không thể né.",
+        "◆ Auto-Attack mỗi 1.5s gây True DMG bằng 15% lượng HP tối đa của player lên tất cả players.",
+        "◆ Mỗi 5s, sử dụng Sea of Flames gây Magi DMG từ 2.2k đến 2.5k.",
+        "→ Nếu không có Rebirth, áp DoT trong 10s lên tất cả players.",
+        "→ Nếu có Rebirth, áp DoT lớn và giảm 75% Heal In trong 10s lên tất cả players.",
+        "◆ Khi còn 20% HP, Anqa tiến vào trạng thái Rebirth.",
+        "→ Anqa không nhận cũng như gây sát thương trong 5s, đồng thời hồi đầy máu (không thể Decay).",
+        "→ Anqa tăng 200% All Out."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Anqa cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 6 người bên dưới thì có thể giết nó một cách đơn giản.",
+        "Team 6 người:\tQCM/LR, VDK/Shaman, PCM/AP, LC, LoO, LH/DLH/SC/IT",
+        "hoặc\tQCM/LR, PCM, AP, LC, LoO, LH/DLH/SC/IT",
+        "Team 7 người:\tQCM, LR, VDK, Arach, PCM/AP, LoO, LH/DLH/SC/IT",
+        "hoặc\tQCM/VDK, AI, LR, Arach, PCM/AP, LC, LoO",
+        "hoặc\tGT, LR, VDK, Arach, PCM/LC, LoO, LH/DLH",
+        "Note:",
+        "- Với Team 6 người, không sử dụng Vainglory, thay vào đó là Absolution cho Healer còn lại là Penitence nếu không khi Anqa vào trạng thái Rebirth thì Heal sẽ thành sát thương ngược lên bạn.",
+        "- Với Team 7 người, đây là các Team được xây để có thể diệt được Anqa trong Phase 1, vì vậy có thể sử dụng Vainglory để tăng tốt đa sát thương (cho DPS class)."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-424371",
+          "runs": [
+            {
+              "text": "Phượng hoàng với ngọn lửa quyền năng, có khả năng hồi sinh từ tro tàn và kiểm soát sự sống, nhưng cũng không quá khó để đánh bại. Temp item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424553",
+          "runs": [
+            {
+              "text": "- "
+            },
+            {
+              "text": "Firebird's Fury Blade",
+              "href": "http://aqwwiki.wikidot.com/firebird-s-fury-blade"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Firebird's Fury Blades",
+              "href": "http://aqwwiki.wikidot.com/firebird-s-fury-blades"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Firebird's Fury Spear",
+              "href": "http://aqwwiki.wikidot.com/firebird-s-fury-spear"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(tăng 60% DMG với Elemental)",
+              "italic": true
+            },
+            {
+              "text": " merge trong "
+            },
+            {
+              "text": "Sunset Treasures",
+              "href": "http://aqwwiki.wikidot.com/sunset-treasures"
+            },
+            {
+              "text": " tại đây. Đánh Anqa và hoàn thành “"
+            },
+            {
+              "text": "Anqa al-Mughrib",
+              "href": "http://aqwwiki.wikidot.com/zhoom-s-quests#SDunes"
+            },
+            {
+              "text": "” quest để lấy nguyên liệu.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424762",
+          "runs": [
+            {
+              "text": "Boss này nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join sunsetdunes",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/sunset-dunes"
+            },
+            {
+              "text": " - Room limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424815",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424872",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424880",
+          "runs": [
+            {
+              "text": "◆ Total HP: 2,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424902",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.7)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424954",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424992",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425028",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 1.5s gây True DMG bằng 15% lượng HP tối đa của player lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425120",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sử dụng Sea of Flames gây Magi DMG từ 2.2k đến 2.5k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425183",
+          "runs": [
+            {
+              "text": "→ Nếu không có Rebirth, áp DoT trong 10s lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425244",
+          "runs": [
+            {
+              "text": "→ Nếu có Rebirth, áp DoT lớn và giảm 75% Heal In trong 10s lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425323",
+          "runs": [
+            {
+              "text": "◆ Khi còn 20% HP, Anqa tiến vào trạng thái Rebirth.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425375",
+          "runs": [
+            {
+              "text": "→ Anqa không nhận cũng như gây sát thương trong 5s, đồng thời hồi đầy máu "
+            },
+            {
+              "text": "(không thể Decay)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425468",
+          "runs": [
+            {
+              "text": "→ Anqa tăng 200% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425495",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425507",
+          "runs": [
+            {
+              "text": "Nhìn chung Anqa cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 6 người bên dưới thì có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425663",
+          "runs": [
+            {
+              "text": "Team 6 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "QCM/LR, VDK/Shaman, PCM/AP, LC, LoO, LH/DLH/SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425727",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "QCM/LR, PCM, AP, LC, LoO, LH/DLH/SC/IT",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425772",
+          "runs": [
+            {
+              "text": "Team 7 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "QCM, LR, VDK, Arach, PCM/AP, LoO, LH/DLH/SC/IT",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425833",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "QCM/VDK, AI, LR, Arach, PCM/AP, LC, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425879",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "GT, LR, VDK, Arach, PCM/LC, LoO, LH/DLH\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425925",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " \n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-425932",
+          "runs": [
+            {
+              "text": "- Với Team 6 người, không sử dụng Vainglory, thay vào đó là Absolution cho Healer còn lại là Penitence nếu không khi Anqa vào trạng thái Rebirth thì Heal sẽ thành sát thương ngược lên bạn.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-426121",
+          "runs": [
+            {
+              "text": "- Với Team 7 người, đây là các Team được xây để có thể diệt được Anqa trong Phase 1, vì vậy có thể sử dụng Vainglory để tăng tốt đa sát thương (cho DPS class).\n",
+              "italic": true
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-424954",
+      "runs": [
+        {
+          "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-425663",
+      "runs": [
+        {
+          "text": "Team 6 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "QCM/LR, VDK/Shaman, PCM/AP, LC, LoO, LH/DLH/SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-425727",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "QCM/LR, PCM, AP, LC, LoO, LH/DLH/SC/IT",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-425772",
+      "runs": [
+        {
+          "text": "Team 7 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "QCM, LR, VDK, Arach, PCM/AP, LoO, LH/DLH/SC/IT",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-425833",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "QCM/VDK, AI, LR, Arach, PCM/AP, LC, LoO",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-425879",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "GT, LR, VDK, Arach, PCM/LC, LoO, LH/DLH\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-425932",
+      "runs": [
+        {
+          "text": "- Với Team 6 người, không sử dụng Vainglory, thay vào đó là Absolution cho Healer còn lại là Penitence nếu không khi Anqa vào trạng thái Rebirth thì Heal sẽ thành sát thương ngược lên bạn.\n",
+          "italic": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-426121",
+      "runs": [
+        {
+          "text": "- Với Team 7 người, đây là các Team được xây để có thể diệt được Anqa trong Phase 1, vì vậy có thể sử dụng Vainglory để tăng tốt đa sát thương (cho DPS class).\n",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": [
+    {
+      "id": "source-team-6",
+      "name": "Team 6 người:\tQCM/LR, VDK/Shaman, PCM/AP, LC, LoO, LH/DLH/SC/IT",
+      "assignments": [
+        {
+          "id": "team-1-slot-1-1",
+          "primaryClass": {
+            "classId": "quantum-chronomancer",
+            "name": "Quantum Chronomancer",
+            "abbreviation": "QCM",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "legion-revenant",
+              "name": "Legion Revenant",
+              "abbreviation": "LR",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-1-slot-2-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "shaman",
+              "name": "Shaman",
+              "abbreviation": "Shaman",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-1-slot-3-1",
+          "primaryClass": {
+            "classId": "paladin-chronomancer",
+            "name": "Paladin Chronomancer",
+            "abbreviation": "PCM",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "archpaladin",
+              "name": "ArchPaladin",
+              "abbreviation": "AP",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-1-slot-4-1",
+          "primaryClass": {
+            "classId": "lightcaster",
+            "name": "LightCaster",
+            "abbreviation": "LC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-5-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-6-1",
+          "primaryClass": {
+            "classId": "legendary-hero",
+            "name": "Legendary Hero",
+            "abbreviation": "LH",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "dark-legendary-hero",
+              "name": "Dark Legendary Hero",
+              "abbreviation": "DLH",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "stonecrusher",
+              "name": "StoneCrusher",
+              "abbreviation": "SC",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-7",
+      "name": "Team 7 người:\tQCM, LR, VDK, Arach, PCM/AP, LoO, LH/DLH/SC/IT",
+      "assignments": [
+        {
+          "id": "team-2-slot-1-1",
+          "primaryClass": {
+            "classId": "quantum-chronomancer",
+            "name": "Quantum Chronomancer",
+            "abbreviation": "QCM",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-3-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-4-1",
+          "primaryClass": {
+            "classId": "arachnomancer",
+            "name": "Arachnomancer",
+            "abbreviation": "Arach",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-5-1",
+          "primaryClass": {
+            "classId": "paladin-chronomancer",
+            "name": "Paladin Chronomancer",
+            "abbreviation": "PCM",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "archpaladin",
+              "name": "ArchPaladin",
+              "abbreviation": "AP",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-2-slot-6-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-7-1",
+          "primaryClass": {
+            "classId": "legendary-hero",
+            "name": "Legendary Hero",
+            "abbreviation": "LH",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "dark-legendary-hero",
+              "name": "Dark Legendary Hero",
+              "abbreviation": "DLH",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "stonecrusher",
+              "name": "StoneCrusher",
+              "abbreviation": "SC",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "challengeContent": true,
+  "id": "super-ryoku",
+  "name": "Super Ryoku",
+  "type": "other_challenge",
+  "map": "dragonkoi",
+  "levelRequirement": 60,
+  "partySize": 1,
+  "description": "Đây là một challenge boss rất dễ. Nhìn chung, con boss này không có nhiều điểm để lưu ý, chỉ cần dùng class đủ tốt là có thể vượt qua nó. Item drop từ nó là yêu cầu để hoàn thành được:",
+  "bodyUrl": "/content/challenges/super-ryoku.json",
+  "href": "/other-challenges/super-ryoku",
+  "image": "monster-super-ryoku",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [
+    "Cần hoàn thành Chaos Lord Kitsune Saga đến /join dragonkoi để access Map."
+  ],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "super-ryoku-stage-1",
+      "name": "Super Ryoku",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Super Ryoku",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "super-ryoku-0",
+            "canonicalName": "Super Ryoku",
+            "role": "Monster",
+            "level": 40,
+            "maxHp": 200000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/super-ryoku"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "super-ryoku-0-uppercut-0",
+            "monsterId": "super-ryoku-0",
+            "name": "Uppercut",
+            "type": "Physical",
+            "damage": "150-175",
+            "damageType": "Physical",
+            "cooldown": "2.5 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/super-ryoku"
+          },
+          {
+            "id": "super-ryoku-0-energy-blast-1",
+            "monsterId": "super-ryoku-0",
+            "name": "Energy Blast",
+            "type": "Physical",
+            "damage": "50% of target's current HP",
+            "damageType": "Physical",
+            "cooldown": "5 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Chip Damage lên người chơi, a small DoT trong 1 giây.",
+              "Không thể chí mạng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/super-ryoku"
+          },
+          {
+            "id": "super-ryoku-0-ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhh-2",
+            "monsterId": "super-ryoku-0",
+            "name": "AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+            "type": "Charge",
+            "damageType": "Charge",
+            "targets": "7",
+            "activation": "Prepare for my ultimate attack… SOUL NUKE!",
+            "playerEffects": [
+              "Charges trong 20 giây, sau đó dùng SOUL NUKE.",
+              "Áp I'm Charging Please Don't Attack, giảm defense 500% trong 20 giây.",
+              "Dùng tại 50% HP còn lại"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/super-ryoku"
+          },
+          {
+            "id": "super-ryoku-0-soul-nuke-3",
+            "monsterId": "super-ryoku-0",
+            "name": "SOUL NUKE",
+            "damage": "Over 90000000",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/super-ryoku"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là một challenge boss rất dễ. Nhìn chung, con boss này không có nhiều điểm để lưu ý, chỉ cần dùng class đủ tốt là có thể vượt qua nó. Item drop từ nó là yêu cầu để hoàn thành được:",
+        "- Enchanted Master's Gi dùng trong farm Arcana Invoker Class.",
+        "Cần hoàn thành Chaos Lord Kitsune Saga đến /join dragonkoi để access Map.",
+        "Boss này nằm ở map /join superslayin - Room limit: 1",
+        "Bạn cần đạt ít nhất lvl 60 để có thể vượt qua Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 200,000",
+        "◆ Shield giúp giới hạn sát thương nhận tối đa 5k.",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh nếu không thể né nhưng cũng không thể Crit.",
+        "◆ Auto-Attack mỗi 2.5s gây Phys DMG từ 150 đến 175.",
+        "◆ Mỗi 5s, sử dụng Energy Blast gây Phys DMG bằng 50% lượng HP hiện tại của player.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Player bị dính DoT nhỏ trong 1s.",
+        "◆ Khi còn 50% HP, kích hoạt Charge trong 20s.",
+        "→ Ryoku tăng 500% All In trong 20s.",
+        "→ Player cần tập trung gây DMG để diệt nó trước khi quá trình",
+        "◆ Kích hoạt SOUL NUKE ngay sau khi hết Charge, gây DMG lớn (9 con số), True DMG, bỏ qua Focus/Taunt."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Khá đơn giản và dễ nên có thể dùng bất kỳ class nào có DMG ổn và Skill CD nhanh để đánh nó, ví dụ như VHL, LR, DT/EDoT, LC, AP, LDK, Shaman, SC/IT,… kết hợp thêm các Enhancements phù hợp. Chỉ cần dùng đúng combo của class đó (nếu có) là được, ngoài ra không có gì nhiều để đáng chú ý.",
+        "Note: Boss có tag Human, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Human để tối đa sát thương."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-414263",
+          "runs": [
+            {
+              "text": "Đây là một challenge boss rất dễ. Nhìn chung, con boss này không có nhiều điểm để lưu ý, chỉ cần dùng class đủ tốt là có thể vượt qua nó. Item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414448",
+          "runs": [
+            {
+              "text": "- "
+            },
+            {
+              "text": "Enchanted Master's Gi",
+              "href": "http://aqwwiki.wikidot.com/enchanted-master-s-gi"
+            },
+            {
+              "text": " dù"
+            },
+            {
+              "text": "ng trong farm "
+            },
+            {
+              "text": "Arcana Invoker",
+              "href": "/farm/arcana-invoker-ai"
+            },
+            {
+              "text": " Class."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414511",
+          "runs": [
+            {
+              "text": "Cần hoàn thành ",
+              "italic": true
+            },
+            {
+              "text": "Chaos Lord Kitsune Saga",
+              "italic": true,
+              "href": "/cot-truyen/the-13-lords-of-chaos-saga"
+            },
+            {
+              "text": " đến ",
+              "italic": true
+            },
+            {
+              "text": "/join dragonkoi",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/dragonkoi-tournament"
+            },
+            {
+              "text": " để access Map.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414585",
+          "runs": [
+            {
+              "text": "Boss này nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join superslayin",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/super-slayin"
+            },
+            {
+              "text": " - Room limit: 1\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414638",
+          "runs": [
+            {
+              "text": "Bạn cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 60",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để có thể vượt qua Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414701",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414709",
+          "runs": [
+            {
+              "text": "◆ Total HP: 200,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414729",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 5k."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414779",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414802",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh nếu không thể né nhưng cũng không thể Crit.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414864",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.5s gây Phys DMG từ 150 đến 175.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414916",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sử dụng Energy Blast gây Phys DMG bằng 50% lượng HP hiện tại của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414999",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415021",
+          "runs": [
+            {
+              "text": "→ Player bị dính DoT nhỏ trong 1s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415056",
+          "runs": [
+            {
+              "text": "◆ Khi còn 50% HP, kích hoạt Charge trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415102",
+          "runs": [
+            {
+              "text": "→ Ryoku tăng 500% All In trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415138",
+          "runs": [
+            {
+              "text": "→ Player cần tập trung gây DMG để diệt nó trước khi quá trình \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415201",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt SOUL NUKE ngay sau khi hết Charge, gây DMG lớn "
+            },
+            {
+              "text": "(9 con số)",
+              "italic": true
+            },
+            {
+              "text": ", True DMG, bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415303",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415315",
+          "runs": [
+            {
+              "text": "Khá đơn giản và dễ nên có thể dùng bất kỳ class nào có DMG ổn và Skill CD nhanh để đánh nó, ví dụ như "
+            },
+            {
+              "text": "VHL, LR, DT/EDoT, LC, AP, LDK, Shaman, SC/IT,…",
+              "bold": true
+            },
+            {
+              "text": " kết hợp thêm các Enhancements phù hợp. Chỉ cần dùng đúng combo của class đó "
+            },
+            {
+              "text": "(nếu có)",
+              "italic": true
+            },
+            {
+              "text": " là được, ngoài ra không có gì nhiều để đáng chú ý.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415600",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Boss có tag Human, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Human để tối đa sát thương.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-414999",
+      "runs": [
+        {
+          "text": "→ Bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-415201",
+      "runs": [
+        {
+          "text": "◆ Kích hoạt SOUL NUKE ngay sau khi hết Charge, gây DMG lớn "
+        },
+        {
+          "text": "(9 con số)",
+          "italic": true
+        },
+        {
+          "text": ", True DMG, bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": []
+}

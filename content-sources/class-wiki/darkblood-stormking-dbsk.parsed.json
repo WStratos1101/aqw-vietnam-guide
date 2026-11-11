@@ -1,0 +1,131 @@
+{
+  "url": "https://aqwwiki.wikidot.com/darkblood-stormking-ac",
+  "sourceHash": "f41c2e7e39711bda6c5043c9002db7ccaddc3d1c754cf4b1cae1efa189352d5d",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Deals physical damage based on your Spell Power.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/darkblood-stormking-ac",
+      "sourceHash": "f41c2e7e39711bda6c5043c9002db7ccaddc3d1c754cf4b1cae1efa189352d5d",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Deals physical damage based on your Spell Power."
+    },
+    {
+      "officialName": "Storm Call",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "You bring the power of the storm to bear against your enemy. Striking a Thunderstricken target grants you a stack of Conductive, increasing the damage of your Storm Bolts. Striking a Shocked target will heal you. Healing over your maximum HP lingers, reducing the damage you take from the next hit or until you heal.",
+      "notes": [
+        "Heals 20 MP.",
+        "Conductive stacks up to 50 and lasts 5 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill12.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/darkblood-stormking-ac",
+      "sourceHash": "f41c2e7e39711bda6c5043c9002db7ccaddc3d1c754cf4b1cae1efa189352d5d",
+      "evidence": "Storm Call Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: You bring the power of the storm to bear against your enemy. Striking a Thunderstricken target grants you a stack of Conductive, increasing the damage of your Storm Bolts. Striking a Shocked target will heal you. Healing over your maximum HP lingers, reducing the damage you take from the next hit or until you heal. Notes: Heals 20 MP. Conductive stacks up to 50 and lasts 5 seconds."
+    },
+    {
+      "officialName": "Skyfire",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "You channel the power of pure lightning through your hands. Applies Shocked to all targets hit, lasting 10 seconds and reducing their outgoing damage dealt by 20%. Replaces Thunderstrike.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill46.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/darkblood-stormking-ac",
+      "sourceHash": "f41c2e7e39711bda6c5043c9002db7ccaddc3d1c754cf4b1cae1efa189352d5d",
+      "evidence": "Skyfire Rank Needed: 2 Mana Cost: 10 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 3 hostile targets. Description: You channel the power of pure lightning through your hands. Applies Shocked to all targets hit, lasting 10 seconds and reducing their outgoing damage dealt by 20%. Replaces Thunderstrike."
+    },
+    {
+      "officialName": "Thunderclap",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "You devastate your enemies with a mighty boom of thunder. Applies Thunderstrike to all targets hit, lasting 10 seconds and reducing their Dodge by 20%. Replaces Shocked.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill18.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/darkblood-stormking-ac",
+      "sourceHash": "f41c2e7e39711bda6c5043c9002db7ccaddc3d1c754cf4b1cae1efa189352d5d",
+      "evidence": "Thunderclap Rank Needed: 3 Mana Cost: 10 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 3 hostile targets. Description: You devastate your enemies with a mighty boom of thunder. Applies Thunderstrike to all targets hit, lasting 10 seconds and reducing their Dodge by 20%. Replaces Shocked."
+    },
+    {
+      "officialName": "Raging Gale",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Increase Hit Chance by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/darkblood-stormking-ac",
+      "sourceHash": "f41c2e7e39711bda6c5043c9002db7ccaddc3d1c754cf4b1cae1efa189352d5d",
+      "evidence": "Raging Gale Rank Needed: 4 Type: Passive Description: Increase Hit Chance by 10%"
+    },
+    {
+      "officialName": "Tempest",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Increase Crit by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/darkblood-stormking-ac",
+      "sourceHash": "f41c2e7e39711bda6c5043c9002db7ccaddc3d1c754cf4b1cae1efa189352d5d",
+      "evidence": "Tempest Rank Needed: 4 Type: Passive Description: Increase Crit by 10%"
+    },
+    {
+      "officialName": "Storm Bolt",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "90",
+      "cooldown": "10",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1target.",
+      "officialDescription": "Summon the ultimate power of the storm and smite your foe with a bolt of supercharged lightning, dealing a guaranteed critical hit that increases in damage the more Conductive stacks you have and replacing it with Voltaic, increasing your outgoing damage by 10% for 10 seconds. If your target was shocked, they become Electrocuted, reducing their Crit Chance and Hit Chance by 20% for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill04.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/darkblood-stormking-ac",
+      "sourceHash": "f41c2e7e39711bda6c5043c9002db7ccaddc3d1c754cf4b1cae1efa189352d5d",
+      "evidence": "Storm Bolt Rank Needed: 5 Mana Cost: 90 Mana Cooldown: 10 Seconds Type: Magical Range: A long range attack that deals damage to 1target. Description: Summon the ultimate power of the storm and smite your foe with a bolt of supercharged lightning, dealing a guaranteed critical hit that increases in damage the more Conductive stacks you have and replacing it with Voltaic, increasing your outgoing damage by 10% for 10 seconds. If your target was shocked, they become Electrocuted, reducing their Crit Chance and Hit Chance by 20% for 10 seconds."
+    },
+    {
+      "officialName": "Stormforged",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Starting from rank 1, your training and bloodline provide you extraordinary control over the storm, allowing you to overcharge your Storm Bolt up to 50 times.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/darkblood-stormking-ac",
+      "sourceHash": "f41c2e7e39711bda6c5043c9002db7ccaddc3d1c754cf4b1cae1efa189352d5d",
+      "evidence": "Stormforged Rank Needed: 10 Type: Passive Description: Starting from rank 1, your training and bloodline provide you extraordinary control over the storm, allowing you to overcharge your Storm Bolt up to 50 times."
+    }
+  ],
+  "portraitUrl": "https://imgur.com/3asoH4h.png",
+  "sameSkillVariants": [
+    {
+      "name": "Darkblood StormKing (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/darkblood-stormking-0-ac"
+    }
+  ],
+  "location": "Locations:\n\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\n\nPrice: 2,000 AC"
+}

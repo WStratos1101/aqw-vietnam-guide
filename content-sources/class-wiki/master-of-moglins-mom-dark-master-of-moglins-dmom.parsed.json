@@ -1,0 +1,132 @@
+{
+  "url": "https://aqwwiki.wikidot.com/master-of-moglins-class-2",
+  "sourceHash": "2607f4d4550d93290e80287cbf8ddb66398f88edf0360cb7a2bd0726ebc33723",
+  "entries": [
+    {
+      "officialName": "Moglin's Magical Strike",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "An infinite range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "A masterful spell that has been passed down by Moglins. Deals damage based on your spell power.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MoMAA.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-of-moglins-class-2",
+      "sourceHash": "2607f4d4550d93290e80287cbf8ddb66398f88edf0360cb7a2bd0726ebc33723",
+      "evidence": "Moglin's Magical Strike Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: An infinite range attack that deals damage to 4 hostile targets. Description: A masterful spell that has been passed down by Moglins. Deals damage based on your spell power."
+    },
+    {
+      "officialName": "Moglin Spirit",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "An infinite range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "You burst with Moglin spirit! Deals damage and applies buffs to you for each target hit, in the following order:",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MoMA2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-of-moglins-class-2",
+      "sourceHash": "2607f4d4550d93290e80287cbf8ddb66398f88edf0360cb7a2bd0726ebc33723",
+      "evidence": "Moglin Spirit Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 6 Seconds Type: Magical Range: An infinite range attack that deals damage to 4 hostile targets. Description: You burst with Moglin spirit! Deals damage and applies buffs to you for each target hit, in the following order: Pirate: +30% Haste Frogzard: +80% Hit Chance Quibble: +10% Luck Paladin: +20% Damage Resistance Dricken +20% outgoing damage Effects last 20 seconds."
+    },
+    {
+      "officialName": "Moglin Menace",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "An infinite range status skill that applies to 4 targets.",
+      "officialDescription": "The Dark Moglin Arts have been unleashed! Randomly applies up to 4 different evil Moglin Auras for each target hit.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MoMA3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-of-moglins-class-2",
+      "sourceHash": "2607f4d4550d93290e80287cbf8ddb66398f88edf0360cb7a2bd0726ebc33723",
+      "evidence": "Moglin Menace Rank Needed: 2 Mana Cost: 10 Mana Cooldown: 6 Seconds Type: Magical Range: An infinite range status skill that applies to 4 targets. Description: The Dark Moglin Arts have been unleashed! Randomly applies up to 4 different evil Moglin Auras for each target hit. Zorbak: DoT (50%, doesn't stack) Legion: +5% outgoing damage, stacks to 7 (80%) Mort: +7% Dodge, stacks to 7 (80%) Memet: +20% Crit Chance (50%) Effects last for 20 seconds."
+    },
+    {
+      "officialName": "Moglin Life",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "8",
+      "skillType": "Magical",
+      "target": "An infinite range skill that heals 7 friendly targets.",
+      "officialDescription": "Your Moglins heal you and up to 6 allies, then apply buffs in the following order:",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MoMA1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-of-moglins-class-2",
+      "sourceHash": "2607f4d4550d93290e80287cbf8ddb66398f88edf0360cb7a2bd0726ebc33723",
+      "evidence": "Moglin Life Rank Needed: 3 Mana Cost: 30 Mana Cooldown: 8 Seconds Type: Magical Range: An infinite range skill that heals 7 friendly targets. Description: Your Moglins heal you and up to 6 allies, then apply buffs in the following order: Twilly: +20% Endurance for you and all allies Twig: HoT for you and all allies Cupcake: -25% mana costs for you and all allies Effects last for 20 seconds. If used out of combat, while you don't have a pet equipped, will summon Twilly. Note: Summons Twilly Temporary Battlepet."
+    },
+    {
+      "officialName": "Twilly’s Helping Hand",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Healing Power increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MoMP1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-of-moglins-class-2",
+      "sourceHash": "2607f4d4550d93290e80287cbf8ddb66398f88edf0360cb7a2bd0726ebc33723",
+      "evidence": "Twilly’s Helping Hand Rank Needed: 4 Type: Passive Description: Healing Power increased by 15%."
+    },
+    {
+      "officialName": "Zorbak’s Dark Influence",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "INT and DoT Power increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MoMP2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-of-moglins-class-2",
+      "sourceHash": "2607f4d4550d93290e80287cbf8ddb66398f88edf0360cb7a2bd0726ebc33723",
+      "evidence": "Zorbak’s Dark Influence Rank Needed: 4 Type: Passive Description: INT and DoT Power increased by 10%."
+    },
+    {
+      "officialName": "Moglins Frenzy!",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "15",
+      "skillType": "Magical",
+      "target": "An infinite range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "You and your Moglins unleash an all out attack! Deals damage and applies debuffs based on your active buffs.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MoMA4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-of-moglins-class-2",
+      "sourceHash": "2607f4d4550d93290e80287cbf8ddb66398f88edf0360cb7a2bd0726ebc33723",
+      "evidence": "Moglins Frenzy! Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 15 Seconds Type: Magical Range: An infinite range attack that deals damage to 4 hostile targets. Description: You and your Moglins unleash an all out attack! Deals damage and applies debuffs based on your active buffs. Pirate: -20% Haste Frogzard: -20% Hit Chance Quibble: -20% Crit Chance Paladin: -20% Damage Resistance Dricken: -20% outgoing damage Zorbak: Additional Spell Power DoT Legion: -20% Damage Resistance Mort: -50% Dodge Memet: 2 second stun Twilly: -20% outgoing damage Twig: 4 second Decay Cupcake: +20% Mana Costs Effects last 10 seconds."
+    },
+    {
+      "officialName": "Moglin Blitz",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Moglin Frenzy applies Moglin Blitz to your target, increasing the damage they take from each successive hit of the skill by 45%, up to 12 times.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-of-moglins-class-2",
+      "sourceHash": "2607f4d4550d93290e80287cbf8ddb66398f88edf0360cb7a2bd0726ebc33723",
+      "evidence": "Moglin Blitz Rank Needed: 10 Type: Passive Description: Moglin Frenzy applies Moglin Blitz to your target, increasing the damage they take from each successive hit of the skill by 45%, up to 12 times."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/aPThKia.png",
+  "sameSkillVariants": [
+    {
+      "name": "Dark Master of Moglins",
+      "url": "https://aqwwiki.wikidot.com/dark-master-of-moglins"
+    },
+    {
+      "name": "Master of Moglins (Class) (1)",
+      "url": "https://aqwwiki.wikidot.com/master-of-moglins-class-1"
+    }
+  ],
+  "location": "Location: Master of Moglins Class - Book of Lore\nPrice: 0 AC"
+}

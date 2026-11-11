@@ -1,0 +1,9 @@
+import {chromium,expect} from '@playwright/test';import fs from 'node:fs/promises';
+const browser=await chromium.launch();const results=[];
+try{for(const width of [375,768,1440,1920])for(const theme of ['dark','light']){const page=await browser.newPage({viewport:{width,height:1000},reducedMotion:'reduce'});await page.addInitScript(t=>localStorage.setItem('aqw-theme',t),theme);await page.goto('http://127.0.0.1:4181/ultra-boss/astral-empyrean');
+ const materials=page.locator('.equipment-selected-content .material-requirements');await expect(materials).not.toHaveAttribute('open');await materials.locator('summary').click();
+ await expect(materials.locator('.material-progress')).toHaveText('Nguyên liệu đã đánh dấu: 0 / 11 loại theo phương án đang chọn');
+ const primary=materials.getByRole('radio',{name:'DragonBlade of Nulgath ×1',exact:true}),alternative=materials.getByRole('radio',{name:"Dark Dragon Slayer's Halberd ×1",exact:true});await expect(primary).toBeChecked();
+ await materials.getByRole('checkbox',{name:'DragonBlade of Nulgath ×1',exact:true}).check();await expect(materials.locator('.material-progress')).toContainText('1 / 11');await alternative.check();await expect(materials.locator('.material-progress')).toContainText('0 / 11');await expect(materials.getByRole('checkbox',{name:'DragonBlade of Nulgath ×1',exact:true})).toHaveCount(0);
+ await page.reload();await materials.locator('summary').click();await expect(alternative).toBeChecked();await primary.check();await expect(materials.locator('.material-progress')).toContainText('1 / 11');await materials.screenshot({path:`qa/recovery/material-${width}-${theme}.png`});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);results.push({width,theme,passed:true});await page.close();}
+}finally{await browser.close();await fs.writeFile('qa/recovery/material-browser.json',JSON.stringify(results,null,2));}console.log({materialContexts:results.length});

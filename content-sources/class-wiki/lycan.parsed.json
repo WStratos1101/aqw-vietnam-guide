@@ -1,0 +1,118 @@
+{
+  "url": "https://aqwwiki.wikidot.com/lycan-class-ac",
+  "sourceHash": "b481e4114eefeac7d691551305286d077ae296bd5a9df42d9dbddf9f28f31120",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Double click a monster to start Auto Attacking it. This is a basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lycan-class-ac",
+      "sourceHash": "b481e4114eefeac7d691551305286d077ae296bd5a9df42d9dbddf9f28f31120",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Double click a monster to start Auto Attacking it. This is a basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Savagery",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "A medium range attack that deals damage to 1 target.",
+      "officialDescription": "With the strength and agility of a Lycan, a clumsy flail in an attempt to hit something becomes a nearly inescapable barrage. You tap into your beastly nature and apply one stack of Instinct for 6 seconds, increasing physical outgoing damage by 5% per stack, up to 5. Also applies a stacking HoT for 15 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill62.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lycan-class-ac",
+      "sourceHash": "b481e4114eefeac7d691551305286d077ae296bd5a9df42d9dbddf9f28f31120",
+      "evidence": "Savagery Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 4 Seconds Type: Physical Range: A medium range attack that deals damage to 1 target. Description: With the strength and agility of a Lycan, a clumsy flail in an attempt to hit something becomes a nearly inescapable barrage. You tap into your beastly nature and apply one stack of Instinct for 6 seconds, increasing physical outgoing damage by 5% per stack, up to 5. Also applies a stacking HoT for 15 seconds. Note: Never crits."
+    },
+    {
+      "officialName": "Thrill of Battle",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "6",
+      "skillType": "Physical",
+      "target": "A medium range attack that deals damage to 1 target.",
+      "officialDescription": "The thrill of battle gives you a rush. If Keystone Predator is active, applies Endless Hunt for 10 seconds, which increases your crit chance, crit damage, and dodge chance by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill102.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lycan-class-ac",
+      "sourceHash": "b481e4114eefeac7d691551305286d077ae296bd5a9df42d9dbddf9f28f31120",
+      "evidence": "Thrill of Battle Rank Needed: 2 Mana Cost: 0 Mana Cooldown: 6 Seconds Type: Physical Range: A medium range attack that deals damage to 1 target. Description: The thrill of battle gives you a rush. If Keystone Predator is active, applies Endless Hunt for 10 seconds, which increases your crit chance, crit damage, and dodge chance by 15%."
+    },
+    {
+      "officialName": "Pouncing Strike",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "20",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "With your new legs you send a mighty leaping kick to the head of your enemy, causing them, at the very least, to become really dizzy, reducing critical strike chance by 50% and Dodge Chance by 30% for 20 seconds. If the opponent was stunned by Howl of Terror, increases their incoming damage by either 15%, 20%, 25%, or 30% proportional to the length of the stun.",
+      "notes": [
+        "Deals 350% damage to a target in melee range.",
+        "Applies Disoriented to the enemy, lowering their critical strike chance by 50% and their dodge chance by 30%. Lasts 15 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill141.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lycan-class-ac",
+      "sourceHash": "b481e4114eefeac7d691551305286d077ae296bd5a9df42d9dbddf9f28f31120",
+      "evidence": "Pouncing Strike Rank Needed: 3 Mana Cost: 30 Mana Cooldown: 20 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: With your new legs you send a mighty leaping kick to the head of your enemy, causing them, at the very least, to become really dizzy, reducing critical strike chance by 50% and Dodge Chance by 30% for 20 seconds. If the opponent was stunned by Howl of Terror, increases their incoming damage by either 15%, 20%, 25%, or 30% proportional to the length of the stun. Notes: Deals 350% damage to a target in melee range. Applies Disoriented to the enemy, lowering their critical strike chance by 50% and their dodge chance by 30%. Lasts 15 seconds."
+    },
+    {
+      "officialName": "Lean Muscle",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased by 15% and crit chance increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lycan-class-ac",
+      "sourceHash": "b481e4114eefeac7d691551305286d077ae296bd5a9df42d9dbddf9f28f31120",
+      "evidence": "Lean Muscle Rank Needed: 4 Type: Passive Ability Description: Haste increased by 15% and crit chance increased by 15%."
+    },
+    {
+      "officialName": "Thick Fur",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage taken reduced by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lycan-class-ac",
+      "sourceHash": "b481e4114eefeac7d691551305286d077ae296bd5a9df42d9dbddf9f28f31120",
+      "evidence": "Thick Fur Rank Needed: 4 Type: Passive Ability Description: Damage taken reduced by 15%."
+    },
+    {
+      "officialName": "Howl of Terror",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "12",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "You let loose a blood-curdling call to the sky and your opponent, shaking them to their core. Applies Keystone Predator, which increases outgoing damage by 15% for 15 seconds. Also applies one of four stuns, lasting either 2, 3, 4 or 6 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill146.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lycan-class-ac",
+      "sourceHash": "b481e4114eefeac7d691551305286d077ae296bd5a9df42d9dbddf9f28f31120",
+      "evidence": "Howl of Terror Rank Needed: 5 Mana Cost: 20 Mana Cooldown: 12 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: You let loose a blood-curdling call to the sky and your opponent, shaking them to their core. Applies Keystone Predator, which increases outgoing damage by 15% for 15 seconds. Also applies one of four stuns, lasting either 2, 3, 4 or 6 seconds. Note: Stun is unavoidable."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/31apS0Z.png",
+  "sameSkillVariants": [
+    {
+      "name": "Lycan (Class) (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/lycan-class-0-ac"
+    }
+  ],
+  "location": "Locations:\n\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\nMogloween AC Shop \n\nBakeShop of Horrors\nCandy Shoppe\n\n\nMogloween Rares \n\nBattleon\nGame Menu\nPoe Hub\n\n\nThe Wyvern Shop - Poe Hub \n\nPrice: 2,000 AC"
+}

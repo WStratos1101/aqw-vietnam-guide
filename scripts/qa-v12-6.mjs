@@ -1,0 +1,15 @@
+import{alternativeChoices}from'../src/lib/class-ui-v12-8.mjs';
+import fs from 'node:fs';import{runQa,inspectPage}from'./qa-runtime.mjs';
+const read=p=>JSON.parse(fs.readFileSync(p));const catalog=read('src/content/challenges/catalog.json'),classes=read('src/content/classes/catalog.json'),arts=read('src/content/classes/art-variants.json');const artClass=classes.find(c=>alternativeChoices(arts,c.id,c.name).length>=2);const oneArtClass=classes.find(c=>alternativeChoices(arts,c.id,c.name).length<2);const calendar=read('src/content/classes/calendar-extension.json').profiles[0];
+await runQa('v12-6-browser',async({browser,base,result,dir,expect})=>{
+ const samples=['/ultra-boss/ultra-drago','/challenge-dungeon',...catalog.filter(c=>c.type==='dungeon'||['training-golem','infernal-battle-arena'].includes(c.id)).map(c=>c.href),'/class/'+calendar.slug,'/class/'+artClass.slug,'/class/'+oneArtClass.slug];
+ for(const width of[375,768,1440,1920])for(const theme of['dark','light']){
+ const page=await browser.newPage({viewport:{width,height:1000},reducedMotion:'reduce'});await page.addInitScript(t=>localStorage.setItem('aqw-theme',t),theme);const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ for(const path of samples){const item={path,width,theme,status:'not_run'};result.cases.push(item);try{
+ await page.goto(base+path);await page.locator('h1').waitFor();
+ const c=catalog.find(c=>c.href===path);if(c){await page.locator('.challenge-stage-selector button').first().waitFor();expect(await page.locator('.challenge-stage-selector button').count()).toBe(c.stageCount);const last=page.locator('.challenge-stage-selector button').nth(c.stageCount-1);await last.click();expect(await last.getAttribute('aria-pressed')).toBe('true');await page.locator('.challenge-stage-content input').check();}
+ if(path.startsWith('/class/')){await page.locator('[role=tab]').first().waitFor();const before=await page.locator('.class-related .class-card').evaluateAll(es=>es.map(e=>e.getAttribute('href')));expect(before.length).toBe(4);expect(new Set(before).size).toBe(4);expect(before.includes(path)).toBe(false);if(path==='/class/'+artClass.slug){const im=page.locator('.class-art-selector img');const src=await im.getAttribute('src');await page.locator('.class-art-switch button').nth(1).click();expect(await im.getAttribute('src')).not.toBe(src);}await page.locator('[role=tab]').nth(1).click();expect(await page.locator('[role=tab]').nth(1).getAttribute('aria-selected')).toBe('true');expect(await page.locator('.class-related .class-card').evaluateAll(es=>es.map(e=>e.getAttribute('href')))).toEqual(before);}
+ const checks=await inspectPage(page);expect(checks.overflow).toBe(false);expect(checks.brokenImages).toEqual([]);expect(errors).toEqual([]);const file=width+'-'+theme+'-'+path.replaceAll('/','_')+'.png';await page.screenshot({path:dir+'/'+file,fullPage:true});result.screenshots.push(file);item.status='passed';
+ }catch(e){item.status='failed';item.error=e.message;}}
+ await page.close();}
+});

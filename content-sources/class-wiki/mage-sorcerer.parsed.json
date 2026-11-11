@@ -1,0 +1,115 @@
+{
+  "url": "https://aqwwiki.wikidot.com/mage",
+  "sourceHash": "fc84a0f3e2bf79baa00e926db02381a295971b33838851b61c1e0e5a84195a49",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Double click a monster to start Auto Attacking it. This is a basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/mage",
+      "sourceHash": "fc84a0f3e2bf79baa00e926db02381a295971b33838851b61c1e0e5a84195a49",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Double click a monster to start Auto Attacking it. This is a basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Fireball",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Hurls flame at your target, dealing damage and applying Scorched, causing them to take damage over time. If Frozen Blood is active on your target, it is consumed to deal double damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill34.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/mage",
+      "sourceHash": "fc84a0f3e2bf79baa00e926db02381a295971b33838851b61c1e0e5a84195a49",
+      "evidence": "Fireball Rank Needed: 1 Mana Cost: 20 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Hurls flame at your target, dealing damage and applying Scorched, causing them to take damage over time. If Frozen Blood is active on your target, it is consumed to deal double damage."
+    },
+    {
+      "officialName": "Ice Shard",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Launches a freezing shard at your target, dealing damage and applying Frozen Blood, reducing their Haste and outgoing damage by 20% for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill61.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/mage",
+      "sourceHash": "fc84a0f3e2bf79baa00e926db02381a295971b33838851b61c1e0e5a84195a49",
+      "evidence": "Ice Shard Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Launches a freezing shard at your target, dealing damage and applying Frozen Blood, reducing their Haste and outgoing damage by 20% for 10 seconds. Note: Frozen Blood is not applied if Scorched is active."
+    },
+    {
+      "officialName": "Explosion",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "3",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Causes energies within your target to become unstable and burst forth, dealing moderate damage to your target and light damage to up to 3 additional targets. If Scorched is active on a target, it Detonates, dealing damage after 1 second.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill62.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/mage",
+      "sourceHash": "fc84a0f3e2bf79baa00e926db02381a295971b33838851b61c1e0e5a84195a49",
+      "evidence": "Explosion Rank Needed: 3 Mana Cost: 10 Mana Cooldown: 3 Seconds Type: Magical Range: A long range attack that deals damage to 4 hostile targets. Description: Causes energies within your target to become unstable and burst forth, dealing moderate damage to your target and light damage to up to 3 additional targets. If Scorched is active on a target, it Detonates, dealing damage after 1 second. Note: Detonate consumes Scorched."
+    },
+    {
+      "officialName": "Hot Headed",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Outgoing magic damage and Hit Chance increased by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/mage",
+      "sourceHash": "fc84a0f3e2bf79baa00e926db02381a295971b33838851b61c1e0e5a84195a49",
+      "evidence": "Hot Headed Rank Needed: 4 Type: Passive Ability Description: Outgoing magic damage and Hit Chance increased by 10%"
+    },
+    {
+      "officialName": "Chilled Out",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage taken reduced by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/mage",
+      "sourceHash": "fc84a0f3e2bf79baa00e926db02381a295971b33838851b61c1e0e5a84195a49",
+      "evidence": "Chilled Out Rank Needed: 4 Type: Passive Ability Description: Damage taken reduced by 10%"
+    },
+    {
+      "officialName": "Arcane Shield",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "20",
+      "skillType": "Magical",
+      "target": "A long range status skill that applies to yourself.",
+      "officialDescription": "Surround yourself with a magical shield, transferring a portion of the damage you take your mana instead of your health for 10 seconds. Damage reduction is based on your Spell Power.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill03.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/mage",
+      "sourceHash": "fc84a0f3e2bf79baa00e926db02381a295971b33838851b61c1e0e5a84195a49",
+      "evidence": "Arcane Shield Rank Needed: 5 Mana Cost: 0 Mana Cooldown: 20 Seconds Type: Magical Range: A long range status skill that applies to yourself. Description: Surround yourself with a magical shield, transferring a portion of the damage you take your mana instead of your health for 10 seconds. Damage reduction is based on your Spell Power."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/sLCvSbz.png",
+  "sameSkillVariants": [
+    {
+      "name": "Mage (Rare)",
+      "url": "https://aqwwiki.wikidot.com/mage-rare"
+    }
+  ],
+  "location": "Locations:\n\nCharacter creation\nArcana's Shop\n\n8-Bit Trainers\nBoss Challenge\nClass Hall A\nGrave Challenge \nTraining Hall\n\n\n\nPrice: 0 AC"
+}

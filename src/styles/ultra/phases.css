@@ -1,0 +1,185 @@
+.boss-phase-control {
+  margin-block: 12px 24px;
+  min-width: 0;
+}
+.boss-phase-selector {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 4px;
+  background: var(--u-panel);
+  border: 1px solid var(--ultra-border);
+  gap: 0;
+}
+.boss-phase-selector:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 4px auto 4px 4px;
+  width: calc((100% - 8px) / 4);
+  background: var(--u-text);
+  transform: translateX(calc(var(--phase-index) * 100%));
+  transition: transform 0.22s ease;
+}
+.boss-phase-selector button {
+  min-width: 0;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  color: var(--u-text);
+  font: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+.boss-phase-selector button[aria-pressed="true"] {
+  color: var(--entity-accent-ink, var(--u-bg));
+}
+.boss-phase-selector button span {
+  font-size: 11px;
+  opacity: 0.65;
+}
+.boss-phase-selector button:focus-visible {
+  outline: 2px solid var(--u-gold);
+  outline-offset: 3px;
+}
+.boss-phase-transition {
+  padding: 16px;
+  background: var(--u-panel);
+}
+.boss-phase-transition p {
+  margin: 4px 0;
+}
+.boss-phase-transition small {
+  display: block;
+  margin-top: 8px;
+}
+.phase-content {
+  animation: phase-enter 0.2s ease;
+  min-height: 350px;
+}
+.phase-stat-modifiers {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+.phase-stat-modifiers p {
+  margin: 0;
+  padding: 10px;
+  background: var(--u-bg);
+}
+.phase-stat-modifiers small {
+  display: block;
+}
+.boss-phase-strategy,
+.boss-global-timeline,
+.phase-combat-notes {
+  margin-block: 24px;
+  padding: 20px;
+  background: var(--u-panel);
+  overflow-wrap: anywhere;
+}
+.boss-phase-strategy h3,
+.boss-global-timeline h3 {
+  margin-top: 0;
+}
+.phase-objective {
+  font-size: 20px;
+}
+.boss-phase-strategy details {
+  padding: 12px 0;
+}
+.boss-phase-strategy summary {
+  cursor: pointer;
+  font-weight: 600;
+  min-height: 32px;
+}
+.boss-phase-strategy a {
+  font-size: 13px;
+  text-decoration: underline;
+}
+.phase-rotations {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 24px;
+}
+.phase-combo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 12px;
+}
+.phase-combo span {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.phase-combo kbd {
+  padding: 5px 9px;
+  background: var(--u-text);
+  color: var(--entity-accent-ink, var(--u-bg));
+  font: inherit;
+}
+.phase-combo b {
+  font-weight: 400;
+}
+.boss-global-timeline ol {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.boss-global-timeline li {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 12px;
+}
+.boss-global-timeline > p {
+  font-size: 13px;
+}
+.is-compact .phase-rotations {
+  grid-template-columns: 1fr;
+}
+@keyframes phase-enter {
+  from {
+    opacity: 0.4;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 600px) {
+  .boss-phase-selector button {
+    font-size: 10px;
+    gap: 3px;
+  }
+  .boss-phase-selector button span {
+    font-size: 10px;
+  }
+  .phase-rotations {
+    grid-template-columns: 1fr;
+  }
+  .boss-phase-strategy,
+  .boss-global-timeline,
+  .phase-combat-notes {
+    padding: 14px;
+  }
+  .phase-objective {
+    font-size: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .boss-phase-selector:before {
+    transition: none;
+  }
+  .phase-content {
+    animation: none;
+  }
+}

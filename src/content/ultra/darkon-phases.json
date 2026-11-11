@@ -1,0 +1,1758 @@
+{
+  "bossId": "darkon-the-conductor",
+  "attacks": [
+    {
+      "id": "auto-attack",
+      "officialName": "Auto Attack",
+      "damageType": "True Damage",
+      "baseDamage": "100 (trước hệ số sát thương chí mạng)",
+      "cooldown": "2.25 giây",
+      "targetCount": "4",
+      "sharedEffects": [
+        "Luôn chí mạng; bỏ qua Focus.",
+        "Giảm Dodge của người chơi 500%."
+      ],
+      "sharedBossEffects": [],
+      "phaseEffects": [
+        {
+          "phaseId": "overture",
+          "attackId": "auto-attack",
+          "playerEffects": [
+            "Melancholic Melodies: giảm Hit Chance 50%."
+          ],
+          "bossEffects": [],
+          "condition": "Overture đang hoạt động",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        },
+        {
+          "phaseId": "recitative",
+          "attackId": "auto-attack",
+          "playerEffects": [
+            "Realm of the Arcana: giảm Haste 6% mỗi stack, tối đa 22 stack."
+          ],
+          "bossEffects": [],
+          "condition": "Recitative đang hoạt động",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        },
+        {
+          "phaseId": "madness",
+          "attackId": "auto-attack",
+          "playerEffects": [
+            "Requiem for the Wicked: giảm hồi máu nhận vào 80%."
+          ],
+          "bossEffects": [],
+          "condition": "Aria đang hoạt động",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        },
+        {
+          "phaseId": "rush",
+          "attackId": "auto-attack",
+          "playerEffects": [
+            "Requiem for the Wicked: giảm hồi máu nhận vào 80%."
+          ],
+          "bossEffects": [],
+          "condition": "Aria đang hoạt động",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    },
+    {
+      "id": "cycle-end",
+      "officialName": "The Cycle's End",
+      "damageType": null,
+      "baseDamage": null,
+      "cooldown": "30 giây",
+      "targetCount": "Bản thân",
+      "sharedEffects": [],
+      "sharedBossEffects": [
+        "The Cycle's End: tăng sát thương vật lý và phép nhận vào 10% mỗi stack, tối đa 10 stack."
+      ],
+      "phaseEffects": [],
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+      "trigger": "Tự áp lên Darkon theo chu kỳ.",
+      "phaseIds": null
+    },
+    {
+      "id": "end-world",
+      "officialName": "End of the World",
+      "damageType": null,
+      "baseDamage": null,
+      "cooldown": null,
+      "targetCount": null,
+      "sharedEffects": [
+        "Báo trước Curtain Call; cần kết thúc trận trước khi niệm xong."
+      ],
+      "sharedBossEffects": [],
+      "phaseEffects": [],
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+      "trigger": "Kích hoạt sau 4 phút 30 giây; niệm 3 giây rồi dùng Curtain Call.",
+      "phaseIds": null
+    },
+    {
+      "id": "curtain-call",
+      "officialName": "Curtain Call",
+      "damageType": "True Damage",
+      "baseDamage": "100.000.337",
+      "cooldown": null,
+      "targetCount": "4",
+      "sharedEffects": [
+        "Bỏ qua Focus.",
+        "Áp Curtain Call, một DoT gây tử vong."
+      ],
+      "sharedBossEffects": [],
+      "phaseEffects": [],
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+      "trigger": "Ngay sau khi End of the World niệm xong.",
+      "phaseIds": null
+    },
+    {
+      "id": "overture",
+      "officialName": "Overture",
+      "damageType": null,
+      "baseDamage": null,
+      "cooldown": null,
+      "targetCount": "4",
+      "sharedEffects": [],
+      "sharedBossEffects": [
+        "Áp Do Dawn và Overture lên Darkon; bắt đầu bộ hiệu ứng Overture."
+      ],
+      "phaseEffects": [],
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+      "trigger": "Dùng một lần khi bắt đầu trận.",
+      "phaseIds": [
+        "overture"
+      ]
+    },
+    {
+      "id": "special-1",
+      "officialName": "Special 1",
+      "damageType": "True Damage",
+      "baseDamage": "90% HP hiện tại",
+      "cooldown": "12 giây",
+      "targetCount": "1",
+      "sharedEffects": [
+        "Luôn trúng; không chí mạng."
+      ],
+      "sharedBossEffects": [],
+      "phaseEffects": [
+        {
+          "phaseId": "overture",
+          "attackId": "special-1",
+          "playerEffects": [],
+          "bossEffects": [
+            "Mỗi lần dùng tiến một aura: Re → Mi → Fa → So → La → Ti. Mỗi aura tăng thêm 100% Crit Damage.",
+            "Khi đã có Ti, lần dùng kế tiếp áp Do Dusk: tăng Crit Damage 50.000%."
+          ],
+          "condition": "Khi Do Dawn đang hoạt động.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        },
+        {
+          "phaseId": "recitative",
+          "attackId": "special-1",
+          "playerEffects": [],
+          "bossEffects": [
+            "Áp Child of the Empress: tăng Crit Damage của Darkon 50% mỗi stack, tối đa 22 stack."
+          ],
+          "condition": "Khi Recitative đang hoạt động.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        },
+        {
+          "phaseId": "madness",
+          "attackId": "special-1",
+          "playerEffects": [
+            "Áp The Last Symphony, một DoT kéo dài 8 giây."
+          ],
+          "bossEffects": [],
+          "condition": "Khi Aria đang hoạt động.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        },
+        {
+          "phaseId": "rush",
+          "attackId": "special-1",
+          "playerEffects": [
+            "Áp The Last Symphony, một DoT kéo dài 8 giây."
+          ],
+          "bossEffects": [],
+          "condition": "Khi Aria đang hoạt động.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    },
+    {
+      "id": "special-2",
+      "officialName": "Special 2",
+      "damageType": "True Damage",
+      "baseDamage": "150 (trước hệ số sát thương chí mạng)",
+      "cooldown": "5 giây",
+      "targetCount": "4",
+      "sharedEffects": [
+        "Luôn chí mạng."
+      ],
+      "sharedBossEffects": [],
+      "phaseEffects": [
+        {
+          "phaseId": "overture",
+          "attackId": "special-2",
+          "playerEffects": [
+            "Áp Elegy of Madness trong 8 giây. Nếu đã có Elegy of Madness, nhận Captive Audience gây Stun 4 giây."
+          ],
+          "bossEffects": [],
+          "condition": "Khi Overture đang hoạt động.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        },
+        {
+          "phaseId": "recitative",
+          "attackId": "special-2",
+          "playerEffects": [
+            "Áp Seed Planted trong 8 giây, xóa mọi stack Realm of the Arcana.",
+            "Nếu đã có Seed Planted: nhận Grown trong 8 giây, tăng Crit Chance 1000 và giảm Crit Damage 1000%.",
+            "Nếu đã có Grown: nhận Harvested, một DoT gây tử vong."
+          ],
+          "bossEffects": [],
+          "condition": "Khi Recitative đang hoạt động.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        },
+        {
+          "phaseId": "madness",
+          "attackId": "special-2",
+          "playerEffects": [
+            "Áp Dirge of Astravia: tăng Mana Cost 25% trong 12 giây, tối đa 22 stack."
+          ],
+          "bossEffects": [],
+          "condition": "Khi Aria đang hoạt động.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        },
+        {
+          "phaseId": "rush",
+          "attackId": "special-2",
+          "playerEffects": [
+            "Áp Dirge of Astravia: tăng Mana Cost 25% trong 12 giây, tối đa 22 stack."
+          ],
+          "bossEffects": [],
+          "condition": "Khi Aria đang hoạt động.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    },
+    {
+      "id": "recitative",
+      "officialName": "Recitative",
+      "damageType": null,
+      "baseDamage": null,
+      "cooldown": null,
+      "targetCount": "4",
+      "sharedEffects": [
+        "Xóa các aura của Overture trên người chơi."
+      ],
+      "sharedBossEffects": [
+        "Xóa các aura của Overture trên Darkon.",
+        "Tăng Crit Damage 500%; bắt đầu bộ hiệu ứng Recitative."
+      ],
+      "phaseEffects": [],
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+      "trigger": "Dùng một lần khi Darkon còn 70% HP.",
+      "phaseIds": [
+        "recitative"
+      ]
+    },
+    {
+      "id": "aria",
+      "officialName": "Aria",
+      "damageType": "Physical",
+      "baseDamage": null,
+      "cooldown": null,
+      "targetCount": "4",
+      "sharedEffects": [
+        "Đòn chuyển phase gây sát thương vật lý; bỏ qua Focus và không chí mạng. Chưa xác minh lượng sát thương.",
+        "Xóa các aura của Recitative trên người chơi."
+      ],
+      "sharedBossEffects": [
+        "Hồi lên 90% HP tối đa; Decay không ngăn lần hồi máu này.",
+        "Xóa các aura của Recitative trên Darkon.",
+        "A Major: tăng Dodge 5000% trong 10 giây.",
+        "B Minor: giảm sát thương nhận vào 200% trong 20 giây.",
+        "C Minor: tăng Crit Damage 300% trong 30 giây.",
+        "B Major: giảm sát thương vật lý, phép và toàn bộ sát thương nhận vào 200% trong 50 giây.",
+        "C Major: tăng Crit Damage và sát thương gây ra 1000% trong 50 giây.",
+        "Khi C Major hết, Aria đưa Crit Damage và sát thương gây ra về 0; khi B Major hết, sát thương nhận vào tăng 200%."
+      ],
+      "phaseEffects": [],
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+      "trigger": "Dùng một lần khi Darkon còn 20% HP.",
+      "phaseIds": [
+        "madness",
+        "rush"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "id": "overture",
+      "name": "Overture",
+      "phaseOrder": 1,
+      "officialState": "Overture",
+      "trigger": "Bắt đầu trận; HP trên 70%, trước chuyển phase.",
+      "exitCondition": "Overture → Recitative: HP đạt 70%.",
+      "activeSkillIds": [
+        "auto-attack",
+        "special-1",
+        "special-2",
+        "overture",
+        "cycle-end",
+        "end-world",
+        "curtain-call"
+      ],
+      "phaseModifiers": [
+        {
+          "id": "do-dawn",
+          "name": "Do Dawn",
+          "label": "Do Dawn",
+          "effect": "Bộ tăng Crit Damage theo Re → Mi → Fa → So → La → Ti; Do Dusk ở lần Special 1 kế tiếp.",
+          "condition": "Từ Overture đến Recitative.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        }
+      ],
+      "combatNotes": [
+        "Melancholic Melodies giảm Hit Chance 50%.",
+        "Elegy of Madness 8 giây; bị áp lại gây Captive Audience, Stun 4 giây.",
+        "Re → Mi → Fa → So → La → Ti, mỗi aura +100% Crit Damage; lần tiếp theo là Do Dusk +50.000%."
+      ],
+      "objective": "Đẩy xuống 70% HP trước Do Dusk (khoảng 84 giây).",
+      "tauntStrategy": "Docs: hai người Taunt chính (LR + SC/IT hoặc PCM/AP; đội Speedrun là LR + LoO). Dùng Scroll of Enrage so le khi Focus còn khoảng 1/8. LoO có thể dự bị ở đội hình phù hợp. Thống nhất người mở đầu; không giao DPS chính Taunt thường quy. Mục tiêu: tránh Stun cả đội.",
+      "recommendedRotations": [
+        {
+          "className": "Void Highlord",
+          "team": "Speedrun: VHL/AI · LC · LR · LoO",
+          "sequence": [
+            "4",
+            "5",
+            "3",
+            "2",
+            "4",
+            "3",
+            "2",
+            "4",
+            "3",
+            "2"
+          ],
+          "notes": "Dùng 3 trước 2, 4 trước 5. HP dưới 1.500: ngừng 2/4, dùng 3 hồi máu.",
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+          "teamIds": [
+            "recovery-team-4"
+          ]
+        },
+        {
+          "className": "Legion Revenant",
+          "sequence": [
+            "4",
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Pre-buff 4; mở 4 → 2 → 3 → 5, sau đó spam và dùng 4 ngay khi hồi xong.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "StoneCrusher / Infinity Titan",
+          "sequence": [
+            "3",
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Pre-buff 3 và 4; dùng 3 → 4 → 2 → 5; Taunt cùng LR.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "LightCaster",
+          "sequence": [
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Pre-buff 4; dùng chính 2/3/5, dùng lại 4 khi cần Heal. Phối hợp Heal với LoO.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Lord of Order",
+          "sequence": [],
+          "notes": "Pre-buff 2/3/4, duy trì các skill và canh Heal 3 theo HP đội. Dự bị SoE theo phân công; Team 4 Taunt chính cùng LR.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Chaos Avenger",
+          "sequence": [
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Dùng 4 → 2 → 5; chỉ dùng 3 khi hiệu ứng hết, quan sát Class Actives/Auras UI.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Paladin Chronomancer",
+          "sequence": [
+            "2",
+            "4",
+            "2",
+            "3"
+          ],
+          "notes": "Pre-buff 3; 2 → 4 → 2 → 3, spam 2 đến khi HP bình thường rồi 5. Trước khi 4 hồi xong dùng 5 rồi lặp; 3 chỉ khi cần buff máu.",
+          "teamIds": [
+            "recovery-team-2",
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "ArchPaladin",
+          "sequence": [
+            "4",
+            "2",
+            "2",
+            "5"
+          ],
+          "notes": "Thay PCM ở Team 3: pre-buff 3; 4 → 2 → 2 → 5 hoặc 4 → 2 → 5. Canh 3 để Heal; nếu chết, vào lại và dùng 4 trước SoE.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Arcana Invoker",
+          "sequence": [
+            "2",
+            "4"
+          ],
+          "notes": "Thay VHL ở Team 4: mở 2 → 4; spam 3/4/5 đến Judgement thì 4 → 2. Tiếp tục 3/4/5 đến The World gần hết thì 2 nuke và lặp (bỏ 2 mở đầu).",
+          "teamIds": [
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        }
+      ],
+      "source": [
+        "https://aqwwiki.wikidot.com/darkon-the-conductor",
+        "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/darkon-the-conductor"
+      ]
+    },
+    {
+      "id": "recitative",
+      "name": "Recitative",
+      "phaseOrder": 2,
+      "officialState": "Recitative",
+      "trigger": "HP đạt 70%; Recitative kích hoạt.",
+      "exitCondition": "Recitative → Madness: HP đạt 20%, Aria kích hoạt.",
+      "activeSkillIds": [
+        "auto-attack",
+        "special-1",
+        "special-2",
+        "recitative",
+        "cycle-end",
+        "end-world",
+        "curtain-call"
+      ],
+      "phaseModifiers": [
+        {
+          "id": "recitative",
+          "name": "Recitative",
+          "label": "Recitative",
+          "effect": "Crit Damage +500%; xóa aura Overture.",
+          "condition": "Tại 70% HP.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        },
+        {
+          "id": "realm-of-the-arcana",
+          "name": "Realm of the Arcana",
+          "label": "Realm of the Arcana",
+          "effect": "Người chơi: Haste −6%/stack, tối đa 22; được Seed Planted xóa.",
+          "condition": "Mỗi Auto Attack trong Recitative.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        },
+        {
+          "id": "child-of-the-empress",
+          "name": "Child of the Empress",
+          "label": "Child of the Empress",
+          "effect": "Boss: Crit Damage +50%/stack, tối đa 22.",
+          "condition": "Mỗi Special 1 trong Recitative.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        }
+      ],
+      "combatNotes": [
+        "Realm of the Arcana: −6% Haste/stack, tối đa 22.",
+        "Seed Planted 8 giây xóa Realm of the Arcana; áp lại khi Seed còn sẽ thành Grown, rồi Harvested gây tử vong.",
+        "Grown: Crit Chance +1000 (Wiki không ghi đơn vị), Crit Damage −1000%."
+      ],
+      "objective": "Giữ Focus liên tục, hạn chế Grown/Harvested; đẩy xuống 20% HP.",
+      "tauntStrategy": "Docs: hai người Taunt chính (LR + SC/IT hoặc PCM/AP; đội Speedrun là LR + LoO). Dùng Scroll of Enrage so le khi Focus còn khoảng 1/8. LoO có thể dự bị ở đội hình phù hợp. Thống nhất người mở đầu; không giao DPS chính Taunt thường quy. Mục tiêu: không để Seed → Grown → Harvested.",
+      "recommendedRotations": [
+        {
+          "className": "Void Highlord",
+          "team": "Speedrun: VHL/AI · LC · LR · LoO",
+          "sequence": [
+            "5",
+            "3",
+            "2"
+          ],
+          "notes": "Chỉ dùng 4 khi HP trên 3.000.",
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+          "teamIds": [
+            "recovery-team-4"
+          ]
+        },
+        {
+          "className": "Legion Revenant",
+          "sequence": [
+            "4",
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Duy trì 4; phối hợp SoE để ngăn Grown/Harvested.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "StoneCrusher / Infinity Titan",
+          "sequence": [
+            "3",
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Duy trì combo và SoE cùng LR; không để Focus trống giữa các lần Special 2.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "LightCaster",
+          "sequence": [
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Pre-buff 4. Canh 4 khi team dưới 50% HP hoặc một người dưới 30%. Nếu Grown làm đòn đánh hồi máu Boss, dừng 3 đến khi hết.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Lord of Order",
+          "sequence": [],
+          "notes": "Pre-buff 2/3/4, duy trì buff. Dừng 5 khi Boss còn 10m; dùng lại khoảng 4,6–4,5m (hiệu lực 4s) để chặn đòn Aria. Dừng 3 nếu Grown khiến đòn đánh hồi máu Boss.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Chaos Avenger",
+          "sequence": [
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Dùng 3 khi thấy cooldown chậm; quan sát Focus gần còn 1/2 trước khi dùng.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Paladin Chronomancer",
+          "sequence": [
+            "2",
+            "4",
+            "2",
+            "3"
+          ],
+          "notes": "Spam 2 đến khi HP bình thường rồi 5; trước khi 4 hồi xong dùng 5 và lặp. Nếu Grown hồi máu Boss: Team 2 dừng 3/4, Team 3 dừng 3.",
+          "teamIds": [
+            "recovery-team-2",
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "ArchPaladin",
+          "sequence": [
+            "4",
+            "2",
+            "2",
+            "5"
+          ],
+          "notes": "Thay PCM ở Team 3. Canh 3 để Heal; nếu Grown hồi máu Boss, dừng 3 đến khi hết.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Arcana Invoker",
+          "sequence": [
+            "2",
+            "4"
+          ],
+          "notes": "Thay VHL ở Team 4: giữ vòng Judgement / The World như Docs; chưa có combo riêng từng phase cho AI. Theo mục tiêu và Taunt của phase hiện tại.",
+          "teamIds": [
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        }
+      ],
+      "source": [
+        "https://aqwwiki.wikidot.com/darkon-the-conductor",
+        "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/darkon-the-conductor"
+      ]
+    },
+    {
+      "id": "madness",
+      "name": "Madness",
+      "phaseOrder": 3,
+      "officialState": "Aria",
+      "trigger": "HP đạt 20%; Aria kích hoạt và hồi lên 90% HP tối đa.",
+      "exitCondition": "Madness → Rush: B Major và C Major hết sau 50 giây từ Aria.",
+      "activeSkillIds": [
+        "auto-attack",
+        "special-1",
+        "special-2",
+        "aria",
+        "cycle-end",
+        "end-world",
+        "curtain-call"
+      ],
+      "phaseModifiers": [
+        {
+          "id": "a-major",
+          "name": "A Major",
+          "label": "A Major",
+          "effect": "Boss: Dodge +5000%.",
+          "condition": "Tồn tại 10 giây tính từ Aria; có thể đã hết trong Madness.",
+          "duration": 10,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        },
+        {
+          "id": "b-minor",
+          "name": "B Minor",
+          "label": "B Minor",
+          "effect": "Boss: sát thương nhận vào −200%.",
+          "condition": "Tồn tại 20 giây tính từ Aria; có thể đã hết trong Madness.",
+          "duration": 20,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        },
+        {
+          "id": "c-minor",
+          "name": "C Minor",
+          "label": "C Minor",
+          "effect": "Boss: Crit Damage +300%.",
+          "condition": "Tồn tại 30 giây tính từ Aria; có thể đã hết trong Madness.",
+          "duration": 30,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        },
+        {
+          "id": "b-major",
+          "name": "B Major",
+          "label": "B Major",
+          "effect": "Boss: sát thương vật lý, phép và toàn bộ sát thương nhận vào −200%.",
+          "condition": "Tồn tại 50 giây tính từ Aria; có thể đã hết trong Madness.",
+          "duration": 50,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        },
+        {
+          "id": "c-major",
+          "name": "C Major",
+          "label": "C Major",
+          "effect": "Boss: Crit Damage và sát thương gây ra +1000%.",
+          "condition": "Tồn tại 50 giây tính từ Aria; có thể đã hết trong Madness.",
+          "duration": 50,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        },
+        {
+          "id": "aria",
+          "name": "Aria",
+          "label": "Aria",
+          "effect": "Bộ hiệu ứng Aria; các buff có thời hạn riêng. B Major/C Major hết mới mở Rush.",
+          "condition": "Sau Aria, tiếp tục qua Rush.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        }
+      ],
+      "combatNotes": [
+        "Aria hồi Darkon lên 90% Max HP; không quay lại Overture/Recitative, không bị Decay chặn.",
+        "Requiem for the Wicked: −80% hồi máu nhận vào. The Last Symphony: DoT 8 giây.",
+        "Dirge of Astravia: +25% Mana Cost/stack trong 12 giây, tối đa 22 stack."
+      ],
+      "objective": "Sống sót khoảng 50 giây từ lúc Aria kích hoạt.",
+      "tauntStrategy": "Docs: hai người Taunt chính (LR + SC/IT hoặc PCM/AP; đội Speedrun là LR + LoO). Dùng Scroll of Enrage so le khi Focus còn khoảng 1/8. LoO có thể dự bị ở đội hình phù hợp. Thống nhất người mở đầu; không giao DPS chính Taunt thường quy. Giữ người Taunt sống; thay dự bị ngay khi người chính chết.",
+      "recommendedRotations": [
+        {
+          "className": "Void Highlord",
+          "team": "Speedrun: VHL/AI · LC · LR · LoO",
+          "sequence": [
+            "5",
+            "3",
+            "2"
+          ],
+          "notes": "HP dưới 2.000: dừng 2.",
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+          "teamIds": [
+            "recovery-team-4"
+          ]
+        },
+        {
+          "className": "Legion Revenant",
+          "sequence": [
+            "4",
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Duy trì 4, ưu tiên sống và giữ nhịp SoE cùng đồng đội.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "StoneCrusher / Infinity Titan",
+          "sequence": [
+            "3",
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Duy trì hỗ trợ/hồi máu và SoE; sinh tồn qua B Major/C Major.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "LightCaster",
+          "sequence": [
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Canh Heal 4 khi team dưới 50% HP hoặc một người dưới 30%; phối hợp LoO, tránh Vainglory theo cảnh báo chung Docs.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Lord of Order",
+          "sequence": [],
+          "notes": "Duy trì buff và canh Heal 3 cùng LC/PCM/AP. Dự bị SoE theo phân công; Team 4 Taunt chính cùng LR.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Chaos Avenger",
+          "sequence": [
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Dùng 4 → 2 → 5; chỉ dùng 3 khi hiệu ứng hết, quan sát Class Actives/Auras UI.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Paladin Chronomancer",
+          "sequence": [
+            "2",
+            "4",
+            "2",
+            "3"
+          ],
+          "notes": "Pre-buff 3; 2 → 4 → 2 → 3, spam 2 đến khi HP bình thường rồi 5. Trước khi 4 hồi xong dùng 5 rồi lặp; 3 chỉ khi cần buff máu.",
+          "teamIds": [
+            "recovery-team-2",
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "ArchPaladin",
+          "sequence": [
+            "4",
+            "2",
+            "2",
+            "5"
+          ],
+          "notes": "Thay PCM ở Team 3: pre-buff 3; 4 → 2 → 2 → 5 hoặc 4 → 2 → 5. Canh 3 để Heal; nếu chết, vào lại và dùng 4 trước SoE.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Arcana Invoker",
+          "sequence": [
+            "2",
+            "4"
+          ],
+          "notes": "Thay VHL ở Team 4: giữ vòng Judgement / The World như Docs; chưa có combo riêng từng phase cho AI. Theo mục tiêu và Taunt của phase hiện tại.",
+          "teamIds": [
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        }
+      ],
+      "source": [
+        "https://aqwwiki.wikidot.com/darkon-the-conductor",
+        "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/darkon-the-conductor"
+      ]
+    },
+    {
+      "id": "rush",
+      "name": "Rush",
+      "phaseOrder": 4,
+      "officialState": "Aria",
+      "trigger": "Khoảng 50 giây sau Aria, khi B Major và C Major hết hiệu lực.",
+      "exitCondition": "Rush → End: hạ Boss trước khi Curtain Call kích hoạt.",
+      "activeSkillIds": [
+        "auto-attack",
+        "special-1",
+        "special-2",
+        "cycle-end",
+        "end-world",
+        "curtain-call"
+      ],
+      "phaseModifiers": [
+        {
+          "id": "aria",
+          "name": "Aria",
+          "label": "Aria",
+          "effect": "Sau C Major: Crit Damage và sát thương gây ra về 0. Sau B Major: sát thương nhận vào +200%. Requiem for the Wicked, The Last Symphony và Dirge of Astravia vẫn áp dụng.",
+          "condition": "Sau khi B Major/C Major hết; các buff 10/20/30 giây đã hết.",
+          "duration": null,
+          "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+          "monsterId": "boss"
+        }
+      ],
+      "combatNotes": [
+        "Aria và các debuff từ Auto Attack/Special 1/Special 2 vẫn hoạt động.",
+        "B Major/C Major đã hết sau 50 giây; Aria đưa Crit Damage/sát thương gây ra về 0 và tăng sát thương nhận vào 200%.",
+        "The Last Symphony vẫn gây DoT; giữ Taunt để DPS tránh tích Mana Cost."
+      ],
+      "objective": "Dồn sát thương sau B Major/C Major; kết thúc trước Curtain Call.",
+      "tauntStrategy": "Docs: hai người Taunt chính (LR + SC/IT hoặc PCM/AP; đội Speedrun là LR + LoO). Dùng Scroll of Enrage so le khi Focus còn khoảng 1/8. LoO có thể dự bị ở đội hình phù hợp. Thống nhất người mở đầu; không giao DPS chính Taunt thường quy. Tiếp tục Taunt để bảo vệ Mana Cost của DPS.",
+      "recommendedRotations": [
+        {
+          "className": "Void Highlord",
+          "team": "Speedrun: VHL/AI · LC · LR · LoO",
+          "sequence": [
+            "4",
+            "5",
+            "3",
+            "2",
+            "4",
+            "3",
+            "2",
+            "4",
+            "3",
+            "2"
+          ],
+          "notes": "Docs cho dùng lại combo phase 1; Site cho 5 → 3 → 2, chỉ dùng 4 khi HP trên 3.000. Hai phương án khác nguồn, không trộn.",
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+          "teamIds": [
+            "recovery-team-4"
+          ]
+        },
+        {
+          "className": "Legion Revenant",
+          "sequence": [
+            "4",
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Duy trì 4, tiếp tục SoE để bảo vệ DPS khỏi Dirge of Astravia.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "StoneCrusher / Infinity Titan",
+          "sequence": [
+            "3",
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Tiếp tục hỗ trợ và SoE khi đội dồn sát thương.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "LightCaster",
+          "sequence": [
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Pre-buff 4; dùng chính 2/3/5, dùng lại 4 khi cần Heal. Phối hợp Heal với LoO.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Lord of Order",
+          "sequence": [],
+          "notes": "Pre-buff 2/3/4, duy trì các skill và canh Heal 3 theo HP đội. Dự bị SoE theo phân công; Team 4 Taunt chính cùng LR.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Chaos Avenger",
+          "sequence": [
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Dùng 4 → 2 → 5; chỉ dùng 3 khi hiệu ứng hết, quan sát Class Actives/Auras UI.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Paladin Chronomancer",
+          "sequence": [
+            "2",
+            "4",
+            "2",
+            "3"
+          ],
+          "notes": "Pre-buff 3; 2 → 4 → 2 → 3, spam 2 đến khi HP bình thường rồi 5. Trước khi 4 hồi xong dùng 5 rồi lặp; 3 chỉ khi cần buff máu.",
+          "teamIds": [
+            "recovery-team-2",
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "ArchPaladin",
+          "sequence": [
+            "4",
+            "2",
+            "2",
+            "5"
+          ],
+          "notes": "Thay PCM ở Team 3: pre-buff 3; 4 → 2 → 2 → 5 hoặc 4 → 2 → 5. Canh 3 để Heal; nếu chết, vào lại và dùng 4 trước SoE.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Arcana Invoker",
+          "sequence": [
+            "2",
+            "4"
+          ],
+          "notes": "Thay VHL ở Team 4: giữ vòng Judgement / The World như Docs; chưa có combo riêng từng phase cho AI. Theo mục tiêu và Taunt của phase hiện tại.",
+          "teamIds": [
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        }
+      ],
+      "source": [
+        "https://aqwwiki.wikidot.com/darkon-the-conductor",
+        "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/darkon-the-conductor"
+      ]
+    }
+  ],
+  "phaseStrategies": {
+    "overture": {
+      "objective": "Đẩy xuống 70% HP trước Do Dusk (khoảng 84 giây).",
+      "tauntStrategy": "Docs: hai người Taunt chính (LR + SC/IT hoặc PCM/AP; đội Speedrun là LR + LoO). Dùng Scroll of Enrage so le khi Focus còn khoảng 1/8. LoO có thể dự bị ở đội hình phù hợp. Thống nhất người mở đầu; không giao DPS chính Taunt thường quy. Mục tiêu: tránh Stun cả đội.",
+      "recommendedRotations": [
+        {
+          "className": "Void Highlord",
+          "team": "Speedrun: VHL/AI · LC · LR · LoO",
+          "sequence": [
+            "4",
+            "5",
+            "3",
+            "2",
+            "4",
+            "3",
+            "2",
+            "4",
+            "3",
+            "2"
+          ],
+          "notes": "Dùng 3 trước 2, 4 trước 5. HP dưới 1.500: ngừng 2/4, dùng 3 hồi máu.",
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+          "teamIds": [
+            "recovery-team-4"
+          ]
+        },
+        {
+          "className": "Legion Revenant",
+          "sequence": [
+            "4",
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Pre-buff 4; mở 4 → 2 → 3 → 5, sau đó spam và dùng 4 ngay khi hồi xong.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "StoneCrusher / Infinity Titan",
+          "sequence": [
+            "3",
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Pre-buff 3 và 4; dùng 3 → 4 → 2 → 5; Taunt cùng LR.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "LightCaster",
+          "sequence": [
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Pre-buff 4; dùng chính 2/3/5, dùng lại 4 khi cần Heal. Phối hợp Heal với LoO.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Lord of Order",
+          "sequence": [],
+          "notes": "Pre-buff 2/3/4, duy trì các skill và canh Heal 3 theo HP đội. Dự bị SoE theo phân công; Team 4 Taunt chính cùng LR.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Chaos Avenger",
+          "sequence": [
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Dùng 4 → 2 → 5; chỉ dùng 3 khi hiệu ứng hết, quan sát Class Actives/Auras UI.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Paladin Chronomancer",
+          "sequence": [
+            "2",
+            "4",
+            "2",
+            "3"
+          ],
+          "notes": "Pre-buff 3; 2 → 4 → 2 → 3, spam 2 đến khi HP bình thường rồi 5. Trước khi 4 hồi xong dùng 5 rồi lặp; 3 chỉ khi cần buff máu.",
+          "teamIds": [
+            "recovery-team-2",
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "ArchPaladin",
+          "sequence": [
+            "4",
+            "2",
+            "2",
+            "5"
+          ],
+          "notes": "Thay PCM ở Team 3: pre-buff 3; 4 → 2 → 2 → 5 hoặc 4 → 2 → 5. Canh 3 để Heal; nếu chết, vào lại và dùng 4 trước SoE.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Arcana Invoker",
+          "sequence": [
+            "2",
+            "4"
+          ],
+          "notes": "Thay VHL ở Team 4: mở 2 → 4; spam 3/4/5 đến Judgement thì 4 → 2. Tiếp tục 3/4/5 đến The World gần hết thì 2 nuke và lặp (bỏ 2 mở đầu).",
+          "teamIds": [
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    "recitative": {
+      "objective": "Giữ Focus liên tục, hạn chế Grown/Harvested; đẩy xuống 20% HP.",
+      "tauntStrategy": "Docs: hai người Taunt chính (LR + SC/IT hoặc PCM/AP; đội Speedrun là LR + LoO). Dùng Scroll of Enrage so le khi Focus còn khoảng 1/8. LoO có thể dự bị ở đội hình phù hợp. Thống nhất người mở đầu; không giao DPS chính Taunt thường quy. Mục tiêu: không để Seed → Grown → Harvested.",
+      "recommendedRotations": [
+        {
+          "className": "Void Highlord",
+          "team": "Speedrun: VHL/AI · LC · LR · LoO",
+          "sequence": [
+            "5",
+            "3",
+            "2"
+          ],
+          "notes": "Chỉ dùng 4 khi HP trên 3.000.",
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+          "teamIds": [
+            "recovery-team-4"
+          ]
+        },
+        {
+          "className": "Legion Revenant",
+          "sequence": [
+            "4",
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Duy trì 4; phối hợp SoE để ngăn Grown/Harvested.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "StoneCrusher / Infinity Titan",
+          "sequence": [
+            "3",
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Duy trì combo và SoE cùng LR; không để Focus trống giữa các lần Special 2.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "LightCaster",
+          "sequence": [
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Pre-buff 4. Canh 4 khi team dưới 50% HP hoặc một người dưới 30%. Nếu Grown làm đòn đánh hồi máu Boss, dừng 3 đến khi hết.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Lord of Order",
+          "sequence": [],
+          "notes": "Pre-buff 2/3/4, duy trì buff. Dừng 5 khi Boss còn 10m; dùng lại khoảng 4,6–4,5m (hiệu lực 4s) để chặn đòn Aria. Dừng 3 nếu Grown khiến đòn đánh hồi máu Boss.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Chaos Avenger",
+          "sequence": [
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Dùng 3 khi thấy cooldown chậm; quan sát Focus gần còn 1/2 trước khi dùng.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Paladin Chronomancer",
+          "sequence": [
+            "2",
+            "4",
+            "2",
+            "3"
+          ],
+          "notes": "Spam 2 đến khi HP bình thường rồi 5; trước khi 4 hồi xong dùng 5 và lặp. Nếu Grown hồi máu Boss: Team 2 dừng 3/4, Team 3 dừng 3.",
+          "teamIds": [
+            "recovery-team-2",
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "ArchPaladin",
+          "sequence": [
+            "4",
+            "2",
+            "2",
+            "5"
+          ],
+          "notes": "Thay PCM ở Team 3. Canh 3 để Heal; nếu Grown hồi máu Boss, dừng 3 đến khi hết.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Arcana Invoker",
+          "sequence": [
+            "2",
+            "4"
+          ],
+          "notes": "Thay VHL ở Team 4: giữ vòng Judgement / The World như Docs; chưa có combo riêng từng phase cho AI. Theo mục tiêu và Taunt của phase hiện tại.",
+          "teamIds": [
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    "madness": {
+      "objective": "Sống sót khoảng 50 giây từ lúc Aria kích hoạt.",
+      "tauntStrategy": "Docs: hai người Taunt chính (LR + SC/IT hoặc PCM/AP; đội Speedrun là LR + LoO). Dùng Scroll of Enrage so le khi Focus còn khoảng 1/8. LoO có thể dự bị ở đội hình phù hợp. Thống nhất người mở đầu; không giao DPS chính Taunt thường quy. Giữ người Taunt sống; thay dự bị ngay khi người chính chết.",
+      "recommendedRotations": [
+        {
+          "className": "Void Highlord",
+          "team": "Speedrun: VHL/AI · LC · LR · LoO",
+          "sequence": [
+            "5",
+            "3",
+            "2"
+          ],
+          "notes": "HP dưới 2.000: dừng 2.",
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+          "teamIds": [
+            "recovery-team-4"
+          ]
+        },
+        {
+          "className": "Legion Revenant",
+          "sequence": [
+            "4",
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Duy trì 4, ưu tiên sống và giữ nhịp SoE cùng đồng đội.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "StoneCrusher / Infinity Titan",
+          "sequence": [
+            "3",
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Duy trì hỗ trợ/hồi máu và SoE; sinh tồn qua B Major/C Major.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "LightCaster",
+          "sequence": [
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Canh Heal 4 khi team dưới 50% HP hoặc một người dưới 30%; phối hợp LoO, tránh Vainglory theo cảnh báo chung Docs.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Lord of Order",
+          "sequence": [],
+          "notes": "Duy trì buff và canh Heal 3 cùng LC/PCM/AP. Dự bị SoE theo phân công; Team 4 Taunt chính cùng LR.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Chaos Avenger",
+          "sequence": [
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Dùng 4 → 2 → 5; chỉ dùng 3 khi hiệu ứng hết, quan sát Class Actives/Auras UI.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Paladin Chronomancer",
+          "sequence": [
+            "2",
+            "4",
+            "2",
+            "3"
+          ],
+          "notes": "Pre-buff 3; 2 → 4 → 2 → 3, spam 2 đến khi HP bình thường rồi 5. Trước khi 4 hồi xong dùng 5 rồi lặp; 3 chỉ khi cần buff máu.",
+          "teamIds": [
+            "recovery-team-2",
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "ArchPaladin",
+          "sequence": [
+            "4",
+            "2",
+            "2",
+            "5"
+          ],
+          "notes": "Thay PCM ở Team 3: pre-buff 3; 4 → 2 → 2 → 5 hoặc 4 → 2 → 5. Canh 3 để Heal; nếu chết, vào lại và dùng 4 trước SoE.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Arcana Invoker",
+          "sequence": [
+            "2",
+            "4"
+          ],
+          "notes": "Thay VHL ở Team 4: giữ vòng Judgement / The World như Docs; chưa có combo riêng từng phase cho AI. Theo mục tiêu và Taunt của phase hiện tại.",
+          "teamIds": [
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    "rush": {
+      "objective": "Dồn sát thương sau B Major/C Major; kết thúc trước Curtain Call.",
+      "tauntStrategy": "Docs: hai người Taunt chính (LR + SC/IT hoặc PCM/AP; đội Speedrun là LR + LoO). Dùng Scroll of Enrage so le khi Focus còn khoảng 1/8. LoO có thể dự bị ở đội hình phù hợp. Thống nhất người mở đầu; không giao DPS chính Taunt thường quy. Tiếp tục Taunt để bảo vệ Mana Cost của DPS.",
+      "recommendedRotations": [
+        {
+          "className": "Void Highlord",
+          "team": "Speedrun: VHL/AI · LC · LR · LoO",
+          "sequence": [
+            "4",
+            "5",
+            "3",
+            "2",
+            "4",
+            "3",
+            "2",
+            "4",
+            "3",
+            "2"
+          ],
+          "notes": "Docs cho dùng lại combo phase 1; Site cho 5 → 3 → 2, chỉ dùng 4 khi HP trên 3.000. Hai phương án khác nguồn, không trộn.",
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+          "teamIds": [
+            "recovery-team-4"
+          ]
+        },
+        {
+          "className": "Legion Revenant",
+          "sequence": [
+            "4",
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Duy trì 4, tiếp tục SoE để bảo vệ DPS khỏi Dirge of Astravia.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "StoneCrusher / Infinity Titan",
+          "sequence": [
+            "3",
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Tiếp tục hỗ trợ và SoE khi đội dồn sát thương.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "LightCaster",
+          "sequence": [
+            "2",
+            "3",
+            "5"
+          ],
+          "notes": "Pre-buff 4; dùng chính 2/3/5, dùng lại 4 khi cần Heal. Phối hợp Heal với LoO.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Lord of Order",
+          "sequence": [],
+          "notes": "Pre-buff 2/3/4, duy trì các skill và canh Heal 3 theo HP đội. Dự bị SoE theo phân công; Team 4 Taunt chính cùng LR.",
+          "teamIds": [
+            "recovery-team-1",
+            "recovery-team-2",
+            "recovery-team-3",
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Chaos Avenger",
+          "sequence": [
+            "4",
+            "2",
+            "5"
+          ],
+          "notes": "Dùng 4 → 2 → 5; chỉ dùng 3 khi hiệu ứng hết, quan sát Class Actives/Auras UI.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Paladin Chronomancer",
+          "sequence": [
+            "2",
+            "4",
+            "2",
+            "3"
+          ],
+          "notes": "Pre-buff 3; 2 → 4 → 2 → 3, spam 2 đến khi HP bình thường rồi 5. Trước khi 4 hồi xong dùng 5 rồi lặp; 3 chỉ khi cần buff máu.",
+          "teamIds": [
+            "recovery-team-2",
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "ArchPaladin",
+          "sequence": [
+            "4",
+            "2",
+            "2",
+            "5"
+          ],
+          "notes": "Thay PCM ở Team 3: pre-buff 3; 4 → 2 → 2 → 5 hoặc 4 → 2 → 5. Canh 3 để Heal; nếu chết, vào lại và dùng 4 trước SoE.",
+          "teamIds": [
+            "recovery-team-3"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        },
+        {
+          "className": "Arcana Invoker",
+          "sequence": [
+            "2",
+            "4"
+          ],
+          "notes": "Thay VHL ở Team 4: giữ vòng Judgement / The World như Docs; chưa có combo riêng từng phase cho AI. Theo mục tiêu và Taunt của phase hiện tại.",
+          "teamIds": [
+            "recovery-team-4"
+          ],
+          "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    }
+  },
+  "timeline": [
+    {
+      "id": "cycle-end",
+      "triggerType": "interval",
+      "triggerValue": 30,
+      "description": "The Cycle's End: mỗi 30 giây, +10% sát thương vật lý/phép nhận vào mỗi stack; tối đa 10. Không suy thời điểm enrage từ số stack.",
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    },
+    {
+      "id": "end-world",
+      "triggerType": "elapsed",
+      "triggerValue": 270,
+      "description": "End of the World: sau 270 giây tính từ đầu trận, niệm 3 giây.",
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    },
+    {
+      "id": "curtain-call",
+      "triggerType": "elapsed",
+      "triggerValue": 273,
+      "description": "Curtain Call: sau khi niệm xong, 100.000.337 True Damage lên 4 người, bỏ qua Focus và áp DoT gây tử vong.",
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    }
+  ],
+  "globalPassives": [
+    {
+      "id": "boss-passive-1",
+      "name": "Boss Shield",
+      "label": "Boss Shield",
+      "condition": "Khi sát thương vượt ngưỡng.",
+      "effect": "Giảm phần sát thương vượt ngưỡng bằng số mũ 0.8; kết quả không thấp hơn ngưỡng 122.222.",
+      "values": [
+        "Ngưỡng 122.222 DMG",
+        "Số mũ 0.8"
+      ],
+      "monsterId": "boss",
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    },
+    {
+      "id": "boss-passive-2",
+      "label": "Quy tắc nội tại",
+      "condition": "Luôn có hiệu lực.",
+      "effect": "Miễn nhiễm Stun.",
+      "values": [],
+      "monsterId": "boss",
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    },
+    {
+      "id": "boss-passive-4",
+      "name": "Exeunt",
+      "label": "Exeunt",
+      "condition": "Khi Darkon hạ một người chơi.",
+      "effect": "Hồi 750.000 HP mỗi lần hạ người chơi.",
+      "values": [
+        "Hồi 750.000 HP / lần hạ"
+      ],
+      "monsterId": "boss",
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    },
+    {
+      "id": "boss-base-stats",
+      "label": "Chỉ số nền",
+      "condition": "Thông số nền của Darkon.",
+      "effect": "Crit Chance và Hit Chance được tăng; chưa công bố giá trị cụ thể.",
+      "values": [
+        "800% Crit Damage",
+        "200% kháng DoT",
+        "Crit Chance: tăng, chưa có số",
+        "Hit Chance: tăng, chưa có số"
+      ],
+      "monsterId": "boss",
+      "source": "https://aqwwiki.wikidot.com/darkon-the-conductor"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "Special 1 damage basis",
+      "wiki": "90% current HP",
+      "docs": "90% max HP",
+      "site": "90% max HP",
+      "resolution": "current HP"
+    },
+    {
+      "field": "A Major dodge",
+      "wiki": "5000%",
+      "docs": "1000%",
+      "site": "1000%",
+      "resolution": "5000%"
+    },
+    {
+      "field": "Base Crit Damage",
+      "wiki": "800%",
+      "docs": "800%",
+      "site": "500%",
+      "resolution": "800%"
+    },
+    {
+      "field": "End of the World activation",
+      "wiki": "270 seconds then charge 3 seconds",
+      "docs": "270 seconds then charge 3 seconds",
+      "site": "303 seconds in one paragraph; 273 elsewhere",
+      "resolution": "270 seconds + 3-second charge; not inferred from Cycle stack count"
+    },
+    {
+      "field": "Grown Crit Chance",
+      "wiki": "1000 (no percent sign)",
+      "docs": "1000%",
+      "site": "1000%",
+      "resolution": "Keep Wiki value 1000 without inventing a unit"
+    },
+    {
+      "field": "Recitative Taunt target",
+      "docs": "Nulgath in one sentence",
+      "site": "Nulgath in one sentence",
+      "resolution": "Source typo; encounter is Darkon. Do not import wrong target into skill data"
+    },
+    {
+      "field": "Exeunt versus Aria healing",
+      "wiki": "Aria explicitly cannot be Decayed; Exeunt states 750000 HP per kill without Decay rule",
+      "docs": "Exeunt also labelled immune to Decay",
+      "resolution": "Do not extend Aria's verified Decay rule to Exeunt"
+    },
+    {
+      "field": "Phase labels",
+      "docs": "Overture / Recitative / Madness / Rush",
+      "site": "Rush / Seeding / Madness / Weakening",
+      "resolution": "Use requested Docs tactical labels; preserve official states Overture/Recitative/Aria."
+    },
+    {
+      "field": "Focus assignment",
+      "docs": "Two principal taunters; optional LoO reserve; Speedrun LR + LoO",
+      "site": "Three Supports; LoO first and repeated on cooldown",
+      "resolution": "Show Docs default and separate Site alternative; never silently mix."
+    },
+    {
+      "field": "VHL Rush rotation",
+      "docs": "Same as phase 1",
+      "site": "5-3-2; use 4 above 3000 HP",
+      "resolution": "Docs sequence with explicit Site alternative."
+    },
+    {
+      "field": "Vainglory",
+      "docs": "General ban yet AI enhancement line lists Vainglory",
+      "site": "VHL line lists Vainglory despite Aria healing penalty",
+      "resolution": "Display general Docs caution and flag class loadout conflict; do not silently endorse contradictory loadout."
+    }
+  ]
+}

@@ -1,0 +1,4787 @@
+{
+  "challengeContent": true,
+  "id": "queen-iona",
+  "name": "Queen Iona",
+  "type": "other_challenge",
+  "map": "queeniona",
+  "levelRequirement": 2,
+  "partySize": 1,
+  "description": "Thử thách Queen Iona; mỗi trận có cơ chế và điều kiện riêng.",
+  "bodyUrl": "/content/challenges/queen-iona.json",
+  "href": "/other-challenges/queen-iona",
+  "image": null,
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [
+    "Cần hoàn thành Rumbling of Cold Thunder để access Map.",
+    "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss."
+  ],
+  "rewardSummary": "",
+  "sourceSlug": "queen-iona",
+  "stages": [
+    {
+      "id": "queen-iona-stage-1",
+      "name": "Queen Iona",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Queen Iona",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "queen-iona-0",
+            "canonicalName": "Queen Iona",
+            "role": "Monster",
+            "level": null,
+            "maxHp": 1000000,
+            "count": 1,
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "queen-iona-0-doc-skill-0",
+            "monsterId": "queen-iona-0",
+            "name": "Auto Attack",
+            "activation": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 225 đến 275.",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "queen-iona-0-doc-skill-1",
+            "monsterId": "queen-iona-0",
+            "name": "Fulminate",
+            "activation": "◆ Mỗi 10s, sử dụng Fulminate gây Magi DMG từ 500 đến 575.",
+            "playerEffects": [
+              "Player bị -10% Haste, 15% All In và 25% Magi In trong 20s.",
+              "Player có 30% khả năng bị dính hiệu ứng Ion Shift khi có Supercell."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "queen-iona-0-doc-skill-2",
+            "monsterId": "queen-iona-0",
+            "name": "Roaring Thunder",
+            "activation": "◆ Mỗi 14s, sử dụng Roaring Thunder để charge trong 4s đồng thời kích hoạt thêm hiệu ứng.",
+            "playerEffects": [
+              "Player bị dính Positive Charge hoặc Negative Charge.",
+              "Negative Charge sẽ làm tăng 5000% All In và Magi In, còn Positive Charge không gây ảnh hưởng gì.",
+              "Nếu Player có Ion Shift, thì Charge sẽ bị đảo ngược."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "queen-iona-0-doc-skill-3",
+            "monsterId": "queen-iona-0",
+            "name": "Sky Splitter ngay",
+            "activation": "◆ Kích hoạt Sky Splitter ngay sau khi hết Roaring Thunder, gây True DMG từ 250 đến 350.",
+            "playerEffects": [
+              "Nếu Player đứng ở vùng Zone trái dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone cùng dấu cới Charge khi có Ion Shift thì được nhận “Neutralized”, xoá bỏ tất cả hiệu ứng từ Charge và chặn sát thương từ Sky Splitter.",
+              "Nếu Player đứng ở vùng Zone cùng dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone khác dấu cới Charge khi có Ion Shift thì bị dính “Overcharged”, Player tăng 5000% All In và Magi In."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ],
+        "passiveSkills": [
+          {
+            "id": "queen-iona-0-doc-passive-0",
+            "monsterId": "queen-iona-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Shield giúp giảm sát thương trên 25k (hệ số 0.85).",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "queen-iona-0-doc-passive-1",
+            "monsterId": "queen-iona-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Miễn nhiễm với Stun.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "queen-iona-0-doc-passive-2",
+            "monsterId": "queen-iona-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Tất cả đón đánh đều không thể né và luôn bạo kích (trừ Sky Splitter).",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "queen-iona-0-doc-passive-3",
+            "monsterId": "queen-iona-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Base có 0% Dodge, 50% All Out, -50% All In, -80% DoT In và 100% Crit DMG.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "queen-iona-0-doc-passive-4",
+            "monsterId": "queen-iona-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Khi còn 70% HP, Iona tiến vào trạng thái Supercell.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "queen-iona-0-doc-passive-5",
+            "monsterId": "queen-iona-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Khi còn 40% HP, Iona tiến vào trạng thái Queen of Skye.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ]
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Lothian Treasury Merge Shop",
+        "Merge Shop của NPC Kieran Lathurna ở /join queeniona",
+        "Để lấy hết tất cả đồ trong shop thì cần Lothian's Lightning ×33 nhận được từ Kieran Lathurna's Quests ở /join queeniona bằng cách đánh Queen Iona. Bao gồm 3 quests khác nhau để farm:",
+        "→ “Iona the Isolated” quest: Là quest daily dành cho tất cả đối tượng, 1 ngày 1 cục, reset vào mỗi ngày 12:01AM EST server time.",
+        "→ “Generational Tyranny” quest (lặp lại được): Chỉ dành cho Membership Player.",
+        "→ “Eye of the Storm” quest (lặp lại được): Chỉ dành cho Player sở hữu Queen Iona Bank Companion pet (giá 2k ACs, mua trong Lothian AC Treasury Shop của Kieran Lathurna tại đây).",
+        "Note:",
+        "- Trước khi trả quest, bạn nên dùng boost gold (chỉ với quest daily), exp (chưa đạt lvl tối đa) để tăng lượng gold, exp thưởng nhận được của quest.",
+        "- Các trang bị có AC tag sau khi dùng để merge có thể dùng chức năng Buy Back để lấy lại chúng mà không cần farm lại.",
+        "Ngoài ra còn cần Rank 10 Skye Rep và Skye's Lightning ×130 nhận được từ “Eilean a' Cheò” quest của Felix Taylor ở /join coldthunder bằng cách đánh Cold Thunder Avatar, cách đánh:",
+        "→ Sử dụng Team có 4-7 người chơi, trong đó có ít nhất 2-3 Chrono: CMP, CCR, TK, CMP, QCM, CDK, CCM/TCM, kết hợp thêm các support class như LoO, LR, VDK, AP, LC, LH/DLH, Arach, SC/IT (theo thứ tự ưu tiên từ trên xuống).",
+        "→ Hoặc có thể thay thế Chrono bằng các class DPS: VHL, CAv, DT/EDoT, LDK nếu không có Chrono class.",
+        "→ Tất cả players phải mua Bananach's Last Will trong Cold Thunder Merge Shop của Felix Taylor rồi trang bị nó, cách sử dụng: Khi thấy thông báo màu vàng hiển thị chữ “\tThe skies rumble. Prepare yourself!” (18s xuất hiện 1 lần) thì ngay lập tức dùng Bananach's Last Will để chặn đòn debuff của Cold Thunder Avatar nếu không bạn sẽ dính debuff và rất dễ chết.",
+        "Note: Bananach's Last Will chỉ có tác dụng kéo dài 3s, CD 16s tức 8s nếu max haste. Bạn có 3s để sử dụng Bananach's Last Will khi thấy thông báo trước khi Boss sử dụng Cold Thunder.",
+        "◆ Crownslayer Bananach (CSB): Weapon tăng 75% DMG với Elememtal, merge từ:",
+        "→ Lothian's Lightning ×7",
+        "→ Skye's Lightning ×40",
+        "→ Priestess Eire's Cletiné ×1: Drop từ Cold Thunder Avatar ở /join coldthunder.",
+        "◆ Sovereign of Storms (SoS) Class: Đây là bản năng cấp của Darkblood StormKing, merge từ:",
+        "→ Lothian's Lightning ×10",
+        "→ StormKing's Storm Bolt ×1: Mua tại Lothian Treasury của NPC Kieran Lathurna ở /join queeniona, yêu cầu Rank 10 ThunderForge Rep.",
+        "→ Skye Warden of the East: Merge tại Felix's Gilded Gear của Felix Taylor ở /join castleeblana.",
+        "Gold Voucher 25k ×4",
+        "Liquid Gold Solution ×150: Nhận từ “Our Rain” quest của chính NPC này, đánh Fear Gorta, Bananach Raven và Warden Indradeep tại đây để hoàn thành.",
+        "Skye Warrior: Cũng merge trong Shop này, cần có Gold Voucher 25k ×4 và Salvaged Skye Armament ×25 (drop từ Skye Executor và Skye Warrior tại đây).",
+        "→ Skye Warden of the West: Merge tại Loughshine Loot của Caoimhe ở /join loughshine.",
+        "Gold Voucher 25k ×4",
+        "Solid Gold Alloy ×36: Nhận từ “Anvil Cloud” quest của chính NPC này, đánh Scorched Elder Yew, Energy Elemental và Warden Iseul tại đây để hoàn thành.",
+        "Skye Executor: Cũng merge trong Shop này, cần có Gold Voucher 25k ×4 và Salvaged Skye Armament ×25 (drop từ Skye Cailleach và Skye Executor tại đây).",
+        "→ Skye Warden of the South: Merge tại LiaTaraHill Loot của Queen Victoria Alteon ở /join liatarahill.",
+        "Gold Voucher 25k ×4",
+        "Golden Catalyst ×60: Nhận từ “Pushing Up Daisies” quest của chính NPC này, đánh Undead Garde, Garde Wraith và Warden Illaria tại đây để hoàn thành.",
+        "Skye Cailleach: Cũng merge trong Shop này, cần có Gold Voucher 25k ×4 và Salvaged Skye Armament ×25 (drop từ Skye Cailleach tại đây).",
+        "→ Queen Iona's Royal Attire: Merge tại ColdThunder Shop của Felix Taylor ở /join coldthunder.",
+        "Gold Voucher 25k ×4",
+        "Skye's Lightning ×60",
+        "◆ Galvanic Tyrant: Weapon tăng 35% All DMG, merge từ:",
+        "→ Lothian's Lightning ×5",
+        "→ Skye's Lightning ×10",
+        "◆ Galvanic Tyrants: Weapon tăng 35% All DMG, merge từ:",
+        "→ Lothian's Lightning ×2",
+        "→ Skye's Lightning ×10",
+        "→ Galvanic Tyrant",
+        "◆ Dark Thunder Master: Armor tăng 20% All DMG, merge từ:",
+        "→ Lothian's Lightning ×5",
+        "→ Skye's Lightning ×10",
+        "◆ Dark Thunder Master Long Locks: Helm tăng 30% DMG với Elememtal, merge từ:",
+        "→ Lothian's Lightning ×2",
+        "→ Dark Thunder Master Locks: Drop từ Queen Iona ở /join queeniona.",
+        "◆ Dark Lightning Gloria and Scarf: Cape tăng 30% DMG với Elememtal, merge từ:",
+        "→ Lothian's Lightning ×2",
+        "→ Dark Lightning Gloria và Skye Nobility Sash: Drop từ Queen Iona ở /join queeniona.",
+        "QUEEN IONA",
+        "Iona, nữ hoàng của Skye. Để đánh bại được bà, bạn phải nắm rõ các nguyên tắc của năng lượng cũng như sự nhanh nhạy và nắm bắt được dòng chảy năng lượng. Nhìn chung cơ chế đáng chú ý duy nhất ở đây là chạy Zone, không quá khó, chỉ cần nắm rõ quy tắc cơ bản là bạn có thể vượt qua.",
+        "Cần hoàn thành Rumbling of Cold Thunder để access Map.",
+        "Boss nằm ở map /join queeniona - Room limit: 1",
+        "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 1,000,000",
+        "◆ Shield giúp giảm sát thương trên 25k (hệ số 0.85).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né và luôn bạo kích (trừ Sky Splitter).",
+        "◆ Base có 0% Dodge, 50% All Out, -50% All In, -80% DoT In và 100% Crit DMG.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 225 đến 275.",
+        "◆ Mỗi 10s, sử dụng Fulminate gây Magi DMG từ 500 đến 575.",
+        "→ Player bị -10% Haste, 15% All In và 25% Magi In trong 20s.",
+        "→ Player có 30% khả năng bị dính hiệu ứng Ion Shift khi có Supercell.",
+        "◆ Mỗi 14s, sử dụng Roaring Thunder để charge trong 4s đồng thời kích hoạt thêm hiệu ứng.",
+        "→ Player bị dính Positive Charge hoặc Negative Charge.",
+        "→ Negative Charge sẽ làm tăng 5000% All In và Magi In, còn Positive Charge không gây ảnh hưởng gì.",
+        "→ Nếu Player có Ion Shift, thì Charge sẽ bị đảo ngược.",
+        "◆ Kích hoạt Sky Splitter ngay sau khi hết Roaring Thunder, gây True DMG từ 250 đến 350.",
+        "→ Nếu Player đứng ở vùng Zone trái dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone cùng dấu cới Charge khi có Ion Shift thì được nhận “Neutralized”, xoá bỏ tất cả hiệu ứng từ Charge và chặn sát thương từ Sky Splitter.",
+        "→ Nếu Player đứng ở vùng Zone cùng dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone khác dấu cới Charge khi có Ion Shift thì bị dính “Overcharged”, Player tăng 5000% All In và Magi In.",
+        "◆ Khi còn 70% HP, Iona tiến vào trạng thái Supercell.",
+        "→ Bản thân tăng 100% Crit DMG và 50% All Out.",
+        "◆ Khi còn 40% HP, Iona tiến vào trạng thái Queen of Skye.",
+        "→ Bản thân tăng 200% Crit DMG và 10% Magi Out.",
+        "Roaring Thunder - Energy Zone",
+        "Hướng dẫn chi tiết cách chạy Zone",
+        "Khác với các Zone trước đây, Zone này tuy cũng sẽ xuất hiện ngay khi Queen Iona sử dụng Roaring Thunder trước khi chuyển qua Sky Splitter, và bạn có 4s để di chuyển đến vị trí an toàn nhưng ở đây bạn sẽ phải di chuyển theo nguyên lý dòng điện để trách bị trở thành cột thu lôi. Một vài tips có thể giúp bạn:",
+        "→ Tốt nhất bạn nên chỉnh các setting giúp giảm Lag để tránh tình trạng lag, lệch cũng như phản ứng không kịp khi Zone xuất hiện. Đồng thời luôn đứng ở vị trí chính giữa 2 vùng Zone để nhanh chóng chạy vào đúng Zone của mình.",
+        "→ Khi thông báo “There is no escape from my gaze!” xuất hiện báo hiệu cho việc Queen Iona kích hoạt Roaring Thunder.",
+        "Nó sẽ gắn lên bạn 1 trong 2 hiệu ứng là “Positive Charge” ứng với dấu cộng và “Negative Charge” ứng với dấu trừ (chú ý biểu tượng xuất hiện trên đỉnh đầu nhân vật của bạn).",
+        "Và kích hoạt Zone cực Dương (màu xanh) và Zone cực Âm (màu đỏ) ở 2 bên đối ngược nhau cũng như vị trí sẽ xuất hiện ngẫu nhiên (Dương trái Âm phải hoặc Dương phải Âm trái).",
+        "Bạn có 4s để nhanh chóng chạy vào vùng Zone ngược dấu với bạn (hoặc khác màu) trước khi cú Nuke được tung ra.",
+        "→ Tuy nhiên, từ Phase 2 trở đi (khi còn lại 70% HP) thì sẽ có thêm 1 trạng thái mới gọi là “Ion Shift” hay hiểu đơn giản là điện áp ngược hoặc đảo ngược, trạng thái này sẽ có 30% khả năng xuất hiện và chỉ áp dụng duy nhất lên một đợt Zone ngay sau đó (có thể xuất hiện liên tiếp nhiều lần trạng thái “Reverse Voltage” chứ không thể 1 đợt áp lên nhiều Zone).",
+        "Khi thấy thông báo “(The storm is out of control! Your next charge will have the opposite effect!)” hoặc biểu tượng mũi tên xoay tròn ở phía trên nhân vật của mình thì đây chính là lúc trạng thái “Ion Shift” được kích hoạt.",
+        "Lúc này bạn cần phải chú ý, vì Zone tiếp theo xuất hiện sau đó (chỉ duy nhất một Zone với mỗi lần trạng thái này được kích hoạt) sẽ theo nguyên tắc ngược lại bình thường ở bên trên.",
+        "Bạn vẫn có 4s nhưng sẽ phải chạy ngược lại, tức phải chạy vào vùng Zone có cùng dấu với bạn (hoặc cùng màu) trước khi cú Nuke được tung ra."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: AI, VHL, CAv, DT/EDoT, VDK, LR, SC/IT",
+        "→ AI mở đầu với 2 - 4, sau đó spam 3, 4 và 5 đến khi xuất hiện “Judgement” thì bấm 4 - 2. Cuối cùng spam 3, 4 và 5 đến khi đủ lượng “End of the World” cần/chịu được thì bấm 2 để nuke rồi lập lại (bỏ 2 mở đầu).",
+        "Enh: Ravenous + Wizard class + Pneuma + Vainglory",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ VHL sử dụng combo 5 - 3 - 2, chỉ dùng 4 khi HP trên 2k",
+        "Enh: Dauntless > Ravenous + Lucky class + Anima + Penitence",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ CAv combo mở đầu 3 - 4 - 5 - 2 sau đó spam skill, nhưng cần chú ý ưu tiên spam 2 và 4 ngay khi CD.",
+        "Enh: Ravenous/Dauntless + Lucky class + Vim/Anima + Penitence",
+        "Nếu dùng Ravenous thì đi với Vim, còn Dauntless thì đi với Anima.",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Might Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ DT/EDoT mở đầu với 2 - 4 - 3 - 5 - 3, sau đó lập lại 4 - 3 - 2 - 3 - 5 - 3.",
+        "Enh: Elysium + Healer class + Pneuma + Vainglory",
+        "Potion: Có thể dùng thêm Unstable Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ VDK dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4, tuy nhiên cần lưu ý, nếu có “Gather Darkness” thì ưu tiên dùng cho 3 để tăng khả năng thủ.",
+        "Enh: Ravenous + Lucky class + Forge helm + Penitence",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ LR mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.",
+        "Enh: Valiance/Elysium + Wizard class + Pneuma + Penitence",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ SC/IT combo: dùng combo 3 - 4 - 2 - 5 (luôn dùng 2 trước 5).",
+        "Enh: Ravenous + Wizard class + Pneuma + Penitence",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-354098",
+          "runs": [
+            {
+              "text": "Lothian Treasury Merge Shop",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/lothian-treasury"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354126",
+          "runs": [
+            {
+              "text": "Merge Shop của NPC Kieran Lathurna ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354179",
+          "runs": [
+            {
+              "text": "Để lấy hết tất cả đồ trong shop thì cần "
+            },
+            {
+              "text": "Lothian's Lightning",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/lothian-s-lightning"
+            },
+            {
+              "text": " ×33",
+              "bold": true
+            },
+            {
+              "text": " nhận được từ "
+            },
+            {
+              "text": "Kieran Lathurna's Quests",
+              "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+            },
+            {
+              "text": " ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": " bằng cách đánh Queen Iona. Bao gồm 3 quests khác nhau để farm:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354362",
+          "runs": [
+            {
+              "text": "→ “"
+            },
+            {
+              "text": "Iona the Isolated",
+              "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+            },
+            {
+              "text": "” quest: Là quest daily dành cho tất cả đối tượng, 1 ngày 1 cục, reset vào mỗi ngày 12:01AM EST server time.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354491",
+          "runs": [
+            {
+              "text": "→ “"
+            },
+            {
+              "text": "Generational Tyranny",
+              "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(lặp lại được)",
+              "italic": true
+            },
+            {
+              "text": ": Chỉ dành cho "
+            },
+            {
+              "text": "Membership",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354570",
+          "runs": [
+            {
+              "text": "→ “"
+            },
+            {
+              "text": "Eye of the Storm",
+              "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(lặp lại được)",
+              "italic": true
+            },
+            {
+              "text": ": Chỉ dành cho Player sở hữu "
+            },
+            {
+              "text": "Queen Iona Bank Companion",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-bank-companion"
+            },
+            {
+              "text": " pet "
+            },
+            {
+              "text": "(giá 2k ACs, mua trong ",
+              "italic": true
+            },
+            {
+              "text": "Lothian AC Treasury Shop",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/lothian-ac-treasury"
+            },
+            {
+              "text": " của Kieran Lathurna tại đây)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354748",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " \n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354755",
+          "runs": [
+            {
+              "text": "- Trước khi trả quest, bạn nên dùng boost gold (chỉ với quest daily), exp (chưa đạt lvl tối đa) để tăng lượng gold, exp thưởng nhận được của quest.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354903",
+          "runs": [
+            {
+              "text": "- Các trang bị có AC tag sau khi dùng để merge có thể dùng chức năng ",
+              "italic": true
+            },
+            {
+              "text": "Buy Back",
+              "italic": true,
+              "href": "/he-thong/buy-back-ac-tagged-items-function"
+            },
+            {
+              "text": " để lấy lại chúng mà không cần farm lại.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355022",
+          "runs": [
+            {
+              "text": "Ngoài ra còn cần "
+            },
+            {
+              "text": "Rank 10 Skye Rep",
+              "href": "/farm/reputation#h.ywq1eaneexom"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Skye's Lightning",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/skye-s-lightning"
+            },
+            {
+              "text": " ×130",
+              "bold": true
+            },
+            {
+              "text": " nhận được từ “"
+            },
+            {
+              "text": "Eilean a' Cheò",
+              "href": "http://aqwwiki.wikidot.com/felix-taylor-s-quests#CThunderFarm"
+            },
+            {
+              "text": "” quest của Felix Taylor ở "
+            },
+            {
+              "text": "/join coldthunder",
+              "href": "http://aqwwiki.wikidot.com/cold-thunder"
+            },
+            {
+              "text": " bằng cách đánh Cold Thunder Avatar, cách đánh:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355201",
+          "runs": [
+            {
+              "text": "→ Sử dụng Team có 4-7 người chơi, trong đó có ít nhất 2-3 Chrono: "
+            },
+            {
+              "text": "CMP, CCR, TK, CMP, QCM, CDK, CCM/TCM",
+              "bold": true
+            },
+            {
+              "text": ", kết hợp thêm các support class như "
+            },
+            {
+              "text": "LoO, LR, VDK, AP, LC, LH/DLH, Arach, SC/IT",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(theo thứ tự ưu tiên từ trên xuống)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355420",
+          "runs": [
+            {
+              "text": "→ Hoặc có thể thay thế Chrono bằng các class DPS: "
+            },
+            {
+              "text": "VHL, CAv, DT/EDoT, LDK",
+              "bold": true
+            },
+            {
+              "text": " nếu không có Chrono class.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355520",
+          "runs": [
+            {
+              "text": "→ Tất cả players phải mua "
+            },
+            {
+              "text": "Bananach's Last Will",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " trong "
+            },
+            {
+              "text": "Cold Thunder Merge Shop",
+              "href": "http://aqwwiki.wikidot.com/coldthunder-shop"
+            },
+            {
+              "text": " của Felix Taylor rồi trang bị nó, cách sử dụng: Khi thấy thông báo màu vàng hiển thị chữ "
+            },
+            {
+              "text": "“\tThe skies rumble. Prepare yourself!”",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(18s xuất hiện 1 lần)",
+              "italic": true
+            },
+            {
+              "text": " thì "
+            },
+            {
+              "text": "ngay lập tức dùng Bananach's Last Will",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " để chặn đòn debuff của Cold Thunder Avatar nếu không bạn sẽ dính debuff và rất dễ chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355880",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Bananach's Last Will chỉ có tác dụng kéo dài 3s, CD 16s tức 8s nếu max haste. Bạn có 3s để sử dụng Bananach's Last Will khi thấy thông báo trước khi Boss sử dụng Cold Thunder.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356065",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Crownslayer Bananach",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/crownslayer-bananach"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(CSB)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 75% DMG với Elememtal, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356140",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×7\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356165",
+          "runs": [
+            {
+              "text": "→ Skye's Lightning ×40\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356188",
+          "runs": [
+            {
+              "text": "→ Priestess Eire's Cletiné ×1: Drop từ Cold Thunder Avatar ở "
+            },
+            {
+              "text": "/join coldthunder",
+              "href": "http://aqwwiki.wikidot.com/cold-thunder"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356271",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Sovereign of Storms",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/sovereign-of-storms"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(SoS)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Class:",
+              "bold": true
+            },
+            {
+              "text": " Đây là bản năng cấp của Darkblood StormKing, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356361",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×10\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356387",
+          "runs": [
+            {
+              "text": "→ StormKing's Storm Bolt ×1: Mua tại "
+            },
+            {
+              "text": "Lothian Treasury ",
+              "href": "http://aqwwiki.wikidot.com/lothian-treasury"
+            },
+            {
+              "text": "của NPC Kieran Lathurna ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": ", yêu cầu "
+            },
+            {
+              "text": "Rank 10 ThunderForge Rep",
+              "href": "/farm/reputation#h.lu233o4p59gt"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356518",
+          "runs": [
+            {
+              "text": "→ Skye Warden of the East: Merge tại "
+            },
+            {
+              "text": "Felix's Gilded Gear",
+              "href": "http://aqwwiki.wikidot.com/felix-s-gilded-gear"
+            },
+            {
+              "text": " của Felix Taylor ở "
+            },
+            {
+              "text": "/join castleeblana",
+              "href": "http://aqwwiki.wikidot.com/castle-eblana"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356614",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Gold Voucher 25k ×4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356634",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Liquid Gold Solution ×150: Nhận từ “"
+            },
+            {
+              "text": "Our Rain",
+              "href": "http://aqwwiki.wikidot.com/felix-taylor-s-quests#CEblanaFarm"
+            },
+            {
+              "text": "” quest của chính NPC này, đánh Fear Gorta, Bananach Raven và Warden Indradeep tại đây để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356780",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Skye Warrior: Cũng merge trong Shop này, cần có Gold Voucher 25k ×4 và Salvaged Skye Armament ×25 "
+            },
+            {
+              "text": "(drop từ Skye Executor và Skye Warrior tại đây)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356927",
+          "runs": [
+            {
+              "text": "→ Skye Warden of the West: Merge tại "
+            },
+            {
+              "text": "Loughshine Loot",
+              "href": "http://aqwwiki.wikidot.com/loughshine-loot"
+            },
+            {
+              "text": " của Caoimhe ở "
+            },
+            {
+              "text": "/join loughshine",
+              "href": "http://aqwwiki.wikidot.com/ruins-of-loughshine"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357012",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Gold Voucher 25k ×4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357032",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Solid Gold Alloy ×36: Nhận từ “"
+            },
+            {
+              "text": "Anvil Cloud",
+              "href": "http://aqwwiki.wikidot.com/caoimhe-s-quests#LoughshineFarm"
+            },
+            {
+              "text": "” quest của chính NPC này, đánh Scorched Elder Yew, Energy Elemental và Warden Iseul tại đây để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357182",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Skye Executor: Cũng merge trong Shop này, cần có Gold Voucher 25k ×4 và Salvaged Skye Armament ×25 "
+            },
+            {
+              "text": "(drop từ Skye Cailleach và Skye Executor tại đây)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357332",
+          "runs": [
+            {
+              "text": "→ Skye Warden of the South: Merge tại "
+            },
+            {
+              "text": "LiaTaraHill Loot",
+              "href": "http://aqwwiki.wikidot.com/liatarahill-loot"
+            },
+            {
+              "text": " của Queen Victoria Alteon ở "
+            },
+            {
+              "text": "/join liatarahill",
+              "href": "http://aqwwiki.wikidot.com/the-hill-of-lia-tara"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357434",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Gold Voucher 25k ×4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357454",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Golden Catalyst ×60: Nhận từ “"
+            },
+            {
+              "text": "Pushing Up Daisies",
+              "href": "http://aqwwiki.wikidot.com/queen-victoria-alteon-s-quests#THoLTFarm"
+            },
+            {
+              "text": "” quest của chính NPC này, đánh Undead Garde, Garde Wraith và Warden Illaria tại đây để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357602",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Skye Cailleach: Cũng merge trong Shop này, cần có Gold Voucher 25k ×4 và Salvaged Skye Armament ×25 "
+            },
+            {
+              "text": "(drop từ Skye Cailleach tại đây)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357736",
+          "runs": [
+            {
+              "text": "→ Queen Iona's Royal Attire: Merge tại "
+            },
+            {
+              "text": "ColdThunder Shop",
+              "href": "http://aqwwiki.wikidot.com/coldthunder-shop"
+            },
+            {
+              "text": " của Felix Taylor ở "
+            },
+            {
+              "text": "/join coldthunder",
+              "href": "http://aqwwiki.wikidot.com/cold-thunder"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357830",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Gold Voucher 25k ×4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357850",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Skye's Lightning ×60\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357875",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Galvanic Tyrant",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/galvanic-tyrant"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 35% All DMG, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357929",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×5\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357954",
+          "runs": [
+            {
+              "text": "→ Skye's Lightning ×10\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357978",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Galvanic Tyrants",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/galvanic-tyrants"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 35% All DMG, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358033",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×2\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358058",
+          "runs": [
+            {
+              "text": "→ Skye's Lightning ×10\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358081",
+          "runs": [
+            {
+              "text": "→ Galvanic Tyrant\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358100",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Dark Thunder Master",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/dark-thunder-master"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Armor tăng 20% All DMG, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358157",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×5\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358182",
+          "runs": [
+            {
+              "text": "→ Skye's Lightning ×10\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358206",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Dark Thunder Master Long Locks",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/dark-thunder-master-long-locks"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Helm tăng 30% DMG với Elememtal, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358283",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×2\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358308",
+          "runs": [
+            {
+              "text": "→ Dark Thunder Master Locks: Drop từ Queen Iona ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358376",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Dark Lightning Gloria and Scarf",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/dark-lightning-gloria-and-scarf"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Cape tăng 30% DMG với Elememtal, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358454",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×2\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358479",
+          "runs": [
+            {
+              "text": "→ Dark Lightning Gloria và Skye Nobility Sash: Drop từ Queen Iona ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358565",
+          "runs": [
+            {
+              "text": "QUEEN IONA",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/queen-iona"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358576",
+          "runs": [
+            {
+              "text": "Iona, nữ hoàng của Skye. Để đánh bại được bà, bạn phải nắm rõ các nguyên tắc của năng lượng cũng như sự nhanh nhạy và nắm bắt được dòng chảy năng lượng. Nhìn chung cơ chế đáng chú ý duy nhất ở đây là chạy Zone, không quá khó, chỉ cần nắm rõ quy tắc cơ bản là bạn có thể vượt qua.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358857",
+          "runs": [
+            {
+              "text": "Cần hoàn th",
+              "italic": true
+            },
+            {
+              "text": "ành ",
+              "italic": true
+            },
+            {
+              "text": "Rumbling of Cold Thunder",
+              "italic": true,
+              "href": "/cot-truyen/age-of-ruin-saga#h.6n8106327c9b"
+            },
+            {
+              "text": " để acces",
+              "italic": true
+            },
+            {
+              "text": "s Map.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358912",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join queeniona",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": " - Room limit: 1\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358959",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359016",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359024",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359046",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 25k "
+            },
+            {
+              "text": "(hệ số 0.85)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359099",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359122",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né và luôn bạo kích "
+            },
+            {
+              "text": "(trừ Sky Splitter)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359194",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge, 50% All Out, -50% All In, -80% DoT In và 100% Crit DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359270",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 225 đến 275.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359320",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Fulminate gây Magi DMG từ 500 đến 575.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359378",
+          "runs": [
+            {
+              "text": "→ Player bị -10% Haste, 15% All In và 25% Magi In trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359439",
+          "runs": [
+            {
+              "text": "→ Player có 30% khả năng bị dính hiệu ứng Ion Shift khi có Supercell.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359509",
+          "runs": [
+            {
+              "text": "◆ Mỗi 14s, sử dụng Roaring Thunder để charge trong 4s đồng thời kích hoạt thêm hiệu ứng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359598",
+          "runs": [
+            {
+              "text": "→ Player bị dính Positive Charge hoặc Negative Charge.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359653",
+          "runs": [
+            {
+              "text": "→ Negative Charge sẽ làm tăng 5000% All In và Magi In, còn Positive Charge không gây ảnh hưởng gì.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359752",
+          "runs": [
+            {
+              "text": "→ Nếu Player có Ion Shift, thì Charge sẽ bị đảo ngược.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359807",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Sky Splitter ngay sau khi hết Roaring Thunder, gây True DMG từ 250 đến 350.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359895",
+          "runs": [
+            {
+              "text": "→ Nếu Player đứng ở vùng Zone trái dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone cùng dấu cới Charge khi có Ion Shift thì được nhận “Neutralized”, xoá bỏ tất cả hiệu ứng từ Charge và chặn sát thương từ Sky Splitter.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360125",
+          "runs": [
+            {
+              "text": "→ Nếu Player đứng ở vùng Zone cùng dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone khác dấu cới Charge khi có Ion Shift thì bị dính “Overcharged”, Player tăng 5000% All In và Magi In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360321",
+          "runs": [
+            {
+              "text": "◆ Khi còn 70% HP, Iona tiến vào trạng thái Supercell.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360375",
+          "runs": [
+            {
+              "text": "→ Bản thân tăng 100% Crit DMG và 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360421",
+          "runs": [
+            {
+              "text": "◆ Khi còn 40% HP, Iona tiến vào trạng thái Queen of Skye.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360479",
+          "runs": [
+            {
+              "text": "→ Bản thân tăng 200% Crit DMG và 10% Magi Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360527",
+          "runs": [
+            {
+              "text": "Roaring Thunder - Energy Zone\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360557",
+          "runs": [
+            {
+              "text": "Hướng dẫn chi tiết cách chạy Zone",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360593",
+          "runs": [
+            {
+              "text": "Khác với các Zone trước đây, Zone này tuy cũng sẽ xuất hiện ngay khi Queen Iona sử dụng Roaring Thunder trước khi chuyển qua Sky Splitter, và bạn có 4s để di chuyển đến vị trí an toàn nhưng ở đây bạn sẽ phải di chuyển theo nguyên lý dòng điện để trách bị trở thành cột thu lôi. "
+            },
+            {
+              "text": "Một vài tips có thể giúp bạn:\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360901",
+          "runs": [
+            {
+              "text": "→ Tốt nhất bạn nên chỉnh "
+            },
+            {
+              "text": "các setting giúp giảm Lag",
+              "href": "/he-thong/game-client-advanced-features-guide-v3-0081#h.almz539wsyh"
+            },
+            {
+              "text": " để tránh tình trạng lag, lệch cũng như phản ứng không kịp khi Zone xuất hiện. Đồng thời luôn đứng ở vị trí chính giữa 2 vùng Zone để nhanh chóng chạy vào đúng Zone của mình.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361128",
+          "runs": [
+            {
+              "text": "→ Khi thông báo "
+            },
+            {
+              "text": "“There is no escape from my gaze!”",
+              "italic": true
+            },
+            {
+              "text": " xuất hiện báo hiệu cho việc Queen Iona kích hoạt Roaring Thunder.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361245",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nó sẽ gắn lên bạn 1 trong 2 hiệu ứng là “Positive Charge” ứng với dấu cộng và “Negative Charge” ứng với dấu trừ "
+            },
+            {
+              "text": "(chú ý biểu tượng xuất hiện trên đỉnh đầu nhân vật của bạn)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361418",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Và kích hoạt Zone cực Dương "
+            },
+            {
+              "text": "(màu xanh)",
+              "italic": true
+            },
+            {
+              "text": " và Zone cực Âm "
+            },
+            {
+              "text": "(màu đỏ)",
+              "italic": true
+            },
+            {
+              "text": " ở 2 bên đối ngược nhau cũng như vị trí sẽ xuất hiện ngẫu nhiên "
+            },
+            {
+              "text": "(Dương trái Âm phải hoặc Dương phải Âm trái)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361590",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Bạn có 4s để nhanh chóng chạy vào vùng Zone ngược dấu với bạn "
+            },
+            {
+              "text": "(hoặc khác màu)",
+              "italic": true
+            },
+            {
+              "text": " trước khi cú Nuke được tung ra.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361702",
+          "runs": [
+            {
+              "text": "→ Tuy nhiên, từ Phase 2 trở đi "
+            },
+            {
+              "text": "(khi còn lại 70% HP)",
+              "italic": true
+            },
+            {
+              "text": " thì sẽ có thêm 1 trạng thái mới gọi là “Ion Shift” hay hiểu đơn giản là điện áp ngược hoặc đảo ngược, trạng thái này sẽ có 30% khả năng xuất hiện và chỉ áp dụng duy nhất lên một đợt Zone ngay sau đó "
+            },
+            {
+              "text": "(có thể xuất hiện liên tiếp nhiều lần trạng thái “Reverse Voltage” chứ không thể 1 đợt áp lên nhiều Zone)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362062",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi thấy thông báo "
+            },
+            {
+              "text": "“(The storm is out of control! Your next charge will have the opposite effect!)”",
+              "italic": true
+            },
+            {
+              "text": " hoặc biểu tượng mũi tên xoay tròn ở phía trên nhân vật của mình thì đây chính là lúc trạng thái “Ion Shift” được kích hoạt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362286",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Lúc này bạn cần phải chú ý, vì Zone tiếp theo xuất hiện sau đó "
+            },
+            {
+              "text": "(chỉ duy nhất một Zone với mỗi lần trạng thái này được kích hoạt)",
+              "italic": true
+            },
+            {
+              "text": " sẽ theo nguyên tắc ngược lại bình thường ở bên trên.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362468",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Bạn vẫn có 4s nhưng sẽ phải chạy ngược lại, tức phải chạy vào vùng Zone có cùng dấu với bạn "
+            },
+            {
+              "text": "(hoặc cùng màu)",
+              "italic": true
+            },
+            {
+              "text": " trước khi cú Nuke được tung ra.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362733",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "AI, VHL, CAv, DT/EDoT, VDK, LR, SC/IT",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362806",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AI",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 4, sau đó spam 3, 4 và 5 đến khi xuất hiện “Judgement” thì bấm 4 - 2. Cuối cùng spam 3, 4 và 5 đến khi đủ lượng “End of the World” cần/chịu được thì bấm 2 để nuke rồi lập lại "
+            },
+            {
+              "text": "(bỏ 2 mở đầu)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363016",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Wizard class + Pneuma + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363066",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363172",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 5 - 3 - 2, chỉ dùng 4 khi HP trên 2k\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363229",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Ravenous + Lucky class + Anima + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363289",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363395",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 4 - 5 - 2 sau đó spam skill, nhưng cần chú ý ưu tiên spam 2 và 4 ngay khi CD.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363496",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous/Dauntless + Lucky class + Vim/Anima + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363558",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu dùng Ravenous thì đi với Vim, còn Dauntless thì đi với Anima.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363624",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363731",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 4 - 3 - 5 - 3, sau đó lập lại 4 - 3 - 2 - 3 - 5 - 3.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363809",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Pneuma + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363858",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363966",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4, tuy nhiên cần lưu ý, nếu có “Gather Darkness” thì ưu tiên dùng cho 3 để tăng khả năng thủ.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364102",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Forge helm + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364155",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364261",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364348",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance/Elysium + Wizard class + Pneuma + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364406",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364512",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "SC",
+              "bold": true
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "IT",
+              "bold": true
+            },
+            {
+              "text": " combo: dùng combo 3 - 4 - 2 - 5 "
+            },
+            {
+              "text": "(luôn dùng 2 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364575",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Wizard class + Pneuma + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364625",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-354362",
+      "runs": [
+        {
+          "text": "→ “"
+        },
+        {
+          "text": "Iona the Isolated",
+          "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+        },
+        {
+          "text": "” quest: Là quest daily dành cho tất cả đối tượng, 1 ngày 1 cục, reset vào mỗi ngày 12:01AM EST server time.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-354491",
+      "runs": [
+        {
+          "text": "→ “"
+        },
+        {
+          "text": "Generational Tyranny",
+          "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+        },
+        {
+          "text": "” quest "
+        },
+        {
+          "text": "(lặp lại được)",
+          "italic": true
+        },
+        {
+          "text": ": Chỉ dành cho "
+        },
+        {
+          "text": "Membership",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": " Player.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-354570",
+      "runs": [
+        {
+          "text": "→ “"
+        },
+        {
+          "text": "Eye of the Storm",
+          "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+        },
+        {
+          "text": "” quest "
+        },
+        {
+          "text": "(lặp lại được)",
+          "italic": true
+        },
+        {
+          "text": ": Chỉ dành cho Player sở hữu "
+        },
+        {
+          "text": "Queen Iona Bank Companion",
+          "href": "http://aqwwiki.wikidot.com/queen-iona-bank-companion"
+        },
+        {
+          "text": " pet "
+        },
+        {
+          "text": "(giá 2k ACs, mua trong ",
+          "italic": true
+        },
+        {
+          "text": "Lothian AC Treasury Shop",
+          "italic": true,
+          "href": "http://aqwwiki.wikidot.com/lothian-ac-treasury"
+        },
+        {
+          "text": " của Kieran Lathurna tại đây)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-355201",
+      "runs": [
+        {
+          "text": "→ Sử dụng Team có 4-7 người chơi, trong đó có ít nhất 2-3 Chrono: "
+        },
+        {
+          "text": "CMP, CCR, TK, CMP, QCM, CDK, CCM/TCM",
+          "bold": true
+        },
+        {
+          "text": ", kết hợp thêm các support class như "
+        },
+        {
+          "text": "LoO, LR, VDK, AP, LC, LH/DLH, Arach, SC/IT",
+          "bold": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "(theo thứ tự ưu tiên từ trên xuống)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-355420",
+      "runs": [
+        {
+          "text": "→ Hoặc có thể thay thế Chrono bằng các class DPS: "
+        },
+        {
+          "text": "VHL, CAv, DT/EDoT, LDK",
+          "bold": true
+        },
+        {
+          "text": " nếu không có Chrono class.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-355520",
+      "runs": [
+        {
+          "text": "→ Tất cả players phải mua "
+        },
+        {
+          "text": "Bananach's Last Will",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": " trong "
+        },
+        {
+          "text": "Cold Thunder Merge Shop",
+          "href": "http://aqwwiki.wikidot.com/coldthunder-shop"
+        },
+        {
+          "text": " của Felix Taylor rồi trang bị nó, cách sử dụng: Khi thấy thông báo màu vàng hiển thị chữ "
+        },
+        {
+          "text": "“\tThe skies rumble. Prepare yourself!”",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "(18s xuất hiện 1 lần)",
+          "italic": true
+        },
+        {
+          "text": " thì "
+        },
+        {
+          "text": "ngay lập tức dùng Bananach's Last Will",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": " để chặn đòn debuff của Cold Thunder Avatar nếu không bạn sẽ dính debuff và rất dễ chết.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-356140",
+      "runs": [
+        {
+          "text": "→ Lothian's Lightning ×7\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-356165",
+      "runs": [
+        {
+          "text": "→ Skye's Lightning ×40\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-356188",
+      "runs": [
+        {
+          "text": "→ Priestess Eire's Cletiné ×1: Drop từ Cold Thunder Avatar ở "
+        },
+        {
+          "text": "/join coldthunder",
+          "href": "http://aqwwiki.wikidot.com/cold-thunder"
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-356361",
+      "runs": [
+        {
+          "text": "→ Lothian's Lightning ×10\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-356387",
+      "runs": [
+        {
+          "text": "→ StormKing's Storm Bolt ×1: Mua tại "
+        },
+        {
+          "text": "Lothian Treasury ",
+          "href": "http://aqwwiki.wikidot.com/lothian-treasury"
+        },
+        {
+          "text": "của NPC Kieran Lathurna ở "
+        },
+        {
+          "text": "/join queeniona",
+          "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+        },
+        {
+          "text": ", yêu cầu "
+        },
+        {
+          "text": "Rank 10 ThunderForge Rep",
+          "href": "/farm/reputation#h.lu233o4p59gt"
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-356518",
+      "runs": [
+        {
+          "text": "→ Skye Warden of the East: Merge tại "
+        },
+        {
+          "text": "Felix's Gilded Gear",
+          "href": "http://aqwwiki.wikidot.com/felix-s-gilded-gear"
+        },
+        {
+          "text": " của Felix Taylor ở "
+        },
+        {
+          "text": "/join castleeblana",
+          "href": "http://aqwwiki.wikidot.com/castle-eblana"
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-356927",
+      "runs": [
+        {
+          "text": "→ Skye Warden of the West: Merge tại "
+        },
+        {
+          "text": "Loughshine Loot",
+          "href": "http://aqwwiki.wikidot.com/loughshine-loot"
+        },
+        {
+          "text": " của Caoimhe ở "
+        },
+        {
+          "text": "/join loughshine",
+          "href": "http://aqwwiki.wikidot.com/ruins-of-loughshine"
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-357332",
+      "runs": [
+        {
+          "text": "→ Skye Warden of the South: Merge tại "
+        },
+        {
+          "text": "LiaTaraHill Loot",
+          "href": "http://aqwwiki.wikidot.com/liatarahill-loot"
+        },
+        {
+          "text": " của Queen Victoria Alteon ở "
+        },
+        {
+          "text": "/join liatarahill",
+          "href": "http://aqwwiki.wikidot.com/the-hill-of-lia-tara"
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-357736",
+      "runs": [
+        {
+          "text": "→ Queen Iona's Royal Attire: Merge tại "
+        },
+        {
+          "text": "ColdThunder Shop",
+          "href": "http://aqwwiki.wikidot.com/coldthunder-shop"
+        },
+        {
+          "text": " của Felix Taylor ở "
+        },
+        {
+          "text": "/join coldthunder",
+          "href": "http://aqwwiki.wikidot.com/cold-thunder"
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-357929",
+      "runs": [
+        {
+          "text": "→ Lothian's Lightning ×5\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-357954",
+      "runs": [
+        {
+          "text": "→ Skye's Lightning ×10\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-358033",
+      "runs": [
+        {
+          "text": "→ Lothian's Lightning ×2\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-358058",
+      "runs": [
+        {
+          "text": "→ Skye's Lightning ×10\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-358081",
+      "runs": [
+        {
+          "text": "→ Galvanic Tyrant\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-358157",
+      "runs": [
+        {
+          "text": "→ Lothian's Lightning ×5\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-358182",
+      "runs": [
+        {
+          "text": "→ Skye's Lightning ×10\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-358283",
+      "runs": [
+        {
+          "text": "→ Lothian's Lightning ×2\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-358308",
+      "runs": [
+        {
+          "text": "→ Dark Thunder Master Locks: Drop từ Queen Iona ở "
+        },
+        {
+          "text": "/join queeniona",
+          "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-358454",
+      "runs": [
+        {
+          "text": "→ Lothian's Lightning ×2\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-358479",
+      "runs": [
+        {
+          "text": "→ Dark Lightning Gloria và Skye Nobility Sash: Drop từ Queen Iona ở "
+        },
+        {
+          "text": "/join queeniona",
+          "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-359378",
+      "runs": [
+        {
+          "text": "→ Player bị -10% Haste, 15% All In và 25% Magi In trong 20s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-359439",
+      "runs": [
+        {
+          "text": "→ Player có 30% khả năng bị dính hiệu ứng Ion Shift khi có Supercell.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-359598",
+      "runs": [
+        {
+          "text": "→ Player bị dính Positive Charge hoặc Negative Charge.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-359653",
+      "runs": [
+        {
+          "text": "→ Negative Charge sẽ làm tăng 5000% All In và Magi In, còn Positive Charge không gây ảnh hưởng gì.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-359752",
+      "runs": [
+        {
+          "text": "→ Nếu Player có Ion Shift, thì Charge sẽ bị đảo ngược.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-359895",
+      "runs": [
+        {
+          "text": "→ Nếu Player đứng ở vùng Zone trái dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone cùng dấu cới Charge khi có Ion Shift thì được nhận “Neutralized”, xoá bỏ tất cả hiệu ứng từ Charge và chặn sát thương từ Sky Splitter.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-360125",
+      "runs": [
+        {
+          "text": "→ Nếu Player đứng ở vùng Zone cùng dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone khác dấu cới Charge khi có Ion Shift thì bị dính “Overcharged”, Player tăng 5000% All In và Magi In.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-360375",
+      "runs": [
+        {
+          "text": "→ Bản thân tăng 100% Crit DMG và 50% All Out.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-360479",
+      "runs": [
+        {
+          "text": "→ Bản thân tăng 200% Crit DMG và 10% Magi Out.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-360901",
+      "runs": [
+        {
+          "text": "→ Tốt nhất bạn nên chỉnh "
+        },
+        {
+          "text": "các setting giúp giảm Lag",
+          "href": "/he-thong/game-client-advanced-features-guide-v3-0081#h.almz539wsyh"
+        },
+        {
+          "text": " để tránh tình trạng lag, lệch cũng như phản ứng không kịp khi Zone xuất hiện. Đồng thời luôn đứng ở vị trí chính giữa 2 vùng Zone để nhanh chóng chạy vào đúng Zone của mình.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-361128",
+      "runs": [
+        {
+          "text": "→ Khi thông báo "
+        },
+        {
+          "text": "“There is no escape from my gaze!”",
+          "italic": true
+        },
+        {
+          "text": " xuất hiện báo hiệu cho việc Queen Iona kích hoạt Roaring Thunder.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-361702",
+      "runs": [
+        {
+          "text": "→ Tuy nhiên, từ Phase 2 trở đi "
+        },
+        {
+          "text": "(khi còn lại 70% HP)",
+          "italic": true
+        },
+        {
+          "text": " thì sẽ có thêm 1 trạng thái mới gọi là “Ion Shift” hay hiểu đơn giản là điện áp ngược hoặc đảo ngược, trạng thái này sẽ có 30% khả năng xuất hiện và chỉ áp dụng duy nhất lên một đợt Zone ngay sau đó "
+        },
+        {
+          "text": "(có thể xuất hiện liên tiếp nhiều lần trạng thái “Reverse Voltage” chứ không thể 1 đợt áp lên nhiều Zone)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-362806",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "AI",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 2 - 4, sau đó spam 3, 4 và 5 đến khi xuất hiện “Judgement” thì bấm 4 - 2. Cuối cùng spam 3, 4 và 5 đến khi đủ lượng “End of the World” cần/chịu được thì bấm 2 để nuke rồi lập lại "
+        },
+        {
+          "text": "(bỏ 2 mở đầu)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-363172",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "VHL",
+          "bold": true
+        },
+        {
+          "text": " sử dụng combo 5 - 3 - 2, chỉ dùng 4 khi HP trên 2k\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-363395",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "CAv",
+          "bold": true
+        },
+        {
+          "text": " combo mở đầu 3 - 4 - 5 - 2 sau đó spam skill, nhưng cần chú ý ưu tiên spam 2 và 4 ngay khi CD.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-363731",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "DT/EDoT",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 2 - 4 - 3 - 5 - 3, sau đó lập lại 4 - 3 - 2 - 3 - 5 - 3.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-363966",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4, tuy nhiên cần lưu ý, nếu có “Gather Darkness” thì ưu tiên dùng cho 3 để tăng khả năng thủ.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-364261",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-364512",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "SC",
+          "bold": true
+        },
+        {
+          "text": "/"
+        },
+        {
+          "text": "IT",
+          "bold": true
+        },
+        {
+          "text": " combo: dùng combo 3 - 4 - 2 - 5 "
+        },
+        {
+          "text": "(luôn dùng 2 trước 5)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [
+    {
+      "id": "noi-dung",
+      "title": "Nội dung hướng dẫn",
+      "paragraphs": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "p-354098",
+          "runs": [
+            {
+              "text": "Lothian Treasury Merge Shop",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/lothian-treasury"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354126",
+          "runs": [
+            {
+              "text": "Merge Shop của NPC Kieran Lathurna ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354179",
+          "runs": [
+            {
+              "text": "Để lấy hết tất cả đồ trong shop thì cần "
+            },
+            {
+              "text": "Lothian's Lightning",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/lothian-s-lightning"
+            },
+            {
+              "text": " ×33",
+              "bold": true
+            },
+            {
+              "text": " nhận được từ "
+            },
+            {
+              "text": "Kieran Lathurna's Quests",
+              "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+            },
+            {
+              "text": " ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": " bằng cách đánh Queen Iona. Bao gồm 3 quests khác nhau để farm:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354362",
+          "runs": [
+            {
+              "text": "→ “"
+            },
+            {
+              "text": "Iona the Isolated",
+              "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+            },
+            {
+              "text": "” quest: Là quest daily dành cho tất cả đối tượng, 1 ngày 1 cục, reset vào mỗi ngày 12:01AM EST server time.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354491",
+          "runs": [
+            {
+              "text": "→ “"
+            },
+            {
+              "text": "Generational Tyranny",
+              "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(lặp lại được)",
+              "italic": true
+            },
+            {
+              "text": ": Chỉ dành cho "
+            },
+            {
+              "text": "Membership",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354570",
+          "runs": [
+            {
+              "text": "→ “"
+            },
+            {
+              "text": "Eye of the Storm",
+              "href": "http://aqwwiki.wikidot.com/kieran-lathurna-s-quests"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(lặp lại được)",
+              "italic": true
+            },
+            {
+              "text": ": Chỉ dành cho Player sở hữu "
+            },
+            {
+              "text": "Queen Iona Bank Companion",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-bank-companion"
+            },
+            {
+              "text": " pet "
+            },
+            {
+              "text": "(giá 2k ACs, mua trong ",
+              "italic": true
+            },
+            {
+              "text": "Lothian AC Treasury Shop",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/lothian-ac-treasury"
+            },
+            {
+              "text": " của Kieran Lathurna tại đây)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354748",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " \n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354755",
+          "runs": [
+            {
+              "text": "- Trước khi trả quest, bạn nên dùng boost gold (chỉ với quest daily), exp (chưa đạt lvl tối đa) để tăng lượng gold, exp thưởng nhận được của quest.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-354903",
+          "runs": [
+            {
+              "text": "- Các trang bị có AC tag sau khi dùng để merge có thể dùng chức năng ",
+              "italic": true
+            },
+            {
+              "text": "Buy Back",
+              "italic": true,
+              "href": "/he-thong/buy-back-ac-tagged-items-function"
+            },
+            {
+              "text": " để lấy lại chúng mà không cần farm lại.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355022",
+          "runs": [
+            {
+              "text": "Ngoài ra còn cần "
+            },
+            {
+              "text": "Rank 10 Skye Rep",
+              "href": "/farm/reputation#h.ywq1eaneexom"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Skye's Lightning",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/skye-s-lightning"
+            },
+            {
+              "text": " ×130",
+              "bold": true
+            },
+            {
+              "text": " nhận được từ “"
+            },
+            {
+              "text": "Eilean a' Cheò",
+              "href": "http://aqwwiki.wikidot.com/felix-taylor-s-quests#CThunderFarm"
+            },
+            {
+              "text": "” quest của Felix Taylor ở "
+            },
+            {
+              "text": "/join coldthunder",
+              "href": "http://aqwwiki.wikidot.com/cold-thunder"
+            },
+            {
+              "text": " bằng cách đánh Cold Thunder Avatar, cách đánh:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355201",
+          "runs": [
+            {
+              "text": "→ Sử dụng Team có 4-7 người chơi, trong đó có ít nhất 2-3 Chrono: "
+            },
+            {
+              "text": "CMP, CCR, TK, CMP, QCM, CDK, CCM/TCM",
+              "bold": true
+            },
+            {
+              "text": ", kết hợp thêm các support class như "
+            },
+            {
+              "text": "LoO, LR, VDK, AP, LC, LH/DLH, Arach, SC/IT",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(theo thứ tự ưu tiên từ trên xuống)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355420",
+          "runs": [
+            {
+              "text": "→ Hoặc có thể thay thế Chrono bằng các class DPS: "
+            },
+            {
+              "text": "VHL, CAv, DT/EDoT, LDK",
+              "bold": true
+            },
+            {
+              "text": " nếu không có Chrono class.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355520",
+          "runs": [
+            {
+              "text": "→ Tất cả players phải mua "
+            },
+            {
+              "text": "Bananach's Last Will",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " trong "
+            },
+            {
+              "text": "Cold Thunder Merge Shop",
+              "href": "http://aqwwiki.wikidot.com/coldthunder-shop"
+            },
+            {
+              "text": " của Felix Taylor rồi trang bị nó, cách sử dụng: Khi thấy thông báo màu vàng hiển thị chữ "
+            },
+            {
+              "text": "“\tThe skies rumble. Prepare yourself!”",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(18s xuất hiện 1 lần)",
+              "italic": true
+            },
+            {
+              "text": " thì "
+            },
+            {
+              "text": "ngay lập tức dùng Bananach's Last Will",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " để chặn đòn debuff của Cold Thunder Avatar nếu không bạn sẽ dính debuff và rất dễ chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-355880",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Bananach's Last Will chỉ có tác dụng kéo dài 3s, CD 16s tức 8s nếu max haste. Bạn có 3s để sử dụng Bananach's Last Will khi thấy thông báo trước khi Boss sử dụng Cold Thunder.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356065",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Crownslayer Bananach",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/crownslayer-bananach"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(CSB)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 75% DMG với Elememtal, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356140",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×7\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356165",
+          "runs": [
+            {
+              "text": "→ Skye's Lightning ×40\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356188",
+          "runs": [
+            {
+              "text": "→ Priestess Eire's Cletiné ×1: Drop từ Cold Thunder Avatar ở "
+            },
+            {
+              "text": "/join coldthunder",
+              "href": "http://aqwwiki.wikidot.com/cold-thunder"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356271",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Sovereign of Storms",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/sovereign-of-storms"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(SoS)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Class:",
+              "bold": true
+            },
+            {
+              "text": " Đây là bản năng cấp của Darkblood StormKing, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356361",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×10\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356387",
+          "runs": [
+            {
+              "text": "→ StormKing's Storm Bolt ×1: Mua tại "
+            },
+            {
+              "text": "Lothian Treasury ",
+              "href": "http://aqwwiki.wikidot.com/lothian-treasury"
+            },
+            {
+              "text": "của NPC Kieran Lathurna ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": ", yêu cầu "
+            },
+            {
+              "text": "Rank 10 ThunderForge Rep",
+              "href": "/farm/reputation#h.lu233o4p59gt"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356518",
+          "runs": [
+            {
+              "text": "→ Skye Warden of the East: Merge tại "
+            },
+            {
+              "text": "Felix's Gilded Gear",
+              "href": "http://aqwwiki.wikidot.com/felix-s-gilded-gear"
+            },
+            {
+              "text": " của Felix Taylor ở "
+            },
+            {
+              "text": "/join castleeblana",
+              "href": "http://aqwwiki.wikidot.com/castle-eblana"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356614",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Gold Voucher 25k ×4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356634",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Liquid Gold Solution ×150: Nhận từ “"
+            },
+            {
+              "text": "Our Rain",
+              "href": "http://aqwwiki.wikidot.com/felix-taylor-s-quests#CEblanaFarm"
+            },
+            {
+              "text": "” quest của chính NPC này, đánh Fear Gorta, Bananach Raven và Warden Indradeep tại đây để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356780",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Skye Warrior: Cũng merge trong Shop này, cần có Gold Voucher 25k ×4 và Salvaged Skye Armament ×25 "
+            },
+            {
+              "text": "(drop từ Skye Executor và Skye Warrior tại đây)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-356927",
+          "runs": [
+            {
+              "text": "→ Skye Warden of the West: Merge tại "
+            },
+            {
+              "text": "Loughshine Loot",
+              "href": "http://aqwwiki.wikidot.com/loughshine-loot"
+            },
+            {
+              "text": " của Caoimhe ở "
+            },
+            {
+              "text": "/join loughshine",
+              "href": "http://aqwwiki.wikidot.com/ruins-of-loughshine"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357012",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Gold Voucher 25k ×4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357032",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Solid Gold Alloy ×36: Nhận từ “"
+            },
+            {
+              "text": "Anvil Cloud",
+              "href": "http://aqwwiki.wikidot.com/caoimhe-s-quests#LoughshineFarm"
+            },
+            {
+              "text": "” quest của chính NPC này, đánh Scorched Elder Yew, Energy Elemental và Warden Iseul tại đây để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357182",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Skye Executor: Cũng merge trong Shop này, cần có Gold Voucher 25k ×4 và Salvaged Skye Armament ×25 "
+            },
+            {
+              "text": "(drop từ Skye Cailleach và Skye Executor tại đây)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357332",
+          "runs": [
+            {
+              "text": "→ Skye Warden of the South: Merge tại "
+            },
+            {
+              "text": "LiaTaraHill Loot",
+              "href": "http://aqwwiki.wikidot.com/liatarahill-loot"
+            },
+            {
+              "text": " của Queen Victoria Alteon ở "
+            },
+            {
+              "text": "/join liatarahill",
+              "href": "http://aqwwiki.wikidot.com/the-hill-of-lia-tara"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357434",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Gold Voucher 25k ×4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357454",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Golden Catalyst ×60: Nhận từ “"
+            },
+            {
+              "text": "Pushing Up Daisies",
+              "href": "http://aqwwiki.wikidot.com/queen-victoria-alteon-s-quests#THoLTFarm"
+            },
+            {
+              "text": "” quest của chính NPC này, đánh Undead Garde, Garde Wraith và Warden Illaria tại đây để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357602",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Skye Cailleach: Cũng merge trong Shop này, cần có Gold Voucher 25k ×4 và Salvaged Skye Armament ×25 "
+            },
+            {
+              "text": "(drop từ Skye Cailleach tại đây)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357736",
+          "runs": [
+            {
+              "text": "→ Queen Iona's Royal Attire: Merge tại "
+            },
+            {
+              "text": "ColdThunder Shop",
+              "href": "http://aqwwiki.wikidot.com/coldthunder-shop"
+            },
+            {
+              "text": " của Felix Taylor ở "
+            },
+            {
+              "text": "/join coldthunder",
+              "href": "http://aqwwiki.wikidot.com/cold-thunder"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357830",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Gold Voucher 25k ×4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357850",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Skye's Lightning ×60\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357875",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Galvanic Tyrant",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/galvanic-tyrant"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 35% All DMG, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357929",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×5\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357954",
+          "runs": [
+            {
+              "text": "→ Skye's Lightning ×10\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-357978",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Galvanic Tyrants",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/galvanic-tyrants"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 35% All DMG, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358033",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×2\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358058",
+          "runs": [
+            {
+              "text": "→ Skye's Lightning ×10\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358081",
+          "runs": [
+            {
+              "text": "→ Galvanic Tyrant\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358100",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Dark Thunder Master",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/dark-thunder-master"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Armor tăng 20% All DMG, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358157",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×5\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358182",
+          "runs": [
+            {
+              "text": "→ Skye's Lightning ×10\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358206",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Dark Thunder Master Long Locks",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/dark-thunder-master-long-locks"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Helm tăng 30% DMG với Elememtal, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358283",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×2\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358308",
+          "runs": [
+            {
+              "text": "→ Dark Thunder Master Locks: Drop từ Queen Iona ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358376",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Dark Lightning Gloria and Scarf",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/dark-lightning-gloria-and-scarf"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Cape tăng 30% DMG với Elememtal, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358454",
+          "runs": [
+            {
+              "text": "→ Lothian's Lightning ×2\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358479",
+          "runs": [
+            {
+              "text": "→ Dark Lightning Gloria và Skye Nobility Sash: Drop từ Queen Iona ở "
+            },
+            {
+              "text": "/join queeniona",
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358565",
+          "runs": [
+            {
+              "text": "QUEEN IONA",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/queen-iona"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358576",
+          "runs": [
+            {
+              "text": "Iona, nữ hoàng của Skye. Để đánh bại được bà, bạn phải nắm rõ các nguyên tắc của năng lượng cũng như sự nhanh nhạy và nắm bắt được dòng chảy năng lượng. Nhìn chung cơ chế đáng chú ý duy nhất ở đây là chạy Zone, không quá khó, chỉ cần nắm rõ quy tắc cơ bản là bạn có thể vượt qua.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358857",
+          "runs": [
+            {
+              "text": "Cần hoàn th",
+              "italic": true
+            },
+            {
+              "text": "ành ",
+              "italic": true
+            },
+            {
+              "text": "Rumbling of Cold Thunder",
+              "italic": true,
+              "href": "/cot-truyen/age-of-ruin-saga#h.6n8106327c9b"
+            },
+            {
+              "text": " để acces",
+              "italic": true
+            },
+            {
+              "text": "s Map.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358912",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join queeniona",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/queen-iona-challenge-fight"
+            },
+            {
+              "text": " - Room limit: 1\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-358959",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359016",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359024",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359046",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 25k "
+            },
+            {
+              "text": "(hệ số 0.85)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359099",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359122",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né và luôn bạo kích "
+            },
+            {
+              "text": "(trừ Sky Splitter)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359194",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge, 50% All Out, -50% All In, -80% DoT In và 100% Crit DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359270",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 225 đến 275.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359320",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Fulminate gây Magi DMG từ 500 đến 575.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359378",
+          "runs": [
+            {
+              "text": "→ Player bị -10% Haste, 15% All In và 25% Magi In trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359439",
+          "runs": [
+            {
+              "text": "→ Player có 30% khả năng bị dính hiệu ứng Ion Shift khi có Supercell.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359509",
+          "runs": [
+            {
+              "text": "◆ Mỗi 14s, sử dụng Roaring Thunder để charge trong 4s đồng thời kích hoạt thêm hiệu ứng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359598",
+          "runs": [
+            {
+              "text": "→ Player bị dính Positive Charge hoặc Negative Charge.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359653",
+          "runs": [
+            {
+              "text": "→ Negative Charge sẽ làm tăng 5000% All In và Magi In, còn Positive Charge không gây ảnh hưởng gì.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359752",
+          "runs": [
+            {
+              "text": "→ Nếu Player có Ion Shift, thì Charge sẽ bị đảo ngược.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359807",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Sky Splitter ngay sau khi hết Roaring Thunder, gây True DMG từ 250 đến 350.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-359895",
+          "runs": [
+            {
+              "text": "→ Nếu Player đứng ở vùng Zone trái dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone cùng dấu cới Charge khi có Ion Shift thì được nhận “Neutralized”, xoá bỏ tất cả hiệu ứng từ Charge và chặn sát thương từ Sky Splitter.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360125",
+          "runs": [
+            {
+              "text": "→ Nếu Player đứng ở vùng Zone cùng dấu với Charge khi không có Ion Shift hoặc đứng ở vùng Zone khác dấu cới Charge khi có Ion Shift thì bị dính “Overcharged”, Player tăng 5000% All In và Magi In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360321",
+          "runs": [
+            {
+              "text": "◆ Khi còn 70% HP, Iona tiến vào trạng thái Supercell.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360375",
+          "runs": [
+            {
+              "text": "→ Bản thân tăng 100% Crit DMG và 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360421",
+          "runs": [
+            {
+              "text": "◆ Khi còn 40% HP, Iona tiến vào trạng thái Queen of Skye.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360479",
+          "runs": [
+            {
+              "text": "→ Bản thân tăng 200% Crit DMG và 10% Magi Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360527",
+          "runs": [
+            {
+              "text": "Roaring Thunder - Energy Zone\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360557",
+          "runs": [
+            {
+              "text": "Hướng dẫn chi tiết cách chạy Zone",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360593",
+          "runs": [
+            {
+              "text": "Khác với các Zone trước đây, Zone này tuy cũng sẽ xuất hiện ngay khi Queen Iona sử dụng Roaring Thunder trước khi chuyển qua Sky Splitter, và bạn có 4s để di chuyển đến vị trí an toàn nhưng ở đây bạn sẽ phải di chuyển theo nguyên lý dòng điện để trách bị trở thành cột thu lôi. "
+            },
+            {
+              "text": "Một vài tips có thể giúp bạn:\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-360901",
+          "runs": [
+            {
+              "text": "→ Tốt nhất bạn nên chỉnh "
+            },
+            {
+              "text": "các setting giúp giảm Lag",
+              "href": "/he-thong/game-client-advanced-features-guide-v3-0081#h.almz539wsyh"
+            },
+            {
+              "text": " để tránh tình trạng lag, lệch cũng như phản ứng không kịp khi Zone xuất hiện. Đồng thời luôn đứng ở vị trí chính giữa 2 vùng Zone để nhanh chóng chạy vào đúng Zone của mình.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361128",
+          "runs": [
+            {
+              "text": "→ Khi thông báo "
+            },
+            {
+              "text": "“There is no escape from my gaze!”",
+              "italic": true
+            },
+            {
+              "text": " xuất hiện báo hiệu cho việc Queen Iona kích hoạt Roaring Thunder.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361245",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nó sẽ gắn lên bạn 1 trong 2 hiệu ứng là “Positive Charge” ứng với dấu cộng và “Negative Charge” ứng với dấu trừ "
+            },
+            {
+              "text": "(chú ý biểu tượng xuất hiện trên đỉnh đầu nhân vật của bạn)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361418",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Và kích hoạt Zone cực Dương "
+            },
+            {
+              "text": "(màu xanh)",
+              "italic": true
+            },
+            {
+              "text": " và Zone cực Âm "
+            },
+            {
+              "text": "(màu đỏ)",
+              "italic": true
+            },
+            {
+              "text": " ở 2 bên đối ngược nhau cũng như vị trí sẽ xuất hiện ngẫu nhiên "
+            },
+            {
+              "text": "(Dương trái Âm phải hoặc Dương phải Âm trái)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361590",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Bạn có 4s để nhanh chóng chạy vào vùng Zone ngược dấu với bạn "
+            },
+            {
+              "text": "(hoặc khác màu)",
+              "italic": true
+            },
+            {
+              "text": " trước khi cú Nuke được tung ra.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-361702",
+          "runs": [
+            {
+              "text": "→ Tuy nhiên, từ Phase 2 trở đi "
+            },
+            {
+              "text": "(khi còn lại 70% HP)",
+              "italic": true
+            },
+            {
+              "text": " thì sẽ có thêm 1 trạng thái mới gọi là “Ion Shift” hay hiểu đơn giản là điện áp ngược hoặc đảo ngược, trạng thái này sẽ có 30% khả năng xuất hiện và chỉ áp dụng duy nhất lên một đợt Zone ngay sau đó "
+            },
+            {
+              "text": "(có thể xuất hiện liên tiếp nhiều lần trạng thái “Reverse Voltage” chứ không thể 1 đợt áp lên nhiều Zone)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362062",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi thấy thông báo "
+            },
+            {
+              "text": "“(The storm is out of control! Your next charge will have the opposite effect!)”",
+              "italic": true
+            },
+            {
+              "text": " hoặc biểu tượng mũi tên xoay tròn ở phía trên nhân vật của mình thì đây chính là lúc trạng thái “Ion Shift” được kích hoạt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362286",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Lúc này bạn cần phải chú ý, vì Zone tiếp theo xuất hiện sau đó "
+            },
+            {
+              "text": "(chỉ duy nhất một Zone với mỗi lần trạng thái này được kích hoạt)",
+              "italic": true
+            },
+            {
+              "text": " sẽ theo nguyên tắc ngược lại bình thường ở bên trên.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362468",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Bạn vẫn có 4s nhưng sẽ phải chạy ngược lại, tức phải chạy vào vùng Zone có cùng dấu với bạn "
+            },
+            {
+              "text": "(hoặc cùng màu)",
+              "italic": true
+            },
+            {
+              "text": " trước khi cú Nuke được tung ra.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362733",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "AI, VHL, CAv, DT/EDoT, VDK, LR, SC/IT",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-362806",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AI",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 4, sau đó spam 3, 4 và 5 đến khi xuất hiện “Judgement” thì bấm 4 - 2. Cuối cùng spam 3, 4 và 5 đến khi đủ lượng “End of the World” cần/chịu được thì bấm 2 để nuke rồi lập lại "
+            },
+            {
+              "text": "(bỏ 2 mở đầu)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363016",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Wizard class + Pneuma + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363066",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363172",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 5 - 3 - 2, chỉ dùng 4 khi HP trên 2k\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363229",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Ravenous + Lucky class + Anima + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363289",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363395",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 4 - 5 - 2 sau đó spam skill, nhưng cần chú ý ưu tiên spam 2 và 4 ngay khi CD.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363496",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous/Dauntless + Lucky class + Vim/Anima + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363558",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu dùng Ravenous thì đi với Vim, còn Dauntless thì đi với Anima.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363624",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363731",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 4 - 3 - 5 - 3, sau đó lập lại 4 - 3 - 2 - 3 - 5 - 3.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363809",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Pneuma + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363858",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-363966",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4, tuy nhiên cần lưu ý, nếu có “Gather Darkness” thì ưu tiên dùng cho 3 để tăng khả năng thủ.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364102",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Forge helm + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364155",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364261",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364348",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance/Elysium + Wizard class + Pneuma + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364406",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364512",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "SC",
+              "bold": true
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "IT",
+              "bold": true
+            },
+            {
+              "text": " combo: dùng combo 3 - 4 - 2 - 5 "
+            },
+            {
+              "text": "(luôn dùng 2 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364575",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Wizard class + Pneuma + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-364625",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendedTeams": []
+}

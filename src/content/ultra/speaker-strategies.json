@@ -1,0 +1,1725 @@
+[
+  {
+    "id": "source-team-1",
+    "name": "Team 1",
+    "label": "4 Taunt · Starter",
+    "tauntCount": 4,
+    "classSlots": [
+      {
+        "id": "source-team-1-0",
+        "primaryClass": {
+          "classId": "quantum-chronomancer",
+          "name": "Quantum Chronomancer",
+          "abbreviation": "QCM"
+        },
+        "alternativeClasses": [
+          {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL"
+          },
+          {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK"
+          },
+          {
+            "classId": "legion-doomknight",
+            "name": "Legion DoomKnight",
+            "abbreviation": "LDK"
+          }
+        ]
+      },
+      {
+        "id": "source-team-1-1",
+        "primaryClass": {
+          "classId": "legion-revenant",
+          "name": "Legion Revenant",
+          "abbreviation": "LR"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-1-2",
+        "primaryClass": {
+          "classId": "paladin-chronomancer",
+          "name": "Paladin Chronomancer",
+          "abbreviation": "PCM"
+        },
+        "alternativeClasses": [
+          {
+            "classId": "legion-paladin",
+            "name": "Legion Paladin",
+            "abbreviation": "LP"
+          },
+          {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP"
+          }
+        ]
+      },
+      {
+        "id": "source-team-1-3",
+        "primaryClass": {
+          "classId": "lord-of-order",
+          "name": "Lord of Order",
+          "abbreviation": "LoO"
+        },
+        "alternativeClasses": []
+      }
+    ],
+    "rotationSteps": [
+      {
+        "stepId": "source-team-1-step-1",
+        "order": 1,
+        "phase": "Mở đầu",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, LoO lập tức rời khu vực Zone",
+        "sourceRow": 2
+      },
+      {
+        "stepId": "source-team-1-step-2",
+        "order": 2,
+        "phase": "Mở đầu",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, LoO lập tức rời khu vực Zone",
+        "sourceRow": 3
+      },
+      {
+        "stepId": "source-team-1-step-3",
+        "order": 3,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "PCM/LP/AP",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 5
+      },
+      {
+        "stepId": "source-team-1-step-4",
+        "order": 4,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "mDPS",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 6
+      },
+      {
+        "stepId": "source-team-1-step-5",
+        "order": 5,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "PCM/LP/AP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 7
+      },
+      {
+        "stepId": "source-team-1-step-6",
+        "order": 6,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "PCM/LP/AP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 8
+      },
+      {
+        "stepId": "source-team-1-step-7",
+        "order": 7,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LoO",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 9
+      },
+      {
+        "stepId": "source-team-1-step-8",
+        "order": 8,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 10
+      },
+      {
+        "stepId": "source-team-1-step-9",
+        "order": 9,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 11
+      },
+      {
+        "stepId": "source-team-1-step-10",
+        "order": 10,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 12
+      },
+      {
+        "stepId": "source-team-1-step-11",
+        "order": 11,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 13
+      },
+      {
+        "stepId": "source-team-1-step-12",
+        "order": 12,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "mDPS",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 15
+      },
+      {
+        "stepId": "source-team-1-step-13",
+        "order": 13,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "mDPS",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 16
+      },
+      {
+        "stepId": "source-team-1-step-14",
+        "order": 14,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "PCM/LP/AP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 17
+      },
+      {
+        "stepId": "source-team-1-step-15",
+        "order": 15,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "PCM/LP/AP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 18
+      },
+      {
+        "stepId": "source-team-1-step-16",
+        "order": 16,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LR",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 19
+      },
+      {
+        "stepId": "source-team-1-step-17",
+        "order": 17,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 20
+      },
+      {
+        "stepId": "source-team-1-step-18",
+        "order": 18,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 21
+      },
+      {
+        "stepId": "source-team-1-step-19",
+        "order": 19,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 22
+      },
+      {
+        "stepId": "source-team-1-step-20",
+        "order": 20,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 23
+      }
+    ],
+    "specialNotes": [
+      "Sử dụng PCM sẽ có lợi thế hơn AP về khả năng hồi màu cho team giúp tăng khả năng sống sót.",
+      "QCM/VHL/VDK/LDK, PCM/AP, LR và LoO sẽ thực hiện Focus/Taunt bằng Scroll of Enrage. Còn với chạy Zone thì sẽ vào 1 người mỗi lần Zone kích hoạt. Chi tiết xem thứ tự xem chi tiết ở bảng sau:"
+    ],
+    "source": "/huong-dan/malgor-the-first-speaker",
+    "sourceTableId": "table-195917",
+    "sourceTableHash": "cb197da9fbf6adbbb206cd165487126011e453f6c8ac36909f56388b68030100",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-11-10",
+    "sourceModifiedAt": "2026-10-27T16:23:04.246Z"
+  },
+  {
+    "id": "source-team-2",
+    "name": "Team 2",
+    "label": "3 Taunt · Starter",
+    "tauntCount": 3,
+    "classSlots": [
+      {
+        "id": "source-team-2-0",
+        "primaryClass": {
+          "classId": "chaos-avenger",
+          "name": "Chaos Avenger",
+          "abbreviation": "CAv"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-2-1",
+        "primaryClass": {
+          "classId": "legion-revenant",
+          "name": "Legion Revenant",
+          "abbreviation": "LR"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-2-2",
+        "primaryClass": {
+          "classId": "archpaladin",
+          "name": "ArchPaladin",
+          "abbreviation": "AP"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-2-3",
+        "primaryClass": {
+          "classId": "lord-of-order",
+          "name": "Lord of Order",
+          "abbreviation": "LoO"
+        },
+        "alternativeClasses": []
+      }
+    ],
+    "rotationSteps": [
+      {
+        "stepId": "source-team-2-step-1",
+        "order": 1,
+        "phase": "Mở đầu",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, LoO lập tức rời khu vực Zone",
+        "sourceRow": 2
+      },
+      {
+        "stepId": "source-team-2-step-2",
+        "order": 2,
+        "phase": "Mở đầu",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, LoO lập tức rời khu vực Zone",
+        "sourceRow": 3
+      },
+      {
+        "stepId": "source-team-2-step-3",
+        "order": 3,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "AP",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 5
+      },
+      {
+        "stepId": "source-team-2-step-4",
+        "order": 4,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "CAv (3)",
+        "zone": "—",
+        "tauntVariant": "3",
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 6
+      },
+      {
+        "stepId": "source-team-2-step-5",
+        "order": 5,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 7
+      },
+      {
+        "stepId": "source-team-2-step-6",
+        "order": 6,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 8
+      },
+      {
+        "stepId": "source-team-2-step-7",
+        "order": 7,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LoO",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 9
+      },
+      {
+        "stepId": "source-team-2-step-8",
+        "order": 8,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 10
+      },
+      {
+        "stepId": "source-team-2-step-9",
+        "order": 9,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 11
+      },
+      {
+        "stepId": "source-team-2-step-10",
+        "order": 10,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 12
+      },
+      {
+        "stepId": "source-team-2-step-11",
+        "order": 11,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 13
+      },
+      {
+        "stepId": "source-team-2-step-12",
+        "order": 12,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "CAv",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 15
+      },
+      {
+        "stepId": "source-team-2-step-13",
+        "order": 13,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "CAv (3)",
+        "zone": "—",
+        "tauntVariant": "3",
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 16
+      },
+      {
+        "stepId": "source-team-2-step-14",
+        "order": 14,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 17
+      },
+      {
+        "stepId": "source-team-2-step-15",
+        "order": 15,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 18
+      },
+      {
+        "stepId": "source-team-2-step-16",
+        "order": 16,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LR",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 19
+      },
+      {
+        "stepId": "source-team-2-step-17",
+        "order": 17,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 20
+      },
+      {
+        "stepId": "source-team-2-step-18",
+        "order": 18,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 21
+      },
+      {
+        "stepId": "source-team-2-step-19",
+        "order": 19,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 22
+      },
+      {
+        "stepId": "source-team-2-step-20",
+        "order": 20,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 23
+      }
+    ],
+    "specialNotes": [
+      "CAv, LR và LoO sẽ thực hiện Focus/Taunt bằng Scroll of Enrage. Còn với chạy Zone thì sẽ vào 1 người mỗi lần Zone kích hoạt. Chi tiết xem thứ tự xem chi tiết ở bảng sau:"
+    ],
+    "source": "/huong-dan/malgor-the-first-speaker",
+    "sourceTableId": "table-197787",
+    "sourceTableHash": "5ed30b67f734cee29fea032fad1d86f89f8ff2505bdf47ae80467055761c76a4",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-11-10",
+    "sourceModifiedAt": "2026-10-27T16:23:04.246Z"
+  },
+  {
+    "id": "source-team-3",
+    "name": "Team 3",
+    "label": "3 Taunt · BEST",
+    "tauntCount": 3,
+    "classSlots": [
+      {
+        "id": "source-team-3-0",
+        "primaryClass": {
+          "classId": "void-highlord",
+          "name": "Void Highlord",
+          "abbreviation": "VHL"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-3-1",
+        "primaryClass": {
+          "classId": "quantum-chronomancer",
+          "name": "Quantum Chronomancer",
+          "abbreviation": "QCM"
+        },
+        "alternativeClasses": [
+          {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK"
+          }
+        ]
+      },
+      {
+        "id": "source-team-3-2",
+        "primaryClass": {
+          "classId": "legion-revenant",
+          "name": "Legion Revenant",
+          "abbreviation": "LR"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-3-3",
+        "primaryClass": {
+          "classId": "lord-of-order",
+          "name": "Lord of Order",
+          "abbreviation": "LoO"
+        },
+        "alternativeClasses": []
+      }
+    ],
+    "rotationSteps": [
+      {
+        "stepId": "source-team-3-step-1",
+        "order": 1,
+        "phase": "Mở đầu",
+        "skill": "Truth NUKE",
+        "taunt": "QCM/VDK",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 2
+      },
+      {
+        "stepId": "source-team-3-step-2",
+        "order": 2,
+        "phase": "Mở đầu",
+        "skill": "Listen STUN",
+        "taunt": "QCM/VDK",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 3
+      },
+      {
+        "stepId": "source-team-3-step-3",
+        "order": 3,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LR",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 5
+      },
+      {
+        "stepId": "source-team-3-step-4",
+        "order": 4,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 6
+      },
+      {
+        "stepId": "source-team-3-step-5",
+        "order": 5,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 7
+      },
+      {
+        "stepId": "source-team-3-step-6",
+        "order": 6,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 8
+      },
+      {
+        "stepId": "source-team-3-step-7",
+        "order": 7,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "QCM/VDK",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 9
+      },
+      {
+        "stepId": "source-team-3-step-8",
+        "order": 8,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "QCM/VDK",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 10
+      },
+      {
+        "stepId": "source-team-3-step-9",
+        "order": 9,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "QCM/VDK",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 11
+      },
+      {
+        "stepId": "source-team-3-step-10",
+        "order": 10,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 12
+      },
+      {
+        "stepId": "source-team-3-step-11",
+        "order": 11,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 13
+      },
+      {
+        "stepId": "source-team-3-step-12",
+        "order": 12,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "VHL",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 15
+      },
+      {
+        "stepId": "source-team-3-step-13",
+        "order": 13,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "QCM/VDK",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 16
+      },
+      {
+        "stepId": "source-team-3-step-14",
+        "order": 14,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 17
+      },
+      {
+        "stepId": "source-team-3-step-15",
+        "order": 15,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 18
+      },
+      {
+        "stepId": "source-team-3-step-16",
+        "order": 16,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LoO",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 19
+      },
+      {
+        "stepId": "source-team-3-step-17",
+        "order": 17,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 20
+      },
+      {
+        "stepId": "source-team-3-step-18",
+        "order": 18,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 21
+      },
+      {
+        "stepId": "source-team-3-step-19",
+        "order": 19,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "QCM/VDK",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 22
+      },
+      {
+        "stepId": "source-team-3-step-20",
+        "order": 20,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "QCM/VDK",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 23
+      }
+    ],
+    "specialNotes": [
+      "Đây là team có tốc độ nhanh nhưng do không có debuff cũng như buff heal từ PCM/AP nên áp lực của LoO (class duy nhất có buff heal trong team) tăng lên rất nhiều.",
+      "QCM/VDK, LR và LoO sẽ thực hiện Focus/Taunt bằng Scroll of Enrage. Còn với chạy Zone thì vào 1 người mỗi lần Zone kích hoạt. Chi tiết xem thứ tự xem chi tiết ở bảng sau:"
+    ],
+    "source": "/huong-dan/malgor-the-first-speaker",
+    "sourceTableId": "table-199585",
+    "sourceTableHash": "56b05c2af5223d3cc78a1cf8fbc0eabced3c49baf424a19d36c536c62c4f9589",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-11-10",
+    "sourceModifiedAt": "2026-10-27T16:23:04.246Z"
+  },
+  {
+    "id": "source-team-4",
+    "name": "Team 4",
+    "label": "2 Taunt",
+    "tauntCount": 2,
+    "classSlots": [
+      {
+        "id": "source-team-4-0",
+        "primaryClass": {
+          "classId": "chaos-avenger",
+          "name": "Chaos Avenger",
+          "abbreviation": "CAv"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-4-1",
+        "primaryClass": {
+          "classId": "legion-revenant",
+          "name": "Legion Revenant",
+          "abbreviation": "LR"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-4-2",
+        "primaryClass": {
+          "classId": "paladin-chronomancer",
+          "name": "Paladin Chronomancer",
+          "abbreviation": "PCM"
+        },
+        "alternativeClasses": [
+          {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP"
+          }
+        ]
+      },
+      {
+        "id": "source-team-4-3",
+        "primaryClass": {
+          "classId": "lord-of-order",
+          "name": "Lord of Order",
+          "abbreviation": "LoO"
+        },
+        "alternativeClasses": []
+      }
+    ],
+    "rotationSteps": [
+      {
+        "stepId": "source-team-4-step-1",
+        "order": 1,
+        "phase": "Mở đầu",
+        "skill": "Truth NUKE",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 2
+      },
+      {
+        "stepId": "source-team-4-step-2",
+        "order": 2,
+        "phase": "Mở đầu",
+        "skill": "Listen STUN",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 3
+      },
+      {
+        "stepId": "source-team-4-step-3",
+        "order": 3,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LR",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 5
+      },
+      {
+        "stepId": "source-team-4-step-4",
+        "order": 4,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 6
+      },
+      {
+        "stepId": "source-team-4-step-5",
+        "order": 5,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 7
+      },
+      {
+        "stepId": "source-team-4-step-6",
+        "order": 6,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 8
+      },
+      {
+        "stepId": "source-team-4-step-7",
+        "order": 7,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LoO",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 9
+      },
+      {
+        "stepId": "source-team-4-step-8",
+        "order": 8,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 10
+      },
+      {
+        "stepId": "source-team-4-step-9",
+        "order": 9,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 11
+      },
+      {
+        "stepId": "source-team-4-step-10",
+        "order": 10,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 12
+      },
+      {
+        "stepId": "source-team-4-step-11",
+        "order": 11,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 13
+      },
+      {
+        "stepId": "source-team-4-step-12",
+        "order": 12,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "PCM/AP",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 15
+      },
+      {
+        "stepId": "source-team-4-step-13",
+        "order": 13,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 16
+      },
+      {
+        "stepId": "source-team-4-step-14",
+        "order": 14,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "CAv",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 17
+      },
+      {
+        "stepId": "source-team-4-step-15",
+        "order": 15,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR (Prax)",
+        "zone": "—",
+        "tauntVariant": "Prax",
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 18
+      },
+      {
+        "stepId": "source-team-4-step-16",
+        "order": 16,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "CAv",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 19
+      },
+      {
+        "stepId": "source-team-4-step-17",
+        "order": 17,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 20
+      },
+      {
+        "stepId": "source-team-4-step-18",
+        "order": 18,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "CAv (3)",
+        "zone": "—",
+        "tauntVariant": "3",
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 21
+      },
+      {
+        "stepId": "source-team-4-step-19",
+        "order": 19,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "CAv (Prax)",
+        "zone": "—",
+        "tauntVariant": "Prax",
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 22
+      },
+      {
+        "stepId": "source-team-4-step-20",
+        "order": 20,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "CAv (Prax)",
+        "zone": "—",
+        "tauntVariant": "Prax",
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 23
+      }
+    ],
+    "specialNotes": [
+      "Với Team này, CAv và LR sẽ cân Focus/Taunt, nên cần phải tận dụng khả năng của Praxis để chặn DMG, tuy nhiên chỉ có 2s hiệu ứng và 8s CD, nên bạn cần phải canh cực chuẩn, không có chỗ cho sai lầm.",
+      "CAv và LR sẽ thực hiện Focus/Taunt bằng Scroll of Enrage. Còn với chạy Zone thì sẽ vào 1 người mỗi lần Zone kích hoạt. Chi tiết xem thứ tự xem chi tiết ở bảng sau:"
+    ],
+    "source": "/huong-dan/malgor-the-first-speaker",
+    "sourceTableId": "table-203233",
+    "sourceTableHash": "d7b82374140054e3b41276e9c40c629932d2930fe73a4f549e951374f3d19526",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-11-10",
+    "sourceModifiedAt": "2026-10-27T16:23:04.246Z"
+  },
+  {
+    "id": "source-team-5",
+    "name": "Team 5",
+    "label": "2 Taunt",
+    "tauntCount": 2,
+    "classSlots": [
+      {
+        "id": "source-team-5-0",
+        "primaryClass": {
+          "classId": "quantum-chronomancer",
+          "name": "Quantum Chronomancer",
+          "abbreviation": "QCM"
+        },
+        "alternativeClasses": [
+          {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL"
+          },
+          {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK"
+          }
+        ]
+      },
+      {
+        "id": "source-team-5-1",
+        "primaryClass": {
+          "classId": "legion-paladin",
+          "name": "Legion Paladin",
+          "abbreviation": "LP"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-5-2",
+        "primaryClass": {
+          "classId": "legion-revenant",
+          "name": "Legion Revenant",
+          "abbreviation": "LR"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-5-3",
+        "primaryClass": {
+          "classId": "lord-of-order",
+          "name": "Lord of Order",
+          "abbreviation": "LoO"
+        },
+        "alternativeClasses": []
+      }
+    ],
+    "rotationSteps": [
+      {
+        "stepId": "source-team-5-step-1",
+        "order": 1,
+        "phase": "Mở đầu",
+        "skill": "Truth NUKE",
+        "taunt": "LP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 2
+      },
+      {
+        "stepId": "source-team-5-step-2",
+        "order": 2,
+        "phase": "Mở đầu",
+        "skill": "Listen STUN",
+        "taunt": "LP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 3
+      },
+      {
+        "stepId": "source-team-5-step-3",
+        "order": 3,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "mDPS",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 5
+      },
+      {
+        "stepId": "source-team-5-step-4",
+        "order": 4,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 6
+      },
+      {
+        "stepId": "source-team-5-step-5",
+        "order": 5,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 7
+      },
+      {
+        "stepId": "source-team-5-step-6",
+        "order": 6,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR (Prax)",
+        "zone": "—",
+        "tauntVariant": "Prax",
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 8
+      },
+      {
+        "stepId": "source-team-5-step-7",
+        "order": 7,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LP",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 9
+      },
+      {
+        "stepId": "source-team-5-step-8",
+        "order": 8,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 10
+      },
+      {
+        "stepId": "source-team-5-step-9",
+        "order": 9,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 11
+      },
+      {
+        "stepId": "source-team-5-step-10",
+        "order": 10,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LP (4)",
+        "zone": "—",
+        "tauntVariant": "4",
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 12
+      },
+      {
+        "stepId": "source-team-5-step-11",
+        "order": 11,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LP (4)",
+        "zone": "—",
+        "tauntVariant": "4",
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 13
+      },
+      {
+        "stepId": "source-team-5-step-12",
+        "order": 12,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LR",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 15
+      },
+      {
+        "stepId": "source-team-5-step-13",
+        "order": 13,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 16
+      },
+      {
+        "stepId": "source-team-5-step-14",
+        "order": 14,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 17
+      },
+      {
+        "stepId": "source-team-5-step-15",
+        "order": 15,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 18
+      },
+      {
+        "stepId": "source-team-5-step-16",
+        "order": 16,
+        "phase": "",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LoO",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 19
+      },
+      {
+        "stepId": "source-team-5-step-17",
+        "order": 17,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 20
+      },
+      {
+        "stepId": "source-team-5-step-18",
+        "order": 18,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LR",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 21
+      },
+      {
+        "stepId": "source-team-5-step-19",
+        "order": 19,
+        "phase": "",
+        "skill": "Truth NUKE",
+        "taunt": "LP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 22
+      },
+      {
+        "stepId": "source-team-5-step-20",
+        "order": 20,
+        "phase": "",
+        "skill": "Listen STUN",
+        "taunt": "LP",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 23
+      }
+    ],
+    "specialNotes": [
+      "Với Team này cũng cần phải tận dụng khả năng của Praxis để chặn DMG, chỉ có 2s hiệu ứng và 8s CD, nên bạn cần phải canh cực chuẩn, không có chỗ cho sai lầm.",
+      "LP và LR sẽ thực hiện Focus/Taunt bằng Scroll of Enrage. Còn với chạy Zone thì sẽ vào 1 người mỗi lần Zone kích hoạt. Chi tiết xem thứ tự xem chi tiết ở bảng sau:"
+    ],
+    "source": "/huong-dan/malgor-the-first-speaker",
+    "sourceTableId": "table-205330",
+    "sourceTableHash": "c33463aa77e87acc1345b17c9ea2bb0db611b8aaa3901d7563081c0119eafbeb",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-11-10",
+    "sourceModifiedAt": "2026-10-27T16:23:04.246Z"
+  },
+  {
+    "id": "source-team-6",
+    "name": "Team 6",
+    "label": "3 Taunt · SPEEDRUN",
+    "tauntCount": 3,
+    "classSlots": [
+      {
+        "id": "source-team-6-0",
+        "primaryClass": {
+          "classId": "great-thief",
+          "name": "Great Thief",
+          "abbreviation": "GT"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-6-1",
+        "primaryClass": {
+          "classId": "quantum-chronomancer",
+          "name": "Quantum Chronomancer",
+          "abbreviation": "QCM"
+        },
+        "alternativeClasses": [
+          {
+            "classId": "arachnomancer",
+            "name": "Arachnomancer",
+            "abbreviation": "Arach"
+          }
+        ]
+      },
+      {
+        "id": "source-team-6-2",
+        "primaryClass": {
+          "classId": "verus-doomknight",
+          "name": "Verus DoomKnight",
+          "abbreviation": "VDK"
+        },
+        "alternativeClasses": []
+      },
+      {
+        "id": "source-team-6-3",
+        "primaryClass": {
+          "classId": "lord-of-order",
+          "name": "Lord of Order",
+          "abbreviation": "LoO"
+        },
+        "alternativeClasses": []
+      }
+    ],
+    "rotationSteps": [
+      {
+        "stepId": "source-team-6-step-1",
+        "order": 1,
+        "phase": "Mở đầu",
+        "skill": "Truth NUKE",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 2
+      },
+      {
+        "stepId": "source-team-6-step-2",
+        "order": 2,
+        "phase": "Mở đầu",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Duy nhất lúc mở đầu Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 3
+      },
+      {
+        "stepId": "source-team-6-step-3",
+        "order": 3,
+        "phase": "Vòng duy nhất",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "QCM/Arach",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 5
+      },
+      {
+        "stepId": "source-team-6-step-4",
+        "order": 4,
+        "phase": "Vòng duy nhất",
+        "skill": "Truth NUKE",
+        "taunt": "QCM/Arach",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone",
+        "sourceRow": 6
+      },
+      {
+        "stepId": "source-team-6-step-5",
+        "order": 5,
+        "phase": "Vòng duy nhất",
+        "skill": "Listen STUN",
+        "taunt": "VDK",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 7
+      },
+      {
+        "stepId": "source-team-6-step-6",
+        "order": 6,
+        "phase": "Vòng duy nhất",
+        "skill": "Truth NUKE",
+        "taunt": "VDK",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục",
+        "sourceRow": 8
+      },
+      {
+        "stepId": "source-team-6-step-7",
+        "order": 7,
+        "phase": "Vòng duy nhất",
+        "skill": "Equal ZONE",
+        "taunt": "—",
+        "zone": "LoO",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "",
+        "sourceRow": 9
+      },
+      {
+        "stepId": "source-team-6-step-8",
+        "order": 8,
+        "phase": "Vòng duy nhất",
+        "skill": "Listen STUN",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 10
+      },
+      {
+        "stepId": "source-team-6-step-9",
+        "order": 9,
+        "phase": "Vòng duy nhất",
+        "skill": "Truth NUKE",
+        "taunt": "LoO",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Ngay sau kết thúc Zone Kích hoạt liên tục",
+        "sourceRow": 11
+      },
+      {
+        "stepId": "source-team-6-step-10",
+        "order": 10,
+        "phase": "Vòng duy nhất",
+        "skill": "Truth NUKE",
+        "taunt": "QCM/Arach",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 12
+      },
+      {
+        "stepId": "source-team-6-step-11",
+        "order": 11,
+        "phase": "Vòng duy nhất",
+        "skill": "Listen STUN",
+        "taunt": "QCM/Arach",
+        "zone": "—",
+        "tauntVariant": null,
+        "zoneVariant": null,
+        "notes": "Kích hoạt liên tục Ngay sau Taunt, lập tức rời khu vực Zone",
+        "sourceRow": 13
+      }
+    ],
+    "specialNotes": [
+      "Đây là Team có tốc độ nhanh nhất, nhưng cũng mỏng manh và dễ thất bại nhất, LoO sẽ là class Heal duy nhất trong Team. Vì vậy cần tối đa hoá sát thương bằng thuốc để đạt hiệu quả cao.",
+      "QCM/Arach, VDK và LoO sẽ thực hiện Focus/Taunt bằng Scroll of Enrage. Còn với chạy Zone thì sẽ cho QCM/Arach vào. Chi tiết xem thứ tự xem chi tiết ở bảng sau:"
+    ],
+    "source": "/huong-dan/malgor-the-first-speaker",
+    "sourceTableId": "table-208052",
+    "sourceTableHash": "7b6e5e9906c3ff95e3c6bcb7d7cd41cedf69a1ebe453c72e038164dcb9cb4426",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-11-10",
+    "sourceModifiedAt": "2026-10-27T16:23:04.246Z"
+  }
+]

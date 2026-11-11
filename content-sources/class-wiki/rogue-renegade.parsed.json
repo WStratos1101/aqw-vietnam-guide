@@ -1,0 +1,127 @@
+{
+  "url": "https://aqwwiki.wikidot.com/rogue",
+  "sourceHash": "68665200839c0f1863a750267c73e42c3a375847b4983ca9da7e0cb86fa7ee5a",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "1.5",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Double click a monster to start Auto Attacking it. This is a very unique attack that deals rapid, consistent damage based on your attack power instead of your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/rogue",
+      "sourceHash": "68665200839c0f1863a750267c73e42c3a375847b4983ca9da7e0cb86fa7ee5a",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 1.5 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Double click a monster to start Auto Attacking it. This is a very unique attack that deals rapid, consistent damage based on your attack power instead of your weapon damage."
+    },
+    {
+      "officialName": "Viper's Kiss",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "3",
+      "skillType": "Physical",
+      "target": "A medium range attack that deals damage to 1 target.",
+      "officialDescription": "Instantly deals weapon damage and applies Viper's Kiss, a poison dealing additional damage over 7 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill05.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/rogue",
+      "sourceHash": "68665200839c0f1863a750267c73e42c3a375847b4983ca9da7e0cb86fa7ee5a",
+      "evidence": "Viper's Kiss Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 3 Seconds Type: Physical Range: A medium range attack that deals damage to 1 target. Description: Instantly deals weapon damage and applies Viper's Kiss, a poison dealing additional damage over 7 seconds."
+    },
+    {
+      "officialName": "Footwork",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "16",
+      "skillType": "Physical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Increases your Haste and Dodge by 30% for 7 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill08.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/rogue",
+      "sourceHash": "68665200839c0f1863a750267c73e42c3a375847b4983ca9da7e0cb86fa7ee5a",
+      "evidence": "Footwork Rank Needed: 2 Mana Cost: 20 Mana Cooldown: 16 Seconds Type: Physical Range: A short range status skill that applies to yourself. Description: Increases your Haste and Dodge by 30% for 7 seconds."
+    },
+    {
+      "officialName": "Stiletto",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "20",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Deals moderate damage and applies Concealed Blade for 7 seconds, causing your attacks to deal bonus damage to targets below 40% of their max HP, with the bonus damage increasing the closer they are to death.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill07.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/rogue",
+      "sourceHash": "68665200839c0f1863a750267c73e42c3a375847b4983ca9da7e0cb86fa7ee5a",
+      "evidence": "Stiletto Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 20 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Deals moderate damage and applies Concealed Blade for 7 seconds, causing your attacks to deal bonus damage to targets below 40% of their max HP, with the bonus damage increasing the closer they are to death. Note: Concealed Blade lasts for 12 seconds."
+    },
+    {
+      "officialName": "Elusive",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Dodge increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/rogue",
+      "sourceHash": "68665200839c0f1863a750267c73e42c3a375847b4983ca9da7e0cb86fa7ee5a",
+      "evidence": "Elusive Rank Needed: 4 Type: Passive Ability Description: Dodge increased by 15%."
+    },
+    {
+      "officialName": "Incisive",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit Chance increased by 10% and Crit Chance increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/rogue",
+      "sourceHash": "68665200839c0f1863a750267c73e42c3a375847b4983ca9da7e0cb86fa7ee5a",
+      "evidence": "Incisive Rank Needed: 4 Type: Passive Ability Description: Hit Chance increased by 10% and Crit Chance increased by 15%."
+    },
+    {
+      "officialName": "Opportunity's Strike",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Deals more damage the closer Viper's Kiss is to expiring.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill06.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/rogue",
+      "sourceHash": "68665200839c0f1863a750267c73e42c3a375847b4983ca9da7e0cb86fa7ee5a",
+      "evidence": "Opportunity's Strike Rank Needed: 5 Mana Cost: 10 Mana Cooldown: 4 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Deals more damage the closer Viper's Kiss is to expiring."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/jMXLjzA.png",
+  "sameSkillVariants": [
+    {
+      "name": "Classic Alpha Pirate",
+      "url": "https://aqwwiki.wikidot.com/classic-alpha-pirate"
+    },
+    {
+      "name": "Classic Barber",
+      "url": "https://aqwwiki.wikidot.com/classic-barber"
+    },
+    {
+      "name": "Classic Pirate (Class)",
+      "url": "https://aqwwiki.wikidot.com/classic-pirate-class"
+    },
+    {
+      "name": "Rogue (Rare)",
+      "url": "https://aqwwiki.wikidot.com/rogue-rare"
+    }
+  ],
+  "location": "Locations:\n\nCharacter creation\nMetrea's Shop\n\n8-Bit Trainers\nBoss Challenge\nClass Hall A\nGrave Challenge \nTraining Hall\n\n\n\nPrice: 0 AC"
+}

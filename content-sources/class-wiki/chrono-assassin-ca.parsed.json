@@ -1,0 +1,134 @@
+{
+  "url": "https://aqwwiki.wikidot.com/chrono-assassin-ac",
+  "sourceHash": "06c4930c893699e81ef7a1a784a520ee8ec3d52de5e8c24dac838bfb0801172d",
+  "entries": [
+    {
+      "officialName": "Strike Blades",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "1",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "You wield Strike Blades. Manipulating with time allows you to attack incredibly fast, but sacrificing power.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chrono-assassin-ac",
+      "sourceHash": "06c4930c893699e81ef7a1a784a520ee8ec3d52de5e8c24dac838bfb0801172d",
+      "evidence": "Strike Blades Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 1 Second Type: Physical Range: A short range attack that deals damage to 1 target. Description: You wield Strike Blades. Manipulating with time allows you to attack incredibly fast, but sacrificing power."
+    },
+    {
+      "officialName": "Shift",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "12",
+      "cooldown": "5",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Push time forward with your next strike dealing Light Damage to your opponent. Applies Push Time, increasing your Dodge and Haste by 8% for 12 seconds, stacks to 5. If Reverse Time is in play, Strike Blades will replace it with Temporal Blades increasing your Damage Output by 30% and applying Pull Time, lowering the opponent's Haste and Dodge by 15% for 12 seconds.",
+      "notes": [
+        "Applies Push Time to caster for 12 seconds, increasing haste and dodge by 8% per stack, stacking to 5 (Note that haste stacking currently does not function, so haste will only be increased at most 8% from push time.).",
+        "If Reverse Time is active, applies Temporal Blades to caster for 12 seconds, increasing all damage dealt by caster by 30%. (Temporal Blades is not refreshed when re-applied).",
+        "If Reverse Time is active, applies Pull Time to enemy target for 12 seconds, lowering their Haste and Dodge Chance by 15%.",
+        "If Reverse Time is active, applies Overse Time to caster for 1 second, which removes Reverse Time."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill319.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chrono-assassin-ac",
+      "sourceHash": "06c4930c893699e81ef7a1a784a520ee8ec3d52de5e8c24dac838bfb0801172d",
+      "evidence": "Shift Rank Needed: 1 Mana Cost: 12 Mana Cooldown: 5 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Push time forward with your next strike dealing Light Damage to your opponent. Applies Push Time, increasing your Dodge and Haste by 8% for 12 seconds, stacks to 5. If Reverse Time is in play, Strike Blades will replace it with Temporal Blades increasing your Damage Output by 30% and applying Pull Time, lowering the opponent's Haste and Dodge by 15% for 12 seconds. Notes: Applies Push Time to caster for 12 seconds, increasing haste and dodge by 8% per stack, stacking to 5 (Note that haste stacking currently does not function, so haste will only be increased at most 8% from push time.). If Reverse Time is active, applies Temporal Blades to caster for 12 seconds, increasing all damage dealt by caster by 30%. (Temporal Blades is not refreshed when re-applied). If Reverse Time is active, applies Pull Time to enemy target for 12 seconds, lowering their Haste and Dodge Chance by 15%. If Reverse Time is active, applies Overse Time to caster for 1 second, which removes Reverse Time."
+    },
+    {
+      "officialName": "Relapse",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "6",
+      "cooldown": "3",
+      "skillType": "Hybrid",
+      "target": "An infinite range attack that deals damage to 1 target.",
+      "officialDescription": "Relieve time with your next strike dealing Moderate Damage to your opponent. Applies Deadlock to yourself, stacks 4 times. Once max stacked Deadlock will consume itself and apply Reverse Time, granting you a Moderate HoT for 10 seconds.",
+      "notes": [
+        "Applies Deadlock to caster for 12 seconds.",
+        "At 5 stacks of Deadlock, applies Reverse Time to caster for 10 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill188.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chrono-assassin-ac",
+      "sourceHash": "06c4930c893699e81ef7a1a784a520ee8ec3d52de5e8c24dac838bfb0801172d",
+      "evidence": "Relapse Rank Needed: 2 Mana Cost: 6 Mana Cooldown: 3 Seconds Type: Hybrid Range: An infinite range attack that deals damage to 1 target. Description: Relieve time with your next strike dealing Moderate Damage to your opponent. Applies Deadlock to yourself, stacks 4 times. Once max stacked Deadlock will consume itself and apply Reverse Time, granting you a Moderate HoT for 10 seconds. Notes: Applies Deadlock to caster for 12 seconds. At 5 stacks of Deadlock, applies Reverse Time to caster for 10 seconds."
+    },
+    {
+      "officialName": "Convert",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "12",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Generate time with your next strike dealing Moderate Damage to your opponent. Applies Condense Time, increasing Critical Strike Chance and Critical Strike Damage by 10% for 12 seconds, stacks to 5. If Reverse Time is in play, Strike Blades will replace it with Temporal Blades increasing all damage out by 30% and apply Depress Time, lowering the opponent's Critical Strike Chance and Critical Strike Damage by 15% for 12 seconds.",
+      "notes": [
+        "Applies Condense Time to caster for 12 seconds, increasing Critical Strike Chance and Critical Strike Damage by 10%, stacking to 5.",
+        "If Reverse Time is active, applies Temporal Blades to caster for 12 seconds, increasing all damage dealt by caster by 30%. (Temporal Blades is not refreshed when re-applied).",
+        "If Reverse Time is active, applies Depress Time to enemy target for 12 seconds, lowering enemy target's Critical Strike Chance and Critical Strike Damage Damage by 15%.",
+        "If Reverse Time is active, applies Overse Time to caster for 1 second, which removes Reverse Time."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill189.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chrono-assassin-ac",
+      "sourceHash": "06c4930c893699e81ef7a1a784a520ee8ec3d52de5e8c24dac838bfb0801172d",
+      "evidence": "Convert Rank Needed: 3 Mana Cost: 12 Mana Cooldown: 4 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Generate time with your next strike dealing Moderate Damage to your opponent. Applies Condense Time, increasing Critical Strike Chance and Critical Strike Damage by 10% for 12 seconds, stacks to 5. If Reverse Time is in play, Strike Blades will replace it with Temporal Blades increasing all damage out by 30% and apply Depress Time, lowering the opponent's Critical Strike Chance and Critical Strike Damage by 15% for 12 seconds. Notes: Applies Condense Time to caster for 12 seconds, increasing Critical Strike Chance and Critical Strike Damage by 10%, stacking to 5. If Reverse Time is active, applies Temporal Blades to caster for 12 seconds, increasing all damage dealt by caster by 30%. (Temporal Blades is not refreshed when re-applied). If Reverse Time is active, applies Depress Time to enemy target for 12 seconds, lowering enemy target's Critical Strike Chance and Critical Strike Damage Damage by 15%. If Reverse Time is active, applies Overse Time to caster for 1 second, which removes Reverse Time."
+    },
+    {
+      "officialName": "Prediction",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Hit Chance and Crit Chance by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chrono-assassin-ac",
+      "sourceHash": "06c4930c893699e81ef7a1a784a520ee8ec3d52de5e8c24dac838bfb0801172d",
+      "evidence": "Prediction Rank Needed: 4 Type: Passive Ability Description: Increases Hit Chance and Crit Chance by 10%"
+    },
+    {
+      "officialName": "Anticipation",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Dodge by 12%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chrono-assassin-ac",
+      "sourceHash": "06c4930c893699e81ef7a1a784a520ee8ec3d52de5e8c24dac838bfb0801172d",
+      "evidence": "Anticipation Rank Needed: 4 Type: Passive Ability Description: Increases Dodge by 12%"
+    },
+    {
+      "officialName": "Hysteria",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "20",
+      "skillType": "Magical",
+      "target": "An infinite range status skill that applies to 1 target.",
+      "officialDescription": "Sever your foe's mind in time causing them to go insane. For the next 6 seconds the target will hit itself instead of you. If Reverse Time isn't in play you get Enhance Time, reducing the damage your target takes by 15%. If Reverse Time is in play, its removed and you get Temporal Blades while your opponent gets Corrupt Time. Temporal Blades increases your damage by 30%. Corrupt Time increases your opponent's damage by 15%. They last 12 seconds.",
+      "notes": [
+        "Applies Temporal Insanity! to target enemy for 6 seconds, reflecting their damage dealt back onto themself.",
+        "Applies Enhance Time! to enemy target for 12 seconds, reducing all damage they take by 15%.",
+        "If Reverse Time! is active, applies Corrupt Time! to enemy target for 12 seconds, increasing target enemy's damage output by 15%.",
+        "If Reverse Time! is active, applies Temporal Blades to caster for 12 seconds, increasing all damage dealt by caster by 30%. (Temporal Blades is not refreshed when re-applied).",
+        "If Reverse Time! is active, applies Overse Time! to caster for 1 second, which removes Reverse Time."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill320.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chrono-assassin-ac",
+      "sourceHash": "06c4930c893699e81ef7a1a784a520ee8ec3d52de5e8c24dac838bfb0801172d",
+      "evidence": "Hysteria Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 20 Seconds Type: Magical Range: An infinite range status skill that applies to 1 target. Description: Sever your foe's mind in time causing them to go insane. For the next 6 seconds the target will hit itself instead of you. If Reverse Time isn't in play you get Enhance Time, reducing the damage your target takes by 15%. If Reverse Time is in play, its removed and you get Temporal Blades while your opponent gets Corrupt Time. Temporal Blades increases your damage by 30%. Corrupt Time increases your opponent's damage by 15%. They last 12 seconds. Notes: Applies Temporal Insanity! to target enemy for 6 seconds, reflecting their damage dealt back onto themself. Applies Enhance Time! to enemy target for 12 seconds, reducing all damage they take by 15%. If Reverse Time! is active, applies Corrupt Time! to enemy target for 12 seconds, increasing target enemy's damage output by 15%. If Reverse Time! is active, applies Temporal Blades to caster for 12 seconds, increasing all damage dealt by caster by 30%. (Temporal Blades is not refreshed when re-applied). If Reverse Time! is active, applies Overse Time! to caster for 1 second, which removes Reverse Time."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/pmapmGK.png",
+  "sameSkillVariants": [
+    {
+      "name": "Chrono Assassin (Merge)",
+      "url": "https://aqwwiki.wikidot.com/chrono-assassin-merge"
+    }
+  ],
+  "location": "Location: Tachyon Gear - Game Menu\nPrice: 2,000 AC"
+}

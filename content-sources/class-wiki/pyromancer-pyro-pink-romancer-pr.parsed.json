@@ -1,0 +1,132 @@
+{
+  "url": "https://aqwwiki.wikidot.com/pyromancer-class-ac",
+  "sourceHash": "c28faa5f117a437ff9f91d972293b575f0f9b9585b7d6d5227c36df51ab67952",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all Pyromancers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/pyromancer-class-ac",
+      "sourceHash": "c28faa5f117a437ff9f91d972293b575f0f9b9585b7d6d5227c36df51ab67952",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all Pyromancers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Sear",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "4",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Scorches your target for light damage while applying Scorch, a DoT for 6 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill34.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/pyromancer-class-ac",
+      "sourceHash": "c28faa5f117a437ff9f91d972293b575f0f9b9585b7d6d5227c36df51ab67952",
+      "evidence": "Sear Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 4 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Scorches your target for light damage while applying Scorch, a DoT for 6 seconds."
+    },
+    {
+      "officialName": "Withering Blast",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "8",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "A blast of flame leaps from your hands burning your target. Applies Withering Burn, a DoT that reduces their outgoing damage by 10% for 8 seconds. If Scorched is active on your target, it is consumed to deal double damage to them and apply Incinerate, increasing their incoming DoT damage by 10% for 10 seconds, stacks to 10.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill62.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/pyromancer-class-ac",
+      "sourceHash": "c28faa5f117a437ff9f91d972293b575f0f9b9585b7d6d5227c36df51ab67952",
+      "evidence": "Withering Blast Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 8 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: A blast of flame leaps from your hands burning your target. Applies Withering Burn, a DoT that reduces their outgoing damage by 10% for 8 seconds. If Scorched is active on your target, it is consumed to deal double damage to them and apply Incinerate, increasing their incoming DoT damage by 10% for 10 seconds, stacks to 10."
+    },
+    {
+      "officialName": "Burning Ward",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "16",
+      "skillType": "Magical",
+      "target": "A short range skill that heals yourself.",
+      "officialDescription": "Recovers HP and surrounds yourself in a magical shield of fire. Applies Burning Ward for 6 seconds, reducing your incoming damage by 50% while also causing any foe who strike you while it's active to take damage, capped at 1,000 per hit. If Scorch is active on your target, they receive double damage and the cap is increased to 2,000.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill04.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/pyromancer-class-ac",
+      "sourceHash": "c28faa5f117a437ff9f91d972293b575f0f9b9585b7d6d5227c36df51ab67952",
+      "evidence": "Burning Ward Rank Needed: 3 Mana Cost: 30 Mana Cooldown: 16 Seconds Type: Magical Range: A short range skill that heals yourself. Description: Recovers HP and surrounds yourself in a magical shield of fire. Applies Burning Ward for 6 seconds, reducing your incoming damage by 50% while also causing any foe who strike you while it's active to take damage, capped at 1,000 per hit. If Scorch is active on your target, they receive double damage and the cap is increased to 2,000."
+    },
+    {
+      "officialName": "Heat of the Knight",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Incoming Damage reduced by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/pyromancer-class-ac",
+      "sourceHash": "c28faa5f117a437ff9f91d972293b575f0f9b9585b7d6d5227c36df51ab67952",
+      "evidence": "Heat of the Knight Rank Needed: 4 Type: Passive Description: Incoming Damage reduced by 10%"
+    },
+    {
+      "officialName": "Melt Faces",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Outgoing damage and Hit Chance increased by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/pyromancer-class-ac",
+      "sourceHash": "c28faa5f117a437ff9f91d972293b575f0f9b9585b7d6d5227c36df51ab67952",
+      "evidence": "Melt Faces Rank Needed: 4 Type: Passive Description: Outgoing damage and Hit Chance increased by 10%"
+    },
+    {
+      "officialName": "Flame Orb",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "16",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "A massive fireball flies at your target exploding for HIGH damage while also applying a DoT for 10 seconds. If Scorch is active on your target, it is consumed to deal double damage to them and apply Incinerate, increasing their incoming DoT damage by 10% for 10 second, stacks to 10.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill30.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/pyromancer-class-ac",
+      "sourceHash": "c28faa5f117a437ff9f91d972293b575f0f9b9585b7d6d5227c36df51ab67952",
+      "evidence": "Flame Orb Rank Needed: 5 Mana Cost: 20 Mana Cooldown: 16 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: A massive fireball flies at your target exploding for HIGH damage while also applying a DoT for 10 seconds. If Scorch is active on your target, it is consumed to deal double damage to them and apply Incinerate, increasing their incoming DoT damage by 10% for 10 second, stacks to 10."
+    },
+    {
+      "officialName": "Burn at Both Ends",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Haste increased by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/pyromancer-class-ac",
+      "sourceHash": "c28faa5f117a437ff9f91d972293b575f0f9b9585b7d6d5227c36df51ab67952",
+      "evidence": "Burn at Both Ends Rank Needed: 10 Type: Passive Description: Haste increased by 15%"
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/gif5acN.png",
+  "sameSkillVariants": [
+    {
+      "name": "Pyromancer (Class) (Merge)",
+      "url": "https://aqwwiki.wikidot.com/pyromancer-class-merge"
+    },
+    {
+      "name": "Pink Romancer (Class)",
+      "url": "https://aqwwiki.wikidot.com/pink-romancer-class"
+    }
+  ],
+  "location": "Locations:\n\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\nPyromancer Shop - Ruins of Shurpu\n\nPrice: 2,000 AC"
+}

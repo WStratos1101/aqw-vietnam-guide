@@ -1,0 +1,883 @@
+{
+  "challengeContent": true,
+  "id": "devastator-deimos",
+  "name": "Devastator Deimos",
+  "type": "other_challenge",
+  "map": "deimos",
+  "levelRequirement": 70,
+  "partySize": 7,
+  "description": "Cách đánh:",
+  "bodyUrl": "/content/challenges/devastator-deimos.json",
+  "href": "/other-challenges/devastator-deimos",
+  "image": "monster-devastator-deimos",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "devastator-deimos-stage-1",
+      "name": "Devastator Deimos",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Devastator Deimos",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "devastator-deimos-0",
+            "canonicalName": "Devastator Deimos",
+            "role": "Monster",
+            "level": 95,
+            "maxHp": 1000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/devastator-deimos"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "devastator-deimos-0-phlegethons-flames-0",
+            "monsterId": "devastator-deimos-0",
+            "name": "Phlegethon's Flames",
+            "type": "Physical Damage",
+            "damage": "50% of target's max HP",
+            "damageType": "Physical Damage",
+            "cooldown": "2 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/devastator-deimos"
+          },
+          {
+            "id": "devastator-deimos-0-decaying-howl-1",
+            "monsterId": "devastator-deimos-0",
+            "name": "Decaying Howl",
+            "cooldown": "10 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Bỏ qua Focus.",
+              "Áp Decay, Cannot Heal trong 8 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/devastator-deimos"
+          },
+          {
+            "id": "devastator-deimos-0-brink-of-death-2",
+            "monsterId": "devastator-deimos-0",
+            "name": "Brink of Death",
+            "activation": "Deimos refuses to fall… break his guard before he recovers!",
+            "playerEffects": [
+              "Dùng tại 20% HP còn lại",
+              "Áp Safeguard lên bản thân, blocking 1,000,000 pre mitigated sát thương nhận vào trong 15 giây. If 1,000,000 damage is blocked, Safeguard fades."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/devastator-deimos"
+          },
+          {
+            "id": "devastator-deimos-0-dark-return-3",
+            "monsterId": "devastator-deimos-0",
+            "name": "Dark Return",
+            "activation": "Deimos recovers his HP and grows stronger!",
+            "playerEffects": [
+              "Nếu có Safeguard, Áp Dark Return, removing Safeguard, fully healing Devastator Deimos, tăng his sát thương gây ra 200%."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/devastator-deimos"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Cũng là một con Boss có khả năng Decay như Dage the Dark Lord, nhưng dễ thở hơn nhiều, ngoài ra còn được thêm các cơ chế mới, nhưng cũng không quá khó để đánh bại. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+        "- “War and Devastation” quest giúp merge đồ trong Deimos' Den Rewards.",
+        "- “Daily Exercise 4: Devastator Deimos” quest để farm Legion Token Daily.",
+        "Boss này nằm ở map /join deimos - Room limit: 7",
+        "Cần đạt ít nhất lvl 70 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 1,000,000",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 0% Dodge, 100% All Out và -50% All In.",
+        "◆ Auto-Attack mỗi 2s gây Phys DMG bằng 50% lượng HP tối đa của player lên tất cả players.",
+        "◆ Mỗi 10s, sử dụng Decaying Howl.",
+        "→ Players dính hiệu ứng Decay, không nhận được Heal/HoT trong 8s.",
+        "→ Sử dụng các class có Life Steal, nếu không thì dùng Health Vamp.",
+        "◆ Khi còn 20% HP, Deimos tiến vào trạng thái Brink of Death trong 15s.",
+        "→ Deimos kích hoạt Safeguard lên bản thân, giúp chặn 1m DMG từ mọi nguồn, nếu đã chặn hết 1m DMG này thì Safeguard bị vô hiệu hoá.",
+        "→ Deimos bị Stun trong 15s.",
+        "→ Players tập trung tối đa sát thương để vô hiệu hoá Safeguard trong 15s.",
+        "◆ Kích hoạt Dark Return ngay sau khi hết Brink of Death mà Safeguard vẫn chưa bị vô hiệu hoá.",
+        "→ Deimos xoá Safeguard và hồi đầy HP cho bản thân, tăng 200% All Out và giảm CD Auto Attack còn 1s."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Deimos cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 6 người bên dưới thì có thể giết nó một cách đơn giản.",
+        "Team 6 người:\tVHL, LR, VDK, AP, LoO, SC/IT",
+        "hoặc\t2 LR, VDK, AP, LoO, SC/IT",
+        "hoặc\tShaman, LR, AP, LoO, SC/IT, FB",
+        "Team 7 người:\tShaman, LR, VDK, AP, LoO, SC/IT, FB",
+        "hoặc\t2 Shaman, LR, AP, LoO, SC/IT, FB",
+        "hoặc\tVHL, LR, VDK, AP, LoO, SC/IT, FB",
+        "hoặc\tDT/EDoT, LR, VDK, Arach, AP, LoO, LH/DLH/SC/IT",
+        "hoặc\t2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH"
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-422391",
+          "runs": [
+            {
+              "text": "Cũng là một con Boss có khả năng Decay n"
+            },
+            {
+              "text": "hư "
+            },
+            {
+              "text": "Dage the Dark Lord"
+            },
+            {
+              "text": ", như"
+            },
+            {
+              "text": "ng dễ thở hơn nhiều, ngoài ra còn được thêm các cơ chế mới, nhưng cũng không quá khó để đánh bại. Temp item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422607",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "War and Devastation",
+              "href": "http://aqwwiki.wikidot.com/dage-s-quests#Deimos"
+            },
+            {
+              "text": "” quest giúp merge đồ trong "
+            },
+            {
+              "text": "Deimos' Den Rewards",
+              "href": "http://aqwwiki.wikidot.com/deimos-den-rewards"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422678",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Daily Exercise 4: Devastator Deimos",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest để farm Legion Token Daily."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422753",
+          "runs": [
+            {
+              "text": "Boss này nằm ",
+              "italic": true
+            },
+            {
+              "text": "ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join deimos",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/deimos"
+            },
+            {
+              "text": " - Room",
+              "italic": true
+            },
+            {
+              "text": " limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422801",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 70",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422858",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422866",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422888",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422940",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422978",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423043",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge, 100% All Out và -50% All In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423092",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Phys DMG bằng 50% lượng HP tối đa của player lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423182",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Decaying Howl.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423216",
+          "runs": [
+            {
+              "text": "→ Players dính hiệu ứng Decay, không nhận được Heal/HoT trong 8s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423282",
+          "runs": [
+            {
+              "text": "→ Sử dụng các class có Life Steal, nếu không thì dùng Health Vamp.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423349",
+          "runs": [
+            {
+              "text": "◆ Khi còn 20% HP, Deimos tiến vào trạng thái Brink of Death trong 15s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423420",
+          "runs": [
+            {
+              "text": "→ Deimos kích hoạt Safeguard lên bản thân, giúp chặn 1m DMG từ mọi nguồn, nếu đã chặn hết 1m DMG này thì Safeguard bị vô hiệu hoá.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423551",
+          "runs": [
+            {
+              "text": "→ Deimos bị Stun trong 15s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423579",
+          "runs": [
+            {
+              "text": "→ Players tập trung tối đa sát thương để vô hiệu hoá Safeguard trong 15s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423653",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Dark Return ngay sau khi hết Brink of Death mà Safeguard vẫn chưa bị vô hiệu hoá.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423747",
+          "runs": [
+            {
+              "text": "→ Deimos xoá Safeguard và hồi đầy HP cho bản thân, tăng 200% All Out và giảm CD Auto Attack còn 1s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423848",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-423860",
+          "runs": [
+            {
+              "text": "Nhìn chung Deimos cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 6 người bên dưới thì có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424018",
+          "runs": [
+            {
+              "text": "Team 6 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "VHL, LR, VDK, AP, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424061",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 LR, VDK, AP, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424093",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Shaman, LR, AP, LoO, SC/IT, FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424130",
+          "runs": [
+            {
+              "text": "Team 7 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "Shaman, LR, VDK, AP, LoO, SC/IT, FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424180",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Shaman, LR, AP, LoO, SC/IT, FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424219",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "VHL, LR, VDK, AP, LoO, SC/IT, FB\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424258",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "DT/EDoT, LR, VDK, Arach, AP, LoO, LH/DLH/SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-424311",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH\n",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-422940",
+      "runs": [
+        {
+          "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-424018",
+      "runs": [
+        {
+          "text": "Team 6 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "VHL, LR, VDK, AP, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-424061",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 LR, VDK, AP, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-424093",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "Shaman, LR, AP, LoO, SC/IT, FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-424130",
+      "runs": [
+        {
+          "text": "Team 7 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "Shaman, LR, VDK, AP, LoO, SC/IT, FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-424180",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 Shaman, LR, AP, LoO, SC/IT, FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-424219",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "VHL, LR, VDK, AP, LoO, SC/IT, FB\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-424258",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "DT/EDoT, LR, VDK, Arach, AP, LoO, LH/DLH/SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-424311",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH\n",
+          "bold": true
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": [
+    {
+      "id": "source-team-6",
+      "name": "Team 6 người:\tVHL, LR, VDK, AP, LoO, SC/IT",
+      "assignments": [
+        {
+          "id": "team-1-slot-1-1",
+          "primaryClass": {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-3-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-4-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-5-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-6-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-7",
+      "name": "Team 7 người:\tShaman, LR, VDK, AP, LoO, SC/IT, FB",
+      "assignments": [
+        {
+          "id": "team-2-slot-1-1",
+          "primaryClass": {
+            "classId": "shaman",
+            "name": "Shaman",
+            "abbreviation": "Shaman",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-3-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-4-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-5-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-6-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-2-slot-7-1",
+          "primaryClass": {
+            "classId": "frostval-barbarian",
+            "name": "Frostval Barbarian",
+            "abbreviation": "FB",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    }
+  ]
+}

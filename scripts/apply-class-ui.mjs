@@ -1,0 +1,4 @@
+import fs from 'node:fs';import{acquisitionSummary,difficultyTier}from'../src/lib/class-presentation.mjs';
+const catalog=JSON.parse(fs.readFileSync('src/content/classes/catalog.json')),data=JSON.parse(fs.readFileSync('src/content/classes/acquisition.json'));const report=[];
+for(const c of catalog){const record=data.classes[c.id];const d=difficultyTier(c,record);c.difficulty=d.tier;c.difficultyBasis=d.basis;c.difficultyStatus=d.status;c.acquisitionSummary=acquisitionSummary(record);report.push({classId:c.id,tier:d.tier,tierVerification:d.status,acquisitionMethods:record?.methods.length||0,acquisitionReview:record?.reviewStatus,summary:c.acquisitionSummary});}
+fs.writeFileSync('src/content/classes/catalog.json',JSON.stringify(catalog,null,2)+'\n');fs.writeFileSync('artifacts/qa/class-ui-coverage.json',JSON.stringify(report,null,2)+'\n');console.log(`Class presentation: ${catalog.length} tiers/summaries updated; tier labels are editorial, not official.`);

@@ -1,0 +1,2626 @@
+[
+  {
+    "name": "Alpha Omega/DOOMmega (AO)",
+    "classId": "alpha-omega-doommega-ao",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "alpha-omega-legend-merge-0",
+        "type": "merge",
+        "variant": "Alpha Omega (Legend)",
+        "source": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "alpha-omega-non-legend-shop-0",
+        "type": "ac_purchase",
+        "variant": "Alpha Omega (Non-Legend)",
+        "source": "https://aqwwiki.wikidot.com/alpha-omega-non-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "alpha-doommega-merge-0",
+        "type": "merge",
+        "variant": "Alpha DOOMmega",
+        "source": "https://aqwwiki.wikidot.com/alpha-doommega",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Merge Shop",
+          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "alpha-doommega-merge-1",
+        "type": "merge",
+        "variant": "Alpha DOOMmega",
+        "source": "https://aqwwiki.wikidot.com/alpha-doommega",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "alpha-doommega-merge-2",
+        "type": "merge",
+        "variant": "Alpha DOOMmega",
+        "source": "https://aqwwiki.wikidot.com/alpha-doommega",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Merge Shop",
+          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "alpha-doommega-merge-3",
+        "type": "merge",
+        "variant": "Alpha DOOMmega",
+        "source": "https://aqwwiki.wikidot.com/alpha-doommega",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "alpha-doommega-other-reward-0",
+        "type": "other_verified",
+        "variant": "Alpha DOOMmega",
+        "source": "https://aqwwiki.wikidot.com/alpha-doommega",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "alpha-doommega-other-reward-1",
+        "type": "other_verified",
+        "variant": "Alpha DOOMmega",
+        "source": "https://aqwwiki.wikidot.com/alpha-doommega",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Alpha Pirate - Pirate",
+    "classId": "alpha-pirate-pirate",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "alpha-pirate-class-merge-0",
+        "type": "merge",
+        "variant": "Alpha Pirate (Class)",
+        "source": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "alpha-pirate-class-merge-1",
+        "type": "merge",
+        "variant": "Alpha Pirate (Class)",
+        "source": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "pirate-merge-0",
+        "type": "merge",
+        "variant": "Pirate",
+        "source": "https://aqwwiki.wikidot.com/pirate",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "pirate-merge-1",
+        "type": "merge",
+        "variant": "Pirate",
+        "source": "https://aqwwiki.wikidot.com/pirate",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "pirate-merge-2",
+        "type": "merge",
+        "variant": "Pirate",
+        "source": "https://aqwwiki.wikidot.com/pirate",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Merge Shop",
+          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "pirate-merge-3",
+        "type": "merge",
+        "variant": "Pirate",
+        "source": "https://aqwwiki.wikidot.com/pirate",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Abyssal Angel (AA) - Abyssal Angel's Shadow (AAS)",
+    "classId": "abyssal-angel-aa-abyssal-angel-s-shadow-aas",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "abyssal-angel-legend-shop-0",
+        "type": "gold_purchase",
+        "variant": "Abyssal Angel (Legend)",
+        "source": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "abyssal-angel-non-legend-shop-0",
+        "type": "ac_purchase",
+        "variant": "Abyssal Angel (Non-Legend)",
+        "source": "https://aqwwiki.wikidot.com/abyssal-angel-non-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "abyssal-angel-s-shadow-0-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Abyssal Angel's Shadow (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/abyssal-angel-s-shadow-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "abyssal-angel-s-shadow-0-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "Abyssal Angel's Shadow (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/abyssal-angel-s-shadow-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "abyssal-angel-s-shadow-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Abyssal Angel's Shadow (AC)",
+        "source": "https://aqwwiki.wikidot.com/abyssal-angel-s-shadow-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "BattleMage - Dark/Royal BattleMage (DBM/RBM)",
+    "classId": "battlemage-dark-royal-battlemage-dbm-rbm",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "battlemage-class-shop-0",
+        "type": "ac_purchase",
+        "variant": "BattleMage (Class)",
+        "source": "https://aqwwiki.wikidot.com/battlemage-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "battlemage-class-shop-1",
+        "type": "ac_purchase",
+        "variant": "BattleMage (Class)",
+        "source": "https://aqwwiki.wikidot.com/battlemage-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-battlemage-legend-shop-0",
+        "type": "gold_purchase",
+        "variant": "Dark BattleMage (Legend)",
+        "source": "https://aqwwiki.wikidot.com/dark-battlemage-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-battlemage-legend-shop-1",
+        "type": "gold_purchase",
+        "variant": "Dark BattleMage (Legend)",
+        "source": "https://aqwwiki.wikidot.com/dark-battlemage-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-battlemage-non-legend-shop-0",
+        "type": "ac_purchase",
+        "variant": "Dark BattleMage (Non-Legend)",
+        "source": "https://aqwwiki.wikidot.com/dark-battlemage-non-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "royal-battlemage-shop-0",
+        "type": "ac_purchase",
+        "variant": "Royal BattleMage",
+        "source": "https://aqwwiki.wikidot.com/royal-battlemage",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "royal-battlemage-shop-1",
+        "type": "ac_purchase",
+        "variant": "Royal BattleMage",
+        "source": "https://aqwwiki.wikidot.com/royal-battlemage",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "battlemage-of-love-shop-0",
+        "type": "ac_purchase",
+        "variant": "BattleMage of Love",
+        "source": "https://aqwwiki.wikidot.com/battlemage-of-love",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "BeastMaster",
+    "classId": "beastmaster",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "beastmaster-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "BeastMaster (AC)",
+        "source": "https://aqwwiki.wikidot.com/beastmaster-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "beastmaster-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "BeastMaster (AC)",
+        "source": "https://aqwwiki.wikidot.com/beastmaster-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "beastmaster-ac-shop-2",
+        "type": "ac_purchase",
+        "variant": "BeastMaster (AC)",
+        "source": "https://aqwwiki.wikidot.com/beastmaster-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "beastmaster-0-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "BeastMaster (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/beastmaster-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Blaze Binder",
+    "classId": "blaze-binder-bb-firelord-summoner-fls",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "blaze-binder-merge-merge-0",
+        "type": "merge",
+        "variant": "Blaze Binder (Merge)",
+        "source": "https://aqwwiki.wikidot.com/blaze-binder-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "blaze-binder-merge-merge-1",
+        "type": "merge",
+        "variant": "Blaze Binder (Merge)",
+        "source": "https://aqwwiki.wikidot.com/blaze-binder-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "blaze-binder-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Blaze Binder (AC)",
+        "source": "https://aqwwiki.wikidot.com/blaze-binder-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Shop Name",
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 252 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 275 ms: Couldn't connect to server",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "blaze-binder-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "Blaze Binder (AC)",
+        "source": "https://aqwwiki.wikidot.com/blaze-binder-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Shop Name",
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 252 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 275 ms: Couldn't connect to server",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "blaze-binder-ac-shop-2",
+        "type": "ac_purchase",
+        "variant": "Blaze Binder (AC)",
+        "source": "https://aqwwiki.wikidot.com/blaze-binder-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "firelord-summoner-class-shop-0",
+        "type": "ac_purchase",
+        "variant": "FireLord Summoner (Class)",
+        "source": "https://aqwwiki.wikidot.com/firelord-summoner-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Berserker/Beta Berserker/Brutal Berserker",
+    "classId": "berserker-beta-berserker-brutal-berserker",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "berserker-shop-0",
+        "type": "ac_purchase",
+        "variant": "Berserker",
+        "source": "https://aqwwiki.wikidot.com/berserker",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "berserker-shop-1",
+        "type": "ac_purchase",
+        "variant": "Berserker",
+        "source": "https://aqwwiki.wikidot.com/berserker",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "berserker-shop-2",
+        "type": "ac_purchase",
+        "variant": "Berserker",
+        "source": "https://aqwwiki.wikidot.com/berserker",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "berserker-shop-3",
+        "type": "ac_purchase",
+        "variant": "Berserker",
+        "source": "https://aqwwiki.wikidot.com/berserker",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "beta-berserker-shop-0",
+        "type": "ac_purchase",
+        "variant": "Beta Berserker",
+        "source": "https://aqwwiki.wikidot.com/beta-berserker",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "beta-berserker-shop-1",
+        "type": "free",
+        "variant": "Beta Berserker",
+        "source": "https://aqwwiki.wikidot.com/beta-berserker",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "brutal-berserker-class-shop-0",
+        "type": "ac_purchase",
+        "variant": "Brutal Berserker (Class)",
+        "source": "https://aqwwiki.wikidot.com/brutal-berserker-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "chaos-avenger-member-preview-shop-0",
+        "type": "gold_purchase",
+        "variant": "Chaos Avenger Member Preview",
+        "source": "https://aqwwiki.wikidot.com/chaos-avenger-member-preview",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Chaos Slayer (CS) - Chaos Champion Prime (CCP)",
+    "classId": "chaos-slayer-cs-chaos-champion-prime-ccp",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "chaos-slayer-berserker-ac-shop-0",
+        "type": "shop_unlock",
+        "variant": "Chaos Slayer Berserker (AC)",
+        "source": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "chaos-slayer-berserker-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "Chaos Slayer Berserker (AC)",
+        "source": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Shop Name",
+          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "chaos-slayer-berserker-0-ac-shop-0",
+        "type": "shop_unlock",
+        "variant": "Chaos Slayer Berserker (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "chaos-slayer-cleric-ac-shop-0",
+        "type": "shop_unlock",
+        "variant": "Chaos Slayer Cleric (AC)",
+        "source": "https://aqwwiki.wikidot.com/chaos-slayer-cleric-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "chaos-slayer-cleric-0-ac-shop-0",
+        "type": "shop_unlock",
+        "variant": "Chaos Slayer Cleric (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/chaos-slayer-cleric-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "chaos-champion-prime-class-shop-0",
+        "type": "ac_purchase",
+        "variant": "Chaos Champion Prime (Class)",
+        "source": "https://aqwwiki.wikidot.com/chaos-champion-prime-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "chaos-slayer-mystic-0-ac-shop-0",
+        "type": "shop_unlock",
+        "variant": "Chaos Slayer Mystic (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/chaos-slayer-mystic-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "chaos-slayer-mystic-ac-shop-0",
+        "type": "shop_unlock",
+        "variant": "Chaos Slayer Mystic (AC)",
+        "source": "https://aqwwiki.wikidot.com/chaos-slayer-mystic-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "chaos-slayer-thief-0-ac-shop-0",
+        "type": "shop_unlock",
+        "variant": "Chaos Slayer Thief (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/chaos-slayer-thief-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "chaos-slayer-thief-ac-shop-0",
+        "type": "shop_unlock",
+        "variant": "Chaos Slayer Thief (AC)",
+        "source": "https://aqwwiki.wikidot.com/chaos-slayer-thief-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-chaos-berserker-shop-0",
+        "type": "ac_purchase",
+        "variant": "Dark Chaos Berserker",
+        "source": "https://aqwwiki.wikidot.com/dark-chaos-berserker",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-chaos-berserker-shop-1",
+        "type": "ac_purchase",
+        "variant": "Dark Chaos Berserker",
+        "source": "https://aqwwiki.wikidot.com/dark-chaos-berserker",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Classic Ninja",
+    "classId": "classic-ninja",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "classic-ninja-drop-0",
+        "type": "other_verified",
+        "variant": "Classic Ninja",
+        "source": "https://aqwwiki.wikidot.com/classic-ninja",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Cryomancer (Cryo) - Dark/Sakura Cryomancer",
+    "classId": "cryomancer-cryo-dark-sakura-cryomancer",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "cryomancer-merge-merge-0",
+        "type": "merge",
+        "variant": "Cryomancer (Merge)",
+        "source": "https://aqwwiki.wikidot.com/cryomancer-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "cryomancer-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Cryomancer (AC)",
+        "source": "https://aqwwiki.wikidot.com/cryomancer-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "cryomancer-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "Cryomancer (AC)",
+        "source": "https://aqwwiki.wikidot.com/cryomancer-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-cryomancer-shop-0",
+        "type": "ac_purchase",
+        "variant": "Dark Cryomancer",
+        "source": "https://aqwwiki.wikidot.com/dark-cryomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sakura-cryomancer-class-shop-0",
+        "type": "ac_purchase",
+        "variant": "Sakura Cryomancer (Class)",
+        "source": "https://aqwwiki.wikidot.com/sakura-cryomancer-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Dark Lord (DL) - Darkside",
+    "classId": "dark-lord-dl-darkside",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "dark-lord-merge-0",
+        "type": "merge",
+        "variant": "Dark Lord",
+        "source": "https://aqwwiki.wikidot.com/dark-lord",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Merge Shop",
+          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "dark-lord-merge-1",
+        "type": "merge",
+        "variant": "Dark Lord",
+        "source": "https://aqwwiki.wikidot.com/dark-lord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Deathknight Lord (DKL)",
+    "classId": "deathknight-lord-dkl",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "deathknight-lord-merge-merge-0",
+        "type": "merge",
+        "variant": "DeathKnight Lord (Merge)",
+        "source": "https://aqwwiki.wikidot.com/deathknight-lord-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Structured Materials",
+          "Material quantity not explicit: DeathKnight Lord Armor"
+        ]
+      },
+      {
+        "id": "deathknight-lord-merge-merge-1",
+        "type": "merge",
+        "variant": "DeathKnight Lord (Merge)",
+        "source": "https://aqwwiki.wikidot.com/deathknight-lord-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Structured Materials",
+          "Material quantity not explicit: DeathKnight Lord Armor"
+        ]
+      },
+      {
+        "id": "deathknight-lord-ac-1-shop-0",
+        "type": "ac_purchase",
+        "variant": "DeathKnight Lord (AC) (1)",
+        "source": "https://aqwwiki.wikidot.com/deathknight-lord-ac-1",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "deathknight-lord-ac-2-shop-0",
+        "type": "ac_purchase",
+        "variant": "DeathKnight Lord (AC) (2)",
+        "source": "https://aqwwiki.wikidot.com/deathknight-lord-ac-2",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "deathknight-lord-ac-2-shop-1",
+        "type": "ac_purchase",
+        "variant": "DeathKnight Lord (AC) (2)",
+        "source": "https://aqwwiki.wikidot.com/deathknight-lord-ac-2",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Dragon of Time",
+    "classId": "dragon-of-time-dt-edot",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "dragon-of-time-class-quest-0",
+        "type": "quest_reward",
+        "variant": "Dragon of Time (Class)",
+        "source": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Material quantity not explicit: Mysterious Egg (Pet)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DoomKnight (DmK)",
+    "classId": "doomknight-dmk",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "doomknight-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "DoomKnight (AC)",
+        "source": "https://aqwwiki.wikidot.com/doomknight-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "doomknight-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "DoomKnight (AC)",
+        "source": "https://aqwwiki.wikidot.com/doomknight-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "doomknight-ac-shop-2",
+        "type": "ac_purchase",
+        "variant": "DoomKnight (AC)",
+        "source": "https://aqwwiki.wikidot.com/doomknight-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "doomknight-ac-shop-3",
+        "type": "ac_purchase",
+        "variant": "DoomKnight (AC)",
+        "source": "https://aqwwiki.wikidot.com/doomknight-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "doomknight-0-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "DoomKnight (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/doomknight-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "doomknight-0-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "DoomKnight (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/doomknight-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Drakkar/Draco Knight (DrK)",
+    "classId": "dragon-drakkar-draco-knight-drk",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "dragon-knight-class-shop-0",
+        "type": "ac_purchase",
+        "variant": "Dragon Knight (Class)",
+        "source": "https://aqwwiki.wikidot.com/dragon-knight-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "drakkar-knight-merge-0",
+        "type": "merge",
+        "variant": "Drakkar Knight",
+        "source": "https://aqwwiki.wikidot.com/drakkar-knight",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "drakkar-knight-merge-1",
+        "type": "merge",
+        "variant": "Drakkar Knight",
+        "source": "https://aqwwiki.wikidot.com/drakkar-knight",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "drakkar-knight-merge-2",
+        "type": "merge",
+        "variant": "Drakkar Knight",
+        "source": "https://aqwwiki.wikidot.com/drakkar-knight",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "drakkar-knight-merge-3",
+        "type": "merge",
+        "variant": "Drakkar Knight",
+        "source": "https://aqwwiki.wikidot.com/drakkar-knight",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "drakkar-knight-merge-4",
+        "type": "merge",
+        "variant": "Drakkar Knight",
+        "source": "https://aqwwiki.wikidot.com/drakkar-knight",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "drakkar-knight-merge-5",
+        "type": "merge",
+        "variant": "Drakkar Knight",
+        "source": "https://aqwwiki.wikidot.com/drakkar-knight",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "drakkar-knight-merge-6",
+        "type": "merge",
+        "variant": "Drakkar Knight",
+        "source": "https://aqwwiki.wikidot.com/drakkar-knight",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "drakkar-knight-merge-7",
+        "type": "merge",
+        "variant": "Drakkar Knight",
+        "source": "https://aqwwiki.wikidot.com/drakkar-knight",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "draco-knight-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Draco Knight (AC)",
+        "source": "https://aqwwiki.wikidot.com/draco-knight-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "draco-knight-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "Draco Knight (AC)",
+        "source": "https://aqwwiki.wikidot.com/draco-knight-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "draco-knight-ac-shop-2",
+        "type": "ac_purchase",
+        "variant": "Draco Knight (AC)",
+        "source": "https://aqwwiki.wikidot.com/draco-knight-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "draco-knight-ac-shop-3",
+        "type": "ac_purchase",
+        "variant": "Draco Knight (AC)",
+        "source": "https://aqwwiki.wikidot.com/draco-knight-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "draco-knight-ac-shop-4",
+        "type": "ac_purchase",
+        "variant": "Draco Knight (AC)",
+        "source": "https://aqwwiki.wikidot.com/draco-knight-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "draco-knight-special-shop-0",
+        "type": "ac_purchase",
+        "variant": "Draco Knight (Special)",
+        "source": "https://aqwwiki.wikidot.com/draco-knight-special",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Dragonslayer (DS)",
+    "classId": "dragonslayer-ds",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "dragonslayer-class-shop-0",
+        "type": "shop_unlock",
+        "variant": "Dragonslayer (Class)",
+        "source": "https://aqwwiki.wikidot.com/dragonslayer-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dragonslayer-class-shop-1",
+        "type": "shop_unlock",
+        "variant": "Dragonslayer (Class)",
+        "source": "https://aqwwiki.wikidot.com/dragonslayer-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Dragon/DragonSoul/Shadow Dragon Shinobi (DSS/SDS)",
+    "classId": "dragon-dragonsoul-shadow-dragon-shinobi-dss-sds",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "dragon-shinobi-class-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Dragon Shinobi (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/dragon-shinobi-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dragon-shinobi-class-merge-merge-0",
+        "type": "merge",
+        "variant": "Dragon Shinobi (Class) (Merge)",
+        "source": "https://aqwwiki.wikidot.com/dragon-shinobi-class-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dragonsoul-shinobi-class-merge-0",
+        "type": "merge",
+        "variant": "DragonSoul Shinobi (Class)",
+        "source": "https://aqwwiki.wikidot.com/dragonsoul-shinobi-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "shadow-dragon-shinobi-class-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Shadow Dragon Shinobi (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/shadow-dragon-shinobi-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "shadow-dragon-shinobi-class-merge-merge-0",
+        "type": "merge",
+        "variant": "Shadow Dragon Shinobi (Class) (Merge)",
+        "source": "https://aqwwiki.wikidot.com/shadow-dragon-shinobi-class-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Enforcer - ProtoSartorium",
+    "classId": "enforcer-protosartorium",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "enforcer-quest-0",
+        "type": "quest_reward",
+        "variant": "Enforcer",
+        "source": "https://aqwwiki.wikidot.com/enforcer",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Nested material scope requires review"
+        ]
+      },
+      {
+        "id": "protosartorium-class-drop-0",
+        "type": "other_verified",
+        "variant": "ProtoSartorium (Class)",
+        "source": "https://aqwwiki.wikidot.com/protosartorium-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Evolved Pumpkin Lord (EPL)",
+    "classId": "evolved-pumpkin-lord-epl",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "evolved-pumpkin-lord-non-legend-shop-0",
+        "type": "ac_purchase",
+        "variant": "Evolved Pumpkin Lord (Non-Legend)",
+        "source": "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "evolved-pumpkin-lord-non-legend-shop-1",
+        "type": "ac_purchase",
+        "variant": "Evolved Pumpkin Lord (Non-Legend)",
+        "source": "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "evolved-pumpkin-lord-non-legend-shop-2",
+        "type": "ac_purchase",
+        "variant": "Evolved Pumpkin Lord (Non-Legend)",
+        "source": "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "evolved-pumpkin-lord-legend-merge-0",
+        "type": "merge",
+        "variant": "Evolved Pumpkin Lord (Legend)",
+        "source": "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "evolved-pumpkin-lord-legend-merge-1",
+        "type": "merge",
+        "variant": "Evolved Pumpkin Lord (Legend)",
+        "source": "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Merge Shop",
+          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
+          "Shop identity is not yet verified"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Frostval Barbarian (FB)",
+    "classId": "frostval-barbarian-fb",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "frostval-barbarian-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Frostval Barbarian (AC)",
+        "source": "https://aqwwiki.wikidot.com/frostval-barbarian-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Glacial/Glaceran Warlord - Dark/Savage Glaceran Warlord (GW/DGW/SGW)",
+    "classId": "glacial-glaceran-warlord-dark-savage-glaceran-warlord-gw-dgw-sgw",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "glacial-warlord-class-shop-0",
+        "type": "ac_purchase",
+        "variant": "Glacial Warlord (Class)",
+        "source": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "glaceran-warlord-shop-0",
+        "type": "ac_purchase",
+        "variant": "Glaceran Warlord",
+        "source": "https://aqwwiki.wikidot.com/glaceran-warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "glaceran-warlord-shop-1",
+        "type": "ac_purchase",
+        "variant": "Glaceran Warlord",
+        "source": "https://aqwwiki.wikidot.com/glaceran-warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "glaceran-warlord-shop-2",
+        "type": "ac_purchase",
+        "variant": "Glaceran Warlord",
+        "source": "https://aqwwiki.wikidot.com/glaceran-warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "glaceran-warlord-shop-3",
+        "type": "ac_purchase",
+        "variant": "Glaceran Warlord",
+        "source": "https://aqwwiki.wikidot.com/glaceran-warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "glaceran-warlord-shop-4",
+        "type": "ac_purchase",
+        "variant": "Glaceran Warlord",
+        "source": "https://aqwwiki.wikidot.com/glaceran-warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "glaceran-warlord-shop-5",
+        "type": "ac_purchase",
+        "variant": "Glaceran Warlord",
+        "source": "https://aqwwiki.wikidot.com/glaceran-warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "glaceran-warlord-shop-6",
+        "type": "free",
+        "variant": "Glaceran Warlord",
+        "source": "https://aqwwiki.wikidot.com/glaceran-warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "glaceran-warlord-shop-7",
+        "type": "ac_purchase",
+        "variant": "Glaceran Warlord",
+        "source": "https://aqwwiki.wikidot.com/glaceran-warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-glaceran-warlord-class-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Dark Glaceran Warlord (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/dark-glaceran-warlord-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-glaceran-warlord-class-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "Dark Glaceran Warlord (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/dark-glaceran-warlord-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-glaceran-warlord-class-0-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Dark Glaceran Warlord (Class) (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/dark-glaceran-warlord-class-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "savage-glaceran-warlord-class-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Savage Glaceran Warlord (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/savage-glaceran-warlord-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "savage-glaceran-warlord-class-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "Savage Glaceran Warlord (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/savage-glaceran-warlord-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "savage-glaceran-warlord-class-special-shop-0",
+        "type": "ac_purchase",
+        "variant": "Savage Glaceran Warlord (Class) (Special)",
+        "source": "https://aqwwiki.wikidot.com/savage-glaceran-warlord-class-special",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Healer - Acolyte - Witch",
+    "classId": "healer-acolyte-witch",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "healer-shop-0",
+        "type": "other_verified",
+        "variant": "Healer",
+        "source": "https://aqwwiki.wikidot.com/healer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "healer-shop-1",
+        "type": "free",
+        "variant": "Healer",
+        "source": "https://aqwwiki.wikidot.com/healer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "healer-shop-2",
+        "type": "free",
+        "variant": "Healer",
+        "source": "https://aqwwiki.wikidot.com/healer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "healer-shop-3",
+        "type": "free",
+        "variant": "Healer",
+        "source": "https://aqwwiki.wikidot.com/healer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "healer-rare-shop-0",
+        "type": "other_verified",
+        "variant": "Healer (Rare)",
+        "source": "https://aqwwiki.wikidot.com/healer-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "healer-rare-shop-1",
+        "type": "gold_purchase",
+        "variant": "Healer (Rare)",
+        "source": "https://aqwwiki.wikidot.com/healer-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "healer-rare-shop-2",
+        "type": "gold_purchase",
+        "variant": "Healer (Rare)",
+        "source": "https://aqwwiki.wikidot.com/healer-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "healer-rare-shop-3",
+        "type": "gold_purchase",
+        "variant": "Healer (Rare)",
+        "source": "https://aqwwiki.wikidot.com/healer-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "healer-rare-shop-4",
+        "type": "gold_purchase",
+        "variant": "Healer (Rare)",
+        "source": "https://aqwwiki.wikidot.com/healer-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "acolyte-shop-0",
+        "type": "ac_purchase",
+        "variant": "Acolyte",
+        "source": "https://aqwwiki.wikidot.com/acolyte",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "acolyte-shop-1",
+        "type": "ac_purchase",
+        "variant": "Acolyte",
+        "source": "https://aqwwiki.wikidot.com/acolyte",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "hollowborn-vindicator-member-preview-shop-0",
+        "type": "ac_purchase",
+        "variant": "Hollowborn Vindicator Member Preview",
+        "source": "https://aqwwiki.wikidot.com/hollowborn-vindicator-member-preview",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "witch-shop-0",
+        "type": "gold_purchase",
+        "variant": "Witch",
+        "source": "https://aqwwiki.wikidot.com/witch",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "King's Echo (KE)",
+    "classId": "king-s-echo-ke",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "king-s-echo-shop-0",
+        "type": "shop_unlock",
+        "variant": "King's Echo",
+        "source": "https://aqwwiki.wikidot.com/king-s-echo",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Kathool Adept (KA)",
+    "classId": "kathool-adept-ka",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "kathool-adept-quest-0",
+        "type": "quest_reward",
+        "variant": "Kathool Adept",
+        "source": "https://aqwwiki.wikidot.com/kathool-adept",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Nested material scope requires review"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Legendary/Ultra/Mythic Elemental Warrior (LEW/UEW/MEW)",
+    "classId": "legendary-ultra-mythic-elemental-warrior-lew-uew-mew",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "legendary-elemental-warrior-merge-0",
+        "type": "merge",
+        "variant": "Legendary Elemental Warrior",
+        "source": "https://aqwwiki.wikidot.com/legendary-elemental-warrior",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "ultra-elemental-warrior-merge-0",
+        "type": "merge",
+        "variant": "Ultra Elemental Warrior",
+        "source": "https://aqwwiki.wikidot.com/ultra-elemental-warrior",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mythic-elemental-warrior-class-shop-0",
+        "type": "ac_purchase",
+        "variant": "Mythic Elemental Warrior (Class)",
+        "source": "https://aqwwiki.wikidot.com/mythic-elemental-warrior-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Mage - Sorcerer",
+    "classId": "mage-sorcerer",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "mage-shop-0",
+        "type": "other_verified",
+        "variant": "Mage",
+        "source": "https://aqwwiki.wikidot.com/mage",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mage-shop-1",
+        "type": "free",
+        "variant": "Mage",
+        "source": "https://aqwwiki.wikidot.com/mage",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mage-rare-shop-0",
+        "type": "other_verified",
+        "variant": "Mage (Rare)",
+        "source": "https://aqwwiki.wikidot.com/mage-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mage-rare-shop-1",
+        "type": "gold_purchase",
+        "variant": "Mage (Rare)",
+        "source": "https://aqwwiki.wikidot.com/mage-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mage-rare-shop-2",
+        "type": "gold_purchase",
+        "variant": "Mage (Rare)",
+        "source": "https://aqwwiki.wikidot.com/mage-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mage-rare-shop-3",
+        "type": "gold_purchase",
+        "variant": "Mage (Rare)",
+        "source": "https://aqwwiki.wikidot.com/mage-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sorcerer-shop-0",
+        "type": "ac_purchase",
+        "variant": "Sorcerer",
+        "source": "https://aqwwiki.wikidot.com/sorcerer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sorcerer-shop-1",
+        "type": "ac_purchase",
+        "variant": "Sorcerer",
+        "source": "https://aqwwiki.wikidot.com/sorcerer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "MechaJouster (MJ)",
+    "classId": "mechajouster-mj",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "mechajouster-merge-0",
+        "type": "merge",
+        "variant": "MechaJouster",
+        "source": "https://aqwwiki.wikidot.com/mechajouster",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Merge Shop",
+          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "mechajouster-merge-1",
+        "type": "merge",
+        "variant": "MechaJouster",
+        "source": "https://aqwwiki.wikidot.com/mechajouster",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Merge Shop",
+          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "mechajouster-merge-2",
+        "type": "merge",
+        "variant": "MechaJouster",
+        "source": "https://aqwwiki.wikidot.com/mechajouster",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mechajouster-merge-3",
+        "type": "merge",
+        "variant": "MechaJouster",
+        "source": "https://aqwwiki.wikidot.com/mechajouster",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mechajouster-other-reward-0",
+        "type": "other_verified",
+        "variant": "MechaJouster",
+        "source": "https://aqwwiki.wikidot.com/mechajouster",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mechajouster-other-reward-1",
+        "type": "other_verified",
+        "variant": "MechaJouster",
+        "source": "https://aqwwiki.wikidot.com/mechajouster",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mechajouster-other-reward-2",
+        "type": "other_verified",
+        "variant": "MechaJouster",
+        "source": "https://aqwwiki.wikidot.com/mechajouster",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Necromancer (Necro) - Pinkomancer",
+    "classId": "necromancer-necro-pinkomancer",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "necromancer-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Necromancer (AC)",
+        "source": "https://aqwwiki.wikidot.com/necromancer-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "necromancer-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "Necromancer (AC)",
+        "source": "https://aqwwiki.wikidot.com/necromancer-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "necromancer-ac-shop-2",
+        "type": "shop_unlock",
+        "variant": "Necromancer (AC)",
+        "source": "https://aqwwiki.wikidot.com/necromancer-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "necromancer-ptr-shop-0",
+        "type": "gold_purchase",
+        "variant": "Necromancer (PTR)",
+        "source": "https://aqwwiki.wikidot.com/necromancer-ptr",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Shop Name",
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 259 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 244 ms: Couldn't connect to server",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "necromancer-merge-merge-0",
+        "type": "merge",
+        "variant": "Necromancer (Merge)",
+        "source": "https://aqwwiki.wikidot.com/necromancer-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "pinkomancer-shop-0",
+        "type": "ac_purchase",
+        "variant": "Pinkomancer",
+        "source": "https://aqwwiki.wikidot.com/pinkomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Oracle",
+    "classId": "oracle",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "oracle-shop-0",
+        "type": "ac_purchase",
+        "variant": "Oracle",
+        "source": "https://aqwwiki.wikidot.com/oracle",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "oracle-shop-1",
+        "type": "ac_purchase",
+        "variant": "Oracle",
+        "source": "https://aqwwiki.wikidot.com/oracle",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Shop Name",
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 239 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 263 ms: Couldn't connect to server",
+          "Shop identity is not yet verified"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Northlands Monk (NLM)",
+    "classId": "northlands-monk-nlm",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "northlands-monk-class-0-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Northlands Monk (Class) (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/northlands-monk-class-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "northlands-monk-class-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Northlands Monk (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/northlands-monk-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "northlands-monk-class-free-player-drop-0",
+        "type": "other_verified",
+        "variant": "Northlands Monk (Class) (Free Player)",
+        "source": "https://aqwwiki.wikidot.com/northlands-monk-class-free-player",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Rogue - Renegade",
+    "classId": "rogue-renegade",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "rogue-shop-0",
+        "type": "other_verified",
+        "variant": "Rogue",
+        "source": "https://aqwwiki.wikidot.com/rogue",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "rogue-shop-1",
+        "type": "free",
+        "variant": "Rogue",
+        "source": "https://aqwwiki.wikidot.com/rogue",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "rogue-rare-shop-0",
+        "type": "other_verified",
+        "variant": "Rogue (Rare)",
+        "source": "https://aqwwiki.wikidot.com/rogue-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "rogue-rare-shop-1",
+        "type": "gold_purchase",
+        "variant": "Rogue (Rare)",
+        "source": "https://aqwwiki.wikidot.com/rogue-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "rogue-rare-shop-2",
+        "type": "gold_purchase",
+        "variant": "Rogue (Rare)",
+        "source": "https://aqwwiki.wikidot.com/rogue-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "rogue-rare-shop-3",
+        "type": "gold_purchase",
+        "variant": "Rogue (Rare)",
+        "source": "https://aqwwiki.wikidot.com/rogue-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "classic-barber-shop-0",
+        "type": "gold_purchase",
+        "variant": "Classic Barber",
+        "source": "https://aqwwiki.wikidot.com/classic-barber",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "classic-pirate-class-drop-0",
+        "type": "other_verified",
+        "variant": "Classic Pirate (Class)",
+        "source": "https://aqwwiki.wikidot.com/classic-pirate-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "classic-pirate-class-drop-1",
+        "type": "other_verified",
+        "variant": "Classic Pirate (Class)",
+        "source": "https://aqwwiki.wikidot.com/classic-pirate-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "renegade-shop-0",
+        "type": "ac_purchase",
+        "variant": "Renegade",
+        "source": "https://aqwwiki.wikidot.com/renegade",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "renegade-shop-1",
+        "type": "ac_purchase",
+        "variant": "Renegade",
+        "source": "https://aqwwiki.wikidot.com/renegade",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "renegade-shop-2",
+        "type": "ac_purchase",
+        "variant": "Renegade",
+        "source": "https://aqwwiki.wikidot.com/renegade",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Sentinel",
+    "classId": "sentinel",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "sentinel-shop-0",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Shop Name",
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 300 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 257 ms: Couldn't connect to server",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "sentinel-shop-1",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-2",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Shop Name",
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 261 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 277 ms: Couldn't connect to server",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "sentinel-shop-3",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-4",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-5",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-6",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-7",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-8",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-9",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-10",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Shop Name",
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 257 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 318 ms: Couldn't connect to server",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "sentinel-shop-11",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Shop Name",
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 246 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 263 ms: Couldn't connect to server",
+          "Shop identity is not yet verified"
+        ]
+      },
+      {
+        "id": "sentinel-shop-12",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-13",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-14",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-15",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-16",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "sentinel-shop-17",
+        "type": "ac_purchase",
+        "variant": "Sentinel",
+        "source": "https://aqwwiki.wikidot.com/sentinel",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Void Highlord (VHL) - Debris Highlord (DHL)",
+    "classId": "void-highlord-vhl-debris-highlord-dhl",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "void-highlord-class-merge-0",
+        "type": "merge",
+        "variant": "Void Highlord (Class)",
+        "source": "https://aqwwiki.wikidot.com/void-highlord-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "void-highlord-ioda-class-other-0",
+        "type": "other_verified",
+        "variant": "Void Highlord (IoDA) (Class)",
+        "source": "https://aqwwiki.wikidot.com/void-highlord-ioda-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "debris-highlord-class-shop-0",
+        "type": "ac_purchase",
+        "variant": "Debris Highlord (Class)",
+        "source": "https://aqwwiki.wikidot.com/debris-highlord-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Vindicator Of They (VoT) - The Collector (TC)",
+    "classId": "vindicator-of-they-vot-the-collector-tc",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "vindicator-of-they-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "Vindicator Of They (AC)",
+        "source": "https://aqwwiki.wikidot.com/vindicator-of-they-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "vindicator-of-they-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "Vindicator Of They (AC)",
+        "source": "https://aqwwiki.wikidot.com/vindicator-of-they-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "vindicator-of-they-merge-merge-0",
+        "type": "merge",
+        "variant": "Vindicator Of They (Merge)",
+        "source": "https://aqwwiki.wikidot.com/vindicator-of-they-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "the-collector-class-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "The Collector (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/the-collector-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "the-collector-class-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "The Collector (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/the-collector-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "the-collector-class-0-ac-shop-0",
+        "type": "ac_purchase",
+        "variant": "The Collector (Class) (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/the-collector-class-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 278 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 261 ms: Couldn't connect to server"
+        ]
+      },
+      {
+        "id": "the-collector-class-0-ac-shop-1",
+        "type": "ac_purchase",
+        "variant": "The Collector (Class) (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/the-collector-class-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 360 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 277 ms: Couldn't connect to server"
+        ]
+      },
+      {
+        "id": "the-collector-class-merge-merge-0",
+        "type": "merge",
+        "variant": "The Collector (Class) (Merge)",
+        "source": "https://aqwwiki.wikidot.com/the-collector-class-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Yami no Ronin (YnR)",
+    "classId": "yami-no-ronin-ynr",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "yami-no-ronin-class-quest-0",
+        "type": "quest_reward",
+        "variant": "Yami no Ronin (Class)",
+        "source": "https://aqwwiki.wikidot.com/yami-no-ronin-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "partial",
+        "missingFields": [
+          "Material quantity not explicit: Yokai Sword Scroll"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Warrior - Beast Warrior - Pumpkin Lord - Warlord",
+    "classId": "warrior-beast-warrior-pumpkin-lord-warlord",
+    "beforeStatus": "partial",
+    "currentStatus": "partial",
+    "methods": [
+      {
+        "id": "warrior-rare-shop-0",
+        "type": "other_verified",
+        "variant": "Warrior (Rare)",
+        "source": "https://aqwwiki.wikidot.com/warrior-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warrior-rare-shop-1",
+        "type": "gold_purchase",
+        "variant": "Warrior (Rare)",
+        "source": "https://aqwwiki.wikidot.com/warrior-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warrior-rare-shop-2",
+        "type": "gold_purchase",
+        "variant": "Warrior (Rare)",
+        "source": "https://aqwwiki.wikidot.com/warrior-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warrior-rare-shop-3",
+        "type": "gold_purchase",
+        "variant": "Warrior (Rare)",
+        "source": "https://aqwwiki.wikidot.com/warrior-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warrior-rare-shop-4",
+        "type": "gold_purchase",
+        "variant": "Warrior (Rare)",
+        "source": "https://aqwwiki.wikidot.com/warrior-rare",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warrior-class-shop-0",
+        "type": "other_verified",
+        "variant": "Warrior (Class)",
+        "source": "https://aqwwiki.wikidot.com/warrior-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warrior-class-shop-1",
+        "type": "free",
+        "variant": "Warrior (Class)",
+        "source": "https://aqwwiki.wikidot.com/warrior-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warrior-class-shop-2",
+        "type": "free",
+        "variant": "Warrior (Class)",
+        "source": "https://aqwwiki.wikidot.com/warrior-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warrior-class-shop-3",
+        "type": "free",
+        "variant": "Warrior (Class)",
+        "source": "https://aqwwiki.wikidot.com/warrior-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "beast-warrior-shop-0",
+        "type": "ac_purchase",
+        "variant": "Beast Warrior",
+        "source": "https://aqwwiki.wikidot.com/beast-warrior",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warlord-shop-0",
+        "type": "ac_purchase",
+        "variant": "Warlord",
+        "source": "https://aqwwiki.wikidot.com/warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "warlord-shop-1",
+        "type": "ac_purchase",
+        "variant": "Warlord",
+        "source": "https://aqwwiki.wikidot.com/warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Phantom/Phantasm Chronomancer (PhCM)",
+    "classId": "phantom-phantasm-chronomancer-phcm",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "phantom-chronomancer-class-shop-0",
+        "type": "calendar_code",
+        "variant": "Phantom Chronomancer (Class)",
+        "source": "https://aqwwiki.wikidot.com/phantom-chronomancer-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "phantom-chronomancer-class-shop-1",
+        "type": "calendar_code",
+        "variant": "Phantom Chronomancer (Class)",
+        "source": "https://aqwwiki.wikidot.com/phantom-chronomancer-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "phantasm-chronomancer-merge-0",
+        "type": "heropoints",
+        "variant": "Phantasm Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/phantasm-chronomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "phantasm-chronomancer-merge-1",
+        "type": "heropoints",
+        "variant": "Phantasm Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/phantasm-chronomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "phantasm-chronomancer-merge-2",
+        "type": "heropoints",
+        "variant": "Phantasm Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/phantasm-chronomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "phantasm-chronomancer-merge-3",
+        "type": "heropoints",
+        "variant": "Phantasm Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/phantasm-chronomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Archivist of Time/Temporis (AoT)",
+    "classId": "archivist-of-time-temporis-aot",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "archivist-of-time-shop-0",
+        "type": "calendar_code",
+        "variant": "Archivist of Time",
+        "source": "https://aqwwiki.wikidot.com/archivist-of-time",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "archivist-of-time-shop-1",
+        "type": "calendar_code",
+        "variant": "Archivist of Time",
+        "source": "https://aqwwiki.wikidot.com/archivist-of-time",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "archivist-of-temporis-merge-0",
+        "type": "heropoints",
+        "variant": "Archivist of Temporis",
+        "source": "https://aqwwiki.wikidot.com/archivist-of-temporis",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "archivist-of-temporis-merge-1",
+        "type": "heropoints",
+        "variant": "Archivist of Temporis",
+        "source": "https://aqwwiki.wikidot.com/archivist-of-temporis",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "archivist-of-temporis-merge-2",
+        "type": "heropoints",
+        "variant": "Archivist of Temporis",
+        "source": "https://aqwwiki.wikidot.com/archivist-of-temporis",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "archivist-of-temporis-merge-3",
+        "type": "heropoints",
+        "variant": "Archivist of Temporis",
+        "source": "https://aqwwiki.wikidot.com/archivist-of-temporis",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Necrotic Chronomancer",
+    "classId": "calendar-necrotic-chronomancer",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "necrotic-chronomancer-merge-0",
+        "type": "heropoints",
+        "variant": "Necrotic Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "necrotic-chronomancer-merge-1",
+        "type": "heropoints",
+        "variant": "Necrotic Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "necrotic-chronomancer-merge-2",
+        "type": "heropoints",
+        "variant": "Necrotic Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "necrotic-chronomancer-merge-3",
+        "type": "heropoints",
+        "variant": "Necrotic Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Corrupted Chronomancer",
+    "classId": "calendar-corrupted-chronomancer",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "corrupted-chronomancer-class-shop-0",
+        "type": "calendar_code",
+        "variant": "Corrupted Chronomancer (Class)",
+        "source": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "corrupted-chronomancer-class-shop-1",
+        "type": "calendar_code",
+        "variant": "Corrupted Chronomancer (Class)",
+        "source": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "corrupted-chronomancer-class-shop-2",
+        "type": "calendar_code",
+        "variant": "Corrupted Chronomancer (Class)",
+        "source": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "corrupted-chronomancer-class-shop-3",
+        "type": "calendar_code",
+        "variant": "Corrupted Chronomancer (Class)",
+        "source": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  },
+  {
+    "name": "Timeless Chronomancer (AC)",
+    "classId": "calendar-timeless-chronomancer",
+    "beforeStatus": "partial",
+    "currentStatus": "reviewed",
+    "methods": [
+      {
+        "id": "timeless-chronomancer-class-ac-shop-0",
+        "type": "calendar_code",
+        "variant": "Timeless Chronomancer (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "timeless-chronomancer-class-ac-shop-1",
+        "type": "calendar_code",
+        "variant": "Timeless Chronomancer (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "timeless-chronomancer-class-ac-shop-2",
+        "type": "calendar_code",
+        "variant": "Timeless Chronomancer (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "timeless-chronomancer-class-ac-shop-3",
+        "type": "calendar_code",
+        "variant": "Timeless Chronomancer (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "timeless-chronomancer-class-ac-shop-4",
+        "type": "heromart",
+        "variant": "Timeless Chronomancer (Class) (AC)",
+        "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "timeless-chronomancer-class-merge-merge-0",
+        "type": "heropoints",
+        "variant": "Timeless Chronomancer (Class) (Merge)",
+        "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      }
+    ]
+  }
+]

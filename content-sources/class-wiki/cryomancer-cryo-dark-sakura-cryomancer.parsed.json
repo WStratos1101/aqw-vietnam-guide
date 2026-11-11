@@ -1,0 +1,136 @@
+{
+  "url": "https://aqwwiki.wikidot.com/cryomancer-merge",
+  "sourceHash": "ab20b31dcc65a0a6138404ff8f17082d224a3878f72541750dc8cc3ac380cab2",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Deals physical damage based on your Spell Power.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/cryomancer-merge",
+      "sourceHash": "ab20b31dcc65a0a6138404ff8f17082d224a3878f72541750dc8cc3ac380cab2",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Deals physical damage based on your Spell Power."
+    },
+    {
+      "officialName": "Freeze",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "4",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Does damage and applies Frozen which reduces your opponents Haste and Dodge by 15% for 4 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill61.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/cryomancer-merge",
+      "sourceHash": "ab20b31dcc65a0a6138404ff8f17082d224a3878f72541750dc8cc3ac380cab2",
+      "evidence": "Freeze Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 4 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Does damage and applies Frozen which reduces your opponents Haste and Dodge by 15% for 4 seconds."
+    },
+    {
+      "officialName": "Shatter",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "8",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Deals damage to your opponent. If Frozen is active, the amount of damage dealt is doubled. If Polar Vortex is active, it is consumed to apply Ice Age, increasing your Crit Chance by 20% for 16 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill150.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/cryomancer-merge",
+      "sourceHash": "ab20b31dcc65a0a6138404ff8f17082d224a3878f72541750dc8cc3ac380cab2",
+      "evidence": "Shatter Rank Needed: 2 Mana Cost: 20 Mana Cooldown: 8 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Deals damage to your opponent. If Frozen is active, the amount of damage dealt is doubled. If Polar Vortex is active, it is consumed to apply Ice Age, increasing your Crit Chance by 20% for 16 seconds."
+    },
+    {
+      "officialName": "Frozen Tears",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "8",
+      "skillType": "Magical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Conjures frozen tears from the most powerful cryomancers, applying an HoT for 14 seconds. If Polar Vortex is active, it is consumed to apply Frozen Defense, reducing your incoming damage by 30% and increasing your Healing Power by 100% for 16 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill151.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/cryomancer-merge",
+      "sourceHash": "ab20b31dcc65a0a6138404ff8f17082d224a3878f72541750dc8cc3ac380cab2",
+      "evidence": "Frozen Tears Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 8 Seconds Type: Magical Range: A short range status skill that applies to yourself. Description: Conjures frozen tears from the most powerful cryomancers, applying an HoT for 14 seconds. If Polar Vortex is active, it is consumed to apply Frozen Defense, reducing your incoming damage by 30% and increasing your Healing Power by 100% for 16 seconds."
+    },
+    {
+      "officialName": "Sharpened Icicles",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit Chance and Crit Chance increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/cryomancer-merge",
+      "sourceHash": "ab20b31dcc65a0a6138404ff8f17082d224a3878f72541750dc8cc3ac380cab2",
+      "evidence": "Sharpened Icicles Rank Needed: 4 Type: Passive Ability Description: Hit Chance and Crit Chance increased by 10%."
+    },
+    {
+      "officialName": "Cool and collected",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "INT and Haste increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/cryomancer-merge",
+      "sourceHash": "ab20b31dcc65a0a6138404ff8f17082d224a3878f72541750dc8cc3ac380cab2",
+      "evidence": "Cool and collected Rank Needed: 4 Type: Passive Ability Description: INT and Haste increased by 15%."
+    },
+    {
+      "officialName": "Flash Freeze",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "24",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Rapidly freeze your opponent, dealing massive damage while applying Absolute Zero, stunning them for 3 seconds. Also applies Polar Vortex for 8 seconds, which is used by your other abilities.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill63.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/cryomancer-merge",
+      "sourceHash": "ab20b31dcc65a0a6138404ff8f17082d224a3878f72541750dc8cc3ac380cab2",
+      "evidence": "Flash Freeze Rank Needed: 5 Mana Cost: 25 Mana Cooldown: 24 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Rapidly freeze your opponent, dealing massive damage while applying Absolute Zero, stunning them for 3 seconds. Also applies Polar Vortex for 8 seconds, which is used by your other abilities."
+    },
+    {
+      "officialName": "Ice Wall",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Incoming Damage reduced by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/cryomancer-merge",
+      "sourceHash": "ab20b31dcc65a0a6138404ff8f17082d224a3878f72541750dc8cc3ac380cab2",
+      "evidence": "Ice Wall Rank Needed: 10 Type: Passive Ability Description: Incoming Damage reduced by 15%."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/MmsVO0x.png",
+  "sameSkillVariants": [
+    {
+      "name": "Cryomancer (AC)",
+      "url": "https://aqwwiki.wikidot.com/cryomancer-ac"
+    },
+    {
+      "name": "Dark Cryomancer",
+      "url": "https://aqwwiki.wikidot.com/dark-cryomancer"
+    },
+    {
+      "name": "Sakura Cryomancer (Class)",
+      "url": "https://aqwwiki.wikidot.com/sakura-cryomancer-class"
+    }
+  ],
+  "location": "Locations:\n\nCryomancer Class\n\nFrozen Ruins\nFrozen Tower\nGlacera\nNorthstar\n\n\n\nPrice: N/A\n\nMerge the following:\n\nGlacera Ice Token x84"
+}

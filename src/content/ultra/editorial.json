@@ -1,0 +1,386 @@
+{
+  "ultra-ezrajal": {
+    "storyDescription": "Ezrajal là một quý tộc Celestial và kẻ bảo hộ Tower of Exaltia. Qua Inn at the Edge of Time, cuộc đối đầu mang hình bóng tòa tháp từ chiều không gian DragonFable đến Lore.",
+    "storyStatus": "Mô tả bối cảnh trung tính; không mở rộng tình tiết chưa xác minh.",
+    "resetInfo": {
+      "label": "Quest ngày",
+      "text": "12:01 AM giờ server mỗi ngày",
+      "source": "community-guide"
+    },
+    "notes": [
+      {
+        "id": "0",
+        "icon": "counter",
+        "label": "Counter",
+        "text": "Ngừng đánh và bỏ mục tiêu khi Counter Attack xuất hiện.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-ezrajal"
+      },
+      {
+        "id": "1",
+        "icon": "heal",
+        "label": "Hồi phục",
+        "text": "Chuẩn bị hồi máu ngay sau Celestial Prism Explosion.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-ezrajal"
+      },
+      {
+        "id": "2",
+        "icon": "skill",
+        "label": "Khóa kỹ năng",
+        "text": "Kiểm tra kỹ năng đang bị khóa trước khi đổi nhịp đánh.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-ezrajal"
+      }
+    ],
+    "tauntGuide": [
+      {
+        "id": "0",
+        "target": "Ultra Ezrajal",
+        "timing": "Theo phân công của đội hình",
+        "role": "Người được đội hình chỉ định",
+        "instruction": "Không dựa vào Taunt để chặn Celestial Prism Explosion.",
+        "failureRisk": "Wiki ghi đòn này bỏ qua Focus; ưu tiên giữ nhịp hồi phục.",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-ezrajal"
+      }
+    ],
+    "storySources": [
+      "https://www.aq.com/gamedesignnotes/aqw-july2-innoftime-8410"
+    ]
+  },
+  "ultra-warden": {
+    "storyDescription": "The Warden là một tạo vật của Tower of Exaltia, đứng ở chặng thứ hai của thử thách. Inn at the Edge of Time đưa người chơi tới cuộc đối đầu với kẻ canh giữ từ chiều không gian DragonFable.",
+    "storyStatus": "Mô tả bối cảnh trung tính; không mở rộng tình tiết chưa xác minh.",
+    "resetInfo": {
+      "label": "Quest ngày",
+      "text": "12:01 AM giờ server mỗi ngày",
+      "source": "community-guide"
+    },
+    "notes": [
+      {
+        "id": "0",
+        "icon": "heal",
+        "label": "Shockwaves",
+        "text": "Phối hợp Heal sau Shockwaves; tránh chồng Heal quá sớm.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-warden"
+      },
+      {
+        "id": "1",
+        "icon": "target",
+        "label": "Nhịp sát thương",
+        "text": "Gây sát thương quá nhanh có thể dồn các mốc Shockwaves.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-warden"
+      },
+      {
+        "id": "2",
+        "icon": "taunt",
+        "label": "Phân công",
+        "text": "Thống nhất người Taunt trước khi bắt đầu.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-warden"
+      }
+    ],
+    "tauntGuide": [
+      {
+        "id": "0",
+        "target": "Ultra Warden",
+        "timing": "Luân phiên theo đội hình đã thống nhất",
+        "role": "LR và PCM/LC trong Team 1 của Sites",
+        "instruction": "Dùng Scroll of Enrage theo thứ tự đã chia.",
+        "failureRisk": "Trùng lượt khiến nhịp bảo vệ và hồi phục mất phối hợp.",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-warden"
+      }
+    ],
+    "storySources": [
+      "https://www.aq.com/gamedesignnotes/aqw-july2-innoftime-8410"
+    ]
+  },
+  "ultra-engineer": {
+    "storyDescription": "The Engineer cùng những Drone là một phần của thử thách Tower of Exaltia. Từ chiều không gian DragonFable, đối thủ mang bản sắc cơ khí này xuất hiện tại Inn at the Edge of Time của AQW.",
+    "storyStatus": "Mô tả bối cảnh trung tính; không mở rộng tình tiết chưa xác minh.",
+    "resetInfo": {
+      "label": "Quest ngày",
+      "text": "12:01 AM giờ server mỗi ngày",
+      "source": "community-guide"
+    },
+    "notes": [
+      {
+        "id": "0",
+        "icon": "target",
+        "label": "Drone",
+        "text": "Ưu tiên Defense Drone rồi Attack Drone theo đội hình.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-engineer"
+      },
+      {
+        "id": "1",
+        "icon": "shield",
+        "label": "Bảo vệ",
+        "text": "Chỉ gây sát thương lên Engineer khi cả hai Drone đều bị hạ.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-engineer"
+      },
+      {
+        "id": "2",
+        "icon": "heal",
+        "label": "Beam",
+        "text": "Giữ đầy HP trước Beam và hồi máu ngay sau đòn đánh.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-engineer"
+      }
+    ],
+    "tauntGuide": [
+      {
+        "id": "0",
+        "target": "Defense Drone / Attack Drone",
+        "timing": "Trong đội hình CMD được Sites mô tả",
+        "role": "ChronoCommander",
+        "instruction": "Skill 5 giữ Defense Drone; Scroll of Enrage giữ Attack Drone.",
+        "failureRisk": "Đây là phân công riêng cho đội hình CMD, không áp dụng máy móc cho Class khác.",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-engineer"
+      },
+      {
+        "id": "1",
+        "target": "Ultra Engineer",
+        "timing": "Khi Devastator Beam được niệm",
+        "role": "Cả đội",
+        "instruction": "Chuẩn bị HP và Heal; không trông chờ Taunt chặn Beam.",
+        "failureRisk": "Wiki xác nhận Devastator Beam bỏ qua Focus.",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-engineer"
+      }
+    ],
+    "storySources": [
+      "https://www.aq.com/gamedesignnotes/aqw-july2-innoftime-8410"
+    ]
+  },
+  "ultra-tyndarius": {
+    "storyDescription": "Tyndarius từng là tướng của Queen of Monsters và là tai họa của Embersea Isles. Khi liên minh với Malgor, hắn đưa Firestorm Onslaught vào cuộc xâm lăng Plane of Fire bằng sức mạnh ShadowFlame.",
+    "storyStatus": "Mô tả bối cảnh trung tính; không mở rộng tình tiết chưa xác minh.",
+    "resetInfo": {
+      "label": "Quest ngày",
+      "text": "Giờ reset đang đối chiếu",
+      "source": "community-guide"
+    },
+    "notes": [
+      {
+        "id": "0",
+        "icon": "target",
+        "label": "Orb",
+        "text": "Không bỏ mặc Orb để dồn toàn bộ sát thương vào boss.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/ultra-avatar-tyndarius"
+      },
+      {
+        "id": "1",
+        "icon": "taunt",
+        "label": "Phân công",
+        "text": "Chia rõ người giữ boss và từng Orb trước trận.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/ultra-avatar-tyndarius"
+      },
+      {
+        "id": "2",
+        "icon": "heal",
+        "label": "Sống sót",
+        "text": "Giữ nhịp hồi phục trong chuỗi buff của Tyndarius.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/ultra-avatar-tyndarius"
+      }
+    ],
+    "tauntGuide": [
+      {
+        "id": "0",
+        "target": "Tyndarius / Orb trái / Orb phải",
+        "timing": "Chia mục tiêu trước khi đánh; cập nhật khi Orb hồi sinh",
+        "role": "Team 1 Sites: PCM/AP giữ boss, CMD giữ Orb trái, CAv/LR giữ Orb phải",
+        "instruction": "Theo đúng phân công của đội hình; không tự đổi Orb đang giữ.",
+        "failureRisk": "Chồng Taunt hoặc bỏ mục tiêu làm đội mất kiểm soát sát thương.",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/ultra-avatar-tyndarius"
+      }
+    ],
+    "storySources": [
+      "https://www.aq.com/gamedesignnotes/aqw-june18-shadowsfireplane1-8381"
+    ]
+  },
+  "ultra-dage": {
+    "storyDescription": "Dage the Dark Lord gắn liền với Undead Legion. Thử thách Ultra đưa người chơi đối diện quyền lực của lãnh chúa Legion tại ultradage.",
+    "storyStatus": "Mô tả bối cảnh trung tính; không mở rộng tình tiết chưa xác minh.",
+    "resetInfo": {
+      "label": "Quest tuần",
+      "text": "Thứ Sáu, 12:01 AM EST theo giờ server trong cẩm nang",
+      "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/dage-the-darklord"
+    },
+    "notes": [
+      {
+        "id": "0",
+        "icon": "heal",
+        "label": "Decay",
+        "text": "Đọc aura trước khi dùng hồi máu trực tiếp hoặc HoT.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/dage-the-darklord"
+      },
+      {
+        "id": "1",
+        "icon": "zone",
+        "label": "Vùng sáng",
+        "text": "Di chuyển đúng vùng bảo hộ khi boss gọi đòn diện rộng.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/dage-the-darklord"
+      },
+      {
+        "id": "2",
+        "icon": "target",
+        "label": "Legion Mages",
+        "text": "Duy trì Decay theo người đã được phân công.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/dage-the-darklord"
+      }
+    ],
+    "tauntGuide": [
+      {
+        "id": "0",
+        "target": "Dage the Dark Lord",
+        "timing": "Theo nhịp đội hình",
+        "role": "Taunter được chỉ định trong team",
+        "instruction": "Theo nhiệm vụ Taunt của đội hình đang sử dụng.",
+        "failureRisk": "Không nhầm nhiệm vụ Taunt với người duy trì Decay.",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/dage-the-darklord"
+      }
+    ]
+  },
+  "ultra-nulgath": {
+    "storyDescription": "Nulgath the Archfiend là lãnh chúa của Tercessuinotlim. Tại ultranulgath, người chơi đối mặt với Archfiend cùng Overfiend Blade.",
+    "storyStatus": "Mô tả bối cảnh trung tính; không mở rộng tình tiết chưa xác minh.",
+    "resetInfo": {
+      "label": "Quest tuần",
+      "text": "Thứ Sáu, 12:01 AM EST theo giờ server trong cẩm nang",
+      "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/nulgath-the-archfiend"
+    },
+    "notes": [
+      {
+        "id": "0",
+        "icon": "taunt",
+        "label": "Contracts",
+        "text": "Giữ đúng thứ tự luân phiên Taunt.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/nulgath-the-archfiend"
+      },
+      {
+        "id": "1",
+        "icon": "target",
+        "label": "Blade",
+        "text": "Không hạ Blade tùy ý; thống nhất thời điểm đổi mục tiêu.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/nulgath-the-archfiend"
+      }
+    ],
+    "tauntGuide": [
+      {
+        "id": "0",
+        "target": "Nulgath the Archfiend",
+        "timing": "So le các lần Contracts of the Abyss",
+        "role": "Những người được phân công dùng Scroll of Enrage",
+        "instruction": "Luân phiên nhận Contracts; không để debuff chồng lên cùng người.",
+        "failureRisk": "Sai lượt làm hiệu ứng Contract tiến sang tầng bất lợi tiếp theo.",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/nulgath-the-archfiend"
+      }
+    ]
+  },
+  "ultra-drago": {
+    "storyDescription": "Một nhánh khả năng khác của cuộc tấn công Astravia Castle đặt Hero bên cạnh Re. Sau khi đội quân của Drago bị quét sạch, nhà vua cùng hai tướng lĩnh cuối cùng vẫn đứng chắn trước phán quyết đang đến.",
+    "storyStatus": "Mô tả bối cảnh trung tính; không mở rộng tình tiết chưa xác minh.",
+    "resetInfo": {
+      "label": "Quest tuần",
+      "text": "Thứ Sáu, 12:01 AM EST theo giờ server trong cẩm nang",
+      "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/king-drago"
+    },
+    "notes": [
+      {
+        "id": "0",
+        "icon": "target",
+        "label": "Hộ vệ",
+        "text": "Guide cộng đồng ưu tiên Algie trước Dene.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/king-drago"
+      },
+      {
+        "id": "1",
+        "icon": "taunt",
+        "label": "Đổi mục tiêu",
+        "text": "Hộ vệ vừa mất đồng đội cần được Taunt ngay.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/king-drago"
+      },
+      {
+        "id": "2",
+        "icon": "timer",
+        "label": "Phán quyết",
+        "text": "Kết thúc trận trước Judged; Taunt không chặn được đòn này.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/king-drago"
+      }
+    ],
+    "tauntGuide": [
+      {
+        "id": "0",
+        "target": "Hộ vệ còn sống",
+        "timing": "Ngay khi hộ vệ còn lại bị hạ",
+        "role": "Taunter theo đội hình",
+        "instruction": "Taunt mục tiêu còn lại; guide ưu tiên hạ Algie trước.",
+        "failureRisk": "Không dùng Taunt như cách ngăn Judged của King Drago.",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/king-drago"
+      }
+    ],
+    "storySources": [
+      "https://www.aq.com/gamedesignnotes/aqw-nov11-darkonsagav-8572"
+    ]
+  },
+  "ultra-speaker": {
+    "storyDescription": "The First Speaker là Malgor, nhân vật trung tâm của tuyến ShadowFlame. Cuộc đối đầu tại ultraspeaker nối với hành trình ShadowFlame Onslaught và Alliance of Crowns.",
+    "storyStatus": "Mô tả bối cảnh trung tính; không mở rộng tình tiết chưa xác minh.",
+    "resetInfo": {
+      "label": "Quest tuần",
+      "text": "Thứ Sáu, 12:01 AM EST theo giờ server trong cẩm nang",
+      "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/malgor-the-first-speaker"
+    },
+    "notes": [
+      {
+        "id": "0",
+        "icon": "taunt",
+        "label": "Listen / Truth",
+        "text": "Đọc thông báo và theo lịch Taunt của đội.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/malgor-the-first-speaker"
+      },
+      {
+        "id": "1",
+        "icon": "zone",
+        "label": "Zone",
+        "text": "Chỉ người đến lượt đi vào Zone.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/malgor-the-first-speaker"
+      },
+      {
+        "id": "2",
+        "icon": "warning",
+        "label": "Death DoT",
+        "text": "Tránh mang tổ hợp hiệu ứng nguy hiểm vào Glowing Zone.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/malgor-the-first-speaker"
+      }
+    ],
+    "tauntGuide": [
+      {
+        "id": "0",
+        "target": "The First Speaker",
+        "timing": "Khi đến lượt Listen / Truth trên lịch của đội",
+        "role": "Người có tên trong cột Focus/Taunt",
+        "instruction": "Dùng Scroll of Enrage theo thông báo và bảng phân công.",
+        "failureRisk": "Tự đổi lượt hoặc vào Zone sai có thể gây Stun và Death DoT.",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/malgor-the-first-speaker"
+      }
+    ]
+  }
+}

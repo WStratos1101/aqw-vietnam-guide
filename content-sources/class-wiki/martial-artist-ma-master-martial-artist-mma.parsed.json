@@ -1,0 +1,132 @@
+{
+  "url": "https://aqwwiki.wikidot.com/martial-artist-class",
+  "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+  "entries": [
+    {
+      "officialName": "Pummel",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "1.5",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Strike your target with a series of punches. Applies different effects based on your current Stance. Can't miss.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Martial1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/martial-artist-class",
+      "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+      "evidence": "Pummel Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 1.5 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Strike your target with a series of punches. Applies different effects based on your current Stance. Can't miss."
+    },
+    {
+      "officialName": "Frogzard's Crushing Jaw",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "100",
+      "cooldown": "3",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Assume a Frogzard Stance, causing Pummel to reduce your target's Damage Resistance by 8%, stacks to 4. Frogzard based Stances also heal you over time while active. If you already have another non mixed Stance active, it's consumed and the applied effect changes:",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Martial2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/martial-artist-class",
+      "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+      "evidence": "Frogzard's Crushing Jaw Rank Needed: 1 Mana Cost: 100 Mana Cooldown: 3 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Assume a Frogzard Stance, causing Pummel to reduce your target's Damage Resistance by 8%, stacks to 4. Frogzard based Stances also heal you over time while active. If you already have another non mixed Stance active, it's consumed and the applied effect changes: Gorillaphant: 12% outgoing damage, stacks to 4 Dragon: -10% Hit Chance and Crit Chance, stacks to 2 Effects last 20 seconds, can't miss."
+    },
+    {
+      "officialName": "Gorillaphant Beatdown",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "100",
+      "cooldown": "3",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Assume a Gorillaphant Stance, causing Pummel to increase your Crit Damage by 15%, stacks to 6. Gorillaphant based Stances also increase your Crit Chance by 20% while active. If you already have another non mixed Stance active, it's consumed and the applied effect changes:",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Martial3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/martial-artist-class",
+      "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+      "evidence": "Gorillaphant Beatdown Rank Needed: 1 Mana Cost: 100 Mana Cooldown: 3 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Assume a Gorillaphant Stance, causing Pummel to increase your Crit Damage by 15%, stacks to 6. Gorillaphant based Stances also increase your Crit Chance by 20% while active. If you already have another non mixed Stance active, it's consumed and the applied effect changes: Frogzard: -8% Physical and Magical Resistance, stacks to 4 Dragon: -15% Haste, stacks to 2 Effects last 20 seconds, can't miss."
+    },
+    {
+      "officialName": "Soaring Dragon",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "100",
+      "cooldown": "8",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Assume a Dragon Stance, causing Pummel to reduce your target's outgoing damage by 15%, stacks to 2. Your first use of pummel after switching to a Dragon based Stance applies Spinning dragon to your target, reducing their next hit to 0. if you already have another non mixed Stance active, it's consumed and the applied effect changes:",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Martial4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/martial-artist-class",
+      "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+      "evidence": "Soaring Dragon Rank Needed: 1 Mana Cost: 100 Mana Cooldown: 8 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Assume a Dragon Stance, causing Pummel to reduce your target's outgoing damage by 15%, stacks to 2. Your first use of pummel after switching to a Dragon based Stance applies Spinning dragon to your target, reducing their next hit to 0. if you already have another non mixed Stance active, it's consumed and the applied effect changes: Frogzard: -5% DoT Resist and DoT, stacks to 6 Gorillaphant: 12% physical damage, stacks to 4 Effects last 20 seconds, can't miss."
+    },
+    {
+      "officialName": "Swift Strikes",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MartialPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/martial-artist-class",
+      "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+      "evidence": "Swift Strikes Rank Needed: 4 Type: Passive Ability Description: Haste increased by 15%."
+    },
+    {
+      "officialName": "Evasive Instincts",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Dodge increased by 30%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MartialPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/martial-artist-class",
+      "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+      "evidence": "Evasive Instincts Rank Needed: 4 Type: Passive Ability Description: Dodge increased by 30%."
+    },
+    {
+      "officialName": "Concentration",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "30",
+      "skillType": "Physical",
+      "target": "A short range skill that heals yourself.",
+      "officialDescription": "Concentrate, healing yourself and applying Fully Focused for 7 seconds. While active, Fully Focused reduces your Mana Costs by 100%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Martial5.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/martial-artist-class",
+      "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+      "evidence": "Concentration Rank Needed: 5 Mana Cost: 0 Mana Cooldown: 30 Seconds Type: Physical Range: A short range skill that heals yourself. Description: Concentrate, healing yourself and applying Fully Focused for 7 seconds. While active, Fully Focused reduces your Mana Costs by 100%."
+    },
+    {
+      "officialName": "Endurance Training",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "END and Damage Resistance increased by 20%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/MartialPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/martial-artist-class",
+      "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+      "evidence": "Endurance Training Rank Needed: 10 Type: Passive Ability Description: END and Damage Resistance increased by 20%."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/RjfHPrz.png",
+  "sameSkillVariants": [
+    {
+      "name": "Master Martial Artist (Class) (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/master-martial-artist-class-0-ac"
+    },
+    {
+      "name": "Master Martial Artist (Class) (AC)",
+      "url": "https://aqwwiki.wikidot.com/master-martial-artist-class-ac"
+    }
+  ],
+  "location": "Location: Martial Artist (Shop) - Haku Village\nPrice: 0 AC"
+}

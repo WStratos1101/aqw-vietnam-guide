@@ -1,0 +1,132 @@
+{
+  "url": "https://aqwwiki.wikidot.com/naval-commander-class",
+  "sourceHash": "901ee9f7e6c1671c14b7422c3ad22da0b0e234a97fef1ed6fa06431ad8ad9354",
+  "entries": [
+    {
+      "officialName": "En Garde",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "An attack taught to all Naval Commanders. Damage dealt is based on your weapon damage. You are invigorated by combat itself and recover 5 mana on hit. Can't miss.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill267.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/naval-commander-class",
+      "sourceHash": "901ee9f7e6c1671c14b7422c3ad22da0b0e234a97fef1ed6fa06431ad8ad9354",
+      "evidence": "En Garde Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: An attack taught to all Naval Commanders. Damage dealt is based on your weapon damage. You are invigorated by combat itself and recover 5 mana on hit. Can't miss."
+    },
+    {
+      "officialName": "Strike'n Parry",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "8",
+      "cooldown": "6",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Perform a Counterthrust with your cutlass, reducing your target's outgoing damage by 40% for 1 second. Also applies Strike'n Parry, further reducing Outgoing Damage by 30% for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill82.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/naval-commander-class",
+      "sourceHash": "901ee9f7e6c1671c14b7422c3ad22da0b0e234a97fef1ed6fa06431ad8ad9354",
+      "evidence": "Strike'n Parry Rank Needed: 1 Mana Cost: 8 Mana Cooldown: 6 Seconds Type: Physical Range: A long range attack that deals damage to 4 hostile targets. Description: Perform a Counterthrust with your cutlass, reducing your target's outgoing damage by 40% for 1 second. Also applies Strike'n Parry, further reducing Outgoing Damage by 30% for 10 seconds."
+    },
+    {
+      "officialName": "Flintlock Barrage",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "6",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Fire your pistol at your target, wounding them and reducing their Damage Resistance by 30% for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill143.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/naval-commander-class",
+      "sourceHash": "901ee9f7e6c1671c14b7422c3ad22da0b0e234a97fef1ed6fa06431ad8ad9354",
+      "evidence": "Flintlock Barrage Rank Needed: 2 Mana Cost: 10 Mana Cooldown: 6 Seconds Type: Physical Range: A long range attack that deals damage to 4 hostile targets. Description: Fire your pistol at your target, wounding them and reducing their Damage Resistance by 30% for 10 seconds."
+    },
+    {
+      "officialName": "Commander's Rally",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "6",
+      "skillType": "Physical",
+      "target": "A infinite range status skill that applies to 7 friendly targets.",
+      "officialDescription": "The presence of the captain inspires everyone in battle. Grants you and your allies an HoT and increases Haste Outgoing Damage by 15%. Also applies a stack of Armada to you for each ally, increasing the damage of all skills except En Garde by 50%, stacks to 4. Effects last 15 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill118.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/naval-commander-class",
+      "sourceHash": "901ee9f7e6c1671c14b7422c3ad22da0b0e234a97fef1ed6fa06431ad8ad9354",
+      "evidence": "Commander's Rally Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 6 Seconds Type: Physical Range: A infinite range status skill that applies to 7 friendly targets. Description: The presence of the captain inspires everyone in battle. Grants you and your allies an HoT and increases Haste Outgoing Damage by 15%. Also applies a stack of Armada to you for each ally, increasing the damage of all skills except En Garde by 50%, stacks to 4. Effects last 15 seconds. You sidestep attacks with your Sea Legs, increasing your Dodge by 30% for 1 second."
+    },
+    {
+      "officialName": "Broadside Blast",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Crit Chance is increased by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/naval-commander-class",
+      "sourceHash": "901ee9f7e6c1671c14b7422c3ad22da0b0e234a97fef1ed6fa06431ad8ad9354",
+      "evidence": "Broadside Blast Rank Needed: 4 Type: Passive Ability Description: Crit Chance is increased by 20%"
+    },
+    {
+      "officialName": "Gust of Wind",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased by 10% and Dodge increased by 30%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/naval-commander-class",
+      "sourceHash": "901ee9f7e6c1671c14b7422c3ad22da0b0e234a97fef1ed6fa06431ad8ad9354",
+      "evidence": "Gust of Wind Rank Needed: 4 Type: Passive Ability Description: Haste increased by 10% and Dodge increased by 30%."
+    },
+    {
+      "officialName": "Flintlock Fury",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "15",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "You pull out your second pistol and unleash a hail of bullets. Applies Focus for 4 seconds, which forces your target to attack only you for the duration.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill86.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/naval-commander-class",
+      "sourceHash": "901ee9f7e6c1671c14b7422c3ad22da0b0e234a97fef1ed6fa06431ad8ad9354",
+      "evidence": "Flintlock Fury Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 15 Seconds Type: Physical Range: A long range attack that deals damage to 4 hostile targets. Description: You pull out your second pistol and unleash a hail of bullets. Applies Focus for 4 seconds, which forces your target to attack only you for the duration."
+    },
+    {
+      "officialName": "Reinforced Hull",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Decreases incoming damage by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/naval-commander-class",
+      "sourceHash": "901ee9f7e6c1671c14b7422c3ad22da0b0e234a97fef1ed6fa06431ad8ad9354",
+      "evidence": "Reinforced Hull Rank Needed: 10 Type: Passive Ability Description: Decreases incoming damage by 15%."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/t8Vi8rh.png",
+  "sameSkillVariants": [
+    {
+      "name": "Heroic Naval Commander",
+      "url": "https://aqwwiki.wikidot.com/heroic-naval-commander"
+    },
+    {
+      "name": "Legendary Naval Commander",
+      "url": "https://aqwwiki.wikidot.com/legendary-naval-commander"
+    }
+  ],
+  "location": "Location: 0 AC Naval Commander - Naval Commander Chest\nPrice: 0 AC"
+}

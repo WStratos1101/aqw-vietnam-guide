@@ -1,0 +1,134 @@
+{
+  "url": "https://aqwwiki.wikidot.com/drakel-warlord-legend",
+  "sourceHash": "2ce4266cfd0a22156e41843b7d16dbdd5bbdf5062a1fa707e03280590058cf08",
+  "entries": [
+    {
+      "officialName": "Drakel's Crushing Strike",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A medium range attack that deals damage to 1 target.",
+      "officialDescription": "A powerful strike meant to crush your opponents, a specialty of the Drakel Brawlers.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill195.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/drakel-warlord-legend",
+      "sourceHash": "2ce4266cfd0a22156e41843b7d16dbdd5bbdf5062a1fa707e03280590058cf08",
+      "evidence": "Drakel's Crushing Strike Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A medium range attack that deals damage to 1 target. Description: A powerful strike meant to crush your opponents, a specialty of the Drakel Brawlers."
+    },
+    {
+      "officialName": "Strengthened Strike",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "3",
+      "skillType": "Physical",
+      "target": "A medium range attack that deals damage to 1 target.",
+      "officialDescription": "Tap into your Warlord strength to crush your foe. Your strengthened strike intimidates your foe, reducing any physical damage they deal by 8% for 10 seconds, up to 5 stacks.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill196.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/drakel-warlord-legend",
+      "sourceHash": "2ce4266cfd0a22156e41843b7d16dbdd5bbdf5062a1fa707e03280590058cf08",
+      "evidence": "Strengthened Strike Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 3 Seconds Type: Physical Range: A medium range attack that deals damage to 1 target. Description: Tap into your Warlord strength to crush your foe. Your strengthened strike intimidates your foe, reducing any physical damage they deal by 8% for 10 seconds, up to 5 stacks."
+    },
+    {
+      "officialName": "Raged Strike",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "9",
+      "skillType": "Physical",
+      "target": "A medium range status skill that applies to 3 hostile targets.",
+      "officialDescription": "Your blood boils in rage, stunning your foes around you for 1 second. Your boiling blood heals your wounds over time for the next 12 seconds.",
+      "notes": [
+        "Applies Rage Stunned, stunning your target for 1 second.",
+        "Applies Boiled Blood, giving a HoT over 12 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill197.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/drakel-warlord-legend",
+      "sourceHash": "2ce4266cfd0a22156e41843b7d16dbdd5bbdf5062a1fa707e03280590058cf08",
+      "evidence": "Raged Strike Rank Needed: 2 Mana Cost: 0 Mana Cooldown: 9 Seconds Type: Physical Range: A medium range status skill that applies to 3 hostile targets. Description: Your blood boils in rage, stunning your foes around you for 1 second. Your boiling blood heals your wounds over time for the next 12 seconds. Notes: Applies Rage Stunned, stunning your target for 1 second. Applies Boiled Blood, giving a HoT over 12 seconds."
+    },
+    {
+      "officialName": "Strikes of Expertise",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "9",
+      "skillType": "Physical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "A warlord's experience on the battlefield allows them to position themselves to perfectly land attacks. Applies Prepared Strike, making any the next two autos done in the next 5 seconds always hit and crit.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill198.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/drakel-warlord-legend",
+      "sourceHash": "2ce4266cfd0a22156e41843b7d16dbdd5bbdf5062a1fa707e03280590058cf08",
+      "evidence": "Strikes of Expertise Rank Needed: 3 Mana Cost: 0 Mana Cooldown: 9 Seconds Type: Physical Range: A short range status skill that applies to yourself. Description: A warlord's experience on the battlefield allows them to position themselves to perfectly land attacks. Applies Prepared Strike, making any the next two autos done in the next 5 seconds always hit and crit."
+    },
+    {
+      "officialName": "Expertise",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Critical Hit Chance by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/drakel-warlord-legend",
+      "sourceHash": "2ce4266cfd0a22156e41843b7d16dbdd5bbdf5062a1fa707e03280590058cf08",
+      "evidence": "Expertise Rank Needed: 4 Type: Passive Ability Description: Increases Critical Hit Chance by 15%"
+    },
+    {
+      "officialName": "Warlord's Respect",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "All physical damage taken reduced by 30%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/drakel-warlord-legend",
+      "sourceHash": "2ce4266cfd0a22156e41843b7d16dbdd5bbdf5062a1fa707e03280590058cf08",
+      "evidence": "Warlord's Respect Rank Needed: 4 Type: Passive Ability Description: All physical damage taken reduced by 30%"
+    },
+    {
+      "officialName": "Enter the Arena",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "9",
+      "skillType": "Physical",
+      "target": "An infinite range attack that deals damage to 1 target.",
+      "officialDescription": "Challenge your opponents, dealing guaranteed critical damage and drawing their attention for 1 second. You take a powerful stance, reducing incoming physical damage by 50% and increasing Critical Damage by 100% for 15 seconds.",
+      "notes": [
+        "Cannot miss.",
+        "Applies Master of the Arena, reducing incoming physical damage by 50% and increasing critical damage by 100% for 15 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill199.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/drakel-warlord-legend",
+      "sourceHash": "2ce4266cfd0a22156e41843b7d16dbdd5bbdf5062a1fa707e03280590058cf08",
+      "evidence": "Enter the Arena Rank Needed: 5 Mana Cost: 0 Mana Cooldown: 9 Seconds Type: Physical Range: An infinite range attack that deals damage to 1 target. Description: Challenge your opponents, dealing guaranteed critical damage and drawing their attention for 1 second. You take a powerful stance, reducing incoming physical damage by 50% and increasing Critical Damage by 100% for 15 seconds. Notes: Cannot miss. Applies Master of the Arena, reducing incoming physical damage by 50% and increasing critical damage by 100% for 15 seconds."
+    },
+    {
+      "officialName": "Drakel Skin",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Endurance increased by 50%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/drakel-warlord-legend",
+      "sourceHash": "2ce4266cfd0a22156e41843b7d16dbdd5bbdf5062a1fa707e03280590058cf08",
+      "evidence": "Drakel Skin Rank Needed: 10 Type: Passive Ability Description: Endurance increased by 50%"
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/vijbHdt.png",
+  "sameSkillVariants": [
+    {
+      "name": "Drakel Warlord (Non-Legend)",
+      "url": "https://aqwwiki.wikidot.com/drakel-warlord-non-legend"
+    }
+  ],
+  "location": "Locations:\n\nDeath Pit Arena Rep - Death Pit Arena\nDeath Pit Arena Rep - Death Pit PvP\n\nPrice:\n\nMerge the following:\n\nDeath Pit Arena Medal  x500"
+}

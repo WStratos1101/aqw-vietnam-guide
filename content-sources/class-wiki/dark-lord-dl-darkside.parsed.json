@@ -1,0 +1,141 @@
+{
+  "url": "https://aqwwiki.wikidot.com/dark-lord",
+  "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+  "entries": [
+    {
+      "officialName": "Forbidden Form",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "A combat style used by those who have fallen to the dark side.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dark-lord",
+      "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+      "evidence": "Forbidden Form Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A long range attack that deals damage to 4 hostile targets. Description: A combat style used by those who have fallen to the dark side."
+    },
+    {
+      "officialName": "Blood Boil",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "15",
+      "skillType": "Magical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Channel your anger to summon your Battle Pet and increase your outgoing damage by 100% for 20 seconds.",
+      "notes": [
+        "Pet Hate Wolf (Temporary) is summoned.",
+        "Pet cannot be summoned in PVP if it's not summoned before entering Arenas.",
+        "Pet cannot be summoned if a pet is already equipped.",
+        "Pet cannot be summoned during combat.",
+        "Applies Blood Boil to the caster, which increases All Outgoing Damage by 100% for 8 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill18.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dark-lord",
+      "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+      "evidence": "Blood Boil Rank Needed: 1 Mana Cost: 25 Mana Cooldown: 15 Seconds Type: Magical Range: A short range status skill that applies to yourself. Description: Channel your anger to summon your Battle Pet and increase your outgoing damage by 100% for 20 seconds. Notes: Pet Hate Wolf (Temporary) is summoned. Pet cannot be summoned in PVP if it's not summoned before entering Arenas. Pet cannot be summoned if a pet is already equipped. Pet cannot be summoned during combat. Applies Blood Boil to the caster, which increases All Outgoing Damage by 100% for 8 seconds."
+    },
+    {
+      "officialName": "Dark Power",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Strike out at your foe with arcing energy to deal damage while applying a stack of Deep Rage per foe hit, lasts 15 seconds and stacks up to 5. Damage increases for each stack of Deep Rage.",
+      "notes": [
+        "Hits up to 4 targets.",
+        "Applies a stack of Deep Rage to the caster for every enemy hit, stacks to 5."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill28.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dark-lord",
+      "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+      "evidence": "Dark Power Rank Needed: 2 Mana Cost: 10 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 4 hostile targets. Description: Strike out at your foe with arcing energy to deal damage while applying a stack of Deep Rage per foe hit, lasts 15 seconds and stacks up to 5. Damage increases for each stack of Deep Rage. Notes: Hits up to 4 targets. Applies a stack of Deep Rage to the caster for every enemy hit, stacks to 5."
+    },
+    {
+      "officialName": "Blinding Pain",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "5",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Unleash your hatred, dealing damage based on stacks of Deep Rage stacks and reducing your foe's Outgoing Damage and Dodge by 30% for 10 seconds. Also has a 25% chance to stun for 3 seconds.",
+      "notes": [
+        "Hits up to 4 targets.",
+        "Applies Blinding Pain to enemies, which reduces All Outgoing Damage and Dodge by -30% for 15 seconds.",
+        "Has a chance to apply Immobilizing Pain to enemies, which stuns them for 3 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill66.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dark-lord",
+      "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+      "evidence": "Blinding Pain Rank Needed: 3 Mana Cost: 10 Mana Cooldown: 5 Seconds Type: Magical Range: A long range attack that deals damage to 4 hostile targets. Description: Unleash your hatred, dealing damage based on stacks of Deep Rage stacks and reducing your foe's Outgoing Damage and Dodge by 30% for 10 seconds. Also has a 25% chance to stun for 3 seconds. Notes: Hits up to 4 targets. Applies Blinding Pain to enemies, which reduces All Outgoing Damage and Dodge by -30% for 15 seconds. Has a chance to apply Immobilizing Pain to enemies, which stuns them for 3 seconds."
+    },
+    {
+      "officialName": "Terrifying Might",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Outgoing Damage and Hit Chance increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dark-lord",
+      "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+      "evidence": "Terrifying Might Rank Needed: 4 Type: Passive Description: Outgoing Damage and Hit Chance increased by 10%."
+    },
+    {
+      "officialName": "Blood Rush",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Haste increased by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dark-lord",
+      "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+      "evidence": "Blood Rush Rank Needed: 4 Type: Passive Description: Haste increased by 15%"
+    },
+    {
+      "officialName": "Renewal Spell",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "10",
+      "skillType": "Magical",
+      "target": "A short range skill that heals yourself.",
+      "officialDescription": "Tap into your dark power, consuming your Deep Rage stacks to heal you and restore 30 mana, plus an additional 10 per stack consumed.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill03.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dark-lord",
+      "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+      "evidence": "Renewal Spell Rank Needed: 5 Mana Cost: 0 Mana Cooldown: 10 Seconds Type: Magical Range: A short range skill that heals yourself. Description: Tap into your dark power, consuming your Deep Rage stacks to heal you and restore 30 mana, plus an additional 10 per stack consumed."
+    },
+    {
+      "officialName": "Lash Out",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "You can no longer contain your rage. It explodes from you in a magical wave. All enemies in range take high damage. Consumes all stacks of Deep Rage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dark-lord",
+      "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+      "evidence": "Lash Out Rank Needed: 10 Type: Passive Description: You can no longer contain your rage. It explodes from you in a magical wave. All enemies in range take high damage. Consumes all stacks of Deep Rage."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/aPfsNcS.png",
+  "sameSkillVariants": [
+    {
+      "name": "Darkside",
+      "url": "https://aqwwiki.wikidot.com/darkside"
+    }
+  ],
+  "location": "Locations:\n\nCuriosities \nMurder Moon Merge - Murder Moon \n\nPrice: N/A\n\nReward from the 'Darkside Gear' quest\nMerge the following:\n\nCyber Crystal x66\nS Ring x15\nFifth Lord's Filtrinator x15\nDark Helmet x1\nDotty x15\nGold Voucher 25k x4"
+}

@@ -1,0 +1,752 @@
+{
+  "excluded": [
+    {
+      "slug": "general-class",
+      "title": "General Class"
+    },
+    {
+      "slug": "class-mechanic",
+      "title": "Class Mechanic"
+    },
+    {
+      "slug": "starter-class",
+      "title": "Starter Class"
+    },
+    {
+      "slug": "class-enhancements",
+      "title": "Class Enhancements"
+    },
+    {
+      "slug": "how-to-rank-up-class",
+      "title": "How to Rank up Class"
+    },
+    {
+      "slug": "use-potions-and-scrolls-for-support",
+      "title": "Use Potions and Scrolls for support"
+    },
+    {
+      "slug": "class-combo",
+      "title": "Class Combo"
+    },
+    {
+      "slug": "common-class-combo",
+      "title": "Common Class Combo"
+    },
+    {
+      "slug": "nhom-nay-gom-3-dong-blade-swordmaster-khac-nhau-guide-giai-thich-co-che-chi-tiet-guide-here",
+      "title": "Nhóm này gồm 3 dòng Blade/SwordMaster khác nhau. Guide giải thích cơ chế chi tiết: Guide here"
+    },
+    {
+      "slug": "nhom-nay-gom-3-dong-dark-caster-co-bo-skill-hoan-toan-khac-nhau-vi-vay-moi-dong-co-mot-dac-diem-rieng-biet",
+      "title": "Nhóm này gồm 3 dòng Dark Caster có bộ skill hoàn toàn khác nhau, vì vậy mỗi dòng có một đặc điểm riêng biệt."
+    },
+    {
+      "slug": "o-day-se-bo-qua-khong-huong-dan-cho-ban-rut-gon-vi-chung-thuc-su-cuc-ky-yeu-kem-ve-moi-mat-so-voi-ban-day-du",
+      "title": "Ở đây sẽ bỏ qua không hướng dẫn cho bản rút gọn vì chúng thực sự cực kỳ yếu kém về mọi mặt so với bản đầy đủ."
+    },
+    {
+      "slug": "calendar-class-combo",
+      "title": "Calendar Class Combo"
+    },
+    {
+      "slug": "day-la-mot-phien-ban-hon-loan-cua-chronomancer-2011-voi-nhung-diem-khac-biet-de-tao-nen-chat-loto-cua-class-nay",
+      "title": "Đây là một phiên bản “hỗn loạn” của Chronomancer 2011 với những điểm khác biệt để tạo nên chất “loto” của Class này."
+    },
+    {
+      "slug": "neu-chronomancer-2011-la-warrior-thi-day-la-phien-ban-thief-rogue-cua-no-voi-nhieu-dac-trung-rieng",
+      "title": "Nếu Chronomancer 2011 là Warrior thì đây là phiên bản Thief/Rogue của nó với nhiều đặc trưng riêng."
+    },
+    {
+      "slug": "co-the-noi-day-la-phien-ban-cham-chap-nang-ne-nhung-trau-bo-hon-cua-chronomancer-2011-dac-diem-cot-loi-va-vi-tri-cua-bo-skill-cung-tuong-tu",
+      "title": "Có thể nói đây là phiên bản \"chậm chạp nặng nề\" nhưng \"trâu bò\" hơn của Chronomancer 2011, đặc điểm cốt lõi và vị trí của bộ skill cũng tương tự."
+    },
+    {
+      "slug": "day-khong-phai-la-class-de-tot-de-solo-chi-nen-dung-trong-party-chuc-nang-duy-nhat-la-diet-gon-1-boss-hp-cuc-cao-trong-1-don-do-nuke-cua-no-cuc-manh-nhung-cd-cuc-lau",
+      "title": "Đây không phải là class để tốt để solo chỉ nên dùng trong party. Chức năng duy nhất là diệt gọn 1 boss HP cực cao trong 1 đòn do Nuke của nó cực mạnh nhưng CD cực lâu."
+    },
+    {
+      "slug": "other-heromart-class-combo",
+      "title": "Other HeroMart Class Combo"
+    }
+  ],
+  "profiles": [
+    {
+      "slug": "abyssal-angel-aa-abyssal-angel-s-shadow-aas",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "alpha-omega-doommega-ao",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "alpha-pirate-pirate",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "arachnomancer-arach",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "arcana-invoker-ai",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "archfiend-af",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "archmage-am",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "archpaladin-ap",
+      "skills": 8,
+      "obtainSteps": 10,
+      "combos": 2
+    },
+    {
+      "slug": "artifact-antique-hunter-ah",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "bard-troubador-of-love",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "barber",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "battlemage-dark-royal-battlemage-dbm-rbm",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "beastmaster",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "berserker-beta-berserker-brutal-berserker",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "blaze-binder-bb-firelord-summoner-fls",
+      "skills": 7,
+      "obtainSteps": 5,
+      "combos": 1
+    },
+    {
+      "slug": "blood-ancient-ba",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "blood-titan-bt-frostblood-titan-fbt",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "chaos-avenger-cav",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "chaos-shaper-csp",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "chaos-slayer-cs-chaos-champion-prime-ccp",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "chrono-assassin-ca",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "chunin-imperial-chunin-imc",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "classic-legion-doomknight-cldk",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "classic-ninja",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "cryomancer-cryo-dark-sakura-cryomancer",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "daimon",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "dark-lord-dl-darkside",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "darkblood-stormking-dbsk",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "deathknight-dk",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "deathknight-lord-dkl",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "doomknight-dmk",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "dragon-drakkar-draco-knight-drk",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "dragon-of-time-dt-edot",
+      "skills": 8,
+      "obtainSteps": 10,
+      "combos": 2
+    },
+    {
+      "slug": "dragon-dragonsoul-shadow-dragon-shinobi-dss-sds",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "dragonlord-drl",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "dragonslayer-ds",
+      "skills": 10,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "drakel-warlord-dw",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "elemental-dracomancer-ed-love-caster",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "enforcer-protosartorium",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "eternal-inversionist-ei",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "evolved-leprechaun-el",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "evolved-pumpkin-lord-epl",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "evolved-shaman-es",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "exalted-soul-cleaver-esc-exalted-dark-harbinger-eh-dh",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "flame-dragon-warrior-fdw",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "frost-spiritreaver-fsr",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "frostval-barbarian-fb",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "glacial-berserker-gb",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "glacial-glaceran-warlord-dark-savage-glaceran-warlord-gw-dgw-sgw",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "grim-necromancer-gn",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "guardian",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "healer-acolyte-witch",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "highseas-commander-hsc",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "hollowborn-vindicator-hbv",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "horc-evader-he",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "kathool-adept-ka",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "king-s-echo-ke",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "legendary-hero-lh-dark-legendary-hero-dlh",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "legendary-ultra-mythic-elemental-warrior-lew-uew-mew",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "legion-doomknight-ldk",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "legion-revenant-lr",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "lich",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "lightcaster-lc",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "lord-of-order-loo",
+      "skills": 8,
+      "obtainSteps": 11,
+      "combos": 1
+    },
+    {
+      "slug": "lycan",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "mage-sorcerer",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "martial-artist-ma-master-martial-artist-mma",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "master-ranger-mr-ranger",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "mechajouster-mj",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "mindbreaker-mb",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "naval-commander-nc-heroic-legendary-naval-commander-hnc-lnc",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "necromancer-necro-pinkomancer",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "ninja-assassin-ninja-warrior",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "northlands-monk-nlm",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "oracle",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "paladin-silver-paladin",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "prismatic-evolved-clawsuit-pcs-ecs",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "psionic-mindbreaker-pmb",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "pyromancer-pyro-pink-romancer-pr",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "rogue-renegade",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "scarlet-sorceress-ss",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "scion-of-flames-sof",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "sentinel",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "shadowscythe-general-ssg",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "shaman",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "skycharged-grenadier-scg",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "skyguard-grenadier-sgg",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "sovereign-of-storms-sos",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "star-captain-stc",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "stone-crusher-sc-infinity-titan-it",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "thief-of-hours-toh",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "troll-spellsmith-tss",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "ultra-omniknight-uok-dark-ultra-omninight-duon",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "undead-goat-unundead-goat-ug",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "undeadslayer-us",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "vampire-lord-vl-enchanted-royal-vampire-lord-evl-rvl",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "verus-doomknight-vdk",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "vindicator-of-they-vot-the-collector-tc",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "void-highlord-vhl-debris-highlord-dhl",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "warrior-beast-warrior-pumpkin-lord-warlord",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "yami-no-ronin-ynr",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "chronomancer-cm-chronomancer-prime-cmp",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "infinity-interstellar-knight-ik",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+      "skills": 3,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "eternal-immortal-empyrean-chronomancer-ecm-icm",
+      "skills": 30,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "phantom-phantasm-chronomancer-phcm",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "archivist-of-time-temporis-aot",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "cardclasher-cc",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "great-thief-gt",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "legion-paladin-lp",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "master-of-moglins-mom-dark-master-of-moglins-dmom",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "not-a-mod-nam",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    },
+    {
+      "slug": "paladinslayer-ps",
+      "skills": 5,
+      "obtainSteps": 0,
+      "combos": 1
+    }
+  ]
+}

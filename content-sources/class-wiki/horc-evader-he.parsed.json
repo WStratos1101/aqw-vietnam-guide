@@ -1,0 +1,132 @@
+{
+  "url": "https://aqwwiki.wikidot.com/horc-evader-ac",
+  "sourceHash": "12ce91558c4f33f1ce1293f046038e24769d005bde0e08c2721e9bda3a82fb1c",
+  "entries": [
+    {
+      "officialName": "Evader Daggers",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage and Blood Trail stacks on your target.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/horc-evader-ac",
+      "sourceHash": "12ce91558c4f33f1ce1293f046038e24769d005bde0e08c2721e9bda3a82fb1c",
+      "evidence": "Evader Daggers Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage and Blood Trail stacks on your target."
+    },
+    {
+      "officialName": "Blood Trail",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "3",
+      "cooldown": "3",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Sick your pet on your target, leaving a Blood Trail, a DoT that stacks to 4 and reduces your target's Crit Chance by 10%, lasts 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill58.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/horc-evader-ac",
+      "sourceHash": "12ce91558c4f33f1ce1293f046038e24769d005bde0e08c2721e9bda3a82fb1c",
+      "evidence": "Blood Trail Rank Needed: 1 Mana Cost: 3 Mana Cooldown: 3 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Sick your pet on your target, leaving a Blood Trail, a DoT that stacks to 4 and reduces your target's Crit Chance by 10%, lasts 10 seconds."
+    },
+    {
+      "officialName": "Take Cover",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "8",
+      "skillType": "Physical",
+      "target": "A long range skill that applies to 1 target.",
+      "officialDescription": "Retreat into the foliage to plan your next move. Applies Take Cover, increasing your Dodge and Crit Chance by 25% for 20 seconds while restoring 45 mana. Removes Blood Trail stacks from your target.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill23.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/horc-evader-ac",
+      "sourceHash": "12ce91558c4f33f1ce1293f046038e24769d005bde0e08c2721e9bda3a82fb1c",
+      "evidence": "Take Cover Rank Needed: 2 Mana Cost: 0 Mana Cooldown: 8 Seconds Type: Physical Range: A long range skill that applies to 1 target. Description: Retreat into the foliage to plan your next move. Applies Take Cover, increasing your Dodge and Crit Chance by 25% for 20 seconds while restoring 45 mana. Removes Blood Trail stacks from your target."
+    },
+    {
+      "officialName": "Whistle",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "40",
+      "cooldown": "8",
+      "skillType": "Physical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Calls a pet to your side or sends it into a rage, increasing your outgoing damage by 50%, but increasing your incoming damage by 15% for 12 seconds.",
+      "notes": [
+        "Summon is Battle Boar.",
+        "Summon cannot be summoned while in combat.",
+        "Summon cannot be summoned if a pet is equipped."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill57.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/horc-evader-ac",
+      "sourceHash": "12ce91558c4f33f1ce1293f046038e24769d005bde0e08c2721e9bda3a82fb1c",
+      "evidence": "Whistle Rank Needed: 3 Mana Cost: 40 Mana Cooldown: 8 Seconds Type: Physical Range: A short range status skill that applies to yourself. Description: Calls a pet to your side or sends it into a rage, increasing your outgoing damage by 50%, but increasing your incoming damage by 15% for 12 seconds. Notes: Summon is Battle Boar. Summon cannot be summoned while in combat. Summon cannot be summoned if a pet is equipped."
+    },
+    {
+      "officialName": "Master Tracker",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit Chance and Crit Chance increased 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/horc-evader-ac",
+      "sourceHash": "12ce91558c4f33f1ce1293f046038e24769d005bde0e08c2721e9bda3a82fb1c",
+      "evidence": "Master Tracker Rank Needed: 4 Type: Passive Ability Description: Hit Chance and Crit Chance increased 10%."
+    },
+    {
+      "officialName": "No Sudden Movements",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Dodge increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/horc-evader-ac",
+      "sourceHash": "12ce91558c4f33f1ce1293f046038e24769d005bde0e08c2721e9bda3a82fb1c",
+      "evidence": "No Sudden Movements Rank Needed: 4 Type: Passive Ability Description: Dodge increased by 10%."
+    },
+    {
+      "officialName": "Hunter's Call",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "You decide to put an end to this fight quickly. Deals damage for each stack of Blood Trail on your target has while applying Hunter's Call, increasing your Haste by 30% for 12 seconds. Can't miss.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill59.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/horc-evader-ac",
+      "sourceHash": "12ce91558c4f33f1ce1293f046038e24769d005bde0e08c2721e9bda3a82fb1c",
+      "evidence": "Hunter's Call Rank Needed: 5 Mana Cost: 20 Mana Cooldown: 6 Seconds Type: Magical Range: A short range attack that deals damage to 1 target. Description: You decide to put an end to this fight quickly. Deals damage for each stack of Blood Trail on your target has while applying Hunter's Call, increasing your Haste by 30% for 12 seconds. Can't miss."
+    },
+    {
+      "officialName": "Weak Spot",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Blood Trail has a small chance to locate your target's Weak Spot, increasing your Crit Chance by 100% for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/horc-evader-ac",
+      "sourceHash": "12ce91558c4f33f1ce1293f046038e24769d005bde0e08c2721e9bda3a82fb1c",
+      "evidence": "Weak Spot Rank Needed: 10 Type: Passive Ability Description: Blood Trail has a small chance to locate your target's Weak Spot, increasing your Crit Chance by 100% for 10 seconds."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/zdGgxic.png",
+  "sameSkillVariants": [
+    {
+      "name": "Horc Evader (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/horc-evader-0-ac"
+    }
+  ],
+  "location": "Locations:\n\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\n\nPrice: 2,000 AC"
+}

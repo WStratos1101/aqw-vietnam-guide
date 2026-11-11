@@ -1,0 +1,134 @@
+{
+  "url": "https://aqwwiki.wikidot.com/paladin-class",
+  "sourceHash": "7cefb17d34e0e1024719b3cce899f91aca95e27082fdcc12468ab9ed667360f3",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/paladin-class",
+      "sourceHash": "7cefb17d34e0e1024719b3cce899f91aca95e27082fdcc12468ab9ed667360f3",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Abolish",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "3",
+      "skillType": "Hybrid",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A quick strike dealing weapon damage plus magical damage. Also reduces all damage taken by 7% for 10 seconds. Stacks up to 10 times.",
+      "notes": [
+        "Deals 138% Weapon Damage.",
+        "Abolish reduces Incoming Damage up to 55%. First stack is 8%, second stack is 7% and further on stacks are 5%."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill64.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/paladin-class",
+      "sourceHash": "7cefb17d34e0e1024719b3cce899f91aca95e27082fdcc12468ab9ed667360f3",
+      "evidence": "Abolish Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 3 Seconds Type: Hybrid Range: A short range attack that deals damage to 1 target. Description: A quick strike dealing weapon damage plus magical damage. Also reduces all damage taken by 7% for 10 seconds. Stacks up to 10 times. Notes: Deals 138% Weapon Damage. Abolish reduces Incoming Damage up to 55%. First stack is 8%, second stack is 7% and further on stacks are 5%."
+    },
+    {
+      "officialName": "Healing Word",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "6",
+      "skillType": "Hybrid",
+      "target": "A long range skill that heals 3 friendly targets.",
+      "officialDescription": "Heals yourself and two friendly targets for a moderate amount.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill01.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/paladin-class",
+      "sourceHash": "7cefb17d34e0e1024719b3cce899f91aca95e27082fdcc12468ab9ed667360f3",
+      "evidence": "Healing Word Rank Needed: 2 Mana Cost: 25 Mana Cooldown: 6 seconds Type: Hybrid Range: A long range skill that heals 3 friendly targets. Description: Heals yourself and two friendly targets for a moderate amount."
+    },
+    {
+      "officialName": "Exorcise",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "A light based ranged attack, high damage against undead enemies. Hits up to 3 targets.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill65.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/paladin-class",
+      "sourceHash": "7cefb17d34e0e1024719b3cce899f91aca95e27082fdcc12468ab9ed667360f3",
+      "evidence": "Exorcise Rank Needed: 3 Mana Cost: 15 Mana Cooldown: 6 seconds Type: Magical Range: A long range attack that deals damage to 3 hostile targets. Description: A light based ranged attack, high damage against undead enemies. Hits up to 3 targets. Note: Deals 122% Weapon Damage and deals 306% Weapon Damage to Undead targets."
+    },
+    {
+      "officialName": "Noble Mark",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Endurance increased by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/paladin-class",
+      "sourceHash": "7cefb17d34e0e1024719b3cce899f91aca95e27082fdcc12468ab9ed667360f3",
+      "evidence": "Noble Mark Rank Needed: 4 Type: Passive Ability Description: Endurance increased by 20%"
+    },
+    {
+      "officialName": "Contemplative",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Crit chance increased by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/paladin-class",
+      "sourceHash": "7cefb17d34e0e1024719b3cce899f91aca95e27082fdcc12468ab9ed667360f3",
+      "evidence": "Contemplative Rank Needed: 4 Type: Passive Ability Description: Crit chance increased by 15%"
+    },
+    {
+      "officialName": "Blinding Light",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "15",
+      "skillType": "Hybrid",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Deals damage to all enemies in range and applies Blinded, reducing enemy hit chance by 50% for 16 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill04.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/paladin-class",
+      "sourceHash": "7cefb17d34e0e1024719b3cce899f91aca95e27082fdcc12468ab9ed667360f3",
+      "evidence": "Blinding Light Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 15 seconds Type: Hybrid Range: A long range attack that deals damage to 4 hostile targets. Description: Deals damage to all enemies in range and applies Blinded, reducing enemy hit chance by 50% for 16 seconds."
+    },
+    {
+      "officialName": "Divine Recovery",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "On rare occasions the paladin and his entire team are fully healed and granted temporary invulnerability.",
+      "notes": [
+        "Applies Divine Recovery to all allies, a HoT and blocks all Incoming Damage for 8 seconds.",
+        "Previously called \"Ultimate Heal\"."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/paladin-class",
+      "sourceHash": "7cefb17d34e0e1024719b3cce899f91aca95e27082fdcc12468ab9ed667360f3",
+      "evidence": "Divine Recovery Rank Needed: 10 Type: Passive Ability Description: On rare occasions the paladin and his entire team are fully healed and granted temporary invulnerability. Notes: Applies Divine Recovery to all allies, a HoT and blocks all Incoming Damage for 8 seconds. Previously called \"Ultimate Heal\"."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/By1q4Kb.png",
+  "sameSkillVariants": [
+    {
+      "name": "Silver Paladin",
+      "url": "https://aqwwiki.wikidot.com/silver-paladin"
+    }
+  ],
+  "location": "Locations:\n\nPaladin (Shop) - Lightguard Keep\nPaladin (Shop) - Necropolis\n\nPrice: 0 AC"
+}

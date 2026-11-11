@@ -1,0 +1,157 @@
+{
+  "url": "https://aqwwiki.wikidot.com/champion-drakath-monster",
+  "text": ">\nLocation:\nChampion Drakath (Location)\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n20,000,000\nAttacks:\n+ Auto Attack ➞ Empowered Auto Attack\n- Auto Attack ➞ Empowered Auto Attack\nAuto Attack\nDamage\n1,285 - 1,570\nAnimations\nJump Slash\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\nApplies Chaorrupted to target, increasing damage taken by 100% and reducing Crit Chance by 25% for 60 seconds.\nUsed until 10,000,000 remaining HP, afterwards is replaced by Empowered Auto Attack.\nIgnores focus.\nAuto Attack is replaced by Empowered Auto Attack when Champion Drakath's HP is below 10,000,000.\nEmpowered Auto Attack\nDamage\n1,285 - 1,570\nAnimations\nJump Slash\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\nApplies Chaorrupted to target, increasing damage taken by 100% and reducing Crit Chance by 25% for 60 seconds.\nApplies Crippled to target, reducing Strength, Intellect, and Luck by 60% for 60 seconds.\nReplaces Auto Attack when below 10,000,000 HP.\nIgnores focus.\n+ Chaorruption\n- Chaorruption\nChaorruption\nDamage\n3,000\nAnimations\nChaos Slam\nCooldown\n{$cooldown}\nMessage\nDrakath gains power, and unleashes a destructive attack!\nAoE\n4\nType\nTrue Damage\nNotes\nApplies Gaining Power to self, increasing outgoing damage by 50%, stacks indefinitely.\nAlways does exactly 3,000 damage.\nUsed with every 2,000,000 HP until 12,000,000 remaining HP.\n+ Unleashed Chaos\n- Unleashed Chaos\nUnleashed Chaos\nDamage\n{$damage}\nAnimations\nTransform\nCooldown\n{$cooldown}\nMessage\nDrakath: Do you really think you stand a chance against me?\nAoE\n{$aoe}\nType\nAura\nNotes\nApplies Unleashed Chaos to self, increasing Dodge by 60% and Haste by 100%.\nUsed at 10,000,000 remaining HP.\n+ Chaos Blast\n- Chaos Blast\nChaos Blast\nDamage\n3,500\nAnimations\nChaos Blast\nCooldown\n{$cooldown}\nMessage\nDrakath gains power and evasion, and unleashes a devastating attack!\nAoE\n4\nType\nTrue Damage\nNotes\nApplies Gaining Power to self, increasing outgoing damage by 50%, stacks indefinitely.\nApplies Gaining Evasion to self, increasing Dodge by 20%, stacks indefinitely.\nAlways does exactly 3,500 damage.\nUsed with every 2,000,000 HP lost starting at 8,000,000 remaining HP, until 4,000,000 remaining HP.\n+ Summoning Meteor ➞ Meteor\n- Summoning Meteor ➞ Meteor\nSummoning Meteor\nDamage\n{$damage}\nAnimations\nChannel\nCooldown\n{$cooldown}\nMessage\nDrakath: I WILL NOT LOSE EVERYTHING! NOT AGAIN!\nAoE\n{$aoe}\nType\nAura\nNotes\nApplies Summoning Meteor to self, increasing damage taken by 750% and reducing Dodge by 750%.\nChannel lasts 20 seconds, with Meteor being used immediately after the channel ends.\nUsed at 2,000,000 remaining HP.\nMeteor is used directly after Summoning Meteor finishes charging.\nMeteor\nDamage\nDeath\nAnimations\nMeteor\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nIgnores focus.\nIf a player somehow survives the attack, Drakath will restore his HP, gain 10,000% outgoing physical damage, and the fatal DoT Instant Deaths is applied to the player.\nAbilities:\nAttacks will always hit and cannot crit.\nBoss Shield:\nDamage over 75,000 dealt to Champion Drakath is reduced by raising the difference to the exponent 0.8 (but is never reduced below 75,000).\nCannot be stunned.\nTemporary Items Dropped:\nChampion Drakath Defeated (Used in the '\nDrakath, Champion of Chaos\n' quest)\nItems Dropped:\nTreasure Chest (Misc)\nNote:\nHas a 30 second respawn timer.\nThanks to Darkfirekiller.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_c\n_lv100\naqwbirthday\nboss\nbossshield\nchallenge\nchaos\nchaoskind\nevileyes\nfreeplayer\nhorns\nimmune\nmonster",
+  "images": [
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/chaoskind.png",
+      "alt": "chaoskind.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+      "alt": "BossShield.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aqwbirthday.png",
+      "alt": "aqwbirthday.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://imgur.com/aYr37HB.png",
+      "alt": "aYr37HB.png"
+    }
+  ],
+  "links": [
+    {
+      "url": "http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2chaos",
+      "index": 1
+    },
+    {
+      "url": "http://aqwwiki.wikidot.com/aqworlds-birthday",
+      "index": 1
+    },
+    {
+      "url": "/champion-drakath-location",
+      "index": 2
+    },
+    {
+      "url": "javascript:;",
+      "index": 10
+    },
+    {
+      "url": "javascript:;",
+      "index": 11
+    },
+    {
+      "url": "javascript:;",
+      "index": 48
+    },
+    {
+      "url": "javascript:;",
+      "index": 49
+    },
+    {
+      "url": "javascript:;",
+      "index": 67
+    },
+    {
+      "url": "javascript:;",
+      "index": 68
+    },
+    {
+      "url": "javascript:;",
+      "index": 85
+    },
+    {
+      "url": "javascript:;",
+      "index": 86
+    },
+    {
+      "url": "javascript:;",
+      "index": 105
+    },
+    {
+      "url": "javascript:;",
+      "index": 106
+    },
+    {
+      "url": "/hero-s-quests#Weekly",
+      "index": 148
+    },
+    {
+      "url": "/treasure-chest-misc",
+      "index": 151
+    },
+    {
+      "url": "http://www.aq.com/",
+      "index": 156
+    },
+    {
+      "url": "/system:page-tags/tag/5star#pages",
+      "index": 159
+    },
+    {
+      "url": "/system:page-tags/tag/_c#pages",
+      "index": 160
+    },
+    {
+      "url": "/system:page-tags/tag/_lv100#pages",
+      "index": 161
+    },
+    {
+      "url": "/system:page-tags/tag/aqwbirthday#pages",
+      "index": 162
+    },
+    {
+      "url": "/system:page-tags/tag/boss#pages",
+      "index": 163
+    },
+    {
+      "url": "/system:page-tags/tag/bossshield#pages",
+      "index": 164
+    },
+    {
+      "url": "/system:page-tags/tag/challenge#pages",
+      "index": 165
+    },
+    {
+      "url": "/system:page-tags/tag/chaos#pages",
+      "index": 166
+    },
+    {
+      "url": "/system:page-tags/tag/chaoskind#pages",
+      "index": 167
+    },
+    {
+      "url": "/system:page-tags/tag/evileyes#pages",
+      "index": 168
+    },
+    {
+      "url": "/system:page-tags/tag/freeplayer#pages",
+      "index": 169
+    },
+    {
+      "url": "/system:page-tags/tag/horns#pages",
+      "index": 170
+    },
+    {
+      "url": "/system:page-tags/tag/immune#pages",
+      "index": 171
+    },
+    {
+      "url": "/system:page-tags/tag/monster#pages",
+      "index": 172
+    }
+  ],
+  "reviewedAt": "2026-11-08"
+}

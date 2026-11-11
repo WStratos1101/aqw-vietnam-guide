@@ -1,0 +1,946 @@
+{
+  "challengeContent": true,
+  "id": "sarah-the-nerfkitten",
+  "name": "Sarah The Nerfkitten",
+  "type": "other_challenge",
+  "map": "voidnerfkitten",
+  "levelRequirement": 80,
+  "partySize": 7,
+  "description": "Cách đánh:",
+  "bodyUrl": "/content/challenges/sarah-the-nerfkitten.json",
+  "href": "/other-challenges/sarah-the-nerfkitten",
+  "image": "monster-sarah-the-nerfkitten",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "sarah-the-nerfkitten-stage-1",
+      "name": "Sarah The Nerfkitten",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Sarah The Nerfkitten",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "sarah-the-nerfkitten-0",
+            "canonicalName": "Sarah the NerfKitten",
+            "role": "Monster",
+            "level": 130,
+            "maxHp": 5000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/sarah-the-nerfkitten"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "sarah-the-nerfkitten-0-pounce-0",
+            "monsterId": "sarah-the-nerfkitten-0",
+            "name": "Pounce",
+            "type": "Physical",
+            "damage": "850-950",
+            "damageType": "Physical",
+            "cooldown": "2 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Nerfed, giảm haste, sát thương gây ra, và dodge chance 1% trong 10 giây, cộng dồn up to 50.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/sarah-the-nerfkitten"
+          },
+          {
+            "id": "sarah-the-nerfkitten-0-yarn-ball-1",
+            "monsterId": "sarah-the-nerfkitten-0",
+            "name": "Yarn Ball",
+            "type": "True Damage",
+            "damage": "50% of Target's Current HP",
+            "damageType": "True Damage",
+            "cooldown": "5 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Nerfed, giảm haste, sát thương gây ra, và dodge chance 1% trong 10 giây, cộng dồn up to 50.",
+              "Luôn trúng. hoặc crit.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/sarah-the-nerfkitten"
+          },
+          {
+            "id": "sarah-the-nerfkitten-0-silence-2",
+            "monsterId": "sarah-the-nerfkitten-0",
+            "name": "Silence",
+            "type": "Status",
+            "damageType": "Status",
+            "cooldown": "12 seconds",
+            "targets": "7",
+            "activation": "You've been silenced. Mana is unusable!",
+            "playerEffects": [
+              "Áp Silenced, preventing from players from using any skills that costs MP, lasts 3 giây.",
+              "Luôn trúng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/sarah-the-nerfkitten"
+          },
+          {
+            "id": "sarah-the-nerfkitten-0-meow-3",
+            "monsterId": "sarah-the-nerfkitten-0",
+            "name": "Meow",
+            "type": "Charge",
+            "damageType": "Charge",
+            "activation": "Meow",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/sarah-the-nerfkitten"
+          },
+          {
+            "id": "sarah-the-nerfkitten-0-stat-steal-4",
+            "monsterId": "sarah-the-nerfkitten-0",
+            "name": "Stat Steal",
+            "type": "True Damage",
+            "damage": "49% of target's max HP",
+            "damageType": "True Damage",
+            "targets": "7",
+            "activation": "Sarah the Nerfkitten steals your stats!",
+            "playerEffects": [
+              "Áp Stats Stolen to the target, giảm dodge chance, sát thương gây ra, tỷ lệ chí mạng, và sát thương chí mạng 10% trong 25 giây, cộng dồn up to 10.",
+              "Áp Stolen Stats lên bản thân, tăng dodge chance, sát thương gây ra, tỷ lệ chí mạng, và sát thương chí mạng 10% for each player hit.",
+              "Luôn trúng. hoặc crit."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/sarah-the-nerfkitten"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:",
+        "- “Doom Spikes” quest để farm Verus DoomKnight Class.",
+        "- “Fiend's Purgatory” quest trong Hollowborn Archfiend.",
+        "Boss này nằm ở map /join voidnerfkitten - Room limit: 7",
+        "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 5,000,000",
+        "◆ Shield giúp giới hạn sát thương nhận tối đa 20k.",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Base có 50% Crit Chance và Dodge.",
+        "◆ Auto-Attack mỗi 2s gây Phys DMG từ 850 đến 950.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% Haste, All Out và Dodge trong 10s, stack đến 50.",
+        "◆ Mỗi 5s, sử dụng Yarn Ball gây True DMG bằng 50% lượng HP hiện tại của player, không thể né nhưng lại không thể bạo kích.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% Haste, All Out và Dodge trong 10s, stack đến 50.",
+        "◆ Mỗi 12s, sử dụng Silence áp hiệu ứng lên players.",
+        "→ Không thể né và bỏ qua Focus/Taunt.",
+        "→ Ngăn chặn players sử dụng bất kỳ skill dạng tiêu hao MP trong 3s.",
+        "◆ Sau khi sử dụng Silence, kích hoạt Meow để charge trong 2s rồi kích hoạt Stat Steal gây True DMG bằng 49% lượng HP tối đa của player, không thể né nhưng lại không thể bạo kích.",
+        "→ Players bị giảm 10% All Out, Dodge, Crit Chance và Crit DMG trong 25s, stack đến 10",
+        "→ NerfKitten tăng 10% All Out, Dodge, Crit Chance và Crit DMG với mỗi player bị đánh trúng."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung NerfKitten cũng là một Mini Challenge Boss, tuy nhiên sẽ khó đánh hơn Flibbitiestgibbet một chút, nhưng cũng không quá khó để đánh bại được nó. Với một team từ 6 người bên dưới thì có thể giết nó một cách đơn giản.",
+        "Team 6 người:\tCAv/VDK, Shaman, LR, PCM/LC, LoO, SC/IT",
+        "hoặc\tShaman, LR, PCM/AP, LC, LoO, SC/IT",
+        "Team 7 người:\tCAv/VDK, Shaman, LR, PCM/AP, LC, LoO, SC/IT",
+        "hoặc\tShaman, DT/EDoT, LR, PCM/AP, LC, LoO, SC/IT",
+        "hoặc\tShaman, LR, VDK, PCM/AP, LC, LoO, SC/IT",
+        "hoặc\t2 Shaman, LR, VDK/FB, PCM/AP, LoO, SC/IT",
+        "Note: CAv hoặc LR sẽ đảm nhiệm việc Focus/Taunt Boss với Scroll of Enrage. Thực hiện Focus/Taunt bằng SoE mỗi lần thấy thông báo màu vàng “You’ve been silenced. Mana is unusable!”."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-412191",
+          "runs": [
+            {
+              "text": "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412295",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Doom Spikes",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest để farm "
+            },
+            {
+              "text": "Verus DoomKnight Class",
+              "href": "/farm/verus-doomknight-vdk"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412349",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Fiend's Purgatory",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” ques"
+            },
+            {
+              "text": "t tr"
+            },
+            {
+              "text": "ong "
+            },
+            {
+              "text": "Hollowborn Archfiend",
+              "href": "/farm/hollowborn"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412406",
+          "runs": [
+            {
+              "text": "Boss này nằm ở m",
+              "italic": true
+            },
+            {
+              "text": "ap ",
+              "italic": true
+            },
+            {
+              "text": "/join voidnerfkitten",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/void-nerfkitten"
+            },
+            {
+              "text": " - Room",
+              "italic": true
+            },
+            {
+              "text": " limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412462",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412519",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412527",
+          "runs": [
+            {
+              "text": "◆ Total HP: 5,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412549",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 20k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412600",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412623",
+          "runs": [
+            {
+              "text": "◆ Base có 50% Crit Chance và Dodge.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412659",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Phys DMG từ 850 đến 950.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412709",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412731",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% Haste, All Out và Dodge trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412801",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sử dụng Yarn Ball gây True DMG bằng 50% lượng HP hiện tại của player, không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412924",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412946",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% Haste, All Out và Dodge trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413016",
+          "runs": [
+            {
+              "text": "◆ Mỗi 12s, sử dụng Silence áp hiệu ứng lên players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413068",
+          "runs": [
+            {
+              "text": "→ Không thể né và bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413106",
+          "runs": [
+            {
+              "text": "→ Ngăn chặn players sử dụng bất kỳ skill dạng tiêu hao MP trong 3s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413174",
+          "runs": [
+            {
+              "text": "◆ Sau khi sử dụng Silence, kích hoạt Meow để charge trong 2s rồi kích hoạt Stat Steal gây True DMG bằng 49% lượng HP tối đa của player, không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413353",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 10% All Out, Dodge, Crit Chance và Crit DMG trong 25s, stack đến 10\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413439",
+          "runs": [
+            {
+              "text": "→ NerfKitten tăng 10% All Out, Dodge, Crit Chance và Crit DMG với mỗi player bị đánh trúng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413532",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413544",
+          "runs": [
+            {
+              "text": "Nhìn chung NerfKitten cũng là một Mini Challenge Boss, tuy nhiên sẽ khó đánh hơn Flibbitiestgibbet một chút, nhưng cũng không quá khó để đánh bại được nó. Với một team từ 6 người bên dưới thì có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413771",
+          "runs": [
+            {
+              "text": "Team 6 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "CAv/VDK, Shaman, LR, PCM/LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413825",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Shaman, LR, PCM/AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413866",
+          "runs": [
+            {
+              "text": "Team 7 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "CAv/VDK, Shaman, LR, PCM/AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413924",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Shaman, DT/EDoT, LR, PCM/AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-413974",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Shaman, LR, VDK, PCM/AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414020",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Shaman, LR, VDK/FB, PCM/AP, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-414067",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " CAv hoặc LR sẽ đảm nhiệm việc Focus/Taunt Boss với ",
+              "italic": true
+            },
+            {
+              "text": "Scroll of Enrage",
+              "italic": true
+            },
+            {
+              "text": ". Thực hiện Focus/Taunt bằng SoE mỗi lần thấy thông báo màu vàng “You’ve been silenced. Mana is unusable!”.",
+              "italic": true
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-412709",
+      "runs": [
+        {
+          "text": "→ Bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-412924",
+      "runs": [
+        {
+          "text": "→ Bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-413068",
+      "runs": [
+        {
+          "text": "→ Không thể né và bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-413771",
+      "runs": [
+        {
+          "text": "Team 6 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "CAv/VDK, Shaman, LR, PCM/LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-413825",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "Shaman, LR, PCM/AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-413866",
+      "runs": [
+        {
+          "text": "Team 7 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "CAv/VDK, Shaman, LR, PCM/AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-413924",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "Shaman, DT/EDoT, LR, PCM/AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-413974",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "Shaman, LR, VDK, PCM/AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-414020",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 Shaman, LR, VDK/FB, PCM/AP, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-414067",
+      "runs": [
+        {
+          "text": "Note:",
+          "italic": true
+        },
+        {
+          "text": " CAv hoặc LR sẽ đảm nhiệm việc Focus/Taunt Boss với ",
+          "italic": true
+        },
+        {
+          "text": "Scroll of Enrage",
+          "italic": true
+        },
+        {
+          "text": ". Thực hiện Focus/Taunt bằng SoE mỗi lần thấy thông báo màu vàng “You’ve been silenced. Mana is unusable!”.",
+          "italic": true
+        },
+        {
+          "text": "\n",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": [
+    {
+      "id": "source-team-6",
+      "name": "Team 6 người:\tCAv/VDK, Shaman, LR, PCM/LC, LoO, SC/IT",
+      "assignments": [
+        {
+          "id": "team-1-slot-1-1",
+          "primaryClass": {
+            "classId": "chaos-avenger",
+            "name": "Chaos Avenger",
+            "abbreviation": "CAv",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "verus-doomknight",
+              "name": "Verus DoomKnight",
+              "abbreviation": "VDK",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-1-slot-2-1",
+          "primaryClass": {
+            "classId": "shaman",
+            "name": "Shaman",
+            "abbreviation": "Shaman",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-3-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-4-1",
+          "primaryClass": {
+            "classId": "paladin-chronomancer",
+            "name": "Paladin Chronomancer",
+            "abbreviation": "PCM",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "lightcaster",
+              "name": "LightCaster",
+              "abbreviation": "LC",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-1-slot-5-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-6-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-7",
+      "name": "Team 7 người:\tCAv/VDK, Shaman, LR, PCM/AP, LC, LoO, SC/IT",
+      "assignments": [
+        {
+          "id": "team-2-slot-1-1",
+          "primaryClass": {
+            "classId": "chaos-avenger",
+            "name": "Chaos Avenger",
+            "abbreviation": "CAv",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "verus-doomknight",
+              "name": "Verus DoomKnight",
+              "abbreviation": "VDK",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-2-slot-2-1",
+          "primaryClass": {
+            "classId": "shaman",
+            "name": "Shaman",
+            "abbreviation": "Shaman",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-3-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-4-1",
+          "primaryClass": {
+            "classId": "paladin-chronomancer",
+            "name": "Paladin Chronomancer",
+            "abbreviation": "PCM",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "archpaladin",
+              "name": "ArchPaladin",
+              "abbreviation": "AP",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-2-slot-5-1",
+          "primaryClass": {
+            "classId": "lightcaster",
+            "name": "LightCaster",
+            "abbreviation": "LC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-6-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-7-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    }
+  ]
+}

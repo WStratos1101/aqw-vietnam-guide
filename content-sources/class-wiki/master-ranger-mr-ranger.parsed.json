@@ -1,0 +1,115 @@
+{
+  "url": "https://aqwwiki.wikidot.com/master-ranger",
+  "sourceHash": "4feb4349475b379f6362f1aa9d2acb43d206579dbd3ff129c3d25ace41fd341a",
+  "entries": [
+    {
+      "officialName": "Rapid Fire",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "1.5",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 2 hostile targets.",
+      "officialDescription": "Nock an arrow, and loose it at faraway foes.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill318.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-ranger",
+      "sourceHash": "4feb4349475b379f6362f1aa9d2acb43d206579dbd3ff129c3d25ace41fd341a",
+      "evidence": "Rapid Fire Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 1.5 Seconds Type: Physical Range: A long range attack that deals damage to 2 hostile targets. Description: Nock an arrow, and loose it at faraway foes."
+    },
+    {
+      "officialName": "Mark For Death",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "1.5",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 2 hostile targets.",
+      "officialDescription": "Mark your targets for death and nock your arrows, applying Death Mark to your foes and increasing the damage they take by 5% per stack. Gain stacks of Mark, which empowers your other abilities. Both auras stack to 6 and last 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill67.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-ranger",
+      "sourceHash": "4feb4349475b379f6362f1aa9d2acb43d206579dbd3ff129c3d25ace41fd341a",
+      "evidence": "Mark For Death Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 1.5 Seconds Type: Physical Range: A long range attack that deals damage to 2 hostile targets. Description: Mark your targets for death and nock your arrows, applying Death Mark to your foes and increasing the damage they take by 5% per stack. Gain stacks of Mark, which empowers your other abilities. Both auras stack to 6 and last 10 seconds."
+    },
+    {
+      "officialName": "Scorching Arrow",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "3",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 2 hostile targets.",
+      "officialDescription": "Launches a flaming arrow at up to 2 targets, dealing damage while also burning them over time for 10 seconds. Damage Over Time effect is increased for each stack of Marks, does not consume stacks of Marks.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill30.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-ranger",
+      "sourceHash": "4feb4349475b379f6362f1aa9d2acb43d206579dbd3ff129c3d25ace41fd341a",
+      "evidence": "Scorching Arrow Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 3 Seconds Type: Physical Range: A long range attack that deals damage to 2 hostile targets. Description: Launches a flaming arrow at up to 2 targets, dealing damage while also burning them over time for 10 seconds. Damage Over Time effect is increased for each stack of Marks, does not consume stacks of Marks. Note: Applies Scorching Arrow to the target, a DoT that stacks with Marks for 10 seconds."
+    },
+    {
+      "officialName": "Explosive Bolt",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "9",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 2 hostile targets.",
+      "officialDescription": "Fire an explosive tipped arrow which detonates on impact, dealing high damage. Up to 1 other nearby target can also be caught in the explosion for minor damage. Damage is increased for each stack of Marks, consumes stacks of Marks.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill62.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-ranger",
+      "sourceHash": "4feb4349475b379f6362f1aa9d2acb43d206579dbd3ff129c3d25ace41fd341a",
+      "evidence": "Explosive Bolt Rank Needed: 3 Mana Cost: 25 Mana Cooldown: 9 Seconds Type: Physical Range: A long range attack that deals damage to 2 hostile targets. Description: Fire an explosive tipped arrow which detonates on impact, dealing high damage. Up to 1 other nearby target can also be caught in the explosion for minor damage. Damage is increased for each stack of Marks, consumes stacks of Marks. Note: Marks' stacking damage only affects the primary target."
+    },
+    {
+      "officialName": "Ranger Secrets",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Dodge by 15% and Haste by 7%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-ranger",
+      "sourceHash": "4feb4349475b379f6362f1aa9d2acb43d206579dbd3ff129c3d25ace41fd341a",
+      "evidence": "Ranger Secrets Rank Needed: 4 Type: Passive Ability Description: Increases Dodge by 15% and Haste by 7%."
+    },
+    {
+      "officialName": "Target Vitals",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Crit chance increased by 15% and Hit Chance increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-ranger",
+      "sourceHash": "4feb4349475b379f6362f1aa9d2acb43d206579dbd3ff129c3d25ace41fd341a",
+      "evidence": "Target Vitals Rank Needed: 4 Type: Passive Ability Description: Crit chance increased by 15% and Hit Chance increased by 10%."
+    },
+    {
+      "officialName": "Vampiric Shot",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "9",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 2 hostile targets.",
+      "officialDescription": "Fire a magic arrow inscribed with runes at up to 2 targets, dealing moderate damage to them while also healing yourself over 10 seconds. Heal Over Time effect is increased for each stack of Marks does not consume stacks of Marks.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill23New.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/master-ranger",
+      "sourceHash": "4feb4349475b379f6362f1aa9d2acb43d206579dbd3ff129c3d25ace41fd341a",
+      "evidence": "Vampiric Shot Rank Needed: 5 Mana Cost: 10 Mana Cooldown: 9 Seconds Type: Physical Range: A long range attack that deals damage to 2 hostile targets. Description: Fire a magic arrow inscribed with runes at up to 2 targets, dealing moderate damage to them while also healing yourself over 10 seconds. Heal Over Time effect is increased for each stack of Marks does not consume stacks of Marks. Note: Marks also increases the skill's damage."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/8qcmrPO.png",
+  "sameSkillVariants": [
+    {
+      "name": "Ranger",
+      "url": "https://aqwwiki.wikidot.com/ranger"
+    }
+  ],
+  "location": "Locations:\n\nRanger Class - Class Hall A\nSandsea Rep Shop - Oasis\n\nPrice: 0 AC"
+}

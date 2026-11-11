@@ -1,0 +1,302 @@
+[
+  {
+    "classId": "not-a-mod-nam",
+    "skillId": "skill-1",
+    "officialName": "Auto Attack",
+    "sourceHash": "3a42e16441e76b9273ba0aa8736f97540a84c027479d87924fab75e7d239755e",
+    "patch": {
+      "rangeCategory": "Close",
+      "effects": [],
+      "effectsVerificationStatus": "verified_none",
+      "noAdditionalEffects": true,
+      "damageDisplay": "Gây 100% sát thương vật lý.",
+      "normalAttackVerified": true
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-30jan2024-notamodupdates-9449",
+      "snapshotPath": "content-sources/v12-11/nam.html",
+      "snapshotHash": "17dbd17117a1119bf20a6c144faf8889552c25e58f70c8cf3a1825ebf19358fb",
+      "verifiedAt": "2026-11-11",
+      "rationale": "Official rework explicitly lists Range and Max Targets for each named skill. Reasonable Attack in the announcement corresponds to current Reasonable Strike (rank 2, mana 0, cooldown 4, full mana recovery). Melee maps to Close. Retain current Wiki cooldowns, including Keyboard Smash 20s rather than the announcement’s older 14s.",
+      "excerpt": "Auto Attack: Range Melee"
+    }
+  },
+  {
+    "classId": "not-a-mod-nam",
+    "skillId": "skill-2",
+    "officialName": "Button Mash",
+    "sourceHash": "3a42e16441e76b9273ba0aa8736f97540a84c027479d87924fab75e7d239755e",
+    "patch": {
+      "rangeCategory": "Close"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-30jan2024-notamodupdates-9449",
+      "snapshotPath": "content-sources/v12-11/nam.html",
+      "snapshotHash": "17dbd17117a1119bf20a6c144faf8889552c25e58f70c8cf3a1825ebf19358fb",
+      "verifiedAt": "2026-11-11",
+      "rationale": "Official rework explicitly lists Range and Max Targets for each named skill. Reasonable Attack in the announcement corresponds to current Reasonable Strike (rank 2, mana 0, cooldown 4, full mana recovery). Melee maps to Close. Retain current Wiki cooldowns, including Keyboard Smash 20s rather than the announcement’s older 14s.",
+      "excerpt": "Button Mash: Range Melee"
+    }
+  },
+  {
+    "classId": "not-a-mod-nam",
+    "skillId": "skill-4",
+    "officialName": "Gamer Fuel",
+    "sourceHash": "3a42e16441e76b9273ba0aa8736f97540a84c027479d87924fab75e7d239755e",
+    "patch": {
+      "rangeCategory": "Close"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-30jan2024-notamodupdates-9449",
+      "snapshotPath": "content-sources/v12-11/nam.html",
+      "snapshotHash": "17dbd17117a1119bf20a6c144faf8889552c25e58f70c8cf3a1825ebf19358fb",
+      "verifiedAt": "2026-11-11",
+      "rationale": "Official rework explicitly lists Range and Max Targets for each named skill. Reasonable Attack in the announcement corresponds to current Reasonable Strike (rank 2, mana 0, cooldown 4, full mana recovery). Melee maps to Close. Retain current Wiki cooldowns, including Keyboard Smash 20s rather than the announcement’s older 14s.",
+      "excerpt": "Gamer Fuel: Range Melee"
+    }
+  },
+  {
+    "classId": "not-a-mod-nam",
+    "skillId": "skill-5",
+    "officialName": "Keyboard Smash",
+    "sourceHash": "3a42e16441e76b9273ba0aa8736f97540a84c027479d87924fab75e7d239755e",
+    "patch": {
+      "rangeCategory": "Infinite"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-30jan2024-notamodupdates-9449",
+      "snapshotPath": "content-sources/v12-11/nam.html",
+      "snapshotHash": "17dbd17117a1119bf20a6c144faf8889552c25e58f70c8cf3a1825ebf19358fb",
+      "verifiedAt": "2026-11-11",
+      "rationale": "Official rework explicitly lists Range and Max Targets for each named skill. Reasonable Attack in the announcement corresponds to current Reasonable Strike (rank 2, mana 0, cooldown 4, full mana recovery). Melee maps to Close. Retain current Wiki cooldowns, including Keyboard Smash 20s rather than the announcement’s older 14s.",
+      "excerpt": "Keyboard Smash: Range Infinite"
+    }
+  },
+  {
+    "classId": "not-a-mod-nam",
+    "skillId": "wiki-active-reasonablestrike",
+    "officialName": "Reasonable Strike",
+    "sourceHash": "3a42e16441e76b9273ba0aa8736f97540a84c027479d87924fab75e7d239755e",
+    "patch": {
+      "rangeCategory": "Close",
+      "targetCount": 1
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-30jan2024-notamodupdates-9449",
+      "snapshotPath": "content-sources/v12-11/nam.html",
+      "snapshotHash": "17dbd17117a1119bf20a6c144faf8889552c25e58f70c8cf3a1825ebf19358fb",
+      "verifiedAt": "2026-11-11",
+      "rationale": "Official rework explicitly lists Range and Max Targets for each named skill. Reasonable Attack in the announcement corresponds to current Reasonable Strike (rank 2, mana 0, cooldown 4, full mana recovery). Melee maps to Close. Retain current Wiki cooldowns, including Keyboard Smash 20s rather than the announcement’s older 14s.",
+      "excerpt": "Reasonable Attack: Max Target 1; Range Melee"
+    }
+  },
+  {
+    "classId": "paladinslayer-ps",
+    "skillId": "skill-3",
+    "officialName": "SHADOW GRASP",
+    "sourceHash": "cb2e92e37f573c519dd932aeadd1f068962e8d735308d2bc43d1114df8fdf485",
+    "patch": {
+      "rangeCategory": "Long"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-heromartclassupdates-30jul26-10415",
+      "snapshotPath": "content-sources/v12-11/paladinslayer.html",
+      "snapshotHash": "c408133a62baae82aa35e739c54a8d76110e080b75fbb972585b0f236f19f346",
+      "verifiedAt": "2026-11-11",
+      "rationale": "August 2026 rework matches current SHADOW GRASP rank, cost, cooldown and mechanics. Only fill the missing Range.",
+      "excerpt": "SHADOW GRASP: Max Targets 1; Range Long"
+    }
+  },
+  {
+    "classId": "skycharged-grenadier-scg",
+    "skillId": "skill-1",
+    "officialName": "Bombard",
+    "sourceHash": "b77bc2e0cda8c96d82b06c56738f7f84b4414af49edc32c87bbb97a5122db416",
+    "patch": {
+      "rangeCategory": "Long"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/loyaltyclassskills-6006",
+      "snapshotPath": "content-sources/v12-11/loyalty.html",
+      "snapshotHash": "043d410f746d90386c0b64b3b0dc2ab06af0a5a334079eaabeabd78f1a07b496",
+      "verifiedAt": "2026-11-11",
+      "rationale": "Official skill breakdown explicitly calls Bombard long ranged. No range supplied for the other four skills; do not infer those.",
+      "excerpt": "Bombard: Fire a powerful, long ranged explosive round."
+    }
+  },
+  {
+    "classId": "dark-lord-dl-darkside",
+    "skillId": "skill-1",
+    "officialName": "Forbidden Form",
+    "sourceHash": "6d53a4eb5a7e7355d33a34673817c0f815b3df416a3069ade4115a1de5e76c04",
+    "patch": {
+      "effects": [],
+      "effectsVerificationStatus": "verified_none",
+      "noAdditionalEffects": true,
+      "damageDisplay": "Gây sát thương bằng 66% Spell Power.",
+      "normalAttackVerified": true
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/AQW-Balance-PatchNotes-9515",
+      "snapshotPath": "content-sources/v12-11/balance.html",
+      "snapshotHash": "de8e4c98d958211a61a7be388c73a87555b4a3722b6c75acb84650f8edcfd5be",
+      "verifiedAt": "2026-11-11",
+      "rationale": "May 1, 2026 balance notes explicitly update the normal attack Forbidden Form to 66%, based on Spell Power. The current Wiki confirms Long range and four hostile targets. No extra aura is stated for this attack.",
+      "excerpt": "Forbidden Form: Range Melee > Long; Damage 100% > 66%; Spell Power instead of Attack Power."
+    }
+  },
+  {
+    "classId": "abyssal-angel-aa-abyssal-angel-s-shadow-aas",
+    "skillId": "skill-2",
+    "officialName": "Flight",
+    "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+    "patch": {
+      "effects": [
+        {
+          "targets": [
+            "SELF"
+          ],
+          "name": "Vantage Point",
+          "text": "Tăng 15% Hit Chance và Dodge, tăng 75% sát thương DoT và tập trung mọi đòn đánh vào một mục tiêu trong 6 giây."
+        },
+        {
+          "targets": [
+            "SELF"
+          ],
+          "name": "Mana Refraction",
+          "text": "Giảm 50% Mana Cost trong 8 giây."
+        }
+      ],
+      "effectsVerificationStatus": "verified",
+      "conflictId": "flight-dot"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/ClassBalanceUpdatesMay15-7494",
+      "snapshotPath": "content-sources/v12-11/abyssal2020.html",
+      "snapshotHash": "cee66e6b978f16be160b4595ad4f4d4a723507934a9e21ea08c82d21c14a255b",
+      "verifiedAt": "2026-11-11",
+      "rationale": "May 15, 2020 official change 50% → 75% agrees with the current Wiki description; the Notes retain the pre-patch value. The archived/current balance lists reviewed contain no subsequent reversal.",
+      "excerpt": "Flight/Shadowed Flight DoT damage increase: 50% > 75%"
+    }
+  },
+  {
+    "classId": "calendar-quantum-chronomancer",
+    "skillId": "wiki-active-quantumshift",
+    "officialName": "Quantum Shift",
+    "sourceHash": "6a1957e2430431c197895e39da8afc8585b08585baeee6e2b085e40a805a5bd3",
+    "patch": {
+      "effects": [
+        {
+          "targets": [
+            "SELF",
+            "ALLY"
+          ],
+          "name": "Quantum Shift",
+          "text": "Tăng 30% Crit Chance và Defense, tăng 10% sát thương vật lý và phép gây ra trong 10 giây."
+        },
+        {
+          "targets": [
+            "SELF"
+          ],
+          "text": "Ở Rank 10: Mỗi mục tiêu đồng minh chịu tác động của Quantum Shift cho một stack Quantum Spiral: tăng 10% hệ số Crit và sát thương DoT mỗi stack trong 23 giây, tối đa 40 stack; không làm mới thời hạn."
+        }
+      ],
+      "effectsVerificationStatus": "verified",
+      "conflictId": "calendar-quantum-chronomancer-spiral"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-dec20-2022calendarclassbreakdown-8615",
+      "snapshotPath": "content-sources/v12-11/quantum.html",
+      "snapshotHash": "b1cd9d718803600d98d8ef20865af24a3aa2a455a970df86923b147b830cc82f",
+      "verifiedAt": "2026-11-11",
+      "rationale": "The current active Wiki note and official detailed mechanic both state 23 seconds and non-refreshing expiry. The passive description says 20 seconds. No duration change found in the archived/current balance lists; use corroborated 23 seconds for both effect views, retaining the contradictory raw source. Confidence: medium.",
+      "excerpt": "Quantum Spiral: 10% for 23 seconds, stacks to 40 but cannot be refreshed; lose all stacks after 23 seconds."
+    }
+  },
+  {
+    "classId": "calendar-quantum-chronomancer",
+    "skillId": "wiki-passive-quantumspiral",
+    "officialName": "Quantum Spiral",
+    "sourceHash": "6a1957e2430431c197895e39da8afc8585b08585baeee6e2b085e40a805a5bd3",
+    "patch": {
+      "effects": [
+        {
+          "targets": [
+            "SELF"
+          ],
+          "text": "Mỗi mục tiêu đồng minh chịu tác động của Quantum Shift cho một stack Quantum Spiral: tăng 10% hệ số Crit và sát thương DoT mỗi stack trong 23 giây, tối đa 40 stack; không làm mới thời hạn."
+        }
+      ],
+      "effectsVerificationStatus": "verified",
+      "conflictId": "calendar-quantum-chronomancer-spiral"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-dec20-2022calendarclassbreakdown-8615",
+      "snapshotPath": "content-sources/v12-11/quantum.html",
+      "snapshotHash": "b1cd9d718803600d98d8ef20865af24a3aa2a455a970df86923b147b830cc82f",
+      "verifiedAt": "2026-11-11",
+      "rationale": "Same Quantum Spiral effect as the active Rank 10 note; keep passive display consistent with the corroborated duration. Preserve its original official name and raw Wiki text. Confidence: medium.",
+      "excerpt": "Quantum Spiral: 23 seconds, cannot be refreshed."
+    }
+  },
+  {
+    "classId": "calendar-continuum-chronomancer",
+    "skillId": "wiki-active-quantumshift",
+    "officialName": "Quantum Shift",
+    "sourceHash": "b806c7ed129950279676f6fbdbdf454ff93a692c4c3c26e8b4b17af1c40af4a1",
+    "patch": {
+      "effects": [
+        {
+          "targets": [
+            "SELF",
+            "ALLY"
+          ],
+          "name": "Quantum Shift",
+          "text": "Tăng 30% Crit Chance và Defense, tăng 10% sát thương vật lý và phép gây ra trong 10 giây."
+        },
+        {
+          "targets": [
+            "SELF"
+          ],
+          "text": "Ở Rank 10: Mỗi mục tiêu đồng minh chịu tác động của Quantum Shift cho một stack Quantum Spiral: tăng 10% hệ số Crit và sát thương DoT mỗi stack trong 23 giây, tối đa 40 stack; không làm mới thời hạn."
+        }
+      ],
+      "effectsVerificationStatus": "verified",
+      "conflictId": "calendar-continuum-chronomancer-spiral"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-dec20-2022calendarclassbreakdown-8615",
+      "snapshotPath": "content-sources/v12-11/quantum.html",
+      "snapshotHash": "b1cd9d718803600d98d8ef20865af24a3aa2a455a970df86923b147b830cc82f",
+      "verifiedAt": "2026-11-11",
+      "rationale": "The current active Wiki note and official detailed mechanic both state 23 seconds and non-refreshing expiry. The passive description says 20 seconds. No duration change found in the archived/current balance lists; use corroborated 23 seconds for both effect views, retaining the contradictory raw source. Confidence: medium.",
+      "excerpt": "Quantum Spiral: 10% for 23 seconds, stacks to 40 but cannot be refreshed; lose all stacks after 23 seconds."
+    }
+  },
+  {
+    "classId": "calendar-continuum-chronomancer",
+    "skillId": "wiki-passive-quantummending",
+    "officialName": "Quantum Mending",
+    "sourceHash": "b806c7ed129950279676f6fbdbdf454ff93a692c4c3c26e8b4b17af1c40af4a1",
+    "patch": {
+      "effects": [
+        {
+          "targets": [
+            "SELF"
+          ],
+          "text": "Mỗi mục tiêu đồng minh chịu tác động của Quantum Shift cho một stack Quantum Spiral: tăng 10% hệ số Crit và sát thương DoT mỗi stack trong 23 giây, tối đa 40 stack; không làm mới thời hạn."
+        }
+      ],
+      "effectsVerificationStatus": "verified",
+      "conflictId": "calendar-continuum-chronomancer-spiral"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/aqw-dec20-2022calendarclassbreakdown-8615",
+      "snapshotPath": "content-sources/v12-11/quantum.html",
+      "snapshotHash": "b1cd9d718803600d98d8ef20865af24a3aa2a455a970df86923b147b830cc82f",
+      "verifiedAt": "2026-11-11",
+      "rationale": "Same Quantum Spiral effect as the active Rank 10 note; keep passive display consistent with the corroborated duration. Preserve its original official name and raw Wiki text. Confidence: medium.",
+      "excerpt": "Quantum Spiral: 23 seconds, cannot be refreshed."
+    }
+  }
+]

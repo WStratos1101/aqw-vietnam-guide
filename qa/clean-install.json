@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-06T04:19:49.267Z",
+  "source": "/Users/wstratos/Projects/aqw-vietnam-guide",
+  "target": "/var/folders/2m/x43j9fgj04q6t12wtpd0st1w0000gn/T/aqw-clean-check-teK4BK",
+  "method": "Fresh independent node_modules reconstructed from exact lockfile versions; each file hash verified against pnpm cache integrity. Registry installation is not tested.",
+  "steps": [
+    {
+      "command": "/usr/local/bin/node scripts/restore-cache.mjs",
+      "exitCode": 0,
+      "output": "Restored independent copies of 24 cached packages\n"
+    },
+    {
+      "command": "npm run content:import",
+      "exitCode": 0,
+      "output": "\n> aqw-vietnam-guide@1.0.0 content:import\n> node scripts/import-guides.mjs\n\n{\"pages\":313,\"paragraphs\":24224,\"tables\":30,\"internalLinks\":538,\"unresolved\":0,\"excluded\":30}\n"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "output": "\n> aqw-vietnam-guide@1.0.0 typecheck\n> tsc --noEmit\n\n"
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "output": "\n> aqw-vietnam-guide@1.0.0 lint\n> node scripts/lint.mjs\n\n29 TypeScript files checked; 0 syntax/accessibility/link findings. This is a focused project linter, not ESLint.\n"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "output": "\n> aqw-vietnam-guide@1.0.0 test\n> node --test tests/content.test.mjs tests/migration.test.mjs tests/ultra.test.mjs\n\n✔ unique valid routes, source provenance and section anchors (1.055792ms)\n✔ Vietnamese accent-insensitive and multi-token search (1.793208ms)\n✔ farm requirements reference preceding steps and materials are explicit (0.074292ms)\n✔ storage tolerates corruption and denied browser persistence (0.437167ms)\n✔ all related slugs resolve and unverified rotations stay absent (0.1275ms)\n✔ all required beginner systems have substantive sourced articles (0.072167ms)\n✔ invalid, prototype and malformed routes resolve to 404 (0.151625ms)\n✔ community material keeps read provenance separate from game verification (0.114208ms)\n✔ full text search locates native chapters and Class definitions (26.795042ms)\n✔ every source paragraph is represented or explicitly excluded (49.354625ms)\n✔ native chapters have local bodies and no Google Docs navigation in article content (28.631458ms)\n✔ Boosted Items has full source examples and table cell values survive merged cells (5.123666ms)\n✔ bot automation recipes are excluded from page bodies and search index (44.620458ms)\n✔ Ultra data resolves source, asset and quest dependencies without invented empty stats (0.664375ms)\n✔ quest persistence keys isolate boss, equipment and reporting period (0.77575ms)\n✔ repeatable observations never count as permanent item milestones (0.416125ms)\n✔ back navigation accepts only valid same-site history (0.099583ms)\n✔ unapproved or unmaterialized assets cannot be mistaken for ready local game art (0.072083ms)\n✔ six community profiles ship complete local mechanics, team instructions and progression text (5.048042ms)\n✔ Time Inn item progression includes both branches before Unity and Penultima (0.170375ms)\n✔ client navigation refuses seed content belonging to a different boss (0.308666ms)\n✔ Time Inn merge quantities reconcile with the full Apotheosis route (0.217959ms)\nℹ tests 22\nℹ suites 0\nℹ pass 22\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 255.965042\n"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "output": "\n> aqw-vietnam-guide@1.0.0 build\n> node scripts/import-guides.mjs && node scripts/import-ultra-guides.mjs && tsc --noEmit && vite build && node scripts/prerender.mjs\n\n{\"pages\":313,\"paragraphs\":24224,\"tables\":30,\"internalLinks\":538,\"unresolved\":0,\"excluded\":30}\nImported full community guide text for 6 Ultra profiles.\nvite v7.1.9 building for production...\ntransforming...\n✓ 1605 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                                   0.97 kB │ gzip:  0.55 kB\ndist/assets/source-sans-3-vietnamese-900-normal-vaRnz59e.woff2    5.94 kB\ndist/assets/source-sans-3-vietnamese-700-normal-Bgamivog.woff2    6.14 kB\ndist/assets/source-sans-3-vietnamese-400-normal-CwtaIDr2.woff2    6.22 kB\ndist/assets/source-sans-3-vietnamese-600-normal-B2sTNYey.woff2    6.22 kB\ndist/assets/source-sans-3-vietnamese-900-normal-8uEBsOB-.woff     8.00 kB\ndist/assets/source-sans-3-vietnamese-700-normal-W-J7ohm4.woff     8.25 kB\ndist/assets/source-sans-3-vietnamese-600-normal-BzH4Q14_.woff     8.26 kB\ndist/assets/source-sans-3-vietnamese-400-normal-eMQk7hmk.woff     8.28 kB\ndist/assets/source-sans-3-latin-900-normal-BkQ9IsEo.woff2        14.81 kB\ndist/assets/source-sans-3-latin-700-normal-CkzU-mV9.woff2        15.60 kB\ndist/assets/source-sans-3-latin-600-normal-DeckBYAU.woff2        15.67 kB\ndist/assets/source-sans-3-latin-400-normal-DQi5PRDE.woff2        15.70 kB\ndist/assets/source-sans-3-latin-900-normal-CmxOkGV-.woff         18.88 kB\ndist/assets/source-sans-3-latin-700-normal-B-h9tW5h.woff         19.91 kB\ndist/assets/source-sans-3-latin-400-normal-RR2C27NP.woff         19.99 kB\ndist/assets/source-sans-3-latin-600-normal-Ck0n4g8U.woff         19.99 kB\ndist/assets/index-CnY_XqxG.css                                   51.51 kB │ gzip: 10.91 kB\ndist/assets/react-vendor-DtRoQ-p-.js                            193.81 kB │ gzip: 60.54 kB\ndist/assets/index-CuOA-WGN.js                                   475.14 kB │ gzip: 75.09 kB\n✓ built in 918ms\nPrerendered 349 routes and 404 HTML.\n"
+    },
+    {
+      "command": "npm run test:build",
+      "exitCode": 0,
+      "output": "\n> aqw-vietnam-guide@1.0.0 test:build\n> node --test tests/build.test.mjs\n\n✔ all published routes ship readable HTML, one h1 and metadata (35.184958ms)\n✔ internal links and article TOC targets resolve in prerendered pages (36.275916ms)\n✔ unknown route artifact carries 404, recovery and noindex (0.122375ms)\n✔ migrated reader ships valid initial content and cross-page anchors resolve (41.901167ms)\n✔ reader removes citation panels and obsolete topic return controls (29.904792ms)\n✔ boss reader uses exact named monster portrait and separate combat chapters (0.443041ms)\n✔ Ultra routes render inspection tabs, scoped quest inputs and truthful asset placeholders (2.546125ms)\n✔ expanded Ultra guides prerender community content without remote image hotlinks (1.928541ms)\nℹ tests 8\nℹ suites 0\nℹ pass 8\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 188.570959\n"
+    },
+    {
+      "command": "npm run test:server",
+      "exitCode": 0,
+      "output": "\n> aqw-vietnam-guide@1.0.0 test:server\n> node --test tests/server.test.mjs\n\n✔ production handler serves guide HTML with actual response headers (2.462333ms)\n✔ production handler returns HTTP 404 with readable recovery (0.522417ms)\n✔ HEAD and static SVG asset responses (0.541708ms)\n✔ malformed and encoded traversal requests are rejected (0.292917ms)\nℹ tests 4\nℹ suites 0\nℹ pass 4\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 40.277167\n"
+    }
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,132 @@
+{
+  "url": "https://aqwwiki.wikidot.com/psionic-mindbreaker",
+  "sourceHash": "db2b4c5f513d98eadb344c73bcd35dfadfe6091fd76ff3213c35b7a728c230d1",
+  "entries": [
+    {
+      "officialName": "Psychic Assault",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "3",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 2 hostile targets.",
+      "officialDescription": "Assail two opponents with your mental attacks, clouding their minds and decreasing their crit chance by 25% for 4 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill110.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/psionic-mindbreaker",
+      "sourceHash": "db2b4c5f513d98eadb344c73bcd35dfadfe6091fd76ff3213c35b7a728c230d1",
+      "evidence": "Psychic Assault Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 3 Seconds Type: Physical Range: A short range attack that deals damage to 2 hostile targets. Description: Assail two opponents with your mental attacks, clouding their minds and decreasing their crit chance by 25% for 4 seconds. Note: Applies Clouded Mind! to 2 enemies, decreasing their crit chance by 25% for 4 seconds."
+    },
+    {
+      "officialName": "Mental Flare",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "8",
+      "cooldown": "3",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 2 hostile targets.",
+      "officialDescription": "Sharpen your mind and engulf two foes in psionic flames. Always hits and crits. For every target you hit, gain a stack of Concentration, increasing your magical damage dealt by 30%, stacking to 6, and lasting 4 seconds.",
+      "notes": [
+        "Applies Concentration! to the caster, increasing magical damage by 30% for 4 seconds.",
+        "Concentration! only stacks to 5, and increases magical damage by 30% at 1 stack, 120% at 2 stacks, 150% at 3 stacks, 180% at 4 stacks and 210% at 5 stacks."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill303.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/psionic-mindbreaker",
+      "sourceHash": "db2b4c5f513d98eadb344c73bcd35dfadfe6091fd76ff3213c35b7a728c230d1",
+      "evidence": "Mental Flare Rank Needed: 1 Mana Cost: 8 Mana Cooldown: 3 Seconds Type: Magical Range: A long range attack that deals damage to 2 hostile targets. Description: Sharpen your mind and engulf two foes in psionic flames. Always hits and crits. For every target you hit, gain a stack of Concentration, increasing your magical damage dealt by 30%, stacking to 6, and lasting 4 seconds. Notes: Applies Concentration! to the caster, increasing magical damage by 30% for 4 seconds. Concentration! only stacks to 5, and increases magical damage by 30% at 1 stack, 120% at 2 stacks, 150% at 3 stacks, 180% at 4 stacks and 210% at 5 stacks."
+    },
+    {
+      "officialName": "Psion Drain",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "An long range attack that deals damage to yourself.",
+      "officialDescription": "Open your mind and allow psionic energy to flow in, recovering 35 mana and reducing your mana costs by 10% for 10 seconds, up to 4 stacks. Doing so, however, overloads your senses, causing you to take damage.",
+      "notes": [
+        "Applies Mana Flow! to the caster, reducing mana costs by for 10 seconds.",
+        "Mana Flow! only stacks to 3, and reduces mana costs by 5% at 1 stack, 40% at 2 stacks and 50% at 3 stacks."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill304.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/psionic-mindbreaker",
+      "sourceHash": "db2b4c5f513d98eadb344c73bcd35dfadfe6091fd76ff3213c35b7a728c230d1",
+      "evidence": "Psion Drain Rank Needed: 2 Mana Cost: 0 Mana Cooldown: 6 Seconds Type: Magical Range: An long range attack that deals damage to yourself. Description: Open your mind and allow psionic energy to flow in, recovering 35 mana and reducing your mana costs by 10% for 10 seconds, up to 4 stacks. Doing so, however, overloads your senses, causing you to take damage. Notes: Applies Mana Flow! to the caster, reducing mana costs by for 10 seconds. Mana Flow! only stacks to 3, and reduces mana costs by 5% at 1 stack, 40% at 2 stacks and 50% at 3 stacks."
+    },
+    {
+      "officialName": "Cerebral Siphon",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Reach out and invade your opponent’s mind, stealing their life force and healing yourself for half of your missing hp. Your assault leaves them weak, reducing their defense by 40% for 15 seconds. Cannot be avoided, but cannot crit.",
+      "notes": [
+        "Applies Weak Minded! to 1 enemy, reducing defense by 40% for 15 seconds.",
+        "Heal is negated by Decay."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill305.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/psionic-mindbreaker",
+      "sourceHash": "db2b4c5f513d98eadb344c73bcd35dfadfe6091fd76ff3213c35b7a728c230d1",
+      "evidence": "Cerebral Siphon Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Reach out and invade your opponent’s mind, stealing their life force and healing yourself for half of your missing hp. Your assault leaves them weak, reducing their defense by 40% for 15 seconds. Cannot be avoided, but cannot crit. Notes: Applies Weak Minded! to 1 enemy, reducing defense by 40% for 15 seconds. Heal is negated by Decay."
+    },
+    {
+      "officialName": "Psionic Armaments",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Your psychic powers allow you to conjure metaphysical armor and weapons, decreasing the damage you take by 25%, and increasing your haste and accuracy by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill306.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/psionic-mindbreaker",
+      "sourceHash": "db2b4c5f513d98eadb344c73bcd35dfadfe6091fd76ff3213c35b7a728c230d1",
+      "evidence": "Psionic Armaments Rank Needed: 4 Type: Passive Ability Description: Your psychic powers allow you to conjure metaphysical armor and weapons, decreasing the damage you take by 25%, and increasing your haste and accuracy by 10%."
+    },
+    {
+      "officialName": "Psionic Precision",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Starting at rank 1, your precise control over psionic elements allows you to focus your attack power on your main target, dealing double damage to them with your skills.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill306.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/psionic-mindbreaker",
+      "sourceHash": "db2b4c5f513d98eadb344c73bcd35dfadfe6091fd76ff3213c35b7a728c230d1",
+      "evidence": "Psionic Precision Rank Needed: 4 Type: Passive Ability Description: Starting at rank 1, your precise control over psionic elements allows you to focus your attack power on your main target, dealing double damage to them with your skills."
+    },
+    {
+      "officialName": "Psionic Might",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 2 hostile targets.",
+      "officialDescription": "Detonate psions under your control, dealing heavy damage to 2 opponents..",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill307.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/psionic-mindbreaker",
+      "sourceHash": "db2b4c5f513d98eadb344c73bcd35dfadfe6091fd76ff3213c35b7a728c230d1",
+      "evidence": "Psionic Might Rank Needed: 5 Mana Cost: 20 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 2 hostile targets. Description: Detonate psions under your control, dealing heavy damage to 2 opponents.."
+    },
+    {
+      "officialName": "Extrasensory Perception",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Your ability to read the flow of combat grants you +15% Crit Chance. Rarely, your ability to read the Psionic Flow gives you clairvoyant visions, vastly increasing your combat capabilities for a few seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/psionic-mindbreaker",
+      "sourceHash": "db2b4c5f513d98eadb344c73bcd35dfadfe6091fd76ff3213c35b7a728c230d1",
+      "evidence": "Extrasensory Perception Rank Needed: 10 Type: Passive Ability Description: Your ability to read the flow of combat grants you +15% Crit Chance. Rarely, your ability to read the Psionic Flow gives you clairvoyant visions, vastly increasing your combat capabilities for a few seconds. Note: Auto Attacks have a 1% chance per target to apply ESP, granting 50% more damage, dodge, crit chance, and haste for 10 seconds"
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/f9IZSQp.png",
+  "sameSkillVariants": [],
+  "location": "Location: MindBreaker 12K AC Shop - Book of Lore\nPrice: 0 AC"
+}

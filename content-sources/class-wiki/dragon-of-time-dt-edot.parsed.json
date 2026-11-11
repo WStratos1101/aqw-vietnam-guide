@@ -1,0 +1,151 @@
+{
+  "url": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+  "sourceHash": "45c4c1860600858f05d41d0c72c253c0e253b91321e0e58b2aae050b0c799cd1",
+  "entries": [
+    {
+      "officialName": "Rend Time",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A medium range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Strike at your opponents' being with your force of will, Rending them for Damage over Time, stacking to 5 and lasting 10 seconds. Cannot crit.",
+      "notes": [
+        "Applies Rend to 4 enemies, dealing a DoT that lasts 10 seconds and stacks to 5.",
+        "If Convergence is active, applies Causality to the caster, increasing END by 75% for 9 seconds.",
+        "If Convergence is NOT active, applies Discordance to the caster, increasing DoT done by 25%. This stacks to 10 and lasts 9 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DoTAA.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+      "sourceHash": "45c4c1860600858f05d41d0c72c253c0e253b91321e0e58b2aae050b0c799cd1",
+      "evidence": "Rend Time Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A medium range attack that deals damage to 4 hostile targets. Description: Strike at your opponents' being with your force of will, Rending them for Damage over Time, stacking to 5 and lasting 10 seconds. Cannot crit. Notes: Applies Rend to 4 enemies, dealing a DoT that lasts 10 seconds and stacks to 5. If Convergence is active, applies Causality to the caster, increasing END by 75% for 9 seconds. If Convergence is NOT active, applies Discordance to the caster, increasing DoT done by 25%. This stacks to 10 and lasts 9 seconds."
+    },
+    {
+      "officialName": "Confluence of Fates",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "6",
+      "skillType": "Hybrid",
+      "target": "An infinite range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Violently tear through the boundaries between timelines, sacrificing 10% of your health per target hit to Converge your successive strikes on a single target, removing all of your skills' area of effect, increasing your Magical Damage by 100%, and decreasing your mana costs by 60%. Further Rends all targets hit, and cannot crit.",
+      "notes": [
+        "Applies Rend to 4 enemies, dealing a DoT that lasts 10 seconds and stacks to 5.",
+        "Applies Convergence to the caster, turning all AoE effects to single target , increases magical damage by 100%, decreasing your mana costs by 60%, lasts 10 seconds, and prevents Discordance from applying."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DoTA1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+      "sourceHash": "45c4c1860600858f05d41d0c72c253c0e253b91321e0e58b2aae050b0c799cd1",
+      "evidence": "Confluence of Fates Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 6 Seconds Type: Hybrid Range: An infinite range attack that deals damage to 4 hostile targets. Description: Violently tear through the boundaries between timelines, sacrificing 10% of your health per target hit to Converge your successive strikes on a single target, removing all of your skills' area of effect, increasing your Magical Damage by 100%, and decreasing your mana costs by 60%. Further Rends all targets hit, and cannot crit. Notes: Applies Rend to 4 enemies, dealing a DoT that lasts 10 seconds and stacks to 5. Applies Convergence to the caster, turning all AoE effects to single target , increases magical damage by 100%, decreasing your mana costs by 60%, lasts 10 seconds, and prevents Discordance from applying."
+    },
+    {
+      "officialName": "Dragon's Will",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "3",
+      "skillType": "Magical",
+      "target": "An infinite range attack that deals damage to 1 target.",
+      "officialDescription": "Strike your opponent for noncrit damage, and Rend them while pulling your corporeal form back together, healing you for half of your missing health. If your strikes are Converged, you gain Coalescence for 5 seconds, an additional small HoT.",
+      "notes": [
+        "Applies Rend, dealing a DoT that lasts 10 seconds and stacks to 5.",
+        "If Convergence is present, applies Linearity to the caster, increasing END by 75% for 9 seconds.",
+        "If Convergence is present, applies Coalescence to caster, applying an HoT, that ticks once per second, and lasts 5 seconds.",
+        "If Convergence is NOT active, applies Discordance to the caster, increasing DoT done by 25%. This stacks to 10 and lasts 9 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DoTA2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+      "sourceHash": "45c4c1860600858f05d41d0c72c253c0e253b91321e0e58b2aae050b0c799cd1",
+      "evidence": "Dragon's Will Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 3 Seconds Type: Magical Range: An infinite range attack that deals damage to 1 target. Description: Strike your opponent for noncrit damage, and Rend them while pulling your corporeal form back together, healing you for half of your missing health. If your strikes are Converged, you gain Coalescence for 5 seconds, an additional small HoT. Notes: Applies Rend, dealing a DoT that lasts 10 seconds and stacks to 5. If Convergence is present, applies Linearity to the caster, increasing END by 75% for 9 seconds. If Convergence is present, applies Coalescence to caster, applying an HoT, that ticks once per second, and lasts 5 seconds. If Convergence is NOT active, applies Discordance to the caster, increasing DoT done by 25%. This stacks to 10 and lasts 9 seconds."
+    },
+    {
+      "officialName": "Burning Fates",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "6",
+      "skillType": "Hybrid",
+      "target": "An infinite range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Breathe temporal fire over the battlefield, burning away you and your foes' fates, removing your Convergence, and burning you for 10% of your health per target hit. The most intense flames affect your primary target, searing their timeline and increasing the DoT damage they take by 150% for 7 seconds. Their destiny remains alight for the duration, burning them for a powerful DoT. Cannot be avoided, but cannot crit.",
+      "notes": [
+        "Applies Rend to 4 enemies, dealing a DoT that lasts 10 seconds and stacks to 5.",
+        "Applies Destiny Alight to the primary target, a DoT that ticks once per second and lasts 7 seconds.",
+        "If Convergence is NOT active, applies Discordance to the caster, increasing DoT done by 25%. This stacks to 10 and lasts 9 seconds.",
+        "If Convergence is present on caster, Convergence is consumed and Searing Timeline is applied to the primary target, increasing the amount of DoT damage they take by 150% for 7 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DoTA3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+      "sourceHash": "45c4c1860600858f05d41d0c72c253c0e253b91321e0e58b2aae050b0c799cd1",
+      "evidence": "Burning Fates Rank Needed: 3 Mana Cost: 0 Mana Cooldown: 6 Seconds Type: Hybrid Range: An infinite range attack that deals damage to 4 hostile targets. Description: Breathe temporal fire over the battlefield, burning away you and your foes' fates, removing your Convergence, and burning you for 10% of your health per target hit. The most intense flames affect your primary target, searing their timeline and increasing the DoT damage they take by 150% for 7 seconds. Their destiny remains alight for the duration, burning them for a powerful DoT. Cannot be avoided, but cannot crit. Notes: Applies Rend to 4 enemies, dealing a DoT that lasts 10 seconds and stacks to 5. Applies Destiny Alight to the primary target, a DoT that ticks once per second and lasts 7 seconds. If Convergence is NOT active, applies Discordance to the caster, increasing DoT done by 25%. This stacks to 10 and lasts 9 seconds. If Convergence is present on caster, Convergence is consumed and Searing Timeline is applied to the primary target, increasing the amount of DoT damage they take by 150% for 7 seconds."
+    },
+    {
+      "officialName": "Convergence of Destiny",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Starting at rank 1, when Convergence is active, using your abilities will grant you the aspects of Linearity, Continuity, and Causality, increasing your Endurance by 75% each, for 9 seconds. When Convergence is not active, you create Discordance, increasing your DoT damage by 25%, up to 10 stacks, for 9 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DoTPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+      "sourceHash": "45c4c1860600858f05d41d0c72c253c0e253b91321e0e58b2aae050b0c799cd1",
+      "evidence": "Convergence of Destiny Rank Needed: 4 Type: Passive Ability Description: Starting at rank 1, when Convergence is active, using your abilities will grant you the aspects of Linearity, Continuity, and Causality, increasing your Endurance by 75% each, for 9 seconds. When Convergence is not active, you create Discordance, increasing your DoT damage by 25%, up to 10 stacks, for 9 seconds."
+    },
+    {
+      "officialName": "Divergent Providence",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "You split your life to preside over the providence of the many, reducing your base Endurance by 40%, and increasing your Haste by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DoTPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+      "sourceHash": "45c4c1860600858f05d41d0c72c253c0e253b91321e0e58b2aae050b0c799cd1",
+      "evidence": "Divergent Providence Rank Needed: 4 Type: Passive Ability Description: You split your life to preside over the providence of the many, reducing your base Endurance by 40%, and increasing your Haste by 15%."
+    },
+    {
+      "officialName": "Hero’s Heartbeat",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "8",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Lash out with the force of your vitality, dealing heavy damage based on your current health while further Rending them. Cannot crit.",
+      "notes": [
+        "Applies Rend to 4 enemies, dealing a DoT that lasts 10 seconds and stacks to 5.",
+        "If Convergence is active, applies Continuity to caster, increasing END by 75% for 9 seconds.",
+        "If Convergence is NOT active, applies Discordance to the caster, increasing DoT done by 25%. This stacks to 10 and lasts 9 seconds.",
+        "Deals 40% of your current HP as magical damage."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DoTA4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+      "sourceHash": "45c4c1860600858f05d41d0c72c253c0e253b91321e0e58b2aae050b0c799cd1",
+      "evidence": "Hero’s Heartbeat Rank Needed: 5 Mana Cost: 25 Mana Cooldown: 8 Seconds Type: Magical Range: A long range attack that deals damage to 4 hostile targets. Description: Lash out with the force of your vitality, dealing heavy damage based on your current health while further Rending them. Cannot crit. Notes: Applies Rend to 4 enemies, dealing a DoT that lasts 10 seconds and stacks to 5. If Convergence is active, applies Continuity to caster, increasing END by 75% for 9 seconds. If Convergence is NOT active, applies Discordance to the caster, increasing DoT done by 25%. This stacks to 10 and lasts 9 seconds. Deals 40% of your current HP as magical damage."
+    },
+    {
+      "officialName": "Split Timelines",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit Chance increased by 15%. At the pinnacle of your power, using your abilities wears away at your foes’ existential resilience, weakening them.",
+      "notes": [
+        "All skills have a chance to apply the following debuffs for 15 seconds:\n\nPrinciples of Time reduces enemy haste by 15% (20% chance)\nPrinciples of Space reduces enemy crit chance by 15% (20% chance)\nPrinciples of Gravitation reduces enemy dodge by 15% (50% chance)\nPrinciples of Dimensionality reduces enemy hit chance by 15% (20% chance)",
+        "Principles of Time reduces enemy haste by 15% (20% chance)",
+        "Principles of Space reduces enemy crit chance by 15% (20% chance)",
+        "Principles of Gravitation reduces enemy dodge by 15% (50% chance)",
+        "Principles of Dimensionality reduces enemy hit chance by 15% (20% chance)"
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DoTPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragon-of-time-class",
+      "sourceHash": "45c4c1860600858f05d41d0c72c253c0e253b91321e0e58b2aae050b0c799cd1",
+      "evidence": "Split Timelines Rank Needed: 10 Type: Passive Ability Description: Hit Chance increased by 15%. At the pinnacle of your power, using your abilities wears away at your foes’ existential resilience, weakening them. Notes: All skills have a chance to apply the following debuffs for 15 seconds: Principles of Time reduces enemy haste by 15% (20% chance) Principles of Space reduces enemy crit chance by 15% (20% chance) Principles of Gravitation reduces enemy dodge by 15% (50% chance) Principles of Dimensionality reduces enemy hit chance by 15% (20% chance)"
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/GIz1bra.png",
+  "sameSkillVariants": [],
+  "location": "Location: Inn at the Edge of Time\nPrice: N/A (Reward from the 'Hero's Heartbeat' quest)"
+}

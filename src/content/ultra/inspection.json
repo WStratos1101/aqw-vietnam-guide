@@ -1,0 +1,1218 @@
+{
+  "ultra-ezrajal": {
+    "encounterTitle": "Ultra Ezrajal",
+    "locationName": "Ultra Ezrajal",
+    "monsters": [
+      {
+        "id": "boss",
+        "canonicalName": "Ultra Ezrajal",
+        "role": "Boss chính",
+        "level": 100,
+        "maxHp": 2500000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      }
+    ],
+    "activeSkills": [
+      {
+        "id": "auto",
+        "monsterId": "boss",
+        "name": "Auto Attack",
+        "type": "Physical",
+        "activation": "Đòn đánh thường",
+        "cooldown": "2 giây",
+        "damage": "965–1.180",
+        "damageType": "Physical",
+        "targets": "1 mục tiêu",
+        "playerEffects": [],
+        "bossEffects": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "prism",
+        "monsterId": "boss",
+        "name": "Celestial Prism Explosion",
+        "type": "True Damage",
+        "activation": "Đòn diện rộng theo nhịp riêng",
+        "cooldown": "8 giây",
+        "damage": "2.595–3.171",
+        "damageType": "True Damage",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Luôn trúng, không thể chí mạng.",
+          "Bỏ qua Focus."
+        ],
+        "bossEffects": [
+          "Hồi HP dựa trên sát thương gây lên toàn đội."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "counter",
+        "monsterId": "boss",
+        "name": "Counter Cast → Counter Attack",
+        "type": "Charge / Reflect",
+        "activation": "Counter Cast niệm trước khi Counter Attack được tung ra.",
+        "cooldown": "40 giây",
+        "playerEffects": [],
+        "bossEffects": [
+          "Counter Attack khiến boss chặn và phản sát thương trong thời gian hiệu lực."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster",
+        "confidenceStatus": "needs_verification",
+        "damageConfidenceStatus": "needs_verification"
+      }
+    ],
+    "passiveSkills": [
+      {
+        "id": "shield",
+        "monsterId": "boss",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng chịu công thức giảm; sát thương sau giảm không thấp hơn ngưỡng.",
+        "values": [
+          "Ngưỡng 100.000",
+          "Hệ số lũy thừa 0,8"
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "id": "stun",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "id": "lock",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Có xác suất khi Ezrajal tấn công người chơi",
+        "effect": "Có thể khóa một kỹ năng đang nhắm vào boss; hiệu ứng khóa mới làm mới thời gian khóa của kỹ năng hiện bị khóa.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      }
+    ]
+  },
+  "ultra-warden": {
+    "encounterTitle": "Ultra Warden",
+    "locationName": "Ultra Warden",
+    "monsters": [
+      {
+        "id": "boss",
+        "canonicalName": "Ultra Warden",
+        "role": "Boss chính",
+        "level": 100,
+        "maxHp": 1500000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      }
+    ],
+    "activeSkills": [
+      {
+        "id": "auto",
+        "monsterId": "boss",
+        "name": "Auto Attack",
+        "type": "Physical",
+        "activation": "Đòn đánh thường",
+        "cooldown": "2,25 giây",
+        "damage": "4.844–5.882",
+        "damageType": "Physical",
+        "targets": "1 mục tiêu",
+        "playerEffects": [],
+        "bossEffects": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "scream",
+        "monsterId": "boss",
+        "name": "Petrifying Scream",
+        "type": "Magical",
+        "activation": "Có 7% khả năng thay cho Auto Attack ở mỗi lần chọn đòn.",
+        "cooldown": "2,25 giây",
+        "damage": "1.356–1.656",
+        "damageType": "Magical",
+        "targets": "1 mục tiêu",
+        "playerEffects": [
+          "Gây Petrified, làm choáng mục tiêu trong 6 giây."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "shockwaves",
+        "monsterId": "boss",
+        "name": "Celestial Shockwaves",
+        "type": "True Damage",
+        "activation": "Kích hoạt một lần ở mỗi mốc Warden mất 5% HP tối đa.",
+        "damage": "HP hiện tại của mục tiêu − 1",
+        "damageType": "True Damage",
+        "targets": "Tối đa 3 mục tiêu",
+        "playerEffects": [
+          "Luôn trúng, không thể chí mạng.",
+          "Có thể bị Focus."
+        ],
+        "bossEffects": [
+          "Warden hồi HP theo HP hiện tại của mỗi mục tiêu trúng đòn."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      }
+    ],
+    "passiveSkills": [
+      {
+        "id": "berserk",
+        "monsterId": "boss",
+        "name": "Berserk",
+        "label": "Berserk",
+        "condition": "Khi HP còn 30%",
+        "effect": "Tăng Hit Chance, Crit Chance và Dodge; Auto Attack nhanh hơn.",
+        "values": [
+          "Hit Chance +60%",
+          "Crit Chance +30%",
+          "Dodge +30%",
+          "Auto Attack còn 1 giây"
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "id": "shield",
+        "monsterId": "boss",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng chịu công thức giảm; sát thương sau giảm không thấp hơn ngưỡng.",
+        "values": [
+          "Ngưỡng 100.000",
+          "Hệ số lũy thừa 0,8"
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "id": "stun",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      }
+    ]
+  },
+  "ultra-engineer": {
+    "encounterTitle": "Ultra Engineer",
+    "locationName": "Ultra Engineer",
+    "monsters": [
+      {
+        "id": "boss",
+        "canonicalName": "Ultra Engineer",
+        "role": "Boss chính",
+        "level": 100,
+        "maxHp": 1000000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "id": "attack-drone",
+        "canonicalName": "Attack Drone",
+        "role": "Drone",
+        "level": 100,
+        "maxHp": 100000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/attack-drone"
+      },
+      {
+        "id": "defense-drone",
+        "canonicalName": "Defense Drone",
+        "role": "Drone",
+        "level": 100,
+        "maxHp": 250000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/defense-drone"
+      }
+    ],
+    "activeSkills": [
+      {
+        "id": "laser",
+        "monsterId": "boss",
+        "name": "Laser Shot",
+        "type": "True Damage",
+        "activation": "Đòn tấn công đa mục tiêu",
+        "cooldown": "2 giây",
+        "damage": "969–1.182",
+        "damageType": "True Damage",
+        "targets": "Tối đa 4 mục tiêu",
+        "playerEffects": [
+          "Luôn trúng, không thể chí mạng."
+        ],
+        "bossEffects": [
+          "Hồi HP cho Engineer."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "beam",
+        "monsterId": "boss",
+        "name": "Charging Devastator Beam → Devastator Beam",
+        "type": "Charge / True Damage",
+        "activation": "Niệm 4 giây trước khi Devastator Beam được tung ra.",
+        "cooldown": "45 giây",
+        "damage": "Chưa xác minh giá trị sát thương.",
+        "damageType": "True Damage",
+        "targets": "Tối đa 4 mục tiêu",
+        "playerEffects": [
+          "Luôn trúng, không thể chí mạng.",
+          "Bỏ qua Focus; sát thương chia theo số người đang tham chiến."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "needs_verification"
+      },
+      {
+        "id": "attack-drone-auto",
+        "monsterId": "attack-drone",
+        "name": "Bubbles / Rings",
+        "type": "Chưa phân loại trên Wiki",
+        "damage": "2.392–2.913",
+        "targets": "Chưa ghi rõ",
+        "playerEffects": [
+          "Không thể né hoặc chí mạng."
+        ],
+        "source": "https://aqwwiki.wikidot.com/attack-drone",
+        "confidenceStatus": "needs_verification",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "defense-drone-auto",
+        "monsterId": "defense-drone",
+        "name": "Bubbles / Rings",
+        "type": "Chưa phân loại trên Wiki",
+        "damage": "480–578",
+        "targets": "Chưa ghi rõ",
+        "playerEffects": [],
+        "source": "https://aqwwiki.wikidot.com/defense-drone",
+        "confidenceStatus": "needs_verification",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "drone-counter",
+        "monsterId": "defense-drone",
+        "name": "Counter Attack",
+        "type": "Reflect",
+        "activation": "Defense Drone niệm rồi tự áp dụng Counter Attack.",
+        "cooldown": "20 giây",
+        "playerEffects": [],
+        "bossEffects": [
+          "Defense Drone phản sát thương trong thời gian Counter Attack."
+        ],
+        "source": "https://aqwwiki.wikidot.com/defense-drone",
+        "confidenceStatus": "needs_verification",
+        "damageConfidenceStatus": "needs_verification"
+      }
+    ],
+    "passiveSkills": [
+      {
+        "id": "shield",
+        "monsterId": "boss",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng bị giảm; Wiki không nêu hệ số của phiên bản này.",
+        "values": [
+          "Ngưỡng 100.000"
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "id": "drone-shield",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Attack Drone và Defense Drone còn sống",
+        "effect": "Ultra Engineer không nhận sát thương.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "id": "stun",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "id": "drone-stun",
+        "monsterId": "attack-drone",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Attack Drone miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/attack-drone"
+      },
+      {
+        "id": "drone-stun",
+        "monsterId": "defense-drone",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Defense Drone miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/defense-drone"
+      }
+    ]
+  },
+  "ultra-tyndarius": {
+    "encounterTitle": "Ultra Tyndarius",
+    "locationName": "Ultra Avatar Tyndarius",
+    "monsters": [
+      {
+        "id": "boss",
+        "canonicalName": "Ultra Avatar Tyndarius",
+        "role": "Boss chính",
+        "level": 100,
+        "maxHp": 6000000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "id": "orb",
+        "canonicalName": "Ultra Fire Orb",
+        "role": "Orb · add",
+        "level": 75,
+        "maxHp": 700000,
+        "count": 2,
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster"
+      }
+    ],
+    "activeSkills": [
+      {
+        "id": "auto",
+        "monsterId": "boss",
+        "name": "Auto Attack",
+        "type": "Physical",
+        "cooldown": "2,25 giây",
+        "damage": "5.143–6.286",
+        "damageType": "Physical",
+        "targets": "Tối đa 4 mục tiêu",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+        "confidenceStatus": "verified",
+        "playerEffects": [],
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "drawing-power",
+        "monsterId": "boss",
+        "name": "Drawing Power",
+        "type": "Magical",
+        "cooldown": "45 giây",
+        "damage": "7.714–9.429",
+        "damageType": "Magical",
+        "targets": "Tối đa 4 mục tiêu",
+        "bossEffects": [
+          "Tự tăng All Out 100% trong 15 giây."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+        "confidenceStatus": "verified",
+        "playerEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "elusion",
+        "monsterId": "boss",
+        "name": "Elusion",
+        "type": "Magical",
+        "cooldown": "45 giây",
+        "damage": "5.143–6.286",
+        "damageType": "Magical",
+        "targets": "Tối đa 4 mục tiêu",
+        "bossEffects": [
+          "Tự tăng Dodge 50% và tỷ lệ trúng 200% trong 20 giây."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+        "confidenceStatus": "verified",
+        "playerEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "imminent-doom",
+        "monsterId": "boss",
+        "name": "Imminent Doom",
+        "type": "Magical",
+        "cooldown": "45 giây",
+        "damage": "5.143–6.286",
+        "damageType": "Magical",
+        "targets": "Tối đa 4 mục tiêu",
+        "bossEffects": [
+          "Tự tăng tỷ lệ chí mạng 120% trong 15 giây."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+        "confidenceStatus": "verified",
+        "playerEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "orb-auto",
+        "monsterId": "orb",
+        "name": "Auto Attack",
+        "type": "Physical",
+        "cooldown": "2,25 giây",
+        "damage": "605–741",
+        "damageType": "Physical",
+        "targets": "1 mục tiêu",
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster",
+        "confidenceStatus": "verified",
+        "playerEffects": [],
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "orb-charge",
+        "monsterId": "orb",
+        "name": "Charge Attack",
+        "type": "True Damage",
+        "activation": "Niệm 3 giây trước khi đánh.",
+        "cooldown": "20 giây",
+        "damage": "363–444",
+        "damageType": "True Damage",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Tăng All In của người trúng đòn 50% trong 10 giây."
+        ],
+        "bossEffects": [
+          "Orb tự tăng All In 200% trong 10 giây khi bắt đầu niệm."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "melting",
+        "monsterId": "orb",
+        "name": "Melting",
+        "type": "Magical",
+        "cooldown": "5 giây",
+        "damage": "605–741",
+        "damageType": "Magical",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Mỗi stack tăng All In và giảm Dodge 25%; kéo dài 25 giây và cộng dồn."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "absorbing",
+        "monsterId": "orb",
+        "name": "Absorbing",
+        "type": "Status",
+        "cooldown": "10 giây",
+        "targets": "Tự áp dụng theo số người trong combat",
+        "bossEffects": [
+          "Mỗi người trong combat tạo một stack Absorbing Power (+50% All Out) và Rising Defence (−25% All In); kéo dài 30 giây, cộng dồn."
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster",
+        "confidenceStatus": "needs_verification",
+        "playerEffects": [],
+        "damageConfidenceStatus": "needs_verification"
+      }
+    ],
+    "passiveSkills": [
+      {
+        "id": "shield",
+        "monsterId": "boss",
+        "name": "Boss Damage",
+        "label": "Boss Shield",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng bị giảm theo hệ số Wiki.",
+        "values": [
+          "Ngưỡng 200.000",
+          "Hệ số lũy thừa 0,85"
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "id": "stun",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "id": "orb-shield",
+        "monsterId": "orb",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng chịu công thức giảm; sát thương sau giảm không thấp hơn ngưỡng.",
+        "values": [
+          "Ngưỡng 150.000",
+          "Hệ số lũy thừa 0,5"
+        ],
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster"
+      },
+      {
+        "id": "orb-immunity",
+        "monsterId": "orb",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Các đòn của Orb không thể bị né hoặc chí mạng; Orb miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster"
+      }
+    ]
+  },
+  "ultra-dage": {
+    "encounterTitle": "Ultra Dage",
+    "locationName": "Ultra Dage",
+    "monsters": [
+      {
+        "id": "boss",
+        "canonicalName": "Dage the Dark Lord",
+        "role": "Boss chính",
+        "level": 100,
+        "maxHp": 6500000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      }
+    ],
+    "activeSkills": [
+      {
+        "id": "auto",
+        "monsterId": "boss",
+        "name": "Auto Attack",
+        "type": "Physical",
+        "cooldown": "2,25 giây",
+        "damage": "1.495–1.827",
+        "damageType": "Physical",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Áp Aeterna Nox, giảm Defense 15% trong 11 giây; cộng dồn."
+        ],
+        "bossEffects": [
+          "Áp Cloak of Darkness, tăng Defense 10% trong 11 giây; cộng dồn."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "decaying",
+        "monsterId": "boss",
+        "name": "Decaying Strike",
+        "type": "True Damage",
+        "cooldown": "8 giây",
+        "damage": "897–1.096",
+        "damageType": "True Damage",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Áp Noxious Decay, đảo chiều hồi máu trực tiếp và HoT trong 11 giây.",
+          "Luôn trúng, không chí mạng, bỏ qua Focus."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "brute",
+        "monsterId": "boss",
+        "name": "Summon Brute Undead → Brute Zone Strike",
+        "type": "Charge / True Damage",
+        "activation": "Niệm 3 giây, sau đó Brute Zone Strike được sử dụng.",
+        "cooldown": "15 giây",
+        "damage": "3.986–4.871",
+        "damageType": "True Damage",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Trong vùng bảo hộ chỉ nhận 20% sát thương.",
+          "Luôn trúng, không chí mạng, bỏ qua Focus."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "mages",
+        "monsterId": "boss",
+        "name": "Summon Legion Mages → Energy Blast",
+        "type": "Charge / Physical",
+        "activation": "Niệm 10 giây trước Energy Blast.",
+        "cooldown": "60 giây",
+        "damage": "2.989–3.654",
+        "damageType": "Physical",
+        "targets": "4 mục tiêu",
+        "bossEffects": [
+          "Might of the Legion tăng tỷ lệ chí mạng 30%, Damage 100%, tỷ lệ trúng 130% trong 120 giây.",
+          "Legionnaire hồi một lượng HP lớn trong 14 giây."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord",
+        "confidenceStatus": "verified",
+        "playerEffects": [],
+        "damageConfidenceStatus": "verified"
+      }
+    ],
+    "passiveSkills": [
+      {
+        "id": "shield",
+        "monsterId": "boss",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng chịu công thức giảm; sát thương sau giảm không thấp hơn ngưỡng.",
+        "values": [
+          "Ngưỡng 150.000",
+          "Hệ số lũy thừa 0,8"
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "id": "stun",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "id": "soul-eater",
+        "monsterId": "boss",
+        "name": "Soul Eater",
+        "label": "Soul Eater",
+        "condition": "Khi Dage hạ gục người chơi",
+        "effect": "Dage hồi 500.000 HP.",
+        "values": [
+          "Hồi 500.000 HP mỗi lần kích hoạt"
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      }
+    ]
+  },
+  "ultra-nulgath": {
+    "encounterTitle": "Ultra Nulgath",
+    "locationName": "Ultra Nulgath",
+    "monsters": [
+      {
+        "id": "boss",
+        "canonicalName": "Nulgath the Archfiend",
+        "role": "Boss chính",
+        "level": 100,
+        "maxHp": 10000000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "id": "overfiend-blade",
+        "canonicalName": "Overfiend Blade",
+        "role": "Add · cơ chế cộng dồn sức mạnh cho Nulgath",
+        "level": 100,
+        "maxHp": 1000000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/overfiend-blade"
+      }
+    ],
+    "activeSkills": [
+      {
+        "id": "contracts",
+        "monsterId": "boss",
+        "name": "Contracts of the Abyss",
+        "activation": "Lặp theo chu kỳ.",
+        "cooldown": "7 giây",
+        "damage": "Không có số liệu đáng tin cậy trên Wiki.",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Contract of Frailty: giảm Defense 50% trong 10 giây.",
+          "Contract of Despair chỉ áp lên mục tiêu đang có Frailty: giảm Dodge và tỷ lệ chí mạng 75%, sát thương gây ra 50% trong 10 giây.",
+          "Contract of Stagnation chỉ áp lên mục tiêu đang có Despair: giảm Defense và Physical Defense 100%, Haste 50%, hồi máu nhận vào 80% trong 10 giây."
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend",
+        "confidenceStatus": "needs_verification",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "wrath",
+        "monsterId": "boss",
+        "name": "Abyssal Charge → Wrath of the Abyss",
+        "type": "Charge / Physical Damage",
+        "activation": "Abyssal Charge niệm 4 giây rồi gọi Wrath of the Abyss.",
+        "cooldown": "14 giây",
+        "damage": "500",
+        "damageType": "Physical Damage",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Luôn trúng, không chí mạng, bỏ qua Focus."
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "auto",
+        "monsterId": "overfiend-blade",
+        "name": "Auto Attack",
+        "type": "Physical",
+        "cooldown": "2,25 giây",
+        "damage": "1.750–2.150",
+        "damageType": "Physical",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Bỏ qua Focus."
+        ],
+        "source": "https://aqwwiki.wikidot.com/overfiend-blade",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "struck-down",
+        "monsterId": "overfiend-blade",
+        "name": "Sword Charge → Struck Down",
+        "type": "Charge / Physical",
+        "activation": "Sword Charge niệm 5 giây trước Struck Down.",
+        "cooldown": "40 giây",
+        "damage": "100.000.337",
+        "damageType": "Physical",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Áp Instant Death, một DoT chí tử.",
+          "Luôn trúng, không chí mạng, bỏ qua Focus."
+        ],
+        "source": "https://aqwwiki.wikidot.com/overfiend-blade",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      }
+    ],
+    "passiveSkills": [
+      {
+        "id": "soul",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Khi người chơi bị hạ gục tức thì",
+        "effect": "Không tạo hiệu ứng bổ sung khi người chơi chết tức thì.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend",
+        "sourceNotes": "Không có hiệu ứng bổ sung; Wiki ghi chú Nulgath không thu hoạch linh hồn nếu mục tiêu quá yếu.",
+        "name": "A soul unripe for harvest"
+      },
+      {
+        "id": "shield",
+        "monsterId": "boss",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng chịu công thức giảm; sát thương sau giảm không thấp hơn ngưỡng.",
+        "values": [
+          "Ngưỡng 100.000",
+          "Hệ số lũy thừa 0,8"
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "id": "stun",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "id": "essence",
+        "monsterId": "boss",
+        "name": "Essence Gathered",
+        "label": "Essence Gathered",
+        "condition": "Khi Overfiend Blade bị hạ",
+        "effect": "Tăng sát thương gây ra và sát thương vật lý gây ra; cộng dồn vô hạn.",
+        "values": [
+          "+50% outgoing damage",
+          "+50% outgoing physical damage"
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "id": "shield-overfiend",
+        "monsterId": "overfiend-blade",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng chịu công thức giảm; sát thương sau giảm không thấp hơn ngưỡng.",
+        "values": [
+          "Ngưỡng 50.000",
+          "Hệ số lũy thừa 0,7"
+        ],
+        "source": "https://aqwwiki.wikidot.com/overfiend-blade"
+      },
+      {
+        "id": "stun-overfiend",
+        "monsterId": "overfiend-blade",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/overfiend-blade"
+      }
+    ]
+  },
+  "ultra-drago": {
+    "encounterTitle": "Ultra Drago",
+    "locationName": "Ultra Drago",
+    "monsters": [
+      {
+        "id": "algie",
+        "canonicalName": "Bowmaster Algie",
+        "role": "Add · hạ trước để mở Drago",
+        "level": 100,
+        "maxHp": 2000000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/bowmaster-algie"
+      },
+      {
+        "id": "dene",
+        "canonicalName": "Executioner Dene",
+        "role": "Add · hạ trước để mở Drago",
+        "level": 100,
+        "maxHp": 3500000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/executioner-dene"
+      },
+      {
+        "id": "boss",
+        "canonicalName": "King Drago",
+        "role": "Boss chính · bất khả xâm phạm đến khi hạ cả hai add",
+        "level": 1,
+        "maxHp": 1000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/king-drago-monster"
+      }
+    ],
+    "activeSkills": [
+      {
+        "id": "judgement",
+        "monsterId": "boss",
+        "name": "Judgement Day → Judged",
+        "type": "Physical / True Damage — nguồn mâu thuẫn",
+        "activation": "Judgement Day bắt đầu sau 160 giây tham chiến; Judged được dùng sau 20 giây niệm.",
+        "damage": "Chưa xác minh giá trị sát thương.",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Judged gây True Damage, bỏ qua Focus; người sống sót sẽ nhận DoT Instant Death."
+        ],
+        "source": "https://aqwwiki.wikidot.com/king-drago-monster",
+        "confidenceStatus": "conflicting",
+        "sourceMetadata": {
+          "boss": "ultra-drago",
+          "skillId": "judgement",
+          "sourceUrl": "https://aqwwiki.wikidot.com/king-drago-monster",
+          "confidenceStatus": "conflicting",
+          "notes": "Judged Type table says Physical; attack Notes say true damage. No numerical Damage is published. Preserve both claims; never choose a damage value or type silently."
+        },
+        "bossEffects": [],
+        "damageConfidenceStatus": "conflicting"
+      },
+      {
+        "id": "algie-auto",
+        "monsterId": "algie",
+        "name": "Auto Attack",
+        "type": "Physical",
+        "cooldown": "2,25 giây",
+        "damage": "1.044–1.276",
+        "damageType": "Physical",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Damage Drained giảm sát thương gây ra 5% trong 4 giây; cộng dồn."
+        ],
+        "bossEffects": [
+          "Tăng sát thương gây ra 1% mỗi player trúng đòn; cộng dồn."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bowmaster-algie",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "triple-shot",
+        "monsterId": "algie",
+        "name": "Triple Shot",
+        "type": "Physical",
+        "cooldown": "12 giây",
+        "damage": "1.044–1.276",
+        "damageType": "Physical",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Gây Bleeding trong 20 giây.",
+          "Bỏ qua Focus."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bowmaster-algie",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "dene-auto",
+        "monsterId": "dene",
+        "name": "Auto Attack",
+        "type": "Physical",
+        "cooldown": "2,25 giây",
+        "damage": "1.044–1.276",
+        "damageType": "Physical",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Tăng sát thương nhận vào và sát thương vật lý nhận vào 5% trong 4 giây; cộng dồn."
+        ],
+        "bossEffects": [
+          "Giảm sát thương nhận vào 1% mỗi player trúng đòn; cộng dồn."
+        ],
+        "source": "https://aqwwiki.wikidot.com/executioner-dene",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "execution",
+        "monsterId": "dene",
+        "name": "Execution",
+        "type": "Physical",
+        "cooldown": "20 giây",
+        "damage": "1.044–1.276",
+        "damageType": "Physical",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Bỏ qua Focus."
+        ],
+        "source": "https://aqwwiki.wikidot.com/executioner-dene",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      }
+    ],
+    "passiveSkills": [
+      {
+        "id": "algie-shield",
+        "monsterId": "algie",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng chịu công thức giảm.",
+        "values": [
+          "Ngưỡng 75.000",
+          "Hệ số lũy thừa 0,7"
+        ],
+        "source": "https://aqwwiki.wikidot.com/bowmaster-algie"
+      },
+      {
+        "id": "algie-stun",
+        "monsterId": "algie",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Bowmaster Algie miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/bowmaster-algie"
+      },
+      {
+        "id": "algie-ally",
+        "monsterId": "algie",
+        "label": "Quy tắc nội tại",
+        "condition": "Khi Executioner Dene bị hạ",
+        "effect": "Algie hồi đầy HP, tăng sát thương gây ra 100% và giảm sát thương nhận vào 50% vô thời hạn.",
+        "source": "https://aqwwiki.wikidot.com/bowmaster-algie"
+      },
+      {
+        "id": "dene-shield",
+        "monsterId": "dene",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng chịu công thức giảm.",
+        "values": [
+          "Ngưỡng 75.000",
+          "Hệ số lũy thừa 0,7"
+        ],
+        "source": "https://aqwwiki.wikidot.com/executioner-dene"
+      },
+      {
+        "id": "dene-stun",
+        "monsterId": "dene",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Executioner Dene miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/executioner-dene"
+      },
+      {
+        "id": "dene-ally",
+        "monsterId": "dene",
+        "label": "Quy tắc nội tại",
+        "condition": "Khi Bowmaster Algie bị hạ",
+        "effect": "Dene hồi đầy HP, tăng sát thương gây ra 100% và giảm sát thương nhận vào 50% vô thời hạn.",
+        "source": "https://aqwwiki.wikidot.com/executioner-dene"
+      },
+      {
+        "id": "boss-unlock",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Khi Bowmaster Algie hoặc Executioner Dene còn sống",
+        "effect": "King Drago không thể nhận sát thương.",
+        "source": "https://aqwwiki.wikidot.com/king-drago-monster"
+      },
+      {
+        "id": "boss-stun",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "King Drago miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/king-drago-monster"
+      }
+    ]
+  },
+  "ultra-speaker": {
+    "encounterTitle": "Ultra Speaker",
+    "locationName": "Ultra Speaker",
+    "monsters": [
+      {
+        "id": "boss",
+        "canonicalName": "The First Speaker",
+        "role": "Boss chính",
+        "level": 100,
+        "maxHp": 10000000,
+        "count": 1,
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      }
+    ],
+    "activeSkills": [
+      {
+        "id": "slash",
+        "monsterId": "boss",
+        "name": "Shadowflame Slash",
+        "type": "Physical",
+        "cooldown": "2 giây",
+        "damage": "804–982",
+        "damageType": "Physical",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Corruption và Somber giảm sát thương gây ra, giảm Defense 7% mỗi stack trong 20 giây; cộng dồn.",
+          "Mana Drought giảm Intelligence 40% trong 60 giây.",
+          "Bỏ qua Focus; luôn trúng, không chí mạng."
+        ],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "magia",
+        "monsterId": "boss",
+        "name": "Magia Draw → Magia Burn",
+        "type": "Charge / Magic Damage",
+        "activation": "Magia Draw niệm 2 giây trước Magia Burn.",
+        "cooldown": "7 giây",
+        "damage": "1.447–1.768",
+        "damageType": "Magic Damage",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Magia Burn tăng Magic Damage nhận vào 300% trong 18 giây; cộng dồn."
+        ],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker",
+        "confidenceStatus": "verified",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "stasis",
+        "monsterId": "boss",
+        "name": "Energy Draw → Stasis Field",
+        "type": "Charge / Status",
+        "activation": "Energy Draw niệm 2 giây; Wiki mô tả đòn gây hiệu ứng ở trường attack là Energy Burst.",
+        "cooldown": "12 giây",
+        "damage": "Không gây sát thương.",
+        "targets": "4 mục tiêu",
+        "playerEffects": [
+          "Stasis làm choáng mục tiêu trong 6 giây."
+        ],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker",
+        "confidenceStatus": "needs_verification",
+        "bossEffects": [],
+        "damageConfidenceStatus": "verified"
+      },
+      {
+        "id": "equalize",
+        "monsterId": "boss",
+        "name": "Power Split → Equalize",
+        "type": "Charge / True Damage",
+        "activation": "Power Split niệm 3 giây trước Equalize.",
+        "cooldown": "16 giây",
+        "damage": "2.411–2.946",
+        "damageType": "True Damage",
+        "targets": "4 mục tiêu trong Glowing Zone",
+        "playerEffects": [
+          "Tăng sát thương 100% với mỗi người chơi tiếp theo trúng đòn.",
+          "Sanctity xoá Corruption và Somber; nếu còn Magia Burn, Stasis hoặc Sanctity thì áp DoT chí mạng tương ứng."
+        ],
+        "bossEffects": [
+          "Scintillation tăng damage 300%, DoT resistance 100%, defense 75% và Dodge 25% trong 24 giây.",
+          "Revitalization hồi một lượng HP lớn sau 2 giây."
+        ],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker",
+        "confidenceStatus": "verified",
+        "damageConfidenceStatus": "verified"
+      }
+    ],
+    "passiveSkills": [
+      {
+        "id": "shield",
+        "monsterId": "boss",
+        "name": "Boss Shield",
+        "label": "Lá chắn boss",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Sát thương vượt ngưỡng chịu công thức giảm; sát thương sau giảm không thấp hơn ngưỡng.",
+        "values": [
+          "Ngưỡng 150.000",
+          "Hệ số lũy thừa 0,1"
+        ],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "id": "stun",
+        "monsterId": "boss",
+        "label": "Quy tắc nội tại",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Miễn nhiễm Stun.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "id": "vindication",
+        "monsterId": "boss",
+        "name": "Vindication",
+        "label": "Vindication",
+        "condition": "Khi The First Speaker hạ gục người chơi",
+        "effect": "Tăng Defense của boss.",
+        "values": [
+          "+30% Defense mỗi lần kích hoạt"
+        ],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "id": "base-stats",
+        "monsterId": "boss",
+        "label": "Chỉ số nền",
+        "condition": "Luôn có hiệu lực",
+        "effect": "Các chỉ số nền được ghi trực tiếp trên trang Monster Wiki.",
+        "values": [
+          "Dodge 50%",
+          "DoT Resistance 50%",
+          "Defense 50%",
+          "Hit Chance 500%"
+        ],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      }
+    ]
+  }
+}

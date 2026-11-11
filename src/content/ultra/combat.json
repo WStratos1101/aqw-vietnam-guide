@@ -1,0 +1,5422 @@
+{
+  "ultra-ezrajal": {
+    "mechanics": [
+      {
+        "id": "counter",
+        "name": "Counter Attack",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo diễn biến trận đấu",
+        "effect": "Boss phản lại sát thương trong thời gian hiệu ứng.",
+        "response": "Dừng đánh khi nhận thông báo counter; xem chi tiết đội hình bên dưới.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "id": "prism",
+        "name": "Celestial Prism Explosion",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo diễn biến trận đấu",
+        "effect": "Đòn đánh diện rộng giúp boss hồi máu.",
+        "response": "Giữ khả năng hồi phục và theo dõi nhịp tấn công.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      }
+    ],
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 2500000,
+        "explanation": "Máu tối đa.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Ezrajal"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Ezrajal"
+      },
+      {
+        "key": "source-2",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Ezrajal",
+        "value": "4",
+        "group": "Cốt lõi",
+        "explanation": "Boss nằm ở map /join ultraezrajal - Room limit: 4",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-3",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Ezrajal",
+        "value": "70 ",
+        "group": "Cốt lõi",
+        "explanation": "Cần đạt ít nhất lvl 70 để vượt qua được Ultra Challenge Boss.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-4",
+        "label": "HP",
+        "subject": "Ultra Ezrajal",
+        "value": "2,500,000",
+        "group": "Cốt lõi",
+        "explanation": "Total HP: 2,500,000",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-5",
+        "label": "Boss Shield",
+        "subject": "Ultra Ezrajal",
+        "value": "100k",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Shield giúp giảm sát thương trên 100k.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-6",
+        "label": "Miễn nhiễm",
+        "subject": "Ultra Ezrajal",
+        "value": "Miễn nhiễm với Stun.",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Miễn nhiễm với Stun.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-7",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Ezrajal",
+        "value": "Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-8",
+        "label": "Auto Attack",
+        "subject": "Ultra Ezrajal",
+        "value": "2.5s · 965  · 1.1k",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Auto-Attack mỗi 2.5s, gây DMG từ 965 đến 1.1k.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-9",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Ezrajal",
+        "value": "1 s · 45s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Có khả năng khóa 1 skill bất kỳ trong 45s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-10",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Ezrajal",
+        "value": "1 s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi lần chỉ có duy nhất 1 skill có thể bị khoá, tính cả Enh và Scroll.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-12",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Ezrajal",
+        "value": "8s · 2.8k · 3.1k",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi 8s, sẽ sử dụng Energy Power gây True DMG từ 2.8k đến 3.1k, bỏ qua Focus/Taunt.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-13",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Ezrajal",
+        "value": "3.2k",
+        "group": "Cốt lõi",
+        "explanation": "Players cần giữ trên 3.2k HP trước khi Energy Power.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-16",
+        "label": "Niệm & chu kỳ",
+        "subject": "Ultra Ezrajal",
+        "value": "40s · 2s · 6s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi 40s, sẽ sử dụng Charge Energy trong 2s sau đó kích hoạt cơ chế Counter Attack trong 6s và kết thúc bằng cách sử dụng Energy Power.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-19",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Ezrajal",
+        "value": "3.2k",
+        "group": "Cốt lõi",
+        "explanation": "Players cần giữ trên 3.2k HP trước khi Energy Power.",
+        "source": "community-guide"
+      },
+      {
+        "key": "wiki-13",
+        "label": "Sát thương",
+        "value": "965-1,180",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "key": "wiki-17",
+        "label": "Chu kỳ",
+        "value": "2 giây",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "key": "wiki-21",
+        "label": "Số mục tiêu",
+        "value": "1",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "key": "wiki-23",
+        "label": "Loại sát thương",
+        "value": "Physical",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "key": "wiki-30",
+        "label": "Sát thương",
+        "value": "2,595-3,171",
+        "subject": "Celestial Prism Explosion",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "key": "wiki-34",
+        "label": "Chu kỳ",
+        "value": "8 giây",
+        "subject": "Celestial Prism Explosion",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "key": "wiki-38",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Celestial Prism Explosion",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "key": "wiki-40",
+        "label": "Loại sát thương",
+        "value": "True Damage",
+        "subject": "Celestial Prism Explosion",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "key": "wiki-53",
+        "label": "Chu kỳ",
+        "value": "40 giây",
+        "subject": "Counter Cast ➞ Counter Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      },
+      {
+        "key": "wiki-59",
+        "label": "Loại sát thương",
+        "value": "Charge",
+        "subject": "Counter Cast ➞ Counter Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster"
+      }
+    ],
+    "reference": [
+      {
+        "id": "h.dke6dxnxc3kj",
+        "title": "ULTRA EZRAJAL",
+        "paragraphs": [],
+        "blocks": [
+          {
+            "type": "paragraph",
+            "id": "p-3439",
+            "runs": [
+              {
+                "text": "Ezrajal là một Celestial cao quý, biểu tượng của sự tinh khiết, kiêu hãnh và bất khả xâm phạm. Với trọng trách là “người gác cổng của tòa tháp” mà bất kỳ ai muốn chinh phục Exaltia Tower buộc phải vượt qua.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-3648",
+            "runs": [
+              { "text": "Cần hoàn thành ", "italic": true },
+              { "text": "Inn at the Edge of Time", "italic": true },
+              { "text": " để unlock Quest.\n", "italic": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-3704",
+            "runs": [
+              { "text": "Boss nằm ở map ", "italic": true },
+              {
+                "text": "/join ultraezrajal",
+                "italic": true,
+                "href": "http://aqwwiki.wikidot.com/ultra-ezrajal-location"
+              },
+              { "text": " - Room limit: 4\n", "italic": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-3754",
+            "runs": [
+              { "text": "Cần đạt ít nhất ", "italic": true },
+              {
+                "text": "lvl 70",
+                "bold": true,
+                "italic": true,
+                "href": "/farm/leveling-up"
+              },
+              {
+                "text": " để vượt qua được Ultra Challenge Boss.\n",
+                "italic": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-3817",
+            "runs": [{ "text": "Cơ chế:\n", "bold": true }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-3825",
+            "runs": [{ "text": "◆ Total HP: 2,500,000\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-3847",
+            "runs": [{ "text": "◆ Shield giúp giảm sát thương trên 100k.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-3888",
+            "runs": [{ "text": "◆ Miễn nhiễm với Stun.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-3911",
+            "runs": [
+              {
+                "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-3976",
+            "runs": [
+              { "text": "◆ Auto-Attack mỗi 2.5s, gây DMG từ 965 đến 1.1k.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4025",
+            "runs": [
+              { "text": "◆ Có khả năng khóa 1 skill bất kỳ trong 45s.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4070",
+            "runs": [
+              {
+                "text": "→ Mỗi lần chỉ có duy nhất 1 skill có thể bị khoá, tính cả Enh và Scroll.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4143",
+            "runs": [
+              {
+                "text": "→ Dùng Mana Vamp sau đó spam Auto-Attack để lock Enhance.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4201",
+            "runs": [
+              {
+                "text": "◆ Mỗi 8s, sẽ sử dụng Energy Power gây True DMG từ 2.8k đến 3.1k"
+              },
+              { "text": ", bỏ qua Focus/Taunt." },
+              { "text": "\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4286",
+            "runs": [
+              {
+                "text": "→ Players cần giữ trên 3.2k HP trước khi Energy Power.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4341",
+            "runs": [
+              {
+                "text": "→ Players cần Heal ngay sau khi trúng Energy Power.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4393",
+            "runs": [{ "text": "→ Đòn đánh này Heal lại cho Ezrajal.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4430",
+            "runs": [
+              {
+                "text": "◆ Mỗi 40s, sẽ sử dụng Charge Energy trong 2s sau đó kích hoạt cơ chế Counter Attack trong 6s và kết thúc bằng cách sử dụng Energy Power.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4567",
+            "runs": [
+              {
+                "text": "→ Không được gây sát thương khi Counter Attack đang được kích hoạt, nếu không sẽ phản sát thương và diệt toàn bộ players. Cần dùng phím ESC để untarget.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4720",
+            "runs": [
+              {
+                "text": "→ Có thể thấy Counter Attack được áp dụng và hết hiệu lực trên Ezrajal.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4792",
+            "runs": [
+              {
+                "text": "→ Players cần giữ trên 3.2k HP trước khi Energy Power.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-4847",
+            "runs": [
+              {
+                "text": "→ Players cần Heal ngay sau khi trúng Energy Power.\n"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "id": "0",
+        "icon": "counter",
+        "label": "Counter",
+        "text": "Ngừng đánh và bỏ mục tiêu khi Counter Attack xuất hiện.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-ezrajal"
+      },
+      {
+        "id": "1",
+        "icon": "heal",
+        "label": "Hồi phục",
+        "text": "Chuẩn bị hồi máu ngay sau Celestial Prism Explosion.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-ezrajal"
+      },
+      {
+        "id": "2",
+        "icon": "skill",
+        "label": "Khóa kỹ năng",
+        "text": "Kiểm tra kỹ năng đang bị khóa trước khi đổi nhịp đánh.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-ezrajal"
+      }
+    ],
+    "nameVerification": {
+      "source": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster",
+      "skillNames": [
+        "Auto Attack",
+        "Celestial Prism Explosion",
+        "Counter Cast ➞ Counter Attack",
+        "Counter Cast",
+        "Counter Attack"
+      ],
+      "checkedAt": "2026-11-07"
+    }
+  },
+  "ultra-warden": {
+    "mechanics": [
+      {
+        "id": "shock",
+        "name": "Celestial Shockwaves",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo mốc HP đã mất của boss",
+        "effect": "Làm HP mục tiêu rơi xuống mức nguy hiểm; mốc kích hoạt và HP còn lại nằm trong Stats.",
+        "response": "Thống nhất thứ tự Heal ngay sau Shockwaves.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": ["legacy-shock"],
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "id": "berserk",
+        "name": "Berserk",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Khi HP boss xuống ngưỡng",
+        "effect": "Boss tăng Hit, Crit, Dodge và tốc độ đánh.",
+        "response": "Giữ nhịp hồi máu, tránh chồng Heal trước Shockwaves.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": ["legacy-berserk"],
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "id": "scream",
+        "name": "Petrifying Scream",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Có thể thay Auto Attack",
+        "effect": "Gây Stun lên người chơi; thời hạn nằm trong Stats.",
+        "response": "Support dự phòng sẵn nhịp hồi máu khi đồng đội bị stun.",
+        "severity": "normal",
+        "notes": [],
+        "relatedStats": ["legacy-scream"],
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      }
+    ],
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 1500000,
+        "explanation": "Máu tối đa.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Warden"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level của boss.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Warden"
+      },
+      {
+        "key": "auto",
+        "label": "Auto Attack",
+        "value": "4.844–5.882",
+        "explanation": "Sát thương cơ bản trước modifier.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Warden"
+      },
+      {
+        "key": "shield",
+        "label": "Ngưỡng Boss Shield",
+        "value": 100000,
+        "explanation": "Phần sát thương vượt ngưỡng bị giảm.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Warden"
+      },
+      {
+        "key": "berserk",
+        "label": "Mốc Berserk",
+        "value": 30,
+        "explanation": "Kích hoạt khi HP còn 30%.",
+        "source": "monster",
+        "unit": "%",
+        "group": "Cốt lõi",
+        "subject": "Ultra Warden"
+      },
+      {
+        "key": "legacy-shock",
+        "label": "Celestial Shockwaves",
+        "value": "Mỗi mốc mất 5% HP có thể kích hoạt một lần; mục tiêu còn 1 HP.",
+        "group": "Cốt lõi",
+        "subject": "Ultra Warden",
+        "explanation": "Thông tin từ hồ sơ hiện có.",
+        "source": "monster"
+      },
+      {
+        "key": "legacy-berserk",
+        "label": "Berserk",
+        "value": "Từ 30% HP, boss tăng Hit, Crit, Dodge và đánh nhanh hơn.",
+        "group": "Cốt lõi",
+        "subject": "Ultra Warden",
+        "explanation": "Thông tin từ hồ sơ hiện có.",
+        "source": "monster"
+      },
+      {
+        "key": "legacy-scream",
+        "label": "Petrifying Scream",
+        "value": "Có thể thay Auto Attack và gây stun 6 giây.",
+        "group": "Tấn công & hiệu ứng",
+        "subject": "Ultra Warden",
+        "explanation": "Thông tin từ hồ sơ hiện có.",
+        "source": "monster"
+      },
+      {
+        "key": "wiki-warden-auto-dmg",
+        "label": "Auto Attack",
+        "value": "4.844–5.882",
+        "unit": "sát thương vật lý",
+        "subject": "Ultra Warden",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Đọc từ Monster Wiki qua công cụ web khi Terminal chưa truy cập được trang này.",
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "key": "wiki-warden-auto-cd",
+        "label": "Auto Attack",
+        "value": 2.25,
+        "unit": "giây",
+        "subject": "Ultra Warden",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Đọc từ Monster Wiki qua công cụ web khi Terminal chưa truy cập được trang này.",
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "key": "wiki-warden-scream-dmg",
+        "label": "Petrifying Scream",
+        "value": "1.356–1.656",
+        "unit": "sát thương phép",
+        "subject": "Ultra Warden",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Đọc từ Monster Wiki qua công cụ web khi Terminal chưa truy cập được trang này.",
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "key": "wiki-warden-scream-chance",
+        "label": "Petrifying Scream",
+        "value": 7,
+        "unit": "% thay Auto Attack",
+        "subject": "Ultra Warden",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Đọc từ Monster Wiki qua công cụ web khi Terminal chưa truy cập được trang này.",
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "key": "wiki-warden-scream-stun",
+        "label": "Petrified",
+        "value": 6,
+        "unit": "giây Stun",
+        "subject": "Ultra Warden",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Đọc từ Monster Wiki qua công cụ web khi Terminal chưa truy cập được trang này.",
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "key": "wiki-warden-berserk-threshold",
+        "label": "Berserk",
+        "value": 30,
+        "unit": "% HP còn lại",
+        "subject": "Ultra Warden",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Đọc từ Monster Wiki qua công cụ web khi Terminal chưa truy cập được trang này.",
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "key": "wiki-warden-berserk-speed",
+        "label": "Berserk — Auto Attack",
+        "value": 1,
+        "unit": "giây",
+        "subject": "Ultra Warden",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Đọc từ Monster Wiki qua công cụ web khi Terminal chưa truy cập được trang này.",
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      },
+      {
+        "key": "wiki-warden-shield-exponent",
+        "label": "Boss Shield",
+        "value": 0.8,
+        "unit": "hệ số",
+        "subject": "Ultra Warden",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Đọc từ Monster Wiki qua công cụ web khi Terminal chưa truy cập được trang này.",
+        "source": "https://aqwwiki.wikidot.com/ultra-warden-monster"
+      }
+    ],
+    "reference": [],
+    "notes": [
+      {
+        "id": "0",
+        "icon": "heal",
+        "label": "Shockwaves",
+        "text": "Phối hợp Heal sau Shockwaves; tránh chồng Heal quá sớm.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-warden"
+      },
+      {
+        "id": "1",
+        "icon": "target",
+        "label": "Nhịp sát thương",
+        "text": "Gây sát thương quá nhanh có thể dồn các mốc Shockwaves.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-warden"
+      },
+      {
+        "id": "2",
+        "icon": "taunt",
+        "label": "Phân công",
+        "text": "Thống nhất người Taunt trước khi bắt đầu.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-warden"
+      }
+    ],
+    "nameVerification": {
+      "source": "https://aqwwiki.wikidot.com/ultra-warden-monster",
+      "skillNames": [
+        "Auto Attack",
+        "Petrifying Scream",
+        "Celestial Shockwaves",
+        "Berserk"
+      ],
+      "checkedAt": "2026-11-07"
+    }
+  },
+  "ultra-engineer": {
+    "mechanics": [
+      {
+        "id": "beam",
+        "name": "Devastator Beam",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo diễn biến trận đấu",
+        "effect": "Sau niệm, đòn đánh chia sát thương theo số người đang tham chiến.",
+        "response": "Giữ cả đội tham chiến, phối hợp Heal trước và sau Beam.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "id": "laser-shot",
+        "name": "Laser Shot",
+        "type": "Active Skill",
+        "trigger": "Trong nhịp tấn công thường",
+        "effect": "Bắn laser lên người tham chiến và hồi HP cho boss.",
+        "response": "Giữ nhịp hồi phục và xử lý Drone theo đội hình.",
+        "severity": "normal",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      }
+    ],
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 1000000,
+        "explanation": "Máu tối đa.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Engineer"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Engineer"
+      },
+      {
+        "key": "source-2",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Engineer",
+        "value": "4",
+        "group": "Cốt lõi",
+        "explanation": "Boss nằm ở map /join ultraengineer - Room limit: 4",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-3",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Engineer",
+        "value": "70 ",
+        "group": "Cốt lõi",
+        "explanation": "Cần đạt ít nhất lvl 70 để vượt qua được Ultra Challenge Boss.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-4",
+        "label": "HP",
+        "subject": "Ultra Engineer",
+        "value": "1,000,000  · 100,000  · 250,000 ",
+        "group": "Cốt lõi",
+        "explanation": "Total HP: 1,000,000 (Ultra Engineer); 100,000 (Attack Drone) và 250,000 (Defense Drone)",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-5",
+        "label": "Boss Shield",
+        "subject": "Ultra Engineer",
+        "value": "100k",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Shield giúp giảm sát thương trên 100k (chỉ có ở Engineer).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-6",
+        "label": "Miễn nhiễm",
+        "subject": "Ultra Engineer",
+        "value": "Miễn nhiễm với Stun.",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Miễn nhiễm với Stun.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-7",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Engineer",
+        "value": "2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Chừng nào mà 2 Drones còn sống thì Engineer sẽ không nhận sát thương.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-8",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Engineer",
+        "value": "2.3k · 2.9k",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Attack Drone gây DMG từ 2.3k đến 2.9k, không thể né nhưng lại không thể bạo kích.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-9",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Engineer",
+        "value": "480  · 580 · 20s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Defense Drone gây DMG từ 480 đến 580, đồng thời có cơ chế Counter Attack như Ultra Ezrajal kích hoạt mỗi 20s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-10",
+        "label": "Boss Shield",
+        "subject": "Ultra Engineer",
+        "value": "2 ",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Cả 2 Drones đều không có Shield.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-11",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Engineer",
+        "value": "2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Lý tưởng nên diệt chết cả 2 Drones cùng lúc, tuy nhiên nếu không được thì ưu tiên diệt Defense Drone trước rồi mới đến Attack Drone.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-12",
+        "label": "Hồi sinh",
+        "subject": "Ultra Engineer",
+        "value": "15s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Sẽ hồi sinh sau 15s kể từ khi bị giết chết.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-13",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Engineer",
+        "value": "Tất cả đón đánh của Engineer đều không thể né nhưng lại không thể bạo kích.",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Tất cả đón đánh của Engineer đều không thể né nhưng lại không thể bạo kích.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-14",
+        "label": "Auto Attack",
+        "subject": "Ultra Engineer",
+        "value": "2s · 970  · 1.2k",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Auto-Attack của Engineer mỗi 2s gây True DMG từ 970 đến 1.2k.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-15",
+        "label": "Niệm & chu kỳ",
+        "subject": "Ultra Engineer",
+        "value": "45s · 4s · 9.7k · 11.8k",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi 45s, Engineer sẽ Charge Shot trong 4s sau đó kích hoạt Devastator Beam gây True DMG từ 9.7k đến 11.8k (chia đều cho số người trong room).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-16",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Engineer",
+        "value": "Bỏ qua Focus/Taunt.",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Bỏ qua Focus/Taunt.",
+        "source": "community-guide"
+      },
+      {
+        "key": "wiki-15",
+        "label": "Sát thương",
+        "value": "969-1,182",
+        "subject": "Laser Shot",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "key": "wiki-19",
+        "label": "Chu kỳ",
+        "value": "2 giây",
+        "subject": "Laser Shot",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "key": "wiki-23",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Laser Shot",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "key": "wiki-25",
+        "label": "Loại sát thương",
+        "value": "True Damage",
+        "subject": "Laser Shot",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "key": "wiki-37",
+        "label": "Chu kỳ",
+        "value": "45 giây",
+        "subject": "Charging Devastator Beam ➞ Devastator Beam",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "key": "wiki-43",
+        "label": "Loại sát thương",
+        "value": "Charge",
+        "subject": "Charging Devastator Beam ➞ Devastator Beam",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "key": "wiki-49",
+        "label": "Sát thương",
+        "value": "Rất lớn — chưa có số cụ thể",
+        "subject": "Charging Devastator Beam ➞ Devastator Beam",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "key": "wiki-57",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Charging Devastator Beam ➞ Devastator Beam",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      },
+      {
+        "key": "wiki-59",
+        "label": "Loại sát thương",
+        "value": "True Damage",
+        "subject": "Charging Devastator Beam ➞ Devastator Beam",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster"
+      }
+    ],
+    "reference": [
+      {
+        "id": "h.p5eft4mnf956",
+        "title": "ULTRA ENGINEER",
+        "paragraphs": [],
+        "blocks": [
+          {
+            "type": "paragraph",
+            "id": "p-23434",
+            "runs": [
+              {
+                "text": "The Engineer là “kiến trúc sư” và cũng là tạo vật nhân tạo đại diện cho khía cạnh kỹ thuật, chế tạo và tối ưu hóa của The Exalted. Ngoài là kẻ bảo vệ cuối cùng ở tầng cao nhất, nó còn có nhiệm vụ duy trì sự cân bằng và sửa chữa tòa tháp. Thêm vào đó nó còn đi kèm với hai Drone hoạt động như hệ thống phòng thủ và tấn công bổ trợ, tạo thành một “đội hình cơ khí” hoàn chỉnh.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-23810",
+            "runs": [
+              { "text": "Cần hoàn thành ", "italic": true },
+              { "text": "Inn at the Edge of Time", "italic": true },
+              { "text": " để unlock Quest.\n", "italic": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-23866",
+            "runs": [
+              { "text": "Boss nằm ở map ", "italic": true },
+              {
+                "text": "/join ultraengineer",
+                "italic": true,
+                "href": "http://aqwwiki.wikidot.com/ultra-engineer-location"
+              },
+              { "text": " - Room limit: 4\n", "italic": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-23917",
+            "runs": [
+              { "text": "Cần đạt ít nhất ", "italic": true },
+              {
+                "text": "lvl 70",
+                "bold": true,
+                "italic": true,
+                "href": "/farm/leveling-up"
+              },
+              {
+                "text": " để vượt qua được Ultra Challenge Boss.\n",
+                "italic": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-23980",
+            "runs": [{ "text": "Cơ chế:\n", "bold": true }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-23988",
+            "runs": [
+              { "text": "◆ Total HP: 1,000,000 " },
+              { "text": "(Ultra Engineer)", "italic": true },
+              { "text": "; 100,000 " },
+              { "text": "(Attack Drone)", "italic": true },
+              { "text": " và 250,000 " },
+              { "text": "(Defense Drone)\n", "italic": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24078",
+            "runs": [
+              { "text": "◆ Shield giúp giảm sát thương trên 100k " },
+              { "text": "(chỉ có ở Engineer)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24139",
+            "runs": [{ "text": "◆ Miễn nhiễm với Stun.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24162",
+            "runs": [
+              {
+                "text": "◆ Chừng nào mà 2 Drones còn sống thì Engineer sẽ không nhận sát thương.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24234",
+            "runs": [
+              {
+                "text": "→ Attack Drone gây DMG từ 2.3k đến 2.9k, không thể né nhưng lại không thể bạo kích.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24318",
+            "runs": [
+              {
+                "text": "→ Defense Drone gây DMG từ 480 đến 580, đồng thời có cơ chế Counter Attack như Ultra Ezrajal kích hoạt mỗi 20s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24430",
+            "runs": [{ "text": "→ Cả 2 Drones đều không có Shield.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24465",
+            "runs": [
+              {
+                "text": "→ Lý tưởng nên diệt chết cả 2 Drones cùng lúc, tuy nhiên nếu không được thì ưu tiên diệt Defense Drone trước rồi mới đến Attack Drone.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24600",
+            "runs": [
+              { "text": "→ Sẽ hồi sinh sau 15s kể từ khi bị giết chết.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24646",
+            "runs": [
+              {
+                "text": "◆ Tất cả đón đánh của Engineer đều không thể né nhưng lại không thể bạo kích.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24724",
+            "runs": [
+              {
+                "text": "◆ Auto-Attack của Engineer mỗi 2s gây True DMG từ 970 đến 1.2k.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24788",
+            "runs": [
+              {
+                "text": "◆ Mỗi 45s, Engineer sẽ Charge Shot trong 4s sau đó kích hoạt Devastator Beam gây True DMG từ 9.7k đến 11.8k "
+              },
+              { "text": "(chia đều cho số người trong room)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24932",
+            "runs": [{ "text": "→ Bỏ qua Focus/Taunt.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-24954",
+            "runs": [
+              {
+                "text": "→ Cần có đầy HP trước Beam để khi dính thì không chết và cần lập tức Heal ngay khi nhận sát thương từ Beam.\n"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "id": "0",
+        "icon": "target",
+        "label": "Drone",
+        "text": "Ưu tiên Defense Drone rồi Attack Drone theo đội hình.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-engineer"
+      },
+      {
+        "id": "1",
+        "icon": "shield",
+        "label": "Bảo vệ",
+        "text": "Chỉ gây sát thương lên Engineer khi cả hai Drone đều bị hạ.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-engineer"
+      },
+      {
+        "id": "2",
+        "icon": "heal",
+        "label": "Beam",
+        "text": "Giữ đầy HP trước Beam và hồi máu ngay sau đòn đánh.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/time-inn/ultra-engineer"
+      }
+    ],
+    "nameVerification": {
+      "source": "https://aqwwiki.wikidot.com/ultra-engineer-monster",
+      "skillNames": [
+        "Laser Shot",
+        "Charging Devastator Beam ➞ Devastator Beam",
+        "Charging Devastator Beam",
+        "Devastator Beam"
+      ],
+      "checkedAt": "2026-11-07"
+    }
+  },
+  "ultra-tyndarius": {
+    "mechanics": [
+      {
+        "id": "melting",
+        "name": "Melting",
+        "type": "Debuff",
+        "trigger": "Khi Ultra Fire Orb còn sống; theo chu kỳ",
+        "effect": "Orb gây sát thương phép; người chơi nhận thêm sát thương và giảm khả năng né.",
+        "response": "Ưu tiên hạ Orb sớm để không kéo dài chuỗi Melting.",
+        "severity": "danger",
+        "notes": ["Debuff cộng dồn; trị số và thời hạn nằm trong Stats."],
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster",
+        "relatedStats": []
+      },
+      {
+        "id": "absorbing",
+        "name": "Absorbing",
+        "type": "Buff",
+        "trigger": "Orb tự dùng theo chu kỳ",
+        "effect": "Orb tăng sát thương gây ra và giảm sát thương nhận vào. Số tầng thêm phụ thuộc người tham chiến.",
+        "response": "Giữ ưu tiên hạ Orb; phối hợp sát thương thay vì để buff tích lũy.",
+        "severity": "danger",
+        "notes": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster",
+        "relatedStats": []
+      },
+      {
+        "id": "orb-charge",
+        "name": "Charge Attack",
+        "type": "Active Skill",
+        "trigger": "Sau giai đoạn niệm của Orb",
+        "effect": "Gây sát thương chuẩn, khiến người chơi và chính Orb nhận thêm sát thương.",
+        "response": "Theo dõi niệm và giữ khả năng sống sót trong nhịp Charge.",
+        "severity": "danger",
+        "notes": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster",
+        "relatedStats": []
+      },
+      {
+        "id": "drawing-power",
+        "name": "Drawing Power",
+        "type": "Buff",
+        "trigger": "Trong chuỗi buff của Tyndarius",
+        "effect": "Boss tăng sát thương gây ra và tung sát thương phép khi kích hoạt.",
+        "response": "Giữ buff phòng thủ và phối hợp Heal để sống qua nhịp đánh.",
+        "severity": "danger",
+        "notes": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+        "relatedStats": []
+      },
+      {
+        "id": "elusion",
+        "name": "Elusion",
+        "type": "Buff",
+        "trigger": "Tiếp theo trong chuỗi buff",
+        "effect": "Boss tăng khả năng né và độ chính xác; kèm sát thương phép.",
+        "response": "Theo dõi buff và giữ phân công Focus/Taunt đã thống nhất.",
+        "severity": "danger",
+        "notes": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+        "relatedStats": []
+      },
+      {
+        "id": "imminent-doom",
+        "name": "Imminent Doom",
+        "type": "Buff",
+        "trigger": "Tiếp theo trong chuỗi buff",
+        "effect": "Boss tăng khả năng bạo kích; kèm sát thương phép.",
+        "response": "Kết hợp Heal và Class có Focus/Taunt theo đội hình.",
+        "severity": "danger",
+        "notes": [],
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+        "relatedStats": []
+      }
+    ],
+    "stats": [
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss trong game; khác điều kiện level vào map.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Tyndarius"
+      },
+      {
+        "key": "orb-hp",
+        "label": "HP",
+        "value": 700000,
+        "unit": "HP",
+        "subject": "Ultra Fire Orb",
+        "group": "Cốt lõi",
+        "explanation": "HP riêng của mục tiêu, không cộng mục tiêu khác.",
+        "source": "community-guide"
+      },
+      {
+        "key": "orb-shield",
+        "label": "Ngưỡng Boss Shield",
+        "value": 150000,
+        "unit": "damage",
+        "subject": "Ultra Fire Orb",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Giảm phần sát thương của đòn vượt ngưỡng.",
+        "source": "community-guide"
+      },
+      {
+        "key": "orb-coefficient",
+        "label": "Hệ số shield",
+        "value": 0.5,
+        "unit": "",
+        "subject": "Ultra Fire Orb",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Hệ số theo guide cộng đồng.",
+        "source": "community-guide"
+      },
+      {
+        "key": "orb-stun",
+        "label": "Miễn nhiễm",
+        "value": "Stun",
+        "unit": "",
+        "subject": "Ultra Fire Orb",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Không thể gây Stun lên mục tiêu.",
+        "source": "community-guide"
+      },
+      {
+        "key": "orb-auto-cycle",
+        "label": "Chu kỳ Auto Attack",
+        "value": 2.25,
+        "unit": "giây",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Khoảng cách đòn Auto Attack theo guide.",
+        "source": "community-guide"
+      },
+      {
+        "key": "tynd-hp",
+        "label": "HP",
+        "value": 6000000,
+        "unit": "HP",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Cốt lõi",
+        "explanation": "HP riêng của mục tiêu, không cộng mục tiêu khác.",
+        "source": "community-guide"
+      },
+      {
+        "key": "tynd-shield",
+        "label": "Ngưỡng Boss Shield",
+        "value": 200000,
+        "unit": "damage",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Giảm phần sát thương của đòn vượt ngưỡng.",
+        "source": "community-guide"
+      },
+      {
+        "key": "tynd-coefficient",
+        "label": "Hệ số shield",
+        "value": 0.85,
+        "unit": "",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Hệ số theo guide cộng đồng.",
+        "source": "community-guide"
+      },
+      {
+        "key": "tynd-stun",
+        "label": "Miễn nhiễm",
+        "value": "Stun",
+        "unit": "",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Không thể gây Stun lên mục tiêu.",
+        "source": "community-guide"
+      },
+      {
+        "key": "tynd-auto-cycle",
+        "label": "Chu kỳ Auto Attack",
+        "value": 2.25,
+        "unit": "giây",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Khoảng cách đòn Auto Attack theo guide.",
+        "source": "community-guide"
+      },
+      {
+        "key": "orb-auto",
+        "label": "Auto Attack",
+        "value": "605–741",
+        "unit": "Phys DMG",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Sát thương vật lý.",
+        "source": "community-guide"
+      },
+      {
+        "key": "orb-hit",
+        "label": "Hit / Crit",
+        "value": "Không thể né · Không bạo kích",
+        "unit": "",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Áp dụng các đòn đánh Orb theo guide.",
+        "source": "community-guide"
+      },
+      {
+        "key": "melting-cycle",
+        "label": "Melting — chu kỳ",
+        "value": 5,
+        "unit": "giây",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Khi Orb tồn tại.",
+        "source": "community-guide"
+      },
+      {
+        "key": "melting-dmg",
+        "label": "Melting — sát thương",
+        "value": "605–741",
+        "unit": "Magi DMG",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Sát thương phép.",
+        "source": "community-guide"
+      },
+      {
+        "key": "melting-mod",
+        "label": "Melting — debuff",
+        "value": "+25% All In · −25% Dodge",
+        "unit": "",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Áp dụng lên người chơi.",
+        "source": "community-guide"
+      },
+      {
+        "key": "melting-duration",
+        "label": "Melting — thời hạn",
+        "value": 25,
+        "unit": "giây",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Stack vô hạn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "absorbing-cycle",
+        "label": "Absorbing — chu kỳ",
+        "value": 10,
+        "unit": "giây",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Orb dùng lên bản thân.",
+        "source": "community-guide"
+      },
+      {
+        "key": "absorbing-mod",
+        "label": "Absorbing — modifier",
+        "value": "+50% All Out · −25% All In",
+        "unit": "",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Áp dụng lên Orb; số tầng thêm ứng với số người trong trận.",
+        "source": "community-guide"
+      },
+      {
+        "key": "absorbing-duration",
+        "label": "Absorbing — thời hạn",
+        "value": 30,
+        "unit": "giây",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Stack vô hạn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "charge-cycle",
+        "label": "Charge — chu kỳ",
+        "value": 20,
+        "unit": "giây",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Orb sử dụng Charge.",
+        "source": "community-guide"
+      },
+      {
+        "key": "charge-cast",
+        "label": "Charge — niệm",
+        "value": 3,
+        "unit": "giây",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Trước sát thương chuẩn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "charge-dmg",
+        "label": "Charge — sát thương",
+        "value": "363–444",
+        "unit": "True DMG",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Không thể né.",
+        "source": "community-guide"
+      },
+      {
+        "key": "charge-mod",
+        "label": "Charge — modifier",
+        "value": "Player +50% All In · Orb +200% All In",
+        "unit": "",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Guide nêu thời hạn hiệu ứng trên bản thân Orb.",
+        "source": "community-guide"
+      },
+      {
+        "key": "charge-duration",
+        "label": "Charge — thời hạn",
+        "value": 10,
+        "unit": "giây",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Thời hạn +200% All In trên Orb.",
+        "source": "community-guide"
+      },
+      {
+        "key": "orb-respawn",
+        "label": "Hồi sinh",
+        "value": 30,
+        "unit": "giây",
+        "subject": "Ultra Fire Orb",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Kể từ khi Orb chết.",
+        "source": "community-guide"
+      },
+      {
+        "key": "tynd-auto",
+        "label": "Auto Attack",
+        "value": "5.1k–6.2k",
+        "unit": "Phys DMG",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Sát thương vật lý.",
+        "source": "community-guide"
+      },
+      {
+        "key": "tynd-cycle",
+        "label": "Chu kỳ chuỗi buff",
+        "value": 45,
+        "unit": "giây",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Drawing Power → Elusion → Imminent Doom, kích hoạt lần lượt.",
+        "source": "community-guide"
+      },
+      {
+        "key": "tynd-magic",
+        "label": "Sát thương mỗi buff",
+        "value": "5.1k–9.4k",
+        "unit": "Magi DMG",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi lần kích hoạt hiệu ứng trong chuỗi.",
+        "source": "community-guide"
+      },
+      {
+        "key": "drawing-mod",
+        "label": "Drawing Power",
+        "value": "+100% All Out",
+        "unit": "15 giây",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Buff bản thân.",
+        "source": "community-guide"
+      },
+      {
+        "key": "elusion-mod",
+        "label": "Elusion",
+        "value": "+50% Dodge · +200% Hit Chance",
+        "unit": "20 giây",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Buff bản thân.",
+        "source": "community-guide"
+      },
+      {
+        "key": "doom-mod",
+        "label": "Imminent Doom",
+        "value": "+120% Crit Chance",
+        "unit": "15 giây",
+        "subject": "Ultra Avatar Tyndarius",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Buff bản thân.",
+        "source": "community-guide"
+      },
+      {
+        "key": "wiki-15",
+        "label": "Sát thương",
+        "value": "5,143 - 6,286",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-19",
+        "label": "Chu kỳ",
+        "value": "2.25 giây",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-23",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-25",
+        "label": "Loại sát thương",
+        "value": "Physical",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-32",
+        "label": "Sát thương",
+        "value": "7,714 - 9,429",
+        "subject": "Drawing Power",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-36",
+        "label": "Chu kỳ",
+        "value": "45 giây",
+        "subject": "Drawing Power",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-40",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Drawing Power",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-42",
+        "label": "Loại sát thương",
+        "value": "Magical",
+        "subject": "Drawing Power",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-50",
+        "label": "Sát thương",
+        "value": "5,143 - 6,286",
+        "subject": "Elusion",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-54",
+        "label": "Chu kỳ",
+        "value": "45 giây",
+        "subject": "Elusion",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-58",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Elusion",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-60",
+        "label": "Loại sát thương",
+        "value": "Magical",
+        "subject": "Elusion",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-68",
+        "label": "Sát thương",
+        "value": "5,143 - 6,286",
+        "subject": "Imminent Doom",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-72",
+        "label": "Chu kỳ",
+        "value": "45 giây",
+        "subject": "Imminent Doom",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-76",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Imminent Doom",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      },
+      {
+        "key": "wiki-78",
+        "label": "Loại sát thương",
+        "value": "Magical",
+        "subject": "Imminent Doom",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+      }
+    ],
+    "reference": [
+      {
+        "id": "h.us60mum3qir0",
+        "title": "Cơ chế",
+        "paragraphs": [],
+        "blocks": [
+          {
+            "type": "paragraph",
+            "id": "p-34159",
+            "runs": [
+              {
+                "text": "Ultra Fire Orb",
+                "bold": true,
+                "italic": true,
+                "href": "http://aqwwiki.wikidot.com/ultra-fire-orb-monster"
+              },
+              { "text": "\n", "bold": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34174",
+            "runs": [{ "text": "◆ Total HP: 700,000\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34194",
+            "runs": [
+              { "text": "◆ Shield giúp giảm sát thương trên 150k " },
+              { "text": "(hệ số 0.5)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34247",
+            "runs": [{ "text": "◆ Miễn nhiễm với Stun.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34270",
+            "runs": [
+              {
+                "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34335",
+            "runs": [
+              {
+                "text": "◆ Auto-Attack mỗi 2.25s gây Phys DMG từ 605 đến 741.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34388",
+            "runs": [
+              {
+                "text": "◆ Mỗi 5s, sử dụng Melting gây Magi DMG từ 605 đến 741.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34443",
+            "runs": [
+              {
+                "text": "→ Player bị tăng 25% All In và giảm 25% Dodge trong 25s, stack vô hạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34514",
+            "runs": [
+              {
+                "text": "→ Cần kill Orbs nhanh để tránh Melting kéo dài nếu không chết cả team.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34585",
+            "runs": [
+              { "text": "◆ Mỗi 10s, sẽ dùng Absorbing lên bản thân. \n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34629",
+            "runs": [
+              {
+                "text": "→ Fire Orb được tăng 50% All Out và giảm 25% All In trong 30s, số stack mỗi lần dùng tăng ứng với số player trong trận, stack vô hạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34763",
+            "runs": [
+              {
+                "text": "◆ Mỗi 20s, sẽ sử dụng Charge trong 3s rồi gây True DMG từ 363 đến 444, không thể né.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34848",
+            "runs": [
+              {
+                "text": "→ Player bị tăng 50% All In và bản thân cũng bị tăng 200% All In trong 10s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34924",
+            "runs": [
+              { "text": "◆ Sẽ hồi sinh sau 30s kể từ khi bị giết chết.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34971",
+            "runs": [
+              {
+                "text": "Ultra Avatar Tyndarius",
+                "bold": true,
+                "italic": true,
+                "href": "http://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster"
+              },
+              { "text": "\n", "bold": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-34994",
+            "runs": [{ "text": "◆ Total HP: 6,000,000\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35016",
+            "runs": [
+              { "text": "◆ Shield giúp giảm sát thương trên 200k " },
+              { "text": "(hệ số 0.85)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35070",
+            "runs": [{ "text": "◆ Miễn nhiễm với Stun.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35093",
+            "runs": [
+              {
+                "text": "◆ Có thể gây sát thương lên Tyndarius dù Orbs còn sống.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35149",
+            "runs": [
+              {
+                "text": "◆ Auto-Attack mỗi 2.25s gây Phys DMG từ 5.1k đến 6.2k.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35204",
+            "runs": [{ "text": "→ Có thể sử dụng các class như AP.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35239",
+            "runs": [
+              {
+                "text": "◆ Mỗi 45s, sẽ kích hoạt 3 hiệu ứng sau cho bản thân "
+              },
+              { "text": "(kích hoạt lần lượt)", "italic": true },
+              {
+                "text": " đồng thời gây Magi DMG lớn từ 5.1k đến 9.4k với mỗi hiệu ứng được kích hoạt:\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35389",
+            "runs": [
+              {
+                "text": "→ Drawing Power - Tyndarius được tăng 100% All Out trong 15s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35451",
+            "runs": [
+              {
+                "text": "→ Elusion - Tyndarius được tăng 50% Dodge và 200% Hit Chance trong 20s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35523",
+            "runs": [
+              {
+                "text": "→ Imminent Doom - Tyndarius được tăng 120% Crit Chance trong 15s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-35589",
+            "runs": [
+              {
+                "text": "→ Players cần Heal để giữ team sống sót, kết hợp với các Class có Focus/Taunt.\n"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "id": "0",
+        "icon": "target",
+        "label": "Orb",
+        "text": "Không bỏ mặc Orb để dồn toàn bộ sát thương vào boss.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/ultra-avatar-tyndarius"
+      },
+      {
+        "id": "1",
+        "icon": "taunt",
+        "label": "Phân công",
+        "text": "Chia rõ người giữ boss và từng Orb trước trận.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/ultra-avatar-tyndarius"
+      },
+      {
+        "id": "2",
+        "icon": "heal",
+        "label": "Sống sót",
+        "text": "Giữ nhịp hồi phục trong chuỗi buff của Tyndarius.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/ultra-avatar-tyndarius"
+      }
+    ],
+    "nameVerification": {
+      "source": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+      "skillNames": [
+        "Auto Attack",
+        "Drawing Power",
+        "Elusion",
+        "Imminent Doom",
+        "Melting",
+        "Absorbing",
+        "Charge Attack"
+      ],
+      "checkedAt": "2026-11-07"
+    }
+  },
+  "ultra-dage": {
+    "mechanics": [
+      {
+        "id": "decay",
+        "name": "Decaying Strike",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo diễn biến trận đấu",
+        "effect": "Decaying Strike đảo chiều hồi máu trực tiếp và HoT.",
+        "response": "Không spam Heal. Đọc aura trước khi hồi máu.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "id": "zone",
+        "name": "Brute Zone Strike",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo diễn biến trận đấu",
+        "effect": "Đòn đánh sau thời gian niệm Summon Brute Undead.",
+        "response": "Di chuyển vào vùng bảo hộ sáng.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "id": "legion",
+        "name": "Summon Legion Mages",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo diễn biến trận đấu",
+        "effect": "Boss nhận HoT và tăng sức mạnh trong chu kỳ này.",
+        "response": "Người giữ Decay phải chặn hồi máu.",
+        "severity": "normal",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      }
+    ],
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 6500000,
+        "explanation": "Máu tối đa.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Dage"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level của boss, khác yêu cầu level vào map.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Dage"
+      },
+      {
+        "key": "auto",
+        "label": "Auto Attack",
+        "value": "1.495–1.827",
+        "explanation": "Sát thương cơ bản trước modifier của trận.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Dage"
+      },
+      {
+        "key": "shield",
+        "label": "Ngưỡng Boss Shield",
+        "value": 150000,
+        "explanation": "Phần vượt ngưỡng được giảm; đây không phải giới hạn sát thương cứng.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Dage"
+      },
+      {
+        "key": "soul",
+        "label": "Soul Eater",
+        "value": 500000,
+        "explanation": "Lượng HP hồi khi hạ một người chơi.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Dage"
+      },
+      {
+        "key": "wiki-13",
+        "label": "Sát thương",
+        "value": "1,495 - 1,827",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-17",
+        "label": "Chu kỳ",
+        "value": "2.25 giây",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-21",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-23",
+        "label": "Loại sát thương",
+        "value": "Physical",
+        "subject": "Auto Attack",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-31",
+        "label": "Sát thương",
+        "value": "897 - 1,096",
+        "subject": "Decaying Strike",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-35",
+        "label": "Chu kỳ",
+        "value": "8 giây",
+        "subject": "Decaying Strike",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-39",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Decaying Strike",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-41",
+        "label": "Loại sát thương",
+        "value": "True Damage",
+        "subject": "Decaying Strike",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-54",
+        "label": "Chu kỳ",
+        "value": "15 giây",
+        "subject": "Summon Brute Undead ➞ Brute Zone Strike",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-60",
+        "label": "Loại sát thương",
+        "value": "Charge",
+        "subject": "Summon Brute Undead ➞ Brute Zone Strike",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-66",
+        "label": "Sát thương",
+        "value": "3,986 - 4,871",
+        "subject": "Summon Brute Undead ➞ Brute Zone Strike",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-74",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Summon Brute Undead ➞ Brute Zone Strike",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-76",
+        "label": "Loại sát thương",
+        "value": "True Damage",
+        "subject": "Summon Brute Undead ➞ Brute Zone Strike",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-89",
+        "label": "Chu kỳ",
+        "value": "60 giây",
+        "subject": "Summon Legion Mages ➞ Energy Blast",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-95",
+        "label": "Loại sát thương",
+        "value": "Charge / Aura",
+        "subject": "Summon Legion Mages ➞ Energy Blast",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-103",
+        "label": "Sát thương",
+        "value": "2,989 - 3,654",
+        "subject": "Summon Legion Mages ➞ Energy Blast",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-111",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Summon Legion Mages ➞ Energy Blast",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      },
+      {
+        "key": "wiki-113",
+        "label": "Loại sát thương",
+        "value": "Physical",
+        "subject": "Summon Legion Mages ➞ Energy Blast",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord"
+      }
+    ],
+    "reference": [],
+    "notes": [
+      {
+        "id": "0",
+        "icon": "heal",
+        "label": "Decay",
+        "text": "Đọc aura trước khi dùng hồi máu trực tiếp hoặc HoT.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/dage-the-darklord"
+      },
+      {
+        "id": "1",
+        "icon": "zone",
+        "label": "Vùng sáng",
+        "text": "Di chuyển đúng vùng bảo hộ khi boss gọi đòn diện rộng.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/dage-the-darklord"
+      },
+      {
+        "id": "2",
+        "icon": "target",
+        "label": "Legion Mages",
+        "text": "Duy trì Decay theo người đã được phân công.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/dage-the-darklord"
+      }
+    ],
+    "nameVerification": {
+      "source": "https://aqwwiki.wikidot.com/dage-the-dark-lord",
+      "skillNames": [
+        "Auto Attack",
+        "Decaying Strike",
+        "Summon Brute Undead ➞ Brute Zone Strike",
+        "Summon Brute Undead",
+        "Brute Zone Strike",
+        "Summon Legion Mages ➞ Energy Blast",
+        "Summon Legion Mages",
+        "Energy Blast"
+      ],
+      "checkedAt": "2026-11-07"
+    }
+  },
+  "ultra-nulgath": {
+    "mechanics": [
+      {
+        "id": "contracts",
+        "name": "Contracts of the Abyss",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo diễn biến trận đấu",
+        "effect": "Các tầng Contract làm suy yếu đội.",
+        "response": "Luân phiên Taunt theo sơ đồ trong đội hình, tránh chồng debuff lên cùng người.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      }
+    ],
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 10000000,
+        "explanation": "HP của boss chính, không cộng HP các mục tiêu phụ.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Nulgath"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss trong game; khác điều kiện level vào map.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Nulgath"
+      },
+      {
+        "key": "source-1",
+        "label": "HP",
+        "subject": "Ultra Nulgath",
+        "value": "1,000,000",
+        "group": "Cốt lõi",
+        "explanation": "Total HP: 1,000,000",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-2",
+        "label": "Boss Shield",
+        "subject": "Ultra Nulgath",
+        "value": "50k · 0.7",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Shield giúp giảm sát thương trên 50k (hệ số 0.7).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-3",
+        "label": "Miễn nhiễm",
+        "subject": "Ultra Nulgath",
+        "value": "Miễn nhiễm với Stun và Focus/Taunt.",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Miễn nhiễm với Stun và Focus/Taunt.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-4",
+        "label": "Auto Attack",
+        "subject": "Ultra Nulgath",
+        "value": "2.25s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Auto-Attack mỗi 2.25s gây ??? Phys DMG.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-5",
+        "label": "Niệm & chu kỳ",
+        "subject": "Ultra Nulgath",
+        "value": "40s · 5s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Sau 40s, sẽ sử dụng Sword Charge trong 5s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-6",
+        "label": "Niệm & chu kỳ",
+        "subject": "Ultra Nulgath",
+        "value": "45s · 30 · -40s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Players cần phải giết Overfiend Blade trong 45s này, tức trước khi quá trình Charge hoàn thành. Nhưng đừng giết quá nhanh, tốt nhất là trong khoảng 30-40s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-7",
+        "label": "Niệm & chu kỳ",
+        "subject": "Ultra Nulgath",
+        "value": "100",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Sử dụng Struck Down ngay sau khi Sword Charge hoàn tất, gây 100m Phys DMG (Death DoT), không thể né nhưng lại không thể bạo kích.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-8",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Nulgath",
+        "value": "50% · 50% · vô hạn",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Đồng thời mỗi lần Overfiend Blade bị giết chết, Nulgath sẽ được tăng 50% All Out và 50% Phys Out khi dùng Wrath of the Abyss, stack vô hạn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-10",
+        "label": "Hồi sinh",
+        "subject": "Ultra Nulgath",
+        "value": "15s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Overfiend Blade sẽ hồi sinh sau 15s kể từ khi bị giết chết.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-12",
+        "label": "HP",
+        "subject": "Ultra Nulgath",
+        "value": "10,000,000",
+        "group": "Cốt lõi",
+        "explanation": "Total HP: 10,000,000",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-13",
+        "label": "Boss Shield",
+        "subject": "Ultra Nulgath",
+        "value": "100k · 0.8",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Shield giúp giảm sát thương trên 100k (hệ số 0.8).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-14",
+        "label": "Miễn nhiễm",
+        "subject": "Ultra Nulgath",
+        "value": "Miễn nhiễm với Stun.",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Miễn nhiễm với Stun.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-15",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Nulgath",
+        "value": "7s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi 7s, sử dụng Contracts of the Abyss gây ??? DMG.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-16",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Nulgath",
+        "value": "50% · 10s",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Áp “Contract of Frailty” lên toàn bộ player, tăng 50% All In trong 10s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-17",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Nulgath",
+        "value": "75% · 50% · 10s",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Áp “Contract of Despair” lên những player có “Contract of Frailty”, giảm 75% Dodge, Crit Change và giảm 50% All Out trong 10s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-18",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Nulgath",
+        "value": "100% · 50% · 80% · 10s",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Áp “Contract of Stagnation” lên những player có “Contract of Despair”, tăng 100% All In, Phys In và giảm 50% Haste, giảm 80% Heal In trong 10s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-19",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Nulgath",
+        "value": "2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Cần có 2 players sử dụng Scroll of Enrage để Focus/Taunt Nulgath so le với nhau để đảm bảo chỉ có loại Contract đầu tiên được áp.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-20",
+        "label": "Niệm & chu kỳ",
+        "subject": "Ultra Nulgath",
+        "value": "14s · 4s · 500 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi 14s, sử dụng Abyssal Charge trong 4s sau đó kích hoạt Wrath of the Abyss gây 500 Phys DMG, không thể né nhưng lại không thể bạo kích.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-21",
+        "label": "Miễn nhiễm",
+        "subject": "Ultra Nulgath",
+        "value": "Miễn nhiễm với Focus/Taunt.",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Miễn nhiễm với Focus/Taunt.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-22",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Nulgath",
+        "value": "50% · 50% · vô hạn",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Lượng sát thương gây ra từ skill này sẽ tăng 50% All Out và 50% Phys Out sau mỗi lần Overfiend Blade bị giết chết, stack vô hạn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-26",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Nulgath",
+        "value": "7s · 3 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Đây là cơ chế tạo nên nét đặc trưng riêng của Nulgath the Archfiend. Mỗi 7s, Nulgath sẽ sử dụng cơ chế này để ấn định hiệu ứng Contract lên player. Gồm có 3 loại khác nhau theo thứ tự “Contract of Frailty” > “Contract of Despair” > “Contract of Stagnation”.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-27",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Nulgath",
+        "value": "1  · 2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Chính vì cơ chế dạng nâng dần (chỉ có 1 loại hiện hữu, có loại trước mới áp được loại sau) nên mới cần có 2 players cùng Focus/Taunt Nulgath nhằm đảm bảo:",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-29",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Nulgath",
+        "value": "3",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Tránh Contract áp lên loại thứ 3, vì khi đã dính loại này dấu hiệu dễ thấy nhất là CD skill bị kéo dài. Điều có thể coi như là dấu hiệu báo tử.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-31",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Nulgath",
+        "value": "2  · 2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Cần có 2 người cầm Scroll of Enrage để Focus/Taunt Nulgath. Cách chọn người thì rất đơn giản trừ DMG chính ra thì còn lại sẽ chọn 2 người để Focus/Taunt.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-33",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Nulgath",
+        "value": "3  · 2  · 1 · 1",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Người đầu tiên sẽ thực hiện Focus/Taunt đầu tiên (nên là người phát hiệu lệnh bắt đầu, ví dụ đếm ngược 3 - 2 - 1, và dùng Scroll ngay khi 1).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-34",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Nulgath",
+        "value": "1 · 8 · -1 · 10",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Cách Focus/Taunt: Cần bật chức năng Class Actives/Auras UI trong Advance Option để dễ canh sử dụng Focus/Taunt. Để ý khi nào aura của Focus gần CD xong (còn lại 1/8-1/10) thì dùng Scroll, chi tiết tại “Hướng dẫn loop Focus/Taunt với người chơi khác” của Aummon.",
+        "source": "community-guide"
+      },
+      {
+        "key": "wiki-13",
+        "label": "Sát thương",
+        "value": "???",
+        "subject": "Contracts of the Abyss",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "key": "wiki-17",
+        "label": "Chu kỳ",
+        "value": "7 giây",
+        "subject": "Contracts of the Abyss",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "key": "wiki-21",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Contracts of the Abyss",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "key": "wiki-37",
+        "label": "Chu kỳ",
+        "value": "14 giây",
+        "subject": "Abyssal Charge ➞ Wrath of the Abyss",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "key": "wiki-43",
+        "label": "Loại sát thương",
+        "value": "Charge",
+        "subject": "Abyssal Charge ➞ Wrath of the Abyss",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "key": "wiki-49",
+        "label": "Sát thương",
+        "value": "500",
+        "subject": "Abyssal Charge ➞ Wrath of the Abyss",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "key": "wiki-57",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Abyssal Charge ➞ Wrath of the Abyss",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      },
+      {
+        "key": "wiki-59",
+        "label": "Loại sát thương",
+        "value": "Physical Damage",
+        "subject": "Abyssal Charge ➞ Wrath of the Abyss",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend"
+      }
+    ],
+    "reference": [
+      {
+        "id": "h.rq7a56nx6w3m",
+        "title": "Cơ chế",
+        "paragraphs": [],
+        "blocks": [
+          {
+            "type": "paragraph",
+            "id": "p-141457",
+            "runs": [
+              {
+                "text": "Overfiend Blade",
+                "bold": true,
+                "italic": true,
+                "href": "http://aqwwiki.wikidot.com/overfiend-blade"
+              },
+              { "text": "\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-141473",
+            "runs": [{ "text": "◆ Total HP: 1,000,000\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-141495",
+            "runs": [
+              { "text": "◆ Shield giúp giảm sát thương trên 50k " },
+              { "text": "(hệ số 0.7)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-141547",
+            "runs": [{ "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-141585",
+            "runs": [{ "text": "◆ Auto-Attack mỗi 2.25s gây ??? Phys DMG.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-141627",
+            "runs": [
+              { "text": "◆ Sau 40s, sẽ sử dụng Sword Charge trong 5s.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-141672",
+            "runs": [
+              {
+                "text": "→ Players cần phải giết Overfiend Blade trong 45s này, tức trước khi quá trình Charge hoàn thành. Nhưng đừng giết quá nhanh, tốt nhất là trong khoảng 30-40s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-141830",
+            "runs": [
+              {
+                "text": "◆ Sử dụng Struck Down ngay sau khi Sword Charge hoàn tất, gây 100m Phys DMG "
+              },
+              { "text": "(Death DoT)", "italic": true },
+              { "text": ", không thể né nhưng lại không thể bạo kích.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-141962",
+            "runs": [
+              {
+                "text": "◆ Đồng thời mỗi lần Overfiend Blade bị giết chết, Nulgath sẽ được tăng 50% All Out và 50% Phys Out khi dùng Wrath of the Abyss, stack vô hạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142104",
+            "runs": [
+              {
+                "text": "→ Chỉ nên đánh đến một lượng HP nhất định thì chuyển qua đánh Nulgath, tránh giết quá nhanh.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142197",
+            "runs": [
+              {
+                "text": "→ Overfiend Blade sẽ hồi sinh sau 15s kể từ khi bị giết chết.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142260",
+            "runs": [
+              {
+                "text": "Nulgath the Archfiend",
+                "bold": true,
+                "italic": true,
+                "href": "http://aqwwiki.wikidot.com/nulgath-the-archfiend"
+              },
+              { "text": "\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142282",
+            "runs": [{ "text": "◆ Total HP: 10,000,000\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142305",
+            "runs": [
+              { "text": "◆ Shield giúp giảm sát thương trên 100k " },
+              { "text": "(hệ số 0.8)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142358",
+            "runs": [{ "text": "◆ Miễn nhiễm với Stun.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142381",
+            "runs": [
+              {
+                "text": "◆ Mỗi 7s, sử dụng Contracts of the Abyss gây ??? DMG.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142435",
+            "runs": [
+              {
+                "text": "→ Áp “Contract of Frailty” lên toàn bộ player, tăng 50% All In trong 10s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142509",
+            "runs": [
+              {
+                "text": "→ Áp “Contract of Despair” lên những player có “Contract of Frailty”, giảm 75% Dodge, Crit Change và giảm 50% All Out trong 10s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142638",
+            "runs": [
+              {
+                "text": "→ Áp “Contract of Stagnation” lên những player có “Contract of Despair”, tăng 100% All In, Phys In và giảm 50% Haste, giảm 80% Heal In trong 10s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142784",
+            "runs": [
+              { "text": "→ Cần có 2 players sử dụng " },
+              { "text": "Scroll of Enrage" },
+              {
+                "text": " để Focus/Taunt Nulgath so le với nhau để đảm bảo chỉ có loại Contract đầu tiên được áp.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-142916",
+            "runs": [
+              {
+                "text": "◆ Mỗi 14s, sử dụng Abyssal Charge trong 4s sau đó kích hoạt Wrath of the Abyss gây 500 Phys DMG, không thể né nhưng lại không thể bạo kích.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-143056",
+            "runs": [{ "text": "→ Miễn nhiễm với Focus/Taunt.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-143086",
+            "runs": [
+              {
+                "text": "→ Lượng sát thương gây ra từ skill này sẽ tăng 50% All Out và 50% Phys Out sau mỗi lần Overfiend Blade bị giết chết, stack vô hạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-143217",
+            "runs": [
+              {
+                "text": "→ Trận đánh càng kéo dài càng bất lợi, vì vậy cần đánh nhanh thắng nhanh đồng thời tối ưu thời gian giết Overfiend Blade hợp lý nhất có thể.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-143359",
+            "runs": [
+              {
+                "text": "Contracts of the Abyss - The Death Penalty\n",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-143402",
+            "runs": [
+              { "text": "Hướng dẫn chi tiết cách Focus/Taunt\n", "bold": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-143438",
+            "runs": [
+              {
+                "text": "Đây là cơ chế tạo nên nét đặc trưng riêng của Nulgath the Archfiend. Mỗi 7s, Nulgath sẽ sử dụng cơ chế này để ấn định hiệu ứng Contract lên player. Gồm có 3 loại khác nhau theo thứ tự “Contract of Frailty” > “Contract of Despair” > “Contract of Stagnation”.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-143696",
+            "runs": [
+              { "text": "Chính vì cơ chế dạng nâng dần " },
+              {
+                "text": "(chỉ có 1 loại hiện hữu, có loại trước mới áp được loại sau)",
+                "italic": true
+              },
+              { "text": " nên mới " },
+              {
+                "text": "cần có 2 players cùng Focus/Taunt Nulgath",
+                "bold": true,
+                "italic": true
+              },
+              { "text": " nhằm đảm bảo:\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-143851",
+            "runs": [
+              {
+                "text": "→ Contract không áp lên toàn bộ players cùng một lúc cũng như giảm các hiệu ứng xấu.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-143936",
+            "runs": [
+              {
+                "text": "→ Tránh Contract áp lên loại thứ 3, vì khi đã dính loại này dấu hiệu dễ thấy nhất là CD skill bị kéo dài. Điều có thể coi như là dấu hiệu báo tử.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-144082",
+            "runs": [
+              { "text": "◆ " },
+              {
+                "text": "Cách thực hiện chi tiết:",
+                "bold": true,
+                "italic": true
+              },
+              { "text": " \n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-144110",
+            "runs": [
+              { "text": "→ Cần có 2 người cầm " },
+              { "text": "Scroll of Enrage" },
+              {
+                "text": " để Focus/Taunt Nulgath. Cách chọn người thì rất đơn giản trừ DMG chính ra thì còn lại sẽ chọn 2 người để Focus/Taunt.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-144266",
+            "runs": [
+              { "text": "→ Trước khi bắt đầu thì " },
+              {
+                "text": "phải phân thứ tự người Focus/Taunt trước",
+                "bold": true
+              },
+              { "text": " tránh lộn xộn và nhầm lẫn.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-144358",
+            "runs": [
+              { "text": "→ Người đầu tiên sẽ thực hiện Focus/Taunt đầu tiên " },
+              {
+                "text": "(nên là người phát hiệu lệnh bắt đầu, ví dụ đếm ngược 3 - 2 - 1, và dùng Scroll ngay khi 1)",
+                "italic": true
+              },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-144502",
+            "runs": [
+              { "text": "→ " },
+              { "text": "Cách Focus/Taunt", "bold": true },
+              { "text": ": Cần bật chức năng " },
+              { "text": "Class Actives/Auras UI", "italic": true },
+              {
+                "text": " trong Advance Option để dễ canh sử dụng Focus/Taunt. Để ý khi nào aura của Focus gần CD xong "
+              },
+              { "text": "(còn lại 1/8-1/10)", "italic": true },
+              { "text": " thì dùng Scroll, chi tiết tại “" },
+              {
+                "text": "Hướng dẫn loop Focus/Taunt với người chơi khác",
+                "href": "https://www.youtube.com/watch?v=U4gbwFv__fg"
+              },
+              { "text": "” của Aummon.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-144766",
+            "runs": [
+              { "text": "Note:", "italic": true },
+              {
+                "text": " Bạn sẽ thấy Nulgath áp các hiệu ứng Contract lên người chơi khi mở Animation lên, giúp bạn có thể canh được nó hiệu quả hơn thay vì đếm giây như trên (nhưng đổi lại sẽ khá lag).\n",
+                "italic": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "id": "0",
+        "icon": "taunt",
+        "label": "Contracts",
+        "text": "Giữ đúng thứ tự luân phiên Taunt.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/nulgath-the-archfiend"
+      },
+      {
+        "id": "1",
+        "icon": "target",
+        "label": "Blade",
+        "text": "Không hạ Blade tùy ý; thống nhất thời điểm đổi mục tiêu.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/nulgath-the-archfiend"
+      }
+    ],
+    "nameVerification": {
+      "source": "https://aqwwiki.wikidot.com/nulgath-the-archfiend",
+      "skillNames": [
+        "Contracts of the Abyss",
+        "Abyssal Charge ➞ Wrath of the Abyss",
+        "Abyssal Charge",
+        "Wrath of the Abyss"
+      ],
+      "checkedAt": "2026-11-07"
+    }
+  },
+  "ultra-drago": {
+    "mechanics": [
+      {
+        "id": "judgement",
+        "name": "Judgement Day",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Sau giai đoạn đếm ngược từ lúc tham chiến",
+        "effect": "Boss niệm phán quyết rồi dùng Judged lên cả đội; timeline nằm trong Stats.",
+        "response": "Kết thúc trận trước phán quyết; Taunt không chặn được đòn này.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": ["legacy-judgement"],
+        "source": "https://aqwwiki.wikidot.com/king-drago-monster"
+      }
+    ],
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 1000,
+        "explanation": "HP của boss chính, không cộng HP các mục tiêu phụ.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Drago"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 1,
+        "explanation": "Level boss trong game; khác điều kiện level vào map.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Drago"
+      },
+      {
+        "key": "legacy-judgement",
+        "label": "Judgement Day",
+        "value": "Drago bắt đầu niệm sau 160 giây tham chiến; Judged đến sau 20 giây.",
+        "group": "Tấn công & hiệu ứng",
+        "subject": "Ultra Drago",
+        "explanation": "Thông tin từ hồ sơ hiện có.",
+        "source": "monster"
+      },
+      {
+        "key": "source-0",
+        "label": "HP",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "2,000,000  · 3,500,000 ",
+        "group": "Cốt lõi",
+        "explanation": "Total HP: 2,000,000 (Algie) và 3,500,000 (Dene)",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-1",
+        "label": "Boss Shield",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "75k · 0.7",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Shield giúp giảm sát thương trên 75k (hệ số 0.7).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-2",
+        "label": "Miễn nhiễm",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "Miễn nhiễm với Stun.",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Miễn nhiễm với Stun.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-3",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "1  · 2  · 100% · 50%",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Nếu 1 trong 2 chết, con còn lại sẽ hồi đầy máu, tăng 100% All Out, Phys Out và giảm 50% All In vô thời hạn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-4",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "1 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Ngay sau khi 1 con chết thì cần lập tức Focus/Taunt con còn lại.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-6",
+        "label": "Auto Attack",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "2.25s · 1k · 1.2k",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Auto-Attack mỗi 2.25s gây Phys DMG từ 1k đến 1.2k.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-7",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "5% · 4s · 1% · vô hạn",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Bowmaster Algie: Players bị giảm 5% All Out trong 4s. Đồng thời bản thân tăng 1% All Out với mỗi player bị đánh trúng, cả hai đều stack vô hạn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-8",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "5% · 4s · 1% · vô hạn",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Executioner Dene: Players bị tăng 5% All In và Phys In trong 4s. Đồng thời bản thân giảm 1% All In với mỗi player bị đánh trúng, cả hai stack vô hạn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-10",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "12s · 1k · 1.2k",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi 12s, Bowmaster Algie sử dụng Triple Shot và Executioner Dene sử dụng Execution đều gây Phys DMG từ 1k đến 1.2k.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-11",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "Đều bỏ qua  Focus.",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Đều bỏ qua  Focus.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-12",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Bowmaster Algie và Executioner Dene",
+        "value": "20s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Ngoài ra Triple Shot của Bowmaster Algie còn gây thêm DoT lên mục tiêu trong 20s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-13",
+        "label": "HP",
+        "subject": "King Drago",
+        "value": "1,000",
+        "group": "Cốt lõi",
+        "explanation": "Total HP: 1,000",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-14",
+        "label": "Boss Shield",
+        "subject": "King Drago",
+        "value": "Shield giúp miễn nhiễm sát thương khi Executioner Dene và Bowmaster Algie còn sống.",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Shield giúp miễn nhiễm sát thương khi Executioner Dene và Bowmaster Algie còn sống.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-15",
+        "label": "Miễn nhiễm",
+        "subject": "King Drago",
+        "value": "Miễn nhiễm với Stun và Focus/Taunt.",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Miễn nhiễm với Stun và Focus/Taunt.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-16",
+        "label": "Thông số / hiệu ứng",
+        "subject": "King Drago",
+        "value": "160s · 20s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Judgement Day kéo dài trong 160s, bắt đầu tính ngay khi tham chiến. Sau đó King Drago sẽ cười lớn trong 20s rồi mới bắt đầu sử dụng Judged.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-17",
+        "label": "Thông số / hiệu ứng",
+        "subject": "King Drago",
+        "value": "180s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Cần nhanh chóng đánh bại Executioner Dene và Bowmaster Algie trong khoảng thời gian này (180s).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-18",
+        "label": "Thông số / hiệu ứng",
+        "subject": "King Drago",
+        "value": "9 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Judged gây True DMG lớn (9 con số) lên toàn bộ players.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-20",
+        "label": "Hồi sinh",
+        "subject": "King Drago",
+        "value": "3  · 30s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Note: Chỉ khi cả 3 monsters trong room hoặc tất cả players đều bị đánh bại thì monsters mới hồi sinh (30s).",
+        "source": "community-guide"
+      },
+      {
+        "key": "wiki-23",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Judgement Day ➞ Judged",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/king-drago-monster"
+      },
+      {
+        "key": "wiki-25",
+        "label": "Loại sát thương",
+        "value": "Physical",
+        "subject": "Judgement Day ➞ Judged",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/king-drago-monster"
+      },
+      {
+        "key": "wiki-40",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Judgement Day ➞ Judged",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/king-drago-monster"
+      },
+      {
+        "key": "wiki-42",
+        "label": "Loại sát thương",
+        "value": "Physical",
+        "subject": "Judgement Day ➞ Judged",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/king-drago-monster"
+      }
+    ],
+    "reference": [
+      {
+        "id": "h.h6orzkrzkh13",
+        "title": "Cơ chế",
+        "paragraphs": [],
+        "blocks": [
+          {
+            "type": "paragraph",
+            "id": "p-213158",
+            "runs": [
+              {
+                "text": "Bowmaster Algie",
+                "bold": true,
+                "italic": true,
+                "href": "http://aqwwiki.wikidot.com/bowmaster-algie"
+              },
+              { "text": " và " },
+              {
+                "text": "Executioner Dene",
+                "bold": true,
+                "italic": true,
+                "href": "http://aqwwiki.wikidot.com/executioner-dene"
+              },
+              { "text": "\n", "bold": true, "italic": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213194",
+            "runs": [
+              { "text": "◆ Total HP: 2,000,000 " },
+              { "text": "(Algie)", "italic": true },
+              { "text": " và 3,500,000 " },
+              { "text": "(Dene)\n", "italic": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213244",
+            "runs": [
+              { "text": "◆ Shield giúp giảm sát thương trên 75k " },
+              { "text": "(hệ số 0.7)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213296",
+            "runs": [{ "text": "◆ Miễn nhiễm với Stun.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213319",
+            "runs": [
+              {
+                "text": "◆ Nếu 1 trong 2 chết, con còn lại sẽ hồi đầy máu, tăng 100% All Out, Phys Out và giảm 50% All In vô thời hạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213429",
+            "runs": [
+              {
+                "text": "→ Ngay sau khi 1 con chết thì cần lập tức Focus/Taunt con còn lại.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213496",
+            "runs": [
+              {
+                "text": "→ Tốt nhất nên giết Bowmaster Algie trước rồi mới chuyển qua Executioner Dene.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213575",
+            "runs": [
+              {
+                "text": "◆ Auto-Attack mỗi 2.25s gây Phys DMG từ 1k đến 1.2k.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213628",
+            "runs": [
+              {
+                "text": "→ Bowmaster Algie: Players bị giảm 5% All Out trong 4s. Đồng thời bản thân tăng 1% All Out với mỗi player bị đánh trúng, cả hai đều stack vô hạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213774",
+            "runs": [
+              {
+                "text": "→ Executioner Dene: Players bị tăng 5% All In và Phys In trong 4s. Đồng thời bản thân giảm 1% All In với mỗi player bị đánh trúng, cả hai stack vô hạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213926",
+            "runs": [
+              {
+                "text": "→ Sử dụng các class có Focus/Taunt để giảm stack các hiệu ứng bất lợi.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-213997",
+            "runs": [
+              {
+                "text": "◆ Mỗi 12s, Bowmaster Algie sử dụng Triple Shot và Executioner Dene sử dụng Execution đều gây Phys DMG từ 1k đến 1.2k.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214115",
+            "runs": [{ "text": "→ Đều bỏ qua  Focus.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214136",
+            "runs": [
+              {
+                "text": "→ Ngoài ra Triple Shot của Bowmaster Algie còn gây thêm DoT lên mục tiêu trong 20s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214221",
+            "runs": [
+              {
+                "text": "King Drago",
+                "bold": true,
+                "italic": true,
+                "href": "http://aqwwiki.wikidot.com/king-drago-monster"
+              },
+              { "text": "\n", "bold": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214232",
+            "runs": [{ "text": "◆ Total HP: 1,000\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214250",
+            "runs": [
+              {
+                "text": "◆ Shield giúp miễn nhiễm sát thương khi Executioner Dene và Bowmaster Algie còn sống.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214336",
+            "runs": [{ "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214374",
+            "runs": [
+              {
+                "text": "◆ Judgement Day kéo dài trong 160s, bắt đầu tính ngay khi tham chiến. Sau đó King Drago sẽ cười lớn trong 20s rồi mới bắt đầu sử dụng Judged.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214516",
+            "runs": [
+              {
+                "text": "→ Cần nhanh chóng đánh bại Executioner Dene và Bowmaster Algie trong khoảng thời gian này (180s).\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214614",
+            "runs": [
+              { "text": "◆ Judged gây True DMG lớn " },
+              { "text": "(9 con số)", "italic": true },
+              { "text": " lên toàn bộ players.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214672",
+            "runs": [
+              {
+                "text": "→ Nếu player vẫn còn sống sau đòn đánh này thì sẽ áp một Death DoT và reset lại toàn bộ.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-214762",
+            "runs": [
+              { "text": "Note:", "italic": true },
+              {
+                "text": " Chỉ khi cả 3 monsters trong room hoặc tất cả players đều bị đánh bại thì monsters mới hồi sinh (30s).\n",
+                "italic": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "id": "0",
+        "icon": "target",
+        "label": "Hộ vệ",
+        "text": "Guide cộng đồng ưu tiên Algie trước Dene.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/king-drago"
+      },
+      {
+        "id": "1",
+        "icon": "taunt",
+        "label": "Đổi mục tiêu",
+        "text": "Hộ vệ vừa mất đồng đội cần được Taunt ngay.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/king-drago"
+      },
+      {
+        "id": "2",
+        "icon": "timer",
+        "label": "Phán quyết",
+        "text": "Kết thúc trận trước Judged; Taunt không chặn được đòn này.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/king-drago"
+      }
+    ],
+    "nameVerification": {
+      "source": "https://aqwwiki.wikidot.com/king-drago-monster",
+      "skillNames": ["Judgement Day ➞ Judged", "Judgement Day", "Judged"],
+      "checkedAt": "2026-11-07"
+    }
+  },
+  "ultra-speaker": {
+    "mechanics": [
+      {
+        "id": "burn",
+        "name": "Magia Burn",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo diễn biến trận đấu",
+        "effect": "Hiệu ứng làm tăng sát thương phép nhận vào và có thể cộng dồn.",
+        "response": "Đọc lịch Taunt của đội hình, không tự đổi vị trí giữa chu kỳ.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "id": "stasis",
+        "name": "Stasis Field",
+        "type": "Cơ chế chiến đấu",
+        "trigger": "Theo diễn biến trận đấu",
+        "effect": "Sau Energy Draw, mục tiêu có thể bị stun.",
+        "response": "Theo phân công Taunt và vị trí đã thống nhất; đọc hướng dẫn đầy đủ bên dưới.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "id": "move-17",
+        "name": "Power Split",
+        "type": "Buff",
+        "trigger": "Khi bắt đầu niệm Power Split",
+        "effect": "Boss tăng sức mạnh, khả năng né, giảm sát thương nhận và hồi HP.",
+        "response": "Dùng Class có Decay để ngăn hồi phục theo phân công.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "id": "move-18",
+        "name": "Equalize",
+        "type": "Phase Mechanic",
+        "trigger": "Ngay sau khi Power Split kết thúc",
+        "effect": "Gây sát thương chuẩn và cấp Sanctity để xóa Corruption cùng Somber; nhiều người vào Zone làm tăng nguy hiểm.",
+        "response": "Chỉ người đến lượt vào Zone; những người khác rời khỏi Zone.",
+        "severity": "danger",
+        "notes": [],
+        "relatedStats": [],
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      }
+    ],
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 10000000,
+        "explanation": "HP của boss chính, không cộng HP các mục tiêu phụ.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Speaker"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss trong game; khác điều kiện level vào map.",
+        "source": "monster",
+        "group": "Cốt lõi",
+        "subject": "Ultra Speaker"
+      },
+      {
+        "key": "source-0",
+        "label": "HP",
+        "subject": "Ultra Speaker",
+        "value": "10,000,000",
+        "group": "Cốt lõi",
+        "explanation": "Total HP: 10,000,000",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-1",
+        "label": "Boss Shield",
+        "subject": "Ultra Speaker",
+        "value": "150k · 0.1",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Shield giúp giảm sát thương trên 150k (hệ số 0.1).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-2",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "30% · vô hạn",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Với mỗi player bị giết chết, The First Speaker sẽ giảm 30% All In, stack vô hạn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-3",
+        "label": "Miễn nhiễm",
+        "subject": "Ultra Speaker",
+        "value": "Miễn nhiễm với Stun.",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Miễn nhiễm với Stun.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-4",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "50% · -50% · -50% · 500%",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Base có 50% Dodge, -50% DoT In, -50% All In và 500% Hit Chance.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-5",
+        "label": "Auto Attack",
+        "subject": "Ultra Speaker",
+        "value": "2s · 804  · 982",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Auto-Attack mỗi 2s gây Phys DMG từ 804 đến 982, không thể né nhưng lại không thể bạo kích.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-6",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Speaker",
+        "value": "Bỏ qua Focus/Taunt.",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Bỏ qua Focus/Taunt.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-7",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "7% · 7% · 20s · vô hạn",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Players bị giảm 7% All Out và tăng 7% All In trong 20s, stack vô hạn (Corruption và Somber).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-8",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "40% · 60s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Players bị giảm 40% INT trong 60s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-9",
+        "label": "Niệm & chu kỳ",
+        "subject": "Ultra Speaker",
+        "value": "7s · 2s · 1.4k · 1.7k",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi 7s, sẽ sử dụng Magia Draw để charge trong 2s sau đó kích hoạt Magia Burn gây Magi DMG từ 1.4k đến 1.7k, không thể né và luôn bạo kích.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-10",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "300% · 16s · vô hạn",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Players bị tăng 300% Magi In trong 16s, stack vô hạn.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-11",
+        "label": "Niệm & chu kỳ",
+        "subject": "Ultra Speaker",
+        "value": "12s · 2s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi 12s, sử dụng Energy Draw để charge trong 2s sau đó kích hoạt Stasis Field.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-12",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "6s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Players bị Stun trong 6s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-14",
+        "label": "Niệm & chu kỳ",
+        "subject": "Ultra Speaker",
+        "value": "16s · 3s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi 16s, sử dụng Power Split để charge trong 3s đồng thời kích hoạt thêm hiệu ứng.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-15",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "300% · 25% · -100% · -75% · 24s",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "Malgor nhận 300% All Out, 25% Dodge và -100% DoT In, -75% All In trong 24s.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-16",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "2s",
+        "group": "Cốt lõi",
+        "explanation": "Malgor hồi lượng lớn HP sau 2s, nên dùng class có Decay như LR, LDK.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-17",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "2.4k · 2.9k",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Kích hoạt Equalize ngay sau khi hết Power Split, gây True DMG từ 2.4k đến 2.9k.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-18",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "2 s · 2  · 100% · 2  · 200%",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Tăng ×2 sát thương với player tiếp theo trúng đòn (ví dụ: có 2 players dính đòn đánh này thì player đầu tiên dính 100% và thứ 2 dính 200%).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-19",
+        "label": "Auto Attack",
+        "subject": "Ultra Speaker",
+        "value": "45s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Players nhận Sanctity trong 45s, xoá bỏ tất cả stack của Corruption và Somber đang có (hiệu ứng stack của Auto Attack).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-24",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Speaker",
+        "value": "2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Với Ultra Malgor - The First Speaker, AE đã nâng cấp cơ chế Focus/Taunt và cách chạy Zone lên một tầm cao mới. Đây là 2 thứ quan trọng nhất để có thể chống lại các cơ chế của Ultra này và giành chiến thắng.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-26",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Speaker",
+        "value": "2  · 2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mục đích của Focus/Taunt tập trung vào 2 cơ chế chính là “Listen” (Stasis Field) và “Truth” (Magia Burn) để đảm bảo 2 cơ chế này không bị kích hoạt lên tất cả players.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-27",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "6s · 2  · 4 s · 2  · 2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Vì “Listen” gây bất động (Stun) trong 6s. Còn “Truth” gây sát thương phép, nhưng nếu bị dính 2 lần tiên tiếp thì sẽ ăn ×4 sát thương tức nếu ăn 2 lần liên tiếp thì chết ngay lặp tức. Đồng thời nếu trên bạn có 2 hiệu ứng của “Listen” và “Truth” mà chạy vào Zone thì sẽ ngay lặp tức ăn Death DoT mà chết.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-29",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "2  · 2 · 2  · 2 s · 2 s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Nhưng bạn cũng không thể chạy vào Zone 2 lần liên tiếp nhau vì cũng sẽ bị ăn Death DoT vào lần thứ 2, cũng như không thể vào Zone cùng lúc 2 người nếu không người thứ 2 sẽ ăn x2 sát thương và chết ngay lặp tức.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-30",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Speaker",
+        "value": "4  · 2  · 2  · 1 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Kết luận: Với Malgor này sẽ được chia thành nhiều vòng, mỗi vòng kết thúc bằng Zone. Và 4 players chia thành 2 nhóm (mỗi nhóm 2 người). Nếu nhóm đầu đã Focus/Taunt ở vòng này thì sẽ không chạy vào Zone mà để lại cho 1 player của nhóm hai, đến vòng tiếp theo thì đổi ngược lại nhiệm vụ, lập lại đến khi Malgor bị diệt.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-31",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Speaker",
+        "value": "3 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Sau đây là giải thích để bạn có thể hiểu được bảng luân phiên Focus/Taunt và chạy Zone đó đang biểu thị cái gì. Có 3 cơ chế bạn cần chú ý (cột Malgor Skill):",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-35",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Speaker",
+        "value": "2s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Ngay khi bạn thấy thông báo “Truth” hoặc “Listen” + đến lượt bạn Focus/Taunt được ghi (tên class) ở cột Focus/Taunt thì sử dụng Scroll of Enrage, nhưng bạn chỉ có 2s để làm điều.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-36",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "1 ",
+        "group": "Phòng thủ & quy tắc",
+        "explanation": "“Equal ZONE”: Ứng với Power Split → Equalize, đây là cơ chế chạy Zone của Malgor và trong dòng thông báo có chữ “Equal”. Khác với Dage the Dark Lord và Nightmare Carnax, bạn cần phải chạy vào Zone để xoá đi hiệu ứng bất lợi làm giảm All Out và tăng All In. Nhưng vì giới hạn từ cơ chế tăng sát thương dựa theo số player trong Zone nên chỉ có thể có 1 players trong Zone, tránh vào nhiều players nếu không sẽ ăn sát thương lớn mà bị diệt cả team.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-37",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "3s",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Ngay khi bạn thấy Zone xuất hiện + đến lượt bạn vào Zone được ghi (tên class) ở cột Zone thì đứng ở trong Zone, còn nếu bạn chưa đến lượt thì phải rời Zone ngay, nhưng bạn chỉ có 3s rời Zone.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-38",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "4 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Mỗi vòng lặp sẽ ứng với 4 Zone, và bạn chỉ cần chạy vào Zone duy nhất một lần trong mỗi vòng lặp. Lặp lại tương tự với các Zone sau đến khi Boss chết.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-41",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Speaker",
+        "value": "4  · 1 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Có một tips giúp bạn dễ dàng xác định được Zone đó mình có cần dùng SoE hay không (chỉ áp dụng với team 4 người Focus/Taunt), đó là nhìn vào Zone đó xem ai là người phải vào Zone. Nếu là người chung nhóm với mình hoặc chính mình thì chuẩn bị tinh thần mà Focus/Taunt (ở bảng trên thì AP và VHL chung 1 nhóm, còn LR và LoO sẽ là nhóm còn lại).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-42",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "1",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Ví dụ 1, nếu bạn đang cầm AP thì:",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-44",
+        "label": "Quy tắc mục tiêu",
+        "subject": "Ultra Speaker",
+        "value": "2  · 2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Sau Zone của bạn, thì cần chú ý để thực hiện Focus/Taunt đúng. Vì “Listen” và “Truth” mà bạn cần Focus/Taunt diễn ra liên tục nhau, nên phải canh chuẩn thông báo “Listen” thì ngay lặp tức dùng SoE để chỉ tốn duy nhất một SoE mà có thể Focus/Taunt cả 2 cơ chế này (nếu không thì cũng chả đủ thời gian CD cho lần thứ 2 đâu).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-45",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "3 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Còn với 3 Zone còn lại của vòng lặp này thì AP cần phải rời khỏi Zone ngay lặp tức khi thấy nó xuất hiện. Sau khi kết thúc Zone cuối cùng của LR trong vòng lặp này, thì chuẩn bị bắt đầu lại vòng lặp từ đầu, tức là đến lượt AP vào Zone trở lại ngay Zone đầu tiên của vòng lặp mới này.",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-47",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "2",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Ví dụ 2, nếu bạn đang cầm LoO thì:",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-48",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "Ngay giai đoạn mở đầu, khi thấy thông báo “Listen” thì dùng SoE ngay, tiếp theo đó cần nhanh chóng thực hiện chạy ra 2 vùng rìa (nhận phím Space kết hợp click ra vùng ngoài Zone).",
+        "source": "community-guide"
+      },
+      {
+        "key": "source-49",
+        "label": "Thông số / hiệu ứng",
+        "subject": "Ultra Speaker",
+        "value": "2 ",
+        "group": "Tấn công & hiệu ứng",
+        "explanation": "LoO được phân chạy vào Zone thứ 2 của vòng lặp, tức bạn sẽ đến lượt vào ngay sau Zone của AP. Các Zone còn lại thì thực hiện tương tự như AP, cần phải rời khỏi Zone ngay lặp tức khi thấy nó xuất hiện.",
+        "source": "community-guide"
+      },
+      {
+        "key": "wiki-13",
+        "label": "Sát thương",
+        "value": "804 - 982",
+        "subject": "Shadowflame Slash",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-17",
+        "label": "Chu kỳ",
+        "value": "2 giây",
+        "subject": "Shadowflame Slash",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-21",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Shadowflame Slash",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-23",
+        "label": "Loại sát thương",
+        "value": "Physical",
+        "subject": "Shadowflame Slash",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-37",
+        "label": "Chu kỳ",
+        "value": "7 giây",
+        "subject": "Magia Draw ➞ Magia Burn",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-43",
+        "label": "Loại sát thương",
+        "value": "Charge",
+        "subject": "Magia Draw ➞ Magia Burn",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-49",
+        "label": "Sát thương",
+        "value": "1,447 - 1,768",
+        "subject": "Magia Draw ➞ Magia Burn",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-57",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Magia Draw ➞ Magia Burn",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-59",
+        "label": "Loại sát thương",
+        "value": "Magic Damage",
+        "subject": "Magia Draw ➞ Magia Burn",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-70",
+        "label": "Chu kỳ",
+        "value": "12 giây",
+        "subject": "Energy Draw ➞ Stasis Field",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-76",
+        "label": "Loại sát thương",
+        "value": "Charge / Aura",
+        "subject": "Energy Draw ➞ Stasis Field",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-90",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Energy Draw ➞ Stasis Field",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-92",
+        "label": "Loại sát thương",
+        "value": "Status",
+        "subject": "Energy Draw ➞ Stasis Field",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-104",
+        "label": "Chu kỳ",
+        "value": "16 giây",
+        "subject": "Power Split ➞ Equalize",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-110",
+        "label": "Loại sát thương",
+        "value": "Charge / Aura",
+        "subject": "Power Split ➞ Equalize",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-118",
+        "label": "Sát thương",
+        "value": "2,411 - 2,946",
+        "subject": "Power Split ➞ Equalize",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-126",
+        "label": "Số mục tiêu",
+        "value": "4",
+        "subject": "Power Split ➞ Equalize",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      },
+      {
+        "key": "wiki-128",
+        "label": "Loại sát thương",
+        "value": "True Damage",
+        "subject": "Power Split ➞ Equalize",
+        "group": "Wiki — thông số đối chiếu",
+        "explanation": "Thông số từ trang Monster Wiki hiện đọc được; không suy diễn trường placeholder chưa có dữ liệu.",
+        "source": "https://aqwwiki.wikidot.com/the-first-speaker"
+      }
+    ],
+    "reference": [
+      {
+        "id": "h.m16hexl8mox4",
+        "title": "Cơ chế",
+        "paragraphs": [],
+        "blocks": [
+          {
+            "type": "paragraph",
+            "id": "p-183670",
+            "runs": [
+              { "text": "◆ Total HP: 10,000,000" },
+              { "text": "\n", "italic": true }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-183693",
+            "runs": [
+              { "text": "◆ Shield giúp giảm sát thương trên 150k " },
+              { "text": "(hệ số 0.1)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-183746",
+            "runs": [
+              {
+                "text": "◆ Với mỗi player bị giết chết, The First Speaker sẽ giảm 30% All In, stack vô hạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-183829",
+            "runs": [{ "text": "◆ Miễn nhiễm với Stun.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-183852",
+            "runs": [
+              {
+                "text": "◆ Base có 50% Dodge, -50% DoT In, -50% All In và 500% Hit Chance.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-183918",
+            "runs": [
+              {
+                "text": "◆ Auto-Attack mỗi 2s gây Phys DMG từ 804 đến 982, không thể né nhưng lại không thể bạo kích.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184011",
+            "runs": [{ "text": "→ Bỏ qua Focus/Taunt.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184033",
+            "runs": [
+              {
+                "text": "→ Players bị giảm 7% All Out và tăng 7% All In trong 20s, stack vô hạn "
+              },
+              { "text": "(Corruption và Somber)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184128",
+            "runs": [{ "text": "→ Players bị giảm 40% INT trong 60s.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184165",
+            "runs": [
+              {
+                "text": "◆ Mỗi 7s, sẽ sử dụng Magia Draw để charge trong 2s sau đó kích hoạt Magia Burn gây Magi DMG từ 1.4k đến 1.7k, không thể né và luôn bạo kích.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184306",
+            "runs": [
+              {
+                "text": "→ Players bị tăng 300% Magi In trong 16s, stack vô hạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184362",
+            "runs": [
+              {
+                "text": "◆ Mỗi 12s, sử dụng Energy Draw để charge trong 2s sau đó kích hoạt Stasis Field.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184443",
+            "runs": [{ "text": "→ Players bị Stun trong 6s.\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184471",
+            "runs": [
+              { "text": "→ Dùng Focus/Taunt để tránh toàn bộ team bị Stun.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184521",
+            "runs": [
+              {
+                "text": "◆ Mỗi 16s, sử dụng Power Split để charge trong 3s đồng thời kích hoạt thêm hiệu ứng.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184606",
+            "runs": [
+              {
+                "text": "→ Malgor nhận 300% All Out, 25% Dodge và -100% DoT In, -75% All In trong 24s.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184684",
+            "runs": [
+              {
+                "text": "→ Malgor hồi lượng lớn HP sau 2s, nên dùng class có Decay như LR, LDK.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184755",
+            "runs": [
+              {
+                "text": "◆ Kích hoạt Equalize ngay sau khi hết Power Split, gây True DMG từ 2.4k đến 2.9k.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184837",
+            "runs": [
+              {
+                "text": "→ Tăng ×2 sát thương với player tiếp theo trúng đòn "
+              },
+              {
+                "text": "(ví dụ: có 2 players dính đòn đánh này thì player đầu tiên dính 100% và thứ 2 dính 200%)",
+                "italic": true
+              },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-184979",
+            "runs": [
+              {
+                "text": "→ Players nhận Sanctity trong 45s, xoá bỏ tất cả stack của Corruption và Somber đang có "
+              },
+              { "text": "(hiệu ứng stack của Auto Attack)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-185101",
+            "runs": [
+              {
+                "text": "→ Nếu players đang dính hiệu ứng của Magia Burn, Stasis Field và Sanctity thì ngay lặp tức bị dính DoT chết chóc vì vậy cần phải di chuyển ra ngoài vùng Glowing Zone ngay.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-185273",
+            "runs": [
+              { "text": "→ Sử dụng " },
+              {
+                "text": "chức năng dash",
+                "href": "/he-thong/acronyms-thuat-ngu-hay-dung"
+              },
+              { "text": " để chạy nhanh đến vị trí an toàn.\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-185333",
+            "runs": [{ "text": "Matrix of the First Speaker\n", "bold": true }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-185361",
+            "runs": [
+              {
+                "text": "Giải thích chi tiết cách Focus/Taunt và chạy Zone",
+                "bold": true
+              },
+              { "text": "\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-185411",
+            "runs": [
+              {
+                "text": "Với Ultra Malgor - The First Speaker, AE đã nâng cấp cơ chế Focus/Taunt và cách chạy Zone lên một tầm cao mới. Đây là 2 thứ quan trọng nhất để có thể chống lại các cơ chế của Ultra này và giành chiến thắng.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-185619",
+            "runs": [
+              { "text": "Về việc " },
+              {
+                "text": "tại sao phải thực hiện Focus/Taunt và chạy vào Zone",
+                "bold": true
+              },
+              {
+                "text": " một cách luân phiên và có thứ tự là do cơ chế của con Malgor này.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-185745",
+            "runs": [
+              { "text": "→ " },
+              { "text": "Mục đích của Focus/Taunt", "bold": true },
+              { "text": " tập trung vào 2 cơ chế chính" },
+              { "text": " là " },
+              { "text": "“Listen”", "bold": true },
+              { "text": " " },
+              { "text": "(Stasis Field)", "italic": true },
+              { "text": " và " },
+              { "text": "“Truth”", "bold": true },
+              { "text": " " },
+              { "text": "(Magia Burn)", "italic": true },
+              {
+                "text": " để đảm bảo 2 cơ chế này không bị kích hoạt lên tất cả players.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-185915",
+            "runs": [
+              { "text": "→ Vì “Listen” gây bất động " },
+              { "text": "(Stun)", "italic": true },
+              {
+                "text": " trong 6s. Còn “Truth” gây sát thương phép, nhưng nếu bị dính 2 lần tiên tiếp thì sẽ ăn ×4 sát thương tức nếu ăn 2 lần liên tiếp thì chết ngay lặp tức. Đồng thời nếu trên bạn có 2 hiệu ứng của “Listen” và “Truth” mà chạy vào Zone thì sẽ ngay lặp tức ăn Death DoT mà chết.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-186220",
+            "runs": [
+              { "text": "→ " },
+              { "text": "Còn chạy Zone", "bold": true },
+              {
+                "text": " nhằm mục đích để tẩy đi các debuff All Out và All In của Malgor, nếu bạn không chạy vào Zone thì khi đến quá ngưỡng chịu đựng của class bạn dùng thì sẽ chết ngay lặp tức.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-186407",
+            "runs": [
+              {
+                "text": "→ Nhưng bạn cũng không thể chạy vào Zone 2 lần liên tiếp nhau vì cũng sẽ bị ăn Death DoT vào lần thứ 2, cũng như không thể vào Zone cùng lúc 2 người nếu không người thứ 2 sẽ ăn x2 sát thương và chết ngay lặp tức.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-186620",
+            "runs": [
+              { "text": "→ " },
+              { "text": "Kết luận:", "bold": true },
+              {
+                "text": " Với Malgor này sẽ được chia thành nhiều vòng, mỗi vòng kết thúc bằng Zone. Và 4 players chia thành 2 nhóm "
+              },
+              { "text": "(mỗi nhóm 2 người)", "italic": true },
+              {
+                "text": ". Nếu nhóm đầu đã Focus/Taunt ở vòng này thì sẽ không chạy vào Zone mà để lại cho 1 player của nhóm hai, đến vòng tiếp theo thì đổi ngược lại nhiệm vụ, lập lại đến khi Malgor bị diệt."
+              },
+              { "text": "\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-186941",
+            "runs": [
+              { "text": "Sau đây là " },
+              { "text": "giải thích", "bold": true },
+              { "text": " để bạn có " },
+              { "text": "thể hiểu được " },
+              {
+                "text": "bảng luân phiên Focus/Taunt và chạy Zone",
+                "bold": true
+              },
+              { "text": " đó đang biểu thị cái gì. " },
+              {
+                "text": "Có 3 cơ chế bạn cần chú ý (cột Malgor Skill): \n",
+                "bold": true,
+                "italic": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-187100",
+            "runs": [
+              {
+                "text": "→ Bạn cần phải tập trung và chú ý phần giữa trên màn hình để thấy các dòng thông báo màu vàng để có thể nhận ra được Malgor đang kích hoạt cơ chế nào "
+              },
+              { "text": "(đặc biệt là Truth và Listen)", "italic": true },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-187281",
+            "runs": [
+              { "text": "→ " },
+              { "text": "“Truth NUKE”:", "bold": true, "italic": true },
+              { "text": " Ứng với " },
+              {
+                "text": "Magia Draw → Magia Burn, đây là cơ chế Nuke của Malgor và chữ cuối trong dòng thông báo là chữ “Truth”.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-187411",
+            "runs": [
+              { "text": "→ " },
+              { "text": "“Listen STUN”:", "bold": true, "italic": true },
+              {
+                "text": " Ứng với Energy Draw → Stasis Field, đây là cơ chế Stun của Malgor và chữ cuối trong dòng thông báo là chữ “Listen”.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-187546",
+            "runs": [
+              {
+                "text": "→ Ngay khi bạn thấy thông báo “Truth” hoặc “Listen” + đến lượt bạn Focus/Taunt được ghi "
+              },
+              { "text": "(tên class)", "italic": true },
+              {
+                "text": " ở cột Focus/Taunt thì sử dụng Scroll of Enrage, nhưng bạn chỉ có 2s để làm điều.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-187727",
+            "runs": [
+              { "text": "→ " },
+              { "text": "“Equal ZONE”:", "bold": true, "italic": true },
+              {
+                "text": " Ứng với Power Split → Equalize, đây là cơ chế chạy Zone của Malgor và trong dòng thông báo có chữ “Equal”. Khác với Dage the Dark Lord và Nightmare Carnax, bạn cần phải chạy vào Zone để xoá đi hiệu ứng bất lợi làm giảm All Out và tăng All In. Nhưng vì giới hạn từ cơ chế tăng sát thương dựa theo số player trong Zone nên chỉ có thể có 1 players trong Zone, tránh vào nhiều players nếu không sẽ ăn sát thương lớn mà bị diệt cả team.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-188175",
+            "runs": [
+              {
+                "text": "→ Ngay khi bạn thấy Zone xuất hiện + đến lượt bạn vào Zone được ghi "
+              },
+              { "text": "(tên class)", "italic": true },
+              {
+                "text": " ở cột Zone thì đứng ở trong Zone, còn nếu bạn chưa đến lượt thì phải rời Zone ngay, nhưng bạn chỉ có 3s rời Zone.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-188371",
+            "runs": [
+              {
+                "text": "→ Mỗi vòng lặp sẽ ứng với 4 Zone, và bạn chỉ cần chạy vào Zone duy nhất một lần trong mỗi vòng lặp. Lặp lại tương tự với các Zone sau đến khi Boss chết.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-188525",
+            "runs": [
+              {
+                "text": "Nếu như vẫn chưa hiểu, thì hãy áp dụng vào bảng phân của "
+              },
+              { "text": "Team VHL, LR, AP và LoO", "bold": true },
+              {
+                "text": " bên dưới. Bạn cần xác định bạn đang cầm class nào, cũng như các người trong Team bạn. Để đến khi đến lượt mình "
+              },
+              { "text": "(theo thứ tự bảng dưới)", "italic": true },
+              {
+                "text": " nếu ở cột Taunt thì dùng SoE còn nếu ở cột Zone thì chạy vào Zone.\n"
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "id": "table-188808",
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "colSpan": 2,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188811",
+                        "runs": [{ "text": "GĐ\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188817",
+                        "runs": [{ "text": "Malgor Skill\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188831",
+                        "runs": [{ "text": "TAUNT\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188838",
+                        "runs": [{ "text": "ZONE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188844",
+                        "runs": [{ "text": "Note\n", "bold": true }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              { "cells": [{ "colSpan": 6, "rowSpan": 1, "blocks": [] }] },
+              {
+                "cells": [
+                  {
+                    "colSpan": 2,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188864",
+                        "runs": [{ "text": "Mở đầu\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188874",
+                        "runs": [{ "text": "Truth NUKE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188886",
+                        "runs": [{ "text": "LR\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188892",
+                        "runs": [
+                          { "text": "Duy nhất lúc mở đầu\n", "italic": true }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "id": "p-188912",
+                        "runs": [
+                          {
+                            "text": "Ngay sau Taunt, LoO lập tức rời khu vực Zone\n",
+                            "italic": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188963",
+                        "runs": [{ "text": "Listen STUN\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-188976",
+                        "runs": [
+                          { "text": "LoO", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              { "cells": [{ "colSpan": 6, "rowSpan": 1, "blocks": [] }] },
+              {
+                "cells": [
+                  { "colSpan": 1, "rowSpan": 19, "blocks": [] },
+                  { "colSpan": 1, "rowSpan": 9, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189005",
+                        "runs": [{ "text": "Equal ZONE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189019",
+                        "runs": [
+                          { "text": "AP", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189030",
+                        "runs": [{ "text": "Truth NUKE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189042",
+                        "runs": [{ "text": "VHL\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189049",
+                        "runs": [
+                          { "text": "Ngay sau kết thúc Zone\n", "italic": true }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189078",
+                        "runs": [{ "text": "Listen STUN\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189091",
+                        "runs": [
+                          { "text": "AP", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189097",
+                        "runs": [
+                          { "text": "Kích hoạt liên tục\n", "italic": true }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189122",
+                        "runs": [{ "text": "Truth NUKE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189145",
+                        "runs": [{ "text": "Equal ZONE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189159",
+                        "runs": [
+                          { "text": "LoO", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189171",
+                        "runs": [{ "text": "Listen STUN\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189184",
+                        "runs": [
+                          { "text": "LR", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189190",
+                        "runs": [
+                          { "text": "Ngay sau kết thúc Zone\n", "italic": true }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "id": "p-189213",
+                        "runs": [
+                          { "text": "Kích hoạt liên tục\n", "italic": true }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189238",
+                        "runs": [{ "text": "Truth NUKE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189261",
+                        "runs": [{ "text": "Truth NUKE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189273",
+                        "runs": [
+                          { "text": "LoO", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189280",
+                        "runs": [
+                          { "text": "Kích hoạt liên tục\n", "italic": true }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "id": "p-189299",
+                        "runs": [
+                          {
+                            "text": "Ngay sau Taunt, lập tức rời khu vực Zone\n",
+                            "italic": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189346",
+                        "runs": [{ "text": "Listen STUN\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              { "cells": [{ "colSpan": 5, "rowSpan": 1, "blocks": [] }] },
+              {
+                "cells": [
+                  { "colSpan": 1, "rowSpan": 9, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189384",
+                        "runs": [{ "text": "Equal ZONE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189398",
+                        "runs": [
+                          { "text": "VHL", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189410",
+                        "runs": [{ "text": "Truth NUKE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189422",
+                        "runs": [
+                          { "text": "VHL", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189429",
+                        "runs": [
+                          { "text": "Ngay sau kết thúc Zone\n", "italic": true }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189458",
+                        "runs": [{ "text": "Listen STUN\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189471",
+                        "runs": [
+                          { "text": "AP", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189477",
+                        "runs": [
+                          { "text": "Kích hoạt liên tục\n", "italic": true }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189502",
+                        "runs": [{ "text": "Truth NUKE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189525",
+                        "runs": [{ "text": "Equal ZONE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189539",
+                        "runs": [
+                          { "text": "LR", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189550",
+                        "runs": [{ "text": "Listen STUN\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189563",
+                        "runs": [
+                          { "text": "LR", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189569",
+                        "runs": [
+                          { "text": "Ngay sau kết thúc Zone\n", "italic": true }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "id": "p-189592",
+                        "runs": [
+                          { "text": "Kích hoạt liên tục\n", "italic": true }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189617",
+                        "runs": [{ "text": "Truth NUKE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189640",
+                        "runs": [{ "text": "Truth NUKE\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189652",
+                        "runs": [
+                          { "text": "LoO", "bold": true },
+                          { "text": "\n", "bold": true }
+                        ]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] },
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 2,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189659",
+                        "runs": [
+                          { "text": "Kích hoạt liên tục\n", "italic": true }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "id": "p-189678",
+                        "runs": [
+                          {
+                            "text": "Ngay sau Taunt, lập tức rời khu vực Zone\n",
+                            "italic": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "id": "p-189725",
+                        "runs": [{ "text": "Listen STUN\n", "bold": true }]
+                      }
+                    ]
+                  },
+                  { "colSpan": 1, "rowSpan": 1, "blocks": [] }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-189745",
+            "runs": [
+              {
+                "text": "→ Phần mở đầu chỉ thực hiện duy nhất một lần vào giai đoạn đầu trận đánh, còn lại toàn bộ quá trình thì sẽ thực hiện vòng lặp đến khi con Boss chết.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-189894",
+            "runs": [
+              {
+                "text": "→ Có một tips giúp bạn dễ dàng xác định được Zone đó mình có cần dùng SoE hay không "
+              },
+              {
+                "text": "(chỉ áp dụng với team 4 người Focus/Taunt)",
+                "italic": true
+              },
+              {
+                "text": ", đó là nhìn vào Zone đó xem ai là người phải vào Zone. Nếu là người chung nhóm với mình hoặc chính mình thì chuẩn bị tinh thần mà Focus/Taunt "
+              },
+              {
+                "text": "(ở bảng trên thì AP và VHL chung 1 nhóm, còn LR và LoO sẽ là nhóm còn lại)",
+                "italic": true
+              },
+              { "text": "." },
+              { "text": "\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-190239",
+            "runs": [{ "text": "→ Ví dụ 1, nếu bạn đang cầm AP thì:\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-190275",
+            "listDepth": 0,
+            "runs": [
+              {
+                "text": "Sau giai đoạn mở đầu, lúc này Zone đầu tiên hiện ra, thì theo bảng bạn là người vào Zone đầu tiên.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-190374",
+            "listDepth": 0,
+            "runs": [
+              {
+                "text": "Sau Zone của bạn, thì cần chú ý để thực hiện Focus/Taunt đúng. Vì “Listen” và “Truth” mà bạn cần Focus/Taunt diễn ra liên tục nhau, nên phải canh chuẩn thông báo “Listen” thì ngay lặp tức dùng SoE để chỉ tốn duy nhất một SoE mà có thể Focus/Taunt cả 2 cơ chế này "
+              },
+              {
+                "text": "(nếu không thì cũng chả đủ thời gian CD cho lần thứ 2 đâu)",
+                "italic": true
+              },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-190697",
+            "listDepth": 0,
+            "runs": [
+              {
+                "text": "Còn với 3 Zone còn lại của vòng lặp này thì AP cần phải rời khỏi Zone ngay lặp tức khi thấy nó xuất hiện. Sau khi kết thúc Zone cuối cùng của LR trong vòng lặp này, thì chuẩn bị bắt đầu lại vòng lặp từ đầu, tức là đến lượt AP vào Zone trở lại ngay Zone đầu tiên của vòng lặp mới này.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-190981",
+            "listDepth": 0,
+            "runs": [
+              {
+                "text": "Tuy nhiên bạn cũng cần để ý Zone của VHL, khi thấy VHL vào Zone thì bạn cũng cần chuẩn bị tinh thần để thực hiện Focus/Taunt, cách thực hiện tương tự như bạn làm ở Zone của bạn.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-191159",
+            "runs": [{ "text": "→ Ví dụ 2, nếu bạn đang cầm LoO thì:\n" }]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-191196",
+            "listDepth": 0,
+            "runs": [
+              {
+                "text": "Ngay giai đoạn mở đầu, khi thấy thông báo “Listen” thì dùng SoE ngay, tiếp theo đó cần nhanh chóng thực hiện chạy ra 2 vùng rìa "
+              },
+              {
+                "text": "(nhận phím Space kết hợp click ra vùng ngoài Zone)",
+                "italic": true
+              },
+              { "text": ".\n" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-191376",
+            "listDepth": 0,
+            "runs": [
+              {
+                "text": "LoO được phân chạy vào Zone thứ 2 của vòng lặp, tức bạn sẽ đến lượt vào ngay sau Zone của AP. Các Zone còn lại thì thực hiện tương tự như AP, cần phải rời khỏi Zone ngay lặp tức khi thấy nó xuất hiện.\n"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "p-191577",
+            "listDepth": 0,
+            "runs": [
+              {
+                "text": "Còn về Focus/Taunt, bạn sẽ thực hiện vào sau Zone của chính mình ("
+              },
+              { "text": "LoO)", "italic": true },
+              {
+                "text": " và LR. Cách canh cũng rất đơn giản, ngay sau Zone, con Boss sẽ ngay lặp tức kích hoạt “Listen” và “Truth” liên tục nhau, sau đó là khoảng nghỉ khá dài, đây là lúc bạn cần tập trung cao độ để đến khi thấy thông báo “Truth” thì sử dụng SoE ngay rồi nhanh chóng rồi khỏi khu vực sẽ xuất hiện Zone, tránh bị Stun trong Zone.\n"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "id": "0",
+        "icon": "taunt",
+        "label": "Listen / Truth",
+        "text": "Đọc thông báo và theo lịch Taunt của đội.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/malgor-the-first-speaker"
+      },
+      {
+        "id": "1",
+        "icon": "zone",
+        "label": "Zone",
+        "text": "Chỉ người đến lượt đi vào Zone.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/malgor-the-first-speaker"
+      },
+      {
+        "id": "2",
+        "icon": "warning",
+        "label": "Death DoT",
+        "text": "Tránh mang tổ hợp hiệu ứng nguy hiểm vào Glowing Zone.",
+        "severity": "normal",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/malgor-the-first-speaker"
+      }
+    ],
+    "nameVerification": {
+      "source": "https://aqwwiki.wikidot.com/the-first-speaker",
+      "skillNames": [
+        "Shadowflame Slash",
+        "Magia Draw ➞ Magia Burn",
+        "Magia Draw",
+        "Magia Burn",
+        "Energy Draw ➞ Stasis Field",
+        "Energy Draw",
+        "Stasis Field",
+        "Power Split ➞ Equalize",
+        "Power Split",
+        "Equalize"
+      ],
+      "checkedAt": "2026-11-07"
+    }
+  }
+}

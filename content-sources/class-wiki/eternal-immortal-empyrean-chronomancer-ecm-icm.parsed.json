@@ -1,0 +1,146 @@
+{
+  "url": "https://aqwwiki.wikidot.com/eternal-chronomancer-class",
+  "sourceHash": "0f65598027693b2ece4f1823041799552104d368c0ff4cb5ec8e8b6946aeed0f",
+  "entries": [
+    {
+      "officialName": "Time Strike",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Deals damage based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ECM1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/eternal-chronomancer-class",
+      "sourceHash": "0f65598027693b2ece4f1823041799552104d368c0ff4cb5ec8e8b6946aeed0f",
+      "evidence": "Time Strike Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Deals damage based on your weapon damage."
+    },
+    {
+      "officialName": "Eternal Deadlock",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Strike your opponent with the unavoidable ebb of time, damaging them and reducing their Dodge by 25% for 5 seconds, and gaining a stack of Deadlock. Upon 8 stacks of Deadlock, consume them and Enter Infinity, increasing your Crit Chance by 20% for 3 seconds.",
+      "notes": [
+        "Applies Infinite Hit to the target, reducing Dodge Chance by 25% for 5 seconds.",
+        "Applies Deadlock to the player, which stacks to 8 and lasts 10 seconds.",
+        "When used at 8 stacks of Deadlock, consumes 7 and applies Enter Infinity.",
+        "Deals 60% weapon damage."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ECM2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/eternal-chronomancer-class",
+      "sourceHash": "0f65598027693b2ece4f1823041799552104d368c0ff4cb5ec8e8b6946aeed0f",
+      "evidence": "Eternal Deadlock Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 4 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Strike your opponent with the unavoidable ebb of time, damaging them and reducing their Dodge by 25% for 5 seconds, and gaining a stack of Deadlock. Upon 8 stacks of Deadlock, consume them and Enter Infinity, increasing your Crit Chance by 20% for 3 seconds. Notes: Applies Infinite Hit to the target, reducing Dodge Chance by 25% for 5 seconds. Applies Deadlock to the player, which stacks to 8 and lasts 10 seconds. When used at 8 stacks of Deadlock, consumes 7 and applies Enter Infinity. Deals 60% weapon damage."
+    },
+    {
+      "officialName": "The Fourth Dimension",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Strike your oponent with the unavoid flow of time, damaging them and gaining a stack of Temporal Rift and Deadlock. Upon 8 stacks of Deadlock, consume them and enter The Fourth Dimension, increasing physical damage dealt by 20% for 3 seconds.",
+      "notes": [
+        "Applies Temporal Rift, which stacks to 4 and lasts 10 seconds.",
+        "Applies Deadlock to the player, which stacks to 8 and lasts 10 seconds.",
+        "When used at 8 stacks of Deadlock, consumes 7 and applies The Fourth Dimension.",
+        "Deals 60% weapon damage."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ECM3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/eternal-chronomancer-class",
+      "sourceHash": "0f65598027693b2ece4f1823041799552104d368c0ff4cb5ec8e8b6946aeed0f",
+      "evidence": "The Fourth Dimension Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 4 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Strike your oponent with the unavoid flow of time, damaging them and gaining a stack of Temporal Rift and Deadlock. Upon 8 stacks of Deadlock, consume them and enter The Fourth Dimension, increasing physical damage dealt by 20% for 3 seconds. Notes: Applies Temporal Rift, which stacks to 4 and lasts 10 seconds. Applies Deadlock to the player, which stacks to 8 and lasts 10 seconds. When used at 8 stacks of Deadlock, consumes 7 and applies The Fourth Dimension. Deals 60% weapon damage."
+    },
+    {
+      "officialName": "Speed Abrasion",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "35",
+      "cooldown": "16",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "If Temporal Rift is present, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ECM4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/eternal-chronomancer-class",
+      "sourceHash": "0f65598027693b2ece4f1823041799552104d368c0ff4cb5ec8e8b6946aeed0f",
+      "evidence": "Speed Abrasion Rank Needed: 3 Mana Cost: 35 Mana Cooldown: 16 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: If Temporal Rift is present, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks. Note: Deals 150% weapon damage."
+    },
+    {
+      "officialName": "Speed of Time",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit chance increased by 25%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/eternal-chronomancer-class",
+      "sourceHash": "0f65598027693b2ece4f1823041799552104d368c0ff4cb5ec8e8b6946aeed0f",
+      "evidence": "Speed of Time Rank Needed: 4 Type: Passive Ability Description: Hit chance increased by 25%"
+    },
+    {
+      "officialName": "Time of Speed",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/eternal-chronomancer-class",
+      "sourceHash": "0f65598027693b2ece4f1823041799552104d368c0ff4cb5ec8e8b6946aeed0f",
+      "evidence": "Time of Speed Rank Needed: 4 Type: Passive Ability Description: Haste increased by 15%"
+    },
+    {
+      "officialName": "Taking Eternity",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "An infinite range status skill that applies to 6 friendly targets.",
+      "officialDescription": "Shift the present timeline in your favor, gaining Taking Eternity, reducing your damage taken by 30%, and increasing your damage dealt and critical damage by 20% for 15 seconds. If Temporal Rift is present, you heal for 10 seconds based on the number of stacks you have.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ECM5.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/eternal-chronomancer-class",
+      "sourceHash": "0f65598027693b2ece4f1823041799552104d368c0ff4cb5ec8e8b6946aeed0f",
+      "evidence": "Taking Eternity Rank Needed: 5 Mana Cost: 10 Mana Cooldown: 4 Seconds Type: Physical Range: An infinite range status skill that applies to 6 friendly targets. Description: Shift the present timeline in your favor, gaining Taking Eternity, reducing your damage taken by 30%, and increasing your damage dealt and critical damage by 20% for 15 seconds. If Temporal Rift is present, you heal for 10 seconds based on the number of stacks you have."
+    },
+    {
+      "officialName": "Chronoternity",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Critical strike chance increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/eternal-chronomancer-class",
+      "sourceHash": "0f65598027693b2ece4f1823041799552104d368c0ff4cb5ec8e8b6946aeed0f",
+      "evidence": "Chronoternity Rank Needed: 10 Type: Passive Ability Description: Critical strike chance increased by 15%."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/K3B1kpT.png",
+  "sameSkillVariants": [
+    {
+      "name": "Empyrean Chronomancer",
+      "url": "https://aqwwiki.wikidot.com/empyrean-chronomancer"
+    },
+    {
+      "name": "Immortal Chronomancer (Class) (AC)",
+      "url": "https://aqwwiki.wikidot.com/immortal-chronomancer-class-ac"
+    },
+    {
+      "name": "Immortal Chronomancer (Class) (Special)",
+      "url": "https://aqwwiki.wikidot.com/immortal-chronomancer-class-special"
+    }
+  ],
+  "location": "Location: 2018 Calendar - Book of Lore\nPrice: 0 AC"
+}

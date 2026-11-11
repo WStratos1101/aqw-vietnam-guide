@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Warrior",
+    "classId": "warrior-beast-warrior-pumpkin-lord-warlord",
+    "slug": "warrior-beast-warrior-pumpkin-lord-warlord",
+    "role": [
+      "DPS"
+    ],
+    "summary": "Cận chiến, sử dụng đòn đánh vật lý.",
+    "enhancement": "Fighter",
+    "portrait": {
+      "imagePath": "/images/aqw/class-art/350c5b824d3cd19417ce5935.png",
+      "width": 333,
+      "height": 563,
+      "sha256": "350c5b824d3cd19417ce5935e811d461d4bb19eb5f65028c3df610fcd5d86814",
+      "sourceUrl": "https://i.imgur.com/Ynr9fv6.png",
+      "verificationStatus": "verified",
+      "usageStatus": "approved_noncommercial",
+      "policyUrl": "https://www.artix.com/community/brand-and-assets-usage/",
+      "id": "warrior-beast-warrior-pumpkin-lord-warlord-warrior-class-male",
+      "classId": "warrior-beast-warrior-pumpkin-lord-warlord",
+      "variantName": "Warrior · Male",
+      "variantType": "class_skin",
+      "linkedClassId": "warrior-class",
+      "skillSetId": "warrior-beast-warrior-pumpkin-lord-warlord",
+      "iconSetId": "warrior-beast-warrior-pumpkin-lord-warlord",
+      "source": "https://aqwwiki.wikidot.com/warrior-class",
+      "sourceHash": "48c533a982c1b83484eb6cbe66b0a7f9727fd6351ba486cbb8e8161ae048012d",
+      "originalImageUrl": "https://i.imgur.com/Ynr9fv6.png",
+      "verificationMethod": "Explicit same-skills relation plus exact matching named skill set and canonical grouped profile identity; portrait-only preview does not substitute icons or gameplay"
+    },
+    "source": "https://aqwwiki.wikidot.com/warrior-class"
+  },
+  {
+    "name": "Mage",
+    "classId": "mage-sorcerer",
+    "slug": "mage-sorcerer",
+    "role": [
+      "DPS"
+    ],
+    "summary": "Tấn công phép và kiểm soát nhiều kẻ địch.",
+    "enhancement": "Wizard",
+    "portrait": {
+      "id": "class-mage-sorcerer",
+      "classId": "mage-sorcerer",
+      "name": "Mage - Sorcerer",
+      "imagePath": "/images/aqw/classes/e44816bd8cb3ccc06ebe0cd8.png",
+      "width": 341,
+      "height": 586,
+      "sha256": "e44816bd8cb3ccc06ebe0cd82c34c43e0dbd27089a46f012a9dc0ba39ab689c2",
+      "sourceUrl": "https://aqwwiki.wikidot.com/mage",
+      "originalImageUrl": "https://i.imgur.com/sLCvSbz.png",
+      "sourceHash": "fc84a0f3e2bf79baa00e926db02381a295971b33838851b61c1e0e5a84195a49",
+      "verificationStatus": "verified",
+      "verificationMethod": "Exact Class page Male/Female artwork tab; validated raster bytes/dimensions",
+      "usageStatus": "approved_noncommercial",
+      "policyUrl": "https://www.artix.com/community/brand-and-assets-usage/"
+    },
+    "source": "https://aqwwiki.wikidot.com/mage"
+  },
+  {
+    "name": "Healer",
+    "classId": "healer-acolyte-witch",
+    "slug": "healer-acolyte-witch",
+    "role": [
+      "Healer"
+    ],
+    "summary": "Hồi phục và hỗ trợ đồng đội.",
+    "enhancement": "Healer",
+    "portrait": {
+      "id": "class-healer-acolyte-witch",
+      "classId": "healer-acolyte-witch",
+      "name": "Healer - Acolyte - Witch",
+      "imagePath": "/images/aqw/classes/8b8ea1247d372ab67da9f8ba.png",
+      "width": 340,
+      "height": 606,
+      "sha256": "8b8ea1247d372ab67da9f8bad167163f6bf8cdd92d7905a4193eb9daa0d63cc3",
+      "sourceUrl": "https://aqwwiki.wikidot.com/healer",
+      "originalImageUrl": "https://imgur.com/nPd6t8W.png",
+      "sourceHash": "43bc5885ea5c624baa803526599e7129a6e7fea150260c448c2feb0451b11f1b",
+      "verificationStatus": "verified",
+      "verificationMethod": "Exact Class page Male/Female artwork tab; validated raster bytes/dimensions",
+      "usageStatus": "approved_noncommercial",
+      "policyUrl": "https://www.artix.com/community/brand-and-assets-usage/"
+    },
+    "source": "https://aqwwiki.wikidot.com/healer"
+  },
+  {
+    "name": "Rogue",
+    "classId": "rogue-renegade",
+    "slug": "rogue-renegade",
+    "role": [
+      "DPS"
+    ],
+    "summary": "Chiến đấu bằng Dodge và sát thương theo thời gian.",
+    "enhancement": "Thief",
+    "portrait": {
+      "id": "class-rogue-renegade",
+      "classId": "rogue-renegade",
+      "name": "Rogue - Renegade",
+      "imagePath": "/images/aqw/classes/f88690ed56560991dacdb2e8.png",
+      "width": 297,
+      "height": 533,
+      "sha256": "f88690ed56560991dacdb2e8e4b43077abb2278229244f7d796a3d5db0788756",
+      "sourceUrl": "https://aqwwiki.wikidot.com/rogue",
+      "originalImageUrl": "https://i.imgur.com/jMXLjzA.png",
+      "sourceHash": "68665200839c0f1863a750267c73e42c3a375847b4983ca9da7e0cb86fa7ee5a",
+      "verificationStatus": "verified",
+      "verificationMethod": "Exact Class page Male/Female artwork tab; validated raster bytes/dimensions",
+      "usageStatus": "approved_noncommercial",
+      "policyUrl": "https://www.artix.com/community/brand-and-assets-usage/"
+    },
+    "source": "https://aqwwiki.wikidot.com/rogue"
+  }
+]

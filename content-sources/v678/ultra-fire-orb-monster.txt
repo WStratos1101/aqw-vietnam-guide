@@ -1,0 +1,119 @@
+>
+Location:
+Ultra Avatar Tyndarius (Location)
+Level:
+75
+Difficulty:
+5 stars
+Total HP:
+700,000
+AI:
+Aggressive on entering Screen 2.
+Attacks:
++ Auto Attack
+- Auto Attack
+Auto Attack
+Damage
+605 - 741
+Animations
+Explosion, Fireball
+Cooldown
+2.25 seconds
+Message
+{$message}
+AoE
+1
+Type
+Physical
+Notes
+{$notes}
++ Charge Attack
+- Charge Attack
+Charge Attack
+Damage
+363 - 444
+Animations
+Charge Attack, Melt Down
+Cooldown
+20 seconds
+Message
+{$message}
+AoE
+4
+Type
+True Damage
+Notes
+The Charge time for this skill is 3 seconds.
+Applies Vulnerable to the players upon hit, increasing All In by 50% for 10 seconds
+Applies Melting Armor to itself when it begins the charge, increasing All In by 200% for 10 seconds
+Plays message “Ultra Fire Orb’s armor softens as it charges up for an attack!”
++ Melting
+- Melting
+Melting
+Damage
+605 - 741
+Animations
+Melting
+Cooldown
+5 seconds
+Message
+{$message}
+AoE
+4
+Type
+Magical
+Notes
+Applies Melting to the players, increasing All In and decreasing Dodge by 25% per stack, lasting 25 seconds, stacks indefinitely.
++ Absorbing
+- Absorbing
+Absorbing
+Damage
+{$damage}
+Animations
+Absorb
+Cooldown
+10 seconds
+Message
+{$message}
+AoE
+4
+Type
+Status
+Notes
+Applies one stack of Absorbing Power and Rising Defence to itself per player in combat. Absorbing Power increases All Out by 50% per stack, lasts 30 seconds, stacks indefinitely. Rising Defence decreases All In by 25% per stack, lasts 30 seconds, stacks indefinitely.
+Abilities:
+All attacks from Ultra Fire Orb cannot crit but cannot be avoided.
+Boss Shield:
+Damage over 150,000 dealt to Ultra Fire Orb is reduced by raising the difference to the exponent 0.5 (but is never reduced below 150,000).
+Cannot be stunned.
+Temporary Items Dropped:
+N/A
+Items Dropped:
+Treasure Chest (Misc)
+Note:
+Has a 30 second respawn timer.
+Battle this monster in our free web game at
+www.AQ.com
+!
+window['nitroAds'].createAd('wad-aqwwiki-below-content', {
+  "refreshTime": 30,
+  "renderVisibleOnly": false,
+  "refreshVisibleOnly": true,
+  "sizes": [ [ 300, 250 ] ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+  });
+5star
+_lv75
+_u
+aggro
+boss
+bossshield
+challenge
+flaming
+freeplayer
+immune
+monster

@@ -1,0 +1,448 @@
+{
+ "version": 1,
+ "at": "2026-11-06T06:08:27.071Z",
+ "seed": 1324613303,
+ "redraws": 0,
+ "input": {
+  "brief": "AQW Class codex: skill book, class acquisition trail and combat rotation",
+  "sector": "culture",
+  "tone": "editorial",
+  "have": [],
+  "keep": [
+   "palette",
+   "type"
+  ],
+  "avoid": [],
+  "sections": [
+   "gallery",
+   "features",
+   "how-it-works"
+  ],
+  "direction": "editorial-report"
+ },
+ "imagery": "atmosphere",
+ "allow": [],
+ "direction": {
+  "id": "editorial-report",
+  "name": "The printed annual",
+  "sectors": [
+   "culture",
+   "nonprofit",
+   "education",
+   "finance",
+   "saas",
+   "ai-product",
+   "health",
+   "agency",
+   "other"
+  ],
+  "tones": [
+   "editorial",
+   "bold"
+  ],
+  "needs": [],
+  "idea": "Lay the page out like a well-designed printed report or magazine feature: a masthead image, a tight oversized title, text held to a strict column line, and colour used in solid blocks the way a two-colour print job would. It gives weight and authority to subjects that are really about content: findings, a manifesto, a programme, a serious product. The reader should feel that someone edited this.",
+  "composition": "A fixed vertical axis at about 42% of the viewport width organises everything: headings begin on it, body columns hang from it, and the 0–42% zone holds small side notes, figures or stays empty. Masthead: a wide image band (photographic mosaic or a single crop) across the top 45% of the first screen; below it the title at 7–9vw starting on the axis, with a two-sentence standfirst at 20–24px. Sections alternate between text pages (title on the axis, body in one or two columns of 34–40ch to its right) and full-bleed colour pages carrying one large figure, quotation or image mosaic. Mosaics are gutterless: photographs and flat colour tiles butted together in a 4- or 6-cell grid. Page numbers, running heads and other print furniture are left out.",
+  "typography": "A tight heavy grotesk or a sharp serif for titles; an excellent text face for reading at 18–20px with leading near 1.5. Headings in sentence case, tracked tight.",
+  "typeClasses": [
+   "grotesk-tight",
+   "serif-display",
+   "serif-text"
+  ],
+  "colour": "Paper, ink and two or three solid block colours. A colour page is a whole section in one flat colour.",
+  "paletteTags": [
+   "flat-loud",
+   "two-tone",
+   "mono-accent"
+  ],
+  "imagery": "Photographs used as blocks in mosaics alongside flat colour tiles; mixed subjects are fine if cropped tight and converted to one treatment.",
+  "photoTreatment": "Give all photographs in a mosaic one treatment: greyscale via `filter: grayscale(1) contrast(1.05)`, or all full colour. Do not mix.",
+  "sectionTags": [
+   "type-led",
+   "colour-field",
+   "dense",
+   "poster"
+  ],
+  "motion": "masked-headline",
+  "richness": "The column line, the mosaics and whole pages of colour give structure and variety without ornaments.",
+  "pitfalls": "The axis must be exact and reused everywhere or it reads as random indentation. Keep paragraphs to a real reading measure. On a phone the axis collapses to the left margin and side notes move inline above their paragraph.",
+  "seenIn": [
+   "aww-ai-in-design-report-2026",
+   "opl-applied-imagination",
+   "opl-the-queue",
+   "opl-artem-taradash",
+   "opl-belgrade-architecture"
+  ],
+  "allow": []
+ },
+ "hero": {
+  "id": "void-then-statement-on-axis",
+  "name": "Void, then statement on axis",
+  "archetype": "bottom-anchored-type",
+  "directions": [
+   "type-only-statement",
+   "editorial-report"
+  ],
+  "needs": [],
+  "blueprint": "A deliberate void: the upper 60% of the viewport holds nothing but the top row. That row, 44px from the top on 48px margins, has the wordmark at the left margin, two text links starting exactly on a vertical axis at 42% of the width, and the single action at the right margin as a text link. Everything else hangs from the same axis in the bottom third. The statement starts on the 42% line: two lines at clamp(56px, 6.6vw, 104px), regular or medium weight, tracking -0.04em, leading 0.95, running towards the right margin, with its last baseline 72px above the bottom edge. Left of the axis, in columns 1-4, one supporting sentence at 18px in the soft ink, max 32ch, is bottom-aligned to the statement's last baseline. Nothing sits in the left zone above it. No image and no shape; the ground is one flat tone and the ink one colour. The emptiness is composed: three elements share the axis, so the blank area reads as intended and not as a page that failed to load.",
+  "mobile": "The axis collapses to the 20px left margin. The top 48% of the screen stays empty under the wordmark row. The statement sets at 12.5vw on two lines, flush left, followed by the sentence at 17px and the action as a text link, the whole block ending 28px above the bottom edge. The two links fold behind a menu word.",
+  "headline": "A 3-6 word statement, at most 30 characters over two lines, about 15 per line at 6.6vw from the axis.",
+  "motion": "masked-headline",
+  "seenIn": [
+   "opl-lovably",
+   "aww-ai-in-design-report-2026",
+   "opl-tiny-computer-co",
+   "aww-cerebrium"
+  ]
+ },
+ "type": null,
+ "palette": null,
+ "photos": {
+  "set": "object-still",
+  "title": "Objects",
+  "note": "single objects seen close: instruments, tools, cameras, books",
+  "treatment": "Give all photographs in a mosaic one treatment: greyscale via `filter: grayscale(1) contrast(1.05)`, or all full colour. Do not mix.",
+  "others": [
+   "mountain",
+   "people",
+   "fog-and-quiet",
+   "sky-and-space"
+  ],
+  "photos": [
+   {
+    "id": 63,
+    "alt": "Cup of coffee seen from above on a bright red surface",
+    "tone": "mid",
+    "colours": [
+     "bright red",
+     "white",
+     "brown"
+    ],
+    "mono": false,
+    "calm": "right",
+    "quality": 5,
+    "ratio": 1.78,
+    "by": "Justin Leibow",
+    "page": "https://unsplash.com/photos/ZJsseAxEcqM"
+   },
+   {
+    "id": 175,
+    "alt": "Close-up of an analogue clock face in black and white",
+    "tone": "mid",
+    "colours": [
+     "white",
+     "black",
+     "grey"
+    ],
+    "mono": true,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.49,
+    "by": "petradr",
+    "page": "https://unsplash.com/photos/8hgm6mKK04U"
+   },
+   {
+    "id": 23,
+    "alt": "Close-up of metal fork tines against a dark blurred background",
+    "tone": "dark",
+    "colours": [
+     "charcoal",
+     "blue grey",
+     "silver"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 0.79,
+    "by": "Alejandro Escamilla",
+    "page": "https://unsplash.com/photos/8yqds_91OLw"
+   },
+   {
+    "id": 113,
+    "alt": "Steam rising from a metal mug with blurred blue background",
+    "tone": "mid",
+    "colours": [
+     "steel blue",
+     "white",
+     "grey"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.69,
+    "by": "Zugr",
+    "page": "https://unsplash.com/photos/yZf1quatKCA"
+   },
+   {
+    "id": 80,
+    "alt": "Pine cones resting on weathered wood in black and white",
+    "tone": "mid",
+    "colours": [
+     "grey",
+     "charcoal"
+    ],
+    "mono": true,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Sonja Langford",
+    "page": "https://unsplash.com/photos/Y2PYfopoz-k"
+   },
+   {
+    "id": 535,
+    "alt": "Colourful shirts on wooden hangers along a metal pipe rail",
+    "tone": "dark",
+    "colours": [
+     "charcoal",
+     "orange",
+     "green"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 0.75,
+    "by": "Jeff Sheldon",
+    "page": "https://unsplash.com/photos/Lj1S1_KD61k"
+   },
+   {
+    "id": 39,
+    "alt": "Close-up of a turntable tonearm resting on a vinyl record",
+    "tone": "light",
+    "colours": [
+     "white",
+     "black",
+     "warm grey"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Luke Chesser",
+    "page": "https://unsplash.com/photos/pFqrYbhIAXs"
+   },
+   {
+    "id": 24,
+    "alt": "Open book lying on a wooden table in soft light",
+    "tone": "light",
+    "colours": [
+     "cream",
+     "warm brown"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 2.69,
+    "by": "Alejandro Escamilla",
+    "page": "https://unsplash.com/photos/cZhUxIQjILg"
+   }
+  ]
+ },
+ "motion": {
+  "id": "masked-headline",
+  "name": "Masked headline",
+  "description": "On load, each line of the headline rises from behind its own baseline, about 900ms with a strong ease-out, the second line 110ms after the first; the supporting sentence and the action then fade up together. Nothing else on the page performs. Because headlines are two lines at most, you author the line breaks and wrap each line yourself. Recipe: 'Masked line reveal' in references/motion.md."
+ },
+ "sections": [
+  {
+   "id": "gallery-dense-masonry-sheet",
+   "role": "gallery",
+   "name": "Dense masonry sheet",
+   "shape": "mosaic",
+   "tags": [
+    "dense",
+    "photo-led"
+   ],
+   "directions": [
+    "contact-sheet",
+    "dense-tiles",
+    "editorial-report",
+    "specimen-catalogue"
+   ],
+   "needs": [],
+   "blueprint": "A three-line statement at 22px, 30ch wide, sits at the 66% column with 64px of space below it; it is the only large text. Then a dense masonry of about twenty tiles in six columns with 4px gaps and 12px outer margins, built with CSS `columns: 6; column-gap: 4px` and `break-inside: avoid` on each figure. Tile sizes range from 90px squares to one feature tile of 280 by 160px that sits above the first two columns, outside the column flow. Images keep their natural ratios, so column bottoms are ragged. Every tile has one caption line at 12px directly beneath, 6px below the image and 14px above the next tile, in the form name, comma, type. Mix photographs, posters, details and textures. No hover chrome; the sheet reads at a glance and fills the full width.",
+   "mobile": "Three columns with 4px gaps and 10px margins; the feature tile spans the full width at the top. Captions stay at 12px but shorten to the name only. The statement sits above at 19px, full width and left-aligned.",
+   "seenIn": [
+    "aww-oimachi",
+    "opl-lovably"
+   ]
+  },
+  {
+   "id": "features-paragraph-with-picture-words",
+   "role": "features",
+   "name": "Paragraph with picture words",
+   "shape": "statement",
+   "tags": [
+    "type-led",
+    "poster"
+   ],
+   "directions": [
+    "sentence-as-layout",
+    "one-motif",
+    "product-performs",
+    "editorial-report",
+    "borrowed-category"
+   ],
+   "needs": [],
+   "blueprint": "One paragraph does the work of a feature grid. Three or four sentences, 35–50 words in total, set at clamp(30px, 3.6vw, 60px), leading 1.18, medium weight, across columns 1–11, left-aligned. Each sentence names one capability, and directly after that capability's key noun sits an inline slot: an inline-block frame 1em tall and 1.9em wide, radius 0.18em, dropped 0.12em below the baseline, holding a tight photograph crop (object-fit: cover) or a real interface control at readable size. Four slots at most, never two on one line. The nouns keep the weight and colour of the rest; the slots are the only emphasis. Mark it up as a paragraph and give the section a visually hidden heading of two or three words; nothing visible sits above. 72px lower, starting at column 7, one supporting sentence at 18px and the action.",
+   "mobile": "The paragraph drops to 7vw with leading 1.22 and fills the width. Slots stay inline at 1em tall but narrow to 1.5em wide. If a slot lands alone at the start of a line, let it; do not shrink the type. The supporting sentence and the action follow at full width.",
+   "seenIn": [
+    "aww-monolog",
+    "opl-uncle-rudy",
+    "aww-cominvi",
+    "opl-midnight-2"
+   ]
+  },
+  {
+   "id": "how-it-works-many-into-one",
+   "role": "how-it-works",
+   "name": "Many into one",
+   "shape": "band",
+   "tags": [
+    "colour-field",
+    "dense"
+   ],
+   "directions": [
+    "one-motif",
+    "dense-tiles",
+    "editorial-report",
+    "borrowed-category"
+   ],
+   "needs": [],
+   "blueprint": "A diagram drawn with one repeated shape instead of arrows. The heading (two to four words on two lines at clamp(36px, 4vw, 60px)) and a short paragraph at 17px sit in columns 1–4. Beneath, a wide inline SVG spans columns 1–12 at about 4.5:1. It is built from 120–160 small filled squares (or the page's own motif), each 10–14px. In the left third they are scattered loosely in two pale tones. In the middle third they are pulled into a tight horizontal ribbon three squares high. In the right third they fan out again into neat, evenly spaced rows in the accent colour. The eye reads disorder, compression, order, from left to right. Under the diagram, three text columns aligned to its thirds: a bold one-word name at 20px and two lines at 16px each; the words carry the sequence ('Gather', 'Reduce', 'Release'). No connecting marks.",
+   "mobile": "The diagram turns to run top to bottom: a 3:4 SVG with the scatter at the top, the ribbon as a vertical band in the middle and the ordered rows at the bottom. The three names and their text sit to its right in a 38vw column, each level with its zone.",
+   "seenIn": [
+    "opl-wild-as",
+    "opl-shelf"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "id": "aww-ai-in-design-report-2026",
+   "name": "Ai in Design Report 2026",
+   "url": "https://stateofaidesign.com/",
+   "source": "Awwwards Site of the Day",
+   "kind": "other",
+   "score": 8.4,
+   "idea": "A research report laid out like a colour-blocked print annual: a thermal-blurred video collage on top, an oversized tight grotesk title, and flat orange, lilac, sage and black blocks carrying stats, quotes and chapters.",
+   "mood": [
+    "editorial",
+    "bold",
+    "colour-blocked",
+    "assured",
+    "contemporary"
+   ],
+   "archetype": "editorial-masthead",
+   "hero": "The top 53% is a full-width video band: blurred, heat-map-like abstract footage in orange, lilac and sage, overlaid with four or five hard-edged rectangles of the same footage in grey or green, two tagged with tiny mono labels in white boxes. The header sits flush on top: a black logo block at far left, an orange link tab running to 40% of the width, two plain links at right. Below the band, on white: a two-line deck at about 1.4vw on a 1% left margin, and from 42% across a two-line title at 8.3vw, medium weight, tracking -0.06em. Bottom row: mono credit left, scroll cue and arrow aligned to the title column.",
+   "type": "Beausite Classic, a grotesk with some stroke contrast, in Medium for titles and Regular for text; sentence case, tracking -0.06em at display size. Geist Mono for small uppercase labels. Steps: 8.3vw title, about 5.5vw numerals, about 3vw statements, 16px body, 10px mono. Footer wordmark near 96vw.",
+   "colour": "#ffffff #000000 #fe7141 #cdabfe #d1ddd3 #f0ff1c — White base with flat blocks of orange, lilac, sage and black assigned to whole modules (stat tiles, quote panels, chapter bands), all drawn from the hero footage. Text is black, or off-white on black.",
+   "imagery": "Hero: abstract blurred video with a heat-map grade, cut into overlapping rectangles. Body: warm documentary photos and clips of people at desks in wood-lined rooms, square-cornered, butted directly against flat colour blocks with no gap.",
+   "layout": "1% margins and a recurring column line at about 42% where most headings and text begin. Open white text passages ruled by hairlines alternate with tight mosaics in which photos and colour blocks share edges. Each chapter opens with a full-width colour band.",
+   "sections": [
+    {
+     "role": "proof",
+     "description": "A full-width hairline, a tiny mono label at the left, then seven black partner logos evenly spaced across the full width in one row with generous padding above and below, closed by a second hairline. Immediately beneath, another mono label and a three-line statement at about 3vw, flush left and occupying only the left half, followed by a full-width photo strip."
+    },
+    {
+     "role": "stats",
+     "description": "A mosaic with no gutters. A photo of two people at a laptop fills the left two-thirds at roughly 1:1; the right third is split into two stacked flat tiles, lilac above and sage below. Each tile carries a large numeral with a plus sign at about 5.5vw in its top-left corner and a two-line caption directly beneath; the rest of the tile is empty colour."
+    },
+    {
+     "role": "testimonial",
+     "description": "Quote module as two abutting blocks: a black block on the left 40% holding only a small name and a mono role caption, and a sage block on the right 60% with the quotation at about 3vw, top-left aligned with empty sage beneath. Directly below, a full-width orange band opens a chapter: hairline at top, a large two-digit number with the chapter word under it at left, a two-line title and small paragraph starting at the 42% column."
+    },
+    {
+     "role": "footer",
+     "description": "Black footer. A row of three small source counts along the top, separated by vertical hairlines, then the report name in off-white heavy type at nearly full viewport width with a trademark sign at its top-right, then the year at the same size right-aligned on a second line. Two small link columns with mono headings sit lower left beside the year; a hairline and one row of credits and partner logos close it."
+    }
+   ],
+   "steal": [
+    "Start most headings and text at a fixed column line about 42% across, leaving the left for small decks, credits and chapter numbers.",
+    "Butt flat colour tiles directly against a photograph with no gutter and put one large numeral plus two caption lines in each tile's top-left corner.",
+    "Take the page's flat block colours from the hero footage so the abstract video and the layout read as one palette."
+   ],
+   "media": "A video collage covers 100% of the screen at load and lifts to the top ~53% to uncover the title on white. Below, a documentary photograph two thirds wide in a sticky frame beside stacked colour stat blocks, a pinned deck of colour cards each with a 10s clip docked bottom-left, and a carousel of equal stills running off the right edge: 12 images and 6 muted videos, all square-cornered.",
+   "motion": "No preloader, but the collage re-cuts itself for about 4s before the title lands. Framer drives the sticky stacking (a 1350px photo frame and three 900px chapter cards that peel away to uncover the next); there is no split text, links change colour over .2s cubic-bezier(.44,0,.56,1), and one panel slides 610px in over 500ms cubic-bezier(0.44,0,0.37,1)."
+  },
+  {
+   "id": "opl-the-queue",
+   "name": "The Queue",
+   "url": "https://sheets.works/data-viz/the-queue/",
+   "source": "One Page Love",
+   "kind": "culture",
+   "score": 8.1,
+   "idea": "An essay on queueing where the queue is the ornament: a line of drawn figures stands along the bottom of the hero and returns between chapters in changing period dress.",
+   "mood": [
+    "literary",
+    "quiet",
+    "wry",
+    "bookish"
+   ],
+   "archetype": "centred-statement-media-below",
+   "hero": "Pinkish warm-grey page. A 12px mono breadcrumb sits top-left; there is no other navigation. The two-word title is set in a light serif at 200px (14vw), centred, its middle slightly above the viewport centre, spanning about 60% of the width with tight tracking. One centred line of grey 20px serif sits 40px beneath. The lower third stays empty until a single row of about 25 small greyscale drawn figures, each around 110px tall, stands on a hairline rule 20px above the bottom edge and runs the full width like a frieze.",
+   "type": "Newsreader does everything: Light at 200px with -0.05em tracking for the title, regular near 30px for chapter headings, 18px body with open leading, and pale ghost numerals around 22vw. A monospace appears only in the breadcrumb and footer labels.",
+   "colour": "#ebe4e0 #2b2622 #6f6763 #d9d2ce #16a05a — One warm rosy-grey ground throughout, brown-black text, mid-grey secondary lines, greyscale drawings. A single green appears only in the breadcrumb and one footer button.",
+   "imagery": "Hand-drawn greyscale figures with fine outlines, standing in single file on a hairline; each band changes era costume and spacing. No boxes or backgrounds: figures sit directly on the page colour, full width.",
+   "layout": "After the centred hero, text runs in one narrow column about 40% of the viewport wide, starting 30% from the left; the right third holds only a huge pale chapter numeral. Chapters are separated by full-width bands of figures on hairlines.",
+   "sections": [
+    {
+     "role": "other",
+     "description": "Chapter block. A 30px serif question heads a text column about 590px wide, offset 30% from the left. Behind it in the top-right corner sits a chapter numeral roughly 22vw tall in a tint barely darker than the page, cropped by the section's top edge. Body is 18px serif at about 1.8 leading; bold run-in phrases open key paragraphs in place of subheads. No pull quotes, side notes or images inside the text."
+    },
+    {
+     "role": "gallery",
+     "description": "Divider band between chapters: a full-width strip about 180px tall in which 10 to 15 drawn figures stand at uneven intervals on a 1px rule, with 120px of empty page above. The number and spacing of figures follow the story (few and scattered early, an evenly spaced orderly line later), so the divider carries part of the argument instead of acting as a spacer."
+    },
+    {
+     "role": "footer",
+     "description": "The ending switches voice. A white rounded promo bar with a blue pill button, then a heavy sans heading with a short grey paragraph and one green button, then a hairline, a mono uppercase label, and four small white cards in a row (thumbnail, mono number, bold title). It is narrower than the page and sits on a different axis from the essay column, so it reads as site furniture attached afterwards."
+    }
+   ],
+   "steal": [
+    "Turn the subject into the section divider: a frieze of small figures on a hairline, redrawn for each chapter, in place of rules or spacers.",
+    "Set one serif family at three far-apart sizes (200px title, 30px heading, 18px body) and mark chapters with a pale 22vw numeral cropped off the corner.",
+    "Hold body text to a narrow column offset left of centre and leave the right third empty instead of filling it with sidebars."
+   ]
+  },
+  {
+   "id": "aww-mosbys-files",
+   "name": "Mosby’s Files",
+   "url": "https://www.mosbyfiles.com/",
+   "source": "Awwwards Site of the Day",
+   "kind": "culture",
+   "score": 8,
+   "idea": "An archive of architects presented as a physical stack of coloured index-tab file folders that you flip through.",
+   "mood": [
+    "bold",
+    "archival",
+    "graphic",
+    "playful",
+    "scholarly"
+   ],
+   "archetype": "type-poster",
+   "hero": "Charcoal background. A slim top bar over a hairline holds the condensed wordmark dead centre and one mono link far right. The headline is one centred line of heavy condensed uppercase at 10vw, about 71% of the width, in the upper quarter. Beneath it, a three-line centred serif paragraph in mid-grey, about 42% wide. From 51% down sits a stack of file folders 86% of the viewport wide: each is a flat colour band with one to three trapezoid tabs rising from its top-left edge, each tab a different colour holding a serif name. Mono category labels sit right-aligned. The front red folder is open, running off the bottom.",
+   "type": "Founders Grotesk bold condensed uppercase at 144px for the title and wordmark; Signifier serif at about 22px for the intro and 28px for tab names; IBM Plex Mono 12px for labels and body. Three unrelated faces, each with one job, and a twelve-to-one size jump.",
+   "colour": "#191919 #d71e1e #1e4bd7 #0c7866 #581e70 #ffe927 — Charcoal ground with five flat poster primaries assigned to folders and tabs; each tab deliberately differs from the folder behind it. No tints, gradients or photos; white type except black on yellow.",
+   "imagery": "No photographs on the index. The folder shapes are the imagery, plus a row of seven small white line-drawn north-arrow and compass symbols and a drawing scale bar borrowed from architectural plans.",
+   "layout": "Centred title block over an 86%-wide folder stack with equal dark margins. Folders overlap at a fixed 60px step so only the tab rows show; the open folder expands into a tall single-colour panel with mono text top-left and plan symbols near the bottom. Under two screens.",
+   "sections": [
+    {
+     "role": "work",
+     "description": "Four full-width colour bands stacked with a 60px reveal, each with trapezoid tabs growing from its top-left edge. Tabs are about 44px tall with S-curved shoulders, sit side by side with small gaps, and each takes a contrasting flat colour: yellow and black tabs on a green folder, red and blue on purple. Names are white serif at 28px inside the tabs. A mono category label with a small chevron is right-aligned in each band's visible strip."
+    },
+    {
+     "role": "other",
+     "description": "The front folder opens into a solid red panel nearly two viewports tall. Top-right: its mono category label with a down chevron. Top-left, inset about 60px: a four-line mono paragraph in white, at most half the panel wide. The middle is left empty. Near the bottom, a centred row of seven small white plan symbols evenly spaced; beneath, a baseline row with a drawing scale bar left, year centre, credit and round logo right."
+    }
+   ],
+   "steal": [
+    "Build navigation as stacked full-width colour bands with trapezoid tabs, each tab coloured to clash with the folder behind it.",
+    "Pair a heavy condensed grotesk title with a bookish serif for names and a mono for metadata, giving each face exactly one role.",
+    "Borrow notation from the subject's own documents (scale bars, north arrows) as footer ornament instead of generic icons."
+   ],
+   "media": "The hero has no picture: its visual weight is a CSS stack of overlapping flat colour folders with sloped tabs covering the lower half of the fold (about 42% of the area), which doubles as the index; an open folder expands to 80vh as the content panel. The only drawings are seven small white plan symbols and a scale bar; no photographs or video on the index.",
+   "motion": "A short entrance: readable at about 1.2s, with 17 title letter spans already in place, and settled by 2.5s as the stack rises about 13px into place and the subline fades up. Lenis on a page only 1.6 screens tall; the header slides away on scroll, and folders and tabs move on one house curve, cubic-bezier(.33,1,.68,1), at 0.65s, with the quicker moves at exactly half that, 0.325s."
+  }
+ ],
+ "scenes": []
+}

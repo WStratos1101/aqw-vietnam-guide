@@ -1,0 +1,13 @@
+# Ultra Boss UI refinement V5
+
+PassivePanel renders the existing encounter-specific passive records in a compact grid. Icon selection follows the attribute (shield, stun, defense, dodge, damage, DoT resistance, hit chance). Values remain unchanged. Condition and explanation remain accessible with native keyboard-operable details; the generic Wiki provenance sentence is no longer rendered. Boss Shield explanations retain their floor and exponent values without inventing an algebraic formula.
+
+TacticalBoard preserves tactical-phases.json and all 20 ordered steps. Desktop phase controls fit one line; an inline-size container query replaces them with a select below 430px. Each step is a four-column compact row; notes are collapsed behind an information icon. No internal scrolling or clipped steps are used. The footer is now: Đội hình cộng đồng: VHL · LR · AP · LoO.
+
+The redundant slash-alternatives sentence is suppressed only at rendering. Source data and primary/alternative selections remain intact. Speaker's generic team setup is replaced by SpeakerTutorial in the Taunt column: Focus/Taunt, Truth/Listen, Zone, alternation diagram, and effect-specific warnings. Only the individual named in each Zone assignment enters the zone, not an entire group.
+
+Sources read: content-sources/boss-codex/ultra-speaker-sites.txt, especially “Giải thích chi tiết cách Focus/Taunt và chạy Zone”; https://aqwwiki.wikidot.com/the-first-speaker (Attacks, Equalize, Abilities, Base stats). The live Google Sites URL failed through the web tool; the existing local extraction was used. No source screenshot was attached in this turn. The community text describes several situations as immediate death; the rewrite follows the Wiki's narrower lethal-DoT conditions: Magia Burn → Shattered Will; Stasis → Shattered Soul; existing Sanctity → Shattered Heart. Equalize removes Corruption/Somber and grants Sanctity for 45s. Increased damage to subsequent players is described as increased damage, not unconditional instant death.
+
+Existing design-taste-frontend app-screen principles and the existing design tokens were retained: compact rows, flat surfaces, restrained icons and explicit missing-data states. Impeccable/tatse repositories were not accessible; their execution is not claimed.
+
+Validation: npm run typecheck, npm run lint, npm test, npm run test:build, npm run build. Browser runner: npm run test:boss-detail after starting npm run dev. It checks all 20 steps against the stored Skill/Taunt/Zone values, phase controls, overflow, notes, tutorial sections and removed text. Screenshots and report: qa/v5. Production build retains the existing large-JavaScript-chunk warning.

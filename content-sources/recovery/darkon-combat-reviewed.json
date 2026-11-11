@@ -1,0 +1,336 @@
+{
+  "encounter": "darkon-the-conductor",
+  "source": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+  "reviewedAt": "2026-11-09",
+  "communitySources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+    "https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/weekly-ultra-challenge-boss/darkon-the-conductor"
+  ],
+  "conflicts": [
+    {
+      "field": "Special 1 damage basis",
+      "wiki": "90% current HP",
+      "docs": "90% max HP",
+      "site": "90% max HP",
+      "resolution": "current HP"
+    },
+    {
+      "field": "A Major dodge",
+      "wiki": "5000%",
+      "docs": "1000%",
+      "site": "1000%",
+      "resolution": "5000%"
+    },
+    {
+      "field": "Base Crit Damage",
+      "wiki": "800%",
+      "docs": "800%",
+      "site": "500%",
+      "resolution": "800%"
+    },
+    {
+      "field": "End of the World activation",
+      "wiki": "270 seconds then charge 3 seconds",
+      "docs": "270 seconds then charge 3 seconds",
+      "site": "303 seconds in one paragraph; 273 elsewhere",
+      "resolution": "270 seconds + 3-second charge; not inferred from Cycle stack count"
+    },
+    {
+      "field": "Grown Crit Chance",
+      "wiki": "1000 (no percent sign)",
+      "docs": "1000%",
+      "site": "1000%",
+      "resolution": "Keep Wiki value 1000 without inventing a unit"
+    },
+    {
+      "field": "Recitative Taunt target",
+      "docs": "Nulgath in one sentence",
+      "site": "Nulgath in one sentence",
+      "resolution": "Source typo; encounter is Darkon. Do not import wrong target into skill data"
+    },
+    {
+      "field": "Exeunt versus Aria healing",
+      "wiki": "Aria explicitly cannot be Decayed; Exeunt states 750000 HP per kill without Decay rule",
+      "docs": "Exeunt also labelled immune to Decay",
+      "resolution": "Do not extend Aria's verified Decay rule to Exeunt"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Auto Attack",
+      "occurrence": 0,
+      "activation": "Trong toàn bộ trận đấu; hiệu ứng bổ sung thay đổi theo phase.",
+      "cooldown": "2.25 giây",
+      "damage": "100 (trước hệ số sát thương chí mạng)",
+      "damageType": "True Damage",
+      "type": "True Damage",
+      "targets": "4",
+      "damageConfidenceStatus": "verified",
+      "playerEffects": [
+        "Luôn chí mạng; bỏ qua Focus.",
+        "Giảm Dodge của người chơi 500%."
+      ],
+      "bossEffects": [],
+      "phaseEffects": [
+        {
+          "phase": "Overture",
+          "playerEffects": [
+            "Melancholic Melodies: giảm Hit Chance 50%."
+          ]
+        },
+        {
+          "phase": "Recitative",
+          "playerEffects": [
+            "Realm of the Arcana: giảm Haste 6% mỗi stack, tối đa 22 stack."
+          ]
+        },
+        {
+          "phase": "Aria",
+          "playerEffects": [
+            "Requiem for the Wicked: giảm hồi máu nhận vào 80%."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Cycle's End",
+      "occurrence": 0,
+      "activation": "Tự áp lên Darkon theo chu kỳ.",
+      "cooldown": "30 giây",
+      "targets": "Bản thân",
+      "damageConfidenceStatus": "not_applicable",
+      "playerEffects": [],
+      "bossEffects": [
+        "The Cycle's End: tăng sát thương vật lý và phép nhận vào 10% mỗi stack, tối đa 10 stack."
+      ]
+    },
+    {
+      "name": "End of the World",
+      "occurrence": 0,
+      "activation": "Kích hoạt sau 4 phút 30 giây; niệm 3 giây rồi dùng Curtain Call.",
+      "type": "Charge",
+      "damageConfidenceStatus": "not_applicable",
+      "playerEffects": [
+        "Báo trước Curtain Call; cần kết thúc trận trước khi niệm xong."
+      ],
+      "bossEffects": [],
+      "nextSkill": "Curtain Call"
+    },
+    {
+      "name": "Curtain Call",
+      "occurrence": 0,
+      "activation": "Ngay sau khi End of the World niệm xong.",
+      "type": "True Damage",
+      "damage": "100.000.337",
+      "damageType": "True Damage",
+      "targets": "4",
+      "damageConfidenceStatus": "verified",
+      "playerEffects": [
+        "Bỏ qua Focus.",
+        "Áp Curtain Call, một DoT gây tử vong."
+      ],
+      "bossEffects": []
+    },
+    {
+      "name": "Overture",
+      "occurrence": 0,
+      "phase": "Overture",
+      "activation": "Dùng một lần khi bắt đầu trận.",
+      "targets": "4",
+      "damageConfidenceStatus": "not_applicable",
+      "playerEffects": [],
+      "bossEffects": [
+        "Áp Do Dawn và Overture lên Darkon; bắt đầu bộ hiệu ứng Overture."
+      ]
+    },
+    {
+      "name": "Special 1",
+      "occurrence": 0,
+      "phase": "Overture",
+      "activation": "Khi Do Dawn đang hoạt động.",
+      "type": "True Damage",
+      "damageType": "True Damage",
+      "damage": "90% HP hiện tại",
+      "cooldown": "12 giây",
+      "targets": "1",
+      "damageConfidenceStatus": "verified",
+      "playerEffects": [
+        "Luôn trúng; không chí mạng."
+      ],
+      "bossEffects": [
+        "Mỗi lần dùng tiến một aura: Re → Mi → Fa → So → La → Ti. Mỗi aura tăng thêm 100% Crit Damage.",
+        "Khi đã có Ti, lần dùng kế tiếp áp Do Dusk: tăng Crit Damage 50.000%."
+      ]
+    },
+    {
+      "name": "Special 2",
+      "occurrence": 0,
+      "phase": "Overture",
+      "activation": "Khi Overture đang hoạt động.",
+      "type": "True Damage",
+      "damageType": "True Damage",
+      "damage": "150 (trước hệ số sát thương chí mạng)",
+      "cooldown": "5 giây",
+      "targets": "4",
+      "damageConfidenceStatus": "verified",
+      "playerEffects": [
+        "Luôn chí mạng.",
+        "Áp Elegy of Madness trong 8 giây. Nếu đã có Elegy of Madness, nhận Captive Audience gây Stun 4 giây."
+      ],
+      "bossEffects": []
+    },
+    {
+      "name": "Recitative",
+      "occurrence": 0,
+      "phase": "Recitative",
+      "activation": "Dùng một lần khi Darkon còn 70% HP.",
+      "targets": "4",
+      "damageConfidenceStatus": "not_applicable",
+      "playerEffects": [
+        "Xóa các aura của Overture trên người chơi."
+      ],
+      "bossEffects": [
+        "Xóa các aura của Overture trên Darkon.",
+        "Tăng Crit Damage 500%; bắt đầu bộ hiệu ứng Recitative."
+      ]
+    },
+    {
+      "name": "Special 1",
+      "occurrence": 1,
+      "phase": "Recitative",
+      "activation": "Khi Recitative đang hoạt động.",
+      "type": "True Damage",
+      "damageType": "True Damage",
+      "damage": "90% HP hiện tại",
+      "cooldown": "12 giây",
+      "targets": "1",
+      "damageConfidenceStatus": "verified",
+      "playerEffects": [
+        "Luôn trúng; không chí mạng."
+      ],
+      "bossEffects": [
+        "Áp Child of the Empress: tăng Crit Damage của Darkon 50% mỗi stack, tối đa 22 stack."
+      ]
+    },
+    {
+      "name": "Special 2",
+      "occurrence": 1,
+      "phase": "Recitative",
+      "activation": "Khi Recitative đang hoạt động.",
+      "type": "True Damage",
+      "damageType": "True Damage",
+      "damage": "150 (trước hệ số sát thương chí mạng)",
+      "cooldown": "5 giây",
+      "targets": "4",
+      "damageConfidenceStatus": "verified",
+      "playerEffects": [
+        "Luôn chí mạng.",
+        "Áp Seed Planted trong 8 giây, xóa mọi stack Realm of the Arcana.",
+        "Nếu đã có Seed Planted: nhận Grown trong 8 giây, tăng Crit Chance 1000 và giảm Crit Damage 1000%.",
+        "Nếu đã có Grown: nhận Harvested, một DoT gây tử vong."
+      ],
+      "bossEffects": []
+    },
+    {
+      "name": "Aria",
+      "occurrence": 0,
+      "phase": "Aria",
+      "activation": "Dùng một lần khi Darkon còn 20% HP.",
+      "type": "Physical",
+      "damageType": "Physical",
+      "targets": "4",
+      "damageConfidenceStatus": "needs_verification",
+      "playerEffects": [
+        "Đòn chuyển phase gây sát thương vật lý; bỏ qua Focus và không chí mạng. Chưa xác minh lượng sát thương.",
+        "Xóa các aura của Recitative trên người chơi."
+      ],
+      "bossEffects": [
+        "Hồi lên 90% HP tối đa; Decay không ngăn lần hồi máu này.",
+        "Xóa các aura của Recitative trên Darkon.",
+        "A Major: tăng Dodge 5000% trong 10 giây.",
+        "B Minor: giảm sát thương nhận vào 200% trong 20 giây.",
+        "C Minor: tăng Crit Damage 300% trong 30 giây.",
+        "B Major: giảm sát thương vật lý, phép và toàn bộ sát thương nhận vào 200% trong 50 giây.",
+        "C Major: tăng Crit Damage và sát thương gây ra 1000% trong 50 giây.",
+        "Khi C Major hết, Aria đưa Crit Damage và sát thương gây ra về 0; khi B Major hết, sát thương nhận vào tăng 200%."
+      ]
+    },
+    {
+      "name": "Special 1",
+      "occurrence": 2,
+      "phase": "Aria",
+      "activation": "Khi Aria đang hoạt động.",
+      "type": "True Damage",
+      "damageType": "True Damage",
+      "damage": "90% HP hiện tại",
+      "cooldown": "12 giây",
+      "targets": "1",
+      "damageConfidenceStatus": "verified",
+      "playerEffects": [
+        "Luôn trúng; không chí mạng.",
+        "Áp The Last Symphony, một DoT kéo dài 8 giây."
+      ],
+      "bossEffects": []
+    },
+    {
+      "name": "Special 2",
+      "occurrence": 2,
+      "phase": "Aria",
+      "activation": "Khi Aria đang hoạt động.",
+      "type": "True Damage",
+      "damageType": "True Damage",
+      "damage": "150 (trước hệ số sát thương chí mạng)",
+      "cooldown": "5 giây",
+      "targets": "4",
+      "damageConfidenceStatus": "verified",
+      "playerEffects": [
+        "Luôn chí mạng.",
+        "Áp Dirge of Astravia: tăng Mana Cost 25% trong 12 giây, tối đa 22 stack."
+      ],
+      "bossEffects": []
+    }
+  ],
+  "passives": [
+    {
+      "id": "boss-passive-1",
+      "name": "Boss Shield",
+      "label": "Boss Shield",
+      "condition": "Khi sát thương vượt ngưỡng.",
+      "effect": "Giảm phần sát thương vượt ngưỡng bằng số mũ 0.8; kết quả không thấp hơn ngưỡng 122.222.",
+      "values": [
+        "Ngưỡng 122.222 DMG",
+        "Số mũ 0.8"
+      ]
+    },
+    {
+      "id": "boss-passive-2",
+      "label": "Quy tắc nội tại",
+      "condition": "Luôn có hiệu lực.",
+      "effect": "Miễn nhiễm Stun.",
+      "values": []
+    },
+    {
+      "id": "boss-passive-4",
+      "name": "Exeunt",
+      "label": "Exeunt",
+      "condition": "Khi Darkon hạ một người chơi.",
+      "effect": "Hồi 750.000 HP mỗi lần hạ người chơi.",
+      "values": [
+        "Hồi 750.000 HP / lần hạ"
+      ]
+    },
+    {
+      "id": "boss-base-stats",
+      "label": "Chỉ số nền",
+      "condition": "Thông số nền của Darkon.",
+      "effect": "Crit Chance và Hit Chance được tăng; chưa công bố giá trị cụ thể.",
+      "values": [
+        "800% Crit Damage",
+        "200% kháng DoT",
+        "Crit Chance: tăng, chưa có số",
+        "Hit Chance: tăng, chưa có số"
+      ]
+    }
+  ],
+  "snapshotSha256": "515136d6a6106b2c953be45d24f3858f604edc7d7326597e3bbdc7cc894cd95c"
+}

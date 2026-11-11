@@ -1,0 +1,115 @@
+{
+  "url": "https://aqwwiki.wikidot.com/bard",
+  "sourceHash": "9a788ac8d5e04037cbffdf460d6149df604ddf307e3ea6ab8365125858418d33",
+  "entries": [
+    {
+      "officialName": "Autoplay",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "1.5",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Enemies are as affected by your song as by any attack.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/bard",
+      "sourceHash": "9a788ac8d5e04037cbffdf460d6149df604ddf307e3ea6ab8365125858418d33",
+      "evidence": "Autoplay Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 1.5 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Enemies are as affected by your song as by any attack."
+    },
+    {
+      "officialName": "Bodhran",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "An infinite range status skill that applies to 20 friendly targets.",
+      "officialDescription": "Drums of War inspire you and your allies, increasing outgoing damage by 20%, Haste by 10%, and Crit Chance by 5% for 10 seconds. Also applies Drumbeat, causing your other skills to apply an additional effect base on the order they're used in.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill13.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/bard",
+      "sourceHash": "9a788ac8d5e04037cbffdf460d6149df604ddf307e3ea6ab8365125858418d33",
+      "evidence": "Bodhran Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 6 Seconds Type: Magical Range: An infinite range status skill that applies to 20 friendly targets. Description: Drums of War inspire you and your allies, increasing outgoing damage by 20%, Haste by 10%, and Crit Chance by 5% for 10 seconds. Also applies Drumbeat, causing your other skills to apply an additional effect base on the order they're used in. Note: Drumbeat lasts for 10 seconds and does not refresh."
+    },
+    {
+      "officialName": "Cantor's Lament",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "3",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Direct a high pitched sound at your target. Deals damage and applies Crescendo to your target, a DoT that gets stronger with each tick, lasts 10 seconds and doesn't refresh. Can't miss.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill14.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/bard",
+      "sourceHash": "9a788ac8d5e04037cbffdf460d6149df604ddf307e3ea6ab8365125858418d33",
+      "evidence": "Cantor's Lament Rank Needed: 2 Mana Cost: 0 Mana Cooldown: 3 seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Direct a high pitched sound at your target. Deals damage and applies Crescendo to your target, a DoT that gets stronger with each tick, lasts 10 seconds and doesn't refresh. Can't miss. Drumbeat effect: Skill 4 > Skill 5 > Skill 3 - This skill deals increased damage."
+    },
+    {
+      "officialName": "O'Carolan's Reel",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "3",
+      "skillType": "Magical",
+      "target": "An infinite range status skill that applies to 20 friendly targets.",
+      "officialDescription": "Perfect for skirmishes, brawls, battles, wars, and fighting in general. Applies Healing Reel to you and your allies, an HoT for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill15.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/bard",
+      "sourceHash": "9a788ac8d5e04037cbffdf460d6149df604ddf307e3ea6ab8365125858418d33",
+      "evidence": "O'Carolan's Reel Rank Needed: 3 Mana Cost: 0 Mana Cooldown: 3 seconds Type: Magical Range: An infinite range status skill that applies to 20 friendly targets. Description: Perfect for skirmishes, brawls, battles, wars, and fighting in general. Applies Healing Reel to you and your allies, an HoT for 10 seconds. Drumbeat effect: Skill 5 > Skill 3 > Skill 4 - Applies Healing Jig to you and your allies, an additional HoT and increasing Damage Resistance by 15% for 10 seconds."
+    },
+    {
+      "officialName": "Toured The World",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "WIS increased by 20%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/bard",
+      "sourceHash": "9a788ac8d5e04037cbffdf460d6149df604ddf307e3ea6ab8365125858418d33",
+      "evidence": "Toured The World Rank Needed: 4 Type: Passive Ability Description: WIS increased by 20%."
+    },
+    {
+      "officialName": "Agitato Allegro",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste, Hit Chance, and Crit Chance increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/bard",
+      "sourceHash": "9a788ac8d5e04037cbffdf460d6149df604ddf307e3ea6ab8365125858418d33",
+      "evidence": "Agitato Allegro Rank Needed: 4 Type: Passive Ability Description: Haste, Hit Chance, and Crit Chance increased by 10%."
+    },
+    {
+      "officialName": "Dissonance",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "3",
+      "skillType": "Magical",
+      "target": "A long range status skill that applies to 1 target.",
+      "officialDescription": "A tune so vile it drives your enemies mad. Applies Dissonance, reducing your target's outgoing damage, Haste, and Crit Chance by 15% while granting additional mana to allies striking the target for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill16.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/bard",
+      "sourceHash": "9a788ac8d5e04037cbffdf460d6149df604ddf307e3ea6ab8365125858418d33",
+      "evidence": "Dissonance Rank Needed: 5 Mana Cost: 0 Mana Cooldown: 3 seconds Type: Magical Range: A long range status skill that applies to 1 target. Description: A tune so vile it drives your enemies mad. Applies Dissonance, reducing your target's outgoing damage, Haste, and Crit Chance by 15% while granting additional mana to allies striking the target for 10 seconds. Drumbeat effect: Skill 3 > Skill 4 > Skill 5 - Applies Cacophony to your target, reducing their Damage Resistance by 15% for 10 seconds."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/g7peUMK.png",
+  "sameSkillVariants": [
+    {
+      "name": "Troubador of Love (Class)",
+      "url": "https://aqwwiki.wikidot.com/troubador-of-love-class"
+    }
+  ],
+  "location": "Locations:\n\nBard Class - Class Hall A\nMythsong Rep - Mythsong City\n\nPrice: 0 AC"
+}

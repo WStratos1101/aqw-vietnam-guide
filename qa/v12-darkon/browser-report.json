@@ -1,0 +1,8 @@
+{
+  "status": "blocked",
+  "contexts": [],
+  "errors": [
+    "browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /Users/wstratos/Desktop/Project/aqw-vietnam-guide/.cache/ms-playwright/webkit-2388/pw_run.sh --inspector-pipe --headless --no-startup-window\n<launched> pid=46527\n[pid=46527][err] /Users/wstratos/Desktop/Project/aqw-vietnam-guide/.cache/ms-playwright/webkit-2388/pw_run.sh: line 7: 46543 Abort trap: 6           DYLD_FRAMEWORK_PATH=\"$DYLIB_PATH\" DYLD_LIBRARY_PATH=\"$DYLIB_PATH\" \"$PLAYWRIGHT\" \"$@\"\nCall log:\n\u001b[2m  - <launching> /Users/wstratos/Desktop/Project/aqw-vietnam-guide/.cache/ms-playwright/webkit-2388/pw_run.sh --inspector-pipe --headless --no-startup-window\u001b[22m\n\u001b[2m  - <launched> pid=46527\u001b[22m\n\u001b[2m  - [pid=46527][err] /Users/wstratos/Desktop/Project/aqw-vietnam-guide/.cache/ms-playwright/webkit-2388/pw_run.sh: line 7: 46543 Abort trap: 6           DYLD_FRAMEWORK_PATH=\"$DYLIB_PATH\" DYLD_LIBRARY_PATH=\"$DYLIB_PATH\" \"$PLAYWRIGHT\" \"$@\"\u001b[22m\n\u001b[2m  - [pid=46527] <gracefully close start>\u001b[22m\n\u001b[2m  - [pid=46527] <kill>\u001b[22m\n\u001b[2m  - [pid=46527] <will force kill>\u001b[22m\n\u001b[2m  - [pid=46527] exception while trying to kill process: Error: kill ESRCH\u001b[22m\n\u001b[2m  - [pid=46527] <process did exit: exitCode=134, signal=null>\u001b[22m\n\u001b[2m  - [pid=46527] starting temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=46527] finished temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=46527] <gracefully close end>\u001b[22m\n"
+  ],
+  "base": "http://127.0.0.1:4181"
+}

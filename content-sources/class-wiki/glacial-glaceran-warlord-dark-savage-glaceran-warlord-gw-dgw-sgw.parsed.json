@@ -1,0 +1,144 @@
+{
+  "url": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+  "sourceHash": "9605c506e93613b8a2db43193a05603c1a619bf2e63d695d8a3090a57ee4061b",
+  "entries": [
+    {
+      "officialName": "Powerful Blow",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2.75",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "An attack that strikes with full force, but takes longer to build up power.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/GWAA.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+      "sourceHash": "9605c506e93613b8a2db43193a05603c1a619bf2e63d695d8a3090a57ee4061b",
+      "evidence": "Powerful Blow Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2.75 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: An attack that strikes with full force, but takes longer to build up power. If Frozen Heart isn't active, applies Cryopathy to your target, reducing their Damage Resistance by 5% for 15 seconds, stacks to 10."
+    },
+    {
+      "officialName": "Frozen Heart",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "2.5",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Toggles Frozen Heart. While active, Frozen Heart reduces your Damage Resistance by 50%, causes all skills to crit, and changes the properties of your other skills. Use again to remove Frozen Heart. Can't miss.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/GWA1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+      "sourceHash": "9605c506e93613b8a2db43193a05603c1a619bf2e63d695d8a3090a57ee4061b",
+      "evidence": "Frozen Heart Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 2.5 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Toggles Frozen Heart. While active, Frozen Heart reduces your Damage Resistance by 50%, causes all skills to crit, and changes the properties of your other skills. Use again to remove Frozen Heart. Can't miss."
+    },
+    {
+      "officialName": "Bitter Cold",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "7",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A chilling attack that freezes your target to the core, stunning them for 1 second. If Frozen Heart isn't active, applies Frigid to your target, reducing their Crit Chance by 20% for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/GWA2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+      "sourceHash": "9605c506e93613b8a2db43193a05603c1a619bf2e63d695d8a3090a57ee4061b",
+      "evidence": "Bitter Cold Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 7 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A chilling attack that freezes your target to the core, stunning them for 1 second. If Frozen Heart isn't active, applies Frigid to your target, reducing their Crit Chance by 20% for 10 seconds. If Frozen Heart is active, applies Cold Wave to your target, reducing their Dodge by 20%."
+    },
+    {
+      "officialName": "Glacier Crush",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "12",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Attack with the might of a glacier. If Frozen Heart isn't active, applies Bone Chill to your target, reducing their Haste and outgoing damage by 30% for 15 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/GWA3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+      "sourceHash": "9605c506e93613b8a2db43193a05603c1a619bf2e63d695d8a3090a57ee4061b",
+      "evidence": "Glacier Crush Rank Needed: 3 Mana Cost: 25 Mana Cooldown: 12 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Attack with the might of a glacier. If Frozen Heart isn't active, applies Bone Chill to your target, reducing their Haste and outgoing damage by 30% for 15 seconds. If Frozen Heart is active, applies Frozen Ferocity, increasing your Hit Chance by 20% and Haste by 10% for 15 seconds."
+    },
+    {
+      "officialName": "Heavy Armor Master",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage Resistance Increased by 50% and Physical Resistance increased by 20%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/GWp.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+      "sourceHash": "9605c506e93613b8a2db43193a05603c1a619bf2e63d695d8a3090a57ee4061b",
+      "evidence": "Heavy Armor Master Rank Needed: 4 Type: Passive Ability Description: Damage Resistance Increased by 50% and Physical Resistance increased by 20%."
+    },
+    {
+      "officialName": "Strong Arm",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Strength increased by 50%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/GWp.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+      "sourceHash": "9605c506e93613b8a2db43193a05603c1a619bf2e63d695d8a3090a57ee4061b",
+      "evidence": "Strong Arm Rank Needed: 4 Type: Passive Ability Description: Strength increased by 50%."
+    },
+    {
+      "officialName": "Warcry",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "14",
+      "skillType": "Physical",
+      "target": "A infinite range skill that heals 7 friendly targets.",
+      "officialDescription": "An invigorating shout. If Frozen Heart isn't active, heals you and up to 6 allies while applying Warlord's Rally, increasing Crit Chance and Damage Resistance by 25% and reducing mana costs by 50% for 20 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/GWA4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+      "sourceHash": "9605c506e93613b8a2db43193a05603c1a619bf2e63d695d8a3090a57ee4061b",
+      "evidence": "Warcry Rank Needed: 5 Mana Cost: 10 Mana Cooldown: 14 Seconds Type: Physical Range: A infinite range skill that heals 7 friendly targets. Description: An invigorating shout. If Frozen Heart isn't active, heals you and up to 6 allies while applying Warlord's Rally, increasing Crit Chance and Damage Resistance by 25% and reducing mana costs by 50% for 20 seconds. If Frozen Heart is active, heals you and applies Warcry, healing you over time and increasing your Crit Damage by 75% for 20 seconds."
+    },
+    {
+      "officialName": "Skull Crusher",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Starting at rank 1, all skills can't crit unless Frozen Heart is active. At rank 10, if Frozen Heart is active, Powerful Blow applies Skull Crusher, increasing your outgoing damage by 5% for 15 seconds, stacks to 10.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/GWp.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/glacial-warlord-class",
+      "sourceHash": "9605c506e93613b8a2db43193a05603c1a619bf2e63d695d8a3090a57ee4061b",
+      "evidence": "Skull Crusher Rank Needed: 10 Type: Passive Ability Description: Starting at rank 1, all skills can't crit unless Frozen Heart is active. At rank 10, if Frozen Heart is active, Powerful Blow applies Skull Crusher, increasing your outgoing damage by 5% for 15 seconds, stacks to 10."
+    }
+  ],
+  "portraitUrl": null,
+  "sameSkillVariants": [
+    {
+      "name": "Dark Glaceran Warlord (Class) (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/dark-glaceran-warlord-class-0-ac"
+    },
+    {
+      "name": "Dark Glaceran Warlord (Class) (AC)",
+      "url": "https://aqwwiki.wikidot.com/dark-glaceran-warlord-class-ac"
+    },
+    {
+      "name": "Glaceran Warlord",
+      "url": "https://aqwwiki.wikidot.com/glaceran-warlord"
+    },
+    {
+      "name": "Savage Glaceran Warlord (Class) (AC)",
+      "url": "https://aqwwiki.wikidot.com/savage-glaceran-warlord-class-ac"
+    },
+    {
+      "name": "Savage Glaceran Warlord (Class) (Special)",
+      "url": "https://aqwwiki.wikidot.com/savage-glaceran-warlord-class-special"
+    }
+  ],
+  "location": "Location: Glacial Warlord (Shop) - Book of Lore\nPrice: 0 AC"
+}

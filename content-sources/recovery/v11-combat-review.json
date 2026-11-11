@@ -1,0 +1,18 @@
+{
+ "reviewedAt":"2026-11-09",
+ "communityDoc":"https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+ "communityDocAccess":"Google Drive fetch succeeded; existing local chapter sections cross-checked, not substituted for missing official combat numbers.",
+ "communitySite":"https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide?authuser=0",
+ "official":"https://www.aq.com/",
+ "fields":[
+  {"boss":"ultra-engineer","field":"droneDamageType","status":"needs_verification","sources":["https://aqwwiki.wikidot.com/attack-drone","https://aqwwiki.wikidot.com/defense-drone"],"reason":"Bubbles/Rings ranges published, damage types absent. Unavoidable and cannot crit do not establish True Damage."},
+  {"boss":"ultra-engineer","field":"devastatorBeamDamage","status":"needs_verification","sources":["https://aqwwiki.wikidot.com/ultra-engineer-monster"],"reason":"Wiki says A lot; confirms True Damage, ignores Focus and shared damage. Docs gives approximate range, not sufficient to replace missing official numeric value. Separate damage confidence from verified type."},
+  {"boss":"ultra-drago","field":"judgedDamageType","status":"conflicting","sources":["https://aqwwiki.wikidot.com/king-drago-monster"],"reason":"Correct Ultra Drago Monster page still says Type Physical and Notes true damage; damage placeholder unresolved. No choice made between contradictory claims."},
+  {"boss":"god-of-the-depths","field":"peerAndNightmare","status":"needs_verification","sources":["https://aqwwiki.wikidot.com/god-of-the-depths"],"reason":"Peer damage/type placeholders; named debuffs and cooldown are known. Endless Nightmare lacks usable numeric/type fields; do not borrow Tendril damage."},
+  {"boss":"god-of-the-depths","field":"taunt","status":"needs_verification","sources":["https://aqwwiki.wikidot.com/god-of-the-depths","https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/daily-ultra-challenge-boss/god-of-the-depths"],"reason":"Known ignore-Focus attacks do not certify an encounter-wide Taunt role or blanket immunity."},
+  {"boss":"kasuko","field":"questAcceptance","status":"needs_verification","sources":["https://aqwwiki.wikidot.com/anina-s-quests"],"reason":"The Molten Heart lists daily repeatability, not an explicit acceptance prerequisite. Blade of Awe requirement belongs to following Forge quest and must not be inherited."},
+  {"boss":"kasuko","field":"taunt","status":"conflicting","sources":["https://aqwwiki.wikidot.com/kasuko","https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/seasonal-ultra-challenge-boss/kasuku"],"reason":"Fireball, Ignited, Explosion explicitly ignore Focus; community suggests optional Taunt loop. Do not assert that loop redirects these attacks."},
+  {"boss":"batara-kala","field":"taunt","status":"needs_verification","sources":["https://aqwwiki.wikidot.com/batara-kala","https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/seasonal-ultra-challenge-boss/batara-kala"],"reason":"Devour/Vulnerable ignore Focus; Mace Slam lists four targets but no explicit Focus rule. No class assignment invented."},
+  {"boss":"ultra-iara","field":"lullabyDamageTypeAndTaunt","status":"needs_verification","sources":["https://aqwwiki.wikidot.com/ultra-iara-monster","https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/seasonal-ultra-challenge-boss/ultra-iara"],"reason":"Wiki fresh web request redirects in a loop and Terminal failed connection; retain exact cached Monster snapshot. Sites/Docs confirms 697–852 and ignore Focus but not Physical/Magical/True type or verified Auto Attack Taunt assignment."}
+ ]
+}

@@ -1,0 +1,130 @@
+{
+  "url": "https://aqwwiki.wikidot.com/sentinel",
+  "sourceHash": "da70ba6fa0f033d2ed3b24990f10bce26fc3df83bc4f5a4727c65c2bf51cc11f",
+  "entries": [
+    {
+      "officialName": "Vigilance",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "3.2",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Your devastating, unavoidable blade is one of rite and fury. Recite the Preamble, increasing your Physical and Magical Resistance by 80% for 3 seconds. Upholding your oath applies In Omnia Paratus, blocking further recitations.",
+      "notes": [
+        "Applies Preamble to the player for 3 seconds, increasing Physical and Magical Resistances by 80%.",
+        "Applies In Omnia Paratus to the enemy, which blocks Preamble for the rest of the fight.",
+        "Reducing Luck only affects enemy players."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/sentinel",
+      "sourceHash": "da70ba6fa0f033d2ed3b24990f10bce26fc3df83bc4f5a4727c65c2bf51cc11f",
+      "evidence": "Vigilance Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 3.2 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Your devastating, unavoidable blade is one of rite and fury. Recite the Preamble, increasing your Physical and Magical Resistance by 80% for 3 seconds. Upholding your oath applies In Omnia Paratus, blocking further recitations. If Castellan Doctrine is present, applies Overwatch, reducing your target’s Crit Chance by 15% and Luck by 30%. If Venator Doctrine is present, applies Beholden, reducing your target’s Hit Chance by 15% and Damage Resistance by 30%. Both effects last 15 seconds. Notes: Applies Preamble to the player for 3 seconds, increasing Physical and Magical Resistances by 80%. Applies In Omnia Paratus to the enemy, which blocks Preamble for the rest of the fight. Reducing Luck only affects enemy players."
+    },
+    {
+      "officialName": "Sentinel's Strike",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "8",
+      "cooldown": "5",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "A guaranteed critical strike that deals damage based on your current health. Applies Defensive Stance, a HoT for 7 seconds. Replaces Offensive Stance.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill100.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/sentinel",
+      "sourceHash": "da70ba6fa0f033d2ed3b24990f10bce26fc3df83bc4f5a4727c65c2bf51cc11f",
+      "evidence": "Sentinel's Strike Rank Needed: 1 Mana Cost: 8 Mana Cooldown: 5 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: A guaranteed critical strike that deals damage based on your current health. Applies Defensive Stance, a HoT for 7 seconds. Replaces Offensive Stance."
+    },
+    {
+      "officialName": "Active Endurance",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "8",
+      "cooldown": "5",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Deals damage and heals you. The lower your health, the greater the damage and healing are. Applies Offensive Stance, increasing your Crit Damage by 50% for 7 seconds. Replaces Defensive Stance.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill46.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/sentinel",
+      "sourceHash": "da70ba6fa0f033d2ed3b24990f10bce26fc3df83bc4f5a4727c65c2bf51cc11f",
+      "evidence": "Active Endurance Rank Needed: 2 Mana Cost: 8 Mana Cooldown: 5 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Deals damage and heals you. The lower your health, the greater the damage and healing are. Applies Offensive Stance, increasing your Crit Damage by 50% for 7 seconds. Replaces Defensive Stance."
+    },
+    {
+      "officialName": "The Western Covenant",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2.5",
+      "skillType": "True Damage",
+      "target": "A long range attack that deals damage to yourself.",
+      "officialDescription": "Applies The Western Covenant, increasing your outgoing physical damage, STR, and END by 50%, and DoT Resistance by 80%. If you are in Defensive Stance, applies Castellan Doctrine, further increasing your END by 50%. If you are in Offensive Stance, applies Venator Doctrine, increasing your Crit Chance and Physical Resistance by 35%. Effects last for 15 seconds. Both Doctrines consume each other.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill102.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/sentinel",
+      "sourceHash": "da70ba6fa0f033d2ed3b24990f10bce26fc3df83bc4f5a4727c65c2bf51cc11f",
+      "evidence": "The Western Covenant Rank Needed: 3 Mana Cost: 0 Mana Cooldown: 2.5 Seconds Type: True Damage Range: A long range attack that deals damage to yourself. Description: Applies The Western Covenant, increasing your outgoing physical damage, STR, and END by 50%, and DoT Resistance by 80%. If you are in Defensive Stance, applies Castellan Doctrine, further increasing your END by 50%. If you are in Offensive Stance, applies Venator Doctrine, increasing your Crit Chance and Physical Resistance by 35%. Effects last for 15 seconds. Both Doctrines consume each other. Note: Always hits, but never crits."
+    },
+    {
+      "officialName": "The Western Covenant - First Excerpt",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased by 30%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/sentinel",
+      "sourceHash": "da70ba6fa0f033d2ed3b24990f10bce26fc3df83bc4f5a4727c65c2bf51cc11f",
+      "evidence": "The Western Covenant - First Excerpt Rank Needed: 4 Type: Passive Ability Description: Haste increased by 30%."
+    },
+    {
+      "officialName": "The Western Covenant - Second Excerpt",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage Resistance increased by 20%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/sentinel",
+      "sourceHash": "da70ba6fa0f033d2ed3b24990f10bce26fc3df83bc4f5a4727c65c2bf51cc11f",
+      "evidence": "The Western Covenant - Second Excerpt Rank Needed: 4 Type: Passive Ability Description: Damage Resistance increased by 20%."
+    },
+    {
+      "officialName": "Dour Duty",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "35",
+      "cooldown": "18",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "You perform a single strike for massive damage based on the number of The Watch Eternal stacks on the target while consuming those stacks and applying Austerity, healing you after 1 second. Applies Exigency Clause, reducing your target's Heal Power by 95% for 7 seconds. Lastly, applies two stacks of The Watch Eternal.",
+      "notes": [
+        "Always hits.",
+        "The two stacks of The Watch Eternal are applied after the skill does damage."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill04.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/sentinel",
+      "sourceHash": "da70ba6fa0f033d2ed3b24990f10bce26fc3df83bc4f5a4727c65c2bf51cc11f",
+      "evidence": "Dour Duty Rank Needed: 5 Mana Cost: 35 Mana Cooldown: 18 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: You perform a single strike for massive damage based on the number of The Watch Eternal stacks on the target while consuming those stacks and applying Austerity, healing you after 1 second. Applies Exigency Clause, reducing your target's Heal Power by 95% for 7 seconds. Lastly, applies two stacks of The Watch Eternal. Notes: Always hits. The two stacks of The Watch Eternal are applied after the skill does damage."
+    },
+    {
+      "officialName": "The Western Covenant - Alpha and Omega",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Starting from Rank 1, all skills except The Western Covenant apply The Watch Eternal, reducing your target's Dodge by 25%, stacks to 20. At rank 10, increases STR by 30% and END by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/sentinel",
+      "sourceHash": "da70ba6fa0f033d2ed3b24990f10bce26fc3df83bc4f5a4727c65c2bf51cc11f",
+      "evidence": "The Western Covenant - Alpha and Omega Rank Needed: 10 Type: Passive Ability Description: Starting from Rank 1, all skills except The Western Covenant apply The Watch Eternal, reducing your target's Dodge by 25%, stacks to 20. At rank 10, increases STR by 30% and END by 15%. The Lord Protectress watches. In Omnia Paratus."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/YGxPQlD.png",
+  "sameSkillVariants": [],
+  "location": "Locations:\n\n+ Locations\n\n- Locations\n\n\n1st Upholder - Book of Lore\n2nd Upholder - Book of Lore\n3rd Upholder - Book of Lore\n4th Upholder - Book of Lore\n5th Upholder - Book of Lore\n6th Upholder - Book of Lore\n7th Upholder - Book of Lore\n8th Upholder - Book of Lore\n9th Upholder - Book of Lore\n10th Upholder - Book of Lore\n11th Upholder - Book of Lore\n12th Upholder - Book of Lore\n13th Upholder - Book of Lore\n14th Upholder - Book of Lore\n15th Upholder - Book of Lore\n16th Upholder - Book of Lore\n17th Upholder - Book of Lore\nFounder Shop - Book of Lore\n\n\n\n\nPrice: 0 AC"
+}

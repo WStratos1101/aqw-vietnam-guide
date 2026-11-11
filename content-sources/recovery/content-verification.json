@@ -1,0 +1,17 @@
+{
+  "reviewedAt":"2026-11-08",
+  "questAcceptance":{
+    "ultra-tyndarius":{"sourceUrl":"https://aqwwiki.wikidot.com/galanoth-s-quests","sourceType":"wiki","confidenceStatus":"verified","requirements":["Hoàn thành Avatar of Fire để nhận Ultra Avatar Tyndarius từ Galanoth."],"notes":"Ultra encounter quest section; once daily. Separate from Fire Avatar's Avatar's Rage."},
+    "ultra-nulgath":{"sourceUrl":"https://aqwwiki.wikidot.com/nulgath-s-quests","sourceType":"wiki","confidenceStatus":"verified","requirements":["Level 80 để nhận Nulgath, the Archfiend."],"notes":"Weekly challenge quest, not Empowered item quests."},
+    "ultra-drago":{"sourceUrl":"https://aqwwiki.wikidot.com/re-s-quests","sourceType":"wiki","confidenceStatus":"verified","requirements":["Hoàn thành Mahapadma để nhận Drago, Tyrant of Astravia từ Re."],"notes":"Weekly quest; equipment merge has independent material requirements."},
+    "ultra-speaker":{"sourceUrl":"https://aqwwiki.wikidot.com/vohu-s-quests","sourceType":"wiki","confidenceStatus":"verified","requirements":["Level 90 để nhận Malgor, The First Speaker từ Vohu."],"notes":"Not the level 100 Goddess of War quest requirements; map access separately requires Your Hero."},
+    "kasuko":{"sourceUrl":"https://aqwwiki.wikidot.com/anina-s-quests","sourceType":"wiki","confidenceStatus":"needs_verification","requirements":[],"notes":"The Molten Heart section lists daily repeatability but no explicit acceptance prerequisite. Absence is not proof of no requirement."}
+  },
+  "tauntVerification":{
+    "god-of-the-depths":{"status":"needs_verification","sourceUrl":"https://aqwwiki.wikidot.com/god-of-the-depths","notes":"Peer ignores Focus. Endless Nightmare targets seven but source does not explicitly give Focus behavior; do not infer immunity for entire encounter."},
+    "kasuko":{"status":"needs_verification","confidenceStatus":"conflicting","sourceUrl":"https://aqwwiki.wikidot.com/kasuko","communitySourceUrl":"https://sites.google.com/view/vncollector/adventure-quest-worlds/ultra-boss-guide/seasonal-ultra-challenge-boss/kasuku","notes":"Wiki Fireball, Ignited and Explosion explicitly ignore Focus, but the community guide proposes a Taunt loop. No definitive encounter-wide Taunt recommendation until conflict is resolved; Whirlpool remains a separate Monster."},
+    "batara-kala":{"status":"needs_verification","sourceUrl":"https://aqwwiki.wikidot.com/batara-kala","notes":"Devour and Vulnerable explicitly ignore Focus; Mace Slam only states AoE 4, no explicit Focus rule."},
+    "ultra-iara":{"status":"needs_verification","sourceUrl":"https://aqwwiki.wikidot.com/ultra-iara-monster","notes":"Lullaby ignores Focus; Auto Attack Focus behavior and role assignment not specified. Web source redirects; cached exact page retained."}
+  },
+  "attackConflicts":[{"boss":"ultra-drago","skillId":"judgement","sourceUrl":"https://aqwwiki.wikidot.com/king-drago-monster","confidenceStatus":"conflicting","notes":"Judged Type table says Physical; attack Notes say true damage. No numerical Damage is published. Preserve both claims; never choose a damage value or type silently."}]
+}

@@ -1,0 +1,137 @@
+{
+  "url": "https://aqwwiki.wikidot.com/infinity-knight",
+  "sourceHash": "b52b7eb4a7a9c25775e3252bd0d37f6bf2f2fe824ad24b33722715c1b10e89ec",
+  "entries": [
+    {
+      "officialName": "Wane of Dusk",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Ages your opponent with every successive hit, applying Perpetual Rend, a 6 second DoT that stacks to 6 and decreases your opponent’s dodge by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/InterstellarAA.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/infinity-knight",
+      "sourceHash": "b52b7eb4a7a9c25775e3252bd0d37f6bf2f2fe824ad24b33722715c1b10e89ec",
+      "evidence": "Wane of Dusk Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Ages your opponent with every successive hit, applying Perpetual Rend, a 6 second DoT that stacks to 6 and decreases your opponent’s dodge by 20%"
+    },
+    {
+      "officialName": "Strike of Dawn",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "3",
+      "skillType": "Hybrid",
+      "target": "A medium range attack that deals damage to 1 target.",
+      "officialDescription": "Strike with a power that illuminates your foe with the purifying light of dawn, shredding them for rapid damage over time with a Temporal Shift, and empowering yourself with a Temporal Rift. Both effects last 30 seconds, stack to 6, and strengthen your other abilities.",
+      "notes": [
+        "Applies a stack of Temporal Rift to the caster.",
+        "Applies a stack of Temporal Shift to the target."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/InterstellarA1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/infinity-knight",
+      "sourceHash": "b52b7eb4a7a9c25775e3252bd0d37f6bf2f2fe824ad24b33722715c1b10e89ec",
+      "evidence": "Strike of Dawn Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 3 Seconds Type: Hybrid Range: A medium range attack that deals damage to 1 target. Description: Strike with a power that illuminates your foe with the purifying light of dawn, shredding them for rapid damage over time with a Temporal Shift, and empowering yourself with a Temporal Rift. Both effects last 30 seconds, stack to 6, and strengthen your other abilities. Notes: Applies a stack of Temporal Rift to the caster. Applies a stack of Temporal Shift to the target."
+    },
+    {
+      "officialName": "Daybreak",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "12",
+      "cooldown": "6",
+      "skillType": "Hybrid",
+      "target": "A medium range status skill that applies to 1 target.",
+      "officialDescription": "Constrict time at the present junction, and invoke a Veil of Compressed Time to protect you for 10 seconds, decreasing the damage and DoT damage you take by 40%, and increasing your Haste by 15%. In the presence of a Temporal Rift, the Daybreak Radiance heals you, applying a 10 second HoT based on its stacks. If your opponent is unaffected by a Temporal Shift, they become trapped in Twilight Shadows, taking rapid damage over time for 12 seconds.",
+      "notes": [
+        "Applies Veil of Compressed Time, increasing Damage and DoT Resistances by 40% and Haste by 15%, lasts 10 seconds.",
+        "If Temporal Rift is present on the caster, applies Daybreak Radiance, a 10 second HoT based on the number of Temporal Rift stacks.",
+        "If Temporal Shift is not present on the target, apply Twilight Shadows, a rapid DoT dealing 3600% Magic damage over 12 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/InterstellarA2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/infinity-knight",
+      "sourceHash": "b52b7eb4a7a9c25775e3252bd0d37f6bf2f2fe824ad24b33722715c1b10e89ec",
+      "evidence": "Daybreak Rank Needed: 2 Mana Cost: 12 Mana Cooldown: 6 Seconds Type: Hybrid Range: A medium range status skill that applies to 1 target. Description: Constrict time at the present junction, and invoke a Veil of Compressed Time to protect you for 10 seconds, decreasing the damage and DoT damage you take by 40%, and increasing your Haste by 15%. In the presence of a Temporal Rift, the Daybreak Radiance heals you, applying a 10 second HoT based on its stacks. If your opponent is unaffected by a Temporal Shift, they become trapped in Twilight Shadows, taking rapid damage over time for 12 seconds. Notes: Applies Veil of Compressed Time, increasing Damage and DoT Resistances by 40% and Haste by 15%, lasts 10 seconds. If Temporal Rift is present on the caster, applies Daybreak Radiance, a 10 second HoT based on the number of Temporal Rift stacks. If Temporal Shift is not present on the target, apply Twilight Shadows, a rapid DoT dealing 3600% Magic damage over 12 seconds."
+    },
+    {
+      "officialName": "Incinerating Era",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "28",
+      "cooldown": "21",
+      "skillType": "Hybrid",
+      "target": "A short range status skill that applies to 1 target.",
+      "officialDescription": "Scorch your foe with radiant chronolight, dealing a massive DoT for 10 seconds based on the number of Temporal Shift stacks they have, and consuming both it and Temporal Rift.",
+      "notes": [
+        "Applies Incinerating Era, a massive 10 second DoT based on the number of Temporal Shift Stacks present on the target.",
+        "Consumes All Temporal Shift stacks on the target.",
+        "Consumes All Temporal Rift stacks on the player."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/InterstellarA3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/infinity-knight",
+      "sourceHash": "b52b7eb4a7a9c25775e3252bd0d37f6bf2f2fe824ad24b33722715c1b10e89ec",
+      "evidence": "Incinerating Era Rank Needed: 3 Mana Cost: 28 Mana Cooldown: 21 Seconds Type: Hybrid Range: A short range status skill that applies to 1 target. Description: Scorch your foe with radiant chronolight, dealing a massive DoT for 10 seconds based on the number of Temporal Shift stacks they have, and consuming both it and Temporal Rift. Notes: Applies Incinerating Era, a massive 10 second DoT based on the number of Temporal Shift Stacks present on the target. Consumes All Temporal Shift stacks on the target. Consumes All Temporal Rift stacks on the player."
+    },
+    {
+      "officialName": "Paradox",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Hit Chance by 75% and decreases Crit Chance by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/InterstellarPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/infinity-knight",
+      "sourceHash": "b52b7eb4a7a9c25775e3252bd0d37f6bf2f2fe824ad24b33722715c1b10e89ec",
+      "evidence": "Paradox Rank Needed: 4 Type: Passive Ability Description: Increases Hit Chance by 75% and decreases Crit Chance by 15%"
+    },
+    {
+      "officialName": "Heroic Stoicism",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Endurance by 75%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/InterstellarPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/infinity-knight",
+      "sourceHash": "b52b7eb4a7a9c25775e3252bd0d37f6bf2f2fe824ad24b33722715c1b10e89ec",
+      "evidence": "Heroic Stoicism Rank Needed: 4 Type: Passive Ability Description: Increases Endurance by 75%"
+    },
+    {
+      "officialName": "Equinox",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "24",
+      "cooldown": "3",
+      "skillType": "Hybrid",
+      "target": "A medium range attack that deals damage to 1 target.",
+      "officialDescription": "Warp space and time around your foe to inflict unavoidable damage. If your foe is affected by Temporal Shift, they become trapped in the Prior Dawn for 12 seconds, increasing their DoT damage taken by 30% and decreasing damage dealt by 10%. If your foe is unaffected by Temporal Shift, they become trapped in the Subsequent Dusk for 12 seconds, increasing their DoT damage taken by 60%, and decreasing damage dealt by 20%.",
+      "notes": [
+        "If Temporal Shift is present on the target, applies Prior Dawn, which decreases target's DoT Resistance by 30% and outgoing damage by 10%.",
+        "If Temporal Rift is not present on the caster, applies Subsequent Dusk to the target, which decreases target's DoT Resistance by 60% and outgoing damage by 20%."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/InterstellarA4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/infinity-knight",
+      "sourceHash": "b52b7eb4a7a9c25775e3252bd0d37f6bf2f2fe824ad24b33722715c1b10e89ec",
+      "evidence": "Equinox Rank Needed: 5 Mana Cost: 24 Mana Cooldown: 3 Seconds Type: Hybrid Range: A medium range attack that deals damage to 1 target. Description: Warp space and time around your foe to inflict unavoidable damage. If your foe is affected by Temporal Shift, they become trapped in the Prior Dawn for 12 seconds, increasing their DoT damage taken by 30% and decreasing damage dealt by 10%. If your foe is unaffected by Temporal Shift, they become trapped in the Subsequent Dusk for 12 seconds, increasing their DoT damage taken by 60%, and decreasing damage dealt by 20%. Notes: If Temporal Shift is present on the target, applies Prior Dawn, which decreases target's DoT Resistance by 30% and outgoing damage by 10%. If Temporal Rift is not present on the caster, applies Subsequent Dusk to the target, which decreases target's DoT Resistance by 60% and outgoing damage by 20%."
+    },
+    {
+      "officialName": "Not a Second Wasted",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases HoT and DoT power by 30%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/InterstellarPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/infinity-knight",
+      "sourceHash": "b52b7eb4a7a9c25775e3252bd0d37f6bf2f2fe824ad24b33722715c1b10e89ec",
+      "evidence": "Not a Second Wasted Rank Needed: 10 Type: Passive Ability Description: Increases HoT and DoT power by 30%"
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/5TgCi6P.png",
+  "sameSkillVariants": [],
+  "location": "Location: 2016 Calendar - Book of Lore\nPrice: 0 AC"
+}

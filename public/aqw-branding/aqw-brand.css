@@ -1,0 +1,32 @@
+/* AQW Collectors Branding v1: only targets the detected header-brand and ACs tokens. */
+.aqw-collectors-header-brand {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  min-height: 54px !important;
+  min-width: 54px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  text-decoration: none !important;
+  flex-shrink: 0 !important;
+}
+.aqw-collectors-header-brand > * { display: none !important; }
+.aqw-collectors-header-brand::before {
+  content: "";
+  display: block;
+  width: clamp(45px, 4.3vw, 64px);
+  height: clamp(45px, 4.3vw, 64px);
+  flex: 0 0 auto;
+  background: url('/aqw-branding/aqw-vietnam-collectors-logo.png') center / contain no-repeat;
+}
+.aqw-ac-currency-gold { color: #AB7419 !important; font-weight: 700 !important; }
+html.dark .aqw-ac-currency-gold,
+body.dark .aqw-ac-currency-gold,
+[data-theme="dark"] .aqw-ac-currency-gold,
+.dark .aqw-ac-currency-gold { color: #F2C866 !important; }
+@media (max-width: 540px) {
+  .aqw-collectors-header-brand { min-width: 44px !important; min-height: 44px !important; }
+  .aqw-collectors-header-brand::before { width: 44px; height: 44px; }
+}

@@ -1,0 +1,115 @@
+{
+  "url": "https://aqwwiki.wikidot.com/chronomancer",
+  "sourceHash": "49baef4266e6a548c63a9cfb89f27edef1bf1ecf8e15fb54243519ed82dd6f7d",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chronomancer",
+      "sourceHash": "49baef4266e6a548c63a9cfb89f27edef1bf1ecf8e15fb54243519ed82dd6f7d",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Temporal Strike",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "3",
+      "cooldown": "1.5",
+      "skillType": "Hybrid",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Deals damage to the target and applies Temporal Rift to you. Stacks to 4, lasts 30 seconds, and is used by your other abilities.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill31.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chronomancer",
+      "sourceHash": "49baef4266e6a548c63a9cfb89f27edef1bf1ecf8e15fb54243519ed82dd6f7d",
+      "evidence": "Temporal Strike Rank Needed: 1 Mana Cost: 3 Mana Cooldown: 1.5 Seconds Type: Hybrid Range: A short range attack that deals damage to 1 target. Description: Deals damage to the target and applies Temporal Rift to you. Stacks to 4, lasts 30 seconds, and is used by your other abilities."
+    },
+    {
+      "officialName": "Rift Inversion",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "12",
+      "skillType": "Hybrid",
+      "target": "A long range skill that heals yourself.",
+      "officialDescription": "Rollback time to heal yourself. If Temporal Rift is active, the amount healed is increased for each stack. Also applies Time Warp, increasing your Haste by 15% for 16 seconds. Always crits.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill32.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chronomancer",
+      "sourceHash": "49baef4266e6a548c63a9cfb89f27edef1bf1ecf8e15fb54243519ed82dd6f7d",
+      "evidence": "Rift Inversion Rank Needed: 2 Mana Cost: 10 Mana Cooldown: 12 Seconds Type: Hybrid Range: A long range skill that heals yourself. Description: Rollback time to heal yourself. If Temporal Rift is active, the amount healed is increased for each stack. Also applies Time Warp, increasing your Haste by 15% for 16 seconds. Always crits."
+    },
+    {
+      "officialName": "Rift Collapse",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "12",
+      "skillType": "Hybrid",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks. Has an 80% increased chance to crit.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill33.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chronomancer",
+      "sourceHash": "49baef4266e6a548c63a9cfb89f27edef1bf1ecf8e15fb54243519ed82dd6f7d",
+      "evidence": "Rift Collapse Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 12 Seconds Type: Hybrid Range: A long range attack that deals damage to 1 target. Description: If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks. Has an 80% increased chance to crit."
+    },
+    {
+      "officialName": "Fall Back",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Dodge chance increased by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chronomancer",
+      "sourceHash": "49baef4266e6a548c63a9cfb89f27edef1bf1ecf8e15fb54243519ed82dd6f7d",
+      "evidence": "Fall Back Rank Needed: 4 Type: Passive Description: Dodge chance increased by 15%"
+    },
+    {
+      "officialName": "Spring Forward",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Critical strike chance, Hit chance, and Haste increased by 5%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chronomancer",
+      "sourceHash": "49baef4266e6a548c63a9cfb89f27edef1bf1ecf8e15fb54243519ed82dd6f7d",
+      "evidence": "Spring Forward Rank Needed: 4 Type: Passive Description: Critical strike chance, Hit chance, and Haste increased by 5%"
+    },
+    {
+      "officialName": "Riftburn",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "12",
+      "skillType": "Magical",
+      "target": "A short range status skill that applies to 1 target.",
+      "officialDescription": "Bend time for your target, placing a DoT effect on them that doubles in strength each time it ticks. Also reduces their chance to Dodge by 15%, lasts 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill34.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chronomancer",
+      "sourceHash": "49baef4266e6a548c63a9cfb89f27edef1bf1ecf8e15fb54243519ed82dd6f7d",
+      "evidence": "Riftburn Rank Needed: 5 Mana Cost: 15 Mana Cooldown: 12 Seconds Type: Magical Range: A short range status skill that applies to 1 target. Description: Bend time for your target, placing a DoT effect on them that doubles in strength each time it ticks. Also reduces their chance to Dodge by 15%, lasts 10 seconds."
+    }
+  ],
+  "portraitUrl": "https://aqwwiki.wdfiles.com/local--files/chronomancer/ChronomancerMale.png",
+  "sameSkillVariants": [
+    {
+      "name": "Chronomancer Prime",
+      "url": "https://aqwwiki.wikidot.com/chronomancer-prime"
+    }
+  ],
+  "location": "Location: AE Calendar Shop - Book of Lore\nPrice: 0 AC"
+}

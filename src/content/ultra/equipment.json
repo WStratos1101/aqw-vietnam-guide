@@ -1,0 +1,1228 @@
+{
+  "aliases": {
+    "Sin of the Abyss (SoA)": "Sin of the Abyss"
+  },
+  "entities": {
+    "exalted-apotheosis": {
+      "id": "exalted-apotheosis",
+      "name": "Exalted Apotheosis",
+      "image": "item-apotheosis",
+      "levelRequirement": 95,
+      "damageBoost": {
+        "value": 51,
+        "targetType": "All Damage",
+        "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+      },
+      "weaponStability": "stable",
+      "baseDamage": "30-30",
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "exalted-penultima",
+            "name": "Exalted Penultima",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+          },
+          {
+            "kind": "item",
+            "itemId": "ezrajal-insignia",
+            "name": "Ezrajal Insignia",
+            "quantity": 4,
+            "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+          },
+          {
+            "kind": "item",
+            "itemId": "warden-insignia",
+            "name": "Warden Insignia",
+            "quantity": 4,
+            "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+          },
+          {
+            "kind": "item",
+            "itemId": "engineer-insignia",
+            "name": "Engineer Insignia",
+            "quantity": 8,
+            "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+          }
+        ]
+      },
+      "materialConfidenceStatus": "verified",
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "exalted-penultima",
+          "name": "Exalted Penultima",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+        },
+        {
+          "kind": "item",
+          "itemId": "ezrajal-insignia",
+          "name": "Ezrajal Insignia",
+          "quantity": 4,
+          "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+        },
+        {
+          "kind": "item",
+          "itemId": "warden-insignia",
+          "name": "Warden Insignia",
+          "quantity": 4,
+          "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+        },
+        {
+          "kind": "item",
+          "itemId": "engineer-insignia",
+          "name": "Engineer Insignia",
+          "quantity": 8,
+          "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+      "lastVerified": "2026-11-08",
+      "category": "weapon",
+      "sourceStatus": "verified",
+      "equipmentType": "weapon",
+      "boostStatus": "verified",
+      "weaponDamageRange": {
+        "minimum": 30,
+        "maximum": 30,
+        "classification": "stable",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+        "verifiedAt": "2026-11-08"
+      },
+      "questProgression": [
+        {
+          "bossId": "ultra-ezrajal",
+          "routeId": "apotheosis"
+        },
+        {
+          "bossId": "ultra-warden",
+          "routeId": "apotheosis"
+        },
+        {
+          "bossId": "ultra-engineer",
+          "routeId": "apotheosis"
+        }
+      ]
+    },
+    "dual-exalted-apotheosis": {
+      "id": "dual-exalted-apotheosis",
+      "name": "Dual Exalted Apotheosis",
+      "image": "equipment-dual-exalted-apotheosis",
+      "levelRequirement": 95,
+      "damageBoost": {
+        "value": 51,
+        "targetType": "All Damage",
+        "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+      },
+      "weaponStability": "stable",
+      "baseDamage": "30-30",
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "exalted-apotheosis",
+            "name": "Exalted Apotheosis",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+          },
+          {
+            "kind": "item",
+            "itemId": "ezrajal-insignia",
+            "name": "Ezrajal Insignia",
+            "quantity": 14,
+            "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+          },
+          {
+            "kind": "item",
+            "itemId": "warden-insignia",
+            "name": "Warden Insignia",
+            "quantity": 14,
+            "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+          },
+          {
+            "kind": "item",
+            "itemId": "engineer-insignia",
+            "name": "Engineer Insignia",
+            "quantity": 14,
+            "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+          }
+        ]
+      },
+      "materialConfidenceStatus": "verified",
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "exalted-apotheosis",
+          "name": "Exalted Apotheosis",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+        },
+        {
+          "kind": "item",
+          "itemId": "ezrajal-insignia",
+          "name": "Ezrajal Insignia",
+          "quantity": 14,
+          "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+        },
+        {
+          "kind": "item",
+          "itemId": "warden-insignia",
+          "name": "Warden Insignia",
+          "quantity": 14,
+          "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+        },
+        {
+          "kind": "item",
+          "itemId": "engineer-insignia",
+          "name": "Engineer Insignia",
+          "quantity": 14,
+          "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis",
+      "lastVerified": "2026-11-08",
+      "category": "weapon",
+      "sourceStatus": "verified",
+      "equipmentType": "weapon",
+      "boostStatus": "verified",
+      "weaponDamageRange": {
+        "minimum": 30,
+        "maximum": 30,
+        "classification": "stable",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis",
+        "verifiedAt": "2026-11-08"
+      }
+    },
+    "exalted-duality": {
+      "id": "exalted-duality",
+      "name": "Exalted Duality",
+      "image": "equipment-exalted-duality",
+      "levelRequirement": 95,
+      "damageBoost": {
+        "value": 40,
+        "targetType": "All Damage",
+        "source": "https://aqwwiki.wikidot.com/exalted-duality"
+      },
+      "weaponStability": "unknown",
+      "baseDamage": "27-33",
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "thaumaturgus-ultima",
+            "name": "Thaumaturgus Ultima",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/exalted-duality"
+          },
+          {
+            "kind": "item",
+            "itemId": "apostate-ultima",
+            "name": "Apostate Ultima",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/exalted-duality"
+          },
+          {
+            "kind": "item",
+            "itemId": "ezrajal-insignia",
+            "name": "Ezrajal Insignia",
+            "quantity": 4,
+            "source": "https://aqwwiki.wikidot.com/exalted-duality"
+          },
+          {
+            "kind": "item",
+            "itemId": "warden-insignia",
+            "name": "Warden Insignia",
+            "quantity": 4,
+            "source": "https://aqwwiki.wikidot.com/exalted-duality"
+          },
+          {
+            "kind": "item",
+            "itemId": "engineer-insignia",
+            "name": "Engineer Insignia",
+            "quantity": 4,
+            "source": "https://aqwwiki.wikidot.com/exalted-duality"
+          }
+        ]
+      },
+      "materialConfidenceStatus": "verified",
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "thaumaturgus-ultima",
+          "name": "Thaumaturgus Ultima",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/exalted-duality"
+        },
+        {
+          "kind": "item",
+          "itemId": "apostate-ultima",
+          "name": "Apostate Ultima",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/exalted-duality"
+        },
+        {
+          "kind": "item",
+          "itemId": "ezrajal-insignia",
+          "name": "Ezrajal Insignia",
+          "quantity": 4,
+          "source": "https://aqwwiki.wikidot.com/exalted-duality"
+        },
+        {
+          "kind": "item",
+          "itemId": "warden-insignia",
+          "name": "Warden Insignia",
+          "quantity": 4,
+          "source": "https://aqwwiki.wikidot.com/exalted-duality"
+        },
+        {
+          "kind": "item",
+          "itemId": "engineer-insignia",
+          "name": "Engineer Insignia",
+          "quantity": 4,
+          "source": "https://aqwwiki.wikidot.com/exalted-duality"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/exalted-duality",
+      "lastVerified": "2026-11-08",
+      "category": "weapon",
+      "sourceStatus": "verified",
+      "equipmentType": "weapon",
+      "boostStatus": "verified",
+      "weaponDamageRange": {
+        "minimum": 27,
+        "maximum": 33,
+        "classification": "unknown",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/exalted-duality",
+        "verifiedAt": "2026-11-08"
+      }
+    },
+    "infernal-flame-khopesh": {
+      "id": "infernal-flame-khopesh",
+      "name": "Infernal Flame Khopesh",
+      "image": "equipment-infernal-flame-khopesh",
+      "levelRequirement": null,
+      "damageBoost": {
+        "value": 75,
+        "targetType": "Elementals",
+        "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+      },
+      "weaponStability": "stable",
+      "baseDamage": "30-30",
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "avatar-tyndarius-insignia",
+            "name": "Avatar Tyndarius Insignia",
+            "quantity": 14,
+            "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+          },
+          {
+            "kind": "item",
+            "itemId": "fire-avatar-s-favor",
+            "name": "Fire Avatar's Favor",
+            "quantity": 40,
+            "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+          }
+        ]
+      },
+      "materialConfidenceStatus": "verified",
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "avatar-tyndarius-insignia",
+          "name": "Avatar Tyndarius Insignia",
+          "quantity": 14,
+          "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+        },
+        {
+          "kind": "item",
+          "itemId": "fire-avatar-s-favor",
+          "name": "Fire Avatar's Favor",
+          "quantity": 40,
+          "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh",
+      "lastVerified": "2026-11-08",
+      "category": "weapon",
+      "sourceStatus": "verified",
+      "equipmentType": "weapon",
+      "boostStatus": "verified",
+      "weaponDamageRange": {
+        "minimum": 30,
+        "maximum": 30,
+        "classification": "stable",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh",
+        "verifiedAt": "2026-11-08"
+      },
+      "questProgression": [
+        {
+          "bossId": "ultra-tyndarius",
+          "routeId": "infernal-khopesh"
+        }
+      ]
+    },
+    "infernal-flame-pyromancer": {
+      "id": "infernal-flame-pyromancer",
+      "name": "Infernal Flame Pyromancer",
+      "image": "equipment-infernal-flame-pyromancer",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "infernal-flame-horns": {
+      "id": "infernal-flame-horns",
+      "name": "Infernal Flame Horns",
+      "image": "equipment-infernal-flame-horns",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "infernal-claws-runes": {
+      "id": "infernal-claws-runes",
+      "name": "Infernal Claws + Runes",
+      "image": "equipment-infernal-claws-runes",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "necrotic-blade-of-the-underworld": {
+      "id": "necrotic-blade-of-the-underworld",
+      "name": "Necrotic Blade of the Underworld",
+      "image": "item-nbou",
+      "levelRequirement": null,
+      "damageBoost": {
+        "value": 51,
+        "targetType": "All Damage",
+        "source": "https://aqwwiki.wikidot.com/necrotic-blade-of-the-underworld"
+      },
+      "weaponStability": "stable",
+      "baseDamage": "30-30",
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": "https://aqwwiki.wikidot.com/necrotic-blade-of-the-underworld",
+      "lastVerified": "2026-11-08",
+      "category": "weapon",
+      "sourceStatus": "verified",
+      "equipmentType": "weapon",
+      "boostStatus": "verified",
+      "weaponDamageRange": {
+        "minimum": 30,
+        "maximum": 30,
+        "classification": "stable",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/necrotic-blade-of-the-underworld",
+        "verifiedAt": "2026-11-08"
+      },
+      "questProgression": [
+        {
+          "bossId": "ultra-dage",
+          "routeId": "nbou"
+        }
+      ]
+    },
+    "empowered-undead-champion": {
+      "id": "empowered-undead-champion",
+      "name": "Empowered Undead Champion",
+      "image": "item-euc",
+      "levelRequirement": null,
+      "damageBoost": {
+        "value": 50,
+        "targetType": "Undead",
+        "source": "https://aqwwiki.wikidot.com/empowered-undead-champion"
+      },
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": "https://aqwwiki.wikidot.com/empowered-undead-champion",
+      "lastVerified": "2026-11-08",
+      "category": "armor",
+      "sourceStatus": "verified",
+      "equipmentType": "armor",
+      "boostStatus": "verified",
+      "questProgression": [
+        {
+          "bossId": "ultra-dage",
+          "routeId": "euc"
+        }
+      ]
+    },
+    "sin-of-the-abyss": {
+      "id": "sin-of-the-abyss",
+      "name": "Sin of the Abyss",
+      "image": "equipment-sin-of-the-abyss",
+      "levelRequirement": 95,
+      "damageBoost": {
+        "value": 51,
+        "targetType": "All Damage",
+        "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+      },
+      "weaponStability": "stable",
+      "baseDamage": "30-30",
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "blood-gem-of-the-archfiend",
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 50,
+            "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+          },
+          {
+            "kind": "item",
+            "itemId": "dark-crystal-shard",
+            "name": "Dark Crystal Shard",
+            "quantity": 200,
+            "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+          },
+          {
+            "kind": "item",
+            "itemId": "diamond-of-nulgath",
+            "name": "Diamond of Nulgath",
+            "quantity": 500,
+            "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+          },
+          {
+            "kind": "item",
+            "itemId": "gem-of-nulgath",
+            "name": "Gem of Nulgath",
+            "quantity": 150,
+            "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+          },
+          {
+            "kind": "item",
+            "itemId": "nulgath-insignia",
+            "name": "Nulgath Insignia",
+            "quantity": 20,
+            "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+          },
+          {
+            "kind": "item",
+            "itemId": "sin-of-revontheus-sword",
+            "name": "Sin of Revontheus (Sword)",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+          },
+          {
+            "kind": "item",
+            "itemId": "tainted-gem",
+            "name": "Tainted Gem",
+            "quantity": 300,
+            "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+          },
+          {
+            "kind": "item",
+            "itemId": "totem-of-nulgath",
+            "name": "Totem of Nulgath",
+            "quantity": 50,
+            "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+          }
+        ]
+      },
+      "materialConfidenceStatus": "verified",
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "blood-gem-of-the-archfiend",
+          "name": "Blood Gem of the Archfiend",
+          "quantity": 50,
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        },
+        {
+          "kind": "item",
+          "itemId": "dark-crystal-shard",
+          "name": "Dark Crystal Shard",
+          "quantity": 200,
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        },
+        {
+          "kind": "item",
+          "itemId": "diamond-of-nulgath",
+          "name": "Diamond of Nulgath",
+          "quantity": 500,
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        },
+        {
+          "kind": "item",
+          "itemId": "gem-of-nulgath",
+          "name": "Gem of Nulgath",
+          "quantity": 150,
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        },
+        {
+          "kind": "item",
+          "itemId": "nulgath-insignia",
+          "name": "Nulgath Insignia",
+          "quantity": 20,
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        },
+        {
+          "kind": "item",
+          "itemId": "sin-of-revontheus-sword",
+          "name": "Sin of Revontheus (Sword)",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        },
+        {
+          "kind": "item",
+          "itemId": "tainted-gem",
+          "name": "Tainted Gem",
+          "quantity": 300,
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        },
+        {
+          "kind": "item",
+          "itemId": "totem-of-nulgath",
+          "name": "Totem of Nulgath",
+          "quantity": 50,
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss",
+      "lastVerified": "2026-11-08",
+      "category": "weapon",
+      "sourceStatus": "verified",
+      "equipmentType": "weapon",
+      "boostStatus": "verified",
+      "weaponDamageRange": {
+        "minimum": 30,
+        "maximum": 30,
+        "classification": "stable",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss",
+        "verifiedAt": "2026-11-08"
+      },
+      "questProgression": [
+        {
+          "bossId": "ultra-nulgath",
+          "routeId": "sin-abyss"
+        }
+      ]
+    },
+    "empowered-overfiend-blade": {
+      "id": "empowered-overfiend-blade",
+      "name": "Empowered Overfiend Blade",
+      "image": "equipment-empowered-overfiend-blade",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-ungodly-reavers": {
+      "id": "empowered-ungodly-reavers",
+      "name": "Empowered Ungodly Reavers",
+      "image": "equipment-empowered-ungodly-reavers",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-prismatic-manslayer-và-empowered-prismatic-manslayers": {
+      "id": "empowered-prismatic-manslayer-và-empowered-prismatic-manslayers",
+      "name": "Empowered Prismatic Manslayer và Empowered Prismatic Manslayers",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-evolved-fiend-eef-và-empowered-evolved-void": {
+      "id": "empowered-evolved-fiend-eef-và-empowered-evolved-void",
+      "name": "Empowered Evolved Fiend (EEF) và Empowered Evolved Void",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-evolved-blood-eeb-empowered-evolved-hex-eeh-và-empowered-evolved-shadow": {
+      "id": "empowered-evolved-blood-eeb-empowered-evolved-hex-eeh-và-empowered-evolved-shadow",
+      "name": "Empowered Evolved Blood (EEB), Empowered Evolved Hex (EEH) và Empowered Evolved Shadow",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-shadow-spear": {
+      "id": "empowered-shadow-spear",
+      "name": "Empowered Shadow Spear",
+      "image": "equipment-empowered-shadow-spear",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-bloodletter": {
+      "id": "empowered-bloodletter",
+      "name": "Empowered Bloodletter",
+      "image": "equipment-empowered-bloodletter",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-sole-bloodletter": {
+      "id": "empowered-sole-bloodletter",
+      "name": "Empowered Sole Bloodletter",
+      "image": "equipment-empowered-sole-bloodletter",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-oblivion-blade": {
+      "id": "empowered-oblivion-blade",
+      "name": "Empowered Oblivion Blade",
+      "image": "equipment-empowered-oblivion-blade",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-charged-oblivion-blade": {
+      "id": "empowered-charged-oblivion-blade",
+      "name": "Empowered Charged Oblivion Blade",
+      "image": "equipment-empowered-charged-oblivion-blade",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-legacy-of-nulgath-elon": {
+      "id": "empowered-legacy-of-nulgath-elon",
+      "name": "Empowered Legacy of Nulgath (ELoN)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "empowered-worshipper-of-nulgath-ewon": {
+      "id": "empowered-worshipper-of-nulgath-ewon",
+      "name": "Empowered Worshipper of Nulgath (EWoN)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "drago-s-royal-guard": {
+      "id": "drago-s-royal-guard",
+      "name": "Drago's Royal Guard",
+      "image": "equipment-drago-s-royal-guard",
+      "levelRequirement": 80,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "king-drago-insignia",
+            "name": "King Drago Insignia",
+            "quantity": 5,
+            "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+          }
+        ]
+      },
+      "materialConfidenceStatus": "verified",
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "king-drago-insignia",
+          "name": "King Drago Insignia",
+          "quantity": 5,
+          "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard",
+      "lastVerified": "2026-11-08",
+      "category": "armor",
+      "sourceStatus": "verified",
+      "equipmentType": "armor",
+      "boostStatus": "none",
+      "questProgression": [
+        {
+          "bossId": "ultra-drago",
+          "routeId": "royal-guard"
+        }
+      ]
+    },
+    "algie-s-bow": {
+      "id": "algie-s-bow",
+      "name": "Algie's Bow",
+      "image": "equipment-algie-s-bow",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "dene-s-axe": {
+      "id": "dene-s-axe",
+      "name": "Dene's Axe",
+      "image": "equipment-dene-s-axe",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "prince-darkon-s-poleaxe": {
+      "id": "prince-darkon-s-poleaxe",
+      "name": "Prince Darkon's Poleaxe",
+      "image": "equipment-prince-darkon-s-poleaxe",
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "các-items-còn-lại-của-drago-s-royal-guard-set": {
+      "id": "các-items-còn-lại-của-drago-s-royal-guard-set",
+      "name": "Các items còn lại của Drago's Royal Guard Set",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "malgor-s-shadowflame-blade": {
+      "id": "malgor-s-shadowflame-blade",
+      "name": "Malgor's ShadowFlame Blade",
+      "image": "equipment-malgor-s-shadowflame-blade",
+      "levelRequirement": 95,
+      "damageBoost": {
+        "value": 51,
+        "targetType": "All Damage",
+        "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+      },
+      "weaponStability": "stable",
+      "baseDamage": "30-30",
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "malgor-insignia",
+            "name": "Malgor Insignia",
+            "quantity": 20,
+            "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+          },
+          {
+            "kind": "item",
+            "itemId": "shadowflame-dragon-blade",
+            "name": "ShadowFlame Dragon Blade",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+          },
+          {
+            "kind": "item",
+            "itemId": "elemental-core",
+            "name": "Elemental Core",
+            "quantity": 20,
+            "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+          }
+        ]
+      },
+      "materialConfidenceStatus": "verified",
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "malgor-insignia",
+          "name": "Malgor Insignia",
+          "quantity": 20,
+          "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+        },
+        {
+          "kind": "item",
+          "itemId": "shadowflame-dragon-blade",
+          "name": "ShadowFlame Dragon Blade",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+        },
+        {
+          "kind": "item",
+          "itemId": "elemental-core",
+          "name": "Elemental Core",
+          "quantity": 20,
+          "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade",
+      "lastVerified": "2026-11-08",
+      "category": "weapon",
+      "sourceStatus": "verified",
+      "equipmentType": "weapon",
+      "boostStatus": "verified",
+      "weaponDamageRange": {
+        "minimum": 30,
+        "maximum": 30,
+        "classification": "stable",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade",
+        "verifiedAt": "2026-11-08"
+      },
+      "questProgression": [
+        {
+          "bossId": "ultra-speaker",
+          "routeId": "shadowflame-blade"
+        }
+      ]
+    },
+    "war-blade-of-courage-wboc": {
+      "id": "war-blade-of-courage-wboc",
+      "name": "War Blade of Courage (WBoC)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "war-blade-of-power-wbop": {
+      "id": "war-blade-of-power-wbop",
+      "name": "War Blade of Power (WBoP)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "war-blade-of-speed-wbosp": {
+      "id": "war-blade-of-speed-wbosp",
+      "name": "War Blade of Speed (WBoSp)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "war-blade-of-strength-wbost": {
+      "id": "war-blade-of-strength-wbost",
+      "name": "War Blade of Strength (WBoSt)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "war-blade-of-wisdom-wbow": {
+      "id": "war-blade-of-wisdom-wbow",
+      "name": "War Blade of Wisdom (WBoW)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "goddess-of-war-blades-gowb": {
+      "id": "goddess-of-war-blades-gowb",
+      "name": "Goddess Of War Blades (GoWB)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "goddess-of-war-cloak-gowc": {
+      "id": "goddess-of-war-cloak-gowc",
+      "name": "Goddess of War Cloak (GoWC)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "goddess-of-war-prestige-cloak-gowpc": {
+      "id": "goddess-of-war-prestige-cloak-gowpc",
+      "name": "Goddess Of War Prestige Cloak (GoWPC)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "goddess-of-war-gow": {
+      "id": "goddess-of-war-gow",
+      "name": "Goddess Of War (GoW)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    },
+    "radiant-goddess-of-war-rgow": {
+      "id": "radiant-goddess-of-war-rgow",
+      "name": "Radiant Goddess Of War (RGoW)",
+      "image": null,
+      "levelRequirement": null,
+      "damageBoost": null,
+      "weaponStability": "unknown",
+      "baseDamage": null,
+      "materialConfidenceStatus": "needs_verification",
+      "materialRequirements": [],
+      "source": null,
+      "lastVerified": null,
+      "category": "unknown",
+      "sourceStatus": "needs_review",
+      "equipmentType": "unknown",
+      "boostStatus": "unknown"
+    }
+  },
+  "progressionPaths": [
+    {
+      "id": "time-inn",
+      "bosses": [
+        "ultra-ezrajal",
+        "ultra-warden",
+        "ultra-engineer"
+      ],
+      "steps": [
+        "Apostate + Thaumaturgus",
+        "Exalted Unity",
+        "Exalted Penultima",
+        "Exalted Apotheosis"
+      ],
+      "source": "https://aqwwiki.wikidot.com/exaltia-merge"
+    }
+  ]
+}

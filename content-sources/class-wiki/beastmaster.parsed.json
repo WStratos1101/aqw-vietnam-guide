@@ -1,0 +1,131 @@
+{
+  "url": "https://aqwwiki.wikidot.com/beastmaster-ac",
+  "sourceHash": "ee497fcaecc62c00563ffe2b4928a961000b0f21c3e050ebcb9825f8c2442a08",
+  "entries": [
+    {
+      "officialName": "Signal Arrow",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2.8",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Fire an arrow at your target, signaling your companion to perform an action.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill318.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/beastmaster-ac",
+      "sourceHash": "ee497fcaecc62c00563ffe2b4928a961000b0f21c3e050ebcb9825f8c2442a08",
+      "evidence": "Signal Arrow Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2.8 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Fire an arrow at your target, signaling your companion to perform an action. Using another skill after damaging a target with Signal Arrow will cause your companion to perform a Follow Up, enhancing the effect of that skill."
+    },
+    {
+      "officialName": "Go for the Eyes",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Command your companion to attack the source of your target's vision, even if they have no eyes. Applies Eye Injury, reducing your target's Hit Chance by 15% and applying a DoT for 6 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill140.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/beastmaster-ac",
+      "sourceHash": "ee497fcaecc62c00563ffe2b4928a961000b0f21c3e050ebcb9825f8c2442a08",
+      "evidence": "Go for the Eyes Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 4 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Command your companion to attack the source of your target's vision, even if they have no eyes. Applies Eye Injury, reducing your target's Hit Chance by 15% and applying a DoT for 6 seconds. Follow Up: Applies Eye Gouge, reducing your target's Hit Chance by 25% and applying a stronger DoT for 6 seconds. Note: Previously called \"GO FOR THE EYES\"."
+    },
+    {
+      "officialName": "Borrowed Wings",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "8",
+      "skillType": "Physical",
+      "target": "A short range skill that heals yourself.",
+      "officialDescription": "Command your companion to cast a protective ward. Heals you and applies Borrowed Wings, increasing your Dodge by 20% for 6 seconds.",
+      "notes": [
+        "Pet is Grifflet.",
+        "Pet cannot be summoned in PVP if it's not summoned before entering Arenas."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/BeastMasterA2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/beastmaster-ac",
+      "sourceHash": "ee497fcaecc62c00563ffe2b4928a961000b0f21c3e050ebcb9825f8c2442a08",
+      "evidence": "Borrowed Wings Rank Needed: 2 Mana Cost: 20 Mana Cooldown: 8 Seconds Type: Physical Range: A short range skill that heals yourself. Description: Command your companion to cast a protective ward. Heals you and applies Borrowed Wings, increasing your Dodge by 20% for 6 seconds. Follow Up: Applies Eye in the Sky, increasing your Dodge by 40% for 6 seconds. When cast out of combat will summon a Grifflet if you don't have a pet equipped. Notes: Pet is Grifflet. Pet cannot be summoned in PVP if it's not summoned before entering Arenas."
+    },
+    {
+      "officialName": "Misdirection",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "12",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Command your Animal Companion to distract your opponent by attacking it from a different angle. Applies Misdirection, reducing your target's Damage Resistance by 15% for 10 seconds. Also has a 30% chance to stun your target for 2 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill141.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/beastmaster-ac",
+      "sourceHash": "ee497fcaecc62c00563ffe2b4928a961000b0f21c3e050ebcb9825f8c2442a08",
+      "evidence": "Misdirection Rank Needed: 3 Mana Cost: 25 Mana Cooldown: 12 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Command your Animal Companion to distract your opponent by attacking it from a different angle. Applies Misdirection, reducing your target's Damage Resistance by 15% for 10 seconds. Also has a 30% chance to stun your target for 2 seconds. Follow Up: Applies Distracted, reducing your target's Damage Resistance by 30% for 10 seconds while also stunning them for 2 seconds."
+    },
+    {
+      "officialName": "Who's a Good Beastie?",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increase haste 30%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/beastmaster-ac",
+      "sourceHash": "ee497fcaecc62c00563ffe2b4928a961000b0f21c3e050ebcb9825f8c2442a08",
+      "evidence": "Who's a Good Beastie? Rank Needed: 4 Type: Passive Ability Description: Increase haste 30% Note: Previously called \"WHO'S A GOOD BEASTIE?\"."
+    },
+    {
+      "officialName": "You Are!",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Outgoing damage and Hit Chance increased by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/beastmaster-ac",
+      "sourceHash": "ee497fcaecc62c00563ffe2b4928a961000b0f21c3e050ebcb9825f8c2442a08",
+      "evidence": "You Are! Rank Needed: 4 Type: Passive Ability Description: Outgoing damage and Hit Chance increased by 10% Note: Previously called \"YOU ARE!\"."
+    },
+    {
+      "officialName": "Treat",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "16",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "You stick a piece of delicious bacon onto your target, causing your companion to become fully focused and attack your target voraciously. Applies Treat, increasing your outgoing damage by 20% while reducing your target's dodge by 50% for 14 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill142.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/beastmaster-ac",
+      "sourceHash": "ee497fcaecc62c00563ffe2b4928a961000b0f21c3e050ebcb9825f8c2442a08",
+      "evidence": "Treat Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 16 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: You stick a piece of delicious bacon onto your target, causing your companion to become fully focused and attack your target voraciously. Applies Treat, increasing your outgoing damage by 20% while reducing your target's dodge by 50% for 14 seconds. Follow Up: Applies Feast, increasing your outgoing damage by 40% for 14 seconds. Can't miss."
+    },
+    {
+      "officialName": "Pet the Beast",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Starting at rank 1, upon performing a Follow Up you pet your companion, Uplifting them which increases your outgoing physical damage by 5% for 8 seconds, stacks to 8. At rank 10, increases your Crit Chance by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/beastmaster-ac",
+      "sourceHash": "ee497fcaecc62c00563ffe2b4928a961000b0f21c3e050ebcb9825f8c2442a08",
+      "evidence": "Pet the Beast Rank Needed: 10 Type: Passive Ability Description: Starting at rank 1, upon performing a Follow Up you pet your companion, Uplifting them which increases your outgoing physical damage by 5% for 8 seconds, stacks to 8. At rank 10, increases your Crit Chance by 10%."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/sx0d1uY.png",
+  "sameSkillVariants": [
+    {
+      "name": "BeastMaster (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/beastmaster-0-ac"
+    }
+  ],
+  "location": "Locations:\n\nBeastMaster AC Shop - Northpointe \nBeastMaster Class - Northpointe \nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\n\nPrice: 2,000 AC"
+}

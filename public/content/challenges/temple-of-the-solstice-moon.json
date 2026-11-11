@@ -1,0 +1,5542 @@
+{
+  "challengeContent": true,
+  "id": "temple-of-the-solstice-moon",
+  "name": "Temple of the Solstice Moon",
+  "type": "dungeon",
+  "map": "templeshrine",
+  "levelRequirement": 50,
+  "partySize": 4,
+  "description": "Ngôi đền dưới ánh trăng Solstice, nơi đoàn thám hiểm học cách phối hợp trước thử thách Celestial.",
+  "bodyUrl": "/content/challenges/temple-of-the-solstice-moon.json",
+  "href": "/challenge-dungeon/temple-of-the-solstice-moon",
+  "image": "area-temple-of-the-solstice-moon",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [
+    "Lập Party; trưởng nhóm bắt đầu tại cổng tương ứng ở /join templeshrine.",
+    "Không vào trực tiếp dungeon bằng /join hoặc /goto."
+  ],
+  "rewardSummary": "Sliver of Moonlight",
+  "sourceSlug": "celestial-dungeons",
+  "stages": [
+    {
+      "id": "temple-of-the-solstice-moon-stage-1",
+      "name": "Screen 1",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 1",
+        "locationName": "Temple of the Solstice Moon",
+        "monsters": [
+          {
+            "id": "screen-1-0",
+            "canonicalName": "Faithless Deer",
+            "role": "Monster",
+            "level": 50,
+            "maxHp": 800000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/faithless-deer"
+          },
+          {
+            "id": "screen-1-1",
+            "canonicalName": "Shackled Fairy",
+            "role": "Monster",
+            "level": 50,
+            "maxHp": 1000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/shackled-fairy"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-1-0-auto-attack-0",
+            "monsterId": "screen-1-0",
+            "name": "Auto Attack",
+            "type": "Magical",
+            "damage": "400-500",
+            "damageType": "Magical",
+            "cooldown": "2 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Curse to player, giảm their sát thương gây ra 1% trong 10 giây, cộng dồn tối đa 50.",
+              "Không thể chí mạng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/faithless-deer"
+          },
+          {
+            "id": "screen-1-0-lunar-prance-1",
+            "monsterId": "screen-1-0",
+            "name": "Lunar Prance",
+            "type": "Magical",
+            "damage": "800-900",
+            "damageType": "Magical",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Prance lên bản thân, tăng Dodge 5% per player hit, cộng dồn.",
+              "Dùng tại 50%, 30%, và 10% HP còn lại.",
+              "Không thể chí mạng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/faithless-deer"
+          },
+          {
+            "id": "screen-1-1-auto-attack-0",
+            "monsterId": "screen-1-1",
+            "name": "Auto Attack",
+            "type": "Magical",
+            "damage": "100-200",
+            "damageType": "Magical",
+            "cooldown": "2 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Curse to player, giảm their sát thương gây ra 1% trong 10 giây, cộng dồn tối đa 50.",
+              "Không thể chí mạng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/shackled-fairy"
+          },
+          {
+            "id": "screen-1-1-lunar-twirl-1",
+            "monsterId": "screen-1-1",
+            "name": "Lunar Twirl",
+            "type": "Magical",
+            "damage": "200-300",
+            "damageType": "Magical",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Twirl lên bản thân, tăng sát thương gây ra 50% per player hit, cộng dồn.",
+              "Dùng tại 80%, 50%, và 20% HP còn lại.",
+              "Không thể chí mạng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/shackled-fairy"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là dungeon dễ nhất trong bộ ba Celestial Dungeons, cũng là dungeon mở đầu giúp cho người chơi làm quen với các cơ chế của chúng trước khi đương đầu với thử thách thật sự.",
+        "Cần lập Party trước khi bắt đầu Dungeon tại /join templeshrine - Room limit: 4",
+        "Cần đạt ít nhất lvl 50 để vượt qua được Challenge Dungeon.",
+        "Cơ chế:",
+        "Faithless Deer",
+        "◆ Total HP: 800,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 400 đến 500.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Khi còn 50%, 30% và 10% HP, sử dụng Lunar Prance gây Magi DMG từ 800 đến 900.",
+        "→ Deer tăng 5% Dodge với mỗi player trúng đòn, stack vô hạn.",
+        "Shackled Fairy",
+        "◆ Total HP: 1,000,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 100 đến 200.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Khi còn 80%, 50% và 20% HP, sử dụng Lunar Twirl gây Magi DMG từ 200 đến 300.",
+        "→ Fairy tăng 50% All Out với mỗi player trúng đòn, stack vô hạn.",
+        "Lunar Haze",
+        "◆ Total HP: 1,200,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.",
+        "→ Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.",
+        "→ Player bị Stun trong 5s khi có Moonlight Gaze.",
+        "→ Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players.",
+        "Hollow Midnight",
+        "◆ Total HP: 2,000,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 25% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys In, 100% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 850 đến 950.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Mỗi 10s, sử dụng Lunar Charge để charge trong 3s sau đó kích hoạt Lunar Convergence gây Magi DMG từ 1.6k đến 1.8k.",
+        "→ Players bị tăng 10% All In và Magi In trong 15s với stack đầu tiên, và 100% với stack thứ hai."
+      ],
+      "strategy": [
+        "→ Ở Screen 1, không có gì đặc biệt để chú ý ở đây, chỉ cần diệt Faithless Deer rồi qua Shackled Fairy."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-261205",
+          "runs": [
+            {
+              "text": "Đây là dungeon dễ nhất trong bộ ba Celestial Dungeons, cũng là dungeon mở đầu giúp cho người chơi làm quen với các cơ chế của chúng trước khi đương đầu với thử thách thật sự.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261381",
+          "runs": [
+            {
+              "text": "Cần lập Party trước khi bắt đầu Dungeon tại ",
+              "italic": true
+            },
+            {
+              "text": "/join templeshrine",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/eclipse-ascent"
+            },
+            {
+              "text": " - Room limit: 4\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261460",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 50",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Dungeon.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261520",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261528",
+          "runs": [
+            {
+              "text": "Faithless Deer",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/faithless-deer"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261543",
+          "runs": [
+            {
+              "text": "◆ Total HP: 800,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261563",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261615",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261653",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261718",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261806",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 400 đến 500.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261856",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261910",
+          "runs": [
+            {
+              "text": "◆ Khi còn 50%, 30% và 10% HP, sử dụng Lunar Prance gây Magi DMG từ 800 đến 900.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261990",
+          "runs": [
+            {
+              "text": "→ Deer tăng 5% Dodge với mỗi player trúng đòn, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262052",
+          "runs": [
+            {
+              "text": "Shackled Fairy",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/shackled-fairy"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262067",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262089",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262141",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262164",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262229",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262317",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 100 đến 200.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262367",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262389",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262443",
+          "runs": [
+            {
+              "text": "◆ Khi còn 80%, 50% và 20% HP, sử dụng Lunar Twirl gây Magi DMG từ 200 đến 300.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262522",
+          "runs": [
+            {
+              "text": "→ Fairy tăng 50% All Out với mỗi player trúng đòn, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262588",
+          "runs": [
+            {
+              "text": "Lunar Haze",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/lunar-haze"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262599",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,200,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262621",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262673",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262696",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262761",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262849",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262899",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262921",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262975",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263035",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263100",
+          "runs": [
+            {
+              "text": "→ Player bị Stun trong 5s khi có Moonlight Gaze.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263149",
+          "runs": [
+            {
+              "text": "→ Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263226",
+          "runs": [
+            {
+              "text": "Hollow Midnight",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/hollow-midnight"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263242",
+          "runs": [
+            {
+              "text": "◆ Total HP: 2,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263264",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263316",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263339",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263404",
+          "runs": [
+            {
+              "text": "◆ Base có 25% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys In, 100% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263492",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 850 đến 950.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263542",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263564",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263618",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Lunar Charge để charge trong 3s sau đó kích hoạt Lunar Convergence gây Magi DMG từ 1.6k đến 1.8k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263735",
+          "runs": [
+            {
+              "text": "→ Players bị tăng 10% All In và Magi In trong 15s với stack đầu tiên, và 100% với stack thứ hai.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    },
+    {
+      "id": "temple-of-the-solstice-moon-stage-2",
+      "name": "Screen 2",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 2",
+        "locationName": "Temple of the Solstice Moon",
+        "monsters": [
+          {
+            "id": "screen-2-0",
+            "canonicalName": "Lunar Haze",
+            "role": "Monster",
+            "level": null,
+            "maxHp": 1200000,
+            "count": 1,
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-2-1",
+            "canonicalName": "Faithless Deer",
+            "role": "Monster",
+            "level": 50,
+            "maxHp": 800000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/faithless-deer"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-2-0-doc-skill-0",
+            "monsterId": "screen-2-0",
+            "name": "Auto Attack",
+            "activation": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.",
+            "playerEffects": [
+              "Bỏ qua Focus/Taunt.",
+              "Players bị giảm 1% All Out trong 10s, stack đến 50."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-2-0-doc-skill-1",
+            "monsterId": "screen-2-0",
+            "name": "Lunar Burst",
+            "activation": "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.",
+            "playerEffects": [
+              "Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.",
+              "Player bị Stun trong 5s khi có Moonlight Gaze.",
+              "Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-2-1-auto-attack-0",
+            "monsterId": "screen-2-1",
+            "name": "Auto Attack",
+            "type": "Magical",
+            "damage": "400-500",
+            "damageType": "Magical",
+            "cooldown": "2 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Curse to player, giảm their sát thương gây ra 1% trong 10 giây, cộng dồn tối đa 50.",
+              "Không thể chí mạng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/faithless-deer"
+          },
+          {
+            "id": "screen-2-1-lunar-prance-1",
+            "monsterId": "screen-2-1",
+            "name": "Lunar Prance",
+            "type": "Magical",
+            "damage": "800-900",
+            "damageType": "Magical",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Prance lên bản thân, tăng Dodge 5% per player hit, cộng dồn.",
+              "Dùng tại 50%, 30%, và 10% HP còn lại.",
+              "Không thể chí mạng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/faithless-deer"
+          }
+        ],
+        "passiveSkills": [
+          {
+            "id": "screen-2-0-doc-passive-0",
+            "monsterId": "screen-2-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-2-0-doc-passive-1",
+            "monsterId": "screen-2-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Miễn nhiễm với Stun.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-2-0-doc-passive-2",
+            "monsterId": "screen-2-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-2-0-doc-passive-3",
+            "monsterId": "screen-2-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ]
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là dungeon dễ nhất trong bộ ba Celestial Dungeons, cũng là dungeon mở đầu giúp cho người chơi làm quen với các cơ chế của chúng trước khi đương đầu với thử thách thật sự.",
+        "Cần lập Party trước khi bắt đầu Dungeon tại /join templeshrine - Room limit: 4",
+        "Cần đạt ít nhất lvl 50 để vượt qua được Challenge Dungeon.",
+        "Cơ chế:",
+        "Faithless Deer",
+        "◆ Total HP: 800,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 400 đến 500.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Khi còn 50%, 30% và 10% HP, sử dụng Lunar Prance gây Magi DMG từ 800 đến 900.",
+        "→ Deer tăng 5% Dodge với mỗi player trúng đòn, stack vô hạn.",
+        "Shackled Fairy",
+        "◆ Total HP: 1,000,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 100 đến 200.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Khi còn 80%, 50% và 20% HP, sử dụng Lunar Twirl gây Magi DMG từ 200 đến 300.",
+        "→ Fairy tăng 50% All Out với mỗi player trúng đòn, stack vô hạn.",
+        "Lunar Haze",
+        "◆ Total HP: 1,200,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.",
+        "→ Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.",
+        "→ Player bị Stun trong 5s khi có Moonlight Gaze.",
+        "→ Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players.",
+        "Hollow Midnight",
+        "◆ Total HP: 2,000,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 25% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys In, 100% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 850 đến 950.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Mỗi 10s, sử dụng Lunar Charge để charge trong 3s sau đó kích hoạt Lunar Convergence gây Magi DMG từ 1.6k đến 1.8k.",
+        "→ Players bị tăng 10% All In và Magi In trong 15s với stack đầu tiên, và 100% với stack thứ hai."
+      ],
+      "strategy": [
+        "Potion/Scroll: Có thể dùng thêm Unstable/Divine Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng Heal. Nếu đảm nhận việc Focus/Taunt thì tại Screen 2 và 3, thay Potent Honor/Malice Potion thành Scroll of Enrage.",
+        "→ Ở Screen 2, cả team diệt Lunar Haze rồi qua Faithless Deer.",
+        "→ Ở Screen 3, tượng tự Screen 2, cả team diệt Lunar Haze rồi qua Shackled Fairy. Còn LoO thì có thể nhận việc Focus/Taunt Moon Haze hoặc không."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-261205",
+          "runs": [
+            {
+              "text": "Đây là dungeon dễ nhất trong bộ ba Celestial Dungeons, cũng là dungeon mở đầu giúp cho người chơi làm quen với các cơ chế của chúng trước khi đương đầu với thử thách thật sự.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261381",
+          "runs": [
+            {
+              "text": "Cần lập Party trước khi bắt đầu Dungeon tại ",
+              "italic": true
+            },
+            {
+              "text": "/join templeshrine",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/eclipse-ascent"
+            },
+            {
+              "text": " - Room limit: 4\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261460",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 50",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Dungeon.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261520",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261528",
+          "runs": [
+            {
+              "text": "Faithless Deer",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/faithless-deer"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261543",
+          "runs": [
+            {
+              "text": "◆ Total HP: 800,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261563",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261615",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261653",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261718",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261806",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 400 đến 500.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261856",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261910",
+          "runs": [
+            {
+              "text": "◆ Khi còn 50%, 30% và 10% HP, sử dụng Lunar Prance gây Magi DMG từ 800 đến 900.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261990",
+          "runs": [
+            {
+              "text": "→ Deer tăng 5% Dodge với mỗi player trúng đòn, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262052",
+          "runs": [
+            {
+              "text": "Shackled Fairy",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/shackled-fairy"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262067",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262089",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262141",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262164",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262229",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262317",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 100 đến 200.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262367",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262389",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262443",
+          "runs": [
+            {
+              "text": "◆ Khi còn 80%, 50% và 20% HP, sử dụng Lunar Twirl gây Magi DMG từ 200 đến 300.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262522",
+          "runs": [
+            {
+              "text": "→ Fairy tăng 50% All Out với mỗi player trúng đòn, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262588",
+          "runs": [
+            {
+              "text": "Lunar Haze",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/lunar-haze"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262599",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,200,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262621",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262673",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262696",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262761",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262849",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262899",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262921",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262975",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263035",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263100",
+          "runs": [
+            {
+              "text": "→ Player bị Stun trong 5s khi có Moonlight Gaze.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263149",
+          "runs": [
+            {
+              "text": "→ Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263226",
+          "runs": [
+            {
+              "text": "Hollow Midnight",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/hollow-midnight"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263242",
+          "runs": [
+            {
+              "text": "◆ Total HP: 2,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263264",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263316",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263339",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263404",
+          "runs": [
+            {
+              "text": "◆ Base có 25% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys In, 100% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263492",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 850 đến 950.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263542",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263564",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263618",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Lunar Charge để charge trong 3s sau đó kích hoạt Lunar Convergence gây Magi DMG từ 1.6k đến 1.8k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263735",
+          "runs": [
+            {
+              "text": "→ Players bị tăng 10% All In và Magi In trong 15s với stack đầu tiên, và 100% với stack thứ hai.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 2
+    },
+    {
+      "id": "temple-of-the-solstice-moon-stage-3",
+      "name": "Screen 3",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 3",
+        "locationName": "Temple of the Solstice Moon",
+        "monsters": [
+          {
+            "id": "screen-3-0",
+            "canonicalName": "Lunar Haze",
+            "role": "Monster",
+            "level": null,
+            "maxHp": 1200000,
+            "count": 1,
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-3-1",
+            "canonicalName": "Shackled Fairy",
+            "role": "Monster",
+            "level": 50,
+            "maxHp": 1000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/shackled-fairy"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-3-0-doc-skill-0",
+            "monsterId": "screen-3-0",
+            "name": "Auto Attack",
+            "activation": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.",
+            "playerEffects": [
+              "Bỏ qua Focus/Taunt.",
+              "Players bị giảm 1% All Out trong 10s, stack đến 50."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-3-0-doc-skill-1",
+            "monsterId": "screen-3-0",
+            "name": "Lunar Burst",
+            "activation": "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.",
+            "playerEffects": [
+              "Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.",
+              "Player bị Stun trong 5s khi có Moonlight Gaze.",
+              "Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-3-1-auto-attack-0",
+            "monsterId": "screen-3-1",
+            "name": "Auto Attack",
+            "type": "Magical",
+            "damage": "100-200",
+            "damageType": "Magical",
+            "cooldown": "2 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Curse to player, giảm their sát thương gây ra 1% trong 10 giây, cộng dồn tối đa 50.",
+              "Không thể chí mạng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/shackled-fairy"
+          },
+          {
+            "id": "screen-3-1-lunar-twirl-1",
+            "monsterId": "screen-3-1",
+            "name": "Lunar Twirl",
+            "type": "Magical",
+            "damage": "200-300",
+            "damageType": "Magical",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Twirl lên bản thân, tăng sát thương gây ra 50% per player hit, cộng dồn.",
+              "Dùng tại 80%, 50%, và 20% HP còn lại.",
+              "Không thể chí mạng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/shackled-fairy"
+          }
+        ],
+        "passiveSkills": [
+          {
+            "id": "screen-3-0-doc-passive-0",
+            "monsterId": "screen-3-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-3-0-doc-passive-1",
+            "monsterId": "screen-3-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Miễn nhiễm với Stun.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-3-0-doc-passive-2",
+            "monsterId": "screen-3-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "screen-3-0-doc-passive-3",
+            "monsterId": "screen-3-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ]
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là dungeon dễ nhất trong bộ ba Celestial Dungeons, cũng là dungeon mở đầu giúp cho người chơi làm quen với các cơ chế của chúng trước khi đương đầu với thử thách thật sự.",
+        "Cần lập Party trước khi bắt đầu Dungeon tại /join templeshrine - Room limit: 4",
+        "Cần đạt ít nhất lvl 50 để vượt qua được Challenge Dungeon.",
+        "Cơ chế:",
+        "Faithless Deer",
+        "◆ Total HP: 800,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 400 đến 500.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Khi còn 50%, 30% và 10% HP, sử dụng Lunar Prance gây Magi DMG từ 800 đến 900.",
+        "→ Deer tăng 5% Dodge với mỗi player trúng đòn, stack vô hạn.",
+        "Shackled Fairy",
+        "◆ Total HP: 1,000,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 100 đến 200.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Khi còn 80%, 50% và 20% HP, sử dụng Lunar Twirl gây Magi DMG từ 200 đến 300.",
+        "→ Fairy tăng 50% All Out với mỗi player trúng đòn, stack vô hạn.",
+        "Lunar Haze",
+        "◆ Total HP: 1,200,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.",
+        "→ Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.",
+        "→ Player bị Stun trong 5s khi có Moonlight Gaze.",
+        "→ Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players.",
+        "Hollow Midnight",
+        "◆ Total HP: 2,000,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 25% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys In, 100% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 850 đến 950.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Mỗi 10s, sử dụng Lunar Charge để charge trong 3s sau đó kích hoạt Lunar Convergence gây Magi DMG từ 1.6k đến 1.8k.",
+        "→ Players bị tăng 10% All In và Magi In trong 15s với stack đầu tiên, và 100% với stack thứ hai."
+      ],
+      "strategy": [
+        "Potion/Scroll: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS. Nếu đảm nhận việc Focus/Taunt thì sau khi hoàn thành Screen 3, thay Potent Honor/Malice Potion thành Scroll of Enrage.",
+        "Potion/Scroll: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS. Nếu đảm nhận việc Focus/Taunt thì sau khi hoàn thành Screen 3, thay Potent Honor/Malice Potion thành Scroll of Enrage.",
+        "→ Ở Screen 3, tượng tự Screen 2, cả team diệt Lunar Haze rồi qua Shackled Fairy. Còn LoO thì có thể nhận việc Focus/Taunt Moon Haze hoặc không."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-261205",
+          "runs": [
+            {
+              "text": "Đây là dungeon dễ nhất trong bộ ba Celestial Dungeons, cũng là dungeon mở đầu giúp cho người chơi làm quen với các cơ chế của chúng trước khi đương đầu với thử thách thật sự.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261381",
+          "runs": [
+            {
+              "text": "Cần lập Party trước khi bắt đầu Dungeon tại ",
+              "italic": true
+            },
+            {
+              "text": "/join templeshrine",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/eclipse-ascent"
+            },
+            {
+              "text": " - Room limit: 4\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261460",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 50",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Dungeon.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261520",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261528",
+          "runs": [
+            {
+              "text": "Faithless Deer",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/faithless-deer"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261543",
+          "runs": [
+            {
+              "text": "◆ Total HP: 800,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261563",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261615",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261653",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261718",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261806",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 400 đến 500.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261856",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261910",
+          "runs": [
+            {
+              "text": "◆ Khi còn 50%, 30% và 10% HP, sử dụng Lunar Prance gây Magi DMG từ 800 đến 900.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261990",
+          "runs": [
+            {
+              "text": "→ Deer tăng 5% Dodge với mỗi player trúng đòn, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262052",
+          "runs": [
+            {
+              "text": "Shackled Fairy",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/shackled-fairy"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262067",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262089",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262141",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262164",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262229",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262317",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 100 đến 200.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262367",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262389",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262443",
+          "runs": [
+            {
+              "text": "◆ Khi còn 80%, 50% và 20% HP, sử dụng Lunar Twirl gây Magi DMG từ 200 đến 300.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262522",
+          "runs": [
+            {
+              "text": "→ Fairy tăng 50% All Out với mỗi player trúng đòn, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262588",
+          "runs": [
+            {
+              "text": "Lunar Haze",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/lunar-haze"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262599",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,200,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262621",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262673",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262696",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262761",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262849",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262899",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262921",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262975",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263035",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263100",
+          "runs": [
+            {
+              "text": "→ Player bị Stun trong 5s khi có Moonlight Gaze.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263149",
+          "runs": [
+            {
+              "text": "→ Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263226",
+          "runs": [
+            {
+              "text": "Hollow Midnight",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/hollow-midnight"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263242",
+          "runs": [
+            {
+              "text": "◆ Total HP: 2,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263264",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263316",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263339",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263404",
+          "runs": [
+            {
+              "text": "◆ Base có 25% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys In, 100% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263492",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 850 đến 950.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263542",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263564",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263618",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Lunar Charge để charge trong 3s sau đó kích hoạt Lunar Convergence gây Magi DMG từ 1.6k đến 1.8k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263735",
+          "runs": [
+            {
+              "text": "→ Players bị tăng 10% All In và Magi In trong 15s với stack đầu tiên, và 100% với stack thứ hai.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 3
+    },
+    {
+      "id": "temple-of-the-solstice-moon-stage-4",
+      "name": "Screen 4",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 4",
+        "locationName": "Temple of the Solstice Moon",
+        "monsters": [
+          {
+            "id": "screen-4-0",
+            "canonicalName": "Hollow Midnight",
+            "role": "Monster",
+            "level": 50,
+            "maxHp": 2000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/hollow-midnight"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-4-0-auto-attack-0",
+            "monsterId": "screen-4-0",
+            "name": "Auto Attack",
+            "type": "Magical",
+            "damage": "850-950",
+            "damageType": "Magical",
+            "cooldown": "2 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Curse to player, giảm their sát thương gây ra 1% trong 10 giây, cộng dồn tối đa 50.",
+              "Không thể chí mạng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/hollow-midnight"
+          },
+          {
+            "id": "screen-4-0-lunar-charge-1",
+            "monsterId": "screen-4-0",
+            "name": "Lunar Charge",
+            "type": "Charge",
+            "damageType": "Charge",
+            "cooldown": "10 seconds",
+            "activation": "The Moon Converges",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/hollow-midnight"
+          },
+          {
+            "id": "screen-4-0-lunar-convergence-2",
+            "monsterId": "screen-4-0",
+            "name": "Lunar Convergence",
+            "type": "Magical",
+            "damage": "1600-1800",
+            "damageType": "Magical",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Lunar Convergence lên người chơi, giảm defense và magical defense 10% on the first stack, 100% on the second stack, và 10% on every stack afterwards, trong 15 giây.",
+              "Không thể chí mạng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/hollow-midnight"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là dungeon dễ nhất trong bộ ba Celestial Dungeons, cũng là dungeon mở đầu giúp cho người chơi làm quen với các cơ chế của chúng trước khi đương đầu với thử thách thật sự.",
+        "Cần lập Party trước khi bắt đầu Dungeon tại /join templeshrine - Room limit: 4",
+        "Cần đạt ít nhất lvl 50 để vượt qua được Challenge Dungeon.",
+        "Cơ chế:",
+        "Faithless Deer",
+        "◆ Total HP: 800,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 400 đến 500.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Khi còn 50%, 30% và 10% HP, sử dụng Lunar Prance gây Magi DMG từ 800 đến 900.",
+        "→ Deer tăng 5% Dodge với mỗi player trúng đòn, stack vô hạn.",
+        "Shackled Fairy",
+        "◆ Total HP: 1,000,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 100 đến 200.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Khi còn 80%, 50% và 20% HP, sử dụng Lunar Twirl gây Magi DMG từ 200 đến 300.",
+        "→ Fairy tăng 50% All Out với mỗi player trúng đòn, stack vô hạn.",
+        "Lunar Haze",
+        "◆ Total HP: 1,200,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.",
+        "→ Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.",
+        "→ Player bị Stun trong 5s khi có Moonlight Gaze.",
+        "→ Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players.",
+        "Hollow Midnight",
+        "◆ Total HP: 2,000,000",
+        "◆ Shield giúp giảm sát thương trên 20k (hệ số 0.5).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 25% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys In, 100% All Out.",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 850 đến 950.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 1% All Out trong 10s, stack đến 50.",
+        "◆ Mỗi 10s, sử dụng Lunar Charge để charge trong 3s sau đó kích hoạt Lunar Convergence gây Magi DMG từ 1.6k đến 1.8k.",
+        "→ Players bị tăng 10% All In và Magi In trong 15s với stack đầu tiên, và 100% với stack thứ hai."
+      ],
+      "strategy": [
+        "→ Ở Screen 4, cả team tập trung diệt Hollow Midnight."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-261205",
+          "runs": [
+            {
+              "text": "Đây là dungeon dễ nhất trong bộ ba Celestial Dungeons, cũng là dungeon mở đầu giúp cho người chơi làm quen với các cơ chế của chúng trước khi đương đầu với thử thách thật sự.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261381",
+          "runs": [
+            {
+              "text": "Cần lập Party trước khi bắt đầu Dungeon tại ",
+              "italic": true
+            },
+            {
+              "text": "/join templeshrine",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/eclipse-ascent"
+            },
+            {
+              "text": " - Room limit: 4\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261460",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 50",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Dungeon.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261520",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261528",
+          "runs": [
+            {
+              "text": "Faithless Deer",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/faithless-deer"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261543",
+          "runs": [
+            {
+              "text": "◆ Total HP: 800,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261563",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261615",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261653",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261718",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261806",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 400 đến 500.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261856",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261910",
+          "runs": [
+            {
+              "text": "◆ Khi còn 50%, 30% và 10% HP, sử dụng Lunar Prance gây Magi DMG từ 800 đến 900.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-261990",
+          "runs": [
+            {
+              "text": "→ Deer tăng 5% Dodge với mỗi player trúng đòn, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262052",
+          "runs": [
+            {
+              "text": "Shackled Fairy",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/shackled-fairy"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262067",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262089",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262141",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262164",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262229",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262317",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 100 đến 200.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262367",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262389",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262443",
+          "runs": [
+            {
+              "text": "◆ Khi còn 80%, 50% và 20% HP, sử dụng Lunar Twirl gây Magi DMG từ 200 đến 300.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262522",
+          "runs": [
+            {
+              "text": "→ Fairy tăng 50% All Out với mỗi player trúng đòn, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262588",
+          "runs": [
+            {
+              "text": "Lunar Haze",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/lunar-haze"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262599",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,200,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262621",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262673",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262696",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262761",
+          "runs": [
+            {
+              "text": "◆ Base có 10% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys Out, 50% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262849",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 350 đến 450.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262899",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262921",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-262975",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Lunar Burst gây Magi DMG từ 700 đến 800.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263035",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 15% Haste trong 15s - hiệu ứng Moonlight Gaze.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263100",
+          "runs": [
+            {
+              "text": "→ Player bị Stun trong 5s khi có Moonlight Gaze.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263149",
+          "runs": [
+            {
+              "text": "→ Cần sử dụng Focus/Taunt để tránh áp hiệu ứng bất lợi lên toàn bộ players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263226",
+          "runs": [
+            {
+              "text": "Hollow Midnight",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/hollow-midnight"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263242",
+          "runs": [
+            {
+              "text": "◆ Total HP: 2,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263264",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 20k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263316",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263339",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263404",
+          "runs": [
+            {
+              "text": "◆ Base có 25% Dodge, -40% All In, -50% Magi In, -50% DoT In, 50% Phys In, 100% All Out.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263492",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 850 đến 950.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263542",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263564",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 1% All Out trong 10s, stack đến 50.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263618",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Lunar Charge để charge trong 3s sau đó kích hoạt Lunar Convergence gây Magi DMG từ 1.6k đến 1.8k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-263735",
+          "runs": [
+            {
+              "text": "→ Players bị tăng 10% All In và Magi In trong 15s với stack đầu tiên, và 100% với stack thứ hai.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 4
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-263860",
+      "runs": [
+        {
+          "text": "Đây là hướng dẫn cách xây dựng và thiết lập Team, còn các",
+          "italic": true
+        },
+        {
+          "text": "h đánh thì ",
+          "italic": true
+        },
+        {
+          "text": "xem bên dưới",
+          "italic": true
+        },
+        {
+          "text": ".\n",
+          "italic": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-263943",
+      "runs": [
+        {
+          "text": "◆ "
+        },
+        {
+          "text": "Team 1:",
+          "italic": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "VHL/CAv/VDK/LDK, LR, AP, LoO",
+          "bold": true
+        },
+        {
+          "text": "\t",
+          "bold": true
+        },
+        {
+          "text": "Starter",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-263990",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "VHL",
+          "bold": true
+        },
+        {
+          "text": " đầu tiên dùng combo 4 - 5 - 3 sau đó dùng: 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+        },
+        {
+          "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264114",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Dauntless > Smite + Lucky class + Anima + Vainglory\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264171",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Destruction Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Fate Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264277",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "CAv",
+          "bold": true
+        },
+        {
+          "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill. Tuy nhiên cần cẩn thận sử dụng 3 tránh ghi đè Focus/Taunt của người khác.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264403",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Ravenous + Lucky class + Anima + Vainglory\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264451",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Destruction Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Might Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264558",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264602",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Ravenous/Dauntless + Lucky class + Anima + Vainglory\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264660",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Destruction Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Fate Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264766",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LDK",
+          "bold": true
+        },
+        {
+          "text": " combo 2 - 4 - 5 - 2 - 3, sau đó spam khi nào CD skill xong, dùng 3 để Heal khi cần.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264856",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Dauntless > Smite + Lucky class/helm + Lament\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-264907",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Destruction Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Fate Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-265013",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD. \n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-265101",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Arcana's Concerto + Wizard class/helm + Vainglory\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-265156",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion/Scroll: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Malevolence Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Sage Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS. Nếu đảm nhận việc Focus/Taunt thì sau khi hoàn thành Screen 3, thay Potent Honor/Malice Potion thành "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-265388",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "AP",
+          "bold": true
+        },
+        {
+          "text": " dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal cho team. \n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-265465",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Valiance + Lucky class + Forge helm + Vainglory.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-265519",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion/Scroll: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Destruction Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Fate Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS. Nếu đảm nhận việc Focus/Taunt thì sau khi hoàn thành Screen 3, thay "
+        },
+        {
+          "text": "Potent Honor/Malice Potion thành "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-265751",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " buff với 2, 3 và 4, sau đó spam tất cả skills.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-265804",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Lucky Awe Blast + Lucky class/helm + Absolution.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-265858",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion/Scroll: Có thể dùng thêm "
+        },
+        {
+          "text": "Unstable"
+        },
+        {
+          "text": "/"
+        },
+        {
+          "text": "Divine Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Fate Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng Heal. Nếu đảm nhận việc Focus/Taunt thì tại Screen 2 và 3, thay Potent Honor/Malice Potion thành "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266079",
+      "runs": [
+        {
+          "text": "◆ "
+        },
+        {
+          "text": "Team 2:",
+          "italic": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "VHL/CAv, LR, VDK/AF, LoO",
+          "bold": true
+        },
+        {
+          "text": "\t",
+          "italic": true
+        },
+        {
+          "text": "B",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "E",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "S",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "T",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "T",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "e",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "a",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "m",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266124",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "VHL",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "CAv",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " sử dụng tương tự Team 1.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266176",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "AF",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 3 - 2 - 4 - 5, sau đó spam 2 và 3 đến khi 4 CD thì dùng 4 - 5.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266255",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Ravenous > Arcana's Concerto + Lucky class + Forge helm + Vainglory.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266329",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Destruction Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Fate Tonic "
+        },
+        {
+          "text": "+ "
+        },
+        {
+          "text": "Potent Honor/Malice Potion "
+        },
+        {
+          "text": "để tăng DPS.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266436",
+      "runs": [
+        {
+          "text": "◆ "
+        },
+        {
+          "text": "Team 3:",
+          "italic": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "DT/EDoT/LC/SC/IT, LR, AP, LoO",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266476",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "DT/EDoT",
+          "bold": true
+        },
+        {
+          "text": " sử dụng combo 4 - 3 - 2 - 3 - 5\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266518",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Elysium + Healer class + Pneuma + Vainglory.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266568",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion: Có thể dùng thêm "
+        },
+        {
+          "text": "Unstable Malevolence Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Sage Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266676",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LC",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 5 - 3 - 2 - 4, sau đó spam là chính.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266729",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Praxis + Wizard class/helm + Vainglory.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266774",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Malevolence Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Sage Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266880",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "SC/IT",
+          "bold": true
+        },
+        {
+          "text": " dùng combo 4 - 3 - 2 - 5, sau đó spam nhưng lưu ý luôn dùng 2 trước 5, và 4 trước 3.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-266973",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Valiance + Lucky class/helm + Absolution.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267020",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Malevolence Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Sage Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267126",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "AP",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " sử dụng tương tự Team 1.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267168",
+      "runs": [
+        {
+          "text": "◆ "
+        },
+        {
+          "text": "Team 4:",
+          "italic": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Shaman, LR, LoO, SC/IT",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267201",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Shaman",
+          "bold": true
+        },
+        {
+          "text": " sử dụng combo 5 - 2 - 3 - (4)\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267240",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Enh: Elysium + Wizard class + Pneuma + Vainglory.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267290",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Potion: Có thể dùng thêm "
+        },
+        {
+          "text": "Potent Malevolence Elixir"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Sage Tonic"
+        },
+        {
+          "text": " + "
+        },
+        {
+          "text": "Potent Honor/Malice Potion"
+        },
+        {
+          "text": " để tăng DPS.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267396",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " sử dụng tương tự Team 1. Còn "
+        },
+        {
+          "text": "SC/IT",
+          "bold": true
+        },
+        {
+          "text": " thì sử dụng tương tự Team 3.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267473",
+      "runs": [
+        {
+          "text": "◆ "
+        },
+        {
+          "text": "Team 5:",
+          "italic": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2 DT/EDoT, LR, LoO",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267502",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "DT/EDoT",
+          "bold": true
+        },
+        {
+          "text": " sử dụng tương tự Team 3, còn "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " sử dụng tương tự Team 1.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267577",
+      "runs": [
+        {
+          "text": "Cách đánh:\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267588",
+      "runs": [
+        {
+          "text": "→ Thứ tự đánh ưu tiên: "
+        },
+        {
+          "text": "Lunar Haze > Faithless Deer > Shackled Fairy",
+          "bold": true
+        },
+        {
+          "text": ". Cả team sẽ tập trung sát thương lên một mục tiêu ưu tiên.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267715",
+      "runs": [
+        {
+          "text": "→ Ở "
+        },
+        {
+          "text": "Screen 1",
+          "bold": true
+        },
+        {
+          "text": ", không có gì đặc biệt để chú ý ở đây, chỉ cần diệt Faithless Deer rồi qua Shackled Fairy.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267818",
+      "runs": [
+        {
+          "text": "→ Ở "
+        },
+        {
+          "text": "Screen 2",
+          "bold": true
+        },
+        {
+          "text": ", cả team diệt Lunar Haze rồi qua Faithless Deer.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-267880",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Vì dungeon này khá dễ, nên có thể không cần Focus/Taunt, việc Focus/Taunt sẽ giúp tăng tốc độ hoàn thành dungeon. Nên Focus/Taunt hay không là tuỳ bạn.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-268032",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Nếu Focus/Taunt, thì "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " có thể nhận việc Focus/Taunt Moon Haze bằng "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": " hoặc không.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-268132",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Cách Focus/Taunt: Sau khi nhìn thấy thông báo “You gaze into the moon.” thì chờ đến khi nó biến mất rồi tự nhẩm đếm đến 3 mới sử dụng SoE để Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-268286",
+      "runs": [
+        {
+          "text": "→ Ở "
+        },
+        {
+          "text": "Screen 3",
+          "bold": true
+        },
+        {
+          "text": ", tượng tự Screen 2, cả team diệt Lunar Haze rồi qua Shackled Fairy. Còn "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " thì có thể nhận việc Focus/Taunt Moon Haze hoặc không.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-268430",
+      "runs": [
+        {
+          "text": "→ Ở "
+        },
+        {
+          "text": "Screen 4",
+          "bold": true
+        },
+        {
+          "text": ", cả team tập trung diệt Hollow Midnight.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-268486",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "AP",
+          "bold": true
+        },
+        {
+          "text": " hoặc "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " sẽ phụ trách nhận việc Focus/Taunt Lunar Convergence. Dùng SoE ngay khi thấy thông báo “The moon converges.” xuất hiện.\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [
+    {
+      "id": "greatblade-of-the-solstice-moon",
+      "canonicalId": "greatblade-of-the-solstice-moon",
+      "itemName": "Greatblade of the Solstice Moon",
+      "image": "equipment-greatblade-of-the-solstice-moon",
+      "category": "weapon",
+      "note": "Celestial Temple Forge · Eclipse Ascent",
+      "prerequisites": [],
+      "quests": [],
+      "rewards": [],
+      "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+    },
+    {
+      "id": "greatblade-of-the-entwined-eclipse",
+      "canonicalId": "greatblade-of-the-entwined-eclipse",
+      "itemName": "Greatblade of the Entwined Eclipse",
+      "image": "equipment-greatblade-of-the-entwined-eclipse",
+      "category": "weapon",
+      "note": "Celestial Temple Forge · Eclipse Ascent",
+      "prerequisites": [],
+      "quests": [],
+      "rewards": [],
+      "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+    }
+  ],
+  "progression": [
+    {
+      "id": "noi-dung",
+      "title": "Nội dung hướng dẫn",
+      "paragraphs": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "p-256814",
+          "runs": [
+            {
+              "text": "Eclipse Ascent Teleport Point\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-256844",
+          "runs": [
+            {
+              "text": "Đây là cổng đến 3 dungeons là Temple of the Solstice Moon, Shrine of the Midnight Sun và Ascension of the Eclipse nằm ở "
+            },
+            {
+              "text": "/join templeshrine",
+              "href": "http://aqwwiki.wikidot.com/eclipse-ascent"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-256984",
+          "runs": [
+            {
+              "text": "- Cổng bên trái là "
+            },
+            {
+              "text": "Temple of the Solstice Moon",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(hoàn thành nhận Sliver of Moonlight ×1)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-257073",
+          "runs": [
+            {
+              "text": "- Cổng bên phải là "
+            },
+            {
+              "text": "Shrine of the Midnight Sun",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(hoàn thành nhận Sliver of Sunlight ×1)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-257160",
+          "runs": [
+            {
+              "text": "- Chinh phục cả hai để mở khoá "
+            },
+            {
+              "text": "Ascension of the Eclipse",
+              "bold": true
+            },
+            {
+              "text": " ở cổng chính giữa "
+            },
+            {
+              "text": "(hoàn thành nhận Ecliptic Offering ×1)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-257274",
+          "runs": [
+            {
+              "text": "- Nhận phần thưởng từ "
+            },
+            {
+              "text": "Ai No Miko's Daily Quests",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/ai-no-miko-s-quests#Eclipse"
+            },
+            {
+              "text": " sau khi hoàn thành Dungeon tương ứng mỗi ngày "
+            },
+            {
+              "text": "(nhận 3 cục loại tương ứng)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-257399",
+          "runs": [
+            {
+              "text": "Tuy nhiên bạn không thể vào Dungeon thông qua các lệnh /join hay /goto, cách duy nhất để vào là đi thông qua các cổng tại "
+            },
+            {
+              "text": "/join templeshrine",
+              "href": "http://aqwwiki.wikidot.com/eclipse-ascent"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-257542",
+          "runs": [
+            {
+              "text": "Party Mechanics\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-257558",
+          "runs": [
+            {
+              "text": "- Tối đa 4 người chơi có thể vào dungeon nhưng bạn sẽ không gặp những người chơi công khai trong dungeon. Thay vào đó, bạn chỉ có thể vào dungeon với những người chơi khác "
+            },
+            {
+              "text": "nếu bạn tham gia nhóm với họ",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "chỉ trưởng nhóm mới có thể bắt đầu dungeon",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-257806",
+          "runs": [
+            {
+              "text": "- Nếu bạn bị ngắt kết nối khi đang ở trong dungeon hoặc cần chế thêm SoE, thì có thể tham gia lại dungeon của đội mình bằng cách sử dụng nút “Rejoin Your Party” thông qua NPC tượng đá trên bản đồ trung tâm "
+            },
+            {
+              "text": "(bắt buộc rời Party trước khi bấm nút này)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-258059",
+          "runs": [
+            {
+              "text": "Monster Mechanics\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-258077",
+          "runs": [
+            {
+              "text": "- Khi ở trong dungeon, tất cả quái vật trong screen bạn đang ở phải bị đánh bại để chuyển sang screen tiếp theo. Mỗi dungeon cũng sẽ đi kèm với một trận đấu Boss ở cuối. Khi đánh bại Boss, bạn sẽ nhận được phần thưởng. Ngay cả khi người chơi chết khi đánh bại Boss, họ vẫn sẽ nhận được phần thưởng!\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-258376",
+          "runs": [
+            {
+              "text": "- Trong dungeon, quái vật sẽ không hồi sinh trong những screen đã được dọn sạch. Nếu đội của bạn không thể dọn sạch một screen và bị đánh bại, thì chỉ những con quái vật trong screen đó mới hồi sinh, không phải những screen trước đó.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h.a1q416s2hdcn",
+      "title": "Lộ trình Merge Greatblade of the Entwined Eclipse",
+      "paragraphs": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "p-258661",
+          "runs": [
+            {
+              "text": "Chi tiết Merge Shop ở "
+            },
+            {
+              "text": "/join templeshrine",
+              "href": "http://aqwwiki.wikidot.com/eclipse-ascent"
+            },
+            {
+              "text": " tại Wiki: "
+            },
+            {
+              "text": "Click here",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/celestial-temple-forge"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-258723",
+          "runs": [
+            {
+              "text": "Để lấy hết tất cả đồ trong shop thì cần "
+            },
+            {
+              "text": "Sliver of Moonlight",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/sliver-of-moonlight"
+            },
+            {
+              "text": " ×156",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Sliver of Sunlight",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/sliver-of-sunlight"
+            },
+            {
+              "text": " ×156",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Ecliptic Offering",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/ecliptic-offering"
+            },
+            {
+              "text": " ×155",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(nhân được 1 cục khi hoàn thành Dungeon tương ứng, không giới hạn và từ ",
+              "italic": true
+            },
+            {
+              "text": "Ai No Miko's Daily Quests",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/ai-no-miko-s-quests#Eclipse"
+            },
+            {
+              "text": " 1 ngày 3 cục mỗi loại, reset vào mỗi ngày 12:01AM EST server time)",
+              "italic": true
+            },
+            {
+              "text": " tức cần tốn "
+            },
+            {
+              "text": "4-5 ngày nếu spam Dungeons",
+              "bold": true
+            },
+            {
+              "text": " và lên đến "
+            },
+            {
+              "text": "39 ngày nếu chỉ làm daily quests",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259088",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " \n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259095",
+          "runs": [
+            {
+              "text": "- Trước khi trả quest, bạn nên dùng boost gold, exp (chưa đạt lvl tối đa) để tăng lượng gold, exp thưởng nhận được của quest.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259221",
+          "runs": [
+            {
+              "text": "- Các trang bị có AC tag sau khi dùng để merge có thể dùng chức năng ",
+              "italic": true
+            },
+            {
+              "text": "Buy Back",
+              "italic": true,
+              "href": "/he-thong/buy-back-ac-tagged-items-function"
+            },
+            {
+              "text": " để lấy lại chúng mà không cần farm lại.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259342",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Rite of Ascension",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/rite-of-ascension"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Yêu cầu "
+            },
+            {
+              "text": "lvl 80",
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để merge\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259387",
+          "runs": [
+            {
+              "text": "→ Victor of the Festival ×1: Nhận đư"
+            },
+            {
+              "text": "ợc từ “"
+            },
+            {
+              "text": "Kanmu Heishi",
+              "href": "http://aqwwiki.wikidot.com/empress-ai-no-miko-s-quests#Victor"
+            },
+            {
+              "text": "” quest của Ai No Miko ở "
+            },
+            {
+              "text": "/join victormatsuri",
+              "href": "http://aqwwiki.wikidot.com/victor-matsuri"
+            },
+            {
+              "text": ". Đánh Masakado tại đây để hoàn thành, cách đánh xem chi tiết "
+            },
+            {
+              "text": "tại đây"
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259557",
+          "runs": [
+            {
+              "text": "→ Sliver of Sunlight ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259581",
+          "runs": [
+            {
+              "text": "→ Sliver of Moonlight ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259606",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Đây là chìa khoá giúp mở Ascension of the Eclipse Dungeon, cần giữ trong túi đồ để có thể vào được dungeon này.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259725",
+          "runs": [
+            {
+              "text": "Tier 1 Rewards:",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259744",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Solarbrand",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/solarbrand"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 15% All DMG - Yêu cầu "
+            },
+            {
+              "text": "lvl 50",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259800",
+          "runs": [
+            {
+              "text": "→ Sliver of Sunlight ×5\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259825",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Lunarbrand",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/lunarbrand"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 15% All DMG - Yêu cầu "
+            },
+            {
+              "text": "lvl 50",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259881",
+          "runs": [
+            {
+              "text": "→ Sliver of Moonlight ×5\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259907",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Umbrabrand",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/umbrabrand"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 30% All DMG - Yêu cầu "
+            },
+            {
+              "text": "lvl 80",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259963",
+          "runs": [
+            {
+              "text": "→ Solarbrand ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259979",
+          "runs": [
+            {
+              "text": "→ Lunarbrand ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-259995",
+          "runs": [
+            {
+              "text": "→ Ecliptic Offering ×5\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260019",
+          "runs": [
+            {
+              "text": "Tier 2 Rewards:",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260038",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Blade of the Burning Sun",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/blade-of-the-burning-sun"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(BoBS)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 20% All DMG - Yêu cầu "
+            },
+            {
+              "text": "lvl 60",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260115",
+          "runs": [
+            {
+              "text": "→ Solarbrand ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260131",
+          "runs": [
+            {
+              "text": "→ Sliver of Sunlight ×50\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260157",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Blade of the Glowing Moon",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/blade-of-the-glowing-moon"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(BoGM)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 20% All DMG - Yêu cầu "
+            },
+            {
+              "text": "lvl 60",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260235",
+          "runs": [
+            {
+              "text": "→ Lunarbrand ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260251",
+          "runs": [
+            {
+              "text": "→ Sliver of Moonlight ×50\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260278",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Blade of the Bound Eclipse",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/blade-of-the-bound-eclipse"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(BoBE)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 40% All DMG - Yêu cầu "
+            },
+            {
+              "text": "lvl 85",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260357",
+          "runs": [
+            {
+              "text": "→ Blade of the Burning Sun ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260387",
+          "runs": [
+            {
+              "text": "→ Blade of the Glowing Moon ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260418",
+          "runs": [
+            {
+              "text": "→ Ecliptic Offering ×50\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260443",
+          "runs": [
+            {
+              "text": "Tier 3 Rewards:",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260462",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Greatblade of the Midnight Sun",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(GoMS)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 25% All DMG - Yêu cầu "
+            },
+            {
+              "text": "lvl 70",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260545",
+          "runs": [
+            {
+              "text": "→ Blade of the Burning Sun ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260575",
+          "runs": [
+            {
+              "text": "→ Sliver of Sunlight ×100\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260602",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Greatblade of the Solstice Moon",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(GoSM)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 25% All DMG - Yêu cầu "
+            },
+            {
+              "text": "lvl 70",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260686",
+          "runs": [
+            {
+              "text": "→ Blade of the Glowing Moon ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260717",
+          "runs": [
+            {
+              "text": "→ Sliver of Moonlight ×100\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260745",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Greatblade of the Entwined Eclipse",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(GoEE)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 51% All DMG - Yêu cầu "
+            },
+            {
+              "text": "lvl 95",
+              "bold": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260832",
+          "runs": [
+            {
+              "text": "→ Greatblade of the Midnight Sun ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260868",
+          "runs": [
+            {
+              "text": "→ Greatblade of the Solstice Moon ×1\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260905",
+          "runs": [
+            {
+              "text": "→ Ecliptic Offering ×100\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-260933",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Sau khi có ",
+              "italic": true
+            },
+            {
+              "text": "Greatblade of the Entwined Eclipse bạn có thể nhận “",
+              "italic": true
+            },
+            {
+              "text": "Eclipse Ascension Badge",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/ai-no-miko-s-quests#EclipseBadge"
+            },
+            {
+              "text": "” quest của Ai No Miko tại đây để ",
+              "italic": true
+            },
+            {
+              "text": "lấy Character Page Badge của GoEE, cần có Hollowed Remains ×1 nhận được sau khi hoàn thành một Dungeon bất kì ở đây.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "progressionRelation": {
+    "branches": [
+      "temple-of-the-solstice-moon",
+      "shrine-of-the-midnight-sun"
+    ],
+    "unlocks": "ascension-of-the-eclipse",
+    "parallel": true
+  },
+  "recommendedTeams": [
+    {
+      "id": "source-team-1",
+      "name": "Team 1: VHL/CAv/VDK/LDK, LR, AP, LoO\tStarter",
+      "assignments": [
+        {
+          "id": "team-1-slot-1-1",
+          "primaryClass": {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL",
+            "enhancement": [],
+            "instructions": [
+              "→ VHL đầu tiên dùng combo 4 - 5 - 3 sau đó dùng: 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5).",
+              "Enh: Dauntless > Smite + Lucky class + Anima + Vainglory",
+              "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "chaos-avenger",
+              "name": "Chaos Avenger",
+              "abbreviation": "CAv",
+              "enhancement": [],
+              "instructions": [
+                "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill. Tuy nhiên cần cẩn thận sử dụng 3 tránh ghi đè Focus/Taunt của người khác.",
+                "Enh: Ravenous + Lucky class + Anima + Vainglory",
+                "Potion: Có thể dùng thêm Potent Destruction Elixir + Might Tonic + Potent Honor/Malice Potion để tăng DPS."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "verus-doomknight",
+              "name": "Verus DoomKnight",
+              "abbreviation": "VDK",
+              "enhancement": [],
+              "instructions": [
+                "→ VDK dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4",
+                "Enh: Ravenous/Dauntless + Lucky class + Anima + Vainglory",
+                "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "legion-doomknight",
+              "name": "Legion DoomKnight",
+              "abbreviation": "LDK",
+              "enhancement": [],
+              "instructions": [
+                "→ LDK combo 2 - 4 - 5 - 2 - 3, sau đó spam khi nào CD skill xong, dùng 3 để Heal khi cần.",
+                "Enh: Dauntless > Smite + Lucky class/helm + Lament",
+                "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-1-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [
+              "→ LR mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.",
+              "Enh: Arcana's Concerto + Wizard class/helm + Vainglory",
+              "Potion/Scroll: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS. Nếu đảm nhận việc Focus/Taunt thì sau khi hoàn thành Screen 3, thay Potent Honor/Malice Potion thành Scroll of Enrage."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-3-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [
+              "→ AP dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal cho team.",
+              "Enh: Valiance + Lucky class + Forge helm + Vainglory.",
+              "Potion/Scroll: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS. Nếu đảm nhận việc Focus/Taunt thì sau khi hoàn thành Screen 3, thay Potent Honor/Malice Potion thành Scroll of Enrage."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-4-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [
+              "→ LoO buff với 2, 3 và 4, sau đó spam tất cả skills.",
+              "Enh: Lucky Awe Blast + Lucky class/helm + Absolution.",
+              "Potion/Scroll: Có thể dùng thêm Unstable/Divine Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng Heal. Nếu đảm nhận việc Focus/Taunt thì tại Screen 2 và 3, thay Potent Honor/Malice Potion thành Scroll of Enrage."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-2",
+      "name": "Team 2: VHL/CAv, LR, VDK/AF, LoO\tBEST Team",
+      "assignments": [
+        {
+          "id": "team-2-slot-1-1",
+          "primaryClass": {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL",
+            "enhancement": [],
+            "instructions": [
+              "→ VHL, CAv, LR, VDK và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "chaos-avenger",
+              "name": "Chaos Avenger",
+              "abbreviation": "CAv",
+              "enhancement": [],
+              "instructions": [
+                "→ VHL, CAv, LR, VDK và LoO sử dụng tương tự Team 1."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-2-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [
+              "→ VHL, CAv, LR, VDK và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-3-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [
+              "→ VHL, CAv, LR, VDK và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "archfiend",
+              "name": "ArchFiend",
+              "abbreviation": "AF",
+              "enhancement": [],
+              "instructions": [
+                "→ AF mở đầu với 3 - 2 - 4 - 5, sau đó spam 2 và 3 đến khi 4 CD thì dùng 4 - 5.",
+                "Enh: Ravenous > Arcana's Concerto + Lucky class + Forge helm + Vainglory.",
+                "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-2-slot-4-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [
+              "→ VHL, CAv, LR, VDK và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-3",
+      "name": "Team 3: DT/EDoT/LC/SC/IT, LR, AP, LoO",
+      "assignments": [
+        {
+          "id": "team-3-slot-1-1",
+          "primaryClass": {
+            "classId": "dragon-of-time",
+            "name": "Dragon of Time",
+            "abbreviation": "DT",
+            "enhancement": [],
+            "instructions": [
+              "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5",
+              "Enh: Elysium + Healer class + Pneuma + Vainglory.",
+              "Potion: Có thể dùng thêm Unstable Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "lightcaster",
+              "name": "LightCaster",
+              "abbreviation": "LC",
+              "enhancement": [],
+              "instructions": [
+                "→ LC mở đầu với 5 - 3 - 2 - 4, sau đó spam là chính.",
+                "Enh: Praxis + Wizard class/helm + Vainglory.",
+                "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "stonecrusher",
+              "name": "StoneCrusher",
+              "abbreviation": "SC",
+              "enhancement": [],
+              "instructions": [
+                "→ SC/IT dùng combo 4 - 3 - 2 - 5, sau đó spam nhưng lưu ý luôn dùng 2 trước 5, và 4 trước 3.",
+                "Enh: Valiance + Lucky class/helm + Absolution.",
+                "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [
+                "→ SC/IT dùng combo 4 - 3 - 2 - 5, sau đó spam nhưng lưu ý luôn dùng 2 trước 5, và 4 trước 3.",
+                "Enh: Valiance + Lucky class/helm + Absolution.",
+                "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-3-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [
+              "→ LR, AP và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-3-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [
+              "→ LR, AP và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-4-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [
+              "→ LR, AP và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-4",
+      "name": "Team 4: Shaman, LR, LoO, SC/IT",
+      "assignments": [
+        {
+          "id": "team-4-slot-1-1",
+          "primaryClass": {
+            "classId": "shaman",
+            "name": "Shaman",
+            "abbreviation": "Shaman",
+            "enhancement": [],
+            "instructions": [
+              "→ Shaman sử dụng combo 5 - 2 - 3 - (4)",
+              "Enh: Elysium + Wizard class + Pneuma + Vainglory.",
+              "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-4-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [
+              "→ LR và LoO sử dụng tương tự Team 1. Còn SC/IT thì sử dụng tương tự Team 3."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-4-slot-3-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [
+              "→ LR và LoO sử dụng tương tự Team 1. Còn SC/IT thì sử dụng tương tự Team 3."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-4-slot-4-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [
+              "→ LR và LoO sử dụng tương tự Team 1. Còn SC/IT thì sử dụng tương tự Team 3."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [
+                "→ LR và LoO sử dụng tương tự Team 1. Còn SC/IT thì sử dụng tương tự Team 3."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-5",
+      "name": "Team 5: 2 DT/EDoT, LR, LoO",
+      "assignments": [
+        {
+          "id": "team-5-slot-1-1",
+          "primaryClass": {
+            "classId": "dragon-of-time",
+            "name": "Dragon of Time",
+            "abbreviation": "DT",
+            "enhancement": [],
+            "instructions": [
+              "→ DT/EDoT sử dụng tương tự Team 3, còn LR và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-5-slot-1-2",
+          "primaryClass": {
+            "classId": "dragon-of-time",
+            "name": "Dragon of Time",
+            "abbreviation": "DT",
+            "enhancement": [],
+            "instructions": [
+              "→ DT/EDoT sử dụng tương tự Team 3, còn LR và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-5-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [
+              "→ DT/EDoT sử dụng tương tự Team 3, còn LR và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-5-slot-3-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [
+              "→ DT/EDoT sử dụng tương tự Team 3, còn LR và LoO sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    }
+  ]
+}

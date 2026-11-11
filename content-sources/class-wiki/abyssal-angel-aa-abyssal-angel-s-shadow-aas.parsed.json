@@ -1,0 +1,146 @@
+{
+  "url": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+  "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+  "entries": [
+    {
+      "officialName": "Vice Bolt",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "An infinite range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Fires long range bolts infused with Void Energy dealing Moderate Damage enhanced by your Spell Power. Can hit up to three targets. Each bolt exposes their deepest sins dealing a Minor DoT for 3 seconds. Stacks to 6.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill182N.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+      "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+      "evidence": "Vice Bolt Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: An infinite range attack that deals damage to 3 hostile targets. Description: Fires long range bolts infused with Void Energy dealing Moderate Damage enhanced by your Spell Power. Can hit up to three targets. Each bolt exposes their deepest sins dealing a Minor DoT for 3 seconds. Stacks to 6. Note: Applies Sinned Arrow to all targets hit, dealing DoT damage over 4 seconds. Vice Bolt's DoT increases by its base damage per stack."
+    },
+    {
+      "officialName": "Flight",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "8",
+      "skillType": "Physical",
+      "target": "An infinite range status skill that applies to 1 target.",
+      "officialDescription": "Spreads it's wings and takes flight. Applies Vantage Point, increasing Hit Chance and Dodge by 15% for 6 seconds. Also allows you to focus all your fire on one target, empowering your arrows increasing your overall DoT Damage by 75%. Your focused targeting reduces the amount of void energy you need to expend, applying Mana Refraction which reduces mana costs by 50% for 8 seconds.",
+      "notes": [
+        "Applies Vantage Point to caster for 6 seconds, increasing Hit Chance and Dodge by 15%, increasing DoT damage by 50%, and making all attacks single target.",
+        "Applies Mana Refraction to caster for 8 seconds, reducing mana costs by 50%."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill183N.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+      "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+      "evidence": "Flight Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 8 Seconds Type: Physical Range: An infinite range status skill that applies to 1 target. Description: Spreads it's wings and takes flight. Applies Vantage Point, increasing Hit Chance and Dodge by 15% for 6 seconds. Also allows you to focus all your fire on one target, empowering your arrows increasing your overall DoT Damage by 75%. Your focused targeting reduces the amount of void energy you need to expend, applying Mana Refraction which reduces mana costs by 50% for 8 seconds. Notes: Applies Vantage Point to caster for 6 seconds, increasing Hit Chance and Dodge by 15%, increasing DoT damage by 50%, and making all attacks single target. Applies Mana Refraction to caster for 8 seconds, reducing mana costs by 50%."
+    },
+    {
+      "officialName": "Aphotic Overdrive",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "26",
+      "cooldown": "4",
+      "skillType": "Hybrid",
+      "target": "An infinite range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "If Vantage Point is in play, you send shadow imgages striking up to 4 targets for Moderately Strong Damage. Applies Aghast, stunning the opponents for 3 seconds. If Vantage Point is not in play, applies Catalyst, siphoning their Haste, lowering it by 20% while maxing out your Haste for 8 seconds.",
+      "notes": [
+        "If Vantage point is not active, applies Catalyst to caster for 8 seconds, increasing haste by 50%.",
+        "If Vantage point is not active, applies Catalyst to target enemies, lowering their haste by 20%.",
+        "If Vantage point is active, applies Aghast, stunning the target enemy for 3 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill184N.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+      "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+      "evidence": "Aphotic Overdrive Rank Needed: 2 Mana Cost: 26 Mana Cooldown: 4 Seconds Type: Hybrid Range: An infinite range attack that deals damage to 4 hostile targets. Description: If Vantage Point is in play, you send shadow imgages striking up to 4 targets for Moderately Strong Damage. Applies Aghast, stunning the opponents for 3 seconds. If Vantage Point is not in play, applies Catalyst, siphoning their Haste, lowering it by 20% while maxing out your Haste for 8 seconds. Notes: If Vantage point is not active, applies Catalyst to caster for 8 seconds, increasing haste by 50%. If Vantage point is not active, applies Catalyst to target enemies, lowering their haste by 20%. If Vantage point is active, applies Aghast, stunning the target enemy for 3 seconds."
+    },
+    {
+      "officialName": "Fallen's Judgement",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "18",
+      "cooldown": "20",
+      "skillType": "Magical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Suppresses your inner Void Energy to temporarily put you in a stasis granting you a High HoT and quadrupling your Endurance for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill185N.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+      "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+      "evidence": "Fallen's Judgement Rank Needed: 3 Mana Cost: 18 Mana Cooldown: 20 Seconds Type: Magical Range: A short range status skill that applies to yourself. Description: Suppresses your inner Void Energy to temporarily put you in a stasis granting you a High HoT and quadrupling your Endurance for 10 seconds. Note: Applies Fallen's Judgement to caster for 9 seconds, quadrupling caster's endurance and applying a HoT to caster that ticks every second."
+    },
+    {
+      "officialName": "Inscribed Arrows",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increase DoT Damage by 12%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+      "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+      "evidence": "Inscribed Arrows Rank Needed: 4 Type: Passive Ability Description: Increase DoT Damage by 12%"
+    },
+    {
+      "officialName": "Master Tactician",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Wisdom and Dodge by 18%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+      "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+      "evidence": "Master Tactician Rank Needed: 4 Type: Passive Ability Description: Increases Wisdom and Dodge by 18%"
+    },
+    {
+      "officialName": "Crystallis Veil",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "32",
+      "cooldown": "13",
+      "skillType": "Hybrid",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Spawns Crystals from thin air to increase 25% Damage Resistance for 8 seconds. Also applies Clean Cut, increasing your Crit Chance by 15% for 6 seconds.",
+      "notes": [
+        "Applies Clean Cut to caster, increasing caster's crit chance by 15% for 7 seconds.",
+        "Applies Crystallis Veil to caster, increasing caster's damage resistance by 25% for 9 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill186N.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+      "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+      "evidence": "Crystallis Veil Rank Needed: 5 Mana Cost: 32 Mana Cooldown: 13 Seconds Type: Hybrid Range: A short range status skill that applies to yourself. Description: Spawns Crystals from thin air to increase 25% Damage Resistance for 8 seconds. Also applies Clean Cut, increasing your Crit Chance by 15% for 6 seconds. Note: Applies Clean Cut to caster, increasing caster's crit chance by 15% for 7 seconds. Applies Crystallis Veil to caster, increasing caster's damage resistance by 25% for 9 seconds."
+    },
+    {
+      "officialName": "Always Hit Their Mark…",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Hit Chance by 10% and Critical Strike Damage by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/abyssal-angel-legend",
+      "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+      "evidence": "Always Hit Their Mark… Rank Needed: 10 Type: Passive Ability Description: Increases Hit Chance by 10% and Critical Strike Damage by 15%"
+    }
+  ],
+  "portraitUrl": "https://aqwwiki.wdfiles.com/local--files/abyssal-angel-non-legend/AbyssalAngelM.png",
+  "sameSkillVariants": [
+    {
+      "name": "Abyssal Angel (Non-Legend)",
+      "url": "https://aqwwiki.wikidot.com/abyssal-angel-non-legend"
+    },
+    {
+      "name": "Abyssal Angel's Shadow (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/abyssal-angel-s-shadow-0-ac"
+    },
+    {
+      "name": "Abyssal Angel's Shadow (AC)",
+      "url": "https://aqwwiki.wikidot.com/abyssal-angel-s-shadow-ac"
+    }
+  ],
+  "location": "Location: Abyssal Angel Class - Game Menu\nPrice: 200,000 Gold"
+}

@@ -1,0 +1,158 @@
+{
+  "url": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+  "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "manaCostDisplay": "0 Mana",
+      "cooldownDisplay": "2 Seconds",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+      "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage."
+    },
+    {
+      "officialName": "Commandment",
+      "manaCostDisplay": "10 Mana",
+      "cooldownDisplay": "5 Seconds",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "5",
+      "skillType": "Hybrid",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Attack using a weapon infused with the power of light, weakening them up to 6 times, lasting 10 seconds. Your foes are commanded by the light, reducing their outgoing damage, Crit Chance, and Hit Chance by 5%, and Dodge and Defense by 10% per stack. Undead foes take extra damage from the holy light.",
+      "notes": [
+        "Deals 150% Weapon Damage to non-Undead enemies. Deals 375% Weapon Damage to Undead enemies.",
+        "Applies Divine, reducing enemy Dodge by 10% per stack, stacks up to 6 and lasts 10 seconds.",
+        "Applies Commandent, reducing enemy Defense by 10% per stack, stacks up to 6 and lasts 10 seconds.",
+        "Applies Eminent, reducing enemy Hit Chance, outgoing damage, and Crit Chance all by 5%, stacks up to 6 and lasts 10 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill218.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+      "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+      "evidence": "Commandment Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 5 Seconds Type: Hybrid Range: A long range attack that deals damage to 3 hostile targets. Description: Attack using a weapon infused with the power of light, weakening them up to 6 times, lasting 10 seconds. Your foes are commanded by the light, reducing their outgoing damage, Crit Chance, and Hit Chance by 5%, and Dodge and Defense by 10% per stack. Undead foes take extra damage from the holy light. Notes: Deals 150% Weapon Damage to non-Undead enemies. Deals 375% Weapon Damage to Undead enemies. Applies Divine, reducing enemy Dodge by 10% per stack, stacks up to 6 and lasts 10 seconds. Applies Commandent, reducing enemy Defense by 10% per stack, stacks up to 6 and lasts 10 seconds. Applies Eminent, reducing enemy Hit Chance, outgoing damage, and Crit Chance all by 5%, stacks up to 6 and lasts 10 seconds."
+    },
+    {
+      "officialName": "Hymn of Light",
+      "manaCostDisplay": "40 Mana",
+      "cooldownDisplay": "10 seconds",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "40",
+      "cooldown": "10",
+      "skillType": "Hybrid",
+      "target": "A long range skill that heals 7 friendly targets.",
+      "officialDescription": "A forgiving light encompasses you and up to 6 allies, recovering a great amount of health that always crits and granting you 20% defense and END for 15 seconds.",
+      "notes": [
+        "Heals for 380% Hybrid Damage.",
+        "Applies Hymn of Light, increasing END and Defense by 20% for 15 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill219.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+      "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+      "evidence": "Hymn of Light Rank Needed: 2 Mana Cost: 40 Mana Cooldown: 10 seconds Type: Hybrid Range: A long range skill that heals 7 friendly targets. Description: A forgiving light encompasses you and up to 6 allies, recovering a great amount of health that always crits and granting you 20% defense and END for 15 seconds. Notes: Heals for 380% Hybrid Damage. Applies Hymn of Light, increasing END and Defense by 20% for 15 seconds."
+    },
+    {
+      "officialName": "Righteous Seal",
+      "manaCostDisplay": "20 Mana",
+      "cooldownDisplay": "25 seconds",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "25",
+      "skillType": "Hybrid",
+      "target": "A long range attack that deals damage to 1 hostile target.",
+      "officialDescription": "Using holy magic, you temporarily seal the offensive powers of your opponent away. Your foe does 90% less damage for 7 seconds. Undead foes are stunned by the holy power of the seal for 3 seconds.",
+      "notes": [
+        "Deals 135% Hybrid Damage.",
+        "Applies Righteous Seal, reducing opponent's outgoing damage by 90% and lasts for 7 seconds. In addition, Righteous Seal stuns Undead enemies for 3 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill220.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+      "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+      "evidence": "Righteous Seal Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 25 seconds Type: Hybrid Range: A long range attack that deals damage to 1 hostile target. Description: Using holy magic, you temporarily seal the offensive powers of your opponent away. Your foe does 90% less damage for 7 seconds. Undead foes are stunned by the holy power of the seal for 3 seconds. Notes: Deals 135% Hybrid Damage. Applies Righteous Seal, reducing opponent's outgoing damage by 90% and lasts for 7 seconds. In addition, Righteous Seal stuns Undead enemies for 3 seconds."
+    },
+    {
+      "officialName": "Restitution",
+      "manaCostDisplay": null,
+      "cooldownDisplay": null,
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Reduces incoming damage by 20%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+      "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+      "evidence": "Restitution Rank Needed: 4 Type: Passive Ability Description: Reduces incoming damage by 20%."
+    },
+    {
+      "officialName": "Blessed by Light",
+      "manaCostDisplay": null,
+      "cooldownDisplay": null,
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Your credence grants you an extra 100% Endurance and 10% hit chance.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+      "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+      "evidence": "Blessed by Light Rank Needed: 4 Type: Passive Ability Description: Your credence grants you an extra 100% Endurance and 10% hit chance. Note: Previously called \"Overwhelming Light\"."
+    },
+    {
+      "officialName": "Sacred Magic: Eden",
+      "manaCostDisplay": "40 Mana",
+      "cooldownDisplay": "25 seconds",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "40",
+      "cooldown": "25",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Invoke your most powerful holy light spell, dealing massive damage to your foes. If your foes are sealed, your holy magic is even stronger, breaking the seal and doing double damage. The effects of the Broken Seal linger, reducing your opponent’s damage dealt by 15% for 25 seconds, stacking up to 2.",
+      "notes": [
+        "Deals 550% Spell Damage.",
+        "If Righteous Seal is in effect, deals 1100% Spell Damage, consumes Righteous Seal and applies Broken Seal, reducing opponent's damage dealt by 15% for 25 seconds, stacking to 2."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill221.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+      "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+      "evidence": "Sacred Magic: Eden Rank Needed: 5 Mana Cost: 40 Mana Cooldown: 25 seconds Type: Magical Range: A long range attack that deals damage to 3 hostile targets. Description: Invoke your most powerful holy light spell, dealing massive damage to your foes. If your foes are sealed, your holy magic is even stronger, breaking the seal and doing double damage. The effects of the Broken Seal linger, reducing your opponent’s damage dealt by 15% for 25 seconds, stacking up to 2. Notes: Deals 550% Spell Damage. If Righteous Seal is in effect, deals 1100% Spell Damage, consumes Righteous Seal and applies Broken Seal, reducing opponent's damage dealt by 15% for 25 seconds, stacking to 2."
+    },
+    {
+      "officialName": "Righteous Judgement",
+      "manaCostDisplay": null,
+      "cooldownDisplay": null,
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases outgoing damage by 20% and Haste by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+      "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+      "evidence": "Righteous Judgement Rank Needed: 10 Type: Passive Ability Description: Increases outgoing damage by 20% and Haste by 15%."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/lqq9RWF.png",
+  "sameSkillVariants": [
+    {
+      "name": "ArchPaladin (AC)",
+      "url": "https://aqwwiki.wikidot.com/archpaladin-ac"
+    }
+  ],
+  "location": "Location: ArchPaladin Shop - Throne of Darkness Hub\nPrice: 0 AC"
+}

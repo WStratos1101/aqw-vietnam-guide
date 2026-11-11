@@ -1,0 +1,189 @@
+{
+  "url": "https://aqwwiki.wikidot.com/kolr-usurper-of-flames",
+  "text": ">\nLocation:\nFlame Usurper\nLevel:\n90\nDifficulty:\n5 stars\nTotal HP:\n3,000,000\nBase Stats:\n0% Crit Chance\n0% Dodge\n500% DoT Resistance\n200% Outgoing Damage\n25% Outgoing Physical Damage\n200% Crit Damage\nAttacks:\n+ Maleno Ignites\n- Maleno Ignites\nMaleno Ignites\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe Flame of Maleno Ignites.\nAoE\nSelf\nType\nTrue Status\nNotes\nApplies Flames of Maleno to Kolr.\nUsed at the start of combat.\n+ Decomposition\n- Decomposition\nDecomposition\nDamage\n77-94\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n2\nType\nPhysical Damage\nNotes\nApplies Decomposition to all players, a DoT dealing damage based on the player's max HP for 15 seconds.\nCan't miss.\n+ Putrefaction\n- Putrefaction\nPutrefaction\nDamage\n77-94\nAnimations\n{$animations}\nCooldown\n12 seconds\nMessage\nThe Flames of Maleno invert your healing and reduce your Endurance.\nAoE\n2\nType\nMagical Damage\nNotes\nApplies Putrefaction to all players, reducing Healing Intake by 200% and Endurance by 100% for 10 seconds.\nCan't miss.\nIgnores focus.\n+ Albedo Ignites\n- Albedo Ignites\nAlbedo Ignites\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe Flame of Albedo Ignites. All debuffs are cleansed!\nAoE\nSelf\nType\nTrue Status\nNotes\nApplies Flames of Albedo to Kolr and removes Flames of Maleno on Kolr, increasing Outgoing Damage by 100% and causing skills to be guaranteed crits.\nApplies Cleanse to Kolr, removes all effects applied from players.\nApplies The Black Flames to all players, removes all Phase One effects applied from Kolr.\nUsed at 70% remaining HP.\n+ Purging Flames\n- Purging Flames\nPurging Flames\nDamage\n77-94\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n2\nType\nPhysical Damage\nNotes\nApplies Purging Flames to all players for 4 seconds, stacks to 4.\nApplies Purged to the player that have 4 stacks of Purging Flames on them, removing all effects applied by themselves and from their allies.\nCan't miss.\n+ Purification\n- Purification\nPurification\nDamage\n77-94\nAnimations\n{$animations}\nCooldown\n12 seconds\nMessage\n{$message}\nAoE\n2\nType\nMagical Damage\nNotes\nApplies Purification to all players, a DoT that grows stronger with each tick and reducing Outgoing Damage and Crit Chance by 30% for 12 seconds, doesn't refresh.\nCan't miss.\nIgnores focus.\n+ Citrinitas Ignites\n- Citrinitas Ignites\nCitrinitas Ignites\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe Flame of Citrinitas Ignites. Attackers damage themselves.\nAoE\nSelf\nType\nTrue Status\nNotes\nApplies Flames of Citrinitas to Kolr and removes Flames of Albedo on Kolr, increasing Outgoing Damage by 200%, Damage Resistance by 100%, and causing skills to be guaranteed crits.\nApplies Burning Ward to Kolr, causing each instance of damage that the player deals to reflect 200 damage back to them.\nApplies The White Flames to all players, removes all Phase Two effects applied from Kolr.\nUsed at 40% remaining HP.\n+ Sublimation\n- Sublimation\nSublimation\nDamage\n77-94\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n2\nType\nPhysical Damage\nNotes\nApplies Sublimation to all players, a DoT that deals damage based on the player's missing HP percentage for 2 seconds.\nCan't miss.\n+ Enlightened\n- Enlightened\nEnlightened\nDamage\n77-94\nAnimations\n{$animations}\nCooldown\n12 seconds\nMessage\nKolr coerces you into attacking by increasing your Haste!\nAoE\n2\nType\nMagical Damage\nNotes\nApplies Enlightened to all players, increasing their Haste by 100% for 10 seconds.\nCan't miss.\nIgnores focus.\n+ Rubedo Ignites\n- Rubedo Ignites\nRubedo Ignites\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe Flame of Rubedo Ignites.\nAoE\nSelf\nType\nTrue Status\nNotes\nApplies Flames of Rubedo to Kolr and removes Flames of Citrinitas on Kolr, increasing Outgoing Damage by 300% and causing skills to be guaranteed crits.\nApplies Regeneration to Kolr, an HoT.\nApplies The Yellow Flames to all players, removes all Phase Three effects applied from Kolr.\nUsed at 30% remaining HP.\n+ Culmination\n- Culmination\nCulmination\nDamage\n153-187\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n2\nType\nTrue Damage\nNotes\nApplies Culmination to all players when Safeguard is active on Kolr, a DoT that stacks.\nCan't miss.\n+ Safeguard\n- Safeguard\nSafeguard\nDamage\n77-94\nAnimations\n{$animations}\nCooldown\n12 seconds\nMessage\n{$message}\nAoE\n2\nType\nMagical Damage\nNotes\nApplies Safeguard to Kolr, stacks each player hit.\nThe first stack of Safeguard blocks up to 50,000 damage, and the second stack blocks up to 100,000 damage.\nCan't miss.\nIgnores focus.\n+ Invulnerable ➞ Flames of the Forges ➞ Extinguished\n- Invulnerable ➞ Flames of the Forges ➞ Extinguished\nInvulnerable\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe flames converge around Kolr.\nAoE\nSelf\nType\nTrue Status\nNotes\nApplies Invulnerable to Kolr and removes Flames of Rubedo, blocking all damage taken for 8 seconds.\nApplies The Red Flames to all players, removes all Phase Four effects applied from Kolr.\nUsed at 10% remaining HP.\nFlames of the Forges is used after Invulnerable is used for 3 seconds.\nFlames of the Forges\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nKolr unleashes the full power of the forges!\nAoE\n2\nType\nTrue Status\nNotes\nApplies Meltdown to Kolr which is used on Extinguished for 5 seconds.\nApplies Flames of the Forges to all players, a DoT dealing damage based on the player's max HP for 5 seconds.\nCan't miss.\nIgnores focus.\nExtinguished is used after Flames of the Forges is used for 5 seconds.\nExtinguished\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe forges' flames extinguish.\nAoE\n2\nType\nTrue Status\nNotes\nApplies Extinguished to Kolr when Meltdown fades, stunning Kolr indefinitely.\nApplies Extinguished to all players when Flames of the Forges fades.\nCan't miss.\nIgnores focus.\nAbilities:\nBoss Shield:\nDamage over 100,000 dealt to Kolr, Usurper of Flames is reduced by raising the difference to the exponent 0.85 (but is never reduced below 100,000).\nFeed the Flame:\nKolr, Usurper of Flames recovers 300,000 HP upon killing a player, and accompanied by the message “HAHAHA! Even gods can burn!”.\nTemporary Items Dropped:\nChoronzonite (Dropped during the '\nDulcify\n' quest)\nItems Dropped:\nGreat Flame of Yew\nTreasure Chest (Misc)\nThanks to Sammzy.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_k\n_lv90\nboss\nflaming\nfreeplayer\nglowingeyes\nmonster\nwinged",
+  "images": [
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://i.imgur.com/cpDNEYC.png",
+      "alt": "cpDNEYC.png"
+    }
+  ],
+  "links": [
+    {
+      "url": "/flame-usurper",
+      "index": 2
+    },
+    {
+      "url": "javascript:;",
+      "index": 17
+    },
+    {
+      "url": "javascript:;",
+      "index": 18
+    },
+    {
+      "url": "javascript:;",
+      "index": 35
+    },
+    {
+      "url": "javascript:;",
+      "index": 36
+    },
+    {
+      "url": "javascript:;",
+      "index": 53
+    },
+    {
+      "url": "javascript:;",
+      "index": 54
+    },
+    {
+      "url": "javascript:;",
+      "index": 72
+    },
+    {
+      "url": "javascript:;",
+      "index": 73
+    },
+    {
+      "url": "javascript:;",
+      "index": 92
+    },
+    {
+      "url": "javascript:;",
+      "index": 93
+    },
+    {
+      "url": "javascript:;",
+      "index": 111
+    },
+    {
+      "url": "javascript:;",
+      "index": 112
+    },
+    {
+      "url": "javascript:;",
+      "index": 130
+    },
+    {
+      "url": "javascript:;",
+      "index": 131
+    },
+    {
+      "url": "javascript:;",
+      "index": 150
+    },
+    {
+      "url": "javascript:;",
+      "index": 151
+    },
+    {
+      "url": "javascript:;",
+      "index": 168
+    },
+    {
+      "url": "javascript:;",
+      "index": 169
+    },
+    {
+      "url": "javascript:;",
+      "index": 187
+    },
+    {
+      "url": "javascript:;",
+      "index": 188
+    },
+    {
+      "url": "javascript:;",
+      "index": 207
+    },
+    {
+      "url": "javascript:;",
+      "index": 208
+    },
+    {
+      "url": "javascript:;",
+      "index": 225
+    },
+    {
+      "url": "javascript:;",
+      "index": 226
+    },
+    {
+      "url": "javascript:;",
+      "index": 245
+    },
+    {
+      "url": "javascript:;",
+      "index": 246
+    },
+    {
+      "url": "/aleister-s-quests#Usurper",
+      "index": 309
+    },
+    {
+      "url": "/great-flame-of-yew",
+      "index": 312
+    },
+    {
+      "url": "/treasure-chest-misc",
+      "index": 313
+    },
+    {
+      "url": "http://www.aq.com/",
+      "index": 316
+    },
+    {
+      "url": "/system:page-tags/tag/5star#pages",
+      "index": 319
+    },
+    {
+      "url": "/system:page-tags/tag/_k#pages",
+      "index": 320
+    },
+    {
+      "url": "/system:page-tags/tag/_lv90#pages",
+      "index": 321
+    },
+    {
+      "url": "/system:page-tags/tag/boss#pages",
+      "index": 322
+    },
+    {
+      "url": "/system:page-tags/tag/flaming#pages",
+      "index": 323
+    },
+    {
+      "url": "/system:page-tags/tag/freeplayer#pages",
+      "index": 324
+    },
+    {
+      "url": "/system:page-tags/tag/glowingeyes#pages",
+      "index": 325
+    },
+    {
+      "url": "/system:page-tags/tag/monster#pages",
+      "index": 326
+    },
+    {
+      "url": "/system:page-tags/tag/winged#pages",
+      "index": 327
+    }
+  ],
+  "reviewedAt": "2026-11-08"
+}

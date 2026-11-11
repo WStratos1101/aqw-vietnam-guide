@@ -1,0 +1,134 @@
+{
+  "url": "https://aqwwiki.wikidot.com/legion-revenant-class",
+  "sourceHash": "780eb0711d35cd7b573a2da6fe0f9dcc060daaaa700170c3c553875ca44c5911",
+  "entries": [
+    {
+      "officialName": "Malevolent Burst",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "1.5",
+      "skillType": "Physical",
+      "target": "An infinite range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "A sinister spell of powerful dark energy. Deals moderate damage to one target and light damage to two additional targets. Recovers 15 mana on hit.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/LRAA.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/legion-revenant-class",
+      "sourceHash": "780eb0711d35cd7b573a2da6fe0f9dcc060daaaa700170c3c553875ca44c5911",
+      "evidence": "Malevolent Burst Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 1.5 Seconds Type: Physical Range: An infinite range attack that deals damage to 3 hostile targets. Description: A sinister spell of powerful dark energy. Deals moderate damage to one target and light damage to two additional targets. Recovers 15 mana on hit. Note: Deals 57% Spell Damage to all targets."
+    },
+    {
+      "officialName": "Atramentous Shade",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "An infinite range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Summon a malicious pitch black fog, applying Decay for 2 seconds. The darkness traps your enemy, decreasing their Dodge by 25% while damaging them over time for 12 seconds. Always crits and can’t miss.",
+      "notes": [
+        "Deals 85% Spell Damage to all targets.",
+        "The DoT from Decay deals damage every 1 second."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/LRA1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/legion-revenant-class",
+      "sourceHash": "780eb0711d35cd7b573a2da6fe0f9dcc060daaaa700170c3c553875ca44c5911",
+      "evidence": "Atramentous Shade Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 6 Seconds Type: Magical Range: An infinite range attack that deals damage to 3 hostile targets. Description: Summon a malicious pitch black fog, applying Decay for 2 seconds. The darkness traps your enemy, decreasing their Dodge by 25% while damaging them over time for 12 seconds. Always crits and can’t miss. Notes: Deals 85% Spell Damage to all targets. The DoT from Decay deals damage every 1 second."
+    },
+    {
+      "officialName": "Wicked Purgatory",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "An infinite range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Conjure otherworldly flames to sear your opponents for moderate damage, reducing their Crit Chance by 15%, plus an additional 3% per stack (up to 30% total). The flames protect you, decreasing your incoming damage by 20%, plus an additional 4% per stack (up to 40% total). Both effects last 12 seconds.",
+      "notes": [
+        "Deals 100% Spell Damage to all targets.",
+        "Applies Seared to the target, decreasing Critical Chance by 15% plus an additional 3% per stack, stacks to 5 and lasts 12 seconds.",
+        "Applies Enveloped to the caster, decreasing All Incoming Damage by 20% plus an additional 4% per stack, stacks to 5 and lasts 12 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/LRA2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/legion-revenant-class",
+      "sourceHash": "780eb0711d35cd7b573a2da6fe0f9dcc060daaaa700170c3c553875ca44c5911",
+      "evidence": "Wicked Purgatory Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 6 Seconds Type: Magical Range: An infinite range attack that deals damage to 3 hostile targets. Description: Conjure otherworldly flames to sear your opponents for moderate damage, reducing their Crit Chance by 15%, plus an additional 3% per stack (up to 30% total). The flames protect you, decreasing your incoming damage by 20%, plus an additional 4% per stack (up to 40% total). Both effects last 12 seconds. Notes: Deals 100% Spell Damage to all targets. Applies Seared to the target, decreasing Critical Chance by 15% plus an additional 3% per stack, stacks to 5 and lasts 12 seconds. Applies Enveloped to the caster, decreasing All Incoming Damage by 20% plus an additional 4% per stack, stacks to 5 and lasts 12 seconds."
+    },
+    {
+      "officialName": "Depraved Empowerment",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "An infinite range status skill that applies to 7 friendly targets.",
+      "officialDescription": "Touch the darkness within yourself and your allies by drawing out their twisted inclinations. Applies Depravity, increasing you and your allies' Dodge, Crit Chance, and Outgoing Damage by 30%. Immorality strengthens your magic, increasing your Haste by 20%, Crit Damage by 30%, and healing you over time. Also applies Arcane Shield, reducing non True Damage taken by 30% of your Spell Power and draining 8 mana when hit. Effects last 12 seconds.",
+      "notes": [
+        "Arcane Shield cannot be removed by bosses.",
+        "Depravity and Immorality refresh but do not stack.",
+        "The HoT from Immorality heals every 1 second."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/LRA3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/legion-revenant-class",
+      "sourceHash": "780eb0711d35cd7b573a2da6fe0f9dcc060daaaa700170c3c553875ca44c5911",
+      "evidence": "Depraved Empowerment Rank Needed: 3 Mana Cost: 15 Mana Cooldown: 6 Seconds Type: Magical Range: An infinite range status skill that applies to 7 friendly targets. Description: Touch the darkness within yourself and your allies by drawing out their twisted inclinations. Applies Depravity, increasing you and your allies' Dodge, Crit Chance, and Outgoing Damage by 30%. Immorality strengthens your magic, increasing your Haste by 20%, Crit Damage by 30%, and healing you over time. Also applies Arcane Shield, reducing non True Damage taken by 30% of your Spell Power and draining 8 mana when hit. Effects last 12 seconds. Notes: Arcane Shield cannot be removed by bosses. Depravity and Immorality refresh but do not stack. The HoT from Immorality heals every 1 second."
+    },
+    {
+      "officialName": "Shadow Step",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases wisdom by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/LRPassiveNew.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/legion-revenant-class",
+      "sourceHash": "780eb0711d35cd7b573a2da6fe0f9dcc060daaaa700170c3c553875ca44c5911",
+      "evidence": "Shadow Step Rank Needed: 4 Type: Passive Ability Description: Increases wisdom by 20%"
+    },
+    {
+      "officialName": "Dark Scholar",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases outgoing magic damage by 40%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/LRPassiveNew.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/legion-revenant-class",
+      "sourceHash": "780eb0711d35cd7b573a2da6fe0f9dcc060daaaa700170c3c553875ca44c5911",
+      "evidence": "Dark Scholar Rank Needed: 4 Type: Passive Ability Description: Increases outgoing magic damage by 40%"
+    },
+    {
+      "officialName": "Anathema",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "12",
+      "skillType": "Magical",
+      "target": "An infinite range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Focus all your energy and unleash a massive burst of dark magic, dealing high damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/LRA4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/legion-revenant-class",
+      "sourceHash": "780eb0711d35cd7b573a2da6fe0f9dcc060daaaa700170c3c553875ca44c5911",
+      "evidence": "Anathema Rank Needed: 5 Mana Cost: 20 Mana Cooldown: 12 Seconds Type: Magical Range: An infinite range attack that deals damage to 3 hostile targets. Description: Focus all your energy and unleash a massive burst of dark magic, dealing high damage. Note: Deals 300% Spell Damage to all targets."
+    },
+    {
+      "officialName": "Infinita Nox",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Atramentous Shade, Wicked Purgatory, and Anathema have a 50% chance to increase your target's incoming damage by 7% for 30 seconds, stacks to 15.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/LRPassiveNew.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/legion-revenant-class",
+      "sourceHash": "780eb0711d35cd7b573a2da6fe0f9dcc060daaaa700170c3c553875ca44c5911",
+      "evidence": "Infinita Nox Rank Needed: 10 Type: Passive Ability Description: Atramentous Shade, Wicked Purgatory, and Anathema have a 50% chance to increase your target's incoming damage by 7% for 30 seconds, stacks to 15."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/dF9m16T.png",
+  "sameSkillVariants": [],
+  "location": "Location: Revenant (Location)\nPrice: N/A (Reward from the 'Legion Fealty 4' quest)"
+}

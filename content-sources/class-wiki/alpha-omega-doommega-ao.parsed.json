@@ -1,0 +1,135 @@
+{
+  "url": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+  "sourceHash": "48fbe601dbd43324b96f70463ce4a4048302b6b1ae0963e63200a958e1bbc9b5",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+      "sourceHash": "48fbe601dbd43324b96f70463ce4a4048302b6b1ae0963e63200a958e1bbc9b5",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage."
+    },
+    {
+      "officialName": "Double Strike",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "5",
+      "cooldown": "2",
+      "skillType": "Hybrid",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Instantly attack, dealing additional damage based on your target's current health percentage while reducing their Damage Resistance by 15% for 5 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill81.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+      "sourceHash": "48fbe601dbd43324b96f70463ce4a4048302b6b1ae0963e63200a958e1bbc9b5",
+      "evidence": "Double Strike Rank Needed: 1 Mana Cost: 5 Mana Cooldown: 2 Seconds Type: Hybrid Range: A short range attack that deals damage to 1 target. Description: Instantly attack, dealing additional damage based on your target's current health percentage while reducing their Damage Resistance by 15% for 5 seconds."
+    },
+    {
+      "officialName": "Maul",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "10",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Strike and weaken an enemy, stunning them and negating all non lifesteal healing they receive for 3 seconds.",
+      "notes": [
+        "Applies Stunned! to the target, stunning it for 3 seconds.",
+        "Applies Decay, negating all non lifesteal healing for 3 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill18.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+      "sourceHash": "48fbe601dbd43324b96f70463ce4a4048302b6b1ae0963e63200a958e1bbc9b5",
+      "evidence": "Maul Rank Needed: 2 Mana Cost: 20 Mana Cooldown: 10 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Strike and weaken an enemy, stunning them and negating all non lifesteal healing they receive for 3 seconds. Notes: Applies Stunned! to the target, stunning it for 3 seconds. Applies Decay, negating all non lifesteal healing for 3 seconds."
+    },
+    {
+      "officialName": "Field Medic",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "10",
+      "skillType": "Hybrid",
+      "target": "An infinite range skill that heals 7 friendly targets.",
+      "officialDescription": "Heals you and up to 6 additional allies while applying Field Medic for 10 seconds, an HoT that increases Damage and DoT resistance by 30%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill01.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+      "sourceHash": "48fbe601dbd43324b96f70463ce4a4048302b6b1ae0963e63200a958e1bbc9b5",
+      "evidence": "Field Medic Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 10 Seconds Type: Hybrid Range: An infinite range skill that heals 7 friendly targets. Description: Heals you and up to 6 additional allies while applying Field Medic for 10 seconds, an HoT that increases Damage and DoT resistance by 30%."
+    },
+    {
+      "officialName": "Blood Commander",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Outgoing Physical Damage and Strength increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+      "sourceHash": "48fbe601dbd43324b96f70463ce4a4048302b6b1ae0963e63200a958e1bbc9b5",
+      "evidence": "Blood Commander Rank Needed: 4 Type: Passive Description: Outgoing Physical Damage and Strength increased by 10%."
+    },
+    {
+      "officialName": "Hybrid Armor",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Physical and Magical Resistance increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+      "sourceHash": "48fbe601dbd43324b96f70463ce4a4048302b6b1ae0963e63200a958e1bbc9b5",
+      "evidence": "Hybrid Armor Rank Needed: 4 Type: Passive Description: Physical and Magical Resistance increased by 15%."
+    },
+    {
+      "officialName": "Bunker Buster",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "15",
+      "skillType": "True Damage",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Fire an explosive, dealing unavoidable critical true damage to your target, increased the lower their health percentage is.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill62.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+      "sourceHash": "48fbe601dbd43324b96f70463ce4a4048302b6b1ae0963e63200a958e1bbc9b5",
+      "evidence": "Bunker Buster Rank Needed: 5 Mana Cost: 10 Mana Cooldown: 15 Seconds Type: True Damage Range: A long range attack that deals damage to 1 target. Description: Fire an explosive, dealing unavoidable critical true damage to your target, increased the lower their health percentage is."
+    },
+    {
+      "officialName": "Deadly Precision",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Hit Chance increased by 30% and Haste increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-omega-legend",
+      "sourceHash": "48fbe601dbd43324b96f70463ce4a4048302b6b1ae0963e63200a958e1bbc9b5",
+      "evidence": "Deadly Precision Rank Needed: 10 Type: Passive Description: Hit Chance increased by 30% and Haste increased by 10%."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/d0lvSFw.png",
+  "sameSkillVariants": [
+    {
+      "name": "Alpha DOOMmega",
+      "url": "https://aqwwiki.wikidot.com/alpha-doommega"
+    },
+    {
+      "name": "Alpha Omega (Non-Legend)",
+      "url": "https://aqwwiki.wikidot.com/alpha-omega-non-legend"
+    }
+  ],
+  "location": "Locations:\n\nAlpha Omega Merge\n\n8-Bit Battleon\nBattleon\nNorthpointe\n\n\n\nPrice: N/A\n\nMerge the following:\n\nCombat Trophy  x300"
+}

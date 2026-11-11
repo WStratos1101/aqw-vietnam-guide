@@ -1,0 +1,5462 @@
+{
+  "challengeContent": true,
+  "id": "azalith-morningstar",
+  "name": "Azalith Morningstar",
+  "type": "other_challenge",
+  "map": "apexazalith",
+  "levelRequirement": 80,
+  "partySize": 7,
+  "description": "Thử thách Azalith Morningstar; mỗi trận có cơ chế và điều kiện riêng.",
+  "bodyUrl": "/content/challenges/azalith-morningstar.json",
+  "href": "/other-challenges/azalith-morningstar",
+  "image": "monster-azalith-morningstar",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [
+    "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss."
+  ],
+  "rewardSummary": "",
+  "sourceSlug": "azalith-morningstar",
+  "stages": [
+    {
+      "id": "azalith-morningstar-stage-1",
+      "name": "Azalith Morningstar",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Azalith Morningstar",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "azalith-morningstar-0",
+            "canonicalName": "Azalith, Morningstar",
+            "role": "Monster",
+            "level": 200,
+            "maxHp": 888888888,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/azalith-morningstar"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "azalith-morningstar-0-auto-attack-0",
+            "monsterId": "azalith-morningstar-0",
+            "name": "Auto Attack",
+            "type": "Magical",
+            "damage": "150-200",
+            "damageType": "Magical",
+            "cooldown": "2.5 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/azalith-morningstar"
+          },
+          {
+            "id": "azalith-morningstar-0-blood-magic-1",
+            "monsterId": "azalith-morningstar-0",
+            "name": "Blood Magic",
+            "type": "True Damage",
+            "damage": "Player's Current HP - 1 true damage",
+            "damageType": "True Damage",
+            "cooldown": "15 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Recover to Azalith trong 10 giây, healing her over time.",
+              "Bỏ qua Focus.",
+              "Skill is always followed Inversion Magic."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/azalith-morningstar"
+          },
+          {
+            "id": "azalith-morningstar-0-inversion-magic-2",
+            "monsterId": "azalith-morningstar-0",
+            "name": "Inversion Magic",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Decay, cannot heal.",
+              "Bỏ qua Focus.",
+              "Skill is always followed Dark Magic."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/azalith-morningstar"
+          },
+          {
+            "id": "azalith-morningstar-0-dark-magic-3",
+            "monsterId": "azalith-morningstar-0",
+            "name": "Dark Magic",
+            "type": "True Damage",
+            "damage": "99% of target's Max HP",
+            "damageType": "True Damage",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Tenebrae, giảm tỷ lệ trúng 100% trong 4 giây, removes Decay.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/azalith-morningstar"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Aranx's Azalith Rewards Shop",
+        "Merge Shop của NPC Aranx ở /join champazalith hoặc /join apexazalith",
+        "Nhận quests từ Aranx để lấy các nguyên liệu cần tương ứng, “Head Hunters” và “Azalith's Ambition” quest ở /join champazalith, còn “Unshackled Azalith” và “Unshackled Azalith (Daily)” quest ở /join apexazalith. Để lấy hết tất cả đồ trong shop thì cần tổng cộng các nguyên liệu sau:",
+        "→ Gold Voucher 100k ×298: Ứng với 29.8m Gold, xem “Gold Farm Guide” nếu bạn cần.",
+        "→ Infernalis Penna ×537: Nhận được từ “Head Hunters” quest, đánh Maah-na và Akh-a ở /join champazalith.",
+        "→ Infernalis Oculus ×150: Nhận được từ “Azalith's Ambition” quest, đánh Azalith ở /join champazalith.",
+        "→ Divina Voluntas ×148: Nhận được thông qua 2 quests sau và đều cần đánh Azalith Morningstar ở /join apexazalith (là một Challenge Boss và bài viết này sẽ tập trung vào hướng dẫn cách đánh nó).",
+        "“Unshackled Azalith” quest.",
+        "“Unshackled Azalith (Daily)” quest (1 ngày 5 cục, reset vào mỗi ngày 12:01AM EST server time).",
+        "Note: Các trang bị có AC tag sau khi dùng để merge có thể dùng chức năng Buy Back để lấy lại chúng mà không cần farm lại.",
+        "◆ Infernal Wanderer's Scythe (IWS): Weapon tăng 60% DMG với Human, merge từ:",
+        "→ Gold Voucher 100k ×50",
+        "→ Celestial Wanderer's Scythe: Cần có Infernalis Penna ×50, Infernalis Oculus ×15 và Gold Voucher 100k ×4.",
+        "→ Divina Voluntas ×30",
+        "◆ Celestial Wanderer Set: Tất cả đều là Cosmetics, gồm có Celestial Wanderer, Celestial Wanderer's Scythe, Celestial Wanderer's Sceptre, Celestial Wanderer Hair, Celestial Wanderer Hood, Celestial Annals và Celestial Runic Choir. Tổng cần cho set này:",
+        "→ Gold Voucher 100k ×22",
+        "→ Infernalis Penna ×264",
+        "→ Infernalis Oculus ×73",
+        "◆ Infernal Wanderer (IW): Armor tăng 40% DMG với Human, merge từ:",
+        "→ Gold Voucher 100k ×50",
+        "→ Celestial Wanderer: Cần có Infernalis Penna ×75, Infernalis Oculus ×25 và Gold Voucher 100k ×6.",
+        "→ Divina Voluntas ×30",
+        "◆ Các món còn lại của Infernal Wanderer Set: Tất cả đều là Cosmetics, gồm có Infernal Wanderer Hood, Infernal Annals và Infernal Runic Choir. Tổng cần cho set này:",
+        "→ Gold Voucher 100k ×6",
+        "→ Phiên bản Celestial của chúng (Celestial Wanderer Hood, Celestial Annals và Celestial Runic Choir).",
+        "→ Divina Voluntas ×13",
+        "◆ Akh-a Companion: Pet tăng 30% DMG với Dragon, Human, Undead, Chaos và Elemental, merge từ:",
+        "→ Gold Voucher 100k ×150",
+        "→ Divina Voluntas ×75",
+        "◆ Akh-a & Maah-na Set: Tất cả đều là Cosmetics, gồm có Maah-na's Robes, Akh-a's Spear, Akh-a's Spear and Shield, Maah-na's Hood, Akh-a's Wings, Maah-na's Freed Wings và Maah-na's Wings. Tổng cần cho set này:",
+        "→ Gold Voucher 100k ×20",
+        "→ Infernalis Penna ×275",
+        "→ Infernalis Oculus ×77",
+        "AZALITH MORNINGSTAR",
+        "Cuộc đối đầu cuối cùng với Azalith, một ArchAngel sa ngã. Trận chiến này sẽ quyết định số phận của Thiên giới và Địa ngục. Hãy cần thận, bạn sẽ dễ dàng đánh mất lý trí bởi sự bộc phát sức mạnh kinh người của bản thân thông qua quyền năng gian xảo của Azalith, làm bạn mất cảnh giác và điều khiển rồi hút cạn máu của bạn.",
+        "Boss nằm ở map /join apexazalith - Room limit: 7",
+        "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 888,888,888",
+        "◆ Shield giúp giới hạn sát thương nhận tối đa 1.5m.",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 0% Dodge, 10% Crit Chance, 100% All Out và -5000% All In.",
+        "◆ Players được tăng 1000% END, 75.000% Phys và Magi Out, -90% Mana Costs, nhưng cũng đồng thời bị tăng 2000% All In, Phys và Magi In (vô thời hạn).",
+        "◆ Auto-Attack mỗi 2s gây Magi DMG từ 150 đến 200.",
+        "◆ Mỗi 15s, sử dụng Blood Magic gây ít nhất 1 True DMG.",
+        "→ Players bị đưa HP xuống 1 nếu lượng HP hiện tại nhiều hơn 1, nếu không thì sẽ chết.",
+        "→ Azalith nhận HoT trong 10s, nên dùng class có Decay như LR, VDK, LDK.",
+        "→ Cần sử dụng skill hồi máu ngay sau khi Blood Magic, nhất là các class Healer trong Team.",
+        "◆ Kích hoạt Inversion Magic sau khi dùng Blood Magic 2s.",
+        "→ Players bị dính Decay.",
+        "◆ Kích hoạt Dark Magic sau khi dùng Inversion Magic 3s, gây True DMG bằng 99% lượng HP tối đa của player.",
+        "→ Players bị giảm 100% Hit Chance trong 4s và xoá bỏ Decay.",
+        "→ Cần sử dụng skill hồi máu ngay sau khi Dark Magic, nhất là các class Healer trong Team.",
+        "Các team kiến nghị sử dụng",
+        "Con Azalith này có cơ chế không quá phức tạp, chủ yếu tập trung vào canh Heal chuẩn theo cơ chế cũng như với room 7 người nên có rất nhiều tổ hợp phù hợp, chỉ cần kết hợp 2-3 class DPS, 2-3 class buff máu, 1 class có Decay, còn lại là các class support khác. Dưới đây chỉ là một vài team gợi ý cho bạn.",
+        "Team 5 người:\tHealer, LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO",
+        "hoặc\tHealer, QCM/LR/VDK, LDK, PCM/LP/AP, LoO",
+        "hoặc\t2 Healer, LDK, PCM/LP/AP, LoO",
+        "Team 6 người:\tHealer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO",
+        "hoặc\tHealer/GT, QCM, LR, VDK/LDK, PCM/LP/AP, LoO",
+        "hoặc\t2 Healer, LR/VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO",
+        "hoặc\t2 Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LoO",
+        "Team 7 người:\t2 Healer, LR/VDK/LDK, PCM/LP/AP, LC, SC/IT/LH/DLH/FB, LoO",
+        "hoặc\t2 Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO",
+        "hoặc\t2 Healer/GT, QCM, LR, VDK/LDK, PCM/LP/AP, LoO",
+        "hoặc\t3 Healer, LR/VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO",
+        "hoặc\t3 Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP/LH/DLH/FB, LoO",
+        "→ Đánh Azalith không quá khó, chỉ có một điểm duy nhất cần chú ý với nhóm class buff heal là khi nó sử dụng chuỗi skills vào mỗi 15s (Blood Magic > Inversion Magic > Dark Magic). Bạn sẽ cần hồi máu cho Team vào 2 mốc là ngay sau Blood Magic (thông báo “I WILL BURN THIS REALM TO THE GROUND!”) và ngay sau Dark Magic (thông báo “Azalith restores your healing but reduces your Hit Chance!”) để đảm bảo cả Team có thể thuận lợi vượt qua được (hoặc có thể canh HP bản thân). Cách canh Heal:",
+        "Tuy Blood Magic và Dark Magic cách nhau 5s, nhưng có 3s sau là dính Decay nên không thể nhận Heal, vì vậy sau khi Azalith sử dụng Blood Magic đưa máu cả Team về 1HP thì chỉ có 2s để hồi đầy máu cả Team (để chịu được cú Dark Magic sau đó).",
+        "Còn với Dark Magic (gây sát thương bằng 99% máu tối đa), sau khi dính đòn của boss thì cũng cần hồi máu nhưng ít áp lực hơn do ko cần đầy và không bị giới hạn thời gian như Blood Magic vì chỉ để tránh bị đòn thường của Azalith đánh chết.",
+        "→ Nếu Team có PCM/LP/AP thì các class này sẽ đảm nhiệm vai trò buff heal chính và chỉ heal khi Azalith dùng chuỗi skill (heal ngay sau Blood Magic và Dark Magic theo hướng dẫn trên).",
+        "→ Nếu không, thì cần ít nhất 2 class buff heal để đảm nhận heal chính ngay sau Blood Magic và Dark Magic, tốt nhất cả 2 cùng heal để đảm bảo heal đầy máu cả Team sau cú Blood Magic (quan trọng). Nếu trong Team không có FB hoặc LH/DLH hay các class heal khác, thì 2 người được chọn trên cũng sẽ kiêm luôn buff heal team ngoài chuỗi.",
+        "→ Còn các class heal khác (nếu có) sẽ đảm nhiệm vai trò heal phụ khi heal chính ko thể heal đầy máu lúc chuỗi được kích hoạt hoặc buff heal team ngoài chuỗi (trước Blood Magic đảm bảo ko có ai có 1HP và sau Dark Magic thì hỗ trợ heal). Có FB hoặc LH/DLH trong Team thì việc heal sẽ dễ thở hơn.",
+        "→ Healer spam 2, 4 và 5, chỉ dùng 3 khi cần Heal.",
+        "Enh: Valiance + Healer class/cape + Hearty > Healer helm",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Body Tonic + Endurance Draught.",
+        "→ GT mở đầu với 4, sau đó spam 2, 4 và 5, còn 3 chỉ dùng sau khi boss sử dụng Dark Magic (để tăng Hit Chance bản thân).",
+        "Enh: Arcana's Concerto + Lucky class + Forge helm + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion",
+        "→ QCM mở đầu với 2 - 3 - 4 - 5 sau đó thì spam 2 - 3 đến khi nào 5 CD xong thì dùng 4 - 5.",
+        "Enh: Ravenous > Smite/Praxis + Lucky class + Forge helm + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion.",
+        "→ LR pre-buff với 4, combo thì mở đầu bằng 4 - 2 - 3 - 5, sau đó spam skill.",
+        "Enh: Arcana's Concerto + Wizard class/helm + Vainglory",
+        "Nếu không có LDK trong team, thì cần chú ý spam 2, nhất là sau khi boss sử dụng Blood Magic để Decay (HoT của boss kéo dài 10s).",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion.",
+        "→ VDK dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4",
+        "Enh: Ravenous > Praxis + Lucky class + Forge helm + Vainglory",
+        "Nếu không có LDK trong team, thì cần chú ý spam 5, nhất là sau khi boss sử dụng Blood Magic để Decay (HoT của boss kéo dài 10s).",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion.",
+        "→ LDK thì chỉ cần spam toàn bộ skill, nhất là skill 5 để Decay được kích hoạt liên tục.",
+        "Enh: Ravenous > Praxis + Lucky class/helm + Lament",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion.",
+        "→ PCM pre-buff với 3, sau đó spam 2 và 5, nếu đến Blood Magic mà skill 4 dùng được thì 4 - 3, còn nếu không thì thì canh để dùng 3 heal cho team theo hướng dẫn trên (2 cách heal này sẽ luân phiên nhau).",
+        "Enh: Ravenous + Healer class + Forge helm + Absolution",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Unstable Body Tonic + Endurance Draught",
+        "→ LP mở đầu với 3, sau đó spam 2, 4 và 5, chỉ dùng lại 3 khi cần Heal (theo hướng dẫn trên).",
+        "Enh: Ravenous + Wizard class + Forge helm + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion.",
+        "→ AP pre-buff với 3, rồi sau đó lặp lại 4 - 2 - 2 - 5 - spam 2 đến khi 4 CD, chỉ dùng lại 3 khi cần Heal (theo hướng dẫn trên).",
+        "Enh: Ravenous + Lucky class + Forge helm + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion.",
+        "→ LC pre-buff với 4, sử dụng chính 2, 3 và 5, chỉ dùng 4 khi cần heal hoặc làm mới hiệu ứng.",
+        "Enh: Praxis + Wizard class + Forge Helm + Vainglory",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion.",
+        "→ LoO pre-buff với 2, 3 và 4, sau đó spam skill, riêng 3 dùng khi cần heal hoặc làm mới hiệu ứng.",
+        "Nếu không có PCM/LP/AP thì sẽ phụ trách làm heal chính theo hướng dẫn trên.",
+        "Enh: Lucky Awe Blast + Lucky class/helm + Absolution (nếu làm heal chính thì dùng Ravenous)",
+        "Potion: Có thể dùng thêm Unstable/Divine Elixir + Fate Tonic + Potent Honor/Malice Potion.",
+        "→ LH/DLH mở đầu với 3 - 5, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.",
+        "Nếu không có PCM/LP/AP thì sẽ phụ trách làm heal chính theo hướng dẫn trên (heal ở skill 3, còn HoT ở skill 5 phụ thuộc vào stack aura ở skill 3).",
+        "Enh: Valiance + Lucky class/helm + Absolution",
+        "Potion: Có thể dùng thêm Unstable/Divine Elixir + Might Tonic + Potent Honor/Malice Potion",
+        "→ FB pre-buff với 3 - 4, sau đó spam skill 2, 3 và 4 (không sử dụng skill 5).",
+        "Enh: Valiance + Fighter class/helm + Absolution",
+        "Potion: Có thể dùng thêm Unstable/Divine Elixir + Might Tonic + Potent Honor/Malice Potion.",
+        "→ SC/IT combo: dùng combo 3 - 4 - 2 - 5 (luôn dùng 2 trước 5).",
+        "Enh: Valiance + Lucky class/helm + Absolution",
+        "Potion: Có thể dùng thêm Unstable/Divine Elixir + Fate Tonic + Potent Honor/Malice Potion."
+      ],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-393932",
+          "runs": [
+            {
+              "text": "Aranx's Azalith Rewards Shop",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/aranx-s-azalith-rewards"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-393961",
+          "runs": [
+            {
+              "text": "Merge Shop của NPC Aranx ở "
+            },
+            {
+              "text": "/join champazalith",
+              "href": "http://aqwwiki.wikidot.com/champion-azalith"
+            },
+            {
+              "text": " hoặc "
+            },
+            {
+              "text": "/join apexazalith",
+              "href": "http://aqwwiki.wikidot.com/apex-azalith"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394030",
+          "runs": [
+            {
+              "text": "Nhận quests từ Aranx để lấy các nguyên liệu cần tương ứng, “"
+            },
+            {
+              "text": "Head Hunters",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+            },
+            {
+              "text": "” và “"
+            },
+            {
+              "text": "Azalith's Ambition",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+            },
+            {
+              "text": "” quest ở "
+            },
+            {
+              "text": "/join champazalith",
+              "href": "http://aqwwiki.wikidot.com/champion-azalith"
+            },
+            {
+              "text": ", còn “"
+            },
+            {
+              "text": "Unshackled Azalith",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Apex"
+            },
+            {
+              "text": "” và “"
+            },
+            {
+              "text": "Unshackled Azalith (Daily)",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Apex"
+            },
+            {
+              "text": "” quest ở "
+            },
+            {
+              "text": "/join apexazalith",
+              "href": "http://aqwwiki.wikidot.com/apex-azalith"
+            },
+            {
+              "text": ". Để lấy hết tất cả đồ trong shop thì cần tổng cộng các nguyên liệu sau:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394311",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Gold Voucher 100k ×298:",
+              "bold": true
+            },
+            {
+              "text": " Ứng với 29.8m Gold,"
+            },
+            {
+              "text": " xem “"
+            },
+            {
+              "text": "Gold Farm Guide",
+              "href": "/farm/farming-gold"
+            },
+            {
+              "text": "” nếu bạn cần.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394392",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Infernalis Penna",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernalis-penna"
+            },
+            {
+              "text": " ×537:",
+              "bold": true
+            },
+            {
+              "text": " Nhận được từ “"
+            },
+            {
+              "text": "Head Hunters",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+            },
+            {
+              "text": "” quest, đánh Maah-na và Akh-a ở "
+            },
+            {
+              "text": "/join champazalith",
+              "href": "http://aqwwiki.wikidot.com/champion-azalith"
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394496",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Infernalis Oculus",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernalis-oculus"
+            },
+            {
+              "text": " ×150:",
+              "bold": true
+            },
+            {
+              "text": " Nhận được từ “"
+            },
+            {
+              "text": "Azalith's Ambition",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+            },
+            {
+              "text": "” quest, đánh Azalith ở "
+            },
+            {
+              "text": "/join champazalith",
+              "href": "http://aqwwiki.wikidot.com/champion-azalith"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394598",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Divina Voluntas",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/divina-voluntas"
+            },
+            {
+              "text": " ×148:",
+              "bold": true
+            },
+            {
+              "text": " Nhận được thông qua 2 quests sau và đều cần đánh Azalith Morningstar ở "
+            },
+            {
+              "text": "/join apexazalith",
+              "href": "http://aqwwiki.wikidot.com/apex-azalith"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(là một Challenge Boss và bài viết này sẽ tập trung vào hướng dẫn cách đánh nó)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394792",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "“"
+            },
+            {
+              "text": "Unshackled Azalith",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Apex"
+            },
+            {
+              "text": "” quest.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394820",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "“"
+            },
+            {
+              "text": "Unshackled Azalith (Daily)",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Apex"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(1 ngày 5 cục, reset vào mỗi ngày 12:01AM EST server time)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394915",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Các trang bị có AC tag sau khi dùng để merge có thể dùng chức năng ",
+              "italic": true
+            },
+            {
+              "text": "Buy Back",
+              "italic": true,
+              "href": "/he-thong/buy-back-ac-tagged-items-function"
+            },
+            {
+              "text": " để lấy lại chúng mà không cần farm lại.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395040",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Infernal Wanderer's Scythe",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-wanderer-s-scythe"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(IWS)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 60% DMG với Human, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395117",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×50\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395141",
+          "runs": [
+            {
+              "text": "→ Celestial Wanderer's Scythe: Cần có Infernalis Penna ×50, Infernalis Oculus ×15 và Gold Voucher 100k ×4."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395248",
+          "runs": [
+            {
+              "text": "→ Divina Voluntas ×30\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395283",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Celestial Wanderer Set:",
+              "bold": true
+            },
+            {
+              "text": " Tất cả đều là Cosmetics, gồm có "
+            },
+            {
+              "text": "Celestial Wanderer",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-2"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Wanderer's Scythe",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-s-scythe"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Wanderer's Sceptre",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-s-sceptre"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Wanderer Hair",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-hair"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Wanderer Hood",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-hood"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Annals",
+              "href": "http://aqwwiki.wikidot.com/celestial-annals"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Celestial Runic Choir",
+              "href": "http://aqwwiki.wikidot.com/celestial-runic-choir"
+            },
+            {
+              "text": ". Tổng cần cho set này:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395535",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×22\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395559",
+          "runs": [
+            {
+              "text": "→ Infernalis Penna ×264\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395583",
+          "runs": [
+            {
+              "text": "→ Infernalis Oculus ×73\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395608",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Infernal Wanderer",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-wanderer"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(IW)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Armor tăng 40% DMG với Human, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395674",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×50\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395698",
+          "runs": [
+            {
+              "text": "→ Celestial Wanderer: Cần có Infernalis Penna ×75, Infernalis Oculus ×25 và Gold Voucher 100k ×6.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395796",
+          "runs": [
+            {
+              "text": "→ Divina Voluntas ×30\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395819",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Các món còn lại của Infernal Wanderer Set:",
+              "bold": true
+            },
+            {
+              "text": " Tất cả đều là Cosmetics, gồm có "
+            },
+            {
+              "text": "Infernal Wanderer Hood",
+              "href": "http://aqwwiki.wikidot.com/infernal-wanderer-hood"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Infernal Annals",
+              "href": "http://aqwwiki.wikidot.com/infernal-annals"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Infernal Runic Choir",
+              "href": "http://aqwwiki.wikidot.com/infernal-runic-choir"
+            },
+            {
+              "text": ". Tổng cần cho set này:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395983",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×6\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396006",
+          "runs": [
+            {
+              "text": "→ Phiên bản Celestial của chúng "
+            },
+            {
+              "text": "(Celestial Wanderer Hood, Celestial Annals và Celestial Runic Choir)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396108",
+          "runs": [
+            {
+              "text": "→ Divina Voluntas ×13\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396133",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Akh-a Companion",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/akh-a-companion"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Pet tăng 30% DMG với Dragon, Human, Undead, Chaos và Elemental, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396226",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×150\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396251",
+          "runs": [
+            {
+              "text": "→ Divina Voluntas ×75\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396276",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Akh-a & Maah-na Set:",
+              "bold": true
+            },
+            {
+              "text": " Tất cả đều là Cosmetics, gồm có "
+            },
+            {
+              "text": "Maah-na's Robes",
+              "href": "http://aqwwiki.wikidot.com/maah-na-s-robes"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Akh-a's Spear",
+              "href": "http://aqwwiki.wikidot.com/akh-a-s-spear"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Akh-a's Spear and Shield",
+              "href": "http://aqwwiki.wikidot.com/akh-a-s-spear-and-shield"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Maah-na's Hood",
+              "href": "http://aqwwiki.wikidot.com/maah-na-s-hood"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Akh-a's Wings",
+              "href": "http://aqwwiki.wikidot.com/akh-a-s-wings"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Maah-na's Freed Wings",
+              "href": "http://aqwwiki.wikidot.com/maah-na-s-freed-wings"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Maah-na's Wings",
+              "href": "http://aqwwiki.wikidot.com/maah-na-s-wings"
+            },
+            {
+              "text": ". Tổng cần cho set này:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396484",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×20\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396508",
+          "runs": [
+            {
+              "text": "→ Infernalis Penna ×275\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396532",
+          "runs": [
+            {
+              "text": "→ Infernalis Oculus ×77\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396557",
+          "runs": [
+            {
+              "text": "AZALITH MORNINGSTAR",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/azalith-morningstar"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396577",
+          "runs": [
+            {
+              "text": "Cuộc đối đầu cuối cùng với Azalith, một ArchAngel sa ngã. Trận chiến này sẽ quyết định số phận của Thiên giới và Địa ngục. Hãy cần thận, bạn sẽ dễ dàng đánh mất lý trí bởi sự bộc phát sức mạnh kinh người của bản thân thông qua quyền năng gian xảo của Azalith, làm bạn mất cảnh giác và điều khiển rồi hút cạn máu của bạn."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396899",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join apexazalith",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/apex-azalith"
+            },
+            {
+              "text": " - Room limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396948",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397005",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397013",
+          "runs": [
+            {
+              "text": "◆ Total HP: 888,888,888"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397037",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 1.5m."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397089",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397127",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397192",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge, 10% Crit Chance, 100% All Out và -5000% All In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397260",
+          "runs": [
+            {
+              "text": "◆ Players được tăng 1000% END, 75.000% Phys và Magi Out, -90% Mana Costs, nhưng cũng đồng thời bị tăng 2000% All In, Phys và Magi In "
+            },
+            {
+              "text": "(vô thời hạn)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397408",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 150 đến 200.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397458",
+          "runs": [
+            {
+              "text": "◆ Mỗi 15s, sử dụng Blood Magic gây ít nhất 1 True DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397513",
+          "runs": [
+            {
+              "text": "→ Players bị đưa HP xuống 1 nếu lượng HP hiện tại nhiều hơn 1, nếu không thì sẽ chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397599",
+          "runs": [
+            {
+              "text": "→ Azalith nhận HoT trong 10s, nên dùng class có Decay như LR, VDK, LDK.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397671",
+          "runs": [
+            {
+              "text": "→ Cần sử dụng skill hồi máu ngay sau khi Blood Magic, nhất là các class Healer trong Team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397762",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Inversion Magic sau khi dùng Blood Magic 2s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397819",
+          "runs": [
+            {
+              "text": "→ Players bị dính Decay"
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397844",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Dark Magic sau khi dùng Inversion Magic 3s, gây True DMG bằng 99% lượng HP tối đa của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397950",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 100% Hit Chance trong 4s và xoá bỏ Decay.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398010",
+          "runs": [
+            {
+              "text": "→ Cần sử dụng skill hồi máu ngay sau khi Dark Magic, nhất là các class Healer trong Team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398101",
+          "runs": [
+            {
+              "text": "Các team kiến nghị sử dụng\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398128",
+          "runs": [
+            {
+              "text": "Con ",
+              "italic": true
+            },
+            {
+              "text": "Azalith"
+            },
+            {
+              "text": " này có cơ chế không quá phức tạp, chủ yếu tập trung vào canh Heal chuẩn theo cơ chế cũng như với room 7 người nên có rất nhiều tổ hợp phù hợp, chỉ cần kết hợp 2-3 class DPS, 2-3 class buff máu, 1 class có Decay, còn lại là các class support khác. Dưới đây chỉ là một vài team gợi ý cho bạn.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398432",
+          "runs": [
+            {
+              "text": "Team 5 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "Healer, LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398488",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Healer, QCM/LR/VDK, LDK, PCM/LP/AP, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398534",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer, LDK, PCM/LP/AP, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398570",
+          "runs": [
+            {
+              "text": "Team 6 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398641",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Healer/GT, QCM, LR, VDK/LDK, PCM/LP/AP, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398691",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer, LR/VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398748",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398799",
+          "runs": [
+            {
+              "text": "Team 7 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "2 Healer, LR/VDK/LDK, PCM/LP/AP, LC, SC/IT/LH/DLH/FB, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398871",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398936",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer/GT, QCM, LR, VDK/LDK, PCM/LP/AP, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398988",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "3 Healer, LR/VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-399045",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "3 Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP/LH/DLH/FB, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-399106",
+          "runs": [
+            {
+              "text": "→ Đánh Azalith không quá khó, chỉ có một điểm duy nhất cần chú ý với nhóm class buff heal là khi nó sử dụng chuỗi skills vào mỗi 15s "
+            },
+            {
+              "text": "(Blood Magic > Inversion Magic > Dark Magic)",
+              "italic": true
+            },
+            {
+              "text": ". Bạn sẽ cần hồi máu cho Team vào 2 mốc là ngay sau Blood Magic "
+            },
+            {
+              "text": "(thông báo “I WILL BURN THIS REALM TO THE GROUND!”)",
+              "italic": true
+            },
+            {
+              "text": " và ngay sau Dark Magic "
+            },
+            {
+              "text": "(thông báo “Azalith restores your healing but reduces your Hit Chance!”)",
+              "italic": true
+            },
+            {
+              "text": " để đảm bảo cả Team có thể thuận lợi vượt qua được "
+            },
+            {
+              "text": "(hoặc có thể canh HP bản thân)",
+              "italic": true
+            },
+            {
+              "text": ". Cách canh Heal:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-399597",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Tuy Blood Magic và Dark Magic cách nhau 5s, nhưng có 3s sau là dính Decay nên không thể nhận Heal, vì vậy sau khi Azalith sử dụng Blood Magic đưa máu cả Team về 1HP thì chỉ có 2s để hồi đầy máu cả Team "
+            },
+            {
+              "text": "(để chịu được cú Dark Magic sau đó)",
+              "italic": true
+            },
+            {
+              "text": ". \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-399837",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Còn với Dark Magic "
+            },
+            {
+              "text": "(gây sát thương bằng 99% máu tối đa)",
+              "italic": true
+            },
+            {
+              "text": ", sau khi dính đòn của boss thì cũng cần hồi m"
+            },
+            {
+              "text": "áu nhưng ít áp lực hơn do ko cần đầy và không bị giới hạn thời gian như Blood Magic vì chỉ"
+            },
+            {
+              "text": " để tránh bị đòn thường của Azalith đánh chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400075",
+          "runs": [
+            {
+              "text": "→ Nếu Team có "
+            },
+            {
+              "text": "PCM/LP/AP",
+              "bold": true
+            },
+            {
+              "text": " thì các class này sẽ đảm nhiệm vai trò buff heal chính và chỉ heal khi Azalith dùng chuỗi skill "
+            },
+            {
+              "text": "(heal ngay sau Blood Magic và Dark Magic theo hướng dẫn trên)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400258",
+          "runs": [
+            {
+              "text": "→ Nếu không, thì cần ít nhất 2 class buff heal để đảm nhận heal chính ngay sau Blood Magic và Dark Magic, tốt nhất cả 2 cùng heal để đảm bảo heal đầy máu cả Team sau cú Blood Magic "
+            },
+            {
+              "text": "(quan trọng)",
+              "italic": true
+            },
+            {
+              "text": ". Nếu trong Team không có FB hoặc LH/DLH hay các class heal khác, thì 2 người được chọn trên cũng sẽ kiêm luôn buff heal team ngoài chuỗi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400590",
+          "runs": [
+            {
+              "text": "→ Còn các class heal khác "
+            },
+            {
+              "text": "(nếu có)",
+              "italic": true
+            },
+            {
+              "text": " sẽ đảm nhiệm vai trò heal phụ khi heal chính ko thể heal đầy máu lúc chuỗi được kích hoạt hoặc buff heal team ngoài chuỗi "
+            },
+            {
+              "text": "(trước Blood Magic đảm bảo ko có ai có 1HP và sau Dark Magic thì hỗ trợ heal)",
+              "italic": true
+            },
+            {
+              "text": ". Có FB hoặc LH/DLH trong Team thì việc heal sẽ dễ thở hơn."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400884",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Healer",
+              "bold": true
+            },
+            {
+              "text": " spam 2, 4 và 5, chỉ dùng 3 khi cần Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400934",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Healer class/cape + Hearty > Healer helm\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400991",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Body Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Endurance Draught"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401076",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "GT",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 4, sau đó spam 2, 4 và 5, còn 3 chỉ dùng sau khi boss sử dụng Dark Magic "
+            },
+            {
+              "text": "(để tăng Hit Chance bản thân)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401196",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Arcana's Concerto + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401258",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401351",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "QCM",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 3 - 4 - 5 sau đó thì spam 2 - 3 đến khi nào 5 CD xong thì dùng 4 - 5.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401442",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous > Smite/Praxis + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401510",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401604",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 4, combo thì mở đầu bằng 4 - 2 - 3 - 5, sau đó spam skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401681",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Arcana's Concerto + Wizard class/helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401736",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có LDK trong team, thì cần chú ý spam 2, nhất là sau khi boss sử dụng Blood Magic để Decay "
+            },
+            {
+              "text": "(HoT của boss kéo dài 10s)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401865",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401959",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402003",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous > Praxis + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402065",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có LDK trong team, thì cần chú ý spam 5, nhất là sau khi boss sử dụng Blood Magic để Decay "
+            },
+            {
+              "text": "(HoT của boss kéo dài 10s)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402194",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402288",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LDK",
+              "bold": true
+            },
+            {
+              "text": " thì chỉ cần spam toàn bộ skill, nhất là skill 5 để Decay được kích hoạt liên tục.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402376",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous > Praxis + Lucky class/helm + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402427",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402521",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "PCM",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3, sau đó spam 2 và 5, nếu đến Blood Magic mà skill 4 dùng được thì 4 - 3, còn nếu không thì thì canh để dùng 3 heal cho team theo hướng dẫn trên "
+            },
+            {
+              "text": "(2 cách heal này sẽ luân phiên nhau)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402724",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Healer class + Forge helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402779",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Unstable Body Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Endurance Draught"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402872",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LP",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3, sau đó spam 2, 4 và 5, chỉ dùng lại 3 khi cần Heal "
+            },
+            {
+              "text": "(theo hướng dẫn trên)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402965",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Wizard class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403019",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403113",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3, rồi sau đó lặp lại 4 - 2 - 2 - 5 - spam 2 đến khi 4 CD, chỉ dùng lại 3 khi cần Heal "
+            },
+            {
+              "text": "(theo hướng dẫn trên)",
+              "italic": true
+            },
+            {
+              "text": ". \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403242",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403295",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403389",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LC",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 4, sử dụng chính 2, 3 và 5, chỉ dùng 4 khi cần heal hoặc làm mới hiệu ứng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403482",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Praxis + Wizard class + Forge Helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403534",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ". \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403629",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 2, 3 và 4, sau đó spam skill, riêng 3 dùng khi cần heal hoặc làm mới hiệu ứng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403727",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có PCM/LP/AP thì sẽ phụ trách làm heal chính theo hướng dẫn trên.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403803",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Lucky Awe Blast + Lucky class/helm + Absolution "
+            },
+            {
+              "text": "(nếu làm heal chính thì dùng Ravenous)\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403895",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403986",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LH/DLH",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3 - 5, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404063",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có PCM/LP/AP thì sẽ phụ trách làm heal chính theo hướng dẫn trên "
+            },
+            {
+              "text": "(heal ở skill 3, còn HoT ở skill 5 phụ thuộc vào stack aura ở skill 3)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404210",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Lucky class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404256",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404347",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "FB",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3 - 4, sau đó spam skill 2, 3 và 4 "
+            },
+            {
+              "text": "(không sử dụng skill 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404425",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Fighter class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404473",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404565",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "SC",
+              "bold": true
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "IT",
+              "bold": true
+            },
+            {
+              "text": " combo: dùng combo 3 - 4 - 2 - 5 "
+            },
+            {
+              "text": "(luôn dùng 2 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404628",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Lucky class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404674",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-394311",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Gold Voucher 100k ×298:",
+          "bold": true
+        },
+        {
+          "text": " Ứng với 29.8m Gold,"
+        },
+        {
+          "text": " xem “"
+        },
+        {
+          "text": "Gold Farm Guide",
+          "href": "/farm/farming-gold"
+        },
+        {
+          "text": "” nếu bạn cần.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-394392",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Infernalis Penna",
+          "bold": true,
+          "href": "http://aqwwiki.wikidot.com/infernalis-penna"
+        },
+        {
+          "text": " ×537:",
+          "bold": true
+        },
+        {
+          "text": " Nhận được từ “"
+        },
+        {
+          "text": "Head Hunters",
+          "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+        },
+        {
+          "text": "” quest, đánh Maah-na và Akh-a ở "
+        },
+        {
+          "text": "/join champazalith",
+          "href": "http://aqwwiki.wikidot.com/champion-azalith"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-394496",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Infernalis Oculus",
+          "bold": true,
+          "href": "http://aqwwiki.wikidot.com/infernalis-oculus"
+        },
+        {
+          "text": " ×150:",
+          "bold": true
+        },
+        {
+          "text": " Nhận được từ “"
+        },
+        {
+          "text": "Azalith's Ambition",
+          "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+        },
+        {
+          "text": "” quest, đánh Azalith ở "
+        },
+        {
+          "text": "/join champazalith",
+          "href": "http://aqwwiki.wikidot.com/champion-azalith"
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-394598",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Divina Voluntas",
+          "bold": true,
+          "href": "http://aqwwiki.wikidot.com/divina-voluntas"
+        },
+        {
+          "text": " ×148:",
+          "bold": true
+        },
+        {
+          "text": " Nhận được thông qua 2 quests sau và đều cần đánh Azalith Morningstar ở "
+        },
+        {
+          "text": "/join apexazalith",
+          "href": "http://aqwwiki.wikidot.com/apex-azalith"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "(là một Challenge Boss và bài viết này sẽ tập trung vào hướng dẫn cách đánh nó)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395117",
+      "runs": [
+        {
+          "text": "→ Gold Voucher 100k ×50\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395141",
+      "runs": [
+        {
+          "text": "→ Celestial Wanderer's Scythe: Cần có Infernalis Penna ×50, Infernalis Oculus ×15 và Gold Voucher 100k ×4."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395248",
+      "runs": [
+        {
+          "text": "→ Divina Voluntas ×30\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395535",
+      "runs": [
+        {
+          "text": "→ Gold Voucher 100k ×22\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395559",
+      "runs": [
+        {
+          "text": "→ Infernalis Penna ×264\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395583",
+      "runs": [
+        {
+          "text": "→ Infernalis Oculus ×73\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395674",
+      "runs": [
+        {
+          "text": "→ Gold Voucher 100k ×50\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395698",
+      "runs": [
+        {
+          "text": "→ Celestial Wanderer: Cần có Infernalis Penna ×75, Infernalis Oculus ×25 và Gold Voucher 100k ×6.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395796",
+      "runs": [
+        {
+          "text": "→ Divina Voluntas ×30\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-395983",
+      "runs": [
+        {
+          "text": "→ Gold Voucher 100k ×6\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-396006",
+      "runs": [
+        {
+          "text": "→ Phiên bản Celestial của chúng "
+        },
+        {
+          "text": "(Celestial Wanderer Hood, Celestial Annals và Celestial Runic Choir)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-396108",
+      "runs": [
+        {
+          "text": "→ Divina Voluntas ×13\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-396226",
+      "runs": [
+        {
+          "text": "→ Gold Voucher 100k ×150\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-396251",
+      "runs": [
+        {
+          "text": "→ Divina Voluntas ×75\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-396484",
+      "runs": [
+        {
+          "text": "→ Gold Voucher 100k ×20\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-396508",
+      "runs": [
+        {
+          "text": "→ Infernalis Penna ×275\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-396532",
+      "runs": [
+        {
+          "text": "→ Infernalis Oculus ×77\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-397513",
+      "runs": [
+        {
+          "text": "→ Players bị đưa HP xuống 1 nếu lượng HP hiện tại nhiều hơn 1, nếu không thì sẽ chết.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-397599",
+      "runs": [
+        {
+          "text": "→ Azalith nhận HoT trong 10s, nên dùng class có Decay như LR, VDK, LDK.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-397671",
+      "runs": [
+        {
+          "text": "→ Cần sử dụng skill hồi máu ngay sau khi Blood Magic, nhất là các class Healer trong Team.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-397819",
+      "runs": [
+        {
+          "text": "→ Players bị dính Decay"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-397950",
+      "runs": [
+        {
+          "text": "→ Players bị giảm 100% Hit Chance trong 4s và xoá bỏ Decay.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-398010",
+      "runs": [
+        {
+          "text": "→ Cần sử dụng skill hồi máu ngay sau khi Dark Magic, nhất là các class Healer trong Team.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-398432",
+      "runs": [
+        {
+          "text": "Team 5 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "Healer, LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-398570",
+      "runs": [
+        {
+          "text": "Team 6 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-398799",
+      "runs": [
+        {
+          "text": "Team 7 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "2 Healer, LR/VDK/LDK, PCM/LP/AP, LC, SC/IT/LH/DLH/FB, LoO",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-399106",
+      "runs": [
+        {
+          "text": "→ Đánh Azalith không quá khó, chỉ có một điểm duy nhất cần chú ý với nhóm class buff heal là khi nó sử dụng chuỗi skills vào mỗi 15s "
+        },
+        {
+          "text": "(Blood Magic > Inversion Magic > Dark Magic)",
+          "italic": true
+        },
+        {
+          "text": ". Bạn sẽ cần hồi máu cho Team vào 2 mốc là ngay sau Blood Magic "
+        },
+        {
+          "text": "(thông báo “I WILL BURN THIS REALM TO THE GROUND!”)",
+          "italic": true
+        },
+        {
+          "text": " và ngay sau Dark Magic "
+        },
+        {
+          "text": "(thông báo “Azalith restores your healing but reduces your Hit Chance!”)",
+          "italic": true
+        },
+        {
+          "text": " để đảm bảo cả Team có thể thuận lợi vượt qua được "
+        },
+        {
+          "text": "(hoặc có thể canh HP bản thân)",
+          "italic": true
+        },
+        {
+          "text": ". Cách canh Heal:\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-399597",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Tuy Blood Magic và Dark Magic cách nhau 5s, nhưng có 3s sau là dính Decay nên không thể nhận Heal, vì vậy sau khi Azalith sử dụng Blood Magic đưa máu cả Team về 1HP thì chỉ có 2s để hồi đầy máu cả Team "
+        },
+        {
+          "text": "(để chịu được cú Dark Magic sau đó)",
+          "italic": true
+        },
+        {
+          "text": ". \n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-400075",
+      "runs": [
+        {
+          "text": "→ Nếu Team có "
+        },
+        {
+          "text": "PCM/LP/AP",
+          "bold": true
+        },
+        {
+          "text": " thì các class này sẽ đảm nhiệm vai trò buff heal chính và chỉ heal khi Azalith dùng chuỗi skill "
+        },
+        {
+          "text": "(heal ngay sau Blood Magic và Dark Magic theo hướng dẫn trên)",
+          "italic": true
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-400258",
+      "runs": [
+        {
+          "text": "→ Nếu không, thì cần ít nhất 2 class buff heal để đảm nhận heal chính ngay sau Blood Magic và Dark Magic, tốt nhất cả 2 cùng heal để đảm bảo heal đầy máu cả Team sau cú Blood Magic "
+        },
+        {
+          "text": "(quan trọng)",
+          "italic": true
+        },
+        {
+          "text": ". Nếu trong Team không có FB hoặc LH/DLH hay các class heal khác, thì 2 người được chọn trên cũng sẽ kiêm luôn buff heal team ngoài chuỗi.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-400590",
+      "runs": [
+        {
+          "text": "→ Còn các class heal khác "
+        },
+        {
+          "text": "(nếu có)",
+          "italic": true
+        },
+        {
+          "text": " sẽ đảm nhiệm vai trò heal phụ khi heal chính ko thể heal đầy máu lúc chuỗi được kích hoạt hoặc buff heal team ngoài chuỗi "
+        },
+        {
+          "text": "(trước Blood Magic đảm bảo ko có ai có 1HP và sau Dark Magic thì hỗ trợ heal)",
+          "italic": true
+        },
+        {
+          "text": ". Có FB hoặc LH/DLH trong Team thì việc heal sẽ dễ thở hơn."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-400884",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Healer",
+          "bold": true
+        },
+        {
+          "text": " spam 2, 4 và 5, chỉ dùng 3 khi cần Heal.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-401076",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "GT",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 4, sau đó spam 2, 4 và 5, còn 3 chỉ dùng sau khi boss sử dụng Dark Magic "
+        },
+        {
+          "text": "(để tăng Hit Chance bản thân)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-401351",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "QCM",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 2 - 3 - 4 - 5 sau đó thì spam 2 - 3 đến khi nào 5 CD xong thì dùng 4 - 5.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-401604",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 4, combo thì mở đầu bằng 4 - 2 - 3 - 5, sau đó spam skill.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-401959",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-402288",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LDK",
+          "bold": true
+        },
+        {
+          "text": " thì chỉ cần spam toàn bộ skill, nhất là skill 5 để Decay được kích hoạt liên tục.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-402521",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "PCM",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 3, sau đó spam 2 và 5, nếu đến Blood Magic mà skill 4 dùng được thì 4 - 3, còn nếu không thì thì canh để dùng 3 heal cho team theo hướng dẫn trên "
+        },
+        {
+          "text": "(2 cách heal này sẽ luân phiên nhau)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-402872",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LP",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 3, sau đó spam 2, 4 và 5, chỉ dùng lại 3 khi cần Heal "
+        },
+        {
+          "text": "(theo hướng dẫn trên)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-403113",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "AP",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 3, rồi sau đó lặp lại 4 - 2 - 2 - 5 - spam 2 đến khi 4 CD, chỉ dùng lại 3 khi cần Heal "
+        },
+        {
+          "text": "(theo hướng dẫn trên)",
+          "italic": true
+        },
+        {
+          "text": ". \n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-403389",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LC",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 4, sử dụng chính 2, 3 và 5, chỉ dùng 4 khi cần heal hoặc làm mới hiệu ứng.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-403629",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 2, 3 và 4, sau đó spam skill, riêng 3 dùng khi cần heal hoặc làm mới hiệu ứng.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-403986",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LH/DLH",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 3 - 5, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-404347",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "FB",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 3 - 4, sau đó spam skill 2, 3 và 4 "
+        },
+        {
+          "text": "(không sử dụng skill 5)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-404565",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "SC",
+          "bold": true
+        },
+        {
+          "text": "/"
+        },
+        {
+          "text": "IT",
+          "bold": true
+        },
+        {
+          "text": " combo: dùng combo 3 - 4 - 2 - 5 "
+        },
+        {
+          "text": "(luôn dùng 2 trước 5)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [
+    {
+      "id": "noi-dung",
+      "title": "Nội dung hướng dẫn",
+      "paragraphs": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "p-393932",
+          "runs": [
+            {
+              "text": "Aranx's Azalith Rewards Shop",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/aranx-s-azalith-rewards"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-393961",
+          "runs": [
+            {
+              "text": "Merge Shop của NPC Aranx ở "
+            },
+            {
+              "text": "/join champazalith",
+              "href": "http://aqwwiki.wikidot.com/champion-azalith"
+            },
+            {
+              "text": " hoặc "
+            },
+            {
+              "text": "/join apexazalith",
+              "href": "http://aqwwiki.wikidot.com/apex-azalith"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394030",
+          "runs": [
+            {
+              "text": "Nhận quests từ Aranx để lấy các nguyên liệu cần tương ứng, “"
+            },
+            {
+              "text": "Head Hunters",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+            },
+            {
+              "text": "” và “"
+            },
+            {
+              "text": "Azalith's Ambition",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+            },
+            {
+              "text": "” quest ở "
+            },
+            {
+              "text": "/join champazalith",
+              "href": "http://aqwwiki.wikidot.com/champion-azalith"
+            },
+            {
+              "text": ", còn “"
+            },
+            {
+              "text": "Unshackled Azalith",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Apex"
+            },
+            {
+              "text": "” và “"
+            },
+            {
+              "text": "Unshackled Azalith (Daily)",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Apex"
+            },
+            {
+              "text": "” quest ở "
+            },
+            {
+              "text": "/join apexazalith",
+              "href": "http://aqwwiki.wikidot.com/apex-azalith"
+            },
+            {
+              "text": ". Để lấy hết tất cả đồ trong shop thì cần tổng cộng các nguyên liệu sau:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394311",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Gold Voucher 100k ×298:",
+              "bold": true
+            },
+            {
+              "text": " Ứng với 29.8m Gold,"
+            },
+            {
+              "text": " xem “"
+            },
+            {
+              "text": "Gold Farm Guide",
+              "href": "/farm/farming-gold"
+            },
+            {
+              "text": "” nếu bạn cần.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394392",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Infernalis Penna",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernalis-penna"
+            },
+            {
+              "text": " ×537:",
+              "bold": true
+            },
+            {
+              "text": " Nhận được từ “"
+            },
+            {
+              "text": "Head Hunters",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+            },
+            {
+              "text": "” quest, đánh Maah-na và Akh-a ở "
+            },
+            {
+              "text": "/join champazalith",
+              "href": "http://aqwwiki.wikidot.com/champion-azalith"
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394496",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Infernalis Oculus",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernalis-oculus"
+            },
+            {
+              "text": " ×150:",
+              "bold": true
+            },
+            {
+              "text": " Nhận được từ “"
+            },
+            {
+              "text": "Azalith's Ambition",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Champ"
+            },
+            {
+              "text": "” quest, đánh Azalith ở "
+            },
+            {
+              "text": "/join champazalith",
+              "href": "http://aqwwiki.wikidot.com/champion-azalith"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394598",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Divina Voluntas",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/divina-voluntas"
+            },
+            {
+              "text": " ×148:",
+              "bold": true
+            },
+            {
+              "text": " Nhận được thông qua 2 quests sau và đều cần đánh Azalith Morningstar ở "
+            },
+            {
+              "text": "/join apexazalith",
+              "href": "http://aqwwiki.wikidot.com/apex-azalith"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(là một Challenge Boss và bài viết này sẽ tập trung vào hướng dẫn cách đánh nó)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394792",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "“"
+            },
+            {
+              "text": "Unshackled Azalith",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Apex"
+            },
+            {
+              "text": "” quest.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394820",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "“"
+            },
+            {
+              "text": "Unshackled Azalith (Daily)",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Apex"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(1 ngày 5 cục, reset vào mỗi ngày 12:01AM EST server time)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-394915",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Các trang bị có AC tag sau khi dùng để merge có thể dùng chức năng ",
+              "italic": true
+            },
+            {
+              "text": "Buy Back",
+              "italic": true,
+              "href": "/he-thong/buy-back-ac-tagged-items-function"
+            },
+            {
+              "text": " để lấy lại chúng mà không cần farm lại.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395040",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Infernal Wanderer's Scythe",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-wanderer-s-scythe"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(IWS)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 60% DMG với Human, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395117",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×50\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395141",
+          "runs": [
+            {
+              "text": "→ Celestial Wanderer's Scythe: Cần có Infernalis Penna ×50, Infernalis Oculus ×15 và Gold Voucher 100k ×4."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395248",
+          "runs": [
+            {
+              "text": "→ Divina Voluntas ×30\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395283",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Celestial Wanderer Set:",
+              "bold": true
+            },
+            {
+              "text": " Tất cả đều là Cosmetics, gồm có "
+            },
+            {
+              "text": "Celestial Wanderer",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-2"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Wanderer's Scythe",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-s-scythe"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Wanderer's Sceptre",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-s-sceptre"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Wanderer Hair",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-hair"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Wanderer Hood",
+              "href": "http://aqwwiki.wikidot.com/celestial-wanderer-hood"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Celestial Annals",
+              "href": "http://aqwwiki.wikidot.com/celestial-annals"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Celestial Runic Choir",
+              "href": "http://aqwwiki.wikidot.com/celestial-runic-choir"
+            },
+            {
+              "text": ". Tổng cần cho set này:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395535",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×22\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395559",
+          "runs": [
+            {
+              "text": "→ Infernalis Penna ×264\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395583",
+          "runs": [
+            {
+              "text": "→ Infernalis Oculus ×73\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395608",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Infernal Wanderer",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-wanderer"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(IW)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Armor tăng 40% DMG với Human, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395674",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×50\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395698",
+          "runs": [
+            {
+              "text": "→ Celestial Wanderer: Cần có Infernalis Penna ×75, Infernalis Oculus ×25 và Gold Voucher 100k ×6.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395796",
+          "runs": [
+            {
+              "text": "→ Divina Voluntas ×30\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395819",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Các món còn lại của Infernal Wanderer Set:",
+              "bold": true
+            },
+            {
+              "text": " Tất cả đều là Cosmetics, gồm có "
+            },
+            {
+              "text": "Infernal Wanderer Hood",
+              "href": "http://aqwwiki.wikidot.com/infernal-wanderer-hood"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Infernal Annals",
+              "href": "http://aqwwiki.wikidot.com/infernal-annals"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Infernal Runic Choir",
+              "href": "http://aqwwiki.wikidot.com/infernal-runic-choir"
+            },
+            {
+              "text": ". Tổng cần cho set này:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-395983",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×6\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396006",
+          "runs": [
+            {
+              "text": "→ Phiên bản Celestial của chúng "
+            },
+            {
+              "text": "(Celestial Wanderer Hood, Celestial Annals và Celestial Runic Choir)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396108",
+          "runs": [
+            {
+              "text": "→ Divina Voluntas ×13\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396133",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Akh-a Companion",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/akh-a-companion"
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Pet tăng 30% DMG với Dragon, Human, Undead, Chaos và Elemental, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396226",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×150\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396251",
+          "runs": [
+            {
+              "text": "→ Divina Voluntas ×75\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396276",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Akh-a & Maah-na Set:",
+              "bold": true
+            },
+            {
+              "text": " Tất cả đều là Cosmetics, gồm có "
+            },
+            {
+              "text": "Maah-na's Robes",
+              "href": "http://aqwwiki.wikidot.com/maah-na-s-robes"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Akh-a's Spear",
+              "href": "http://aqwwiki.wikidot.com/akh-a-s-spear"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Akh-a's Spear and Shield",
+              "href": "http://aqwwiki.wikidot.com/akh-a-s-spear-and-shield"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Maah-na's Hood",
+              "href": "http://aqwwiki.wikidot.com/maah-na-s-hood"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Akh-a's Wings",
+              "href": "http://aqwwiki.wikidot.com/akh-a-s-wings"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Maah-na's Freed Wings",
+              "href": "http://aqwwiki.wikidot.com/maah-na-s-freed-wings"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Maah-na's Wings",
+              "href": "http://aqwwiki.wikidot.com/maah-na-s-wings"
+            },
+            {
+              "text": ". Tổng cần cho set này:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396484",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 100k ×20\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396508",
+          "runs": [
+            {
+              "text": "→ Infernalis Penna ×275\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396532",
+          "runs": [
+            {
+              "text": "→ Infernalis Oculus ×77\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396557",
+          "runs": [
+            {
+              "text": "AZALITH MORNINGSTAR",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/azalith-morningstar"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396577",
+          "runs": [
+            {
+              "text": "Cuộc đối đầu cuối cùng với Azalith, một ArchAngel sa ngã. Trận chiến này sẽ quyết định số phận của Thiên giới và Địa ngục. Hãy cần thận, bạn sẽ dễ dàng đánh mất lý trí bởi sự bộc phát sức mạnh kinh người của bản thân thông qua quyền năng gian xảo của Azalith, làm bạn mất cảnh giác và điều khiển rồi hút cạn máu của bạn."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396899",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join apexazalith",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/apex-azalith"
+            },
+            {
+              "text": " - Room limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-396948",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397005",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397013",
+          "runs": [
+            {
+              "text": "◆ Total HP: 888,888,888"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397037",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 1.5m."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397089",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397127",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397192",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge, 10% Crit Chance, 100% All Out và -5000% All In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397260",
+          "runs": [
+            {
+              "text": "◆ Players được tăng 1000% END, 75.000% Phys và Magi Out, -90% Mana Costs, nhưng cũng đồng thời bị tăng 2000% All In, Phys và Magi In "
+            },
+            {
+              "text": "(vô thời hạn)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397408",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Magi DMG từ 150 đến 200.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397458",
+          "runs": [
+            {
+              "text": "◆ Mỗi 15s, sử dụng Blood Magic gây ít nhất 1 True DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397513",
+          "runs": [
+            {
+              "text": "→ Players bị đưa HP xuống 1 nếu lượng HP hiện tại nhiều hơn 1, nếu không thì sẽ chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397599",
+          "runs": [
+            {
+              "text": "→ Azalith nhận HoT trong 10s, nên dùng class có Decay như LR, VDK, LDK.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397671",
+          "runs": [
+            {
+              "text": "→ Cần sử dụng skill hồi máu ngay sau khi Blood Magic, nhất là các class Healer trong Team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397762",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Inversion Magic sau khi dùng Blood Magic 2s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397819",
+          "runs": [
+            {
+              "text": "→ Players bị dính Decay"
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397844",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Dark Magic sau khi dùng Inversion Magic 3s, gây True DMG bằng 99% lượng HP tối đa của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-397950",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 100% Hit Chance trong 4s và xoá bỏ Decay.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398010",
+          "runs": [
+            {
+              "text": "→ Cần sử dụng skill hồi máu ngay sau khi Dark Magic, nhất là các class Healer trong Team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398101",
+          "runs": [
+            {
+              "text": "Các team kiến nghị sử dụng\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398128",
+          "runs": [
+            {
+              "text": "Con ",
+              "italic": true
+            },
+            {
+              "text": "Azalith"
+            },
+            {
+              "text": " này có cơ chế không quá phức tạp, chủ yếu tập trung vào canh Heal chuẩn theo cơ chế cũng như với room 7 người nên có rất nhiều tổ hợp phù hợp, chỉ cần kết hợp 2-3 class DPS, 2-3 class buff máu, 1 class có Decay, còn lại là các class support khác. Dưới đây chỉ là một vài team gợi ý cho bạn.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398432",
+          "runs": [
+            {
+              "text": "Team 5 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "Healer, LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398488",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Healer, QCM/LR/VDK, LDK, PCM/LP/AP, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398534",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer, LDK, PCM/LP/AP, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398570",
+          "runs": [
+            {
+              "text": "Team 6 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398641",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Healer/GT, QCM, LR, VDK/LDK, PCM/LP/AP, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398691",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer, LR/VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398748",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398799",
+          "runs": [
+            {
+              "text": "Team 7 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "2 Healer, LR/VDK/LDK, PCM/LP/AP, LC, SC/IT/LH/DLH/FB, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398871",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398936",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Healer/GT, QCM, LR, VDK/LDK, PCM/LP/AP, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-398988",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "3 Healer, LR/VDK/LDK, PCM/LP/AP, LC/LH/DLH/FB, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-399045",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "3 Healer/GT, QCM/LR, VDK/LDK, PCM/LP/AP/LH/DLH/FB, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-399106",
+          "runs": [
+            {
+              "text": "→ Đánh Azalith không quá khó, chỉ có một điểm duy nhất cần chú ý với nhóm class buff heal là khi nó sử dụng chuỗi skills vào mỗi 15s "
+            },
+            {
+              "text": "(Blood Magic > Inversion Magic > Dark Magic)",
+              "italic": true
+            },
+            {
+              "text": ". Bạn sẽ cần hồi máu cho Team vào 2 mốc là ngay sau Blood Magic "
+            },
+            {
+              "text": "(thông báo “I WILL BURN THIS REALM TO THE GROUND!”)",
+              "italic": true
+            },
+            {
+              "text": " và ngay sau Dark Magic "
+            },
+            {
+              "text": "(thông báo “Azalith restores your healing but reduces your Hit Chance!”)",
+              "italic": true
+            },
+            {
+              "text": " để đảm bảo cả Team có thể thuận lợi vượt qua được "
+            },
+            {
+              "text": "(hoặc có thể canh HP bản thân)",
+              "italic": true
+            },
+            {
+              "text": ". Cách canh Heal:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-399597",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Tuy Blood Magic và Dark Magic cách nhau 5s, nhưng có 3s sau là dính Decay nên không thể nhận Heal, vì vậy sau khi Azalith sử dụng Blood Magic đưa máu cả Team về 1HP thì chỉ có 2s để hồi đầy máu cả Team "
+            },
+            {
+              "text": "(để chịu được cú Dark Magic sau đó)",
+              "italic": true
+            },
+            {
+              "text": ". \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-399837",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Còn với Dark Magic "
+            },
+            {
+              "text": "(gây sát thương bằng 99% máu tối đa)",
+              "italic": true
+            },
+            {
+              "text": ", sau khi dính đòn của boss thì cũng cần hồi m"
+            },
+            {
+              "text": "áu nhưng ít áp lực hơn do ko cần đầy và không bị giới hạn thời gian như Blood Magic vì chỉ"
+            },
+            {
+              "text": " để tránh bị đòn thường của Azalith đánh chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400075",
+          "runs": [
+            {
+              "text": "→ Nếu Team có "
+            },
+            {
+              "text": "PCM/LP/AP",
+              "bold": true
+            },
+            {
+              "text": " thì các class này sẽ đảm nhiệm vai trò buff heal chính và chỉ heal khi Azalith dùng chuỗi skill "
+            },
+            {
+              "text": "(heal ngay sau Blood Magic và Dark Magic theo hướng dẫn trên)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400258",
+          "runs": [
+            {
+              "text": "→ Nếu không, thì cần ít nhất 2 class buff heal để đảm nhận heal chính ngay sau Blood Magic và Dark Magic, tốt nhất cả 2 cùng heal để đảm bảo heal đầy máu cả Team sau cú Blood Magic "
+            },
+            {
+              "text": "(quan trọng)",
+              "italic": true
+            },
+            {
+              "text": ". Nếu trong Team không có FB hoặc LH/DLH hay các class heal khác, thì 2 người được chọn trên cũng sẽ kiêm luôn buff heal team ngoài chuỗi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400590",
+          "runs": [
+            {
+              "text": "→ Còn các class heal khác "
+            },
+            {
+              "text": "(nếu có)",
+              "italic": true
+            },
+            {
+              "text": " sẽ đảm nhiệm vai trò heal phụ khi heal chính ko thể heal đầy máu lúc chuỗi được kích hoạt hoặc buff heal team ngoài chuỗi "
+            },
+            {
+              "text": "(trước Blood Magic đảm bảo ko có ai có 1HP và sau Dark Magic thì hỗ trợ heal)",
+              "italic": true
+            },
+            {
+              "text": ". Có FB hoặc LH/DLH trong Team thì việc heal sẽ dễ thở hơn."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400884",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Healer",
+              "bold": true
+            },
+            {
+              "text": " spam 2, 4 và 5, chỉ dùng 3 khi cần Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400934",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Healer class/cape + Hearty > Healer helm\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-400991",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Body Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Endurance Draught"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401076",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "GT",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 4, sau đó spam 2, 4 và 5, còn 3 chỉ dùng sau khi boss sử dụng Dark Magic "
+            },
+            {
+              "text": "(để tăng Hit Chance bản thân)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401196",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Arcana's Concerto + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401258",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401351",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "QCM",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 3 - 4 - 5 sau đó thì spam 2 - 3 đến khi nào 5 CD xong thì dùng 4 - 5.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401442",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous > Smite/Praxis + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401510",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401604",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 4, combo thì mở đầu bằng 4 - 2 - 3 - 5, sau đó spam skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401681",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Arcana's Concerto + Wizard class/helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401736",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có LDK trong team, thì cần chú ý spam 2, nhất là sau khi boss sử dụng Blood Magic để Decay "
+            },
+            {
+              "text": "(HoT của boss kéo dài 10s)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401865",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-401959",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402003",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous > Praxis + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402065",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có LDK trong team, thì cần chú ý spam 5, nhất là sau khi boss sử dụng Blood Magic để Decay "
+            },
+            {
+              "text": "(HoT của boss kéo dài 10s)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402194",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402288",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LDK",
+              "bold": true
+            },
+            {
+              "text": " thì chỉ cần spam toàn bộ skill, nhất là skill 5 để Decay được kích hoạt liên tục.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402376",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous > Praxis + Lucky class/helm + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402427",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402521",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "PCM",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3, sau đó spam 2 và 5, nếu đến Blood Magic mà skill 4 dùng được thì 4 - 3, còn nếu không thì thì canh để dùng 3 heal cho team theo hướng dẫn trên "
+            },
+            {
+              "text": "(2 cách heal này sẽ luân phiên nhau)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402724",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Healer class + Forge helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402779",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Unstable Body Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Endurance Draught"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402872",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LP",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3, sau đó spam 2, 4 và 5, chỉ dùng lại 3 khi cần Heal "
+            },
+            {
+              "text": "(theo hướng dẫn trên)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-402965",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Wizard class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403019",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403113",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3, rồi sau đó lặp lại 4 - 2 - 2 - 5 - spam 2 đến khi 4 CD, chỉ dùng lại 3 khi cần Heal "
+            },
+            {
+              "text": "(theo hướng dẫn trên)",
+              "italic": true
+            },
+            {
+              "text": ". \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403242",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403295",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403389",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LC",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 4, sử dụng chính 2, 3 và 5, chỉ dùng 4 khi cần heal hoặc làm mới hiệu ứng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403482",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Praxis + Wizard class + Forge Helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403534",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ". \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403629",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 2, 3 và 4, sau đó spam skill, riêng 3 dùng khi cần heal hoặc làm mới hiệu ứng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403727",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có PCM/LP/AP thì sẽ phụ trách làm heal chính theo hướng dẫn trên.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403803",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Lucky Awe Blast + Lucky class/helm + Absolution "
+            },
+            {
+              "text": "(nếu làm heal chính thì dùng Ravenous)\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403895",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-403986",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LH/DLH",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3 - 5, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404063",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có PCM/LP/AP thì sẽ phụ trách làm heal chính theo hướng dẫn trên "
+            },
+            {
+              "text": "(heal ở skill 3, còn HoT ở skill 5 phụ thuộc vào stack aura ở skill 3)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404210",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Lucky class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404256",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404347",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "FB",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3 - 4, sau đó spam skill 2, 3 và 4 "
+            },
+            {
+              "text": "(không sử dụng skill 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404425",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Fighter class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404473",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404565",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "SC",
+              "bold": true
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "IT",
+              "bold": true
+            },
+            {
+              "text": " combo: dùng combo 3 - 4 - 2 - 5 "
+            },
+            {
+              "text": "(luôn dùng 2 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404628",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Lucky class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-404674",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendedTeams": []
+}

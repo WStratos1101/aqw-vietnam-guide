@@ -1,0 +1,858 @@
+[
+  {
+    "classId": "alpha-pirate-pirate",
+    "methodId": "pirate-merge-2",
+    "source": "https://aqwwiki.wikidot.com/pirateshop",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Observed Class/Location links point to PirateShop. Exact Pirate row costs 0 AC; shop access has an OR prerequisite, not a merge recipe.",
+    "verifiedFields": {
+      "type": "shop",
+      "shop": {
+        "shopName": "PirateShop",
+        "source": "https://aqwwiki.wikidot.com/pirateshop",
+        "npc": "Elissa Keelhaul",
+        "map": "Lolosia",
+        "price": {
+          "amount": 0,
+          "currency": "AC",
+          "sourceText": "0 AC"
+        }
+      },
+      "availability": "available",
+      "prerequisites": [
+        "Must have one of Classic Alpha Pirate, Classic Pirate (Class), or Pirate in inventory."
+      ]
+    }
+  },
+  {
+    "classId": "alpha-pirate-pirate",
+    "methodId": "pirate-map-recovery-quest-reviewed",
+    "source": "https://aqwwiki.wikidot.com/elissa-keelhaul-s-quests#1",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Current exact Map Recovery quest block: five Map Fragments, previous quest required, Pirate in Items rewards. Prose mentions opening the shop, which is preserved separately with its own inventory access prerequisites.",
+    "verifiedFields": {
+      "type": "quest",
+      "quest": {
+        "questId": "https://aqwwiki.wikidot.com/elissa-keelhaul-s-quests#1",
+        "questName": "Map Recovery",
+        "npc": "Elissa Keelhaul",
+        "map": "Lolosia",
+        "source": "https://aqwwiki.wikidot.com/elissa-keelhaul-s-quests#1",
+        "prerequisites": [
+          "Must have completed the previous quest, Salmagundi."
+        ],
+        "materials": {
+          "kind": "allOf",
+          "requirements": [
+            {
+              "kind": "item",
+              "itemId": "map-fragment",
+              "name": "Map Fragment",
+              "quantity": 5,
+              "source": "https://aqwwiki.wikidot.com/elissa-keelhaul-s-quests#1",
+              "acquisitionSources": [
+                {
+                  "name": "Monsters in Lolosia",
+                  "url": "https://aqwwiki.wikidot.com/lolosia"
+                }
+              ]
+            }
+          ]
+        },
+        "reward": "Pirate",
+        "verifiedQuestSteps": []
+      },
+      "availability": "available",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "blaze-binder-bb-firelord-summoner-fls",
+    "methodId": "blaze-binder-ac-shop-0",
+    "source": "https://aqwwiki.wikidot.com/blaze-binder-ac-class",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Exact Blaze Binder (AC) shop row is 2,000 AC with Rank N/A. The Battleon location alone has Rare tag; Firestorm Forge is current.",
+    "verifiedFields": {
+      "type": "shop",
+      "shop": {
+        "shopName": "Blaze Binder AC Class",
+        "source": "https://aqwwiki.wikidot.com/blaze-binder-ac-class",
+        "npc": "High Adept Thaumus",
+        "map": "Battleon",
+        "price": {
+          "amount": 2000,
+          "currency": "AC",
+          "sourceText": "2,000 AC"
+        }
+      },
+      "availability": "legacy",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "blaze-binder-bb-firelord-summoner-fls",
+    "methodId": "blaze-binder-ac-shop-1",
+    "source": "https://aqwwiki.wikidot.com/blaze-binder-ac-class",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Exact Blaze Binder (AC) shop row is 2,000 AC with Rank N/A. The Battleon location alone has Rare tag; Firestorm Forge is current.",
+    "verifiedFields": {
+      "type": "shop",
+      "shop": {
+        "shopName": "Blaze Binder AC Class",
+        "source": "https://aqwwiki.wikidot.com/blaze-binder-ac-class",
+        "npc": "High Adept Caustus",
+        "map": "Firestorm Forge",
+        "price": {
+          "amount": 2000,
+          "currency": "AC",
+          "sourceText": "2,000 AC"
+        }
+      },
+      "availability": "available",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "dark-lord-dl-darkside",
+    "methodId": "dark-lord-darkside-gear-quest",
+    "source": "https://aqwwiki.wikidot.com/darkside-orb-s-quest",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Exact quest disclosure: Catalogue of Oddities in Curiosities, requires original Darkside at 1 Class Point; Items Required N/A; Dark Lord is explicitly a reward. No material quantity invented.",
+    "verifiedFields": {
+      "type": "quest",
+      "quest": {
+        "questId": "https://aqwwiki.wikidot.com/darkside-orb-s-quest",
+        "questName": "Darkside Gear",
+        "npc": "Catalogue of Oddities",
+        "map": "Curiosities",
+        "source": "https://aqwwiki.wikidot.com/darkside-orb-s-quest",
+        "prerequisites": [
+          "Must have Darkside with at least 1 Class Point in inventory."
+        ],
+        "materials": null,
+        "reward": "Dark Lord",
+        "verifiedQuestSteps": []
+      },
+      "availability": "limited",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "dark-lord-dl-darkside",
+    "methodId": "darkside-golden-cheezburger-legacy",
+    "source": "https://www.aq.com/gamedesignnotes/darkside-class-skill-breakdown-1498",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "January 11, 2012 official release description explicitly says the Golden Cheezburger item turns into the Class. Current Wiki Location/Price N/A plus Rare establishes unavailable current acquisition. Do not mix with the seasonal Dark Lord merge or original-owner quest.",
+    "verifiedFields": {
+      "type": "other",
+      "other": {
+        "label": "Golden Cheezburger · 2012",
+        "description": "Golden Cheezburger được chuyển thành Darkside trong đợt phát hành tháng 1/2012. Phiên bản gốc đã ngừng phát hành."
+      },
+      "availability": "legacy",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "enforcer-protosartorium",
+    "methodId": "enforcer-quest-0",
+    "source": "https://aqwwiki.wikidot.com/taravya-s-quests",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Explicit x quantities remain on parent material; Dropped by nested lists are provenance, not additional material scope. Singular Requirement labels preserve quest chain.",
+    "verifiedFields": {
+      "type": "quest",
+      "quest": {
+        "questId": "https://aqwwiki.wikidot.com/taravya-s-quests",
+        "questName": "Protosartorium Parts",
+        "npc": "Taravya",
+        "map": "Dwakel Crash Site",
+        "source": "https://aqwwiki.wikidot.com/taravya-s-quests",
+        "prerequisites": [
+          "Must have completed the previous quest."
+        ],
+        "materials": {
+          "kind": "allOf",
+          "requirements": [
+            {
+              "kind": "item",
+              "itemId": "protosartorium-parts",
+              "name": "ProtoSartorium Parts",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/taravya-s-quests",
+              "acquisitionSources": [
+                {
+                  "name": "ProtoSartorium (Monster)",
+                  "url": "https://aqwwiki.wikidot.com/protosartorium-monster"
+                }
+              ]
+            }
+          ]
+        },
+        "reward": "Enforcer",
+        "verifiedQuestSteps": [
+          {
+            "name": "Quadrolithium",
+            "index": 0,
+            "prerequisites": [],
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "quadrolithium",
+                  "name": "Quadrolithium",
+                  "quantity": 8,
+                  "source": "https://aqwwiki.wikidot.com/taravya-s-quests",
+                  "acquisitionSources": [
+                    {
+                      "name": "Dwakel Blaster",
+                      "url": "https://aqwwiki.wikidot.com/dwakel-blaster"
+                    },
+                    {
+                      "name": "Dwakel Warrior (Monster) (Version 1)",
+                      "url": "https://aqwwiki.wikidot.com/dwakel-warrior-monster"
+                    },
+                    {
+                      "name": "Flamethrower Dwakel",
+                      "url": "https://aqwwiki.wikidot.com/flamethrower-dwakel"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rawMaterials": [
+              "Quadrolithium x8 Dropped by: Dwakel Blaster Dwakel Warrior (Monster) (Version 1) Flamethrower Dwakel"
+            ],
+            "issues": [],
+            "reward": "Oculation Helm",
+            "source": "https://aqwwiki.wikidot.com/taravya-s-quests"
+          },
+          {
+            "name": "Dam Balloons",
+            "index": 1,
+            "prerequisites": [
+              "Must have completed the previous quest."
+            ],
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "dam-balloons",
+                  "name": "Dam Balloons",
+                  "quantity": 10,
+                  "source": "https://aqwwiki.wikidot.com/taravya-s-quests",
+                  "acquisitionSources": [
+                    {
+                      "name": "Dwakel Blaster",
+                      "url": "https://aqwwiki.wikidot.com/dwakel-blaster"
+                    },
+                    {
+                      "name": "Dwakel Warrior (Monster) (Version 1)",
+                      "url": "https://aqwwiki.wikidot.com/dwakel-warrior-monster"
+                    },
+                    {
+                      "name": "Flamethrower Dwakel",
+                      "url": "https://aqwwiki.wikidot.com/flamethrower-dwakel"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rawMaterials": [
+              "Dam Balloons x10 Dropped by: Dwakel Blaster Dwakel Warrior (Monster) (Version 1) Flamethrower Dwakel"
+            ],
+            "issues": [],
+            "reward": "Battery Cell Pack",
+            "source": "https://aqwwiki.wikidot.com/taravya-s-quests"
+          },
+          {
+            "name": "Bumper Bolts",
+            "index": 2,
+            "prerequisites": [
+              "Must have completed the previous quest."
+            ],
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "bumper-bolts",
+                  "name": "Bumper Bolts",
+                  "quantity": 12,
+                  "source": "https://aqwwiki.wikidot.com/taravya-s-quests",
+                  "acquisitionSources": [
+                    {
+                      "name": "Dwakel Blaster",
+                      "url": "https://aqwwiki.wikidot.com/dwakel-blaster"
+                    },
+                    {
+                      "name": "Dwakel Warrior (Monster) (Version 1)",
+                      "url": "https://aqwwiki.wikidot.com/dwakel-warrior-monster"
+                    },
+                    {
+                      "name": "Flamethrower Dwakel",
+                      "url": "https://aqwwiki.wikidot.com/flamethrower-dwakel"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rawMaterials": [
+              "Bumper Bolts x12 Dropped by: Dwakel Blaster Dwakel Warrior (Monster) (Version 1) Flamethrower Dwakel"
+            ],
+            "issues": [],
+            "reward": "Spybot",
+            "source": "https://aqwwiki.wikidot.com/taravya-s-quests"
+          },
+          {
+            "name": "Mithril Man Batteries",
+            "index": 3,
+            "prerequisites": [
+              "Must have completed the previous quest."
+            ],
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "mithril-man-batteries",
+                  "name": "Mithril Man Batteries",
+                  "quantity": 1,
+                  "source": "https://aqwwiki.wikidot.com/taravya-s-quests",
+                  "acquisitionSources": [
+                    {
+                      "name": "Mithril Man",
+                      "url": "https://aqwwiki.wikidot.com/mithril-man"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rawMaterials": [
+              "Mithril Man Batteries x1 Dropped by Mithril Man"
+            ],
+            "issues": [],
+            "reward": "Piston-Driven Polearm",
+            "source": "https://aqwwiki.wikidot.com/taravya-s-quests"
+          },
+          {
+            "name": "ProtoSartorium Parts",
+            "index": 4,
+            "prerequisites": [
+              "Must have completed the previous quest."
+            ],
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "protosartorium-parts",
+                  "name": "ProtoSartorium Parts",
+                  "quantity": 1,
+                  "source": "https://aqwwiki.wikidot.com/taravya-s-quests",
+                  "acquisitionSources": [
+                    {
+                      "name": "ProtoSartorium (Monster)",
+                      "url": "https://aqwwiki.wikidot.com/protosartorium-monster"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rawMaterials": [
+              "ProtoSartorium Parts x1 Dropped by ProtoSartorium (Monster)"
+            ],
+            "issues": [],
+            "reward": "Enforcer / Enforcer Armor",
+            "source": "https://aqwwiki.wikidot.com/taravya-s-quests"
+          }
+        ]
+      },
+      "availability": "available",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "evolved-pumpkin-lord-epl",
+    "methodId": "evolved-pumpkin-lord-legend-merge-1",
+    "source": "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Price list explicitly states Dropped by Great Pumpkin King as an alternative to Glowing Pumpkinseed x500 merge. Mystcroft is the drop location.",
+    "verifiedFields": {
+      "type": "drop",
+      "drop": {
+        "from": "Great Pumpkin King",
+        "sources": [
+          {
+            "name": "Great Pumpkin King",
+            "url": "https://aqwwiki.wikidot.com/great-pumpkin-king"
+          }
+        ],
+        "source": "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend"
+      },
+      "availability": "seasonal",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "frostval-barbarian-fb",
+    "methodId": "frostval-barbarian-quest-reviewed",
+    "source": "https://aqwwiki.wikidot.com/robina-blizzy-s-quests",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Exact quest disclosure includes six explicitly quantified x1 items and this Class reward.",
+    "verifiedFields": {
+      "type": "quest",
+      "quest": {
+        "questId": "https://aqwwiki.wikidot.com/robina-blizzy-s-quests",
+        "questName": "Unleash the Frostvale Barbarian",
+        "npc": "Robina / Robina & Blizzy",
+        "map": "Frostvale",
+        "source": "https://aqwwiki.wikidot.com/robina-blizzy-s-quests",
+        "prerequisites": [],
+        "materials": {
+          "kind": "allOf",
+          "requirements": [
+            {
+              "kind": "item",
+              "itemId": "sword-of-hope-sword",
+              "name": "Sword Of Hope (Sword)",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/sword-of-hope-sword"
+            },
+            {
+              "kind": "item",
+              "itemId": "sassafras-war-helm",
+              "name": "Sassafras' War Helm",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/sassafras-war-helm"
+            },
+            {
+              "kind": "item",
+              "itemId": "fur-tuft",
+              "name": "Fur Tuft",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/fur-tuft"
+            },
+            {
+              "kind": "item",
+              "itemId": "icy-holly",
+              "name": "Icy Holly",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/icy-holly"
+            },
+            {
+              "kind": "item",
+              "itemId": "glaceran-key",
+              "name": "Glaceran Key",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/glaceran-key"
+            },
+            {
+              "kind": "item",
+              "itemId": "infernal-ice-heart",
+              "name": "Infernal Ice Heart",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/infernal-ice-heart"
+            }
+          ]
+        },
+        "reward": "Frostval Barbarian (0 AC)",
+        "verifiedQuestSteps": [
+          {
+            "name": "Unleash the Frostvale Barbarian",
+            "index": 0,
+            "prerequisites": [],
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "sword-of-hope-sword",
+                  "name": "Sword Of Hope (Sword)",
+                  "quantity": 1,
+                  "source": "https://aqwwiki.wikidot.com/sword-of-hope-sword"
+                },
+                {
+                  "kind": "item",
+                  "itemId": "sassafras-war-helm",
+                  "name": "Sassafras' War Helm",
+                  "quantity": 1,
+                  "source": "https://aqwwiki.wikidot.com/sassafras-war-helm"
+                },
+                {
+                  "kind": "item",
+                  "itemId": "fur-tuft",
+                  "name": "Fur Tuft",
+                  "quantity": 1,
+                  "source": "https://aqwwiki.wikidot.com/fur-tuft"
+                },
+                {
+                  "kind": "item",
+                  "itemId": "icy-holly",
+                  "name": "Icy Holly",
+                  "quantity": 1,
+                  "source": "https://aqwwiki.wikidot.com/icy-holly"
+                },
+                {
+                  "kind": "item",
+                  "itemId": "glaceran-key",
+                  "name": "Glaceran Key",
+                  "quantity": 1,
+                  "source": "https://aqwwiki.wikidot.com/glaceran-key"
+                },
+                {
+                  "kind": "item",
+                  "itemId": "infernal-ice-heart",
+                  "name": "Infernal Ice Heart",
+                  "quantity": 1,
+                  "source": "https://aqwwiki.wikidot.com/infernal-ice-heart"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "Sword Of Hope (Sword) x1",
+              "Sassafras' War Helm x1",
+              "Fur Tuft x1",
+              "Icy Holly x1",
+              "Glaceran Key x1",
+              "Infernal Ice Heart x1"
+            ],
+            "issues": [],
+            "reward": "Frostval Barbarian (0 AC) / Frosty Barbarian's Helm (0 AC) / Frosty Barbarian's Horns (0 AC) / Bearded Barbarian Helm (0 AC) / Frostval Barbarian Cape / Frostval Barbarian Poleaxe / Frostval Barbarian Sword (0 AC)",
+            "source": "https://aqwwiki.wikidot.com/robina-blizzy-s-quests"
+          }
+        ]
+      },
+      "availability": "seasonal",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "frostval-barbarian-fb",
+    "methodId": "frostval-barbarian-icestorm-shop-reviewed",
+    "source": "https://aqwwiki.wikidot.com/icestorm-collection",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Exact Class row 0 AC, accessible through the owned 2018 chest pet; not unconditional Free or a world map.",
+    "verifiedFields": {
+      "type": "shop",
+      "shop": {
+        "shopName": "IceStorm Collection",
+        "source": "https://aqwwiki.wikidot.com/icestorm-collection",
+        "npc": "IceStorm Collection Chest Pet 2018",
+        "map": null,
+        "price": {
+          "amount": 0,
+          "currency": "AC",
+          "sourceText": "0 AC"
+        }
+      },
+      "availability": "limited",
+      "prerequisites": [
+        "Must have IceStorm Collection Chest Pet 2018 in inventory."
+      ]
+    }
+  },
+  {
+    "classId": "kathool-adept-ka",
+    "methodId": "kathool-adept-quest-0",
+    "source": "https://aqwwiki.wikidot.com/the-depths-of-your-madness-quests",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Explicit x quantities remain on parent material; Dropped by nested lists are provenance, not additional material scope. Singular Requirement labels preserve quest chain.",
+    "verifiedFields": {
+      "type": "quest",
+      "quest": {
+        "questId": "https://aqwwiki.wikidot.com/the-depths-of-your-madness-quests",
+        "questName": "Call of Kathool",
+        "npc": "The Depths of Your Madness",
+        "map": "Call of Kathool",
+        "source": "https://aqwwiki.wikidot.com/the-depths-of-your-madness-quests",
+        "prerequisites": [
+          "Must be Level 80.",
+          "Must have completed either of the previous quests."
+        ],
+        "materials": {
+          "kind": "allOf",
+          "requirements": [
+            {
+              "kind": "item",
+              "itemId": "kathoo-s-morsel-consumed",
+              "name": "Kathoo's Morsel Consumed",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/the-depths-of-your-madness-quests",
+              "acquisitionSources": [
+                {
+                  "name": "Mad Morsel",
+                  "url": "https://aqwwiki.wikidot.com/mad-morsel"
+                }
+              ]
+            }
+          ]
+        },
+        "reward": "Kathool Adept",
+        "verifiedQuestSteps": [
+          {
+            "name": "Call of Kathool",
+            "index": 2,
+            "prerequisites": [
+              "Must be Level 80.",
+              "Must have completed either of the previous quests."
+            ],
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "kathoo-s-morsel-consumed",
+                  "name": "Kathoo's Morsel Consumed",
+                  "quantity": 1,
+                  "source": "https://aqwwiki.wikidot.com/the-depths-of-your-madness-quests",
+                  "acquisitionSources": [
+                    {
+                      "name": "Mad Morsel",
+                      "url": "https://aqwwiki.wikidot.com/mad-morsel"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rawMaterials": [
+              "Kathoo's Morsel Consumed x1 Dropped by Mad Morsel"
+            ],
+            "issues": [],
+            "reward": "Kathool Adept",
+            "source": "https://aqwwiki.wikidot.com/the-depths-of-your-madness-quests"
+          }
+        ]
+      },
+      "availability": "available",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "mechajouster-mj",
+    "methodId": "mechajouster-gerrick-quest-reviewed",
+    "source": "https://aqwwiki.wikidot.com/gerrick-s-quest",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Exact Gerrick quest rewards MechaJouster, requires Jouster armor and Energy Orb x1 dropped by Lightning Ball.",
+    "verifiedFields": {
+      "type": "quest",
+      "quest": {
+        "questId": "https://aqwwiki.wikidot.com/gerrick-s-quest",
+        "questName": "Quest to Unlock Jouster Class",
+        "npc": "Gerrick",
+        "map": "Air Storm",
+        "source": "https://aqwwiki.wikidot.com/gerrick-s-quest",
+        "prerequisites": [
+          "Must have Jouster in your inventory."
+        ],
+        "materials": {
+          "kind": "allOf",
+          "requirements": [
+            {
+              "kind": "item",
+              "itemId": "energy-orb",
+              "name": "Energy Orb",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/gerrick-s-quest",
+              "acquisitionSources": [
+                {
+                  "name": "Lightning Ball",
+                  "url": "https://aqwwiki.wikidot.com/lightning-ball"
+                }
+              ]
+            }
+          ]
+        },
+        "reward": "MechaJouster",
+        "verifiedQuestSteps": []
+      },
+      "availability": "available",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "oracle",
+    "methodId": "oracle-shop-1",
+    "source": "https://aqwwiki.wikidot.com/oracle-class",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Web browser text access recovered exact Oracle row (0 AC), Ranad and Class Hall A. No prerequisites listed.",
+    "verifiedFields": {
+      "type": "shop",
+      "shop": {
+        "shopName": "Oracle Class",
+        "source": "https://aqwwiki.wikidot.com/oracle-class",
+        "npc": "Ranad",
+        "map": "Class Hall A",
+        "price": {
+          "amount": 0,
+          "currency": "AC",
+          "sourceText": "0 AC"
+        }
+      },
+      "availability": "available",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "rogue-renegade",
+    "methodId": "classic-alpha-pirate-legacy-creation",
+    "source": "https://aqwwiki.wikidot.com/classic-alpha-pirate",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Source Notes explicitly state one-time character creation and restoration to original 2008 owners. Price N/A is not interpreted as Free.",
+    "verifiedFields": {
+      "type": "other",
+      "other": {
+        "label": "Mulligan Day 2008",
+        "description": "Bản khởi tạo nhân vật trong Mulligan Day 2008; đã ngừng phát hành. Được trả lại vào túi đồ cho chủ sở hữu gốc."
+      },
+      "availability": "legacy",
+      "prerequisites": []
+    }
+  },
+  {
+    "classId": "sentinel",
+    "methodId": "sentinel-shop-0",
+    "source": "https://aqwwiki.wikidot.com/1st-upholder",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Exact Sentinel shop row and historical Upholder badge access condition recovered through web page reader. Other unavailable Upholder pages stay partial.",
+    "verifiedFields": {
+      "type": "shop",
+      "shop": {
+        "shopName": "Tên shop chưa xác minh",
+        "source": "https://aqwwiki.wikidot.com/1st-upholder",
+        "npc": null,
+        "map": "Book of Lore",
+        "price": {
+          "amount": 0,
+          "currency": "AC",
+          "sourceText": "0 AC"
+        }
+      },
+      "availability": "limited",
+      "prerequisites": [
+        "Must have purchased membership or AdventureCoins between October 1 and October 31, 2009."
+      ]
+    }
+  },
+  {
+    "classId": "sentinel",
+    "methodId": "sentinel-shop-10",
+    "source": "https://aqwwiki.wikidot.com/11th-upholder",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Exact Sentinel shop row and historical Upholder badge access condition recovered through web page reader. Other unavailable Upholder pages stay partial.",
+    "verifiedFields": {
+      "type": "shop",
+      "shop": {
+        "shopName": "Tên shop chưa xác minh",
+        "source": "https://aqwwiki.wikidot.com/11th-upholder",
+        "npc": null,
+        "map": "Book of Lore",
+        "price": {
+          "amount": 0,
+          "currency": "AC",
+          "sourceText": "0 AC"
+        }
+      },
+      "availability": "limited",
+      "prerequisites": [
+        "Must have had active membership expiring on or after November 4, 2019."
+      ]
+    }
+  },
+  {
+    "classId": "vindicator-of-they-vot-the-collector-tc",
+    "methodId": "the-collector-class-0-ac-shop-0",
+    "source": "https://aqwwiki.wikidot.com/vindicator-of-they-armor-shop",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Recovered exact Collector (Class) (0 AC) row and variant-specific Vindicator prerequisite. Pseudo-rare badge access is not unconditional Free.",
+    "verifiedFields": {
+      "type": "shop",
+      "shop": {
+        "shopName": "Vindicator of They Armor (Shop)",
+        "source": "https://aqwwiki.wikidot.com/vindicator-of-they-armor-shop",
+        "npc": "Will and Fred",
+        "map": "The Collector (Location)",
+        "price": {
+          "amount": 0,
+          "currency": "AC",
+          "sourceText": "0 AC"
+        }
+      },
+      "availability": "limited",
+      "prerequisites": [
+        "Must have Vindicator Of They (Merge) in your inventory with at least 1 Class Point to access this shop."
+      ]
+    }
+  },
+  {
+    "classId": "vindicator-of-they-vot-the-collector-tc",
+    "methodId": "the-collector-class-0-ac-shop-1",
+    "source": "https://aqwwiki.wikidot.com/vindicator-of-they-shop-2",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Recovered exact Collector (Class) (0 AC) row and variant-specific Vindicator prerequisite. Pseudo-rare badge access is not unconditional Free.",
+    "verifiedFields": {
+      "type": "shop",
+      "shop": {
+        "shopName": "Vindicator Of They Shop (2)",
+        "source": "https://aqwwiki.wikidot.com/vindicator-of-they-shop-2",
+        "npc": "Will and Fred",
+        "map": "The Collector (Location)",
+        "price": {
+          "amount": 0,
+          "currency": "AC",
+          "sourceText": "0 AC"
+        }
+      },
+      "availability": "limited",
+      "prerequisites": [
+        "Must have Vindicator Of They (AC) in your inventory with at least 1 Class Point to access this shop."
+      ]
+    }
+  },
+  {
+    "classId": "warrior-beast-warrior-pumpkin-lord-warlord",
+    "methodId": "pumpkin-lord-drop-reviewed",
+    "source": "https://aqwwiki.wikidot.com/pumpkin-lord",
+    "verifiedAt": "2026-11-11",
+    "access": "Exact named page/row review; original class source retained",
+    "reason": "Exact Price disclosure names Great Pumpkin King and StalkWalker drops; no purchase price inferred.",
+    "verifiedFields": {
+      "type": "drop",
+      "drop": {
+        "from": "Great Pumpkin King / StalkWalker",
+        "sources": [
+          {
+            "name": "Great Pumpkin King",
+            "url": "https://aqwwiki.wikidot.com/great-pumpkin-king"
+          },
+          {
+            "name": "StalkWalker",
+            "url": "https://aqwwiki.wikidot.com/stalkwalker"
+          }
+        ],
+        "source": "https://aqwwiki.wikidot.com/pumpkin-lord"
+      },
+      "availability": "seasonal",
+      "prerequisites": []
+    }
+  }
+]

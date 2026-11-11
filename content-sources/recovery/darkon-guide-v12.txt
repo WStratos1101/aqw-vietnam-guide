@@ -1,0 +1,151 @@
+
+DARKON THE CONDUCTOR
+Kẻ hồi sinh từ cõi vĩnh hằng - Darkon đã trở lại để trả thù. Với cơ chế gồm rất nhiều các hiệu ứng Buff và Debuff rất khó chịu cùng với sát thương dạng True DMG và mạnh dần theo thời gian, thêm cả các Nuke đặc trưng của Challenge Boss, nhưng ở mỗi giai đoạn thì cơ chế lại thay đổi khác nhau với nhiều loại hiệu ứng tạo nên nét đặc trưng riêng và độ khó đến điên loạn.
+
+
+Cần hoàn thành Darkon’s Saga để access Map.
+Boss nằm ở map /join ultradarkon - Room limit: 4
+Cần đạt ít nhất lvl 95 để vượt qua được Ultra Challenge Boss.
+  
+
+Cơ chế
+◆ Total HP: 22,222,222
+◆ Shield giúp giảm sát thương trên 122k (hệ số 0.8).
+◆ Với mỗi player bị giết chết, Darkon sẽ hồi lại 750k HP (miễn nhiễm Decay).
+◆ Miễn nhiễm với Stun.
+◆ Base có Hit và Crit Chance cao, -200% DoT In và 800% Crit DMG.
+◆ Auto-Attack mỗi 2.25s gây 100 True DMG (thay đổi theo sát thương bạo kích).
+→ Luôn bạo kích và bỏ qua Focus/Taunt.
+→ Giảm 500% Dodge của players.
+◆ Mỗi 12s, sử dụng Special 1 gây True DMG bằng 90% lượng HP tối đa của player, không thể né nhưng lại không thể bạo kích.
+◆ Mỗi 5s, sử dụng Special 2 gây 150 True DMG (thay đổi theo sát thương bạo kích), luôn bạo kích.
+◆ Ngay khi bắt đầu trận đánh, Darkon tiến vào trạng thái Overture, bổ sung thêm hiệu ứng cho Auto-Attack, Special 1 và 2.
+→ Auto-Attack áp thêm hiệu ứng giảm 50% Hit Chance lên players.
+→ Special 1 áp thêm hiệu ứng lên Darkon:
+         * Darkon tăng 100% Crit DMG lên Darkon, stack đến 6 (max 600% Crit DMG), mỗi stack theo thứ tự ứng với Re, Mi, Fa, So, La và Ti.
+         * Khi đã có Ti, thì áp Do Dusk khi dùng lại Special 1, hiệu ứng này giúp Darkon tăng 50,000% Crit DMG.
+         * Cần rút máu Darkon nhanh trước khi hiệu ứng Do Dusk xuất hiện.
+→ Special 2 áp thêm hiệu ứng Elegy of Madness 8s lên players. Nếu dùng lại Special 2 khi players có Elegy of Madness thì sẽ bị Stun trong 4s.
+◆ Khi còn 70% HP, Darkon chuyển qua trạng thái Recitative, bổ sung thêm hiệu ứng cho Auto-Attack, Special 1 và 2.
+→ Loại bỏ toàn bộ các hiệu ứng có được từ trạng thái Overture trên cả Darkon và players.
+→ Darkon tăng 500% Crit DMG.
+→ Auto-Attack áp thêm hiệu ứng giảm 6% Haste lên players, stack đến 22 (max -132% Haste).
+→ Special 1 áp thêm hiệu ứng tăng 50% Crit DMG lên Darkon, stack đến 22 (max 1100% Crit DMG).
+→ Special 2 áp thêm hiệu ứng:
+         * Áp Seed Planted lên players trong 8s, đồng thời loại bỏ toàn bộ stacks của Debuff Haste của Auto-Attack.
+         * Áp Grown lên players khi có Seed Planted, players sẽ được tăng 1000% Crit Chance nhưng bị giảm 1000% Crit DMG trong 8s (player đánh giúp hồi máu lại cho Darkon).
+         * Nếu dùng lại Special 2 khi có Grown đang hoạt động, players sẽ bị dính DoT chết chóc.
+         * Players cần có 2-3 người sử dụng Scroll of Enrage để Focus/Taunt Nulgath so le với nhau để đảm bảo chỉ có Seed Planted được áp.
+◆ Khi còn 20% HP, Darkon chuyển qua trạng thái Aria giúp hồi lại 90% lượng HP tối đa của bản thân (miễn nhiễm Decay, đồng thời không kích hoạt Overture và Recitative).
+→ Loại bỏ toàn bộ các hiệu ứng có được từ trạng thái Recitative trên cả Darkon và players.
+→ Darkon tăng 1000% Dodge trong 10s, giảm 200% All In trong 20s và tăng 300% Crit DMG trong 30s.
+→ Darkon giảm 200% All In trong 50s. Sau khi hết 50s, thì bị tăng 200% All In.
+→ Darkon tăng 1000% Crit DMG và All Out trong 50s. Sau khi hết 50s, thì đưa Crit DMG và All Out về 0.
+→ Players cần cố gắn sống sót được trong khoảng 50s đầu này thì coi như chiến thắng đã ở trong tầm tay. Có thể sử dụng các thuốc để tăng Def, Health Vamp.
+→ Đồng thời cũng bổ sung thêm hiệu ứng cho Auto-Attack, Special 1 và 2:
+         * Auto-Attack áp thêm hiệu ứng giảm 80% Heal In lên players (không sử dụng Vainglory).
+         * Special 1 gây thêm DoT lên players trong 8s.
+         * Special 2 áp thêm hiệu ứng tăng 25% Mana Cost trong 12s lên players, stack đến 22 (max 550% Mana Cost).
+◆ Mỗi 30s, sử dụng The Cycle's End làm Darkon tăng 10% Phys và Magi In, stack đến 10 (max 100% Phys và Magi In).
+◆ Sau khi đã có đủ 10 stack của The Cycle's End (tốn 270s tức 4p30s), bắt đầu thực hiện cơ chế charge End of the World trong 3s rồi chuyển qua dùng Curtain Call ngay lập tức.
+→ Cần đảm bảo đánh bại Darkon trước khi hắn chuyển qua dùng Curtain Call.
+◆ Curtain Call gây 100m True DMG lên toàn bộ players, bỏ qua Focus/Taunt.
+→ Nếu player vẫn còn sống sau đòn đánh này thì sẽ áp một Death DoT và reset lại toàn bộ.
+
+
+Tóm gọn: Chia ra thành 4 Phases sau
+◆ Overture Phase (1): Kéo dài từ 22.2m đến 15.5m HP hoặc đến trước khi hiệu ứng Do Dusk được kích hoạt (trong 84s).
+Đây là giai đoạn dễ nhất, lúc này chưa có nhiều loại hiệu ứng được kích hoạt. Ở giai đoạn này bạn cần phải đảm bảo rút máu Darkon xuống 15.5m HP trong 84s, nếu không sẽ bị ăn Nuke diệt toàn team. Khuyến nghị dùng nhiều loại Potion nhất có thể để tăng sát thương tối đa. Focus/Taunt trong giai đoạn này nhằm tránh cả team đều bị dính Stun.
+◆ Recitative Phase (2): Kéo dài từ 15.5m đến 4.4m HP.
+Đây là giai đoạn mà Darkon sẽ ươm mầm cái chết. Các hiệu ứng mới xuất hiện như Haste Debuff hay DoT chết chóc, làm cho đây là giai đoạn kéo dài nhất. Lúc này chính là thời điểm quan trọng nhất của Focus/Taunt để giữ cho team được sống sót khỏi Nuke và tránh debuff Crit DMG (để vẫn gây sát thương được).
+◆ Madness Phase (3): Kéo dài trong 50s.
+Khi đến giai đoạn này thì máu của Darkon sẽ hồi lại từ 4.4m lên 20m HP, đồng thời trở nên điên cuồng. Đây là giai đoạn nguy hiểm nhất. Lúc này các Buff và Debuff nhảy lên con số cực kỳ vô lý và việc của bạn là phải sống sót qua 50s này bằng mọi cách. Cần cẩn trọng, vì chỉ cần một động tác sai và cả team sẽ thất bại.
+◆ Rush Phase (4): Kéo dài trong khoảng thời gian còn lại đến không quá 273s tính từ khi trận đánh bắt đầu.
+Đây là lúc mà Darkon bị suy yếu, chỉ có thể gây sát thương bằng DoT và nhận nhiều sát thương từ players nhất. Bạn cần tập trung gây sát thương tối đa để đảm bảo diệt được Darkon trước khi hắn thức tỉnh lại (273s tức 4p33s tính từ khi trận đánh bắt đầu) và gây ra cú Nuke chết chóc. Giai đoạn này vẫn cần tiếp tục Focus/Taunt để tránh DMG chính dính debuff Mana Cost.
+
+
+Darkon’s Elegy of Madness
+Hướng dẫn chi tiết cách Focus/Taunt
+Với hàng loạt cơ chế khác nhau ở mỗi giai đoạn và chúng đều đem lại sự chết chóc, vì vậy giai đoạn nào cũng cần phối hợp Focus/Taunt. Đây là điều quan trọng nhất trong đánh Darkon, phối hợp càng tốt thì tỷ lệ sống và chiến thắng càng cao.   
+◆ Cách phối hợp thực hiện Focus/Taunt chi tiết như sau:
+→ Ngoại trừ DPS chính, thì cần 2 người chơi đảm nhiệm vai trò Focus/Taunt bằng Scroll of Enrage.
+→ Cần bật chức năng Class Actives/Auras UI trong Advance Option để dễ canh sử dụng Focus/Taunt.  
+→ Phương pháp 2 người cùng Focus/Taunt: 
+         * Được đảm nhận bởi LR và SC/IT hoặc PCM/AP (thường trừ DPS chính với LoO).
+         * Để ý khi nào aura của Focus gần CD xong (còn lại 1/8) thì dùng Scroll, chi tiết tại “Hướng dẫn loop Focus/Taunt với người chơi khác” của Aummon.
+→ Ngoài ra còn có phương pháp 2 người Focus/Taunt chính + 1 dự bị: Tương tự với phương pháp 2 người ở trên, nhưng ở đây LoO sẽ đảm nhiệm dự bị, khi thấy 1 trong 2 người Focus/Taunt chính chết thì ngay lặp tức vào thay cho đến khi họ hồi sinh và tham gia Focus/Taunt trở lại được.
+
+
+Các team kiến nghị sử dụng
+Trước khi bắt đầu, cần nhớ tuyệt đối không sử dụng Vainglory cape. Đồng thời trong quá trình đánh cần phải làm chủ thời gian và sự phối hợp tốt trong Focus/Taunt. Nắm bắt được tình hình để thay đổi cho phù hợp nhất là phải cố gắng sống sót trong Madness Phase nhất là Tank chính của team.
+
+
+◆ Team 1: LC, LR, SC/IT, LoO        BEST Team
+→ LC pre-buff với 4, sử dụng chính 2, 3 và 5, cần canh HP cả team để sử dụng 4 (skill Heal), đặc biệt ở hai Phase 2 và 3 nếu không cả team sẽ rất dễ chết, cách canh thì chỉ cần để ý nếu team dưới 50% HP thì dùng, hoặc bất kỳ thành viên nào dưới 30% HP.
+         * Lưu ý ở Phase 2 thì nếu đánh hồi máu cho Darkon (số màu xanh lá) thì dừng dùng skill 3 đến khi hết nếu không sẽ gây sát thương lên cả team (chỉ khi team Taunt lỗi).
+         * Enh: Ravenous > Praxis + Wizard class + Hearty + Absolution
+         * Potion: Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion. 
+→ LR và SC/IT sẽ thực hiện Focus/Taunt chính bằng Scroll of Enrage. Cách Focus/Taunt xem chi tiết tại phần hướng dẫn ở trên.
+→ LR pre-buff với 4, combo mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD. 
+         * Enh: Arcana's Concerto + Wizard class/helm + Avarice
+         * Potion/Scroll: Potent Malevolence Elixir + Sage Tonic + Scroll of Enrage.
+→ SC/IT pre-buff với 3 và 4, sử dụng combo 3 - 4 - 2 - 5.
+         * Enh: Valiance + Wizard class/helm + Absolution
+         * Potion/Scroll: Unstable/Divine Elixir + Sage Tonic + Scroll of Enrage.
+→ LoO pre-buff với 2, 3 và 4, sau đó spam skill, canh dùng Heal (skill 3) phối hợp với LC. 
+         * Khi Darkon còn 10m HP, thì ngưng sử dụng 5, chỉ dùng lại ngay khi máu Darkon còn khoảng 4.6m đến 4.5m (tuỳ mức DPS tổng thể cả Team vì hiệu ứng chỉ kéo dài 4s) giúp chặn cú Nuke này lại.
+         * Lưu ý ở Phase 2 thì nếu đánh hồi máu cho Darkon (số màu xanh lá) thì dừng dùng skill 3 đến khi hết nếu không sẽ gây sát thương lên cả team (chỉ khi team Taunt lỗi).
+         * Enh: Ravenous > Lucky Awe Blast + Lucky class + Hearty + Absolution
+         * Potion: Unstable/Divine Elixir + Body Tonic + Potent Life Potion
+
+
+◆ Team 2: PCM, LR, SC/IT, LoO
+Nhìn chung Team này có độ an toàn cao do khả năng Heal rất bá từ PCM, tuy nhiên cả team nên dùng full thuốc để tăng DPS để đảm bảo kéo máu Boss tốt, tránh bị nuke chết do thiếu DPS.
+→ PCM pre-buff với 3, sau đó dùng combo 2 - 4 - 2 - 3 rồi spam 2 đến khi HP về lại bình thường thì ngay lập tức dùng 5, cuối cùng tiếp tục spam 2 đến khi 4 gần CD thì dùng 5 rồi lập lại từ đầu, còn 3 chỉ dùng để buff máu khi cần.
+         * Lưu ý ở Phase 2 thì nếu đánh hồi máu cho Darkon (số màu xanh lá) thì dừng dùng skill 3 và 4 đến khi hết nếu không sẽ gây sát thương lên cả team (chỉ khi team Taunt lỗi).
+         * Enh: Ravenous + Healer class + Hearty + Avarice
+         * Potion: Potent Malevolence Elixir + Unstable Body Tonic + Endurance Draught.
+→ LR và SC/IT sẽ thực hiện Focus/Taunt chính bằng Scroll of Enrage. Cách Focus/Taunt xem chi tiết tại phần hướng dẫn ở trên. Combo của LR, SC/IT và LoO dùng tương tự Team 1.
+
+
+◆ Team 3: CAv, LR, PCM/AP, LoO
+→ CAv sử dụng combo 4 - 2 - 5, chỉ dùng 3 khi hiệu ứng hết (để dễ theo dõi bật Class Actives/Auras UI trong setting lên), riêng trong Phase 2 thì dùng 3 khi bạn thấy skill CD chậm (cần lưu ý Aura Focus, thấy CD gần 1/2 là ổn để dùng). 
+         * Enh: Ravenous + Lucky class + Anima + Avarice
+         * Potion: Potent Destruction Elixir + Might Tonic + Potent Honor/Malice Potion. 
+→ LR và PCM hoặc AP sẽ thực hiện Focus/Taunt chính bằng Scroll of Enrage. Cách Focus/Taunt xem chi tiết tại phần hướng dẫn ở trên. Combo của LR và LoO dùng tương tự Team 1.
+→ PCM pre-buff với 3, sau đó dùng combo 2 - 4 - 2 - 3 rồi spam 2 đến khi HP về lại bình thường thì ngay lập tức dùng 5, cuối cùng tiếp tục spam 2 đến khi 4 gần CD thì dùng 5 rồi lập lại từ đầu, còn 3 chỉ dùng để buff máu khi cần.
+         * Lưu ý, skill 3 trên class này rất hao Mana vì vậy không spam 3, có thể dùng ba lần 2 mới dùng một lần 3.
+         * Lưu ý ở Phase 2 thì nếu đánh hồi máu cho Darkon (số màu xanh lá) thì dừng dùng skill 3 đến khi hết nếu không sẽ gây sát thương ngược lên cả team.
+         * Enh: Ravenous + Healer class + Hearty + Absolution
+         * Potion/Scroll: Potent Malevolence Elixir + Unstable Body Tonic + Scroll of Enrage. 
+→ AP pre-buff với 3, dùng combo 4 - 2 - 2 - 5 hoặc 4 - 2 - 5, còn với 3 thì cần canh để sử dụng khi cần Heal cho team.
+         * Lưu ý ở Phase 2 thì nếu đánh hồi máu cho Darkon (số màu xanh lá) thì dừng dùng skill 3 đến khi hết nếu không sẽ gây sát thương ngược lên cả team.
+         * Nếu có chết thì ngay lập tức vào lại và dùng 4 đầu tiên để giảm sát thương rồi mới bắt đầu Focus/Taunt. 
+         * Enh: Valiance + Lucky class + Forge helm + Absolution
+         * Potion/Scroll: Potent Destruction Elixir + Fate Tonic + Scroll of Enrage. 
+
+
+◆ Team 4: VHL/AI, LC, LR, LoO        SPEEDRUN
+Đây là Team có tốc độ đánh nhanh nhất, nhưng đồng thời cũng dễ thất bại nhất. Team này cũng yêu cầu tất cả đều phải dùng đầy đủ thuốc để đẩy nhanh tốc độ.
+→ VHL tuỳ vào từng giai đoạn mà sẽ phải thay đổi combo cho phù hợp với các cơ chế của Darkon: 
+         * Phase 1: sử dụng 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 -2 (luôn xài 3 trước 2, xài 4 trước 5 - full DPS combo). Nếu HP dưới 1.5k thì dừng dùng 2 và 4, spam 3 để hồi máu, tránh bị one-shot chết.
+         * Phase 2: sử dụng 5 - 3 - 2, còn 4 chỉ dùng khi lượng HP trên 3k.
+         * Phase 3: chỉ dùng 5 - 3 - 2, nếu HP thấp dưới 2k HP thì dừng dùng 2.
+         * Phase 4: sử dụng như phase 1.
+         * Enh: Dauntless > Smite + Lucky class/helm + Avarice
+         * Potion: Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion
+→ AI mở đầu với 2 - 4, sau đó spam 3, 4 và 5 đến khi xuất hiện “Judgement” thì bấm 4 - 2. Cuối cùng spam 3, 4 và 5 đến khi “The World” gần fades thì bấm 2 để nuke rồi lập lại (bỏ 2 mở đầu).
+         * Enh: Ravenous + Wizard class/helm + Vainglory
+         * Potion: Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion.
+→ LC pre-buff với 4, sử dụng chính 2, 3 và 5, cần canh HP cả team để sử dụng 4 (skill Heal), đặc biệt ở hai Phase 2 và 3 nếu không cả team sẽ rất dễ chết, cách canh thì chỉ cần để ý nếu team dưới 50% HP thì dùng, hoặc bất kỳ thành viên nào dưới 30% HP.
+         * Lưu ý ở Phase 2 thì nếu đánh hồi máu cho Darkon (số màu xanh lá) thì dừng dùng skill 3 đến khi hết nếu không sẽ gây sát thương ngược lên cả team (chỉ khi team Taunt lỗi).
+         * Enh: Ravenous > Praxis + Wizard class + Hearty + Avarice
+         * Potion: Potent Revitalize Elixir + Sage Tonic + Potent Honor/Malice Potion
+→ LR và LoO sẽ thực hiện Focus/Taunt chính bằng Scroll of Enrage. Cách Focus/Taunt xem chi tiết tại phần hướng dẫn ở trên. Combo của LR dùng tương tự Team 1.
+→ LoO pre-buff với 2, 3 và 4, sau đó spam skill, canh dùng Heal (skill 3) phối hợp với LC. 
+         * Khi Darkon còn 10m HP, thì ngưng sử dụng 5, chỉ dùng lại ngay khi máu Darkon còn khoảng 4.5m đến 4.6m (tuỳ mức DPS tổng thể cả Team vì hiệu ứng chỉ kéo dài 4s) giúp chặn cú Nuke này lại.
+         * Lưu ý ở Phase 2 thì nếu đánh hồi máu cho Darkon (số màu xanh lá) thì dừng dùng skill 3 đến khi hết nếu không sẽ gây sát thương lên cả team.
+         * Enh: Ravenous > Lucky Awe Blast + Lucky class + Hearty + Absolution
+         * Potion/Scroll: Potent Revitalize Elixir + Body Tonic + Scroll of Enrage
+
+

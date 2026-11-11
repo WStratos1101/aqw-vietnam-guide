@@ -1,0 +1,129 @@
+>
+Location:
+Ultra Ezrajal (Location)
+Level:
+100
+Difficulty:
+5 stars
+Total HP:
+2,500,000
+Attacks:
++ Auto Attack
+- Auto Attack
+Auto Attack
+Damage
+965-1,180
+Animations
+Celestial Blade Slash, Celestial Blade Barrage
+Cooldown
+2 seconds
+Message
+{$message}
+AoE
+1
+Type
+Physical
+Notes
+Always hits, never crits.
++ Celestial Prism Explosion
+- Celestial Prism Explosion
+Celestial Prism Explosion
+Damage
+2,595-3,171
+Animations
+Celestial Prism Explosion
+Cooldown
+8 seconds
+Message
+{$message}
+AoE
+4
+Type
+True Damage
+Notes
+Recovers HP based on the damage dealt to all players.
+Always hits, never crits.
+Ignores Focus.
++ Counter Cast ➞ Counter Attack
+- Counter Cast ➞ Counter Attack
+Charge
+Damage
+{$damage}
+Animations
+{$animations}
+Cooldown
+40 seconds
+Message
+{$message}
+AoE
+{$aoe}
+Type
+Charge
+Notes
+Charges for 2 seconds, then uses Counter Attack
+Counter Attack is used after Counter Cast charges for 2 seconds.
+Counter Attack
+Damage
+{$damage}
+Animations
+{$animations}
+Cooldown
+{$cooldown}
+Message
+{$message}
+AoE
+{$aoe}
+Type
+{$type}
+Notes
+Applies Counter Attack to self for 6 seconds, negating all damage received and reflecting it back to the player.
+Abilities:
+Boss Shield:
+Damage over 100,000 dealt to Ultra Ezrajal is reduced by raising the difference to the exponent 0.8 (but is never reduced below 100,000).
+Cannot be stunned.
+Ultra Ezrajal has a chance to lock your abilities that target them. Only one skill can be locked at a time, and locking another skill while one is locked only refreshes the time of the formerly locked skill. (This includes Awe Enhancements and Scrolls).
+Temporary Items Dropped:
+Ultra Ezrajal Defeated (Used in the '
+Ultra Ezrajal
+' quest)
+Items Dropped:
+Treasure Chest (Misc)
+Notes:
+This monster is themed from
+Ezrajal
+from
+DragonFable
+.
+Also see
+Ezrajal
+.
+Thanks to Anonymous Joe and Wanderlust the Oomfie.
+Battle this monster in our free web game at
+www.AQ.com
+!
+window['nitroAds'].createAd('wad-aqwwiki-below-content', {
+  "refreshTime": 30,
+  "renderVisibleOnly": false,
+  "refreshVisibleOnly": true,
+  "sizes": [ [ 300, 250 ] ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+  });
+5star
+_lv100
+_u
+aethemed
+angel
+boss
+bossshield
+chain
+challenge
+freeplayer
+horns
+immune
+jewelry
+monster
+winged

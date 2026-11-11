@@ -1,0 +1,125 @@
+{
+  "url": "https://aqwwiki.wikidot.com/shaman",
+  "sourceHash": "19c11323a5223d8e8fd6ff03eb0c03200cb9466455065a808f399d768ade8e10",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Double click a monster to start Auto Attacking it. This is a basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/shaman",
+      "sourceHash": "19c11323a5223d8e8fd6ff03eb0c03200cb9466455065a808f399d768ade8e10",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Double click a monster to start Auto Attacking it. This is a basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Ancestor’s Flame",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "4",
+      "skillType": "Magical",
+      "target": null,
+      "officialDescription": "Deals moderate damage to up to three targets, and applies Scorched Spirit, a 5 second DoT. Damage increased by Elemental Embrace.",
+      "notes": [
+        "Deals 100% Spell Damage.",
+        "Scorched Spirit does not have a DoT.",
+        "Scorched Spirit's skill damage increases by 10% with each cast of Ancestor’s Flame or Dry Lightning while Elemental Embrace is active."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill34.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/shaman",
+      "sourceHash": "19c11323a5223d8e8fd6ff03eb0c03200cb9466455065a808f399d768ade8e10",
+      "evidence": "Ancestor’s Flame Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 4 Seconds Type: Magical Description: Deals moderate damage to up to three targets, and applies Scorched Spirit, a 5 second DoT. Damage increased by Elemental Embrace. Notes: Deals 100% Spell Damage. Scorched Spirit does not have a DoT. Scorched Spirit's skill damage increases by 10% with each cast of Ancestor’s Flame or Dry Lightning while Elemental Embrace is active."
+    },
+    {
+      "officialName": "Hydrophobia",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "4",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Deals moderate damage to up to three targets. If Scorched Spirit is active, the amount of damage dealt is doubled. Also applies an HoT for 6 seconds.",
+      "notes": [
+        "Applies Hydrophobia to the caster, a HoT for 6 seconds.",
+        "Hydrophobia occasionally heals Health on impact.",
+        "Hydrophobia's Health on impact increases with each cast of Ancestor’s Flame or Dry Lightning while Elemental Embrace is active."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill68.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/shaman",
+      "sourceHash": "19c11323a5223d8e8fd6ff03eb0c03200cb9466455065a808f399d768ade8e10",
+      "evidence": "Hydrophobia Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 4 Seconds Type: Magical Range: A long range attack that deals damage to 3 hostile targets. Description: Deals moderate damage to up to three targets. If Scorched Spirit is active, the amount of damage dealt is doubled. Also applies an HoT for 6 seconds. Notes: Applies Hydrophobia to the caster, a HoT for 6 seconds. Hydrophobia occasionally heals Health on impact. Hydrophobia's Health on impact increases with each cast of Ancestor’s Flame or Dry Lightning while Elemental Embrace is active."
+    },
+    {
+      "officialName": "Dry Lightning",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "16",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Deals heavy damage to the target. Damage increased by Elemental Embrace.",
+      "notes": [
+        "Deals 300% Spell Damage.",
+        "Dry Lightning's skill damage increases by 10% with each cast of Ancestor’s Flame or Dry Lightning while Elemental Embrace is active."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill46.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/shaman",
+      "sourceHash": "19c11323a5223d8e8fd6ff03eb0c03200cb9466455065a808f399d768ade8e10",
+      "evidence": "Dry Lightning Rank Needed: 3 Mana Cost: 30 Mana Cooldown: 16 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Deals heavy damage to the target. Damage increased by Elemental Embrace. Notes: Deals 300% Spell Damage. Dry Lightning's skill damage increases by 10% with each cast of Ancestor’s Flame or Dry Lightning while Elemental Embrace is active."
+    },
+    {
+      "officialName": "Ancestral Teachings",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Intellect and Wisdom increased by 30%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/shaman",
+      "sourceHash": "19c11323a5223d8e8fd6ff03eb0c03200cb9466455065a808f399d768ade8e10",
+      "evidence": "Ancestral Teachings Rank Needed: 4 Type: Passive Ability Description: Intellect and Wisdom increased by 30%"
+    },
+    {
+      "officialName": "Primal Fury",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Crit chance increased by 8%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/shaman",
+      "sourceHash": "19c11323a5223d8e8fd6ff03eb0c03200cb9466455065a808f399d768ade8e10",
+      "evidence": "Primal Fury Rank Needed: 4 Type: Passive Ability Description: Crit chance increased by 8%"
+    },
+    {
+      "officialName": "Elemental Embrace",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "16",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Deals light damage to target and applies Elemental Embrace, negating all target Evasion and Critical Strike chance. This effect also makes the Shaman’s spells more powerful, and gets stronger the more spells the Shaman casts against the target.",
+      "notes": [
+        "Deals 30% Spell Damage.",
+        "Cannot Miss and cannot Crit.",
+        "Elemental Embrace lasts for 60 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill69.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/shaman",
+      "sourceHash": "19c11323a5223d8e8fd6ff03eb0c03200cb9466455065a808f399d768ade8e10",
+      "evidence": "Elemental Embrace Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 16 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Deals light damage to target and applies Elemental Embrace, negating all target Evasion and Critical Strike chance. This effect also makes the Shaman’s spells more powerful, and gets stronger the more spells the Shaman casts against the target. Notes: Deals 30% Spell Damage. Cannot Miss and cannot Crit. Elemental Embrace lasts for 60 seconds."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/y1d1qWp.png",
+  "sameSkillVariants": [],
+  "location": "Location: Arcangrove Rep Shop - Arcangrove\nPrice: 0 AC"
+}

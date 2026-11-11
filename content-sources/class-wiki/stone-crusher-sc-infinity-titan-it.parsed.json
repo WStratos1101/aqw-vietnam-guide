@@ -1,0 +1,132 @@
+{
+  "url": "https://aqwwiki.wikidot.com/stonecrusher-ac",
+  "sourceHash": "5f20deca818ee864809d79323898a705498471d887dd73c33070c0ad0f127eb1",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/stonecrusher-ac",
+      "sourceHash": "5f20deca818ee864809d79323898a705498471d887dd73c33070c0ad0f127eb1",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Stalagmite",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Causes a stalagmite to erupt out of the ground at your opponents feet, dealing damage and crippling their defenses. Applies Bruised to the target, increasing all incoming damage in by 8% for 8 seconds. Stacks up to 5 times. Has a 25% chance to apply Magnitude for 2 seconds. If Magnitude is applied, immediately has a 50% chance to stun for 4 seconds.",
+      "notes": [
+        "Deals 130% spell damage.",
+        "Has a 25% chance to apply Magnitude, which increases all outgoing magic damage by 275% for 2 seconds. Magnitude in turn, also has a 25% chance to apply per ally affected by Echoing Earth or Land's Embrace.",
+        "If Magnitude is applied, deals 390% Spell DPS and adds a 50% stun chance to the effect."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill171.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/stonecrusher-ac",
+      "sourceHash": "5f20deca818ee864809d79323898a705498471d887dd73c33070c0ad0f127eb1",
+      "evidence": "Stalagmite Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Causes a stalagmite to erupt out of the ground at your opponents feet, dealing damage and crippling their defenses. Applies Bruised to the target, increasing all incoming damage in by 8% for 8 seconds. Stacks up to 5 times. Has a 25% chance to apply Magnitude for 2 seconds. If Magnitude is applied, immediately has a 50% chance to stun for 4 seconds. Notes: Deals 130% spell damage. Has a 25% chance to apply Magnitude, which increases all outgoing magic damage by 275% for 2 seconds. Magnitude in turn, also has a 25% chance to apply per ally affected by Echoing Earth or Land's Embrace. If Magnitude is applied, deals 390% Spell DPS and adds a 50% stun chance to the effect."
+    },
+    {
+      "officialName": "Echoing Earth",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "18",
+      "skillType": "Hybrid",
+      "target": "An infinite range status skill that applies to 7 friendly targets.",
+      "officialDescription": "Harness the residual energy of great battles from ages past trapped beneath the surface. Applies Resonance and Dissonance, which increases haste and crit chance by 30% for the caster and up to 6 friendly targets while improving mana regain. Lasts for 10 seconds. Has a 25% chance to apply Magnitude for 2 seconds. If Magnitude is applied, mana costs are immediately reduced for you and your party by 20% for 10 seconds.",
+      "notes": [
+        "Resonance and Dissonance last for 10 seconds.",
+        "Dissonance restores 10 mana for every ally affected by a self-targeting buff, including the caster.",
+        "Has a 25% chance to apply Magnitude, which increases all outgoing magic damage by 275% for 2 seconds. Magnitude in turn, also has a 25% chance to apply per ally affected by Echoing Earth or Land's Embrace.",
+        "If Magnitude is applied, applies Magnitude Mana, which reduces mana costs by 20% for the caster and up to 4 friendly targets for 10 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill172.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/stonecrusher-ac",
+      "sourceHash": "5f20deca818ee864809d79323898a705498471d887dd73c33070c0ad0f127eb1",
+      "evidence": "Echoing Earth Rank Needed: 2 Mana Cost: 25 Mana Cooldown: 18 Seconds Type: Hybrid Range: An infinite range status skill that applies to 7 friendly targets. Description: Harness the residual energy of great battles from ages past trapped beneath the surface. Applies Resonance and Dissonance, which increases haste and crit chance by 30% for the caster and up to 6 friendly targets while improving mana regain. Lasts for 10 seconds. Has a 25% chance to apply Magnitude for 2 seconds. If Magnitude is applied, mana costs are immediately reduced for you and your party by 20% for 10 seconds. Notes: Resonance and Dissonance last for 10 seconds. Dissonance restores 10 mana for every ally affected by a self-targeting buff, including the caster. Has a 25% chance to apply Magnitude, which increases all outgoing magic damage by 275% for 2 seconds. Magnitude in turn, also has a 25% chance to apply per ally affected by Echoing Earth or Land's Embrace. If Magnitude is applied, applies Magnitude Mana, which reduces mana costs by 20% for the caster and up to 4 friendly targets for 10 seconds."
+    },
+    {
+      "officialName": "Land's Embrace",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "12",
+      "skillType": "Hybrid",
+      "target": "An infinite range status skill that applies to 7 friendly targets.",
+      "officialDescription": "Draw upon the strength within the earth to conjure a barrier of stone. Applies Shielded, reducing incoming damage for the caster and up to 6 friendly targets by 50% and applying a small HoT for 4 seconds. Has a 25% chance to apply Magnitude for 2 seconds. If Magnitude is applied, immediately reduces all incoming damage by 80% to the caster and doubling the HoT for the caster for 4 seconds.",
+      "notes": [
+        "Has a 25% chance to apply Magnitude, which increases all outgoing magic damage by 275% for 2 seconds. Magnitude in turn, also has a 25% chance to apply per ally affected by Echoing Earth or Land's Embrace.",
+        "If Magnitude is applied, apply Embraced which reduces incoming damage by 80% as well as provides an additional Heal over Time for 8 seconds.",
+        "Shielded reduces incoming damage by 50% and applies a Heal over Time for 8 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill173.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/stonecrusher-ac",
+      "sourceHash": "5f20deca818ee864809d79323898a705498471d887dd73c33070c0ad0f127eb1",
+      "evidence": "Land's Embrace Rank Needed: 3 Mana Cost: 25 Mana Cooldown: 12 Seconds Type: Hybrid Range: An infinite range status skill that applies to 7 friendly targets. Description: Draw upon the strength within the earth to conjure a barrier of stone. Applies Shielded, reducing incoming damage for the caster and up to 6 friendly targets by 50% and applying a small HoT for 4 seconds. Has a 25% chance to apply Magnitude for 2 seconds. If Magnitude is applied, immediately reduces all incoming damage by 80% to the caster and doubling the HoT for the caster for 4 seconds. Notes: Has a 25% chance to apply Magnitude, which increases all outgoing magic damage by 275% for 2 seconds. Magnitude in turn, also has a 25% chance to apply per ally affected by Echoing Earth or Land's Embrace. If Magnitude is applied, apply Embraced which reduces incoming damage by 80% as well as provides an additional Heal over Time for 8 seconds. Shielded reduces incoming damage by 50% and applies a Heal over Time for 8 seconds."
+    },
+    {
+      "officialName": "Gaia Knowledge",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases haste by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/stonecrusher-ac",
+      "sourceHash": "5f20deca818ee864809d79323898a705498471d887dd73c33070c0ad0f127eb1",
+      "evidence": "Gaia Knowledge Rank Needed: 4 Type: Passive Ability Description: Increases haste by 20%"
+    },
+    {
+      "officialName": "Shifting Plates",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Endurance by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/stonecrusher-ac",
+      "sourceHash": "5f20deca818ee864809d79323898a705498471d887dd73c33070c0ad0f127eb1",
+      "evidence": "Shifting Plates Rank Needed: 4 Type: Passive Ability Description: Increases Endurance by 20%"
+    },
+    {
+      "officialName": "Endless Fissure",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "35",
+      "cooldown": "30",
+      "skillType": "Magical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Rip open the ground beneath your opponents feet, dealing massive damage. Also applies Aftershock, a DoT that grows stronger with each attack that hits your opponent for 30 seconds. Has a 25% chance to apply Magnitude for 2 seconds. If Magnitude is applied, the target becomes caught in a sinkhole, reducing crit rate and haste by 40% for 8 seconds.",
+      "notes": [
+        "Deals 300% Spell Damage.",
+        "Has a 25% chance to apply Magnitude, which increases all outgoing magic damage by 275% for 2 seconds. Magnitude in turn, also has a 25% chance to apply per ally affected by Echoing Earth or Land's Embrace.",
+        "Aftershock is not dependent on attacks hitting the enemy and will increase every tick."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill174.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/stonecrusher-ac",
+      "sourceHash": "5f20deca818ee864809d79323898a705498471d887dd73c33070c0ad0f127eb1",
+      "evidence": "Endless Fissure Rank Needed: 5 Mana Cost: 35 Mana Cooldown: 30 Seconds Type: Magical Range: A short range attack that deals damage to 1 target. Description: Rip open the ground beneath your opponents feet, dealing massive damage. Also applies Aftershock, a DoT that grows stronger with each attack that hits your opponent for 30 seconds. Has a 25% chance to apply Magnitude for 2 seconds. If Magnitude is applied, the target becomes caught in a sinkhole, reducing crit rate and haste by 40% for 8 seconds. Notes: Deals 300% Spell Damage. Has a 25% chance to apply Magnitude, which increases all outgoing magic damage by 275% for 2 seconds. Magnitude in turn, also has a 25% chance to apply per ally affected by Echoing Earth or Land's Embrace. Aftershock is not dependent on attacks hitting the enemy and will increase every tick."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/PWbgpDM.png",
+  "sameSkillVariants": [
+    {
+      "name": "StoneCrusher (Merge)",
+      "url": "https://aqwwiki.wikidot.com/stonecrusher-merge"
+    }
+  ],
+  "location": "Locations:\n\nBrightoak Gear - Brightoak Grove\nBrightoak Gear - Gaiazor (Location)\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\n\nPrice: 2,000 AC"
+}

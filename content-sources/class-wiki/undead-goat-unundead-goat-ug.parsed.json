@@ -1,0 +1,128 @@
+{
+  "url": "https://aqwwiki.wikidot.com/undead-goat",
+  "sourceHash": "3c486a6ca28f59de3ccaaa8914abc199cd678fc6c3e6f5477a3d35678e6a6843",
+  "entries": [
+    {
+      "officialName": "Forage",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all… goats??? Damage dealt is based on your weapon damage. Gather Grass as you attack, which stacks to 8 and is used by your other abilities.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Goat6.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undead-goat",
+      "sourceHash": "3c486a6ca28f59de3ccaaa8914abc199cd678fc6c3e6f5477a3d35678e6a6843",
+      "evidence": "Forage Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all… goats??? Damage dealt is based on your weapon damage. Gather Grass as you attack, which stacks to 8 and is used by your other abilities."
+    },
+    {
+      "officialName": "Goat Scream",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "12",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "You use your unsettling undead goat noises to send a deafening wave at your target. Applies Inhuman Scream, increasing your Crit Chance by 3% and the damage of subsequent screams for 8 seconds, stacks to 5.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Goat4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undead-goat",
+      "sourceHash": "3c486a6ca28f59de3ccaaa8914abc199cd678fc6c3e6f5477a3d35678e6a6843",
+      "evidence": "Goat Scream Rank Needed: 1 Mana Cost: 12 Mana Cooldown: 4 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: You use your unsettling undead goat noises to send a deafening wave at your target. Applies Inhuman Scream, increasing your Crit Chance by 3% and the damage of subsequent screams for 8 seconds, stacks to 5. If you're not Free Range, applies Downhill Battle, reducing your target's outgoing damage by 20% for 20 seconds. If you're Free Range, applies Uphill Battle, increasing your outgoing damage by 15% for 10 seconds."
+    },
+    {
+      "officialName": "Headbutt",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Charge your target with your thick skull, stunning them for 3 seconds and applying Head Injury, reducing their Dodge by 10% and blocking the next stun for 12 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Goat5.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undead-goat",
+      "sourceHash": "3c486a6ca28f59de3ccaaa8914abc199cd678fc6c3e6f5477a3d35678e6a6843",
+      "evidence": "Headbutt Rank Needed: 2 Mana Cost: 30 Mana Cooldown: 4 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description:Charge your target with your thick skull, stunning them for 3 seconds and applying Head Injury, reducing their Dodge by 10% and blocking the next stun for 12 seconds. If you're not Free Range, applies Fenced Off, reducing your target's Haste and Crit Chance by 10% for 20 seconds. If you're Free Range, this skill deals increased damage."
+    },
+    {
+      "officialName": "Bones of Steel",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "10",
+      "skillType": "Physical",
+      "target": "A short range skill that heals yourself.",
+      "officialDescription": "Your stronger goat frame fortifies. Heals you based on your stacks of Grass Gathered while consuming those stacks and applying Steel Frame, increasing your Damage Resistance by 40% for 20 seconds and removing Free Range if it's active.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Goat1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undead-goat",
+      "sourceHash": "3c486a6ca28f59de3ccaaa8914abc199cd678fc6c3e6f5477a3d35678e6a6843",
+      "evidence": "Bones of Steel Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 10 Seconds Type: Physical Range: A short range skill that heals yourself. Description: Your stronger goat frame fortifies. Heals you based on your stacks of Grass Gathered while consuming those stacks and applying Steel Frame, increasing your Damage Resistance by 40% for 20 seconds and removing Free Range if it's active."
+    },
+    {
+      "officialName": "Spring Loaded Goat Legs",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased by 20%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Goat3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undead-goat",
+      "sourceHash": "3c486a6ca28f59de3ccaaa8914abc199cd678fc6c3e6f5477a3d35678e6a6843",
+      "evidence": "Spring Loaded Goat Legs Rank Needed: 4 Type: Passive Ability Description: Haste increased by 20%."
+    },
+    {
+      "officialName": "Hardier Fur",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage Resistance increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Goat3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undead-goat",
+      "sourceHash": "3c486a6ca28f59de3ccaaa8914abc199cd678fc6c3e6f5477a3d35678e6a6843",
+      "evidence": "Hardier Fur Rank Needed: 4 Type: Passive Ability Description: Damage Resistance increased by 15%."
+    },
+    {
+      "officialName": "Goat Stampede",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "35",
+      "cooldown": "10",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Use your collected grass to summon a herd of undead goats. Damage dealt is increased for each stack of Grass Gathered. Applies Free Range for 10 seconds, which increases your STR by 50% and is used by your other abilities.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Goat2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undead-goat",
+      "sourceHash": "3c486a6ca28f59de3ccaaa8914abc199cd678fc6c3e6f5477a3d35678e6a6843",
+      "evidence": "Goat Stampede Rank Needed: 5 Mana Cost: 35 Mana Cooldown: 10 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Use your collected grass to summon a herd of undead goats. Damage dealt is increased for each stack of Grass Gathered. Applies Free Range for 10 seconds, which increases your STR by 50% and is used by your other abilities."
+    },
+    {
+      "officialName": "Goated",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "When Foraging, you have an extremely small chance to find an invinci-berry. The berry brings out the true goat within for 8 seconds, increasing your outgoing physical damage by 100% and making you invincible for the duration.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Goat3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undead-goat",
+      "sourceHash": "3c486a6ca28f59de3ccaaa8914abc199cd678fc6c3e6f5477a3d35678e6a6843",
+      "evidence": "Goated Rank Needed: 10 Type: Passive Ability Description: When Foraging, you have an extremely small chance to find an invinci-berry. The berry brings out the true goat within for 8 seconds, increasing your outgoing physical damage by 100% and making you invincible for the duration."
+    }
+  ],
+  "portraitUrl": "https://aqwwiki.wdfiles.com/local--files/undead-goat/UndeadGoatM.png",
+  "sameSkillVariants": [
+    {
+      "name": "Unundead Goat",
+      "url": "https://aqwwiki.wikidot.com/unundead-goat"
+    }
+  ],
+  "location": "Location: Undead Goat Merge - Battle Under B\nPrice: N/A\n\nMerge the following:\n\nGolden Goat Cheezburger x1"
+}

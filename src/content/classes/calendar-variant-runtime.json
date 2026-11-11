@@ -1,0 +1,3386 @@
+{
+  "chronocorruptor": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/f947821610e122540a50e8e1.png",
+      "width": 341,
+      "height": 549,
+      "source": "https://aqwwiki.wikidot.com/chronocorruptor"
+    },
+    "acquisition": {
+      "classId": "calendar-chronocorruptor",
+      "methods": [
+        {
+          "id": "chronocorruptor-shop-0",
+          "classId": "calendar-chronocorruptor",
+          "type": "shop",
+          "variantName": "ChronoCorruptor",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chronocorruptor",
+          "sourceHash": "f423aa6d3c96b0300833be44592c45ced2f9868a104ceca3962c4bc4337bb6e7",
+          "prerequisites": [
+            "Must have purchased the AE 2012 Calendar from HeroMart to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chronocorruptor",
+            "linkedSource": "https://aqwwiki.wikidot.com/chronocorruptor-shop",
+            "priceText": "0 AC",
+            "locationText": [
+              "ChronoCorruptor Shop - Book of Lore"
+            ],
+            "linkedSourceHash": "0efff618f2d8bcce5574a1f18d5276c6b8fe73817d0430b56fc38a131fa084f6",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "ChronoCorruptor Shop",
+            "source": "https://aqwwiki.wikidot.com/chronocorruptor-shop",
+            "npc": null,
+            "map": "ChronoCorruptor / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "ac_purchase",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "ChronoCorruptor Shop",
+            "npc": null,
+            "map": "ChronoCorruptor / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have purchased the AE 2012 Calendar from HeroMart to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chronocorruptor",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/chronocorruptor"
+      ],
+      "issues": []
+    },
+    "sourceHash": "f423aa6d3c96b0300833be44592c45ced2f9868a104ceca3962c4bc4337bb6e7"
+  },
+  "chrono-chaorruptor": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/bc00a2beabc583b484ace8ce.png",
+      "width": 375,
+      "height": 582,
+      "source": "https://aqwwiki.wikidot.com/chrono-chaorruptor"
+    },
+    "acquisition": {
+      "classId": "calendar-chrono-chaorruptor",
+      "methods": [
+        {
+          "id": "chrono-chaorruptor-merge-0",
+          "classId": "calendar-chrono-chaorruptor",
+          "type": "merge",
+          "variantName": "Chrono Chaorruptor",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+          "sourceHash": "78f86c38e62582721798cdf0a4fa84ffe519e38327c99a06d9e104883d44fc41",
+          "prerequisites": [
+            "Must have 2012 Timelock Key (Misc) in your inventory to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+            "linkedSource": "https://aqwwiki.wikidot.com/2012-timelock-key-shop",
+            "priceText": null,
+            "locationText": [
+              "2012 Timelock Key (Shop) - HeroMart"
+            ],
+            "linkedSourceHash": "ab2835e8dc69ad951607a5a3ffb89507492eba569e75d9c1b4c98ec20f3c2130",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2012 Timelock Key (Shop)",
+            "source": "https://aqwwiki.wikidot.com/2012-timelock-key-shop",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2012 Timelock Key (Shop)",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have 2012 Timelock Key (Misc) in your inventory to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-chaorruptor-merge-1",
+          "classId": "calendar-chrono-chaorruptor",
+          "type": "merge",
+          "variantName": "Chrono Chaorruptor",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+          "sourceHash": "78f86c38e62582721798cdf0a4fa84ffe519e38327c99a06d9e104883d44fc41",
+          "prerequisites": [
+            "Must have purchased the AE 2012 Calendar from HeroMart to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+            "linkedSource": "https://aqwwiki.wikidot.com/chronocorruptor-shop",
+            "priceText": null,
+            "locationText": [
+              "ChronoCorruptor Shop - Book of Lore"
+            ],
+            "linkedSourceHash": "0efff618f2d8bcce5574a1f18d5276c6b8fe73817d0430b56fc38a131fa084f6",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "ChronoCorruptor Shop",
+            "source": "https://aqwwiki.wikidot.com/chronocorruptor-shop",
+            "npc": null,
+            "map": "ChronoCorruptor / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "ChronoCorruptor Shop",
+            "npc": null,
+            "map": "ChronoCorruptor / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have purchased the AE 2012 Calendar from HeroMart to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-chaorruptor-merge-2",
+          "classId": "calendar-chrono-chaorruptor",
+          "type": "merge",
+          "variantName": "Chrono Chaorruptor",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+          "sourceHash": "78f86c38e62582721798cdf0a4fa84ffe519e38327c99a06d9e104883d44fc41",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": null,
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/chrono-chaorruptor"
+      ],
+      "issues": []
+    },
+    "sourceHash": "78f86c38e62582721798cdf0a4fa84ffe519e38327c99a06d9e104883d44fc41"
+  },
+  "timekeeper": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/d3f24fb75bcc2faf0f97a053.png",
+      "width": 360,
+      "height": 597,
+      "source": "https://aqwwiki.wikidot.com/timekeeper"
+    },
+    "acquisition": {
+      "classId": "calendar-timekeeper",
+      "methods": [
+        {
+          "id": "timekeeper-merge-0",
+          "classId": "calendar-timekeeper",
+          "type": "merge",
+          "variantName": "TimeKeeper",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/timekeeper",
+          "sourceHash": "9d1820102083db799352b05cf13af751d2aa0628012306e0ff40797e4bb66c29",
+          "prerequisites": [
+            "Must have purchased the 2013 Calendar to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/timekeeper",
+            "linkedSource": "https://aqwwiki.wikidot.com/2013-calendar-shop",
+            "priceText": null,
+            "locationText": [
+              "2013 Calendar Shop - Book of Lore"
+            ],
+            "linkedSourceHash": "0f25e77bf7cb5e2d8e0d3cb11af81703a80f431b992f6a18b657a9d12869a247",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2013 Calendar Shop",
+            "source": "https://aqwwiki.wikidot.com/2013-calendar-shop",
+            "npc": null,
+            "map": "TimeKiller / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2013 Calendar Shop",
+            "npc": null,
+            "map": "TimeKiller / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have purchased the 2013 Calendar to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/timekeeper",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "timekeeper-merge-1",
+          "classId": "calendar-timekeeper",
+          "type": "merge",
+          "variantName": "TimeKeeper",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/timekeeper",
+          "sourceHash": "9d1820102083db799352b05cf13af751d2aa0628012306e0ff40797e4bb66c29",
+          "prerequisites": [
+            "Must have 2013 Timelock Key (Misc) in your inventory to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/timekeeper",
+            "linkedSource": "https://aqwwiki.wikidot.com/2013-timelock-key-shop",
+            "priceText": null,
+            "locationText": [
+              "2013 Timelock Key (Shop) - HeroMart"
+            ],
+            "linkedSourceHash": "a836b83abbae0e0a1cd0372897140126770b3cec29fb712ae4834de387659699",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2013 Timelock Key (Shop)",
+            "source": "https://aqwwiki.wikidot.com/2013-timelock-key-shop",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2013 Timelock Key (Shop)",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have 2013 Timelock Key (Misc) in your inventory to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/timekeeper",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "timekeeper-merge-2",
+          "classId": "calendar-timekeeper",
+          "type": "merge",
+          "variantName": "TimeKeeper",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/timekeeper",
+          "sourceHash": "9d1820102083db799352b05cf13af751d2aa0628012306e0ff40797e4bb66c29",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/timekeeper",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": null,
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/timekeeper",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/timekeeper"
+      ],
+      "issues": []
+    },
+    "sourceHash": "9d1820102083db799352b05cf13af751d2aa0628012306e0ff40797e4bb66c29"
+  },
+  "timekiller": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/91aef4d17deafbee7567dec9.png",
+      "width": 296,
+      "height": 559,
+      "source": "https://aqwwiki.wikidot.com/timekiller"
+    },
+    "acquisition": {
+      "classId": "calendar-timekiller",
+      "methods": [
+        {
+          "id": "timekiller-shop-0",
+          "classId": "calendar-timekiller",
+          "type": "shop",
+          "variantName": "TimeKiller",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/timekiller",
+          "sourceHash": "b22c39c31cccd9c536f65e2b8bb5a9787d072398a93b773be0db4c6cb0057528",
+          "prerequisites": [
+            "Must have purchased the 2013 Calendar to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/timekiller",
+            "linkedSource": "https://aqwwiki.wikidot.com/2013-calendar-shop",
+            "priceText": "0 AC",
+            "locationText": [
+              "2013 Calendar Shop - Book of Lore"
+            ],
+            "linkedSourceHash": "0f25e77bf7cb5e2d8e0d3cb11af81703a80f431b992f6a18b657a9d12869a247",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2013 Calendar Shop",
+            "source": "https://aqwwiki.wikidot.com/2013-calendar-shop",
+            "npc": null,
+            "map": "TimeKiller / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2013 Calendar Shop",
+            "npc": null,
+            "map": "TimeKiller / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have purchased the 2013 Calendar to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/timekiller",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/timekiller"
+      ],
+      "issues": []
+    },
+    "sourceHash": "b22c39c31cccd9c536f65e2b8bb5a9787d072398a93b773be0db4c6cb0057528"
+  },
+  "chronocommander": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/39a1a71d2cce19b56201077d.png",
+      "width": 338,
+      "height": 580,
+      "source": "https://aqwwiki.wikidot.com/chronocommander"
+    },
+    "acquisition": {
+      "classId": "calendar-chronocommander",
+      "methods": [
+        {
+          "id": "chronocommander-shop-0",
+          "classId": "calendar-chronocommander",
+          "type": "shop",
+          "variantName": "ChronoCommander",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chronocommander",
+          "sourceHash": "11e7d852187371b5d588e27d601984314d75a25c6763c002a2177bbde04bc4e5",
+          "prerequisites": [
+            "Must have purchased the AE 2014 Calendar to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chronocommander",
+            "linkedSource": "https://aqwwiki.wikidot.com/2014-calendar",
+            "priceText": "0 AC",
+            "locationText": [
+              "2014 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "9e47193b9150abc44eb193b3470e38fb772b22967617fe308a87affe03bc0055",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2014 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2014-calendar",
+            "npc": null,
+            "map": "Chrono Commander / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2014 Calendar",
+            "npc": null,
+            "map": "Chrono Commander / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have purchased the AE 2014 Calendar to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chronocommander",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/chronocommander"
+      ],
+      "issues": []
+    },
+    "sourceHash": "11e7d852187371b5d588e27d601984314d75a25c6763c002a2177bbde04bc4e5"
+  },
+  "chrono-commandant": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/e91cdbc676ac9331ba7182df.png",
+      "width": 313,
+      "height": 577,
+      "source": "https://aqwwiki.wikidot.com/chrono-commandant"
+    },
+    "acquisition": {
+      "classId": "calendar-chrono-commandant",
+      "methods": [
+        {
+          "id": "chrono-commandant-merge-0",
+          "classId": "calendar-chrono-commandant",
+          "type": "merge",
+          "variantName": "Chrono Commandant",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-commandant",
+          "sourceHash": "74d64ea95089f93ab0abaed8a05680e4d35826dd7fc66e7049c18aaf5e54e8d2",
+          "prerequisites": [
+            "Must have purchased the AE 2014 Calendar to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-commandant",
+            "linkedSource": "https://aqwwiki.wikidot.com/2014-calendar",
+            "priceText": null,
+            "locationText": [
+              "2014 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "9e47193b9150abc44eb193b3470e38fb772b22967617fe308a87affe03bc0055",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2014 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2014-calendar",
+            "npc": null,
+            "map": "Chrono Commander / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2014 Calendar",
+            "npc": null,
+            "map": "Chrono Commander / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have purchased the AE 2014 Calendar to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-commandant",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-commandant-merge-1",
+          "classId": "calendar-chrono-commandant",
+          "type": "merge",
+          "variantName": "Chrono Commandant",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-commandant",
+          "sourceHash": "74d64ea95089f93ab0abaed8a05680e4d35826dd7fc66e7049c18aaf5e54e8d2",
+          "prerequisites": [
+            "Must have 2014 Timelock Key (Misc) in your inventory to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-commandant",
+            "linkedSource": "https://aqwwiki.wikidot.com/2014-timelock-key-shop",
+            "priceText": null,
+            "locationText": [
+              "2014 Timelock Key (Shop) - HeroMart"
+            ],
+            "linkedSourceHash": "09bffa6911207e3214055e64a4b7ec5de1ca1a9cbaee9e0a2821857ba82b534d",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2014 Timelock Key (Shop)",
+            "source": "https://aqwwiki.wikidot.com/2014-timelock-key-shop",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2014 Timelock Key (Shop)",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have 2014 Timelock Key (Misc) in your inventory to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-commandant",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-commandant-merge-2",
+          "classId": "calendar-chrono-commandant",
+          "type": "merge",
+          "variantName": "Chrono Commandant",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-commandant",
+          "sourceHash": "74d64ea95089f93ab0abaed8a05680e4d35826dd7fc66e7049c18aaf5e54e8d2",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-commandant",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": null,
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-commandant",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/chrono-commandant"
+      ],
+      "issues": []
+    },
+    "sourceHash": "74d64ea95089f93ab0abaed8a05680e4d35826dd7fc66e7049c18aaf5e54e8d2"
+  },
+  "chrono-dragonknight-class": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/ff3dd464a9899f08647cb3f3.png",
+      "width": 352,
+      "height": 551,
+      "source": "https://aqwwiki.wikidot.com/chrono-dragonknight-class"
+    },
+    "acquisition": {
+      "classId": "calendar-chrono-dragonknight",
+      "methods": [
+        {
+          "id": "chrono-dragonknight-class-shop-0",
+          "classId": "calendar-chrono-dragonknight",
+          "type": "shop",
+          "variantName": "Chrono DragonKnight (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+          "sourceHash": "4ea49a2058953079d1c1c536fd0dad1268a9eb204361a545bdb6a10de6d7d96f",
+          "prerequisites": [
+            "Must have purchased the 2015 Calendar to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2015-calendar",
+            "priceText": "0 AC",
+            "locationText": [
+              "2015 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "3d4b30ebb0df0258d2ea9fec28518d0295dee0633849c9a4e244d64e4d84bba8",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2015 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2015-calendar",
+            "npc": null,
+            "map": "2015 Calendar / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2015 Calendar",
+            "npc": null,
+            "map": "2015 Calendar / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have purchased the 2015 Calendar to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/chrono-dragonknight-class"
+      ],
+      "excludedSources": [],
+      "issues": []
+    },
+    "sourceHash": "4ea49a2058953079d1c1c536fd0dad1268a9eb204361a545bdb6a10de6d7d96f"
+  },
+  "chrono-dataknight": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/a709295a719666dd48d5ad2e.png",
+      "width": 374,
+      "height": 584,
+      "source": "https://aqwwiki.wikidot.com/chrono-dataknight"
+    },
+    "acquisition": {
+      "classId": "calendar-chrono-dataknight",
+      "methods": [
+        {
+          "id": "chrono-dataknight-merge-0",
+          "classId": "calendar-chrono-dataknight",
+          "type": "merge",
+          "variantName": "Chrono DataKnight",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-dataknight",
+          "sourceHash": "0c8ecf898c3501c1b34ba1a2e81bea9fcd3cca57b7b48c2653edb8c93a1ca02a",
+          "prerequisites": [
+            "Must have purchased the 2015 Calendar to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-dataknight",
+            "linkedSource": "https://aqwwiki.wikidot.com/2015-calendar",
+            "priceText": null,
+            "locationText": [
+              "2015 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "3d4b30ebb0df0258d2ea9fec28518d0295dee0633849c9a4e244d64e4d84bba8",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2015 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2015-calendar",
+            "npc": null,
+            "map": "2015 Calendar / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2015 Calendar",
+            "npc": null,
+            "map": "2015 Calendar / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have purchased the 2015 Calendar to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-dataknight",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-dataknight-merge-1",
+          "classId": "calendar-chrono-dataknight",
+          "type": "merge",
+          "variantName": "Chrono DataKnight",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-dataknight",
+          "sourceHash": "0c8ecf898c3501c1b34ba1a2e81bea9fcd3cca57b7b48c2653edb8c93a1ca02a",
+          "prerequisites": [
+            "Must have 2015 Timelock Key (Misc) in your inventory to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-dataknight",
+            "linkedSource": "https://aqwwiki.wikidot.com/2015-timelock-key-shop",
+            "priceText": null,
+            "locationText": [
+              "2015 Timelock Key (Shop) - HeroMart"
+            ],
+            "linkedSourceHash": "39e893a8f8491f756a28f22b17fb4e6d7033a4c87d8559bd2901359908521b2c",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2015 Timelock Key (Shop)",
+            "source": "https://aqwwiki.wikidot.com/2015-timelock-key-shop",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2015 Timelock Key (Shop)",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have 2015 Timelock Key (Misc) in your inventory to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-dataknight",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-dataknight-merge-2",
+          "classId": "calendar-chrono-dataknight",
+          "type": "merge",
+          "variantName": "Chrono DataKnight",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-dataknight",
+          "sourceHash": "0c8ecf898c3501c1b34ba1a2e81bea9fcd3cca57b7b48c2653edb8c93a1ca02a",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-dataknight",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": null,
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-dataknight",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/chrono-dataknight"
+      ],
+      "issues": []
+    },
+    "sourceHash": "0c8ecf898c3501c1b34ba1a2e81bea9fcd3cca57b7b48c2653edb8c93a1ca02a"
+  },
+  "shadowwalker-of-time-class": {
+    "portrait": {
+      "imagePath": "/images/aqw/class-art/4d2878cf1802d7778881c718.png",
+      "width": 457,
+      "height": 649,
+      "source": "https://aqwwiki.wikidot.com/shadowwalker-of-time-class"
+    },
+    "acquisition": {
+      "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+      "methods": [
+        {
+          "id": "shadowwalker-of-time-class-shop-0",
+          "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+          "type": "shop",
+          "variantName": "ShadowWalker of Time (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/shadowwalker-of-time-class",
+          "sourceHash": "083a6e22b76644d2a778799a30af7383b0bbe2ce7f9ef7cb6552893efa296cec",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/shadowwalker-of-time-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2017-calendar",
+            "priceText": "0 AC",
+            "locationText": [
+              "2017 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "81b06292e5a218a5b5012c742749ea16152935dae959c99416e2d6b263dd51e4",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2017 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2017-calendar",
+            "npc": null,
+            "map": "2017 Calendar / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2017 Calendar",
+            "npc": null,
+            "map": "2017 Calendar / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/shadowwalker-of-time-class",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/shadowwalker-of-time-class",
+        "https://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+        "https://aqwwiki.wikidot.com/shadowweaver-of-time"
+      ],
+      "issues": []
+    },
+    "sourceHash": "083a6e22b76644d2a778799a30af7383b0bbe2ce7f9ef7cb6552893efa296cec"
+  },
+  "shadowstalker-of-time-class": {
+    "portrait": {
+      "imagePath": "/images/aqw/class-art/48f837be456d02a61d7db5f9.png",
+      "width": 456,
+      "height": 653,
+      "source": "https://aqwwiki.wikidot.com/shadowstalker-of-time-class"
+    },
+    "acquisition": {
+      "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+      "methods": [
+        {
+          "id": "shadowstalker-of-time-class-shop-0",
+          "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+          "type": "shop",
+          "variantName": "ShadowStalker of Time (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+          "sourceHash": "cbfbe28b381a101a66f6e49ab336d5f6506c8ffda5a7183ca884dc8e6f3b9a29",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2017-calendar",
+            "priceText": "0 AC",
+            "locationText": [
+              "2017 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "81b06292e5a218a5b5012c742749ea16152935dae959c99416e2d6b263dd51e4",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2017 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2017-calendar",
+            "npc": null,
+            "map": "2017 Calendar / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2017 Calendar",
+            "npc": null,
+            "map": "2017 Calendar / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "shadowstalker-of-time-class-shop-1",
+          "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+          "type": "shop",
+          "variantName": "ShadowStalker of Time (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+          "sourceHash": "cbfbe28b381a101a66f6e49ab336d5f6506c8ffda5a7183ca884dc8e6f3b9a29",
+          "prerequisites": [
+            "Must have 2017 Timelock Key in your inventory in order to purchase items from this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/shadow-stalker-set",
+            "priceText": "0 AC",
+            "locationText": [
+              "Shadow Stalker Set - Curiosities"
+            ],
+            "linkedSourceHash": "5744aa6a3a16435f576111591375871b551e835386a3c909571260c8694424d1",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "Shadow Stalker Set",
+            "source": "https://aqwwiki.wikidot.com/shadow-stalker-set",
+            "npc": null,
+            "map": "Catalogue of Oddities / Curiosities",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "ac_purchase",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "Shadow Stalker Set",
+            "npc": null,
+            "map": "Catalogue of Oddities / Curiosities",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have 2017 Timelock Key in your inventory in order to purchase items from this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/shadowwalker-of-time-class",
+        "https://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+        "https://aqwwiki.wikidot.com/shadowweaver-of-time"
+      ],
+      "issues": []
+    },
+    "sourceHash": "cbfbe28b381a101a66f6e49ab336d5f6506c8ffda5a7183ca884dc8e6f3b9a29"
+  },
+  "shadowweaver-of-time": {
+    "portrait": {
+      "imagePath": "/images/aqw/class-art/cd3c48ea4eca4965dafd83f8.png",
+      "width": 376,
+      "height": 595,
+      "source": "https://aqwwiki.wikidot.com/shadowweaver-of-time"
+    },
+    "acquisition": {
+      "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+      "methods": [
+        {
+          "id": "shadowweaver-of-time-merge-0",
+          "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+          "type": "merge",
+          "variantName": "ShadowWeaver of Time",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+          "sourceHash": "54973b279716bb8098a87eb515645779c99791e9cb4d4818b51a499102d168ea",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+            "linkedSource": "https://aqwwiki.wikidot.com/2017-calendar",
+            "priceText": null,
+            "locationText": [
+              "2017 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "81b06292e5a218a5b5012c742749ea16152935dae959c99416e2d6b263dd51e4",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2017 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2017-calendar",
+            "npc": null,
+            "map": "2017 Calendar / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": [],
+            "dependencies": [
+              {
+                "source": "https://aqwwiki.wikidot.com/heropoint",
+                "sourceHash": "a0e8709fb199f7e129764bbe4bdac6f667ad2e2a1fd6bc46cd44aaecac7ba7eb",
+                "name": "HeroPoint",
+                "type": "quest",
+                "verificationStatus": "verified",
+                "materials": null,
+                "rawMaterials": [],
+                "questName": "Free HeroPoints!",
+                "questSource": "https://aqwwiki.wikidot.com/stryche-s-quests#1",
+                "locations": [
+                  "N/A"
+                ],
+                "prerequisites": [],
+                "issue": null,
+                "itemId": "heropoint",
+                "itemName": "HeroPoint",
+                "requiredQuantity": 5
+              }
+            ]
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2017 Calendar",
+            "npc": null,
+            "map": "2017 Calendar / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "shadowweaver-of-time-merge-1",
+          "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+          "type": "merge",
+          "variantName": "ShadowWeaver of Time",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+          "sourceHash": "54973b279716bb8098a87eb515645779c99791e9cb4d4818b51a499102d168ea",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+            "linkedSource": "https://aqwwiki.wikidot.com/2017-timelock-key-2-0-shop",
+            "priceText": null,
+            "locationText": [
+              "2017 Timelock Key 2.0 (Shop) - HeroMart"
+            ],
+            "linkedSourceHash": "4160a59b8c2e4640264cd2e3774ebbb8b1b4a20ee13a8edd3e69ef0b156c186d",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2017 Timelock Key 2.0 (Shop)",
+            "source": "https://aqwwiki.wikidot.com/2017-timelock-key-2-0-shop",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": [],
+            "dependencies": [
+              {
+                "source": "https://aqwwiki.wikidot.com/heropoint",
+                "sourceHash": "a0e8709fb199f7e129764bbe4bdac6f667ad2e2a1fd6bc46cd44aaecac7ba7eb",
+                "name": "HeroPoint",
+                "type": "quest",
+                "verificationStatus": "verified",
+                "materials": null,
+                "rawMaterials": [],
+                "questName": "Free HeroPoints!",
+                "questSource": "https://aqwwiki.wikidot.com/stryche-s-quests#1",
+                "locations": [
+                  "N/A"
+                ],
+                "prerequisites": [],
+                "issue": null,
+                "itemId": "heropoint",
+                "itemName": "HeroPoint",
+                "requiredQuantity": 5
+              }
+            ]
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2017 Timelock Key 2.0 (Shop)",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "shadowweaver-of-time-merge-2",
+          "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+          "type": "merge",
+          "variantName": "ShadowWeaver of Time",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+          "sourceHash": "54973b279716bb8098a87eb515645779c99791e9cb4d4818b51a499102d168ea",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": null,
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": [],
+            "dependencies": [
+              {
+                "source": "https://aqwwiki.wikidot.com/heropoint",
+                "sourceHash": "a0e8709fb199f7e129764bbe4bdac6f667ad2e2a1fd6bc46cd44aaecac7ba7eb",
+                "name": "HeroPoint",
+                "type": "quest",
+                "verificationStatus": "verified",
+                "materials": null,
+                "rawMaterials": [],
+                "questName": "Free HeroPoints!",
+                "questSource": "https://aqwwiki.wikidot.com/stryche-s-quests#1",
+                "locations": [
+                  "N/A"
+                ],
+                "prerequisites": [],
+                "issue": null,
+                "itemId": "heropoint",
+                "itemName": "HeroPoint",
+                "requiredQuantity": 5
+              }
+            ]
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "shadowweaver-of-time-merge-3",
+          "classId": "shadowwalker-stalker-weaver-of-time-swot-ssot",
+          "type": "merge",
+          "variantName": "ShadowWeaver of Time",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+          "sourceHash": "54973b279716bb8098a87eb515645779c99791e9cb4d4818b51a499102d168ea",
+          "prerequisites": [
+            "Must have 2017 Timelock Key in your inventory in order to purchase items from this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+            "linkedSource": "https://aqwwiki.wikidot.com/shadow-stalker-set",
+            "priceText": null,
+            "locationText": [
+              "Shadow Stalker Set - Curiosities"
+            ],
+            "linkedSourceHash": "5744aa6a3a16435f576111591375871b551e835386a3c909571260c8694424d1",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "Shadow Stalker Set",
+            "source": "https://aqwwiki.wikidot.com/shadow-stalker-set",
+            "npc": null,
+            "map": "Catalogue of Oddities / Curiosities",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": [],
+            "dependencies": [
+              {
+                "source": "https://aqwwiki.wikidot.com/heropoint",
+                "sourceHash": "a0e8709fb199f7e129764bbe4bdac6f667ad2e2a1fd6bc46cd44aaecac7ba7eb",
+                "name": "HeroPoint",
+                "type": "quest",
+                "verificationStatus": "verified",
+                "materials": null,
+                "rawMaterials": [],
+                "questName": "Free HeroPoints!",
+                "questSource": "https://aqwwiki.wikidot.com/stryche-s-quests#1",
+                "locations": [
+                  "N/A"
+                ],
+                "prerequisites": [],
+                "issue": null,
+                "itemId": "heropoint",
+                "itemName": "HeroPoint",
+                "requiredQuantity": 5
+              }
+            ]
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "Shadow Stalker Set",
+            "npc": null,
+            "map": "Catalogue of Oddities / Curiosities",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have 2017 Timelock Key in your inventory in order to purchase items from this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/shadowweaver-of-time",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/shadowwalker-of-time-class",
+        "https://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+        "https://aqwwiki.wikidot.com/shadowweaver-of-time"
+      ],
+      "issues": []
+    },
+    "sourceHash": "54973b279716bb8098a87eb515645779c99791e9cb4d4818b51a499102d168ea"
+  },
+  "nechronomancer": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/54427568e9331e1e31424d22.png",
+      "width": 376,
+      "height": 576,
+      "source": "https://aqwwiki.wikidot.com/nechronomancer"
+    },
+    "acquisition": {
+      "classId": "calendar-nechronomancer",
+      "methods": [
+        {
+          "id": "nechronomancer-shop-0",
+          "classId": "calendar-nechronomancer",
+          "type": "shop",
+          "variantName": "Nechronomancer",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/nechronomancer",
+          "sourceHash": "35779d260811b19a424fa7dcd89ea65635ed677f10fee99283a1e1352fd52158",
+          "prerequisites": [
+            "Must have purchased the 2021 Artix Calendar \"ShadowScythe Poster\" from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/nechronomancer",
+            "linkedSource": "https://aqwwiki.wikidot.com/2021-calendar",
+            "priceText": "0 AC",
+            "locationText": [
+              "2021 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "698fe98678c180939b19636a93b21628abc7c6a33f807624eed5ba53bab33520",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2021 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2021-calendar",
+            "npc": null,
+            "map": "2021 Artix Calendar / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2021 Calendar",
+            "npc": null,
+            "map": "2021 Artix Calendar / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have purchased the 2021 Artix Calendar \"ShadowScythe Poster\" from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/nechronomancer",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "nechronomancer-shop-1",
+          "classId": "calendar-nechronomancer",
+          "type": "shop",
+          "variantName": "Nechronomancer",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/nechronomancer",
+          "sourceHash": "35779d260811b19a424fa7dcd89ea65635ed677f10fee99283a1e1352fd52158",
+          "prerequisites": [
+            "Must have purchased the Collector's Edition 2021 Artix Calendar \"ShadowScythe Poster\" from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/nechronomancer",
+            "linkedSource": "https://aqwwiki.wikidot.com/2021-collector-s-calendar",
+            "priceText": "0 AC",
+            "locationText": [
+              "2021 Collector's Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "c28b2a948805ac8251fdae10265239adbc7aae2e036833d691566e3fb7f3891b",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2021 Collector's Calendar",
+            "source": "https://aqwwiki.wikidot.com/2021-collector-s-calendar",
+            "npc": null,
+            "map": "2021 Artix Calendar / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2021 Collector's Calendar",
+            "npc": null,
+            "map": "2021 Artix Calendar / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have purchased the Collector's Edition 2021 Artix Calendar \"ShadowScythe Poster\" from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/nechronomancer",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/nechronomancer"
+      ],
+      "issues": []
+    },
+    "sourceHash": "35779d260811b19a424fa7dcd89ea65635ed677f10fee99283a1e1352fd52158"
+  },
+  "necrotic-chronomancer": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/83bc2d2cc10ab43943f5b8b3.png",
+      "width": 397,
+      "height": 614,
+      "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer"
+    },
+    "acquisition": {
+      "classId": "calendar-necrotic-chronomancer",
+      "methods": [
+        {
+          "id": "necrotic-chronomancer-merge-0",
+          "classId": "calendar-necrotic-chronomancer",
+          "type": "merge",
+          "variantName": "Necrotic Chronomancer",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+          "sourceHash": "142f9aaadddc43c2fd6d568ceb17ac07381a528329d5de6d6338517c407f79d3",
+          "prerequisites": [
+            "Must have purchased the 2021 Artix Calendar \"ShadowScythe Poster\" from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+            "linkedSource": "https://aqwwiki.wikidot.com/2021-calendar",
+            "priceText": null,
+            "locationText": [
+              "2021 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "698fe98678c180939b19636a93b21628abc7c6a33f807624eed5ba53bab33520",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2021 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2021-calendar",
+            "npc": null,
+            "map": "2021 Artix Calendar / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2021 Calendar",
+            "npc": null,
+            "map": "2021 Artix Calendar / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have purchased the 2021 Artix Calendar \"ShadowScythe Poster\" from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "necrotic-chronomancer-merge-1",
+          "classId": "calendar-necrotic-chronomancer",
+          "type": "merge",
+          "variantName": "Necrotic Chronomancer",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+          "sourceHash": "142f9aaadddc43c2fd6d568ceb17ac07381a528329d5de6d6338517c407f79d3",
+          "prerequisites": [
+            "Must have purchased the Collector's Edition 2021 Artix Calendar \"ShadowScythe Poster\" from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+            "linkedSource": "https://aqwwiki.wikidot.com/2021-collector-s-calendar",
+            "priceText": null,
+            "locationText": [
+              "2021 Collector's Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "c28b2a948805ac8251fdae10265239adbc7aae2e036833d691566e3fb7f3891b",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2021 Collector's Calendar",
+            "source": "https://aqwwiki.wikidot.com/2021-collector-s-calendar",
+            "npc": null,
+            "map": "2021 Artix Calendar / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2021 Collector's Calendar",
+            "npc": null,
+            "map": "2021 Artix Calendar / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have purchased the Collector's Edition 2021 Artix Calendar \"ShadowScythe Poster\" from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "necrotic-chronomancer-merge-2",
+          "classId": "calendar-necrotic-chronomancer",
+          "type": "merge",
+          "variantName": "Necrotic Chronomancer",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+          "sourceHash": "142f9aaadddc43c2fd6d568ceb17ac07381a528329d5de6d6338517c407f79d3",
+          "prerequisites": [
+            "Must have 2021 Timelock Key (Misc) in your inventory to access this shop."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+            "linkedSource": "https://aqwwiki.wikidot.com/2021-timelock-key-shop",
+            "priceText": null,
+            "locationText": [
+              "2021 Timelock Key (Shop) - HeroMart"
+            ],
+            "linkedSourceHash": "765d2b78302dbef8e6042d95c28a46e7a805a69a4bc77ca25b07373e06b5fc18",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2021 Timelock Key (Shop)",
+            "source": "https://aqwwiki.wikidot.com/2021-timelock-key-shop",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2021 Timelock Key (Shop)",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have 2021 Timelock Key (Misc) in your inventory to access this shop."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "necrotic-chronomancer-merge-3",
+          "classId": "calendar-necrotic-chronomancer",
+          "type": "merge",
+          "variantName": "Necrotic Chronomancer",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+          "sourceHash": "142f9aaadddc43c2fd6d568ceb17ac07381a528329d5de6d6338517c407f79d3",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": null,
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/necrotic-chronomancer",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/necrotic-chronomancer"
+      ],
+      "issues": []
+    },
+    "sourceHash": "142f9aaadddc43c2fd6d568ceb17ac07381a528329d5de6d6338517c407f79d3"
+  },
+  "paladin-chronomancer-class": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/cb5fc34b3522a7a932905e50.png",
+      "width": 319,
+      "height": 580,
+      "source": "https://aqwwiki.wikidot.com/paladin-chronomancer-class"
+    },
+    "acquisition": {
+      "classId": "calendar-paladin-chronomancer",
+      "methods": [
+        {
+          "id": "paladin-chronomancer-class-shop-0",
+          "classId": "calendar-paladin-chronomancer",
+          "type": "shop",
+          "variantName": "Paladin Chronomancer (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+          "sourceHash": "8b41eb2a182327902d7bcc3658ed289ea2f8157aee876c640e957d6a1a91a916",
+          "prerequisites": [
+            "Must have purchased the 2023 Artix Calendar \"BattleOn Forever\" Poster - Regular Edition from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2023-calendar",
+            "priceText": "0 AC",
+            "locationText": [
+              "2023 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "2bbf1be45dce74fb94b7510fa304b9f86d4a53ac151eea4e9e63a7abe7f342e1",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2023 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2023-calendar",
+            "npc": null,
+            "map": "2023 Artix Calendar / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2023 Calendar",
+            "npc": null,
+            "map": "2023 Artix Calendar / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have purchased the 2023 Artix Calendar \"BattleOn Forever\" Poster - Regular Edition from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "paladin-chronomancer-class-shop-1",
+          "classId": "calendar-paladin-chronomancer",
+          "type": "shop",
+          "variantName": "Paladin Chronomancer (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "partial",
+          "source": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+          "sourceHash": "8b41eb2a182327902d7bcc3658ed289ea2f8157aee876c640e957d6a1a91a916",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2023-collector-s-calendar",
+            "priceText": "0 AC",
+            "locationText": [
+              "2023 Collector's Calendar - Book of Lore"
+            ],
+            "availabilityTags": [],
+            "issues": [
+              "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 262 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 256 ms: Couldn't connect to server",
+              "Shop identity is not yet verified"
+            ]
+          },
+          "shop": {
+            "shopName": "Tên shop chưa xác minh",
+            "source": null,
+            "npc": null,
+            "map": "2023 Collector's Calendar / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": null,
+            "npc": null,
+            "map": "2023 Collector's Calendar / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "partial",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/paladin-chronomancer-class"
+      ],
+      "excludedSources": [],
+      "issues": []
+    },
+    "sourceHash": "8b41eb2a182327902d7bcc3658ed289ea2f8157aee876c640e957d6a1a91a916"
+  },
+  "obsidian-paladin-chronomancer-class": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/27ad1e693effc4edf3ede045.png",
+      "width": 330,
+      "height": 576,
+      "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class"
+    },
+    "acquisition": {
+      "classId": "calendar-obsidian-paladin-chronomancer",
+      "methods": [
+        {
+          "id": "obsidian-paladin-chronomancer-class-merge-0",
+          "classId": "calendar-obsidian-paladin-chronomancer",
+          "type": "merge",
+          "variantName": "Obsidian Paladin Chronomancer (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+          "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326",
+          "prerequisites": [
+            "Must have purchased the 2023 Artix Calendar \"BattleOn Forever\" Poster - Regular Edition from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2023-calendar",
+            "priceText": null,
+            "locationText": [
+              "2023 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "2bbf1be45dce74fb94b7510fa304b9f86d4a53ac151eea4e9e63a7abe7f342e1",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2023 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2023-calendar",
+            "npc": null,
+            "map": "2023 Artix Calendar / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2023 Calendar",
+            "npc": null,
+            "map": "2023 Artix Calendar / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have purchased the 2023 Artix Calendar \"BattleOn Forever\" Poster - Regular Edition from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "obsidian-paladin-chronomancer-class-merge-1",
+          "classId": "calendar-obsidian-paladin-chronomancer",
+          "type": "merge",
+          "variantName": "Obsidian Paladin Chronomancer (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "partial",
+          "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+          "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2023-collector-s-calendar",
+            "priceText": null,
+            "locationText": [
+              "2023 Collector's Calendar - Book of Lore"
+            ],
+            "availabilityTags": [],
+            "issues": [
+              "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 262 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 256 ms: Couldn't connect to server",
+              "Shop identity is not yet verified"
+            ]
+          },
+          "merge": {
+            "mergeShop": "Tên Merge Shop chưa xác minh",
+            "source": null,
+            "npc": null,
+            "map": "2023 Collector's Calendar / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": null,
+            "npc": null,
+            "map": "2023 Collector's Calendar / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "obsidian-paladin-chronomancer-class-merge-2",
+          "classId": "calendar-obsidian-paladin-chronomancer",
+          "type": "merge",
+          "variantName": "Obsidian Paladin Chronomancer (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "partial",
+          "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+          "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2023-timelock-key-shop",
+            "priceText": null,
+            "locationText": [
+              "2023 Timelock Key (Shop) - HeroMart"
+            ],
+            "availabilityTags": [],
+            "issues": [
+              "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 262 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 268 ms: Couldn't connect to server",
+              "Shop identity is not yet verified"
+            ]
+          },
+          "merge": {
+            "mergeShop": "Tên Merge Shop chưa xác minh",
+            "source": null,
+            "npc": null,
+            "map": "2023 Timelock Key (Shop) / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": null,
+            "npc": null,
+            "map": "2023 Timelock Key (Shop) / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "obsidian-paladin-chronomancer-class-merge-3",
+          "classId": "calendar-obsidian-paladin-chronomancer",
+          "type": "merge",
+          "variantName": "Obsidian Paladin Chronomancer (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+          "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": null,
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "partial",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class"
+      ],
+      "excludedSources": [],
+      "issues": []
+    },
+    "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326"
+  },
+  "chrono-shadowslayer-class": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/534d3fc1182e1e78f117ad90.png",
+      "width": 340,
+      "height": 581,
+      "source": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class"
+    },
+    "acquisition": {
+      "classId": "calendar-chrono-shadowslayer",
+      "methods": [
+        {
+          "id": "chrono-shadowslayer-class-shop-0",
+          "classId": "calendar-chrono-shadowslayer",
+          "type": "shop",
+          "variantName": "Chrono ShadowSlayer (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+          "sourceHash": "7c8ba0f5055cadf421447a72e1db3d74828a47af1c2dd6045dbaedbe0db0aced",
+          "prerequisites": [
+            "Must have purchased the 2024 Artix Calendar from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2024-calendar",
+            "priceText": "0 AC",
+            "locationText": [
+              "2024 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "e643a88dcd1c1408fb3348db19e616e17d55b2ac34f5b40b96bfd20469a38043",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2024 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2024-calendar",
+            "npc": null,
+            "map": "2024 Artix Calendar / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2024 Calendar",
+            "npc": null,
+            "map": "2024 Artix Calendar / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have purchased the 2024 Artix Calendar from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-shadowslayer-class-shop-1",
+          "classId": "calendar-chrono-shadowslayer",
+          "type": "shop",
+          "variantName": "Chrono ShadowSlayer (Class)",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+          "sourceHash": "7c8ba0f5055cadf421447a72e1db3d74828a47af1c2dd6045dbaedbe0db0aced",
+          "prerequisites": [
+            "Must have purchased the 2024 Artix Calendar - Collector's Edition from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+            "linkedSource": "https://aqwwiki.wikidot.com/2024-calendar-collector",
+            "priceText": "0 AC",
+            "locationText": [
+              "2024 Calendar Collector - Book of Lore"
+            ],
+            "linkedSourceHash": "5a66d45b988b1eefd5ac21a9f08c8312cdc02fa3277e24527903c72d8cec5efb",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "shop": {
+            "shopName": "2024 Calendar Collector",
+            "source": "https://aqwwiki.wikidot.com/2024-calendar-collector",
+            "npc": null,
+            "map": "2024 Artix Collector's / Book of Lore",
+            "price": {
+              "amount": 0,
+              "currency": "AC",
+              "sourceText": "0 AC"
+            }
+          },
+          "acquisitionKind": "calendar_code",
+          "purchaseKind": "ac_purchase",
+          "verifiedFields": {
+            "shopName": "2024 Calendar Collector",
+            "npc": null,
+            "map": "2024 Artix Collector's / Book of Lore",
+            "currency": "AC",
+            "price": 0,
+            "requiredQuest": null,
+            "materials": null,
+            "prerequisites": [
+              "Must have purchased the 2024 Artix Calendar - Collector's Edition from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/chrono-shadowslayer-class"
+      ],
+      "excludedSources": [],
+      "issues": []
+    },
+    "sourceHash": "7c8ba0f5055cadf421447a72e1db3d74828a47af1c2dd6045dbaedbe0db0aced"
+  },
+  "chrono-shadowhunter": {
+    "portrait": {
+      "imagePath": "/images/aqw/classes/aa71355733a543f1b0f6aa15.png",
+      "width": 329,
+      "height": 524,
+      "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter"
+    },
+    "acquisition": {
+      "classId": "calendar-chrono-shadowhunter",
+      "methods": [
+        {
+          "id": "chrono-shadowhunter-merge-0",
+          "classId": "calendar-chrono-shadowhunter",
+          "type": "merge",
+          "variantName": "Chrono ShadowHunter",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+          "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4",
+          "prerequisites": [
+            "Must have purchased the 2024 Artix Calendar from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+            "linkedSource": "https://aqwwiki.wikidot.com/2024-calendar",
+            "priceText": null,
+            "locationText": [
+              "2024 Calendar - Book of Lore"
+            ],
+            "linkedSourceHash": "e643a88dcd1c1408fb3348db19e616e17d55b2ac34f5b40b96bfd20469a38043",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2024 Calendar",
+            "source": "https://aqwwiki.wikidot.com/2024-calendar",
+            "npc": null,
+            "map": "2024 Artix Calendar / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2024 Calendar",
+            "npc": null,
+            "map": "2024 Artix Calendar / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have purchased the 2024 Artix Calendar from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-shadowhunter-merge-1",
+          "classId": "calendar-chrono-shadowhunter",
+          "type": "merge",
+          "variantName": "Chrono ShadowHunter",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+          "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4",
+          "prerequisites": [
+            "Must have purchased the 2024 Artix Calendar - Collector's Edition from Heromart."
+          ],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+            "linkedSource": "https://aqwwiki.wikidot.com/2024-calendar-collector",
+            "priceText": null,
+            "locationText": [
+              "2024 Calendar Collector - Book of Lore"
+            ],
+            "linkedSourceHash": "5a66d45b988b1eefd5ac21a9f08c8312cdc02fa3277e24527903c72d8cec5efb",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "2024 Calendar Collector",
+            "source": "https://aqwwiki.wikidot.com/2024-calendar-collector",
+            "npc": null,
+            "map": "2024 Artix Collector's / Book of Lore",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "2024 Calendar Collector",
+            "npc": null,
+            "map": "2024 Artix Collector's / Book of Lore",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [
+              "Must have purchased the 2024 Artix Calendar - Collector's Edition from Heromart."
+            ],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-shadowhunter-merge-2",
+          "classId": "calendar-chrono-shadowhunter",
+          "type": "merge",
+          "variantName": "Chrono ShadowHunter",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "partial",
+          "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+          "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+            "linkedSource": "https://aqwwiki.wikidot.com/2024-timelock-key-shop",
+            "priceText": null,
+            "locationText": [
+              "2024 Timelock Key (Shop) - HeroMart"
+            ],
+            "availabilityTags": [],
+            "issues": [
+              "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 279 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 258 ms: Couldn't connect to server",
+              "Shop identity is not yet verified"
+            ]
+          },
+          "merge": {
+            "mergeShop": "Tên Merge Shop chưa xác minh",
+            "source": null,
+            "npc": null,
+            "map": "2024 Timelock Key (Shop) / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": null,
+            "npc": null,
+            "map": "2024 Timelock Key (Shop) / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+            "verificationStatus": "verified"
+          }
+        },
+        {
+          "id": "chrono-shadowhunter-merge-3",
+          "classId": "calendar-chrono-shadowhunter",
+          "type": "merge",
+          "variantName": "Chrono ShadowHunter",
+          "isAvailable": true,
+          "availability": "available",
+          "verificationStatus": "verified",
+          "detailsStatus": "complete",
+          "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+          "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4",
+          "prerequisites": [],
+          "notes": [],
+          "membershipRequirement": null,
+          "levelRequirement": null,
+          "baseLevel": null,
+          "evidence": {
+            "classPage": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+            "linkedSource": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "priceText": null,
+            "locationText": [
+              "HeroPoints Merge - HeroMart"
+            ],
+            "linkedSourceHash": "c73df8ae675ec9e94869aece2375e9f2770a79c9b40709d0bef792de658f0d4e",
+            "availabilityTags": [],
+            "issues": []
+          },
+          "merge": {
+            "mergeShop": "HeroPoints Merge",
+            "source": "https://aqwwiki.wikidot.com/heropoints-merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "rawMaterials": [
+              "HeroPoint x5"
+            ],
+            "prerequisiteItems": [],
+            "requiredQuests": []
+          },
+          "acquisitionKind": "heropoints",
+          "purchaseKind": null,
+          "verifiedFields": {
+            "shopName": "HeroPoints Merge",
+            "npc": null,
+            "map": "Stryche / HeroMart",
+            "currency": null,
+            "price": null,
+            "requiredQuest": null,
+            "materials": {
+              "kind": "allOf",
+              "requirements": [
+                {
+                  "kind": "item",
+                  "itemId": "heropoint",
+                  "name": "HeroPoint",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/heropoint"
+                }
+              ]
+            },
+            "prerequisites": [],
+            "availability": "available",
+            "sourceUrl": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+            "verificationStatus": "verified"
+          }
+        }
+      ],
+      "reviewStatus": "partial",
+      "reviewedPages": [
+        "https://aqwwiki.wikidot.com/chrono-shadowhunter"
+      ],
+      "excludedSources": [],
+      "issues": []
+    },
+    "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4"
+  }
+}

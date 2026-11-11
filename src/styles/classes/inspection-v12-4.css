@@ -1,0 +1,125 @@
+.class-interactive-inspection {
+  margin-top: 24px;
+}
+.class-inspection-tabs {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background: var(--class-slate);
+  border-bottom: 1px solid var(--class-line);
+  padding-bottom: 4px;
+  isolation: isolate;
+}
+.class-inspection-tabs:after {
+  content: "";
+  height: 3px;
+  background: var(--class-accent, var(--class-gold));
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: calc(100% / 3);
+  transform: translateX(calc(var(--class-tab-index) * 100%));
+  transition: transform 200ms ease;
+}
+.class-inspection-tabs > button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--class-muted);
+  border: 0;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 10px;
+  min-height: 54px;
+  cursor: pointer;
+  min-width: 0;
+}
+.class-inspection-tabs > button[aria-selected="true"] {
+  color: var(--class-white);
+  background: var(--class-raised);
+}
+.class-inspection-tabs > button:hover {
+  color: var(--class-white);
+}
+.class-inspection-tabs svg {
+  flex-shrink: 0;
+}
+.class-tab-short {
+  display: none;
+}
+.class-inspection-panels > [hidden] {
+  display: none !important;
+}
+.class-inspection-panel {
+  padding-top: 24px;
+  animation: class-panel-in 180ms ease;
+}
+.class-inspection-panel > .class-section {
+  padding-top: 0;
+  margin-top: 0;
+}
+.class-inspection-panel .class-section-title h2 {
+  font-size: 25px;
+}
+.class-inspection-panel:focus-visible {
+  outline: 2px solid var(--class-accent, var(--class-gold));
+  outline-offset: 5px;
+}
+.class-interactive-inspection [role="tab"]:focus-visible {
+  outline: 2px solid var(--class-accent, var(--class-gold));
+  outline-offset: -3px;
+}
+.class-legacy-skill-audit {
+  margin-top: 16px;
+  font-size: 13px;
+}
+.class-legacy-skill-audit summary {
+  cursor: pointer;
+  padding: 12px 0;
+}
+.class-combo-sequence li + li:before {
+  content: "→";
+  align-self: center;
+  color: var(--class-muted);
+}
+.class-combo-sequence li {
+  display: flex;
+  gap: 7px;
+}
+@keyframes class-panel-in {
+  from {
+    opacity: 0.5;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 600px) {
+  .class-tab-wide {
+    display: none;
+  }
+  .class-tab-short {
+    display: inline;
+  }
+  .class-inspection-tabs > button {
+    font-size: 14px;
+    gap: 6px;
+    padding: 12px 6px;
+  }
+  .class-inspection-panel {
+    padding-top: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .class-inspection-tabs:after {
+    transition: none;
+  }
+  .class-inspection-panel {
+    animation: none;
+  }
+}

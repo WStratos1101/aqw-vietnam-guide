@@ -1,0 +1,142 @@
+{
+  "url": "https://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+  "sourceHash": "20f143af952d9cf37eaa2b285a98c3c0a54653856c1a205865c50e491dfd92c7",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+      "sourceHash": "20f143af952d9cf37eaa2b285a98c3c0a54653856c1a205865c50e491dfd92c7",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage."
+    },
+    {
+      "officialName": "Strike of Awe",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "3",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "You strike using power amassed from the Blade of Awe. You have a 25% chance to leave your opponent awestruck which stuns them for 2 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill144.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+      "sourceHash": "20f143af952d9cf37eaa2b285a98c3c0a54653856c1a205865c50e491dfd92c7",
+      "evidence": "Strike of Awe Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 3 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: You strike using power amassed from the Blade of Awe. You have a 25% chance to leave your opponent awestruck which stuns them for 2 seconds. Note: Has a 25% chance to apply Awe’d, stunning the target for 2 seconds."
+    },
+    {
+      "officialName": "Supreme Arcane Spell",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "8",
+      "skillType": "Magical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Using the power of the supreme Arcane staff you deal damage and applies the Supreme Arcane Burn DoT to your Opponent.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill145.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+      "sourceHash": "20f143af952d9cf37eaa2b285a98c3c0a54653856c1a205865c50e491dfd92c7",
+      "evidence": "Supreme Arcane Spell Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 8 Seconds Type: Magical Range: A short range attack that deals damage to 1 target. Description: Using the power of the supreme Arcane staff you deal damage and applies the Supreme Arcane Burn DoT to your Opponent. Note: Deals damage and applies Supreme Arcane Burn to the target, a Damage over Time for 6 seconds. Always hit and crit."
+    },
+    {
+      "officialName": "Shiny Mirror Shield",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "15",
+      "skillType": "Magical",
+      "target": "A long range status skill that applies to yourself.",
+      "officialDescription": "Using the power of the shiny mirror you deflect a portion of your opponent's attack back at them and improve your resistance by 80% 6 seconds.",
+      "notes": [
+        "Applies Burning Ward to the caster, reflecting damage taken back to the opponent for 6 seconds. Can deal a maximum of 1,000 damage per tick to the opponent.",
+        "Applies Mirrored Resists to the caster, decreasing all incoming damage by 90% for 6 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill20.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+      "sourceHash": "20f143af952d9cf37eaa2b285a98c3c0a54653856c1a205865c50e491dfd92c7",
+      "evidence": "Shiny Mirror Shield Rank Needed: 3 Mana Cost: 30 Mana Cooldown: 15 Seconds Type: Magical Range: A long range status skill that applies to yourself. Description: Using the power of the shiny mirror you deflect a portion of your opponent's attack back at them and improve your resistance by 80% 6 seconds. Notes: Applies Burning Ward to the caster, reflecting damage taken back to the opponent for 6 seconds. Can deal a maximum of 1,000 damage per tick to the opponent. Applies Mirrored Resists to the caster, decreasing all incoming damage by 90% for 6 seconds."
+    },
+    {
+      "officialName": "Cursed Ring of Dragon Control",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "STR and INT increased by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+      "sourceHash": "20f143af952d9cf37eaa2b285a98c3c0a54653856c1a205865c50e491dfd92c7",
+      "evidence": "Cursed Ring of Dragon Control Rank Needed: 4 Type: Passive Ability Description: STR and INT increased by 20%"
+    },
+    {
+      "officialName": "Resourceful",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Dodge, Crit and Hit chance all increased by 5%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+      "sourceHash": "20f143af952d9cf37eaa2b285a98c3c0a54653856c1a205865c50e491dfd92c7",
+      "evidence": "Resourceful Rank Needed: 4 Type: Passive Ability Description: Dodge, Crit and Hit chance all increased by 5%."
+    },
+    {
+      "officialName": "Destiny or Doom",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "10",
+      "skillType": "Physical / Magical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "You’ve come across many blessed and cursed items over the years and learned how to channel their energies to work in your favor. You either trigger DOOM which increases your Damage output by 40%, Strength by 30% and Crit chance by 15% DESTINY, which gives you a large HoT Heal Over Time, increases your Intellect by 30% and Haste by 15%.",
+      "notes": [
+        "Has a 50% chance to apply Doom to the caster, which increases all damage done by 40%, Strength by 30% and Crit Chance by 15% for 6 seconds.",
+        "Has a 50% chance to apply Destiny to the caster, which applies a Heal over Time, increases your Intellect by 30% and Haste by 15% for 6 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill16.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+      "sourceHash": "20f143af952d9cf37eaa2b285a98c3c0a54653856c1a205865c50e491dfd92c7",
+      "evidence": "Destiny or Doom Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 10 Seconds Type: Physical / Magical Range: A short range status skill that applies to yourself. Description: You’ve come across many blessed and cursed items over the years and learned how to channel their energies to work in your favor. You either trigger DOOM which increases your Damage output by 40%, Strength by 30% and Crit chance by 15% DESTINY, which gives you a large HoT Heal Over Time, increases your Intellect by 30% and Haste by 15%. Notes: Has a 50% chance to apply Doom to the caster, which increases all damage done by 40%, Strength by 30% and Crit Chance by 15% for 6 seconds. Has a 50% chance to apply Destiny to the caster, which applies a Heal over Time, increases your Intellect by 30% and Haste by 15% for 6 seconds."
+    },
+    {
+      "officialName": "Under Pressure",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit chance increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+      "sourceHash": "20f143af952d9cf37eaa2b285a98c3c0a54653856c1a205865c50e491dfd92c7",
+      "evidence": "Under Pressure Rank Needed: 10 Type: Passive Ability Description: Hit chance increased by 15%."
+    }
+  ],
+  "portraitUrl": "https://aqwwiki.wdfiles.com/local--files/artifact-hunter-class-ac/ArtifactHunterM.png",
+  "sameSkillVariants": [
+    {
+      "name": "Antique Hunter (Class) (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/antique-hunter-class-0-ac"
+    },
+    {
+      "name": "Antique Hunter (Class) (AC)",
+      "url": "https://aqwwiki.wikidot.com/antique-hunter-class-ac"
+    },
+    {
+      "name": "Artifact Hunter (Class) (Merge)",
+      "url": "https://aqwwiki.wikidot.com/artifact-hunter-class-merge"
+    }
+  ],
+  "location": "Locations:\n\n6th Birthday Class - Artixpointe \n6th Birthday Class - Gravefang (Location) \n6th Birthday Rares \n\nArtixpointe\nGravefang (Location)\n\n\nHaunted Muffins - Artixpointe\nHaunted Muffins - Gravefang (Location)\n\nPrice: 2,000 AC"
+}

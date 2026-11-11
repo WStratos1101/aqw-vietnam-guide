@@ -1,0 +1,619 @@
+{
+  "challengeContent": true,
+  "id": "masakado",
+  "name": "Masakado",
+  "type": "other_challenge",
+  "map": "victormatsuri",
+  "levelRequirement": 80,
+  "partySize": 4,
+  "description": "Khi truyền thuyết về đền Solstice Moon và Midnight Sun lan truyền, những chiến binh đã đổ xô từ khắp nơi đến để thách đấu với các vị thần. Một lễ hội được tổ chức để tôn vinh những chiến binh này và những người chiến thắng đã đạt được Eclipse Ascent. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+  "bodyUrl": "/content/challenges/masakado.json",
+  "href": "/other-challenges/masakado",
+  "image": null,
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "masakado-stage-1",
+      "name": "Masakado",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Masakado",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "masakado-0",
+            "canonicalName": "Masakado",
+            "role": "Monster",
+            "level": null,
+            "maxHp": 2000000,
+            "count": 1,
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "masakado-0-doc-skill-0",
+            "monsterId": "masakado-0",
+            "name": "Unsheathe",
+            "activation": "◆ Ngay khi bắt đầu trận đánh, sử dụng Unsheathe để charge trong 3s rồi sau đó kích hoạt Yokai Slayer gây True DMG lớn diệt tất cả mục tiêu.",
+            "playerEffects": [
+              "Players bị dính Spinning Dragon trong 2s, làm đòn đánh tiếp theo bị vô hiệu hóa.",
+              "Cần có Praxis hoặc class có Spinning Dragon để chặn sát thương từ skill này của Masakado."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "masakado-0-doc-skill-1",
+            "monsterId": "masakado-0",
+            "name": "Auto Attack",
+            "activation": "◆ Auto-Attack mỗi 1s gây True DMG bằng 25% lượng HP tối đa của player lên tất cả players, không thể né.",
+            "playerEffects": [
+              "Players bị dính Spinning Dragon trong 2s, làm đòn đánh tiếp theo bị vô hiệu hóa."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "masakado-0-doc-skill-2",
+            "monsterId": "masakado-0",
+            "name": "Counter Prep",
+            "activation": "◆ Mỗi 20s, sử dụng Counter Prep để charge trong 2s sau đó kích hoạt cơ chế Counter Attack trong 4s.",
+            "playerEffects": [
+              "Không được gây sát thương khi Counter Attack đang được kích hoạt, nếu không sẽ phản sát thương và diệt toàn bộ players. Cần dùng phím ESC để untarget.",
+              "Có thể thấy Counter Attack được áp dụng và hết hiệu lực trên Masakado."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ],
+        "passiveSkills": [
+          {
+            "id": "masakado-0-doc-passive-0",
+            "monsterId": "masakado-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Shield giúp giảm sát thương trên 50k (hệ số 0.85).",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "masakado-0-doc-passive-1",
+            "monsterId": "masakado-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Miễn nhiễm với Stun.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ]
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Khi truyền thuyết về đền Solstice Moon và Midnight Sun lan truyền, những chiến binh đã đổ xô từ khắp nơi đến để thách đấu với các vị thần. Một lễ hội được tổ chức để tôn vinh những chiến binh này và những người chiến thắng đã đạt được Eclipse Ascent. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+        "- “Kanmu Heishi” quest để có Victor of the Festival dùng để đổi Rite of Ascension.",
+        "Note: Đây là chìa khoá giúp mở Ascension of the Eclipse Dungeon, cần giữ trong túi đồ để có thể vào được dungeon này.",
+        "Boss này nằm ở map /join victormatsuri - Room limit: 4",
+        "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 2,000,000",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.85).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Ngay khi bắt đầu trận đánh, sử dụng Unsheathe để charge trong 3s rồi sau đó kích hoạt Yokai Slayer gây True DMG lớn diệt tất cả mục tiêu.",
+        "→ Players bị dính Spinning Dragon trong 2s, làm đòn đánh tiếp theo bị vô hiệu hóa.",
+        "→ Cần có Praxis hoặc class có Spinning Dragon để chặn sát thương từ skill này của Masakado.",
+        "◆ Auto-Attack mỗi 1s gây True DMG bằng 25% lượng HP tối đa của player lên tất cả players, không thể né.",
+        "→ Players bị dính Spinning Dragon trong 2s, làm đòn đánh tiếp theo bị vô hiệu hóa.",
+        "◆ Mỗi 20s, sử dụng Counter Prep để charge trong 2s sau đó kích hoạt cơ chế Counter Attack trong 4s.",
+        "→ Không được gây sát thương khi Counter Attack đang được kích hoạt, nếu không sẽ phản sát thương và diệt toàn bộ players. Cần dùng phím ESC để untarget.",
+        "→ Có thể thấy Counter Attack được áp dụng và hết hiệu lực trên Masakado."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Vordred cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Chơi Solo hoặc đánh Team vẫn có thể giết nó một cách đơn giản.",
+        "→ Cần có Praxis (spam mất hiệu ứng chặn DMG, nên chỉ spam sau khi đã chặn được nuke) hoặc class có Spinning Dragon giúp chặn DMG (tốt nhất là kéo dài 2s trở lên để dễ canh). Kể từ khi bắt đầu đánh đến khi Masakado nuke chỉ có 3s, cần canh dùng Praxis (2s) hay skill có Spinning Dragon để chặn nuke của nó.",
+        "→ Sử dụng các Forge helm giúp giảm max HP (Vim, Examen, Anima, Pneuma) và dùng Absolution để tăng lượng heal nhận.",
+        "→ Sau đó, Masakado sẽ kích hoạt cơ chế Counter Attack mỗi 20s và kéo dài trong 4s. Không được gây sát thương khi Counter Attack đang được kích hoạt, nếu không sẽ phản sát thương và diệt toàn bộ players. Cần dùng phím ESC để untarget.",
+        "→ Nếu chơi Solo, cần dùng class có HoT mạnh và tanky như LR hoặc không thì phải dùng Revitalize Elixir để có HoT lớn.",
+        "→ Nếu có Team, chọn DPS như LR, VDK, QCM, … kết hợp với class buff HoT mạnh như FB, SC, … (class HoT dùng Valiance + Anima/Pneuma + Absolution) cùng LoO để support."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-426291",
+          "runs": [
+            {
+              "text": "Khi truyền thuyết về đền Solstice Moon và Midnight Sun lan truyền, những chiến binh đã đổ xô từ khắp nơi đến để thách đấu với các vị thần. Một lễ hội được tổ chức để tôn vinh những chiến binh này và những người chiến thắng đã đạt được Eclipse Ascent. Temp item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-426594",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Kanmu Heishi",
+              "href": "http://aqwwiki.wikidot.com/empress-ai-no-miko-s-quests#Victor"
+            },
+            {
+              "text": "” quest để có "
+            },
+            {
+              "text": "Victor of the Festival dùng để đổ"
+            },
+            {
+              "text": "i "
+            },
+            {
+              "text": "Rite of Ascension",
+              "href": "http://aqwwiki.wikidot.com/rite-of-ascension"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-426677",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Đây là chìa khoá giúp mở Ascension of the Eclipse Dungeon, cần giữ trong túi đồ để có thể vào được dungeon này.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-426796",
+          "runs": [
+            {
+              "text": "Boss này nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join victormatsuri",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/victor-matsuri"
+            },
+            {
+              "text": " - Room limit: 4\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-426851",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-426908",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-426916",
+          "runs": [
+            {
+              "text": "◆ Total HP: 2,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-426938",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.85)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-426991",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427014",
+          "runs": [
+            {
+              "text": "◆ Ngay khi bắt đầu trận đánh, sử dụng Unsheathe để charge trong 3s rồi sau đó kích hoạt Yokai Slayer gây True DMG lớn diệt tất cả mục tiêu.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427154",
+          "runs": [
+            {
+              "text": "→ Players bị dính Spinning Dragon trong 2s, làm đòn đánh tiếp theo bị vô hiệu hóa.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427237",
+          "runs": [
+            {
+              "text": "→ Cần có Praxis hoặc class có Spinning Dragon để chặn sát thương từ skill này của Masakado.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427329",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 1s gây True DMG bằng 25% lượng HP tối đa của player lên tất cả players, không thể né.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427433",
+          "runs": [
+            {
+              "text": "→ Players bị dính Spinning Dragon trong 2s, làm đòn đánh tiếp theo bị vô hiệu hóa.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427516",
+          "runs": [
+            {
+              "text": "◆ Mỗi 20s, sử dụng Counter Prep để charge trong 2s sau đó kích hoạt cơ chế Counter Attack trong 4s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427616",
+          "runs": [
+            {
+              "text": "→ Không được gây sát thương khi Counter Attack đang được kích hoạt, nếu không sẽ phản sát thương và diệt toàn bộ players. Cần dùng phím ESC để untarget.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427769",
+          "runs": [
+            {
+              "text": "→ Có thể thấy Counter Attack được áp dụng và hết hiệu lực trên Masakado.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427843",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-427855",
+          "runs": [
+            {
+              "text": "Nhìn chung Vordred cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Chơi Solo hoặc đánh Team vẫn có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-428005",
+          "runs": [
+            {
+              "text": "→ Cần có Praxis "
+            },
+            {
+              "text": "(spam mất hiệu ứng chặn DMG, nên chỉ spam sau khi đã chặn được nuke)",
+              "italic": true
+            },
+            {
+              "text": " hoặc class có Spinning Dragon giúp chặn DMG "
+            },
+            {
+              "text": "(tốt nhất là kéo dài 2s trở lên để dễ canh)",
+              "italic": true
+            },
+            {
+              "text": ". Kể từ khi bắt đầu đánh đến khi Masakado nuke chỉ có 3s, cần canh dùng Praxis "
+            },
+            {
+              "text": "(2s)",
+              "italic": true
+            },
+            {
+              "text": " hay skill có Spinning Dragon để chặn nuke của nó.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-428311",
+          "runs": [
+            {
+              "text": "→ Sử dụng các Forge helm giúp giảm max HP "
+            },
+            {
+              "text": "(Vim, Examen, Anima, Pneuma)",
+              "italic": true
+            },
+            {
+              "text": " và dùng Absolution để tăng lượng heal nhận.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-428426",
+          "runs": [
+            {
+              "text": "→ Sau đó, Masakado sẽ kích hoạt cơ chế Counter Attack mỗi 20s và kéo dài trong 4s. Không được gây sát thương khi Counter Attack đang được kích hoạt, nếu không sẽ phản sát thương và diệt toàn bộ players. Cần dùng phím ESC để untarget.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-428660",
+          "runs": [
+            {
+              "text": "→ Nếu chơi Solo, cần dùng class có HoT mạnh và tanky như "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " hoặc không thì phải dùng "
+            },
+            {
+              "text": "Revitalize Elixir",
+              "href": "http://aqwwiki.wikidot.com/revitalize-elixir"
+            },
+            {
+              "text": " để có HoT lớn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-428778",
+          "runs": [
+            {
+              "text": "→ Nếu có Team, chọn DPS như "
+            },
+            {
+              "text": "LR, VDK, QCM, …",
+              "bold": true
+            },
+            {
+              "text": " kết hợp với class buff HoT mạnh như "
+            },
+            {
+              "text": "FB, SC, …",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(class HoT dùng Valiance + Anima/Pneuma + Absolution)",
+              "italic": true
+            },
+            {
+              "text": " cùng "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": " để support."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-427237",
+      "runs": [
+        {
+          "text": "→ Cần có Praxis hoặc class có Spinning Dragon để chặn sát thương từ skill này của Masakado.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-427855",
+      "runs": [
+        {
+          "text": "Nhìn chung Vordred cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Chơi Solo hoặc đánh Team vẫn có thể giết nó một cách đơn giản.",
+          "italic": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-428005",
+      "runs": [
+        {
+          "text": "→ Cần có Praxis "
+        },
+        {
+          "text": "(spam mất hiệu ứng chặn DMG, nên chỉ spam sau khi đã chặn được nuke)",
+          "italic": true
+        },
+        {
+          "text": " hoặc class có Spinning Dragon giúp chặn DMG "
+        },
+        {
+          "text": "(tốt nhất là kéo dài 2s trở lên để dễ canh)",
+          "italic": true
+        },
+        {
+          "text": ". Kể từ khi bắt đầu đánh đến khi Masakado nuke chỉ có 3s, cần canh dùng Praxis "
+        },
+        {
+          "text": "(2s)",
+          "italic": true
+        },
+        {
+          "text": " hay skill có Spinning Dragon để chặn nuke của nó.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-428660",
+      "runs": [
+        {
+          "text": "→ Nếu chơi Solo, cần dùng class có HoT mạnh và tanky như "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " hoặc không thì phải dùng "
+        },
+        {
+          "text": "Revitalize Elixir",
+          "href": "http://aqwwiki.wikidot.com/revitalize-elixir"
+        },
+        {
+          "text": " để có HoT lớn.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-428778",
+      "runs": [
+        {
+          "text": "→ Nếu có Team, chọn DPS như "
+        },
+        {
+          "text": "LR, VDK, QCM, …",
+          "bold": true
+        },
+        {
+          "text": " kết hợp với class buff HoT mạnh như "
+        },
+        {
+          "text": "FB, SC, …",
+          "bold": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "(class HoT dùng Valiance + Anima/Pneuma + Absolution)",
+          "italic": true
+        },
+        {
+          "text": " cùng "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " để support."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": []
+}

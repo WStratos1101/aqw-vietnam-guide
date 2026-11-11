@@ -1,0 +1,731 @@
+{
+  "challengeContent": true,
+  "id": "colossal-vordred",
+  "name": "Colossal Vordred",
+  "type": "other_challenge",
+  "map": "lichwar",
+  "levelRequirement": 65,
+  "partySize": 7,
+  "description": "Aurelio Voltaire đã đưa đến một khách mời đặc biệt, kẻ hủy diệt Paladin - chúa tể Vordred đã trở lại với sức mạnh to lớn, giúp sự kiện này sẽ trở thành cuộc chiến xương kinh điển. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+  "bodyUrl": "/content/challenges/colossal-vordred.json",
+  "href": "/other-challenges/colossal-vordred",
+  "image": "monster-colossal-vordred",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [
+    "Cần hoàn thành Questline ở /join lichwar để access Map (FULL Walkthrough)."
+  ],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "colossal-vordred-stage-1",
+      "name": "Colossal Vordred",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Colossal Vordred",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "colossal-vordred-0",
+            "canonicalName": "Colossal Vordred",
+            "role": "Monster",
+            "level": 66,
+            "maxHp": 666666,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/colossal-vordred"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "colossal-vordred-0-auto-attack-0",
+            "monsterId": "colossal-vordred-0",
+            "name": "Auto Attack",
+            "type": "Physical",
+            "damage": "387-473",
+            "damageType": "Physical",
+            "cooldown": "2.25 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Has a 5% chance to apply Detect Living for each target unaffected Undead Minion, tăng tỷ lệ chí mạng và sát thương chí mạng 100% trong 6 giây.",
+              "Luôn trúng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/colossal-vordred"
+          },
+          {
+            "id": "colossal-vordred-0-shadow-grasp-1",
+            "monsterId": "colossal-vordred-0",
+            "name": "Shadow Grasp",
+            "type": "True Damage",
+            "damage": "40% HP hiện tại",
+            "damageType": "True Damage",
+            "cooldown": "10 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "If the player isn't an Undead Minion, Áp Shadow Grasp, a 2 giây stun.",
+              "If the player is an Undead Minion, Áp Shadow Grip, giảm Haste, tỷ lệ trúng, và tỷ lệ chí mạng 15% trong 5 giây.",
+              "Luôn trúng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/colossal-vordred"
+          },
+          {
+            "id": "colossal-vordred-0-fear-the-light-2",
+            "monsterId": "colossal-vordred-0",
+            "name": "Fear the Light",
+            "type": "Physical",
+            "damage": "387-473",
+            "damageType": "Physical",
+            "cooldown": "14 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "If the player isn't an Undead Minion, Áp Noxious Decay lên người chơi trong 4 giây, turning all healing into damage.",
+              "Luôn trúng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/colossal-vordred"
+          },
+          {
+            "id": "colossal-vordred-0-more-skulls-3",
+            "monsterId": "colossal-vordred-0",
+            "name": "More Skulls",
+            "type": "Physical",
+            "damageType": "Physical",
+            "cooldown": "16 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Safeguard lên bản thân, tăng kháng sát thương 1000% và blocking up to 10,000 damage.",
+              "xóa toàn bộ debuffs applied the Paladin, ArchPaladin, Paladin High Lord, Paladin Chronomancer, và Legion Paladin classes."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/colossal-vordred"
+          },
+          {
+            "id": "colossal-vordred-0-voiduminance-4",
+            "monsterId": "colossal-vordred-0",
+            "name": "Voiduminance",
+            "type": "Charge",
+            "damageType": "Charge",
+            "cooldown": "20 seconds",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/colossal-vordred"
+          },
+          {
+            "id": "colossal-vordred-0-necrot-morph-5",
+            "monsterId": "colossal-vordred-0",
+            "name": "Necrot-Morph",
+            "type": "True Damage",
+            "damage": "1935-2365",
+            "damageType": "True Damage",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Chỉ đánh người còn trong vùng sáng.",
+              "Áp Undead Minion lên người chơi trong 35 giây, tăng their sát thương gây ra 50% but giảm their hồi máu nhận vào 100% và kháng sát thương 50%.",
+              "Áp ONE MORE SKULL lên người chơi with Undead Minion, DoT gây tử vong.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/colossal-vordred"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Aurelio Voltaire đã đưa đến một khách mời đặc biệt, kẻ hủy diệt Paladin - chúa tể Vordred đã trở lại với sức mạnh to lớn, giúp sự kiện này sẽ trở thành cuộc chiến xương kinh điển. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+        "- “We Will Rebuild” quest (có quest cho member và non-mem) để farm Lich class và Awakened Vordred set.",
+        "Chỉ vào được khi có event Friday the 13th hoặc bất cứ lúc nào khi có Membership.",
+        "Cần hoàn thành Questline ở /join lichwar để access Map (FULL Walkthrough).",
+        "Boss này nằm ở map /join moreskulls - Room limit: 7",
+        "Cần đạt ít nhất lvl 65 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 666,666",
+        "◆ Shield giúp giới hạn sát thương nhận tối đa 66k.",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Auto-Attack mỗi 2.25s gây Phys DMG từ 387 đến 473, không thể né.",
+        "→ Bản thân có 5% cơ hội tăng 100% Crit Chance và Crit DMG trong 6s với mỗi mục tiêu không có “Undead Minion” trúng đòn (không stack).",
+        "◆ Mỗi 10s, sử dụng Shadow Grasp gây True DMG bằng 40% lượng HP hiện tại của player lên tất cả players.",
+        "→ Players bị dính Stun trong 2s khi không có “Undead Minion”.",
+        "→ Players bị giảm 15% Haste, Hit Chance và Crit Chance trong 5s khi có “Undead Minion”.",
+        "◆ Mỗi 14s, sử dụng Fear the Light gây Phys DMG từ 387 đến 473, không thể né.",
+        "→ Players dính hiệu ứng Noxious Decay trong 4s khi không có “Undead Minion”, không nhận được Heal/HoT và bị biến thành sát thương lên chính players.",
+        "→ Players nếu lựa chọn đánh kiểu không vào Glowing Zone, thì không sử dụng các skill Heal/HoT (trừ dạng hút máu), thay thế bằng Health Vamp/Dauntless.",
+        "◆ Mỗi 16s, sử dụng More Skulls.",
+        "→ Bản thân giảm 1000% All In (giúp chặn lên đến 10k DMG).",
+        "→ Loại bỏ toàn bộ debuff từ tất cả các Paladin classes lên bản thân.",
+        "◆ Mỗi 20s, sử dụng Voiduminance để charge trong 4s rồi sau đó kích hoạt Necrot-Morph gây True DMG từ 2k đến 2.4k.",
+        "→ Players cần phải di chuyển vào và ra khỏi vùng Glowing Zone so le (lần này vào thì lần sau ra, không quan trọng số người vào) để có hiệu ứng “Undead Minion” giúp tăng 50% All Out đổi lại giảm 100% Heal In và tăng 50% All In trong 35s. Lưu ý rằng nếu vào Glowing Zone liên tục 2 lần liên tiếp thì sẽ ăn DoT nuke cực lớn và bị diệt.",
+        "→ Tuy nhiên, cũng có thể lựa chọn né toàn bộ Glowing Zone, có thể làm chậm quá trình diệt boss (nhất là trong Solo), nhưng vẫn có thể đánh bại được nó.",
+        "→ Sử dụng chức năng dash để chạy nhanh đến vị trí an toàn."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Vordred cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Chơi Solo hoặc đánh Team vẫn có thể giết nó một cách đơn giản.",
+        "→ Với chơi Solo thì sử dụng các classes như QCM, VHL, CAv, VDK, … và kết hợp cùng Dauntless để đạt hiệu quả tốt nhất (có thể lựa chọn chơi đúng cơ chế hoặc né toàn bộ Glowing Zone đều được).",
+        "→ Còn có Team, thì sử dụng và kết hợp các classes như QCM, CMP, TK, CMD, VHL, CAv, VDK, LR, Arach, MA, … Nếu chơi kiểu né toàn bộ Glowing Zone thì cần phải có Dauntless. Còn chơi theo cơ chế thì không trang bị Vainglory.",
+        "Note: Boss có tag Undead, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Undead để tối đa sát thương."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-417479",
+          "runs": [
+            {
+              "text": "Aurelio Voltaire đã đưa đến một khách mời đặc biệt, kẻ hủy diệt Paladin - chúa tể Vordred đã trở lại với sức mạnh to lớn, giúp sự kiện này sẽ trở thành cuộc chiến xương kinh điển. Temp item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-417711",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "We Will Rebuild",
+              "href": "http://aqwwiki.wikidot.com/grimskull-noxus-quests#Skull"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(có quest cho member và non-mem)",
+              "italic": true
+            },
+            {
+              "text": " để farm Lich class và "
+            },
+            {
+              "text": "Awakened Vordred",
+              "href": "http://aqwwiki.wikidot.com/awakened-vordred"
+            },
+            {
+              "text": " set.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-417815",
+          "runs": [
+            {
+              "text": "Chỉ vào được khi có event ",
+              "italic": true
+            },
+            {
+              "text": "Friday the 13th",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": " hoặc bất cứ lúc nào khi có ",
+              "italic": true
+            },
+            {
+              "text": "Membership",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ".",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-417896",
+          "runs": [
+            {
+              "text": "Cần hoàn thành Questline ở ",
+              "italic": true
+            },
+            {
+              "text": "/join lichwar",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/lich-war"
+            },
+            {
+              "text": " để access Map (",
+              "italic": true
+            },
+            {
+              "text": "FULL Walkthrough",
+              "italic": true,
+              "href": "https://www.youtube.com/watch?v=lshT_2N70cg"
+            },
+            {
+              "text": ").\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-417971",
+          "runs": [
+            {
+              "text": "Boss này nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join moreskulls",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/more-skulls-location"
+            },
+            {
+              "text": " - Room limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418023",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 65",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418080",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418088",
+          "runs": [
+            {
+              "text": "◆ Total HP: 666,666"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418108",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 66k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418159",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418197",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.25s gây Phys DMG từ 387 đến 473, không thể né.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418264",
+          "runs": [
+            {
+              "text": "→ Bản thân có 5% cơ hội tăng 100% Crit Chance và Crit DMG trong 6s với mỗi mục tiêu không có “Undead Minion” trúng đòn "
+            },
+            {
+              "text": "(không stack)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418398",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Shadow Grasp gây True DMG bằng 40% lượng HP hiện tại của player lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418501",
+          "runs": [
+            {
+              "text": "→ Players bị dính Stun trong 2s khi không có “Undead Minion”.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418563",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 15% Haste, Hit Chance và Crit Chance trong 5s khi có “Undead Minion”.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418651",
+          "runs": [
+            {
+              "text": "◆ Mỗi 14s, sử dụng Fear the Light gây Phys DMG từ 387 đến 473, không thể né.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418728",
+          "runs": [
+            {
+              "text": "→ Players dính hiệu ứng Noxious Decay trong 4s khi không có “Undead Minion”, không nhận được Heal/HoT và bị biến thành sát thương lên chính players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-418877",
+          "runs": [
+            {
+              "text": "→ Players nếu lựa chọn đánh kiểu không vào Glowing Zone, thì không sử dụng các skill Heal/HoT "
+            },
+            {
+              "text": "(trừ dạng hút máu)",
+              "italic": true
+            },
+            {
+              "text": ", thay thế bằng Health Vamp/Dauntless.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-419028",
+          "runs": [
+            {
+              "text": "◆ Mỗi 16s, sử dụng More Skulls.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-419060",
+          "runs": [
+            {
+              "text": "→ Bản thân giảm 1000% All In "
+            },
+            {
+              "text": "(giúp chặn lên đến 10k DMG)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-419118",
+          "runs": [
+            {
+              "text": "→ Loại bỏ toàn bộ debuff từ tất cả các Paladin classes lên bản thân.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-419187",
+          "runs": [
+            {
+              "text": "◆ Mỗi 20s, sử dụng Voiduminance để charge trong 4s rồi sau đó kích hoạt Necrot-Morph gây True DMG từ 2k đến 2.4k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-419301",
+          "runs": [
+            {
+              "text": "→ Players cần phải di chuyển vào và ra khỏi vùng Glowing Zone so le "
+            },
+            {
+              "text": "(lần này vào thì lần sau ra, không quan trọng số người vào)",
+              "italic": true
+            },
+            {
+              "text": " để có hiệu ứng “Undead Minion” giúp tăng 50% All Out đổi lại giảm 100% Heal In và tăng 50% All In trong 35s. Lưu ý rằng nếu vào Glowing Zone liên tục 2 lần liên tiếp thì sẽ ăn DoT nuke cực lớn và bị diệt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-419634",
+          "runs": [
+            {
+              "text": "→ Tuy nhiên, cũng có thể lựa chọn né toàn bộ Glowing Zone, có thể làm chậm quá trình diệt boss "
+            },
+            {
+              "text": "(nhất là trong Solo)",
+              "italic": true
+            },
+            {
+              "text": ", nhưng vẫn có thể đánh bại được nó.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-419786",
+          "runs": [
+            {
+              "text": "→ Sử dụng "
+            },
+            {
+              "text": "chức năng dash",
+              "href": "/he-thong/acronyms-thuat-ngu-hay-dung"
+            },
+            {
+              "text": " để chạy nhanh đến vị trí an toàn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-419846",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-419858",
+          "runs": [
+            {
+              "text": "Nhìn chung Vordred cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Chơi Solo hoặc đánh Team vẫn có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-420008",
+          "runs": [
+            {
+              "text": "→ Với chơi Solo thì sử dụng các classes như "
+            },
+            {
+              "text": "QCM, VHL, CAv, VDK, …",
+              "bold": true
+            },
+            {
+              "text": " và kết hợp cùng Dauntless để đạt hiệu quả tốt nhất "
+            },
+            {
+              "text": "(có thể lựa chọn chơi đúng cơ chế hoặc né toàn bộ Glowing Zone đều được)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-420199",
+          "runs": [
+            {
+              "text": "→ Còn có Team, thì sử dụng và kết hợp các classes như "
+            },
+            {
+              "text": "QCM, CMP, TK, CMD, VHL, CAv, VDK, LR, Arach, MA, …",
+              "bold": true
+            },
+            {
+              "text": " Nếu chơi kiểu né toàn bộ Glowing Zone thì cần phải có Dauntless. Còn chơi theo cơ chế thì không trang bị Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-420421",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Boss có tag Undead, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Undead để tối đa sát thương.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-417815",
+      "runs": [
+        {
+          "text": "Chỉ vào được khi có event ",
+          "italic": true
+        },
+        {
+          "text": "Friday the 13th",
+          "bold": true,
+          "italic": true,
+          "href": "/farm/farming-list"
+        },
+        {
+          "text": " hoặc bất cứ lúc nào khi có ",
+          "italic": true
+        },
+        {
+          "text": "Membership",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": ".",
+          "italic": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-418159",
+      "runs": [
+        {
+          "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-419858",
+      "runs": [
+        {
+          "text": "Nhìn chung Vordred cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Chơi Solo hoặc đánh Team vẫn có thể giết nó một cách đơn giản.",
+          "italic": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-420008",
+      "runs": [
+        {
+          "text": "→ Với chơi Solo thì sử dụng các classes như "
+        },
+        {
+          "text": "QCM, VHL, CAv, VDK, …",
+          "bold": true
+        },
+        {
+          "text": " và kết hợp cùng Dauntless để đạt hiệu quả tốt nhất "
+        },
+        {
+          "text": "(có thể lựa chọn chơi đúng cơ chế hoặc né toàn bộ Glowing Zone đều được)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-420199",
+      "runs": [
+        {
+          "text": "→ Còn có Team, thì sử dụng và kết hợp các classes như "
+        },
+        {
+          "text": "QCM, CMP, TK, CMD, VHL, CAv, VDK, LR, Arach, MA, …",
+          "bold": true
+        },
+        {
+          "text": " Nếu chơi kiểu né toàn bộ Glowing Zone thì cần phải có Dauntless. Còn chơi theo cơ chế thì không trang bị Vainglory.\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": []
+}

@@ -1,0 +1,122 @@
+{
+  "url": "https://aqwwiki.wikidot.com/healer",
+  "sourceHash": "43bc5885ea5c624baa803526599e7129a6e7fea150260c448c2feb0451b11f1b",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/healer",
+      "sourceHash": "43bc5885ea5c624baa803526599e7129a6e7fea150260c448c2feb0451b11f1b",
+      "evidence": "Auto Attack Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Heartbeat",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "2",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Deals damage based on your current health (15% of current HP plus moderate magical damage to the target).",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill02.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/healer",
+      "sourceHash": "43bc5885ea5c624baa803526599e7129a6e7fea150260c448c2feb0451b11f1b",
+      "evidence": "Heartbeat Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 2 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Deals damage based on your current health (15% of current HP plus moderate magical damage to the target)."
+    },
+    {
+      "officialName": "Healing Word",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "8",
+      "skillType": "Magical",
+      "target": "An infinite range skill that heals 7 friendly targets.",
+      "officialDescription": "Heals yourself or a friendly target for a large amount and up to 6 additional nearby targets for a smaller amount. Applies Radiance to the first target, healing them over time for 16 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill01.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/healer",
+      "sourceHash": "43bc5885ea5c624baa803526599e7129a6e7fea150260c448c2feb0451b11f1b",
+      "evidence": "Healing Word Rank Needed: 2 Mana Cost: 20 Mana Cooldown: 8 Seconds Type: Magical Range: An infinite range skill that heals 7 friendly targets. Description: Heals yourself or a friendly target for a large amount and up to 6 additional nearby targets for a smaller amount. Applies Radiance to the first target, healing them over time for 16 seconds."
+    },
+    {
+      "officialName": "Energy Flow",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "5",
+      "cooldown": "12",
+      "skillType": "Magical",
+      "target": "A long range status skill that applies to 1 target.",
+      "officialDescription": "Applies Energy Flow to your target, granting you mana each time they take damage for 12 seconds. Also applies Inhibition, reducing your target's outgoing damage by 30% for 8 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill03.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/healer",
+      "sourceHash": "43bc5885ea5c624baa803526599e7129a6e7fea150260c448c2feb0451b11f1b",
+      "evidence": "Energy Flow Rank Needed: 3 Mana Cost: 5 Mana Cooldown: 12 Seconds Type: Magical Range: A long range status skill that applies to 1 target. Description: Applies Energy Flow to your target, granting you mana each time they take damage for 12 seconds. Also applies Inhibition, reducing your target's outgoing damage by 30% for 8 seconds."
+    },
+    {
+      "officialName": "Pure Hearted",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit Chance and Heal Power increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/healer",
+      "sourceHash": "43bc5885ea5c624baa803526599e7129a6e7fea150260c448c2feb0451b11f1b",
+      "evidence": "Pure Hearted Rank Needed: 4 Type: Passive Ability Description: Hit Chance and Heal Power increased by 10%."
+    },
+    {
+      "officialName": "Resolute",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage Resistance increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/healer",
+      "sourceHash": "43bc5885ea5c624baa803526599e7129a6e7fea150260c448c2feb0451b11f1b",
+      "evidence": "Resolute Rank Needed: 4 Type: Passive Ability Description: Damage Resistance increased by 10%."
+    },
+    {
+      "officialName": "Holy",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "8",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "A light based magical spell. Deals bonus damage to undead.",
+      "notes": [
+        "Deals 350% damage.",
+        "Deals x2.5 damage against undead."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill04.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/healer",
+      "sourceHash": "43bc5885ea5c624baa803526599e7129a6e7fea150260c448c2feb0451b11f1b",
+      "evidence": "Holy Rank Needed: 5 Mana Cost: 20 Mana Cooldown: 8 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: A light based magical spell. Deals bonus damage to undead. Notes: Deals 350% damage. Deals x2.5 damage against undead."
+    }
+  ],
+  "portraitUrl": "https://imgur.com/nPd6t8W.png",
+  "sameSkillVariants": [
+    {
+      "name": "Healer (Rare)",
+      "url": "https://aqwwiki.wikidot.com/healer-rare"
+    },
+    {
+      "name": "Hollowborn Vindicator Member Preview",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-vindicator-member-preview"
+    }
+  ],
+  "location": "Locations:\n\nCharacter Creation\nJuvania's Shop\n\n8-Bit Trainers\nBoss Challenge\nClass Hall A\nGrave Challenge \nTraining Hall\n\n\nPaladin (Shop) - Lightguard Keep\nPaladin (Shop) - Necropolis\n\nPrice: 0 AC"
+}

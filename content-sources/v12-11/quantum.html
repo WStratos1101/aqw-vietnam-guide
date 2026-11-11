@@ -1,0 +1,664 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>2022 Calendar Class Skills</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="2022 Calendar Class Skills : Go behind-the-scenes to find the continuing game development of our online RPG to learn how a real-time MMO is made with news about AdventureQuest Worlds." />
+    <meta name="keywords" content="AQW,AQWorlds,AdventureQuest,RPG,Artix,Design,RPG,Game," />
+    <meta name="custom" content="" />
+    <meta name="artixmode" content="False" />
+    
+	<link rel="canonical" href="http://www.aq.com/gamedesignnotes/aqw-dec20-2022calendarclassbreakdown-8615" />
+		
+        
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/jasny-offcanvas.min.css" />
+    <link rel="stylesheet" href="/css/aqw-news.css?version=7" />
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+		//twitter widget code
+		window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "//platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+		 
+		  t._e = [];
+		  t.ready = function(f) {
+			t._e.push(f);
+		  };	 
+		  return t;
+		}(document, "script", "twitter-wjs"));
+    $(window).load(function() {
+        $(".yearHeader").click(function (event) {
+            event.preventDefault();
+            $(this).next().slideToggle("slow");
+        });
+    });
+</script>
+</head>
+
+
+    <body class="row-offcanvas row-offcanvas-right">
+
+    <!-- Navigation -->  
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- AE Bar on Desktop-->
+        <div class="hidden-xs bg-black">
+          <div class="container aenetwork-bar text-light">
+            <div class="row">
+                <div class="col-lg-5 col-sm-3 nopadding-left"><a class="ae-logo" href="//www.artix.com/" target="_blank" title="Artix.com Home"></a></div>
+              <div class="col-lg-7 col-sm-9 nopadding-right server-info">
+              	<div>
+                    <div>9563 Players Online </div>
+                    <!-- <div>Server Time: 12:18:13 AM EST</div> -->
+                    <a class="btn-sm btn-primary" style="text-decoration:none;" href="https://www.artix.com/downloads/artixlauncher/?utm_source=aqnav&utm_medium=topbtn&utm_campaign=gamelauncher" target="_blank"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Get Launcher</a>
+                    <a class="btn-xs" href="/help/" target="_blank"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Help</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /AE Bar on Desktop-->
+        
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu-fixed-right" data-canvas="body" onClick="CheckToggle()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- AE Button -->
+                <div class="visible-xs-block">
+                	<a class="ae-logo" href="//www.artix.com" target="_blank"></a>
+                </div>
+                <a class="navbar-brand" href="/default.asp"><img class="img-responsive" src="/img/network/logo-navbar.png" alt="AdventureQuest Worlds Logo"/></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-offcanvas offcanvas navbar-right navmenu-fixed-right scroll-menu pre-scrollable" role="navigation">
+              <ul class="nav navbar-nav navmenu-nav">
+                  
+                <li class="visible-xs-block text-center offcanvas-title">
+                <a href="//www.aq.com/"><img src="/shared/images/offcanvas/aq-com.jpg" class="img-responsive center-block" alt="AQ.com"></a></li>
+
+                <li class="visible-xs-block padding"><a class="btn btn-aqred" href="https://www.aq.com/play-now/">PLAY</a></li>
+
+                <li class="dropdown">
+                  <a href="#" id="NavGame" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Game <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="//www.aq.com/">Home</a></li>
+                    <li><a href="/about.asp">About</a></li>
+                    <li><a href="/lore/guides/AQWRules">Game Rules</a></li>
+                    <li><a href="/lore/">Lorepedia</a></li>
+                    <li><a href="/character.asp">Character Page</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="/pages/invite.asp">Invite Friends</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//aqwwiki.wikidot.com/" target="_blank">AQWorlds Wiki</a></li>
+                  </ul>
+                </li>
+                                
+                <li class="dropdown">
+                  <a href="#" id="NavCommunity" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/gamedesignnotes/">Game News</a></li>
+                    <li><a href="//www.artix.com/" target="_blank">Artix News</a></li>
+                    <li><a href="http://forums2.battleon.com/" target="_blank">Forums</a></li>
+                    <li><a href="//www.artix.com/community/connect/" target="_blank">Become an Instant Fan!</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//www.facebook.com/AQWorldsMMO/" target="_blank"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a></li>
+                    <li><a href="https://twitter.com/ArtixKrieger" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a></li>
+                    <li><a href="//www.youtube.com/user/BattleOnGames" target="_blank"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a></li>
+                  </ul>
+                </li>
+                                
+                <li class="dropdown">
+                  <a href="#" id="NavAccount" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/landing/">Create Your Account</a></li>
+                    <li><a href="/acct">Manage Account</a></li>
+                    <li><a href="/order-now/direct/">Upgrade Your Account</a></li>
+                    <li><a href="/account/verify-shops.asp">Verification Shops</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="/help/">Help</a></li>
+                    <li><a href="/account/lost-password.asp">Forgot Password</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="/parents/default.asp">For Parents</a></li>
+                  </ul>
+                </li>
+                                
+                <li class="dropdown">
+                  <a href="#" id="NavShop" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/order-now/direct/"><span class="fa"><img src="/shared/images/icons/shopnav-membership.png"  alt="Buy Membership"></span><span> Buy Membership </span></a></li>
+                    <li><a href="/order-now/direct/"><span class="fa"><img src="/shared/images/icons/shopnav-adventurecoins.png" alt="Get AdventureCoins"></span><span> AdventureCoins </span></a></li>
+                    <li><a href="/aextras/offers/"><span class="fa"><img src="/shared/images/icons/shopnav-freeacs.png" alt="Earn Free ACs"></span><span> Earn Free ACs</span></a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//portal.battleon.com/store/points/" target="_blank"><span class="fa"><img src="/shared/images/icons/shopnav-artixpoints.png" alt="Get Artix Points"></span><span> Get Artix Points </span></a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//www.heromart.com/" target="_blank">
+                    	<span class="fa"><img src="/shared/images/icons/shopnav-heromart.png" alt="Shop HeroMart!"></span><span> HeroMart <br>
+                    	<small>T-shirts & More</small></span></a></li>
+                  </ul>
+                </li>
+                
+                <li class="hidden-xs"><a class="btn btn-play btn-signup" href="/landing/">Free Sign Up</a></li>
+                <li class="hidden-xs"><a class="btn btn-play btn-aqred" href="https://www.aq.com/play-now/">PLAY</a></li>
+
+              </ul>
+              
+              <!-- AE Menu -->
+              <div class="visible-xs-block navbar-aenetwork">
+                  <ul class="nav navbar text-light">
+                      
+                    <li class="visible-xs-block divider"></li>
+                    <li class="text-center margin-20"><a href="//www.artix.com/" target="_blank">
+                    <img src="/shared/images/offcanvas/artix-com.jpg" class="img-responsive center-block" alt="Artix.com"></a></li>
+    
+                    <li class="divider"></li>
+                    <li><h4>Mobile Games</h4></li>
+                    <li class="divider"></li>
+    
+                    <li>
+                        <a href="http://www.aqdragons.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/dragons.jpg" alt="Dragons"/>Dragons</a>
+                    </li>
+                    <li>
+                        <a href="http://battlegems.artix.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/battlegems.jpg" alt="BattleGems"/>BattleGems</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aq3d.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/aq3d.jpg" alt="AQ3D"/>AQ3D</a>
+                    </li>
+    
+                    <li class="divider margintop-15"></li>
+                    <li><h4>Websites</h4></li>
+                    <li class="divider"></li>
+    
+                    <li>
+                        <a href="http://www.artix.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/artix.jpg" alt="Artix.com"/>Artix.com</a>
+                    </li>
+                    <li>
+                        <a href="https://www.heromart.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/heromart.jpg" alt="HeroMart"/>HeroMart.com <small>- Shop!</small></a>
+                    </li>
+                    <li>
+                        <a href="https://portal.battleon.com/store/points/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/artixpoints.jpg" alt="Artix Points"/>Get Artix Points</a>
+                    </li>
+    
+                    <li class="divider margintop-15"></li>
+                    <li><h4>Web Games</h4></li>
+                    <li class="divider"></li>
+    
+                    <li>
+                        <a href="http://www.aq.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/aqworlds.jpg" alt="AQWorlds"/>AQWorlds</a>
+                    </li>
+                    <li>
+                        <a href="http://epicduel.artix.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/epicduel.jpg" alt="EpicDuel"/>EpicDuel</a>
+                    </li>
+                    <li>
+                        <a href="http://www.dragonfable.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/dragonfable.jpg" alt="DragonFable"/>DragonFable</a>
+                    </li>
+                    <li>
+                        <a href="http://www.mechquest.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/mechquest.jpg" alt="Mechquest"/>Mechquest</a>
+                    </li>
+                    <li>
+                        <a href="http://www.battleon.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/aqclassic.jpg" alt="AdventureQuest"/>AdventureQuest</a>
+                    </li>
+                    <li>
+                        <a href="http://oversoul.artix.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/oversoul.jpg" alt="OverSoul"/>OverSoul</a>
+                    </li>
+                  </ul>
+              </div>
+              
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+            
+
+    <div class="sub-header bg-dage"></div>
+    <div class="scroll-top"></div>
+
+    <!-- section: content -->
+    <section id="main-content">
+      <div class="container">
+        <div class="row">
+
+            <!-- 1st col: main -->
+
+                
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            
+
+                <!-- main: dns -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dns">
+                    <div class="row">
+                    <h1 class="nomargin-top">Design Notes</h1>
+                      <div class='hidden-xs dnAvatar pull-left'><a href='/gamedesignnotes/tag/Alina' class='alina'></a><p class='text-center nomargin-top'></p></div><div class='post pull-right'><p class='date'>December 20, 2021</p><h1 class='PostTitle'>2022 Calendar Class Skills</h1><h3>Unlock the exclusive class when you get the 2022 Calendar</h3>
+<p>Get your 20th anniversary, double-sided calendar* at <a href="https://www.heromart.com/" target="_blank">HeroMart.com</a>.&nbsp;When you get the 2022 Calendar from HeroMart, you'll unlock in-game rewards inside AQ3D, AdventureQuest, DragonFable, EpicDuel, and the Continuum Chronomancer Class / Armor set in AQWorlds.&nbsp;</p>
+<p style="text-align: center;"><img src="https://www.aq.com/cms/images/DN-2022Calendar.jpg" alt="" width="545" height="307" /></p>
+<p><span>In the spirit of being a calendar class with a twist, this year&rsquo;s calendar class is support-focused: Its powerful offensive buffs provide your entire team a boost, while powering up its special damage mechanic!</span></p>
+<p style="text-align: center;"><span><img src="https://www.aq.com/cms/images/DN-AQW-Chronomancer-HeroMart.jpg" alt="" width="545" height="307" /><br /></span></p>
+<p><span><em>*the flip side is a full poster with no dates</em><br /></span></p>
+<h3>Continuum Chronomancer Class Details</h3>
+<p>Description:<span>&nbsp;Recommended enhancement: Lucky. Continuum Chronomancers use their command of the timeline matrix to traverse reality.</span></p>
+<p>Mana Regen:&nbsp;<span>Continuum Chronomancers gain mana from all hits landed in combat, and especially on crits. The amount depends on damage relative to *their own* HP total.</span></p>
+<h3>Skill Breakdown</h3>
+<p><em>Quantum Rift:<span>&nbsp;Warp space-time to damage your target. Applies Temporal Rift for 30 seconds, which stacks up to 4 and is used by your other skills.</span></em></p>
+<p><span>Target: Enemy<br /></span><span>Max Targets: 1<br /></span><span>Type: Physical<br /></span><span>Range: Melee<br /></span><span>Cooldown: 2.5 seconds</span></p>
+<p><span>Temporal Rift is used by calendar classes to track the amount of damage dealt, to be used by their other skills. Because Continuum Chronomancer applies Temporal Rift on its auto attack, you will automatically gain all 4 stacks once you land four auto attacks!</span></p>
+<p><strong>a1: Quantum Fracture:</strong><em>&nbsp;Fracture and fragment your foe's reality to harm their past and future selves. Inflicts Quantum Fracturing and Quantum Fragmenting, reducing their Defense and Dodge by 10% for 10 seconds, stacks to 3.&nbsp;</em></p>
+<p><span>Target: Enemy<br /></span><span>Max Targets: 1<br /></span><span>Type: Physical/Magical<br /></span><span>Range: Infinite<br /></span><span>MP: 20&nbsp;<br /></span><span>Cooldown: 3 seconds</span></p>
+<p><span>Your conventional, time-traveling super-agent move that weakens your foe and makes them less capable of dodging. A 30% decrease to defense and evasion at max stacks makes this a helpful addition to any party.</span></p>
+<p><strong>a2: Quantum Shift:</strong><em>&nbsp;Distort the timeline to alter combat capabilities. Applies Quantum Shift to you and your allies, increasing Crit Chance and Defense by 30% for 10 seconds.&nbsp;</em></p>
+<p><span>Target: Friendly<br /></span><span>Max Targets: 20<br /></span><span>Type: Physical/Magical<br /></span><span>Range: Infinite<br /></span><span>MP: 30&nbsp;<br /></span><span>Cooldown: 10 seconds</span></p>
+<p><span>A powerful support skill that offers another helping of Crit and Defense. While this seems to be a fairly ordinary support skill, its Rank 10 effect turns this skill on its head...</span></p>
+<p><strong>a3: Quantum Restructure:</strong><em>&nbsp;Hack into reality for a brief moment and rebuild it in your favor. Applies Quantum Restructure to increase Evasion by 80%, reduce Incoming Damage, Incoming Physical, Incoming Magical, and Incoming DoT taken by 20% each, while inflicting Quantum Rupture to reduce your foe&rsquo;s stats by the same amounts. Both effects last 2 seconds. Never misses nor crits.</em></p>
+<p><span>Target: Enemy<br /></span><span>Max Targets: 1<br /></span><span>Type: Physical/Magical<br /></span><span>Range: Infinite<br /></span><span>MP: 20&nbsp;<br /></span><span>Cooldown: 12 seconds</span></p>
+<p><span>An extremely powerful skill that temporarily shreds your foe&rsquo;s defenses. Allows the Continuum Chronomancer to deal much more damage for those two seconds. The heavy dodge debuff also gives your team a chance to lay down longer-lasting debuffs without fear of missing. Combo this with Quantum Fracture to leave your foes permanently worse for wear.</span></p>
+<p><strong>a4: Quantum Convergence:</strong><span>&nbsp;Perceive and control the source of your powers as they were meant to be. Inflicts Quantum Convergence for 10 seconds, a heavy DoT. If Temporal Rift is active, consume it to deal damage to your target based on the damage you've dealt in the last 10 seconds while Temporal Rift was active.</span></p>
+<p><span>Target: Enemy<br /></span><span>Max Targets: 1<br /></span><span>Type: Physical/Magical<br /></span><span>Range: Infinite<br /></span><span>MP: 30&nbsp;<br /></span><span>Cooldown: 14 seconds</span></p>
+<p><span>A combination nuke + DoT skill that truly takes advantage of your Rank 10 ability. Build stacks of Rift, Rupture your foe, and then hit them with Convergence while your stacks are concentrated for heavy damage!</span></p>
+<p><em><span>p1:&nbsp;</span>Red Vision:&nbsp;<span>Your superhuman reflexes increase your Dodge and Haste by 15%.</span></em></p>
+<p><em><span>p2:&nbsp;</span>Delayed Deadline:&nbsp;<span>Your mastery over the simulated reality grants you superhuman abilities, increasing your Endurance by 50%.</span></em></p>
+<p><em><span>p3:&nbsp;</span>Quantum Spiral:&nbsp;<span>Quantum Shift also applies stacks of Quantum Spiral to you for each friendly target affected, increasing your Crit Modifier and DoT damage by 10% for 23 seconds, stacks to 40 but cannot be refreshed.</span></em></p>
+<p><span>The key mechanic of the class, you gain more stacks of Quantum Spiral the more people are in the room with you. A 4-person ultra boss team will make you gain +40% Crit Multiplier and DoT damage with each cast (+10% per person, per cast), while a 7 person room stacks up even faster. Because this effect does not refresh, you will lose all stacks after 23 seconds, so time your skills to take advantage of this.</span></p>
+<h3>Conclusion</h3>
+<p><span>Continuum Chronomancer is a calendar class built to tackle group fights. Take note that this class&nbsp;</span>does not heal<span>&nbsp;-- although it is not meant to replace your defensive, healing support class, this &ldquo;calendar level support class&rdquo; is a powerful partner to that class, as well as to any team that needs an offensive support that can itself deal plenty of damage.&nbsp;</span></p><div class='well well-sm margintop-20'>Tags: </div></div>
+
+
+                      
+                      <div class="center-block text-center">
+					  	<a class='btn btn-aqred readmore' href='http://www.aq.com/gamedesignnotes'><span class='glyphicon glyphicon-plus' aria-hidden='true'></span> Read more Design Notes</a>
+                      </div>
+                      
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /dns -->
+                
+            </div>
+            <!-- /main -->
+
+            
+            <!-- 2nd col: right side -->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 right-side">
+                
+                <!-- right side: dns menu --> 
+	<div class="list-group well well-sm marginbot-20" role="navigation">
+    <h3 class="text-center nomargin-top">Design Notes Archive</h3>
+        <a class="list-group-item" href="/gamedesignnotes">Current</a>
+        <div class='yearHeader'><a class='list-group-item' href='#'>2026</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2026/11'>November 2026</a><br /><a href='/gamedesignnotes/date/2026/10'>October 2026</a><br /><a href='/gamedesignnotes/date/2026/09'>September 2026</a><br /><a href='/gamedesignnotes/date/2026/08'>August 2026</a><br /><a href='/gamedesignnotes/date/2026/07'>July 2026</a><br /><a href='/gamedesignnotes/date/2026/06'>June 2026</a><br /><a href='/gamedesignnotes/date/2026/05'>May 2026</a><br /><a href='/gamedesignnotes/date/2026/04'>April 2026</a><br /><a href='/gamedesignnotes/date/2026/03'>March 2026</a><br /><a href='/gamedesignnotes/date/2026/02'>February 2026</a><br /><a href='/gamedesignnotes/date/2026/01'>January 2026</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2025</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2025/12'>December 2025</a><br /><a href='/gamedesignnotes/date/2025/11'>November 2025</a><br /><a href='/gamedesignnotes/date/2025/10'>October 2025</a><br /><a href='/gamedesignnotes/date/2025/09'>September 2025</a><br /><a href='/gamedesignnotes/date/2025/08'>August 2025</a><br /><a href='/gamedesignnotes/date/2025/07'>July 2025</a><br /><a href='/gamedesignnotes/date/2025/06'>June 2025</a><br /><a href='/gamedesignnotes/date/2025/05'>May 2025</a><br /><a href='/gamedesignnotes/date/2025/04'>April 2025</a><br /><a href='/gamedesignnotes/date/2025/03'>March 2025</a><br /><a href='/gamedesignnotes/date/2025/02'>February 2025</a><br /><a href='/gamedesignnotes/date/2025/01'>January 2025</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2024</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2024/12'>December 2024</a><br /><a href='/gamedesignnotes/date/2024/11'>November 2024</a><br /><a href='/gamedesignnotes/date/2024/10'>October 2024</a><br /><a href='/gamedesignnotes/date/2024/09'>September 2024</a><br /><a href='/gamedesignnotes/date/2024/08'>August 2024</a><br /><a href='/gamedesignnotes/date/2024/07'>July 2024</a><br /><a href='/gamedesignnotes/date/2024/06'>June 2024</a><br /><a href='/gamedesignnotes/date/2024/05'>May 2024</a><br /><a href='/gamedesignnotes/date/2024/04'>April 2024</a><br /><a href='/gamedesignnotes/date/2024/03'>March 2024</a><br /><a href='/gamedesignnotes/date/2024/02'>February 2024</a><br /><a href='/gamedesignnotes/date/2024/01'>January 2024</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2023</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2023/12'>December 2023</a><br /><a href='/gamedesignnotes/date/2023/11'>November 2023</a><br /><a href='/gamedesignnotes/date/2023/10'>October 2023</a><br /><a href='/gamedesignnotes/date/2023/09'>September 2023</a><br /><a href='/gamedesignnotes/date/2023/08'>August 2023</a><br /><a href='/gamedesignnotes/date/2023/07'>July 2023</a><br /><a href='/gamedesignnotes/date/2023/06'>June 2023</a><br /><a href='/gamedesignnotes/date/2023/05'>May 2023</a><br /><a href='/gamedesignnotes/date/2023/04'>April 2023</a><br /><a href='/gamedesignnotes/date/2023/03'>March 2023</a><br /><a href='/gamedesignnotes/date/2023/02'>February 2023</a><br /><a href='/gamedesignnotes/date/2023/01'>January 2023</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2022</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2022/12'>December 2022</a><br /><a href='/gamedesignnotes/date/2022/11'>November 2022</a><br /><a href='/gamedesignnotes/date/2022/10'>October 2022</a><br /><a href='/gamedesignnotes/date/2022/09'>September 2022</a><br /><a href='/gamedesignnotes/date/2022/08'>August 2022</a><br /><a href='/gamedesignnotes/date/2022/07'>July 2022</a><br /><a href='/gamedesignnotes/date/2022/06'>June 2022</a><br /><a href='/gamedesignnotes/date/2022/05'>May 2022</a><br /><a href='/gamedesignnotes/date/2022/04'>April 2022</a><br /><a href='/gamedesignnotes/date/2022/03'>March 2022</a><br /><a href='/gamedesignnotes/date/2022/02'>February 2022</a><br /><a href='/gamedesignnotes/date/2022/01'>January 2022</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2021</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2021/12'>December 2021</a><br /><a href='/gamedesignnotes/date/2021/11'>November 2021</a><br /><a href='/gamedesignnotes/date/2021/10'>October 2021</a><br /><a href='/gamedesignnotes/date/2021/09'>September 2021</a><br /><a href='/gamedesignnotes/date/2021/08'>August 2021</a><br /><a href='/gamedesignnotes/date/2021/07'>July 2021</a><br /><a href='/gamedesignnotes/date/2021/06'>June 2021</a><br /><a href='/gamedesignnotes/date/2021/05'>May 2021</a><br /><a href='/gamedesignnotes/date/2021/04'>April 2021</a><br /><a href='/gamedesignnotes/date/2021/03'>March 2021</a><br /><a href='/gamedesignnotes/date/2021/02'>February 2021</a><br /><a href='/gamedesignnotes/date/2021/01'>January 2021</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2020</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2020/12'>December 2020</a><br /><a href='/gamedesignnotes/date/2020/11'>November 2020</a><br /><a href='/gamedesignnotes/date/2020/10'>October 2020</a><br /><a href='/gamedesignnotes/date/2020/09'>September 2020</a><br /><a href='/gamedesignnotes/date/2020/08'>August 2020</a><br /><a href='/gamedesignnotes/date/2020/07'>July 2020</a><br /><a href='/gamedesignnotes/date/2020/06'>June 2020</a><br /><a href='/gamedesignnotes/date/2020/05'>May 2020</a><br /><a href='/gamedesignnotes/date/2020/04'>April 2020</a><br /><a href='/gamedesignnotes/date/2020/03'>March 2020</a><br /><a href='/gamedesignnotes/date/2020/02'>February 2020</a><br /><a href='/gamedesignnotes/date/2020/01'>January 2020</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2019</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2019/12'>December 2019</a><br /><a href='/gamedesignnotes/date/2019/11'>November 2019</a><br /><a href='/gamedesignnotes/date/2019/10'>October 2019</a><br /><a href='/gamedesignnotes/date/2019/09'>September 2019</a><br /><a href='/gamedesignnotes/date/2019/08'>August 2019</a><br /><a href='/gamedesignnotes/date/2019/07'>July 2019</a><br /><a href='/gamedesignnotes/date/2019/06'>June 2019</a><br /><a href='/gamedesignnotes/date/2019/05'>May 2019</a><br /><a href='/gamedesignnotes/date/2019/04'>April 2019</a><br /><a href='/gamedesignnotes/date/2019/03'>March 2019</a><br /><a href='/gamedesignnotes/date/2019/02'>February 2019</a><br /><a href='/gamedesignnotes/date/2019/01'>January 2019</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2018</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2018/12'>December 2018</a><br /><a href='/gamedesignnotes/date/2018/11'>November 2018</a><br /><a href='/gamedesignnotes/date/2018/10'>October 2018</a><br /><a href='/gamedesignnotes/date/2018/09'>September 2018</a><br /><a href='/gamedesignnotes/date/2018/08'>August 2018</a><br /><a href='/gamedesignnotes/date/2018/07'>July 2018</a><br /><a href='/gamedesignnotes/date/2018/06'>June 2018</a><br /><a href='/gamedesignnotes/date/2018/05'>May 2018</a><br /><a href='/gamedesignnotes/date/2018/04'>April 2018</a><br /><a href='/gamedesignnotes/date/2018/03'>March 2018</a><br /><a href='/gamedesignnotes/date/2018/02'>February 2018</a><br /><a href='/gamedesignnotes/date/2018/01'>January 2018</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2017</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2017/12'>December 2017</a><br /><a href='/gamedesignnotes/date/2017/11'>November 2017</a><br /><a href='/gamedesignnotes/date/2017/10'>October 2017</a><br /><a href='/gamedesignnotes/date/2017/09'>September 2017</a><br /><a href='/gamedesignnotes/date/2017/08'>August 2017</a><br /><a href='/gamedesignnotes/date/2017/07'>July 2017</a><br /><a href='/gamedesignnotes/date/2017/06'>June 2017</a><br /><a href='/gamedesignnotes/date/2017/05'>May 2017</a><br /><a href='/gamedesignnotes/date/2017/04'>April 2017</a><br /><a href='/gamedesignnotes/date/2017/03'>March 2017</a><br /><a href='/gamedesignnotes/date/2017/02'>February 2017</a><br /><a href='/gamedesignnotes/date/2017/01'>January 2017</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2016</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2016/12'>December 2016</a><br /><a href='/gamedesignnotes/date/2016/11'>November 2016</a><br /><a href='/gamedesignnotes/date/2016/10'>October 2016</a><br /><a href='/gamedesignnotes/date/2016/09'>September 2016</a><br /><a href='/gamedesignnotes/date/2016/08'>August 2016</a><br /><a href='/gamedesignnotes/date/2016/07'>July 2016</a><br /><a href='/gamedesignnotes/date/2016/06'>June 2016</a><br /><a href='/gamedesignnotes/date/2016/05'>May 2016</a><br /><a href='/gamedesignnotes/date/2016/04'>April 2016</a><br /><a href='/gamedesignnotes/date/2016/03'>March 2016</a><br /><a href='/gamedesignnotes/date/2016/02'>February 2016</a><br /><a href='/gamedesignnotes/date/2016/01'>January 2016</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2015</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2015/12'>December 2015</a><br /><a href='/gamedesignnotes/date/2015/11'>November 2015</a><br /><a href='/gamedesignnotes/date/2015/10'>October 2015</a><br /><a href='/gamedesignnotes/date/2015/09'>September 2015</a><br /><a href='/gamedesignnotes/date/2015/08'>August 2015</a><br /><a href='/gamedesignnotes/date/2015/07'>July 2015</a><br /><a href='/gamedesignnotes/date/2015/06'>June 2015</a><br /><a href='/gamedesignnotes/date/2015/05'>May 2015</a><br /><a href='/gamedesignnotes/date/2015/04'>April 2015</a><br /><a href='/gamedesignnotes/date/2015/03'>March 2015</a><br /><a href='/gamedesignnotes/date/2015/02'>February 2015</a><br /><a href='/gamedesignnotes/date/2015/01'>January 2015</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2014</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2014/12'>December 2014</a><br /><a href='/gamedesignnotes/date/2014/11'>November 2014</a><br /><a href='/gamedesignnotes/date/2014/10'>October 2014</a><br /><a href='/gamedesignnotes/date/2014/09'>September 2014</a><br /><a href='/gamedesignnotes/date/2014/08'>August 2014</a><br /><a href='/gamedesignnotes/date/2014/07'>July 2014</a><br /><a href='/gamedesignnotes/date/2014/06'>June 2014</a><br /><a href='/gamedesignnotes/date/2014/05'>May 2014</a><br /><a href='/gamedesignnotes/date/2014/04'>April 2014</a><br /><a href='/gamedesignnotes/date/2014/03'>March 2014</a><br /><a href='/gamedesignnotes/date/2014/02'>February 2014</a><br /><a href='/gamedesignnotes/date/2014/01'>January 2014</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2013</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2013/12'>December 2013</a><br /><a href='/gamedesignnotes/date/2013/11'>November 2013</a><br /><a href='/gamedesignnotes/date/2013/10'>October 2013</a><br /><a href='/gamedesignnotes/date/2013/09'>September 2013</a><br /><a href='/gamedesignnotes/date/2013/08'>August 2013</a><br /><a href='/gamedesignnotes/date/2013/07'>July 2013</a><br /><a href='/gamedesignnotes/date/2013/06'>June 2013</a><br /><a href='/gamedesignnotes/date/2013/05'>May 2013</a><br /><a href='/gamedesignnotes/date/2013/04'>April 2013</a><br /><a href='/gamedesignnotes/date/2013/03'>March 2013</a><br /><a href='/gamedesignnotes/date/2013/02'>February 2013</a><br /><a href='/gamedesignnotes/date/2013/01'>January 2013</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2012</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2012/12'>December 2012</a><br /><a href='/gamedesignnotes/date/2012/11'>November 2012</a><br /><a href='/gamedesignnotes/date/2012/10'>October 2012</a><br /><a href='/gamedesignnotes/date/2012/09'>September 2012</a><br /><a href='/gamedesignnotes/date/2012/08'>August 2012</a><br /><a href='/gamedesignnotes/date/2012/07'>July 2012</a><br /><a href='/gamedesignnotes/date/2012/06'>June 2012</a><br /><a href='/gamedesignnotes/date/2012/05'>May 2012</a><br /><a href='/gamedesignnotes/date/2012/04'>April 2012</a><br /><a href='/gamedesignnotes/date/2012/03'>March 2012</a><br /><a href='/gamedesignnotes/date/2012/02'>February 2012</a><br /><a href='/gamedesignnotes/date/2012/01'>January 2012</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2011</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2011/12'>December 2011</a><br /><a href='/gamedesignnotes/date/2011/11'>November 2011</a><br /><a href='/gamedesignnotes/date/2011/10'>October 2011</a><br /><a href='/gamedesignnotes/date/2011/09'>September 2011</a><br /><a href='/gamedesignnotes/date/2011/08'>August 2011</a><br /><a href='/gamedesignnotes/date/2011/07'>July 2011</a><br /><a href='/gamedesignnotes/date/2011/06'>June 2011</a><br /><a href='/gamedesignnotes/date/2011/05'>May 2011</a><br /><a href='/gamedesignnotes/date/2011/04'>April 2011</a><br /><a href='/gamedesignnotes/date/2011/03'>March 2011</a><br /><a href='/gamedesignnotes/date/2011/02'>February 2011</a><br /><a href='/gamedesignnotes/date/2011/01'>January 2011</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2010</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2010/12'>December 2010</a><br /><a href='/gamedesignnotes/date/2010/11'>November 2010</a><br /><a href='/gamedesignnotes/date/2010/10'>October 2010</a><br /><a href='/gamedesignnotes/date/2010/09'>September 2010</a><br /><a href='/gamedesignnotes/date/2010/08'>August 2010</a><br /><a href='/gamedesignnotes/date/2010/07'>July 2010</a><br /><a href='/gamedesignnotes/date/2010/06'>June 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-05.asp'>May 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-04.asp'>April 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-03.asp'>March 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-02.asp'>February 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-01.asp'>January 2010</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2009</a></div><div class='yearSection'><a href='/archive/designnotes/aw-designnotes-2009-12.asp'>December 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-11.asp'>November 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-10.asp'>October 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-09.asp'>September 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-08.asp'>August 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-07.asp'>July 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-06.asp'>June 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-05.asp'>May 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-04.asp'>April 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-03.asp'>March 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-02.asp'>February 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-01.asp'>January 2009</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2008</a></div><div class='yearSection'><a href='/archive/designnotes/aw-designnotes-2008-12.asp'>December 2008</a><br /><a href='/archive/designnotes/aw-designnotes-2008-11.asp'>November 2008</a><br /><a href='/archive/designnotes/aw-designnotes-2008-10.asp'>October 2008</a><br /></div>
+    </div>
+<!-- /dns menu --><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding-sides">
+    
+    <div id="fb-root"></div>
+	<script>
+	  (function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=163679093835836&autoLogAppEvents=1";
+		js.async = true;
+		js.defer = true;
+		js.crossOrigin = "anonymous";
+		fjs.parentNode.insertBefore(js, fjs);
+	  })(document, 'script', 'facebook-jssdk');
+	</script>
+
+	<div class="text-center">
+    	<div class="fb-page" data-href="https://www.facebook.com/AQWorldsMMO/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/AQWorldsMMO/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AQWorldsMMO/">AdventureQuest Worlds</a></blockquote></div>
+    </div>
+    
+	<!-- aq3d -->
+    <a href="//www.aq3d.com/?utm_source=AQW_RtColumn&utm_medium=banner&utm_content=sidepromo&utm_campaign=AQ3D_OpenBeta" target="_blank"><img src="/img/network/games/side-game-aq3d-ob350px.jpg" class="margintop-15 img-responsive center-block img-rounded" alt="AdventureQuest 3D"/></a>
+
+    <!-- HeroMart Ad Rotation -->
+    
+        <a href="https://heromart.com/products/save-chuckles?variant=47065974571246?utm_source=AQW_RtColumn&utm_medium=banner&utm_campaign=SaveChuckles" target="_blank"><img src="/img/network/shop/side-hm-promo-SaveChuckles.png" class="img-responsive center-block img-rounded" alt="HeroMart Save Chuckles"></a>
+    
+
+   	<a href="https://linktr.ee/aureliovoltaire" target="_blank"><img alt="Voltaire Album : The Black Labyrinth" src="/img/network/shop/side-voltaire-BlackLabyrinth2.png" class="margintop-15 img-responsive center-block img-rounded"></a>
+
+  	<!-- <a href="https://www.artix.com/games/dungeonborne?utm_source=AQW_RtColumn&utm_medium=banner&utm_campaign=DungeonBorne" target="_blank"><img alt="New DungeonBorne Game!" src="/img/network/side-game-DungeonBorne.jpg" class="margintop-15 img-responsive center-block img-rounded"></a> -->
+
+    <!-- char lookup -->
+    <div class="well well-sm clearfix margintop-15">
+        <div class="title">AdventureQuest Worlds</div>
+        
+        <!-- acs & hm -->
+        <a href="/order-now/direct/"><img src="/img/network/shop/side-acs.png" class="img-responsive center-block" alt="Get AdventureCoins!"></a>
+        <a href="https://www.aq.com/aextras/offers/"><img src="/img/network/shop/side-freeacs.png" class="img-responsive center-block" alt="Earn AdventureCoins"></a>
+
+        <div class="title">Character Lookup</div>
+            <a class="btn btn-aqred center-block" href="/character.asp">Search Character Page</a>
+    </div>    
+    
+    <!-- network games -->
+    <div class="well well-sm text-center">
+        <div class="title">Artix Web Games</div>
+        <a href="https://www.dragonfable.com" target="_blank"><img src="/img/network/games/side-game-df.png" class="img-responsive center-block" alt="DragonFable"></a>
+        <a href="https://www.mechquest.com" target="_blank"><img src="/img/network/games/side-game-mq.png" class="img-responsive center-block" alt="MechQuest"></a>
+        <a href="https://www.epicduel.com" target="_blank"><img src="/img/network/games/side-game-ed.png" class="img-responsive center-block" alt="EpicDuel"></a>
+        <a href="https://oversoul.artix.com" target="_blank"><img src="/img/network/games/side-game-os.png" class="img-responsive center-block" alt="OverSoul"></a>
+        <a href="https://www.battleon.com" target="_blank"><img src="/img/network/games/side-game-aqc.png" class="img-responsive center-block" alt="AdventureQuest"></a>
+        <div class="row">
+        	<div class="col-xs-12 col-sm-6 nopadding-sides"><a class="btn btn-aqred btn-block" href="//www.artix.com/downloads/artixlauncher/?utm_source=AQW_SIDE&utm_medium=banner&utm_campaign=GameLauncher" target="_blank"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Game Launcher</a></div>
+        	<div class="col-xs-12 col-sm-6 nopadding-sides"><a class="btn btn-link" href="https://www.artix.com/games/" target="_blank">More AE Games</a></div>
+        </div>
+    </div>
+
+    
+
+    <!-- mobile -->
+    <div class="well well-sm clearfix">
+      <div class="title">Artix Mobile Games</div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//www.aq3d.com" target="_blank"> <img src="/img/network/apps/side-app-aq3d.png" class="img-responsive center-block" alt="AQ3D"></a> AQ3D
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//battlegems.artix.com" target="_blank"> <img src="/img/network/apps/side-app-bg.png" class="img-responsive center-block" alt="BattleGems"></a> BattleGems
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="https://dt1f.app.link/AQ_Sidebar" target="_blank"> <img src="/img/network/apps/side-app-biobeasts.png" class="img-responsive center-block" alt="BioBeasts"></a> BioBeasts
+        </div>
+      </div>
+      <div class="row margintop-15">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//www.aqdragons.com" target="_blank"> <img src="/img/network/apps/side-app-dragons.png" class="img-responsive center-block" alt="Dragons"></a> Dragons
+          </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//www.undeadassault.com" target="_blank"> <img src="/img/network/apps/side-app-ua.png" class="img-responsive center-block" alt="Undead Assault"></a> Undead Assault
+          </div>
+      </div>
+    </div>
+    
+	<script>
+		window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+		  if (d.getElementById(id)) return t;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "//platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+		
+		  t._e = [];
+		  t.ready = function(f) {
+			t._e.push(f);
+		  };
+		
+		  return t;
+		}(document, "script", "twitter-wjs"));
+    </script>
+
+    <!-- right side: twitter -->
+    <div class="row sliver text-center">
+        <a class="twitter-timeline" href="//twitter.com/ArtixKrieger" 
+            data-widget-id="581199712944029697"
+            data-chrome="nofooter" data-theme="dark" 
+            data-tweet-limit="12">Tweets by @ArtixKrieger</a>
+    </div>
+    <!-- /twitter -->
+    
+	<!-- bb -->
+    <!--
+	<a href="https://dt1f.app.link/AQ_Sidebar" target="_blank" data-trackevent="t_biobeasts"><img src="/img/network/games/side-game-biobeasts-frostking.jpg" class="img-responsive center-block img-rounded" style="width:100%" alt="BioBeasts Frost King Bundle!"/></a>
+	-->
+
+</div>
+
+
+            </div>
+            <!-- /2nd col: right side -->
+            
+
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <div class="scroll-bottom"></div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+
+        <!-- lg only -->
+        <div class="row vertical-align visible-lg-block">
+            <div class="col-lg-12">
+
+                <div class="col-lg-4 marginbot-20">
+                    <div class="col-sm-6">
+                        <a class="btn btn-sm btn-aqred btn-block marginbot-10" href="//www.artix.com/downloads/artixlauncher/?utm_source=AQW_FOOTER&utm_medium=banner&utm_campaign=GameLauncher" target="_blank">Get Artix Game Launcher</a>
+                        <a href="https://support.artix.com/hc/en-us/categories/115001082387-AdventureQuest-Worlds" target="_blank" class="btn btn-sm btn-black btn-block marginbot-10">Help  &amp; Support</a>
+                        <a href="//www.artix.com/about/contact/" target="_blank" class="btn btn-sm btn-black btn-block">Contact Us</a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="//www.artix.com/policy-privacy" target="_blank" class="btn btn-sm btn-black btn-block marginbot-10">Privacy Policy</a>
+                        <a href="//www.artix.com/policy-privacy-ca" target="_blank" class="btn btn-sm btn-black btn-block marginbot-10">U.S. Privacy Rights</a>
+                        <a href="//www.artix.com/policy-terms" target="_blank" class="btn btn-sm btn-black btn-block marginbot-10">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 marginbot-20">
+                    <a href="//www.artix.com/" target="_blank"><img src="/shared/images/network/logo-artix-19.png" class="img-responsive center-block" alt="Artix Entertainment"></a>
+                </div>
+
+                <div class="col-lg-4 marginbot-20">
+                    <div class="row vertical-align">
+
+                        <div class="col-sm-6 nopadding">
+                            <ul class="text-right list-unstyled small">
+                                <li>Fantasy Violence</li>
+                                <li>Mild Suggestive Themes</li>
+                                <li>Online Interations not rated by ESRB.</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <img src="/img/network/footer-lg-esrbrating.jpg" class="img-responsive" alt="ESRB: Everyone +10">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row visible-lg-block">
+            <div class="col-sm-12">
+                <p class="copyright text-muted small">
+                    Copyright (&copy;) 2008 -
+                    <script>document.write(new Date().getFullYear())</script> <a href="https://www.artix.com/" target="_blank">Artix Entertainment, LLC.</a><br>
+                    All games and characters are trademarks of <a href="https://www.artix.com/" target="_blank">Artix Entertainment</a>, LLC. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+        <!-- /.row lg only -->
+        <!-- md & sm -->
+        <div class="hidden-lg">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12 marginbot-20">
+                    <a class="visible-md-block" href="https://www.artix.com/" target="_blank"><img src="/shared/images/network/logo-artix-19.png" class="img-responsive center-block" alt="Artix Entertainment"></a>
+                    <a class="visible-sm-block visible-xs-block" href="https://www.artix.com/" target="_blank"><img src="/shared/images/network/logo-artix-19.png" class="img-responsive center-block" alt="Artix Entertainment"></a>
+                    <p class="copyright text-muted small">
+                        Copyright (&copy;) 2008 -
+                        <script>document.write(new Date().getFullYear())</script> <a href="https://www.artix.com/" target="_blank">Artix Entertainment, LLC.</a><br>
+                        All games and characters are trademarks of <a href="https://www.artix.com/" target="_blank">Artix Entertainment</a>, LLC. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hidden-xs">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 marginbot-20">
+                        <div class="col-sm-4 marginbot-10"><a class="btn btn-sm btn-aqred btn-block" href="//www.artix.com/downloads/artixlauncher/?utm_source=AQW_FOOTER&utm_medium=banner&utm_campaign=GameLauncher" target="_blank">Get Artix Game Launcher</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="//www.artix.com/policy-privacy" target="_blank" class="btn btn-sm btn-black btn-block">Privacy Policy</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="//www.artix.com/policy-privacy-ca" target="_blank" class="btn btn-sm btn-black btn-block">California Policy Rights</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="//www.artix.com/policy-terms" target="_blank" class="btn btn-sm btn-black btn-block">Terms of Service</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="https://support.artix.com/hc/en-us/categories/115001082387-AdventureQuest-Worlds" target="_blank" class="btn btn-sm btn-black btn-block">Help  &amp; Support</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="//www.artix.com/about/contact/" target="_blank" class="btn btn-sm btn-black btn-block">Contact Us</a></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 marginbot-20">
+                        <div class="col-sm-6 text-right">
+                            <ul class="list-unstyled">
+                                <li>Fantasy Violence</li>
+                                <li>Mild Suggestive Themes</li>
+                                <li>Online Interations not rated by ESRB.</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 nopadding-sides"><img src="/img/network/footer-lg-esrbrating.jpg" class="img-responsive" alt="ESRB: Everyone +10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visible-xs-block">
+                <div class="row">
+                    <div class="text-center marginbot-20">
+                        <a href="//www.artix.com/policy-privacy" target="_blank">Privacy Policy</a> |
+                        <a href="//www.artix.com/policy-privacy-ca" target="_blank">California Privacy Rights</a> |
+                        <a href="//www.artix.com/policy-terms" target="_blank">Terms of Service</a> |
+                        <a href="https://support.artix.com/hc/en-us/categories/115001082387-AdventureQuest-Worlds" target="_blank">Help  &amp; Support</a> |
+                        <a href="//www.artix.com/about/contact/" target="_blank">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 marginbot-20">
+                        <div class="col-xs-12 text-center">
+                            <ul class="list-unstyled">
+                                <li>Fantasy Violence</li>
+                                <li>Mild Suggestive Themes</li>
+                                <li>Online Interations not rated by ESRB.</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 nopadding-sides"><img src="/img/network/footer-lg-esrbrating.jpg" class="img-responsive center-block" alt="ESRB: Everyone +10"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /.row md & sm -->
+
+    </div>
+    <!-- /.container -->
+</footer>
+
+
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBP6TJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBP6TJ');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "nz0guhkbxv");
+</script>
+
+
+    <!-- JavaScript --> 
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/jasny-bootstrap.min.js" async defer></script>		
+    <script src="https://widget.gleamjs.io/e.js" async></script> 
+    <script src="/js/offcanvas.js"></script>
+    <script>
+        $('.navmenu').offcanvas();
+    </script>
+    <script src="/js/auto-expand.js" async></script>
+	<span></span>
+    
+<div id="cookie_directive_container" style="display: none">
+  <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color:#000">
+    <div class="navbar-inner navbar-content-center" id="cookie_accept" style="padding-top:10px"> <a id="btn_cookie_accept" class="btn btn-default pull-right" style="margin-right:15px; color:#eee;">Got it!</a> <a style="color:#eee; margin:0 15px" href="//www.artix.com/policy-cookies" target="_blank" class="btn btn-default pull-right">More Details</a>
+      <p class="text-muted copy" style="margin:0 15px"> We use cookies on this site to enhance your experience, provide services and products, and display content from third parties. <a href="//www.artix.com/policy-cookies">Cookie Policy</a>. </p>
+    </div>
+  </nav>
+</div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> 
+	<script src="/shared/scripts/cookies.js" async defer></script> 
+    <script>             
+		window.onload = function(e){ 
+
+			 if ($.cookie('pop') == null) {
+				 $('#privacyNotice').modal('show');
+				 $.cookie('pop', '7');
+			}
+		 }
+	</script>
+	<script>$(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });</script>
+</body>
+
+
+</html>

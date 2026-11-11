@@ -1,0 +1,160 @@
+{
+  "url": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+  "sourceHash": "c19b7462b42741584ddeed34cdcfbef9033188dbead6fcb6eea35e5882414854",
+  "entries": [
+    {
+      "officialName": "Chaos Blade",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2.3",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Use your newfound powers to enchant your weapon with pure Chaos and strike at your foes. If you are not Chaorrupted, you apply Chaos Affliction, increasing your outgoing damage by 1% for 12 seconds, stacks to 30. If you are Chaorrupted, applies Chaos Blight, increasing your outgoing damage by 6% for 12 seconds, stacks to 15.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill135.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+      "sourceHash": "c19b7462b42741584ddeed34cdcfbef9033188dbead6fcb6eea35e5882414854",
+      "evidence": "Chaos Blade Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2.3 Seconds Type: Physical Range: A short range attack that deals damage to 3 hostile targets. Description: Use your newfound powers to enchant your weapon with pure Chaos and strike at your foes. If you are not Chaorrupted, you apply Chaos Affliction, increasing your outgoing damage by 1% for 12 seconds, stacks to 30. If you are Chaorrupted, applies Chaos Blight, increasing your outgoing damage by 6% for 12 seconds, stacks to 15."
+    },
+    {
+      "officialName": "Chaorruption",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "5",
+      "skillType": "Hybrid",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Let the Chaorruption take over and render your physical form. Deals damage and applies Chaorrupted, increasing your Crit Chance and Hit Chance by 10% while removing all of your skills' area of effect for 15 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill136.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+      "sourceHash": "c19b7462b42741584ddeed34cdcfbef9033188dbead6fcb6eea35e5882414854",
+      "evidence": "Chaorruption Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 5 Seconds Type: Hybrid Range: A short range attack that deals damage to 1 target. Description: Let the Chaorruption take over and render your physical form. Deals damage and applies Chaorrupted, increasing your Crit Chance and Hit Chance by 10% while removing all of your skills' area of effect for 15 seconds."
+    },
+    {
+      "officialName": "Enigma",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "13",
+      "cooldown": "4",
+      "skillType": "Magical",
+      "target": "A long range status skill that applies to 6 hostile targets.",
+      "officialDescription": "Chaos is the unpredictable power shrouded in mystery. Deal no damage and randomly applies up to 4 effects.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill137.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+      "sourceHash": "c19b7462b42741584ddeed34cdcfbef9033188dbead6fcb6eea35e5882414854",
+      "evidence": "Enigma Rank Needed: 2 Mana Cost: 13 Mana Cooldown: 4 Seconds Type: Magical Range: A long range status skill that applies to 6 hostile targets. Description: Chaos is the unpredictable power shrouded in mystery. Deal no damage and randomly applies up to 4 effects. Anguished: +50% damage taken (40%) Delusion: -40% Hit Chance (40%) Impasse: -40% Dodge (40%) Courageous: -40% Outgoing Damage to self (8%) Effects last for 10 seconds."
+    },
+    {
+      "officialName": "Surge",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "24",
+      "cooldown": "15",
+      "skillType": "Hybrid",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Absorb the chaotic energy around you to mend your wounds, applying a HoT for 6 seconds. The absorbed energy also has a 50% chance to form a barrier around you, reducing incoming damage by 65% for 8 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill20.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+      "sourceHash": "c19b7462b42741584ddeed34cdcfbef9033188dbead6fcb6eea35e5882414854",
+      "evidence": "Surge Rank Needed: 3 Mana Cost: 24 Mana Cooldown: 15 Seconds Type: Hybrid Range: A short range status skill that applies to yourself. Description: Absorb the chaotic energy around you to mend your wounds, applying a HoT for 6 seconds. The absorbed energy also has a 50% chance to form a barrier around you, reducing incoming damage by 65% for 8 seconds. Note: The HoT gets stronger with each stack of Chaos Affliction and Chaos Blight you currently have."
+    },
+    {
+      "officialName": "Enmity",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Endurance increased by 25%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+      "sourceHash": "c19b7462b42741584ddeed34cdcfbef9033188dbead6fcb6eea35e5882414854",
+      "evidence": "Enmity Rank Needed: 4 Type: Passive Ability Description: Endurance increased by 25%."
+    },
+    {
+      "officialName": "Ultimate Power",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Chaos, the power within, consumes you, boosting your Outgoing Damage by 10%!",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+      "sourceHash": "c19b7462b42741584ddeed34cdcfbef9033188dbead6fcb6eea35e5882414854",
+      "evidence": "Ultimate Power Rank Needed: 4 Type: Passive Ability Description: Chaos, the power within, consumes you, boosting your Outgoing Damage by 10%!"
+    },
+    {
+      "officialName": "Pandemonium",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "15",
+      "skillType": "Hybrid",
+      "target": "A long range attack that deals damage to 6 hostile targets.",
+      "officialDescription": "Create even more Chaos with a massive explosion, applying additional effects based on the active effects that were applied from Enigma.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill138.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+      "sourceHash": "c19b7462b42741584ddeed34cdcfbef9033188dbead6fcb6eea35e5882414854",
+      "evidence": "Pandemonium Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 15 Seconds Type: Hybrid Range: A long range attack that deals damage to 6 hostile targets. Description: Create even more Chaos with a massive explosion, applying additional effects based on the active effects that were applied from Enigma. Anguished -> Atrophy: -50% outgoing damage Delusion -> Ataxia: -40% Crit Chance Impasse -> Numbing: -40% Haste Courageous -> Paragon: -500% Damage Resistance to self Effects last for 10 seconds."
+    },
+    {
+      "officialName": "Absolute Chaos",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Magical Resistance increased by 35%. While facing Chaos monsters, Enigma applies Absolute Chaos, increasing all stats by 13%, preventing Courageous from applying, and causing your other random effects to always apply.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
+      "sourceHash": "c19b7462b42741584ddeed34cdcfbef9033188dbead6fcb6eea35e5882414854",
+      "evidence": "Absolute Chaos Rank Needed: 10 Type: Passive Ability Description: Magical Resistance increased by 35%. While facing Chaos monsters, Enigma applies Absolute Chaos, increasing all stats by 13%, preventing Courageous from applying, and causing your other random effects to always apply."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/VWVeOHO.png",
+  "sameSkillVariants": [
+    {
+      "name": "Chaos Champion Prime (Class)",
+      "url": "https://aqwwiki.wikidot.com/chaos-champion-prime-class"
+    },
+    {
+      "name": "Chaos Slayer Berserker (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-0-ac"
+    },
+    {
+      "name": "Chaos Slayer Cleric (AC)",
+      "url": "https://aqwwiki.wikidot.com/chaos-slayer-cleric-ac"
+    },
+    {
+      "name": "Chaos Slayer Cleric (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/chaos-slayer-cleric-0-ac"
+    },
+    {
+      "name": "Chaos Slayer Mystic (AC)",
+      "url": "https://aqwwiki.wikidot.com/chaos-slayer-mystic-ac"
+    },
+    {
+      "name": "Chaos Slayer Mystic (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/chaos-slayer-mystic-0-ac"
+    },
+    {
+      "name": "Chaos Slayer Thief (AC)",
+      "url": "https://aqwwiki.wikidot.com/chaos-slayer-thief-ac"
+    },
+    {
+      "name": "Chaos Slayer Thief (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/chaos-slayer-thief-0-ac"
+    },
+    {
+      "name": "Dark Chaos Berserker",
+      "url": "https://aqwwiki.wikidot.com/dark-chaos-berserker"
+    }
+  ],
+  "location": "Locations:\n\nChaos Slayer Class\n\nBattle Drakath\nBattleon PvP \nBattleon War (Location) \nChaos Beast\nConfrontation (Location)\nCrownsreach\nDarkovia Forest - Attack \nDarkovia Forest - Defend \nDoomwood Forest - Attack \nDoomwood Forest - Defend \nMount Doomskull (Location)\nNew Finale\nVasalkar Lair - Attack (1) \nVasalkar Lair - Defend (1) \nWillow Creek - Attack \nWillow Creek - Defend \nWorld War Lore (Location) \n\n\nTwilly - New Finale\n\nPrice: 2,000 AC"
+}

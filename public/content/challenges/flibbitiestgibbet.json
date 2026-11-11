@@ -1,0 +1,473 @@
+{
+  "challengeContent": true,
+  "id": "flibbitiestgibbet",
+  "name": "Flibbitiestgibbet",
+  "type": "other_challenge",
+  "map": "voidflibbi",
+  "levelRequirement": 70,
+  "partySize": 7,
+  "description": "Cách đánh:",
+  "bodyUrl": "/content/challenges/flibbitiestgibbet.json",
+  "href": "/other-challenges/flibbitiestgibbet",
+  "image": "monster-flibbitiestgibbet",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "flibbitiestgibbet-stage-1",
+      "name": "Flibbitiestgibbet",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Flibbitiestgibbet",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "flibbitiestgibbet-0",
+            "canonicalName": "Flibbitiestgibbet",
+            "role": "Monster",
+            "level": 99,
+            "maxHp": 1500000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/flibbitiestgibbet"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:",
+        "- “The Encroaching Shadows (Daily)” quest để farm Void Aura.",
+        "- Merge Necrotic Blade of Doom (NBoD).",
+        "- “Book of Aether: Supernova” quest để farm Archmage Class.",
+        "- “Wrong Turn at Voidbuquerque” quest để farm Nulgath’s resources.",
+        "Boss này nằm ở map /join voidflibbi - Room limit: 7",
+        "Cần đạt ít nhất lvl 70 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 1,500,000",
+        "◆ Shield giúp giảm sát thương trên 100k (hệ số 0.8).",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Auto-Attack mỗi 2.25s gây True DMG bằng 70% lượng HP của player.",
+        "→ Có 15% khả năng gây DoT trong 10s lên players.",
+        "◆ Mỗi 12s, sử dụng Daze gây True DMG bằng 30% lượng HP của player.",
+        "→ Players bị giảm 5% Hit Chance trong 30s, stack đến 5 (max -25% Hit Chance).",
+        "◆ Mỗi 30s, sử dụng Maladaptation gây Phys DMG bằng 115% lượng HP của player.",
+        "→ Palyers bị tăng 10% Mana Costs trong 45s, stack đến 5 (max 50% Mana Costs).",
+        "◆ Mỗi 15s, sử dụng Evasion lên bản thân, giúp tăng 10% Dodge trong 30s, stack đến 4 (max 40% Dodge)."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Flibbitiestgibbet chỉ có thể gọi là một Mini Challenge Boss nên không quá khó để đánh bại được nó. Với một team từ 4 người trở lên đã quá dư sức giết nó một cách nhanh gọn.",
+        "Không có một team nhất định cho con Boss này, tuỳ vào số lượng người trong team mà lựa chọn cho phù hợp, bạn có thể kết hợp các tổ hợp sau đây:",
+        "→ Sử dụng ít nhất từ 1-2 DMG chính: CMP, TK, VHL, CAv, DT/EDoT, Shaman...",
+        "→ Còn lại là các class SP: LR, VDK, AP, LC, LoO, SC/IT, FB, AF…",
+        "→ Lưu ý: FB không sử dụng 5.",
+        "Best Team: 2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH",
+        "Note: Nếu team 4-5 người thì cầm 1 DMG chính, và 6-7 người thì cầm 2 DMG chính."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-406221",
+          "runs": [
+            {
+              "text": "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406325",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "The Encroaching Shadows (Daily)",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest để farm Void Aura.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406386",
+          "runs": [
+            {
+              "text": "- Merge "
+            },
+            {
+              "text": "Necrotic Blade of Doom",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(NBoD)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406425",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Book of Aether: Supernova",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest để farm "
+            },
+            {
+              "text": "Archmage Class",
+              "href": "/farm/archmage-am"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406485",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Wrong Turn at Voidbuquerque",
+              "href": "http://aqwwiki.wikidot.com/memory-of-nulgath-s-quests"
+            },
+            {
+              "text": "” quest để farm "
+            },
+            {
+              "text": "Nulgath’s resources",
+              "href": "/farm/nulgath-s-resources-farming"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406553",
+          "runs": [
+            {
+              "text": "Boss này nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join voidflibbi",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/void-flibbitiestgibbet"
+            },
+            {
+              "text": " - Room limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406605",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 70",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406662",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406670",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,500,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406692",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 100k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406745",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406810",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.25s gây True DMG bằng 70% lượng HP của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406877",
+          "runs": [
+            {
+              "text": "→ Có 15% khả năng gây DoT trong 10s lên players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406926",
+          "runs": [
+            {
+              "text": "◆ Mỗi 12s, sử dụng Daze gây True DMG bằng 30% lượng HP của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406993",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 5% Hit Chance trong 30s, stack đến 5 "
+            },
+            {
+              "text": "(max -25% Hit Chance)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407071",
+          "runs": [
+            {
+              "text": "◆ Mỗi 30s, sử dụng Maladaptation gây Phys DMG bằng 115% lượng HP của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407148",
+          "runs": [
+            {
+              "text": "→ Palyers bị tăng 10% Mana Costs trong 45s, stack đến 5 "
+            },
+            {
+              "text": "(max 50% Mana Costs)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407226",
+          "runs": [
+            {
+              "text": "◆ Mỗi 15s, sử dụng Evasion lên bản thân, giúp tăng 10% Dodge trong 30s, stack đến 4 "
+            },
+            {
+              "text": "(max 40% Dodge)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407328",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407340",
+          "runs": [
+            {
+              "text": "Nhìn chung Flibbitiestgibbet chỉ có thể gọi là một Mini Challenge Boss nên không quá khó để đánh bại được nó. Với một team từ 4 người trở lên đã quá dư sức giết nó một cách nhanh gọn.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407525",
+          "runs": [
+            {
+              "text": "Không có một team nhất định cho con Boss này, tuỳ vào số lượng người trong team mà lựa chọn cho phù hợp, bạn có thể kết hợp các tổ hợp sau đây:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407669",
+          "runs": [
+            {
+              "text": "→ Sử dụng ít nhất từ 1-2 DMG chính: "
+            },
+            {
+              "text": "CMP, TK, VHL, CAv, DT/EDoT, Shaman...\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407743",
+          "runs": [
+            {
+              "text": "→ Còn lại là các class SP: "
+            },
+            {
+              "text": "LR, VDK, AP, LC, LoO, SC/IT, FB, AF…\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407807",
+          "runs": [
+            {
+              "text": "→ Lưu ý: FB không sử dụng 5.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407836",
+          "runs": [
+            {
+              "text": "Best Team: "
+            },
+            {
+              "text": "2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-407886",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Nếu team 4-5 người thì cầm 1 DMG chính, và 6-7 người thì cầm 2 DMG chính.\n",
+              "italic": true
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-407836",
+      "runs": [
+        {
+          "text": "Best Team: "
+        },
+        {
+          "text": "2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": []
+}

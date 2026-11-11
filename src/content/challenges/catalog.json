@@ -1,0 +1,459 @@
+[
+  {
+    "id": "temple-of-the-solstice-moon",
+    "name": "Temple of the Solstice Moon",
+    "type": "dungeon",
+    "map": "templeshrine",
+    "levelRequirement": 50,
+    "partySize": 4,
+    "description": "Ngôi đền dưới ánh trăng Solstice, nơi đoàn thám hiểm học cách phối hợp trước thử thách Celestial.",
+    "bodyUrl": "/content/challenges/temple-of-the-solstice-moon.json",
+    "href": "/challenge-dungeon/temple-of-the-solstice-moon",
+    "image": "area-temple-of-the-solstice-moon",
+    "stageCount": 4,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "Sliver of Moonlight",
+    "sourceSlug": "celestial-dungeons"
+  },
+  {
+    "id": "shrine-of-the-midnight-sun",
+    "name": "Shrine of the Midnight Sun",
+    "type": "dungeon",
+    "map": "templeshrine",
+    "levelRequirement": 70,
+    "partySize": 4,
+    "description": "Thánh điện Midnight Sun thử thách đoàn thám hiểm với các cơ chế của ánh sáng và nhiệt.",
+    "bodyUrl": "/content/challenges/shrine-of-the-midnight-sun.json",
+    "href": "/challenge-dungeon/shrine-of-the-midnight-sun",
+    "image": "area-shrine-of-the-midnight-sun",
+    "stageCount": 4,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "Sliver of Sunlight",
+    "sourceSlug": "celestial-dungeons"
+  },
+  {
+    "id": "ascension-of-the-eclipse",
+    "name": "Ascension of the Eclipse",
+    "type": "dungeon",
+    "map": "templeshrine",
+    "levelRequirement": 80,
+    "partySize": 4,
+    "description": "Ánh trăng và mặt trời hội tụ; sức mạnh của hai thiên thể buộc đội hình cân bằng từng đòn đánh.",
+    "bodyUrl": "/content/challenges/ascension-of-the-eclipse.json",
+    "href": "/challenge-dungeon/ascension-of-the-eclipse",
+    "image": "area-ascension-of-the-eclipse",
+    "stageCount": 4,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "https://www.aq.com/gamedesignnotes/aqw-update-20june25-festivalofvictors-10024"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "Ecliptic Offering",
+    "sourceSlug": "celestial-dungeons"
+  },
+  {
+    "id": "the-gaol-of-eternal-torment-and-misery",
+    "name": "The Gaol of Eternal Torment and Misery",
+    "type": "dungeon",
+    "map": "gaolcell",
+    "levelRequirement": 80,
+    "partySize": 1,
+    "description": "Ngục tối Grimskull giăng bẫy và những cuộc chạm trán liên tiếp dành cho một người chơi.",
+    "bodyUrl": "/content/challenges/the-gaol-of-eternal-torment-and-misery.json",
+    "href": "/challenge-dungeon/the-gaol-of-eternal-torment-and-misery",
+    "image": "area-the-gaol-of-eternal-torment-and-misery",
+    "stageCount": 12,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "SkullCrusher badge · Grimskull Trolling Reputation",
+    "sourceSlug": "the-gaol-of-eternal-torment-and-misery"
+  },
+  {
+    "id": "training-golem",
+    "name": "Training Golem",
+    "type": "other_challenge",
+    "map": "chchallenge",
+    "levelRequirement": 60,
+    "partySize": 10,
+    "description": "Thử thách Training Golem; mỗi trận có cơ chế và điều kiện riêng.",
+    "bodyUrl": "/content/challenges/training-golem.json",
+    "href": "/other-challenges/training-golem",
+    "image": "monster-training-golem",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "training-golem"
+  },
+  {
+    "id": "nightmare-carnax",
+    "name": "Nightmare Carnax",
+    "type": "other_challenge",
+    "map": "darkcarnax",
+    "levelRequirement": 80,
+    "partySize": 5,
+    "description": "Thử thách Nightmare Carnax; mỗi trận có cơ chế và điều kiện riêng.",
+    "bodyUrl": "/content/challenges/nightmare-carnax.json",
+    "href": "/other-challenges/nightmare-carnax",
+    "image": "monster-nightmare-carnax",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "nightmare-carnax"
+  },
+  {
+    "id": "queen-iona",
+    "name": "Queen Iona",
+    "type": "other_challenge",
+    "map": "queeniona",
+    "levelRequirement": 2,
+    "partySize": 1,
+    "description": "Thử thách Queen Iona; mỗi trận có cơ chế và điều kiện riêng.",
+    "bodyUrl": "/content/challenges/queen-iona.json",
+    "href": "/other-challenges/queen-iona",
+    "image": null,
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "queen-iona"
+  },
+  {
+    "id": "azalith-morningstar",
+    "name": "Azalith Morningstar",
+    "type": "other_challenge",
+    "map": "apexazalith",
+    "levelRequirement": 80,
+    "partySize": 7,
+    "description": "Thử thách Azalith Morningstar; mỗi trận có cơ chế và điều kiện riêng.",
+    "bodyUrl": "/content/challenges/azalith-morningstar.json",
+    "href": "/other-challenges/azalith-morningstar",
+    "image": "monster-azalith-morningstar",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "azalith-morningstar"
+  },
+  {
+    "id": "infernal-battle-arena",
+    "name": "Infernal Battle Arena",
+    "type": "arena",
+    "map": "infernalarena",
+    "levelRequirement": 70,
+    "partySize": 1,
+    "description": "Thử thách Infernal Battle Arena; mỗi trận có cơ chế và điều kiện riêng.",
+    "bodyUrl": "/content/challenges/infernal-battle-arena.json",
+    "href": "/other-challenges/infernal-battle-arena",
+    "image": null,
+    "stageCount": 22,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "infernal-battle-arena"
+  },
+  {
+    "id": "four-harbingers-of-destruction-salvation",
+    "name": "Four Harbingers of Destruction & Salvation",
+    "type": "multi_boss",
+    "map": "fourharbingers",
+    "levelRequirement": 75,
+    "partySize": 1,
+    "description": "Thử thách Four Harbingers of Destruction & Salvation; mỗi trận có cơ chế và điều kiện riêng.",
+    "bodyUrl": "/content/challenges/four-harbingers-of-destruction-salvation.json",
+    "href": "/other-challenges/four-harbingers-of-destruction-salvation",
+    "image": null,
+    "stageCount": 5,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "four-harbingers-of-destruction-salvation"
+  },
+  {
+    "id": "salek-sprayer",
+    "name": "Salek Sprayer",
+    "type": "other_challenge",
+    "map": "voidsalek",
+    "levelRequirement": 65,
+    "partySize": 7,
+    "description": "Cách đánh:",
+    "bodyUrl": "/content/challenges/salek-sprayer.json",
+    "href": "/other-challenges/salek-sprayer",
+    "image": "monster-salek-sprayer",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "flibbitiestgibbet",
+    "name": "Flibbitiestgibbet",
+    "type": "other_challenge",
+    "map": "voidflibbi",
+    "levelRequirement": 70,
+    "partySize": 7,
+    "description": "Cách đánh:",
+    "bodyUrl": "/content/challenges/flibbitiestgibbet.json",
+    "href": "/other-challenges/flibbitiestgibbet",
+    "image": "monster-flibbitiestgibbet",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "nightbane",
+    "name": "Nightbane",
+    "type": "other_challenge",
+    "map": "voidnightbane",
+    "levelRequirement": 80,
+    "partySize": 7,
+    "description": "Cách đánh:",
+    "bodyUrl": "/content/challenges/nightbane.json",
+    "href": "/other-challenges/nightbane",
+    "image": "monster-nightbane",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "xyfrag",
+    "name": "Xyfrag",
+    "type": "other_challenge",
+    "map": "voidxyfrag",
+    "levelRequirement": 80,
+    "partySize": 7,
+    "description": "Cách đánh:",
+    "bodyUrl": "/content/challenges/xyfrag.json",
+    "href": "/other-challenges/xyfrag",
+    "image": "monster-xyfrag",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "sarah-the-nerfkitten",
+    "name": "Sarah The Nerfkitten",
+    "type": "other_challenge",
+    "map": "voidnerfkitten",
+    "levelRequirement": 80,
+    "partySize": 7,
+    "description": "Cách đánh:",
+    "bodyUrl": "/content/challenges/sarah-the-nerfkitten.json",
+    "href": "/other-challenges/sarah-the-nerfkitten",
+    "image": "monster-sarah-the-nerfkitten",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "super-ryoku",
+    "name": "Super Ryoku",
+    "type": "other_challenge",
+    "map": "dragonkoi",
+    "levelRequirement": 60,
+    "partySize": 1,
+    "description": "Đây là một challenge boss rất dễ. Nhìn chung, con boss này không có nhiều điểm để lưu ý, chỉ cần dùng class đủ tốt là có thể vượt qua nó. Item drop từ nó là yêu cầu để hoàn thành được:",
+    "bodyUrl": "/content/challenges/super-ryoku.json",
+    "href": "/other-challenges/super-ryoku",
+    "image": "monster-super-ryoku",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "commander-gallaeon",
+    "name": "Commander Gallaeon",
+    "type": "other_challenge",
+    "map": "doompirate",
+    "levelRequirement": 65,
+    "partySize": 7,
+    "description": "Tuy có nhiều điểm khá giống với Ultra Engineer nhưng có chế dễ hơn nhiều. Temp item drop từ nó là yêu cầu để hoàn thành được “Dead Men's Jumping” quest giúp:",
+    "bodyUrl": "/content/challenges/commander-gallaeon.json",
+    "href": "/other-challenges/commander-gallaeon",
+    "image": "monster-commander-gallaeon",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "colossal-vordred",
+    "name": "Colossal Vordred",
+    "type": "other_challenge",
+    "map": "lichwar",
+    "levelRequirement": 65,
+    "partySize": 7,
+    "description": "Aurelio Voltaire đã đưa đến một khách mời đặc biệt, kẻ hủy diệt Paladin - chúa tể Vordred đã trở lại với sức mạnh to lớn, giúp sự kiện này sẽ trở thành cuộc chiến xương kinh điển. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+    "bodyUrl": "/content/challenges/colossal-vordred.json",
+    "href": "/other-challenges/colossal-vordred",
+    "image": "monster-colossal-vordred",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "prismata",
+    "name": "Prismata",
+    "type": "other_challenge",
+    "map": "archmage",
+    "levelRequirement": 65,
+    "partySize": 7,
+    "description": "Đây là một bản “reskin” của Ultra Fire Orb khi chỉ khác mỗi ngoại hình và cái tên, còn cơ chế thì không khác gì. Nhưng vì không có Ultra Avatar Tyndarius, nên cách đánh cũng dễ dàng hơn nhiều. Item drop từ nó là yêu cầu để hoàn thành được:\u000b- “Archmage's Ascension” quest để farm Archmage Class.",
+    "bodyUrl": "/content/challenges/prismata.json",
+    "href": "/other-challenges/prismata",
+    "image": "monster-prismata",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "devastator-deimos",
+    "name": "Devastator Deimos",
+    "type": "other_challenge",
+    "map": "deimos",
+    "levelRequirement": 70,
+    "partySize": 7,
+    "description": "Cách đánh:",
+    "bodyUrl": "/content/challenges/devastator-deimos.json",
+    "href": "/other-challenges/devastator-deimos",
+    "image": "monster-devastator-deimos",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "firebird-anqa",
+    "name": "Firebird Anqa",
+    "type": "other_challenge",
+    "map": "sunsetdunes",
+    "levelRequirement": 80,
+    "partySize": 7,
+    "description": "Phượng hoàng với ngọn lửa quyền năng, có khả năng hồi sinh từ tro tàn và kiểm soát sự sống, nhưng cũng không quá khó để đánh bại. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+    "bodyUrl": "/content/challenges/firebird-anqa.json",
+    "href": "/other-challenges/firebird-anqa",
+    "image": null,
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "masakado",
+    "name": "Masakado",
+    "type": "other_challenge",
+    "map": "victormatsuri",
+    "levelRequirement": 80,
+    "partySize": 4,
+    "description": "Khi truyền thuyết về đền Solstice Moon và Midnight Sun lan truyền, những chiến binh đã đổ xô từ khắp nơi đến để thách đấu với các vị thần. Một lễ hội được tổ chức để tôn vinh những chiến binh này và những người chiến thắng đã đạt được Eclipse Ascent. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+    "bodyUrl": "/content/challenges/masakado.json",
+    "href": "/other-challenges/masakado",
+    "image": null,
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "blighted-zubami",
+    "name": "Blighted Zubami",
+    "type": "other_challenge",
+    "map": "deleuzetundra",
+    "levelRequirement": 85,
+    "partySize": 7,
+    "description": "Nulgath chưa bao giờ là một kẻ tốt bụng. Để lấy phần thưởng của ông ta bạn cần có đủ sự may mắn để tìm thấy bí ẩn được dấu sâu tại đây, cũng như vượt qua thử thách bí ẩn. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+    "bodyUrl": "/content/challenges/blighted-zubami.json",
+    "href": "/other-challenges/blighted-zubami",
+    "image": "monster-blighted-zubami",
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "mini-challenge-boss"
+  },
+  {
+    "id": "mechabinky-raxborg-2-0",
+    "name": "Mechabinky & Raxborg 2.0",
+    "type": "other_challenge",
+    "map": "grimchallenge",
+    "levelRequirement": 100,
+    "partySize": 7,
+    "description": "Phiên bản thử thách 2.0 nằm ngoài Dungeon Gaol; cần đội hình riêng.",
+    "bodyUrl": "/content/challenges/mechabinky-raxborg-2-0.json",
+    "href": "/other-challenges/mechabinky-raxborg-2-0",
+    "image": null,
+    "stageCount": 1,
+    "sources": [
+      "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    ],
+    "unlockRequirements": [],
+    "rewardSummary": "",
+    "sourceSlug": "the-gaol-of-eternal-torment-and-misery"
+  }
+]

@@ -1,0 +1,303 @@
+{
+  "entities": {
+    "greatblade-of-the-solstice-moon": {
+      "id": "greatblade-of-the-solstice-moon",
+      "name": "Greatblade of the Solstice Moon",
+      "image": "equipment-greatblade-of-the-solstice-moon",
+      "equipmentType": "weapon",
+      "category": "weapon",
+      "levelRequirement": 70,
+      "damageBoost": {
+        "value": 25,
+        "targetType": "All Monsters",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+      },
+      "weaponStability": "stable",
+      "baseDamage": "30-30",
+      "weaponDamageRange": {
+        "minimum": 30,
+        "maximum": 30,
+        "classification": "stable",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon",
+        "verifiedAt": "2026-11-10"
+      },
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "blade-of-the-glowing-moon",
+          "name": "Blade of the Glowing Moon",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/blade-of-the-glowing-moon"
+        },
+        {
+          "kind": "item",
+          "itemId": "sliver-of-moonlight",
+          "name": "Sliver of Moonlight",
+          "quantity": 100,
+          "source": "https://aqwwiki.wikidot.com/sliver-of-moonlight"
+        }
+      ],
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "blade-of-the-glowing-moon",
+            "name": "Blade of the Glowing Moon",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/blade-of-the-glowing-moon"
+          },
+          {
+            "kind": "item",
+            "itemId": "sliver-of-moonlight",
+            "name": "Sliver of Moonlight",
+            "quantity": 100,
+            "source": "https://aqwwiki.wikidot.com/sliver-of-moonlight"
+          }
+        ]
+      },
+      "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon",
+      "lastVerified": "2026-11-10"
+    },
+    "greatblade-of-the-midnight-sun": {
+      "id": "greatblade-of-the-midnight-sun",
+      "name": "Greatblade of the Midnight Sun",
+      "image": "equipment-greatblade-of-the-midnight-sun",
+      "equipmentType": "weapon",
+      "category": "weapon",
+      "levelRequirement": 70,
+      "damageBoost": {
+        "value": 25,
+        "targetType": "All Monsters",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+      },
+      "weaponStability": "stable",
+      "baseDamage": "30-30",
+      "weaponDamageRange": {
+        "minimum": 30,
+        "maximum": 30,
+        "classification": "stable",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun",
+        "verifiedAt": "2026-11-10"
+      },
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "blade-of-the-burning-sun",
+          "name": "Blade of the Burning Sun",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/blade-of-the-burning-sun"
+        },
+        {
+          "kind": "item",
+          "itemId": "sliver-of-sunlight",
+          "name": "Sliver of Sunlight",
+          "quantity": 100,
+          "source": "https://aqwwiki.wikidot.com/sliver-of-sunlight"
+        }
+      ],
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "blade-of-the-burning-sun",
+            "name": "Blade of the Burning Sun",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/blade-of-the-burning-sun"
+          },
+          {
+            "kind": "item",
+            "itemId": "sliver-of-sunlight",
+            "name": "Sliver of Sunlight",
+            "quantity": 100,
+            "source": "https://aqwwiki.wikidot.com/sliver-of-sunlight"
+          }
+        ]
+      },
+      "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun",
+      "lastVerified": "2026-11-10"
+    },
+    "greatblade-of-the-entwined-eclipse": {
+      "id": "greatblade-of-the-entwined-eclipse",
+      "name": "Greatblade of the Entwined Eclipse",
+      "image": "equipment-greatblade-of-the-entwined-eclipse",
+      "equipmentType": "weapon",
+      "category": "weapon",
+      "levelRequirement": 95,
+      "damageBoost": {
+        "value": 51,
+        "targetType": "All Monsters",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+      },
+      "weaponStability": "stable",
+      "baseDamage": "30-30",
+      "weaponDamageRange": {
+        "minimum": 30,
+        "maximum": 30,
+        "classification": "stable",
+        "officialRangeCategory": null,
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse",
+        "verifiedAt": "2026-11-10"
+      },
+      "materialRequirements": [
+        {
+          "kind": "item",
+          "itemId": "blade-of-the-bound-eclipse",
+          "name": "Blade of the Bound Eclipse",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/blade-of-the-bound-eclipse"
+        },
+        {
+          "kind": "item",
+          "itemId": "greatblade-of-the-solstice-moon",
+          "name": "Greatblade of the Solstice Moon",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+        },
+        {
+          "kind": "item",
+          "itemId": "greatblade-of-the-midnight-sun",
+          "name": "Greatblade of the Midnight Sun",
+          "quantity": 1,
+          "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+        },
+        {
+          "kind": "item",
+          "itemId": "ecliptic-offering",
+          "name": "Ecliptic Offering",
+          "quantity": 100,
+          "source": "https://aqwwiki.wikidot.com/ecliptic-offering"
+        }
+      ],
+      "materialTree": {
+        "kind": "allOf",
+        "requirements": [
+          {
+            "kind": "item",
+            "itemId": "blade-of-the-bound-eclipse",
+            "name": "Blade of the Bound Eclipse",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/blade-of-the-bound-eclipse"
+          },
+          {
+            "kind": "item",
+            "itemId": "greatblade-of-the-solstice-moon",
+            "name": "Greatblade of the Solstice Moon",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+          },
+          {
+            "kind": "item",
+            "itemId": "greatblade-of-the-midnight-sun",
+            "name": "Greatblade of the Midnight Sun",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+          },
+          {
+            "kind": "item",
+            "itemId": "ecliptic-offering",
+            "name": "Ecliptic Offering",
+            "quantity": 100,
+            "source": "https://aqwwiki.wikidot.com/ecliptic-offering"
+          }
+        ]
+      },
+      "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse",
+      "lastVerified": "2026-11-10"
+    }
+  },
+  "routes": [
+    {
+      "id": "greatblade-of-the-solstice-moon",
+      "canonicalId": "greatblade-of-the-solstice-moon",
+      "itemName": "Greatblade of the Solstice Moon",
+      "image": "equipment-greatblade-of-the-solstice-moon",
+      "category": "weapon",
+      "note": "Celestial Temple Forge · Eclipse Ascent",
+      "prerequisites": [],
+      "quests": [],
+      "rewards": [],
+      "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+    },
+    {
+      "id": "greatblade-of-the-midnight-sun",
+      "canonicalId": "greatblade-of-the-midnight-sun",
+      "itemName": "Greatblade of the Midnight Sun",
+      "image": "equipment-greatblade-of-the-midnight-sun",
+      "category": "weapon",
+      "note": "Celestial Temple Forge · Eclipse Ascent",
+      "prerequisites": [],
+      "quests": [],
+      "rewards": [],
+      "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+    },
+    {
+      "id": "greatblade-of-the-entwined-eclipse",
+      "canonicalId": "greatblade-of-the-entwined-eclipse",
+      "itemName": "Greatblade of the Entwined Eclipse",
+      "image": "equipment-greatblade-of-the-entwined-eclipse",
+      "category": "weapon",
+      "note": "Celestial Temple Forge · Eclipse Ascent",
+      "prerequisites": [],
+      "quests": [],
+      "rewards": [],
+      "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+    }
+  ],
+  "assets": [
+    {
+      "imagePath": "/images/aqw/challenges/afa443aae08044cce16048fc.png",
+      "width": 691,
+      "height": 279,
+      "sha256": "afa443aae08044cce16048fc066b0a1085608674ea8dff51fb67c6d178b082c0",
+      "sourceUrl": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon",
+      "verificationStatus": "verified",
+      "usageStatus": "approved",
+      "policyUrl": "https://www.artix.com/community/brand-and-assets-usage/",
+      "id": "equipment-greatblade-of-the-solstice-moon",
+      "name": "Greatblade of the Solstice Moon",
+      "entity": "greatblade-of-the-solstice-moon",
+      "originalImageUrl": "https://imgur.com/BxsuY0C.png",
+      "credit": "AdventureQuest Worlds © Artix Entertainment LLC",
+      "usageNote": "Exact item artwork from canonical Wiki item page",
+      "localPath": "/images/aqw/challenges/afa443aae08044cce16048fc.png"
+    },
+    {
+      "imagePath": "/images/aqw/challenges/e508ae0b91cfbdb99875233f.png",
+      "width": 691,
+      "height": 279,
+      "sha256": "e508ae0b91cfbdb99875233f657ed0e239390d940877efb2fd8c2e4b50b059c1",
+      "sourceUrl": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun",
+      "verificationStatus": "verified",
+      "usageStatus": "approved",
+      "policyUrl": "https://www.artix.com/community/brand-and-assets-usage/",
+      "id": "equipment-greatblade-of-the-midnight-sun",
+      "name": "Greatblade of the Midnight Sun",
+      "entity": "greatblade-of-the-midnight-sun",
+      "originalImageUrl": "https://imgur.com/CGg35ub.png",
+      "credit": "AdventureQuest Worlds © Artix Entertainment LLC",
+      "usageNote": "Exact item artwork from canonical Wiki item page",
+      "localPath": "/images/aqw/challenges/e508ae0b91cfbdb99875233f.png"
+    },
+    {
+      "imagePath": "/images/aqw/challenges/ea9e9977b56437b88c2f32d3.png",
+      "width": 734,
+      "height": 312,
+      "sha256": "ea9e9977b56437b88c2f32d31c8bf201b52a79608bc19d70573810332b1e1195",
+      "sourceUrl": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse",
+      "verificationStatus": "verified",
+      "usageStatus": "approved",
+      "policyUrl": "https://www.artix.com/community/brand-and-assets-usage/",
+      "id": "equipment-greatblade-of-the-entwined-eclipse",
+      "name": "Greatblade of the Entwined Eclipse",
+      "entity": "greatblade-of-the-entwined-eclipse",
+      "originalImageUrl": "https://imgur.com/ZvvA30n.png",
+      "credit": "AdventureQuest Worlds © Artix Entertainment LLC",
+      "usageNote": "Exact item artwork from canonical Wiki item page",
+      "localPath": "/images/aqw/challenges/ea9e9977b56437b88c2f32d3.png"
+    }
+  ]
+}

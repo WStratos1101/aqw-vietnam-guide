@@ -1,0 +1,64 @@
+{
+  "archmage-am": {
+    "quarantineIds": [
+      "skill-1",
+      "skill-2",
+      "skill-3",
+      "skill-4",
+      "skill-5"
+    ],
+    "currentActiveNames": [
+      "Incantation",
+      "Immolation",
+      "Glacial Impact",
+      "Supernova",
+      "Arcane Sigil"
+    ],
+    "reason": "Imported active names differ from all five current named abilities on the exact ArchMage Wiki page. Preserve legacy records; add current abilities independently without assuming old-to-new skill equivalence or keyboard slots."
+  },
+  "dragonslayer-ds": {
+    "quarantineIdPattern": "-variant-",
+    "currentActiveNames": [],
+    "reason": "Second imported five-slot set has four names absent from the current Dragonslayer Wiki page. Its duplicate Auto Attack name alone does not prove Class/variant identity. Keep the first source-matched five-slot set; quarantine the second set pending reclassification."
+  },
+  "eternal-immortal-empyrean-chronomancer-ecm-icm": {
+    "quarantineIdPattern": "-variant-",
+    "currentActiveNames": [],
+    "reason": "25 extra imported active records do not match the current Eternal/Immortal/Empyrean skill names. Preserve them for source-boundary/identity review and remove from this Class's playable slots."
+  },
+  "undeadslayer-us": {
+    "quarantineIds": [
+      "skill-1"
+    ],
+    "currentActiveNames": [
+      "Auto Attack"
+    ],
+    "reason": "Imported Soul Slash is not the current Wiki Auto Attack name. Add the current named ability separately; do not infer that old mechanics are equivalent."
+  },
+  "yami-no-ronin-ynr": {
+    "quarantineIds": [
+      "skill-4"
+    ],
+    "currentActiveNames": [
+      "Kettou"
+    ],
+    "reason": "Imported Kyuketsu at legacy slot 4 is absent from the current named Wiki ability set. Preserve it as legacy; add Kettou independently."
+  },
+  "not-a-mod-nam": {
+    "quarantineIds": [
+      "skill-3"
+    ],
+    "currentActiveNames": [
+      "Reasonable Strike"
+    ],
+    "reason": "Imported Reasonable Attack is not the current official name. Effect equivalence is not sufficiently established for an automatic name correction; retain legacy record and add current Reasonable Strike independently."
+  },
+  "shadowwalker-stalker-weaver-of-time-swot-ssot": {
+    "quarantineIds": [],
+    "currentActiveNames": [
+      "Vendetta/Umbral Stigma",
+      "Silhouette/Shadow Warp"
+    ],
+    "reason": "Two state-dependent active abilities are absent from the imported Class body; add exact named Wiki disclosures independently, preserving their combined state names."
+  }
+}

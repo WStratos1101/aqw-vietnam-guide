@@ -1,0 +1,4514 @@
+{
+  "challengeContent": true,
+  "id": "infernal-battle-arena",
+  "name": "Infernal Battle Arena",
+  "type": "arena",
+  "map": "infernalarena",
+  "levelRequirement": 70,
+  "partySize": 1,
+  "description": "Thử thách Infernal Battle Arena; mỗi trận có cơ chế và điều kiện riêng.",
+  "bodyUrl": "/content/challenges/infernal-battle-arena.json",
+  "href": "/other-challenges/infernal-battle-arena",
+  "image": null,
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [
+    "Cần đạt ít nhất lvl 70 để vượt qua được Challenge Boss.",
+    "Cần đạt ít nhất lvl 75 để vượt qua được Challenge Boss.",
+    "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss.",
+    "Cần đạt ít nhất lvl 85 để vượt qua được Challenge Boss.",
+    "Cần đạt ít nhất lvl 90 để vượt qua được Challenge Boss."
+  ],
+  "rewardSummary": "",
+  "sourceSlug": "infernal-battle-arena",
+  "stages": [
+    {
+      "id": "infernal-battle-arena-stage-1",
+      "name": "Infernal Mage",
+      "stageType": "combat",
+      "encounter": null,
+      "objectives": [
+        "Hạ Infernal Mage để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-infernal-mage",
+          "runs": [
+            {
+              "text": "Trang Wiki chưa đọc được; chưa đủ dữ liệu cơ chế cho encounter này."
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/infernal-mage-monster",
+      "order": 1
+    },
+    {
+      "id": "infernal-battle-arena-stage-2",
+      "name": "Infernal Revenger",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Infernal Revenger",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "infernal-revenger-0",
+            "canonicalName": "Infernal Revenger (Monster)",
+            "level": 23,
+            "maxHp": 6500,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/infernal-revenger-monster",
+            "role": "Monster"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "infernal-revenger-0-manual-0",
+            "monsterId": "infernal-revenger-0",
+            "name": "Red Mist",
+            "damage": "79–97",
+            "playerEffects": [],
+            "bossEffects": [],
+            "activation": "",
+            "source": "https://aqwwiki.wikidot.com/infernal-revenger-monster"
+          },
+          {
+            "id": "infernal-revenger-0-manual-1",
+            "monsterId": "infernal-revenger-0",
+            "name": "Sword Slash",
+            "damage": "79–97",
+            "playerEffects": [],
+            "bossEffects": [],
+            "activation": "",
+            "source": "https://aqwwiki.wikidot.com/infernal-revenger-monster"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Infernal Revenger để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-infernal-revenger",
+          "runs": [
+            {
+              "text": "Infernal Revenger (Monster) · Level 23 · HP 6500. Axe Strike / Brutal Chop: 406–493."
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/infernal-revenger-monster",
+      "order": 2
+    },
+    {
+      "id": "infernal-battle-arena-stage-3",
+      "name": "Infernal Harbinger",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Infernal Harbinger",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "infernal-harbinger-0",
+            "canonicalName": "Infernal Harbinger (Monster)",
+            "role": "Monster",
+            "level": 25,
+            "maxHp": 7000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/infernal-harbinger-monster"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Infernal Harbinger để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-infernal-harbinger",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 25Difficulty: 3 starsTotal HP: 7,000Attacks:\nSpectral Dash: 81-98Sword Stab: 81-98\nTemporary Items Dropped:\nHarbinger Construct Defeated (Dropped during the 'Infernal Harbinger' quest)\nItems Dropped:\nInfernal BadgeTreasure Chest (Misc) \nNote: Also see Infernal Harbinger (Armor).\nThanks to Moo.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/infernal-harbinger-monster",
+      "order": 3
+    },
+    {
+      "id": "infernal-battle-arena-stage-4",
+      "name": "First Fallen",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "First Fallen",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "first-fallen-0",
+            "canonicalName": "First Fallen",
+            "role": "Monster",
+            "level": 27,
+            "maxHp": 7500,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/first-fallen"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ First Fallen để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-first-fallen",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 27Difficulty: 3 starsTotal HP: 7,500Attacks:\nInferno Fury: 83-103Flameburst: 83-103\nTemporary Items Dropped:\nFallen Construct Defeated (Dropped during the 'First of the Fallen' quest)\nItems Dropped:\nInfernal BadgeTreasure Chest (Misc) \nThanks to Moo.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/first-fallen",
+      "order": 4
+    },
+    {
+      "id": "infernal-battle-arena-stage-5",
+      "name": "Fallen Warlord",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Fallen Warlord",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "fallen-warlord-0",
+            "canonicalName": "Fallen Warlord (Monster)",
+            "role": "Monster",
+            "level": 30,
+            "maxHp": 8500,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/fallen-warlord-monster"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Fallen Warlord để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-fallen-warlord",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 30Difficulty: 3 starsTotal HP: 8,500Attacks:\nSword Slash: 88-107Sword Strike: 88-107\nTemporary Items Dropped:\nWarlord Construct Defeated (Dropped during the 'Infernal Warlord' quest)\nItems Dropped:\nCelestial Dark Knight Celestial Dark Knight Helm Celestial Dark Knight Sallet Celestial Dark Knight's Spear  Celestial Night Cape Infernal BadgeTreasure Chest (Misc) \nNote: Also see Fallen Warlord (Armor).\nThanks to Moo.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/fallen-warlord-monster",
+      "order": 5
+    },
+    {
+      "id": "infernal-battle-arena-stage-6",
+      "name": "Malicious Maw",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Malicious Maw",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "malicious-maw-0",
+            "canonicalName": "Malicious Maw",
+            "role": "Monster",
+            "level": 33,
+            "maxHp": 9000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/malicious-maw"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Malicious Maw để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-malicious-maw",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 33Difficulty: 3 starsTotal HP: 9,000Attacks:\nCrunch: 94-112\nTemporary Items Dropped:\nMaw Construct Defeated (Dropped during the 'Abhorrent Aperitif' quest)\nItems Dropped:\nInfernal BadgeMalicious Maw's Horns Treasure Chest (Misc) \nNotes:\nAlso see:\nEndless Maw.Frostspawn Horror.Nightmare Maw (Monster).Ravenous Maw (2).\nThanks to Anonymous Joe.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/malicious-maw",
+      "order": 6
+    },
+    {
+      "id": "infernal-battle-arena-stage-7",
+      "name": "Wicked Rotfinger",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Wicked Rotfinger",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "wicked-rotfinger-0",
+            "canonicalName": "Wicked Rotfinger",
+            "role": "Monster",
+            "level": 36,
+            "maxHp": 9000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/wicked-rotfinger"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Wicked Rotfinger để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-wicked-rotfinger",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 36Difficulty: 3 starsTotal HP: 9,000Attacks:\nJump Scratch: 94-115Scratch: 94-115\nTemporary Items Dropped:\nRotfinger Construct Defeated (Dropped during the 'Touch of Death' quest)\nItems Dropped:\nInfernal BadgeTreasure Chest (Misc) \nNotes:\nPreviously an Undead Kind.Also see Rotfinger.\nThanks to Anonymous Joe.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/wicked-rotfinger",
+      "order": 7
+    },
+    {
+      "id": "infernal-battle-arena-stage-8",
+      "name": "Dark Devourax",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Dark Devourax",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "dark-devourax-0",
+            "canonicalName": "Dark Devourax",
+            "role": "Monster",
+            "level": 40,
+            "maxHp": 10000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/dark-devourax"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Dark Devourax để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-dark-devourax",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 40Difficulty: 4 starsTotal HP: 10,000Attacks:\nDive Into Portal: 152-207Uprise Bite: 152-207\nTemporary Items Dropped:\nDevourax Construct Defeated (Dropped during the 'Dire Dreams' quest)\nItems Dropped:\nInfernal BadgeInfernal Devourer Scythe  Treasure Chest (Misc) \nNote: Also see Devourax.\nThanks to Anonymous Joe.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/dark-devourax",
+      "order": 8
+    },
+    {
+      "id": "infernal-battle-arena-stage-9",
+      "name": "Corrupt Terror",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Corrupt Terror",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "corrupt-terror-0",
+            "canonicalName": "Corrupt Terror",
+            "role": "Monster",
+            "level": 36,
+            "maxHp": 9000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/corrupt-terror"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Corrupt Terror để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-corrupt-terror",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 36Difficulty: 3 starsTotal HP: 9,000Attacks:\nPurple Gas: 188-228Stomp: 188-228\nTemporary Items Dropped:\nTerror Construct Defeated (Dropped during the 'Festering Forest' quest)\nItems Dropped:\nInfernal BadgeTreasure Chest (Misc) \nNotes:\nAlso see:\nAberrant Horror.Aberrant Horror Pet.\nThanks to Anonymous Joe.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/corrupt-terror",
+      "order": 9
+    },
+    {
+      "id": "infernal-battle-arena-stage-10",
+      "name": "Infernal Abominator",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Infernal Abominator",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "infernal-abominator-0",
+            "canonicalName": "Infernal Abominator",
+            "role": "Monster",
+            "level": 50,
+            "maxHp": 30000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/infernal-abominator"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Infernal Abominator để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-infernal-abominator",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 50Difficulty: 4 starsTotal HP: 30,000Attacks:\nCauldron Blast: 223-272Slash: 223-272\nTemporary Items Dropped:\nAbominator Construct Defeated (Dropped during the 'Abominable Butchery' quest)\nItems Dropped:\nInfernal BadgeTreasure Chest (Misc) \nNotes:\nAlso see:\nAbominator.Abomineator.Brutus.Abomineator Armor (AC).Abomineator Armor (Legend).\nThanks to Anonymous Joe.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/infernal-abominator",
+      "order": 10
+    },
+    {
+      "id": "infernal-battle-arena-stage-11",
+      "name": "Twisted Harpy",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Twisted Harpy",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "twisted-harpy-0",
+            "canonicalName": "Twisted Harpy",
+            "role": "Monster",
+            "level": 55,
+            "maxHp": 40000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/twisted-harpy"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Twisted Harpy để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-twisted-harpy",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 55Difficulty: 4 starsTotal HP: 40,000Attacks:\nClaw Blast: 260-316Claw Swipe: 260-316\nTemporary Items Dropped:\nTwisted Construct Defeated (Dropped during the 'Infernal Screech' quest)\nItems Dropped:\nInfernal BadgeInfernal Harpy's Wings Treasure Chest (Misc) \nThanks to Moo.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/twisted-harpy",
+      "order": 11
+    },
+    {
+      "id": "infernal-battle-arena-stage-12",
+      "name": "Infernal Izotz",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Infernal Izotz",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "infernal-izotz-0",
+            "canonicalName": "Infernal Izotz",
+            "role": "Monster",
+            "level": 57,
+            "maxHp": 50000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/infernal-izotz"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Infernal Izotz để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-infernal-izotz",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 57Difficulty: 4 starsTotal HP: 50,000Attacks:\nClaw Slash: 287-350Stomp: 287-350\nTemporary Items Dropped:\nIzotz Construct Defeated (Dropped during the 'Frosty Burns' quest)\nItems Dropped:\nCelestial Fenrir  Infernal BadgeInfernal Fenrir  Treasure Chest (Misc) \nNote: Also see Izotz.\nThanks to Moo.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/infernal-izotz",
+      "order": 12
+    },
+    {
+      "id": "infernal-battle-arena-stage-13",
+      "name": "Infernal Krampus",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Infernal Krampus",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "infernal-krampus-0",
+            "canonicalName": "Infernal Krampus",
+            "role": "Monster",
+            "level": 60,
+            "maxHp": 100000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/infernal-krampus"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Infernal Krampus để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-infernal-krampus",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 60Difficulty: 4 starsTotal HP: 100,000Attacks:\nShadow Burst: 368-447Shadow Grasp: 368-447\nTemporary Items Dropped:\nKrampus Construct Defeated (Dropped during the 'Kramping Your Style' quest)\nItems Dropped:\nInfernal EmblemInfernal Krampus' Claw Treasure Chest (Misc) \nNotes:\nAlso see:\nDeadly Krampus.Krampus (Monster).Krumpet.\nThanks to Moo.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/infernal-krampus",
+      "order": 13
+    },
+    {
+      "id": "infernal-battle-arena-stage-14",
+      "name": "Destructive Defiler",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Destructive Defiler",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "destructive-defiler-0",
+            "canonicalName": "Destructive Defiler",
+            "level": 62,
+            "maxHp": 125000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/destructive-defiler",
+            "role": "Monster"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "destructive-defiler-0-manual-0",
+            "monsterId": "destructive-defiler-0",
+            "name": "Axe Strike",
+            "damage": "406–493",
+            "playerEffects": [],
+            "bossEffects": [],
+            "activation": "",
+            "source": "https://aqwwiki.wikidot.com/destructive-defiler"
+          },
+          {
+            "id": "destructive-defiler-0-manual-1",
+            "monsterId": "destructive-defiler-0",
+            "name": "Brutal Chop",
+            "damage": "406–493",
+            "playerEffects": [],
+            "bossEffects": [],
+            "activation": "",
+            "source": "https://aqwwiki.wikidot.com/destructive-defiler"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Destructive Defiler để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-destructive-defiler",
+          "runs": [
+            {
+              "text": "Destructive Defiler · Level 62 · HP 125000. Axe Strike / Brutal Chop: 406–493."
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/destructive-defiler",
+      "order": 14
+    },
+    {
+      "id": "infernal-battle-arena-stage-15",
+      "name": "Infernal Naga",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Infernal Naga",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "infernal-naga-0",
+            "canonicalName": "Infernal Naga",
+            "role": "Monster",
+            "level": 65,
+            "maxHp": 150000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/infernal-naga"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Infernal Naga để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-infernal-naga",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 65Difficulty: 5 starsTotal HP: 150,000Attacks:\nScratch: 525-622Scream: 525-622\nTemporary Items Dropped:\nNaga Construct Defeated (Dropped during the 'Searing Snake Oil' quest)\nItems Dropped:\nInfernal EmblemInfernal Naga's Gauntlets Treasure Chest (Misc) \nNotes:\nPreviously a Chaos Kind.Also see Naga Baas.\nThanks to Anonymous Joe.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/infernal-naga",
+      "order": 15
+    },
+    {
+      "id": "infernal-battle-arena-stage-16",
+      "name": "Accursed Agape",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Accursed Agape",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "accursed-agape-0",
+            "canonicalName": "Accursed Agape",
+            "role": "Monster",
+            "level": 67,
+            "maxHp": 175000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/accursed-agape"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Accursed Agape để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-accursed-agape",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 67Difficulty: 5 starsTotal HP: 175,000Attacks:\nPhotosynthesis: 522-636Pink Fumes: 522-636\nTemporary Items Dropped:\nAgape Construct Defeated (Dropped during the 'Ambivalent Affection' quest)\nItems Dropped:\nInfernal EmblemTreasure Chest (Misc) \nNote: Also see Agape.\nThanks to Anonymous Joe.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/accursed-agape",
+      "order": 16
+    },
+    {
+      "id": "infernal-battle-arena-stage-17",
+      "name": "Accursed Apephyrx",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Accursed Apephyrx",
+        "locationName": "Infernal Arena",
+        "monsters": [
+          {
+            "id": "accursed-apephyrx-0",
+            "canonicalName": "Accursed Apephyrx",
+            "role": "Monster",
+            "level": 70,
+            "maxHp": 200000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/accursed-apephyrx"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ Accursed Apephyrx để tiến đến trận kế tiếp."
+      ],
+      "mechanics": [],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "wiki-accursed-apephyrx",
+          "runs": [
+            {
+              "text": "                        \n\n\n\n\nLocation: Infernal ArenaLevel: 70Difficulty: 5 starsTotal HP: 200,000Attacks:\nHeavy Dose of Water: 602-730Plant Uprising: 602-730\nTemporary Items Dropped:\nApephryx Construct Defeated (Dropped during the 'From the Crux of Shadows' quest)\nItems Dropped:\nInfernal EmblemTreasure Chest (Misc) \nNote: Also see Apephryx.\nThanks to Anonymous Joe.\nBattle this monster in our free web game at www.AQ.com!\n                    "
+            }
+          ]
+        }
+      ],
+      "source": "https://aqwwiki.wikidot.com/accursed-apephyrx",
+      "order": 17
+    },
+    {
+      "id": "infernal-battle-arena-stage-18",
+      "name": "DEADLY DUO",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "DEADLY DUO",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "deadly-duo-0",
+            "canonicalName": "Deadly Duo",
+            "role": "Monster",
+            "level": 75,
+            "maxHp": 350000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/deadly-duo"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "deadly-duo-0-body-slam-0",
+            "monsterId": "deadly-duo-0",
+            "name": "Body Slam",
+            "type": "Physical",
+            "damage": "1150-1250",
+            "damageType": "Physical",
+            "cooldown": "6 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Double Attack lên người chơi, a DoT trong 1 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/deadly-duo"
+          },
+          {
+            "id": "deadly-duo-0-meal-prep-1",
+            "monsterId": "deadly-duo-0",
+            "name": "Meal Prep",
+            "type": "Charge",
+            "damageType": "Charge",
+            "cooldown": "15 seconds",
+            "activation": "",
+            "playerEffects": [
+              "Charges trong 3 giây, sau đó dùng Dinner Time"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/deadly-duo"
+          },
+          {
+            "id": "deadly-duo-0-dinner-time-2",
+            "monsterId": "deadly-duo-0",
+            "name": "Dinner Time",
+            "type": "Physical",
+            "damage": "70% of target’s current HP",
+            "damageType": "Physical",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Eating lên bản thân, healing for 33% HP tối đa (trước modifier) trong 2 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/deadly-duo"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là con Boss dễ xử lý nhất trong 5 con, các cơ chế cũng không quá phức tạp nên có thể không cần nhớ cơ chế cũng có thể vượt qua được nó.",
+        "Boss nằm ở map /join infernalarena - Room limit: 1",
+        "Cần đạt ít nhất lvl 70 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 350,000",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.8).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Base có 0% Dodge và 130% Hit Chance.",
+        "◆ Mỗi 6s, sử dụng Body Slam gây Phys DMG từ 1.1k đến 1.3k.",
+        "→ Players đồng thời bị dình DoT trong 1s.",
+        "◆ Mỗi 15s, sử dụng Meal Prep để charge trong 3s sau đó kích hoạt Dinner Time gây Phys DMG bằng 70% lượng HP hiện tại của player.",
+        "→ Duo nhận HoT bằng 33% HP tổng bản thân trong 2s."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: QCM, VHL, CAv, DT/EDoT, LR, VDK, AP, SS",
+        "→ QCM mở đầu với 2 - 3 - 2 - 2 - 4 - 5, sau đó thì spam 2 và 3 đến khi nào 5 CD xong thì ngay lặp tức dùng 4 - 5 để nuke.",
+        "Enh: Dauntless + Lucky class + Anima + Vainglory.",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ VHL đầu tiên dùng combo 4 - 5 - 3 sau đó dùng: 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5).",
+        "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.",
+        "Enh: Ravenous + Lucky class + Anima + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Might Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5",
+        "Enh: Elysium + Healer class + Pneuma + Vainglory.",
+        "Potion: Có thể dùng thêm Unstable Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ LR mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.",
+        "Enh: Valiance + Wizard class + Pneuma + Vainglory",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ VDK dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4",
+        "Enh: Ravenous/Dauntless + Lucky class + Anima + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ AP dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal.",
+        "Enh: Valiance > Lacerate + Lucky class + Anima + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ SS thì đơn giản chỉ cần spam tất cả skill.",
+        "Enh: Valiance > Wizard Health Vamp + Wizard class + Forge helm + Penitence",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-367381",
+          "runs": [
+            {
+              "text": "Đây là con Boss dễ xử lý nhất trong 5 con, các cơ chế cũng không quá phức tạp nên có thể không cần nhớ cơ chế cũng có thể vượt qua được nó.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367522",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join infernalarena",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-arena"
+            },
+            {
+              "text": " - Room limit: 1\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367573",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 70",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367630",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367638",
+          "runs": [
+            {
+              "text": "◆ Total HP: 350,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367658",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367710",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367733",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge và 130% Hit Chance.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367772",
+          "runs": [
+            {
+              "text": "◆ Mỗi 6s, sử dụng Body Slam gây Phys DMG từ 1.1k đến 1.3k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367831",
+          "runs": [
+            {
+              "text": "→ Players đồng thời bị dình DoT trong 1s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367873",
+          "runs": [
+            {
+              "text": "◆ Mỗi 15s, sử dụng Meal Prep để charge trong 3s sau đó kích hoạt Dinner Time gây Phys DMG bằng 70% lượng HP hiện tại của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368002",
+          "runs": [
+            {
+              "text": "→ Duo nhận HoT bằng 33% HP tổng bản thân trong 2s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368054",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "QCM, VHL, CAv, DT/EDoT, LR, VDK, AP, SS",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368129",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "QCM",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 3 - 2 - 2 - 4 - 5, sau đó thì spam 2 và 3 đến khi nào 5 CD xong thì ngay lặp tức dùng 4 - 5 để nuke.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368251",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless + Lucky class + Anima + Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368301",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368407",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " đầu tiên dùng combo 4 - 5 - 3 sau đó dùng: 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+            },
+            {
+              "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368531",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368626",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368732",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368784",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368832",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368939",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-368981",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Pneuma + Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369031",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369139",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369226",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Wizard class + Pneuma + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369276",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369382",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369426",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous/Dauntless + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369484",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369590",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369657",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance > Lacerate + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369716",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369822",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "SS",
+              "bold": true
+            },
+            {
+              "text": " thì đơn giản chỉ cần spam tất cả skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369867",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance > Wizard Health Vamp + Wizard class + Forge helm + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-369942",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 18
+    },
+    {
+      "id": "infernal-battle-arena-stage-19",
+      "name": "CERVUS MALUS",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "CERVUS MALUS",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "cervus-malus-0",
+            "canonicalName": "Cervus Malus",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 400000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/cervus-malus"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "cervus-malus-0-bite-0",
+            "monsterId": "cervus-malus-0",
+            "name": "Bite",
+            "type": "Physical",
+            "damage": "760-860",
+            "damageType": "Physical",
+            "cooldown": "2 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Sanguis lên người chơi, a DoT trong 6 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/cervus-malus"
+          },
+          {
+            "id": "cervus-malus-0-contrarium-1",
+            "monsterId": "cervus-malus-0",
+            "name": "Contrarium",
+            "type": "Physical",
+            "damage": "60% of target’s current HP",
+            "damageType": "Physical",
+            "cooldown": "10 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Contrarium lên người chơi, giảm hồi máu nhận vào 200% trong 4 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/cervus-malus"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Với con Boss này, nó có cơ chế đảo ngược heal thành sát thương trên người chơi tương tự như Dage the Dark Lord nhưng chỉ kéo dài trong thời gian ngắn. Đây cũng là cơ chế đáng lưu ý duy nhất của nó nên cũng không quá khó.",
+        "Boss nằm ở map /join infernalarena - Room limit: 1",
+        "Cần đạt ít nhất lvl 75 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 400,000",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.8).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Base có 0% Dodge.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Auto-Attack mỗi 2s gây Phys DMG từ 760 đến 860.",
+        "→ Player đồng thời bị dính DoT trong 6s.",
+        "◆ Mỗi 10s, sử dụng Contrarium gây Phys DMG bằng 60% lượng HP hiện tại của player.",
+        "→ Player bị giảm 200% Heal In trong 4s (biến Heal thành sát thương)"
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: QCM, VHL, CAv, VDK, AP",
+        "→ QCM mở đầu với 2 - 3 - 2 - 2 - 4 - 5, sau đó thì spam 2 và 3 đến khi nào 5 CD xong thì ngay lặp tức dùng 4 - 5 để nuke.",
+        "Enh: Dauntless + Lucky class + Anima + Penitence",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ VHL đầu tiên dùng combo 4 - 5 - 3 sau đó dùng: 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5).",
+        "Enh: Dauntless + Lucky class + Anima + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4, sau đó spam tất cả skill.",
+        "Lưu ý: Nếu dùng Valiance thì chỉ dùng 4 khi cần làm mới lại hiệu ứng khi hết, còn nếu dùng Dauntless thì bỏ qua lưu ý này.",
+        "Enh: Dauntless > Ravenous + Lucky class + Anima + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Might Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ VDK dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4",
+        "Enh: Ravenous/Dauntless + Lucky class + Anima + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ AP dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal.",
+        "Lưu ý: Không dùng 3 khi thấy thông báo “Cervus Malus inverts your healing!”, và ngay lập tức dùng 3 sau khi thấy thông báo “Your healing is no longer inverted!”.",
+        "Enh: Valiance/Praxis/Smite + Lucky class + Anima + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-370062",
+          "runs": [
+            {
+              "text": "Với con Boss này, nó có cơ chế đảo ngược heal thành sát thương trên người chơi tương tự nh"
+            },
+            {
+              "text": "ư "
+            },
+            {
+              "text": "Dage the Dark Lord"
+            },
+            {
+              "text": " nhưng chỉ kéo dài trong thời gian ngắn"
+            },
+            {
+              "text": ". Đây cũng là cơ chế đáng lưu ý duy nhất của nó nên cũng không quá khó.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370284",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join infernalarena",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-arena"
+            },
+            {
+              "text": " - Room limit: 1\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370335",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 75",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370392",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370400",
+          "runs": [
+            {
+              "text": "◆ Total HP: 400,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370420",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370472",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370495",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370515",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370580",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Phys DMG từ 760 đến 860.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370630",
+          "runs": [
+            {
+              "text": "→ Player đồng thời bị dính DoT trong 6s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370671",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Contrarium gây Phys DMG bằng 60% lượng HP hiện tại của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370753",
+          "runs": [
+            {
+              "text": "→ Player bị giảm 200% Heal In trong 4s "
+            },
+            {
+              "text": "(biến Heal thành sát thương)\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370822",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "QCM, VHL, CAv, VDK, AP",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-370880",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "QCM",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 3 - 2 - 2 - 4 - 5, sau đó thì spam 2 và 3 đến khi nào 5 CD xong thì ngay lặp tức dùng 4 - 5 để nuke.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371002",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless + Lucky class + Anima + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371051",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371157",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " đầu tiên dùng combo 4 - 5 - 3 sau đó dùng: 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+            },
+            {
+              "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371281",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371330",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371436",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4, sau đó spam tất cả skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371496",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Lưu ý: Nếu dùng Valiance thì chỉ dùng 4 khi cần làm mới lại hiệu ứng khi hết, còn nếu dùng Dauntless thì bỏ qua lưu ý này.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371619",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Ravenous + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371679",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371786",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371830",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous/Dauntless + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371888",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-371994",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372061",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Lưu ý: Không dùng 3 khi thấy thông báo "
+            },
+            {
+              "text": "“Cervus Malus inverts your healing!”",
+              "italic": true
+            },
+            {
+              "text": ", và ngay lập tức dùng 3 sau khi thấy thông báo "
+            },
+            {
+              "text": "“Your healing is no longer inverted!”",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372226",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance/Praxis/Smite + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372287",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 19
+    },
+    {
+      "id": "infernal-battle-arena-stage-20",
+      "name": "KEY OF SHOLEMOH",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "KEY OF SHOLEMOH",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "key-of-sholemoh-0",
+            "canonicalName": "Key of Sholemoh",
+            "role": "Monster",
+            "level": 85,
+            "maxHp": 500000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/key-of-sholemoh"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "key-of-sholemoh-0-laser-beam-0",
+            "monsterId": "key-of-sholemoh-0",
+            "name": "Laser Beam",
+            "type": "True Damage",
+            "damage": "1000",
+            "damageType": "True Damage",
+            "cooldown": "2.5 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/key-of-sholemoh"
+          },
+          {
+            "id": "key-of-sholemoh-0-hyper-beam-charge-1",
+            "monsterId": "key-of-sholemoh-0",
+            "name": "Hyper Beam Charge",
+            "type": "Charge",
+            "damageType": "Charge",
+            "cooldown": "18 seconds",
+            "activation": "Prepare for your undoing!",
+            "playerEffects": [
+              "Charges trong 4 giây, sau đó dùng Hyper Beam"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/key-of-sholemoh"
+          },
+          {
+            "id": "key-of-sholemoh-0-hyper-beam-2",
+            "monsterId": "key-of-sholemoh-0",
+            "name": "Hyper Beam",
+            "type": "True Damage",
+            "damage": "3000",
+            "damageType": "True Damage",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/key-of-sholemoh"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Con Boss này là một bản đơn giản hơn của Ultra Engineer do không có Drone bảo vệ giúp chặn sát thương nhận và cũng được hạ sát thương gây ra, để có thể vượt qua được con Boss này thì chỉ cần cố gắng giữ HP bản thân trên 3k (tổng HP tối đa tốt nhất là trên 4k) là có thể dễ dàng vượt qua nó.",
+        "Boss nằm ở map /join infernalarena - Room limit: 1",
+        "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 500,000",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.8).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Base có 0% Dodge.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Auto-Attack mỗi 2.5s luôn gây 1k True DMG.",
+        "◆ Mỗi 18s, sử dụng Hyper Beam Charge trong 4s sau đó kích hoạt Hyper Beam luôn gây 3k True DMG.",
+        "→ Cần có trên 3k HP trước Beam để khi dính thì không chết và cần lập tức Heal ngay khi nhận sát thương từ Beam."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: VHL, CAv, DT/EDoT, PCM",
+        "→ VHL sử dụng combo 5 - 3 - 2.",
+        "Lưu ý: Không dùng 2 và spam 3 (vẫn dùng 5 khi CD) khi thấy thông báo “Prepare for you undoing!”, đến khi thấy máu giảm mạnh thì vẫn spam 3 để hồi đầy máu thì mới dùng lại 2.",
+        "Enh: Valiance + Lucky class + Vim + Lament",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill, nhưng cần chú ý ưu tiên spam 2 ngay khi CD.",
+        "Enh: Ravenous + Lucky class + Anima + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Might Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5",
+        "Enh: Elysium + Healer class + Pneuma + Vainglory.",
+        "Potion: Có thể dùng thêm Unstable Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ PCM pre-buff với 3, sau đó dùng combo 2 - 4 - 2 - 3 rồi spam 2 đến khi HP về lại bình thường thì ngay lập tức dùng 5, cuối cùng tiếp tục spam 2 đến khi 4 gần CD thì dùng 5 rồi lập lại từ đầu, còn 3 chỉ dùng để buff máu khi cần.",
+        "Lưu ý, skill 3 trên class này rất hao Mana vì vậy không spam 3.",
+        "Enh: Ravenous + Healer class + Hearty + Vainglory",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Unstable Body Tonic + Endurance Draught để tăng DPS."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-372410",
+          "runs": [
+            {
+              "text": "Con Boss này là một bản đơn giản hơn của"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Ultra Engineer"
+            },
+            {
+              "text": " do"
+            },
+            {
+              "text": " không có Drone bảo vệ giúp chặn sát thương nhận và cũng được hạ sát thương gây ra, để có thể vượt qua được con Boss này thì chỉ cần cố gắng giữ HP bản thân trên 3k "
+            },
+            {
+              "text": "(tổng HP tối đa tốt nhất là trên 4k)",
+              "italic": true
+            },
+            {
+              "text": " là có thể dễ dàng vượt qua nó.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372702",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join infernalarena",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-arena"
+            },
+            {
+              "text": " - Room limit: 1\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372753",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372810",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372818",
+          "runs": [
+            {
+              "text": "◆ Total HP: 500,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372838",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372890",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372913",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372933",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-372998",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.5s luôn gây 1k True DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373043",
+          "runs": [
+            {
+              "text": "◆ Mỗi 18s, sử dụng Hyper Beam Charge trong 4s sau đó kích hoạt Hyper Beam luôn gây 3k True DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373139",
+          "runs": [
+            {
+              "text": "→ Cần có trên 3k HP trước Beam để khi dính thì không chết và cần lập tức Heal ngay khi nhận sát thương từ Beam.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373252",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "VHL, CAv, DT/EDoT, PCM",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373310",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 5 - 3 - 2.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373341",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Lưu ý: Không dùng 2 và spam 3 "
+            },
+            {
+              "text": "(vẫn dùng 5 khi CD)",
+              "italic": true
+            },
+            {
+              "text": " khi thấy thông báo "
+            },
+            {
+              "text": "“Prepare for you undoing!”",
+              "italic": true
+            },
+            {
+              "text": ", đến khi thấy máu giảm mạnh thì vẫn spam 3 để hồi đầy máu thì mới dùng lại 2."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373517",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Lucky class + Vim + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373560",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373666",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill, nhưng cần chú ý ưu tiên spam 2 ngay khi CD.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373762",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373810",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373917",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-373959",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Pneuma + Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374009",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Unstable Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374117",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "PCM",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3, sau đó dùng combo 2 - 4 - 2 - 3 rồi spam 2 đến khi HP về lại bình thường thì ngay lập tức dùng 5, cuối cùng tiếp tục spam 2 đến khi 4 gần CD thì dùng 5 rồi lập lại từ đầu, còn 3 chỉ dùng để buff máu khi cần.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374347",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Lưu ý, skill 3 trên class này rất hao Mana vì vậy không spam 3.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374411",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Healer class + Hearty + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374461",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thê"
+            },
+            {
+              "text": "m "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Unstable Body Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Endurance Draught"
+            },
+            {
+              "text": " để tăng DPS."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 20
+    },
+    {
+      "id": "infernal-battle-arena-stage-21",
+      "name": "AZALITH'S SCYTHE",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "AZALITH'S SCYTHE",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "azaliths-scythe-0",
+            "canonicalName": "Azalith's Scythe",
+            "role": "Monster",
+            "level": 90,
+            "maxHp": 400000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/azalith-s-scythe"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "azaliths-scythe-0-eviscerate-0",
+            "monsterId": "azaliths-scythe-0",
+            "name": "Eviscerate",
+            "type": "Physical",
+            "damage": "300-350 (before Crit Multiplier)",
+            "damageType": "Physical",
+            "cooldown": "1 second",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/azalith-s-scythe"
+          },
+          {
+            "id": "azaliths-scythe-0-decapitate-1",
+            "monsterId": "azaliths-scythe-0",
+            "name": "Decapitate",
+            "type": "True Damage",
+            "damage": "70% of target’s current HP",
+            "damageType": "True Damage",
+            "cooldown": "10 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/azalith-s-scythe"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Với con Boss này, thứ đáng lưu ý là nó có Dodge cơ bản rất cao, nên sẽ né được đòn đánh của người chơi gây khó chịu và kéo dài trận đánh. Tuy nhiên có thể sử dụng các biện pháp tăng Hit Chance bản thân cũng như dùng các class chuyên trị Dodge là có thể vượt qua dễ dàng.",
+        "Boss nằm ở map /join infernalarena - Room limit: 1",
+        "Cần đạt ít nhất lvl 85 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 400,000",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.8).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Base có 100% Dodge, 100% Crit Chance và 300% Crit DMG.",
+        "◆ Auto-Attack mỗi 1s gây Phys DMG từ 300 đến 350 (chưa tính bạo kích).",
+        "◆ Mỗi 10s, sử dụng Decapitate gây True DMG bằng 70% lượng HP hiện tại của player.",
+        "→ Player cần lập tức Heal ngay khi nhận sát thương từ Decapitate."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: VHL, VDK, YnR, Shaman, SoS, LoO",
+        "→ VHL sử dụng combo 5 - 3 - 2.",
+        "Enh: Dauntless > Lacerate + Lucky class + Anima + Vainglory",
+        "Potion: Có thể dùng thêm Potent Trueshot Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ VDK dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4",
+        "Enh: Dauntless > Lacerate + Lucky class + Anima + Vainglory/Penitence",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ YnR spam 2 và 3, spam 4 khi cần hồi máu, dùng 5 sau khi đã hồi đầy máu.",
+        "Enh: Dauntless > Lacerate + Lucky class + Anima + Lament.",
+        "Potion: Có thể dùng thêm Potent Trueshot Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ Shaman sử dụng combo 5 - 3 - 2 - 3 - (4) (lập lại 2 - 3, khi thiếu MP thì spam 3, tiết kiệm dùng skill 4).",
+        "Enh: Elysium + Wizard class/helm + Penitence.",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ SoS lập lại 4 - 2 - 2 đến khi đủ 10 stacks “Superconductive” rồi dùng 5 nuke, sau đó tiếp tục lặp lại 4 - 2 - 2 đến khi “Supercell” gần fades thì dùng 5 để nuke lần 2. Nếu cần hồi máu thì dùng 3 rồi spam 2 đến khi hồi đầy máu.",
+        "Enh: Ravenous + Wizard class/helm + Vainglory",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ LoO pre-buff với 2 3 và 4, sau đó thì spam 2 4 và 5, chỉ dùng 3 khi lượng HP bản thân dưới 600.",
+        "Enh: Smite + Lucky class + Forge helm + Lament.",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-374585",
+          "runs": [
+            {
+              "text": "Với con Boss này, thứ đáng lưu ý là nó có Dodge cơ bản rất cao, nên sẽ né được đòn đánh của người chơi gây khó chịu và kéo dài trận đánh. Tuy nhiên có thể sử dụng các biện pháp tăng Hit Chance bản thân cũng như dùng các class chuyên trị Dodge là có thể vượt qua dễ dàng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374857",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join infernalarena",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-arena"
+            },
+            {
+              "text": " - Room limit: 1\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374908",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 85",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374965",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374973",
+          "runs": [
+            {
+              "text": "◆ Total HP: 400,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-374993",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375045",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375068",
+          "runs": [
+            {
+              "text": "◆ Base có 100% Dodge, 100% Crit Chance và 300% Crit DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375125",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 1s gây Phys DMG từ 300 đến 350 "
+            },
+            {
+              "text": "(chưa tính bạo kích)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375196",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Decapitate gây True DMG bằng 70% lượng HP hiện tại của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375278",
+          "runs": [
+            {
+              "text": "→ Player cần lập tức Heal ngay khi nhận sát thương từ Decapitate.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375345",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "VHL, VDK, YnR, Shaman, SoS, LoO",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375412",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 5 - 3 - 2.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375443",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Lacerate + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375503",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng th"
+            },
+            {
+              "text": "êm "
+            },
+            {
+              "text": "Potent Trueshot Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fat"
+            },
+            {
+              "text": "e Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375606",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375650",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Lacerate + Lucky class + Anima + Vainglory/Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375720",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375826",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "YnR",
+              "bold": true
+            },
+            {
+              "text": " spam 2 và 3, spam 4 khi cần hồi máu, dùng 5 sau khi đã hồi đầy máu.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375900",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Lacerate + Lucky class + Anima + Lament.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-375958",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Trueshot Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-376061",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Shaman",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 5 - 3 - 2 - 3 - (4) "
+            },
+            {
+              "text": "(lập lại 2 - 3, khi thiếu MP thì spam 3, tiết kiệm dùng skill 4)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-376170",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Wizard class/helm + Penitence.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-376216",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-376322",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "SoS",
+              "bold": true
+            },
+            {
+              "text": " lập lại 4 - 2 - 2 đến khi đủ 10 stacks “Superconductive” rồi dùng 5 nuke, sau đó tiếp tục lặp lại 4 - 2 - 2 đến khi “Supercell” gần fades thì dùng 5 để nuke lần 2. Nếu cần hồi máu thì dùng 3 rồi spam 2 đến khi hồi đầy máu.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-376551",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Wizard class/helm + Vainglory \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-376598",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-376704",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 2 3 và 4, sau đó thì spam 2 4 và 5, chỉ dùng 3 khi lượng HP bản thân dưới 600.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-376802",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Smite + Lucky class + Forge helm + Lament.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-376850",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 21
+    },
+    {
+      "id": "infernal-battle-arena-stage-22",
+      "name": "NA'AL",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "NA'AL",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "naal-0",
+            "canonicalName": "Na'al",
+            "role": "Monster",
+            "level": 95,
+            "maxHp": 1500000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/na-al"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "naal-0-idle-0",
+            "monsterId": "naal-0",
+            "name": "Idle",
+            "activation": "",
+            "playerEffects": [
+              "Na'al is Restrained for the first 12 giây of combat. During this time, they are stunned và their kháng sát thương is reduced 500%."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/na-al"
+          },
+          {
+            "id": "naal-0-quake-1",
+            "monsterId": "naal-0",
+            "name": "Quake",
+            "type": "True Damage",
+            "damage": "20% of target's max HP",
+            "damageType": "True Damage",
+            "cooldown": "2 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/na-al"
+          },
+          {
+            "id": "naal-0-veni-2",
+            "monsterId": "naal-0",
+            "name": "Veni",
+            "cooldown": "15 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Veni lên người chơi, a DoT that deals 200% of the player's max HP (before modifiers) over 1 giây.",
+              "Skill is always followed Vidi after 3 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/na-al"
+          },
+          {
+            "id": "naal-0-vidi-3",
+            "monsterId": "naal-0",
+            "name": "Vidi",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Vidi lên người chơi, a DoT that deals 200% of the player's max HP (before modifiers) over 1 giây.",
+              "Skill is always followed Vici after 4 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/na-al"
+          },
+          {
+            "id": "naal-0-vici-4",
+            "monsterId": "naal-0",
+            "name": "Vici",
+            "type": "True Damage",
+            "damage": "70% of target's Max HP",
+            "damageType": "True Damage",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Vulnerable lên bản thân, giảm kháng sát thương 500% trong 4 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/na-al"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là con Boss khó nhất trong 5 con, cơ chế chủ yếu của nó chỉ xoay quanh nuke lớn bằng DoT, cách duy nhất đánh bại nó là sử dụng các class thủ tốt hoặc giết được nó trước khi cơ chế nuke kích hoạt.",
+        "Boss nằm ở map /join infernalarena - Room limit: 1",
+        "Cần đạt ít nhất lvl 90 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 1,500,000",
+        "◆ Shield giúp giảm sát thương trên 75k (hệ số 0.8).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Base có 0% Dodge.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Trong 12s đầu trận, Na’al sẽ bất động.",
+        "→ Na’al bị tăng 500% All In trong 12s.",
+        "◆ Auto-Attack mỗi 2s gây True DMG bằng 20% lượng HP tối đa của player.",
+        "◆ Mỗi 15s, sử dụng Veni gây DoT bằng 200% lượng HP tối đa của player trong 1s.",
+        "◆ Sau khi sử dụng Veni 3s, kích hoạt Vidi gây DoT bằng 200% lượng HP tối đa của player trong 1s.",
+        "◆ Sau khi sử dụng Vidi 4s, kích hoạt Vici gây True DMG bằng 70% lượng HP tối đa của player trong 1s.",
+        "→ Na’al bị tăng 500% All In trong 4s."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: VHL, CAv, DT/EDoT, VDK, SS",
+        "→ VHL sử dụng combo 5 - 3 - 2, chỉ dùng 4 khi HP trên 2k, cần hồi máu đầy trước khi nó dùng Veni, Vidi và Vici.",
+        "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance + Lucky class + Vim + Lament",
+        "Lưu ý: Nếu dùng Dauntless thì cần phải sử dụng full thuốc.",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ CAv combo mở đầu 3 - 4 - 5 - 2 sau đó spam skill, nhưng cần chú ý ưu tiên spam 2 và 4 ngay khi CD, nhất là trước khi nó dùng Veni, Vidi và Vici.",
+        "Enh: Ravenous + Lucky class + Anima + Penitence",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Might Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ DT/EDoT mở đầu với 2 - 4 - 3 - 5 - 3, sau đó lập lại 4 - 3 - 2 - 3 - 5 - 3.",
+        "Cần sử dùng 2 loại Elixir và Tonic, ngay trước khi bắt đầu phải dùng Potent Honor/Malice Potion rồi mới bắt đầu combo.",
+        "Enh: Elysium + Wizard class + Pneuma + Vainglory",
+        "Potion: Bắt buộc phải có Unstable Malevolence Elixir + Unstable Sage Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ VDK dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4",
+        "Cần sử dùng 2 loại Elixir và Tonic, ngay trước khi bắt đầu phải dùng Potent Honor/Malice Potion rồi mới bắt đầu combo.",
+        "Enh: Ravenous/Dauntless + Lucky class + Anima + Penitence",
+        "Potion: Phải có Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ SS thì đơn giản chỉ cần spam tất cả skill.",
+        "Enh: Valiance + Wizard class + Forge helm + Penitence",
+        "Potion: Có thể dùng thêm Potent Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion để tăng DPS."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-376963",
+          "runs": [
+            {
+              "text": "Đây là con Boss khó nhất trong 5 con, cơ chế chủ yếu của nó chỉ xoay quanh nuke lớn bằng DoT, cách duy nhất đánh bại nó là sử dụng các class thủ tốt hoặc giết được nó trước khi cơ chế nuke kích hoạt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377164",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join infernalarena",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-arena"
+            },
+            {
+              "text": " - Room limit: 1\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377215",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 90",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377272",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377280",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,500,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377302",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 75k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377354",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377377",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377397",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377462",
+          "runs": [
+            {
+              "text": "◆ Trong 12s đầu trận, Na’al sẽ bất động.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377503",
+          "runs": [
+            {
+              "text": "→ Na’al bị tăng 500% All In trong 12s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377542",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây True DMG bằng 20% lượng HP tối đa của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377613",
+          "runs": [
+            {
+              "text": "◆ Mỗi 15s, sử dụng Veni gây DoT bằng 200% lượng HP tối đa của player trong 1s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377692",
+          "runs": [
+            {
+              "text": "◆ Sau khi sử dụng Veni 3s, kích hoạt Vidi gây DoT bằng 200% lượng HP tối đa của player trong 1s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377789",
+          "runs": [
+            {
+              "text": "◆ Sau khi sử dụng Vidi 4s, kích hoạt Vici gây True DMG bằng 70% lượng HP tối đa của player trong 1s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377890",
+          "runs": [
+            {
+              "text": "→ Na’al bị tăng 500% All In trong 4s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377929",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "VHL, CAv, DT/EDoT, VDK, SS",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-377991",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 5 - 3 - 2, chỉ dùng 4 khi HP trên 2k, cần hồi máu đầy trước khi nó dùng Veni, Vidi và Vici.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378103",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance + Lucky class + Vim + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378192",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Lưu ý: Nếu dùng Dauntless thì cần phải sử dụng full thuốc.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378251",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378357",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 4 - 5 - 2 sau đó spam skill, nhưng cần chú ý ưu tiên spam 2 và 4 ngay khi CD, nhất là trước khi nó dùng Veni, Vidi và Vici.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378504",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378552",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378659",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 4 - 3 - 5 - 3, sau đó lập lại 4 - 3 - 2 - 3 - 5 - 3.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378737",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Cần sử dùng 2 loại Elixir và Tonic, ngay trước khi bắt đầu phải dùng Potent Honor/Malice Potion rồi mới bắt đầu combo.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378856",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Wizard class + Pneuma + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-378905",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Bắt buộc phải có "
+            },
+            {
+              "text": "Unstable Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Unstable Sage Tonic",
+              "href": "http://aqwwiki.wikidot.com/unstable-sage-tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-379022",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo: 2 - 3 - 4 - 5 - 2 - 3 - 4\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-379066",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Cần sử dùng 2 loại Elixir và Tonic, ngay trước khi bắt đầu phải dùng Potent Honor/Malice Potion rồi mới bắt đầu combo.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-379185",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous/Dauntless + Lucky class + Anima + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-379243",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Phải có "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-379340",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "SS",
+              "bold": true
+            },
+            {
+              "text": " thì đơn giản chỉ cần spam tất cả skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-379385",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Wizard class + Forge helm + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-379439",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage "
+            },
+            {
+              "text": "Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 22
+    }
+  ],
+  "teams": [],
+  "equipmentRoutes": [],
+  "progression": [
+    {
+      "id": "noi-dung",
+      "title": "Nội dung hướng dẫn",
+      "paragraphs": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "p-364759",
+          "runs": [
+            {
+              "text": "Map này bao gồm 22 con Bosses đều yêu cầu solo với mức độ từ dễ đến khó. Trong đó chỉ có 5 con Bosses cuối cùng là có độ khó cao và là challenge Boss, các con còn lại rất dễ đánh nên bài viết này chỉ hướng dẫn chủ yếu về 5 con Bosses cuối này. Nhưng đừng quá lo lắng, vì là Boss solo nên chỉ cần nắm được cơ chế cũng như lựa chọn class phù hợp thì cũng không quá khó khăn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365133",
+          "runs": [
+            {
+              "text": "Infernal Arena Merge Shop",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-arena-merge-shop"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365159",
+          "runs": [
+            {
+              "text": "Merge Shop của NPC Aranx ở "
+            },
+            {
+              "text": "/join infernalarena",
+              "href": "http://aqwwiki.wikidot.com/infernal-arena"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365206",
+          "runs": [
+            {
+              "text": "Nhận quests từ Aranx để có thể vào được room Boss tương ứng. Để lấy hết tất cả đồ trong shop thì cần tổng cộng các nguyên liệu sau:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365338",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Infernal Badge",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-badge"
+            },
+            {
+              "text": " ×140",
+              "bold": true
+            },
+            {
+              "text": " drop từ Infernal Mage đến Infernal Izotz tương ứng với “"
+            },
+            {
+              "text": "Maligned Magus",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” đến “"
+            },
+            {
+              "text": "Frosty Burns",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” quest.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365458",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Infernal Emblem",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-emblem"
+            },
+            {
+              "text": " ×120",
+              "bold": true
+            },
+            {
+              "text": " drop từ Infernal Krampus đến Accursed Apepheryx tương ứng với “"
+            },
+            {
+              "text": "Kramping Your Style",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” đến “"
+            },
+            {
+              "text": "From the Crux of Shadows",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” quest.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365603",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Duo's Dinner",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/duo-s-dinner"
+            },
+            {
+              "text": " ×36",
+              "bold": true
+            },
+            {
+              "text": " drop từ Deadly Duo ứng với “"
+            },
+            {
+              "text": "Reviled Returner",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” quest.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365675",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Cervus Dente",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/cervus-dente"
+            },
+            {
+              "text": " ×38",
+              "bold": true
+            },
+            {
+              "text": " drop từ Cervus Malus ứng với “"
+            },
+            {
+              "text": "Reign of the Deer",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” quest.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365750",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Infernal Incantation",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/infernal-incantation"
+            },
+            {
+              "text": " ×38",
+              "bold": true
+            },
+            {
+              "text": " drop từ Key of Sholemoh ứng với “"
+            },
+            {
+              "text": "Ars Infernum",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” quest.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365831",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Scythe Shard",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/scythe-shard"
+            },
+            {
+              "text": " ×36",
+              "bold": true
+            },
+            {
+              "text": " drop từ Azalith's Scythe ứng với “"
+            },
+            {
+              "text": "Unrepentant Culler",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” quest.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365911",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Champion's Seal",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/champion-s-seal"
+            },
+            {
+              "text": " ×42",
+              "bold": true
+            },
+            {
+              "text": " drop từ Na'al ứng với “"
+            },
+            {
+              "text": "Lord of the Scarred Barrens",
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” quest.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-365995",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " \n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366002",
+          "runs": [
+            {
+              "text": "- Sau khi hoàn thành “",
+              "italic": true
+            },
+            {
+              "text": "Lord of the Scarred Barrens",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/aranx-s-quests#Infernal"
+            },
+            {
+              "text": "” quest, bạn sẽ nhận được Infernal Champion Character Page Badge.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366117",
+          "runs": [
+            {
+              "text": "- Trước khi trả quest (5 quests cuối), bạn nên dùng boost exp (chưa đạt lvl tối đa) để tăng lượng exp thưởng nhận được của quest.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366247",
+          "runs": [
+            {
+              "text": "- Các trang bị có AC tag sau khi dùng để merge có thể dùng chức năng ",
+              "italic": true
+            },
+            {
+              "text": "Buy Back",
+              "italic": true,
+              "href": "/he-thong/buy-back-ac-tagged-items-function"
+            },
+            {
+              "text": " để lấy lại chúng mà không cần farm lại.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366368",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Scythe of the Fallen",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/scythe-of-the-fallen"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(SoF",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ")",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 40% All DMG, merge từ:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366433",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 500k ×42 "
+            },
+            {
+              "text": "(check “",
+              "italic": true
+            },
+            {
+              "text": "Gold Farm Guide",
+              "italic": true,
+              "href": "/farm/farming-gold"
+            },
+            {
+              "text": "” nếu bạn cần)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366496",
+          "runs": [
+            {
+              "text": "→ Duo's Dinner ×26\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366515",
+          "runs": [
+            {
+              "text": "→ Cervus Dente ×26\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366534",
+          "runs": [
+            {
+              "text": "→ Infernal Incantation ×26\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366561",
+          "runs": [
+            {
+              "text": "→ Scythe Shard ×26\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366580",
+          "runs": [
+            {
+              "text": "→ Champion's Seal ×26\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366602",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Đầu tiên cần merge Scythe of Azalith (weapon tăng 30% All DMG), sau đó merge tiếp Scythe of the Fallen với các nguyên liệu còn lại.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366744",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Azalith’s Set:",
+              "bold": true
+            },
+            {
+              "text": " Tất cả đều là Cosmetics, gồ"
+            },
+            {
+              "text": "m có "
+            },
+            {
+              "text": "Armor of Azalith",
+              "href": "http://aqwwiki.wikidot.com/armor-of-azalith"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Crown of Azalith",
+              "href": "http://aqwwiki.wikidot.com/crown-of-azalith"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Crown + Locks of Azalith",
+              "href": "http://aqwwiki.wikidot.com/crown-locks-of-azalith"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Great Wings of Azalith",
+              "href": "http://aqwwiki.wikidot.com/great-wings-of-azalith"
+            },
+            {
+              "text": ". Tổng cần cho set này:"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366903",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 500k ×3 "
+            },
+            {
+              "text": "(check “",
+              "italic": true
+            },
+            {
+              "text": "Gold Farm Guide",
+              "italic": true,
+              "href": "/farm/farming-gold"
+            },
+            {
+              "text": "” nếu bạn cần)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366965",
+          "runs": [
+            {
+              "text": "→ Duo's Dinner ×8\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-366983",
+          "runs": [
+            {
+              "text": "→ Cervus Dente ×8\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367001",
+          "runs": [
+            {
+              "text": "→ Infernal Incantation ×8\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367027",
+          "runs": [
+            {
+              "text": "→ Scythe Shard ×8\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367048",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Na'al’s Set:",
+              "bold": true
+            },
+            {
+              "text": " Tất cả đều là Cosmetics, "
+            },
+            {
+              "text": "gồm có "
+            },
+            {
+              "text": "Tainted Blades of Na'al",
+              "href": "http://aqwwiki.wikidot.com/tainted-blades-of-na-al"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Tainted Daggers of Na'al",
+              "href": "http://aqwwiki.wikidot.com/tainted-daggers-of-na-al"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "Dire Armor of Na'al",
+              "href": "http://aqwwiki.wikidot.com/dire-armor-of-na-al"
+            },
+            {
+              "text": " và"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Dire Helm of Na'al",
+              "href": "http://aqwwiki.wikidot.com/dire-helm-of-na-al"
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": " Tổ"
+            },
+            {
+              "text": "ng cần cho set này:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367211",
+          "runs": [
+            {
+              "text": "→ Gold Voucher 500k ×5 "
+            },
+            {
+              "text": "(check “",
+              "italic": true
+            },
+            {
+              "text": "Gold Farm Guide",
+              "italic": true,
+              "href": "/farm/farming-gold"
+            },
+            {
+              "text": "” nếu bạn cần)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367273",
+          "runs": [
+            {
+              "text": "→ Tainted Blade of Na'al ×1 và Tainted Dagger of Na'al ×1: Drop từ Na’al.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-367347",
+          "runs": [
+            {
+              "text": "→ Champion's Seal ×16\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendedTeams": []
+}

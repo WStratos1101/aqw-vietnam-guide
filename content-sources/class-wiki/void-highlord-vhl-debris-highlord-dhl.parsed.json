@@ -1,0 +1,148 @@
+{
+  "url": "https://aqwwiki.wikidot.com/void-highlord-class",
+  "sourceHash": "0728d59e278b3d7b148f0e12993811105b5c79353aa2f680fd838853ab8188e9",
+  "entries": [
+    {
+      "officialName": "Contract",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2.3",
+      "skillType": "Physical",
+      "target": "An infinite range attack that deals damage to 1 target.",
+      "officialDescription": "Seal your opponent's fate. If Shackled is active, applies Soul Fend to yourself, a HoT for 5 seconds, stacks to 5. If Unshackled is active, applies Soul Breach to your target, a DoT for 5 seconds, stacks to 5.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/VHLAA.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/void-highlord-class",
+      "sourceHash": "0728d59e278b3d7b148f0e12993811105b5c79353aa2f680fd838853ab8188e9",
+      "evidence": "Contract Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2.3 Seconds Type: Physical Range: An infinite range attack that deals damage to 1 target. Description: Seal your opponent's fate. If Shackled is active, applies Soul Fend to yourself, a HoT for 5 seconds, stacks to 5. If Unshackled is active, applies Soul Breach to your target, a DoT for 5 seconds, stacks to 5."
+    },
+    {
+      "officialName": "Shackle",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "An infinite range attack that deals damage to 1 target.",
+      "officialDescription": "Binds your soul for protection, dealing damage while reducing your incoming damage by 50% for 15 seconds. Also applies Soul Void, increasing your Haste, HoT power, and DoT power by 30% for 12 seconds. Always crits and can't miss. Costs 20% of your maximum health. (Replaces Unshackled)",
+      "notes": [
+        "Deals 125% weapon damage.",
+        "Guaranteed to hit.",
+        "Applies Shackled to the caster for 15 seconds, increasing Damage Resistance by 50%.",
+        "Has a chance to apply Insolent Fools to Caster for 4 seconds, increasing caster's Endurance by 30% and applying an HoT to the caster."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/VHL1.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/void-highlord-class",
+      "sourceHash": "0728d59e278b3d7b148f0e12993811105b5c79353aa2f680fd838853ab8188e9",
+      "evidence": "Shackle Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 4 Seconds Type: Physical Range: An infinite range attack that deals damage to 1 target. Description: Binds your soul for protection, dealing damage while reducing your incoming damage by 50% for 15 seconds. Also applies Soul Void, increasing your Haste, HoT power, and DoT power by 30% for 12 seconds. Always crits and can't miss. Costs 20% of your maximum health. (Replaces Unshackled) Notes: Deals 125% weapon damage. Guaranteed to hit. Applies Shackled to the caster for 15 seconds, increasing Damage Resistance by 50%. Has a chance to apply Insolent Fools to Caster for 4 seconds, increasing caster's Endurance by 30% and applying an HoT to the caster."
+    },
+    {
+      "officialName": "Highlord's Gaze",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "5",
+      "skillType": "Physical",
+      "target": "An infinite range attack that deals damage to 1 target.",
+      "officialDescription": "Strike fear into your opponent with the eyes of the Void, dealing damage and feeding off their despair, healing you. Has a 30% chance to stun and applies Congealed, reducing their Hit Chance, Haste, and Dodge by 20% for 6 seconds.",
+      "notes": [
+        "Deals 130% weapon damage.",
+        "Has a 30% chance to apply Stunned to an enemy target, stunning them for 3 seconds.",
+        "Has a chance to apply Insolent Fools to Caster for 4 seconds, increasing caster's Endurance by 30% and applying an HoT to the caster."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/VHL2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/void-highlord-class",
+      "sourceHash": "0728d59e278b3d7b148f0e12993811105b5c79353aa2f680fd838853ab8188e9",
+      "evidence": "Highlord's Gaze Rank Needed: 2 Mana Cost: 20 Mana Cooldown: 5 Seconds Type: Physical Range: An infinite range attack that deals damage to 1 target. Description: Strike fear into your opponent with the eyes of the Void, dealing damage and feeding off their despair, healing you. Has a 30% chance to stun and applies Congealed, reducing their Hit Chance, Haste, and Dodge by 20% for 6 seconds. Notes: Deals 130% weapon damage. Has a 30% chance to apply Stunned to an enemy target, stunning them for 3 seconds. Has a chance to apply Insolent Fools to Caster for 4 seconds, increasing caster's Endurance by 30% and applying an HoT to the caster."
+    },
+    {
+      "officialName": "Unshackle",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "An infinite range attack that deals damage to 1 target.",
+      "officialDescription": "Releases your soul for destruction, dealing damage while increasing your outgoing damage by 50% for 15 seconds. Also applies Soul Void, increasing your Haste, HoT power, and DoT power by 30% for 12 seconds. Always crits and can't miss. Costs 20% of your maximum health. (Replaces Shackled)",
+      "notes": [
+        "Deals 85% weapon damage.",
+        "Guaranteed to hit.",
+        "Has a chance to apply Insolent Fools to Caster for 4 seconds, increasing caster's Endurance by 30% and applying an HoT to the caster."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/VHL3.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/void-highlord-class",
+      "sourceHash": "0728d59e278b3d7b148f0e12993811105b5c79353aa2f680fd838853ab8188e9",
+      "evidence": "Unshackle Rank Needed: 3 Mana Cost: 0 Mana Cooldown: 4 Seconds Type: Physical Range: An infinite range attack that deals damage to 1 target. Description: Releases your soul for destruction, dealing damage while increasing your outgoing damage by 50% for 15 seconds. Also applies Soul Void, increasing your Haste, HoT power, and DoT power by 30% for 12 seconds. Always crits and can't miss. Costs 20% of your maximum health. (Replaces Shackled) Notes: Deals 85% weapon damage. Guaranteed to hit. Has a chance to apply Insolent Fools to Caster for 4 seconds, increasing caster's Endurance by 30% and applying an HoT to the caster."
+    },
+    {
+      "officialName": "Relentless Onslaught",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Hit Chance and Crit Chance by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/VHLPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/void-highlord-class",
+      "sourceHash": "0728d59e278b3d7b148f0e12993811105b5c79353aa2f680fd838853ab8188e9",
+      "evidence": "Relentless Onslaught Rank Needed: 4 Type: Passive Ability Description: Increases Hit Chance and Crit Chance by 20%"
+    },
+    {
+      "officialName": "Tremble in Fear",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Incoming damage reduced by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/VHLPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/void-highlord-class",
+      "sourceHash": "0728d59e278b3d7b148f0e12993811105b5c79353aa2f680fd838853ab8188e9",
+      "evidence": "Tremble in Fear Rank Needed: 4 Type: Passive Ability Description: Incoming damage reduced by 20%"
+    },
+    {
+      "officialName": "Armageddon",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "50",
+      "cooldown": "15",
+      "skillType": "Physical",
+      "target": "An infinite range attack that deals damage to 1 target.",
+      "officialDescription": "Spawn a portal straight to the Void itself to call a mass amount of swords to do your bidding, dealing cataclysmic damage. Applies Arbiter's Wrath, increasing your Crit Damage by 75% for 12 seconds. Also applies Kneel Before the Nation, increasing your outgoing damage and reducing your incoming damage by 50% for 12 seconds. At rank 10, you sacrifice your opponent’s soul to the Void, increasing their incoming damage by 5% for 20 seconds, stacks to 10.",
+      "notes": [
+        "Deals 420% weapon damage.",
+        "Has a chance to apply Insolent Fools to Caster for 4 seconds, increasing caster's Endurance by 30% and applying an HoT to the caster."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/VHL4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/void-highlord-class",
+      "sourceHash": "0728d59e278b3d7b148f0e12993811105b5c79353aa2f680fd838853ab8188e9",
+      "evidence": "Armageddon Rank Needed: 5 Mana Cost: 50 Mana Cooldown: 15 Seconds Type: Physical Range: An infinite range attack that deals damage to 1 target. Description: Spawn a portal straight to the Void itself to call a mass amount of swords to do your bidding, dealing cataclysmic damage. Applies Arbiter's Wrath, increasing your Crit Damage by 75% for 12 seconds. Also applies Kneel Before the Nation, increasing your outgoing damage and reducing your incoming damage by 50% for 12 seconds. At rank 10, you sacrifice your opponent’s soul to the Void, increasing their incoming damage by 5% for 20 seconds, stacks to 10. Notes: Deals 420% weapon damage. Has a chance to apply Insolent Fools to Caster for 4 seconds, increasing caster's Endurance by 30% and applying an HoT to the caster."
+    },
+    {
+      "officialName": "Undying Highlord",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Starting at rank 1, all skills (excluding Contract) have a 20% chance to apply Insolent Fools, increasing your Endurance by 30% while healing you over time for 3 seconds. At rank 10, Undying Highlord permanently increases your Endurance by 50% and Armageddon increases your opponent’s incoming damage by 5% for 20 seconds, stacks to 10.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/VHLPassive.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/void-highlord-class",
+      "sourceHash": "0728d59e278b3d7b148f0e12993811105b5c79353aa2f680fd838853ab8188e9",
+      "evidence": "Undying Highlord Rank Needed: 10 Type: Passive Ability Description: Starting at rank 1, all skills (excluding Contract) have a 20% chance to apply Insolent Fools, increasing your Endurance by 30% while healing you over time for 3 seconds. At rank 10, Undying Highlord permanently increases your Endurance by 50% and Armageddon increases your opponent’s incoming damage by 5% for 20 seconds, stacks to 10. Note: Previously called \"Undying Warlord\"."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/yMNewwX.png",
+  "sameSkillVariants": [
+    {
+      "name": "Debris Highlord (Class)",
+      "url": "https://aqwwiki.wikidot.com/debris-highlord-class"
+    },
+    {
+      "name": "Void Highlord (IoDA) (Class)",
+      "url": "https://aqwwiki.wikidot.com/void-highlord-ioda-class"
+    }
+  ],
+  "location": "Location: Void Highlord Merge Shop - Tercessuinotlim\nPrice: N/A\n\nMerge the following:\n\nRoentgenium of Nulgath x15\nVoid Crystal A x1\nVoid Crystal B x1"
+}

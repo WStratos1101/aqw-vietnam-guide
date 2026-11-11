@@ -1,0 +1,132 @@
+{
+  "url": "https://aqwwiki.wikidot.com/lightcaster-class",
+  "sourceHash": "0e1fbc45372371fef1259adc1dbac64da4c6d55af04897aa9e9a19ca6c4eed51",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lightcaster-class",
+      "sourceHash": "0e1fbc45372371fef1259adc1dbac64da4c6d55af04897aa9e9a19ca6c4eed51",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Lingering Light",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "4",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Cast down an elemental light beacon upon the target. Does light damage and applies In The Spotlight increasing the amount of damage your opponent takes by 3% per stack and lasts 10 seconds if not restacked. (Stacks up to 50 times)",
+      "notes": [
+        "Deals 100% Spell Damage."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill232.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lightcaster-class",
+      "sourceHash": "0e1fbc45372371fef1259adc1dbac64da4c6d55af04897aa9e9a19ca6c4eed51",
+      "evidence": "Lingering Light Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 4 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Cast down an elemental light beacon upon the target. Does light damage and applies In The Spotlight increasing the amount of damage your opponent takes by 3% per stack and lasts 10 seconds if not restacked. (Stacks up to 50 times) Notes: Deals 100% Spell Damage."
+    },
+    {
+      "officialName": "Light Blast",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "4",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Blasts your opponent with a ball of pure light. Deals significant damage that is guaranteed to hit but cannot crit. Each hit applies a stack of Blinded by Light which decreases your opponent's chance to hit by 5% per stack and lasts 12 seconds if not restacked. Maxes out at 5 stacks.",
+      "notes": [
+        "Deals 350% Spell Damage."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill233.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lightcaster-class",
+      "sourceHash": "0e1fbc45372371fef1259adc1dbac64da4c6d55af04897aa9e9a19ca6c4eed51",
+      "evidence": "Light Blast Rank Needed: 2 Mana Cost: 15 Mana Cooldown: 4 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Blasts your opponent with a ball of pure light. Deals significant damage that is guaranteed to hit but cannot crit. Each hit applies a stack of Blinded by Light which decreases your opponent's chance to hit by 5% per stack and lasts 12 seconds if not restacked. Maxes out at 5 stacks. Notes: Deals 350% Spell Damage."
+    },
+    {
+      "officialName": "Illuminate",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "12",
+      "skillType": "Magical",
+      "target": "An infinite range skill that heals 7 friendly targets.",
+      "officialDescription": "Casts a net of light upon your allies. Heals yourself and up to 6 allies and applies Illuminated, increasing outgoing damage, Crit Chance, Crit Damage, Hit Chance, Dodge, Haste and Damage Resistance by 15% for 12 seconds.",
+      "notes": [
+        "Heals for 300% Spell Damage."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill234.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lightcaster-class",
+      "sourceHash": "0e1fbc45372371fef1259adc1dbac64da4c6d55af04897aa9e9a19ca6c4eed51",
+      "evidence": "Illuminate Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 12 Seconds Type: Magical Range: An infinite range skill that heals 7 friendly targets. Description: Casts a net of light upon your allies. Heals yourself and up to 6 allies and applies Illuminated, increasing outgoing damage, Crit Chance, Crit Damage, Hit Chance, Dodge, Haste and Damage Resistance by 15% for 12 seconds. Notes: Heals for 300% Spell Damage."
+    },
+    {
+      "officialName": "Mentally Bright",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Intellect by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lightcaster-class",
+      "sourceHash": "0e1fbc45372371fef1259adc1dbac64da4c6d55af04897aa9e9a19ca6c4eed51",
+      "evidence": "Mentally Bright Rank Needed: 4 Type: Passive Ability Description: Increases Intellect by 15%"
+    },
+    {
+      "officialName": "Speed of Light",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Haste by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lightcaster-class",
+      "sourceHash": "0e1fbc45372371fef1259adc1dbac64da4c6d55af04897aa9e9a19ca6c4eed51",
+      "evidence": "Speed of Light Rank Needed: 4 Type: Passive Ability Description: Increases Haste by 15%"
+    },
+    {
+      "officialName": "Burned by Light",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "35",
+      "cooldown": "15",
+      "skillType": "Magical",
+      "target": "An infinite range attack that deals damage to 1 target.",
+      "officialDescription": "You focus the power of the entire sun on a single point. Does a large amount of damage on hit then deals 700% damage over 10 seconds.",
+      "notes": [
+        "Deals 500% Spell Damage on impact.",
+        "Applies Burned by Light!, a DoT dealing 350% Spell Damage over 10 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill235.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lightcaster-class",
+      "sourceHash": "0e1fbc45372371fef1259adc1dbac64da4c6d55af04897aa9e9a19ca6c4eed51",
+      "evidence": "Burned by Light Rank Needed: 5 Mana Cost: 35 Mana Cooldown: 15 Seconds Type: Magical Range: An infinite range attack that deals damage to 1 target. Description: You focus the power of the entire sun on a single point. Does a large amount of damage on hit then deals 700% damage over 10 seconds. Notes: Deals 500% Spell Damage on impact. Applies Burned by Light!, a DoT dealing 350% Spell Damage over 10 seconds."
+    },
+    {
+      "officialName": "Power of the Sun",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases all damage done by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/lightcaster-class",
+      "sourceHash": "0e1fbc45372371fef1259adc1dbac64da4c6d55af04897aa9e9a19ca6c4eed51",
+      "evidence": "Power of the Sun Rank Needed: 10 Type: Passive Ability Description: Increases all damage done by 15%"
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/zdCmRlN.png",
+  "sameSkillVariants": [],
+  "location": "Locations:\n\nCelestial Realm\nLightCaster Class (Shop) (1) - Game Menu \nLightCaster Class (Shop) (2) - Game Menu \nLightCaster Class (Shop) (3) - Celestial Realm \n\nPrice: N/A (Reward from the 'LightCaster Class' quest)"
+}

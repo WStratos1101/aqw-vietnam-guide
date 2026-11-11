@@ -1,0 +1,177 @@
+{
+  "url": "https://aqwwiki.wikidot.com/gramiel-the-graceful",
+  "text": ">\nLocation:\nUltra Gramiel\nLevel:\n95\nDifficulty:\n5 stars\nTotal HP:\n7,500,000\nAI:\nAggressive when player attacks\nGrace Crystal\nfirst.\nAttacks:\n+ Glory of Grace\n- Glory of Grace\nGlory of Grace\nDamage\n204-249\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\nWhen Decay is active on Gramiel, \"Gramiel cleanses the Decay and raises his attack!\".\nAoE\n4\nType\nPhysical Damage\nNotes\nApplies Glory of Grace to Gramiel, increasing outgoing damage by 2% for 12 seconds, stacks for each player hit.\nApplies Grace Ward to Gramiel when Decay is active on Gramiel, removes the Decay effect and increasing outgoing physical and magical damage by 25% for 30 seconds, stacks.\nApplies Burning Ward to Gramiel when Safeguard is\nNOT\nactive on Gramiel, each instance of damage that the player deals to Gramiel reflects 300 damage back to them.\nApplies Crystal Meltdown to all players when Crystal Shattered is active on Gramiel, which is used by Grace Crystal's Unstable effect for 10 seconds.\nCannot miss.\nIgnores focus.\n+ Grace Burst\n- Grace Burst\nGrace Burst\nDamage\n60% of current HP\nAnimations\n{$animations}\nCooldown\n10 seconds\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nCannot miss.\nCannot crit.\nIgnores focus.\n+ Grace Shield ➞ Grace Drain\n- Grace Shield ➞ Grace Drain\nGrace Shield\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nGramiel attempts to drain your power… break his guard!\nAoE\nSelf\nType\nCharge\nNotes\nUsed after Grace Burst is used three times.\nApplies Safeguard to Gramiel, removes Gramiel's Burning Ward effect and blocks up to 20 damage for 5 seconds.\nGrace Drain is used after Grace Shield charges for 5 seconds.\nGrace Drain\nDamage\n157-192\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nWhen Safeguard is active on Gramiel, \"Souls are nothing but focused grace.\"\nAoE\n4\nType\nMagical Damage\nNotes\nApplies Grace Drained to all players when Safeguard is active on Gramiel, reducing Haste and Hit Chance by 70% for 10 seconds.\nApplies Grace Absorbed to Gramiel when Safeguard is active on Gramiel, increasing outgoing damage by 30% for 30 seconds, stacks for each player hit.\nCannot miss.\nCannot crit.\nIgnores focus.\n+ Grace Charge\n- Grace Charge\nGrace Charge\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nI will usher the world into an age of prosperity!\nAoE\nSelf\nType\nCharge\nNotes\nUsed after both Grace Crystals are defeated.\nApplies Grace Given to Gramiel, increasing Crit Chance by 5000% and outgoing damage by 500%.\nApplies DamageShield to Gramiel and removes the Boss Shield effect.\nRemoves all stacks of Glory of Grace and Grace Absorbed.\n+ Celestial Ruin\n- Celestial Ruin\nCelestial Ruin\nDamage\n626-765\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\nWhen Focus is active on Gramiel, \"You dare challenge me evildoer?\".\nAoE\n4\nType\nPhysical Damage\nNotes\nApplies Celestial Ruin to all players, reducing Damage Resistance and Physical Resistance by 40% for 45 seconds, stacks.\nApplies Vendetta to the player that used Focus on Gramiel for 45 seconds, stacks to 5.\nCannot miss\n+ Death's Door\n- Death's Door\nDeath's Door\nDamage\n60% of current HP\nAnimations\n{$animations}\nCooldown\n10 seconds\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nApplies Death's Door to all players that have the Vendetta effect on them for 60 seconds.\nCannot miss.\nCannot crit.\nIgnores focus.\n+ Magic Amp ➞ Grace Unleashed\n- Magic Amp ➞ Grace Unleashed\nMagic Amp\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nAll servants of the \"Liberator\" must die!\nAoE\nSelf\nType\nCharge\nNotes\nUsed after Death's Door is used three times.\nApplies Magic Amp to Gramiel, increasing outgoing magic damage by 25% for 60 seconds, stacks.\nGrace Unleashed is used after Magic Amp charges for 5 seconds.\nUnleashed Grace\nDamage\n157-192\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nMagical Damage\nNotes\nInstant Death to all players that have 5 stacks of Vendetta on them.\nApplies Celestial Reckoning to all players that have Celestial Ruin or Vendetta effect on them, reducing Magic Resistance by 25%, stacks.\nRemoves all stacks of Celestial Ruin and Vendetta on all players.\nCannot miss.\nCannot crit.\nIgnores focus.\n+ Invulnerable ➞ Celestial Vanquish\n- Invulnerable ➞ Celestial Vanquish\nInvulnerable\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe Shadow Fiend lends their aid to those at Death's Door.\nAoE\nSelf\nType\nCharge\nNotes\nUsed at 70%, 40%, and 10% remaining HP.\nApplies Invulnerable to Gramiel, blocking all damage taken for 5 seconds.\nApplies Invulnerable to all players that have Vendetta or Death's Door effect on them, blocking all damage taken for 5 seconds.\nRemoves all stacks of Vendetta and the Death's Door effect on all players.\nIgnores focus.\nCelestial Vanquish is used after Invulnerable charges for 5 seconds.\nCelestial Vanquish\nDamage\nInstant Death\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nWhat? You Survived? What parlour trick is this?\nAoE\n4\nType\nTrue Damage\nNotes\nCannot miss.\nCannot crit.\nIgnores focus.\nAbilities:\nBoss Shield:\nCannot take more than 1 damage from a single attack in Phase 1.\nDamage Shield:\nDamage over 125,000 dealt to Gramiel is reduced by raising the difference to the exponent 0.8 (but is never reduced below 125,000) in Phase 2.\nCrystal Shattered:\nWhen a Grace Crystal is destroyed, applies Crystal Shattered to Gramiel which is used for Gramiel's Crystal Meltdown in Phase 1.\nGrace Claimed:\nWhen a player dies while fighting Gramiel, he recovers 750,000 HP, and increasing 20% Outgoing Damage and Outgoing Physical Damage, accompanied by the message “In the end, you were nothing but a monster.”\nCannot be stunned.\nBase Stats:\n0% Crit Chance\n0% Dodge\n100% Damage Resistance\n100% DoT Resistance\n20% Outgoing Damage\n20% Outgoing Physical Damage\n20% Outgoing Magical Damage\nTemporary Items Dropped:\nGramiel the Graceful Vanquished (Used in the '\nResuscitated Hope\n' quest)\nItems Dropped:\nTreasure Chest (Misc)\nNote:\nAlso see\nCelestial Gramiel\n.\nThanks to Apus.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_g\n_lv95\naggro\nboss\nbossshield\nchallenge\nfreeplayer\nglowingeyes\nhuman\nimmune\njewelry\nmonster\nwinged",
+  "images": [
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+      "alt": "BossShield.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://i.imgur.com/PS5HxB3.png",
+      "alt": "PS5HxB3.png"
+    }
+  ],
+  "links": [
+    {
+      "url": "/ultra-gramiel",
+      "index": 2
+    },
+    {
+      "url": "/grace-crystal",
+      "index": 11
+    },
+    {
+      "url": "javascript:;",
+      "index": 14
+    },
+    {
+      "url": "javascript:;",
+      "index": 15
+    },
+    {
+      "url": "javascript:;",
+      "index": 38
+    },
+    {
+      "url": "javascript:;",
+      "index": 39
+    },
+    {
+      "url": "javascript:;",
+      "index": 57
+    },
+    {
+      "url": "javascript:;",
+      "index": 58
+    },
+    {
+      "url": "javascript:;",
+      "index": 95
+    },
+    {
+      "url": "javascript:;",
+      "index": 96
+    },
+    {
+      "url": "javascript:;",
+      "index": 115
+    },
+    {
+      "url": "javascript:;",
+      "index": 116
+    },
+    {
+      "url": "javascript:;",
+      "index": 134
+    },
+    {
+      "url": "javascript:;",
+      "index": 135
+    },
+    {
+      "url": "javascript:;",
+      "index": 154
+    },
+    {
+      "url": "javascript:;",
+      "index": 155
+    },
+    {
+      "url": "javascript:;",
+      "index": 193
+    },
+    {
+      "url": "javascript:;",
+      "index": 194
+    },
+    {
+      "url": "/lae-s-quests#UGramiel",
+      "index": 252
+    },
+    {
+      "url": "/treasure-chest-misc",
+      "index": 255
+    },
+    {
+      "url": "/celestial-gramiel",
+      "index": 258
+    },
+    {
+      "url": "http://www.aq.com/",
+      "index": 262
+    },
+    {
+      "url": "/system:page-tags/tag/5star#pages",
+      "index": 265
+    },
+    {
+      "url": "/system:page-tags/tag/_g#pages",
+      "index": 266
+    },
+    {
+      "url": "/system:page-tags/tag/_lv95#pages",
+      "index": 267
+    },
+    {
+      "url": "/system:page-tags/tag/aggro#pages",
+      "index": 268
+    },
+    {
+      "url": "/system:page-tags/tag/boss#pages",
+      "index": 269
+    },
+    {
+      "url": "/system:page-tags/tag/bossshield#pages",
+      "index": 270
+    },
+    {
+      "url": "/system:page-tags/tag/challenge#pages",
+      "index": 271
+    },
+    {
+      "url": "/system:page-tags/tag/freeplayer#pages",
+      "index": 272
+    },
+    {
+      "url": "/system:page-tags/tag/glowingeyes#pages",
+      "index": 273
+    },
+    {
+      "url": "/system:page-tags/tag/human#pages",
+      "index": 274
+    },
+    {
+      "url": "/system:page-tags/tag/immune#pages",
+      "index": 275
+    },
+    {
+      "url": "/system:page-tags/tag/jewelry#pages",
+      "index": 276
+    },
+    {
+      "url": "/system:page-tags/tag/monster#pages",
+      "index": 277
+    },
+    {
+      "url": "/system:page-tags/tag/winged#pages",
+      "index": 278
+    }
+  ],
+  "reviewedAt": "2026-11-08"
+}

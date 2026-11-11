@@ -1,0 +1,1087 @@
+{
+  "challengeContent": true,
+  "id": "xyfrag",
+  "name": "Xyfrag",
+  "type": "other_challenge",
+  "map": "voidxyfrag",
+  "levelRequirement": 80,
+  "partySize": 7,
+  "description": "Cách đánh:",
+  "bodyUrl": "/content/challenges/xyfrag.json",
+  "href": "/other-challenges/xyfrag",
+  "image": "monster-xyfrag",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "xyfrag-stage-1",
+      "name": "Xyfrag",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Xyfrag",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "xyfrag-0",
+            "canonicalName": "Xyfrag",
+            "role": "Monster",
+            "level": 99,
+            "maxHp": 3000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/xyfrag"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "xyfrag-0-slimed-0",
+            "monsterId": "xyfrag-0",
+            "name": "Slimed",
+            "type": "Physical",
+            "damage": "330-350",
+            "damageType": "Physical",
+            "cooldown": "2 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Has a 12% chance to apply Slimed lên người chơi, giảm Haste 20% trong 10 giây.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/xyfrag"
+          },
+          {
+            "id": "xyfrag-0-splatter-1",
+            "monsterId": "xyfrag-0",
+            "name": "Splatter",
+            "type": "True Damage",
+            "damage": "50% Target Health",
+            "damageType": "True Damage",
+            "cooldown": "5 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/xyfrag"
+          },
+          {
+            "id": "xyfrag-0-regoovenation-2",
+            "monsterId": "xyfrag-0",
+            "name": "Regoovenation",
+            "type": "Self Target",
+            "damageType": "Self Target",
+            "cooldown": "10 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Regoovenation to Xyfrag, a 5 giây HoT.",
+              "Áp Absorbing Goo to Xyfrag, tăng sát thương gây ra 100%, cộng dồn tối đa 500."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/xyfrag"
+          },
+          {
+            "id": "xyfrag-0-bleeeeeeeeeeeecch-3",
+            "monsterId": "xyfrag-0",
+            "name": "BLEEEEEEEEEEEECCH",
+            "type": "Charge",
+            "damageType": "Charge",
+            "activation": "BLEEEEEEEEEEEECCH",
+            "playerEffects": [
+              "Charges trong 2 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/xyfrag"
+          },
+          {
+            "id": "xyfrag-0-consume-4",
+            "monsterId": "xyfrag-0",
+            "name": "Consume",
+            "type": "True Damage",
+            "damage": "2500",
+            "damageType": "True Damage",
+            "cooldown": "25 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Consumed to player, giảm Haste 50%, sát thương gây ra 80%, và tăng sát thương nhận vào 100% trong 10 giây.",
+              "Áp Decay to player, preventing non lifesteal healing trong 5 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/xyfrag"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:",
+        "- “Doom Spikes” quest để farm Verus DoomKnight Class.",
+        "- “Wrong Turn at Voidbuquerque” quest để farm Nulgath’s resources.",
+        "Boss này nằm ở map /join voidxyfrag - Room limit: 7",
+        "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 3,000,000",
+        "◆ Shield giúp giới hạn sát thương nhận tối đa 10k.",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Khi mất 1 HP đầu tiên và mỗi khi mất 10% HP, Xyfrag sẽ luân phiên giảm 80% Phys In hoặc Magi In.",
+        "◆ Auto-Attack mỗi 2s gây Phys DMG từ 330 đến 350.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players có 12% khả năng bị giảm 20% Haste trong 10s.",
+        "◆ Mỗi 5s, sử dụng Splatter gây True DMG bằng 50% lượng HP của player.",
+        "→ Bỏ qua Focus/Taunt.",
+        "◆ Mỗi 10s, sử dụng Regoovenation áp hiệu ứng lên bản thân.",
+        "→ Xyfrag hồi máu bằng HoT trong 5s.",
+        "→ Xyfrag tăng 100% All Out, stack đến 500.",
+        "◆ Mỗi 25s, sử dụng BLEEEEEEEEEEEECCH để charge trong 2s rồi kích hoạt Consume gây 2500 True DMG.",
+        "→ Players bị giảm 50% Haste, giảm 80% All Out và tăng 100% All In trong 10s.",
+        "→ Players dính hiệu ứng Decay, không nhận được Heal/HoT trong 5s."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Xyfrag cũng là một Mini Challenge Boss, tuy nhiên sẽ khó đánh hơn Flibbitiestgibbet một chút, nhưng cũng không quá khó để đánh bại được nó. Với một team từ 6 người bên dưới thì có thể giết nó một cách đơn giản.",
+        "Team 6 người:\tCAv, DT/EDoT, LR, PCM/LC, LoO, SC/IT",
+        "hoặc\tCAv, LR, VDK/LDK, PCM/LC, LoO, SC/IT",
+        "hoặc\tCAv, LR, PCM/AP, LC, LoO, SC/IT",
+        "hoặc\tDT/EDoT, LR, PCM/AP, LC, LoO, SC/IT",
+        "hoặc\tShaman, LR, PCM/AP, LoO, SC/IT, FB",
+        "Team 7 người:\tCAv, 2 DT/EDoT, LR, PCM/LC, LoO, SC/IT",
+        "hoặc\tCAv, DT/EDoT, LR, PCM/AP, LC, LoO, SC/IT",
+        "hoặc\tCAv, LR, VDK/LDK, PCM/AP, LC, LoO, SC/IT",
+        "hoặc\tCAv, LR, PCM, AP, LC, LoO, SC/IT",
+        "hoặc\tDT/EDoT, LR, VDK, LDK, PCM/LC, LoO, SC/IT",
+        "hoặc\tShaman, LR, VDK, PCM/AP, LoO, SC/IT, FB",
+        "hoặc\t2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH",
+        "Note: CAv hoặc LR cần có Scroll of Enrage để thực hiện Focus/Taunt, cách thực hiện: sử dụng SoE ngay khi thấy thông báo màu vàng “BLEEEEEEEEEEEECCH” hiện ra."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-410098",
+          "runs": [
+            {
+              "text": "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410202",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Doom Spikes",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest để farm "
+            },
+            {
+              "text": "Verus DoomKnight Class",
+              "href": "/farm/verus-doomknight-vdk"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410256",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Wrong Turn at Voidbuquerque",
+              "href": "http://aqwwiki.wikidot.com/memory-of-nulgath-s-quests"
+            },
+            {
+              "text": "” quest để f"
+            },
+            {
+              "text": "a"
+            },
+            {
+              "text": "rm "
+            },
+            {
+              "text": "Nulgath’s resources",
+              "href": "/farm/nulgath-s-resources-farming"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410324",
+          "runs": [
+            {
+              "text": "Boss này nằm ở m",
+              "italic": true
+            },
+            {
+              "text": "ap ",
+              "italic": true
+            },
+            {
+              "text": "/join voidxyfrag",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/void-xyfrag"
+            },
+            {
+              "text": " - Room",
+              "italic": true
+            },
+            {
+              "text": " limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410376",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410433",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410441",
+          "runs": [
+            {
+              "text": "◆ Total HP: 3,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410463",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 10k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410514",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410537",
+          "runs": [
+            {
+              "text": "◆ Khi mất 1 HP đầu tiên và mỗi khi mất 10% HP, Xyfrag sẽ luân phiên giảm 80% Phys In hoặc Magi In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410636",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây Phys DMG từ 330 đến 350.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410686",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410708",
+          "runs": [
+            {
+              "text": "→ Players có 12% khả năng bị giảm 20% Haste trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410763",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sử dụng Splatter gây True DMG bằng 50% lượng HP của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410833",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410855",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Regoovenation áp hiệu ứng lên bản thân.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410914",
+          "runs": [
+            {
+              "text": "→ Xyfrag hồi máu bằng HoT trong 5s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410950",
+          "runs": [
+            {
+              "text": "→ Xyfrag tăng 100% All Out, stack đến 500.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410993",
+          "runs": [
+            {
+              "text": "◆ Mỗi 25s, sử dụng BLEEEEEEEEEEEECCH để charge trong 2s rồi kích hoạt Consume gây 2500 True DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411090",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 50% Haste, giảm 80% All Out và tăng 100% All In trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411167",
+          "runs": [
+            {
+              "text": "→ Players dính hiệu ứng Decay, không nhận được Heal/HoT trong 5s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411234",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411246",
+          "runs": [
+            {
+              "text": "Nhìn chung Xyfrag cũng là một Mini Challenge Boss, tuy nhiên sẽ khó đánh hơn Flibbitiestgibbet một chút, nhưng cũng không quá khó để đánh bại được nó. Với một team từ 6 người bên dưới thì có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411469",
+          "runs": [
+            {
+              "text": "Team 6 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "CAv, DT/EDoT, LR, PCM/LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411520",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "CAv, LR, VDK/LDK, PCM/LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411563",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "CAv, LR, PCM/AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411601",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "DT/EDoT, LR, PCM/AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411643",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Shaman, LR, PCM/AP, LoO, SC/IT, FB\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411684",
+          "runs": [
+            {
+              "text": "Team 7 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "CAv, 2 DT/EDoT, LR, PCM/LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411737",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "CAv, DT/EDoT, LR, PCM/AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411784",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "CAv, LR, VDK/LDK, PCM/AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411831",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "CAv, LR, PCM, AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411870",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "DT/EDoT, LR, VDK, LDK, PCM/LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411918",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Shaman, LR, VDK, PCM/AP, LoO, SC/IT, FB\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-411964",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH",
+              "bold": true
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-412009",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " CAv hoặc LR ",
+              "italic": true
+            },
+            {
+              "text": "cần có ",
+              "italic": true
+            },
+            {
+              "text": "Scroll of Enrage",
+              "italic": true
+            },
+            {
+              "text": " để thực hiện Focus/Taunt, cách thực hiện: sử dụng SoE ngay khi thấy thông báo màu vàng “BLEEEEEEEEEEEECCH” hiện ra.\n",
+              "italic": true
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-410537",
+      "runs": [
+        {
+          "text": "◆ Khi mất 1 HP đầu tiên và mỗi khi mất 10% HP, Xyfrag sẽ luân phiên giảm 80% Phys In hoặc Magi In.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-410686",
+      "runs": [
+        {
+          "text": "→ Bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-410833",
+      "runs": [
+        {
+          "text": "→ Bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411469",
+      "runs": [
+        {
+          "text": "Team 6 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "CAv, DT/EDoT, LR, PCM/LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411520",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "CAv, LR, VDK/LDK, PCM/LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411563",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "CAv, LR, PCM/AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411601",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "DT/EDoT, LR, PCM/AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411643",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "Shaman, LR, PCM/AP, LoO, SC/IT, FB\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411684",
+      "runs": [
+        {
+          "text": "Team 7 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "CAv, 2 DT/EDoT, LR, PCM/LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411737",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "CAv, DT/EDoT, LR, PCM/AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411784",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "CAv, LR, VDK/LDK, PCM/AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411831",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "CAv, LR, PCM, AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411870",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "DT/EDoT, LR, VDK, LDK, PCM/LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411918",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "Shaman, LR, VDK, PCM/AP, LoO, SC/IT, FB\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-411964",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH",
+          "bold": true
+        },
+        {
+          "text": "\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-412009",
+      "runs": [
+        {
+          "text": "Note:",
+          "italic": true
+        },
+        {
+          "text": " CAv hoặc LR ",
+          "italic": true
+        },
+        {
+          "text": "cần có ",
+          "italic": true
+        },
+        {
+          "text": "Scroll of Enrage",
+          "italic": true
+        },
+        {
+          "text": " để thực hiện Focus/Taunt, cách thực hiện: sử dụng SoE ngay khi thấy thông báo màu vàng “BLEEEEEEEEEEEECCH” hiện ra.\n",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": [
+    {
+      "id": "source-team-6",
+      "name": "Team 6 người:\tCAv, DT/EDoT, LR, PCM/LC, LoO, SC/IT",
+      "assignments": [
+        {
+          "id": "team-1-slot-1-1",
+          "primaryClass": {
+            "classId": "chaos-avenger",
+            "name": "Chaos Avenger",
+            "abbreviation": "CAv",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-2-1",
+          "primaryClass": {
+            "classId": "dragon-of-time",
+            "name": "Dragon of Time",
+            "abbreviation": "DT",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-3-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-4-1",
+          "primaryClass": {
+            "classId": "paladin-chronomancer",
+            "name": "Paladin Chronomancer",
+            "abbreviation": "PCM",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "lightcaster",
+              "name": "LightCaster",
+              "abbreviation": "LC",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-1-slot-5-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-6-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-7",
+      "name": "Team 7 người:\tCAv, 2 DT/EDoT, LR, PCM/LC, LoO, SC/IT",
+      "assignments": [
+        {
+          "id": "team-2-slot-1-1",
+          "primaryClass": {
+            "classId": "chaos-avenger",
+            "name": "Chaos Avenger",
+            "abbreviation": "CAv",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-2-1",
+          "primaryClass": {
+            "classId": "dragon-of-time",
+            "name": "Dragon of Time",
+            "abbreviation": "DT",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-2-2",
+          "primaryClass": {
+            "classId": "dragon-of-time",
+            "name": "Dragon of Time",
+            "abbreviation": "DT",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-3-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-4-1",
+          "primaryClass": {
+            "classId": "paladin-chronomancer",
+            "name": "Paladin Chronomancer",
+            "abbreviation": "PCM",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "lightcaster",
+              "name": "LightCaster",
+              "abbreviation": "LC",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-2-slot-5-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-6-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    }
+  ]
+}

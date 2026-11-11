@@ -1,0 +1,133 @@
+{
+  "url": "https://aqwwiki.wikidot.com/necromancer-ac",
+  "sourceHash": "a8916ff628553a705da468f416c6eff1a2e27ccf6c229c8f437af45f73557397",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/necromancer-ac",
+      "sourceHash": "a8916ff628553a705da468f416c6eff1a2e27ccf6c229c8f437af45f73557397",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Command Undead",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Use your Necrotic magic to assault your opponent, commanding your pet to attack for massive damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill03.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/necromancer-ac",
+      "sourceHash": "a8916ff628553a705da468f416c6eff1a2e27ccf6c229c8f437af45f73557397",
+      "evidence": "Command Undead Rank Needed: 1 Mana Cost: 20 Mana Cooldown: 6 Seconds Type: Magical Range: A short range attack that deals damage to 1 target. Description: Use your Necrotic magic to assault your opponent, commanding your pet to attack for massive damage. Note: Uses the \"/point\" emote while casting."
+    },
+    {
+      "officialName": "Weaken",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "5",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Leech life from the target, dealing damage while healing you. Also weakens the target, lowering damage by 40% for 6 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill23.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/necromancer-ac",
+      "sourceHash": "a8916ff628553a705da468f416c6eff1a2e27ccf6c229c8f437af45f73557397",
+      "evidence": "Weaken Rank Needed: 2 Mana Cost: 20 Mana Cooldown: 5 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Leech life from the target, dealing damage while healing you. Also weakens the target, lowering damage by 40% for 6 seconds."
+    },
+    {
+      "officialName": "Infect",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "3",
+      "skillType": "Magical",
+      "target": "A short range attack that deals damage to yourself.",
+      "officialDescription": "Infect yourself, damaging yourself and restoring 20 MP.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill63.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/necromancer-ac",
+      "sourceHash": "a8916ff628553a705da468f416c6eff1a2e27ccf6c229c8f437af45f73557397",
+      "evidence": "Infect Rank Needed: 3 Mana Cost: 0 Cooldown: 3 Seconds Type: Magical Range: A short range attack that deals damage to yourself. Description: Infect yourself, damaging yourself and restoring 20 MP."
+    },
+    {
+      "officialName": "Necrotic Resistance",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Magical Resistance increased by 30%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/necromancer-ac",
+      "sourceHash": "a8916ff628553a705da468f416c6eff1a2e27ccf6c229c8f437af45f73557397",
+      "evidence": "Necrotic Resistance Rank Needed: 4 Type: Passive Ability Description: Magical Resistance increased by 30%."
+    },
+    {
+      "officialName": "Death's Speed",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased by 20% and Hit Chance increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/necromancer-ac",
+      "sourceHash": "a8916ff628553a705da468f416c6eff1a2e27ccf6c229c8f437af45f73557397",
+      "evidence": "Death's Speed Rank Needed: 4 Type: Passive Ability Description: Haste increased by 20% and Hit Chance increased by 10%."
+    },
+    {
+      "officialName": "Summon Minion",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "45",
+      "cooldown": "16",
+      "skillType": "Magical",
+      "target": "A short range attack that deals damage to yourself.",
+      "officialDescription": "Summons an undead minion to your side (only appears if summoned outside of combat). Also sends your minion into a frenzy increasing all damage by 150% but casting a DoT on yourself, damaging you over time.",
+      "notes": [
+        "Applies Deadly Frenzy to the caster, a DoT and increasing Outgoing Damage by 150% for 16 seconds.",
+        "Summon is Skeleton (Temporary).",
+        "Summon cannot be summoned while in combat.",
+        "Summon cannot be summoned if a pet is equipped."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill18.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/necromancer-ac",
+      "sourceHash": "a8916ff628553a705da468f416c6eff1a2e27ccf6c229c8f437af45f73557397",
+      "evidence": "Summon Minion Rank Needed: 5 Mana Cost: 45 Mana Cooldown: 16 Seconds Type: Magical Range: A short range attack that deals damage to yourself. Description: Summons an undead minion to your side (only appears if summoned outside of combat). Also sends your minion into a frenzy increasing all damage by 150% but casting a DoT on yourself, damaging you over time. Notes: Applies Deadly Frenzy to the caster, a DoT and increasing Outgoing Damage by 150% for 16 seconds. Summon is Skeleton (Temporary). Summon cannot be summoned while in combat. Summon cannot be summoned if a pet is equipped."
+    },
+    {
+      "officialName": "Death's Strength",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Outgoing damage increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/necromancer-ac",
+      "sourceHash": "a8916ff628553a705da468f416c6eff1a2e27ccf6c229c8f437af45f73557397",
+      "evidence": "Death's Strength Rank Needed: 10 Type: Passive Ability Description: Outgoing damage increased by 15%."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/ssyRNtY.png",
+  "sameSkillVariants": [
+    {
+      "name": "Necromancer (Merge)",
+      "url": "https://aqwwiki.wikidot.com/necromancer-merge"
+    }
+  ],
+  "location": "Locations:\n\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\nVayle's Necromancer Shop - Necropolis\nZorbak's Revenge - Chopping Maul\n\nPrice: 2,000 AC"
+}

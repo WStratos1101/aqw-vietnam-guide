@@ -1,0 +1,153 @@
+{
+  "url": "https://aqwwiki.wikidot.com/ultra-omniknight-ac",
+  "sourceHash": "10d919daf334884ffb381b284d8cde4127a342c60dcab5e43f765b32ed34ba8f",
+  "entries": [
+    {
+      "officialName": "Omni Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Deals spell damage and has additional effects based on Inverted Light's aura.",
+      "notes": [
+        "If Resplendent Aura is applied, puts +Recovery on caster for 10 seconds, a HoT stacking up to 5.",
+        "If Destructive Aura is applied, puts +Devastation on caster for 10 seconds, increasing all of caster's damage by 20%, stacking up to 5."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill129.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/ultra-omniknight-ac",
+      "sourceHash": "10d919daf334884ffb381b284d8cde4127a342c60dcab5e43f765b32ed34ba8f",
+      "evidence": "Omni Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Deals spell damage and has additional effects based on Inverted Light's aura. If Resplendent Aura is applied, puts +Recovery on caster for 10 seconds, a HoT stacking up to 5. If Destructive Aura is applied, puts +Devastation on caster for 10 seconds, increasing all of caster's damage by 20%, stacking up to 5."
+    },
+    {
+      "officialName": "Grand Sweep",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Swing your sword in a large arc, crushing anything in its path. Enemies hit by your attack are critically stricken and become Crushed, weakening their damage output by 35% for 4 seconds.",
+      "notes": [
+        "Deals 75% weapon damage.",
+        "This skill is guaranteed to crit.",
+        "Applies Crushed to enemy target for 4 seconds, reducing their damage output by 35%."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill162.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/ultra-omniknight-ac",
+      "sourceHash": "10d919daf334884ffb381b284d8cde4127a342c60dcab5e43f765b32ed34ba8f",
+      "evidence": "Grand Sweep Rank Needed: 1 Mana Cost: 20 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Swing your sword in a large arc, crushing anything in its path. Enemies hit by your attack are critically stricken and become Crushed, weakening their damage output by 35% for 4 seconds. Notes: Deals 75% weapon damage. This skill is guaranteed to crit. Applies Crushed to enemy target for 4 seconds, reducing their damage output by 35%."
+    },
+    {
+      "officialName": "Inverted Light",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "5",
+      "cooldown": "3",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Magically enhance your sword with powerful auras, dealing unavoidable critical damage to your foe and calling upon the power of light applying Resplendent Aura, a Heal Over Time for 10 seconds that grows stronger as you auto attack more, up to 5 times. If Invictus is active, you instead call upon the power of the shadow and apply Destructive Aura on each auto attack, increasing your damage output by 20% for each strike, up to 5, lasting 10 seconds.",
+      "notes": [
+        "Deals 25% weapon damage.",
+        "Applies Resplendent Aura for 90 seconds if Invictus is NOT active.",
+        "Applies Destructive Aura for 90 seconds if Invictus IS active."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill26.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/ultra-omniknight-ac",
+      "sourceHash": "10d919daf334884ffb381b284d8cde4127a342c60dcab5e43f765b32ed34ba8f",
+      "evidence": "Inverted Light Rank Needed: 2 Mana Cost: 5 Mana Cooldown: 3 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: Magically enhance your sword with powerful auras, dealing unavoidable critical damage to your foe and calling upon the power of light applying Resplendent Aura, a Heal Over Time for 10 seconds that grows stronger as you auto attack more, up to 5 times. If Invictus is active, you instead call upon the power of the shadow and apply Destructive Aura on each auto attack, increasing your damage output by 20% for each strike, up to 5, lasting 10 seconds. Notes: Deals 25% weapon damage. Applies Resplendent Aura for 90 seconds if Invictus is NOT active. Applies Destructive Aura for 90 seconds if Invictus IS active."
+    },
+    {
+      "officialName": "Invictus",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "12",
+      "skillType": "Magical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Your will is unconquerable, as are you. Draw upon the empowering forces of multiple universes to increase your haste by 30%, crit chance by 20%, and crit damage by 10% for 10 seconds.",
+      "notes": [
+        "Applies Invictus to caster for 10 seconds, increasing Haste by 30%, Critical Strike Chance by 20%, and Critical Strike Damage by 10%."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill163.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/ultra-omniknight-ac",
+      "sourceHash": "10d919daf334884ffb381b284d8cde4127a342c60dcab5e43f765b32ed34ba8f",
+      "evidence": "Invictus Rank Needed: 3 Mana Cost: 15 Mana Cooldown: 12 Seconds Type: Magical Range: A short range status skill that applies to yourself. Description: Your will is unconquerable, as are you. Draw upon the empowering forces of multiple universes to increase your haste by 30%, crit chance by 20%, and crit damage by 10% for 10 seconds. Notes: Applies Invictus to caster for 10 seconds, increasing Haste by 30%, Critical Strike Chance by 20%, and Critical Strike Damage by 10%."
+    },
+    {
+      "officialName": "Aura Specialist",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased 10% and spell damage 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/ultra-omniknight-ac",
+      "sourceHash": "10d919daf334884ffb381b284d8cde4127a342c60dcab5e43f765b32ed34ba8f",
+      "evidence": "Aura Specialist Rank Needed: 4 Type: Passive Ability Description: Haste increased 10% and spell damage 20%"
+    },
+    {
+      "officialName": "Ultra Armor",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Incoming damage reduced by 25%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/ultra-omniknight-ac",
+      "sourceHash": "10d919daf334884ffb381b284d8cde4127a342c60dcab5e43f765b32ed34ba8f",
+      "evidence": "Ultra Armor Rank Needed: 4 Type: Passive Ability Description: Incoming damage reduced by 25%."
+    },
+    {
+      "officialName": "Omni Reversal",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "20",
+      "skillType": "Magical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "With enough force, you strike your target hard enough to cause the aura currently strengthening your weapon to resonate with the opposite effect. If Recovery is active, it increases outgoing damage by 30%. If Devastation is active, it decreases incoming damage by 30%. Effect lasts for 10 seconds.",
+      "notes": [
+        "Previously called \"Omni Blade\".",
+        "Applies Omni Resplendent to caster for 10 seconds if Resplendent Aura is in play, increasing all outgoing damage by 30%.",
+        "Applies Omni Destructive to caster for 10 seconds if Destructive Aura is in play, reducing caster's damage taken by 30%."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill56.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/ultra-omniknight-ac",
+      "sourceHash": "10d919daf334884ffb381b284d8cde4127a342c60dcab5e43f765b32ed34ba8f",
+      "evidence": "Omni Reversal Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 20 Seconds Type: Magical Range: A short range attack that deals damage to 1 target. Description: With enough force, you strike your target hard enough to cause the aura currently strengthening your weapon to resonate with the opposite effect. If Recovery is active, it increases outgoing damage by 30%. If Devastation is active, it decreases incoming damage by 30%. Effect lasts for 10 seconds. Notes: Previously called \"Omni Blade\". Applies Omni Resplendent to caster for 10 seconds if Resplendent Aura is in play, increasing all outgoing damage by 30%. Applies Omni Destructive to caster for 10 seconds if Destructive Aura is in play, reducing caster's damage taken by 30%."
+    },
+    {
+      "officialName": "Homing Blade",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit chance increased by 30%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/ultra-omniknight-ac",
+      "sourceHash": "10d919daf334884ffb381b284d8cde4127a342c60dcab5e43f765b32ed34ba8f",
+      "evidence": "Homing Blade Rank Needed: 10 Type: Passive Ability Description: Hit chance increased by 30%"
+    }
+  ],
+  "portraitUrl": "https://aqwwiki.wdfiles.com/local--files/ultra-omniknight-ac/UOKm.png",
+  "sameSkillVariants": [
+    {
+      "name": "Dark Ultra OmniNight (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/dark-ultra-omninight-0-ac"
+    },
+    {
+      "name": "Dark Ultra OmniNight (AC)",
+      "url": "https://aqwwiki.wikidot.com/dark-ultra-omninight-ac"
+    },
+    {
+      "name": "Ultra OmniKnight (Merge)",
+      "url": "https://aqwwiki.wikidot.com/ultra-omniknight-merge"
+    }
+  ],
+  "location": "Locations:\n\n13th Anniversary Merge - Ravenbreak Ridge\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nGame Menu\nNorthpointe\n\n\n\nPrice: 2,000 AC"
+}

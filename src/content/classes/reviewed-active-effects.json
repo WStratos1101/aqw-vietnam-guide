@@ -1,0 +1,1717 @@
+[
+  {
+    "name": "Crystallis Veil",
+    "description": "Spawns Crystals from thin air to increase 25% Damage Resistance for 8 seconds. Also applies Clean Cut, increasing your Crit Chance by 15% for 6 seconds.",
+    "notes": [
+      "Applies Clean Cut to caster, increasing caster's crit chance by 15% for 7 seconds.",
+      "Applies Crystallis Veil to caster, increasing caster's damage resistance by 25% for 9 seconds."
+    ],
+    "status": "source_conflict",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Crystallis Veil tăng 25% Damage Resistance."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Clean Cut tăng 15% Crit Chance. Thời lượng hai hiệu ứng chưa thống nhất."
+      }
+    ]
+  },
+  {
+    "name": "Cannon Fire",
+    "description": "Let off a blast of cannon fire from your conveniently nearby but hidden ship. Applies Cannon Wound, reducing your target's outgoing damage by 25% for 8 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Bắn đại bác và áp Cannon Wound, giảm 25% sát thương mục tiêu gây ra trong 8 giây."
+      }
+    ]
+  },
+  {
+    "name": "Anagenesis",
+    "description": "Deliver a strike with your blade of flesh. Deals physical damage based on your Attack Power and Spell Power.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương vật lý dựa trên Attack Power và Spell Power."
+      }
+    ]
+  },
+  {
+    "name": "Consumed by the Abyss",
+    "description": "Unleash the twisted power of the Abyss onto your opponents. You enter your natural Fiendish state, granting you 25% Haste for 6 seconds while your foes are Consumed by the Abyss, lowering their Dodge by 25% for 6 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Dạng Fiendish tăng 25% Haste trong 6 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Consumed by the Abyss giảm 25% Dodge trong 6 giây."
+      }
+    ]
+  },
+  {
+    "name": "Arcane Sigil",
+    "description": "Inscribe an Arcane Sigil, significantly increasing your magical power. Your Arcane Sigil increases your Damage Dealt by 30% for 30 seconds, but the Overload of the spell increases your mana costs by 50% for 4 seconds and costs 40% of your current health.",
+    "notes": [
+      "When Arcane Flux is in effect, consumes Astral Ascension and applies Corporeal Ascension, giving the caster 250% END, 60% Crit Chance, and a large rapid HoT based on mana when cast.",
+      "When Corporeal Ascension is in effect, consumes Corporeal Ascension and applies Astral Ascension, granting rapid mana regen, 60% more DoT damage, 20% Dodge, 5% Haste, and a small rapid HoT based on mana when cast."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Arcane Sigil tăng 30% sát thương gây ra trong 30 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Overload tăng 50% Mana Cost trong 4 giây. Kỹ năng tiêu hao 40% HP hiện tại."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi Arcane Flux hoạt động, thay Astral Ascension bằng Corporeal Ascension, nhận 250% END, 60% Crit Chance và HoT nhanh, mạnh, dựa trên Mana lúc thi triển."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi Corporeal Ascension hoạt động, thay nó bằng Astral Ascension, hồi Mana nhanh, tăng 60% sát thương DoT, 20% Dodge, 5% Haste và nhận HoT nhanh, nhỏ, dựa trên Mana lúc thi triển."
+      }
+    ]
+  },
+  {
+    "name": "Autoplay",
+    "description": "Enemies are as affected by your song as by any attack.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương bằng tiếng nhạc."
+      }
+    ]
+  },
+  {
+    "name": "Always Open!",
+    "description": "As a Barber of the highest quality, you don’t know when to stop, so give it all you got and hit them where it hurts!… while you still have the mana. Has a higher than average chance to crit.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Đòn đánh có cơ hội Crit cao hơn bình thường."
+      }
+    ]
+  },
+  {
+    "name": "Fire Bolt",
+    "description": "Blast your opponents at long range with force bolts.",
+    "notes": [
+      "Previously called \"Force Bolt\" and before \"Auto Attack\".",
+      "Old icon."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Bắn đạn phép tầm xa vào đối thủ."
+      }
+    ]
+  },
+  {
+    "name": "Fury Unleashed",
+    "description": "Deals damage and channels your fury into your greatsword. Gain Unstoppable Force, increasing your haste by 25% for 35 seconds. If your opponent is Ravaged, gain Fury Unleashed, increasing your outgoing damage by 50% for 10 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Unstoppable Force tăng 25% Haste trong 35 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi mục tiêu có Ravaged, Fury Unleashed tăng 50% sát thương gây ra trong 10 giây."
+      }
+    ]
+  },
+  {
+    "name": "Strike Blades",
+    "description": "You wield Strike Blades. Manipulating with time allows you to attack incredibly fast, but sacrificing power.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Dùng Strike Blades để tấn công rất nhanh với sát thương thấp hơn."
+      }
+    ]
+  },
+  {
+    "name": "Tsunami Strike",
+    "description": "Hits up to two enemies. slowing them by 50% for 4 seconds.",
+    "notes": [
+      "Deals 150% weapon damage.",
+      "Applies Tsunami Strike, reducing target haste by 50%."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây 150% Weapon Damage lên tối đa 2 kẻ địch."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tsunami Strike giảm 50% Haste trong 4 giây."
+      }
+    ]
+  },
+  {
+    "name": "Paralyzing Wind",
+    "description": "Hits up to two enemies for moderate damage, reducing all of their chances to hit by 50% for 6 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương vừa lên tối đa 2 kẻ địch và giảm 50% Hit Chance của chúng trong 6 giây."
+      }
+    ]
+  },
+  {
+    "name": "Auto Attack",
+    "description": "A basic attack, taught to all adventurers. Deals physical damage based on your Spell Power.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Đòn đánh cơ bản gây sát thương vật lý theo Spell Power."
+      }
+    ]
+  },
+  {
+    "name": "Actual Attack",
+    "description": "Using your mind, you reach out and cause pain to your foe… and boy, do they feel it!",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tấn công mục tiêu bằng sức mạnh tâm trí."
+      }
+    ]
+  },
+  {
+    "name": "Shattered Reality",
+    "description": "A powerful psychic burst AoE which will hit up to 2 foes. Applies Mental Weakness, reducing their damage by 40% for 5 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương tâm linh lên tối đa 2 kẻ địch."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Mental Weakness giảm 40% sát thương gây ra trong 5 giây."
+      }
+    ]
+  },
+  {
+    "name": "Auto Attack",
+    "description": "A rapid attack studied only by a reclusive few. Damage dealt is based on weapon damage.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Đòn đánh nhanh dựa trên Weapon Damage."
+      }
+    ]
+  },
+  {
+    "name": "Legacy Ablaze",
+    "description": "Draw upon the destructive power of dragons to blast 3 targets with a powerful attack. Your fury applies Draconic Rage for 8 seconds, increasing your Outgoing Physical Damage by 15%.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tấn công mạnh lên 3 mục tiêu."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Draconic Rage tăng 15% sát thương vật lý gây ra trong 8 giây."
+      }
+    ]
+  },
+  {
+    "name": "Auto Attack",
+    "description": "A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên Weapon Damage."
+      }
+    ]
+  },
+  {
+    "name": "Arc Lightning",
+    "description": "Emit a burst of electrical energy that bounces to up to 4 targets, with each bounce dealing increased damage.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Phóng điện nảy qua tối đa 4 mục tiêu, mỗi lần nảy gây thêm sát thương."
+      }
+    ]
+  },
+  {
+    "name": "Twisted Viper",
+    "description": "Rip the dimensional fabric and attempt to partially invert your opponents, twisting their reality and reducing their outgoing damage for 15 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Giảm sát thương mục tiêu gây ra trong 15 giây."
+      }
+    ]
+  },
+  {
+    "name": "Stasis",
+    "description": "Smash the ground and create a 4th dimensional shockwave, trapping your opponent in the ebb and flow of time. Applies Warped, reducing up to 6 opponents' haste by 30% for 15 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Warped giảm 30% Haste của tối đa 6 kẻ địch trong 15 giây."
+      }
+    ]
+  },
+  {
+    "name": "Amas",
+    "description": "A basic attack, taught to all adventurers.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Đòn đánh cơ bản."
+      }
+    ]
+  },
+  {
+    "name": "Amharach",
+    "description": "Surprise your opponent with a precisely aimed strike, dealing more damage the longer Keen has been active. Swiftly guard yourself after the strike, decreasing the damage you take by 40% for 6 seconds.",
+    "notes": [
+      "Appies Amharach to the caster, reducing Incoming Damage by 40% for 6 seconds.",
+      "Translates to \"Lucky\" in Irish."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Keen đã tồn tại càng lâu thì đòn đánh càng mạnh."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Amharach giảm 40% sát thương nhận vào trong 6 giây."
+      }
+    ]
+  },
+  {
+    "name": "Soul Breaker",
+    "description": "You relentlessly beat at your foe's soul. Dealing high damage based on weapon attack, but with a longer cooldown.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương cao dựa trên Weapon Damage, với hồi chiêu dài hơn."
+      }
+    ]
+  },
+  {
+    "name": "Furious Strike",
+    "description": "A powerful sweeping attack taught to disciplined fighters.",
+    "notes": [
+      "Previously called \"Auto Attack\".",
+      "Old icon."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tấn công bằng một đòn quét mạnh."
+      }
+    ]
+  },
+  {
+    "name": "Elemental Axe",
+    "description": "Strike your opponents from a further range with your Axe.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tấn công đối thủ ở xa bằng rìu."
+      }
+    ]
+  },
+  {
+    "name": "Strike of Order",
+    "description": "Attack with an enchanted weapon, dealing damage based on both attack power and spell power.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên cả Attack Power và Spell Power."
+      }
+    ]
+  },
+  {
+    "name": "Axiom",
+    "description": "Cast a veil of magic that greatly heightens focus in yourself and up to 6 allies. Applies Clarity, increasing Haste by 30%, and Hit Chance and Critical Damage by 40% for 8 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Clarity tăng 30% Haste, 40% Hit Chance và 40% Crit Damage trong 8 giây cho bản thân và tối đa 6 đồng minh."
+      }
+    ]
+  },
+  {
+    "name": "Rapid Fire",
+    "description": "Nock an arrow, and loose it at faraway foes.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Bắn tên vào kẻ địch ở xa."
+      }
+    ]
+  },
+  {
+    "name": "Psychic Assault",
+    "description": "Using your mind, you reach out and cause pain to your foe. This is the MindBreaker's basic attack.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Đòn đánh cơ bản của MindBreaker dùng sức mạnh tâm trí."
+      }
+    ]
+  },
+  {
+    "name": "Psychic Wave",
+    "description": "You send out waves of psychic energy dealing moderate damage to one or two enemies near you.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương tâm linh vừa lên một hoặc hai đối thủ ở gần."
+      }
+    ]
+  },
+  {
+    "name": "Strike'n Parry",
+    "description": "Perform a Counterthrust with your cutlass, reducing your target's outgoing damage by 40% for 1 second. Also applies Strike'n Parry, further reducing Outgoing Damage by 30% for 10 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Phản kích giảm 40% sát thương mục tiêu gây ra trong 1 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Strike’n Parry giảm thêm 30% sát thương gây ra trong 10 giây."
+      }
+    ]
+  },
+  {
+    "name": "Flintlock Barrage",
+    "description": "Fire your pistol at your target, wounding them and reducing their Damage Resistance by 30% for 10 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Bắn súng và giảm 30% Damage Resistance của mục tiêu trong 10 giây."
+      }
+    ]
+  },
+  {
+    "name": "Blinding Light",
+    "description": "Deals damage to all enemies in range and applies Blinded, reducing enemy hit chance by 50% for 16 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương lên mọi kẻ địch trong tầm."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Blinded giảm 50% Hit Chance trong 16 giây."
+      }
+    ]
+  },
+  {
+    "name": "Psychic Assault",
+    "description": "Assail two opponents with your mental attacks, clouding their minds and decreasing their crit chance by 25% for 4 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tấn công tâm trí của hai đối thủ, giảm 25% Crit Chance trong 4 giây."
+      }
+    ]
+  },
+  {
+    "name": "Auto Attack",
+    "description": "Double click a monster to start Auto Attacking it. This is a very unique attack that deals rapid, consistent damage based on your attack power instead of your weapon damage.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Đòn đánh nhanh và ổn định, gây sát thương dựa trên Attack Power."
+      }
+    ]
+  },
+  {
+    "name": "Grand Sweep",
+    "description": "Swing your sword in a large arc, crushing anything in its path. Enemies hit by your attack are critically stricken and become Crushed, weakening their damage output by 35% for 4 seconds.",
+    "notes": [
+      "Deals 75% weapon damage.",
+      "This skill is guaranteed to crit.",
+      "Applies Crushed to enemy target for 4 seconds, reducing their damage output by 35%."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây 75% Weapon Damage và luôn Crit."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Crushed giảm 35% sát thương mục tiêu gây ra trong 4 giây."
+      }
+    ]
+  },
+  {
+    "name": "Slash",
+    "description": "You slash out at up to 3 targets with your extended Vampire claws, dealing 60% hybrid damage to each.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây 60% sát thương Hybrid lên mỗi mục tiêu, tối đa 3."
+      }
+    ]
+  },
+  {
+    "name": "Necrotic Blade",
+    "description": "Strike your target with your Doom Blade. Applies Weakened, reducing your target's outgoing damage by 15% for 20 seconds",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tấn công bằng Doom Blade, áp Weakened giảm 15% sát thương gây ra trong 20 giây."
+      }
+    ]
+  },
+  {
+    "name": "Decisive Strike",
+    "description": "A powerful strike. Applies Armor Shred to your target, reducing their Damage Resistance by 10% for 5 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương và áp Armor Shred, giảm 10% Damage Resistance trong 5 giây."
+      }
+    ]
+  },
+  {
+    "name": "Time Strike",
+    "description": "Deals damage based on your weapon damage.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên Weapon Damage."
+      }
+    ]
+  },
+  {
+    "name": "Duel",
+    "description": "Advance your turn, damaging your opponent. Damage is increased by 50% per stack of Raise the Stakes you have.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương, tăng 50% với mỗi stack Raise the Stakes của bản thân."
+      }
+    ]
+  },
+  {
+    "name": "Quick Stabs",
+    "description": "A rapid attack studied only by a reclusive few. You also carry a hidden blade and strike when your foe least expect it, dealing additional damage.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Đòn đánh nhanh có thêm sát thương từ lưỡi dao giấu kín."
+      }
+    ]
+  },
+  {
+    "name": "Moglin's Magical Strike",
+    "description": "A masterful spell that has been passed down by Moglins. Deals damage based on your spell power.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên Spell Power."
+      }
+    ]
+  },
+  {
+    "name": "Time Rift",
+    "description": "Deals damage to your target and applies Temporal Rift to you. Stacks to 4, lasts 30 seconds, and is used by your other abilities.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương lên mục tiêu."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 30 giây, tối đa 4 stack, dùng cho các kỹ năng khác."
+      }
+    ]
+  },
+  {
+    "name": "Time Rift Inversion",
+    "description": "Rollback time to heal yourself. If Temporal Rift is active, the amount healed is increased for each stack. Also applies Continuum, reducing all damage taken by 55% for 22 seconds. Always crits.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hồi máu, tăng lượng hồi theo stack Temporal Rift. Hồi máu luôn Crit."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Continuum giảm 55% mọi sát thương nhận vào trong 22 giây."
+      }
+    ]
+  },
+  {
+    "name": "Time Rift Collapse",
+    "description": "If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi Temporal Rift hoạt động, gây sát thương theo lượng sát thương đã gây trong tối đa 10 giây trước đó. Sát thương tăng theo stack Temporal Rift và tiêu hao các stack."
+      }
+    ]
+  },
+  {
+    "name": "Severed Rift",
+    "description": "Sever time for your target, placing a DoT effect on them that doubles in strength each time it ticks while reducing their outgoing damage by 25% for 10 seconds. Also applies Focus for 4 seconds, which forces your target to attack only you for the duration.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây DoT mạnh gấp đôi sau mỗi tick và giảm 25% sát thương mục tiêu gây ra trong 10 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Focus ép mục tiêu đánh người thi triển trong 4 giây."
+      }
+    ]
+  },
+  {
+    "name": "Mortification",
+    "description": "Unleash an ancient disease that damages your target and infects their cells with Necrosis, a DoT that lasts 5 seconds, stacks up to 25.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương và áp Necrosis, DoT trong 5 giây, tối đa 25 stack."
+      }
+    ]
+  },
+  {
+    "name": "Bleeding Time",
+    "description": "Use your life essence to tap into the power of time. Deals damage and applies Chaos Rift to yourself for 30 seconds, stacks up to 4 and is used for your other abilities. You also enter an Eternal Frenzy, increasing your outgoing damage by 12% for 8 seconds, stacks up to 8. Also applies Passage of Time, which slowly damages you as long as you're in Frenzy, stacks to 100.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Chaos Rift trong 30 giây, tối đa 4 stack."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Eternal Frenzy tăng 12% sát thương gây ra trong 8 giây, tối đa 8 stack."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Passage of Time gây sát thương dần khi Frenzy còn hoạt động, tối đa 100 stack."
+      }
+    ]
+  },
+  {
+    "name": "Temporal Reanimation",
+    "description": "Your mastery of time magic combined with your necromancy arts allow you to conjure undead in an instant. Summons an undead minion that deals increased damage the lower your health is. Applies Traveling Through Time, increasing your haste by 30%. Also applies Foreseeable Future, increasing your Crit Chance by 20%, stacks to 3. Both effects last 8 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Triệu hồi Undead gây sát thương mạnh hơn khi HP bản thân thấp hơn."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Traveling Through Time tăng 30% Haste trong 8 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Foreseeable Future tăng 20% Crit Chance trong 8 giây, tối đa 3 stack."
+      }
+    ]
+  },
+  {
+    "name": "ShadowScythe’s Past",
+    "description": "Tear open a portal in time and draw upon immense power from a past battle. Deals increased damage to your target for each stack of Necrosis on them. If Chaos Rift is active, your primary target takes damage over the next second based on the amount of damage you've dealt in the past 10 seconds while Chaos Rift was active. Damage scales with each stack of Chaos Rift and consumes those stacks. Applies Unleashing Doom, preventing Chaos Rift from being applied for 1 second.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương tăng theo stack Necrosis của mục tiêu."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Chaos Rift, mục tiêu chính nhận DoT trong 1 giây dựa trên sát thương đã gây trong 10 giây trước đó khi Rift hoạt động. Sát thương tăng theo stack và tiêu hao Rift."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Unleashing Doom ngăn tích Chaos Rift trong 1 giây."
+      }
+    ]
+  },
+  {
+    "name": "ShadowScythe’s Future",
+    "description": "Relive the rebirth of your Empress. If you have stacks of Chaos Rift, they are consumed to apply Empress’s Awakening, healing you over 1 second. Also applies Debilitated, reducing your target's Hit Chance, Dodge, and Crit Chance by 20% for 12 seconds. Also applies Flow of Time, removing any stacks of Passage of Time you have while increasing your HoT and DoT for power by 20% for 12 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Tiêu hao Chaos Rift nếu có để áp Empress’s Awakening, hồi máu trong 1 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Debilitated giảm 20% Hit Chance, Dodge và Crit Chance trong 12 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Flow of Time gỡ Passage of Time, tăng 20% sức mạnh HoT và DoT trong 12 giây."
+      }
+    ]
+  },
+  {
+    "name": "Quantum Rift",
+    "description": "Warp space-time to damage your target. Applies Temporal Rift for 30 seconds, which stacks up to 4 and is used by your other skills.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương lên mục tiêu."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Áp Temporal Rift trong 30 giây, tối đa 4 stack."
+      }
+    ]
+  },
+  {
+    "name": "Quantum Fracture",
+    "description": "Fracture and fragment your foe's reality to harm their past and future selves. Inflicts Quantum Fracturing and Quantum Fragmenting, inflicting a DoT as well as reducing their Defense and Dodge by 30% for 10 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Quantum Fracturing và Quantum Fragmenting gây DoT, giảm 30% Defense và Dodge trong 10 giây."
+      }
+    ]
+  },
+  {
+    "name": "Quantum Shift",
+    "description": "Distort the timeline to alter combat capabilities. Applies Quantum Shift to you and your allies, increasing Crit Chance and Defense by 30% as well as Outgoing Physical and Outgoing Magical Damage by 10% for 10 seconds.",
+    "notes": [
+      "At Rank 10, Quantum Shift applies stacks of Quantum Spiral to you for each friendly target affected, increasing your Crit Modifier and DoT damage by 10% for 23 seconds, stacks to 40 but cannot be refreshed."
+    ],
+    "status": "source_conflict",
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Quantum Shift tăng 30% Crit Chance và Defense, tăng 10% sát thương vật lý và phép gây ra trong 10 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Rank 10, mỗi đồng minh chịu tác động cho thêm một stack Quantum Spiral. Mỗi stack tăng 10% hệ số Crit và sát thương DoT, tối đa 40 stack, không làm mới thời hạn. Thời lượng chưa thống nhất."
+      }
+    ]
+  },
+  {
+    "name": "Quantum Restructure",
+    "description": "Hack into reality for a brief moment and rebuild it in your favor. Applies Quantum Restructure to significantly reduce the amount of damage you take, while inflicting Quantum Rupture to significantly increase the amount of damage your target takes. Both effects last 2 seconds. Never misses or crits.",
+    "notes": [
+      "Quantum Restructure increases the player's Dodge by 80% and decreases DoT In, All In, Phys In and Mag In by 20% for 2 seconds.",
+      "Quantum Rupture decreases the enemy's Dodge by 80% and increases DoT In, All In, Phys In and Mag In by 20% for 2 seconds."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Quantum Restructure tăng 80% Dodge và giảm 20% DoT, mọi sát thương, sát thương vật lý và phép nhận vào trong 2 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Quantum Rupture giảm 80% Dodge, tăng 20% DoT, mọi sát thương, sát thương vật lý và phép nhận vào trong 2 giây. Kỹ năng luôn trúng và không Crit."
+      }
+    ]
+  },
+  {
+    "name": "Quantum Convergence",
+    "description": "Perceive and control the source of your powers as they were meant to be. Inflicts Quantum Convergence for 10 seconds, a heavy DoT. If Temporal Rift is active, consume it to deal damage to your target based on the damage you've dealt in the last 10 seconds while Temporal Rift was active.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Quantum Convergence gây DoT mạnh trong 10 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Nếu có Temporal Rift, tiêu hao Rift để gây sát thương dựa trên sát thương đã gây trong 10 giây trước đó khi Rift hoạt động."
+      }
+    ]
+  },
+  {
+    "name": "Corrupted Sand Strike",
+    "description": "Deals damage based on your weapon damage. Each of your skills gets an additional benefit from hourglasses and corruption you equip in your consumables slot. Hourglasses and corruption can be obtained from the Hourglass Pet available from the Book of Lore.",
+    "notes": [
+      "If Infinite Corruption is active, applies Infinity Rend for 40 seconds, a DoT that stacks to 15.",
+      "If Timepiece of Madness is active, applies the following effects:",
+      "Applies one stack of Mad for every use of Corrupted Sand Strike.",
+      "At 5 stacks of Mad, the next Corrupted Sand Strike consumes these stacks and applies Eternal.",
+      "Eternal boosts your critical strike chance by 80% and reduces the damage you deal by 30%."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên Weapon Damage."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Có Infinite Corruption thì áp Infinity Rend, DoT trong 40 giây, tối đa 15 stack."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi dùng Timepiece of Madness, mỗi đòn tích 1 Mad. Sau khi đủ 5 stack, đòn kế tiếp tiêu hao Mad để áp Eternal, tăng 80% Crit Chance và giảm 30% sát thương gây ra."
+      }
+    ]
+  },
+  {
+    "name": "Sand Rift",
+    "description": "Deals damage to your target and applies Temporal Rift to you. Temporal Rift stacks 4 times, lasts 30 seconds and is used by your other abilities.",
+    "notes": [
+      "If Hourglass of Transience is active, applies the following effects:",
+      "Flow if Transient is active, increasing enemy damage taken by 8% for 5 seconds, stacks to 3.",
+      "Ebb if Stabilize is active, applying an infinite growing DoT for 8 seconds."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương lên mục tiêu."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 30 giây, tối đa 4 stack."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Hourglass of Transience và Transient, Flow tăng 8% sát thương mục tiêu nhận trong 5 giây, tối đa 3 stack."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Hourglass of Transience và Stabilize, Ebb gây DoT tăng dần trong 8 giây."
+      }
+    ]
+  },
+  {
+    "name": "Hourglass Inversion",
+    "description": "Reverses time to heal you. Heal is increased by stacks of Temporal Rift and consumes those stacks.",
+    "notes": [
+      "If Hourglass of Power is active, applies Power for 30 seconds, increasing damage, haste, crit chance, crit damage, hit chance, dodge chance and damage reduction by 10%.",
+      "If Hourglass of Transience is active, applies the following effect:",
+      "Incorporeal if either Transient or Ephemeral are in effect, consuming them and increasing Endurance and Haste by 50% for 10 seconds.",
+      "If Infinite Corruption is active, applies Hourglass Heal for 20 seconds, a Heal over Time."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hồi máu theo số stack Temporal Rift và tiêu hao các stack."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hourglass of Power áp Power trong 30 giây, tăng 10% sát thương, Haste, Crit Chance, Crit Damage, Hit Chance, Dodge và giảm sát thương nhận vào."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Với Hourglass of Transience, tiêu hao Transient hoặc Ephemeral để áp Incorporeal, tăng 50% Endurance và Haste trong 10 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Infinite Corruption áp Hourglass Heal trong 20 giây."
+      }
+    ]
+  },
+  {
+    "name": "Corruption Through Time",
+    "description": "Applies Corruption Through Time. Corruption Through Time increases all damage you do by 20% for 10 seconds. Doesn’t stack.",
+    "notes": [
+      "If Entropic Corruption is active, applies the following effects:",
+      "Entropic Harm for 10 seconds, increasing damage taken by 150%.",
+      "Entropic Mana for 7 seconds, increasing haste by 30% and reducing mana costs by 50%.",
+      "Entropic Power for 4 seconds, increasing damage by 100%.",
+      "Focus for 3 seconds, forcing affected monsters to attack you.",
+      "If Foresee Corruption is active, applies the following effects:",
+      "Foresee for 150 seconds.",
+      "Using Foresee Corruption again replaces this effect with Seer for 20 seconds.",
+      "Using Corruption Through Time again replaces Seer with Change the Future.",
+      "Change the Future applies Focus to enemies, and decreases damage taken by 500%, and increases dodge chance, haste, hit chance, damage, and crit damage by 100% for 5 seconds.",
+      "If Hourglass of Paradise is active, applies the following effects (or removes them if they are currently active):",
+      "Welcome to Paradise, reducing damage taken by 60% and increasing haste by 50%. In addition, provides a Heal over Time that also regenerates mana. Lasts 2 hours.",
+      "Price of Paradise, reducing crit chance and outgoing damage by 30%. Lasts 2 hours.",
+      "If Hourglass of Transience is active, applies the following effects:",
+      "Transient for 10 seconds, a self DoT that increases in strength.",
+      "Using Corruption Through Time again replaces Transient with Ephemeral for 5 seconds, increasing dodge and damage by +50%.",
+      "If Timepiece of Madness is active, applies the following effects:",
+      "Applies Potential, increasing your Hit Chance by 20% for 20 seconds. Cooldown: 12 seconds.",
+      "If Timepiece of Inevitability is active, applies the following effects:",
+      "Applies Inevitable Corruption, increasing your outgoing damage and haste by 12% for 20 seconds.",
+      "Using the Timepiece of Inevitability while Inevitable Corruption is active applies Snap to your opponent, dealing significant damage to them after a short delay. Cooldown: 20 seconds.",
+      "If Timepiece of Pestilence is active, applies the following effects:",
+      "Applies Infectious Air, increasing the amount of damage the enemy takes by 20% for 10 seconds, stacking to 3 but is consumed by Temporal Collapse.",
+      "Your incoming damage is increased by 100% for 10 seconds.",
+      "Applies a light DoT to your opponent.",
+      "Applies Decay to your opponent, preventing them from healing."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Corruption Through Time tăng 20% mọi sát thương gây ra trong 10 giây, không cộng dồn."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Entropic Corruption áp Entropic Harm, tăng 150% sát thương nhận vào trong 10 giây. Entropic Mana tăng 30% Haste và giảm 50% Mana Cost trong 7 giây. Entropic Power tăng 100% sát thương trong 4 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Với Entropic Corruption, Focus ép quái chịu tác động đánh người thi triển trong 3 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Foresee Corruption áp Foresee trong 150 giây. Dùng lại Foresee Corruption chuyển thành Seer trong 20 giây. Dùng lại Corruption Through Time thay Seer bằng Change the Future trong 5 giây, giảm 500% sát thương nhận vào và tăng 100% Dodge, Haste, Hit Chance, sát thương và Crit Damage."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Change the Future áp Focus."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hourglass of Paradise bật hoặc tắt Welcome to Paradise và Price of Paradise. Trong 2 giờ, Welcome giảm 60% sát thương nhận vào, tăng 50% Haste và hồi HP lẫn Mana theo thời gian. Price giảm 30% Crit Chance và sát thương gây ra."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hourglass of Transience áp Transient, DoT tự gây tăng dần trong 10 giây. Dùng lại kỹ năng thay Transient bằng Ephemeral, tăng 50% Dodge và sát thương trong 5 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Timepiece of Madness áp Potential, tăng 20% Hit Chance trong 20 giây, hồi chiêu hiệu ứng 12 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Timepiece of Inevitability áp Inevitable Corruption, tăng 12% sát thương gây ra và Haste trong 20 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Dùng Timepiece of Inevitability khi Inevitable Corruption hoạt động áp Snap, gây sát thương lớn sau một khoảng trễ. Hồi chiêu hiệu ứng 20 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Timepiece of Pestilence áp Infectious Air, tăng 20% sát thương mục tiêu nhận trong 10 giây, tối đa 3 stack, bị tiêu hao bởi Temporal Collapse. Áp thêm DoT nhẹ và Decay."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Timepiece of Pestilence tăng 100% sát thương nhận vào trong 10 giây."
+      }
+    ]
+  },
+  {
+    "name": "Temporal Collapse",
+    "description": "Deals damage to your target based on the damage you've recently dealt while under the effects of Temporal Rift (in the past 10 seconds). Consumes Temporal Rift stacks.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên sát thương đã gây trong 10 giây trước đó khi Temporal Rift hoạt động. Tiêu hao các stack Temporal Rift."
+      }
+    ]
+  },
+  {
+    "name": "Timeless Strike",
+    "description": "Deals damage based on weapon damage. Each of your skills gets an additional benefit from hourglasses you equip in your consumables slot. Hourglasses can be obtained from the hourglass pet available from the Book of Lore.",
+    "notes": [
+      "If Timepiece of Madness is active, applies the following effects:",
+      "Applies one stack of Mad for every use of Timeless Strike.",
+      "At 5 stacks of Mad, the next Timeless Strike consumes these stacks and applies Eternal.",
+      "Eternal boosts your critical strike chance by 80% and reduces the damage you deal by 30%."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên Weapon Damage."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi có Timepiece of Madness, mỗi đòn tích 1 Mad. Sau khi đủ 5 stack, đòn kế tiếp tiêu hao Mad để áp Eternal, tăng 80% Crit Chance và giảm 30% sát thương gây ra."
+      }
+    ]
+  },
+  {
+    "name": "Timeless Rift",
+    "description": "Deals damage to your target and applies Temporal Rift to you. Temporal Rift stacks 4 times, lasts 30 seconds and is used by your other abilities.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương lên mục tiêu."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 30 giây, tối đa 4 stack."
+      }
+    ]
+  },
+  {
+    "name": "Hourglass Reversal",
+    "description": "Reverses time to heal you. Heal is increased by stacks of Temporal Rift and consumes those stacks.",
+    "notes": [
+      "If Hourglass of Power is active, applies Power for 30 seconds, increasing damage, haste, crit chance, crit damage, hit chance, dodge chance and damage reduction by 10%.",
+      "If Infinite Corruption is active, applies Hourglass Heal for 20 seconds, a Heal over Time."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hồi máu theo stack Temporal Rift và tiêu hao các stack."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hourglass of Power áp Power trong 30 giây, tăng 10% sát thương, Haste, Crit Chance, Crit Damage, Hit Chance, Dodge và giảm sát thương nhận vào."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Infinite Corruption áp Hourglass Heal trong 20 giây."
+      }
+    ]
+  },
+  {
+    "name": "Distortion through Time",
+    "description": "Applies Corruption Through Time. Corruption Through Time increases all damage you do by 20% for 10 seconds. Doesn’t stack.",
+    "notes": [
+      "If Entropic Corruption is active, applies the following effects:",
+      "Entropic Harm for 10 seconds, increasing damage taken by 150%.",
+      "Entropic Mana for 7 seconds, increasing haste by 30% and reducing mana costs by 50%.",
+      "Entropic Power for 4 seconds, increasing damage by 100%.",
+      "Focus for 3 seconds, forcing affected monsters to attack you.",
+      "If Foresee Corruption is active, applies the following effects:",
+      "Foresee for 150 seconds.",
+      "Using Foresee Corruption again replaces this effect with Seer for 20 seconds.",
+      "Using Corruption Through Time again replaces Seer with Change the Future.",
+      "Change the Future applies Focus to enemies, and decreases damage taken by 80%, and increases dodge chance, haste, hit chance, damage, and crit damage by 100% for 5 seconds.",
+      "If Hourglass of Paradise is active, applies the following effects (or removes them if they are currently active):",
+      "Welcome to Paradise, reducing damage taken by 40% and increasing haste by 30%. In addition, provides a Heal over Time that also regenerates mana.",
+      "Price of Paradise, reducing crit chance and crit damage by 40%.",
+      "If Hourglass of Transience is active, applies the following effects:",
+      "Transient for 10 seconds, a self DoT that increases in strength.",
+      "Using Corruption Through Time again replaces Transient with Ephemeral for 5 seconds, increasing dodge and damage by +50%.",
+      "If Timepiece of Madness is active, applies the following effects:",
+      "Applies Potential, increasing your Hit Chance by 20% for 20 seconds. Cooldown: 12 seconds.",
+      "If Timepiece of Inevitability is active, applies the following effects:",
+      "Applies Inevitable Corruption, increasing your outgoing damage and haste by 12% for 20 seconds.",
+      "Using the Timepiece of Inevitability while Inevitable Corruption is active applies Snap to your opponent, dealing significant damage to them after a short delay. Cooldown: 20 seconds.",
+      "If Timepiece of Pestilence is active, applies the following effects:",
+      "Applies Infectious Air, increasing the amount of damage the enemy takes by 20% for 10 seconds, stacking to 3 but is consumed by Temporal Collapse.",
+      "Your incoming damage is increased by 100% for 10 seconds.",
+      "Applies a light DoT to your opponent.",
+      "Applies Decay to your opponent, preventing them from healing."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Corruption Through Time tăng 20% mọi sát thương gây ra trong 10 giây, không cộng dồn."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Entropic Corruption áp Entropic Harm, tăng 150% sát thương nhận vào trong 10 giây. Entropic Mana tăng 30% Haste và giảm 50% Mana Cost trong 7 giây. Entropic Power tăng 100% sát thương trong 4 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Với Entropic Corruption, Focus ép quái chịu tác động đánh người thi triển trong 3 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Foresee Corruption áp Foresee trong 150 giây. Dùng lại Foresee Corruption chuyển thành Seer trong 20 giây. Dùng lại Corruption Through Time thay Seer bằng Change the Future trong 5 giây, giảm 80% sát thương nhận vào và tăng 100% Dodge, Haste, Hit Chance, sát thương và Crit Damage."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Change the Future áp Focus."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hourglass of Paradise bật hoặc tắt Welcome to Paradise và Price of Paradise. Welcome giảm 40% sát thương nhận vào, tăng 30% Haste, hồi HP và Mana theo thời gian. Price giảm 40% Crit Chance và Crit Damage."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hourglass of Transience áp Transient, DoT tự gây tăng dần trong 10 giây. Dùng lại kỹ năng thay Transient bằng Ephemeral, tăng 50% Dodge và sát thương trong 5 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Timepiece of Madness áp Potential, tăng 20% Hit Chance trong 20 giây, hồi chiêu hiệu ứng 12 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Timepiece of Inevitability áp Inevitable Corruption, tăng 12% sát thương gây ra và Haste trong 20 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Dùng Timepiece of Inevitability khi Inevitable Corruption hoạt động áp Snap, gây sát thương lớn sau một khoảng trễ. Hồi chiêu hiệu ứng 20 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Timepiece of Pestilence áp Infectious Air, tăng 20% sát thương mục tiêu nhận trong 10 giây, tối đa 3 stack, bị tiêu hao bởi Temporal Collapse. Áp thêm DoT nhẹ và Decay."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Timepiece of Pestilence tăng 100% sát thương nhận vào trong 10 giây."
+      }
+    ]
+  },
+  {
+    "name": "Stretch Time",
+    "description": "Slow your target’s local time, reducing their Haste by 20% for 10 seconds. Also applies a stack of Temporal Rift.",
+    "notes": [
+      "Deals 100% Weapon Damage.",
+      "Applies Stretch Time, reducing enemy Haste by 20%."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây 100% Weapon Damage và giảm 20% Haste của mục tiêu trong 10 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Tích 1 Temporal Rift."
+      }
+    ]
+  },
+  {
+    "name": "Compress Time",
+    "description": "Surround yourself or an ally in a bubble of compressed time. The target will heal, regain mana, have their Dodge increased by 25%, and Haste increased by 30% for 10 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Hồi HP và Mana cho bản thân hoặc một đồng minh, tăng 25% Dodge và 30% Haste trong 10 giây."
+      }
+    ]
+  },
+  {
+    "name": "Relive the Past",
+    "description": "If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks. Also applies Relive The Past, which damages them over 8 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Temporal Rift, gây sát thương dựa trên sát thương đã gây trong tối đa 10 giây trước đó khi Rift hoạt động. Sát thương tăng theo stack và tiêu hao Rift."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Áp Relive The Past, gây DoT trong 8 giây."
+      }
+    ]
+  },
+  {
+    "name": "Stop Time",
+    "description": "Deals a large amount of damage to your target and locks them in time for 2 seconds. Also applies a stack of Temporal Rift.",
+    "notes": [
+      "Deals 300% Weapon Damage.",
+      "Applies Stop Time, stunning the enemy for 2 seconds."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây 300% Weapon Damage và Stun mục tiêu trong 2 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Tích 1 Temporal Rift."
+      }
+    ]
+  },
+  {
+    "name": "Timeless Strike",
+    "description": "Deals damage based on your weapon damage. Each of your skills gets an additional benefit from hourglasses you equip in your consumables slot. Hourglasses can be obtained from the Hourglass Pet available from the Book of Lore.",
+    "notes": [
+      "If Timepiece of Madness is active, applies the following effects:",
+      "Applies one stack of Mad for every use of Timeless Strike.",
+      "At 5 stacks of Mad, the next Timeless Strike consumes these stacks and applies Eternal.",
+      "Eternal boosts your critical strike chance by 80% and reduces the damage you deal by 30%."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên Weapon Damage."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi có Timepiece of Madness, mỗi đòn tích 1 Mad. Sau khi đủ 5 stack, đòn kế tiếp tiêu hao Mad để áp Eternal, tăng 80% Crit Chance và giảm 30% sát thương gây ra."
+      }
+    ]
+  },
+  {
+    "name": "Temporal Collapse",
+    "description": "If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi Temporal Rift hoạt động, gây sát thương dựa trên sát thương đã gây trong tối đa 10 giây trước đó. Sát thương tăng theo stack và tiêu hao Rift."
+      }
+    ]
+  },
+  {
+    "name": "Chaos Rift Strike",
+    "description": "Deals damage to the target and applies Chaos Rift to you. Stacks to 4 and lasts 30 seconds.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương lên mục tiêu."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Chaos Rift trong 30 giây, tối đa 4 stack."
+      }
+    ]
+  },
+  {
+    "name": "Split Causality",
+    "description": "Chaos manipulates the flow of time for both you and your target. Applies a small or large HoT to yourself, and a small or large DoT to your target. The small effects last 8 seconds and the large effects last 2 seconds.",
+    "notes": [
+      "Applies either Restore Time, a small HoT over 8 seconds or Mend Time, a large HoT over 2 seconds.",
+      "Applies either Time Bleed, a small DoT over 8 seconds or Time Hemorrhage, a large DoT over 2 seconds."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Restore Time, HoT nhỏ trong 8 giây, hoặc Mend Time, HoT lớn trong 2 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Áp Time Bleed, DoT nhỏ trong 8 giây, hoặc Time Hemorrhage, DoT lớn trong 2 giây."
+      }
+    ]
+  },
+  {
+    "name": "Time Collapse",
+    "description": "If Chaos Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Chaos Rift and consumes those stacks.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi Chaos Rift hoạt động, gây sát thương dựa trên sát thương đã gây trong tối đa 10 giây trước đó. Sát thương tăng theo stack và tiêu hao Rift."
+      }
+    ]
+  },
+  {
+    "name": "Don’t Blink Twice",
+    "description": "Deals a large amount of damage to your target and applies Distorted Time to yourself, increasing your Haste by 20% for 15 seconds. Chaos empowers you, either applying Visceral Shift, which increases your outgoing physical damage by 75%, or Shiftburn, which increases your HoT and DoT power by 75%. Both effects last 8 seconds.",
+    "notes": [
+      "Deals 250% damage.",
+      "Applies Distorted Time, increasing Haste by 20% for 15 seconds.",
+      "Applies either Visceral Shift, which increases physical damage done by 75% or Shiftburn, which increases the amount of DoT dealt and HoT healed by 75%."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây 250% sát thương."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Distorted Time tăng 20% Haste trong 15 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Ngẫu nhiên nhận Visceral Shift tăng 75% sát thương vật lý gây ra, hoặc Shiftburn tăng 75% sức mạnh HoT và DoT. Cả hai kéo dài 8 giây."
+      }
+    ]
+  },
+  {
+    "name": "Sand Rift",
+    "description": "Deals damage to your target and applies Temporal Rift to you. Temporal Rift stacks 4 times, lasts 30 seconds and is used by your other abilities.",
+    "notes": [],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương lên mục tiêu."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 30 giây, tối đa 4 stack."
+      }
+    ]
+  },
+  {
+    "name": "Hourglass Inversion",
+    "description": "Reverses time to heal you. Heal is increased by stacks of Temporal Rift and consumes those stacks.",
+    "notes": [
+      "If Hourglass of Power is active, applies Power for 30 seconds, increasing damage, haste, crit chance, crit damage, hit chance, dodge chance and damage reduction by 10%.",
+      "If Infinite Corruption is active, applies Hourglass Heal for 20 seconds, a Heal over Time."
+    ],
+    "status": "verified",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hồi máu theo stack Temporal Rift và tiêu hao các stack."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Hourglass of Power áp Power trong 30 giây, tăng 10% sát thương, Haste, Crit Chance, Crit Damage, Hit Chance, Dodge và giảm sát thương nhận vào."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Infinite Corruption áp Hourglass Heal trong 20 giây."
+      }
+    ]
+  },
+  {
+    "name": "Flight",
+    "description": "Spreads it's wings and takes flight. Applies Vantage Point, increasing Hit Chance and Dodge by 15% for 6 seconds. Also allows you to focus all your fire on one target, empowering your arrows increasing your overall DoT Damage by 75%. Your focused targeting reduces the amount of void energy you need to expend, applying Mana Refraction which reduces mana costs by 50% for 8 seconds.",
+    "notes": [
+      "Applies Vantage Point to caster for 6 seconds, increasing Hit Chance and Dodge by 15%, increasing DoT damage by 50%, and making all attacks single target.",
+      "Applies Mana Refraction to caster for 8 seconds, reducing mana costs by 50%."
+    ],
+    "status": "source_conflict",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "name": "Vantage Point",
+        "text": "Tăng 15% Hit Chance và Dodge trong 6 giây, tập trung mọi đòn đánh vào một mục tiêu."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Tăng sát thương DoT. Mức tăng chưa thống nhất."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "name": "Mana Refraction",
+        "text": "Giảm 50% Mana Cost trong 8 giây."
+      }
+    ]
+  }
+]

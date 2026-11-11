@@ -1,0 +1,117 @@
+{
+  "url": "https://aqwwiki.wikidot.com/grace-crystal",
+  "text": ">\nLocation:\nUltra Gramiel\nLevel:\n95\nDifficulty:\n5 stars\nTotal HP:\n400\nAI:\nAggressive when player attacks\nGramiel the Graceful\nor the other Grace Crystal first.\nAttacks:\n+ Crystal Status\n- Crystal Status\nCrystal Status\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\nWhen Burning Ward is applied at the first time of the fight, \"The crystals damages all attackers.!\"\nAoE\n4\nType\nTrue Status\nNotes\nApplies Burning Ward to Grace Crystal, each instance of damage that the player deals to Grace Crystal reflects 150 damage back to them.\nApplies Unstable to Grace Crystal when Crystal Meltdown is active on the player which is used by Crystal Unstable.\nIgnores focus.\n+ Crystal Charge ➞ Crystal Shattering\n- Crystal Charge ➞ Crystal Shattering\nCrystal Charge\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n14 seconds\nMessage\nThe Grace Crystal prepares a defense shattering attack!\nAoE\nSelf\nType\nCharge\nNotes\n{$notes}\nCrystal Shattering is used after Crystal Charge charges for 4 seconds.\nCrystal Shattering\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe Grace Crystal shatters your defenses!\nAoE\n4\nType\nTrue Status\nNotes\nApplies Grace Shattered to all players for 20 seconds.\nThe first stack of Grace Shattered reduces Damage Resistance and Physical Resistance by 25%, and the second stack reduces the respective effect by 2500%.\nWhen the Grace Shattered effect wears off from the player, it is accompanied by the message \"Your defenses return to normal.\"\n+ Crystal Unstable ➞ Crystal Explosion\n- Crystal Unstable ➞ Crystal Explosion\nCrystal Unstable\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe remaining Grace Crystal is unstable, destroy it quickly!\nAoE\nSelf\nType\nCharge\nNotes\nUsed when Unstable is active on Grace Crystal.\nCrystal Explosion is used after Crystal Unstable charges for 5 seconds.\nCrystal Explosion\nDamage\nInstant Death\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nApplies Instant Death to all players: a Lethal DoT.\nRemoves Invulnerable effect on all players.\nCannot miss.\nCannot crit.\nIgnores focus.\nAbilities:\nBoss Shield:\nCannot take more than 1 damage from a single attack.\nCannot be stunned.\nBase Stats:\n0% Dodge\nTemporary Items Dropped:\nN/A\nItems Dropped:\nTreasure Chest (Misc)\nNote:\nWill not respawn until\nGramiel the Graceful\nis defeated or if all players die in combat.\nThanks to Apus.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_g\n_lv95\naggro\nbossshield\nchallenge\ncrystal\nelemental\nfreeplayer\nimmune\nmonster",
+  "images": [
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+      "alt": "BossShield.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://i.imgur.com/blhfgVo.png",
+      "alt": "blhfgVo.png"
+    }
+  ],
+  "links": [
+    {
+      "url": "/ultra-gramiel",
+      "index": 2
+    },
+    {
+      "url": "/gramiel-the-graceful",
+      "index": 11
+    },
+    {
+      "url": "javascript:;",
+      "index": 14
+    },
+    {
+      "url": "javascript:;",
+      "index": 15
+    },
+    {
+      "url": "javascript:;",
+      "index": 33
+    },
+    {
+      "url": "javascript:;",
+      "index": 34
+    },
+    {
+      "url": "javascript:;",
+      "index": 68
+    },
+    {
+      "url": "javascript:;",
+      "index": 69
+    },
+    {
+      "url": "/treasure-chest-misc",
+      "index": 114
+    },
+    {
+      "url": "/gramiel-the-graceful",
+      "index": 117
+    },
+    {
+      "url": "http://www.aq.com/",
+      "index": 121
+    },
+    {
+      "url": "/system:page-tags/tag/5star#pages",
+      "index": 124
+    },
+    {
+      "url": "/system:page-tags/tag/_g#pages",
+      "index": 125
+    },
+    {
+      "url": "/system:page-tags/tag/_lv95#pages",
+      "index": 126
+    },
+    {
+      "url": "/system:page-tags/tag/aggro#pages",
+      "index": 127
+    },
+    {
+      "url": "/system:page-tags/tag/bossshield#pages",
+      "index": 128
+    },
+    {
+      "url": "/system:page-tags/tag/challenge#pages",
+      "index": 129
+    },
+    {
+      "url": "/system:page-tags/tag/crystal#pages",
+      "index": 130
+    },
+    {
+      "url": "/system:page-tags/tag/elemental#pages",
+      "index": 131
+    },
+    {
+      "url": "/system:page-tags/tag/freeplayer#pages",
+      "index": 132
+    },
+    {
+      "url": "/system:page-tags/tag/immune#pages",
+      "index": 133
+    },
+    {
+      "url": "/system:page-tags/tag/monster#pages",
+      "index": 134
+    }
+  ],
+  "reviewedAt": "2026-11-08"
+}

@@ -1,0 +1,134 @@
+{
+  "url": "https://aqwwiki.wikidot.com/arachnomancer-ac",
+  "sourceHash": "7d2c0148a99ff1f23a721295297db6fe605c73fe3e2cce95446c1ecf22b494a9",
+  "entries": [
+    {
+      "officialName": "Spider Bite",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "1.5",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Sink your fangs into your opponent, siphoning health from opponents affected by your Venom Fangs.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/arachnomancer-ac",
+      "sourceHash": "7d2c0148a99ff1f23a721295297db6fe605c73fe3e2cce95446c1ecf22b494a9",
+      "evidence": "Spider Bite Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 1.5 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Sink your fangs into your opponent, siphoning health from opponents affected by your Venom Fangs."
+    },
+    {
+      "officialName": "Venom Fangs",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "6",
+      "cooldown": "6",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Bite your target with Venom Fangs, injecting them with a powerful toxin for 4 seconds. Retreat with the grace of an arachnid, increasing your Dodge by 70% for 1 second.",
+      "notes": [
+        "Applies Venom Fangs to the target, which deals Damage over Time that increases with stacks, lasting for 4 seconds.",
+        "Applies Arachnid Grace to the caster, increasing Dodge by 70% for 1 second."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill05.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/arachnomancer-ac",
+      "sourceHash": "7d2c0148a99ff1f23a721295297db6fe605c73fe3e2cce95446c1ecf22b494a9",
+      "evidence": "Venom Fangs Rank Needed: 1 Mana Cost: 6 Mana Cooldown: 6 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Bite your target with Venom Fangs, injecting them with a powerful toxin for 4 seconds. Retreat with the grace of an arachnid, increasing your Dodge by 70% for 1 second. Notes: Applies Venom Fangs to the target, which deals Damage over Time that increases with stacks, lasting for 4 seconds. Applies Arachnid Grace to the caster, increasing Dodge by 70% for 1 second."
+    },
+    {
+      "officialName": "Slingshot Web",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "6",
+      "cooldown": "6",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Constrict your opponent with steel-like spider thread coated in poison, causing damage over time for 10 seconds that increases the lower your health is. Retreat with the grace of an arachnid, increasing your Dodge by 70% for 1 second.",
+      "notes": [
+        "Applies Web Miasma, which deals Damage over Time for 10 seconds proportional to your current HP and reduces enemy dodge by 30%.",
+        "Applies Arachnid Grace to the caster, increasing Dodge by 70% for 1 second."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill133.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/arachnomancer-ac",
+      "sourceHash": "7d2c0148a99ff1f23a721295297db6fe605c73fe3e2cce95446c1ecf22b494a9",
+      "evidence": "Slingshot Web Rank Needed: 2 Mana Cost: 6 Mana Cooldown: 6 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Constrict your opponent with steel-like spider thread coated in poison, causing damage over time for 10 seconds that increases the lower your health is. Retreat with the grace of an arachnid, increasing your Dodge by 70% for 1 second. Notes: Applies Web Miasma, which deals Damage over Time for 10 seconds proportional to your current HP and reduces enemy dodge by 30%. Applies Arachnid Grace to the caster, increasing Dodge by 70% for 1 second."
+    },
+    {
+      "officialName": "Leaping Arachnid",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "6",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A powerful strike of self-abandon that costs 10% of your max HP and tears away at their armor. Inflict your foe with Panic, increasing the DoT they take by 100% for 12 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill134.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/arachnomancer-ac",
+      "sourceHash": "7d2c0148a99ff1f23a721295297db6fe605c73fe3e2cce95446c1ecf22b494a9",
+      "evidence": "Leaping Arachnid Rank Needed: 3 Mana Cost: 15 Mana Cooldown: 6 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A powerful strike of self-abandon that costs 10% of your max HP and tears away at their armor. Inflict your foe with Panic, increasing the DoT they take by 100% for 12 seconds. Note: Applies Panic to the target, which increases DoT Damage Taken by 100% for 12 seconds."
+    },
+    {
+      "officialName": "Virulent Toxin",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Your powerful poisons increase the Damage over Time you deal by 18%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/arachnomancer-ac",
+      "sourceHash": "7d2c0148a99ff1f23a721295297db6fe605c73fe3e2cce95446c1ecf22b494a9",
+      "evidence": "Virulent Toxin Rank Needed: 4 Type: Passive Ability Description: Your powerful poisons increase the Damage over Time you deal by 18%."
+    },
+    {
+      "officialName": "Attack-Your-Foe-Bia",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Arachnid instincts drive you to always strike for your opponent’s weakness, increasing Crit Chance by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/arachnomancer-ac",
+      "sourceHash": "7d2c0148a99ff1f23a721295297db6fe605c73fe3e2cce95446c1ecf22b494a9",
+      "evidence": "Attack-Your-Foe-Bia Rank Needed: 4 Type: Passive Ability Description: Arachnid instincts drive you to always strike for your opponent’s weakness, increasing Crit Chance by 10%."
+    },
+    {
+      "officialName": "Toxic Adrenaline",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "21",
+      "cooldown": "6",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Toxic adrenaline flows through your veins and with your webbing, melting your body and your opponent’s armor. Cocoon your foe with your toxic webbing, costing 20% of your max HP, increasing the damage they take by 100% for 12 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill84.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/arachnomancer-ac",
+      "sourceHash": "7d2c0148a99ff1f23a721295297db6fe605c73fe3e2cce95446c1ecf22b494a9",
+      "evidence": "Toxic Adrenaline Rank Needed: 5 Mana Cost: 21 Mana Cooldown: 6 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Toxic adrenaline flows through your veins and with your webbing, melting your body and your opponent’s armor. Cocoon your foe with your toxic webbing, costing 20% of your max HP, increasing the damage they take by 100% for 12 seconds. Note: Applies Cocooned to the target, which increases all incoming damage by 100% for 12 seconds."
+    },
+    {
+      "officialName": "Arachne's Favor",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Your hunts are blessed by Arachne, increasing your Haste by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/arachnomancer-ac",
+      "sourceHash": "7d2c0148a99ff1f23a721295297db6fe605c73fe3e2cce95446c1ecf22b494a9",
+      "evidence": "Arachne's Favor Rank Needed: 10 Type: Passive Ability Description: Your hunts are blessed by Arachne, increasing your Haste by 10%. Note: This skill is a reference to Arachne."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/KvHMFpv.png",
+  "sameSkillVariants": [
+    {
+      "name": "Arachnomancer (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/arachnomancer-0-ac"
+    }
+  ],
+  "location": "Locations:\n\nArachnomancer Shop - Ravenloss\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\nRavenloss War Rewards - Ravenloss\n\nPrice: 2,000 AC"
+}

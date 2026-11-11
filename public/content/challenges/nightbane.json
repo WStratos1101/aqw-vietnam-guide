@@ -1,0 +1,1133 @@
+{
+  "challengeContent": true,
+  "id": "nightbane",
+  "name": "Nightbane",
+  "type": "other_challenge",
+  "map": "voidnightbane",
+  "levelRequirement": 80,
+  "partySize": 7,
+  "description": "Cách đánh:",
+  "bodyUrl": "/content/challenges/nightbane.json",
+  "href": "/other-challenges/nightbane",
+  "image": "monster-nightbane",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "nightbane-stage-1",
+      "name": "Nightbane",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Nightbane",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "nightbane-0",
+            "canonicalName": "Nightbane",
+            "role": "Monster",
+            "level": 100,
+            "maxHp": 500000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/nightbane"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "nightbane-0-dire-wound-0",
+            "monsterId": "nightbane-0",
+            "name": "Dire Wound",
+            "type": "True Damage",
+            "damage": "800-930",
+            "damageType": "True Damage",
+            "cooldown": "2 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Nightbane recovers HP for each target hit.",
+              "Áp Dire Wound to each target hit, giảm their hồi máu nhận vào và Dodge 80% trong 10 giây.",
+              "Không thể chí mạng.",
+              "Luôn trúng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/nightbane"
+          },
+          {
+            "id": "nightbane-0-bloodstained-claw-1",
+            "monsterId": "nightbane-0",
+            "name": "Bloodstained Claw",
+            "type": "True Damage",
+            "damage": "49% of Target HP",
+            "damageType": "True Damage",
+            "cooldown": "5 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Nightbane recovers HP based on his current HP for each target hit.",
+              "Can crit.",
+              "Luôn trúng.",
+              "Deals fixed damage against low HP targets.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/nightbane"
+          },
+          {
+            "id": "nightbane-0-dracopyre-dive-2",
+            "monsterId": "nightbane-0",
+            "name": "Dracopyre Dive",
+            "type": "True Damage",
+            "damage": "Current HP - 1",
+            "damageType": "True Damage",
+            "cooldown": "12 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Nightbane recovers HP for each target hit.",
+              "Không thể chí mạng.",
+              "Luôn trúng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/nightbane"
+          },
+          {
+            "id": "nightbane-0-blood-frenzy-3",
+            "monsterId": "nightbane-0",
+            "name": "Blood Frenzy",
+            "cooldown": "20 seconds",
+            "activation": "",
+            "playerEffects": [
+              "Áp Blood Frenzy to Nightbane, tăng tỷ lệ chí mạng 5000% và Dodge 150% trong 8 giây.",
+              "Nightbane recovers 100,000 HP, Decayable."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/nightbane"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:",
+        "- “Sailor of the Celestial Skies” quest để farm Celestial Pirate Commander set.",
+        "- “Book of Arcana: Arcane Sigil” quest để farm Archmage Class.",
+        "- “Wrong Turn at Voidbuquerque” quest để farm Nulgath’s resources.",
+        "Boss này nằm ở map /join voidnightbane - Room limit: 7",
+        "Cần đạt ít nhất lvl 80 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 500,000",
+        "◆ Shield giúp giới hạn sát thương nhận tối đa 10k.",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Auto-Attack mỗi 2s gây True DMG từ 800 đến 930 (không thể bạo kích) lên tất cả players.",
+        "→ Nightbane hồi máu với mỗi target trúng phải.",
+        "→ Players bị giảm 80% Heal In và Dodge trong 10s.",
+        "◆ Mỗi 5s, sử dụng Bloodstained Claw gây True DMG bằng 49% lượng HP của player (gây sát thương lên 4 targets có HP thấp nhất, có thể bạo kích).",
+        "→ Nightbane hồi máu dựa trên HP hiện tại của bản thân với mỗi target trúng phải.",
+        "◆ Mỗi 12s, sử dụng Dracopyre Dive khiến HP players giảm xuống 1 (dạng True DMG, không thể bạo kích).",
+        "→ Nightbane hồi máu với mỗi player trúng đòn.",
+        "◆ Mỗi 20s, sử dụng Blood Frenzy lên bản thân, giúp tăng 5000% Crit Chance và 150% Dodge trong 8s.",
+        "→ Nightbane hồi 100k HP, có thể decay."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Nightbane cũng là một Mini Challenge Boss, tuy nhiên sẽ khó đánh hơn Flibbitiestgibbet một chút, nhưng cũng không quá khó để đánh bại được nó. Với một team từ 5 người bên dưới thì có thể giết nó một cách đơn giản.",
+        "Team 5 người:\tLR, AP, LC, LoO, SC/IT",
+        "hoặc\tLR, LDK, AP, LoO, SC/IT",
+        "Team 6 người:\tLR, VDK/LDK, AP, LC, LoO, SC/IT",
+        "hoặc\t2 LR, VDK/LDK, AP, LoO, SC/IT",
+        "hoặc\tShaman, LR, AP, LoO, SC/IT, FB",
+        "Team 7 người:\tShaman, LR, VDK/LDK, AP, LoO, SC/IT, FB",
+        "hoặc\t2 Shaman, LR, AP, LoO, SC/IT, FB",
+        "hoặc\tLR, VDK, LDK, AP, LC, LoO, SC/IT",
+        "hoặc\t2 LR, VDK, LDK, AP, LoO, SC/IT",
+        "hoặc\tDT/EDoT, LR, VDK/LDK, AP, LC, LoO, SC/IT",
+        "hoặc\t2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH",
+        "Note:",
+        "- Boss có tag Dragonkin, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Dragonkin để tối đa sát thương.",
+        "- Nếu sử dụng FB thì chỉ spam 2, 3 và 4, không sử dụng 5."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-407977",
+          "runs": [
+            {
+              "text": "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408081",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Sailor of the Celestial Skies",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest để farm "
+            },
+            {
+              "text": "Celestial Pirate Commander",
+              "href": "/farm/celestial-pirate-commander-cpc-polly-roger-polly"
+            },
+            {
+              "text": " set.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408161",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Book of Arcana: Arcane Sigil",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest để farm "
+            },
+            {
+              "text": "Archmage Class",
+              "href": "/farm/archmage-am"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408224",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Wrong Turn at Voidbuquerque",
+              "href": "http://aqwwiki.wikidot.com/memory-of-nulgath-s-quests"
+            },
+            {
+              "text": "” quest để farm "
+            },
+            {
+              "text": "Nulgath’s resources",
+              "href": "/farm/nulgath-s-resources-farming"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408292",
+          "runs": [
+            {
+              "text": "Boss này nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join voidnightbane",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/void-nightbane"
+            },
+            {
+              "text": " - Room limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408347",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 80",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408404",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408412",
+          "runs": [
+            {
+              "text": "◆ Total HP: 500,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408432",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 10k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408483",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408521",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây True DMG từ 800 đến 930 "
+            },
+            {
+              "text": "(không thể bạo kích)",
+              "italic": true
+            },
+            {
+              "text": " lên tất cả players."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408611",
+          "runs": [
+            {
+              "text": "→ Nightbane hồi máu với mỗi target trúng phải.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408658",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 80% Heal In và Dodge trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408708",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sử dụng Bloodstained Claw gây True DMG bằng 49% lượng HP của player "
+            },
+            {
+              "text": "(gây sát thương lên 4 targets có HP thấp nhất, có thể bạo kích)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408851",
+          "runs": [
+            {
+              "text": "→ Nightbane hồi máu dựa trên HP hiện tại của bản thân với mỗi target trúng phải.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-408932",
+          "runs": [
+            {
+              "text": "◆ Mỗi 12s, sử dụng Dracopyre Dive khiến HP players giảm xuống 1 "
+            },
+            {
+              "text": "(dạng True DMG, không thể bạo kích)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409033",
+          "runs": [
+            {
+              "text": "→ Nightbane hồi máu với mỗi player trúng đòn. \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409080",
+          "runs": [
+            {
+              "text": "◆ Mỗi 20s, sử dụng Blood Frenzy lên bản thân, giúp tăng 5000% Crit Chance và 150% Dodge trong 8s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409178",
+          "runs": [
+            {
+              "text": "→ Nightbane hồi 100k HP, có thể decay.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409218",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409230",
+          "runs": [
+            {
+              "text": "Nhìn chung Nightbane cũng là một Mini Challenge Boss, tuy nhiên sẽ khó đánh hơn Flibbitiestgibbet một chút, nhưng cũng không quá khó để đánh bại được nó. Với một team từ 5 người bên dưới thì có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409456",
+          "runs": [
+            {
+              "text": "Team 5 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "LR, AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409493",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "LR, LDK, AP, LoO, SC/IT",
+              "bold": true
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409523",
+          "runs": [
+            {
+              "text": "Team 6 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "LR, VDK/LDK, AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409569",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 LR, VDK/LDK, AP, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409605",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "Shaman, LR, AP, LoO, SC/IT, FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409642",
+          "runs": [
+            {
+              "text": "Team 7 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "Shaman, ",
+              "bold": true
+            },
+            {
+              "text": "LR, VDK/LDK, AP, LoO, SC/IT, FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409696",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Shaman, LR, AP, LoO, SC/IT, FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409735",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "LR, VDK, LDK, AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409774",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 LR, VDK, LDK, AP, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409811",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "DT/EDoT, LR, VDK/LDK, AP, LC, LoO, SC/IT\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409858",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409903",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " \n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-409910",
+          "runs": [
+            {
+              "text": "- Boss có tag Dragonkin, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Dragonkin để tối đa sát thương.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-410032",
+          "runs": [
+            {
+              "text": "- Nếu sử dụng FB thì chỉ spam 2, 3 và 4, không sử dụng 5.\n",
+              "italic": true
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-408483",
+      "runs": [
+        {
+          "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409456",
+      "runs": [
+        {
+          "text": "Team 5 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "LR, AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409493",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "LR, LDK, AP, LoO, SC/IT",
+          "bold": true
+        },
+        {
+          "text": "\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409523",
+      "runs": [
+        {
+          "text": "Team 6 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "LR, VDK/LDK, AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409569",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 LR, VDK/LDK, AP, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409605",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "Shaman, LR, AP, LoO, SC/IT, FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409642",
+      "runs": [
+        {
+          "text": "Team 7 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "Shaman, ",
+          "bold": true
+        },
+        {
+          "text": "LR, VDK/LDK, AP, LoO, SC/IT, FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409696",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 Shaman, LR, AP, LoO, SC/IT, FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409735",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "LR, VDK, LDK, AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409774",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 LR, VDK, LDK, AP, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409811",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "DT/EDoT, LR, VDK/LDK, AP, LC, LoO, SC/IT\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-409858",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 DT/EDoT, LR, VDK, Arach, LoO, LH/DLH\n",
+          "bold": true
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": [
+    {
+      "id": "source-team-5",
+      "name": "Team 5 người:\tLR, AP, LC, LoO, SC/IT",
+      "assignments": [
+        {
+          "id": "team-1-slot-1-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-2-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-3-1",
+          "primaryClass": {
+            "classId": "lightcaster",
+            "name": "LightCaster",
+            "abbreviation": "LC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-4-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-5-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-6",
+      "name": "Team 6 người:\tLR, VDK/LDK, AP, LC, LoO, SC/IT",
+      "assignments": [
+        {
+          "id": "team-2-slot-1-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-2-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "legion-doomknight",
+              "name": "Legion DoomKnight",
+              "abbreviation": "LDK",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-2-slot-3-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-4-1",
+          "primaryClass": {
+            "classId": "lightcaster",
+            "name": "LightCaster",
+            "abbreviation": "LC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-5-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-6-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-7",
+      "name": "Team 7 người:\tShaman, LR, VDK/LDK, AP, LoO, SC/IT, FB",
+      "assignments": [
+        {
+          "id": "team-3-slot-1-1",
+          "primaryClass": {
+            "classId": "shaman",
+            "name": "Shaman",
+            "abbreviation": "Shaman",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-3-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "legion-doomknight",
+              "name": "Legion DoomKnight",
+              "abbreviation": "LDK",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-3-slot-4-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-5-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-6-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-3-slot-7-1",
+          "primaryClass": {
+            "classId": "frostval-barbarian",
+            "name": "Frostval Barbarian",
+            "abbreviation": "FB",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    }
+  ]
+}

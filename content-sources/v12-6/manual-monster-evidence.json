@@ -1,0 +1,48 @@
+{
+  "https://aqwwiki.wikidot.com/destructive-defiler": {
+    "name": "Destructive Defiler",
+    "level": 62,
+    "maxHp": 125000,
+    "attacks": [
+      {
+        "name": "Axe Strike",
+        "damage": "406–493"
+      },
+      {
+        "name": "Brutal Chop",
+        "damage": "406–493"
+      }
+    ],
+    "source": "https://aqwwiki.wikidot.com/destructive-defiler",
+    "verifiedAt": "2026-11-10",
+    "verificationMethod": "Manual extraction of the fetched Wiki Location, Level, Total HP and named Attacks fields; raw HTML download failed. No damage type or cooldown inferred.",
+    "artSourceUrl": "https://imgur.com/Qhi8gE7.png"
+  },
+  "https://aqwwiki.wikidot.com/infernal-revenger-monster": {
+    "name": "Infernal Revenger (Monster)",
+    "level": 23,
+    "maxHp": 6500,
+    "attacks": [
+      {
+        "name": "Red Mist",
+        "damage": "79–97"
+      },
+      {
+        "name": "Sword Slash",
+        "damage": "79–97"
+      }
+    ],
+    "source": "https://aqwwiki.wikidot.com/infernal-revenger-monster",
+    "verifiedAt": "2026-11-10",
+    "verificationMethod": "Structured extraction from the current indexed full Wiki page; direct URL currently redirects in a loop. No unpublished type/cooldown/passive inferred.",
+    "rewards": [
+      "Infernal Badge",
+      "Treasure Chest (Misc)"
+    ],
+    "quest": "Reverent Revenger",
+    "unverifiedFields": [
+      "Monster artwork URL and local asset",
+      "Current direct-page availability"
+    ]
+  }
+}

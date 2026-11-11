@@ -1,0 +1,6273 @@
+{
+  "challengeContent": true,
+  "id": "mechabinky-raxborg-2-0",
+  "name": "Mechabinky & Raxborg 2.0",
+  "type": "other_challenge",
+  "map": "grimchallenge",
+  "levelRequirement": 100,
+  "partySize": 7,
+  "description": "Phiên bản thử thách 2.0 nằm ngoài Dungeon Gaol; cần đội hình riêng.",
+  "bodyUrl": "/content/challenges/mechabinky-raxborg-2-0.json",
+  "href": "/other-challenges/mechabinky-raxborg-2-0",
+  "image": null,
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [
+    "Hoàn thành Undead Cashfear’s Quests."
+  ],
+  "rewardSummary": "",
+  "sourceSlug": "the-gaol-of-eternal-torment-and-misery",
+  "stages": [
+    {
+      "id": "mechabinky-raxborg-2-0-stage-1",
+      "name": "Mechabinky & Raxborg 2.0",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Mechabinky & Raxborg 2.0",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "mechabinky-raxborg-2-0-0",
+            "canonicalName": "Mechabinky & Raxborg 2.0",
+            "role": "Monster",
+            "level": null,
+            "maxHp": 50000000,
+            "count": 1,
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-0",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Auto Attack",
+            "activation": "◆ Auto-Attack mỗi 2.5s gây Phys DMG từ 100 đến 120.",
+            "playerEffects": [
+              "Players giảm 500% Dodge trong 60s."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-1",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Charge Shot",
+            "activation": "◆ Ngay khi bắt đầu, sử dụng Charge Shot trong 4s sau đó kích hoạt Devastator Beam gây True DMG từ 14.7k đến 17.7k, không thể né (chia đều cho số người trong room, của Ultra Engineer).",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-2",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Contrarium",
+            "activation": "◆ Khi còn 90% HP, kích hoạt Contrarium gây Phys DMG bằng 60% lượng HP hiện tại của player (của Cervus Malus).",
+            "playerEffects": [
+              "Players bị giảm 200% Heal In trong 4s (biến Heal thành sát thương)."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-3",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Meow",
+            "activation": "◆ Khi còn 80% HP, sử dụng Meow để charge trong 2s rồi kích hoạt Stat Steal gây True DMG bằng 49% lượng HP tối đa của player, không thể né nhưng lại không thể bạo kích (của Nerfkitten).",
+            "playerEffects": [
+              "Players bị giảm 10% All Out, Dodge, Crit Chance và Crit DMG trong 25s, stack đến 10.",
+              "Mechabinky & Raxborg tăng 10% All Out, Dodge, Crit Chance và Crit DMG với mỗi player bị đánh trúng."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-4",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "BLEEEEEEEEEEEECCH",
+            "activation": "◆ Khi còn 70% HP, sử dụng BLEEEEEEEEEEEECCH để charge trong 2s rồi kích hoạt Consume gây 2500 True DMG (của Xyfrag).",
+            "playerEffects": [
+              "Players bị giảm 50% Haste, giảm 80% All Out và tăng 100% All In trong 10s.",
+              "Players dính hiệu ứng Decay, không nhận được Heal/HoT trong 5s."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-5",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Dracopyre Dive",
+            "activation": "◆ Khi còn 60% HP, kích hoạt Dracopyre Dive khiến HP players giảm xuống 1, dạng True DMG, không thể bạo kích (của Nightbane).",
+            "playerEffects": [
+              "Mechabinky & Raxborg hồi máu với mỗi player trúng đòn.",
+              "Bỏ qua Focus/Taunt."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-6",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Enrage",
+            "activation": "◆ Khi còn 50% HP, kích hoạt Enrage lên bản thân, tăng 100% All Out và làm các đòn đánh sau đó luôn bạo kích (của Kasuko).",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-7",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Unleashed Chaos",
+            "activation": "◆ Khi còn 40% HP, kích hoạt Unleashed Chaos lên bản thân, giúp tăng 60% Dodge và 100% Haste (của Champion Drakath).",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-8",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Summon Legion Mages",
+            "activation": "◆ Khi còn 30% HP, kích hoạt Summon Legion Mages để charge trong 10s đồng thời kích hoạt thêm hiệu ứng (của Dage the Dark Lord):",
+            "playerEffects": [
+              "Mechabinky & Raxborg tăng 30% Crit Chance, 100% All Out và 130% Hit Chance trong 120s.",
+              "Mechabinky & Raxborg nhận HoT rất lớn trong 14s, dùng class có Decay như LR, VDK, LDK.",
+              "Kích hoạt Energy Blast ngay sau khi hết Summon Legion Mages, gây Phys DMG từ 2.9k đến 3.6k, đồng thời Mechabinky & Raxborg tăng 30% All In trong 20s với mỗi player trúng đòn."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-9",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Call of the Sea",
+            "activation": "◆ Khi còn 20% HP, sử dụng Call of the Sea để charge trong 5s, sau đó kích hoạt Voice of the Sea gây True DMG bằng 95% lượng HP hiện tại của player (của Voice of the Sea).",
+            "playerEffects": [
+              "Nếu player không có hiệu ứng Vigil, bị giảm 5000% Hit Chance và Haste trong 10s, tăng 50% All In trong 30s.",
+              "Nếu player có hiệu ứng Vigil, tăng 25% Crit Chance và Haste trong 35s.",
+              "Bỏ qua Focus/Taunt."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-skill-10",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "name": "Self Destruct Initiated",
+            "activation": "◆ Khi còn 10% HP, sử dụng Self Destruct Initiated để charge trong 15s đồng thời kích hoạt thêm hiệu ứng:",
+            "playerEffects": [
+              "Mechabinky & Raxborg giảm 100% Dodge và tăng 100% All In.",
+              "Cần diệt Mechabinky & Raxborg trong giai đoạn này nhanh nhất có thể.",
+              "Kích hoạt Self Destruct ngay sau khi hết Self Destruct Initiated, gây True DMG cực lớn không thể né giết chết tất cả players.",
+              "Đầu tiên là cơ chế End of Time làm vô hiệu hoá sát thương từ các Chrono (được kích hoạt đa số thời gian) và Skill Locked sẽ ngẫu nhiên khoá một skill của bạn mà tác động lên nó cuối cùng được sử dụng trong vài phút.",
+              "Với mỗi player chết thì Mechabinky & Raxborg 2.0 hồi 1m HP và tăng 25% Crit DMG, stack vô hạn.",
+              "Khi còn 90% HP (45m), Mechabinky & Raxborg 2.0 sẽ debuff giảm 200% Heal In khiến cho Heal/HoT trở thành sát thương trong 4s.",
+              "Khi còn 60% HP (30m), khiến HP tất cả players giảm xuống 1 và Mechabinky & Raxborg 2.0 hồi máu với mỗi player trúng đòn.",
+              "Khi còn 30% HP (15m), Mechabinky & Raxborg 2.0 nhận HoT cực khủng trong 14s, đồng thời cũng tăng 30% All In trong 20s với mỗi player trúng đòn.",
+              "Khi còn 20% HP (10m), Mechabinky & Raxborg 2.0 sẽ gây True DMG bằng 95% lượng HP hiện tại của player đồng thời giây hàng loạt các hiệu ứng bất lợi lên players nếu không có Vigil.",
+              "Khi còn 10% HP (5m), Mechabinky & Raxborg 2.0 sẽ charge trong 15s để chuẩn bị cho cú Dead Nuke gây sát thương cực lớn lên tất cả players.",
+              "Chia Team thành 2 nhóm: 3 players đảm nhận vị trí Focus/Taunt với Scroll of Enrage và 4 players còn lại sẽ tranh bị sẵn Vigil để dùng cho cơ chế Voice of the Sea khi Boss còn 20% HP (10m).",
+              "Vigil mua được tại Sea Voice Merge ở /join seavoice hoặc Kathool's Chest ở /join kathooldepths.",
+              "Với Skill Locked, thì bạn có thể lựa chọn khoá Skill không cần thiết hay Enhancement (tốt nhất dùng Mana Vamp) tuỳ theo class bạn sử dụng, hoặc nếu có Team quen thì trước tiên dùng Mana Vamp để khoá tại Binky ở /join doomvault sau đó mới nhảy vào Boss này để đánh.",
+              "Cách khoá thì khá đơn giản, chỉ cần spam Skill không cần thiết đó hoặc Skill kích hoạt hiệu ứng của Enhancement đó là được.",
+              "Trong quá trình đánh, nếu quá nhiều người chết, chết quá nhiều lần và chết vô tội vạ thì thôi coi như bỏ mà đánh lại từ đầu vì con Boss được tăng sức mạnh mỗi lần có player chết",
+              "Nếu có chết, thì đừng tấn công lại ngay sau khi hồi sinh mà hãy đợi các Buff từ Team trước nếu không sẽ bị mắc kẹt trong vòng lặp tử thần. Sau đó cần phải lặp lại quá trình khoá skill rồi mới bắt đầu combo như thường.",
+              "Hướng dẫn Focus/Taunt: Với 3 players, thì sẽ có 2 người loop chính với nhau, người còn lại ở vai trò dự bị, sẽ thay thế vào ngay nếu có loop chính chết.",
+              "Với Healer: Ngoài phải canh HP của Team để Heal, thì còn cần đặc biệt chú ý 3 cơ chế được kích hoạt khi HP Boss còn 45m, 30m và 10m.",
+              "Với Decay: Nếu team không có class loop được Decay như LDK, thì LR và VDK cần loop Decay với nhau lúc Boss kích hoạt cơ chế khi HP còn 15m (những lúc khác thì cứ spam như bình thương). Của LR ở skill 2 có 2s hiệu ứng với 3s hồi, còn VDK ở skill 5 có 3s hiệu ứng với 5s hồi.",
+              "Hướng dẫn dùng Vigil: Với 4 players trang bị, thì công dụng duy nhất của Vigil là để chặn hiệu ứng bất lợi từ cơ chế được kích hoạt khi Boss còn 10m HP, đồng thời cũng là những người giữ Team và Boss, tránh banh Team vào những giây cuối cùng."
+            ],
+            "bossEffects": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ],
+        "passiveSkills": [
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-0",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Shield giúp giảm sát thương trên 200k (hệ số 0.8).",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-1",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Với mỗi player bị giết chết, Mechabinky & Raxborg sẽ hồi lại 1m HP (miễn nhiễm Decay) và tăng 25% Crit DMG, stack vô hạn.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-2",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Miễn nhiễm với Stun.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-3",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Tự động xoá bỏ tất cả hiệu ứng Temporal Rift và Chaos Rift có trên player.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-4",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Base có 0% Crit Chance, 50% Dodge, 200% Crit DMG, 5000% Hit Chance, -95% Heal Out, -100% DoT In, -50% All In, Phys và Magi In.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-5",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Ngẫu nhiên khoá một skill của player mà tác động lên nó cuối cùng được sử dụng trong vài phút.",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-6",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Mỗi 5s, sẽ sử dụng ngẫu nhiên 1 trong 17 cơ chế sau:",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-7",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Team 1: Shaman, LC/CAv/LH/DLH/FB, LR, VDK, PCM/AP, LOO, SC/IT\tStarter",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-8",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Team 2: LC, QCM/CAv, LR, VDK, PCM/AP, LOO, LH/DLH/SC/IT\tStarter",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          {
+            "id": "mechabinky-raxborg-2-0-0-doc-passive-9",
+            "monsterId": "mechabinky-raxborg-2-0-0",
+            "label": "Cơ chế",
+            "condition": "Theo điều kiện được ghi",
+            "effect": "Team 3: IK/DT/EDoT, DT/EDoT, LR, VDK, Arach, LoO, LH/DLH\tBEST Team",
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          }
+        ]
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Con Boss này không thuộc The Gaol of Eternal Torment and Misery Dungeon, nó là phiên bản 2.0 được nâng cấp từ con ở trong Dungeon, được tạo ra với mục đích thử thách cho người chơi. Đừng tưởng nó dễ ăn như bản 1.0, yêu cầu cao hơn và bổ sung thêm nhiều cơ chế, thời gian đánh dài hơn đồng nghĩa với các cơ chế cũng được kích hoạt nhiều hơn.",
+        "Cần hoàn thành Undead Cashfear's Quests để access Map.",
+        "Boss nằm ở map /join grimchallenge - Room limit: 7",
+        "Cần đạt ít nhất lvl 100 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 50,000,000",
+        "◆ Shield giúp giảm sát thương trên 200k (hệ số 0.8).",
+        "◆ Với mỗi player bị giết chết, Mechabinky & Raxborg sẽ hồi lại 1m HP (miễn nhiễm Decay) và tăng 25% Crit DMG, stack vô hạn.",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tự động xoá bỏ tất cả hiệu ứng Temporal Rift và Chaos Rift có trên player.",
+        "◆ Base có 0% Crit Chance, 50% Dodge, 200% Crit DMG, 5000% Hit Chance, -95% Heal Out, -100% DoT In, -50% All In, Phys và Magi In.",
+        "◆ Auto-Attack mỗi 2.5s gây Phys DMG từ 100 đến 120.",
+        "→ Players giảm 500% Dodge trong 60s.",
+        "◆ Ngẫu nhiên khoá một skill của player mà tác động lên nó cuối cùng được sử dụng trong vài phút.",
+        "→ Mỗi lần chỉ có duy nhất một skill có thể bị khoá, tính cả Enh và Scroll.",
+        "→ Dùng Mana Vamp sau đó spam Auto-Attack hoặc spam skill không cần dùng để khoá.",
+        "◆ Ngay khi bắt đầu, sử dụng Charge Shot trong 4s sau đó kích hoạt Devastator Beam gây True DMG từ 14.7k đến 17.7k, không thể né (chia đều cho số người trong room, của Ultra Engineer).",
+        "◆ Mỗi 5s, sẽ sử dụng ngẫu nhiên 1 trong 17 cơ chế sau:",
+        "→ Melting CD 5s, gây Magi DMG từ 605 đến 741, đồng thời players bị tăng 25% All In và giảm 25% Dodge trong 25s, stack vô hạn (của Ultra Fire Orb).",
+        "→ Absorbing CD 10s, Mechabinky & Raxborg tăng 50% All Out và giảm 25% All In trong 30s, số stack mỗi lần dùng tăng ứng với số player trong trận, stack vô hạn (của Ultra Fire Orb).",
+        "→ Contracts of the Abyss CD 7s, gây ??? DMG (của Nulgath the Archfiend).",
+        "Áp “Contract of Frailty” lên players, tăng 50% All In trong 10s.",
+        "Áp “Contract of Despair” lên players có “Contract of Frailty”, giảm 75% Dodge, Crit Change và giảm 50% All Out trong 10s.",
+        "Áp “Contract of Stagnation” lên players có “Contract of Despair”, tăng 100% All In, Phys In và giảm 50% Haste, giảm 80% Heal In trong 10s.",
+        "→ The Cycle's End CD 30s, Mechabinky & Raxborg tăng 10% Phys và Magi In, stack đến 10 (của Darkon the Conductor).",
+        "→ Peer CD 10s, áp ngẫu nhiên 1 trong 2 hiệu ứng sau: tăng 100% Mana Cost trong 5s hoặc giảm 50% Hit Chance trong 5s, bỏ qua Focus/Taunt (của God of the Depths).",
+        "→ Devour CD 5s, gây DoT trong 12s (không stack), đồng thời Mechabinky & Raxborg tăng 100% All Out, nhận HoT, không stack và tăng DoT Out, stack (của Batara Kala).",
+        "→ Lullaby CD 8s, gây DMG từ 697 đến 852, đồng thời players bị giảm 15% Haste, Hit Chance, Crit Chance, All Out và tăng 15% All In trong 15s, stack vô hạn, bỏ qua Focus/Taunt (của Ultra Iara).",
+        "→ Daze CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích, đồng thời players bị giảm 5% Hit Chance trong 30s, stack đến 5 (của Flibbitiestgibbet).",
+        "→ The Fourth Sense CD 15s, Mechabinky & Raxborg tăng 2500% Dodge trong 3s (của Fourth Lynaria).",
+        "→ Ghoulish Roar CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích. Đồng thời áp lần lượt 1 trong 3 hiệu ứng sau theo thứ tự với mỗi lần sử dụng (của Nightmare Carnax):",
+        "Players bị giảm 20% All Out trong 20s.",
+        "Players bị giảm 25% Heal In và Heal Out trong 60s.",
+        "Players bị giảm 30% Haste trong 20s.",
+        "→ Regoovenation CD 10s, Mechabinky & Raxborg hồi máu bằng HoT trong 5s và tăng 100% All Out, stack đến 500 (của Xyfrag).",
+        "→ Dage the Dark Lord's Auto Attack CD 2.25s, gây Phys DMG từ 1.4k đến 1.8k, đồng thời players tăng 15% All In trong 11s và Mechabinky & Raxborg giảm 10% All In trong 11s, cả 2 stack vô hạn (của Dage the Dark Lord).",
+        "→ Essence Draining CD ??s, khiến tất cả players bị Stun trong 3s, giảm 40% All Out và 60% Heal Out trong 30s, còn Mechabinky & Raxborg tăng 50% All Out trong 30s (của Ultra Lionfang).",
+        "→ Silence CD 12s, ngăn chặn tất cả players sử dụng bất kỳ skill dạng tiêu hao MP trong 3s, không thể né và bỏ qua Focus/Taunt (của Nerfkitten).",
+        "→ Shadowflame Slash CD 2s, gây Phys DMG từ 804 đến 982, không thể né và bỏ qua Focus/Taunt nhưng lại không thể bạo kích. Đồng thời players bị giảm 7% All Out và tăng 7% All In trong 20s, stack vô hạn và giảm 40% INT trong 60s, không stack (của The First Speaker).",
+        "→ Magia Draw CD 7s, dùng để charge trong 2s sau đó kích hoạt Magia Burn gây Magi DMG từ 1.4k đến 1.7k, không thể né và luôn bạo kích. Đồng thời players bị tăng 300% Magi In trong 18s, stack vô hạn (của The First Speaker).",
+        "→ Energy Draw CD 12s, dùng để charge trong 2s sau đó kích hoạt Stasis Field, khiến tất cả players bị Stun trong 6s (của The First Speaker).",
+        "◆ Khi còn 90% HP, kích hoạt Contrarium gây Phys DMG bằng 60% lượng HP hiện tại của player (của Cervus Malus).",
+        "→ Players bị giảm 200% Heal In trong 4s (biến Heal thành sát thương).",
+        "◆ Khi còn 80% HP, sử dụng Meow để charge trong 2s rồi kích hoạt Stat Steal gây True DMG bằng 49% lượng HP tối đa của player, không thể né nhưng lại không thể bạo kích (của Nerfkitten).",
+        "→ Players bị giảm 10% All Out, Dodge, Crit Chance và Crit DMG trong 25s, stack đến 10.",
+        "→ Mechabinky & Raxborg tăng 10% All Out, Dodge, Crit Chance và Crit DMG với mỗi player bị đánh trúng.",
+        "◆ Khi còn 70% HP, sử dụng BLEEEEEEEEEEEECCH để charge trong 2s rồi kích hoạt Consume gây 2500 True DMG (của Xyfrag).",
+        "→ Players bị giảm 50% Haste, giảm 80% All Out và tăng 100% All In trong 10s.",
+        "→ Players dính hiệu ứng Decay, không nhận được Heal/HoT trong 5s.",
+        "◆ Khi còn 60% HP, kích hoạt Dracopyre Dive khiến HP players giảm xuống 1, dạng True DMG, không thể bạo kích (của Nightbane).",
+        "→ Mechabinky & Raxborg hồi máu với mỗi player trúng đòn.",
+        "→ Bỏ qua Focus/Taunt.",
+        "◆ Khi còn 50% HP, kích hoạt Enrage lên bản thân, tăng 100% All Out và làm các đòn đánh sau đó luôn bạo kích (của Kasuko).",
+        "◆ Khi còn 40% HP, kích hoạt Unleashed Chaos lên bản thân, giúp tăng 60% Dodge và 100% Haste (của Champion Drakath).",
+        "◆ Khi còn 30% HP, kích hoạt Summon Legion Mages để charge trong 10s đồng thời kích hoạt thêm hiệu ứng (của Dage the Dark Lord):",
+        "→ Mechabinky & Raxborg tăng 30% Crit Chance, 100% All Out và 130% Hit Chance trong 120s.",
+        "→ Mechabinky & Raxborg nhận HoT rất lớn trong 14s, dùng class có Decay như LR, VDK, LDK.",
+        "→ Kích hoạt Energy Blast ngay sau khi hết Summon Legion Mages, gây Phys DMG từ 2.9k đến 3.6k, đồng thời Mechabinky & Raxborg tăng 30% All In trong 20s với mỗi player trúng đòn.",
+        "◆ Khi còn 20% HP, sử dụng Call of the Sea để charge trong 5s, sau đó kích hoạt Voice of the Sea gây True DMG bằng 95% lượng HP hiện tại của player (của Voice of the Sea).",
+        "→ Nếu player không có hiệu ứng Vigil, bị giảm 5000% Hit Chance và Haste trong 10s, tăng 50% All In trong 30s.",
+        "→ Nếu player có hiệu ứng Vigil, tăng 25% Crit Chance và Haste trong 35s.",
+        "→ Bỏ qua Focus/Taunt.",
+        "◆ Khi còn 10% HP, sử dụng Self Destruct Initiated để charge trong 15s đồng thời kích hoạt thêm hiệu ứng:",
+        "→ Mechabinky & Raxborg giảm 100% Dodge và tăng 100% All In.",
+        "→ Cần diệt Mechabinky & Raxborg trong giai đoạn này nhanh nhất có thể.",
+        "→ Kích hoạt Self Destruct ngay sau khi hết Self Destruct Initiated, gây True DMG cực lớn không thể né giết chết tất cả players.",
+        "Tóm gọn cơ chế và hướng dẫn cách đánh",
+        "Về cơ chế: Mechabinky & Raxborg 2.0 có rất nhiều cơ chế do được tổng hợp từ nhiều con Bosses khác nhau, rất dài dòng và khó nhớ, nhưng thật ra chỉ có vài cái là quan trọng và đáng lưu ý trong quá trình đánh nó.",
+        "→ Đầu tiên là cơ chế End of Time làm vô hiệu hoá sát thương từ các Chrono (được kích hoạt đa số thời gian) và Skill Locked sẽ ngẫu nhiên khoá một skill của bạn mà tác động lên nó cuối cùng được sử dụng trong vài phút.",
+        "→ Với mỗi player chết thì Mechabinky & Raxborg 2.0 hồi 1m HP và tăng 25% Crit DMG, stack vô hạn.",
+        "→ Khi còn 90% HP (45m), Mechabinky & Raxborg 2.0 sẽ debuff giảm 200% Heal In khiến cho Heal/HoT trở thành sát thương trong 4s.",
+        "→ Khi còn 60% HP (30m), khiến HP tất cả players giảm xuống 1 và Mechabinky & Raxborg 2.0 hồi máu với mỗi player trúng đòn.",
+        "→ Khi còn 30% HP (15m), Mechabinky & Raxborg 2.0 nhận HoT cực khủng trong 14s, đồng thời cũng tăng 30% All In trong 20s với mỗi player trúng đòn.",
+        "→ Khi còn 20% HP (10m), Mechabinky & Raxborg 2.0 sẽ gây True DMG bằng 95% lượng HP hiện tại của player đồng thời giây hàng loạt các hiệu ứng bất lợi lên players nếu không có Vigil.",
+        "→ Khi còn 10% HP (5m), Mechabinky & Raxborg 2.0 sẽ charge trong 15s để chuẩn bị cho cú Dead Nuke gây sát thương cực lớn lên tất cả players.",
+        "Về chuẩn bị: Đây là bước rất quan trọng ban đầu, giúp bạn có thể làm chủ tình hình trong suốt cả trận đánh.",
+        "→ Chia Team thành 2 nhóm: 3 players đảm nhận vị trí Focus/Taunt với Scroll of Enrage và 4 players còn lại sẽ tranh bị sẵn Vigil để dùng cho cơ chế Voice of the Sea khi Boss còn 20% HP (10m).",
+        "→ Vigil mua được tại Sea Voice Merge ở /join seavoice hoặc Kathool's Chest ở /join kathooldepths.",
+        "→ Với Skill Locked, thì bạn có thể lựa chọn khoá Skill không cần thiết hay Enhancement (tốt nhất dùng Mana Vamp) tuỳ theo class bạn sử dụng, hoặc nếu có Team quen thì trước tiên dùng Mana Vamp để khoá tại Binky ở /join doomvault sau đó mới nhảy vào Boss này để đánh.",
+        "→ Cách khoá thì khá đơn giản, chỉ cần spam Skill không cần thiết đó hoặc Skill kích hoạt hiệu ứng của Enhancement đó là được.",
+        "Về cách đánh: Được phân ra theo từng nhóm nhiệm vụ (có thể có player đảm nhận cùng lúc 2 nhiệm vụ).",
+        "→ Trong quá trình đánh, nếu quá nhiều người chết, chết quá nhiều lần và chết vô tội vạ thì thôi coi như bỏ mà đánh lại từ đầu vì con Boss được tăng sức mạnh mỗi lần có player chết",
+        "→ Nếu có chết, thì đừng tấn công lại ngay sau khi hồi sinh mà hãy đợi các Buff từ Team trước nếu không sẽ bị mắc kẹt trong vòng lặp tử thần. Sau đó cần phải lặp lại quá trình khoá skill rồi mới bắt đầu combo như thường.",
+        "→ Hướng dẫn Focus/Taunt: Với 3 players, thì sẽ có 2 người loop chính với nhau, người còn lại ở vai trò dự bị, sẽ thay thế vào ngay nếu có loop chính chết.",
+        "Cần bật chức năng Class Actives/Auras UI trong Advance Option để dễ canh sử dụng Focus/Taunt.",
+        "Để ý khi nào aura của Focus gần CD xong (còn lại 1/8-1/10) thì dùng Scroll, chi tiết tại “Hướng dẫn loop Focus/Taunt với người chơi khác” của Aummon.",
+        "Đặc biệt chú ý tránh loop Focus/Taunt hụt các cơ chế của Boss kích hoạt khi HP còn 45m, 40m và 35m.",
+        "Khi Boss còn 15m và thấy thông báo “I possess the full power of the Legion at my disposal.” thì ngay lặp tức ngừng sử dụng SoE để Focus/Taunt, đến khi thấy thấy “I will feast on your souls, mortals!” thì mới bắt đầu loop Focus/Taunt trở lại.",
+        "→ Với Healer: Ngoài phải canh HP của Team để Heal, thì còn cần đặc biệt chú ý 3 cơ chế được kích hoạt khi HP Boss còn 45m, 30m và 10m.",
+        "Khi Boss còn 45m HP, các Healer phải dừng sử dụng Heal khi thấy thông báo “Cervus Malus inverts your healing!”. Đến khi thấy “Your healing is no longer inverted!” thì mới dùng trở lại.",
+        "Khi Boss còn 30m HP, cần giữ lại Skill Heal để sử dụng ngay khi con Boss đưa HP toàn bộ players về 1, nếu không thì chết.",
+        "Khi Boss còn 10m HP, các Healer chính phải đảm bảo không được hụt Vigil, nếu không thì không thể hồi máu cho Team sau khi nó sử dụng Voice of the Sea, kết quả thì cũng chết cả Team.",
+        "→ Với Decay: Nếu team không có class loop được Decay như LDK, thì LR và VDK cần loop Decay với nhau lúc Boss kích hoạt cơ chế khi HP còn 15m (những lúc khác thì cứ spam như bình thương). Của LR ở skill 2 có 2s hiệu ứng với 3s hồi, còn VDK ở skill 5 có 3s hiệu ứng với 5s hồi.",
+        "Cần bật chức năng Class Actives/Auras UI trong Advance Option để dễ canh sử dụng Decay.",
+        "Khi thấy Boss gần đến mốc 15m HP (tuỳ theo tốc độ đánh của Team và thời gian hồi của skill mà canh) thì để dành lại Skill Decay của mình.",
+        "Ngay khi thấy thông báo “I possess the full power of the Legion at my disposal.” thì VDK sẽ sử dụng Decay với 5 đầu tiên, sau đó LR tiếp tục dùng 2 khi thấy Decay của VDK gần hết. Lập lại quá trình này thêm 2 lần nữa là xong hoặc thấy “I will feast on your souls, mortals!” thì thực hiện thêm 1 lần nữa.",
+        "→ Hướng dẫn dùng Vigil: Với 4 players trang bị, thì công dụng duy nhất của Vigil là để chặn hiệu ứng bất lợi từ cơ chế được kích hoạt khi Boss còn 10m HP, đồng thời cũng là những người giữ Team và Boss, tránh banh Team vào những giây cuối cùng.",
+        "Khi Boss chuẩn bị đến mốc 10m HP, thì những người đang trang bị Vigil cần chuẩn bị tinh thần, ngay khi thấy thông báo “You will not resist!” thì sử dụng Vigil ngay lập tức.",
+        "Các Healer chính phải đảm bảo không được hụt Vigil, nếu không thì không thể hồi máu cho Team sau khi Boss sử dụng Voice of the Sea, kết quả thì cũng chết cả Team.",
+        "Các team kiến nghị sử dụng:",
+        "Những điều lưu ý cũng như cách đánh đã được đề cập và hướng dẫn ở phần trên, ở đây sẽ chỉ tập trung về chia Team cũng như hướng dẫn bổ sung cá nhân hoá cho từng class.",
+        "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+        "→ CAv hoặc SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+        "→ Shaman sử dụng combo 5 - 2 - 3 - (4) (lập lại 2 - 3, khi thiếu MP thì spam 3, tiết kiệm dùng skill 4).",
+        "Nếu không có điều kiện, thì nên khoá skill 4 bằng cách chỉ spam skill này.",
+        "Enh: Elysium + Wizard class/helm + Vainglory",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Potent Malevolence Elixir + Sage Tonic để tăng DPS.",
+        "→ LC pre-buff với 4, sau đó spam 2, 3 và 5, còn với 4 thì sử dụng khi cần Heal cho team.",
+        "Nếu không có điều kiện, thì nên khoá skill 3 bằng cách chỉ spam skill này.",
+        "Enh: Praxis + Wizard class/helm + Vainglory",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Potent Malevolence Elixir + Sage Tonic để tăng DPS.",
+        "→ CAv mở đầu với 3 - 4 - 5 - 2, sau đó spam skill (trừ 3).",
+        "Chú ý khi dùng 3 để tránh trùng lượt Focus/Taunt người khác, tốt nhất là sử dụng 3 ngay trước khi dùng Scroll of Enrage để Debuff Boss.",
+        "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.",
+        "Enh: Ravenous + Lucky class + Anima + Penitence",
+        "Potion/Scroll: Cần phải có Scroll of Enrage, có thể dùng thêm Potent Destruction Elixir + Might Tonic để tăng DPS.",
+        "→ LR combo mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.",
+        "Nếu không có điều kiện, thì nên khoá skill 5 bằng cách chỉ spam skill này.",
+        "Enh: Arcana's Concerto + Wizard class/helm + Vainglory",
+        "Potion/Scroll: Cần phải có Scroll of Enrage, có thể dùng thêm Potent Malevolence Elixir + Sage Tonic để tăng DPS.",
+        "→ VDK mở đầu với 2 - 3 - 4 - 5, sau đó spam skill, nếu thiếu máu thì spam 3 để hồi.",
+        "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.",
+        "Enh: Ravenous > Praxis + Lucky class + Anima + Vainglory",
+        "Potion/Scroll: Nếu team có CAv thì trang bị Vigil, còn không thì Scroll of Enrage, có thể dùng thêm Potent Destruction Elixir + Fate Tonic để tăng DPS.",
+        "→ PCM pre-buff với 3, sau đó dùng combo 2 - 4 - 2 - 3 rồi spam 2 đến khi HP về lại bình thường thì ngay lập tức dùng 5, sau đó tiếp tục spam 2 đến khi 5 CD thì dùng 5 rồi tiếp tục spam 2 đến khi 4 CD thì lập lại từ đầu, còn 3 chỉ dùng để buff máu khi cần.",
+        "Nếu không có điều kiện, thì nên trang bị Healer Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.",
+        "Enh: Ravenous + Healer class + Hearty + Vainglory",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Potent Malevolence Elixir + Sage Tonic để tăng khả năng Heal.",
+        "→ AP pre-buff với 3, dùng combo 4 - 2 - 2 - 5 sau đó spam 2 đến khi 4 CD thì lập lại, còn với 3 thì sử dụng khi cần Heal cho team.",
+        "Nếu không có điều kiện, thì nên khoá skill 5 bằng cách chỉ spam skill này.",
+        "Enh: Valiance + Lucky class + Forge helm + Lament",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Potent Destruction Elixir + Fate Tonic để tăng DPS.",
+        "→ LoO pre-buff với 2, 3 và 4, sau đó spam tất cả skills.",
+        "Enh: Lucky Awe Blast + Lucky class + Healer helm + Absolution",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Unstable/Divine Elixir + Fate Tonic để tăng Heal.",
+        "→ LH/DLH mở đầu với 3 - 4 - 5 - 2, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.",
+        "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.",
+        "Enh: Valiance + Lucky class/helm + Absolution",
+        "Nếu team đã có người dùng Arcana's Concerto thì ưu tiên dùng Lucky Awe Blast.",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Unstable/Divine Elixir + Might Tonic để tăng Heal.",
+        "→ SC/IT dùng combo 4 - 3 - 2 - 5, sau đó spam nhưng lưu ý luôn dùng 2 trước 5, và 4 trước 3.",
+        "Nếu không có điều kiện, thì nên trang bị Wizard Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.",
+        "Enh: Valiance + Wizard class/helm + Absolution",
+        "Potion/Scroll: Cần phải có Scroll of Enrage, có thể dùng thêm Unstable/Divine Elixir + Sage Tonic để tăng Heal.",
+        "→ FB pre-buff với 3 và 4, sau đó spam skill 2, 3 và 4 (không sử dụng skill 5).",
+        "Nếu không có điều kiện, thì nên khoá skill 5 bằng cách chỉ spam skill này.",
+        "Enh: Valiance + Fighter class/helm + Absolution",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Unstable/Divine Elixir + Might Tonic để tăng Heal.",
+        "→ Với Team này thì LC, QCM, PCM, AP và LoO phải trang bị Vigil, còn với CAv (nếu có), LR và LH/DLH/SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+        "→ CAv hoặc LH/DLH/SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+        "→ LC, CAv, LR, VDK, PCM, AP, LoO và SC/IT sử dụng tương tự Team 1.",
+        "→ QCM mở đầu với 2 - 3 - 2 - 4 - 5, sau đó thì spam 2 - 3 - 4, chỉ dùng 5 khi thấy stack được Rift (ít nhất phải được 2-3 stacks rồi mới Nuke với 5).",
+        "Để biết khi nào stack được Rift thì cần để ý Auto-Attack kích hoạt mà không thấy hiện ra thông báo “Time is a flickle thing.”, lúc này chỉ cần chờ Auto-Attack kích hoạt thêm 1-2 lần là phải dùng 5 ngay (do khoảng trống khá ngắn).",
+        "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.",
+        "Enh: Praxis + Lucky class + Forge helm + Vainglory",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Potent Destruction Elixir + Fate Tonic để tăng DPS.",
+        "→ LH/DLH mở đầu với 3 - 4 - 5 - 2, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.",
+        "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.",
+        "Enh: Valiance + Lucky class/helm + Absolution",
+        "Nếu team đã có người dùng Arcana's Concerto thì ưu tiên dùng Lucky Awe Blast.",
+        "Potion/Scroll: Cần phải có Scroll of Enrage, có thể dùng thêm Unstable/Divine Elixir + Might Tonic để tăng Heal.",
+        "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+        "→ LR và Arach sẽ đảm nhiệm loop Focus/Taunt chính, còn VDK sẽ là dự bị.",
+        "→ IK dùng combo 5 - 3 - 2 - 2 - 5 - 3 - 2 - 2 - 4",
+        "Nếu không có điều kiện, thì nên khoá skill 3 bằng cách chỉ spam skill này (dùng Valiance thay vì Elysium).",
+        "Enh: Elysium + Wizard class + Pneuma + Vainglory",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Unstable Malevolence Elixir + Sage Tonic để tăng DPS.",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3",
+        "Nếu không có điều kiện, thì nên khoá skill 5 bằng cách chỉ spam skill này.",
+        "Enh: Elysium + Healer class + Wizard helm + Vainglory",
+        "Potion: Cần phải có Vigil, có thể dùng thêm Unstable Malevolence Elixir + Sage Tonic để tăng DPS.",
+        "→ LR, VDK, LoO và LH/DLH sử dụng tương tự Team 1.",
+        "→ Arach mở đầu 4 - 5, sau đó spam 2 - 3, canh HP bản thân và CD hiệu ứng (12s) để dùng lại 4 và 5.",
+        "Nếu không có điều kiện, thì nên khoá Lucky Health Vamp bằng cách chỉ spam Auto-Attack.",
+        "Enh: Elysium > Lucky Health Vamp + Lucky class/helm + Penitence",
+        "Potion/Scroll: Cần phải có Scroll of Enrage, có thể dùng thêm Potent Destruction Elixir + Fate Tonic để tăng DPS."
+      ],
+      "strategy": [],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-319624",
+          "runs": [
+            {
+              "text": "Con Boss này không thuộc The Gaol of Eternal Torment and Misery Dungeon, nó là phiên bản 2.0 được nâng cấp từ con ở trong Dungeon, được tạo ra với mục đích thử thách cho người chơi. Đừng tưởng nó dễ ăn như bản 1.0, yêu cầu cao hơn và bổ sung thêm nhiều cơ chế, thời gian đánh dài hơn đồng nghĩa với các cơ chế cũng được kích hoạt nhiều hơn."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-319966",
+          "runs": [
+            {
+              "text": "Cần hoàn thành ",
+              "italic": true
+            },
+            {
+              "text": "Undead Cashfear's Quests",
+              "italic": true
+            },
+            {
+              "text": " để access Map.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320021",
+          "runs": [
+            {
+              "text": "Boss nằm ở",
+              "italic": true
+            },
+            {
+              "text": " map ",
+              "italic": true
+            },
+            {
+              "text": "/join grimchallenge",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/grim-challenge"
+            },
+            {
+              "text": " - R",
+              "italic": true
+            },
+            {
+              "text": "oom limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320072",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 100",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320130",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320138",
+          "runs": [
+            {
+              "text": "◆ Total HP: 50,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320161",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 200k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320214",
+          "runs": [
+            {
+              "text": "◆ Với mỗi player bị giết chết, Mechabinky & Raxborg sẽ hồi lại 1m HP "
+            },
+            {
+              "text": "(miễn nhiễm Decay)",
+              "italic": true
+            },
+            {
+              "text": " và tăng 25% Crit DMG, stack vô hạn"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320338",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320361",
+          "runs": [
+            {
+              "text": "◆ Tự động xoá bỏ tất cả hiệu ứng Temporal Rift và Chaos Rift có trên player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320438",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Crit Chance, 50% Dodge, 200% Crit DMG, 5000% Hit Chance, -95% Heal Out, -100% DoT In, -50% All In, Phys và Magi In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320567",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.5s gây Phys DMG từ 100 đến 120.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320619",
+          "runs": [
+            {
+              "text": "→ Players giảm 500% Dodge trong 60s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320656",
+          "runs": [
+            {
+              "text": "◆ Ngẫu nhiên khoá một skill của player mà tác động lên nó cuối cùng được sử dụng trong vài phút.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320753",
+          "runs": [
+            {
+              "text": "→ Mỗi lần chỉ có duy nhất một skill có thể bị khoá, tính cả Enh và Scroll.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320828",
+          "runs": [
+            {
+              "text": "→ Dùng Mana Vamp sau đó spam Auto-Attack hoặc spam skill không cần dùng để khoá.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-320909",
+          "runs": [
+            {
+              "text": "◆ Ngay khi bắt đầu, sử dụng Charge Shot trong 4s sau đó kích hoạt Devastator Beam gây True DMG từ 14.7k đến 17.7k, không thể né "
+            },
+            {
+              "text": "(chia đều c",
+              "italic": true
+            },
+            {
+              "text": "ho số người trong room, của ",
+              "italic": true
+            },
+            {
+              "text": "Ultra Engineer",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-321093",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sẽ sử dụng ngẫu nhiên 1 trong 17 cơ chế sau:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-321148",
+          "runs": [
+            {
+              "text": "→ Melting CD 5s, gây Magi DMG từ 605 đến 741, đồng thời players bị tăng 25% All In và giảm 25% Dodge trong 25s, stack vô hạn "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Ultra Fire Orb",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-321295",
+          "runs": [
+            {
+              "text": "→ Absorbing CD 10s, Mechabinky & Raxborg tăng 50% All Out và giảm 25% All In trong 30s, số stack mỗi lần dùng tăng ứng với số player trong trận, stack vô hạn "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Ultra Fire Orb",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-321475",
+          "runs": [
+            {
+              "text": "→ Contracts of the Abyss CD 7s, gây ??? DMG "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Nulgath the Archfiend",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-321548",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Áp “Contract of Frailty” lên players, tăng 50% All In trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-321613",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Áp “Contract of Despair” lên players có “Contract of Frailty”, giảm 75% Dodge, Crit Change và giảm 50% All Out trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-321735",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Áp “Contract of Stagnation” lên players có “Contract of Despair”, tăng 100% All In, Phys In và giảm 50% Haste, giảm 80% Heal In trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-321874",
+          "runs": [
+            {
+              "text": "→ The Cycle's End CD 30s, Mechabinky & Raxborg tăng 10% Phys và Magi In, stack đến 10 "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Darkon the Conductor",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-321988",
+          "runs": [
+            {
+              "text": "→ Peer CD 10s, áp ngẫu nhiên 1 trong 2 hiệu ứng sau: tăng 100% Mana Cost trong 5s hoặc giảm 50% Hit Chance trong 5s, bỏ qua Focus/Taunt "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "God of the Depths",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-322149",
+          "runs": [
+            {
+              "text": "→ Devour CD 5s, gây DoT trong 12s "
+            },
+            {
+              "text": "(không stack)",
+              "italic": true
+            },
+            {
+              "text": ", đồng thời Mechabinky & Raxborg tăng 100% All Out, nhận HoT, không stack và tăng DoT Out, stack "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Batara Kala",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-322312",
+          "runs": [
+            {
+              "text": "→ Lullaby CD 8s, gây DMG từ 697 đến 852, đồng thời players bị giảm 15% Haste, Hit Chance, Crit Chance, All Out và tăng 15% All In trong 15s, stack vô hạn, bỏ qua Focus/Taunt "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Ultra Iara",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-322504",
+          "runs": [
+            {
+              "text": "→ Daze CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích, đồng thời players bị giảm 5% Hit Chance trong 30s, stack đến 5 "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Flibbitiestgibbet",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-322693",
+          "runs": [
+            {
+              "text": "→ The Fourth Sense CD 15s, Mechabinky & Raxborg tăng 2500% Dodge trong 3s "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Fourth Lynaria",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/fourth-lynaria"
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-322789",
+          "runs": [
+            {
+              "text": "→ Ghoulish Roar CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích. Đồng thời áp lần lượt 1 trong 3 hiệu ứng sau theo thứ tự với mỗi lần sử dụng "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Nightmare Carnax",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ":\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-323000",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Players bị giảm 20% All Out trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-323039",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Players bị giảm 25% Heal In và Heal Out trong 60s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-323090",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Players bị giảm 30% Haste trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-323127",
+          "runs": [
+            {
+              "text": "→ Regoovenation CD 10s, Mechabinky & Raxborg hồi máu bằng HoT trong 5s và tăng 100% All Out, stack đến 500 "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Xyfrag",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-323248",
+          "runs": [
+            {
+              "text": "→ Dage the Dark Lord's Auto Attack CD 2.25s, gây Phys DMG từ 1.4k đến 1.8k, đồng thời players tăng 15% All In trong 11s và Mechabinky & Raxborg giảm 10% All In trong 11s, cả 2 stack vô hạn "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Dage the Dark Lord",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-323463",
+          "runs": [
+            {
+              "text": "→ Essence Draining CD ??s, khiến tất cả players bị Stun trong 3s, giảm 40% All Out và 60% Heal Out trong 30s, còn Mechabinky & Raxborg tăng 50% All Out trong 30s "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Ultra Lionfang",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/ultra-lionfang-monster"
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-323647",
+          "runs": [
+            {
+              "text": "→ Silence CD 12s, ngăn chặn tất cả players sử dụng bất kỳ skill dạng tiêu hao MP trong 3s"
+            },
+            {
+              "text": ", không thể né và bỏ qua Focus/Taunt "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Nerfkitten",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-323791",
+          "runs": [
+            {
+              "text": "→ Shadowflame Slash CD 2s, gây Phys DMG từ 804 đến 982, không thể né và bỏ qua Focus/Taunt nhưng lại không thể bạo kích. Đồng thời players bị giảm 7% All Out và tăng 7% All In trong 20s, stack vô hạn và giảm 40% IN"
+            },
+            {
+              "text": "T trong 60s, không stack "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "The First Speaker",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-324055",
+          "runs": [
+            {
+              "text": "→ Magia Draw CD 7s, dùng để charge trong 2s sau đó kích hoạt Magia Burn gây Magi DMG từ 1.4k đến 1.7k, không thể né và luôn bạo kích. Đồng thời players bị tăng 300% Magi In trong 18s, stack vô hạn "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "The First Speaker",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-324277",
+          "runs": [
+            {
+              "text": "→ Energy Draw CD 12s, dùng để charge tro"
+            },
+            {
+              "text": "ng 2s sau đó kích hoạt Stasis Field, khiến tất cả players bị Stun trong 6s "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "The First Speaker",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-324417",
+          "runs": [
+            {
+              "text": "◆ Khi còn 90% HP, kích hoạt Contrarium gây Phys DMG bằng 60% lượng HP hiện tại của player "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Cervus Malus",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-324527",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 200% Heal In trong 4s "
+            },
+            {
+              "text": "(biến Heal thành sát thương)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-324597",
+          "runs": [
+            {
+              "text": "◆ Khi còn 80% HP, sử dụng Meow để charge trong 2s rồi kích hoạt Stat Steal gây True DMG bằng 49% lượng HP tối đa của player, không thể né nhưng lại không thể bạo kích "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Nerfkitten",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-324782",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 10% All Out, Dodge, Crit Chance và Crit DMG trong 25s, stack đến 10.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-324869",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg tăng 10% All Out, Dodge, Crit Chance và Crit DMG với mỗi player bị đánh trúng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-324971",
+          "runs": [
+            {
+              "text": "◆ Khi còn 70% HP, sử dụng BLEEEEEEEEEEEECCH để charge trong 2s rồi kích hoạt Consume gây 2500 True DMG "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Xyfrag",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325088",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 50% Haste, giảm 80% All Out và tăng 100% All In trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325165",
+          "runs": [
+            {
+              "text": "→ Players dính hiệu ứng Decay, không nhận được Heal/HoT trong 5s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325231",
+          "runs": [
+            {
+              "text": "◆ Khi còn 60% HP, kích"
+            },
+            {
+              "text": " hoạt Dracopyre Dive khiến HP players giảm xuống 1, dạng True DMG, không thể bạo kích "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Nightbane",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325356",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg hồi máu với mỗi player trúng đòn. \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325414",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325436",
+          "runs": [
+            {
+              "text": "◆ Khi còn 50% HP, kích hoạt Enrage lên bản thân, tăng 100% All Out và làm các đòn đánh sau đó luôn bạo kíc"
+            },
+            {
+              "text": "h "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Kasuko",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325558",
+          "runs": [
+            {
+              "text": "◆ Khi còn 40% HP, kích hoạt Unleashed Chaos lên bản thân, giúp tăng 60% Dodge và 100% Haste "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Champion Drakath",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325674",
+          "runs": [
+            {
+              "text": "◆ Khi còn 30% HP, kích hoạt Summon Legion Mages để charge trong 10s đồng thời kích hoạt thêm hiệu ứng "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Dage the Dark Lord",
+              "italic": true
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": ":\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325802",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg tăng 30% Crit Chance, 100% All Out và 130% Hit Chance trong 120s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325891",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg nhận HoT rất lớn trong 14s, dùng class có Decay như LR, VDK, LDK.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-325980",
+          "runs": [
+            {
+              "text": "→ Kích hoạt Energy Blast ngay sau khi hết Summon Legion Mages, gây Phys DMG từ 2.9k đến 3.6k, đồng thời Mechabinky & Raxborg tăng 30% All In trong 20s với mỗi player trúng đòn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326157",
+          "runs": [
+            {
+              "text": "◆ Khi còn 20% HP, sử dụng Call of the Sea để charge trong 5s, sau đó kích hoạt Voice of the Sea gây True DMG bằng 95% lượng HP hiện tại của "
+            },
+            {
+              "text": "player "
+            },
+            {
+              "text": "(của ",
+              "italic": true
+            },
+            {
+              "text": "Voice of the Sea",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/voice-in-the-sea"
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326328",
+          "runs": [
+            {
+              "text": "→ Nếu player không có hiệu ứng Vigil, bị giảm 5000% Hit Chance và Haste trong 10s, tăng 50% All In trong 30s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326438",
+          "runs": [
+            {
+              "text": "→ Nếu player có hiệu ứng Vigil, tăng 25% Crit Chance và Haste trong 35s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326511",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326533",
+          "runs": [
+            {
+              "text": "◆ Khi còn 10% HP, sử dụng Self Destruct Initiated để charge trong 15s đồng thời kích hoạt thêm hiệu ứng:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326638",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg giảm 100% Dodge và tăng 100% All In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326698",
+          "runs": [
+            {
+              "text": "→ Cần diệt Mechabinky & Raxborg trong giai đoạn này nhanh nhất có thể.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326769",
+          "runs": [
+            {
+              "text": "→ Kích hoạt Self Destruct ngay sau khi hết Self Destruct Initiated, gây True DMG cực lớn không thể né giết chết tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326898",
+          "runs": [
+            {
+              "text": "Tóm gọn cơ chế và hướng dẫn cách đánh\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-326936",
+          "runs": [
+            {
+              "text": "Về cơ chế:",
+              "bold": true
+            },
+            {
+              "text": " Mechabinky & Raxborg 2.0 có rất nhiều cơ chế do được tổng hợp từ nhiều con Bosses khác nhau, rất dài dòng và khó nhớ, nhưng thật ra chỉ có vài cái là quan trọng và đáng lưu ý trong quá trình đánh nó."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-327147",
+          "runs": [
+            {
+              "text": "→ Đầu tiên là cơ chế End of Time làm vô hiệu hoá sát thương từ các Chrono "
+            },
+            {
+              "text": "(được kích hoạt đa số thời gian)",
+              "italic": true
+            },
+            {
+              "text": " và Skill Locked sẽ ngẫu nhiên khoá một skill của bạn mà tác động lên nó cuối cùng được sử dụng trong vài phút.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-327365",
+          "runs": [
+            {
+              "text": "→ Với mỗi player chết thì Mechabinky & Raxborg 2.0 hồi 1m HP và tăng 25% Crit DMG, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-327462",
+          "runs": [
+            {
+              "text": "→ Khi còn 90% HP "
+            },
+            {
+              "text": "(45m)",
+              "italic": true
+            },
+            {
+              "text": ", Mechabinky & Raxborg 2.0 sẽ debuff giảm 200% Heal In khiến cho Heal/HoT trở thành sát thương trong 4s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-327589",
+          "runs": [
+            {
+              "text": "→ Khi còn 60% HP "
+            },
+            {
+              "text": "(30m)",
+              "italic": true
+            },
+            {
+              "text": ", khiến HP tất cả players giảm xuống 1 và Mechabinky & Raxborg 2.0 hồi máu với mỗi player trúng đòn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-327712",
+          "runs": [
+            {
+              "text": "→ Khi còn 30% HP "
+            },
+            {
+              "text": "(15m)",
+              "italic": true
+            },
+            {
+              "text": ", Mechabinky & Raxborg 2.0 nhận HoT cực khủng trong 14s, đồng thời cũng tăng 30% All In trong 20s với mỗi player trúng đòn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-327858",
+          "runs": [
+            {
+              "text": "→ Khi còn 20% HP "
+            },
+            {
+              "text": "(10m)",
+              "italic": true
+            },
+            {
+              "text": ", Mechabinky & Raxborg 2.0 sẽ gây True DMG bằng 95% lượng HP hiện tại của player đồng thời giây hàng loạt các hiệu ứng bất lợi lên players nếu không có Vigil.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-328039",
+          "runs": [
+            {
+              "text": "→ Khi còn 10% HP "
+            },
+            {
+              "text": "(5m)",
+              "italic": true
+            },
+            {
+              "text": ", Mechabinky & Raxborg 2.0 sẽ charge trong 15s để chuẩn bị cho cú Dead Nuke gây sát thương cực lớn lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-328180",
+          "runs": [
+            {
+              "text": "Về chuẩn bị:",
+              "bold": true
+            },
+            {
+              "text": " Đây là bước rất quan trọng ban đầu, giúp bạn có thể làm chủ tình hình trong suốt cả trận đánh."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-328288",
+          "runs": [
+            {
+              "text": "→ Chia Team thành 2 nhóm: 3 players đảm nhận vị trí Focus/Taunt"
+            },
+            {
+              "text": " với "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": " và 4 players còn lại sẽ tranh bị sẵn "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": " để dùng cho cơ chế Voice of the Sea khi Boss còn 20% HP "
+            },
+            {
+              "text": "(10m)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-328479",
+          "runs": [
+            {
+              "text": "→ Vigil mua được tại "
+            },
+            {
+              "text": "Sea Voice Merge",
+              "href": "http://aqwwiki.wikidot.com/sea-voice-merge"
+            },
+            {
+              "text": " ở "
+            },
+            {
+              "text": "/join seavoice",
+              "href": "http://aqwwiki.wikidot.com/sea-voice"
+            },
+            {
+              "text": " hoặc "
+            },
+            {
+              "text": "Kathool's Chest",
+              "href": "http://aqwwiki.wikidot.com/kathool-s-chest"
+            },
+            {
+              "text": " ở "
+            },
+            {
+              "text": "/join kathooldepths",
+              "href": "http://aqwwiki.wikidot.com/god-of-the-depths-bonus-zone"
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-328577",
+          "runs": [
+            {
+              "text": "→ Với Skill Locked, thì bạn có thể lựa chọn khoá Skill không cần thiết hay Enhancement "
+            },
+            {
+              "text": "(tốt nhất dùng Mana Vamp)",
+              "italic": true
+            },
+            {
+              "text": " tuỳ theo class bạn sử dụng, hoặc nếu có Team quen thì trước tiên dùng Mana Vamp để khoá tại Binky ở "
+            },
+            {
+              "text": "/join doomvault",
+              "href": "http://aqwwiki.wikidot.com/doom-vault"
+            },
+            {
+              "text": " sau đó mới nhảy vào Boss này để đánh"
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-328844",
+          "runs": [
+            {
+              "text": "→ Cách khoá thì khá đơn giản, chỉ cần spam Skill không cần thiết đó hoặc Skill kích hoạt hiệu ứng của Enhancement đó là được.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-328971",
+          "runs": [
+            {
+              "text": "Về cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Được phân ra theo từng nhóm nhiệm vụ "
+            },
+            {
+              "text": "(có thể có player đảm nhận cùng lúc 2 nhiệm vụ)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-329071",
+          "runs": [
+            {
+              "text": "→ Trong quá trình đánh, nếu quá nhiều người chết, chết quá nhiều lần và chết vô tội vạ thì thôi coi như bỏ mà đánh lại từ đầu vì con Boss được tăng sức mạnh mỗi lần có player chết\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-329251",
+          "runs": [
+            {
+              "text": "→ Nếu có chết, thì đừng tấn công lại ngay sau khi hồi sinh mà hãy đợi các Buff từ Team trước nếu không sẽ bị mắc kẹt trong vòng lặp tử thần. Sau đó cần phải lặp lại quá trình khoá skill rồi mới bắt đầu combo như thường.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-329471",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Hướng dẫn Focus/Taunt:",
+              "italic": true
+            },
+            {
+              "text": " Với 3 players, thì sẽ có 2 người loop chính với nhau, người còn lại ở vai trò dự bị, sẽ thay thế vào ngay nếu có loop chính chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-329626",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Cần bật chức năng "
+            },
+            {
+              "text": "Class Actives/Auras UI",
+              "italic": true
+            },
+            {
+              "text": " trong Advance Option để dễ canh sử dụng Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-329720",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Để ý khi nào aura của Focus gần CD xong "
+            },
+            {
+              "text": "(còn lại 1/8-1/10)",
+              "italic": true
+            },
+            {
+              "text": " thì dùng Scroll, chi tiết tại “"
+            },
+            {
+              "text": "Hướng dẫn loop Focus/Taunt với người chơi khác",
+              "href": "https://www.youtube.com/watch?v=U4gbwFv__fg"
+            },
+            {
+              "text": "” của Aummon.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-329870",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Đặc biệt chú ý tránh loop Focus/Taunt hụt các cơ chế của Boss kích hoạt khi HP còn 45m, 40m và 35m.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-329970",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi Boss còn 15m và thấy thông báo "
+            },
+            {
+              "text": "“I possess the full power of the Legion at my disposal.”",
+              "italic": true
+            },
+            {
+              "text": " thì ngay lặp tức ngừng sử dụng SoE để Focus/Taunt, đến khi thấy thấy "
+            },
+            {
+              "text": "“I will feast on your souls, mortals!”",
+              "italic": true
+            },
+            {
+              "text": " thì mới bắt đầu loop Focus/Taunt trở lại.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-330216",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Với Healer:",
+              "italic": true
+            },
+            {
+              "text": " Ngoài phải canh HP của Team để Heal, thì còn cần đặc biệt chú ý 3 cơ chế được kích hoạt khi HP Boss còn 45m, 30m và 10m.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-330351",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi Boss còn 45m HP, các Healer phải dừng sử dụng Heal khi thấy thông báo "
+            },
+            {
+              "text": "“Cervus Malus inverts your healing!”",
+              "italic": true
+            },
+            {
+              "text": ". Đến khi thấy "
+            },
+            {
+              "text": "“Your healing is no longer inverted!”",
+              "italic": true
+            },
+            {
+              "text": " thì mới dùng trở lại.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-330539",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi Boss còn 30m HP, cần giữ lại Skill Heal để sử dụng ngay khi con Boss đưa HP toàn bộ players về 1, nếu không thì chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-330661",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi Boss còn 10m HP, các Healer chính phải đảm bảo không được hụt Vigil, nếu không thì không thể hồi máu cho Team sau khi nó sử dụng Voice of the Sea, kết quả thì cũng chết cả Team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-330843",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Với Decay:",
+              "italic": true
+            },
+            {
+              "text": " Nếu team không có class loop được Decay như LDK, thì LR và VDK cần loop Decay với nhau lúc Boss kích hoạt cơ chế khi HP còn 15m "
+            },
+            {
+              "text": "(những lúc khác thì cứ spam như bình thương)",
+              "italic": true
+            },
+            {
+              "text": ". Của LR ở skill 2 có 2s hiệu ứng với 3s hồi, còn VDK ở skill 5 có 3s hiệu ứng với 5s hồi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-331119",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Cần bật chức năng "
+            },
+            {
+              "text": "Class Actives/Auras UI",
+              "italic": true
+            },
+            {
+              "text": " trong Advance Option để dễ canh sử dụng Decay.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-331207",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi thấy Boss gần đến mốc 15m HP "
+            },
+            {
+              "text": "(tuỳ theo tốc độ đánh của Team và thời gian hồi của skill mà canh)",
+              "italic": true
+            },
+            {
+              "text": " thì để dành lại Skill Decay của mình.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-331345",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Ngay khi thấy thông báo "
+            },
+            {
+              "text": "“I possess the full power of the Legion at my disposal.”",
+              "italic": true
+            },
+            {
+              "text": " thì VDK sẽ sử dụng Decay với 5 đầu tiên, sau đó LR tiếp tục dùng 2 khi thấy Decay của VDK gần hết. Lập lại quá trình này thêm 2 lần nữa là xong hoặc thấy "
+            },
+            {
+              "text": "“I will feast on your souls, mortals!”",
+              "italic": true
+            },
+            {
+              "text": " thì thực hiện thêm 1 lần nữa.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-331651",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Hướng dẫn dùng Vigil:",
+              "italic": true
+            },
+            {
+              "text": " Với 4 players trang bị, thì công dụng duy nhất của Vigil là để chặn hiệu ứng bất lợi từ cơ chế được kích hoạt khi Boss còn 10m HP, đồng thời cũng là những người giữ Team và Boss, tránh banh Team vào những giây cuối cùng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-331896",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi Boss chuẩn bị đến mốc 10m HP, thì những người đang trang bị Vigil cần chuẩn bị tinh thần, ngay khi thấy thông báo "
+            },
+            {
+              "text": "“You will not resist!”",
+              "italic": true
+            },
+            {
+              "text": " thì sử dụng Vigil ngay lập tức.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-332071",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Các Healer chính phải đảm bảo không được hụt Vigil, nếu không thì không thể hồi máu cho Team sau khi Boss sử dụng Voice of the Sea, kết quả thì cũng chết cả Team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-332235",
+          "runs": [
+            {
+              "text": "Các team kiến nghị sử dụng:\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-332263",
+          "runs": [
+            {
+              "text": "Những điều lưu ý cũng như cách đánh đã được đề cập và hướng dẫn ở phần trên, ở đây sẽ chỉ tập trung về chia Team cũng như hướng dẫn bổ sung cá nhân hoá cho từng class.",
+              "italic": true
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-332432",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Team 1:",
+              "italic": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Shaman, LC/CAv/LH/DLH/FB, LR, VDK, PCM/AP, LOO, SC/IT\t",
+              "bold": true
+            },
+            {
+              "text": "Starter",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-332504",
+          "runs": [
+            {
+              "text": "→ Với Team này thì "
+            },
+            {
+              "text": "Shaman",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "PCM",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "LC",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "LH/DLH",
+              "bold": true
+            },
+            {
+              "text": " và"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "FB",
+              "bold": true
+            },
+            {
+              "text": " phải trang bị "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", còn với "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(nếu có)",
+              "italic": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "SC/IT",
+              "bold": true
+            },
+            {
+              "text": " thì phải trang bị "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": " để thực hiện phối hợp Focus/Taunt. Riêng "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " thì tuỳ Team có CAv hay không, nếu có thì trang bị "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", nếu không thì phải trang bị "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": " để cùng phối hợp Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-332830",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " hoặc "
+            },
+            {
+              "text": "SC/IT",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì "
+            },
+            {
+              "text": "SC/IT",
+              "bold": true
+            },
+            {
+              "text": " xuống làm dự bị, còn không có thì "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " sẽ là dự bị."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-332967",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Shaman",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 5 - 2 - 3 - (4) "
+            },
+            {
+              "text": "(lập lại 2 - 3, khi thiếu MP thì spam 3, tiết kiệm dùng skill 4)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333072",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên khoá skill 4 bằng cách chỉ spam skill này.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333147",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Wizard class/helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333192",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333288",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LC",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 4, sau đó spam 2, 3 và 5, còn với 4 thì sử dụng khi cần Heal cho team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333377",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên khoá skill 3 bằng cách chỉ spam skill này.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333452",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Praxis + Wizard class/helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333496",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333592",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3 - 4 - 5 - 2, sau đó spam skill "
+            },
+            {
+              "text": "(trừ 3)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333651",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Chú ý khi dùng 3 để tránh trùng lượt Focus/Taunt người khác, tốt nhất là sử dụng 3 ngay trước khi dùng Scroll of Enrage để Debuff Boss.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333787",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333896",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-333944",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion/Scroll: Cần phải có "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-334059",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-334152",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên khoá skill 5 bằng cách chỉ spam skill này.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-334227",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Arcana's Concerto + Wizard class/helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-334282",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion/Scroll: Cần phải có "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-334396",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 3 - 4 - 5, sau đó spam skill, nếu thiếu máu thì spam 3 để hồi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-334480",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-334589",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous > Praxis + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-334646",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion/Scroll: Nếu team có CAv thì trang bị "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", còn không thì "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": ", có thể dùng thêm"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-334798",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "PCM",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3, sau đó dùng combo 2 - 4 - 2 - 3 rồi spam 2 đến khi HP về lại bình thường thì ngay lập tức dùng 5, sau đó tiếp tục spam 2 đến khi 5 CD thì dùng 5 rồi tiếp tục spam 2 đến khi 4 CD thì lập lại từ đầu, còn 3 chỉ dùng để buff máu khi cần.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335054",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên trang bị Healer Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335164",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Healer class + Hearty + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335214",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Potent Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " để tăng khả năng Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335320",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3, dùng combo 4 - 2 - 2 - 5 sau đó spam 2 đến khi 4 CD thì lập lại, còn với 3 thì sử dụng khi cần Heal cho team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335451",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên khoá skill 5 bằng cách chỉ spam skill này.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335526",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Lucky class + Forge helm + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335576",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335672",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 2, 3 và 4, sau đó spam tất cả skills.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335729",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Lucky Awe Blast + Lucky class + Healer helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335791",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " để tăng Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335885",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LH/DLH",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3 - 4 - 5 - 2, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-335970",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336079",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Lucky class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336125",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu team đã có người dùng Arcana's Concerto thì ưu tiên dùng Lucky Awe Blast.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336203",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " để tăng Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336298",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "SC/IT",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 3 - 2 - 5, sau đó spam nhưng lưu ý luôn dùng 2 trước 5, và 4 trước 3.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336391",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên trang bị Wizard Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336501",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Wizard class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336548",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion/Scroll: Cần phải có "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " để tăng Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336660",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "FB",
+              "bold": true
+            },
+            {
+              "text": " pre-buff với 3 và 4, sau đó spam skill 2, 3 và 4 "
+            },
+            {
+              "text": "(không sử dụng skill 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336739",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên khoá skill 5 bằng cách chỉ spam skill này.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336814",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Fighter class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336862",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " để tăng Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-336958",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Team 2:",
+              "italic": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "LC, QCM/CAv, LR, VDK, PCM/AP, LOO, LH/DLH/SC/IT\t",
+              "bold": true
+            },
+            {
+              "text": "Starter",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-337024",
+          "runs": [
+            {
+              "text": "→ Với Team này thì "
+            },
+            {
+              "text": "LC",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "QCM",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "PCM",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": " phải trang bị "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", còn với "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(nếu có)",
+              "italic": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "LH/DLH/SC/IT",
+              "bold": true
+            },
+            {
+              "text": " thì phải trang bị "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": " để thực hiện phối hợp Focus/Taunt. Riêng "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " thì tuỳ Team có CAv hay không, nếu có thì trang bị "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", nếu không thì phải trang bị "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": " để cùng phối hợp Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-337342",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " hoặc "
+            },
+            {
+              "text": "LH/DLH/SC/IT",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì "
+            },
+            {
+              "text": "SC/IT",
+              "bold": true
+            },
+            {
+              "text": " xuống làm dự bị, còn không có thì "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " sẽ là dự bị.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-337486",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LC",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "PCM",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "SC/IT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng tương tự Team 1.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-337553",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "QCM",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2 - 3 - 2 - 4 - 5, sau đó thì spam 2 - 3 - 4, chỉ dùng 5 khi thấy stack được Rift "
+            },
+            {
+              "text": "(ít nhất phải được 2-3 stacks rồi mới Nuke với 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-337703",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Để biết khi nào stack được Rift thì cần để ý Auto-Attack kích hoạt mà không thấy hiện ra thông báo "
+            },
+            {
+              "text": "“Time is a flickle thing.”",
+              "italic": true
+            },
+            {
+              "text": ", lúc này chỉ cần chờ Auto-Attack kích hoạt thêm 1-2 lần là phải dùng 5 ngay "
+            },
+            {
+              "text": "(do khoảng trống khá ngắn)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-337935",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338044",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Praxis + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338095",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338191",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LH/DLH",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3 - 4 - 5 - 2, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338276",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên trang bị Lucky Mana Vamp để khoá Enhance này bằng cách chỉ spam Auto-Attack.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338385",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Lucky class/helm + Absolution\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338431",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu team đã có người dùng Arcana's Concerto thì ưu tiên dùng Lucky Awe Blast.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338509",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion/Scroll: Cần phải có "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Unstable"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "text": "Divine Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Might Tonic"
+            },
+            {
+              "text": " để tăng Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338623",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Team 3:",
+              "italic": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "IK/DT/EDoT, DT/EDoT, LR, VDK, Arach, LoO, LH/DLH",
+              "bold": true
+            },
+            {
+              "text": "\t",
+              "italic": true
+            },
+            {
+              "text": "B",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "E",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "S",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "T",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " ",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "T",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "e",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "a",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "m",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338692",
+          "runs": [
+            {
+              "text": "→ Với Team này thì "
+            },
+            {
+              "text": "IK",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "LH/DLH",
+              "bold": true
+            },
+            {
+              "text": " phải trang bị "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", còn với "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Arach",
+              "bold": true
+            },
+            {
+              "text": " thì phải trang bị "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": " để thực hiện phối hợp Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338854",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "Arach",
+              "bold": true
+            },
+            {
+              "text": " sẽ đảm nhiệm loop Focus/Taunt chính, còn "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " sẽ là dự bị.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338926",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "IK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 5 - 3 - 2 - 2 - 5 - 3 - 2 - 2 - 4"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-338976",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên khoá skill 3 bằng cách chỉ spam skill này "
+            },
+            {
+              "text": "(dùng Valiance thay vì Elysium)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339083",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Wizard class + Pneuma + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339132",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Unstable Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339230",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339276",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên khoá skill 5 bằng cách chỉ spam skill này.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339351",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Wizard helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339405",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Cần phải có "
+            },
+            {
+              "text": "Vigil",
+              "href": "http://aqwwiki.wikidot.com/vigil"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Unstable Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339503",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "LoO",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "LH/DLH",
+              "bold": true
+            },
+            {
+              "text": " sử dụng tương tự Team 1.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339553",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Arach",
+              "bold": true
+            },
+            {
+              "text": " mở đầu 4 - 5, sau đó spam 2 - 3, canh HP bản thân và CD hiệu ứng "
+            },
+            {
+              "text": "(12s)",
+              "italic": true
+            },
+            {
+              "text": " để dùng lại 4 và 5.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339652",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không có điều kiện, thì nên khoá Lucky Health Vamp bằng cách chỉ spam Auto-Attack.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339739",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium > Lucky Health Vamp + Lucky class/helm + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-339803",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion/Scroll: Cần phải có "
+            },
+            {
+              "text": "Scroll of Enrage"
+            },
+            {
+              "text": ", có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-320619",
+      "runs": [
+        {
+          "text": "→ Players giảm 500% Dodge trong 60s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-320753",
+      "runs": [
+        {
+          "text": "→ Mỗi lần chỉ có duy nhất một skill có thể bị khoá, tính cả Enh và Scroll.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-320828",
+      "runs": [
+        {
+          "text": "→ Dùng Mana Vamp sau đó spam Auto-Attack hoặc spam skill không cần dùng để khoá.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-321148",
+      "runs": [
+        {
+          "text": "→ Melting CD 5s, gây Magi DMG từ 605 đến 741, đồng thời players bị tăng 25% All In và giảm 25% Dodge trong 25s, stack vô hạn "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Ultra Fire Orb",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-321295",
+      "runs": [
+        {
+          "text": "→ Absorbing CD 10s, Mechabinky & Raxborg tăng 50% All Out và giảm 25% All In trong 30s, số stack mỗi lần dùng tăng ứng với số player trong trận, stack vô hạn "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Ultra Fire Orb",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-321475",
+      "runs": [
+        {
+          "text": "→ Contracts of the Abyss CD 7s, gây ??? DMG "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Nulgath the Archfiend",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-321874",
+      "runs": [
+        {
+          "text": "→ The Cycle's End CD 30s, Mechabinky & Raxborg tăng 10% Phys và Magi In, stack đến 10 "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Darkon the Conductor",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-321988",
+      "runs": [
+        {
+          "text": "→ Peer CD 10s, áp ngẫu nhiên 1 trong 2 hiệu ứng sau: tăng 100% Mana Cost trong 5s hoặc giảm 50% Hit Chance trong 5s, bỏ qua Focus/Taunt "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "God of the Depths",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-322149",
+      "runs": [
+        {
+          "text": "→ Devour CD 5s, gây DoT trong 12s "
+        },
+        {
+          "text": "(không stack)",
+          "italic": true
+        },
+        {
+          "text": ", đồng thời Mechabinky & Raxborg tăng 100% All Out, nhận HoT, không stack và tăng DoT Out, stack "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Batara Kala",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-322312",
+      "runs": [
+        {
+          "text": "→ Lullaby CD 8s, gây DMG từ 697 đến 852, đồng thời players bị giảm 15% Haste, Hit Chance, Crit Chance, All Out và tăng 15% All In trong 15s, stack vô hạn, bỏ qua Focus/Taunt "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Ultra Iara",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-322504",
+      "runs": [
+        {
+          "text": "→ Daze CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích, đồng thời players bị giảm 5% Hit Chance trong 30s, stack đến 5 "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Flibbitiestgibbet",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-322693",
+      "runs": [
+        {
+          "text": "→ The Fourth Sense CD 15s, Mechabinky & Raxborg tăng 2500% Dodge trong 3s "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Fourth Lynaria",
+          "italic": true,
+          "href": "http://aqwwiki.wikidot.com/fourth-lynaria"
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-322789",
+      "runs": [
+        {
+          "text": "→ Ghoulish Roar CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích. Đồng thời áp lần lượt 1 trong 3 hiệu ứng sau theo thứ tự với mỗi lần sử dụng "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Nightmare Carnax",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ":\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-323127",
+      "runs": [
+        {
+          "text": "→ Regoovenation CD 10s, Mechabinky & Raxborg hồi máu bằng HoT trong 5s và tăng 100% All Out, stack đến 500 "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Xyfrag",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-323248",
+      "runs": [
+        {
+          "text": "→ Dage the Dark Lord's Auto Attack CD 2.25s, gây Phys DMG từ 1.4k đến 1.8k, đồng thời players tăng 15% All In trong 11s và Mechabinky & Raxborg giảm 10% All In trong 11s, cả 2 stack vô hạn "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Dage the Dark Lord",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-323463",
+      "runs": [
+        {
+          "text": "→ Essence Draining CD ??s, khiến tất cả players bị Stun trong 3s, giảm 40% All Out và 60% Heal Out trong 30s, còn Mechabinky & Raxborg tăng 50% All Out trong 30s "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Ultra Lionfang",
+          "italic": true,
+          "href": "http://aqwwiki.wikidot.com/ultra-lionfang-monster"
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-323647",
+      "runs": [
+        {
+          "text": "→ Silence CD 12s, ngăn chặn tất cả players sử dụng bất kỳ skill dạng tiêu hao MP trong 3s"
+        },
+        {
+          "text": ", không thể né và bỏ qua Focus/Taunt "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "Nerfkitten",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-323791",
+      "runs": [
+        {
+          "text": "→ Shadowflame Slash CD 2s, gây Phys DMG từ 804 đến 982, không thể né và bỏ qua Focus/Taunt nhưng lại không thể bạo kích. Đồng thời players bị giảm 7% All Out và tăng 7% All In trong 20s, stack vô hạn và giảm 40% IN"
+        },
+        {
+          "text": "T trong 60s, không stack "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "The First Speaker",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-324055",
+      "runs": [
+        {
+          "text": "→ Magia Draw CD 7s, dùng để charge trong 2s sau đó kích hoạt Magia Burn gây Magi DMG từ 1.4k đến 1.7k, không thể né và luôn bạo kích. Đồng thời players bị tăng 300% Magi In trong 18s, stack vô hạn "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "The First Speaker",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-324277",
+      "runs": [
+        {
+          "text": "→ Energy Draw CD 12s, dùng để charge tro"
+        },
+        {
+          "text": "ng 2s sau đó kích hoạt Stasis Field, khiến tất cả players bị Stun trong 6s "
+        },
+        {
+          "text": "(của ",
+          "italic": true
+        },
+        {
+          "text": "The First Speaker",
+          "italic": true
+        },
+        {
+          "text": ")",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-324527",
+      "runs": [
+        {
+          "text": "→ Players bị giảm 200% Heal In trong 4s "
+        },
+        {
+          "text": "(biến Heal thành sát thương)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-324782",
+      "runs": [
+        {
+          "text": "→ Players bị giảm 10% All Out, Dodge, Crit Chance và Crit DMG trong 25s, stack đến 10.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-324869",
+      "runs": [
+        {
+          "text": "→ Mechabinky & Raxborg tăng 10% All Out, Dodge, Crit Chance và Crit DMG với mỗi player bị đánh trúng.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-325088",
+      "runs": [
+        {
+          "text": "→ Players bị giảm 50% Haste, giảm 80% All Out và tăng 100% All In trong 10s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-325165",
+      "runs": [
+        {
+          "text": "→ Players dính hiệu ứng Decay, không nhận được Heal/HoT trong 5s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-325356",
+      "runs": [
+        {
+          "text": "→ Mechabinky & Raxborg hồi máu với mỗi player trúng đòn. \n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-325414",
+      "runs": [
+        {
+          "text": "→ Bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-325802",
+      "runs": [
+        {
+          "text": "→ Mechabinky & Raxborg tăng 30% Crit Chance, 100% All Out và 130% Hit Chance trong 120s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-325891",
+      "runs": [
+        {
+          "text": "→ Mechabinky & Raxborg nhận HoT rất lớn trong 14s, dùng class có Decay như LR, VDK, LDK.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-325980",
+      "runs": [
+        {
+          "text": "→ Kích hoạt Energy Blast ngay sau khi hết Summon Legion Mages, gây Phys DMG từ 2.9k đến 3.6k, đồng thời Mechabinky & Raxborg tăng 30% All In trong 20s với mỗi player trúng đòn.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-326328",
+      "runs": [
+        {
+          "text": "→ Nếu player không có hiệu ứng Vigil, bị giảm 5000% Hit Chance và Haste trong 10s, tăng 50% All In trong 30s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-326438",
+      "runs": [
+        {
+          "text": "→ Nếu player có hiệu ứng Vigil, tăng 25% Crit Chance và Haste trong 35s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-326511",
+      "runs": [
+        {
+          "text": "→ Bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-326638",
+      "runs": [
+        {
+          "text": "→ Mechabinky & Raxborg giảm 100% Dodge và tăng 100% All In.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-326698",
+      "runs": [
+        {
+          "text": "→ Cần diệt Mechabinky & Raxborg trong giai đoạn này nhanh nhất có thể.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-326769",
+      "runs": [
+        {
+          "text": "→ Kích hoạt Self Destruct ngay sau khi hết Self Destruct Initiated, gây True DMG cực lớn không thể né giết chết tất cả players.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-327147",
+      "runs": [
+        {
+          "text": "→ Đầu tiên là cơ chế End of Time làm vô hiệu hoá sát thương từ các Chrono "
+        },
+        {
+          "text": "(được kích hoạt đa số thời gian)",
+          "italic": true
+        },
+        {
+          "text": " và Skill Locked sẽ ngẫu nhiên khoá một skill của bạn mà tác động lên nó cuối cùng được sử dụng trong vài phút.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-327365",
+      "runs": [
+        {
+          "text": "→ Với mỗi player chết thì Mechabinky & Raxborg 2.0 hồi 1m HP và tăng 25% Crit DMG, stack vô hạn.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-327462",
+      "runs": [
+        {
+          "text": "→ Khi còn 90% HP "
+        },
+        {
+          "text": "(45m)",
+          "italic": true
+        },
+        {
+          "text": ", Mechabinky & Raxborg 2.0 sẽ debuff giảm 200% Heal In khiến cho Heal/HoT trở thành sát thương trong 4s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-327589",
+      "runs": [
+        {
+          "text": "→ Khi còn 60% HP "
+        },
+        {
+          "text": "(30m)",
+          "italic": true
+        },
+        {
+          "text": ", khiến HP tất cả players giảm xuống 1 và Mechabinky & Raxborg 2.0 hồi máu với mỗi player trúng đòn.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-327712",
+      "runs": [
+        {
+          "text": "→ Khi còn 30% HP "
+        },
+        {
+          "text": "(15m)",
+          "italic": true
+        },
+        {
+          "text": ", Mechabinky & Raxborg 2.0 nhận HoT cực khủng trong 14s, đồng thời cũng tăng 30% All In trong 20s với mỗi player trúng đòn.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-327858",
+      "runs": [
+        {
+          "text": "→ Khi còn 20% HP "
+        },
+        {
+          "text": "(10m)",
+          "italic": true
+        },
+        {
+          "text": ", Mechabinky & Raxborg 2.0 sẽ gây True DMG bằng 95% lượng HP hiện tại của player đồng thời giây hàng loạt các hiệu ứng bất lợi lên players nếu không có Vigil.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-328039",
+      "runs": [
+        {
+          "text": "→ Khi còn 10% HP "
+        },
+        {
+          "text": "(5m)",
+          "italic": true
+        },
+        {
+          "text": ", Mechabinky & Raxborg 2.0 sẽ charge trong 15s để chuẩn bị cho cú Dead Nuke gây sát thương cực lớn lên tất cả players.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-328288",
+      "runs": [
+        {
+          "text": "→ Chia Team thành 2 nhóm: 3 players đảm nhận vị trí Focus/Taunt"
+        },
+        {
+          "text": " với "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": " và 4 players còn lại sẽ tranh bị sẵn "
+        },
+        {
+          "text": "Vigil",
+          "href": "http://aqwwiki.wikidot.com/vigil"
+        },
+        {
+          "text": " để dùng cho cơ chế Voice of the Sea khi Boss còn 20% HP "
+        },
+        {
+          "text": "(10m)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-328479",
+      "runs": [
+        {
+          "text": "→ Vigil mua được tại "
+        },
+        {
+          "text": "Sea Voice Merge",
+          "href": "http://aqwwiki.wikidot.com/sea-voice-merge"
+        },
+        {
+          "text": " ở "
+        },
+        {
+          "text": "/join seavoice",
+          "href": "http://aqwwiki.wikidot.com/sea-voice"
+        },
+        {
+          "text": " hoặc "
+        },
+        {
+          "text": "Kathool's Chest",
+          "href": "http://aqwwiki.wikidot.com/kathool-s-chest"
+        },
+        {
+          "text": " ở "
+        },
+        {
+          "text": "/join kathooldepths",
+          "href": "http://aqwwiki.wikidot.com/god-of-the-depths-bonus-zone"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-328577",
+      "runs": [
+        {
+          "text": "→ Với Skill Locked, thì bạn có thể lựa chọn khoá Skill không cần thiết hay Enhancement "
+        },
+        {
+          "text": "(tốt nhất dùng Mana Vamp)",
+          "italic": true
+        },
+        {
+          "text": " tuỳ theo class bạn sử dụng, hoặc nếu có Team quen thì trước tiên dùng Mana Vamp để khoá tại Binky ở "
+        },
+        {
+          "text": "/join doomvault",
+          "href": "http://aqwwiki.wikidot.com/doom-vault"
+        },
+        {
+          "text": " sau đó mới nhảy vào Boss này để đánh"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-328844",
+      "runs": [
+        {
+          "text": "→ Cách khoá thì khá đơn giản, chỉ cần spam Skill không cần thiết đó hoặc Skill kích hoạt hiệu ứng của Enhancement đó là được.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-329071",
+      "runs": [
+        {
+          "text": "→ Trong quá trình đánh, nếu quá nhiều người chết, chết quá nhiều lần và chết vô tội vạ thì thôi coi như bỏ mà đánh lại từ đầu vì con Boss được tăng sức mạnh mỗi lần có player chết\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-329251",
+      "runs": [
+        {
+          "text": "→ Nếu có chết, thì đừng tấn công lại ngay sau khi hồi sinh mà hãy đợi các Buff từ Team trước nếu không sẽ bị mắc kẹt trong vòng lặp tử thần. Sau đó cần phải lặp lại quá trình khoá skill rồi mới bắt đầu combo như thường.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-329471",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Hướng dẫn Focus/Taunt:",
+          "italic": true
+        },
+        {
+          "text": " Với 3 players, thì sẽ có 2 người loop chính với nhau, người còn lại ở vai trò dự bị, sẽ thay thế vào ngay nếu có loop chính chết.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-330216",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Với Healer:",
+          "italic": true
+        },
+        {
+          "text": " Ngoài phải canh HP của Team để Heal, thì còn cần đặc biệt chú ý 3 cơ chế được kích hoạt khi HP Boss còn 45m, 30m và 10m.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-330661",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Khi Boss còn 10m HP, các Healer chính phải đảm bảo không được hụt Vigil, nếu không thì không thể hồi máu cho Team sau khi nó sử dụng Voice of the Sea, kết quả thì cũng chết cả Team.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-330843",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Với Decay:",
+          "italic": true
+        },
+        {
+          "text": " Nếu team không có class loop được Decay như LDK, thì LR và VDK cần loop Decay với nhau lúc Boss kích hoạt cơ chế khi HP còn 15m "
+        },
+        {
+          "text": "(những lúc khác thì cứ spam như bình thương)",
+          "italic": true
+        },
+        {
+          "text": ". Của LR ở skill 2 có 2s hiệu ứng với 3s hồi, còn VDK ở skill 5 có 3s hiệu ứng với 5s hồi.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-331207",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Khi thấy Boss gần đến mốc 15m HP "
+        },
+        {
+          "text": "(tuỳ theo tốc độ đánh của Team và thời gian hồi của skill mà canh)",
+          "italic": true
+        },
+        {
+          "text": " thì để dành lại Skill Decay của mình.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-331651",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Hướng dẫn dùng Vigil:",
+          "italic": true
+        },
+        {
+          "text": " Với 4 players trang bị, thì công dụng duy nhất của Vigil là để chặn hiệu ứng bất lợi từ cơ chế được kích hoạt khi Boss còn 10m HP, đồng thời cũng là những người giữ Team và Boss, tránh banh Team vào những giây cuối cùng.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-332071",
+      "listDepth": 0,
+      "runs": [
+        {
+          "text": "Các Healer chính phải đảm bảo không được hụt Vigil, nếu không thì không thể hồi máu cho Team sau khi Boss sử dụng Voice of the Sea, kết quả thì cũng chết cả Team.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-332263",
+      "runs": [
+        {
+          "text": "Những điều lưu ý cũng như cách đánh đã được đề cập và hướng dẫn ở phần trên, ở đây sẽ chỉ tập trung về chia Team cũng như hướng dẫn bổ sung cá nhân hoá cho từng class.",
+          "italic": true
+        },
+        {
+          "text": "\n",
+          "italic": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-332432",
+      "runs": [
+        {
+          "text": "◆ "
+        },
+        {
+          "text": "Team 1:",
+          "italic": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Shaman, LC/CAv/LH/DLH/FB, LR, VDK, PCM/AP, LOO, SC/IT\t",
+          "bold": true
+        },
+        {
+          "text": "Starter",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-332504",
+      "runs": [
+        {
+          "text": "→ Với Team này thì "
+        },
+        {
+          "text": "Shaman",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "PCM",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "AP",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LC",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LH/DLH",
+          "bold": true
+        },
+        {
+          "text": " và"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "FB",
+          "bold": true
+        },
+        {
+          "text": " phải trang bị "
+        },
+        {
+          "text": "Vigil",
+          "href": "http://aqwwiki.wikidot.com/vigil"
+        },
+        {
+          "text": ", còn với "
+        },
+        {
+          "text": "CAv",
+          "bold": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "(nếu có)",
+          "italic": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "SC/IT",
+          "bold": true
+        },
+        {
+          "text": " thì phải trang bị "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": " để thực hiện phối hợp Focus/Taunt. Riêng "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " thì tuỳ Team có CAv hay không, nếu có thì trang bị "
+        },
+        {
+          "text": "Vigil",
+          "href": "http://aqwwiki.wikidot.com/vigil"
+        },
+        {
+          "text": ", nếu không thì phải trang bị "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": " để cùng phối hợp Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-332830",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "CAv",
+          "bold": true
+        },
+        {
+          "text": " hoặc "
+        },
+        {
+          "text": "SC/IT",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì "
+        },
+        {
+          "text": "SC/IT",
+          "bold": true
+        },
+        {
+          "text": " xuống làm dự bị, còn không có thì "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " sẽ là dự bị."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-332967",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Shaman",
+          "bold": true
+        },
+        {
+          "text": " sử dụng combo 5 - 2 - 3 - (4) "
+        },
+        {
+          "text": "(lập lại 2 - 3, khi thiếu MP thì spam 3, tiết kiệm dùng skill 4)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-333288",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LC",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 4, sau đó spam 2, 3 và 5, còn với 4 thì sử dụng khi cần Heal cho team.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-333592",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "CAv",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 3 - 4 - 5 - 2, sau đó spam skill "
+        },
+        {
+          "text": "(trừ 3)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-334059",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " combo mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-334396",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 2 - 3 - 4 - 5, sau đó spam skill, nếu thiếu máu thì spam 3 để hồi.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-334798",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "PCM",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 3, sau đó dùng combo 2 - 4 - 2 - 3 rồi spam 2 đến khi HP về lại bình thường thì ngay lập tức dùng 5, sau đó tiếp tục spam 2 đến khi 5 CD thì dùng 5 rồi tiếp tục spam 2 đến khi 4 CD thì lập lại từ đầu, còn 3 chỉ dùng để buff máu khi cần.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-335320",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "AP",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 3, dùng combo 4 - 2 - 2 - 5 sau đó spam 2 đến khi 4 CD thì lập lại, còn với 3 thì sử dụng khi cần Heal cho team.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-335672",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 2, 3 và 4, sau đó spam tất cả skills.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-335885",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LH/DLH",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 3 - 4 - 5 - 2, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-336298",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "SC/IT",
+          "bold": true
+        },
+        {
+          "text": " dùng combo 4 - 3 - 2 - 5, sau đó spam nhưng lưu ý luôn dùng 2 trước 5, và 4 trước 3.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-336660",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "FB",
+          "bold": true
+        },
+        {
+          "text": " pre-buff với 3 và 4, sau đó spam skill 2, 3 và 4 "
+        },
+        {
+          "text": "(không sử dụng skill 5)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-336958",
+      "runs": [
+        {
+          "text": "◆ "
+        },
+        {
+          "text": "Team 2:",
+          "italic": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "LC, QCM/CAv, LR, VDK, PCM/AP, LOO, LH/DLH/SC/IT\t",
+          "bold": true
+        },
+        {
+          "text": "Starter",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-337024",
+      "runs": [
+        {
+          "text": "→ Với Team này thì "
+        },
+        {
+          "text": "LC",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "QCM",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "PCM",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "AP",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " phải trang bị "
+        },
+        {
+          "text": "Vigil",
+          "href": "http://aqwwiki.wikidot.com/vigil"
+        },
+        {
+          "text": ", còn với "
+        },
+        {
+          "text": "CAv",
+          "bold": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "(nếu có)",
+          "italic": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LH/DLH/SC/IT",
+          "bold": true
+        },
+        {
+          "text": " thì phải trang bị "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": " để thực hiện phối hợp Focus/Taunt. Riêng "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " thì tuỳ Team có CAv hay không, nếu có thì trang bị "
+        },
+        {
+          "text": "Vigil",
+          "href": "http://aqwwiki.wikidot.com/vigil"
+        },
+        {
+          "text": ", nếu không thì phải trang bị "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": " để cùng phối hợp Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-337342",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "CAv",
+          "bold": true
+        },
+        {
+          "text": " hoặc "
+        },
+        {
+          "text": "LH/DLH/SC/IT",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì "
+        },
+        {
+          "text": "SC/IT",
+          "bold": true
+        },
+        {
+          "text": " xuống làm dự bị, còn không có thì "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " sẽ là dự bị.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-337486",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LC",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "CAv",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "PCM",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "AP",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "SC/IT",
+          "bold": true
+        },
+        {
+          "text": " sử dụng tương tự Team 1.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-337553",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "QCM",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 2 - 3 - 2 - 4 - 5, sau đó thì spam 2 - 3 - 4, chỉ dùng 5 khi thấy stack được Rift "
+        },
+        {
+          "text": "(ít nhất phải được 2-3 stacks rồi mới Nuke với 5)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-338191",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LH/DLH",
+          "bold": true
+        },
+        {
+          "text": " mở đầu với 3 - 4 - 5 - 2, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-338623",
+      "runs": [
+        {
+          "text": "◆ "
+        },
+        {
+          "text": "Team 3:",
+          "italic": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "IK/DT/EDoT, DT/EDoT, LR, VDK, Arach, LoO, LH/DLH",
+          "bold": true
+        },
+        {
+          "text": "\t",
+          "italic": true
+        },
+        {
+          "text": "B",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "E",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "S",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "T",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "T",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "e",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "a",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "m",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-338692",
+      "runs": [
+        {
+          "text": "→ Với Team này thì "
+        },
+        {
+          "text": "IK",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "DT/EDoT",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LH/DLH",
+          "bold": true
+        },
+        {
+          "text": " phải trang bị "
+        },
+        {
+          "text": "Vigil",
+          "href": "http://aqwwiki.wikidot.com/vigil"
+        },
+        {
+          "text": ", còn với "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "Arach",
+          "bold": true
+        },
+        {
+          "text": " thì phải trang bị "
+        },
+        {
+          "text": "Scroll of Enrage"
+        },
+        {
+          "text": " để thực hiện phối hợp Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-338854",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "Arach",
+          "bold": true
+        },
+        {
+          "text": " sẽ đảm nhiệm loop Focus/Taunt chính, còn "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": " sẽ là dự bị.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-338926",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "IK",
+          "bold": true
+        },
+        {
+          "text": " dùng combo 5 - 3 - 2 - 2 - 5 - 3 - 2 - 2 - 4"
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-339230",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "DT/EDoT",
+          "bold": true
+        },
+        {
+          "text": " sử dụng combo 4 - 3 - 2 - 3 - 5 - 3\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-339503",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "LR",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "VDK",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "LoO",
+          "bold": true
+        },
+        {
+          "text": " và "
+        },
+        {
+          "text": "LH/DLH",
+          "bold": true
+        },
+        {
+          "text": " sử dụng tương tự Team 1.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-339553",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Arach",
+          "bold": true
+        },
+        {
+          "text": " mở đầu 4 - 5, sau đó spam 2 - 3, canh HP bản thân và CD hiệu ứng "
+        },
+        {
+          "text": "(12s)",
+          "italic": true
+        },
+        {
+          "text": " để dùng lại 4 và 5.\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": [
+    {
+      "id": "source-team-1",
+      "name": "Team 1: Shaman, LC/CAv/LH/DLH/FB, LR, VDK, PCM/AP, LOO, SC/IT\tStarter",
+      "assignments": [
+        {
+          "id": "team-1-slot-1-1",
+          "primaryClass": {
+            "classId": "shaman",
+            "name": "Shaman",
+            "abbreviation": "Shaman",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ Shaman sử dụng combo 5 - 2 - 3 - (4) (lập lại 2 - 3, khi thiếu MP thì spam 3, tiết kiệm dùng skill 4)."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-2-1",
+          "primaryClass": {
+            "classId": "lightcaster",
+            "name": "LightCaster",
+            "abbreviation": "LC",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ LC pre-buff với 4, sau đó spam 2, 3 và 5, còn với 4 thì sử dụng khi cần Heal cho team."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "chaos-avenger",
+              "name": "Chaos Avenger",
+              "abbreviation": "CAv",
+              "enhancement": [],
+              "instructions": [
+                "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+                "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+                "→ CAv hoặc SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+                "→ CAv hoặc SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+                "→ CAv mở đầu với 3 - 4 - 5 - 2, sau đó spam skill (trừ 3)."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "legendary-hero",
+              "name": "Legendary Hero",
+              "abbreviation": "LH",
+              "enhancement": [],
+              "instructions": [
+                "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+                "→ LH/DLH mở đầu với 3 - 4 - 5 - 2, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "dark-legendary-hero",
+              "name": "Dark Legendary Hero",
+              "abbreviation": "DLH",
+              "enhancement": [],
+              "instructions": [
+                "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+                "→ LH/DLH mở đầu với 3 - 4 - 5 - 2, sau đó lập lại 3 - 4 - 2 đến khi 5 CD thì dùng 5."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "frostval-barbarian",
+              "name": "Frostval Barbarian",
+              "abbreviation": "FB",
+              "enhancement": [],
+              "instructions": [
+                "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+                "→ FB pre-buff với 3 và 4, sau đó spam skill 2, 3 và 4 (không sử dụng skill 5)."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-1-slot-3-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ CAv hoặc SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+              "→ LR combo mở đầu với 4 - 2 - 3 - 5, sau đó spam skill nhưng cần để ý dùng 4 ngay khi đã CD."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-4-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ CAv hoặc SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+              "→ VDK mở đầu với 2 - 3 - 4 - 5, sau đó spam skill, nếu thiếu máu thì spam 3 để hồi."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-5-1",
+          "primaryClass": {
+            "classId": "paladin-chronomancer",
+            "name": "Paladin Chronomancer",
+            "abbreviation": "PCM",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ PCM pre-buff với 3, sau đó dùng combo 2 - 4 - 2 - 3 rồi spam 2 đến khi HP về lại bình thường thì ngay lập tức dùng 5, sau đó tiếp tục spam 2 đến khi 5 CD thì dùng 5 rồi tiếp tục spam 2 đến khi 4 CD thì lập lại từ đầu, còn 3 chỉ dùng để buff máu khi cần."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "archpaladin",
+              "name": "ArchPaladin",
+              "abbreviation": "AP",
+              "enhancement": [],
+              "instructions": [
+                "→ Với Team này thì Shaman, PCM, AP, LC, LoO, LH/DLH và FB phải trang bị Vigil, còn với CAv (nếu có), LR và SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+                "→ AP pre-buff với 3, dùng combo 4 - 2 - 2 - 5 sau đó spam 2 đến khi 4 CD thì lập lại, còn với 3 thì sử dụng khi cần Heal cho team."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-2",
+      "name": "Team 2: LC, QCM/CAv, LR, VDK, PCM/AP, LOO, LH/DLH/SC/IT\tStarter",
+      "assignments": [
+        {
+          "id": "team-2-slot-1-1",
+          "primaryClass": {
+            "classId": "lightcaster",
+            "name": "LightCaster",
+            "abbreviation": "LC",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì LC, QCM, PCM, AP và LoO phải trang bị Vigil, còn với CAv (nếu có), LR và LH/DLH/SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ LC, CAv, LR, VDK, PCM, AP, LoO và SC/IT sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-2-1",
+          "primaryClass": {
+            "classId": "quantum-chronomancer",
+            "name": "Quantum Chronomancer",
+            "abbreviation": "QCM",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì LC, QCM, PCM, AP và LoO phải trang bị Vigil, còn với CAv (nếu có), LR và LH/DLH/SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ QCM mở đầu với 2 - 3 - 2 - 4 - 5, sau đó thì spam 2 - 3 - 4, chỉ dùng 5 khi thấy stack được Rift (ít nhất phải được 2-3 stacks rồi mới Nuke với 5)."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "chaos-avenger",
+              "name": "Chaos Avenger",
+              "abbreviation": "CAv",
+              "enhancement": [],
+              "instructions": [
+                "→ Với Team này thì LC, QCM, PCM, AP và LoO phải trang bị Vigil, còn với CAv (nếu có), LR và LH/DLH/SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+                "→ Với Team này thì LC, QCM, PCM, AP và LoO phải trang bị Vigil, còn với CAv (nếu có), LR và LH/DLH/SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+                "→ CAv hoặc LH/DLH/SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+                "→ CAv hoặc LH/DLH/SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+                "→ LC, CAv, LR, VDK, PCM, AP, LoO và SC/IT sử dụng tương tự Team 1."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-2-slot-3-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì LC, QCM, PCM, AP và LoO phải trang bị Vigil, còn với CAv (nếu có), LR và LH/DLH/SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ CAv hoặc LH/DLH/SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+              "→ LC, CAv, LR, VDK, PCM, AP, LoO và SC/IT sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-4-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì LC, QCM, PCM, AP và LoO phải trang bị Vigil, còn với CAv (nếu có), LR và LH/DLH/SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ CAv hoặc LH/DLH/SC/IT và LR sẽ đảm nhiệm loop Focus/Taunt chính. Nếu Team có CAv thì SC/IT xuống làm dự bị, còn không có thì VDK sẽ là dự bị.",
+              "→ LC, CAv, LR, VDK, PCM, AP, LoO và SC/IT sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-5-1",
+          "primaryClass": {
+            "classId": "paladin-chronomancer",
+            "name": "Paladin Chronomancer",
+            "abbreviation": "PCM",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì LC, QCM, PCM, AP và LoO phải trang bị Vigil, còn với CAv (nếu có), LR và LH/DLH/SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+              "→ LC, CAv, LR, VDK, PCM, AP, LoO và SC/IT sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "archpaladin",
+              "name": "ArchPaladin",
+              "abbreviation": "AP",
+              "enhancement": [],
+              "instructions": [
+                "→ Với Team này thì LC, QCM, PCM, AP và LoO phải trang bị Vigil, còn với CAv (nếu có), LR và LH/DLH/SC/IT thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt. Riêng VDK thì tuỳ Team có CAv hay không, nếu có thì trang bị Vigil, nếu không thì phải trang bị Scroll of Enrage để cùng phối hợp Focus/Taunt.",
+                "→ LC, CAv, LR, VDK, PCM, AP, LoO và SC/IT sử dụng tương tự Team 1."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-3",
+      "name": "Team 3: IK/DT/EDoT, DT/EDoT, LR, VDK, Arach, LoO, LH/DLH\tBEST Team",
+      "assignments": [
+        {
+          "id": "team-3-slot-1-1",
+          "primaryClass": {
+            "classId": "infinity-knight",
+            "name": "Infinity Knight",
+            "abbreviation": "IK",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+              "→ IK dùng combo 5 - 3 - 2 - 2 - 5 - 3 - 2 - 2 - 4"
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "dragon-of-time",
+              "name": "Dragon of Time",
+              "abbreviation": "DT",
+              "enhancement": [],
+              "instructions": [
+                "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+                "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3"
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-3-slot-2-1",
+          "primaryClass": {
+            "classId": "dragon-of-time",
+            "name": "Dragon of Time",
+            "abbreviation": "DT",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+              "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3"
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-3-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+              "→ LR và Arach sẽ đảm nhiệm loop Focus/Taunt chính, còn VDK sẽ là dự bị.",
+              "→ LR, VDK, LoO và LH/DLH sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-4-1",
+          "primaryClass": {
+            "classId": "verus-doomknight",
+            "name": "Verus DoomKnight",
+            "abbreviation": "VDK",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+              "→ LR và Arach sẽ đảm nhiệm loop Focus/Taunt chính, còn VDK sẽ là dự bị.",
+              "→ LR, VDK, LoO và LH/DLH sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-5-1",
+          "primaryClass": {
+            "classId": "arachnomancer",
+            "name": "Arachnomancer",
+            "abbreviation": "Arach",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+              "→ LR và Arach sẽ đảm nhiệm loop Focus/Taunt chính, còn VDK sẽ là dự bị.",
+              "→ Arach mở đầu 4 - 5, sau đó spam 2 - 3, canh HP bản thân và CD hiệu ứng (12s) để dùng lại 4 và 5."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-6-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+              "→ LR, VDK, LoO và LH/DLH sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-7-1",
+          "primaryClass": {
+            "classId": "legendary-hero",
+            "name": "Legendary Hero",
+            "abbreviation": "LH",
+            "enhancement": [],
+            "instructions": [
+              "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+              "→ LR, VDK, LoO và LH/DLH sử dụng tương tự Team 1."
+            ],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "dark-legendary-hero",
+              "name": "Dark Legendary Hero",
+              "abbreviation": "DLH",
+              "enhancement": [],
+              "instructions": [
+                "→ Với Team này thì IK, DT/EDoT, LoO và LH/DLH phải trang bị Vigil, còn với LR, VDK và Arach thì phải trang bị Scroll of Enrage để thực hiện phối hợp Focus/Taunt.",
+                "→ LR, VDK, LoO và LH/DLH sử dụng tương tự Team 1."
+              ],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    }
+  ]
+}

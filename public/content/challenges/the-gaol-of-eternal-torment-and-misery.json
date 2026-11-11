@@ -1,0 +1,5400 @@
+{
+  "challengeContent": true,
+  "id": "the-gaol-of-eternal-torment-and-misery",
+  "name": "The Gaol of Eternal Torment and Misery",
+  "type": "dungeon",
+  "map": "gaolcell",
+  "levelRequirement": 80,
+  "partySize": 1,
+  "description": "Ngục tối Grimskull giăng bẫy và những cuộc chạm trán liên tiếp dành cho một người chơi.",
+  "bodyUrl": "/content/challenges/the-gaol-of-eternal-torment-and-misery.json",
+  "href": "/challenge-dungeon/the-gaol-of-eternal-torment-and-misery",
+  "image": "area-the-gaol-of-eternal-torment-and-misery",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [
+    "Để vào được map /join gaolcell, bạn cần hoàn thành questline của 2 Dungeons trước đó của Grimskull là /join doomvault và /join doomvaultb (FULL Walkthrough) và đạt lvl 80 trở lên (xem thêm ở “Leveling-up Guide” nếu cần). Sau khi đã vào được map này, cần làm Undead Cashfear's Quests ở /join gaolcell để mở khoá Dungeon này.",
+    "→ “Smite the Boulder!” quest: Cần có Smite (lvl 60) trong túi đồ và đến Screen 2 của map này rồi click vào tảng đá lớn chặn cửa để hoàn thành.",
+    "Note: Smite (lvl 60) chính là cuộn Enhancement, nhưng ở đây bạn cần phải mua vào túi đồ thay vì dùng thẳng lên trang bị bằng cách bấm “Buy and Hold”.",
+    "→ “Strike the Boulder!” quest: Cần có Scythe of Azalith trong túi đồ và đến Screen 2 của map này rồi tiếp tục click vào tảng đá lớn chặn cửa để hoàn thành.",
+    "→ “Smash the Boulder!” quest: Cần có J6's Hammer trong túi đồ mua tại Bounty Hunter Shop. Rồi lập lại cuối đến Screen 2 của map này, click vào tảng đá lớn chặn cửa để hoàn thành.",
+    "Note: Cách mở J6 Armory - Bounty Hunter Shop:",
+    "- Đầu tiên, đến /join hyperspace.",
+    "- Đến Screen 2 > Vào cánh cửa đầu tiên bên trái, sau đó bạn sẽ thấy một phòng có nhiều cái đồng hồ.",
+    "- Để mở được Shop này chỉ cần bấm và các đồng hồ đúng theo thứ tự từ 1 đến 5 như ở hình dưới.",
+    "→ “The Gaol of Eternal Torment and Misery” quest: Lúc này bạn đã mở khoá được Dungeon, quest này sẽ yêu cầu bạn hoàn thành Dungeon này một lần, đi thẳng vào cảnh cửa ngay sau tảng đá vừa được loại bỏ ở Screen 2 để bắt đầu. Sau khi hoàn thành thì bạn được mở khoá các quests farm Grimskull Trolling Rep, để lấy đồ trong Undead Cashfea’s Shop.",
+    "Note: Trước khi trả quest, bạn nên dùng boost exp (chưa đạt lvl tối đa) để tăng lượng exp thưởng nhận được của quest.",
+    "Note: Sau khi hoàn thành “The Gaol of Eternal Torment and Misery” quest, bạn sẽ nhận được SkullCrusher Character Page Badge.",
+    "Sau khi đã hoàn thành các điều kiện nói trên, bạn đã bắt đầu có thể farm Grimskull Trolling Rep thông qua Undead Cashfear's Quests ở /join gaolcell hoặc thử thách nâng cao hơn với Mort's Quest cũng tại map này.",
+    "→ Cho non-mem: “Gaol Rerun” quest (750 Rep), chinh phục Dungeon này để hoàn thành.",
+    "→ Cho non-mem (daily): “Beat Up Master For My Enjoyment” quest (2.5k Rep), chinh phục Dungeon này để hoàn thành (reset vào mỗi ngày 12:01AM EST server time).",
+    "→ Cho non-mem (weekly): “2.0 No!” quest (12.5k Rep) của Mort ở /join gaolcell. Để hoàn thành cần đánh MechaBinky & Raxborg 2.0 tại /join grimchallenge. Boss khó, cách đánh chi tiết xem tại đây (reset vào mỗi thứ 6 12:01AM EST server time).",
+    "→ Cho mem: “Gaol Rerun (Legend)” quest (1.5k Rep), chinh phục Dungeon này để hoàn thành.",
+    "Note: Trước khi trả quest, bạn nên dùng boost gold, exp (chưa đạt lvl tối đa) để tăng lượng gold, exp thưởng nhận được của quest."
+  ],
+  "rewardSummary": "SkullCrusher badge · Grimskull Trolling Reputation",
+  "sourceSlug": "the-gaol-of-eternal-torment-and-misery",
+  "stages": [
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-1",
+      "name": "Screen 1: Grimskull?",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 1: Grimskull?",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-1-grimskull-0",
+            "canonicalName": "Grimskull?",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 200000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/grimskull-question-mark"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-1-grimskull-0-windup-0",
+            "monsterId": "screen-1-grimskull-0",
+            "name": "Windup",
+            "type": "Charge",
+            "damageType": "Charge",
+            "targets": "1",
+            "activation": "The punching bag is tired of taking a beating!",
+            "playerEffects": [
+              "Charges trong 7 giây.",
+              "Áp Thin Air và Talon Twisting trong 7 giây, tăng the damage of Retaliate depending on how much damage was received.",
+              "Dùng tại 90%, 60%, và 30% HP còn lại"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/grimskull-question-mark"
+          },
+          {
+            "id": "screen-1-grimskull-0-retaliate-1",
+            "monsterId": "screen-1-grimskull-0",
+            "name": "Retaliate",
+            "type": "Physical",
+            "damage": "Variable",
+            "damageType": "Physical",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Damage done is based on the amount received while Thin Air và Talon Twisting were active",
+              "Luôn trúng. hoặc crit."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/grimskull-question-mark"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Grimskull ư? Hình như không phải, chỉ là bù nhìn của hắn mà thôi. Cẩn thận, có thể sẽ có bẫy ở đâu đây. Điều duy nhất để lưu ý là cơ chế xoay quanh Counter Attack của nó.",
+        "Cơ chế:",
+        "◆ Total HP: 200,000",
+        "◆ Shield giúp giới hạn sát thương nhận tối đa 10k.",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có 0% Dodge và -100% All In.",
+        "◆ Khi còn 90%, 60% và 30% HP, sử dụng Windup để charge trong 7s.",
+        "→ Đồng thời kích hoạt phản sát thương trong 7s này, tăng sát thương của Retaliate tùy thuộc vào lượng sát thương nhận được.",
+        "◆ Kích hoạt Retaliate ngay sau khi hết Windup, gây Phys DMG tuỳ thuộc vào lượng sát thương nhận được trong lúc Windup.",
+        "Note: Ở ngay trước mặt con Grimskull? này có một cái hố bẫy (bị ẩn đi), phải đi vòng qua 2 bên tường và đến sau lưng nó để đánh, nếu không sẽ rớt vào hố này ngay."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: VHL, CAv, DT/EDoT, LR, VDK, AP",
+        "→ Con Grimskull? này có cơ chế Counter Attack và kích hoạt 3 lần khi HP còn 90%, 60%, 30% (nếu giết nhanh thì có thể chỉ còn 1 hoặc 2 lần, thậm chí còn không kịp dùng).",
+        "Để tránh cơ chế này thì đơn giản là nhấn phím ESC ngay khi thấy dòng chữ thông báo màu vàng “The punching bag is tired of taking a beating!” để ngừng tấn công mục tiêu.",
+        "Khi thấy nó gây sát thương lên bạn trở lại thì mới bắt đầu đánh lại.",
+        "Khi còn 30%, tức kích hoạt lần cuối, các class như VHL, CAv, LR và VDK có thể đẩy nhanh tốc độ mà kill nó trước khi kịp phản sát thương.",
+        "→ VHL dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5).",
+        "Enh: Valiance > Smite + Lucky class + Vim + Lament hoặc Dauntless + Lucky class + Anima + Vainglory",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.",
+        "Riêng class này thì bạn không cần ngừng đánh khi con quái này thực hiện Counter Attack mà chỉ cần thả chậm tốc độ lại mà thôi",
+        "Enh: Ravenous + Lucky class + Anima + Vainglory",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3",
+        "Enh: Elysium + Healer class + Pneuma + Vainglory.",
+        "Potion: Unstable Malevolence Elixir + Sage Tonic + Potent Honor/Malice Potion",
+        "Cần phải dùng tất cả thuốc kể trên để DT/EDoT để speedrun từ Screen 1 đến Screen 11 mà không cần đổi class, chủ yếu để stack hiệu ứng trước ở những con dễ này trước.",
+        "Với thiết lập này, thì bạn cũng không cần quan tâm đến cơ chế Counter Attack của nó, cứ dùng skill theo combo.",
+        "→ LR mở đầu với 4 - 2 - 3 - 5, sau đó spam.",
+        "Enh: Valiance + Wizard class/helm + Vainglory",
+        "→ VDK thì spam skill, nếu thiếu máu thì spam 3 để hồi.",
+        "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory",
+        "→ AP dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal.",
+        "Enh: Valiance > Lacerate + Lucky class + Forge helm + Vainglory"
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-297270",
+          "runs": [
+            {
+              "text": "Grimskull ư? Hình như không phải, chỉ là bù nhìn của hắn mà thôi. Cẩn thận, có thể sẽ có bẫy ở đâu đây. Điều duy nhất để lưu ý là cơ chế xoay quanh Counter Attack của nó.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297442",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297450",
+          "runs": [
+            {
+              "text": "◆ Total HP: 200,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297470",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 10k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297521",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297544",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297609",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge và -100% All In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297645",
+          "runs": [
+            {
+              "text": "◆ Khi còn 90%, 60% và 30% HP, sử dụng Windup để charge trong 7s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297710",
+          "runs": [
+            {
+              "text": "→ Đồng thời kích hoạt phản sát thương trong 7s này, tăng sát thương của Retaliate tùy thuộc vào lượng sát thương nhận được.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297834",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Retaliate ngay sau khi hết Windup, gây Phys DMG tuỳ thuộc vào lượng sát thương nhận được trong lúc Windup.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-297954",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Ở ngay trước mặt con Grimskull? này có một cái hố bẫy (bị ẩn đi), phải đi vòng qua 2 bên tường và đến sau lưng nó để đánh, nếu không sẽ rớt vào hố này ngay.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-298120",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "VHL, CAv, DT/EDoT, LR, VDK, AP",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-298186",
+          "runs": [
+            {
+              "text": "→ Con Grimskull? này có cơ chế Counter Attack và kích hoạt 3 lần khi HP còn 90%, 60%, 30% "
+            },
+            {
+              "text": "(nếu giết nhanh thì có thể chỉ còn 1 hoặc 2 lần, thậm chí còn không kịp dùng)",
+              "italic": true
+            },
+            {
+              "text": ". \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-298356",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Để tránh cơ chế này thì đơn giản là nhấn phím ESC ngay khi thấy dòng chữ thông báo màu vàng "
+            },
+            {
+              "text": "“The punching bag is tired of taking a beating!”",
+              "italic": true
+            },
+            {
+              "text": " để ngừng tấn công mục tiêu. \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-298528",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi thấy nó gây sát thương lên bạn trở lại thì mới bắt đầu đánh lại.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-298597",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi còn 30%, tức kích hoạt lần cuối, các class như VHL, CAv, LR và VDK có thể đẩy nhanh tốc độ mà kill nó trước khi kịp phản sát thương.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-298734",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+            },
+            {
+              "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-298826",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance > Smite + Lucky class + Vim + Lament hoặc Dauntless + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-298926",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-298978",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Riêng class này thì bạn không cần ngừng đánh khi con quái này thực hiện Counter Attack mà chỉ cần thả chậm tốc độ lại mà thôi\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299104",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299152",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299198",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Pneuma + Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299248",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: "
+            },
+            {
+              "text": "Unstable Malevolence Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Sage Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299326",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Cần phải dùng tất cả thuốc kể trên để DT/EDoT để speedrun từ Screen 1 đến Screen 11 mà không cần đổi class, chủ yếu để stack hiệu ứng trước ở những con dễ này trước.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299492",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Với thiết lập này, thì bạn cũng không cần quan tâm đến cơ chế Counter Attack của nó, cứ dùng skill theo combo."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299603",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 4 - 2 - 3 - 5, sau đó spam.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299647",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Wizard class/helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299693",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " thì spam skill, nếu thiếu máu thì spam 3 để hồi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299748",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299808",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-299875",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance > Lacerate + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-2",
+      "name": "Screen 2: Grim Bomb",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 2: Grim Bomb",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-2-grim-bomb-0",
+            "canonicalName": "Grim Bomb",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 100000,
+            "count": 3,
+            "source": "https://aqwwiki.wikidot.com/grim-bomb"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-2-grim-bomb-0-countdown-0",
+            "monsterId": "screen-2-grim-bomb-0",
+            "name": "Countdown",
+            "type": "Charge",
+            "damageType": "Charge",
+            "targets": "4",
+            "activation": "Countdown initiated. Detonating in 60 seconds.",
+            "playerEffects": [
+              "Charges trong 60 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/grim-bomb"
+          },
+          {
+            "id": "screen-2-grim-bomb-0-detonate-1",
+            "monsterId": "screen-2-grim-bomb-0",
+            "name": "Detonate",
+            "type": "True Damage",
+            "damage": "Instant Death",
+            "damageType": "True Damage",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Luôn trúng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/grim-bomb"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Screen này chứa 3 con Grim Bomb, mỗi con 100k HP và không có Shield. Cơ chế duy nhất của tụi nó là phải quét sạch chúng nó trong 60s nếu không sẽ nổ ngay lặp tức và gây sát thương cực lớn không thể né (bắt đầu tính khi một con bất kỳ nhận sát thương)."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: AM, VHL, CAv, DT/EDoT, LR, VDK, AP",
+        "→ AM mở đầu với 3 - 5, sau đó spam 2, 3 và 4.",
+        "Enh: Elysium + Wizard class + Pneuma + Vainglory",
+        "→ VHL dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5).",
+        "Enh: Valiance > Smite + Lucky class + Vim + Lament hoặc Dauntless + Lucky class + Anima + Vainglory",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.",
+        "Enh: Ravenous + Lucky class + Anima + Vainglory",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3",
+        "Enh: Elysium + Healer class + Pneuma + Vainglory.",
+        "→ LR mở đầu với 4 - 2 - 3 - 5, sau đó spam.",
+        "Enh: Valiance + Wizard class/helm + Vainglory",
+        "→ VDK thì spam skill, nếu thiếu máu thì spam 3 để hồi.",
+        "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory",
+        "→ AP dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal.",
+        "Enh: Valiance > Lacerate + Lucky class + Forge helm + Vainglory"
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-299960",
+          "runs": [
+            {
+              "text": "Screen này chứa 3 con Grim Bomb, mỗi con 100k HP và không có Shield. Cơ chế duy nhất của tụi nó là phải quét sạch chúng nó trong 60s nếu không sẽ nổ ngay lặp tức và gây sát thương cực lớn không thể né "
+            },
+            {
+              "text": "(bắt đầu tính khi một con bất kỳ nhận sát thương)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300213",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "AM, VHL, CAv, DT/EDoT, LR, VDK, AP",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300283",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AM",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3 - 5, sau đó spam 2, 3 và 4.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300329",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Wizard class + Pneuma + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300378",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+            },
+            {
+              "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300470",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance > Smite + Lucky class + Vim + Lament hoặc Dauntless + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300570",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300622",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300670",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300716",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Pneuma + Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300766",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 4 - 2 - 3 - 5, sau đó spam.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300810",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance + Wizard class/helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300856",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " thì spam skill, nếu thiếu máu thì spam 3 để hồi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300911",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-300971",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AP",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 2 - 2 - 5, còn với 3 thì sử dụng khi cần Heal.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301038",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance > Lacerate + Lucky class + Forge helm + Vainglory\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 2
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-3",
+      "name": "Screen 3: Empress Angler",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 3: Empress Angler",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-3-empress-angler-0",
+            "canonicalName": "Empress Angler",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 500000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/empress-angler"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-3-empress-angler-0-chomp-0",
+            "monsterId": "screen-3-empress-angler-0",
+            "name": "Chomp",
+            "type": "True Damage",
+            "damage": "20% HP tối đa",
+            "damageType": "True Damage",
+            "cooldown": "2 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Luôn trúng. hoặc crit"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/empress-angler"
+          },
+          {
+            "id": "screen-3-empress-angler-0-fish-breath-1",
+            "monsterId": "screen-3-empress-angler-0",
+            "name": "Fish Breath",
+            "type": "True Damage",
+            "damage": "30% HP tối đa",
+            "damageType": "True Damage",
+            "cooldown": "5 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Healing Reduced lên người chơi, giảm their hồi máu nhận vào 50% trong 12 giây.",
+              "Luôn trúng. hoặc crit"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/empress-angler"
+          },
+          {
+            "id": "screen-3-empress-angler-0-smell-blood-2",
+            "monsterId": "screen-3-empress-angler-0",
+            "name": "Smell Blood",
+            "cooldown": "12 seconds",
+            "targets": "1",
+            "activation": "Heal up! Empress Angler is attempting to devour their injured prey!",
+            "playerEffects": [
+              "Skill is always followed Devour after 4 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/empress-angler"
+          },
+          {
+            "id": "screen-3-empress-angler-0-devour-3",
+            "monsterId": "screen-3-empress-angler-0",
+            "name": "Devour",
+            "damage": "400-500 or Instant Death",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Instantly kills the player if they have less than 100% of their Max HP.",
+              "Luôn trúng. hoặc crit",
+              "Skill is always followed Bottom Feeder."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/empress-angler"
+          },
+          {
+            "id": "screen-3-empress-angler-0-bottom-feeder-4",
+            "monsterId": "screen-3-empress-angler-0",
+            "name": "Bottom Feeder.",
+            "type": "Magical",
+            "damageType": "Magical",
+            "targets": "Self",
+            "activation": "Empress Angler attempts to regenerate.",
+            "playerEffects": [
+              "Áp Bottom Feeder lên bản thân, restoring 10% of Max HP (before modifiers) after 1 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/empress-angler"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Tất cả skill của nó đều gây sát thương theo lượng máu tối đa của người chơi, chỉ khác nhau ở phần trăm máu. Ngoài ra nó còn có cơ chế Dead Nuke nếu bạn không đầy 100% máu (12s mới sử dụng một lần).",
+        "Cơ chế:",
+        "◆ Total HP: 500,000",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.8).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Auto-Attack mỗi 2s gây True DMG bằng 20% lượng HP tối đa của player.",
+        "◆ Mỗi 5s, sử dụng Fish Breath gây True DMG bằng 30% lượng HP tối đa của player.",
+        "→ Player bị giảm 50% Heal In trong 12s.",
+        "◆ Mỗi 12s, sử dụng Smell Blood để charge trong 4s, sau đó kích hoạt Devour gây DMG từ 400 đến 500.",
+        "→ Nếu player có HP dưới 100% thì ngay lặp tức bị nuke chết. Vì vậy ngay khi thấy nó kích hoạt Smell Blood thì cần hồi đầy máu ngay lặp tức.",
+        "→ Sử dụng class có khả năng heal tốt hoặc có skill hút máu (Life Steal).",
+        "◆ Kích hoạt Bottom Feeder ngay sau khi hết Devour, gúp bản thân hồi 10% HP tối đa.",
+        "→ Sử dụng class có Decay để chặn hồi máu."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: VHL, CAv, DT/EDoT, VDK",
+        "→ Bạn cần để ý dòng thông báo màu vàng “Heal up! Empress Angler is attempting to devour their injured prey!”, lúc này là lúc nó chuẩn bị dùng Devour và bạn có 4s để hồi đầy thanh máu của bản thân, nếu không sẽ dính sát thương cực lớn và chết ngay lặp tức.",
+        "→ VHL mở đầu với 2, sau đó spam 3 và 5, chỉ sử dụng 2 lại khi cần kích hoạt lại hiệu ứng.",
+        "Enh: Valiance > Smite + Lucky class + Vim + Lament",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill. Nhưng cần để ý HP bản thân để dùng 2 vs spam 4 giúp giữ mức HP ở cao, tránh cơ chế của Boss.",
+        "Enh: Ravenous + Lucky class + Anima + Penitence",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3",
+        "Chỉ sử dụng class này khi bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ, nếu không vui lòng chọn class khác để sử dụng.",
+        "Và bạn cũng không cần quan tâm cơ chế của nó, chỉ cần cố gắng giết nó nhanh nhất có thể trước khi các cơ chế xuất hiện.",
+        "Enh: Elysium + Healer class + Pneuma + Vainglory.",
+        "→ VDK dùng combo 2 - 3 - 4 - 5 - 3",
+        "Enh: Dauntless > Lucky Health Vamp + Lucky class + Anima + Vainglory/Penitence"
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-301128",
+          "runs": [
+            {
+              "text": "Tất cả skill của nó đều gây sát thương theo lượng máu tối đa của người chơi, chỉ khác nhau ở phần trăm máu. Ngoài ra nó còn có cơ chế Dead Nuke nếu bạn không đầy 100% máu "
+            },
+            {
+              "text": "(12s mới sử dụng một lần)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301327",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301335",
+          "runs": [
+            {
+              "text": "◆ Total HP: 500,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301355",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301407",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301430",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301495",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây True DMG bằng 20% lượng HP tối đa của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301566",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sử dụng Fish Breath gây True DMG bằng 30% lượng HP tối đa của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301646",
+          "runs": [
+            {
+              "text": "→ Player bị giảm 50% Heal In trong 12s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301686",
+          "runs": [
+            {
+              "text": "◆ Mỗi 12s, sử dụng Smell Blood để charge trong 4s, sau đó kích hoạt Devour gây DMG từ 400 đến 500.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301785",
+          "runs": [
+            {
+              "text": "→ Nếu player có HP dưới 100% thì ngay lặp tức bị nuke chết. Vì vậy ngay khi thấy nó kích hoạt Smell Blood thì cần hồi đầy máu ngay lặp tức.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301925",
+          "runs": [
+            {
+              "text": "→ Sử dụng class có khả năng heal tốt hoặc có skill hút máu "
+            },
+            {
+              "text": "(Life Steal)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-301998",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Bottom Feeder ngay sau khi hết Devour, gúp bản thân hồi 10% HP tối đa.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302081",
+          "runs": [
+            {
+              "text": "→ Sử dụng class có Decay để chặn hồi máu.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302124",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "VHL, CAv, DT/EDoT, VDK",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302182",
+          "runs": [
+            {
+              "text": "→ Bạn cần để ý dòng thông báo màu vàng "
+            },
+            {
+              "text": "“Heal up! Empress Angler is attempting to devour their injured prey!”",
+              "italic": true
+            },
+            {
+              "text": ", lúc này là lúc nó chuẩn bị dùng Devour và bạn có 4s để hồi đầy thanh máu của bản thân, nếu không sẽ dính sát thương cực lớn và chết ngay lặp tức."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302440",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2, sau đó spam 3 và 5, chỉ sử dụng 2 lại khi cần kích hoạt lại hiệu ứng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302530",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance > Smite + Lucky class + Vim + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302581",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill. Nhưng cần để ý HP bản thân để dùng 2 vs spam 4 giúp giữ mức HP ở cao, tránh cơ chế của Boss.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302726",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Penitence\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302774",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302820",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Chỉ sử dụng class này khi bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ, nếu không vui lòng chọn class khác để sử dụng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-302955",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Và bạn cũng không cần quan tâm cơ chế của nó, chỉ cần cố gắng giết nó nhanh nhất có thể trước khi các cơ chế xuất hiện.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303075",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Pneuma + Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303125",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 2 - 3 - 4 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303160",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Lucky Health Vamp + Lucky class + Anima + Vainglory/Penitence\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 3
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-4",
+      "name": "Screen 4: Treasure Chest",
+      "stageType": "treasure",
+      "encounter": null,
+      "objectives": [
+        "Xử lý Treasure Chest theo cơ chế riêng của Screen; tiếp tục khi cửa mở."
+      ],
+      "mechanics": [
+        "Không có gì nhiều để nói, con monsters này không có gì ngoài Shield (nhận sát thương tối đa 5k)."
+      ],
+      "strategy": [
+        "Cách đánh: Bạn dùng class nào để đánh Screen 3, thì cũng dùng cho Screen 4 này luôn, khỏi đổi class. Combo thì dùng thoải mái, không bị giới hạn như Screen trước."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-303265",
+          "runs": [
+            {
+              "text": "Không có gì nhiều để nói, con monsters này không có gì ngoài Shield "
+            },
+            {
+              "text": "(nhận sát thương tối đa 5k)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303363",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Bạn dùng class nào để đánh Screen 3, thì cũng dùng cho Screen 4 này luôn, khỏi đổi class. Combo thì dùng thoải mái, không bị giới hạn như Screen trước.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 4
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-5",
+      "name": "Screen 5: Reinforced Shelleton",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 5: Reinforced Shelleton",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-5-reinforced-shelleton-0",
+            "canonicalName": "Reinforced Shelleton",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 300000,
+            "count": 3,
+            "source": "https://aqwwiki.wikidot.com/reinforced-shelleton"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-5-reinforced-shelleton-0-spin2win-0",
+            "monsterId": "screen-5-reinforced-shelleton-0",
+            "name": "Spin2Win",
+            "type": "Physical",
+            "damage": "220-260",
+            "damageType": "Physical",
+            "cooldown": "1 second",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Light Speed lên bản thân, tăng sát thương gây ra 5%, cộng dồn.",
+              "Nếu có Light Speed, has a 20% chance to apply Ludicrous Speed, tăng Dodge 5,000%.",
+              "Nếu có Light Speed, has a 15% chance to Crash, stunning itself, removing the above effects, và severely giảm its damage resistance trong 6 giây.",
+              "Cannot crit hoặc miss."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/reinforced-shelleton"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Một con rùa xương với lớp phòng thủ tuyệt vời, nhưng không có gì là hoàn hảo, đôi lúc nó cũng mắc sai lầm khi quay quá nhiều và tự làm choáng mình khiến các lớp phòng thủ của nó bị vô hiệu hoá.",
+        "Cơ chế:",
+        "◆ Total HP: 300,000",
+        "◆ Shield giúp giảm đáng kể tất cả các sát thương nhận được.",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Base có -100% Dodge.",
+        "◆ Auto-Attack mỗi 1s gây Phys DMG từ 220 đến 260.",
+        "→ Shelleton tăng 5% All Out, stack vô hạn (hiệu ứng Light Speed).",
+        "→ Shelleton có 20% cơ hội tăng 5000% Dodge khi có Light Speed.",
+        "→ Shelleton có 15% khả năng bị Crash khi có Light Speed, tự Stun bản thân, loại bỏ toàn bộ hiệu ứng khác và cả Shield, tăng lượng lớn All In trong 6s"
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: AM, VHL, CAv, DT/EDoT, VDK",
+        "→ Đa số thời gian Reinforced Shelleton có phòng thủ kiên cố, nhưng nó có 10% bị choáng, đây là lúc toàn bộ lớp phòng thủ của nó bị sụp đổ cũng chính là lúc người chơi tận dụng để giết được nó. Vì vậy khi bắt đầu cứ đánh ngẫu nhiên bất kỳ con nào, khi thấy có 1 con bị choáng thì chuyển mục tiêu tấn công, gây nhiều sát thương nhất có thể.",
+        "→ AM mở đầu với 3 - 5, sau đó spam 2, 3 và 4.",
+        "Enh: Elysium + Wizard class/helm + Vainglory",
+        "→ VHL dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5).",
+        "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.",
+        "Enh: Ravenous + Lucky class + Anima + Vainglory",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3",
+        "Chỉ sử dụng class này khi bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ, nếu không vui lòng chọn class khác để sử dụng.",
+        "Enh: Elysium + Healer class + Pneuma + Vainglory.",
+        "→ VDK thì spam skill, nếu thiếu máu thì spam 3 để hồi.",
+        "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory"
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-303558",
+          "runs": [
+            {
+              "text": "Một con rùa xương với lớp phòng thủ tuyệt vời, nhưng không có gì là hoàn hảo, đôi lúc nó cũng mắc sai lầm khi quay quá nhiều và tự làm choáng mình khiến các lớp phòng thủ của nó bị vô hiệu hoá.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303753",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303761",
+          "runs": [
+            {
+              "text": "◆ Total HP: 300,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303781",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm đáng kể tất cả các sát thương nhận được."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303841",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303864",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303929",
+          "runs": [
+            {
+              "text": "◆ Base có -100% Dodge.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-303952",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 1s gây Phys DMG từ 220 đến 260.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304002",
+          "runs": [
+            {
+              "text": "→ Shelleton tăng 5% All Out, stack vô hạn "
+            },
+            {
+              "text": "(hiệu ứng Light Speed)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304068",
+          "runs": [
+            {
+              "text": "→ Shelleton có 20% cơ hội tăng 5000% Dodge khi có Light Speed.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304131",
+          "runs": [
+            {
+              "text": "→ Shelleton có 15% khả năng bị Crash khi có Light Speed, tự Stun bản thân, loại bỏ toàn bộ hiệu ứng khác và cả Shield, tăng lượng lớn All In trong 6s\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304282",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "AM, VHL, CAv, DT/EDoT, VDK",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304344",
+          "runs": [
+            {
+              "text": "→ Đa số thời gian Reinforced Shelleton có phòng thủ kiên cố, nhưng nó có 10% bị choáng, đây là lúc toàn bộ lớp phòng thủ của nó bị sụp đổ cũng chính là lúc người chơi tận dụng để giết được nó. Vì vậy khi bắt đầu cứ đánh ngẫu nhiên bất kỳ con nào, khi thấy có 1 con bị choáng thì chuyển mục tiêu tấn công, gây nhiều sát thương nhất có thể.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304685",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AM",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3 - 5, sau đó spam 2, 3 và 4.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304731",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Wizard class/helm + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304776",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+            },
+            {
+              "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304868",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-304963",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305015",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305063",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305109",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Chỉ sử dụng class này khi bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ, nếu không vui lòng chọn class khác để sử dụng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305244",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Pneuma + Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305294",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " thì spam skill, nếu thiếu máu thì spam 3 để hồi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305349",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 5
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-6",
+      "name": "Screen 6: Fell Statue",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 6: Fell Statue",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-6-fell-statue-0",
+            "canonicalName": "Fell Statue",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 50000,
+            "count": 3,
+            "source": "https://aqwwiki.wikidot.com/fell-statue"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-6-fell-statue-0-sword-swing-0",
+            "monsterId": "screen-6-fell-statue-0",
+            "name": "Sword Swing",
+            "type": "True Damage",
+            "damage": "100 (before Crit Damage modifiers)",
+            "damageType": "True Damage",
+            "cooldown": "2 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/fell-statue"
+          },
+          {
+            "id": "screen-6-fell-statue-0-lightning-blade-1",
+            "monsterId": "screen-6-fell-statue-0",
+            "name": "Lightning Blade",
+            "type": "True Damage",
+            "damage": "200 (before Crit Damage modifiers)",
+            "damageType": "True Damage",
+            "targets": "1",
+            "activation": "Fell Statue is temporarily charged with electricity!",
+            "playerEffects": [
+              "Áp sát thương chí mạng Amplified lên bản thân, tăng sát thương chí mạng 200% trong 5 giây, cộng dồn.",
+              "Used every 5,000 HP lost."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/fell-statue"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Tổn thương càng nhiều và liên tục thì nó càng trở nên mạnh mẽ hơn, và đây cũng là những gì mà bạn nên lưu ý khi đối đầu với con quái này.",
+        "Cơ chế:",
+        "◆ Total HP: 50,000",
+        "◆ Shield giúp giới hạn sát thương nhận tối đa 1k.",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều luôn bạo kích.",
+        "◆ Base có -100% Crit DMG.",
+        "◆ Auto-Attack mỗi 2s gây 100 True DMG.",
+        "◆ Kích hoạt Lightning Blade mỗi khi mất 10% HP, gây 200 True DMG.",
+        "→ Fell Statue tăng 200% Crit DMG trong 5s, stack vô hạn.",
+        "→ Phải giết được Fell Statue trước khi stack đủ nhiều để giết chết bạn hoặc đổi target qua Fell Statue khác để hiệu ứng trên con cũ mất sau 5s."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: VHL, CAv, DT/EDoT, VDK",
+        "→ Với VHL, CAv và VDK đánh từng con một, đến khi chúng còn 20k HP hoặc lượng sát thương chúng gây lên bạn trên 1.5k DMG, thì chuyển qua con khác đánh, lặp lại để đảm bảo cả 3 con đều được hạ HP ở mức tương đồng nhau.",
+        "→ VHL dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5).",
+        "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.",
+        "Enh: Ravenous + Lucky class + Anima + Vainglory",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3",
+        "Enh: Tuỳ theo bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ chưa mà có từng bộ enh riêng cho phù hợp",
+        "Nếu có: Elysium + Healer class + Wizard helm/cape.",
+        "Nếu không: Elysium + Healer class/helm/cape.",
+        "→ VDK thì spam skill, nếu thiếu máu thì spam 3 để hồi.",
+        "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory"
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-305432",
+          "runs": [
+            {
+              "text": "Tổn thương càng nhiều và liên tục thì nó càng trở nên mạnh mẽ hơn, và đây cũng là những gì mà bạn nên lưu ý khi đối đầu với con quái này.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305571",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305579",
+          "runs": [
+            {
+              "text": "◆ Total HP: 50,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305598",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 1k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305648",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305671",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều luôn bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305708",
+          "runs": [
+            {
+              "text": "◆ Base có -100% Crit DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305734",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2s gây 100 True DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305773",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Lightning Blade mỗi khi mất 10% HP, gây 200 True DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305839",
+          "runs": [
+            {
+              "text": "→ Fell Statue tăng 200% Crit DMG trong 5s, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-305896",
+          "runs": [
+            {
+              "text": "→ Phải giết được Fell Statue trước khi stack đủ nhiều để giết chết bạn hoặc đổi target qua Fell Statue khác để hiệu ứng trên con cũ mất sau 5s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306041",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "VHL, CAv, DT/EDoT, VDK",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306099",
+          "runs": [
+            {
+              "text": "→ Với "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " đánh từng con một, đến khi chúng còn 20k HP hoặc lượng sát thương chúng gây lên bạn trên 1.5k DMG, thì chuyển qua con khác đánh, lặp lại để đảm bảo cả 3 con đều được hạ HP ở mức tương đồng nhau.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306316",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+            },
+            {
+              "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306408",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306503",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306555",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306603",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306649",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Tuỳ theo bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ chưa mà có từng bộ enh riêng cho phù hợp\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306765",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu có: Elysium + Healer class + Wizard helm/cape.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306816",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không: Elysium + Healer class/helm/cape.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306861",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " thì spam skill, nếu thiếu máu thì spam 3 để hồi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-306916",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 6
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-7",
+      "name": "Screen 7: Emperor Angler",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 7: Emperor Angler",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-7-emperor-angler-0",
+            "canonicalName": "Emperor Angler",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 750000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/emperor-angler"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-7-emperor-angler-0-chomp-0",
+            "monsterId": "screen-7-emperor-angler-0",
+            "name": "Chomp",
+            "type": "True Damage",
+            "damage": "25% HP tối đa",
+            "damageType": "True Damage",
+            "cooldown": "3 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/emperor-angler"
+          },
+          {
+            "id": "screen-7-emperor-angler-0-fish-breath-1",
+            "monsterId": "screen-7-emperor-angler-0",
+            "name": "Fish Breath",
+            "type": "True Damage",
+            "damage": "40% HP tối đa",
+            "damageType": "True Damage",
+            "cooldown": "7 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Healing Greatly Reduced lên người chơi, giảm their hồi máu nhận vào 75% trong 12 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/emperor-angler"
+          },
+          {
+            "id": "screen-7-emperor-angler-0-feeding-frenzy-2",
+            "monsterId": "screen-7-emperor-angler-0",
+            "name": "Feeding Frenzy",
+            "type": "True Damage",
+            "damage": "60% HP tối đa",
+            "damageType": "True Damage",
+            "targets": "1",
+            "activation": "Heal up! Emperor Angler will devour all prey below half HP!.",
+            "playerEffects": [
+              "Enters a Feeding Frenzy trong 10 giây. During this time, all attacks will instantly kill the player if they are below 50% of their Max HP.",
+              "Dùng tại 80%, 60%, 40%, và 20% HP còn lại."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/emperor-angler"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Khá tương tự với con ở Screen 3, nhưng gây sát thương bằng lượng máu tối đa được tăng phần trăm lên, đổi lại Dead Nuke của nó chỉ xuất hiện khi máu dưới 50%.",
+        "Cơ chế:",
+        "◆ Total HP: 750,000",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.8).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Auto-Attack mỗi 3s gây True DMG bằng 25% lượng HP tối đa của player.",
+        "◆ Mỗi 5s, sử dụng Fish Breath gây True DMG bằng 40% lượng HP tối đa của player.",
+        "→ Player bị giảm 75% Heal In trong 12s.",
+        "◆ Khi còn 80%, 60%, 40% và 20% HP, sử dụng Feeding Frenzy gây True DMG bằng 60% lượng HP tối đa của player.",
+        "→ Trong 10s sau đó, nếu player có HP dưới 50% thì ngay lặp tức bị nuke chết. Vì vậy trong quá trình này cần hồi máu nhiều nhất có thể để giữ HP trên 50%.",
+        "→ Sử dụng class có khả năng heal tốt hoặc có skill hút máu (Life Steal)."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: VHL, CAv, DT/EDoT, VDK",
+        "→ Bạn cần để ý dòng thông báo màu vàng “Heal up! Emperor Angler will devour all prey below half HP!.”, lúc này là lúc nó dùng Feeding Frenzy và 10s sau đó bạn cần giữ lượng máu bản thân đầy một nửa, nếu không sẽ dính sát thương cực lớn và chết ngay lặp tức. Hoặc đơn giản hơn là luôn giữ HP bản thân trên 50%.",
+        "→ VHL mở đầu với 2, sau đó spam 3 và 5, chỉ sử dụng 2 lại khi cần kích hoạt lại hiệu ứng.",
+        "Enh: Valiance > Smite + Lucky class + Vim + Lament",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill. Nhưng cần để ý HP bản thân để dùng 2 vs spam 4 giúp giữ mức HP ở cao, tránh cơ chế của Boss.",
+        "Enh: Ravenous + Lucky class + Anima + Avarice",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3",
+        "Chỉ sử dụng class này khi bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ, nếu không vui lòng chọn class khác để sử dụng.",
+        "Và bạn cũng không cần quan tâm cơ chế của nó, chỉ cần cố gắng giết nó nhanh nhất có thể trước khi các cơ chế xuất hiện.",
+        "Enh: Elysium + Healer class + Pneuma + Wizard cape",
+        "→ VDK dùng combo 2 - 3 - 4 - 5 - 3",
+        "Enh: Dauntless > Lucky Health Vamp + Lucky class + Anima + Vainglory/Penitence"
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-307002",
+          "runs": [
+            {
+              "text": "Khá tương tự với con ở Screen 3, nhưng gây sát thương bằng lượng máu tối đa được tăng phần trăm lên, đổi lại Dead Nuke của nó chỉ xuất hiện khi máu dưới 50%.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307161",
+          "runs": [
+            {
+              "text": "Cơ chế:\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307169",
+          "runs": [
+            {
+              "text": "◆ Total HP: 750,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307189",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307241",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307264",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307329",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 3s gây True DMG bằng 25% lượng HP tối đa của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307400",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sử dụng Fish Breath gây True DMG bằng 40% lượng HP tối đa của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307480",
+          "runs": [
+            {
+              "text": "→ Player bị giảm 75% Heal In trong 12s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307520",
+          "runs": [
+            {
+              "text": "◆ Khi còn 80%, 60%, 40% và 20% HP, sử dụng Feeding Frenzy gây True DMG bằng 60% lượng HP tối đa của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307628",
+          "runs": [
+            {
+              "text": "→ Trong 10s sau đó, nếu player có HP dưới 50% thì ngay lặp tức bị nuke chết. Vì vậy trong quá trình này cần hồi máu nhiều nhất có thể để giữ HP trên 50%.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307782",
+          "runs": [
+            {
+              "text": "→ Sử dụng class có khả năng heal tốt hoặc có skill hút máu "
+            },
+            {
+              "text": "(Life Steal)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307856",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "VHL, CAv, DT/EDoT, VDK",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-307914",
+          "runs": [
+            {
+              "text": "→ Bạn cần để ý dòng thông báo màu vàng "
+            },
+            {
+              "text": "“Heal up! Emperor Angler will devour all prey below half HP!.”",
+              "italic": true
+            },
+            {
+              "text": ", lúc này là lúc nó dùng Feeding Frenzy và 10s sau đó bạn cần giữ lượng máu bản thân đầy một nửa, nếu không sẽ dính sát thương cực lớn và chết ngay lặp tức. Hoặc đơn giản hơn là luôn giữ HP bản thân trên 50%.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308226",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 2, sau đó spam 3 và 5, chỉ sử dụng 2 lại khi cần kích hoạt lại hiệu ứng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308316",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Valiance > Smite + Lucky class + Vim + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308367",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill. Nhưng cần để ý HP bản thân để dùng 2 vs spam 4 giúp giữ mức HP ở cao, tránh cơ chế của Boss.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308512",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Avarice\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308558",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308604",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Chỉ sử dụng class này khi bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ, nếu không vui lòng chọn class khác để sử dụng.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308739",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Và bạn cũng không cần quan tâm cơ chế của nó, chỉ cần cố gắng giết nó nhanh nhất có thể trước khi các cơ chế xuất hiện.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308859",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class + Pneuma + Wizard cape\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308910",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 2 - 3 - 4 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-308945",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Lucky Health Vamp + Lucky class + Anima + Vainglory/Penitence\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 7
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-8",
+      "name": "Screen 8: Treasure Chest",
+      "stageType": "treasure",
+      "encounter": null,
+      "objectives": [
+        "Xử lý Treasure Chest theo cơ chế riêng của Screen; tiếp tục khi cửa mở."
+      ],
+      "mechanics": [
+        "Tuy nhìn có ngoại hình, lượng HP và Shield giống với con ở Screen 4, nhưng con này có thêm skill mỗi 10s gây True DMG bằng 75% lượng HP tối đa của player và bị Stun trong 2s. Và chỉ có vậy thôi, chỉ cần class có khả năng Heal đủ tốt là qua được."
+      ],
+      "strategy": [
+        "Cách đánh: Bạn dùng class nào để đánh Screen 7, thì cũng dùng cho Screen 8 này luôn, khỏi đổi class, đơn giản vì 2 con monsters ở 2 Screen này đều có cơ chế gây sát thương theo HP. Combo thì dùng thoải mái, không bị giới hạn như Screen trước.",
+        "→ DT/EDoT thì cần đổi Enh trở lại Elysium + Healer class + Pneuma + Vainglory."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-309050",
+          "runs": [
+            {
+              "text": "Tuy nhìn có ngoại hình, lượng HP và Shield giống với con ở Screen 4, nhưng con này có thêm skill mỗi 10s gây True DMG bằng 75% lượng HP tối đa của player và bị Stun trong 2s. Và chỉ có vậy thôi, chỉ cần class có khả năng Heal đủ tốt là qua được.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-309297",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Bạn dùng class nào để đánh Screen 7, thì cũng dùng cho Screen 8 này luôn, khỏi đổi class, đơn giản vì 2 con monsters ở 2 Screen này đều có cơ chế gây sát thương theo HP. Combo thì dùng thoải mái, không bị giới hạn như Screen trước.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-309540",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " thì cần đổi Enh trở lại Elysium + Healer class + Pneuma + Vainglory.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 8
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-9",
+      "name": "Screen 9: Rick, Grim Soldier",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 9: Rick, Grim Soldier",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-9-rick-grim-soldier-0",
+            "canonicalName": "Rick, Grim Soldier",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 200000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/rick-grim-soldier"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-9-rick-grim-soldier-0-auto-attack-0",
+            "monsterId": "screen-9-rick-grim-soldier-0",
+            "name": "Auto Attack",
+            "type": "True Damage",
+            "damage": "280-350",
+            "damageType": "True Damage",
+            "cooldown": "1 second",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/rick-grim-soldier"
+          },
+          {
+            "id": "screen-9-rick-grim-soldier-0-ricks-fury-1",
+            "monsterId": "screen-9-rick-grim-soldier-0",
+            "name": "Rick's Fury",
+            "type": "True Damage",
+            "damage": "560-700",
+            "damageType": "True Damage",
+            "targets": "1",
+            "activation": "I WILL NOT YIELD",
+            "playerEffects": [
+              "Heals up to 90% of Max HP",
+              "Áp Rick's Fury lên bản thân, tăng tỷ lệ chí mạng 5000% và kháng sát thương 50%."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/rick-grim-soldier"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Với 200k HP và Shield giúp giảm sát thương trên 50k (hệ số 0.8), cơ chế đang lưu ý của nó là tất cả đòn đánh đều gây True DMG và khi còn khoảng 20% HP, nó sẽ tự hồi lại 90% lượng máu tối đa (Phase 2), đồng thời tăng 5000% Crit Chance và giảm 50% All In."
+      ],
+      "strategy": [
+        "Cách đánh: Bạn dùng class nào để đánh Screen 8, thì cũng dùng cho Screen 9 này luôn, khỏi đổi class. Combo thì dùng thoải mái, không bị giới hạn như Screen 7."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-309649",
+          "runs": [
+            {
+              "text": "Với 200k HP và Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ", cơ chế đang lưu ý của nó là tất cả đòn đánh đều gây True DMG và khi còn khoảng 20% HP, nó sẽ tự hồi lại 90% lượng máu tối đa "
+            },
+            {
+              "text": "(Phase 2)",
+              "italic": true
+            },
+            {
+              "text": ", đồng thời tăng 5000% Crit Chance và giảm 50% All In."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-309904",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Bạn dùng class nào để đánh Screen 8, thì cũng dùng cho Screen 9 này luôn, khỏi đổi class. Combo thì dùng thoải mái, không bị giới hạn như Screen 7.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 9
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-10",
+      "name": "Screen 10: Mechro Lich & Rampaging Cyborg",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 10: Mechro Lich & Rampaging Cyborg",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-10-mechro-lich-rampaging-cyborg-0",
+            "canonicalName": "Mechro Lich",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 150000,
+            "count": 3,
+            "source": "https://aqwwiki.wikidot.com/mechro-lich"
+          },
+          {
+            "id": "screen-10-mechro-lich-rampaging-cyborg-1",
+            "canonicalName": "Rampaging Cyborg",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 200000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/rampaging-cyborg"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-10-mechro-lich-rampaging-cyborg-0-auto-attack-0",
+            "monsterId": "screen-10-mechro-lich-rampaging-cyborg-0",
+            "name": "Auto Attack",
+            "type": "Magical",
+            "damage": "50-65",
+            "damageType": "Magical",
+            "cooldown": "2.5 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechro-lich"
+          },
+          {
+            "id": "screen-10-mechro-lich-rampaging-cyborg-0-resistance-shred-1",
+            "monsterId": "screen-10-mechro-lich-rampaging-cyborg-0",
+            "name": "Resistance Shred",
+            "type": "Magical",
+            "damage": "60-80",
+            "damageType": "Magical",
+            "cooldown": "8 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp kháng phép Down to player, giảm their kháng sát thương và kháng phép 3% trong 10 giây, cộng dồn."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechro-lich"
+          },
+          {
+            "id": "screen-10-mechro-lich-rampaging-cyborg-1-skewer-0",
+            "monsterId": "screen-10-mechro-lich-rampaging-cyborg-1",
+            "name": "Skewer",
+            "type": "True Damage",
+            "damage": "100 (before Crit Damage Modifiers)",
+            "damageType": "True Damage",
+            "cooldown": "1 second",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/rampaging-cyborg"
+          },
+          {
+            "id": "screen-10-mechro-lich-rampaging-cyborg-1-shoulder-gun-1",
+            "monsterId": "screen-10-mechro-lich-rampaging-cyborg-1",
+            "name": "Shoulder Gun",
+            "type": "True Damage",
+            "damage": "120 (before Crit Damage Modifiers)",
+            "damageType": "True Damage",
+            "cooldown": "7 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/rampaging-cyborg"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Nhìn tổ hợp giữa Lich và Cyborg có vẻ kì lạ, nhưng sự tương tác qua lại giữa chúng thì không có gì phải bàn cãi. Nếu Lich còn sống thì Cyborg sẽ không nhận sát thương, nhưng nếu một Lich bất kỳ bị đánh bại, Cyborg sẽ trở nên hung hăng, mỗi đòn đánh sau đó sẽ ngày một mạnh hơn.",
+        "Cơ chế:",
+        "◆ Total HP: 150,000 (Lich) và 200,000 (Cyborg)",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.8).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều luôn bạo kích.",
+        "◆ Base của Rampaging Cyborg có 1000% All In.",
+        "◆ Chừng nào mà 3 Mechro Lichs còn sống thì Rampaging Cyborg sẽ không nhận sát thương.",
+        "→ Auto-Attack của Mechro Lich mỗi 2.5s, gây Magi DMG từ 50 đến 65.",
+        "→ Ngoài ra, Mechro Lich còn sử dụng Resistance Shred mỗi 8s, gây Magi DMG từ 60 đến 80. Đồng thời tự tăng 3% All In và Magi In trong 10s, stack vô hạn.",
+        "→ Nếu Mechro Lich bị giết chết thì Rampaging Cyborg bắt đầu tăng Crit DMG, stack vô hạn.",
+        "◆ Auto-Attack của Rampaging Cyborg mỗi 1s gây 100 True DMG (thay đổi theo sát thương bạo kích).",
+        "◆ Mỗi 7s, Rampaging Cyborg sẽ sử dụng Shoulder Gun gây 120 True DMG (thay đổi theo sát thương bạo kích)."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: AM, VHL, CAv, DT/EDoT, VDK",
+        "→ Cần giết chết 3 Mechro Lich trước rồi mới đánh Rampaging Cyborg, đặc biệt là các class không có skill AoE như VHL, CAv và VDK thì cần đánh hạ máu của Mechro Lich xuống tầm 15k đến 30k HP rồi mới giết chúng sau, tránh để Cyborg có đủ thời gian stack hiệu ứng, khiến sát thương nó trở nên quá mạnh.",
+        "→ AM mở đầu với 3 - 5, sau đó spam 2, 3 và 4.",
+        "Enh: Elysium + Wizard class/helm/cape",
+        "→ VHL dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5).",
+        "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.",
+        "Enh: Ravenous + Lucky class + Anima + Vainglory",
+        "→ DT/EDoT sử dụng combo 4 - 3 - 2 - 3 - 5 - 3",
+        "Enh: Tuỳ theo bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ chưa mà có từng bộ enh riêng cho phù hợp",
+        "Nếu có: Elysium + Healer class + Pneuma + Vainglory.",
+        "Nếu không: Elysium + Healer class/helm/cape.",
+        "→ VDK thì spam skill, nếu thiếu máu thì spam 3 để hồi.",
+        "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory"
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-310106",
+          "runs": [
+            {
+              "text": "Nhìn tổ hợp giữa Lich và Cyborg có vẻ kì lạ, nhưng sự tương tác qua lại giữa chúng thì không có gì phải bàn cãi. Nếu Lich còn sống thì Cyborg sẽ không nhận sát thương, nhưng nếu một Lich bất kỳ bị đánh bại, Cyborg sẽ trở nên hung hăng, mỗi đòn đánh sau đó sẽ ngày một mạnh hơn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310385",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310393",
+          "runs": [
+            {
+              "text": "◆ Total HP: 150,000 "
+            },
+            {
+              "text": "(Lich)",
+              "italic": true
+            },
+            {
+              "text": " và"
+            },
+            {
+              "text": " 200,000 "
+            },
+            {
+              "text": "(Cyborg)\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310440",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310492",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310515",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều luôn bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310552",
+          "runs": [
+            {
+              "text": "◆ Base của Rampaging Cyborg có 1000% All In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310597",
+          "runs": [
+            {
+              "text": "◆ Chừng nào mà 3 Mechro Lichs còn sống thì Rampaging Cyborg sẽ không nhận sát thương.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310683",
+          "runs": [
+            {
+              "text": "→ Auto-Attack của Mechro Lich mỗi 2.5s, gây Magi DMG từ 50 đến 65.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310750",
+          "runs": [
+            {
+              "text": "→ Ngoài ra, Mechro Lich còn sử dụng Resistance Shred mỗi 8s, gây Magi DMG từ 60 đến 80. Đồng thời tự tăng 3% All In và Magi In trong 10s, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310902",
+          "runs": [
+            {
+              "text": "→ Nếu Mechro Lich bị giết chết thì Rampaging Cyborg bắt đầu tăng Crit DMG, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-310991",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack của Rampaging Cyborg mỗi 1s gây 100 True DMG "
+            },
+            {
+              "text": "(thay đổi theo sát thương bạo kích)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311087",
+          "runs": [
+            {
+              "text": "◆ Mỗi 7s, Rampaging Cyborg sẽ sử dụng Shoulder Gun gây 120 True DMG "
+            },
+            {
+              "text": "(thay đổi theo sát thương bạo kích)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311193",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "AM, VHL, CAv, DT/EDoT, VDK",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311255",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Cần giết chết 3 Mechro Lich trước rồi mới đánh Rampaging Cyborg, đặc biệt là các class không có skill AoE như VHL, CAv và VDK thì cần đánh hạ máu của Mechro Lich xuống tầm 15k đến 30k HP rồi mới giết chúng sau, tránh để Cyborg có đủ thời gian stack hiệu ứng, khiến sát thương nó trở nên quá mạnh."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311554",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "AM",
+              "bold": true
+            },
+            {
+              "text": " mở đầu với 3 - 5, sau đó spam 2, 3 và 4.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311600",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Wizard class/helm/cape\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311638",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " dùng combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+            },
+            {
+              "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311730",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311825",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311877",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311925",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " sử dụng combo 4 - 3 - 2 - 3 - 5 - 3\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-311971",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Tuỳ theo bạn đã dùng nó từ Screen 1 và đã thuốc với stack hiệu ứng đủ chưa mà có từng bộ enh riêng cho phù hợp\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312087",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu có: Elysium + Healer class + Pneuma + Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312140",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không: Elysium + Healer class/helm/cape.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312185",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " thì spam skill, nếu thiếu máu thì spam 3 để hồi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312240",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 10
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-11",
+      "name": "Screen 11: Mechabinky & Raxborg",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Screen 11: Mechabinky & Raxborg",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-11-mechabinky-raxborg-0",
+            "canonicalName": "Mechabinky & Raxborg",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 1000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "screen-11-mechabinky-raxborg-0-auto-attack-0",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Auto Attack",
+            "type": "Physical",
+            "damage": "100-120",
+            "damageType": "Physical",
+            "cooldown": "2.5 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp No Escape lên người chơi, giảm Dodge 500% trong 60 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-contrarium-1",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Contrarium",
+            "type": "Physical",
+            "damage": "60% of target’s current HP",
+            "damageType": "Physical",
+            "cooldown": "10 seconds",
+            "targets": "1",
+            "activation": "Cervus Malus inverts your healing!",
+            "playerEffects": [
+              "Dùng tại 90% HP còn lại.",
+              "Áp Contrarium lên người chơi, giảm hồi máu nhận vào 200% trong 4 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-meow-2",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Meow",
+            "type": "Charge",
+            "damageType": "Charge",
+            "activation": "Meow",
+            "playerEffects": [
+              "Dùng tại 80% HP còn lại.",
+              "Charges trong 2 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-stat-steal-3",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Stat Steal",
+            "type": "True Damage",
+            "damage": "49% of target's max HP",
+            "damageType": "True Damage",
+            "targets": "7",
+            "activation": "Sarah the Nerfkitten steals your stats!",
+            "playerEffects": [
+              "Áp Stats Stolen to the target, giảm dodge chance, sát thương gây ra, tỷ lệ chí mạng, và sát thương chí mạng 10% trong 25 giây, cộng dồn up to 10.",
+              "Áp Stolen Stats lên bản thân, tăng dodge chance, sát thương gây ra, tỷ lệ chí mạng, và sát thương chí mạng 10% for each player hit.",
+              "Luôn trúng. hoặc crit."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-blood-frenzy-4",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Blood Frenzy",
+            "cooldown": "20 seconds",
+            "activation": "",
+            "playerEffects": [
+              "Dùng tại 60% HP còn lại.",
+              "Áp Blood Frenzy to Mechabinky & Raxborg, tăng tỷ lệ chí mạng 5,000% và Dodge 150% trong 8 giây.",
+              "Mechabinky & Raxborg recovers 100,000 HP, Decayable."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-unleashed-chaos-5",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Unleashed Chaos",
+            "type": "Aura",
+            "damageType": "Aura",
+            "activation": "Drakath: Do you really think you stand a chance against me?",
+            "playerEffects": [
+              "Dùng tại 40% HP còn lại.",
+              "Áp Unleashed Chaos lên bản thân, tăng Dodge 60% và Haste 100%."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-summon-legion-mages-6",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Summon Legion Mages",
+            "type": "Charge / Aura",
+            "damageType": "Charge / Aura",
+            "cooldown": "60 seconds",
+            "activation": "I possess the full power of the Legion at my disposal.",
+            "playerEffects": [
+              "Dùng tại 30% HP còn lại.",
+              "Charges trong 10 giây.",
+              "Áp Might of the Legion lên bản thân, tăng tỷ lệ chí mạng 30%, Damage 100%, và tỷ lệ trúng 130% trong 120 giây.",
+              "Áp Legionnaire lên bản thân, an enormous HoT trong 14 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-energy-blast-7",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Energy Blast",
+            "type": "Physical",
+            "damage": "2989 - 3654",
+            "damageType": "Physical",
+            "targets": "4",
+            "activation": "I will feast on your souls, mortals!",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-self-destruct-initiated-8",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Self Destruct Initiated",
+            "activation": "SYSTEMS CRITICAL: INITIATING SELF DESTRUCT SEQUENCE IN 10 SECONDS!",
+            "playerEffects": [
+              "Dùng tại 10% HP còn lại.",
+              "Charges trong 15 giây.",
+              "Áp Defenses Critical lên bản thân, giảm Dodge và kháng sát thương 100%."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-self-destruct-9",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Self Destruct",
+            "type": "True Damage",
+            "damage": "Instant Death",
+            "damageType": "True Damage",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Luôn trúng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-melting-10",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Melting",
+            "type": "Magical",
+            "damage": "605-741",
+            "damageType": "Magical",
+            "cooldown": "5 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Melting lên người chơis, tăng All In và giảm Dodge 25% per stack, lasting 25 giây, cộng dồn không giới hạn."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-absorbing-11",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Absorbing",
+            "type": "Status",
+            "damageType": "Status",
+            "cooldown": "10 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp one stack of Absorbing Power và Rising Defence lên bản thân per player in combat. Absorbing Power increases All Out 50% per stack, lasts 30 giây, cộng dồn không giới hạn. Rising Defence decreases All In 25% per stack, lasts 30 giây, cộng dồn không giới hạn."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-execution-12",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Execution",
+            "type": "Physical",
+            "damage": "1044-1276",
+            "damageType": "Physical",
+            "cooldown": "20 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-contracts-of-the-abyss-13",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Contracts of the Abyss",
+            "damage": "???",
+            "cooldown": "7 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Contract of Frailty to all targets, giảm defense 50% trong 10 giây.",
+              "Áp Contract of Despair to all targets that have Contract of Frailty, giảm Dodge và tỷ lệ chí mạng 75% và sát thương gây ra 50% trong 10 giây.",
+              "Áp Contract of Stagnation to all targets that have Contract of Despair, giảm defense và physical defense 100%, Haste 50%, và hồi máu nhận vào 80% trong 10 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-the-cycles-end-14",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "The Cycle's End",
+            "cooldown": "30 seconds",
+            "targets": "Self-target",
+            "activation": "Darkon's defenses decrease as The Fool leaves his body.",
+            "playerEffects": [
+              "Áp The Cycle's End to Mechabinky & Raxborg, tăng his sát thương vật lý và phép nhận vào 10%, cộng dồn tối đa 10."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-peer-15",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Peer",
+            "cooldown": "10 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Either Áp Kathool's Glare hoặc Kathool's Torment lên người chơi.",
+              "Kathool's Glare increases tiêu hao Mana 100% trong 5 giây",
+              "Kathool's Torment reduces tỷ lệ trúng 50% trong 5 giây.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-lullaby-17",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Lullaby",
+            "type": "Status",
+            "damage": "697-852",
+            "damageType": "Status",
+            "cooldown": "8 seconds",
+            "targets": "4",
+            "activation": "You feel sleepy…",
+            "playerEffects": [
+              "Drowsy: giảm Haste, tỷ lệ trúng, tỷ lệ chí mạng, sát thương gây ra và tăng sát thương nhận vào 15%; cộng dồn không giới hạn, tồn tại 15 giây.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-daze-18",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Daze",
+            "type": "True Damage",
+            "damage": "30% Target Health",
+            "damageType": "True Damage",
+            "cooldown": "12 seconds",
+            "targets": "30",
+            "activation": "You’ve been blinded!",
+            "playerEffects": [
+              "Áp Dazed to the target, giảm tỷ lệ trúng 5% for 30, cộng dồn to 5",
+              "Luôn trúng., Không thể chí mạng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-the-fourth-sense-19",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "The Fourth Sense",
+            "type": "Self Target",
+            "damage": "N/A",
+            "damageType": "Self Target",
+            "cooldown": "15 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-ghoulish-roar-20",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Ghoulish Roar",
+            "type": "True Damage",
+            "damage": "30% of Target HP",
+            "damageType": "True Damage",
+            "cooldown": "12 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Luôn trúng., Không thể chí mạng.",
+              "Can be focused",
+              "Áp Oneirodynia trong 20 giây, giảm sát thương gây ra 20%, with message “Your head begins to hurt…”",
+              "Áp Cacodemon lên người chơis with Oneirodynia trong 60 giây, giảm heal intake và heal output 25%, with message “Your headaches worsen…”",
+              "Áp Insomnium lên người chơis with Cacodemon trong 20 giây, giảm haste 30%, with message “The pain is excruciating và you can barely move…”"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-regoovenation-21",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Regoovenation",
+            "type": "Self Target",
+            "damageType": "Self Target",
+            "cooldown": "10 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Áp Regoovenation to Mechabinky & Raxborg, a 5 giây HoT.",
+              "Áp Absorbing Goo to Mechabinky & Raxborg, tăng sát thương gây ra 10%, cộng dồn tối đa 500."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-dage-the-dark-lords-auto-attack-22",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Dage the Dark Lord's Auto Attack",
+            "type": "Physical",
+            "damage": "1495-1827",
+            "damageType": "Physical",
+            "cooldown": "2.25 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Aeterna Nox to all targets, giảm defense 15% trong 11 giây, cộng dồn infinitely.",
+              "Áp Cloak of Darkness lên bản thân, tăng defense 10% trong 11 giây, cộng dồn infinitely."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-essence-draining-23",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Essence Draining",
+            "activation": "",
+            "playerEffects": [
+              "Stuns the player trong 3 giây.",
+              "Áp Power Shift lên bản thân, tăng sát thương gây ra 50% trong 30 giây",
+              "Áp Power Drained lên người chơi, giảm sát thương gây ra 40%, và outgoing healing 60% trong 30 giây."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          },
+          {
+            "id": "screen-11-mechabinky-raxborg-0-silence-24",
+            "monsterId": "screen-11-mechabinky-raxborg-0",
+            "name": "Silence",
+            "type": "Status",
+            "damageType": "Status",
+            "cooldown": "12 seconds",
+            "targets": "7",
+            "activation": "You've been silenced. Mana is unusable!",
+            "playerEffects": [
+              "Áp Silenced, preventing from players from using any skills that costs MP, lasts 3 giây.",
+              "Luôn trúng.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/mechabinky-raxborg"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Con boss này là sự tổ hợp cơ chế của nhiều con Boss khác nhau, đa số là của các Challenge Bosses khác, tuy vậy cũng đừng quá lo lắng, với lượng máu 1m HP thì không đủ thời gian để khá nhiều cơ chế được kích hoạt. Với một class tốt cùng với enhancements phù hợp thì bạn có thể dễ dàng đánh bại nó.",
+        "Cơ chế:",
+        "◆ Total HP: 1,000,000",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.8).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tự động xoá bỏ tất cả hiệu ứng Temporal Rift và Chaos Rift có trên player.",
+        "◆ Base có 0% Crit Chance và Dodge, 200% Crit DMG, 5000% Hit Chance, -95% Heal Out, 100% All In.",
+        "◆ Auto-Attack mỗi 2.5s gây Phys DMG từ 100 đến 120.",
+        "→ Player giảm 500% Dodge trong 60s.",
+        "◆ Mỗi 5s, sẽ sử dụng ngẫu nhiên 1 trong 15 skill sau:",
+        "→ Melting CD 5s, gây Magi DMG từ 605 đến 741, đồng thời player bị tăng 25% All In và giảm 25% Dodge trong 25s, stack vô hạn.",
+        "→ Absorbing CD 10s, áp hiệu ứng lên bản thân, tăng 50% All Out và giảm 25% All In trong 30s, stack vô hạn.",
+        "→ Execution CD 20s, gây Phys DMG từ 1k đến 1.2k.",
+        "→ Contracts of the Abyss CD 7s, gây ??? DMG.",
+        "Áp “Contract of Frailty” lên player, tăng 50% All In trong 10s.",
+        "Áp “Contract of Despair” khi player có “Contract of Frailty”, giảm 75% Dodge, Crit Change và giảm 50% All Out trong 10s.",
+        "Áp “Contract of Stagnation” khi player có “Contract of Despair”, tăng 100% All In, Phys In và giảm 50% Haste, giảm 80% Heal In trong 10s.",
+        "→ The Cycle's End CD 30s, Mechabinky & Raxborg tăng 10% Phys và Magi In, stack đến 10.",
+        "→ Peer CD 10s, để áp ngẫu nhiên 1 trong 2 hiệu ứng sau lên player: tăng 100% Mana Cost trong 5s hoặc giảm 50% Hit Chance trong 5s.",
+        "→ Devour CD 5s, gây DoT trong 12s lên player (không stack), đồng thời Mechabinky & Raxborg tăng 100% All Out, nhận HoT, không stack và tăng DoT Out, stack.",
+        "→ Lullaby CD 8s, gây DMG từ 697 đến 852, đồng thời player bị giảm 15% Haste, Hit Chance, Crit Chance, All Out và tăng 15% All In trong 15s, stack vô hạn.",
+        "→ Daze CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích. Đồng thời player bị giảm 5% Hit Chance trong 30s, stack đến 5.",
+        "→ The Fourth Sense CD 15s, Mechabinky & Raxborg tăng 2500% Dodge trong 3s.",
+        "→ Ghoulish Roar CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích. Đồng thời áp lần lượt 1 trong 3 hiệu ứng sau theo thứ tự với mỗi lần sử dụng:",
+        "Player bị giảm 20% All Out trong 20s.",
+        "Player bị giảm 25% Heal In và Heal Out trong 60s.",
+        "Player bị giảm 30% Haste trong 20s.",
+        "→ Regoovenation CD 10s, Mechabinky & Raxborg hồi máu bằng HoT trong 5s và tăng 100% All Out, stack đến 500.",
+        "→ Dage the Dark Lord's Auto Attack CD 2.25s, gây Phys DMG từ 1.4k đến 1.8k, đồng thời players tăng 15% All In trong 11s và Mechabinky & Raxborg giảm 10% All In trong 11s, cả 2 stack vô hạn.",
+        "→ Essence Draining CD ??s, khiến player bị Stun trong 3s, giảm 40% All Out và 60% Heal Out trong 30s, còn Mechabinky & Raxborg tăng 50% All Out trong 30s.",
+        "→ Silence CD 12s, ngăn chặn player sử dụng bất kỳ skill dạng tiêu hao MP, không thể né.",
+        "◆ Khi còn 90% HP, kích hoạt Contrarium gây Phys DMG bằng 60% lượng HP hiện tại của player.",
+        "→ Player bị giảm 200% Heal In trong 4s (biến Heal thành sát thương).",
+        "◆ Khi còn 80% HP, sử dụng Meow để charge trong 2s rồi kích hoạt Stat Steal gây True DMG bằng 49% lượng HP tối đa của player, không thể né nhưng lại không thể bạo kích.",
+        "→ Player bị giảm 10% All Out, Dodge, Crit Chance và Crit DMG trong 25s, stack đến 10.",
+        "→ Mechabinky & Raxborg tăng 10% All Out, Dodge, Crit Chance và Crit DMG.",
+        "◆ Khi còn 60% HP, kích hoạt Blood Frenzy lên bản thân, giúp tăng 5000% Crit Chance và 150% Dodge trong 8s.",
+        "→ Mechabinky & Raxborg hồi 100k HP, có thể decay.",
+        "◆ Khi còn 40% HP, kích hoạt Unleashed Chaos lên bản thân, giúp tăng 60% Dodge và 100% Haste.",
+        "◆ Khi còn 30% HP, kích hoạt Summon Legion Mages để charge trong 10s đồng thời kích hoạt thêm hiệu ứng:",
+        "→ Mechabinky & Raxborg tăng 30% Crit Chance, 100% All Out và 130% Hit Chance trong 120s.",
+        "→ Mechabinky & Raxborg nhận HoT lớn trong 14s, dùng class có Decay như LR, VDK, LDK.",
+        "◆ Kích hoạt Energy Blast ngay sau khi hết Summon Legion Mages, gây Phys DMG từ 2.9k đến 3.6k.",
+        "→ Mechabinky & Raxborg tăng 30% All In trong 20s.",
+        "◆ Khi còn 10% HP, sử dụng Self Destruct Initiated để charge trong 15s đồng thời kích hoạt thêm hiệu ứng:",
+        "→ Mechabinky & Raxborg giảm 100% Dodge và tăng 100% All In.",
+        "→ Cần diệt Mechabinky & Raxborg trong giai đoạn này nhanh nhất có thể.",
+        "◆ Kích hoạt Self Destruct ngay sau khi hết Self Destruct Initiated, gây True DMG cực lớn không thể né giết chết player."
+      ],
+      "strategy": [
+        "Cách đánh: Chọn 1 trong các class: VHL, CAv, DT/EDoT, VDK",
+        "→ Tuy các cơ chế của con Boss này rất nhiều và dài, nhưng chỉ có 3 cơ chế mà bạn cần phải lưu ý, lần lượt xuất hiện vào:",
+        "Khi còn 90% HP (900k): Đảo ngược Heal thành sát thương, tránh dùng hoặc spam các skill Heal không phải dạng Steal Life khi thấy thông báo “Cervus Malus inverts your healing!”. Đến khi thấy “Your healing is no longer inverted!” thì mới dùng trở lại.",
+        "Khi còn 30% HP (300k): Hồi máu, có thể sử dụng Decay để chặn, nhưng nếu class không có Decay thì nên chuẩn bị sẵn Scroll of Decay mà dùng. Tuy nhiên không có cũng không sao, có thể lấy sát thương mà đập nhưng sẽ kéo dài thời gian đánh.",
+        "Khi còn 10% HP (100k): Charge để Dead Nuke, bạn có 15s để giết chết nó (15s chứ không phải 10s).",
+        "→ VHL tuỳ theo Enh vũ khí mà bạn dùng thì sẽ có sự khác biệt trong cách đánh",
+        "Nếu dùng Dauntless: 2 - 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5). Nếu HP bản thân dưới 2k thì dừng dùng 4, dưới 1k thì dừng dùng 2.",
+        "Nếu không: Trong giai đoạn đầu dùng 4 - 5 - 3, đến khi thấy “Your healing is no longer inverted!” thì mới chuyển qua combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 (luôn xài 3 trước 2, xài 4 trước 5).",
+        "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament",
+        "Potion: Có thể dùng thêm Potent Destruction Elixir + Fate Tonic + Potent Honor/Malice Potion để tăng DPS.",
+        "→ CAv combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.",
+        "Nếu không dùng Dauntless, thì trong giai đoạn đầu, không spam 4, chỉ dùng khi cần tái kích hoạt hiệu ứng, đến khi thấy “Your healing is no longer inverted!” thì thời mới được spam 4.",
+        "Enh: Ravenous + Lucky class + Anima + Vainglory",
+        "→ DT/EDoT giai đoạn đầu dùng 2 - 3 - 5 - 3, đến khi thấy thông báo “Cervus Malus inverts your healing!” thì chỉ dùng 3 - 5, và sau khi thấy thông báo “Your healing is no longer inverted!” thì qua sử dụng combo 4 - 3 - 2 - 3 - 5 - 3.",
+        "Enh: Elysium + Healer class/helm + Vainglory.",
+        "→ VDK tuỳ theo Enh vũ khí mà bạn dùng thì sẽ có sự khác biệt trong cách đánh.",
+        "Nếu dùng Dauntless: Spam tất cả skill, nếu thiếu máu thì tập trung spam 3 để hồi.",
+        "Nếu không dùng: Thì ở giai đoạn đầu, mở đầu với 2 - 3 - 4 - 5, sau đó spam 2, 3 và 4, đến khi thấy thông báo “Your healing is no longer inverted!” thì qua spam tất cả skill, thiếu máu thì tập trung spam 3 để hồi.",
+        "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory"
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-312333",
+          "runs": [
+            {
+              "text": "Con boss này là sự tổ hợp cơ chế của nhiều con Boss khác nhau, đa số là của các Challenge Bosses khác, tuy vậy cũng đừng quá lo lắng, với lượng máu 1m HP thì không đủ thời gian để khá nhiều cơ chế được kích hoạt. Với một class tốt cùng với enhancements phù hợp thì bạn có thể dễ dàng đánh bại nó.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312631",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312639",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312661",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.8)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312713",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312736",
+          "runs": [
+            {
+              "text": "◆ Tự động xoá bỏ tất cả hiệu ứng Temporal Rift và Chaos Rift có trên player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312813",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Crit Chance và Dodge, 200% Crit DMG, 5000% Hit Chance, -95% Heal Out, 100% All In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312909",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.5s gây Phys DMG từ 100 đến 120.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312961",
+          "runs": [
+            {
+              "text": "→ Player giảm 500% Dodge trong 60s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-312997",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sẽ sử dụng ngẫu nhiên 1 trong 15 skill sau:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313051",
+          "runs": [
+            {
+              "text": "→ Melting CD 5s, gây Magi DMG từ 605 đến 741, đồng thời player bị tăng 25% All In và giảm 25% Dodge trong 25s, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313176",
+          "runs": [
+            {
+              "text": "→ Absorbing CD 10s, áp hiệu ứng lên bản thân, tăng 50% All Out và giảm 25% All In trong 30s, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313283",
+          "runs": [
+            {
+              "text": "→ Execution CD 20s, gây Phys DMG từ 1k đến 1.2k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313332",
+          "runs": [
+            {
+              "text": "→ Contracts of the Abyss CD 7s, gây ??? DM"
+            },
+            {
+              "text": "G.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313377",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Áp “Contract of Frailty” lên player, tăng 50% All In trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313441",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Áp “Contract of Despair” khi player có “Contract of Frailty”, giảm 75% Dodge, Crit Change và giảm 50% All Out trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313562",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Áp “Contract of Stagnation” khi player có “Contract of Despair”, tăng 100% All In, Phys In và giảm 50% Haste, giảm 80% Heal In trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313700",
+          "runs": [
+            {
+              "text": "→ The Cycle's End CD 30s, Mechabinky & Raxborg tăng 10% Phys và Magi In, stack đến 10"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313787",
+          "runs": [
+            {
+              "text": "→ Peer CD 10s, để áp ngẫu nhiên 1 trong 2 hiệu ứng sau lên player: tăng 100% Mana Cost trong 5s hoặc giảm 50% Hit Chance trong 5s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-313918",
+          "runs": [
+            {
+              "text": "→ Devour CD 5s, gây DoT trong 12s lên player "
+            },
+            {
+              "text": "(không stack)",
+              "italic": true
+            },
+            {
+              "text": ", đồng thời Mechabinky & Raxborg "
+            },
+            {
+              "text": "tăng 100% All Out, nhận HoT,"
+            },
+            {
+              "text": " không stack"
+            },
+            {
+              "text": " và tăng DoT Out, stack.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-314074",
+          "runs": [
+            {
+              "text": "→ Lullaby CD 8s, gây DMG từ 697 đến 852, đồng thời player bị giảm 15% Haste, Hit Chance, Crit Chance, All Out và tăng 15% All In trong 15s, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-314228",
+          "runs": [
+            {
+              "text": "→ Daze CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích. Đồng thời player bị giảm 5% Hit Chance trong 30s, stack đến 5.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-314392",
+          "runs": [
+            {
+              "text": "→ The Fourth Sense CD 15s, Mechabinky & Raxborg tăng 2500% Dodge trong 3s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-314467",
+          "runs": [
+            {
+              "text": "→ Ghoulish Roar CD 12s, gây True DMG bằng 30% lượng HP của player, không thể né nhưng lại không thể bạo kích. Đồng thời áp lần lượt 1 trong 3 hiệu ứng sau theo thứ tự với mỗi lần sử dụng:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-314655",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Player bị giảm 20% All Out trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-314693",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Player bị giảm 25% Heal In và Heal Out trong 60s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-314743",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Player bị giảm 30% Haste trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-314779",
+          "runs": [
+            {
+              "text": "→ Regoovenation CD 10s, Mechabinky & Raxborg hồi máu bằng HoT trong 5s và tăng 100% All Out, stack đến 500.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-314887",
+          "runs": [
+            {
+              "text": "→ Dage the Dark Lord's Auto Attack CD 2.25s, gây Phys DMG từ 1.4k đến 1.8k, đồng thời players tăng 15% All In trong 11s và Mechabinky & Raxborg giảm 10% All In trong 11s, cả 2 stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315077",
+          "runs": [
+            {
+              "text": "→ Essence Draining CD ??s, khiến player bị Stun trong 3s, giảm 40% All Out và 60% Heal Out trong 30s, còn Mechabinky & Raxborg tăng 50% All Out trong 30s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315232",
+          "runs": [
+            {
+              "text": "→ Silence CD 12s, ngăn chặn player sử dụng "
+            },
+            {
+              "text": "bất kỳ skill dạng tiêu hao MP, không thể né.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315320",
+          "runs": [
+            {
+              "text": "◆ Khi còn 90% HP, kích hoạt Contrarium gây Phys DMG bằng 60% lượng HP hiện tại của player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315411",
+          "runs": [
+            {
+              "text": "→ Player bị giảm 200% Heal In trong 4s "
+            },
+            {
+              "text": "(biến Heal thành sát thương)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315480",
+          "runs": [
+            {
+              "text": "◆ Khi còn 80% HP, sử dụng Meow để charge trong 2s rồi kích hoạt Stat Steal gây True DMG bằng 49% lượng HP tối đa của player, không thể né nhưng lại không thể bạo kích"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315648",
+          "runs": [
+            {
+              "text": "→ Player bị giảm 10% All Out, Dodge, Crit Chance và Crit DMG trong 25s, stack đến 10.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315734",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg tăng 10% All Out, Dodge, Crit Chance và Crit DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315807",
+          "runs": [
+            {
+              "text": "◆ Khi còn 60% HP, kích hoạt Blood Frenzy lên bản thân, giúp tăng 5000% Crit Chance và 150% Dodge trong 8s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315914",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg hồi 100k HP, có thể decay.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-315964",
+          "runs": [
+            {
+              "text": "◆ Khi còn 40% HP, kích hoạt Unleashed Chaos lên bản thân, giúp tăng 60% Dodge và 100% Haste"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316057",
+          "runs": [
+            {
+              "text": "◆ Khi còn 30% HP, kích hoạt Summon Legion Mages để charge trong 10s đồng thời kích hoạt thêm hiệu ứng"
+            },
+            {
+              "text": ":"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316160",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg tăng 30% Crit Chance, 100% All Out và 130% Hit Chance trong 120s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316249",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg nhận HoT lớn trong 14s, dùng class có Decay như LR, VDK, LDK.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316334",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Energy Blast ngay sau khi hết Summon Legion Mages, gây Phys DMG từ 2.9k đến 3.6k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316428",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg tăng 30% All In trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316478",
+          "runs": [
+            {
+              "text": "◆ Khi còn 10% HP, sử dụng Self Destruct Initiated để charge trong 15s đồng thời kích hoạt thêm hiệu ứng:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316583",
+          "runs": [
+            {
+              "text": "→ Mechabinky & Raxborg giảm 100% Dodge và tăng 100% All In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316643",
+          "runs": [
+            {
+              "text": "→ Cần diệt Mechabinky & Raxborg trong giai đoạn này nhanh nhất có thể.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316714",
+          "runs": [
+            {
+              "text": "◆ Kích hoạt Self Destruct ngay sau khi hết Self Destruct Initiated, gây True DMG cực lớn không thể né giết chết player.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316835",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Chọn 1 trong các class: "
+            },
+            {
+              "text": "VHL, CAv, DT/EDoT, VDK",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-316893",
+          "runs": [
+            {
+              "text": "→ Tuy các cơ chế của con Boss này rất nhiều và dài, nhưng chỉ có 3 cơ chế mà bạn cần phải lưu ý, lần lượt xuất hiện vào:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-317014",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi còn 90% HP "
+            },
+            {
+              "text": "(900k)",
+              "italic": true
+            },
+            {
+              "text": ": Đảo ngược Heal thành sát thương, tránh dùng hoặc spam các skill Heal không phải dạng Steal Life khi thấy thông báo "
+            },
+            {
+              "text": "“Cervus Malus inverts your healing!”",
+              "italic": true
+            },
+            {
+              "text": ". Đến khi thấy "
+            },
+            {
+              "text": "“Your healing is no longer inverted!”",
+              "italic": true
+            },
+            {
+              "text": " thì mới dùng trở lại.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-317266",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi còn 30% HP "
+            },
+            {
+              "text": "(300k)",
+              "italic": true
+            },
+            {
+              "text": ": Hồi máu, có thể sử dụng Decay để chặn, nhưng nếu class không có Decay thì nên chuẩn bị sẵn "
+            },
+            {
+              "text": "Scroll of Decay"
+            },
+            {
+              "text": " mà dùng. Tuy nhiên không có cũng không sao, có thể lấy sát thương mà đập nhưng sẽ kéo dài thời gian đánh.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-317502",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Khi còn 10% HP "
+            },
+            {
+              "text": "(100k)",
+              "italic": true
+            },
+            {
+              "text": ": Charge để Dead Nuke, bạn có 15s để giết chết nó "
+            },
+            {
+              "text": "(15s chứ không phải 10s)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-317601",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VHL",
+              "bold": true
+            },
+            {
+              "text": " tuỳ theo Enh vũ khí mà bạn dùng thì sẽ có sự khác biệt trong cách đánh\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-317678",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu dùng Dauntless: 2 - 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+            },
+            {
+              "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ". Nếu HP bản thân dưới 2k thì dừng dùng 4, dưới 1k thì dừng dùng 2.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-317843",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không: Trong giai đoạn đầu dùng 4 - 5 - 3, đến khi thấy "
+            },
+            {
+              "text": "“Your healing is no longer inverted!”",
+              "italic": true
+            },
+            {
+              "text": " thì mới chuyển qua combo 4 - 5 - 3 - 2 - 4 - 3 - 2 - 4 - 3 - 2 "
+            },
+            {
+              "text": "(luôn xài 3 trước 2, xài 4 trước 5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318041",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless + Lucky class + Anima + Vainglory > Valiance/Smite + Lucky class + Vim + Lament\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318136",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Potion: Có thể dùng thêm "
+            },
+            {
+              "text": "Potent Destruction Elixir"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Fate Tonic"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "text": "Potent Honor/Malice Potion"
+            },
+            {
+              "text": " để tăng DPS.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318242",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "CAv",
+              "bold": true
+            },
+            {
+              "text": " combo mở đầu 3 - 5 - 2 - 4 sau đó spam skill.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318294",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không dùng Dauntless, thì trong giai đoạn đầu, không spam 4, chỉ dùng khi cần tái kích hoạt hiệu ứng, đến khi thấy "
+            },
+            {
+              "text": "“Your healing is no longer inverted!”",
+              "italic": true
+            },
+            {
+              "text": " thì thời mới được spam 4.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318477",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Ravenous + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318525",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "DT/EDoT",
+              "bold": true
+            },
+            {
+              "text": " giai đoạn đầu dùng 2 - 3 - 5 - 3, đến khi thấy thông báo "
+            },
+            {
+              "text": "“Cervus Malus inverts your healing!”",
+              "italic": true
+            },
+            {
+              "text": " thì chỉ dùng 3 - 5,"
+            },
+            {
+              "text": " và sau khi thấy thông báo "
+            },
+            {
+              "text": "“Your healing is no longer inverted!”",
+              "italic": true
+            },
+            {
+              "text": " thì qua"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "sử dụng combo 4 - 3 - 2 - 3 - 5 - 3.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318758",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Elysium + Healer class/helm + Vainglory.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318804",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "VDK",
+              "bold": true
+            },
+            {
+              "text": " tuỳ theo Enh vũ khí mà bạn dùng thì sẽ có sự khác biệt trong cách đánh.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318882",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu dùng Dauntless: Spam tất cả skill, nếu thiếu máu thì tập trung spam 3 để hồi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-318964",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Nếu không dùng: Thì ở giai đoạn đầu, mở đầu với 2 - 3 - 4 - 5, sau đó spam 2, 3 và 4, đến khi thấy thông báo "
+            },
+            {
+              "text": "“Your healing is no longer inverted!”",
+              "italic": true
+            },
+            {
+              "text": " thì qua spam tất cả skill, thiếu máu thì tập trung spam 3 để hồi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-319177",
+          "listDepth": 0,
+          "runs": [
+            {
+              "text": "Enh: Dauntless > Valiance + Lucky class + Anima + Vainglory\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 11
+    },
+    {
+      "id": "the-gaol-of-eternal-torment-and-misery-stage-12",
+      "name": "Screen 12: Grimskull",
+      "stageType": "final_boss",
+      "encounter": {
+        "encounterTitle": "Screen 12: Grimskull",
+        "locationName": "The Gaol of Eternal Torment and Misery",
+        "monsters": [
+          {
+            "id": "screen-12-grimskull-0",
+            "canonicalName": "Grimskull (Monster)",
+            "role": "Monster",
+            "level": 1,
+            "maxHp": 100,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/grimskull-monster"
+          }
+        ],
+        "activeSkills": [],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây có thật sự là Grimskull? Với 100 HP và Shield giúp giới hạn sát thương nhận tối đa 10. Và chỉ có vậy, không có gì đáng nói."
+      ],
+      "strategy": [
+        "Cách đánh: Bạn dùng class nào để đánh Screen 11, thì cũng dùng cho Screen 12 này luôn, khỏi đổi class, đơn giản vì Grimskull không có cơ chế gì cả. Combo thì dùng thoải mái, không bị giới hạn như Screen trước."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-319259",
+          "runs": [
+            {
+              "text": "Đây có thật sự là Grimskull? Với 100 HP và Shield giúp giới hạn sát thương nhận tối đa 10. Và chỉ có vậy, không có gì đáng nói.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-319388",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " Bạn dùng class nào để đánh Screen 11, thì cũng dùng cho Screen 12 này luôn, khỏi đổi class, đơn giản vì Grimskull không có cơ chế gì cả. Combo thì dùng thoải mái, không bị giới hạn như Screen trước.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 12
+    }
+  ],
+  "teams": [],
+  "equipmentRoutes": [],
+  "progression": [
+    {
+      "id": "h.3zl57benqh5g",
+      "title": "Cách mở khoá Grimskill’s Challenge Dungeon",
+      "paragraphs": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "p-292903",
+          "runs": [
+            {
+              "text": "Để vào được m"
+            },
+            {
+              "text": "ap "
+            },
+            {
+              "text": "/join gaolcell",
+              "href": "http://aqwwiki.wikidot.com/gaol-cell"
+            },
+            {
+              "text": ", bạn cầ"
+            },
+            {
+              "text": "n "
+            },
+            {
+              "text": "hoàn thành questline của 2 Dungeons",
+              "bold": true
+            },
+            {
+              "text": " trước đó của Grims"
+            },
+            {
+              "text": "kull là "
+            },
+            {
+              "text": "/join doomvault",
+              "href": "http://aqwwiki.wikidot.com/doom-vault"
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "/join doomvaultb",
+              "href": "http://aqwwiki.wikidot.com/doom-vault-b"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(",
+              "italic": true
+            },
+            {
+              "text": "FULL Walkthrough",
+              "italic": true,
+              "href": "/cot-truyen/doom-vault-dungeon-map#h.iovjll4ds55c"
+            },
+            {
+              "text": ")",
+              "italic": true
+            },
+            {
+              "text": " và "
+            },
+            {
+              "text": "đạt lvl 80",
+              "bold": true
+            },
+            {
+              "text": " trở lên "
+            },
+            {
+              "text": "(xem thêm ở “",
+              "italic": true
+            },
+            {
+              "text": "Leveling-up Guide",
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": "” nếu cần)",
+              "italic": true
+            },
+            {
+              "text": ". Sau khi đã vào được map này, cần làm "
+            },
+            {
+              "text": "Undead Cashfear's Quests",
+              "href": "http://aqwwiki.wikidot.com/undead-cashfear-s-quests#GaolCell"
+            },
+            {
+              "text": " ở "
+            },
+            {
+              "text": "/join gaolcell",
+              "href": "http://aqwwiki.wikidot.com/gaol-cell"
+            },
+            {
+              "text": " để mở khoá Dungeon này."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-293227",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "“Smite the Boulder!” quest:",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Cần có "
+            },
+            {
+              "text": "Smite (lvl 60)",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": " trong túi đồ và đến Screen 2 của map này rồi click vào tảng đá lớn chặn cửa để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-293370",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Smite (lvl 60) chính là cuộn Enhancement, nhưng ở đây bạn cần phải mua vào túi đồ thay vì dùng thẳng lên trang bị bằng cách bấm “Buy and Hold”.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-293522",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "“Strike the Boulder!” quest:",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Cần có "
+            },
+            {
+              "text": "Scythe of Azalith"
+            },
+            {
+              "text": " trong túi đồ và đến Screen 2 của map này rồi tiếp tục click vào tảng đá lớn chặn cửa để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-293678",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "“Smash the Boulder!” quest:",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Cần có J6's Hammer trong túi đồ mua tạ"
+            },
+            {
+              "text": "i "
+            },
+            {
+              "text": "Bounty Hunter Shop",
+              "href": "http://aqwwiki.wikidot.com/bounty-hunter-shop"
+            },
+            {
+              "text": ". Rồi lập lại cuối đến Screen 2 của map này, click vào tảng đá lớn chặn cửa để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-293857",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Cách mở J6 Armory - ",
+              "italic": true
+            },
+            {
+              "text": "Bounty Hunter Shop",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/bounty-hunter-shop"
+            },
+            {
+              "text": ":\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-293903",
+          "runs": [
+            {
+              "text": "- Đầu tiên, đến ",
+              "italic": true
+            },
+            {
+              "text": "/join hyperspace",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/hyper-space"
+            },
+            {
+              "text": ".\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-293937",
+          "runs": [
+            {
+              "text": "- Đến Screen 2 > Vào cánh cửa đầu tiên bên trái, sau đó bạn sẽ thấy một phòng có nhiều cái đồng hồ.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-294037",
+          "runs": [
+            {
+              "text": "- Để mở được Shop này chỉ cần bấm và các đồng hồ đúng theo thứ tự từ 1 đến 5 như ở hình dưới.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-294133",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "“The Gaol of Eternal Torment and Misery” quest:",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Lúc này bạn đã mở khoá được Dungeon, quest này sẽ yêu cầu bạn hoàn thành Dungeon này một lần, đi thẳng vào cảnh cửa ngay sau tảng đá vừa được loại bỏ ở Screen 2 để bắt đầu. Sau khi hoàn thành thì bạn được mở khoá các quests farm Grimskull Trolling Rep, để lấy đồ trong "
+            },
+            {
+              "text": "Undead Cashfea’s Shop"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-294475",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Trước khi trả quest, bạn nên dùng boost exp (chưa đạt lvl tối đa) để tăng lượng exp thưởng nhận được của quest.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-294596",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Sau khi hoàn thà",
+              "italic": true
+            },
+            {
+              "text": "nh “",
+              "italic": true
+            },
+            {
+              "text": "The Gaol of Eternal Torment and Misery",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/undead-cashfear-s-quests#GaolCell"
+            },
+            {
+              "text": "” quest, bạn sẽ nhận được SkullCrusher Character Page Badge.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-294722",
+          "runs": [
+            {
+              "text": "Sau khi đã hoàn thành các điều kiện nói trên",
+              "bold": true
+            },
+            {
+              "text": ", bạn đã bắt đầu có thể farm "
+            },
+            {
+              "text": "Grimskull Trolling Rep thông qua ",
+              "bold": true
+            },
+            {
+              "text": "Undead Cashfear's Quests",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/undead-cashfear-s-quests#GaolCell"
+            },
+            {
+              "text": " ở ",
+              "bold": true
+            },
+            {
+              "text": "/join gaolcell",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/gaol-cell"
+            },
+            {
+              "text": " hoặc "
+            },
+            {
+              "text": "thử thách nâng ",
+              "bold": true
+            },
+            {
+              "text": "cao hơn với ",
+              "bold": true
+            },
+            {
+              "text": "Mort's Quest",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/mort-s-quest"
+            },
+            {
+              "text": " cũng tại map này."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-294933",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Cho "
+            },
+            {
+              "text": "non-mem",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":"
+            },
+            {
+              "text": " “"
+            },
+            {
+              "text": "Gaol Rerun",
+              "href": "http://aqwwiki.wikidot.com/undead-cashfear-s-quests#GaolCell"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(750 Rep)",
+              "italic": true
+            },
+            {
+              "text": ", chinh phục Dungeon này để hoàn thành."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-295016",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Cho "
+            },
+            {
+              "text": "non-mem (daily)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":"
+            },
+            {
+              "text": " “"
+            },
+            {
+              "text": "Beat Up Master For My Enjoyment",
+              "href": "http://aqwwiki.wikidot.com/undead-cashfear-s-quests#GaolCell"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(2.5k Rep)",
+              "italic": true
+            },
+            {
+              "text": ", chinh phục Dungeon này để hoàn thành "
+            },
+            {
+              "text": "(reset vào mỗi ngày 12:01AM EST server time)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-295174",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Cho "
+            },
+            {
+              "text": "non-mem (weekly)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":"
+            },
+            {
+              "text": " “"
+            },
+            {
+              "text": "2.0 No!",
+              "href": "http://aqwwiki.wikidot.com/mort-s-quest"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(12.5k Rep)",
+              "italic": true
+            },
+            {
+              "text": " của Mort ở "
+            },
+            {
+              "text": "/join gaolcell",
+              "href": "http://aqwwiki.wikidot.com/gaol-cell"
+            },
+            {
+              "text": ". Để hoàn thành cần đánh MechaBinky & Raxborg 2.0 tại "
+            },
+            {
+              "text": "/join grimchallenge",
+              "href": "http://aqwwiki.wikidot.com/grim-challenge"
+            },
+            {
+              "text": ". Boss khó, cách đánh chi tiết "
+            },
+            {
+              "text": "xem tại đây"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(reset vào mỗi thứ 6 12:01AM EST server time)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-295414",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Cho "
+            },
+            {
+              "text": "mem",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":"
+            },
+            {
+              "text": " “"
+            },
+            {
+              "text": "Gaol Rerun (Legend)",
+              "href": "http://aqwwiki.wikidot.com/undead-cashfear-s-quests#GaolCell"
+            },
+            {
+              "text": "” quest "
+            },
+            {
+              "text": "(1.5k Rep)",
+              "italic": true
+            },
+            {
+              "text": ", chinh phục Dungeon này để hoàn thành.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-295503",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Trước khi trả quest, bạn nên dùng boost gold, exp (chưa đạt lvl tối đa) để tăng lượng gold, exp thưởng nhận được của quest.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h.yu8yyd126o5t",
+      "title": "Cashfear’s Rep Shop",
+      "paragraphs": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "p-295654",
+          "runs": [
+            {
+              "text": "Rep Shop của NPC Undead Cashfear ở "
+            },
+            {
+              "text": "/join gaolcell",
+              "href": "http://aqwwiki.wikidot.com/gaol-cell"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-295704",
+          "runs": [
+            {
+              "text": "Với shop này bạn cẩn phải nâ"
+            },
+            {
+              "text": "ng "
+            },
+            {
+              "text": "Rank Grimskull Trolling Rep"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "ít nhất Rank 2 và đạt Rank 10 để lấy hết tất cả đồ trong shop này. Trong shop này có 8 món đồ có boosts và một loại Enhancement mới là Hearty:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-295911",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Executioner Of Grimskull",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/executioner-of-grimskull"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(EOG)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " và ",
+              "bold": true
+            },
+            {
+              "text": "Guardian Of Grimskull",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/guardian-of-grimskull"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(GOG)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Armor"
+            },
+            {
+              "text": " tăng 40% XP và CP - Yêu cầu Rank 5 Grimskull Trolling Rep.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-296042",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Raxborg's Axe",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/raxborg-s-axe"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(RA)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " và ",
+              "bold": true
+            },
+            {
+              "text": "Raxgore's Skull Crushing Axe",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/raxgore-s-skull-crushing-axe"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(RSCA)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon"
+            },
+            {
+              "text": " tăng 40% All DMG - Yêu cầu Rank 6 Grimskull Trolling Rep.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-296171",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Hearty Helm Enhancement:",
+              "bold": true
+            },
+            {
+              "text": " Tăng END một lượng rất lớn, nhưng giảm STR, DEX, INT, WIS, LUK, và giảm 15% All Out và Heal In - Yêu cầu Rank 7 Grimskull Trolling Rep.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-296337",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "ArchLich Crown",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/archlich-crown"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(ALC)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Helm tăng 40% DMG với Human - Yêu cầu Rank 8 Grimskull Trolling Rep.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-296433",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Mecha Binky Companion",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/mecha-binky-companion"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(MBC)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " và ",
+              "bold": true
+            },
+            {
+              "text": "Battle-Ready Mecha Binky",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/battle-ready-mecha-binky"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(BRMB)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Pet tăng 30% DMG lên Dragon, Human, Undead, Chaos và Elemental "
+            },
+            {
+              "text": "monsters - Yêu cầu Rank 9 Grimskull Trolling Rep.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-296615",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Binky's Man Eating Uni-horn",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/binky-s-man-eating-uni-horn"
+            },
+            {
+              "text": " ",
+              "bold": true
+            },
+            {
+              "text": "(BMEU)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ":",
+              "bold": true
+            },
+            {
+              "text": " Weapon tăng 75% DMG với Human - Yêu cầu Rank 10 Grimskull Trolling Rep.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-296726",
+          "runs": [
+            {
+              "text": "◆ "
+            },
+            {
+              "text": "Verata's Necronomicon:",
+              "bold": true
+            },
+            {
+              "text": " Dùng để merge Lich class, chi tiết xem "
+            },
+            {
+              "text": "tại đây",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": " - Yêu cầu Rank 10 Grimskull Trolling Rep.\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendedTeams": []
+}

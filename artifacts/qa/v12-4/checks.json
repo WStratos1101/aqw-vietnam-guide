@@ -1,0 +1,65 @@
+{
+  "at": "2026-11-09T16:37:50.446Z",
+  "checks": [
+    {
+      "name": "lint",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-4/lint.log",
+      "durationMs": 299
+    },
+    {
+      "name": "typecheck",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-4/typecheck.log",
+      "durationMs": 2170
+    },
+    {
+      "name": "test",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-4/test.log",
+      "durationMs": 1032,
+      "tests": 97
+    },
+    {
+      "name": "test:semantic",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-4/test-semantic.log",
+      "durationMs": 393,
+      "tests": 37
+    },
+    {
+      "name": "build",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-4/build.log",
+      "durationMs": 6392
+    },
+    {
+      "name": "test:build",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-4/test-build.log",
+      "durationMs": 365,
+      "tests": 9
+    },
+    {
+      "name": "test:server",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-4/test-server.log",
+      "durationMs": 140,
+      "tests": 4
+    },
+    {
+      "name": "assets:validate-class-skills",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-4/assets-validate-class-skills.log",
+      "durationMs": 252
+    }
+  ]
+}

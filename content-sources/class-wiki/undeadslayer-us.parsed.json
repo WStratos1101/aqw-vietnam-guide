@@ -1,0 +1,128 @@
+{
+  "url": "https://aqwwiki.wikidot.com/undeadslayer-ac",
+  "sourceHash": "af8c6ac0bb885d02e906da1f876ea22c3876374708be83061b031899610ac11e",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. When attacking undead you gain spirit power. Lasts 20 seconds if not restacked and stacks to 200.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undeadslayer-ac",
+      "sourceHash": "af8c6ac0bb885d02e906da1f876ea22c3876374708be83061b031899610ac11e",
+      "evidence": "Auto Attack Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. When attacking undead you gain spirit power. Lasts 20 seconds if not restacked and stacks to 200."
+    },
+    {
+      "officialName": "Exorcise",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "A powerful spirit attack, damage enhanced by spirit power. Deals 150% more damage against Undead. Hits up to 4 targets.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill65.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undeadslayer-ac",
+      "sourceHash": "af8c6ac0bb885d02e906da1f876ea22c3876374708be83061b031899610ac11e",
+      "evidence": "Exorcise Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 2 Seconds Type: Physical Range: A long range attack that deals damage to 4 hostile targets. Description: A powerful spirit attack, damage enhanced by spirit power. Deals 150% more damage against Undead. Hits up to 4 targets. Note: Deals 100% weapon damage to Non-Undead targets."
+    },
+    {
+      "officialName": "Spirit of Healing",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "10",
+      "skillType": "Physical",
+      "target": "A short range skill that heals yourself.",
+      "officialDescription": "Heal yourself with spirit power. If you have more than 4 stacks of Spirit Power, increases the healing amount up to 4 times at 64 stacks.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill01.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undeadslayer-ac",
+      "sourceHash": "af8c6ac0bb885d02e906da1f876ea22c3876374708be83061b031899610ac11e",
+      "evidence": "Spirit of Healing Rank Needed: 2 Mana Cost: 20 Mana Cooldown: 10 Seconds Type: Physical Range: A short range skill that heals yourself. Description: Heal yourself with spirit power. If you have more than 4 stacks of Spirit Power, increases the healing amount up to 4 times at 64 stacks. Note: Heal is based on 200% weapon damage."
+    },
+    {
+      "officialName": "Vorpal Strike",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "5",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A very powerful spirit attack, damage enhanced by spirit power. Deals 150% more damage against Undead.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill19.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undeadslayer-ac",
+      "sourceHash": "af8c6ac0bb885d02e906da1f876ea22c3876374708be83061b031899610ac11e",
+      "evidence": "Vorpal Strike Rank Needed: 3 Mana Cost: 10 Mana Cooldown: 5 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A very powerful spirit attack, damage enhanced by spirit power. Deals 150% more damage against Undead. Note: Deals 125% weapon damage."
+    },
+    {
+      "officialName": "Rejuvenation",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases Endurance by 25%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undeadslayer-ac",
+      "sourceHash": "af8c6ac0bb885d02e906da1f876ea22c3876374708be83061b031899610ac11e",
+      "evidence": "Rejuvenation Rank Needed: 4 Type: Passive Ability Description: Increases Endurance by 25% Note: Endurance is 20%."
+    },
+    {
+      "officialName": "Blessed Speed Burst",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increases haste by 10% to quickly defeat undead enemies.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undeadslayer-ac",
+      "sourceHash": "af8c6ac0bb885d02e906da1f876ea22c3876374708be83061b031899610ac11e",
+      "evidence": "Blessed Speed Burst Rank Needed: 4 Type: Passive Ability Description: Increases haste by 10% to quickly defeat undead enemies."
+    },
+    {
+      "officialName": "Dragon Lance",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "30",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "The Undead Slayer's ultimate attack. Requires at least 20 Spirit Power to use and deals more damage with more stacks of Spirit Power. Consumes all Spirit Power when used.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill73.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undeadslayer-ac",
+      "sourceHash": "af8c6ac0bb885d02e906da1f876ea22c3876374708be83061b031899610ac11e",
+      "evidence": "Dragon Lance Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 30 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: The Undead Slayer's ultimate attack. Requires at least 20 Spirit Power to use and deals more damage with more stacks of Spirit Power. Consumes all Spirit Power when used."
+    },
+    {
+      "officialName": "Spirit Surge",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Grants a rare chance to completely fill your spirit power.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/undeadslayer-ac",
+      "sourceHash": "af8c6ac0bb885d02e906da1f876ea22c3876374708be83061b031899610ac11e",
+      "evidence": "Spirit Surge Rank Needed: 10 Type: Passive Ability Description: Grants a rare chance to completely fill your spirit power."
+    }
+  ],
+  "portraitUrl": "https://imgur.com/AtzGEq8.png",
+  "sameSkillVariants": [
+    {
+      "name": "UndeadSlayer (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/undeadslayer-0-ac"
+    }
+  ],
+  "location": "Locations:\n\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nGame Menu\nNorthpointe\n\n\nDoomwood Rep - Lightguard Keep\nMember Class Shop - Game Menu\nPaladin (Shop) - Lightguard Keep\nPaladin (Shop) - Necropolis\n\nPrice: 2,000 AC"
+}

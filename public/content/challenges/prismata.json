@@ -1,0 +1,978 @@
+{
+  "challengeContent": true,
+  "id": "prismata",
+  "name": "Prismata",
+  "type": "other_challenge",
+  "map": "archmage",
+  "levelRequirement": 65,
+  "partySize": 7,
+  "description": "Đây là một bản “reskin” của Ultra Fire Orb khi chỉ khác mỗi ngoại hình và cái tên, còn cơ chế thì không khác gì. Nhưng vì không có Ultra Avatar Tyndarius, nên cách đánh cũng dễ dàng hơn nhiều. Item drop từ nó là yêu cầu để hoàn thành được:\u000b- “Archmage's Ascension” quest để farm Archmage Class.",
+  "bodyUrl": "/content/challenges/prismata.json",
+  "href": "/other-challenges/prismata",
+  "image": "monster-prismata",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "prismata-stage-1",
+      "name": "Prismata",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Prismata",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "prismata-0",
+            "canonicalName": "Prismata",
+            "role": "Monster",
+            "level": 255,
+            "maxHp": 500000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/prismata"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "prismata-0-auto-attack-0",
+            "monsterId": "prismata-0",
+            "name": "Auto Attack",
+            "type": "Physical",
+            "damage": "1125-1375",
+            "damageType": "Physical",
+            "cooldown": "2.25 seconds",
+            "targets": "1",
+            "activation": "",
+            "playerEffects": [
+              "Luôn trúng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/prismata"
+          },
+          {
+            "id": "prismata-0-charge-attack-1",
+            "monsterId": "prismata-0",
+            "name": "Charge Attack",
+            "type": "True Damage",
+            "damage": "675-825",
+            "damageType": "True Damage",
+            "cooldown": "20 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "The Charge time for this skill is 3 giây.",
+              "Áp Vulnerable lên người chơis upon hit, tăng All In 50% trong 10 giây",
+              "Áp Melting Armor lên bản thân when it begins the charge, tăng All In 200% trong 10 giây",
+              "Plays message “Prismata's armor softens as it charges up for an attack!”"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/prismata"
+          },
+          {
+            "id": "prismata-0-melting-2",
+            "monsterId": "prismata-0",
+            "name": "Melting",
+            "type": "Magical",
+            "damage": "1125-1375",
+            "damageType": "Magical",
+            "cooldown": "5 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp Melting lên người chơis, tăng All In và giảm Dodge 25% per stack, lasting 25 giây, cộng dồn không giới hạn.",
+              "Luôn trúng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/prismata"
+          },
+          {
+            "id": "prismata-0-absorbing-3",
+            "monsterId": "prismata-0",
+            "name": "Absorbing",
+            "type": "Status",
+            "damageType": "Status",
+            "cooldown": "10 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Áp one stack of Absorbing Power và Rising Defence lên bản thân per player in combat. Absorbing Power increases All Out 50% per stack, lasts 30 giây, cộng dồn không giới hạn. Rising Defence decreases All In 25% per stack, lasts 30 giây, cộng dồn không giới hạn."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/prismata"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là một bản “reskin” của Ultra Fire Orb khi chỉ khác mỗi ngoại hình và cái tên, còn cơ chế thì không khác gì. Nhưng vì không có Ultra Avatar Tyndarius, nên cách đánh cũng dễ dàng hơn nhiều. Item drop từ nó là yêu cầu để hoàn thành được:\u000b- “Archmage's Ascension” quest để farm Archmage Class.",
+        "- “Lumina Elementi” quest để farm đồ Archmage có Boosts.",
+        "Boss này nằm ở map /join archmage - Room limit: 7",
+        "Cần đạt ít nhất lvl 65 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 500,000",
+        "◆ Shield giúp giảm sát thương trên 150k (hệ số 0.5).",
+        "◆ Auto-Attack mỗi 2.25s gây Phys DMG từ 1.1k đến 1.3k.",
+        "◆ Mỗi 20s, sử dụng Charge Attack trong 3s rồi gây True DMG từ 675 đến 825.",
+        "→ Player bị tăng 50% All In và bản thân cũng bị tăng 200% All In trong 10s.",
+        "◆ Mỗi 5s, sử dụng Melting gây Magi DMG từ 1.1k đến 1.3k.",
+        "→ Player bị tăng 25% All In và giảm 25% Dodge trong 25s, stack vô hạn.",
+        "→ Cần kill Prismata nhanh để tránh Melting kéo dài nếu không chết cả team.",
+        "◆ Mỗi 10s, sử dụng Absorbing lên bản thân.",
+        "→ Tăng 50% All Out và giảm 25% All In cho bản thân với mỗi player trúng đòn trong 30s, stack vô hạn."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Prismata cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 5 người bên dưới thì có thể giết nó một cách đơn giản.",
+        "Team 5 người:\tVHL, LR, AP, LoO, SC/IT/LH/DLH",
+        "Team 6 người:\t2 VHL, LR, AP, LoO, SC/IT/LH/DLH",
+        "hoặc\tVHL, CAv, LR, AP, LoO, SC/IT/LH/DLH",
+        "hoặc\t2 Shaman, LR, LoO, SC/IT/AF/LH/DLH, FB",
+        "Team 7 người:\t2 VHL, LR, AP, LoO, SC/IT, LH/DLH/FB",
+        "hoặc\t2 VHL, LR, QCM/VDK, AP, LoO, SC/IT/LH/DLH",
+        "hoặc\tVHL, CAv, LR, QCM/VDK, AP, LoO, SC/IT/LH/DLH",
+        "hoặc\t2 Shaman, LR, QCM/VDK, LoO, SC/IT/AF/LH/DLH, FB",
+        "hoặc\t3 Shaman, LR, LoO, SC/IT/AF/LH/DLH, FB",
+        "Note: Boss có tag Elemental, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Elemental để tối đa sát thương."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-420551",
+          "runs": [
+            {
+              "text": "Đây là một bản “reskin” của "
+            },
+            {
+              "text": "Ultra Fire Orb"
+            },
+            {
+              "text": " khi chỉ khác mỗi ngoại hình và cái tên, còn cơ chế thì không khác gì. Nhưng vì không có Ultra Avatar Tyndarius, nên cách đánh cũng dễ dàng hơn nhiều. Item drop từ nó là yêu cầu để hoàn thành được:\u000b- “"
+            },
+            {
+              "text": "Archmage's Ascension",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest để farm "
+            },
+            {
+              "text": "Archmage Class",
+              "href": "/farm/archmage-am"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-420846",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Lumina Elementi",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest để farm đồ "
+            },
+            {
+              "text": "Archmage có Boosts",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-420904",
+          "runs": [
+            {
+              "text": "Boss này nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join archmage",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/archmage-location"
+            },
+            {
+              "text": " - Room limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-420954",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 65",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421011",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421019",
+          "runs": [
+            {
+              "text": "◆ Total HP: 500,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421039",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 150k "
+            },
+            {
+              "text": "(hệ số 0.5)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421092",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.25s gây Phys DMG từ 1.1k đến 1.3k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421147",
+          "runs": [
+            {
+              "text": "◆ Mỗi 20s, sử dụng Charge Attack trong 3s rồi gây True DMG từ 675 đến 825.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421222",
+          "runs": [
+            {
+              "text": "→ Player bị tăng 50% All In và bản thân cũng bị tăng 200% All In trong 10s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421298",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sử dụng Melting gây Magi DMG từ 1.1k đến 1.3k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421355",
+          "runs": [
+            {
+              "text": "→ Player bị tăng 25% All In và giảm 25% Dodge trong 25s, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421426",
+          "runs": [
+            {
+              "text": "→ Cần kill Prismata nhanh để tránh Melting kéo dài nếu không chết cả team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421501",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Absorbing lên bản thân.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421544",
+          "runs": [
+            {
+              "text": "→ Tăng 50% All Out và giảm 25% All In cho bản thân với mỗi player trúng đòn trong 30s, stack vô hạn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421646",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421658",
+          "runs": [
+            {
+              "text": "Nhìn chung Prismata cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 5 người bên dưới thì có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421818",
+          "runs": [
+            {
+              "text": "Team 5 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "VHL, LR, AP, LoO, SC/IT/LH/DLH\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421863",
+          "runs": [
+            {
+              "text": "Team 6 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "2 VHL, LR, AP, LoO, SC/IT/LH/DLH\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421910",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "VHL, CAv, LR, AP, LoO, SC/IT/LH/DLH\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421952",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Shaman, LR, LoO, SC/IT/AF/LH/DLH, FB\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-421997",
+          "runs": [
+            {
+              "text": "Team 7 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "2 VHL, LR, AP, LoO, SC/IT, LH/DLH/FB\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422048",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 VHL, LR, QCM/VDK, AP, LoO, SC/IT/LH/DLH\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422096",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "VHL, CAv, LR, QCM/VDK, AP, LoO, SC/IT/LH/DLH\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422147",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "2 Shaman, LR, QCM/VDK, LoO, SC/IT/AF/LH/DLH, FB\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422201",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "3 Shaman, LR, LoO, SC/IT/AF/LH/DLH, FB\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-422246",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Boss có tag Elemental, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Elemental để tối đa sát thương.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-421818",
+      "runs": [
+        {
+          "text": "Team 5 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "VHL, LR, AP, LoO, SC/IT/LH/DLH\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-421863",
+      "runs": [
+        {
+          "text": "Team 6 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "2 VHL, LR, AP, LoO, SC/IT/LH/DLH\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-421910",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "VHL, CAv, LR, AP, LoO, SC/IT/LH/DLH\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-421952",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 Shaman, LR, LoO, SC/IT/AF/LH/DLH, FB\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-421997",
+      "runs": [
+        {
+          "text": "Team 7 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "2 VHL, LR, AP, LoO, SC/IT, LH/DLH/FB\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-422048",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 VHL, LR, QCM/VDK, AP, LoO, SC/IT/LH/DLH\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-422096",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "VHL, CAv, LR, QCM/VDK, AP, LoO, SC/IT/LH/DLH\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-422147",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "2 Shaman, LR, QCM/VDK, LoO, SC/IT/AF/LH/DLH, FB\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-422201",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "3 Shaman, LR, LoO, SC/IT/AF/LH/DLH, FB\n",
+          "bold": true
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": [
+    {
+      "id": "source-team-5",
+      "name": "Team 5 người:\tVHL, LR, AP, LoO, SC/IT/LH/DLH",
+      "assignments": [
+        {
+          "id": "team-1-slot-1-1",
+          "primaryClass": {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-3-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-4-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-1-slot-5-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "legendary-hero",
+              "name": "Legendary Hero",
+              "abbreviation": "LH",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "dark-legendary-hero",
+              "name": "Dark Legendary Hero",
+              "abbreviation": "DLH",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-6",
+      "name": "Team 6 người:\t2 VHL, LR, AP, LoO, SC/IT/LH/DLH",
+      "assignments": [
+        {
+          "id": "team-2-slot-1-1",
+          "primaryClass": {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-1-2",
+          "primaryClass": {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-3-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-4-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-2-slot-5-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "legendary-hero",
+              "name": "Legendary Hero",
+              "abbreviation": "LH",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "dark-legendary-hero",
+              "name": "Dark Legendary Hero",
+              "abbreviation": "DLH",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    },
+    {
+      "id": "source-team-7",
+      "name": "Team 7 người:\t2 VHL, LR, AP, LoO, SC/IT, LH/DLH/FB",
+      "assignments": [
+        {
+          "id": "team-3-slot-1-1",
+          "primaryClass": {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-1-2",
+          "primaryClass": {
+            "classId": "void-highlord",
+            "name": "Void Highlord",
+            "abbreviation": "VHL",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-2-1",
+          "primaryClass": {
+            "classId": "legion-revenant",
+            "name": "Legion Revenant",
+            "abbreviation": "LR",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-3-1",
+          "primaryClass": {
+            "classId": "archpaladin",
+            "name": "ArchPaladin",
+            "abbreviation": "AP",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-4-1",
+          "primaryClass": {
+            "classId": "lord-of-order",
+            "name": "Lord of Order",
+            "abbreviation": "LoO",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": []
+        },
+        {
+          "id": "team-3-slot-5-1",
+          "primaryClass": {
+            "classId": "stonecrusher",
+            "name": "StoneCrusher",
+            "abbreviation": "SC",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "infinity-titan",
+              "name": "Infinity Titan",
+              "abbreviation": "IT",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        },
+        {
+          "id": "team-3-slot-6-1",
+          "primaryClass": {
+            "classId": "legendary-hero",
+            "name": "Legendary Hero",
+            "abbreviation": "LH",
+            "enhancement": [],
+            "instructions": [],
+            "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+          },
+          "alternativeClasses": [
+            {
+              "classId": "dark-legendary-hero",
+              "name": "Dark Legendary Hero",
+              "abbreviation": "DLH",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            },
+            {
+              "classId": "frostval-barbarian",
+              "name": "Frostval Barbarian",
+              "abbreviation": "FB",
+              "enhancement": [],
+              "instructions": [],
+              "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+    }
+  ]
+}

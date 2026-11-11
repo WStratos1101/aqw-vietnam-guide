@@ -1,0 +1,483 @@
+{
+  "challengeContent": true,
+  "id": "commander-gallaeon",
+  "name": "Commander Gallaeon",
+  "type": "other_challenge",
+  "map": "doompirate",
+  "levelRequirement": 65,
+  "partySize": 7,
+  "description": "Tuy có nhiều điểm khá giống với Ultra Engineer nhưng có chế dễ hơn nhiều. Temp item drop từ nó là yêu cầu để hoàn thành được “Dead Men's Jumping” quest giúp:",
+  "bodyUrl": "/content/challenges/commander-gallaeon.json",
+  "href": "/other-challenges/commander-gallaeon",
+  "image": "monster-commander-gallaeon",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "commander-gallaeon-stage-1",
+      "name": "Commander Gallaeon",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Commander Gallaeon",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "commander-gallaeon-0",
+            "canonicalName": "Commander Gallaeon",
+            "role": "Monster",
+            "level": 70,
+            "maxHp": 1000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/commander-gallaeon"
+          },
+          {
+            "id": "commander-gallaeon-1",
+            "canonicalName": "Hydra Crew",
+            "role": "Monster",
+            "level": 70,
+            "maxHp": 100000,
+            "count": 8,
+            "source": "https://aqwwiki.wikidot.com/hydra-crew"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "commander-gallaeon-0-auto-attack-0",
+            "monsterId": "commander-gallaeon-0",
+            "name": "Auto Attack",
+            "type": "Physical",
+            "damage": "110-140",
+            "damageType": "Physical",
+            "cooldown": "1.5 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Defenses Shredded lên người chơi, giảm kháng sát thương 5% trong 10 giây, cộng dồn tối đa 100.",
+              "Áp Shield Shattered, removing any Arcane Shield auras that are active on players.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/commander-gallaeon"
+          },
+          {
+            "id": "commander-gallaeon-0-typhoon-1",
+            "monsterId": "commander-gallaeon-0",
+            "name": "Typhoon",
+            "type": "Physical",
+            "damage": "160-200",
+            "damageType": "Physical",
+            "cooldown": "5 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Water on the Deck lên người chơi, giảm Dodge 10% trong 10 giây, cộng dồn tối đa 100.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/commander-gallaeon"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Tuy có nhiều điểm khá giống với Ultra Engineer nhưng có chế dễ hơn nhiều. Temp item drop từ nó là yêu cầu để hoàn thành được “Dead Men's Jumping” quest giúp:",
+        "- Merge DoomPirate House.",
+        "- Merge DoomTech DoomKnight Set (dùng trong farm Verus DoomKnight Class).",
+        "Boss này nằm ở map /join doompirate - Room limit: 7",
+        "Cần đạt ít nhất lvl 65 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 1,000,000 (Gallaeon) và 100,000 (Hydra Crew)",
+        "◆ Shield giúp giảm sát thương trên 50k (hệ số 0.5, chỉ với Gallaeon).",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt (chỉ với Gallaeon).",
+        "◆ Chừng nào mà 8 Hydra Crews còn sống thì Gallaeon sẽ không nhận DMG.",
+        "→ Hydra Crew gây DMG từ 134 đến 160. Đồng thời chúng đều không có Shield.",
+        "→ Cần giết Hydra Crew nhanh nhất có thể để tránh trận đánh bị kéo dài gây bất lợi.",
+        "→ Sẽ hồi sinh sau khi Gallaeon bị đánh bại hoặc tất cả players trong trận bị giết chết.",
+        "◆ Auto-Attack của Gallaeon mỗi 1.5s gây Phys DMG từ 110 đến 140.",
+        "→ Players bị tăng 5% All In trong 10s, stack đến 100.",
+        "◆ Mỗi 5s, sử dụng Typhoon gây Phys DMG từ 160 đến 200.",
+        "→ Player bị giảm 10% Dodge trong 10s, stack đến 100."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Commander Gallaeon cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 4 người thì có thể giết nó một cách đơn giản.",
+        "→ Nếu Solo, thì bạn có thể sử dụng LR và trang bị Elysium + Wizard class/helm + Penitence, lưu ý sau mỗi lần giết được Commander Gallaeon thì rời khỏi Screen này và đổi qua lại class để loại bỏ toàn bộ debuff rồi mới quay lại đánh.",
+        "→ Nếu có Team, thì sử dụng các Class có thể gây sát thương AoE để đánh như AP, AM, LR, DT/EDoT, Shaman, NCM, FB, AF, BB, ... Nên có AP trong Team để đảm nhận việc buff máu và debuff quái giúp tăng khả năng sống sót."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-415738",
+          "runs": [
+            {
+              "text": "Tuy có nhiều điểm khá giống với "
+            },
+            {
+              "text": "Ultra Engineer"
+            },
+            {
+              "text": " nhưng có chế dễ hơn nhiều. Temp item drop từ nó là yêu cầu để hoàn thành đư"
+            },
+            {
+              "text": "ợc “"
+            },
+            {
+              "text": "Dead Men's Jumping",
+              "href": "http://aqwwiki.wikidot.com/dusk-s-quests"
+            },
+            {
+              "text": "” quest giúp:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415896",
+          "runs": [
+            {
+              "text": "- Merge "
+            },
+            {
+              "text": "DoomPirate House",
+              "href": "http://aqwwiki.wikidot.com/doompirate-house"
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415922",
+          "runs": [
+            {
+              "text": "- Merge "
+            },
+            {
+              "text": "DoomTech DoomKnight Set",
+              "href": "http://aqwwiki.wikidot.com/doomtech-doomknight"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(dùng trong farm ",
+              "italic": true
+            },
+            {
+              "text": "Verus DoomKnight",
+              "italic": true,
+              "href": "/farm/verus-doomknight-vdk"
+            },
+            {
+              "text": " Class)",
+              "italic": true
+            },
+            {
+              "text": "."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-415997",
+          "runs": [
+            {
+              "text": "Boss này nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join doompirate",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/doom-pirate"
+            },
+            {
+              "text": " - Room limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416049",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 65",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416106",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416114",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,000,000 "
+            },
+            {
+              "text": "(Gallaeon)",
+              "italic": true
+            },
+            {
+              "text": " và 100,000 "
+            },
+            {
+              "text": "(Hydra Crew)\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416171",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 50k "
+            },
+            {
+              "text": "(hệ số 0.5, chỉ với Gallaeon)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416241",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt "
+            },
+            {
+              "text": "(chỉ với Gallaeon)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416298",
+          "runs": [
+            {
+              "text": "◆ Chừng nào mà 8 Hydra Crews còn sống thì Gallaeon sẽ không nhận DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416368",
+          "runs": [
+            {
+              "text": "→ Hydra Crew gây DMG từ 134 đến 160. Đồng thời chúng đều không có Shield.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416442",
+          "runs": [
+            {
+              "text": "→ Cần giết Hydra Crew nhanh nhất có thể để tránh trận đánh bị kéo dài gây bất lợi.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416525",
+          "runs": [
+            {
+              "text": "→ Sẽ hồi sinh sau khi Gallaeon bị đánh bại hoặc tất cả players trong trận bị giết chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416613",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack của Gallaeon mỗi 1.5s gây Phys DMG từ 110 đến 140.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416678",
+          "runs": [
+            {
+              "text": "→ Players bị tăng 5% All In trong 10s, stack đến 100.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416732",
+          "runs": [
+            {
+              "text": "◆ Mỗi 5s, sử dụng Typhoon gây Phys DMG từ 160 đến 200.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416787",
+          "runs": [
+            {
+              "text": "→ Player bị giảm 10% Dodge trong 10s, stack đến 100.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416841",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-416853",
+          "runs": [
+            {
+              "text": "Nhìn chung Commander Gallaeon cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 4 người thì có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-417013",
+          "runs": [
+            {
+              "text": "→ Nếu Solo, thì bạn có thể sử dụng "
+            },
+            {
+              "text": "LR",
+              "bold": true
+            },
+            {
+              "text": " và trang bị Elysium + Wizard class/helm + Penitence, lưu ý sau mỗi lần giết được Commander Gallaeon thì rời khỏi Screen này và đổi qua lại class để loại bỏ toàn bộ debuff rồi mới quay lại đánh.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-417245",
+          "runs": [
+            {
+              "text": "→ Nếu có Team, thì sử dụng các Class có thể gây sát thương AoE để đánh như "
+            },
+            {
+              "text": "AP, AM, LR, DT/EDoT, Shaman, NCM, FB, AF, BB, ...",
+              "bold": true
+            },
+            {
+              "text": " Nên có AP trong Team để đảm nhận việc buff máu và debuff quái giúp tăng khả năng sống sót.\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-416241",
+      "runs": [
+        {
+          "text": "◆ Miễn nhiễm với Stun và Focus/Taunt "
+        },
+        {
+          "text": "(chỉ với Gallaeon)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-416525",
+      "runs": [
+        {
+          "text": "→ Sẽ hồi sinh sau khi Gallaeon bị đánh bại hoặc tất cả players trong trận bị giết chết.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-417245",
+      "runs": [
+        {
+          "text": "→ Nếu có Team, thì sử dụng các Class có thể gây sát thương AoE để đánh như "
+        },
+        {
+          "text": "AP, AM, LR, DT/EDoT, Shaman, NCM, FB, AF, BB, ...",
+          "bold": true
+        },
+        {
+          "text": " Nên có AP trong Team để đảm nhận việc buff máu và debuff quái giúp tăng khả năng sống sót.\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": []
+}

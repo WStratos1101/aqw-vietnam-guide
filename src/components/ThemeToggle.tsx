@@ -1,0 +1,3 @@
+import {useEffect,useState} from 'react';
+import {Sun,Moon} from 'lucide-react';
+export function ThemeToggle(){const [theme,setTheme]=useState('dark');useEffect(()=>{setTheme(document.documentElement.dataset.theme||'dark');},[]);function toggle(){const next=theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;setTheme(next);try{localStorage.setItem('aqw-theme',next);}catch{/* Theme remains usable when storage is denied. */}}return <button className="theme-toggle" onClick={toggle} aria-label={theme==='dark'?'Chuyển sang giao diện sáng':'Chuyển sang giao diện tối'} title={theme==='dark'?'Giao diện sáng':'Giao diện tối'}>{theme==='dark'?<Sun size={20}/>:<Moon size={20}/>}</button>;}

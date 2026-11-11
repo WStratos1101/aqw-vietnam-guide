@@ -1,0 +1,189 @@
+{
+  "url": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+  "text": ">\nLocation:\nUltra Darkon\nLevel:\n22\nDifficulty:\n3 stars\nTotal HP:\n22,222,222\nAttacks:\n+ Auto Attack\n- Auto Attack\nAuto Attack\nDamage\n100 (before Crit Damage modifiers)\nAnimations\n???\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nAlways crits.\nIgnores focus.\nReduces the player's Dodge by 500%.\n+ The Cycle's End\n- The Cycle's End\nThe Cycle's End\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n30 seconds\nMessage\nDarkon's defenses decrease as The Fool leaves his body.\nAoE\nSelf-target\nType\n{$type}\nNotes\nApplies The Cycle's End to Darkon, increasing his incoming physical and magical damage by 10%, stacks to 10.\n+ End of the World ➞ Curtain Call\n- End of the World ➞ Curtain Call\nEnd of the World\nDamage\n{$damage}\nAnimations\n???\nCooldown\n{$cooldown}\nMessage\nThe time has come for the curtain to rise upon a new dawn. May you finally rest.\nAoE\n{$aoe}\nType\nCharge\nNotes\nWill occur after 4 minutes and 30 seconds have passed.\nCharges for 3 seconds.\nCurtain Call is used after End of the World charges.\nCurtain Call\nDamage\n100,000,337\nAnimations\n???\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nIgnores focus.\nApplies Curtain Call, a fatal DoT.\n+ Overture\n- Overture\nOverture\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe curtain rises on our final performance.\nAoE\n4\nType\n{$type}\nNotes\nUsed once at the beginning of the fight, applies Do Dawn and Overture to Darkon.\nWhile Overture is active, Auto Attack applies Melancholic Melodies to the player, reducing Hit Chance by 50%.\n+ Special 1\n- Special 1\nSpecial 1\nDamage\n90% of current HP\nAnimations\n???\nCooldown\n12 seconds\nMessage\n{$message}\nAoE\n1\nType\nTrue Damage\nNotes\nAlways hits, never crits.\nWhile Do Dawn is active, applies these auras to Darkon in the following order, but only one per every use of the skill: Re, Mi, Fa, So, La, and Ti. Each aura increases his Crit Damage by an additional 100%. If Ti is active, Do Dusk is applied, increasing his Crit Damage by 50,000%.\n+ Special 2\n- Special 2\nSpecial 2\nDamage\n150 (before Crit Damage modifiers)\nAnimations\n???\nCooldown\n5 seconds\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nWhile Overture is active, applies Elegy of Madness to the player for 8 seconds. If Elegy of Madness is active, applies Captive Audience, a 4 second stun.\nAlways crits.\n+ Recitative\n- Recitative\nRecitative\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nPrepare for the next act!\nAoE\n4\nType\n{$type}\nNotes\nUsed once when Darkon's HP reaches 70%.\nRemoves all active auras from Overture on both Darkon and the player.\nIncreases Darkon's Crit Damage by 500%.\nWhile active, Auto Attack applies Realm of the Arcana to the player, reducing Haste by 6%, stacks to 22.\n+ Special 1\n- Special 1\nSpecial 1\nDamage\n90% of current HP\nAnimations\n???\nCooldown\n12 seconds\nMessage\n{$message}\nAoE\n1\nType\nTrue Damage\nNotes\nAlways hits, never crits.\nWhile Recitative is active, applies Child of the Empress to Darkon, increasing his Crit Damage by 50%, stacks to 22.\n+ Special 2\n- Special 2\nSpecial 2\nDamage\n150 (before Crit Damage modifiers)\nAnimations\n???\nCooldown\n5 seconds\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nWhile Recitative is active, applies Seed Planted to the player for 8 seconds, removing any stacks of Realm of the Arcana. If Seed Planted is active, applies Grown to the player, increasing their Crit Chance by 1000 but reducing their Crit Damage by 1000% for 8 seconds. If Grown is active, applies Harvested to the player, a fatal DoT.\nAlways crits.\n+ Aria\n- Aria\nAria\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nNo… It can't end like this…\nAoE\n4\nType\nPhysical\nNotes\nUsed once when Darkon's HP reaches 20%.\nDeals devastating damage, ignoring focus. Cannot crit.\nHeals Darkon to 90% of his max HP, can't be Decayed.\nRemoves all active auras from Recitative on both Darkon and the player.\nApplies A Major, increasing Darkon's Dodge by 5000% for 10 seconds.\nApplies B Minor, reducing Darkon's incoming damage by 200% for 20 seconds.\nApplies C Minor, increasing Darkon's Crit Damage by 300% for 30 seconds.\nApplies B Major, reducing Darkon's incoming physical, magical, and all damage taken by 200% for 50 seconds.\nApplies C Major, increasing Darkon's Crit Damage and outgoing damage by 1000% for 50 seconds.\nApplies Aria, which reduces Darkon's Crit Damage and outgoing damage to 0 after C Major fades and increases his incoming damage by 200% after B Major fades.\nWhile active, Auto Attack applies Requiem for the Wicked to the player, reducing incoming Healing by 80%.\n+ Special 1\n- Special 1\nSpecial 1\nDamage\n90% of current HP\nAnimations\n???\nCooldown\n12 seconds\nMessage\n{$message}\nAoE\n1\nType\nTrue Damage\nNotes\nAlways hits, never crits.\nWhile Aria is active, applies The Last Symphony to the player, an 8 second DoT.\n+ Special 2\n- Special 2\nSpecial 2\nDamage\n150 (before Crit Damage modifiers)\nAnimations\n???\nCooldown\n5 seconds\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nWhile Aria is active, applies Dirge of Astravia to the player, increasing mana costs by 25% for 12 seconds, stacks to 22.\nAlways crits.\nAbilities:\nBoss Shield:\nDamage over 122,222 dealt to Darkon the Conductor is reduced by raising the difference to the exponent 0.8 (but is never reduced below 122,222).\nCannot be stunned.\nExeunt:\nWhen Darkon the Conductor kills a player, he recovers 750,000 HP, accompanied by the message “A wonderful performance. But it's time to leave the stage.”\nBase Stats:\nCrit Chance increased\n800% Crit damage\n200% DoT resistance\nHit Chance increased\nTemporary Items Dropped:\nDarkon the Conductor Defeated (Used in the '\nDarkon, the Conductor\n' quest)\nItems Dropped:\nTreasure Chest (Misc)\nNotes:\nHas a 30 second respawn timer.\nAlso see:\nDarkon (Monster)\n.\nEncore Darkon\n.\nThanks to Crispy Water.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n3star\n_d\n_lv22\nboss\nbossshield\nchallenge\ndemon\nfreeplayer\nhorns\nimmune\nmonster",
+  "images": [
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+      "alt": "BossShield.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://i.imgur.com/hLe6GMx.png",
+      "alt": "hLe6GMx.png"
+    }
+  ],
+  "links": [
+    {
+      "url": "/ultra-darkon",
+      "index": 2
+    },
+    {
+      "url": "javascript:;",
+      "index": 10
+    },
+    {
+      "url": "javascript:;",
+      "index": 11
+    },
+    {
+      "url": "javascript:;",
+      "index": 29
+    },
+    {
+      "url": "javascript:;",
+      "index": 30
+    },
+    {
+      "url": "javascript:;",
+      "index": 46
+    },
+    {
+      "url": "javascript:;",
+      "index": 47
+    },
+    {
+      "url": "javascript:;",
+      "index": 81
+    },
+    {
+      "url": "javascript:;",
+      "index": 82
+    },
+    {
+      "url": "javascript:;",
+      "index": 99
+    },
+    {
+      "url": "javascript:;",
+      "index": 100
+    },
+    {
+      "url": "javascript:;",
+      "index": 117
+    },
+    {
+      "url": "javascript:;",
+      "index": 118
+    },
+    {
+      "url": "javascript:;",
+      "index": 135
+    },
+    {
+      "url": "javascript:;",
+      "index": 136
+    },
+    {
+      "url": "javascript:;",
+      "index": 155
+    },
+    {
+      "url": "javascript:;",
+      "index": 156
+    },
+    {
+      "url": "javascript:;",
+      "index": 173
+    },
+    {
+      "url": "javascript:;",
+      "index": 174
+    },
+    {
+      "url": "javascript:;",
+      "index": 191
+    },
+    {
+      "url": "javascript:;",
+      "index": 192
+    },
+    {
+      "url": "javascript:;",
+      "index": 218
+    },
+    {
+      "url": "javascript:;",
+      "index": 219
+    },
+    {
+      "url": "javascript:;",
+      "index": 236
+    },
+    {
+      "url": "javascript:;",
+      "index": 237
+    },
+    {
+      "url": "/la-s-quests#UltraDarkon",
+      "index": 267
+    },
+    {
+      "url": "/treasure-chest-misc",
+      "index": 270
+    },
+    {
+      "url": "/darkon-monster",
+      "index": 274
+    },
+    {
+      "url": "/encore-darkon",
+      "index": 276
+    },
+    {
+      "url": "http://www.aq.com/",
+      "index": 280
+    },
+    {
+      "url": "/system:page-tags/tag/3star#pages",
+      "index": 283
+    },
+    {
+      "url": "/system:page-tags/tag/_d#pages",
+      "index": 284
+    },
+    {
+      "url": "/system:page-tags/tag/_lv22#pages",
+      "index": 285
+    },
+    {
+      "url": "/system:page-tags/tag/boss#pages",
+      "index": 286
+    },
+    {
+      "url": "/system:page-tags/tag/bossshield#pages",
+      "index": 287
+    },
+    {
+      "url": "/system:page-tags/tag/challenge#pages",
+      "index": 288
+    },
+    {
+      "url": "/system:page-tags/tag/demon#pages",
+      "index": 289
+    },
+    {
+      "url": "/system:page-tags/tag/freeplayer#pages",
+      "index": 290
+    },
+    {
+      "url": "/system:page-tags/tag/horns#pages",
+      "index": 291
+    },
+    {
+      "url": "/system:page-tags/tag/immune#pages",
+      "index": 292
+    },
+    {
+      "url": "/system:page-tags/tag/monster#pages",
+      "index": 293
+    }
+  ],
+  "reviewedAt": "2026-11-08"
+}

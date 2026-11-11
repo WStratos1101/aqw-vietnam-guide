@@ -1,0 +1,131 @@
+{
+  "url": "https://aqwwiki.wikidot.com/troll-spellsmith-ac",
+  "sourceHash": "02f963e69b89426ac3a83d48a235bb308d3e09adfdcfbc4f799f5c57a383c779",
+  "entries": [
+    {
+      "officialName": "Spellsmith Blade",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Strike your target with a magic infused blade. Damage is dealt based on your Sigil stacks.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill110.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/troll-spellsmith-ac",
+      "sourceHash": "02f963e69b89426ac3a83d48a235bb308d3e09adfdcfbc4f799f5c57a383c779",
+      "evidence": "Spellsmith Blade Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Strike your target with a magic infused blade. Damage is dealt based on your Sigil stacks."
+    },
+    {
+      "officialName": "Energy Arc",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 4 hostile targets.",
+      "officialDescription": "Calls on the power of electricity to arc from one foe to the next, reducing the Haste of each foe hit by 7% for 10 seconds, stacks to 3.",
+      "notes": [
+        "Applies Energy Arc to the target, reduces Haste by 7% for 10 seconds.",
+        "Energy Arc reduces Haste up to 42%. First stack is 12%, second stack is 16% and last stack is 14%."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill46.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/troll-spellsmith-ac",
+      "sourceHash": "02f963e69b89426ac3a83d48a235bb308d3e09adfdcfbc4f799f5c57a383c779",
+      "evidence": "Energy Arc Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 4 hostile targets. Description: Calls on the power of electricity to arc from one foe to the next, reducing the Haste of each foe hit by 7% for 10 seconds, stacks to 3. Notes: Applies Energy Arc to the target, reduces Haste by 7% for 10 seconds. Energy Arc reduces Haste up to 42%. First stack is 12%, second stack is 16% and last stack is 14%."
+    },
+    {
+      "officialName": "Frostflame",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "10",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "A freezing fire that deals damage while applying Chilled and Seared. Chilled stuns your target for 2 seconds while Seared reduces your target's outgoing damage by 20% for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill72.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/troll-spellsmith-ac",
+      "sourceHash": "02f963e69b89426ac3a83d48a235bb308d3e09adfdcfbc4f799f5c57a383c779",
+      "evidence": "Frostflame Rank Needed: 2 Mana Cost: 25 Mana Cooldown: 10 Seconds Type: Magical Range: A long range attack that deals damage to 1 target. Description: A freezing fire that deals damage while applying Chilled and Seared. Chilled stuns your target for 2 seconds while Seared reduces your target's outgoing damage by 20% for 10 seconds."
+    },
+    {
+      "officialName": "Sigil Overload",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "16",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to yourself.",
+      "officialDescription": "Focus your energies into your Sigils. Applies Sigil Overload for 15 seconds, increasing your outgoing damage by 10%, but consumes any stacks of Spellsmith shield you have.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill03.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/troll-spellsmith-ac",
+      "sourceHash": "02f963e69b89426ac3a83d48a235bb308d3e09adfdcfbc4f799f5c57a383c779",
+      "evidence": "Sigil Overload Rank Needed: 3 Mana Cost: 0 Cooldown: 16 Seconds Type: Magical Range: A long range attack that deals damage to yourself. Description: Focus your energies into your Sigils. Applies Sigil Overload for 15 seconds, increasing your outgoing damage by 10%, but consumes any stacks of Spellsmith shield you have."
+    },
+    {
+      "officialName": "Empower",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Outgoing damage increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/troll-spellsmith-ac",
+      "sourceHash": "02f963e69b89426ac3a83d48a235bb308d3e09adfdcfbc4f799f5c57a383c779",
+      "evidence": "Empower Rank Needed: 4 Type: Passive Ability Description: Outgoing damage increased by 10%."
+    },
+    {
+      "officialName": "Shift Fate",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit Chance and Crit Chance increased by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/troll-spellsmith-ac",
+      "sourceHash": "02f963e69b89426ac3a83d48a235bb308d3e09adfdcfbc4f799f5c57a383c779",
+      "evidence": "Shift Fate Rank Needed: 4 Type: Passive Ability Description: Hit Chance and Crit Chance increased by 10%"
+    },
+    {
+      "officialName": "Spellsmith Sigil",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "5",
+      "skillType": "Magical",
+      "target": "A long range skill that heals yourself.",
+      "officialDescription": "Heals you for a small amount and applies Sigil, increasing your Crit Chance by 5% and causing your other skills to deal increased damage for each stack. Also applies Spellsmith Shield, increasing your Damage Resistance by 7%. Both effects stack to 5 and last 15 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill26.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/troll-spellsmith-ac",
+      "sourceHash": "02f963e69b89426ac3a83d48a235bb308d3e09adfdcfbc4f799f5c57a383c779",
+      "evidence": "Spellsmith Sigil Rank Needed: 5 Mana Cost: 20 Mana Cooldown: 5 Seconds Type: Magical Range: A long range skill that heals yourself. Description: Heals you for a small amount and applies Sigil, increasing your Crit Chance by 5% and causing your other skills to deal increased damage for each stack. Also applies Spellsmith Shield, increasing your Damage Resistance by 7%. Both effects stack to 5 and last 15 seconds."
+    },
+    {
+      "officialName": "Troll Control",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased by 10%. Spellsmith Sigil now has a small chance to apply Troll Control, increasing your haste by 100% for 20 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/troll-spellsmith-ac",
+      "sourceHash": "02f963e69b89426ac3a83d48a235bb308d3e09adfdcfbc4f799f5c57a383c779",
+      "evidence": "Troll Control Rank Needed: Rank 10 Type: Passive Ability Description: Haste increased by 10%. Spellsmith Sigil now has a small chance to apply Troll Control, increasing your haste by 100% for 20 seconds."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/DaWMlVa.png",
+  "sameSkillVariants": [
+    {
+      "name": "Troll Spellsmith (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/troll-spellsmith-0-ac"
+    }
+  ],
+  "location": "Locations:\n\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\n\nPrice: 2,000 AC"
+}

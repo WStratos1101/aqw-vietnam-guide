@@ -1,0 +1,124 @@
+{
+  "url": "https://aqwwiki.wikidot.com/prismatic-clawsuit-class",
+  "sourceHash": "b95f51a751712d4ddd2f1b9bb101782296523e0a421a06cd0d2df8883a898367",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Deals damage based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/prismatic-clawsuit-class",
+      "sourceHash": "b95f51a751712d4ddd2f1b9bb101782296523e0a421a06cd0d2df8883a898367",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Deals damage based on your weapon damage."
+    },
+    {
+      "officialName": "Nice",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "3",
+      "skillType": "Hybrid",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A weak attack that heals the caster slightly. Applies 'Nice' debuff, making the heal stronger, stacking up to 4 times. If 'Naughty' is present, it is replaced by Holiday Cheer, a HoT effect on the caster.",
+      "notes": [
+        "Holiday Cheer lasts for 8 seconds.",
+        "Holiday Cheer's HoT effect increases with each stack of Naughty."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill50.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/prismatic-clawsuit-class",
+      "sourceHash": "b95f51a751712d4ddd2f1b9bb101782296523e0a421a06cd0d2df8883a898367",
+      "evidence": "Nice Rank Needed: 1 Mana Cost: 20 Mana Cooldown: 3 Seconds Type: Hybrid Range: A short range attack that deals damage to 1 target. Description: A weak attack that heals the caster slightly. Applies 'Nice' debuff, making the heal stronger, stacking up to 4 times. If 'Naughty' is present, it is replaced by Holiday Cheer, a HoT effect on the caster. Notes: Holiday Cheer lasts for 8 seconds. Holiday Cheer's HoT effect increases with each stack of Naughty."
+    },
+    {
+      "officialName": "Naughty",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "3",
+      "skillType": "Hybrid",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A quick, damaging attack. Applies 'Naughty' debuff, making this attack stronger, stacking up to 4 times. If 'Nice' is present, it is replaced by Frostburn, a DoT effect on the target.",
+      "notes": [
+        "Frostburn lasts for 8 seconds",
+        "Frostburn's DoT effect increases with each stack of Nice."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill49.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/prismatic-clawsuit-class",
+      "sourceHash": "b95f51a751712d4ddd2f1b9bb101782296523e0a421a06cd0d2df8883a898367",
+      "evidence": "Naughty Rank Needed: 2 Mana Cost: 20 Mana Cooldown: 3 Seconds Type: Hybrid Range: A short range attack that deals damage to 1 target. Description: A quick, damaging attack. Applies 'Naughty' debuff, making this attack stronger, stacking up to 4 times. If 'Nice' is present, it is replaced by Frostburn, a DoT effect on the target. Notes: Frostburn lasts for 8 seconds Frostburn's DoT effect increases with each stack of Nice."
+    },
+    {
+      "officialName": "Check the List",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "40",
+      "cooldown": "6",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "If the target is Naughty, deals heavy damage and applies Lump of Coal, lowering target haste. If the target is Nice, applies Blitzen's Blitz, increasing caster haste and damage done while reducing damage taken. Does not consume 'Naughty' or 'Nice'.",
+      "notes": [
+        "Lump of Coal reduces Haste by 25% for 8 seconds.",
+        "Blitzen's Blitz increases Outgoing Damage by 50% and Haste by 20%, and reduces Incoming Damage by 20% for 8 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill51.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/prismatic-clawsuit-class",
+      "sourceHash": "b95f51a751712d4ddd2f1b9bb101782296523e0a421a06cd0d2df8883a898367",
+      "evidence": "Check the List Rank Needed: 3 Mana Cost: 40 Mana Cooldown: 6 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: If the target is Naughty, deals heavy damage and applies Lump of Coal, lowering target haste. If the target is Nice, applies Blitzen's Blitz, increasing caster haste and damage done while reducing damage taken. Does not consume 'Naughty' or 'Nice'. Notes: Lump of Coal reduces Haste by 25% for 8 seconds. Blitzen's Blitz increases Outgoing Damage by 50% and Haste by 20%, and reduces Incoming Damage by 20% for 8 seconds."
+    },
+    {
+      "officialName": "Workshop Master",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Increases STR and INT by 10%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/prismatic-clawsuit-class",
+      "sourceHash": "b95f51a751712d4ddd2f1b9bb101782296523e0a421a06cd0d2df8883a898367",
+      "evidence": "Workshop Master Rank Needed: 4 Type: Passive Description: Increases STR and INT by 10%"
+    },
+    {
+      "officialName": "Spiked Nog",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive",
+      "target": null,
+      "officialDescription": "Critical Strike Chance increased 5%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/prismatic-clawsuit-class",
+      "sourceHash": "b95f51a751712d4ddd2f1b9bb101782296523e0a421a06cd0d2df8883a898367",
+      "evidence": "Spiked Nog Rank Needed: 4 Type: Passive Description: Critical Strike Chance increased 5%"
+    },
+    {
+      "officialName": "Arctic Stamina",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "50",
+      "cooldown": "30",
+      "skillType": "Physical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Reduces your incoming damage by 30% and increases outgoing damage by 20% for 8 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill52.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/prismatic-clawsuit-class",
+      "sourceHash": "b95f51a751712d4ddd2f1b9bb101782296523e0a421a06cd0d2df8883a898367",
+      "evidence": "Arctic Stamina Rank Needed: 5 Mana Cost: 50 Mana Cooldown: 30 Seconds Type: Physical Range: A short range status skill that applies to yourself. Description: Reduces your incoming damage by 30% and increases outgoing damage by 20% for 8 seconds. Note: Applies Arctic Stamina to the caster, reduces Incoming Damage by 30% and increases Outgoing Damage by 20% for 8 seconds."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/U6quv7L.png",
+  "sameSkillVariants": [
+    {
+      "name": "Evolved ClawSuit",
+      "url": "https://aqwwiki.wikidot.com/evolved-clawsuit"
+    }
+  ],
+  "location": "Prismatic ClawSuit (Seasonal Version)\nPrismatic ClawSuit (2013 Version)\nPrismatic ClawSuit (2012 Version)\n\n\n\nLocations:\n\nFrostval Gift Boxes!\n\nBattleon\nGame Menu\nIce Storm\n\n\n\nPrice: 0 AC"
+}

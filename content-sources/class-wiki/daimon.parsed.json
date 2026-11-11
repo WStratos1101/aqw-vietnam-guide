@@ -1,0 +1,135 @@
+{
+  "url": "https://aqwwiki.wikidot.com/daimon-legend",
+  "sourceHash": "9641e25b469b2135d1e9e10ebb83885c4a3ac68fa7c046e257e3a5afbe9c445e",
+  "entries": [
+    {
+      "officialName": "Actual Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Using your mind, you reach out and cause pain to your foe… and boy, do they feel it!",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/daimon-legend",
+      "sourceHash": "9641e25b469b2135d1e9e10ebb83885c4a3ac68fa7c046e257e3a5afbe9c445e",
+      "evidence": "Actual Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Using your mind, you reach out and cause pain to your foe… and boy, do they feel it!"
+    },
+    {
+      "officialName": "Mass Affect",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "12",
+      "skillType": "Magical",
+      "target": "An infinite range skill that heals 7 friendly targets.",
+      "officialDescription": "Heals you and up to 6 allies while placing 1 of 5 random buffs on them. The heal is twice as strong if another player is selected. If an enemy is selected, you will be healed for twice the amount.",
+      "notes": [
+        "Applies one of the following auras to each player in the room:\n\nRegen, a small HoT for 16 seconds\nInvincible, a large HoT for 16 seconds\nSuper Hero, increasing Intellect and Strength by 20% for 16 seconds\nDumb Lucky, increasing Damage Resistance by 10% and decreasing Luck by 10% for 10 seconds\nForever Alone, increasing mana costs by 10% and decreasing Endurance by 10% for 10 seconds",
+        "Regen, a small HoT for 16 seconds",
+        "Invincible, a large HoT for 16 seconds",
+        "Super Hero, increasing Intellect and Strength by 20% for 16 seconds",
+        "Dumb Lucky, increasing Damage Resistance by 10% and decreasing Luck by 10% for 10 seconds",
+        "Forever Alone, increasing mana costs by 10% and decreasing Endurance by 10% for 10 seconds"
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill192.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/daimon-legend",
+      "sourceHash": "9641e25b469b2135d1e9e10ebb83885c4a3ac68fa7c046e257e3a5afbe9c445e",
+      "evidence": "Mass Affect Rank Needed: 2 Mana Cost: 25 Mana Cooldown: 12 Seconds Type: Magical Range: An infinite range skill that heals 7 friendly targets. Description: Heals you and up to 6 allies while placing 1 of 5 random buffs on them. The heal is twice as strong if another player is selected. If an enemy is selected, you will be healed for twice the amount. Notes: Applies one of the following auras to each player in the room: Regen, a small HoT for 16 seconds Invincible, a large HoT for 16 seconds Super Hero, increasing Intellect and Strength by 20% for 16 seconds Dumb Lucky, increasing Damage Resistance by 10% and decreasing Luck by 10% for 10 seconds Forever Alone, increasing mana costs by 10% and decreasing Endurance by 10% for 10 seconds"
+    },
+    {
+      "officialName": "BrainWave",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "14",
+      "cooldown": "6",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "A wave of psychic fire engulfs up to 3 foes dealing moderate damage and applies either Mental Burn or Psychic Burn. Mental Burn deals less damage per tick but lasts 12 seconds. Psychic Burn deals more damage per tick but only lasts 6 seconds. They don't stack but you can have both applied on an enemy at once.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill191.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/daimon-legend",
+      "sourceHash": "9641e25b469b2135d1e9e10ebb83885c4a3ac68fa7c046e257e3a5afbe9c445e",
+      "evidence": "BrainWave Rank Needed: 1 Mana Cost: 14 Mana Cooldown: 6 Seconds Type: Magical Range: A long range attack that deals damage to 3 hostile targets. Description: A wave of psychic fire engulfs up to 3 foes dealing moderate damage and applies either Mental Burn or Psychic Burn. Mental Burn deals less damage per tick but lasts 12 seconds. Psychic Burn deals more damage per tick but only lasts 6 seconds. They don't stack but you can have both applied on an enemy at once."
+    },
+    {
+      "officialName": "Shattered Reality",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "10",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 2 hostile targets.",
+      "officialDescription": "A powerful psychic burst AoE which will hit up to 2 foes. Applies Mental Weakness, reducing their damage by 40% for 5 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill193.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/daimon-legend",
+      "sourceHash": "9641e25b469b2135d1e9e10ebb83885c4a3ac68fa7c046e257e3a5afbe9c445e",
+      "evidence": "Shattered Reality Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 10 Seconds Type: Magical Range: A long range attack that deals damage to 2 hostile targets. Description: A powerful psychic burst AoE which will hit up to 2 foes. Applies Mental Weakness, reducing their damage by 40% for 5 seconds."
+    },
+    {
+      "officialName": "Wrath of the Touched",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Increase Crit by 8%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/daimon-legend",
+      "sourceHash": "9641e25b469b2135d1e9e10ebb83885c4a3ac68fa7c046e257e3a5afbe9c445e",
+      "evidence": "Wrath of the Touched Rank Needed: 4 Type: Passive Ability Description: Increase Crit by 8%"
+    },
+    {
+      "officialName": "Touched Mind",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Intellect increased 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/daimon-legend",
+      "sourceHash": "9641e25b469b2135d1e9e10ebb83885c4a3ac68fa7c046e257e3a5afbe9c445e",
+      "evidence": "Touched Mind Rank Needed: 4 Type: Passive Ability Description: Intellect increased 15%"
+    },
+    {
+      "officialName": "Mind… BLOWN",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "25",
+      "skillType": "Magical",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Deals solid psychic damage to up to 3 targets and increases your haste and crit chance by 30% for 10 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill194.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/daimon-legend",
+      "sourceHash": "9641e25b469b2135d1e9e10ebb83885c4a3ac68fa7c046e257e3a5afbe9c445e",
+      "evidence": "Mind… BLOWN Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 25 Seconds Type: Magical Range: A long range attack that deals damage to 3 hostile targets. Description: Deals solid psychic damage to up to 3 targets and increases your haste and crit chance by 30% for 10 seconds."
+    },
+    {
+      "officialName": "Mind Buffs Mater",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Small chance to greatly increase the power of an aoe ability.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/daimon-legend",
+      "sourceHash": "9641e25b469b2135d1e9e10ebb83885c4a3ac68fa7c046e257e3a5afbe9c445e",
+      "evidence": "Mind Buffs Mater Rank Needed: 10 Type: Passive Ability Description: Small chance to greatly increase the power of an aoe ability."
+    }
+  ],
+  "portraitUrl": "https://imgur.com/ucOmtGn.png",
+  "sameSkillVariants": [
+    {
+      "name": "Daimon (Non-Legend)",
+      "url": "https://aqwwiki.wikidot.com/daimon-non-legend"
+    }
+  ],
+  "location": "Locations:\n\nZiri's Shop\n\nBacon Cat You\nFlying Bacon Cat Fortress\nFlying Bacon Cat Fortress B\n\n\n\nPrice: 0 AC"
+}

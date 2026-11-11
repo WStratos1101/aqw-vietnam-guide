@@ -1,0 +1,356 @@
+{
+  "challengeContent": true,
+  "id": "salek-sprayer",
+  "name": "Salek Sprayer",
+  "type": "other_challenge",
+  "map": "voidsalek",
+  "levelRequirement": 65,
+  "partySize": 7,
+  "description": "Cách đánh:",
+  "bodyUrl": "/content/challenges/salek-sprayer.json",
+  "href": "/other-challenges/salek-sprayer",
+  "image": "monster-salek-sprayer",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "salek-sprayer-stage-1",
+      "name": "Salek Sprayer",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Salek Sprayer",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "salek-sprayer-0",
+            "canonicalName": "Salek Sprayer",
+            "role": "Monster",
+            "level": 80,
+            "maxHp": 1005844,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/salek-sprayer"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "salek-sprayer-0-auto-attack-0",
+            "monsterId": "salek-sprayer-0",
+            "name": "Auto Attack",
+            "type": "Physical",
+            "damage": "832-1012",
+            "damageType": "Physical",
+            "cooldown": "2.5 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Upset lên người chơi, giảm their Haste 50% trong 30 giây. Displays the message \"You feel a little upset. Your attacks slow.\"",
+              "Nếu có Upset, has a 20% chance to apply Frustrated lên người chơi, giảm their tỷ lệ trúng 60% trong 30 giây. Displays the message \"You feel frustrated. Now you're missing attacks.\"",
+              "Nếu có Frustrated, has a 15% chance to apply Salty lên người chơi, gây Stun trong 4 giây và removing Upset và Frustrated. Displays the message \"You feel… salty… Time to take a break.\"",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/salek-sprayer"
+          },
+          {
+            "id": "salek-sprayer-0-extinguish-1",
+            "monsterId": "salek-sprayer-0",
+            "name": "EXTINGUISH",
+            "type": "True Damage",
+            "damage": "Current HP - 1",
+            "damageType": "True Damage",
+            "cooldown": "8 seconds",
+            "targets": "7",
+            "activation": "EXTINGUISH! EXTINGUISH!",
+            "playerEffects": [],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/salek-sprayer"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:",
+        "- “Fiend's Purgatory” quest trong Hollowborn Archfiend.",
+        "Boss này nằm ở map /join voidsalek - Room limit: 7",
+        "Cần đạt ít nhất lvl 65 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 1,005,844",
+        "◆ Shield giúp giới hạn sát thương nhận tối đa 5.8k.",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.",
+        "◆ Auto-Attack mỗi 2.5s gây Phys DMG từ 800 đến 1k.",
+        "→ Bỏ qua Focus/Taunt.",
+        "→ Players bị giảm 50% Haste trong 30s - hiệu ứng “Upset”.",
+        "→ Players có 20% khả năng bị giảm 60% Hit Chance trong 30s khi có “Upset” - hiệu ứng “Frustrated”.",
+        "→ Players có 15% khả năng bị Stun trong 4s khi có “Frustrated”, đồng thời loại bỏ toàn bộ hiệu ứng “Upset” và “Frustrated”.",
+        "◆ Mỗi 8s, sử dụng EXTINGUISH gây ít nhất 1 True DMG.",
+        "→ Players bị đưa HP xuống 1 nếu lượng HP hiện tại nhiều hơn 1, nếu không thì sẽ chết.",
+        "→ Cần sử dụng skill hồi máu ngay sau khi EXTINGUISH, nhất là các class Healer trong Team."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Salek Sprayer chỉ có thể gọi là một Mini Challenge Boss nên không quá khó để đánh bại được nó. Với một team từ 4 người trở lên đã quá dư sức giết nó một cách nhanh gọn."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-404985",
+          "runs": [
+            {
+              "text": "Đây là con Boss bước ra từ Yoshino's Limited Time Event. Item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405089",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Fiend's Purgatory",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest trong "
+            },
+            {
+              "text": "Hollowborn Archfiend",
+              "href": "/farm/hollowborn"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405146",
+          "runs": [
+            {
+              "text": "Boss này nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join voidsalek",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/void-salek"
+            },
+            {
+              "text": " - Room limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405197",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 65",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405254",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405262",
+          "runs": [
+            {
+              "text": "◆ Total HP: 1,005,844"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405284",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giới hạn sát thương nhận tối đa 5.8k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405336",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405359",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể né nhưng lại không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405424",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.5s gây Phys DMG từ 800 đến 1k.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405475",
+          "runs": [
+            {
+              "text": "→ Bỏ qua Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405497",
+          "runs": [
+            {
+              "text": "→ Players bị giảm 50% Haste trong 30s - hiệu ứng “Upset”.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405555",
+          "runs": [
+            {
+              "text": "→ Players có 20% khả năng bị giảm 60% Hit Chance trong 30s khi có “Upset” - hiệu ứng “Frustrated”.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405654",
+          "runs": [
+            {
+              "text": "→ Players có 15% khả năng bị Stun trong 4s khi có “Frustrated”, đồng thời loại bỏ toàn bộ hiệu ứng “Upset” và “Frustrated”.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405778",
+          "runs": [
+            {
+              "text": "◆ Mỗi 8s, sử dụng EXTINGUISH gây ít nhất 1 True DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405831",
+          "runs": [
+            {
+              "text": "→ Players bị đưa HP xuống 1 nếu lượng HP hiện tại nhiều hơn 1, nếu không thì sẽ chết.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-405917",
+          "runs": [
+            {
+              "text": "→ Cần sử dụng skill hồi máu ngay sau khi EXTINGUISH, nhất là các class Healer trong Team.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406008",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-406020",
+          "runs": [
+            {
+              "text": "Nhìn chung Salek Sprayer chỉ có thể gọi là một Mini Challenge Boss nên không quá khó để đánh bại được nó. Với một team từ 4 người trở lên đã quá dư sức giết nó một cách nhanh gọn.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-405475",
+      "runs": [
+        {
+          "text": "→ Bỏ qua Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-405917",
+      "runs": [
+        {
+          "text": "→ Cần sử dụng skill hồi máu ngay sau khi EXTINGUISH, nhất là các class Healer trong Team.\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": []
+}

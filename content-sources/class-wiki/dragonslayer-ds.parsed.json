@@ -1,0 +1,131 @@
+{
+  "url": "https://aqwwiki.wikidot.com/dragonslayer-class",
+  "sourceHash": "27358c09b69c04410a77ca0a3462507a54c7791eebc9a339fbb5305610324172",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragonslayer-class",
+      "sourceHash": "27358c09b69c04410a77ca0a3462507a54c7791eebc9a339fbb5305610324172",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage."
+    },
+    {
+      "officialName": "Scorched Steel",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "4",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Ignite your blade with flame and unleash a fiery attack, restoring 5 mana on hit and applying Charred to your target, reducing their Damage Resistance by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill40.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragonslayer-class",
+      "sourceHash": "27358c09b69c04410a77ca0a3462507a54c7791eebc9a339fbb5305610324172",
+      "evidence": "Scorched Steel Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 4 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Ignite your blade with flame and unleash a fiery attack, restoring 5 mana on hit and applying Charred to your target, reducing their Damage Resistance by 15%. If your target is afflicted with Dragonbane, applies Cindered Scales, reducing their Damage Resistance by an additional 15%. Both effects last 15 seconds. Note: Deals 100% damage."
+    },
+    {
+      "officialName": "Impale",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "10",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Thrust your weapon forward, puncturing your target and applying Impaled, a damage over time (DoT) effect while causing your adrenaline to flow, healing you over time.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DSa2.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragonslayer-class",
+      "sourceHash": "27358c09b69c04410a77ca0a3462507a54c7791eebc9a339fbb5305610324172",
+      "evidence": "Impale Rank Needed: 2 Mana Cost: 0 Mana Cooldown: 10 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Thrust your weapon forward, puncturing your target and applying Impaled, a damage over time (DoT) effect while causing your adrenaline to flow, healing you over time. If your target is afflicted with Dragonbane, applies Infected Wound, an even stronger DoT. If your target has an Infected Wound, you gain a surge of adrenaline, increasing your Haste and Crit Chance by 15%. All effects last 15 seconds. Note: Deals 160% damage."
+    },
+    {
+      "officialName": "Incapacitate",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "12",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A powerful attack that knocks even the largest of dragons off their feet. Applies Weakened, reducing your target's outgoing damage by 15% for 15 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill18.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragonslayer-class",
+      "sourceHash": "27358c09b69c04410a77ca0a3462507a54c7791eebc9a339fbb5305610324172",
+      "evidence": "Incapacitate Rank Needed: 3 Mana Cost: 0 Mana Cooldown: 12 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A powerful attack that knocks even the largest of dragons off their feet. Applies Weakened, reducing your target's outgoing damage by 15% for 15 seconds. If your target is afflicted with Dragonbane, applies Incapacitated, reducing their outgoing damage by an additional 15% for 15 seconds while also stunning them for 3 seconds. Note: Deals 200% damage."
+    },
+    {
+      "officialName": "Aggression",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit Chance and outgoing physical damage increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragonslayer-class",
+      "sourceHash": "27358c09b69c04410a77ca0a3462507a54c7791eebc9a339fbb5305610324172",
+      "evidence": "Aggression Rank Needed: 4 Type: Passive Ability Description: Hit Chance and outgoing physical damage increased by 10%."
+    },
+    {
+      "officialName": "Resolute",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage Resistance increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragonslayer-class",
+      "sourceHash": "27358c09b69c04410a77ca0a3462507a54c7791eebc9a339fbb5305610324172",
+      "evidence": "Resolute Rank Needed: 4 Type: Passive Ability Description: Damage Resistance increased by 10%."
+    },
+    {
+      "officialName": "Dragon's Bane",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "50",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A fierce dragonslaying attack. If your target is Dragonkin, they are inflicted with Dragonbane, which causes the next skill you use to apply an additional effect. Can't miss.",
+      "notes": [
+        "Deals 120% damage.",
+        "If target is a Dragonkin, applies Dragonbane for 10 seconds, consumed by other skills."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/DSa4.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragonslayer-class",
+      "sourceHash": "27358c09b69c04410a77ca0a3462507a54c7791eebc9a339fbb5305610324172",
+      "evidence": "Dragon's Bane Rank Needed: 5 Mana Cost: 50 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A fierce dragonslaying attack. If your target is Dragonkin, they are inflicted with Dragonbane, which causes the next skill you use to apply an additional effect. Can't miss. Notes: Deals 120% damage. If target is a Dragonkin, applies Dragonbane for 10 seconds, consumed by other skills."
+    },
+    {
+      "officialName": "Veteran Slayer",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Starting at rank 1. All skills (except your Auto Attack) deal increased damage to Dragonkin. At rank 10, increases your Endurance by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/dragonslayer-class",
+      "sourceHash": "27358c09b69c04410a77ca0a3462507a54c7791eebc9a339fbb5305610324172",
+      "evidence": "Veteran Slayer Rank Needed: 10 Type: Passive Ability Description: Starting at rank 1. All skills (except your Auto Attack) deal increased damage to Dragonkin. At rank 10, increases your Endurance by 10%."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/HL03vzj.png",
+  "sameSkillVariants": [
+    {
+      "name": "Dragonslayer (Infinity)",
+      "url": "https://aqwwiki.wikidot.com/dragonslayer-infinity"
+    }
+  ],
+  "location": "Locations:\n\nDragonslayer (Shop)\n\nBattleCon (Location)\nDragon's Altar \nVasalkar's Lair\n\n\nDragonSlayer Class (Shop) - Class Hall A\n\nPrice: 0 AC"
+}

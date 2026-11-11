@@ -1,0 +1,136 @@
+{
+  "url": "https://aqwwiki.wikidot.com/doomknight-ac",
+  "sourceHash": "8118ee326a953f9f737f115923201c13620f0eb80da05bccbe9b6cc8be2f297a",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2.3",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/doomknight-ac",
+      "sourceHash": "8118ee326a953f9f737f115923201c13620f0eb80da05bccbe9b6cc8be2f297a",
+      "evidence": "Auto Attack Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 2.3 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Soul Steal",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "3",
+      "skillType": "Magical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A quick attack that deals a small amount of damage but then applies Dark Wound on the target, dealing 200% of weapon DPS over 8 seconds. Stacks up to 5 times and heals you for twice the damage dealt at maximum stacks. Also applies Cracked Soul, which increases the target's damage taken by 10% for 8 seconds and stacks 5 times.",
+      "notes": [
+        "Deals 151% weapon damage.",
+        "Applies Dark Wound to the target, a DoT for 8 seconds.",
+        "Cracked Soul also increases Incoming Magical Damage by 5% and does not stack."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill17.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/doomknight-ac",
+      "sourceHash": "8118ee326a953f9f737f115923201c13620f0eb80da05bccbe9b6cc8be2f297a",
+      "evidence": "Soul Steal Rank Needed: 1 Mana Cost: 10 Mana Cooldown: 3 Seconds Type: Magical Range: A short range attack that deals damage to 1 target. Description: A quick attack that deals a small amount of damage but then applies Dark Wound on the target, dealing 200% of weapon DPS over 8 seconds. Stacks up to 5 times and heals you for twice the damage dealt at maximum stacks. Also applies Cracked Soul, which increases the target's damage taken by 10% for 8 seconds and stacks 5 times. Notes: Deals 151% weapon damage. Applies Dark Wound to the target, a DoT for 8 seconds. Cracked Soul also increases Incoming Magical Damage by 5% and does not stack."
+    },
+    {
+      "officialName": "Soul Crush",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "10",
+      "cooldown": "4",
+      "skillType": "Hybrid",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A quick attack dealing physical and magical damage, improved by the number of Dark Wound stacks on the target. Applies either Feared or Despaired. Feared reduces the target's dodge by 50% and Despaired reduces their crit rate by 50%. Always hit but can't crit.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill19.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/doomknight-ac",
+      "sourceHash": "8118ee326a953f9f737f115923201c13620f0eb80da05bccbe9b6cc8be2f297a",
+      "evidence": "Soul Crush Rank Needed: 2 Mana Cost: 10 Mana Cooldown: 4 Seconds Type: Hybrid Range: A short range attack that deals damage to 1 target. Description: A quick attack dealing physical and magical damage, improved by the number of Dark Wound stacks on the target. Applies either Feared or Despaired. Feared reduces the target's dodge by 50% and Despaired reduces their crit rate by 50%. Always hit but can't crit. Note: Applies either Feared to the target, reducing Dodge Chance by 50% for 6 seconds, or Despaired, reducing Crit Chance by 50% for 6 seconds."
+    },
+    {
+      "officialName": "Void Strike",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "10",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A strong attack which deals weapon damage plus additional damage increased the closer you are to death.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill18.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/doomknight-ac",
+      "sourceHash": "8118ee326a953f9f737f115923201c13620f0eb80da05bccbe9b6cc8be2f297a",
+      "evidence": "Void Strike Rank Needed: 3 Mana Cost: 20 Mana Cooldown: 10 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A strong attack which deals weapon damage plus additional damage increased the closer you are to death."
+    },
+    {
+      "officialName": "Agression",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "You deal 15% additional damage with physical attacks.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/doomknight-ac",
+      "sourceHash": "8118ee326a953f9f737f115923201c13620f0eb80da05bccbe9b6cc8be2f297a",
+      "evidence": "Agression Rank Needed: 4 Type: Passive Ability Description: You deal 15% additional damage with physical attacks."
+    },
+    {
+      "officialName": "Resolute",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage taken reduced by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/doomknight-ac",
+      "sourceHash": "8118ee326a953f9f737f115923201c13620f0eb80da05bccbe9b6cc8be2f297a",
+      "evidence": "Resolute Rank Needed: 4 Type: Passive Ability Description: Damage taken reduced by 15%"
+    },
+    {
+      "officialName": "Blood Offering",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "10",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "If Dark Wound is on the target, the caster will take additional damage per attack for 10 seconds, but will add some of the amount taken to their next autoattack. Otherwise, applies a 3 second stun. Also increases player haste and crit chance by 20% if Dark Wound is on the target. Consumes 20% of max hp.",
+      "notes": [
+        "Applies Blood Rite to the caster when Dark Would is active, increases Incoming Damage by 50%, Outgoing Damage by portion of the damage taken, Haste, and Crit Chance by 20% for 10 seconds.",
+        "Applies Stunned to the target when Dark Wound is not active, a stun for 3 seconds.",
+        "The Incoming Damage and Outgoing Damage on Blood Rite effect is on a separate system than the Damage Resistance and Damage Boost."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill20.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/doomknight-ac",
+      "sourceHash": "8118ee326a953f9f737f115923201c13620f0eb80da05bccbe9b6cc8be2f297a",
+      "evidence": "Blood Offering Rank Needed: 5 Mana Cost: 0 Mana Cooldown: 10 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: If Dark Wound is on the target, the caster will take additional damage per attack for 10 seconds, but will add some of the amount taken to their next autoattack. Otherwise, applies a 3 second stun. Also increases player haste and crit chance by 20% if Dark Wound is on the target. Consumes 20% of max hp. Notes: Applies Blood Rite to the caster when Dark Would is active, increases Incoming Damage by 50%, Outgoing Damage by portion of the damage taken, Haste, and Crit Chance by 20% for 10 seconds. Applies Stunned to the target when Dark Wound is not active, a stun for 3 seconds. The Incoming Damage and Outgoing Damage on Blood Rite effect is on a separate system than the Damage Resistance and Damage Boost."
+    },
+    {
+      "officialName": "Doom Strike",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "chance to do big damage",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/doomknight-ac",
+      "sourceHash": "8118ee326a953f9f737f115923201c13620f0eb80da05bccbe9b6cc8be2f297a",
+      "evidence": "Doom Strike Rank Needed: 10 Type: Passive Ability Description: chance to do big damage Note: Deals 50 times the Weapon Damage."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/vCPX2J9.png",
+  "sameSkillVariants": [
+    {
+      "name": "DoomKnight (0 AC)",
+      "url": "https://aqwwiki.wikidot.com/doomknight-0-ac"
+    }
+  ],
+  "location": "Locations:\n\nClass Shop\n\n8-Bit Battleon\nBattleon\nBook of Lore\nClass Hall B\nClass Hall C\nGame Menu\nNorthpointe\n\n\nDoomKnight Shop - Shadowfall\nLionfang Invasion Acs - Onslaught Tower\nMember Class Shop\n\nClass Hall B\nClass Hall C\n\n\n\nPrice: 2,000 AC"
+}

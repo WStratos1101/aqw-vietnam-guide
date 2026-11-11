@@ -1,0 +1,18 @@
+{
+  "slug": "kasuko",
+  "url": "https://aqwwiki.wikidot.com/kasuko",
+  "text": ">\nLocation:\nLavarock Shore\nLevel:\n90\nDifficulty:\n5 stars\nTotal HP:\n5,000,000\nAI:\nAggressive when player attacks\nWhirlpool\nfirst.\nAttacks:\n+ Fireball\n- Fireball\nFireball\nDamage\n530-600\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n3\nType\nPhysical Damage\nNotes\nWhen Enrage is active on Kasuko, cooldown is reduced to 1 second.\nCannot miss.\nIgnores focus.\n+ Ignited\n- Ignited\nIgnited\nDamage\n800-900\nAnimations\n{$animations}\nCooldown\n8 seconds\nMessage\n{$message}\nAoE\n7\nType\nPhysical Damage\nNotes\nApplies Ignited to all players, a DoT that deals damage after 4 seconds.\nCannot miss.\nIgnores focus.\n+ Explosion Charge ➞ Explosion\n- Explosion Charge ➞ Explosion\nExplosion Charge\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\nSelf\nType\nTrue Status\nNotes\nUsed at 90%, 70%, 50%, 30%, and 10% remaining HP.\nExplosion is used after Explosion Charge charges for 3 seconds.\nExplosion\nDamage\n90% of current HP\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n7\nType\nTrue Damage\nNotes\nCannot miss.\nCannot crit.\nIgnores focus.\nAbilities:\nBoss Shield:\nDamage over 50,000 dealt to Kasuko is reduced by raising the difference to the exponent 0.8 (but is never reduced below 50,000).\nCannot be stunned.\nEnrage:\nWhen at 60% remaining HP, applies Enrage to Kasuko, increasing outgoing damage by 100%, and causing Fireball & Ignited to crit.\nBase Stats:\n10% Crit Chance\n0% Dodge Chance\n2000% Hit Chance\n-100% incoming damage\n-100% incoming DoT\n200% Crit Damage\n100% outgoing physical damage\n100% outgoing damage\nTemporary Items Dropped:\nMolten Heart (Used in the '\nThe Molten Heart\n' quest)\nItems Dropped:\nDark Angelica Wetsuit\nDark Covenant Wetsuit\nDark Toy Pitchfork\nKasuko House Guard\nToy Pitchfork\nTreasure Chest (Misc)\nVolcanic Fragment\nx1-20\nNotes:\nKasuko means\n\"Anger\"\nin Cebuano.\nAlso see\nKalayo\n.\nThanks to Tempu.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_k\n_lv90\nboss\nbossshield\nchallenge\ndragon\nfreeplayer\nimmune\nmonster\nseasonal\nsummerbreak\ntailed\ntranslation\nwinged",
+  "images": [
+    "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+    "https://aqwwiki.wdfiles.com/local--files/image-tags/seasonallarge.png",
+    "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+    "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+    "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+    "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+    "https://aqwwiki.wdfiles.com/local--files/image-tags/legendsmall.png",
+    "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+    "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+    "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+    "https://i.imgur.com/6qs2TdC.png"
+  ]
+}

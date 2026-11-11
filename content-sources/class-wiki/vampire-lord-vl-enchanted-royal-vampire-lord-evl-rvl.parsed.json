@@ -1,0 +1,147 @@
+{
+  "url": "https://aqwwiki.wikidot.com/vampire-lord-class-ac",
+  "sourceHash": "be8b5d89833f3eb8301eca46e4e59e70cd6d07705e37c0269546991a69d233b8",
+  "entries": [
+    {
+      "officialName": "Slash",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2.5",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "You slash out at up to 3 targets with your extended Vampire claws, dealing 60% hybrid damage to each.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill251.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/vampire-lord-class-ac",
+      "sourceHash": "be8b5d89833f3eb8301eca46e4e59e70cd6d07705e37c0269546991a69d233b8",
+      "evidence": "Slash Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2.5 Seconds Type: Physical Range: A long range attack that deals damage to 3 hostile targets. Description: You slash out at up to 3 targets with your extended Vampire claws, dealing 60% hybrid damage to each."
+    },
+    {
+      "officialName": "Sonar Scream",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "10",
+      "skillType": "Magical",
+      "target": "An infinite range status skill that applies to 3 hostile targets.",
+      "officialDescription": "Applies 'Deafened' debuff to up to three enemies, increasing the damage they take by 30% for 8 seconds. If you have 'Aspect of The Bat', applies 'Sonar Senses' buff to yourself, increasing your hit chance by 50% for 8 seconds. Can't miss.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill253.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/vampire-lord-class-ac",
+      "sourceHash": "be8b5d89833f3eb8301eca46e4e59e70cd6d07705e37c0269546991a69d233b8",
+      "evidence": "Sonar Scream Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 10 Seconds Type: Magical Range: An infinite range status skill that applies to 3 hostile targets. Description: Applies 'Deafened' debuff to up to three enemies, increasing the damage they take by 30% for 8 seconds. If you have 'Aspect of The Bat', applies 'Sonar Senses' buff to yourself, increasing your hit chance by 50% for 8 seconds. Can't miss. Does not apply 'Deafened' while 'Aspect of The Bat' is active."
+    },
+    {
+      "officialName": "Devour Blood",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "5",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Deals damage to up to three enemies and heals for some of the damage dealt. Applies 'Blood Loss' debuff to your enemies, reducing damage done by 50% for 5 seconds. Does not apply 'Blood Loss' while 'Aspect of The Bat' is active.",
+      "notes": [
+        "Deals 50% damage.",
+        "Heals 50% damage."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill252.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/vampire-lord-class-ac",
+      "sourceHash": "be8b5d89833f3eb8301eca46e4e59e70cd6d07705e37c0269546991a69d233b8",
+      "evidence": "Devour Blood Rank Needed: 2 Mana Cost: 25 Mana Cooldown: 5 Seconds Type: Physical Range: A long range attack that deals damage to 3 hostile targets. Description: Deals damage to up to three enemies and heals for some of the damage dealt. Applies 'Blood Loss' debuff to your enemies, reducing damage done by 50% for 5 seconds. Does not apply 'Blood Loss' while 'Aspect of The Bat' is active. Notes: Deals 50% damage. Heals 50% damage."
+    },
+    {
+      "officialName": "Ghoul Gouge",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "8",
+      "skillType": "Hybrid",
+      "target": "A long range attack that deals damage to 3 hostile targets.",
+      "officialDescription": "Deals damage to up to three targets and applies 'Gouged' debuff to your enemies, dealing damage over 12 seconds. Does not apply 'Gouged' while 'Aspect of The Bat' is active.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill254.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/vampire-lord-class-ac",
+      "sourceHash": "be8b5d89833f3eb8301eca46e4e59e70cd6d07705e37c0269546991a69d233b8",
+      "evidence": "Ghoul Gouge Rank Needed: 3 Mana Cost: 25 Mana Cooldown: 8 Seconds Type: Hybrid Range: A long range attack that deals damage to 3 hostile targets. Description: Deals damage to up to three targets and applies 'Gouged' debuff to your enemies, dealing damage over 12 seconds. Does not apply 'Gouged' while 'Aspect of The Bat' is active. Note: Deals 120% damage."
+    },
+    {
+      "officialName": "Sanguine Lord",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage increased by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/vampire-lord-class-ac",
+      "sourceHash": "be8b5d89833f3eb8301eca46e4e59e70cd6d07705e37c0269546991a69d233b8",
+      "evidence": "Sanguine Lord Rank Needed: 4 Type: Passive Ability Description: Damage increased by 15% Note: Previously Rank 10 Passive."
+    },
+    {
+      "officialName": "Ageless",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Intellect increased by 30%, Crit Rate reduced by 20%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/vampire-lord-class-ac",
+      "sourceHash": "be8b5d89833f3eb8301eca46e4e59e70cd6d07705e37c0269546991a69d233b8",
+      "evidence": "Ageless Rank Needed: 4 Type: Passive Ability Description: Intellect increased by 30%, Crit Rate reduced by 20%"
+    },
+    {
+      "officialName": "Aspect of The Bat",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "15",
+      "skillType": "True Damage",
+      "target": "An infinite range status skill that applies to yourself.",
+      "officialDescription": "You take on the aspects of a bat! Your haste and crit chance increase by 500% for 15 seconds but you deal 45% less physical damage, 45% all outgoing damage, take 50% more damage, and no longer apply debuffs to your enemies.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill255.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/vampire-lord-class-ac",
+      "sourceHash": "be8b5d89833f3eb8301eca46e4e59e70cd6d07705e37c0269546991a69d233b8",
+      "evidence": "Aspect of The Bat Rank Needed: 5 Mana Cost: 25 Mana Cooldown: 15 Seconds Type: True Damage Range: An infinite range status skill that applies to yourself. Description: You take on the aspects of a bat! Your haste and crit chance increase by 500% for 15 seconds but you deal 45% less physical damage, 45% all outgoing damage, take 50% more damage, and no longer apply debuffs to your enemies. Note: Applies Aspect of the Bat to the player, which increases Haste and Critical Strike Chance by 500%, reduces Outgoing Physical Damage and by 45%, reduces All Outgoing Damage by 45%, and increases All Incoming Damage by 50%."
+    },
+    {
+      "officialName": "Pure Blood",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Damage increased by 15%",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/vampire-lord-class-ac",
+      "sourceHash": "be8b5d89833f3eb8301eca46e4e59e70cd6d07705e37c0269546991a69d233b8",
+      "evidence": "Pure Blood Rank Needed: 10 Type: Passive Ability Description: Damage increased by 15%"
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/D9mRtjP.png",
+  "sameSkillVariants": [
+    {
+      "name": "Enchanted Vampire Lord (Class)",
+      "url": "https://aqwwiki.wikidot.com/enchanted-vampire-lord-class"
+    },
+    {
+      "name": "Royal Vampire Lord (Class) (AC)",
+      "url": "https://aqwwiki.wikidot.com/royal-vampire-lord-class-ac"
+    },
+    {
+      "name": "Royal Vampire Lord (Class) (Merge)",
+      "url": "https://aqwwiki.wikidot.com/royal-vampire-lord-class-merge"
+    },
+    {
+      "name": "Vampire",
+      "url": "https://aqwwiki.wikidot.com/vampire"
+    },
+    {
+      "name": "Vampire Lord (Class) (Merge)",
+      "url": "https://aqwwiki.wikidot.com/vampire-lord-class-merge"
+    }
+  ],
+  "location": "Locations:\n\nVampire Lord Class\n\nEvent Hub (October)\nMystcroft\n\n\n\nPrice: 2,000 AC"
+}

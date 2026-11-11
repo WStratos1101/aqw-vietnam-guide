@@ -1,0 +1,283 @@
+/* Exact Codex family/weight/style/tracking, shared rather than a similar font. */
+.ultra-codex .boss-display-title {
+  font-family: var(--codex-display-font);
+  font-weight: var(--codex-display-weight);
+  font-style: var(--codex-display-style);
+  letter-spacing: var(--codex-display-tracking);
+  font-size: clamp(38px, 4.2vw, 78px);
+  line-height: 1.07;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  max-width: 100%;
+}
+.phase-transition-status {
+  display: block;
+  padding: 14px 16px;
+}
+.phase-status-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.phase-status-heading small {
+  font-size: 11px;
+  color: var(--u-muted);
+}
+.phase-hp-track {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+  font-size: 14px;
+}
+.phase-hp-track > div {
+  position: relative;
+  height: 9px;
+  background: var(--ultra-border);
+  flex: 1;
+}
+.phase-hp-track > div:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--boss-accent);
+  opacity: 0.7;
+}
+.phase-hp-track i {
+  position: absolute;
+  height: 17px;
+  top: -4px;
+  border-right: 3px solid var(--u-text);
+}
+.phase-aria-event {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 12px 0;
+}
+.phase-aria-event > svg {
+  color: var(--u-gold);
+}
+.phase-transition-status > p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 5px 0;
+  font-size: 13px;
+}
+.phase-transition-status > details {
+  font-size: 12px;
+  margin-top: 8px;
+}
+.phase-transition-status > details summary {
+  cursor: pointer;
+}
+.phase-transition-status details p {
+  font-size: 12px;
+}
+.enemy-inspection .passive-compact-grid {
+  grid-template-columns: 1fr;
+}
+.enemy-inspection .passive-compact {
+  display: grid;
+  grid-template-columns: minmax(140px, auto) minmax(0, 1fr);
+  gap: 8px 18px;
+  align-items: center;
+}
+.enemy-inspection .passive-compact h4 {
+  margin: 0;
+}
+.enemy-inspection .passive-compact details {
+  grid-column: 1/-1;
+  margin: 0;
+}
+.enemy-inspection .passive-chips {
+  max-width: none;
+}
+.enemy-inspection .passive-chips > span {
+  max-width: 100%;
+}
+.team-slot-alternatives {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--u-muted);
+  margin: 7px 0 0;
+}
+.team-slot-alternatives button {
+  font: inherit;
+  padding: 4px 6px;
+  background: transparent;
+  border: 1px solid var(--ultra-border);
+  color: inherit;
+  cursor: pointer;
+  min-height: 30px;
+}
+.team-slot-alternatives button[aria-pressed="true"] {
+  border-color: var(--u-gold);
+  color: var(--u-text);
+}
+.ultra-team-icons > span {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ultra-team-icons .team-alt-summary {
+  display: block;
+  width: 100%;
+  font-size: 11px;
+  color: var(--u-muted);
+}
+.team-general-notes {
+  font-size: 13px;
+}
+.team-general-notes summary {
+  cursor: pointer;
+  min-height: 36px;
+}
+.team-general-notes ul {
+  padding-left: 0;
+  list-style: none;
+}
+.team-general-notes li {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+  margin: 8px 0;
+}
+.team-general-notes svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.speaker-right-column {
+  min-width: 0;
+  align-self: start;
+}
+.speaker-team-selector {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  padding: 12px;
+}
+.speaker-team-selector button {
+  background: var(--chaos-surface, #111216);
+  color: var(--chaos-text, #eee9de);
+  border: 1px solid var(--chaos-border, #393b40);
+  font: inherit;
+  font-size: 12px;
+  padding: 9px 5px;
+  cursor: pointer;
+}
+.speaker-team-selector small {
+  display: block;
+  font-size: 10px;
+  color: var(--chaos-secondary, #b2b4bc);
+  margin-top: 3px;
+}
+.speaker-team-selector button[aria-pressed="true"] {
+  border-color: var(--chaos-accent, #d5af62);
+  background: #26282b;
+}
+.speaker-tactical-board {
+  background: var(--chaos-ground, #090a0d);
+  color: var(--chaos-text, #eee9de);
+  padding: 0;
+  min-width: 0;
+}
+.speaker-tactical-board > header {
+  padding: 16px 12px 0;
+}
+.speaker-tactical-board h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.speaker-tactical-board header p {
+  font-size: 12px;
+  color: var(--chaos-secondary, #b2b4bc);
+  margin: 8px 0;
+}
+.speaker-tactical-board .rotation-row {
+  padding-block: 9px;
+  grid-template-columns: 28px minmax(0, 1fr) minmax(62px, 0.65fr) minmax(
+      62px,
+      0.65fr
+    );
+  gap: 6px;
+}
+.speaker-tactical-board .rotation-header svg {
+  vertical-align: middle;
+}
+.rotation-step.is-danger {
+  background: #24191b;
+}
+.speaker-tactical-board .rotation-note summary {
+  color: var(--chaos-accent, #d5af62);
+}
+.speaker-special-notes {
+  font-size: 12px;
+  padding: 0 12px 14px;
+  color: var(--chaos-text, #eee9de);
+}
+.speaker-special-notes summary {
+  cursor: pointer;
+}
+.speaker-special-notes li {
+  margin: 8px 0;
+}
+.speaker-formation {
+  margin-top: 12px;
+}
+.speaker-formation .team-assignment-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.speaker-formation .team-role-card {
+  min-width: 0;
+  padding: 12px;
+}
+.speaker-formation .team-loadout {
+  font-size: 12px;
+}
+.speaker-formation .team-role-card strong {
+  font-size: 14px;
+}
+.speaker-formation .class-alternatives {
+  display: none;
+}
+@media (max-width: 600px) {
+  .enemy-inspection .passive-compact {
+    grid-template-columns: 1fr;
+  }
+  .phase-status-heading {
+    align-items: start;
+  }
+  .phase-status-heading small {
+    max-width: 140px;
+    text-align: right;
+  }
+  .ultra-codex .boss-display-title {
+    font-size: clamp(36px, 9vw, 54px);
+  }
+  .speaker-formation .team-assignment-list {
+    grid-template-columns: 1fr;
+  }
+  .speaker-tactical-board .rotation-row {
+    font-size: 11px;
+    grid-template-columns: 24px minmax(0, 1fr) 66px 66px;
+    gap: 5px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .phase-hp-track * {
+    transition: none;
+  }
+}
+.formation-alternatives-label {
+  flex: 0 0 100%;
+  font-size: 11px;
+  color: var(--u-muted);
+}

@@ -1,0 +1,189 @@
+{
+  "url": "https://aqwwiki.wikidot.com/god-of-the-depths",
+  "text": ">\nLocation:\nGod of the Depths Bonus Zone\nLevel:\n95\nDifficulty:\n5 stars\nTotal HP:\n40,000,000\nAI:\nAggressive when player attacks\nSacrosanct Tendril\nfirst.\nAttacks:\n+ Peer\n- Peer\nPeer\nDamage\n{$damage}\nAnimations\nEyes\nCooldown\n10 seconds\nMessage\n{$message}\nAoE\n7\nType\n{$type}\nNotes\nEither applies Kathool's Glare or Kathool's Torment to the player.\nKathool's Glare increases mana costs by 100% for 5 seconds\nKathool's Torment reduces Hit Chance by 50% for 5 seconds.\nIgnores focus.\n+ Call of Kathool ➞ Endless Nightmare\n- Call of Kathool ➞ Endless Nightmare\nCall of Kathool\nDamage\n{$damage}\nAnimations\nEye Static\nCooldown\n25 seconds\nMessage\n\"You cannot resist.\"\nAoE\n{$aoe}\nType\nCharge\nNotes\nCharges for 3 seconds, then uses Endless Nightmare\nEndless Nightmare is used after Call of Kathool charges for 3 seconds.\nEndless Nightmare\nDamage\n{$damage}\nAnimations\nEndless Eyes\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n7\nType\n{$type}\nNotes\nIf Vigil is not active, applies Endless Nightmare to the player, stunning them, reducing their incoming healing by 100%, and inflicting them with a DoT for 60 seconds.\nIf Vigil is active, applies Migraine to the player, a DoT for 10 seconds\nAbilities:\nBoss Shield:\nDamage over 200,000 dealt to God of the Depths is reduced by raising the difference to the exponent 0.8 (but is never reduced below 200,000).\nCannot be stunned.\nEnd of Time:\nGod of the Depths automatically removes any Temporal Rift and Chaos Rift auras that are active on players.\nWaterlogged:\nGod of the Depths automatically reduces all player's Haste by 20% and Dodge by 100% for 60 seconds.\nBase Stats:\n0% Dodge Chance\n-50% incoming damage\n-50% incoming DoT\n100% outgoing physical damage\n100% outgoing damage\nTemporary Items Dropped:\nGod of The Depths Subdued (Used in the '\nDaily Exercise 5: God of the Depths\n' quest)\nSacrosanct Morsel (Used in the '\nFrenzy Feast\n' quest)\nItems Dropped:\nAdeptus Kathooli Hair\nAdeptus Kathooli Locks\nKathool Acolyte\nMarine Metamorphosis Claw\nMarine Metamorphosis Claws\nMindSmasher Blade\nMindSmasher Blades\nPsychic Domination Spear\nPsychic Domination Spears\nRemnant of the Deep\nTreasure Chest (Misc)\nThanks to Tempu.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_g\n_lv95\naggro\nboss\nbossshield\nchallenge\nfreeplayer\nglowingeyes\nimmune\nmonster",
+  "images": [
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+      "alt": "BossShield.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://i.imgur.com/unFk86E.png",
+      "alt": "unFk86E.png"
+    }
+  ],
+  "links": [
+    {
+      "url": "/god-of-the-depths-bonus-zone",
+      "index": 2
+    },
+    {
+      "url": "/sacrosanct-tendril",
+      "index": 11
+    },
+    {
+      "url": "javascript:;",
+      "index": 14
+    },
+    {
+      "url": "javascript:;",
+      "index": 15
+    },
+    {
+      "url": "javascript:;",
+      "index": 34
+    },
+    {
+      "url": "javascript:;",
+      "index": 35
+    },
+    {
+      "url": "/dage-the-evil-s-champion-quests",
+      "index": 84
+    },
+    {
+      "url": "/holothurian-s-quests#Kathool",
+      "index": 87
+    },
+    {
+      "url": "/adeptus-kathooli-hair",
+      "index": 90
+    },
+    {
+      "url": "/adeptus-kathooli-locks",
+      "index": 91
+    },
+    {
+      "url": "/kathool-acolyte",
+      "index": 92
+    },
+    {
+      "url": "/marine-metamorphosis-claw",
+      "index": 93
+    },
+    {
+      "url": "/marine-metamorphosis-claws",
+      "index": 94
+    },
+    {
+      "url": "/mindsmasher-blade",
+      "index": 95
+    },
+    {
+      "url": "/mindsmasher-blades",
+      "index": 96
+    },
+    {
+      "url": "/psychic-domination-spear",
+      "index": 97
+    },
+    {
+      "url": "/psychic-domination-spears",
+      "index": 98
+    },
+    {
+      "url": "/remnant-of-the-deep",
+      "index": 99
+    },
+    {
+      "url": "/treasure-chest-misc",
+      "index": 100
+    },
+    {
+      "url": "http://www.aq.com/",
+      "index": 103
+    },
+    {
+      "url": "/system:page-tags/tag/5star#pages",
+      "index": 106
+    },
+    {
+      "url": "/system:page-tags/tag/_g#pages",
+      "index": 107
+    },
+    {
+      "url": "/system:page-tags/tag/_lv95#pages",
+      "index": 108
+    },
+    {
+      "url": "/system:page-tags/tag/aggro#pages",
+      "index": 109
+    },
+    {
+      "url": "/system:page-tags/tag/boss#pages",
+      "index": 110
+    },
+    {
+      "url": "/system:page-tags/tag/bossshield#pages",
+      "index": 111
+    },
+    {
+      "url": "/system:page-tags/tag/challenge#pages",
+      "index": 112
+    },
+    {
+      "url": "/system:page-tags/tag/freeplayer#pages",
+      "index": 113
+    },
+    {
+      "url": "/system:page-tags/tag/glowingeyes#pages",
+      "index": 114
+    },
+    {
+      "url": "/system:page-tags/tag/immune#pages",
+      "index": 115
+    },
+    {
+      "url": "/system:page-tags/tag/monster#pages",
+      "index": 116
+    }
+  ],
+  "reviewedAt": "2026-11-08"
+}

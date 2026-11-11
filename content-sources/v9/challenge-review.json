@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "god-of-the-depths",
+    "url": "https://aqwwiki.wikidot.com/god-of-the-depths",
+    "error": "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 296 ms: Couldn't connect to server\n"
+  },
+  {
+    "slug": "kolr-usurper-of-flames",
+    "url": "https://aqwwiki.wikidot.com/kolr-usurper-of-flames",
+    "error": "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 312 ms: Couldn't connect to server\n"
+  },
+  {
+    "slug": "astral-empyrean",
+    "url": "https://aqwwiki.wikidot.com/astral-empyrean",
+    "text": ">\nLocation:\nAstral Shrine\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n28,000,000\nAttacks:\n+ Astral Beam\n- Astral Beam\nAstral Beam\nDamage\n1% of Max HP (before modifiers)\nAnimations\n{$animations}\nCooldown\n1 second\nMessage\n{$message}\nAoE\n7\nType\nPhysical\nNotes\nApplies Astral beam to players, reducing Damage Resistance and Physical Resistance by 10% for 10 seconds, stacks indefinitely.\n+ Breath Charge ➞ Stardust Breath\n- Breath Charge ➞ Stardust Breath\nBreath Charge\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n8 seconds\nMessage\nBehold our starfire!\nAoE\n{$aoe}\nType\nCharge\nNotes\nCharges for 2 seconds.\nStardust Breath is used after Breath Charge charges for 2 seconds.\nStardust Breath\nDamage\n75% of Max HP\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n7\nType\nTrue Damage\nNotes\nIf Singularity is active, applies Cosmic Burn to the player, reducing Incoming Healing by 80% for 4 seconds.\nIgnores Focus.\nCannot miss.\n+ Supernova ➞ Black Hole\n- Supernova ➞ Black Hole\nSupernova\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n12 seconds\nMessage\nThe stars are ours to command.\nAoE\n{$aoe}\nType\nCharge\nNotes\nCharges for 2 seconds.\nBlack Hole is used after Supernova charges for 2 seconds.\nBlack Hole\nDamage\nInstant Death\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n7\nType\nTrue Damage\nNotes\nOnly hits players in the glowing zone.\nIgnores Focus.\n+ Singularity\n- Singularity\nSingularity\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n1 second\nMessage\nWhy do you deny our ascension?\nAoE\nSelf Target\nType\n{$type}\nNotes\nApplies Singularity to self, increasing outgoing damage and outgoing physical damage by 500%.\nUsed at 50% Remaining HP.\nAbilities:\nBoss Shield:\nDamage over 200,000 dealt to Astral Empyrean is reduced by raising the difference to the exponent 0.8 (but is never reduced below 200,000).\nMight of the Cosmos:\nWhen Astral Empyrean kills a player, they recover 1,400,000 HP and gain 200% outgoing damage and outgoing physical damage, stacks indefinitely.\nSkills cannot crit or miss.\nCannot be stunned.\nBase Stats:\n0% Dodge\n100% Damage Resistance\n50% Physical Resistance\n50% Magical Resistance\n100% DoT Resistance\n500% Outgoing Damage\n500% Outgoing Physical Damage\nTemporary Items Dropped:\nAstral Stars (Dropped during the '\nYoshino's Heroic Quest\n' quest)\nAstral's Supernova (Dropped during the '\nAsterism's Toll\n' quest)\nItems Dropped:\nNova Ascension\nNova Chaser Hair\nNova Chaser Locks\nNova Empyrean Guard\nNova Empyrean Tail\nStella Empyrean Spear\nTreasure Chest (Misc)\nNote:\nAlso see\nNova Empyrean\n.\nThanks to Apus.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_a\n_lv100\nboss\nbossshield\nchallenge\ndragon\nfreeplayer\nglowingeyes\nhorns\nimmune\nmonster\ntailed",
+    "images": [
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+      "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://i.imgur.com/OEQFoqJ.png"
+    ]
+  },
+  {
+    "slug": "champion-drakath-monster",
+    "url": "https://aqwwiki.wikidot.com/champion-drakath-monster",
+    "error": "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 275 ms: Couldn't connect to server\n"
+  },
+  {
+    "slug": "darkon-the-conductor",
+    "url": "https://aqwwiki.wikidot.com/darkon-the-conductor",
+    "error": "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 246 ms: Couldn't connect to server\n"
+  },
+  {
+    "slug": "gramiel-the-graceful",
+    "url": "https://aqwwiki.wikidot.com/gramiel-the-graceful",
+    "error": "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 285 ms: Couldn't connect to server\n"
+  },
+  {
+    "slug": "kasuko",
+    "url": "https://aqwwiki.wikidot.com/kasuko",
+    "text": ">\nLocation:\nLavarock Shore\nLevel:\n90\nDifficulty:\n5 stars\nTotal HP:\n5,000,000\nAI:\nAggressive when player attacks\nWhirlpool\nfirst.\nAttacks:\n+ Fireball\n- Fireball\nFireball\nDamage\n530-600\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n3\nType\nPhysical Damage\nNotes\nWhen Enrage is active on Kasuko, cooldown is reduced to 1 second.\nCannot miss.\nIgnores focus.\n+ Ignited\n- Ignited\nIgnited\nDamage\n800-900\nAnimations\n{$animations}\nCooldown\n8 seconds\nMessage\n{$message}\nAoE\n7\nType\nPhysical Damage\nNotes\nApplies Ignited to all players, a DoT that deals damage after 4 seconds.\nCannot miss.\nIgnores focus.\n+ Explosion Charge ➞ Explosion\n- Explosion Charge ➞ Explosion\nExplosion Charge\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\nSelf\nType\nTrue Status\nNotes\nUsed at 90%, 70%, 50%, 30%, and 10% remaining HP.\nExplosion is used after Explosion Charge charges for 3 seconds.\nExplosion\nDamage\n90% of current HP\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n7\nType\nTrue Damage\nNotes\nCannot miss.\nCannot crit.\nIgnores focus.\nAbilities:\nBoss Shield:\nDamage over 50,000 dealt to Kasuko is reduced by raising the difference to the exponent 0.8 (but is never reduced below 50,000).\nCannot be stunned.\nEnrage:\nWhen at 60% remaining HP, applies Enrage to Kasuko, increasing outgoing damage by 100%, and causing Fireball & Ignited to crit.\nBase Stats:\n10% Crit Chance\n0% Dodge Chance\n2000% Hit Chance\n-100% incoming damage\n-100% incoming DoT\n200% Crit Damage\n100% outgoing physical damage\n100% outgoing damage\nTemporary Items Dropped:\nMolten Heart (Used in the '\nThe Molten Heart\n' quest)\nItems Dropped:\nDark Angelica Wetsuit\nDark Covenant Wetsuit\nDark Toy Pitchfork\nKasuko House Guard\nToy Pitchfork\nTreasure Chest (Misc)\nVolcanic Fragment\nx1-20\nNotes:\nKasuko means\n\"Anger\"\nin Cebuano.\nAlso see\nKalayo\n.\nThanks to Tempu.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_k\n_lv90\nboss\nbossshield\nchallenge\ndragon\nfreeplayer\nimmune\nmonster\nseasonal\nsummerbreak\ntailed\ntranslation\nwinged",
+    "images": [
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/seasonallarge.png",
+      "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/legendsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "https://i.imgur.com/6qs2TdC.png"
+    ]
+  },
+  {
+    "slug": "ultra-kala",
+    "url": "https://aqwwiki.wikidot.com/ultra-kala",
+    "text": ">\nMonsters:\nBatara Kala\nx1\nNPCs:\nKi Sama\nQuests:\nKi Sama's Quests\nShops:\nN/A\nMap Name:\nultrakala\nRoom Limit:\n4\nAccess Points:\n/join ultrakala\nAugust Hub\n- 'Level 61+ UltraKala' button\nEvent Hub (August)\n- 'Level 61+ UltraKala' button\nKala (Location)\n- 'Batara Kala' button from\nKartos si Botax\nNotes:\nThis is a locked zone.\nOnly accessible to players level 61 and above.\nMust have completed the '\nKala-mity Time\n' quest to access this location.\nAccess Denied\nScreen 1\n//<![CDATA[\nOZONE.dom.onDomReady(function(){\n        var tabViewd952f3282373643baf5856f57b043e18 = new YAHOO.widget.TabView('wiki-tabview-d952f3282373643baf5856f57b043e18');\n                }, \"dummy-ondomready-block\");\n        \n//]]>\nThanks to Bad and Velyro.\nExplore this area in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n_u\nfreeplayer\nindonesianday\nlocation\nlocked\nseasonal",
+    "images": [
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/seasonallarge.png",
+      "https://aqwwiki.wdfiles.com/local--files/image-tags/raresmall.png",
+      "https://i.imgur.com/Wx7Agx8.png",
+      "https://i.imgur.com/994Cxgm.png"
+    ]
+  },
+  {
+    "slug": "ultra-iara",
+    "url": "https://aqwwiki.wikidot.com/ultra-iara",
+    "text": ">\nUltra Iara usually refers to:\nLocations\nUltra Iara (Location)\nMonsters\nUltra Iara (Monster)\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\ndisambiguation",
+    "images": []
+  }
+]

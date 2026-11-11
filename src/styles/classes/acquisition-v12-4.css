@@ -1,0 +1,368 @@
+.acquisition-method-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  max-height: 260px;
+  overflow: auto;
+  padding: 3px;
+}
+.acquisition-method-tabs > button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  min-height: 52px;
+  background: var(--class-slate);
+  border: 1px solid var(--class-line);
+  color: var(--class-white);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: left;
+  max-width: 100%;
+}
+.acquisition-method-tabs > button small {
+  display: block;
+  font-size: 11px;
+  color: var(--class-muted);
+  margin-top: 4px;
+}
+.acquisition-method-tabs > button b {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.acquisition-method-tabs > button[aria-selected="true"] {
+  border-color: var(--class-accent, var(--class-gold));
+  background: var(--class-raised);
+}
+.acquisition-method-tabs svg {
+  flex-shrink: 0;
+}
+.class-acquisition-method {
+  padding: 24px;
+  background: var(--class-slate);
+  min-width: 0;
+  animation: class-panel-in 180ms ease;
+}
+.acquisition-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.acquisition-heading > svg {
+  color: var(--class-accent, var(--class-gold));
+  margin-top: 5px;
+}
+.acquisition-heading h3 {
+  font-size: 25px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+.acquisition-availability {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--class-muted);
+  margin: 0;
+}
+.acquisition-availability.is-legacy {
+  color: var(--class-accent, var(--class-gold));
+}
+.acquisition-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 22px;
+  font-variant-numeric: tabular-nums;
+}
+.acquisition-price strong {
+  font-size: 38px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.acquisition-price > svg {
+  align-self: center;
+  color: var(--class-accent, var(--class-gold));
+}
+.acquisition-price > span {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--class-accent, var(--class-gold));
+}
+.acquisition-shop-card > h4,
+.acquisition-merge-card > h4,
+.acquisition-quest-card > h4,
+.acquisition-drop-card > h4 {
+  font-size: 19px;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.acquisition-shop-card > p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.acquisition-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.acquisition-meta:empty {
+  display: none;
+}
+.acquisition-meta dt {
+  font-size: 12px;
+  color: var(--class-muted);
+  margin-bottom: 5px;
+}
+.acquisition-meta dd {
+  font-size: 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-wrap: anywhere;
+}
+.acquisition-prerequisites h4 {
+  font-size: 15px;
+}
+.acquisition-prerequisites ul,
+.acquisition-notes {
+  padding-left: 18px;
+  font-size: 14px;
+  display: grid;
+  gap: 7px;
+}
+.acquisition-verification {
+  font-size: 12px;
+  color: var(--class-muted);
+  margin-top: 22px;
+}
+.acquisition-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  margin-top: 14px;
+  min-height: 36px;
+  text-decoration: underline;
+}
+.acquisition-materials {
+  margin-block: 20px;
+  background: var(--class-midnight);
+}
+.acquisition-materials > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 16px;
+  min-height: 52px;
+  font-size: 14px;
+}
+.acquisition-materials > summary > span {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--class-muted);
+}
+.acquisition-materials > summary:after {
+  content: "+";
+  margin-left: 5px;
+}
+.acquisition-materials[open] > summary:after {
+  content: "−";
+}
+.acquisition-material-body {
+  padding: 0 16px 16px;
+}
+.acquisition-material-body > p {
+  font-size: 12px;
+  color: var(--class-muted);
+  margin: 0 0 12px;
+}
+.acquisition-material-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.acquisition-material-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--class-line);
+}
+.acquisition-material-row > label {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  min-width: 0;
+  cursor: pointer;
+}
+.acquisition-material-row input {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  accent-color: var(--class-accent, var(--class-gold));
+}
+.acquisition-material-row svg {
+  flex-shrink: 0;
+  color: var(--class-muted);
+}
+.acquisition-material-row label > span {
+  overflow-wrap: anywhere;
+}
+.acquisition-material-row strong {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 15px;
+}
+.acquisition-material-row > a {
+  display: grid;
+  place-items: center;
+  min-height: 36px;
+  min-width: 30px;
+}
+.acquisition-material-branch fieldset {
+  border: 1px solid var(--class-line);
+  margin: 12px 0;
+  padding: 12px;
+}
+.acquisition-material-branch legend {
+  font-size: 13px;
+  padding-inline: 6px;
+}
+.acquisition-material-branch fieldset > div > label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.acquisition-material-branch input {
+  accent-color: var(--class-accent, var(--class-gold));
+}
+.acquisition-unlock-route {
+  margin-block: 20px;
+}
+.acquisition-unlock-route > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  min-height: 44px;
+}
+.acquisition-unlock-route > .class-section,
+.acquisition-quest-card > .class-section {
+  padding-top: 16px;
+}
+.acquisition-pending {
+  padding: 20px;
+  background: var(--class-slate);
+  font-size: 14px;
+}
+.acquisition-pending a {
+  text-decoration: underline;
+}
+.class-acquisition .class-obtain-steps {
+  margin-block: 20px;
+}
+.class-acquisition .class-step-body dl > div {
+  min-width: 0;
+}
+.class-acquisition .class-step-body dd {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .class-acquisition-method {
+    padding: 16px;
+  }
+  .acquisition-heading h3 {
+    font-size: 22px;
+  }
+  .acquisition-price strong {
+    font-size: 32px;
+  }
+  .acquisition-meta {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .acquisition-method-tabs > button {
+    flex: 1 1 160px;
+    font-size: 13px;
+  }
+  .acquisition-materials > summary {
+    padding: 13px;
+  }
+  .acquisition-material-body {
+    padding: 0 12px 12px;
+  }
+  .acquisition-material-row > label {
+    gap: 7px;
+    font-size: 13px;
+  }
+  .acquisition-material-row strong {
+    font-size: 14px;
+  }
+  .acquisition-material-row svg {
+    width: 15px;
+  }
+  .acquisition-price > span {
+    font-size: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .class-acquisition-method {
+    animation: none;
+  }
+}
+.acquisition-merge-dependencies {
+  margin-top: 20px;
+}
+.acquisition-merge-dependencies > summary {
+  min-height: 44px;
+  cursor: pointer;
+  padding-block: 10px;
+  font-size: 14px;
+}
+.acquisition-merge-dependencies > p {
+  font-size: 12px;
+  color: var(--class-muted);
+}
+.acquisition-merge-dependencies > ol {
+  list-style: none;
+  padding-left: 18px;
+  border-left: 2px solid var(--class-line);
+  display: grid;
+  gap: 14px;
+}
+.acquisition-merge-dependencies li > h5 {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 12px 0 6px;
+}
+.acquisition-merge-dependencies li > p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+.acquisition-merge-dependencies li > a {
+  font-size: 12px;
+  text-decoration: underline;
+}
+.acquisition-merge-dependencies .acquisition-materials {
+  margin-block: 12px;
+}

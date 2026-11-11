@@ -1,0 +1,116 @@
+{
+  "url": "https://aqwwiki.wikidot.com/classic-ninja",
+  "sourceHash": "9f528fe38b555a569f87e02e98f316065a2bb6c685a7640f37cb373cd91e92fb",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "1.5",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A rapid attack studied by only a reclusive few. Damage dealt is based on weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/classic-ninja",
+      "sourceHash": "9f528fe38b555a569f87e02e98f316065a2bb6c685a7640f37cb373cd91e92fb",
+      "evidence": "Auto Attack Rank Needed: 1 Mana Cost: 0 Mana Cooldown: 1.5 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A rapid attack studied by only a reclusive few. Damage dealt is based on weapon damage."
+    },
+    {
+      "officialName": "Crosscut",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Instantly attack twice, dealing extra damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill09.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/classic-ninja",
+      "sourceHash": "9f528fe38b555a569f87e02e98f316065a2bb6c685a7640f37cb373cd91e92fb",
+      "evidence": "Crosscut Rank Needed: 1 Mana Cost: 15 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: Instantly attack twice, dealing extra damage. Note: Deals 200% weapon damage."
+    },
+    {
+      "officialName": "Shadowblade",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "25",
+      "cooldown": "12",
+      "skillType": "Hybrid",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "Deals physical and magical damage, and dramatically reduces their hit chance 6 seconds.",
+      "notes": [
+        "Deals 90% weapon damage.",
+        "Applies Shadowblade to the target, reducing Hit Chance by 100% for 6 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill10.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/classic-ninja",
+      "sourceHash": "9f528fe38b555a569f87e02e98f316065a2bb6c685a7640f37cb373cd91e92fb",
+      "evidence": "Shadowblade Rank Needed: 2 Mana Cost: 25 Mana Cooldown: 12 Seconds Type: Hybrid Range: A short range attack that deals damage to 1 target. Description: Deals physical and magical damage, and dramatically reduces their hit chance 6 seconds. Notes: Deals 90% weapon damage. Applies Shadowblade to the target, reducing Hit Chance by 100% for 6 seconds."
+    },
+    {
+      "officialName": "Shadowburn",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "5",
+      "cooldown": "6",
+      "skillType": "Hybrid",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Deals light weapon damage plus magical damage, stunning any target afflicted by Shadowblade for 3s, or returning 20 mana otherwise.",
+      "notes": [
+        "Deals 90% weapon damage.",
+        "Applies Shadowburn to the target when Shadowblade is active, a stun for 3 seconds."
+      ],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill11.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/classic-ninja",
+      "sourceHash": "9f528fe38b555a569f87e02e98f316065a2bb6c685a7640f37cb373cd91e92fb",
+      "evidence": "Shadowburn Rank Needed: 3 Mana Cost: 5 Mana Cooldown: 6 Seconds Type: Hybrid Range: A long range attack that deals damage to 1 target. Description: Deals light weapon damage plus magical damage, stunning any target afflicted by Shadowblade for 3s, or returning 20 mana otherwise. Notes: Deals 90% weapon damage. Applies Shadowburn to the target when Shadowblade is active, a stun for 3 seconds."
+    },
+    {
+      "officialName": "Elusive",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Dodge increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags-/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/classic-ninja",
+      "sourceHash": "9f528fe38b555a569f87e02e98f316065a2bb6c685a7640f37cb373cd91e92fb",
+      "evidence": "Elusive Rank Needed: 4 Type: Passive Ability Description: Dodge increased by 15%."
+    },
+    {
+      "officialName": "Incisive",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Hit Chance increased by 10% and Crit Chance increased by 15%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags-/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/classic-ninja",
+      "sourceHash": "9f528fe38b555a569f87e02e98f316065a2bb6c685a7640f37cb373cd91e92fb",
+      "evidence": "Incisive Rank Needed: 4 Type: Passive Ability Description: Hit Chance increased by 10% and Crit Chance increased by 15%."
+    },
+    {
+      "officialName": "Thin Air",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "30",
+      "cooldown": "30",
+      "skillType": "Physical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "Increases Dodge and Haste by 5% every time you are hit. Lasts 30 seconds and can't be refreshed.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill12.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/classic-ninja",
+      "sourceHash": "9f528fe38b555a569f87e02e98f316065a2bb6c685a7640f37cb373cd91e92fb",
+      "evidence": "Thin Air Rank Needed: 5 Mana Cost: 30 Mana Cooldown: 30 Seconds Type: Physical Range: A short range status skill that applies to yourself. Description: Increases Dodge and Haste by 5% every time you are hit. Lasts 30 seconds and can't be refreshed. Note: Applies Thin Air to the caster, increases Dodge Chance and Haste by 5% when every time you are hit for 30 seconds. Refreshing reapplies the effect."
+    }
+  ],
+  "portraitUrl": "https://i.imgur.com/VyIGvwU.png",
+  "sameSkillVariants": [],
+  "location": "Location: Willow Creek\nPrice: N/A (Dropped by Hidden Spy)"
+}

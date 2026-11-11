@@ -1,0 +1,2047 @@
+[
+  {
+    "name": "Always Hit Their Mark…",
+    "fields": [
+      "Increases Hit Chance by 10% and Critical Strike Damage by 15%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Hit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 15% Crit Damage."
+      }
+    ]
+  },
+  {
+    "name": "Virulent Toxin",
+    "fields": [
+      "Your powerful poisons increase the Damage over Time you deal by 18%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 18% sát thương DoT gây ra."
+      }
+    ]
+  },
+  {
+    "name": "Attack-Your-Foe-Bia",
+    "fields": [
+      "Arachnid instincts drive you to always strike for your opponent’s weakness, increasing Crit Chance by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Crit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Arachne's Favor",
+    "fields": [
+      "Your hunts are blessed by Arachne, increasing your Haste by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Blood of the Abyss",
+    "fields": [
+      "Your newfound abyssal lineage increases your effectiveness on the battlefield, increasing Crit Damage by 30%, but reducing your magic damage by 75%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 30% Crit Damage."
+      },
+      {
+        "targets": [],
+        "text": "Giảm 75% sát thương phép gây ra."
+      }
+    ]
+  },
+  {
+    "name": "Eyes of the Abyss",
+    "fields": [
+      "Your abyssal visage grants you superior reflexes, increasing your hit chance and crit chance by 12%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 12% Hit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 12% Crit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Blood Rage",
+    "fields": [
+      "Sensing your foes near defeat, below 10% of their health, you have a 25% chance each time you mark your opponent to inflict a heavy DoT."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi mục tiêu còn dưới 10% HP, mỗi lần đánh dấu có 25% cơ hội áp DoT mạnh."
+      }
+    ]
+  },
+  {
+    "name": "Thaumaturgy",
+    "fields": [
+      "Your mastery over the magical arts increases your Hit Chance and Crit Chance by 25%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 25% Hit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 25% Crit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Aether Flow",
+    "fields": [
+      "Your ability to attune with the mana flow and influence it grants you 15% Haste."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Arcane Ascension",
+    "fields": [
+      "From rank 5, your Sigils can use Arcane Flux to empower you, shifting you between two forms. At rank 10, 10% INT."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 5, các Sigil có thể dùng Arcane Flux để chuyển giữa hai dạng."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng 10% INT."
+      }
+    ]
+  },
+  {
+    "name": "Blessed by Light",
+    "fields": [
+      "Your credence grants you an extra 100% Endurance and 10% hit chance."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 100% Endurance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% Hit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Righteous Judgement",
+    "fields": [
+      "Increases outgoing damage by 20% and Haste by 15%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 20% sát thương gây ra."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 15% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Resourceful",
+    "fields": [
+      "Dodge, Crit and Hit chance all increased by 5%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 5% Dodge."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 5% Crit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 5% Hit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Pet the Beast",
+    "fields": [
+      "Starting at rank 1, upon performing a Follow Up you pet your companion, Uplifting them which increases your outgoing physical damage by 5% for 8 seconds, stacks to 8. At rank 10, increases your Crit Chance by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, Follow Up áp Uplifting, tăng 5% sát thương vật lý gây ra trong 8 giây, tối đa 8 stack."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng 10% Crit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Sear Flesh",
+    "fields": [
+      "20% Damage to DoTs"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 20% sát thương DoT."
+      }
+    ]
+  },
+  {
+    "name": "Burn at Both Ends",
+    "fields": [
+      "Occasionally, your Haste and Mana Regen will GREATLY increase for a short time."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Đôi khi Haste và hồi Mana tăng mạnh trong một thời gian ngắn."
+      }
+    ]
+  },
+  {
+    "name": "Blood Volume",
+    "fields": [
+      "Endurance increased by 300%, but your increased size reduces your Dodge by 50%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 300% Endurance."
+      },
+      {
+        "targets": [],
+        "text": "Giảm 50% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Titanic Bloodline",
+    "fields": [
+      "Starting at rank 1, all skills can't miss and can't crit. Additionally, all skills (except Gilded Crusher) heal you for 20% of your max health (before modifiers) over 1 second. At rank 10, Gilded Crusher applies Life Drinker, which heals you for 5% of your max HP (before modifiers) every 2 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, tất cả kỹ năng luôn trúng và không Crit."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Ngoại trừ Gilded Crusher, mỗi kỹ năng hồi 20% HP tối đa trước hệ số điều chỉnh trong 1 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Từ Rank 10, Gilded Crusher áp Life Drinker, hồi 5% HP tối đa trước hệ số điều chỉnh mỗi 2 giây."
+      }
+    ]
+  },
+  {
+    "name": "Brand of Chaos",
+    "fields": [
+      "Starting at rank 1, all skills (except Chaos Greatsword) Brand your target. Whenever your Chaos Greatsword strikes a Branded target, the Brand is consumed to deal double damage to them and apply Ravaged, which stacks to 8 and is used for Fury Unleashed."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Từ Rank 1, mọi kỹ năng trừ Chaos Greatsword áp Brand lên mục tiêu."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Chaos Greatsword đánh mục tiêu có Brand sẽ tiêu hao Brand, gây gấp đôi sát thương và áp Ravaged, tối đa 8 stack dùng cho Fury Unleashed."
+      }
+    ]
+  },
+  {
+    "name": "Empower",
+    "fields": [
+      "The universe watches you closely. +10% luck."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Luck."
+      }
+    ]
+  },
+  {
+    "name": "Ultimate Power",
+    "fields": [
+      "Chaos, the power within, consumes you, boosting your Outgoing Damage by 10%!"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% sát thương gây ra."
+      }
+    ]
+  },
+  {
+    "name": "Absolute Chaos",
+    "fields": [
+      "Magical Resistance increased by 35%. While facing Chaos monsters, Enigma applies Absolute Chaos, increasing all stats by 13%, preventing Courageous from applying, and causing your other random effects to always apply."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 35% kháng phép."
+      },
+      {
+        "targets": [],
+        "text": "Khi đánh quái Chaos, Enigma áp Absolute Chaos, tăng 13% mọi chỉ số, chặn Courageous và bảo đảm các hiệu ứng ngẫu nhiên khác được áp dụng."
+      }
+    ]
+  },
+  {
+    "name": "Ancestor's Favor",
+    "fields": [
+      "Rarely, when using Chi Strike, the spirits of your ancestors flow into you, greatly increasing your Haste, Dodge, mana regen and health regen for 6 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Khi dùng Chi Strike, có xác suất thấp tăng mạnh Haste, Dodge, hồi Mana và hồi HP trong 6 giây."
+      }
+    ]
+  },
+  {
+    "name": "Dages' Favor",
+    "fields": [
+      "Deal 20% more damage from all sources."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 20% sát thương gây ra từ mọi nguồn."
+      }
+    ]
+  },
+  {
+    "name": "Strength of the Legion",
+    "fields": [
+      "10% to crit chance and 5% to hit chance"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Crit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 5% Hit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Doom Armor",
+    "fields": [
+      "Reduce all damage taken by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Giảm 10% mọi sát thương nhận vào."
+      }
+    ]
+  },
+  {
+    "name": "Deep Insight",
+    "fields": [
+      "Increase Crit by 8%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 8% Crit."
+      }
+    ]
+  },
+  {
+    "name": "Touched Mind",
+    "fields": [
+      "Intellect increased 15%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Intellect."
+      }
+    ]
+  },
+  {
+    "name": "Elemental Storm",
+    "fields": [
+      "Small chance to greatly increase the power of an aoe ability."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Có xác suất thấp tăng mạnh sức mạnh của kỹ năng diện rộng."
+      }
+    ]
+  },
+  {
+    "name": "Lash Out",
+    "fields": [
+      "You can no longer contain your rage. It explodes from you in a magical wave. All enemies in range take high damage. Consumes all stacks of Deep Rage."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương phép lớn lên mọi kẻ địch trong tầm."
+      },
+      {
+        "targets": [],
+        "text": "Tiêu hao toàn bộ stack Deep Rage."
+      }
+    ]
+  },
+  {
+    "name": "Tempest",
+    "fields": [
+      "Increase Crit by 10%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Crit."
+      }
+    ]
+  },
+  {
+    "name": "Stormforged",
+    "fields": [
+      "Starting from rank 1, your training and bloodline provide you extraordinary control over the storm, allowing you to overcharge your Storm Bolt up to 50 times."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, Storm Bolt có thể tích điện đến 50 lần."
+      }
+    ]
+  },
+  {
+    "name": "Death's Might",
+    "fields": [
+      "Increase Str Stat by 12%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 12% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Massive Gauntlet",
+    "fields": [
+      "Hit Chance and DoT Power increased by 20%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 20% Hit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 20% sức mạnh DoT."
+      }
+    ]
+  },
+  {
+    "name": "Calcium Rush",
+    "fields": [
+      "Strength increased by 20%. Your skills have a 13% chance per target hit to apply Calcium Rush, increasing your Haste by 30% for 12 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 20% Strength."
+      },
+      {
+        "targets": [],
+        "text": "Mỗi mục tiêu trúng kỹ năng có 13% cơ hội kích hoạt Calcium Rush, tăng 30% Haste trong 12 giây."
+      }
+    ]
+  },
+  {
+    "name": "Agression",
+    "fields": [
+      "You deal 15% additional damage with physical attacks."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% sát thương của đòn đánh vật lý."
+      }
+    ]
+  },
+  {
+    "name": "Doom Strike",
+    "fields": [
+      "chance to do big damage"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Có cơ hội gây sát thương lớn."
+      }
+    ]
+  },
+  {
+    "name": "Convergence of Destiny",
+    "fields": [
+      "Starting at rank 1, when Convergence is active, using your abilities will grant you the aspects of Linearity, Continuity, and Causality, increasing your Endurance by 75% each, for 9 seconds. When Convergence is not active, you create Discordance, increasing your DoT damage by 25%, up to 10 stacks, for 9 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, dùng kỹ năng khi Convergence hoạt động nhận Linearity, Continuity và Causality, mỗi hiệu ứng tăng 75% Endurance trong 9 giây."
+      },
+      {
+        "targets": [],
+        "text": "Khi Convergence không hoạt động, nhận Discordance tăng 25% sát thương DoT trong 9 giây, tối đa 10 stack."
+      }
+    ]
+  },
+  {
+    "name": "Divergent Providence",
+    "fields": [
+      "You split your life to preside over the providence of the many, reducing your base Endurance by 40%, and increasing your Haste by 15%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Giảm 40% Endurance cơ bản."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 15% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Split Timelines",
+    "fields": [
+      "Hit Chance increased by 15%. At the pinnacle of your power, using your abilities wears away at your foes’ existential resilience, weakening them.",
+      "All skills have a chance to apply the following debuffs for 15 seconds:\n\nPrinciples of Time reduces enemy haste by 15% (20% chance)\nPrinciples of Space reduces enemy crit chance by 15% (20% chance)\nPrinciples of Gravitation reduces enemy dodge by 15% (50% chance)\nPrinciples of Dimensionality reduces enemy hit chance by 15% (20% chance)",
+      "Principles of Time reduces enemy haste by 15% (20% chance)",
+      "Principles of Space reduces enemy crit chance by 15% (20% chance)",
+      "Principles of Gravitation reduces enemy dodge by 15% (50% chance)",
+      "Principles of Dimensionality reduces enemy hit chance by 15% (20% chance)"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Hit Chance."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Mọi kỹ năng có 20% cơ hội áp Principles of Time, giảm 15% Haste trong 15 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "20% cơ hội áp Principles of Space, giảm 15% Crit Chance trong 15 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "50% cơ hội áp Principles of Gravitation, giảm 15% Dodge trong 15 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "20% cơ hội áp Principles of Dimensionality, giảm 15% Hit Chance trong 15 giây."
+      }
+    ]
+  },
+  {
+    "name": "Mind over Matter",
+    "fields": [
+      "Increases endurance by 18% and Dodge by 15%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 18% Endurance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 15% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Shadow Master",
+    "fields": [
+      "Increases haste by 10% and Damage over Time effects are 30% stronger."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Haste."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 30% sức mạnh DoT."
+      }
+    ]
+  },
+  {
+    "name": "Shadow Dragon",
+    "fields": [
+      "Every attack gives a small chance of increasing all Damage over Time by 400% for 20 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Mỗi đòn đánh có xác suất thấp tăng 400% mọi sát thương DoT trong 20 giây."
+      }
+    ]
+  },
+  {
+    "name": "Primal Dragon's Power",
+    "fields": [
+      "Primal Alignment now applies Elemental Unity and Primal Incarnation, increasing your outgoing damage by 20%, Hit Chance by 40%, and Crit Multiplier by 50% for 8 seconds, increased to 60%, 100%, and 100% respectively for 3 seconds after that."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Primal Alignment áp Elemental Unity và Primal Incarnation, tăng 20% sát thương gây ra, 40% Hit Chance và 50% hệ số Crit trong 8 giây."
+      },
+      {
+        "targets": [],
+        "text": "Trong 3 giây tiếp theo, ba mức tăng lần lượt là 60%, 100% và 100%."
+      }
+    ]
+  },
+  {
+    "name": "Veteran Slayer",
+    "fields": [
+      "Starting at rank 1. All skills (except your Auto Attack) deal increased damage to Dragonkin. At rank 10, increases your Endurance by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Từ Rank 1, mọi kỹ năng trừ Auto Attack gây thêm sát thương lên Dragonkin."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng 10% Endurance."
+      }
+    ]
+  },
+  {
+    "name": "Warlord's Respect",
+    "fields": [
+      "All physical damage taken reduced by 30%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Giảm 30% sát thương vật lý nhận vào."
+      }
+    ]
+  },
+  {
+    "name": "Primal Power",
+    "fields": [
+      "Rarely, you get in touch with the united power of Desoloth The Final and ALL your attacks are Crits a short time."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Hiếm khi nhận sức mạnh của Desoloth The Final, giúp mọi đòn đánh Crit trong thời gian ngắn."
+      }
+    ]
+  },
+  {
+    "name": "Eternal Resolve",
+    "fields": [
+      "Reduces incoming spell damage by 40%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Giảm 40% sát thương phép nhận vào."
+      }
+    ]
+  },
+  {
+    "name": "Eirinn Go Brasch",
+    "fields": [
+      "Increase Dodge chance by 10%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "No Pain No Gain",
+    "fields": [
+      "All damage taken increased by 15%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% mọi sát thương nhận vào."
+      }
+    ]
+  },
+  {
+    "name": "Might of the Legion",
+    "fields": [
+      "You deal 15% more damage with all attacks."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% sát thương của mọi đòn đánh."
+      }
+    ]
+  },
+  {
+    "name": "For the Legion",
+    "fields": [
+      "Your faith in the legion empowers you. Increases Endurance by 50%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 50% Endurance."
+      }
+    ]
+  },
+  {
+    "name": "Fire Dragon's Scales",
+    "fields": [
+      "The magic of dragon scales gives you 30% spell resistance."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 30% kháng phép."
+      }
+    ]
+  },
+  {
+    "name": "Dragon's Blood",
+    "fields": [
+      "The power of dragons blood gives you 30% endurance increase."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 30% Endurance."
+      }
+    ]
+  },
+  {
+    "name": "Dragon Burn",
+    "fields": [
+      "30% increase to DoT"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 30% sức mạnh DoT."
+      }
+    ]
+  },
+  {
+    "name": "Skull Crusher",
+    "fields": [
+      "Starting at rank 1, all skills can't crit unless Frozen Heart is active. At rank 10, if Frozen Heart is active, Powerful Blow applies Skull Crusher, increasing your outgoing damage by 5% for 15 seconds, stacks to 10."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, kỹ năng chỉ có thể Crit khi Frozen Heart hoạt động."
+      },
+      {
+        "targets": [],
+        "text": "Từ Rank 10, Powerful Blow áp Skull Crusher khi có Frozen Heart, tăng 5% sát thương gây ra trong 15 giây, tối đa 10 stack."
+      }
+    ]
+  },
+  {
+    "name": "Grim Resistance",
+    "fields": [
+      "Spell damage taken reduced by 30%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Giảm 30% sát thương phép nhận vào."
+      }
+    ]
+  },
+  {
+    "name": "Fully-Offensive Lean",
+    "fields": [
+      "Your class has an offensive lean. Your attacks deal +25% damage. However, you take +25% damage from attacks."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Đòn đánh gây thêm 25% sát thương."
+      },
+      {
+        "targets": [],
+        "text": "Nhận thêm 25% sát thương từ các đòn đánh."
+      }
+    ]
+  },
+  {
+    "name": "Grimweld’s Blessing",
+    "fields": [
+      "Your Guardian training grants you +250% Endurance."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 250% Endurance."
+      }
+    ]
+  },
+  {
+    "name": "Ultraguardian",
+    "fields": [
+      "Your Mastercrafted armor grants you an additional 5% haste."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 5% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Enchanted Gear",
+    "fields": [
+      "15% to dodge"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Rune Amulet",
+    "fields": [
+      "15% to crit"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Crit."
+      }
+    ]
+  },
+  {
+    "name": "Sigil of the Captain",
+    "fields": [
+      "After honing your pirate abilities over a long period of time you’ve mastered the art of being a Highseas Commander! Increases damage and dodge by 10%!"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% sát thương."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Master Tracker",
+    "fields": [
+      "Hit Chance and Crit Chance increased 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Hit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% Crit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Weak Spot",
+    "fields": [
+      "Blood Trail has a small chance to locate your target's Weak Spot, increasing your Crit Chance by 100% for 10 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Blood Trail có xác suất thấp tìm thấy Weak Spot, tăng 100% Crit Chance trong 10 giây."
+      }
+    ]
+  },
+  {
+    "name": "Symbiogenesis",
+    "fields": [
+      "Crit Chance increased by 25%. At 10 stacks of Feeding, applies Symbiogenesis, causing your next Frenzied Feast to share Writhe with your allies for 10 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 25% Crit Chance."
+      },
+      {
+        "targets": [
+          "ALLY"
+        ],
+        "text": "Khi Feeding đạt 10 stack, Symbiogenesis giúp Frenzied Feast kế tiếp chia sẻ Writhe cho đồng minh trong 10 giây."
+      }
+    ]
+  },
+  {
+    "name": "My Four Dearest",
+    "fields": [
+      "Mana Costs reduced by 20% and Hit Chance, Outgoing Magic Damage, and Healing Power increased by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Giảm 20% Mana Cost."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% Hit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% sát thương phép gây ra."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% sức mạnh hồi máu."
+      }
+    ]
+  },
+  {
+    "name": "Legendary Defense",
+    "fields": [
+      "Reduces all damage taken by 15%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Giảm 15% mọi sát thương nhận vào."
+      }
+    ]
+  },
+  {
+    "name": "Heroic Surge",
+    "fields": [
+      "The power of a true hero invigorates you and your allies when you use Legacy Crater, increasing your Strength, Intellect, and Luck by 40% for 6 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Dùng Legacy Crater tăng 40% Strength, Intellect và Luck cho bản thân và đồng minh trong 6 giây."
+      }
+    ]
+  },
+  {
+    "name": "Command of Darkness",
+    "fields": [
+      "The power of darkness grants you 15% increased Strength and 75% increased Endurance."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Strength."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 75% Endurance."
+      }
+    ]
+  },
+  {
+    "name": "Command of Light",
+    "fields": [
+      "The power of Light grants you 15% increased Intellect and 12% increased Haste and Hit Chance."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Intellect."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 12% Haste."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 12% Hit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Blizzard",
+    "fields": [
+      "Starting at rank 1, when invoking Elemental Power, you have a very small chance of creating powerful Ice Magic. Fusing this magic with different elements can lead to very brief but powerful effects."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, khi gọi Elemental Power có xác suất rất thấp tạo Ice Magic. Kết hợp với các nguyên tố khác tạo hiệu ứng mạnh trong thời gian rất ngắn."
+      }
+    ]
+  },
+  {
+    "name": "Infinita Nox",
+    "fields": [
+      "Atramentous Shade, Wicked Purgatory, and Anathema have a 50% chance to increase your target's incoming damage by 7% for 30 seconds, stacks to 15."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Atramentous Shade, Wicked Purgatory và Anathema có 50% cơ hội tăng 7% sát thương mục tiêu nhận trong 30 giây, tối đa 15 stack."
+      }
+    ]
+  },
+  {
+    "name": "Beyond Death",
+    "fields": [
+      "Upon taking lethal damage, negate that instance of damage and apply Survived Death, fully restoring your health and mana. This effect can only occur once every 45 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi nhận đòn chí tử, hủy sát thương đó và áp Survived Death, hồi đầy HP và Mana. Có thể kích hoạt tối đa một lần mỗi 45 giây."
+      }
+    ]
+  },
+  {
+    "name": "Power of the Sun",
+    "fields": [
+      "Increases all damage done by 15%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% mọi sát thương gây ra."
+      }
+    ]
+  },
+  {
+    "name": "Unwavering Consistency",
+    "fields": [
+      "Starting at rank 1, all attacks result in critical hits and can never miss.",
+      "Previously called \"Oath of Order\".",
+      "At Rank 10, increases your hit chance by 1,000%.",
+      "External attacks (such as those from Enhancements or Use Items) can miss and not crit."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, đòn đánh luôn trúng và luôn Crit. Đòn bổ sung từ Enhancement hoặc Use Item vẫn có thể Miss hoặc không Crit."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng 1.000% Hit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Ranger Secrets",
+    "fields": [
+      "Increases Dodge by 15% and Haste by 7%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Dodge."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 7% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Mind Over Matter",
+    "fields": [
+      "When you are at risk of being defeated your amazing mind will occasionally construct a psychic shield around you blocking ALL incoming damage for 5 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi sắp bị hạ gục, đôi khi tạo khiên chặn mọi sát thương nhận vào trong 5 giây."
+      }
+    ]
+  },
+  {
+    "name": "Fall Back",
+    "fields": [
+      "Dodge chance increased by 15%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Peacebringer",
+    "fields": [
+      "HoT and DoT power increased by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% sức mạnh HoT."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% sức mạnh DoT."
+      }
+    ]
+  },
+  {
+    "name": "Available to Allies",
+    "fields": [
+      "All healing increased by 15%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% mọi hiệu ứng hồi máu."
+      }
+    ]
+  },
+  {
+    "name": "Twist of Fate",
+    "fields": [
+      "On rare occasions the Oracle and his entire group are granted Divine Recovery fully healing them and granting temporary invulnerability."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Hiếm khi Divine Recovery hồi đầy HP và cho bản thân cùng cả đội miễn nhiễm tạm thời."
+      }
+    ]
+  },
+  {
+    "name": "Divine Recovery",
+    "fields": [
+      "On rare occasions the paladin and his entire team are fully healed and granted temporary invulnerability.",
+      "Applies Divine Recovery to all allies, a HoT and blocks all Incoming Damage for 8 seconds.",
+      "Previously called \"Ultimate Heal\"."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Hiếm khi Divine Recovery hồi đầy HP cho bản thân và cả đội."
+      },
+      {
+        "targets": [
+          "ALLY"
+        ],
+        "text": "Divine Recovery áp HoT và chặn toàn bộ sát thương nhận vào cho đồng minh trong 8 giây."
+      }
+    ]
+  },
+  {
+    "name": "Spiked Nog",
+    "fields": [
+      "Critical Strike Chance increased 5%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 5% Crit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Psionic Armaments",
+    "fields": [
+      "Your psychic powers allow you to conjure metaphysical armor and weapons, decreasing the damage you take by 25%, and increasing your haste and accuracy by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Giảm 25% sát thương nhận vào."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% Haste."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% độ chính xác."
+      }
+    ]
+  },
+  {
+    "name": "Psionic Precision",
+    "fields": [
+      "Starting at rank 1, your precise control over psionic elements allows you to focus your attack power on your main target, dealing double damage to them with your skills."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Từ Rank 1, kỹ năng gây gấp đôi sát thương lên mục tiêu chính."
+      }
+    ]
+  },
+  {
+    "name": "Extrasensory Perception",
+    "fields": [
+      "Your ability to read the flow of combat grants you +15% Crit Chance. Rarely, your ability to read the Psionic Flow gives you clairvoyant visions, vastly increasing your combat capabilities for a few seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Crit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Hiếm khi Psionic Flow tăng mạnh khả năng chiến đấu trong vài giây."
+      }
+    ]
+  },
+  {
+    "name": "Bad Blood",
+    "fields": [
+      "Increases Damage Output by 12%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 12% sát thương gây ra."
+      }
+    ]
+  },
+  {
+    "name": "Curse of the Beautiful",
+    "fields": [
+      "Increases Healing by 25%, but lowers Endurance by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 25% hồi máu."
+      },
+      {
+        "targets": [],
+        "text": "Giảm 10% Endurance."
+      }
+    ]
+  },
+  {
+    "name": "Titanic Bloodline",
+    "fields": [
+      "Once in a great while, you tap the full potential of your powerful blood and greatly increase your damage output, damage resistance and haste for a short time."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Hiếm khi tăng mạnh sát thương gây ra, Damage Resistance và Haste trong thời gian ngắn."
+      }
+    ]
+  },
+  {
+    "name": "Turn up the Heat",
+    "fields": [
+      "DoT Power increased by 25% and Damage Resistance increased by 30%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 25% sức mạnh DoT."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 30% Damage Resistance."
+      }
+    ]
+  },
+  {
+    "name": "Melt Face Mode",
+    "fields": [
+      "Hit Chance and Crit Chance increased by 15%, and Haste increased by 20%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Hit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 15% Crit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 20% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Forged in Fire",
+    "fields": [
+      "Your flames grant you near immunity to damage over time effects, increasing DoT Resistance to a max of 80% and preventing 20% of DoT Resistance debuffs."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng giới hạn DoT Resistance lên 80%."
+      },
+      {
+        "targets": [],
+        "text": "Ngăn 20% hiệu lực của debuff giảm DoT Resistance."
+      }
+    ]
+  },
+  {
+    "name": "The Western Covenant - Alpha and Omega",
+    "fields": [
+      "Starting from Rank 1, all skills except The Western Covenant apply The Watch Eternal, reducing your target's Dodge by 25%, stacks to 20. At rank 10, increases STR by 30% and END by 15%."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Từ Rank 1, mọi kỹ năng trừ The Western Covenant áp The Watch Eternal, giảm 25% Dodge của mục tiêu, tối đa 20 stack."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng 30% STR."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng 15% END."
+      }
+    ]
+  },
+  {
+    "name": "Living Dead",
+    "fields": [
+      "Increases damage resistance to a max of 80% and prevents 10% of damage resistance debuffs."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng giới hạn Damage Resistance lên 80%."
+      },
+      {
+        "targets": [],
+        "text": "Ngăn 10% hiệu lực của debuff giảm Damage Resistance."
+      }
+    ]
+  },
+  {
+    "name": "Superconductor",
+    "fields": [
+      "At rank 10, your Bombardments electrify the opponent for 4 seconds, granting secondary effects to your skills."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Từ Rank 10, Bombardments làm đối thủ nhiễm điện trong 4 giây, mở các hiệu ứng bổ sung của kỹ năng."
+      }
+    ]
+  },
+  {
+    "name": "Sniper Sight",
+    "fields": [
+      "Hit chance +30%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 30% Hit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Eye of the Storm",
+    "fields": [
+      "Starting from rank 1, your bloodline grants you absolute control over the storm, causing your skills to always crit and never miss. At rank 10, increases your Crit Damage by 100%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, kỹ năng luôn Crit và luôn trúng."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng 100% Crit Damage."
+      }
+    ]
+  },
+  {
+    "name": "Star Captain Bonus: Railgun",
+    "fields": [
+      "Starting at rank 1, using an Alignment skill applies Imminent End, lowering the cost of your Mech’s World Ender by 8%, up to 96%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, dùng kỹ năng Alignment áp Imminent End, giảm 8% chi phí của Mech’s World Ender, tối đa 96%."
+      }
+    ]
+  },
+  {
+    "name": "Dragonoid’s Pursuit",
+    "fields": [
+      "Your World Ender now applies Hyper Ladder, increasing your Haste by 50% for 6 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "World Ender áp Hyper Ladder, tăng 50% Haste trong 6 giây."
+      }
+    ]
+  },
+  {
+    "name": "Regenerative Rebirth",
+    "fields": [
+      "Healing power increased by 50%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 50% sức mạnh hồi máu."
+      }
+    ]
+  },
+  {
+    "name": "Troll Control",
+    "fields": [
+      "Haste increased by 10%. Spellsmith Sigil now has a small chance to apply Troll Control, increasing your haste by 100% for 20 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Haste."
+      },
+      {
+        "targets": [],
+        "text": "Spellsmith Sigil có xác suất thấp áp Troll Control, tăng 100% Haste trong 20 giây."
+      }
+    ]
+  },
+  {
+    "name": "Aura Specialist",
+    "fields": [
+      "Haste increased 10% and spell damage 20%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Haste."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 20% sát thương phép."
+      }
+    ]
+  },
+  {
+    "name": "Goated",
+    "fields": [
+      "When Foraging, you have an extremely small chance to find an invinci-berry. The berry brings out the true goat within for 8 seconds, increasing your outgoing physical damage by 100% and making you invincible for the duration."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Khi Foraging, có xác suất rất thấp tìm được invinci-berry. Quả này tăng 100% sát thương vật lý gây ra và cho miễn nhiễm trong 8 giây."
+      }
+    ]
+  },
+  {
+    "name": "Blessed Speed Burst",
+    "fields": [
+      "Increases haste by 10% to quickly defeat undead enemies."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Spirit Surge",
+    "fields": [
+      "Grants a rare chance to completely fill your spirit power."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Hiếm khi hồi đầy Spirit Power."
+      }
+    ]
+  },
+  {
+    "name": "Ageless",
+    "fields": [
+      "Intellect increased by 30%, Crit Rate reduced by 20%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 30% Intellect."
+      },
+      {
+        "targets": [],
+        "text": "Giảm 20% Crit Rate."
+      }
+    ]
+  },
+  {
+    "name": "Doom's All Around",
+    "fields": [
+      "Starting at rank 1, all skills (except Necrotic Blade) grant you 1 stack of Doom, which stacks to 10 and is used for Unleash Doom. While Unleashed Doom is active, you can't gain stacks of Doom. At rank 10, increases your Crit Chance by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, mọi kỹ năng trừ Necrotic Blade thêm 1 stack Doom, tối đa 10, dùng cho Unleash Doom. Không tích Doom khi Unleashed Doom đang hoạt động."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng 10% Crit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Can't Keep Johnny Down",
+    "fields": [
+      "Your skills have a 1% chance to apply Can't Keep Johnny Down, granting you unlimited MP and massive healing for 8 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Kỹ năng có 1% cơ hội áp Can't Keep Johnny Down, cho Mana không giới hạn và hồi máu mạnh trong 8 giây."
+      }
+    ]
+  },
+  {
+    "name": "Undying Highlord",
+    "fields": [
+      "Starting at rank 1, all skills (excluding Contract) have a 20% chance to apply Insolent Fools, increasing your Endurance by 30% while healing you over time for 3 seconds. At rank 10, Undying Highlord permanently increases your Endurance by 50% and Armageddon increases your opponent’s incoming damage by 5% for 20 seconds, stacks to 10."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Từ Rank 1, mọi kỹ năng trừ Contract có 20% cơ hội áp Insolent Fools, tăng 30% Endurance và hồi máu theo thời gian trong 3 giây."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng vĩnh viễn 50% Endurance."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Từ Rank 10, Armageddon tăng 5% sát thương đối thủ nhận trong 20 giây, tối đa 10 stack."
+      }
+    ]
+  },
+  {
+    "name": "Not a Second Wasted",
+    "fields": [
+      "Increases HoT and DoT power by 30%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 30% sức mạnh HoT."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 30% sức mạnh DoT."
+      }
+    ]
+  },
+  {
+    "name": "Harvested Time",
+    "fields": [
+      "Outgoing magic damage increased by 25%. If your target has Temporal Rift or Chaos Rift, Final Hours reduces their haste by 50% for 3 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 25% sát thương phép gây ra."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Final Hours giảm 50% Haste của mục tiêu trong 3 giây nếu mục tiêu có Temporal Rift hoặc Chaos Rift."
+      }
+    ]
+  },
+  {
+    "name": "Written In Ink",
+    "fields": [
+      "Starting at rank 1, your inscriptions bind to the pages, causing all skills to be guaranteed hits."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, mọi kỹ năng luôn trúng."
+      }
+    ]
+  },
+  {
+    "name": "Epigraph",
+    "fields": [
+      "Crit Chance increased by 15%. The first time Lorebook of Beginnings is used in combat, it applies Epigraph, increasing your Damage Resistance by 50% for 8 seconds."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Crit Chance."
+      },
+      {
+        "targets": [],
+        "text": "Lần đầu dùng Lorebook of Beginnings trong trận, áp Epigraph tăng 50% Damage Resistance trong 8 giây."
+      }
+    ]
+  },
+  {
+    "name": "Stacked Deck",
+    "fields": [
+      "The cards are stacked in your favor, granting you +10% Dodge and Haste, and +20% Crit Chance."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Dodge."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% Haste."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 20% Crit Chance."
+      }
+    ]
+  },
+  {
+    "name": "Luck of the Draw",
+    "fields": [
+      "You believe in your cards and your good fortunes. +10% Luck."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Luck."
+      }
+    ]
+  },
+  {
+    "name": "Topdecking",
+    "fields": [
+      "Starting from rank 1, your abilities cannot be avoided. Dealing once more while under card effects Deals them one more time on your selected target."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, kỹ năng không thể bị né."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Dùng Deal một lần nữa khi hiệu ứng lá bài đang hoạt động sẽ áp chúng thêm một lần lên mục tiêu đã chọn."
+      }
+    ]
+  },
+  {
+    "name": "Quick Wit",
+    "fields": [
+      "Increases dodge chance by 20%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 20% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Hidden Blade",
+    "fields": [
+      "Starting at rank 1, your autos have a 10% chance to apply a 150% physical damage buff for 4 seconds. At rank 10, Hidden Blade permanently increases your dodge by 18%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, Auto Attack có 10% cơ hội tăng 150% sát thương vật lý trong 4 giây."
+      },
+      {
+        "targets": [],
+        "text": "Rank 10 tăng vĩnh viễn 18% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Soul Infusion",
+    "fields": [
+      "Blasphemous Battleaxe applies Soul Infusion for 10 seconds, increasing your Crit Chance by 5% for each Soul you have at the time of application."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Blasphemous Battleaxe áp Soul Infusion trong 10 giây, tăng 5% Crit Chance cho mỗi Soul đang có lúc áp dụng."
+      }
+    ]
+  },
+  {
+    "name": "Twilly’s Helping Hand",
+    "fields": [
+      "Healing Power increased by 15%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% sức mạnh hồi máu."
+      }
+    ]
+  },
+  {
+    "name": "Zorbak’s Dark Influence",
+    "fields": [
+      "INT and DoT Power increased by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% INT."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% sức mạnh DoT."
+      }
+    ]
+  },
+  {
+    "name": "Moglin Blitz",
+    "fields": [
+      "Moglin Frenzy applies Moglin Blitz to your target, increasing the damage they take from each successive hit of the skill by 45%, up to 12 times."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Moglin Frenzy áp Moglin Blitz, tăng 45% sát thương mục tiêu nhận từ mỗi lần trúng tiếp theo của kỹ năng, tối đa 12 lần."
+      }
+    ]
+  },
+  {
+    "name": "Fight Response",
+    "fields": [
+      "Attack first, do the tutorial later. Outgoing damage increased by 10%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% sát thương gây ra."
+      }
+    ]
+  },
+  {
+    "name": "Flight Response",
+    "fields": [
+      "You grow wings and can fly. Lol just kidding, all you get is 10% more Haste."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Big Orange Numbers",
+    "fields": [
+      "We know you like em, Crit Damage increased by 50%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 50% Crit Damage."
+      }
+    ]
+  },
+  {
+    "name": "ANCIENT EVIL",
+    "fields": [
+      "Your power comes from deep beneath the Necropolis, increasing your Strength and Intellect by 25%. You are vulnerable without your layer of Skulls, reducing your base Endurance by 50%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 25% Strength."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 25% Intellect."
+      },
+      {
+        "targets": [],
+        "text": "Giảm 50% Endurance cơ bản."
+      }
+    ]
+  },
+  {
+    "name": "DETECT LIVING",
+    "fields": [
+      "While your target isn't Morphed, Blade of Massive Destruction applies Detect Living, which stacks to 20 and lasts 10 seconds. At 20 stacks they're consumed to apply HAHAHAHAHA, increasing your Crit Chance and Crit Damage by 500% for 10 seconds and causing More Skulls to grant Undead Power to all allies. Detect Living is always applied against Humans."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi mục tiêu chưa bị Morphed, Blade of Massive Destruction áp Detect Living trong 10 giây, tối đa 20 stack. Detect Living luôn được áp lên Human."
+      },
+      {
+        "targets": [],
+        "text": "Đủ 20 stack sẽ tiêu hao chúng để áp HAHAHAHAHA, tăng 500% Crit Chance và Crit Damage trong 10 giây."
+      },
+      {
+        "targets": [
+          "ALLY"
+        ],
+        "text": "Khi HAHAHAHAHA hoạt động, More Skulls trao Undead Power cho mọi đồng minh."
+      }
+    ]
+  },
+  {
+    "name": "Lingering Darkness",
+    "fields": [
+      "HoT and DoT power increased by 10%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% sức mạnh HoT."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 10% sức mạnh DoT."
+      }
+    ]
+  },
+  {
+    "name": "Red Vision",
+    "fields": [
+      "Your superhuman reflexes increase your Dodge and Haste by 15%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Dodge."
+      },
+      {
+        "targets": [],
+        "text": "Tăng 15% Haste."
+      }
+    ]
+  },
+  {
+    "name": "Delayed Deadline",
+    "fields": [
+      "Your mastery over the simulated reality grants you superhuman abilities, increasing your Endurance by 50%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 50% Endurance."
+      }
+    ]
+  },
+  {
+    "name": "Quantum Mending",
+    "fields": [
+      "Reality bends. Quantum Shift applies stacks of Quantum Spiral to you for each friendly target affected, increasing your Crit Modifier and DoT damage by 10% for 20 seconds, stacks to 40 but cannot be refreshed."
+    ],
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Quantum Shift áp Quantum Spiral cho mỗi mục tiêu đồng minh chịu tác động, tăng 10% hệ số Crit và sát thương DoT trong 20 giây, tối đa 40 stack, không thể làm mới thời hạn."
+      }
+    ]
+  },
+  {
+    "name": "Sandskin",
+    "fields": [
+      "Dodge chance increased by 10%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Timesmith",
+    "fields": [
+      "Starting from Rank 1, you can equip Hourglasses and Corruption as a consumable to enhance your other skills."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Từ Rank 1, có thể trang bị Hourglass và Corruption làm vật phẩm tiêu hao để cường hóa kỹ năng khác."
+      }
+    ]
+  },
+  {
+    "name": "Temporal Cataclysm",
+    "fields": [
+      "DoT damage taken reduced by 60%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Giảm 60% sát thương DoT nhận vào."
+      }
+    ]
+  },
+  {
+    "name": "Chaotic Movement",
+    "fields": [
+      "Dodge chance increased by 15%."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Three Moves Ahead",
+    "fields": [
+      "Dodge Chance increased by 15%"
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 15% Dodge."
+      }
+    ]
+  },
+  {
+    "name": "Reinforced Chamber",
+    "fields": [
+      "Your high-tech parts allow you to shoot faster and more powerful shots for +10% damage."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% sát thương."
+      }
+    ]
+  },
+  {
+    "name": "Sharpshooter",
+    "fields": [
+      "You pinpoint critical weaknesses with ease, granting you +10% Crit Chance."
+    ],
+    "effects": [
+      {
+        "targets": [],
+        "text": "Tăng 10% Crit Chance."
+      }
+    ]
+  }
+]

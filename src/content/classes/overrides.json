@@ -1,0 +1,301 @@
+{
+  "archpaladin-ap": {
+    "name": "ArchPaladin",
+    "aliases": ["archpaladin"],
+    "role": ["Support", "Healer", "Solo"],
+    "playstyle": "Hybrid • debuff và hồi phục",
+    "difficulty": "Cần luyện tập",
+    "difficultyBasis": "Cần canh Heal và Righteous Seal; Eden tiêu hao Seal.",
+    "acquisitionType": ["free", "questline"],
+    "acquisitionSummary": "Hoàn thành chuỗi Artix rồi mở ArchPaladin Shop tại darkthronehub.",
+    "shortDescription": "Giữ đội sống sót bằng ánh sáng, debuff và những nhịp hồi phục đúng lúc.",
+    "longDescription": "ArchPaladin phối hợp Commandment, Righteous Seal và Heal để giữ trận đấu ổn định. Chú ý thời điểm dùng Eden vì kỹ năng này tiêu hao Seal.",
+    "strengths": [
+      "Có Heal và giảm sát thương của đối thủ.",
+      "Hữu ích trong các đội hình cần bảo vệ."
+    ],
+    "weaknesses": [
+      "Cần phối hợp nhịp Heal với cơ chế boss.",
+      "Dùng Eden sai lúc có thể làm mất Seal đang cần giữ."
+    ],
+    "accent": "#e0bd80",
+    "farmSlug": "archpaladin-ap",
+    "npc": "Artix",
+    "map": "darkthronehub",
+    "wiki": "archpaladin-0-ac",
+    "combos": [
+      {
+        "id": "solo",
+        "title": "Solo cơ bản",
+        "situation": "Boss gây sát thương thấp",
+        "sequence": [2, 4, 2, 5],
+        "explanation": "Theo guide: tích Commandment trước, sau đó duy trì nhịp 2 và dùng 4 khi hồi xong.",
+        "notes": [
+          "Mở đầu dùng 2 khoảng 4–5 lần trước khi vào vòng.",
+          "Skill 3 dành cho lúc cần hồi máu."
+        ],
+        "source": "class-doc"
+      },
+      {
+        "id": "support",
+        "title": "Hỗ trợ boss",
+        "situation": "Khi cần giảm sát thương và giữ đội sống",
+        "sequence": [3, 4, 2, 2, 5],
+        "explanation": "Pre-buff bằng 3; phối hợp Heal với đội và tiếp tục duy trì 2.",
+        "notes": [
+          "Đây là combo đề xuất cộng đồng.",
+          "Với boss có Decay, không dùng Heal theo thói quen; đọc guide boss."
+        ],
+        "source": "class-doc"
+      }
+    ],
+    "roleBasis": "Vai trò theo cách sử dụng trong guide cộng đồng; không phải bảng xếp hạng chính thức.",
+    "passives": [
+      {
+        "id": "passive-1",
+        "name": "Restitution",
+        "rank": 4,
+        "effectType": "Passive",
+        "description": "Giảm sát thương nhận vào.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      },
+      {
+        "id": "passive-2",
+        "name": "Blessed by Light",
+        "rank": 4,
+        "effectType": "Passive",
+        "description": "Tăng END và độ chính xác.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      },
+      {
+        "id": "passive-3",
+        "name": "Righteous Judgement",
+        "rank": 10,
+        "effectType": "Passive",
+        "description": "Tăng sát thương gây ra và Haste.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      }
+    ]
+  },
+  "lord-of-order-loo": {
+    "name": "Lord of Order",
+    "aliases": ["lord-of-order"],
+    "role": ["Support", "Healer"],
+    "playstyle": "Buff đội • nhịp hỗ trợ",
+    "difficulty": "Cơ bản",
+    "difficultyBasis": "Combo nền là duy trì buff; độ khó tăng khi phải canh Heal theo boss.",
+    "acquisitionType": ["free", "questline"],
+    "acquisitionSummary": "Chuỗi quest của Mirror Drakath tại battleoff, kết thúc bằng The Final Challenge.",
+    "shortDescription": "Tăng sức mạnh đồng đội và duy trì trật tự giữa những trận chiến hỗn loạn.",
+    "longDescription": "Lord of Order tập trung hỗ trợ party. Duy trì Harmony và Axiom, phối hợp Ordinance đúng thời điểm thay vì chỉ bấm toàn bộ skill liên tục.",
+    "strengths": [
+      "Buff đồng đội bằng nhiều hiệu ứng hỗ trợ.",
+      "Có thể phối hợp hồi máu trong party."
+    ],
+    "weaknesses": [
+      "Cần đội hình phù hợp để phát huy vai trò.",
+      "Heal phải theo cơ chế boss, không chỉ theo cooldown."
+    ],
+    "accent": "#a7c6a2",
+    "farmSlug": "lord-of-order-loo",
+    "npc": "Mirror Drakath",
+    "map": "battleoff",
+    "wiki": "lord-of-order-quest",
+    "combos": [
+      {
+        "id": "support",
+        "title": "Hỗ trợ cơ bản",
+        "situation": "Party / buff đồng đội",
+        "sequence": [2, 3, 4, 5],
+        "explanation": "Theo guide: dùng các skill khi hồi, ưu tiên duy trì 2 và 4, điều chỉnh 3 theo nhu cầu hồi phục.",
+        "notes": [
+          "Skill 3 là Heal; phối hợp với người hồi máu còn lại.",
+          "Đây là gợi ý cộng đồng, không thay guide riêng của từng Ultra Boss."
+        ],
+        "source": "class-doc"
+      }
+    ],
+    "roleBasis": "Vai trò theo cách sử dụng trong guide cộng đồng; không phải bảng xếp hạng chính thức.",
+    "passives": [
+      {
+        "id": "passive-1",
+        "name": "Servitude",
+        "rank": 4,
+        "effectType": "Passive",
+        "description": "Tăng Haste.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      },
+      {
+        "id": "passive-2",
+        "name": "Resilience",
+        "rank": 4,
+        "effectType": "Passive",
+        "description": "Tăng khả năng chống chịu sát thương.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      },
+      {
+        "id": "passive-3",
+        "name": "Unwavering Consistency",
+        "rank": 10,
+        "effectType": "Passive",
+        "description": "Các đòn đánh của Class có quy tắc Hit/Crit riêng; xem ghi chú Wiki về hiệu ứng ngoài Class.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      }
+    ]
+  },
+  "dragon-of-time-dt-edot": {
+    "name": "Dragon of Time",
+    "aliases": ["dragon-of-time"],
+    "role": ["DPS", "Solo", "Farming"],
+    "playstyle": "DoT • quản lý HP và trạng thái",
+    "difficulty": "Nâng cao",
+    "difficultyBasis": "Cần quản lý HP và luân chuyển Convergence/Discordance theo chế độ solo/farm.",
+    "acquisitionType": ["free", "questline"],
+    "acquisitionSummary": "Chuỗi Kro’nar tại timeinn; nhận Class từ Hero’s Heartbeat.",
+    "shortDescription": "Xé dòng thời gian, duy trì DoT và chuyển nhịp giữa sức mạnh đơn mục tiêu với farming.",
+    "longDescription": "Dragon of Time dùng HP và các trạng thái của bộ skill để điều chỉnh sát thương. Luyện một rotation ổn định trước khi chuyển sang các chuỗi farm dài.",
+    "strengths": [
+      "Có hướng sử dụng solo và farming trong guide.",
+      "Tương tác DoT và các trạng thái riêng của Class."
+    ],
+    "weaknesses": [
+      "Cần theo dõi HP khi dùng kỹ năng.",
+      "Các vòng farm nâng cao đòi hỏi luyện nhịp."
+    ],
+    "accent": "#9ebdda",
+    "farmSlug": "dragon-of-time-dt-edot",
+    "npc": "Kro'nar",
+    "map": "timeinn",
+    "wiki": "dragon-of-time-class",
+    "combos": [
+      {
+        "id": "solo",
+        "title": "Solo Rotation",
+        "situation": "Một mục tiêu",
+        "sequence": [4, 3, 2, 3, 5],
+        "explanation": "Vòng solo được nêu trong guide cộng đồng.",
+        "notes": [
+          "Với boss đánh mạnh, guide đề xuất mở đầu 2 → 5 → 3.",
+          "Theo dõi HP; không coi vòng này là lựa chọn bắt buộc cho mọi boss."
+        ],
+        "source": "class-doc"
+      },
+      {
+        "id": "farm",
+        "title": "Farming Rotation",
+        "situation": "Đánh nhiều mục tiêu",
+        "sequence": [5, 2, 3, 4, 3],
+        "explanation": "Vòng farm cơ bản trong guide.",
+        "notes": [
+          "Guide có các biến thể theo HP quái và mana.",
+          "Luyện rotation cơ bản trước khi dùng chuỗi nâng cao."
+        ],
+        "source": "class-doc"
+      }
+    ],
+    "roleBasis": "Vai trò theo cách sử dụng trong guide cộng đồng; không phải bảng xếp hạng chính thức.",
+    "passives": [
+      {
+        "id": "passive-1",
+        "name": "Convergence of Destiny",
+        "rank": 4,
+        "effectType": "Passive",
+        "description": "Các trạng thái của kỹ năng thay đổi theo Convergence.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      },
+      {
+        "id": "passive-2",
+        "name": "Divergent Providence",
+        "rank": 4,
+        "effectType": "Passive",
+        "description": "Điều chỉnh END nền và Haste.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      },
+      {
+        "id": "passive-3",
+        "name": "Split Timelines",
+        "rank": 10,
+        "effectType": "Passive",
+        "description": "Tăng Hit Chance; các kỹ năng có thể gây thêm debuff.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      }
+    ]
+  },
+  "blaze-binder-bb-firelord-summoner-fls": {
+    "name": "Blaze Binder",
+    "aliases": ["blaze-binder"],
+    "role": ["Farming"],
+    "playstyle": "Caster • DoT nhiều mục tiêu",
+    "difficulty": "Cơ bản",
+    "difficultyBasis": "Guide farm cơ bản có một kỹ năng mở đầu và vòng 4 skill rõ ràng.",
+    "acquisitionType": ["free", "reputation", "questline"],
+    "acquisitionSummary": "Lấy Pyromancer, đáp ứng yêu cầu Sigils rồi merge tại Firestorm Forge.",
+    "shortDescription": "Thiêu đốt nhiều mục tiêu bằng lửa và bóng tối, duy trì áp lực bằng DoT.",
+    "longDescription": "Blaze Binder được guide cộng đồng đề xuất cho farming. Phần lấy Class ở đây trình bày tuyến farm/merge, không suy ra mọi biến thể reskin đều còn mở bán.",
+    "strengths": [
+      "Có nhiều kỹ năng đánh nhiều mục tiêu.",
+      "Có công cụ phòng thủ và hồi phục."
+    ],
+    "weaknesses": [
+      "Guide không khuyến khích solo boss gây sát thương cao.",
+      "Cách lấy cần chuẩn bị Pyromancer và reputation."
+    ],
+    "accent": "#e3a576",
+    "farmSlug": "blaze-binder-bb",
+    "npc": "High Adept Caustus",
+    "map": "fireforge",
+    "wiki": "blaze-binder-merge",
+    "combos": [
+      {
+        "id": "farm",
+        "title": "Farming",
+        "situation": "Nhiều mục tiêu",
+        "sequence": [5, 3, 2, 4],
+        "explanation": "Mở đầu bằng skill 4, sau đó dùng vòng được guide đề xuất.",
+        "notes": ["Không dùng gợi ý farming này làm bảo đảm solo boss mạnh."],
+        "source": "class-doc"
+      }
+    ],
+    "roleBasis": "Vai trò theo cách sử dụng trong guide cộng đồng; không phải bảng xếp hạng chính thức.",
+    "passives": [
+      {
+        "id": "passive-1",
+        "name": "Sear Flesh",
+        "rank": 4,
+        "effectType": "Passive",
+        "description": "Tăng sát thương DoT.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      },
+      {
+        "id": "passive-2",
+        "name": "Sear Bone",
+        "rank": 4,
+        "effectType": "Passive",
+        "description": "Tăng sát thương gây ra.",
+        "usageNotes": [],
+        "source": "wiki",
+        "passive": true
+      }
+    ]
+  }
+}

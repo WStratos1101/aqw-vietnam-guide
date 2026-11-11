@@ -1,0 +1,128 @@
+{
+  "url": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+  "sourceHash": "b688e25e806fa3b08d4921919e9de70dbcb08856510a59c2d626d27be8488ba0",
+  "entries": [
+    {
+      "officialName": "Auto Attack",
+      "rank": 0,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "2",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Auto_Attack.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+      "sourceHash": "b688e25e806fa3b08d4921919e9de70dbcb08856510a59c2d626d27be8488ba0",
+      "evidence": "Auto Attack Rank Needed: 0 Mana Cost: 0 Mana Cooldown: 2 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage."
+    },
+    {
+      "officialName": "Cutlass Combo",
+      "rank": 1,
+      "passive": false,
+      "manaCost": "4",
+      "cooldown": "3",
+      "skillType": "Physical",
+      "target": "A short range attack that deals damage to 1 target.",
+      "officialDescription": "A cutlass is the primary weapon of a pirate and is their weapon of choice. Applies Cutlass and Combo, increasing your Crit Chance by 3% and Crit Damage by 7% for 8 seconds, stacks to 5.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill159.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+      "sourceHash": "b688e25e806fa3b08d4921919e9de70dbcb08856510a59c2d626d27be8488ba0",
+      "evidence": "Cutlass Combo Rank Needed: 1 Mana Cost: 4 Mana Cooldown: 3 Seconds Type: Physical Range: A short range attack that deals damage to 1 target. Description: A cutlass is the primary weapon of a pirate and is their weapon of choice. Applies Cutlass and Combo, increasing your Crit Chance by 3% and Crit Damage by 7% for 8 seconds, stacks to 5."
+    },
+    {
+      "officialName": "Plunder",
+      "rank": 2,
+      "passive": false,
+      "manaCost": "0",
+      "cooldown": "12",
+      "skillType": "Physical",
+      "target": "A short range status skill that applies to yourself.",
+      "officialDescription": "You use your pirate sense to steal treasure to aid you in battle, who knows exactly what you'll get? Applies 1 of 3 effects to yourself:",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill160.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+      "sourceHash": "b688e25e806fa3b08d4921919e9de70dbcb08856510a59c2d626d27be8488ba0",
+      "evidence": "Plunder Rank Needed: 2 Mana Cost: 0 Mana Cooldown: 12 Seconds Type: Physical Range: A short range status skill that applies to yourself. Description: You use your pirate sense to steal treasure to aid you in battle, who knows exactly what you'll get? Applies 1 of 3 effects to yourself: Plunder Health: HoT Plunder Dodge: 30% Dodge Plunder Crit: 30% Crit Damage Effects last 8 seconds."
+    },
+    {
+      "officialName": "Hand Cannon",
+      "rank": 3,
+      "passive": false,
+      "manaCost": "15",
+      "cooldown": "12",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "You always carry a pistol around saving it for the opportune moment. Applies either Cannon Burn, damaging your target over time, or Cannon Fodder, reducing your target's Damage Resistance by 20%. Both effects last 8 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill161.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+      "sourceHash": "b688e25e806fa3b08d4921919e9de70dbcb08856510a59c2d626d27be8488ba0",
+      "evidence": "Hand Cannon Rank Needed: 3 Mana Cost: 15 Mana Cooldown: 12 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: You always carry a pistol around saving it for the opportune moment. Applies either Cannon Burn, damaging your target over time, or Cannon Fodder, reducing your target's Damage Resistance by 20%. Both effects last 8 seconds."
+    },
+    {
+      "officialName": "Sea Legs",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Haste increased by 6% and Dodge increased by 12%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+      "sourceHash": "b688e25e806fa3b08d4921919e9de70dbcb08856510a59c2d626d27be8488ba0",
+      "evidence": "Sea Legs Rank Needed: 4 Type: Passive Ability Description: Haste increased by 6% and Dodge increased by 12%."
+    },
+    {
+      "officialName": "Buried Treasure",
+      "rank": 4,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Crit Chance increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+      "sourceHash": "b688e25e806fa3b08d4921919e9de70dbcb08856510a59c2d626d27be8488ba0",
+      "evidence": "Buried Treasure Rank Needed: 4 Type: Passive Ability Description: Crit Chance increased by 10%."
+    },
+    {
+      "officialName": "Cannon Fire",
+      "rank": 5,
+      "passive": false,
+      "manaCost": "20",
+      "cooldown": "12",
+      "skillType": "Physical",
+      "target": "A long range attack that deals damage to 1 target.",
+      "officialDescription": "Let off a blast of cannon fire from your conveniently nearby but hidden ship. Applies Cannon Wound, reducing your target's outgoing damage by 25% for 8 seconds.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/classes-skills/Skill30.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+      "sourceHash": "b688e25e806fa3b08d4921919e9de70dbcb08856510a59c2d626d27be8488ba0",
+      "evidence": "Cannon Fire Rank Needed: 5 Mana Cost: 20 Mana Cooldown: 12 Seconds Type: Physical Range: A long range attack that deals damage to 1 target. Description: Let off a blast of cannon fire from your conveniently nearby but hidden ship. Applies Cannon Wound, reducing your target's outgoing damage by 25% for 8 seconds."
+    },
+    {
+      "officialName": "Sharpened Steel",
+      "rank": 10,
+      "passive": true,
+      "skillType": "Passive Ability",
+      "target": null,
+      "officialDescription": "Outgoing damage increased by 10%.",
+      "notes": [],
+      "iconUrl": "https://aqwwiki.wdfiles.com/local--files/image-tags/Passive_Skill.png",
+      "sourceUrl": "https://aqwwiki.wikidot.com/alpha-pirate-class",
+      "sourceHash": "b688e25e806fa3b08d4921919e9de70dbcb08856510a59c2d626d27be8488ba0",
+      "evidence": "Sharpened Steel Rank Needed: 10 Type: Passive Ability Description: Outgoing damage increased by 10%."
+    }
+  ],
+  "portraitUrl": "https://aqwwiki.wdfiles.com/local--files/classic-alpha-pirate/AlphaPirateMaleNew.png",
+  "sameSkillVariants": [
+    {
+      "name": "Pirate",
+      "url": "https://aqwwiki.wikidot.com/pirate"
+    }
+  ],
+  "location": "Locations:\n\nBlazebeard Merge - Blazebeard (Location)\nBlazebeard Merge - Mana Cannon\n\nPrice: N/A\n\nMerge the following:\n\nAlpha Pirate Class Token x1"
+}

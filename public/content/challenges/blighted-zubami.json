@@ -1,0 +1,764 @@
+{
+  "challengeContent": true,
+  "id": "blighted-zubami",
+  "name": "Blighted Zubami",
+  "type": "other_challenge",
+  "map": "deleuzetundra",
+  "levelRequirement": 85,
+  "partySize": 7,
+  "description": "Nulgath chưa bao giờ là một kẻ tốt bụng. Để lấy phần thưởng của ông ta bạn cần có đủ sự may mắn để tìm thấy bí ẩn được dấu sâu tại đây, cũng như vượt qua thử thách bí ẩn. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+  "bodyUrl": "/content/challenges/blighted-zubami.json",
+  "href": "/other-challenges/blighted-zubami",
+  "image": "monster-blighted-zubami",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [],
+  "rewardSummary": "",
+  "sourceSlug": "mini-challenge-boss",
+  "stages": [
+    {
+      "id": "blighted-zubami-stage-1",
+      "name": "Blighted Zubami",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Blighted Zubami",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "blighted-zubami-0",
+            "canonicalName": "Blighted Zubami",
+            "role": "Monster",
+            "level": 90,
+            "maxHp": 12000000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/blighted-zubami"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "blighted-zubami-0-blighted-breath-0",
+            "monsterId": "blighted-zubami-0",
+            "name": "Blighted Breath",
+            "type": "Physical",
+            "damage": "350-450",
+            "damageType": "Physical",
+            "cooldown": "2.25 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Blighted Breath lên người chơi, a 10 giây DoT.",
+              "Bỏ qua Focus."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/blighted-zubami"
+          },
+          {
+            "id": "blighted-zubami-0-deaths-stench-1",
+            "monsterId": "blighted-zubami-0",
+            "name": "Death's Stench",
+            "type": "Magical",
+            "damage": "700-800",
+            "damageType": "Magical",
+            "cooldown": "10 seconds",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Death's Stench lên người chơi, giảm END to 0 và hồi máu nhận vào 25% trong 60 giây.",
+              "Bỏ qua Focus.",
+              "Luôn trúng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/blighted-zubami"
+          },
+          {
+            "id": "blighted-zubami-0-charge-2",
+            "monsterId": "blighted-zubami-0",
+            "name": "Charge",
+            "type": "Charge",
+            "damageType": "Charge",
+            "activation": "",
+            "playerEffects": [
+              "Always used after every second use of Death's Stench",
+              "Charges trong 2 giây, sau đó dùng Decaying Breath."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/blighted-zubami"
+          },
+          {
+            "id": "blighted-zubami-0-decaying-breath-3",
+            "monsterId": "blighted-zubami-0",
+            "name": "Decaying Breath",
+            "type": "True Damage",
+            "damage": "1050-1150",
+            "damageType": "True Damage",
+            "targets": "7",
+            "activation": "",
+            "playerEffects": [
+              "Áp Decay lên người chơi trong 6 giây, negating all non-lifesteal healing they receive.",
+              "Luôn trúng."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/blighted-zubami"
+          },
+          {
+            "id": "blighted-zubami-0-epidemic-4",
+            "monsterId": "blighted-zubami-0",
+            "name": "Epidemic",
+            "activation": "",
+            "playerEffects": [
+              "Increases the maximum amount of damage reflected Burning Ward to 150.",
+              "Dùng tại 50% HP còn lại."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/blighted-zubami"
+          }
+        ],
+        "passiveSkills": []
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "Nulgath chưa bao giờ là một kẻ tốt bụng. Để lấy phần thưởng của ông ta bạn cần có đủ sự may mắn để tìm thấy bí ẩn được dấu sâu tại đây, cũng như vượt qua thử thách bí ẩn. Temp item drop từ nó là yêu cầu để hoàn thành được:",
+        "- “Zheleznymi Zubami” quest để farm Archfiend's Favor, Nulgath's Approval và Fiendish Dracomancer set.",
+        "- “Fiend's Purgatory” quest trong Hollowborn Archfiend.",
+        "Boss này nằm ở map /join deleuzetundra - Room limit: 7",
+        "Cần đạt ít nhất lvl 85 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 12,000,000",
+        "◆ Shield giúp giảm sát thương trên 500k (hệ số 0.85).",
+        "◆ Miễn nhiễm với Stun.",
+        "◆ Base có 0% Dodge, 175% Hit Chance, 50% Crit Chance 100% All Out và -100% DoT In.",
+        "◆ Players bị dính Burning Ward, khi gây sát thương lên Zubami thì sẽ phản lại 100 DMG.",
+        "◆ Auto-Attack mỗi 2.25s gây Phys DMG từ 350 đến 450.",
+        "→ Áp DoT trong 10s lên tất cả players.",
+        "→ Miễn nhiễm Focus/Taunt.",
+        "◆ Mỗi 10s, sử dụng Death's Stench gây Magi DMG từ 700 đến 800, không thể né.",
+        "→ Players bị đưa END về 0 và giảm 25% Heal In trong 60s.",
+        "→ Miễn nhiễm Focus/Taunt.",
+        "◆ Sau Death's Stench 1s, sử dụng Charge trong 2s sau đó kích hoạt Decaying Breath gây True DMG từ 1k đến 1.2k, không thể né.",
+        "→ Players bị dính Decay.trong 6s.",
+        "◆ Khi còn 50% HP, Zubami tiến vào trạng thái Epidemic.",
+        "→ Tăng phản sát thương từ Burning Ward lên 150 DMG."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "Nhìn chung Zubami cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 5 người bên dưới thì có thể giết nó một cách đơn giản.",
+        "Team 5 người:\tDSG/QCM/VDK, LR, PCM/AP, LoO, LH/DLH/SC/IT/FB",
+        "Team 6 người:\tDSG, LR, QCM/VDK, PCM/AP, LoO, LH/DLH/SC/IT/FB",
+        "hoặc\tDSG/KE/QCM/VDK, LR, PCM/AP, LoO, LH/DLH, SC/IT/FB",
+        "Team 7 người:\tDSG, LR, QCM/Arach, KE/VDK, PCM/AP, LoO, LH/DLH/SC/IT/FB",
+        "hoặc\tDSG, LR, KE/QCM/VDK, PCM/AP, LoO, LH/DLH, SC/IT/FB",
+        "hoặc\tDSG, KE/GT/Shaman, LR, QCM/VDK, PCM/AP, LoO, LH/DLH/SC/IT/FB",
+        "Note:",
+        "- Boss có tag Dragonkin, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Dragonkin để tối đa sát thương.",
+        "- Không sử dụng Vainglory, thay vào đó là Absolution cho Healer còn lại là Penitence.",
+        "- LR sẽ đảm nhiệm việc Focus/Taunt Boss với Scroll of Enrage. Thực hiện Focus/Taunt bằng SoE mỗi lần thấy thông báo màu vàng “Brace yourself, Zubami is about to unleash their decaying breath!”."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-428960",
+          "runs": [
+            {
+              "text": "Nulgath chưa bao giờ là một kẻ tốt bụng. Để lấy phần thưởng của ông ta bạn cần có đủ sự may mắn để tìm thấy bí ẩn được dấu sâu tại đây, cũng như vượt qua thử thách bí ẩn. Temp item drop từ nó là yêu cầu để hoàn thành được:\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429183",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Zheleznymi Zubami",
+              "href": "http://aqwwiki.wikidot.com/deleuze-tundra-s-quest"
+            },
+            {
+              "text": "” quest để farm Archfiend's Favor, Nulgath's Approval và "
+            },
+            {
+              "text": "Fiendish Dracomancer",
+              "href": "http://aqwwiki.wikidot.com/fiendish-dracomancer"
+            },
+            {
+              "text": " se"
+            },
+            {
+              "text": "t.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429286",
+          "runs": [
+            {
+              "text": "- “"
+            },
+            {
+              "text": "Fiend's Purgatory",
+              "href": "/farm/farming-list"
+            },
+            {
+              "text": "” quest trong "
+            },
+            {
+              "text": "Hollowborn Archfiend",
+              "href": "/farm/hollowborn"
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429343",
+          "runs": [
+            {
+              "text": "Boss này nằm",
+              "italic": true
+            },
+            {
+              "text": " ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join deleuzetundra",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/deleuze-tundra"
+            },
+            {
+              "text": " - Ro",
+              "italic": true
+            },
+            {
+              "text": "om limit: 7\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429398",
+          "runs": [
+            {
+              "text": "Cần đạt ít n",
+              "italic": true
+            },
+            {
+              "text": "hất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 85",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt ",
+              "italic": true
+            },
+            {
+              "text": "qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429455",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429463",
+          "runs": [
+            {
+              "text": "◆ Total HP: 12,000,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429486",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm sát thương trên 500k "
+            },
+            {
+              "text": "(hệ số 0.85)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429540",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429563",
+          "runs": [
+            {
+              "text": "◆ Base có 0% Dodge, 175% Hit Chance, 50% Crit Chance 100% All Out và -100% DoT In.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429646",
+          "runs": [
+            {
+              "text": "◆ Players bị dính Burning Ward, khi gây sát thương lên Zubami thì sẽ phản lại 100 DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429733",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.25s gây Phys DMG từ 350 đến 450.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429786",
+          "runs": [
+            {
+              "text": "→ Áp DoT trong 10s lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429825",
+          "runs": [
+            {
+              "text": "→ Miễn nhiễm Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429851",
+          "runs": [
+            {
+              "text": "◆ Mỗi 10s, sử dụng Death's Stench gây Magi DMG từ 700 đến 800, không thể né.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429928",
+          "runs": [
+            {
+              "text": "→ Players bị đưa END về 0 và giảm 25% Heal In trong 60s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-429985",
+          "runs": [
+            {
+              "text": "→ Miễn nhiễm Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430011",
+          "runs": [
+            {
+              "text": "◆ Sau Death's Stench 1s, sử dụng Charge trong 2s sau đó kích hoạt Decaying Breath gây True DMG từ 1k đến 1.2k, không thể né.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430136",
+          "runs": [
+            {
+              "text": "→ Players bị dính Decay.trong 6s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430170",
+          "runs": [
+            {
+              "text": "◆ Khi còn 50% HP, Zubami tiến vào trạng thái Epidemic.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430225",
+          "runs": [
+            {
+              "text": "→ Tăng phản sát thương từ Burning Ward lên 150 DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430278",
+          "runs": [
+            {
+              "text": "Cách đánh:",
+              "bold": true
+            },
+            {
+              "text": " \n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430290",
+          "runs": [
+            {
+              "text": "Nhìn chung Zubami cũng là một Mini Challenge Boss, không quá khó để đánh bại được nó. Với một team từ 5 người bên dưới thì có thể giết nó một cách đơn giản.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430448",
+          "runs": [
+            {
+              "text": "Team 5 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "DSG/QCM/VDK, LR, PCM/AP, LoO, LH/DLH/SC/IT/FB\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430508",
+          "runs": [
+            {
+              "text": "Team 6 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "DSG, LR, QCM/VDK, PCM/AP, LoO, LH/DLH/SC/IT/FB\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430569",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "DSG/KE/QCM/VDK, LR, PCM/AP, LoO, LH/DLH, SC/IT/FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430625",
+          "runs": [
+            {
+              "text": "Team 7 người:",
+              "italic": true
+            },
+            {
+              "text": "\t"
+            },
+            {
+              "text": "DSG, LR, QCM/Arach, KE/VDK, PCM/AP, LoO, LH/DLH/SC/IT/FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430696",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "DSG, LR, KE/QCM/VDK, PCM/AP, LoO, LH/DLH, SC/IT/FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430753",
+          "runs": [
+            {
+              "text": "\thoặc\t"
+            },
+            {
+              "text": "DSG, KE/GT/Shaman, LR, QCM/VDK, PCM/AP, LoO, LH/DLH/SC/IT/FB",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430820",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " \n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430827",
+          "runs": [
+            {
+              "text": "- Boss có tag Dragonkin, nên có thể sử dụng kết hợp các Gear tăng All DMG và tăng DMG lên Dragonkin để tối đa sát thương.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-430949",
+          "runs": [
+            {
+              "text": "- Không sử dụng Vainglory, thay vào đó là Absolution cho Healer còn lại là Penitence.\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-431035",
+          "runs": [
+            {
+              "text": "- LR sẽ đảm nhiệm việc Focus/Taunt Boss với ",
+              "italic": true
+            },
+            {
+              "text": "Scroll of Enrage",
+              "italic": true
+            },
+            {
+              "text": ". Thực hiện Focus/Taunt bằng SoE mỗi lần thấy thông báo màu vàng “Brace yourself, Zubami is about to unleash their decaying breath!”. \n",
+              "italic": true
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-429825",
+      "runs": [
+        {
+          "text": "→ Miễn nhiễm Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-429985",
+      "runs": [
+        {
+          "text": "→ Miễn nhiễm Focus/Taunt.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-430448",
+      "runs": [
+        {
+          "text": "Team 5 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "DSG/QCM/VDK, LR, PCM/AP, LoO, LH/DLH/SC/IT/FB\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-430508",
+      "runs": [
+        {
+          "text": "Team 6 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "DSG, LR, QCM/VDK, PCM/AP, LoO, LH/DLH/SC/IT/FB\n",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-430569",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "DSG/KE/QCM/VDK, LR, PCM/AP, LoO, LH/DLH, SC/IT/FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-430625",
+      "runs": [
+        {
+          "text": "Team 7 người:",
+          "italic": true
+        },
+        {
+          "text": "\t"
+        },
+        {
+          "text": "DSG, LR, QCM/Arach, KE/VDK, PCM/AP, LoO, LH/DLH/SC/IT/FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-430696",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "DSG, LR, KE/QCM/VDK, PCM/AP, LoO, LH/DLH, SC/IT/FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-430753",
+      "runs": [
+        {
+          "text": "\thoặc\t"
+        },
+        {
+          "text": "DSG, KE/GT/Shaman, LR, QCM/VDK, PCM/AP, LoO, LH/DLH/SC/IT/FB",
+          "bold": true
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-431035",
+      "runs": [
+        {
+          "text": "- LR sẽ đảm nhiệm việc Focus/Taunt Boss với ",
+          "italic": true
+        },
+        {
+          "text": "Scroll of Enrage",
+          "italic": true
+        },
+        {
+          "text": ". Thực hiện Focus/Taunt bằng SoE mỗi lần thấy thông báo màu vàng “Brace yourself, Zubami is about to unleash their decaying breath!”. \n",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [],
+  "recommendedTeams": []
+}

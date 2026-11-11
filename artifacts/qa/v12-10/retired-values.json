@@ -1,0 +1,64 @@
+[
+  {
+    "classId": "scarlet-sorceress-ss",
+    "skillId": "skill-2",
+    "skill": "Sanguine Pulse",
+    "source": "https://aqwwiki.wikidot.com/scarlet-sorceress-ac",
+    "sourceHash": "2a95f088b456ecc59eaafffa22dca019db6c83c7839dccc63523266642cad2cf",
+    "previous": {
+      "officialDescription": "Lowers your blood count to emit a wave of blood dealing Moderate Damage up to 3 enemies. Regains some of your your spilled blood a couple of moments after casting, made stronger by stacks from Crimson Ritual. Also applies Decay, Cannot Heal to your foes for 6 seconds. (Costs 10% of Max Health per target)"
+    },
+    "fields": [
+      "officialDescription"
+    ]
+  },
+  {
+    "classId": "calendar-chrono-chaorruptor",
+    "skillId": "wiki-active-dontblinktwice",
+    "skill": "Don’t Blink Twice",
+    "source": "https://aqwwiki.wikidot.com/chrono-chaorruptor",
+    "sourceHash": "78f86c38e62582721798cdf0a4fa84ffe519e38327c99a06d9e104883d44fc41",
+    "previous": {
+      "officialDescription": "Deals a large amount of damage to your target and applies Distorted Time to yourself, increasing your Haste by 20% for 15 seconds. Chaos empowers you, either applying Visceral Shift, which increases your outgoing physical damage by 100% 75%, or Shiftburn, which increases your HoT and DoT power by 100% 75%. Both effects last 5 8 seconds.",
+      "wikiNotes": [
+        "Deals 250% damage.",
+        "Applies Distorted Time, increasing Haste by 20% for 15 seconds.",
+        "Applies either Visceral Shift, which increases physical damage done by 100% 75% or Shiftburn, which increases the amount of DoT dealt and HoT healed by 100% 75%."
+      ]
+    },
+    "fields": [
+      "officialDescription",
+      "wikiNotes"
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dragonknight",
+    "skillId": "wiki-active-spellblade",
+    "skill": "Spell Blade",
+    "source": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+    "sourceHash": "4ea49a2058953079d1c1c536fd0dad1268a9eb204361a545bdb6a10de6d7d96f",
+    "previous": {
+      "officialDescription": "Deals spell damage physical damage based on your spell power and has additional effects based on what spells have been cast. (Magical Damage)"
+    },
+    "fields": [
+      "officialDescription"
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dragonknight",
+    "skillId": "wiki-active-timeofthedragon",
+    "skill": "Time of the Dragon",
+    "source": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+    "sourceHash": "4ea49a2058953079d1c1c536fd0dad1268a9eb204361a545bdb6a10de6d7d96f",
+    "previous": {
+      "cooldown": 35,
+      "cooldownDisplay": "35 25 Seconds",
+      "officialDescription": "Must have at least one stack of Temporal Rift. Deals massive damage buffed by how much damage you have done while Temporal Rift was active (up to the past 10 seconds). Consumes Temporal Rift stacks. If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks"
+    },
+    "fields": [
+      "cooldown",
+      "cooldownDisplay",
+      "officialDescription"
+    ]
+  }
+]

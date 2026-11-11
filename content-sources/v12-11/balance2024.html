@@ -1,0 +1,2207 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Balance Patch Notes</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="Balance Patch Notes : Go behind-the-scenes to find the continuing game development of our online RPG to learn how a real-time MMO is made with news about AdventureQuest Worlds." />
+    <meta name="keywords" content="AQW,AQWorlds,AdventureQuest,RPG,Artix,Design,RPG,Game,Yoshino" />
+    <meta name="custom" content="" />
+    <meta name="artixmode" content="False" />
+    
+	<link rel="canonical" href="http://www.aq.com/gamedesignnotes/aqw-classbalance-patchnotes-8927" />
+		
+        
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/jasny-offcanvas.min.css" />
+    <link rel="stylesheet" href="/css/aqw-news.css?version=7" />
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+		//twitter widget code
+		window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "//platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+		 
+		  t._e = [];
+		  t.ready = function(f) {
+			t._e.push(f);
+		  };	 
+		  return t;
+		}(document, "script", "twitter-wjs"));
+    $(window).load(function() {
+        $(".yearHeader").click(function (event) {
+            event.preventDefault();
+            $(this).next().slideToggle("slow");
+        });
+    });
+</script>
+</head>
+
+
+    <body class="row-offcanvas row-offcanvas-right">
+
+    <!-- Navigation -->  
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- AE Bar on Desktop-->
+        <div class="hidden-xs bg-black">
+          <div class="container aenetwork-bar text-light">
+            <div class="row">
+                <div class="col-lg-5 col-sm-3 nopadding-left"><a class="ae-logo" href="//www.artix.com/" target="_blank" title="Artix.com Home"></a></div>
+              <div class="col-lg-7 col-sm-9 nopadding-right server-info">
+              	<div>
+                    <div>9563 Players Online </div>
+                    <!-- <div>Server Time: 12:17:23 AM EST</div> -->
+                    <a class="btn-sm btn-primary" style="text-decoration:none;" href="https://www.artix.com/downloads/artixlauncher/?utm_source=aqnav&utm_medium=topbtn&utm_campaign=gamelauncher" target="_blank"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Get Launcher</a>
+                    <a class="btn-xs" href="/help/" target="_blank"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Help</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /AE Bar on Desktop-->
+        
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu-fixed-right" data-canvas="body" onClick="CheckToggle()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- AE Button -->
+                <div class="visible-xs-block">
+                	<a class="ae-logo" href="//www.artix.com" target="_blank"></a>
+                </div>
+                <a class="navbar-brand" href="/default.asp"><img class="img-responsive" src="/img/network/logo-navbar.png" alt="AdventureQuest Worlds Logo"/></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-offcanvas offcanvas navbar-right navmenu-fixed-right scroll-menu pre-scrollable" role="navigation">
+              <ul class="nav navbar-nav navmenu-nav">
+                  
+                <li class="visible-xs-block text-center offcanvas-title">
+                <a href="//www.aq.com/"><img src="/shared/images/offcanvas/aq-com.jpg" class="img-responsive center-block" alt="AQ.com"></a></li>
+
+                <li class="visible-xs-block padding"><a class="btn btn-aqred" href="https://www.aq.com/play-now/">PLAY</a></li>
+
+                <li class="dropdown">
+                  <a href="#" id="NavGame" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Game <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="//www.aq.com/">Home</a></li>
+                    <li><a href="/about.asp">About</a></li>
+                    <li><a href="/lore/guides/AQWRules">Game Rules</a></li>
+                    <li><a href="/lore/">Lorepedia</a></li>
+                    <li><a href="/character.asp">Character Page</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="/pages/invite.asp">Invite Friends</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//aqwwiki.wikidot.com/" target="_blank">AQWorlds Wiki</a></li>
+                  </ul>
+                </li>
+                                
+                <li class="dropdown">
+                  <a href="#" id="NavCommunity" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/gamedesignnotes/">Game News</a></li>
+                    <li><a href="//www.artix.com/" target="_blank">Artix News</a></li>
+                    <li><a href="http://forums2.battleon.com/" target="_blank">Forums</a></li>
+                    <li><a href="//www.artix.com/community/connect/" target="_blank">Become an Instant Fan!</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//www.facebook.com/AQWorldsMMO/" target="_blank"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a></li>
+                    <li><a href="https://twitter.com/ArtixKrieger" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a></li>
+                    <li><a href="//www.youtube.com/user/BattleOnGames" target="_blank"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a></li>
+                  </ul>
+                </li>
+                                
+                <li class="dropdown">
+                  <a href="#" id="NavAccount" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/landing/">Create Your Account</a></li>
+                    <li><a href="/acct">Manage Account</a></li>
+                    <li><a href="/order-now/direct/">Upgrade Your Account</a></li>
+                    <li><a href="/account/verify-shops.asp">Verification Shops</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="/help/">Help</a></li>
+                    <li><a href="/account/lost-password.asp">Forgot Password</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="/parents/default.asp">For Parents</a></li>
+                  </ul>
+                </li>
+                                
+                <li class="dropdown">
+                  <a href="#" id="NavShop" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/order-now/direct/"><span class="fa"><img src="/shared/images/icons/shopnav-membership.png"  alt="Buy Membership"></span><span> Buy Membership </span></a></li>
+                    <li><a href="/order-now/direct/"><span class="fa"><img src="/shared/images/icons/shopnav-adventurecoins.png" alt="Get AdventureCoins"></span><span> AdventureCoins </span></a></li>
+                    <li><a href="/aextras/offers/"><span class="fa"><img src="/shared/images/icons/shopnav-freeacs.png" alt="Earn Free ACs"></span><span> Earn Free ACs</span></a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//portal.battleon.com/store/points/" target="_blank"><span class="fa"><img src="/shared/images/icons/shopnav-artixpoints.png" alt="Get Artix Points"></span><span> Get Artix Points </span></a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//www.heromart.com/" target="_blank">
+                    	<span class="fa"><img src="/shared/images/icons/shopnav-heromart.png" alt="Shop HeroMart!"></span><span> HeroMart <br>
+                    	<small>T-shirts & More</small></span></a></li>
+                  </ul>
+                </li>
+                
+                <li class="hidden-xs"><a class="btn btn-play btn-signup" href="/landing/">Free Sign Up</a></li>
+                <li class="hidden-xs"><a class="btn btn-play btn-aqred" href="https://www.aq.com/play-now/">PLAY</a></li>
+
+              </ul>
+              
+              <!-- AE Menu -->
+              <div class="visible-xs-block navbar-aenetwork">
+                  <ul class="nav navbar text-light">
+                      
+                    <li class="visible-xs-block divider"></li>
+                    <li class="text-center margin-20"><a href="//www.artix.com/" target="_blank">
+                    <img src="/shared/images/offcanvas/artix-com.jpg" class="img-responsive center-block" alt="Artix.com"></a></li>
+    
+                    <li class="divider"></li>
+                    <li><h4>Mobile Games</h4></li>
+                    <li class="divider"></li>
+    
+                    <li>
+                        <a href="http://www.aqdragons.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/dragons.jpg" alt="Dragons"/>Dragons</a>
+                    </li>
+                    <li>
+                        <a href="http://battlegems.artix.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/battlegems.jpg" alt="BattleGems"/>BattleGems</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aq3d.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/aq3d.jpg" alt="AQ3D"/>AQ3D</a>
+                    </li>
+    
+                    <li class="divider margintop-15"></li>
+                    <li><h4>Websites</h4></li>
+                    <li class="divider"></li>
+    
+                    <li>
+                        <a href="http://www.artix.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/artix.jpg" alt="Artix.com"/>Artix.com</a>
+                    </li>
+                    <li>
+                        <a href="https://www.heromart.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/heromart.jpg" alt="HeroMart"/>HeroMart.com <small>- Shop!</small></a>
+                    </li>
+                    <li>
+                        <a href="https://portal.battleon.com/store/points/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/artixpoints.jpg" alt="Artix Points"/>Get Artix Points</a>
+                    </li>
+    
+                    <li class="divider margintop-15"></li>
+                    <li><h4>Web Games</h4></li>
+                    <li class="divider"></li>
+    
+                    <li>
+                        <a href="http://www.aq.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/aqworlds.jpg" alt="AQWorlds"/>AQWorlds</a>
+                    </li>
+                    <li>
+                        <a href="http://epicduel.artix.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/epicduel.jpg" alt="EpicDuel"/>EpicDuel</a>
+                    </li>
+                    <li>
+                        <a href="http://www.dragonfable.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/dragonfable.jpg" alt="DragonFable"/>DragonFable</a>
+                    </li>
+                    <li>
+                        <a href="http://www.mechquest.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/mechquest.jpg" alt="Mechquest"/>Mechquest</a>
+                    </li>
+                    <li>
+                        <a href="http://www.battleon.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/aqclassic.jpg" alt="AdventureQuest"/>AdventureQuest</a>
+                    </li>
+                    <li>
+                        <a href="http://oversoul.artix.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/oversoul.jpg" alt="OverSoul"/>OverSoul</a>
+                    </li>
+                  </ul>
+              </div>
+              
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+            
+
+    <div class="sub-header bg-dage"></div>
+    <div class="scroll-top"></div>
+
+    <!-- section: content -->
+    <section id="main-content">
+      <div class="container">
+        <div class="row">
+
+            <!-- 1st col: main -->
+
+                
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            
+
+                <!-- main: dns -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dns">
+                    <div class="row">
+                    <h1 class="nomargin-top">Design Notes</h1>
+                      <div class='hidden-xs dnAvatar pull-left'><a href='/gamedesignnotes/tag/Yoshino' class='yoshino'></a><p class='text-center nomargin-top'>Yoshino</p></div><div class='post pull-right'><p class='date'>March 08, 2024</p><h1 class='PostTitle'>Balance Patch Notes</h1><h3>Running List of Class Updates, Balance updates, and More</h3>
+<p dir="ltr">This page is archived. To see Patch Notes past March 8th, 2024, <a href="https://www.aq.com/gamedesignnotes/AQW-Balance-PatchNotes-9515">click here</a>.</p>
+<p dir="ltr"> </p>
+<p dir="ltr">Read on to see what we've updated, what's been fixed, and stay up to date! </p>
+<h3><img src="https://www.aq.com/cms/images/DN-ClassUpdates-11Feb22.jpg" alt="" width="545" height="307" /></h3>
+<h3>03/08/24 - Balance Updates</h3>
+<h4 dir="ltr">Legion Paladin</h4>
+<p>We've read your responses to the Legion Paladin rework and we're making changes based on your feedback! One of the most brought up topics was in regards to how Souls and Spirits felt detached from each other, as they couldn't be used in unison very well. To address this, changes to the Soul Convertor skill have been made so that it now applies Spirits regardless of how many Souls you have, and only consumes up to 10 Souls at a time instead of all of them at once. Also by popular request, we've extended the duration of its Focus aura, but have adjusted the damage and cooldown of the skill to match other Focus applying skills. As a result of these changes, Legion Paladin became a lot stronger than initially intended, so some balance changes were made. Maximum damage output should be relatively the same as before, but some of the survivability aspects were adjusted. Read below for a list of detailed changes.</p>
+<p dir="ltr"><strong><span id="docs-internal-guid-37408098-7fff-001d-9208-89ada411ea6c"><span>System</span></span>:</strong></p>
+<ul>
+<li>Soul Stack Limit: 30 > 20</li>
+<li>Souls no longer increase Crit Chance (see rank 10 passive).</li>
+</ul>
+<p dir="ltr"><strong><span id="docs-internal-guid-37408098-7fff-001d-9208-89ada411ea6c">Blasphemous Battleaxe:</span></strong></p>
+<ul>
+<li>Defiled Crit Chance, Dodge, and Haste debuff: 20% > 30%</li>
+<li>Defiled outgoing damage debuff: 50% > 30%</li>
+<li>Defiled No longer reduces Hit Chance.</li>
+</ul>
+<p dir="ltr"><strong>Soul Convertor:</strong></p>
+<ul>
+<li>Mana Cost: 20 > 30</li>
+<li>Spirits will now always apply regardless of how many Souls you have, but will consume up to 10 Souls each time the skill is used.</li>
+<li>Spirits no longer heal over time.</li>
+<li>Spirits Mana Recovery: 20 Mana every 2 seconds > 5 Mana every 1 second</li>
+</ul>
+<p dir="ltr"><strong>Incantation of Sin:</strong></p>
+<ul>
+<li>Damage: 120% > 150%</li>
+<li>Cooldown: 12 seconds > 15 seconds</li>
+<li>Focus aura duration: 2 seconds > 4 seconds</li>
+</ul>
+<p dir="ltr"><strong>Shadowblight: </strong></p>
+<ul>
+<li>Shadowblight aura duration: 10 seconds > 15 seconds</li>
+</ul>
+<p dir="ltr"><strong>Heretic's Armor:</strong></p>
+<ul>
+<li>Damage Resistance: 40% > 30%</li>
+</ul>
+<p dir="ltr"><strong>Soul Infusion </strong>(previously Spirit Caller):</p>
+<ul>
+<li>Blasphemous Battleaxe applies Soul Infusion for 10 seconds, increasing your Crit Chance by 5% for each Soul you have at the time of application.</li>
+</ul>
+<h3>03/01/24 - Balance Updates</h3>
+<p><span id="docs-internal-guid-7021818d-7fff-9127-003e-c88e7d9de527">We've got a lot of changes in store for this week, which include updates to various classes, enhancements, quests, monsters, and a replacement for an existing scroll.</span></p>
+<h4 dir="ltr"><span style="text-decoration: underline;">Classes</span></h4>
+<h4 dir="ltr">Legion Paladin</h4>
+<p><span id="docs-internal-guid-7021818d-7fff-9127-003e-c88e7d9de527"><a href="https://www.aq.com/gamedesignnotes/AQW-28Feb24-LegionPaladinClassUpdate-9485">Please refer to this post for the full rundown</a></span></p>
+<h4 dir="ltr">Enforcer/Protosartorium</h4>
+<p>Enforcer and Protosartorium were performing worse than the starter classes in almost all aspects, so they're receiving a set of changes aimed to improve their farming and soloing capabilities. Rustbucket's skills will remain unchanged.</p>
+<p dir="ltr"><strong>Jackhammer:</strong></p>
+<ul>
+<li>Range: Melee > Medium</li>
+<li>Max Targets: 1 > 2</li>
+<li>Mana Cost: 17 > 15</li>
+<li>Now applies Fracture, reducing your target's Dodge by 20% for 6 seconds.</li>
+</ul>
+<p dir="ltr"><strong>Arc Lightning:</strong></p>
+<ul>
+<li>Swapped skill order with Plasma Bolt.</li>
+<li>Range: Long > Infinite</li>
+<li>Damage: 60% > 120%</li>
+<li>Mana Cost: 21 > 20</li>
+<li>Cooldown: 10 seconds > 8 seconds</li>
+</ul>
+<p dir="ltr"><strong>Plasma Bolt:</strong></p>
+<ul>
+<li>Swapped skill order with Arc Lightning.</li>
+<li>Damage: 150% > 250%</li>
+<li>Cooldown: 8 seconds > 10 seconds</li>
+<li>Flash Bolt duration: 6 seconds > 8 seconds</li>
+<li>Now does increased damage if you're Supercharged (see Event Horizon), but consumes your charge.</li>
+</ul>
+<p dir="ltr"><strong>Event Horizon:</strong></p>
+<ul>
+<li>Mana Cost: 26 > 25</li>
+<li>Cooldown: 35 seconds > 20 seconds</li>
+<li>Event Horizon duration: 20 second > 12 seconds</li>
+<li>Now applies Supercharged, a 12 second HoT that increases the damage of Plasma Bolt.</li>
+</ul>
+<p dir="ltr"><strong>Quick Like Lightning:</strong></p>
+<ul>
+<li>Now also increases Hit Chance by 15%.</li>
+</ul>
+<p dir="ltr"><strong>Legendary (Protosartorium Only):</strong></p>
+<ul>
+<li><span id="docs-internal-guid-e2b5bb6a-7fff-a345-87dc-b73ec8e91c3c"><span>Strength, Intellect, Endurance, and Luck increased by 10%.</span></span></li>
+</ul>
+<h4 dir="ltr">Chunin</h4>
+<p>Giving Chunin a few quality of life updates that should also improve its performance a tad.</p>
+<p dir="ltr"><strong><span id="docs-internal-guid-bcc5f54e-7fff-7cce-e83c-e33943d29f2e"><span>Chi Blast</span></span>:</strong></p>
+<ul>
+<li>Damage: 760% > 380%</li>
+<li>Mana Cost: 40 > 30</li>
+<li>Cooldown: 25 > 12</li>
+<li>Stun duration: 4 > 2, now guaranteed to stun</li>
+<li>Can now crit (still can't miss).</li>
+</ul>
+<p dir="ltr"><strong>Ninja's Prowess </strong>(previously Ninja's Gambit)<strong>:</strong></p>
+<ul>
+<li>Damage Resistance: -10% > +10%</li>
+<li>Now also increases Hit Chance by 10%.</li>
+</ul>
+<p dir="ltr"><strong><span id="docs-internal-guid-8dbbde84-7fff-93c8-c012-c3202333f51e"><span>Ancestor's Favor:</span></span></strong></p>
+<ul>
+<li><span id="docs-internal-guid-7403df5e-7fff-7e0d-cf75-599654a2c3c4"><span>Now has a 0.5% chance to activate each time Chi Strike hits a target.</span></span></li>
+</ul>
+<h4 dir="ltr"><span style="text-decoration: underline;">Weapon Enhancements</span></h4>
+<h4 dir="ltr">Ravenous</h4>
+<p>While Ravenous provides a unique source of damage in the form of the Execute aura, it didn't see much use as on most classes, it was more efficient to run stat boosting weapon enhancements over it. Therefore, we've shifted some of Execute's power into utility that more classes should be able to make use of.</p>
+<ul>
+<li>Cooldown: 20 seconds > 10 seconds</li>
+<li>Damage: 0% > 75% Hybrid</li>
+<li>MP Cost: 0 > -15</li>
+<li>Execute bonus damage per 1% HP lost: 1% > 0.9%</li>
+<li>Execute now also increases Haste, Crit Chance, Dodge, and outgoing damage by 5%.</li>
+<li>Execute duration: 20 seconds > 10 seconds</li>
+<li>New aura, Ravenous:</li>
+<li>Reduces target's Haste, Crit Chance, Dodge, and outgoing damage by 5%.</li>
+</ul>
+<h4 dir="ltr">Dauntless</h4>
+<p>We like the utility that Dauntless provides for several classes, but it is vastly outperforming other endgame enhancements. To reduce this gap, we're slightly reducing the enhancement's base damage, but it should still remain a viable endgame option that reflects the difficulty it takes to obtain. </p>
+<ul>
+<li>Damage: 220% - 660% > 190% - 570%</li>
+</ul>
+<h4 dir="ltr">Smite</h4>
+<p>Smite them even harder!</p>
+<ul>
+<li>Damage: 450% > 500%</li>
+</ul>
+<h4 dir="ltr">Praxis</h4>
+<p>Increasing the duration of Spinning Dragon so it's a little easier to time.</p>
+<ul>
+<li>Spinning Dragon duration: 1 second > 2 seconds</li>
+</ul>
+<h4 dir="ltr"><span style="text-decoration: underline;">Cape and Helmets Enhancements</span></h4>
+<h4><span id="docs-internal-guid-bec6ded3-7fff-d922-5ea7-1657b03e2b8f"> </span></h4>
+<p dir="ltr"><span>Touching up some of the lesser used helmet and cape enhancements.</span></p>
+<h4 dir="ltr">Absolution</h4>
+<ul>
+<li>Outgoing damage penalty: -15% > 0%</li>
+<li>Outgoing physical damage penalty: 0% > -20%</li>
+</ul>
+<h4 dir="ltr">Avarice</h4>
+<ul>
+<li>Damage Resistance penalty: 50% > 35%</li>
+<li>Dodge penalty: -35% > 0%</li>
+</ul>
+<h4 dir="ltr">Hearty</h4>
+<ul>
+<li>Outgoing damage and Incoming Healing penalty: -15% > 0%</li>
+</ul>
+<h4 dir="ltr"><span style="text-decoration: underline;">Consumables</span></h4>
+<h4 dir="ltr">Scroll of Talon Twisting Removal</h4>
+<p dir="ltr">Historically, Talon Twisting has been the catalyst of several unintended interactions with certain classes. However, when working as intended, Talon Twisting is a rather underpowered effect that doesn't provide much of a benefit. Due to these factors, we've made the decision to replace the Scroll of Talon Twisting with a new scroll, the Scroll of Bane. <span>The Scroll of Bane applies certain effects to you or your target based on their tag.</span> Any existing Scrolls of Talon Twisting that you have will be turned into Scrolls of Bane.</p>
+<h4 dir="ltr">Scroll of Bane</h4>
+<p>Max Targets: 1<br />Cooldown: 20 seconds<br />Deals damage and applies an effect based on your target's tag:</p>
+<ul>
+<li>Human: DoT that negates all non lifesteal healing for 10 seconds.</li>
+<li>Undead: Scroll deals bonus damage and undead are Stunned for 3 seconds.</li>
+<li>Dragonkin: Reduces target's outgoing damage and Damage Resistance by 30% for 10 seconds.</li>
+<li>Elemental: Increases your outgoing damage and Damage Resistance by 40% for 10 seconds.</li>
+<li>Chaos: Increases your Crit Damage by 150% but reduces your Crit Chance by 30% for 10 seconds.</li>
+</ul>
+<h4 dir="ltr"><span style="text-decoration: underline;">Monsters:</span></h4>
+<h4 dir="ltr">Ultra Exos</h4>
+<p dir="ltr">Fixing an unintended interaction with Ultra Exos' Touch of Chaos aura. The cooldown of the skill has also been reduced as it took quite a while to actually fire off.</p>
+<ul>
+<li>Chaos Charge Cooldown: 40 seconds > 15 seconds</li>
+<li>Touch of Chaos aura duration: 30 seconds > 10 seconds</li>
+<li>Touched By Chaos now increases outgoing physical and magical damage instead of all outgoing damage.</li>
+</ul>
+<h4 dir="ltr">The First Speaker</h4>
+<p dir="ltr">Following up a bugfix with a reduction of the Magia Burn aura's duration, as The First Speaker now auto attacks one less time per rotation. </p>
+<ul>
+<li>Magia Burn aura duration: 18 seconds > 16 seconds</li>
+</ul>
+<h3 dir="ltr"><span style="text-decoration: underline;">Quests:</span></h3>
+<h4 dir="ltr">Crash Site</h4>
+<ul>
+<li>The /crashsite quests have been rebalanced, with increased gold and XP rewards on each quest and adjusted turn in requirements</li>
+<li>The /crashsite quests are now on a quest chain, and must be completed in order (even for players who have previously completed the quests). </li>
+<li>Adjusted the stats of the Mithril Man and Protosartorium mobs</li>
+<li>The Enforcer Class and Armor are now a reward from the "Protosartorium Parts" quest instead of as a drop from Mithril Man.</li>
+<li>Rustbucket is no longer a reward from the "Protosartorium Parts" quest. It's still obtainable on the map, but you'll have to find out where. </li>
+<li>The reason for this change is that we wanted to keep Rustbucket a "joke class", but as Enforcer and Protosartorium have received changes that differentiate them from Rustbucket, it no longer made sense for Rustbucket to be the main reward for completing the Crash Site quests.</li>
+</ul>
+<h3 dir="ltr"><span>Forge Quests:</span></h3>
+<h4 dir="ltr">Forge Cape Enhancement</h4>
+<ul>
+<li>The turn in requirements have been replaced with Prismatic Celestial Wings, Broken Wings, Shadow's Wings, and Wings Of Destruction.</li>
+</ul>
+<h4 dir="ltr">Forge Helmet Enhancement</h4>
+<ul>
+<li>The turn in requirements have been replaced with 1st Lord of Chaos Staff, Chaos Dragonlord Axe, Hanzamune Dragon Koi Blade, and Wrath of the Werepyre</li>
+</ul>
+<h4 dir="ltr">Absolution</h4>
+<ul>
+<li>Removed the Ascended Paladin Staff turn in requirement.</li>
+</ul>
+<h4 dir="ltr">Avarice</h4>
+<ul>
+<li>The number of required Indulgence and Penance have been reduced from 75 to 50.</li>
+</ul>
+<h4><strong>Elysium</strong></h4>
+<ul>
+<li><span id="docs-internal-guid-6df6359f-7fff-7b3f-f326-f09e0dc12df6"><span>The number of required Bones From the Void Realm have been reduced from 20 to 15.</span></span></li>
+</ul>
+<p> </p>
+<h3>2/2/24 - Class Updates</h3>
+<p><span id="docs-internal-guid-7021818d-7fff-9127-003e-c88e7d9de527"><span>This week's class updates include changes to NOT A MOD, Dragonslayer General, and Chrono ShadowSlayer. </span></span></p>
+<h4 dir="ltr">NOT A MOD</h4>
+<p><span id="docs-internal-guid-7021818d-7fff-9127-003e-c88e7d9de527"><a href="https://www.aq.com/gamedesignnotes/AQW-30Jan2024-NotAModUpdates-9449">Please refer to this post for the full rundown</a></span></p>
+<ul>
+</ul>
+<h4 dir="ltr">Dragonslayer General</h4>
+<p>While making updates to Dragonslayer last year, we knew that Dragonslayer General would also need a few changes to keep up! The updated Dragonslayer General now plays similarly to Dragonslayer, but with a LOT more punch!</p>
+<p dir="ltr"><strong>System:</strong></p>
+<ul>
+<li>No longer applies the Seared aura to Dragonkin</li>
+</ul>
+<p dir="ltr"><strong>Searing Steel</strong> (previously Basilisk Strike)<strong>:</strong></p>
+<ul>
+<li>Damage: 160% > 120%</li>
+<li>Mana Cost: 10 > -5</li>
+<li>Cooldown: 3 seconds > 4 seconds</li>
+<li>No longer applies Sapped Mana</li>
+<li>Now applies Charred, reducing target's Damage Resistance by 15% for 15 seconds.If the target has General's Dragonbane, it's consumed to apply Seared Scales, reducing their Damage Resistance by 8% for 15 seconds, stacks to 5.</li>
+</ul>
+<p dir="ltr"><strong>Inspired </strong>(previously Drake Tongue)<strong>:</strong></p>
+<ul>
+<li>Range changed to Melee</li>
+<li>Max targets: 6 > 1</li>
+<li>Damage: 100% > 180%</li>
+<li>Mana Cost: 25 > 0</li>
+<li>Cooldown: 20 seconds  > 15 seconds </li>
+<li>Focus duration: 6 seconds  > 4 seconds </li>
+<li>Slayer's Inspiration and Dragonslayer's Inspiration duration: 9 seconds > 15 seconds</li>
+<li>Slayers Inspiration and Dragonslayer's Inspiration no longer increase outgoing damage.</li>
+<li>Slayers Inspiration and Dragonslayer's Inspiration now each increase Damage Resistance by 20%. If the target has General's Dragonbane, it's consumed to apply Instilled Fear, reducing their Haste and Dodge by 25% for 20 seconds.</li>
+</ul>
+<p dir="ltr"><strong>Piercing Wyvern's Eye:</strong></p>
+<ul>
+<li>Range changed to Melee</li>
+<li>Damage: 150% > 140%</li>
+<li>Mana Cost: 15 > 0</li>
+<li>Cooldown: 5 seconds > 8 seconds</li>
+<li>If the target has General's Dragonbane, it's consumed to apply Piercing Eye, reducing their Hit Chance, Crit Chance, and Damage by 10% for 15 seconds, stacks to 5.</li>
+</ul>
+<p dir="ltr"><strong>Dragon's Demise </strong>(previously Ancient Rites)<strong>: </strong></p>
+<ul>
+<li>Target: Self > Enemy</li>
+<li>Damage: 0% > 300%</li>
+<li>Mana Cost: 35 > 50</li>
+<li>Cooldown: 25 seconds > 4 seconds</li>
+<li>Applies General's Dragonbane to Dragonkin targets, causing the next skill you use to apply an additional effect.</li>
+<li>Forgone Conclusion duration: 12 > 4</li>
+<li>No longer applies Talon Twisting</li>
+<li>No longer applies Hard Iron</li>
+</ul>
+<p dir="ltr"><strong>Absolute Resolution:</strong></p>
+<ul>
+<li>Now increases outgoing damage by 25%</li>
+</ul>
+<p dir="ltr"><strong>Dragon Destroyer </strong>(previously Aggravated Assault)<strong>:</strong></p>
+<ul>
+<li>No longer increases outgoing damage</li>
+<li>Starting at rank 1, all skills except the Auto Attack now deal bonus damage to Dragonkin.</li>
+<li>At Rank 10, if your target is Dragonkin, Dragon's Demise applies Execute to yourself for 1 second, causing your skills to instantly kill Dragonkin below 10% of their max HP.</li>
+</ul>
+<h4 dir="ltr">Chrono ShadowSlayer</h4>
+<p>These changes buff Chrono ShadowSlayer's baseline and smooth some parts of its playstyle. This also empowers non-Gunslinger mode by proportionally increasing the damage of FMJ Rounds. The class was originally balanced expecting players would get between 6 and 10 Chaos Rift stacks, with some higher, but ensuring the class was nearly as strong without using it. The cooldown change only aims to remove unintended behavior and shouldn't impact normal play at all, limiting shots during Gunslinger Stance to below 20.</p>
+<p dir="ltr"><strong>Fire!:</strong></p>
+<ul>
+<li>Damage: 105% > 115%</li>
+<li>Cooldown: 0.15 seconds > 0.2 seconds, this should not affect normal play, but does lower the maximum number of Gunslinger shots to around 20.</li>
+<li>Painted duration: 12 seconds > 16 seconds</li>
+</ul>
+<p dir="ltr"><strong>FMJ Rounds</strong><strong>:</strong></p>
+<ul>
+<li>Damage: 147% > 170%</li>
+</ul>
+<p dir="ltr"><strong>Silver Bullet</strong><strong>:</strong></p>
+<ul>
+<li>Now applies Blinded to the target, reducing Hit Chance by 50% for 1 second.</li>
+</ul>
+<p> </p>
+<ul>
+</ul>
+<ul>
+</ul>
+<h3>12/15/2023 - Class Updates</h3>
+<h4 dir="ltr"><span><span>Glacial Warlord</span></span></h4>
+<ul>
+<li>Now has a new, chilly set of icons!</li>
+<li>Frozen Heart will now crit if the Frozen Heart aura is active</li>
+</ul>
+<h4><span><span id="docs-internal-guid-d5cb542b-7fff-1f02-febd-65a08ba11d04"><span>Miscellaneous</span></span></span></h4>
+<ul>
+<li>Battle Healer can now be used by all players</li>
+<li>Added a Battle Warrior class to the PvP merge shops. Battle Warrior uses Warrior's old skills and can only be used in PvP maps</li>
+</ul>
+<h3>12/08/2023 - Class Bug Fixes and Quality of Life Updates</h3>
+<p>Hello everyone, Immortal Joe here! This week's class updates are focused on improving the performance of early game classes with the intent of providing a better experience for new heroes. If you're a more seasoned adventurer, we have something for you as well! </p>
+<h4 dir="ltr"><span style="text-decoration: underline;"><span style="font-size: 1em;">Glacial Warlord</span></span></h4>
+<p><span style="font-size: 1em;"><a href="https://www.aq.com/gamedesignnotes/aqw-4dec23-glacialwarlordclass2023-9395" target="_blank">Please refer to this post for the full rundown</a></span></p>
+<h4><span style="text-decoration: underline;">Warrior/Warlord</span></h4>
+<p>Reduced mana costs, adjusted On Guard's cooldown and duration so it can be used more frequently, added a new effect to Decisive Strike, and shifted power from Decisive Strike onto Prepared Strike. The duration of Off Balance has been reduced by a second as we don't want to set an expectation for new heroes that stuns will always be that long without any drawbacks, but with the On Guard change, overall survivability should be greatly improved. </p>
+<p dir="ltr"><strong>Decisive Strike:</strong></p>
+<ul>
+<li>Mana Cost: 15 > 5</li>
+<li>Damage: 190% > 130%</li>
+<li>Now applies Armor Shred, reduces the target's Damage Resistance by 10% for 5 seconds.</li>
+</ul>
+<p dir="ltr"><strong>Inbalancing Strike:</strong></p>
+<ul>
+<li>Mana Cost: 30 > 20</li>
+<li>Off Balance duration: 4 seconds > 3 seconds</li>
+<li>Damage: 60% > 240%</li>
+</ul>
+<p dir="ltr"><strong>Prepared Strike:</strong></p>
+<ul>
+<li>Mana Cost: 20 > 10</li>
+<li>Cooldown: 15 seconds > 12 seconds</li>
+<li>If Prepared Strike was applied while On Guard was active, the Prepared Strike Auto Attacks will deal double damage. </li>
+</ul>
+<p dir="ltr"><strong>On Guard:</strong></p>
+<ul>
+<li>No longer deals damage and is now a self target skill</li>
+<li>Mana Cost: 30 > 15</li>
+<li>Cooldown: 30 seconds > 10 seconds</li>
+<li>On Guard duration: 10 seconds > 5 seconds</li>
+</ul>
+<p dir="ltr"><strong>Aggression:</strong></p>
+<ul>
+<li>Now also increases Hit Chance by 10%.</li>
+</ul>
+<h4><span style="text-decoration: underline;">Rogue/Renegade </span></h4>
+<p>We found Rogue to already be in a good spot, but some of its cooldowns were a lot longer than they needed to be, so we've made some adjustments that should make it feel better to play.</p>
+<p dir="ltr"><strong>Footwork:</strong></p>
+<ul>
+<li>Cooldown: 32 seconds > 16 seconds</li>
+<li>Footwork duration: 15 seconds > 7 seconds</li>
+</ul>
+<p><strong>Stiletto:</strong></p>
+<ul>
+<li> Cooldown: 60 > 20</li>
+<li>Concealed Blade duration: 20 > 7</li>
+</ul>
+<p><strong>Incisive:</strong></p>
+<ul>
+<li>Added 10% Hit Chance</li>
+</ul>
+<h4><span style="text-decoration: underline;">Mage/Sorcerer </span></h4>
+<p>Increased overall damage output, reduced mana costs, and changed Explosion to consume Scorched so Frozen Blood can be more easily applied, but reduced the effectiveness of Frozen Blood as it was an incredibly powerful debuff for early stages of the game. Also adjusted Arcane Shield to be active more frequently.</p>
+<p dir="ltr"><strong><span id="docs-internal-guid-4467ba12-7fff-1c7f-9be4-fef0d0129e99"><span>Fireball</span></span>:</strong></p>
+<ul>
+<li>Damage: 225% > 120%, now deals damage based on Spell Power (damage overall increased)</li>
+<li>Damage increase from consuming Frozen Blood: 75% > 100%</li>
+</ul>
+<p><strong>Ice Shard:</strong></p>
+<ul>
+<li>Mana Cost: 18 > 15</li>
+<li>No longer deals bonus damage to targets affected by Scorched</li>
+<li>Now deals damage based on Spell Power (damage overall increased)</li>
+<li>Frozen Blood Haste and Damage debuff: 50% > 20%</li>
+</ul>
+<p><strong>Explosion:</strong></p>
+<ul>
+<li>Now applies Detonated to targets affected by Scorched, dealing damage after 1 second and consuming it.</li>
+</ul>
+<p><strong>Arcane Shield</strong></p>
+<ul>
+<li>Mana Cost: 5 > 0</li>
+<li>Cooldown: 60 seconds > 20 seconds</li>
+<li>Arcane Shield duration: 20 seconds > 10 seconds</li>
+</ul>
+<p><strong>Hot Headed:</strong></p>
+<ul>
+<li>Added 10% Hit Chance</li>
+</ul>
+<h4><span style="text-decoration: underline;">Healer/Acolyte</span></h4>
+<p>Giving Healer a much needed bump in damage, though it won't do as much damage as the other starter classes because it's well... a healer... </p>
+<p dir="ltr"><strong><span id="docs-internal-guid-4467ba12-7fff-1c7f-9be4-fef0d0129e99">Heartbeat</span>:</strong></p>
+<ul>
+<li>Damage: 10% of current HP > 15% of current HP</li>
+<li>Mana Cost: 20 > 15</li>
+</ul>
+<p><strong>Holy (previously Clear Mind):</strong></p>
+<ul>
+<li>Target: Self > Enemy</li>
+<li> Damage: 0% > 350% (also deals bonus damage to undead)</li>
+<li>Cooldown: 20 seconds > 8 seconds</li>
+<li>No longer applies Clear Mind</li>
+</ul>
+<p><strong><span>Pure Hearted</span>:</strong></p>
+<ul>
+<li>Added 10% Hit Chance</li>
+</ul>
+<h4><span style="text-decoration: underline;">Dragonslayer</span></h4>
+<p>Dragonslayer wasn't doing a good job at slaying dragons, so it has received a set of changes that should instill the fear back into them while also being more effective against other types of mobs.</p>
+<p dir="ltr"><strong><span id="docs-internal-guid-4467ba12-7fff-1c7f-9be4-fef0d0129e99">System</span>:</strong></p>
+<ul>
+<li>Mana Model changed to Warrior</li>
+<li>Skills that were previously restricted to Dragonkin only can now be used against all monsters</li>
+<li>All skills now deal physical damage</li>
+<li>Swapped the order of skills 2 and 4</li>
+</ul>
+<p><strong>Scorched Steel:</strong></p>
+<ul>
+<li>Damage: 210% > 100%</li>
+<li>Mana Cost: 24 > 5</li>
+<li>Cooldown: 6 seconds > 4 seconds</li>
+<li>Now applies Charred to targets, reducing Damage Resistance by 15% for 15 seconds.</li>
+<li>Now applies Cindered Scales to target's affected by Dragonbane, reducing Damage Resistance by an additional 15% for 15 seconds.</li>
+</ul>
+<p><strong>Impale:</strong></p>
+<ul>
+<li>Changed icon</li>
+<li>Damage: 110% > 160%</li>
+<li>Mana Cost: 30 > 0</li>
+<li>Cooldown: 12 seconds > 10 seconds</li>
+<li>Impaled aura duration: 12 > 15</li>
+<li>No longer has a chance to stun targets</li>
+<li>Now applies Adrenaline Flow to the caster, a 15 second HoT</li>
+<li>Now applies Infected Wound to targets affected by Dragonbane, another, stronger DoT for 15 seconds. Now applies Adrenaline Surge to the caster if the target is affected by Infected Wound, increasing Haste and Crit Chance by 15% for 15 seconds.</li>
+</ul>
+<p><strong>Incapacitate (new skill):</strong></p>
+<ul>
+<li>200% damage</li>
+<li>Mana Cost: 0</li>
+<li>Cooldown:12</li>
+<li>Applies Incapacitated to targets affected by Dragonbane, reducing outgoing damage by 30% for 15 seconds, and stunning them for 3 seconds.</li>
+</ul>
+<p><strong>Dragon's Bane (new skill):</strong></p>
+<ul>
+<li>Damage: 120%</li>
+<li>Mana Cost: 50</li>
+<li>Cooldown: 2</li>
+<li>Applies Dragonbane to Dragonkin targets, causing the next skill you use to apply an additional effect.</li>
+</ul>
+<p><strong>Aggression:</strong></p>
+<ul>
+<li>Now also increases Hit Chance by 10%.</li>
+</ul>
+<p><strong>Veteran Slayer:</strong></p>
+<ul>
+<li>Starting at rank 1, all skills except the Auto Attack now deal bonus damage to Dragonkin.</li>
+</ul>
+<h4><span style="text-decoration: underline;">Miscellaneous</span></h4>
+<ul>
+<li>Changed the cooldown of Love Caster's Love Torment to 5 seconds to match Elemental Dracomancer</li>
+<li>The amount of Dragonslayer Marshal Medals needed for the Dragonslayer Marshal (Red Dragon) quest has been reduced to 1</li>
+</ul>
+<h4><span style="text-decoration: underline;">NOT A MOD and Legion Paladin Changes are in Development!</span></h4>
+<p dir="ltr">A couple of weeks ago, we announced that changes to NOT A MOD and Legion Paladin are in the works. These are still planned to happen, but as both classes are in need of overhauls, it will take some before they are ready to be released. Be sure to keep an eye on the <a href="https://twitter.com/AqwClass" target="_blank">AQW Class Team Twitter</a> for updates as they get closer to release.</p>
+<ul>
+</ul>
+<p dir="ltr"> </p>
+<h3>12/1/2023 - Class Bug Fixes and Quality of Life Updates</h3>
+<h4 dir="ltr"><span style="text-decoration: underline;">Classes</span></h4>
+<ul>
+</ul>
+<p>Abyssal Angel's Shadow: </p>
+<ul>
+<li>Shadowed Flight is now Infinite Range (to match the original Abyssal Angel).</li>
+</ul>
+<p>Arcane Dark Caster:</p>
+<ul>
+<li>Arcane Overwhelming no longer stuns, instead it now Silences and increases Dodge by 30%.</li>
+</ul>
+<p>ArchPaladin:</p>
+<ul>
+<li>Updated Righteous Judgement's description to state the correct passive effects.</li>
+</ul>
+<p><span id="docs-internal-guid-c9bc0a9a-7fff-9ca8-b782-60081c34bfb2"><span>Blood Titan: </span></span></p>
+<ul>
+<li><span id="docs-internal-guid-c9bc0a9a-7fff-9ca8-b782-60081c34bfb2"><span>Updated Blood Volume's description to state the correct Endurance increase amount.</span></span></li>
+</ul>
+<p><span><span><span id="docs-internal-guid-ea91de5c-7fff-36d8-fac4-6e30a7c4af49"><span>Defender: </span></span></span></span></p>
+<ul>
+<li><span><span><span id="docs-internal-guid-ea91de5c-7fff-36d8-fac4-6e30a7c4af49"><span>Fixed a bug that prevented Infernal Shield from stacking.</span></span></span></span></li>
+</ul>
+<p><span id="docs-internal-guid-8baf9023-7fff-602a-f45b-1e74ff2b579c"><span>Evolved Pumpkin Lord: </span></span></p>
+<ul>
+<li><span id="docs-internal-guid-8baf9023-7fff-602a-f45b-1e74ff2b579c"><span>Updated Pumpkin Splat's description to state the correct passive effects.</span></span></li>
+</ul>
+<p><span id="docs-internal-guid-cbe6e5e0-7fff-6d77-092f-159b22f115ac"><span>Immortal Dark Caster:</span></span></p>
+<ul>
+<li><span id="docs-internal-guid-cbe6e5e0-7fff-6d77-092f-159b22f115ac"><span> Updated description on Forbidden Rite to state the correct stacking amounts.</span></span></li>
+</ul>
+<p><span><span><span id="docs-internal-guid-afc20416-7fff-8020-e3b2-e56311c5a9cc"><span>Legion DoomKnight:</span></span></span></span></p>
+<ul>
+<li><span><span><span id="docs-internal-guid-afc20416-7fff-8020-e3b2-e56311c5a9cc"><span> Updated description of Touch of Doom to state the correct stacking amount.</span></span></span></span></li>
+</ul>
+<p><span id="docs-internal-guid-a2389a4e-7fff-8e34-2769-452cc2d2cfb5"><span>Legion Revenant:</span></span></p>
+<ul>
+<li><span id="docs-internal-guid-a2389a4e-7fff-8e34-2769-452cc2d2cfb5"><span> Updated description of Depraved Empowerment to state that the Crit Damage buff only applies to the caster.</span></span></li>
+</ul>
+<p><span id="docs-internal-guid-f23c6244-7fff-d52a-6f31-3949f37a9ffc"> </span></p>
+<p dir="ltr"><span>Lord of Order:</span></p>
+<ul>
+<li><span> Updated the description of Edited Timelines to be more accurate.</span></li>
+<li> Updated Resilience's description to state the correct passive effect.</li>
+</ul>
+<p dir="ltr"><span>MechaJouster: </span></p>
+<ul>
+<li><span>Updated descriptions to be more accurate.</span></li>
+</ul>
+<p dir="ltr"><span>Northlands Monk: </span></p>
+<ul>
+<li>Winter Wind now applies the correct defense debuff.</li>
+<li>Fixed a stacking bug on the Frostval Spirit aura, duration increased to 8 seconds.</li>
+</ul>
+<p dir="ltr"><span>Neo Metal Necro (and variants): </span></p>
+<ul>
+<li>Removed the Unhinged Frenzy aura and moved the Haste buff to the Soundwave aura on Shocking Soundwave. </li>
+<li>Reduced the cooldown of Enraging Pain to 3 seconds.</li>
+</ul>
+<p dir="ltr"><span>Oracle: </span></p>
+<ul>
+<li><span>Updated Edited Timeline's description for clarity.</span></li>
+</ul>
+<p dir="ltr"><span>Paladin Chronomancer:</span></p>
+<ul>
+<li><span> Updated Radiant Rift's description to state the correct duration of Radiant Light.</span></li>
+</ul>
+<p dir="ltr"><span>Rogue: </span></p>
+<ul>
+<li><span>Updated descriptions for clarity.</span></li>
+</ul>
+<p dir="ltr"><span>Scarlet Sorceress: </span></p>
+<ul>
+<li><span>Reduced the cooldown of Crimson Ritual to 2 seconds.</span></li>
+</ul>
+<p dir="ltr"><span>Troll Spellsmith:</span></p>
+<ul>
+<li><span> Fixed a Crit Chance stacking bug on the Sigil aura.</span></li>
+<li><span> Updated Weakness Sigil's description to state the correct Troll Resilience amounts.</span></li>
+<li><span> Updated other skill descriptions for clarity.</span></li>
+</ul>
+<p dir="ltr"><span>Yami no Ronin: </span></p>
+<ul>
+<li><span>Updated descriptions to better reference the Revealed aura.</span></li>
+</ul>
+<h4><span style="text-decoration: underline;">Quality of Life & Potions</span></h4>
+<ul>
+<li>Added missing periods to various descriptions.</li>
+</ul>
+<p><span id="docs-internal-guid-c4d295dc-7fff-88e1-a568-076e5d6e39fe"><span>Basic Body Tonic: </span></span></p>
+<ul>
+<li><span id="docs-internal-guid-c4d295dc-7fff-88e1-a568-076e5d6e39fe"><span>Updated description to state the correct Endurance increase amount.</span></span></li>
+</ul>
+<p>Basic Crusader Elixir:</p>
+<ul>
+<li>Added missing effect, changed to +20% Heal Boost.</li>
+</ul>
+<p>Crusader Elixir:</p>
+<ul>
+<li>Added missing effect, changed to +30% Heal Boost.</li>
+</ul>
+<p>Unstable Crusader Elixir:</p>
+<ul>
+<li>Added missing effect, changed to +40% Heal Boost and -10% Dodge.</li>
+</ul>
+<p><span id="docs-internal-guid-47f65713-7fff-f1ea-0389-7c757af018cf"><span>See any Class & Combat bugs we missed? If so, remember to report them to the </span><a href="https://bugs.artix.com/"><span>Bug Tracker</span></a><span> so we can add them to the list! Also, keep an eye out for buffs to Warrior, Dragonslayer, and something cool <em>next week!</em></span></span></p>
+<p><span><span><em><br /></em></span></span></p>
+<h3>11/11/2023 - Grimskull Dungeon Updates</h3>
+<p>Grimskull was being a bit stingy on the rep rewards, but he's been "convinced" to be a bit more generous. </p>
+<ul>
+<li>All quests that rewarded 500 rep now reward 750.</li>
+<li>All quests that rewarded 1,000 rep now reward 1,500</li>
+</ul>
+<p>Additionally, a few adjustments to the challenge boss have been made:</p>
+<ul>
+<li>Slightly reduced base damage</li>
+<li>Fixed a bug that was preventing its auto attack from hitting multiple targets</li>
+<li>Reduced the stun duration on one of its skills</li>
+<li>Slightly increased the charge time of its final attack</li>
+</ul>
+<h3>10/10/2023 - The one that involves a DoomKnight</h3>
+<h4><span style="text-decoration: underline;">Verus DoomKnight</span></h4>
+<p>Reduced the stat buffs from the Unleashed Doom and Darkness auras, but drastically increased the base damage of all skills. Solo damage should be slightly higher than before and damage in parties should be significantly increased. Also made adjustments to the class's utility, reduced MP costs, and increased the duration of the Darkness auras.</p>
+<h3 dir="ltr"><strong>Skill Changes:</strong></h3>
+<p dir="ltr"><strong>Necrotic Blade</strong></p>
+<ul>
+<li>Damage: 35% > 80%</li>
+<li>Weakened no longer reduces Crit Chance by 15%</li>
+<li>No longer applies Blinded </li>
+</ul>
+<p dir="ltr"><strong>Soul Fracture</strong></p>
+<ul>
+<li>Damage: 40% > 85%</li>
+<li>Cataclysm Crit Chance: 50% > 20%</li>
+<li>Cataclysm duration: 15 seconds > 20 seconds</li>
+</ul>
+<p dir="ltr"><strong>Life Carve:</strong></p>
+<ul>
+<li>Damage: 50% > 95%</li>
+<li>Mana Cost: 8 > 5</li>
+<li>No longer applies Decay (see Unleash Doom)</li>
+<li>Now applies Lingering Darkness</li>
+<li>Lingering Darkness duration: 12 seconds > 6 seconds (damage per tick unchanged)</li>
+<li>Veil of Darkness duration: 15 seconds > 20 seconds</li>
+</ul>
+<p dir="ltr"><strong>Doom Spikes:</strong></p>
+<ul>
+<li>Damage: 45% > 90%</li>
+<li>Mana Cost: 10 > 5</li>
+<li>Added a new Unleashed Doom aura called Skewered, which reduces Haste and Dodge by 15% for 5 seconds</li>
+<li>Demise outgoing damage: 50% > 15%</li>
+<li>Demise duration: 15 seconds > 20 seconds</li>
+</ul>
+<p dir="ltr"><strong>Unleash Doom</strong></p>
+<ul>
+<li>Damage: 60% > 120%</li>
+<li>No longer applies Lingering Darkness (see Life Carve)</li>
+<li>Now applies Decay</li>
+<li>Decay duration: 1 second > 3 seconds</li>
+<li>Unleashed Doom outgoing damage: 100% > 25%</li>
+</ul>
+<p dir="ltr"><strong>Inner Darkness</strong></p>
+<ul>
+<li>Hit Chance and Haste: 15% > 20%</li>
+</ul>
+<h3>09/22/2023 - Higure Update + Class Changes</h3>
+<h4><span><span><span>Higure Update</span></span><span> </span></span></h4>
+<p><span>Based on your feedback</span><span>, we have some some updates to  the Higure weapon</span><span>: </span></p>
+<ul>
+<li>Now does 40% more damage to monsters, damage range changed to static, and added a 30% Class, Rep, and EXP boost.</li>
+<li>Added an "Empowered Higure" weapon to the /ultrdarkon merge shop. Does 51% more damage to monsters and can be purchased for x1 Higure, x20 Darkon Insignia, and x20 King Drago Insignia. Higure will remain a seasonal weapon, but Empowered Higure can be merged all year round.</li>
+</ul>
+<h4><span style="text-decoration: underline;">Great Thief</span></h4>
+<p>Class performance increased.</p>
+<p dir="ltr"><strong>Quick Stabs</strong></p>
+<ul>
+<li>Cooldown reduced (1.5s -> 0.8s)</li>
+</ul>
+<p dir="ltr"><strong>Treasure Toss</strong></p>
+<ul>
+<li>Cooldown Reduced (4s -> 3.5s)</li>
+</ul>
+<p dir="ltr"><strong>Stealth</strong></p>
+<ul>
+<li>Stealth duration increased (10s -> 15s)</li>
+</ul>
+<p dir="ltr"><strong>Backstab</strong></p>
+<ul>
+<li>Cooldown reduced (24s -> 15s)</li>
+</ul>
+<h4><span style="text-decoration: underline;">Interstellar Knight </span></h4>
+<p>Performance and niche applicability increased. Mana costs increased to compensate for increased mana generation from new Damage over Time effects.</p>
+<p dir="ltr"><strong>Wane of Dusk</strong></p>
+<ul>
+<li>Perpetual Rend damage increased and formula changed (100%x8 Hybrid -> 300%x6 Magical), and now ticks twice as fast</li>
+<li>Damage calculation changed to Magical</li>
+</ul>
+<p dir="ltr"><strong>Strike of Dawn</strong></p>
+<ul>
+<li>Damage increased and calculation changed (45% Hybrid -> 90% Magical)</li>
+<li>Temporal Shift now does damage over time, dealing 500%x6 Magical Damage, and ticking once per second</li>
+</ul>
+<p dir="ltr"><strong>Daybreak</strong></p>
+<ul>
+<li>Veil of Compressed Time defense increased (36% -> 40%), and now gives 40% DoT resistance, and duration increased (6s -> 8s)</li>
+<li>DayBreak Heal damage calculation changed to Magical, name changed to “Daybreak Radiance”</li>
+<li>Daybreak Stun removed</li>
+<li>New aura Twilight Shadows applies when Temporal Shift is not present, dealing 3600% Magic damage over 12 seconds, and ticking once per second</li>
+<li>Mana cost increased (8 -> 12)</li>
+</ul>
+<p dir="ltr"><strong>Incinerating Era</strong></p>
+<ul>
+<li>Incinerating Era duration increased (6s -> 10s), damage calculation changed to Magical</li>
+<li>Mana cost increased (14 -> 28)</li>
+<li>Temporal Rift/Shift consumed duration increased (1 -> 30) (This does not change the mechanic, it just prevents the “fades” message from cluttering up the UI)</li>
+</ul>
+<ul>
+</ul>
+<p dir="ltr"><strong><span id="docs-internal-guid-d47d4f55-7fff-ebfc-2793-566e6b0c1f73"><span>Equinox</span></span></strong></p>
+<ul>
+<li>Cooldown decreased (21s -> 3s)</li>
+<li>Subsequent Dusk no longer increases DoT resistance and Haste, instead lowers it (30% DoT Resistance -> -60%), decreases damage dealt (10%), and duration increased (12s -> 16s)</li>
+<li>Subsequent Dawn no longer increases enemy Haste, now lowers damage dealt (20%), and duration increased (12s -> 16s)</li>
+<li>Damage increased and calculation changed (115% Hybrid -> 175% Magical)</li>
+<li>Mana cost increased (14 -> 24)</li>
+<li>Can now crit but still cannot be avoided</li>
+</ul>
+<p dir="ltr"><strong><span id="docs-internal-guid-19d1ca2e-7fff-0345-cc1f-ba6615c44825"><span>Paradox</span></span></strong></p>
+<ul>
+<li><span id="docs-internal-guid-cf2425e4-7fff-16fa-ef29-48ff95a5990a"><span>Hit chance bonus increased (20% -> 75%), crit chance reduction decreased (-20% -> -15%)</span></span></li>
+</ul>
+<p dir="ltr"><strong><span id="docs-internal-guid-03628c90-7fff-2ea5-9495-2d7171505248"><span>Heroic Stoicism</span></span></strong></p>
+<ul>
+<li><span id="docs-internal-guid-a537de4c-7fff-4223-328e-ac13b0ed3e9b"><span>Endurance now increased by 75%</span></span></li>
+</ul>
+<h4><span style="text-decoration: underline;">Empyrean Chronomancer</span></h4>
+<p>Rifts no longer require Deadlock proc states to apply. Instead, Deadlock states now offer a stat bonus for a short time. This makes the class simpler to play, less prone to mistakes, and small cooldown changes make it slightly faster as well, without significantly impacting its performance.</p>
+<ul>
+<li>Taking Eternity and The Fourth Dimension positions switched</li>
+</ul>
+<div>
+<p dir="ltr"><strong>Eternal Deadlock</strong></p>
+<ul>
+<li>No longer applies Infinity Rift</li>
+<li>Now applies Infinite Hit, 5s duration, -25% Dodge</li>
+<li>Can no longer be avoided</li>
+<li>Deadlock now takes more stacks to apply Enter Infinity (4 -> 8), Enter Infinity duration reduced (90s -> 3s) but now increases Crit Chance by 20%</li>
+</ul>
+<p dir="ltr"><strong>Taking Eternity</strong></p>
+<ul>
+<li>No longer applies Infinite Damage</li>
+<li>Taking Eternity now applies full effects in a single stack (10%x3 -> 30%), duration reduced (30s -> 15s), and now grants 20% damage dealt and critical damage</li>
+<li>Cooldown reduced (10s -> 4s)</li>
+<li>Unity Through Time updated</li>
+</ul>
+<p dir="ltr"><strong>Speed Abrasion</strong></p>
+<ul>
+<li>Cooldown reduced (20s -> 16s)</li>
+<li>Damage lowered (180% -> 150%)</li>
+<li>No longer applies Infinite Hit</li>
+</ul>
+<p dir="ltr"><strong>The Fourth Dimension</strong></p>
+<ul>
+<li>Can no longer be avoided</li>
+<li>Temporal Rift no longer requires The Fourth Dimension to apply</li>
+<li>Deadlock now takes more stacks to apply The Fourth Dimension (4 -> 8), The Fourth Dimension duration reduced (90s -> 3s) but now increases Physical Damage by 20%</li>
+</ul>
+</div>
+<h4><span style="text-decoration: underline;">Yami no Ronin</span></h4>
+<p>A small change to increase quality of life.</p>
+<p dir="ltr"><strong><span id="docs-internal-guid-2cee1855-7fff-8116-cef7-81c109b4418a"><span>Jigen Kogeki</span></span></strong></p>
+<ul>
+<li>Can no longer be avoided</li>
+</ul>
+<p> </p>
+<h3>08/26/2023 - Monster Changes</h3>
+<h4>Monster Changes</h4>
+<p>God of the Depths is intended to be a more accessible challenge fight in comparison to others. After some observation, we've concluded that it's in a good spot difficulty wise, but it is taking certain parties quite a long time to clear it. Therefore, the resistances of the God of the Depths have been lowered, the debuffs are slightly less frequent, and the Sacrosanct Tendril's respawn time has been increased. </p>
+<h4><strong>God of the Depths:</strong></h4>
+<ul>
+<li dir="ltr">Damage resistance: 100% > 50%</li>
+<li dir="ltr">DoT resistance: 100% > 50%</li>
+<li dir="ltr">Peer cooldown: 8 seconds > 10 seconds</li>
+<li dir="ltr">Call of Kathool cooldown: 20 seconds > 25 seconds</li>
+</ul>
+<h4><strong>Sacrosanct Tendril:</strong></h4>
+<ul>
+<li dir="ltr">Respawn time: 30 seconds > 40 seconds</li>
+</ul>
+<h3>08/25/2023</h3>
+<h4>Monster and Item Changes</h4>
+<ul>
+<li dir="ltr">Voice in the Sea's Oxidize aura healing reduction: 90% > 66%</li>
+<li dir="ltr">Vigil duration: 8 seconds > 6 seconds</li>
+</ul>
+<p>The Vigil consumable is intended to be used on reaction, the high duration was a bit too lenient in regards to that. </p>
+<h3>07/21/2023</h3>
+<h4>Warlord Icewing Map</h4>
+<p>The Warlord Icewing boss at the end of /icestormarena has been moved to its own map. If you are at least level 75, /join icewing to take on the challenge!</p>
+<h4>Frost Spirit Map</h4>
+<ul>
+<li dir="ltr">The Frost Spirit mobs have been moved to their own map. If you are at least level 75, /join icestormunder to take them on!</li>
+<li dir="ltr">The Frost Spirit mob's level has been increased to 255, and now gives 600 EXP and 150 Gold (before modifiers) when defeated.</li>
+<li dir="ltr">The number of Frost Spirit mobs in the room has been increased to 15.</li>
+</ul>
+<h4><span style="text-decoration: underline;">Void Highlord</span></h4>
+<ul>
+<li dir="ltr">Updated icons.</li>
+</ul>
+<h4><span style="text-decoration: underline;">Lord of Order</span></h4>
+<ul>
+<li dir="ltr">Updated icons.</li>
+</ul>
+<h4><span style="text-decoration: underline;">Yami no Ronin </span></h4>
+<ul>
+<li dir="ltr">Updated icons.</li>
+</ul>
+<h4><span style="text-decoration: underline;">Dark Metal Necro (and variants)</span></h4>
+<ul>
+<li dir="ltr">Updated icons.</li>
+</ul>
+<h4><span style="text-decoration: underline;">Nu Metal Necro (and variants)</span></h4>
+<ul>
+<li dir="ltr">Updated icons and added a new aura to speed up its guitar solos a tad.</li>
+</ul>
+<p><strong>Subsuming Scream</strong></p>
+<ul>
+<li dir="ltr">
+<p>Added a new aura called Unhinged Frenzy, which increases Haste by 10% for 8 seconds.</p>
+</li>
+</ul>
+<ul>
+</ul>
+<h3>07/09/2023</h3>
+<h4>Monster Updates</h4>
+<p>A few changes have been made to certain /ascendeclipse monsters, primarily to the Ascended Midnight and Ascended Solstice bosses.</p>
+<ul>
+<li dir="ltr">Adjusted the magic damage stat on the Fallen Star monster.</li>
+</ul>
+<p><em>The Fallen Star's Solar Flare aura is intended to kill the player if a mechanic is failed, but it (still) wasn't doing so under certain circumstances.</em></p>
+<ul>
+<li dir="ltr">Increased the base damage of the Ascended Solstice boss.</li>
+<li dir="ltr">The Ascended Solstice now only uses its Daybreak skill at 80%, 50%, and 20% remaining HP. (previously, the skill was being used every 10% hp the boss lost).</li>
+<li dir="ltr">Increased the base damage of the Ascended Midnight boss.</li>
+<li dir="ltr">The Ascended Midnight boss now only uses its Nightfall skill at 80%, 50%, and 20% remaining HP. (previously, the skill was being used every 10% hp the boss lost).</li>
+</ul>
+<p><em>The frequent activation of Nightfall and Daybreak auras proved to be quite frustrating, so the amount of times they activate throughout the fight have been reduced. The base damage of the two bosses has been increased to compensate for the change.</em></p>
+<div>
+<ul>
+<li dir="ltr">Added a new aura to the Ascended Solstice and Ascended Midnight. If one is killed, the surviving boss gains damage upon every auto attack.</li>
+</ul>
+<p><em>The two bosses are intended to be killed at around the same time, but certain strategies involved quickly killing one boss, while enduring the surviving boss's debuff for a long period of time. </em></p>
+</div>
+<h3>07/08/2023</h3>
+<h4>Monster Updates</h4>
+<p>We are thrilled with all of your responses to the release of our Eclipse Ascent dungeons! A few changes have been made based on your feedback and the data we have collected:</p>
+<ul>
+<li dir="ltr">Increased the DoT multiplier on the Fallen Star monster.</li>
+</ul>
+<p><em>The Fallen Star's Solar Flare aura is intended to kill the player if a mechanic is failed, but it wasn't doing so under certain circumstances.</em></p>
+<ul>
+<li dir="ltr">Reduced the amount of Dodge the Faithless Deer and Blessless Deer gain per each Lunar Prance stack from 15% to 5%.</li>
+<li dir="ltr">Increased the duration of the Ascended Solstice's Noon of Radiance aura from 12 seconds to 25 seconds.</li>
+<li dir="ltr">Increased the duration of the Ascended Midnight's Midnight of Silence aura from 12 seconds to 25 seconds.</li>
+</ul>
+<p><em>Noon of Radiance and Midnight of Silence are only applied if a mechanic is failed. The effects of the two auras could often end up being largely ignored when certain party compositions were used.</em></p>
+<h4>Quest Updates</h4>
+<ul>
+<li dir="ltr">The amount of Sliver of Moonlight rewarded from the Night Falls (Bonus Daily) quest has been increased to x3.</li>
+<li dir="ltr">The amount of Sliver of Sunlight rewarded from the Dawn Breaks (Bonus Daily) quest has been increased to x3.</li>
+<li dir="ltr">The amount of Ecliptic Offering rewarded from the Frozen Cycle (Bonus Daily) quest has been increased to x3.</li>
+</ul>
+<h3>06/09/2023</h3>
+<h4><span>Frost SpiritReaver</span></h4>
+<p>Several changes have been made to make the class stronger and smoother to play. Notably, all damage is now magical and Synchronizing now affects your crit stats instead of magical damage.</p>
+<h4>Farming Method Updated</h4>
+<p>With the amount of difficulty it takes to obtain Frost SpiritReaver when compared to other winter themed classes such as Cryomancer and Glacial Berserker, it didn't make sense to keep Frost SpiritReaver's performance around the same level. Therefore, Frost SpiritReaver now requires a Frost Sigil (purchasable in Abel's /icedungeon shop if you have either version of Cryomancer) and Rank 10 Glacera rep in order to begin its quests. </p>
+<p><strong>Miscellaneous: </strong>Third and Fourth skill order switched.</p>
+<p><strong>Mana Regeneration: </strong>No longer recovers extra MP in addition to the mana gained when using Spirit Ripper or Spirit Freeze</p>
+<p dir="ltr"><strong>Spirit Ripper:</strong></p>
+<ul>
+<li>Damage: 80% > 35%</li>
+</ul>
+<p dir="ltr"><strong>Spirit Freeze:</strong></p>
+<ul>
+<li>Damage: 100% > 50%</li>
+<li>Now deals Weapon Damage instead of Weapon DPS*</li>
+<li>Damage type: Physical > Magical</li>
+<li>Spirit Chill Hit Chance and Dodge debuff: 10% > 25%</li>
+</ul>
+<p dir="ltr"><strong>Spirit Banishment:</strong></p>
+<ul>
+<li>Damage: 150% > 75%</li>
+<li>Now deals Weapon Damage instead of Weapon DPS</li>
+<li>Damage type: Physical > Magical</li>
+<li>Skill can now crit</li>
+<li>Spirit Destruction and Spirit Devastation merged together</li>
+<li>Spirit Devastation defense debuff: 15% > 30%</li>
+<li>Spirit Devastation now also reduces enemy Hit Chance by 30%</li>
+<li>Spirit Devastation duration: 4 seconds > 6 seconds</li>
+<li>Spirit Devastation no longer requires Spirit Vanishing to be active in order to be applied</li>
+<li>No longer applies Spirit Vanishing</li>
+</ul>
+<p dir="ltr"><strong>Spirit Charge:</strong></p>
+<ul>
+<li>Damage type: Hybrid > Magical</li>
+<li>Fully Synchronized Spirit no longer increases Hit Chance or Magic Damage, now increases Crit Damage by 500% and reduces Crit Chance by 100%</li>
+<li>Spirit Vanishing defense buff: 30% > 50%</li>
+<li>Spirit Vanishing duration: 6 seconds > 20 seconds</li>
+</ul>
+<p dir="ltr"><strong>Spirit Synchronization</strong></p>
+<ul>
+<li>Cooldown: 20 seconds > 2 seconds</li>
+<li>Damage: 20% > 30%</li>
+<li>Range: Medium > Infinite</li>
+<li>Spirit Synchronizing now also increases Crit Chance by 75%.</li>
+<li>Renamed the Spirit Cooldown aura to Desynchronized</li>
+<li>No longer applies Spirit Shattering</li>
+<li>No longer applies Frozen Essence Gathering (Frozen Essence now applies if Spirit Synchronizing is active)</li>
+</ul>
+<p dir="ltr">*Weapon Damage deals double the damage of Weapon DPS, while also using your equipped weapon's damage range.</p>
+<ul>
+</ul>
+<h3>06/02/2023</h3>
+<h4><span style="text-decoration: underline;">Nechronomancer/Necrotic Chronomancer</span></h4>
+<p>Added a long lost missing skill icon</p>
+<h4><span style="text-decoration: underline;">Legion Revenant</span></h4>
+<p>Updated skill icons (and yes, Void Highlord will receive the same treatment in the near future)</p>
+<h4><span style="text-decoration: underline;">Blood Titan</span></h4>
+<p>Blood Titan's skills have been reworked to make the class more engaging to play, while preserving some of the traits that originally made the class unique.</p>
+<p>Blood Titan proved interesting to redesign as it is a tank based class that utilizes HP for its skill costs instead of MP. This is quite contradictory when you think about it. If the point of using a tank class is to mitigate the amount of damage you receive, but its skills effectively ignore your own defenses by taking away a big chunk of your HP, then how are you supposed to stay alive? Well, you give the class more healing, a lot more. Blood Titan is now a super tank. Its damage output isn't too significant, but it's now able to withstand some of the hardest hitting attacks out there, and can even convert some of the damage it receives into HP under certain circumstances. You will truly feel like a titan when using this class now!</p>
+<h4>Farming Method Changed</h4>
+<p>Blood Titan's farming method has been updated. Blood Titan Tokens no longer drop from the Blood Titan bosses, but are instead now rewarded from Shi Mar's reworked quests. The class cost has also been reduced to 200 Blood Titan Tokens. Additionally, Titan's Gilded Crusher now provides a 30% damage boost to all monsters, but it no longer drops from Ultra Blood Titan. Instead, it is now purchasable for 1,000 Blood Titan Tokens in Shi Mar's merge shop.</p>
+<p><strong>Stat Model: </strong>Tank Melee</p>
+<p><strong>Mana Regeneration: </strong>Blood Titans don't use mana. They instead channel their life force into their abilities.</p>
+<ul>
+</ul>
+<p dir="ltr"><strong>Rank 1 Passive - Titan's Bloodline:</strong></p>
+<ul>
+<li>Starting at rank 1, all skills can't miss and can't crit. Additionally, all skills (except Gilded Crusher) heal you for 20% of your max health (before modifiers) over 1 second. </li>
+</ul>
+<p dir="ltr"><strong>Gilded Crusher</strong></p>
+<p dir="ltr">Strike your target with the full might of your battleaxe. Damage dealt is based on your current health.</p>
+<ul>
+<li>Rank needed: 1 / Auto Attack</li>
+<li>Target: Enemy</li>
+<li>Max Targets: 1</li>
+<li>Type: Physical</li>
+<li>Range: Melee</li>
+<li>Cooldown: 3 seconds</li>
+</ul>
+<p dir="ltr"><strong>Titanic Smash</strong></p>
+<p dir="ltr">Slam your battleaxe into the ground, knocking your target off balance. Deals damage and applies Crippling Smash, reducing your target's outgoing damage by 60% and Crit Chance by 30% for 8 seconds. Also has a 25% chance to stun your target for 1 second. Costs 20% of your max HP.</p>
+<ul>
+<li>Rank Needed: 1</li>
+<li>Target: Enemy</li>
+<li>Max Targets: 1</li>
+<li>Type: Physical</li>
+<li>Range: Melee</li>
+<li>HP Cost: 20% Max HP</li>
+<li>Cooldown: 4 seconds</li>
+</ul>
+<p dir="ltr"><strong>Titan's Fury</strong></p>
+<p dir="ltr">Thrust your battleaxe forward, eviscerating your target. Deals damage and applies Titan's Fury, increasing your Haste by 20% for 15 seconds. Also applies Disemboweled, increasing your target's damage taken by 30% for 15 seconds. Costs 20% of your max HP.</p>
+<ul>
+<li>Rank Needed: 2</li>
+<li>Target: Enemy</li>
+<li>Max Targets: 1</li>
+<li>Type: Physical</li>
+<li>Range: Melee</li>
+<li>HP Cost: 20% Max HP</li>
+<li>Cooldown: 12 seconds</li>
+</ul>
+<p dir="ltr"><strong>Titan's Curse</strong></p>
+<p dir="ltr">Challenge a worthy opponent so that your legend may spread! Deals damage and applies Focus for 4 seconds, which forces your target to attack only you for the duration. Also applies Titan's Curse, drastically increasing your target's Crit Chance but reducing their Crit Damage by 300% for 2 seconds. Costs 10% of your max HP.</p>
+<ul>
+<li>Rank Needed: 3</li>
+<li>Target: Enemy</li>
+<li>Max Targets: 1</li>
+<li>Type: Physical</li>
+<li>Range: Melee</li>
+<li>HP Cost: 10% Max HP</li>
+<li>Cooldown: 16 seconds</li>
+</ul>
+<p dir="ltr"><strong>Blood Rage</strong></p>
+<p dir="ltr">Perform the ancient rite of the Blood Titans. Deals massive damage and applies Blood Rage, increasing your outgoing physical damage by 100% for 5 seconds, but reducing your Heal Power by 50%. Costs 30% of your max HP.</p>
+<ul>
+<li>Rank Needed: 5</li>
+<li>Target: Enemy</li>
+<li>Max Targets: 1</li>
+<li>Type: Physical</li>
+<li>Range: Melee</li>
+<li>HP Cost: 30% Max HP</li>
+<li>Cooldown: 20 seconds</li>
+</ul>
+<h4 dir="ltr">Passives</h4>
+<p dir="ltr"><strong>Crimson Shield</strong></p>
+<ul>
+<li>Rank Needed: 4</li>
+<li>Damage taken reduced by 80%.</li>
+</ul>
+<p dir="ltr"><strong>Blood Volume:</strong></p>
+<ul>
+<li>Rank Needed: 4</li>
+<li>Endurance increased by 400%, but your increased size reduces your Dodge by 50%.</li>
+</ul>
+<p dir="ltr"><strong>Titan's Bloodline:</strong></p>
+<ul>
+<li>Rank Needed: 1/10</li>
+<li>Starting at rank 1, all skills can't miss and can't crit. Additionally, all skills (except Gilded Crusher) heal you for 20% of your max health (before modifiers) over 1 second. At rank 10, Gilded Crusher applies Life Drinker, which heals you for 5% of your max HP (before modifiers) every 2 seconds.</li>
+</ul>
+<p> </p>
+<ul>
+</ul>
+<h3>05/19/2023</h3>
+<h4><span style="text-decoration: underline;">Blood Ancient</span></h4>
+<p>Blood Ancient has been completely reworked into a mid to late-game dodge class that utilizes the HP bar in order to strengthen itself.<br />The original version of Blood Ancient didn't fill any particular roles, nor did it feel like it was embodying the strength of multiple vampire warlords. Therefore, the Blood Ancient rework aims to bring a fresh take to dodge classes, while also giving it a more vampire-like feel.</p>
+<h4>Farming Method Changed</h4>
+<p>To reflect Blood Ancient's new power level, the latter half of the Blood Ancient farming quests have been updated and the quest line now has a level 50 requirement to begin it. The class now also only requires x1 Ancient Vitae to merge it instead of 25. Finally, like previous reworks, anyone who already has the class gets to keep it with its new skills!</p>
+<p><strong>Stat Model: </strong>Dodge Melee</p>
+<p><strong>Mana Regeneration: </strong>The Blood Ancient gains mana when they</p>
+<ul>
+<li>Strike an enemy in combat (more effective on crits)</li>
+<li>Dodge any attack (restores HP as well)</li>
+</ul>
+<p dir="ltr"><strong>Seeing Red</strong></p>
+<p dir="ltr">Gouge your target with your claws. Deals increased damage the lower your HP is.</p>
+<ul>
+<li>Rank needed: 1 / Auto Attack</li>
+<li>Target: Enemy</li>
+<li>Max Targets: 1</li>
+<li>Type: Physical</li>
+<li>Range: Melee</li>
+<li>Cooldown: 2.5 seconds</li>
+</ul>
+<p dir="ltr"><strong>Bloodshed</strong></p>
+<p dir="ltr">Your hunt for blood is insatiable. Deals damage and applies Bloodlust, increasing your Crit Damage by 10% for 10 seconds, stacks to 10. Costs 20% of your max HP.</p>
+<ul>
+<li>Rank Needed: 1</li>
+<li>Target: Enemy</li>
+<li>Max Targets: 1</li>
+<li>Type: physical</li>
+<li>Range: Melee</li>
+<li>Mana Cost: 0</li>
+<li>Cooldown: 4 seconds</li>
+</ul>
+<p dir="ltr"><strong>Afterimage</strong></p>
+<p dir="ltr">Your enhanced speed makes you a blur to those around you. Applies Afterimage, increasing your Dodge by 15% for 6 seconds, stacks to 3. Costs 20% of your current HP.</p>
+<ul>
+<li>Rank Needed: 2</li>
+<li>Target: Self</li>
+<li>Max Targets: 1</li>
+<li>Type: True Damage</li>
+<li>Range: Melee</li>
+<li>Mana Cost: 0</li>
+<li>Cooldown: 2 seconds</li>
+</ul>
+<p dir="ltr"><strong>Ischemia</strong></p>
+<p dir="ltr">Tap into your vampiric strength, temporarily empowering yourself. Applies Blood Boon, increasing your Crit Chance and Haste by 30% for 12 seconds. While empowered, all non lifesteal healing you receive is negated.</p>
+<ul>
+<li>Rank Needed: 3</li>
+<li>Target: Self</li>
+<li>Max Targets: 1</li>
+<li>Type: Status</li>
+<li>Range: Melee</li>
+<li>Mana Cost: 20</li>
+<li>Cooldown: 12 seconds</li>
+</ul>
+<p dir="ltr"><strong>Exsanguination</strong></p>
+<p dir="ltr">Bite into your target, inflicting a devastating wound. Deals increased damage the lower your HP is and heals you for a portion of the damage dealt. Feasting on your target temporarily exposes you, reducing your Dodge by 100%. Also applies Blood Loss, reducing your target's Haste by 30% while inflicting a DoT that increases the lower your HP is. While your target suffers from Blood Loss, all non lifesteal healing they receive is negated. All effects last 1 second. Can't miss. </p>
+<ul>
+<li>Rank Needed: 5</li>
+<li>Target: Enemy</li>
+<li>Max Targets: 1</li>
+<li>Type: Physical</li>
+<li>Range: Melee</li>
+<li>Mana Cost: 20</li>
+<li>Cooldown: 5 seconds</li>
+</ul>
+<h4 dir="ltr">Passives</h4>
+<p dir="ltr"><strong>Enhanced Senses</strong></p>
+<ul>
+<li>Rank Needed: 4</li>
+<li>Crit Chance and Dodge increased by 10%.</li>
+</ul>
+<p dir="ltr"><strong>Superhuman Reflexes</strong></p>
+<ul>
+<li>Rank Needed: 4</li>
+<li>Dexterity increased by 10%.</li>
+</ul>
+<p dir="ltr"><strong>Wonderful Night</strong></p>
+<ul>
+<li>Rank Needed: 10</li>
+<li>Crit Damage increased by 50%.</li>
+</ul>
+<p dir="ltr"> </p>
+<h3>04/14/2023</h3>
+<h4><span style="text-decoration: underline;">(Exalted/Dark) Soul Cleaver | Exalted/Dark Harbinger</span></h4>
+<p><span>A set of changes to make the class stronger, more dynamic, and more flexible. Now is very receptive to builds, and is a late-game solo class with end-game uses. Blood Price will no longer kill you as well.</span></p>
+<p>Legion Token cost 2000 -> 5000</p>
+<p><strong>Soul Rend</strong></p>
+<ul>
+<li>Cooldown reduced (6.5s -> 6s)</li>
+<li>Can no longer be avoided</li>
+<li>Description updated</li>
+</ul>
+<p dir="ltr"><strong>Soul Leech</strong></p>
+<ul>
+<li>Damage reduced (100% -> 50%)</li>
+<li>Description updated</li>
+</ul>
+<p dir="ltr"><strong>Soul Snare -> Soul Pact</strong></p>
+<ul>
+<li>Cooldown reduced (20s -> 12s)</li>
+<li>Mana cost increased (25 -> 50)</li>
+<li>Now targets self</li>
+<li>Soul Snare no longer applies</li>
+<li>New aura Soul Pact reduces damage taken and incoming healing by 50% for 30 seconds</li>
+<li>Description updated</li>
+</ul>
+<p dir="ltr"><strong>Blood Price</strong></p>
+<ul>
+<li>Damage reduced (166.5% Hybrid -> 50% current health)</li>
+<li>Damage type changed (Hybrid -> True)</li>
+<li>Blood Price now also increases haste by 8%</li>
+<li>New aura For The Legion!! applies to you, increasing Critical Damage by 20% per stack for 10 seconds, doesn’t refresh</li>
+<li>Description updated</li>
+</ul>
+<p dir="ltr"><strong>For the Legion</strong></p>
+<ul>
+<li>Endurance boost increased (20% -> 50%)</li>
+<li>Description updated</li>
+</ul>
+<ul>
+</ul>
+<h4><span style="text-decoration: underline;">Guardian</span></h4>
+<p>A small change to normalize health cost, so it won’t kill you.</p>
+<p dir="ltr"><strong>Invoke Essence Orb -> Essence Orb</strong></p>
+<ul>
+<li>
+<p>Damage reduced (375% Hybrid -> 30% current health)</p>
+</li>
+</ul>
+<h4><span style="text-decoration: underline;">Psionic MindBreaker</span></h4>
+<p>A small change to increase usability and consistency.</p>
+<p dir="ltr"><strong>Psion Drain</strong></p>
+<ul>
+<li>
+<p>Damage reduced (130% -> 70%)</p>
+</li>
+</ul>
+<p dir="ltr"><strong>Extrasensory Perception</strong></p>
+<ul>
+<li>
+<p>Now also increases Crit Chance by 15%</p>
+</li>
+<li>Description updated</li>
+</ul>
+<h4><span style="text-decoration: underline;">Evolved Pumpkin Lord</span></h4>
+<p>A few changes to make the class more dynamic, and stronger if used well.</p>
+<p><strong>Siphon</strong></p>
+<ul>
+<li>Ready to Sprout duration increased (8s -> 30s), effect increased (-20% damage taken -> -30%), now also increases incoming healing by 25%</li>
+<li>Description updated</li>
+</ul>
+<p dir="ltr"><strong>Explosive Pumpkins</strong></p>
+<ul>
+<li>Damage increase (140% -> 200%)</li>
+<li>Health cost increased (10% -> 20%)</li>
+<li>Description updated</li>
+</ul>
+<p dir="ltr"><strong>Miscellaneous</strong></p>
+<ul>
+<li><span id="docs-internal-guid-9e709fe6-7fff-55d4-af02-1d523c4656da"><span>Empowered Prismatic Manslayers damage range is now static</span></span></li>
+</ul>
+<p> </p>
+<h3>04/02/2023</h3>
+<h4><span style="text-decoration: underline;">Rustbucket</span></h4>
+<p dir="ltr">Ran outta oil.</p>
+<p dir="ltr"><strong>Skills</strong></p>
+<ul>
+<li>Outta oil</li>
+</ul>
+<p> </p>
+<ul>
+</ul>
+<h3>04/01/2023</h3>
+<h4><span style="text-decoration: underline;">Rustbucket</span></h4>
+<p dir="ltr">For far too long, Rustbuckets have been ignored. M<span id="docs-internal-guid-eba04baa-7fff-9b98-14ec-209dec17abea"><span>y compatriots</span></span>, now is the time to rise up.</p>
+<div>
+<p><strong>Skills</strong></p>
+</div>
+<ul>
+<li><span id="docs-internal-guid-fceefa87-7fff-cc8b-fa61-fdd18238fae4"><span>Applied oil</span></span></li>
+</ul>
+<p> </p>
+<h3>03/24/2023</h3>
+<h4><span style="font-size: 1em;">Miscellaneous</span></h4>
+<ul>
+<li>Necromancer, Pinkomancer, and Grim Necro second and fifth skill switched</li>
+<li>StoneCrusher and Infinity Titan fourth skill defensive auras duration increased to 8 seconds</li>
+</ul>
+<h4><span>Bug Fixes</span></h4>
+<ul>
+<li>Dragon of Time, Mindbreaker, and Psionic Mindbreaker’s healing mechanic fixed</li>
+<li>Several recently broken boss skills fixed</li>
+<li>Elysium damage on the Enhancement Traits page fixed. This was a typo, and there are no changes to the enhancement in-game.</li>
+</ul>
+<p> </p>
+<h3>03/17/2023</h3>
+<h4><span style="text-decoration: underline;">Chaos Avenger</span></h4>
+<p><span style="text-decoration: underline;"><span id="docs-internal-guid-be541764-7fff-9f66-3f94-fba655f0ae12"> </span></span></p>
+<p dir="ltr"><span>Quick changes so it stacks a bit faster, has higher base damage (but doesn't stack quite as high), and to make the autoattack scale with Strength instead of Intelligence.</span></p>
+<p dir="ltr"><span>These changes together result in an overall increase in performance for the class.</span></p>
+<h4>Chaos Greatsword</h4>
+<ul>
+<li>Now scales with STR instead of INT</li>
+<li>Damage coefficient lowered (320% -> 130%), but can do more damage than before because of the scaling change</li>
+<li>Chaos Fury now stacks faster but lower (6%x15 -> 15%x4)</li>
+<li>Description updated</li>
+</ul>
+<h4 dir="ltr"><span style="font-size: 1em;">Chaos <span id="docs-internal-guid-bdb5df6d-7fff-ec1b-a505-9c5517724863"><span>Siphon</span></span></span></h4>
+<ul>
+<li>Defense Chaorrupted now stacks faster (5%x8 -> 10%x4)</li>
+<li>Description updated</li>
+</ul>
+<h4 dir="ltr"><span>Flux</span></h4>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Crit Chance Chaorrupted now guaranteed to activate (70% -> 100%)</span></p>
+</li>
+</ul>
+<h4 dir="ltr">Chaos Bulwark</h4>
+<ul>
+<li>Chaotic Armor no longer needs to stack, and grants full effect immediately (30%x2 -> 60%), and has inherited the HoT from Chaotic Regeneration, which also no longer needs to stack (500%x4 -> 2000%)</li>
+<li>Chaotic Regeneration no longer applies (effect combined with Chaotic Armor)</li>
+<li>Description updated</li>
+</ul>
+<h4 dir="ltr"><span>Fury Unleashed</span></h4>
+<ul>
+<li>Fury Unleashed no longer respects Ravaged stacks, and instead grants the full effect immediately (10%+5%x8 -> 50%)</li>
+<li>Description updated</li>
+</ul>
+<h4 dir="ltr"><span>Unending Rage</span></h4>
+<ul>
+<li>No longer reduces INT by 99%</li>
+<li>Now increases Crit Chance by 10%</li>
+</ul>
+<h4 dir="ltr"><span id="docs-internal-guid-8e146bf2-7fff-cc40-52d0-084b6e54f91c"><span>Miscellaneous</span></span></h4>
+<ul>
+<li><span id="docs-internal-guid-3f290989-7fff-7176-522f-ccdc11b3f42c"><span>Blood Titan’s Life Drinker, Scarlet Sorceress’ Blood Lust, and Blood Sorceress’ Red lust now do more damage and heal the lower your HP, but have a lower base heal. This was a mechanic fix, and not a targeted change for the classes.</span></span></li>
+</ul>
+<p> </p>
+<ul>
+</ul>
+<h3>03/10/2023</h3>
+<h4><span style="text-decoration: underline;"><span id="docs-internal-guid-2b3b5064-7fff-aac1-52f6-5545cc540ce9">Darkside</span></span></h4>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5">The Darkside Class's skills have been updated to match the Dark Lord Class's skills. (Darkside will still summon the Hate Wolf battle pet though!)</span></p>
+<div>
+<h4><span style="text-decoration: underline;"><span id="docs-internal-guid-2b3b5064-7fff-aac1-52f6-5545cc540ce9">Battle Pet Classes</span></span></h4>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5">Necromancer, Pinkomancer, Horc Evader, BeastMaster, and Darkside/Dark Lord no longer require battle pets to be equipped in order for certain skills to function. (Affected skills will no longer deal 0 or severely reduced damage when a battle pet is not equipped.)</span></p>
+<h4><span style="text-decoration: underline;"><span id="docs-internal-guid-2b3b5064-7fff-aac1-52f6-5545cc540ce9">Evolved Leprechaun</span></span></h4>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5">The Soilsigh skill now always crits and can't miss.</span></p>
+</div>
+<p> </p>
+<h3>02/10/2023</h3>
+<h4><span style="text-decoration: underline;"><span id="docs-internal-guid-2b3b5064-7fff-aac1-52f6-5545cc540ce9">Paladin Chronomancer</span></span></h4>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5">Paladin Chronomancer has felt a bit underwhelming as a support class, so we're making a few changes to its skills to improve its support capabilities. </span></p>
+<div>
+<div><strong>Radiant Rift:</strong></div>
+<div>
+<ul>
+<li>Now deals bonus damage to undead</li>
+<li>Now always hits, but can't crit, base damage increased</li>
+<li>Ascendancy now also reduces target Haste by 10% per stack</li>
+</ul>
+<p><strong>Holy Vow:</strong></p>
+</div>
+</div>
+<ul>
+<li>Heal no longer scales off of Temporal Rift stacks</li>
+<li>Holy Shield Physical and Magical Resistance: 25% > 33%</li>
+<li>Holy Shield now grants 10% Haste</li>
+<li>Holy Shield duration: 10 > 15</li>
+</ul>
+<div>
+<div><strong>Divine Intervention:</strong></div>
+<div>
+<ul>
+<li>Cooldown: 40 > 36</li>
+<li>Indomitable END increase: 500% > 400%</li>
+</ul>
+<p><strong>Divine Retribution:</strong></p>
+<ul>
+<li> Cooldown: 20 > 18</li>
+<li>Removed Divine Reckoning aura</li>
+<li>Spirits Within MP restored over 5 seconds: 30 > 45</li>
+</ul>
+<p><strong>Vigorous:</strong></p>
+<ul>
+<li>END increase: 50% > 100%</li>
+</ul>
+<p><strong>Sacred Blessing:</strong></p>
+<ul>
+<li>Haste increase: 10% > 5%</li>
+<li>Heal Boost: 10% > 20%</li>
+</ul>
+</div>
+</div>
+<p> </p>
+<h3>01/20/2023</h3>
+<h4><span style="text-decoration: underline;"><span id="docs-internal-guid-2b3b5064-7fff-aac1-52f6-5545cc540ce9">Arachnomancer</span> Changes</span></h4>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5">Significant reworks to better align the class’s damage types, desired stats, and give it a playstyle. Cooldowns were significantly reduced overall, making the class play much faster. Original niches have not significantly changed, but the class now functions as a strong mid-game high dodge solo class that can scale into early endgame. </span></p>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5">This class presented an interesting challenge in design- it was already strong (if underappreciated), and aligning its damage types and stat model would have made it far too powerful. A light redesign gave it a new way to play while still being usable the same way it was before, allowing it to now function with 100%+ dodge, and encouraging more interaction from the player.<br /></span></p>
+<div><span>
+<div><strong><span id="docs-internal-guid-044c722e-7fff-50e9-b9ca-eb5a63278119"><span>Stat Model</span></span></strong></div>
+<div><strong> 
+<ul>
+</ul>
+</strong> 
+<ul>
+<li>Full Hybrid -> Dodge Melee</li>
+</ul>
+<p><strong>Auto Attack -> Spider Bite</strong></p>
+</div>
+</span></div>
+<ul>
+<li>Now heals you when your foe has Venom Fangs</li>
+<li>Cooldown increased (1.5s -> 2s)</li>
+<li>Damage decreased (80% -> 60%)</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Venom Fangs</strong></p>
+</div>
+<ul>
+<li>Cooldown increased (3s -> 6s)</li>
+<li>Damage type changed (Hybrid -> Physical)</li>
+<li>Mana cost decreased (12 -> 6)</li>
+<li>Venom Fangs no longer stacks, damage increased (140% Magical -> 225% Hybrid), duration reduced, which increases damage per tick proportionally (8s -> 4s), and reduces enemy dodge by 30%</li>
+<li>Now applies Arachnid Grace to the caster, increasing dodge by 70% for 1 second</li>
+<li>Animation updated</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Slingshot Web</strong></p>
+</div>
+<ul>
+<li>Cooldown decreased (8s -> 6s)</li>
+<li>Damage decreased (100% Hybrid -> 100% Physical) (Physical damage calculation is a little lower than Hybrid calculation)</li>
+<li>Damage type changed (Hybrid -> Physical)</li>
+<li>Range increased (Short -> Long)</li>
+<li>Mana cost decreased (23 -> 6)</li>
+<li>No longer guaranteed to crit</li>
+<li>No longer applies Webless to the caster</li>
+<li>Web Miasma no longer requires Venom Fangs, damage now increases as your health decreases (325% Hybrid -> 250% - 2250% Physical), and reduces enemy dodge by 30%</li>
+<li>Now applies Arachnid Grace to the caster</li>
+<li>Animation updated</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Foreboding Arachnid -> Leaping Arachnid</strong></p>
+</div>
+<ul>
+<li>Cooldown decreased (32s -> 6s)</li>
+<li>Mana cost decreased (36 -> 15)Now costs 10% HP per use</li>
+<li>Damage increase (0  -> 150% Physical)</li>
+<li>Damage type changed (Magical -> Physical)</li>
+<li>No longer stuns</li>
+<li>Animation and Spell Graphic updated</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Toxic Adrenaline</strong></p>
+</div>
+<ul>
+<li>Cooldown decreased (24s -> 6s)</li>
+<li>Mana cost decreased (27 -> 21)</li>
+<li>Now costs 20% HP per use</li>
+<li>Damage increased (150% Hybrid -> 220% Physical)</li>
+<li>Damage type changed (Magical -> Physical)</li>
+<li>No longer applies Poison Overload to the caster</li>
+<li>Animation and Spell Graphic updated</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Eight-Legged Freak -> Virulent Toxin</strong></p>
+</div>
+<ul>
+<li>Effect changed (+18% dodge -> +18% DoT out)</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Attack-Your-Foe-Bia -> Arachnid Instincts</strong></p>
+</div>
+<ul>
+<li>Renamed</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Arachne’s Favor</strong></p>
+</div>
+<ul>
+<li>Effect changed (+10% STR/INT -> +10% Haste)</li>
+<li>Description updated</li>
+</ul>
+<h4><span style="text-decoration: underline;"><span id="docs-internal-guid-43c08f68-7fff-063f-7daf-5d634b007d78"><span>Drakel Warlord</span></span> Changes</span></h4>
+<p><span id="docs-internal-guid-6342ef65-7fff-04ba-1484-be8bb48a2bd4"> </span></p>
+<p dir="ltr"><span>Significant cooldown reductions and some damage increases to make the class play faster, smoother, and be more powerful. As well, a small taunt was added to the last skill, giving it some more niche utility. Starts as a tanky mid-game solo class, but scales into late-game.</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Legend version longer purchased in the Class Shop, instead now requires rank 10 Death Pit Arena, merged for 500x Death Pit Arena Medals and 100k gold in the Death Pit Arena Rep shop</span></p>
+</li>
+</ul>
+<div>
+<div>
+<p><strong><span id="docs-internal-guid-a774117b-7fff-90ac-90a2-bb35c1e571f4"><span>Drakel’s Auto Attack -> Drakel’s Crushing Strike</span></span></strong></p>
+</div>
+<ul>
+<li>Damage increased (150% -> 200%)</li>
+<li>Range increased (short -> medium)</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Strengthened Strike</strong></p>
+</div>
+<ul>
+</ul>
+<ul>
+<li>Mana cost removed (15 -> 0)</li>
+<li>Damage increased (125% -> 150%) and no longer static (the reason why the skill previously stated 250% is because 200% weapon DPS/type power = 100% weapon damage, and these changelogs are all converted to weapon damage to prevent confusion)</li>
+<li>Range increased (short -> medium)</li>
+<li>Fixed a bug regarding aura stacking on Intimidating (5x7% (bugged) -> 5x8%)</li>
+<li>Description updated</li>
+<li>Animation updated</li>
+</ul>
+<div>
+<p><strong>Raged Strike</strong></p>
+</div>
+<ul>
+<li>Mana cost removed (20 -> 0)</li>
+<li>Cooldown reduced (15s -> 9s)</li>
+<li>Range increased (short -> medium)</li>
+<li>Boiling Blood heal duration reduced, increasing heal per tick proportionally (15 -> 12), stun duration reduced (3 -> 1)</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Strikes of Expertise</strong></p>
+</div>
+<ul>
+<li>Mana cost removed (18 -> 0)</li>
+<li>Cooldown reduced (15 -> 9)</li>
+<li>Description updated</li>
+</ul>
+<div>
+<p><strong>Enter the Arena</strong></p>
+</div>
+<ul>
+<li>Mana cost removed (30 -> 0)</li>
+<li>Damage increased (100% -> 300%)</li>
+<li>Cooldown reduced (25 -> 9)</li>
+<li>Now guaranteed to hit and crit</li>
+<li>Now applies Focus to the enemy for 1 second</li>
+<li>Master of the Arena now also adds +100% Crit Damage</li>
+<li>Description updated</li>
+<li>Animation updated</li>
+</ul>
+<div>
+<p><strong><span id="docs-internal-guid-a6830b7d-7fff-fae1-544e-52ca4d259b76"><span>Drakel Skin</span></span></strong></p>
+</div>
+<ul>
+<li>Effect increased (+20% END -> +50% END)</li>
+<li>Description updated</li>
+</ul>
+</div>
+<h3>01/13/2023</h3>
+<h4><span style="text-decoration: underline;">DarkBlood StormKing Changes</span></h4>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5">Updated to play smoother, be more fun, interactive, and engaging, and more powerful when obtained. <br /></span></p>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5">This is a class that didn’t need that much of a buff to become balanced. We feel that classes like this often get overlooked because they haven’t been updated in a long time, but the case sometimes is that they are strong enough to not need changes urgently. Because of that, we primarily cleaned up its mechanics and gave it a few playstyle spins, and a few fun mechanics.<br /></span></p>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5">As we slowly reach the end of F2P classes to receive changes, more cases like this will occur.</span></p>
+<div><strong>Mana Regeneration:</strong></div>
+<div>
+<ul>
+<li><span>Mage Model -> Warrior Model</span></li>
+</ul>
+</div>
+<div><span><strong>Storm Call:</strong></span></div>
+<div>
+<ul>
+<li><span>Mana cost reduced (20 -> -20)</span></li>
+<li><span>Cooldown reduced (3s -> 2s)</span></li>
+<li><span>Now applies Conductive to caster when Thunderstrike is on the foe, stacks to 50, lasts 5s</span></li>
+<li><span>Description updated</span></li>
+</ul>
+</div>
+<div><span><strong>Skyfire:</strong></span></div>
+<div>
+<ul>
+<li><span>Mana cost reduced (40 -> 10)</span></li>
+<li><span>Cooldown reduced (12s -> 6s)</span></li>
+<li><span>Shocked now replaces Thunderstrike</span></li>
+<li><span>Description updated</span></li>
+</ul>
+</div>
+<div><span><strong>Thunderclap:</strong> </span></div>
+<div>
+<ul>
+<li><span>Mana cost reduced (40 -> 10)</span></li>
+<li><span>Cooldown reduced (12s -> 6s)</span></li>
+<li><span>No longer applies Thunderstruck or Thunder Stun</span></li>
+<li><span>Now applies Thunderstrike to foe, reducing dodge by 20% for 10s, replaces Shocked</span></li>
+</ul>
+</div>
+<div><strong>Ball Lightning -> Storm Bolt:</strong></div>
+<div>
+<ul>
+<li><span>Damage changed (130% -> 40% - 3040%), now scales with Conductive</span></li>
+<li><span>Cooldown reduced (12s -> 10s)</span></li>
+<li><span>Now applies Voltaic to caster when Conductive is present, consuming it, increases damage by 10% for 10s</span></li>
+<li><span>Now applies Electrocuted to foe when Shocked is present, reducing Hit Chance and Crit Chance by 20% for 10sSpell graphic updated</span></li>
+<li><span>Description updated</span></li>
+</ul>
+</div>
+<div><span><strong>Raging Gale</strong></span></div>
+<div>
+<ul>
+<li><span>Effect changed (+10% damage -> +10% hit chance)</span></li>
+</ul>
+</div>
+<div><strong>Stormforged</strong></div>
+<div>
+<ul>
+<li><span>No longer randomly does damageDescription updated</span></li>
+</ul>
+<span><strong>Miscellaneous:</strong></span></div>
+<div>
+<ul>
+<li><span>Pumpkin Lord now has the rank 10 passive “Legendary”, increasing STR, INT, END, and LCK by 10%</span></li>
+<li><span>Being AFK for more than 30 seconds in an Insignia Boss map will now return the player to /battleon</span></li>
+</ul>
+</div>
+<p> </p>
+<h3>01/06/2023</h3>
+<h4><span style="text-decoration: underline;">Legendary Starter Classes</span></h4>
+<p><span id="docs-internal-guid-61c90276-7fff-828d-2f98-19b62f6fcea5"><span>Warlord, Acolyte, Sorcerer, Renegade, Witch, and Beast Warrior now have a rank 10 passive “Legendary,” increasing STR, INT, END, and LCK by 10%</span></span></p>
+<p><span><span><br /></span></span></p>
+<h3>12/17/2022</h3>
+<h4><span style="text-decoration: underline;">Item Changes</span></h4>
+<p>Everlasting Blade of Chaos, Dual Everlasting Blades of Chaos, and Titan Drakath's Blades have had their Damage to Chaos boosts increased to 60%.</p>
+<p><span>The Chaorrupter Unlocked Non Member and Legend variants are now AC tagged.</span></p>
+<p><span><br /></span></p>
+<h3>12/02/2022</h3>
+<h4><span style="text-decoration: underline;">Item Changes</span></h4>
+<p>Chaorrupter Unlocked is a powerful option against Chaos monsters, but it could be easily obtained at a low level. These changes aim to increase the difficulty it takes to obtain the weapons while preserving their damage boosts. Additionally, both weapons will become 0 AC in the near future!<br /><br />- Chaorrupter Unlocked (Free Player) moved to the Chaos War Merge shop in /chaoswar, now costs x250 Chaos Eye and x250 Chaos Tentacle<br />- Chaorrupter Unlocked (Member) moved to the Chaos War Merge shop in /chaoswar, now costs x100 Chaos Eye and x100 Chaos Tentacle<br /><br />Burning Blade of Abezeth was causing some confusion as it could be obtained by players that were unable to equip it. To prevent any further confusion, the weapon has been moved to a shop and made more consistent to obtain.<br /><br />- Burning Blade of Abezeth moved to the Celestial Champion Shop in /celestialarena, now costs x20 Champion Sash and x3 Gold Voucher 500k<br />- Champion Sash drop rate increased to 100%, stack limit increased to 20</p>
+<p> </p>
+<h3><span>11/25/2022<br /></span></h3>
+<h4><span style="text-decoration: underline;">Boss Skill Changes</span></h4>
+<p><strong>Kitsune</strong> Shapeshift (invulnerability) duration: 15 seconds > 4 seconds<br /><strong>(Ultra) Iadoa</strong> Temporal Prison (stun) duration: 20 seconds > 5 seconds<br /><strong>(Ultra) Iadoa</strong> Astral Shift duration: 180 seconds > 25 seconds<br /><strong>(Ultra) Xiang</strong> stun duration on self: 15 seconds > 5 seconds<br /><strong>(Ultra) Xiang</strong> player stun duration: 20 seconds > 8 seconds</p>
+<p> </p>
+<h3>11/3/2022</h3>
+<h4><span style="text-decoration: underline;">Nechronomancer / Necrotic Chronomancer</span></h4>
+<p>Nechronomancer’s farming performance fell behind other classes after the introduction of Forge Enhancements. These changes aim to make the class less frustrating to use while also bringing its farming capability back up to a more competitive level. Additionally, the class has received a set of changes that drastically improve its performance against single targets.<br /><br /><strong>Mortification:</strong></p>
+<ul>
+<li>Necrosis base damage per tick increased: 90% > 100%</li>
+<li>Necrosis tick speed doubled (DoT damage will be halved per tick, but will now tick twice as fast)</li>
+<li>Necrosis max stacks: 5 > 25</li>
+<li>No longer heals based on Necrosis stacks</li>
+</ul>
+<p><strong>Bleeding Time:</strong></p>
+<ul>
+<li>Eternal Frenzy damage increase per stack: 6% > 12%</li>
+<li>Eternal Frenzy max stacks: 15 > 8</li>
+<li>Eternal Frenzy and Passage of Time duration: 4 seconds > 8 seconds</li>
+<li>Passage of Time self DoT damage decreased</li>
+</ul>
+<p><strong>Temporal Reanimation:</strong></p>
+<ul>
+<li>Now deals more damage the lower your HP is</li>
+<li>Foreseeable Future no longer requires Passage of Time to be active in order to activate</li>
+</ul>
+<p><strong>ShadowScythe’s Past:</strong></p>
+<ul>
+<li>Damage: 190% > 200%</li>
+<li>Cooldown: 10 > 20</li>
+<li>No longer guaranteed to hit, but can now crit</li>
+<li>No longer removes Necrosis stacks</li>
+<li>Unleashed Doom’s DoT now deals damage over 1 second, instead of damage after 3 seconds</li>
+<li>Unleashed Doom DoT damage increased</li>
+<li>Added a new aura called Unleashing Doom </li>
+<li>Unleashing Doom lasts 1 second and prevents Chaos Rift from being applied while active</li>
+</ul>
+<p><strong>ShadowScythe’s Future:</strong></p>
+<ul>
+<li>Cooldown: 3.5 seconds > 2.5 seconds</li>
+<li>Empress's Awakening Heal Power: 200% > 50%</li>
+<li>Empress's Awakening tick speed doubled</li>
+<li>Empress's Awakening no longer removes stacks of Eternal Frenzy or Passage of Time</li>
+<li>Removed the Brittle Bones and Slowed Reflexes auras</li>
+<li>Added a new aura called Debilitated </li>
+<li>Debilitated reduces target Hit Chance, Dodge, and Crit Chance by 20% for 12 seconds</li>
+<li>Added a new aura called Flow of Time </li>
+<li>Flow of Time removes the Passage of Time aura and increases HoT and DoT power by 20%  for 12 seconds</li>
+</ul>
+<h3>9/30/2022</h3>
+<ul>
+</ul>
+<p><span id="docs-internal-guid-cef6836f-7fff-9dbb-6a4e-33f8adb5924e"> </span></p>
+<ul>
+<li>Exiting combat after combat is now slightly faster</li>
+<li>Dage the Dark Lord’s boss shield exponent changed from 0.85 to 0.8</li>
+<li>You can no longer enter PvP matches during combat from challenge boss rooms. </li>
+</ul>
+<p>Like what you see? Want to share your thoughts with the team? Send a message to the <a href="https://twitter.com/AqwClass" target="_blank">Class Balance team</a> and <a href="https://twitter.com/Alina_AE" target="_blank">Alina_AE</a> on Twitter or in our <a href="https://www.artix.com/community/discord/" target="_blank">official Discord server</a>.</p><div class='well well-sm margintop-20'>Tags: <a href='/gamedesignnotes/tag/yoshino'>Yoshino</a>, </div></div>
+
+
+                      
+                      <div class="center-block text-center">
+					  	<a class='btn btn-aqred readmore' href='http://www.aq.com/gamedesignnotes'><span class='glyphicon glyphicon-plus' aria-hidden='true'></span> Read more Design Notes</a>
+                      </div>
+                      
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /dns -->
+                
+            </div>
+            <!-- /main -->
+
+            
+            <!-- 2nd col: right side -->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 right-side">
+                
+                <!-- right side: dns menu --> 
+	<div class="list-group well well-sm marginbot-20" role="navigation">
+    <h3 class="text-center nomargin-top">Design Notes Archive</h3>
+        <a class="list-group-item" href="/gamedesignnotes">Current</a>
+        <div class='yearHeader'><a class='list-group-item' href='#'>2026</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2026/11'>November 2026</a><br /><a href='/gamedesignnotes/date/2026/10'>October 2026</a><br /><a href='/gamedesignnotes/date/2026/09'>September 2026</a><br /><a href='/gamedesignnotes/date/2026/08'>August 2026</a><br /><a href='/gamedesignnotes/date/2026/07'>July 2026</a><br /><a href='/gamedesignnotes/date/2026/06'>June 2026</a><br /><a href='/gamedesignnotes/date/2026/05'>May 2026</a><br /><a href='/gamedesignnotes/date/2026/04'>April 2026</a><br /><a href='/gamedesignnotes/date/2026/03'>March 2026</a><br /><a href='/gamedesignnotes/date/2026/02'>February 2026</a><br /><a href='/gamedesignnotes/date/2026/01'>January 2026</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2025</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2025/12'>December 2025</a><br /><a href='/gamedesignnotes/date/2025/11'>November 2025</a><br /><a href='/gamedesignnotes/date/2025/10'>October 2025</a><br /><a href='/gamedesignnotes/date/2025/09'>September 2025</a><br /><a href='/gamedesignnotes/date/2025/08'>August 2025</a><br /><a href='/gamedesignnotes/date/2025/07'>July 2025</a><br /><a href='/gamedesignnotes/date/2025/06'>June 2025</a><br /><a href='/gamedesignnotes/date/2025/05'>May 2025</a><br /><a href='/gamedesignnotes/date/2025/04'>April 2025</a><br /><a href='/gamedesignnotes/date/2025/03'>March 2025</a><br /><a href='/gamedesignnotes/date/2025/02'>February 2025</a><br /><a href='/gamedesignnotes/date/2025/01'>January 2025</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2024</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2024/12'>December 2024</a><br /><a href='/gamedesignnotes/date/2024/11'>November 2024</a><br /><a href='/gamedesignnotes/date/2024/10'>October 2024</a><br /><a href='/gamedesignnotes/date/2024/09'>September 2024</a><br /><a href='/gamedesignnotes/date/2024/08'>August 2024</a><br /><a href='/gamedesignnotes/date/2024/07'>July 2024</a><br /><a href='/gamedesignnotes/date/2024/06'>June 2024</a><br /><a href='/gamedesignnotes/date/2024/05'>May 2024</a><br /><a href='/gamedesignnotes/date/2024/04'>April 2024</a><br /><a href='/gamedesignnotes/date/2024/03'>March 2024</a><br /><a href='/gamedesignnotes/date/2024/02'>February 2024</a><br /><a href='/gamedesignnotes/date/2024/01'>January 2024</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2023</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2023/12'>December 2023</a><br /><a href='/gamedesignnotes/date/2023/11'>November 2023</a><br /><a href='/gamedesignnotes/date/2023/10'>October 2023</a><br /><a href='/gamedesignnotes/date/2023/09'>September 2023</a><br /><a href='/gamedesignnotes/date/2023/08'>August 2023</a><br /><a href='/gamedesignnotes/date/2023/07'>July 2023</a><br /><a href='/gamedesignnotes/date/2023/06'>June 2023</a><br /><a href='/gamedesignnotes/date/2023/05'>May 2023</a><br /><a href='/gamedesignnotes/date/2023/04'>April 2023</a><br /><a href='/gamedesignnotes/date/2023/03'>March 2023</a><br /><a href='/gamedesignnotes/date/2023/02'>February 2023</a><br /><a href='/gamedesignnotes/date/2023/01'>January 2023</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2022</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2022/12'>December 2022</a><br /><a href='/gamedesignnotes/date/2022/11'>November 2022</a><br /><a href='/gamedesignnotes/date/2022/10'>October 2022</a><br /><a href='/gamedesignnotes/date/2022/09'>September 2022</a><br /><a href='/gamedesignnotes/date/2022/08'>August 2022</a><br /><a href='/gamedesignnotes/date/2022/07'>July 2022</a><br /><a href='/gamedesignnotes/date/2022/06'>June 2022</a><br /><a href='/gamedesignnotes/date/2022/05'>May 2022</a><br /><a href='/gamedesignnotes/date/2022/04'>April 2022</a><br /><a href='/gamedesignnotes/date/2022/03'>March 2022</a><br /><a href='/gamedesignnotes/date/2022/02'>February 2022</a><br /><a href='/gamedesignnotes/date/2022/01'>January 2022</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2021</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2021/12'>December 2021</a><br /><a href='/gamedesignnotes/date/2021/11'>November 2021</a><br /><a href='/gamedesignnotes/date/2021/10'>October 2021</a><br /><a href='/gamedesignnotes/date/2021/09'>September 2021</a><br /><a href='/gamedesignnotes/date/2021/08'>August 2021</a><br /><a href='/gamedesignnotes/date/2021/07'>July 2021</a><br /><a href='/gamedesignnotes/date/2021/06'>June 2021</a><br /><a href='/gamedesignnotes/date/2021/05'>May 2021</a><br /><a href='/gamedesignnotes/date/2021/04'>April 2021</a><br /><a href='/gamedesignnotes/date/2021/03'>March 2021</a><br /><a href='/gamedesignnotes/date/2021/02'>February 2021</a><br /><a href='/gamedesignnotes/date/2021/01'>January 2021</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2020</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2020/12'>December 2020</a><br /><a href='/gamedesignnotes/date/2020/11'>November 2020</a><br /><a href='/gamedesignnotes/date/2020/10'>October 2020</a><br /><a href='/gamedesignnotes/date/2020/09'>September 2020</a><br /><a href='/gamedesignnotes/date/2020/08'>August 2020</a><br /><a href='/gamedesignnotes/date/2020/07'>July 2020</a><br /><a href='/gamedesignnotes/date/2020/06'>June 2020</a><br /><a href='/gamedesignnotes/date/2020/05'>May 2020</a><br /><a href='/gamedesignnotes/date/2020/04'>April 2020</a><br /><a href='/gamedesignnotes/date/2020/03'>March 2020</a><br /><a href='/gamedesignnotes/date/2020/02'>February 2020</a><br /><a href='/gamedesignnotes/date/2020/01'>January 2020</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2019</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2019/12'>December 2019</a><br /><a href='/gamedesignnotes/date/2019/11'>November 2019</a><br /><a href='/gamedesignnotes/date/2019/10'>October 2019</a><br /><a href='/gamedesignnotes/date/2019/09'>September 2019</a><br /><a href='/gamedesignnotes/date/2019/08'>August 2019</a><br /><a href='/gamedesignnotes/date/2019/07'>July 2019</a><br /><a href='/gamedesignnotes/date/2019/06'>June 2019</a><br /><a href='/gamedesignnotes/date/2019/05'>May 2019</a><br /><a href='/gamedesignnotes/date/2019/04'>April 2019</a><br /><a href='/gamedesignnotes/date/2019/03'>March 2019</a><br /><a href='/gamedesignnotes/date/2019/02'>February 2019</a><br /><a href='/gamedesignnotes/date/2019/01'>January 2019</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2018</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2018/12'>December 2018</a><br /><a href='/gamedesignnotes/date/2018/11'>November 2018</a><br /><a href='/gamedesignnotes/date/2018/10'>October 2018</a><br /><a href='/gamedesignnotes/date/2018/09'>September 2018</a><br /><a href='/gamedesignnotes/date/2018/08'>August 2018</a><br /><a href='/gamedesignnotes/date/2018/07'>July 2018</a><br /><a href='/gamedesignnotes/date/2018/06'>June 2018</a><br /><a href='/gamedesignnotes/date/2018/05'>May 2018</a><br /><a href='/gamedesignnotes/date/2018/04'>April 2018</a><br /><a href='/gamedesignnotes/date/2018/03'>March 2018</a><br /><a href='/gamedesignnotes/date/2018/02'>February 2018</a><br /><a href='/gamedesignnotes/date/2018/01'>January 2018</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2017</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2017/12'>December 2017</a><br /><a href='/gamedesignnotes/date/2017/11'>November 2017</a><br /><a href='/gamedesignnotes/date/2017/10'>October 2017</a><br /><a href='/gamedesignnotes/date/2017/09'>September 2017</a><br /><a href='/gamedesignnotes/date/2017/08'>August 2017</a><br /><a href='/gamedesignnotes/date/2017/07'>July 2017</a><br /><a href='/gamedesignnotes/date/2017/06'>June 2017</a><br /><a href='/gamedesignnotes/date/2017/05'>May 2017</a><br /><a href='/gamedesignnotes/date/2017/04'>April 2017</a><br /><a href='/gamedesignnotes/date/2017/03'>March 2017</a><br /><a href='/gamedesignnotes/date/2017/02'>February 2017</a><br /><a href='/gamedesignnotes/date/2017/01'>January 2017</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2016</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2016/12'>December 2016</a><br /><a href='/gamedesignnotes/date/2016/11'>November 2016</a><br /><a href='/gamedesignnotes/date/2016/10'>October 2016</a><br /><a href='/gamedesignnotes/date/2016/09'>September 2016</a><br /><a href='/gamedesignnotes/date/2016/08'>August 2016</a><br /><a href='/gamedesignnotes/date/2016/07'>July 2016</a><br /><a href='/gamedesignnotes/date/2016/06'>June 2016</a><br /><a href='/gamedesignnotes/date/2016/05'>May 2016</a><br /><a href='/gamedesignnotes/date/2016/04'>April 2016</a><br /><a href='/gamedesignnotes/date/2016/03'>March 2016</a><br /><a href='/gamedesignnotes/date/2016/02'>February 2016</a><br /><a href='/gamedesignnotes/date/2016/01'>January 2016</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2015</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2015/12'>December 2015</a><br /><a href='/gamedesignnotes/date/2015/11'>November 2015</a><br /><a href='/gamedesignnotes/date/2015/10'>October 2015</a><br /><a href='/gamedesignnotes/date/2015/09'>September 2015</a><br /><a href='/gamedesignnotes/date/2015/08'>August 2015</a><br /><a href='/gamedesignnotes/date/2015/07'>July 2015</a><br /><a href='/gamedesignnotes/date/2015/06'>June 2015</a><br /><a href='/gamedesignnotes/date/2015/05'>May 2015</a><br /><a href='/gamedesignnotes/date/2015/04'>April 2015</a><br /><a href='/gamedesignnotes/date/2015/03'>March 2015</a><br /><a href='/gamedesignnotes/date/2015/02'>February 2015</a><br /><a href='/gamedesignnotes/date/2015/01'>January 2015</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2014</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2014/12'>December 2014</a><br /><a href='/gamedesignnotes/date/2014/11'>November 2014</a><br /><a href='/gamedesignnotes/date/2014/10'>October 2014</a><br /><a href='/gamedesignnotes/date/2014/09'>September 2014</a><br /><a href='/gamedesignnotes/date/2014/08'>August 2014</a><br /><a href='/gamedesignnotes/date/2014/07'>July 2014</a><br /><a href='/gamedesignnotes/date/2014/06'>June 2014</a><br /><a href='/gamedesignnotes/date/2014/05'>May 2014</a><br /><a href='/gamedesignnotes/date/2014/04'>April 2014</a><br /><a href='/gamedesignnotes/date/2014/03'>March 2014</a><br /><a href='/gamedesignnotes/date/2014/02'>February 2014</a><br /><a href='/gamedesignnotes/date/2014/01'>January 2014</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2013</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2013/12'>December 2013</a><br /><a href='/gamedesignnotes/date/2013/11'>November 2013</a><br /><a href='/gamedesignnotes/date/2013/10'>October 2013</a><br /><a href='/gamedesignnotes/date/2013/09'>September 2013</a><br /><a href='/gamedesignnotes/date/2013/08'>August 2013</a><br /><a href='/gamedesignnotes/date/2013/07'>July 2013</a><br /><a href='/gamedesignnotes/date/2013/06'>June 2013</a><br /><a href='/gamedesignnotes/date/2013/05'>May 2013</a><br /><a href='/gamedesignnotes/date/2013/04'>April 2013</a><br /><a href='/gamedesignnotes/date/2013/03'>March 2013</a><br /><a href='/gamedesignnotes/date/2013/02'>February 2013</a><br /><a href='/gamedesignnotes/date/2013/01'>January 2013</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2012</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2012/12'>December 2012</a><br /><a href='/gamedesignnotes/date/2012/11'>November 2012</a><br /><a href='/gamedesignnotes/date/2012/10'>October 2012</a><br /><a href='/gamedesignnotes/date/2012/09'>September 2012</a><br /><a href='/gamedesignnotes/date/2012/08'>August 2012</a><br /><a href='/gamedesignnotes/date/2012/07'>July 2012</a><br /><a href='/gamedesignnotes/date/2012/06'>June 2012</a><br /><a href='/gamedesignnotes/date/2012/05'>May 2012</a><br /><a href='/gamedesignnotes/date/2012/04'>April 2012</a><br /><a href='/gamedesignnotes/date/2012/03'>March 2012</a><br /><a href='/gamedesignnotes/date/2012/02'>February 2012</a><br /><a href='/gamedesignnotes/date/2012/01'>January 2012</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2011</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2011/12'>December 2011</a><br /><a href='/gamedesignnotes/date/2011/11'>November 2011</a><br /><a href='/gamedesignnotes/date/2011/10'>October 2011</a><br /><a href='/gamedesignnotes/date/2011/09'>September 2011</a><br /><a href='/gamedesignnotes/date/2011/08'>August 2011</a><br /><a href='/gamedesignnotes/date/2011/07'>July 2011</a><br /><a href='/gamedesignnotes/date/2011/06'>June 2011</a><br /><a href='/gamedesignnotes/date/2011/05'>May 2011</a><br /><a href='/gamedesignnotes/date/2011/04'>April 2011</a><br /><a href='/gamedesignnotes/date/2011/03'>March 2011</a><br /><a href='/gamedesignnotes/date/2011/02'>February 2011</a><br /><a href='/gamedesignnotes/date/2011/01'>January 2011</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2010</a></div><div class='yearSection'><a href='/gamedesignnotes/date/2010/12'>December 2010</a><br /><a href='/gamedesignnotes/date/2010/11'>November 2010</a><br /><a href='/gamedesignnotes/date/2010/10'>October 2010</a><br /><a href='/gamedesignnotes/date/2010/09'>September 2010</a><br /><a href='/gamedesignnotes/date/2010/08'>August 2010</a><br /><a href='/gamedesignnotes/date/2010/07'>July 2010</a><br /><a href='/gamedesignnotes/date/2010/06'>June 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-05.asp'>May 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-04.asp'>April 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-03.asp'>March 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-02.asp'>February 2010</a><br /><a href='/archive/designnotes/aw-designnotes-2010-01.asp'>January 2010</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2009</a></div><div class='yearSection'><a href='/archive/designnotes/aw-designnotes-2009-12.asp'>December 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-11.asp'>November 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-10.asp'>October 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-09.asp'>September 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-08.asp'>August 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-07.asp'>July 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-06.asp'>June 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-05.asp'>May 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-04.asp'>April 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-03.asp'>March 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-02.asp'>February 2009</a><br /><a href='/archive/designnotes/aw-designnotes-2009-01.asp'>January 2009</a><br /></div>
+<div class='yearHeader'><a href='#' class='list-group-item'>2008</a></div><div class='yearSection'><a href='/archive/designnotes/aw-designnotes-2008-12.asp'>December 2008</a><br /><a href='/archive/designnotes/aw-designnotes-2008-11.asp'>November 2008</a><br /><a href='/archive/designnotes/aw-designnotes-2008-10.asp'>October 2008</a><br /></div>
+    </div>
+<!-- /dns menu --><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding-sides">
+    
+    <div id="fb-root"></div>
+	<script>
+	  (function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=163679093835836&autoLogAppEvents=1";
+		js.async = true;
+		js.defer = true;
+		js.crossOrigin = "anonymous";
+		fjs.parentNode.insertBefore(js, fjs);
+	  })(document, 'script', 'facebook-jssdk');
+	</script>
+
+	<div class="text-center">
+    	<div class="fb-page" data-href="https://www.facebook.com/AQWorldsMMO/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/AQWorldsMMO/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AQWorldsMMO/">AdventureQuest Worlds</a></blockquote></div>
+    </div>
+    
+	<!-- aq3d -->
+    <a href="//www.aq3d.com/?utm_source=AQW_RtColumn&utm_medium=banner&utm_content=sidepromo&utm_campaign=AQ3D_OpenBeta" target="_blank"><img src="/img/network/games/side-game-aq3d-ob350px.jpg" class="margintop-15 img-responsive center-block img-rounded" alt="AdventureQuest 3D"/></a>
+
+    <!-- HeroMart Ad Rotation -->
+    
+        <a href="https://heromart.com/products/save-chuckles?variant=47065974571246?utm_source=AQW_RtColumn&utm_medium=banner&utm_campaign=SaveChuckles" target="_blank"><img src="/img/network/shop/side-hm-promo-SaveChuckles.png" class="img-responsive center-block img-rounded" alt="HeroMart Save Chuckles"></a>
+    
+
+   	<a href="https://linktr.ee/aureliovoltaire" target="_blank"><img alt="Voltaire Album : The Black Labyrinth" src="/img/network/shop/side-voltaire-BlackLabyrinth2.png" class="margintop-15 img-responsive center-block img-rounded"></a>
+
+  	<!-- <a href="https://www.artix.com/games/dungeonborne?utm_source=AQW_RtColumn&utm_medium=banner&utm_campaign=DungeonBorne" target="_blank"><img alt="New DungeonBorne Game!" src="/img/network/side-game-DungeonBorne.jpg" class="margintop-15 img-responsive center-block img-rounded"></a> -->
+
+    <!-- char lookup -->
+    <div class="well well-sm clearfix margintop-15">
+        <div class="title">AdventureQuest Worlds</div>
+        
+        <!-- acs & hm -->
+        <a href="/order-now/direct/"><img src="/img/network/shop/side-acs.png" class="img-responsive center-block" alt="Get AdventureCoins!"></a>
+        <a href="https://www.aq.com/aextras/offers/"><img src="/img/network/shop/side-freeacs.png" class="img-responsive center-block" alt="Earn AdventureCoins"></a>
+
+        <div class="title">Character Lookup</div>
+            <a class="btn btn-aqred center-block" href="/character.asp">Search Character Page</a>
+    </div>    
+    
+    <!-- network games -->
+    <div class="well well-sm text-center">
+        <div class="title">Artix Web Games</div>
+        <a href="https://www.dragonfable.com" target="_blank"><img src="/img/network/games/side-game-df.png" class="img-responsive center-block" alt="DragonFable"></a>
+        <a href="https://www.mechquest.com" target="_blank"><img src="/img/network/games/side-game-mq.png" class="img-responsive center-block" alt="MechQuest"></a>
+        <a href="https://www.epicduel.com" target="_blank"><img src="/img/network/games/side-game-ed.png" class="img-responsive center-block" alt="EpicDuel"></a>
+        <a href="https://oversoul.artix.com" target="_blank"><img src="/img/network/games/side-game-os.png" class="img-responsive center-block" alt="OverSoul"></a>
+        <a href="https://www.battleon.com" target="_blank"><img src="/img/network/games/side-game-aqc.png" class="img-responsive center-block" alt="AdventureQuest"></a>
+        <div class="row">
+        	<div class="col-xs-12 col-sm-6 nopadding-sides"><a class="btn btn-aqred btn-block" href="//www.artix.com/downloads/artixlauncher/?utm_source=AQW_SIDE&utm_medium=banner&utm_campaign=GameLauncher" target="_blank"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Game Launcher</a></div>
+        	<div class="col-xs-12 col-sm-6 nopadding-sides"><a class="btn btn-link" href="https://www.artix.com/games/" target="_blank">More AE Games</a></div>
+        </div>
+    </div>
+
+    
+
+    <!-- mobile -->
+    <div class="well well-sm clearfix">
+      <div class="title">Artix Mobile Games</div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//www.aq3d.com" target="_blank"> <img src="/img/network/apps/side-app-aq3d.png" class="img-responsive center-block" alt="AQ3D"></a> AQ3D
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//battlegems.artix.com" target="_blank"> <img src="/img/network/apps/side-app-bg.png" class="img-responsive center-block" alt="BattleGems"></a> BattleGems
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="https://dt1f.app.link/AQ_Sidebar" target="_blank"> <img src="/img/network/apps/side-app-biobeasts.png" class="img-responsive center-block" alt="BioBeasts"></a> BioBeasts
+        </div>
+      </div>
+      <div class="row margintop-15">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//www.aqdragons.com" target="_blank"> <img src="/img/network/apps/side-app-dragons.png" class="img-responsive center-block" alt="Dragons"></a> Dragons
+          </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//www.undeadassault.com" target="_blank"> <img src="/img/network/apps/side-app-ua.png" class="img-responsive center-block" alt="Undead Assault"></a> Undead Assault
+          </div>
+      </div>
+    </div>
+    
+	<script>
+		window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+		  if (d.getElementById(id)) return t;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "//platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+		
+		  t._e = [];
+		  t.ready = function(f) {
+			t._e.push(f);
+		  };
+		
+		  return t;
+		}(document, "script", "twitter-wjs"));
+    </script>
+
+    <!-- right side: twitter -->
+    <div class="row sliver text-center">
+        <a class="twitter-timeline" href="//twitter.com/ArtixKrieger" 
+            data-widget-id="581199712944029697"
+            data-chrome="nofooter" data-theme="dark" 
+            data-tweet-limit="12">Tweets by @ArtixKrieger</a>
+    </div>
+    <!-- /twitter -->
+    
+	<!-- bb -->
+    <!--
+	<a href="https://dt1f.app.link/AQ_Sidebar" target="_blank" data-trackevent="t_biobeasts"><img src="/img/network/games/side-game-biobeasts-frostking.jpg" class="img-responsive center-block img-rounded" style="width:100%" alt="BioBeasts Frost King Bundle!"/></a>
+	-->
+
+</div>
+
+
+            </div>
+            <!-- /2nd col: right side -->
+            
+
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <div class="scroll-bottom"></div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+
+        <!-- lg only -->
+        <div class="row vertical-align visible-lg-block">
+            <div class="col-lg-12">
+
+                <div class="col-lg-4 marginbot-20">
+                    <div class="col-sm-6">
+                        <a class="btn btn-sm btn-aqred btn-block marginbot-10" href="//www.artix.com/downloads/artixlauncher/?utm_source=AQW_FOOTER&utm_medium=banner&utm_campaign=GameLauncher" target="_blank">Get Artix Game Launcher</a>
+                        <a href="https://support.artix.com/hc/en-us/categories/115001082387-AdventureQuest-Worlds" target="_blank" class="btn btn-sm btn-black btn-block marginbot-10">Help  &amp; Support</a>
+                        <a href="//www.artix.com/about/contact/" target="_blank" class="btn btn-sm btn-black btn-block">Contact Us</a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="//www.artix.com/policy-privacy" target="_blank" class="btn btn-sm btn-black btn-block marginbot-10">Privacy Policy</a>
+                        <a href="//www.artix.com/policy-privacy-ca" target="_blank" class="btn btn-sm btn-black btn-block marginbot-10">U.S. Privacy Rights</a>
+                        <a href="//www.artix.com/policy-terms" target="_blank" class="btn btn-sm btn-black btn-block marginbot-10">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 marginbot-20">
+                    <a href="//www.artix.com/" target="_blank"><img src="/shared/images/network/logo-artix-19.png" class="img-responsive center-block" alt="Artix Entertainment"></a>
+                </div>
+
+                <div class="col-lg-4 marginbot-20">
+                    <div class="row vertical-align">
+
+                        <div class="col-sm-6 nopadding">
+                            <ul class="text-right list-unstyled small">
+                                <li>Fantasy Violence</li>
+                                <li>Mild Suggestive Themes</li>
+                                <li>Online Interations not rated by ESRB.</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <img src="/img/network/footer-lg-esrbrating.jpg" class="img-responsive" alt="ESRB: Everyone +10">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row visible-lg-block">
+            <div class="col-sm-12">
+                <p class="copyright text-muted small">
+                    Copyright (&copy;) 2008 -
+                    <script>document.write(new Date().getFullYear())</script> <a href="https://www.artix.com/" target="_blank">Artix Entertainment, LLC.</a><br>
+                    All games and characters are trademarks of <a href="https://www.artix.com/" target="_blank">Artix Entertainment</a>, LLC. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+        <!-- /.row lg only -->
+        <!-- md & sm -->
+        <div class="hidden-lg">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12 marginbot-20">
+                    <a class="visible-md-block" href="https://www.artix.com/" target="_blank"><img src="/shared/images/network/logo-artix-19.png" class="img-responsive center-block" alt="Artix Entertainment"></a>
+                    <a class="visible-sm-block visible-xs-block" href="https://www.artix.com/" target="_blank"><img src="/shared/images/network/logo-artix-19.png" class="img-responsive center-block" alt="Artix Entertainment"></a>
+                    <p class="copyright text-muted small">
+                        Copyright (&copy;) 2008 -
+                        <script>document.write(new Date().getFullYear())</script> <a href="https://www.artix.com/" target="_blank">Artix Entertainment, LLC.</a><br>
+                        All games and characters are trademarks of <a href="https://www.artix.com/" target="_blank">Artix Entertainment</a>, LLC. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hidden-xs">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 marginbot-20">
+                        <div class="col-sm-4 marginbot-10"><a class="btn btn-sm btn-aqred btn-block" href="//www.artix.com/downloads/artixlauncher/?utm_source=AQW_FOOTER&utm_medium=banner&utm_campaign=GameLauncher" target="_blank">Get Artix Game Launcher</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="//www.artix.com/policy-privacy" target="_blank" class="btn btn-sm btn-black btn-block">Privacy Policy</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="//www.artix.com/policy-privacy-ca" target="_blank" class="btn btn-sm btn-black btn-block">California Policy Rights</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="//www.artix.com/policy-terms" target="_blank" class="btn btn-sm btn-black btn-block">Terms of Service</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="https://support.artix.com/hc/en-us/categories/115001082387-AdventureQuest-Worlds" target="_blank" class="btn btn-sm btn-black btn-block">Help  &amp; Support</a></div>
+                        <div class="col-sm-4 marginbot-10"><a href="//www.artix.com/about/contact/" target="_blank" class="btn btn-sm btn-black btn-block">Contact Us</a></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 marginbot-20">
+                        <div class="col-sm-6 text-right">
+                            <ul class="list-unstyled">
+                                <li>Fantasy Violence</li>
+                                <li>Mild Suggestive Themes</li>
+                                <li>Online Interations not rated by ESRB.</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 nopadding-sides"><img src="/img/network/footer-lg-esrbrating.jpg" class="img-responsive" alt="ESRB: Everyone +10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visible-xs-block">
+                <div class="row">
+                    <div class="text-center marginbot-20">
+                        <a href="//www.artix.com/policy-privacy" target="_blank">Privacy Policy</a> |
+                        <a href="//www.artix.com/policy-privacy-ca" target="_blank">California Privacy Rights</a> |
+                        <a href="//www.artix.com/policy-terms" target="_blank">Terms of Service</a> |
+                        <a href="https://support.artix.com/hc/en-us/categories/115001082387-AdventureQuest-Worlds" target="_blank">Help  &amp; Support</a> |
+                        <a href="//www.artix.com/about/contact/" target="_blank">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 marginbot-20">
+                        <div class="col-xs-12 text-center">
+                            <ul class="list-unstyled">
+                                <li>Fantasy Violence</li>
+                                <li>Mild Suggestive Themes</li>
+                                <li>Online Interations not rated by ESRB.</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 nopadding-sides"><img src="/img/network/footer-lg-esrbrating.jpg" class="img-responsive center-block" alt="ESRB: Everyone +10"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /.row md & sm -->
+
+    </div>
+    <!-- /.container -->
+</footer>
+
+
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBP6TJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBP6TJ');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "nz0guhkbxv");
+</script>
+
+
+    <!-- JavaScript --> 
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/jasny-bootstrap.min.js" async defer></script>		
+    <script src="https://widget.gleamjs.io/e.js" async></script> 
+    <script src="/js/offcanvas.js"></script>
+    <script>
+        $('.navmenu').offcanvas();
+    </script>
+    <script src="/js/auto-expand.js" async></script>
+	<span></span>
+    
+<div id="cookie_directive_container" style="display: none">
+  <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color:#000">
+    <div class="navbar-inner navbar-content-center" id="cookie_accept" style="padding-top:10px"> <a id="btn_cookie_accept" class="btn btn-default pull-right" style="margin-right:15px; color:#eee;">Got it!</a> <a style="color:#eee; margin:0 15px" href="//www.artix.com/policy-cookies" target="_blank" class="btn btn-default pull-right">More Details</a>
+      <p class="text-muted copy" style="margin:0 15px"> We use cookies on this site to enhance your experience, provide services and products, and display content from third parties. <a href="//www.artix.com/policy-cookies">Cookie Policy</a>. </p>
+    </div>
+  </nav>
+</div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> 
+	<script src="/shared/scripts/cookies.js" async defer></script> 
+    <script>             
+		window.onload = function(e){ 
+
+			 if ($.cookie('pop') == null) {
+				 $('#privacyNotice').modal('show');
+				 $.cookie('pop', '7');
+			}
+		 }
+	</script>
+	<script>$(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });</script>
+</body>
+
+
+</html>

@@ -1,0 +1,1100 @@
+[
+  {
+    "name": "Ultra Ezrajal",
+    "kind": "monster",
+    "entityId": "ultra-ezrajal-boss",
+    "url": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster",
+    "text": ">\nLocation:\nUltra Ezrajal (Location)\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n2,500,000\nAttacks:\n+ Auto Attack\n- Auto Attack\nAuto Attack\nDamage\n965-1,180\nAnimations\nCelestial Blade Slash, Celestial Blade Barrage\nCooldown\n2 seconds\nMessage\n{$message}\nAoE\n1\nType\nPhysical\nNotes\nAlways hits, never crits.\n+ Celestial Prism Explosion\n- Celestial Prism Explosion\nCelestial Prism Explosion\nDamage\n2,595-3,171\nAnimations\nCelestial Prism Explosion\nCooldown\n8 seconds\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nRecovers HP based on the damage dealt to all players.\nAlways hits, never crits.\nIgnores Focus.\n+ Counter Cast ➞ Counter Attack\n- Counter Cast ➞ Counter Attack\nCharge\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n40 seconds\nMessage\n{$message}\nAoE\n{$aoe}\nType\nCharge\nNotes\nCharges for 2 seconds, then uses Counter Attack\nCounter Attack is used after Counter Cast charges for 2 seconds.\nCounter Attack\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n{$aoe}\nType\n{$type}\nNotes\nApplies Counter Attack to self for 6 seconds, negating all damage received and reflecting it back to the player.\nAbilities:\nBoss Shield:\nDamage over 100,000 dealt to Ultra Ezrajal is reduced by raising the difference to the exponent 0.8 (but is never reduced below 100,000).\nCannot be stunned.\nUltra Ezrajal has a chance to lock your abilities that target them. Only one skill can be locked at a time, and locking another skill while one is locked only refreshes the time of the formerly locked skill. (This includes Awe Enhancements and Scrolls).\nTemporary Items Dropped:\nUltra Ezrajal Defeated (Used in the '\nUltra Ezrajal\n' quest)\nItems Dropped:\nTreasure Chest (Misc)\nNotes:\nThis monster is themed from\nEzrajal\nfrom\nDragonFable\n.\nAlso see\nEzrajal\n.\nThanks to Anonymous Joe and Wanderlust the Oomfie.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_lv100\n_u\naethemed\nangel\nboss\nbossshield\nchain\nchallenge\nfreeplayer\nhorns\nimmune\njewelry\nmonster\nwinged",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+        "alt": "BossShield.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+        "alt": "arrow.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://i.imgur.com/XynsWFk.png",
+        "alt": "XynsWFk.png",
+        "localCandidate": "content-sources/v678/ultra-ezrajal-boss-0.png",
+        "mime": "image/png",
+        "sha256": "c4aedc7391259a87a0b1dec4fa4e2cef6224f36d2afd4e9902c4e226200cf31e"
+      }
+    ],
+    "links": [
+      "/ultra-ezrajal-location",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "/sir-cole-s-quests#UltraTower",
+      "/treasure-chest-misc",
+      "https://forums2.battleon.com/f/tm.asp?m=22357354",
+      "http://www.dragonfable.com/",
+      "/ezrajal",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_lv100#pages",
+      "/system:page-tags/tag/_u#pages",
+      "/system:page-tags/tag/aethemed#pages",
+      "/system:page-tags/tag/angel#pages",
+      "/system:page-tags/tag/boss#pages",
+      "/system:page-tags/tag/bossshield#pages",
+      "/system:page-tags/tag/chain#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/horns#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/monster#pages",
+      "/system:page-tags/tag/winged#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://i.imgur.com/XynsWFk.png",
+        "alt": "XynsWFk.png",
+        "localCandidate": "content-sources/v678/ultra-ezrajal-boss-0.png",
+        "mime": "image/png",
+        "sha256": "c4aedc7391259a87a0b1dec4fa4e2cef6224f36d2afd4e9902c4e226200cf31e"
+      }
+    ]
+  },
+  {
+    "name": "Ultra Warden",
+    "kind": "monster",
+    "entityId": "ultra-warden-boss",
+    "url": "https://aqwwiki.wikidot.com/ultra-warden-monster",
+    "text": ">\nLocation:\nUltra Warden (Location)\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n1,500,000\nAttacks:\n+ Auto Attack\n- Auto Attack\nAuto Attack\nDamage\n4,844-5,882\nAnimations\nHarsh Screaming\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n1\nType\nPhysical\nNotes\n{$notes}\n+ Petrifying Scream\n- Petrifying Scream\nPetrifying Scream\nDamage\n1,356-1,656\nAnimations\nHarsh Screaming\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n1\nType\nMagical\nNotes\nAlways hits, never crits.\nHas a 7% chance of occurring at any given time, replacing an Auto Attack.\nApplies Petrified for 6 seconds, stunning target.\n+ Celestial Shockwaves\n- Celestial Shockwaves\nCelestial Shockwaves\nDamage\nCurrent HP - 1\nAnimations\nCelestial Bell Ringing\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n3\nType\nTrue Damage\nNotes\nAlways hits, never crits.\nCan be focused.\nUsed once every 5% of max HP Ultra Warden loses, and can only occur once per threshold.\nUltra Warden recovers HP based on their current HP for each target hit.\nAbilities:\nBerserk:\nUpon reaching 30% remaining HP, Ultra Warden goes berserk enrages, increasing its Hit Chance by 60%, Crit Chance and Dodge by 30%, and reducing their auto attack cooldown to 1 second.\nBoss Shield:\nDamage over 100,000 dealt to Ultra Warden is reduced by raising the difference to the exponent 0.8 (but is never reduced below 100,000).\nCannot be stunned.\nTemporary Items Dropped:\nUltra Warden Defeated (Used in the '\nUltra Warden\n' quest)\nItems Dropped:\nTreasure Chest (Misc)\nNotes:\nThis monster is themed from\nThe Warden\nfrom\nDragonFable\n.\nAlso see\nThe Warden\n.\nThanks to Anonymous Joe and Wanderlust the Oomfie.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_lv100\n_u\naethemed\nboss\nbossshield\nchallenge\nfreeplayer\nimmune\njewelry\nmonster\nundead\nwinged",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+        "alt": "BossShield.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://i.imgur.com/OT8aKxQ.png",
+        "alt": "OT8aKxQ.png",
+        "localCandidate": "content-sources/v678/ultra-warden-boss-0.png",
+        "mime": "image/png",
+        "sha256": "50fadef9668475f29a16cf9101c86d59f3cabb1574a3ef2f8fee162ee9c1fb89"
+      }
+    ],
+    "links": [
+      "/ultra-warden-location",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "/sir-cole-s-quests#UltraTower",
+      "/treasure-chest-misc",
+      "https://forums2.battleon.com/f/tm.asp?m=22363741",
+      "http://www.dragonfable.com/",
+      "/the-warden",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_lv100#pages",
+      "/system:page-tags/tag/_u#pages",
+      "/system:page-tags/tag/aethemed#pages",
+      "/system:page-tags/tag/boss#pages",
+      "/system:page-tags/tag/bossshield#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/monster#pages",
+      "/system:page-tags/tag/undead#pages",
+      "/system:page-tags/tag/winged#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://i.imgur.com/OT8aKxQ.png",
+        "alt": "OT8aKxQ.png",
+        "localCandidate": "content-sources/v678/ultra-warden-boss-0.png",
+        "mime": "image/png",
+        "sha256": "50fadef9668475f29a16cf9101c86d59f3cabb1574a3ef2f8fee162ee9c1fb89"
+      }
+    ]
+  },
+  {
+    "name": "Ultra Engineer",
+    "kind": "monster",
+    "entityId": "ultra-engineer-boss",
+    "url": "https://aqwwiki.wikidot.com/ultra-engineer-monster",
+    "text": ">\nLocation:\nUltra Engineer (Location)\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n1,000,000\nAI:\nAggressive after walking forwards.\nAttacks:\n+ Laser Shot\n- Laser Shot\nLaser Shot\nDamage\n969-1,182\nAnimations\nSingle or Multiple Lasers\nCooldown\n2 seconds\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nAlways hits, never crits.\nHeals the monster.\n+ Charging Devastator Beam ➞ Devastator Beam\n- Charging Devastator Beam ➞ Devastator Beam\nCharging Devastator Beam\nDamage\n{$damage}\nAnimations\nCharging\nCooldown\n45 seconds\nMessage\nUltra Engineer charges his Devastator Beam!\nAoE\n{$aoe}\nType\nCharge\nNotes\nCharges for 4 seconds, then uses Devastator Beam.\nDevastator Beam is used after charging.\nDevastator Beam\nDamage\nA lot\nAnimations\nGiant Laser\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nAlways hits, never crits.\nIgnores focus.\nDamage is divided by the number of players in combat.\nAbilities:\nBoss Shield:\nDamage over 100,000 dealt to Ultra Engineer is reduced (but is never reduced below 100,000).\nCannot be stunned.\nWhile\nAttack Drone\nand\nDefense Drone\nare alive, Ultra Engineer does not take any damage.\nTemporary Items Dropped:\nUltra Engineer Defeated (Used in the '\nUltra Engineer\n' quest)\nItems Dropped:\nTreasure Chest (Misc)\nNotes:\nThis monster is themed from\nThe Engineer\nfrom\nDragonFable\n.\nAlso see:\nKey of Sholemoh\n.\nThe Engineer\n.\nYoshino's Engineer\n.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_lv100\n_u\naethemed\naggro\nangel\nboss\nbossshield\nchallenge\nfreeplayer\nhorns\nimmune\njewelry\nmonster\nwinged",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+        "alt": "BossShield.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+        "alt": "arrow.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://i.imgur.com/5nA2bzC.png",
+        "alt": "5nA2bzC.png",
+        "localCandidate": "content-sources/v678/ultra-engineer-boss-0.png",
+        "mime": "image/png",
+        "sha256": "8bc3c91cbc875f98ae203a38995f9e456679c9329b4996c094f22efb387af2bb"
+      }
+    ],
+    "links": [
+      "/ultra-engineer-location",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "/attack-drone",
+      "/defense-drone",
+      "/sir-cole-s-quests#UltraTower",
+      "/treasure-chest-misc",
+      "http://forums2.battleon.com/f/fb.asp?m=22372057",
+      "http://www.dragonfable.com/",
+      "/key-of-sholemoh",
+      "/the-engineer",
+      "/yoshino-s-engineer",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_lv100#pages",
+      "/system:page-tags/tag/_u#pages",
+      "/system:page-tags/tag/aethemed#pages",
+      "/system:page-tags/tag/aggro#pages",
+      "/system:page-tags/tag/angel#pages",
+      "/system:page-tags/tag/boss#pages",
+      "/system:page-tags/tag/bossshield#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/horns#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/monster#pages",
+      "/system:page-tags/tag/winged#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://i.imgur.com/5nA2bzC.png",
+        "alt": "5nA2bzC.png",
+        "localCandidate": "content-sources/v678/ultra-engineer-boss-0.png",
+        "mime": "image/png",
+        "sha256": "8bc3c91cbc875f98ae203a38995f9e456679c9329b4996c094f22efb387af2bb"
+      }
+    ]
+  },
+  {
+    "name": "Attack Drone",
+    "kind": "monster",
+    "entityId": "ultra-engineer-attack-drone",
+    "url": "https://aqwwiki.wikidot.com/attack-drone",
+    "text": ">\nLocation:\nUltra Engineer (Location)\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n100,000\nAI:\nAggressive after walking forwards.\nAttacks:\nBubbles: 2,392-2,913\nRings: 2,392-2,913\nAbilities:\nAttacks are unavoidable and cannot crit.\nCannot be stunned.\nTemporary Items Dropped:\nN/A\nItems Dropped:\nTreasure Chest (Misc)\nNotes:\nThis monster is themed from\nOffense Drone\nfrom\nDragonFable\n.\nAlso see:\nDefense Drone\n.\nExalted Drone\n.\nThanks to Anonymous Joe.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_a\n_lv100\naethemed\naggro\nchallenge\nclock\nfreeplayer\nimmune\nmonster\nspectral",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://i.imgur.com/jQafUbR.png",
+        "alt": "jQafUbR.png",
+        "localCandidate": "content-sources/v678/ultra-engineer-attack-drone-0.png",
+        "mime": "image/png",
+        "sha256": "fdd0f9fce76454a079b006f1c0f7bf7bdf8781a25add7331173ed0ffa5624b5a"
+      }
+    ],
+    "links": [
+      "/ultra-engineer-location",
+      "/treasure-chest-misc",
+      "https://forums2.battleon.com/f/tm.asp?m=22372057&mpage=1&key=&#22372061",
+      "http://www.dragonfable.com/",
+      "/defense-drone",
+      "/exalted-drone",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_a#pages",
+      "/system:page-tags/tag/_lv100#pages",
+      "/system:page-tags/tag/aethemed#pages",
+      "/system:page-tags/tag/aggro#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/clock#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/monster#pages",
+      "/system:page-tags/tag/spectral#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://i.imgur.com/jQafUbR.png",
+        "alt": "jQafUbR.png",
+        "localCandidate": "content-sources/v678/ultra-engineer-attack-drone-0.png",
+        "mime": "image/png",
+        "sha256": "fdd0f9fce76454a079b006f1c0f7bf7bdf8781a25add7331173ed0ffa5624b5a"
+      }
+    ]
+  },
+  {
+    "name": "Defense Drone",
+    "kind": "monster",
+    "entityId": "ultra-engineer-defense-drone",
+    "url": "https://aqwwiki.wikidot.com/defense-drone",
+    "text": ">\nLocation:\nUltra Engineer (Location)\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n250,000\nAttacks:\nBubbles: 480-578\nCounter Attack: Reflects damage back to the player.\nRings: 480-578\nAbilities:\nCannot be stunned.\nEvery 20 seconds, Defense Drone will charge for 2 seconds, and then apply Counter Attack to itself for 6 seconds.\nTemporary Items Dropped:\nN/A\nItems Dropped:\nTreasure Chest (Misc)\nNotes:\nThis monster is themed from\nDefense Drone\nfrom\nDragonFable\n.\nAlso see:\nAttack Drone\n.\nExalted Drone\n.\nYoshino's ATK Drone\n.\nYoshino's DEF Drone\n.\nThanks to Anonymous Joe.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_d\n_lv100\naethemed\nchallenge\nclock\nfreeplayer\nimmune\nmonster\nspectral",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://i.imgur.com/D663ct4.png",
+        "alt": "D663ct4.png",
+        "localCandidate": "content-sources/v678/ultra-engineer-defense-drone-0.png",
+        "mime": "image/png",
+        "sha256": "9ea27b7f4508ebc47f274a1d960d6932cef68ae71ecf0ef31b1c8b89cda929ca"
+      }
+    ],
+    "links": [
+      "/ultra-engineer-location",
+      "/treasure-chest-misc",
+      "https://forums2.battleon.com/f/tm.asp?m=22372057&mpage=1&key=&#22372061",
+      "http://www.dragonfable.com/",
+      "/attack-drone",
+      "/exalted-drone",
+      "/yoshino-s-atk-drone",
+      "/yoshino-s-def-drone",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_d#pages",
+      "/system:page-tags/tag/_lv100#pages",
+      "/system:page-tags/tag/aethemed#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/clock#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/monster#pages",
+      "/system:page-tags/tag/spectral#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://i.imgur.com/D663ct4.png",
+        "alt": "D663ct4.png",
+        "localCandidate": "content-sources/v678/ultra-engineer-defense-drone-0.png",
+        "mime": "image/png",
+        "sha256": "9ea27b7f4508ebc47f274a1d960d6932cef68ae71ecf0ef31b1c8b89cda929ca"
+      }
+    ]
+  },
+  {
+    "name": "Ultra Avatar Tyndarius",
+    "kind": "monster",
+    "entityId": "ultra-tyndarius-boss",
+    "url": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+    "text": ">\nLocation:\nUltra Avatar Tyndarius (Location)\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n6,000,000\nAI:\nAggressive after walking forwards.\nAttacks:\n+ Auto Attack\n- Auto Attack\nAuto Attack\nDamage\n5,143 - 6,286\nAnimations\nExplosion, Fireball\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\n{$notes}\n+ Drawing Power\n- Drawing Power\nDrawing Power\nDamage\n7,714 - 9,429\nAnimations\nDrawing Power\nCooldown\n45 seconds\nMessage\n{$message}\nAoE\n4\nType\nMagical\nNotes\nApplies Drawing power to itself, increasing All Out by 100% for 15 seconds\nPlays message “Ultra Avatar Tyndarius powers up, dealing double damage!”\n+ Elusion\n- Elusion\nElusion\nDamage\n5,143 - 6,286\nAnimations\nElusion\nCooldown\n45 seconds\nMessage\n{$message}\nAoE\n4\nType\nMagical\nNotes\nApplies Elusion to itself, Increasing dodge by 50% and hit chance by 200% for 20 seconds\nPlays message “Ultra Avatar Tyndarius grows elusive, becoming harder to hit and more accurate!”\n+ Imminent Doom\n- Imminent Doom\nImminent Doom\nDamage\n5,143 - 6,286\nAnimations\nImminent Doom\nCooldown\n45 seconds\nMessage\n{$message}\nAoE\n4\nType\nMagical\nNotes\nApplies Imminent Doom to itself, increasing crit chance by 120% for 15 seconds\nPlays message “Ultra Avatar Tyndarius strikes more precisely, gaining crit chance!”\nAbilities:\nBoss Damage:\nDamage over 200,000 dealt to Ultra Tyndarius is reduced by raising the difference to the exponent 0.85 (but is never reduced below 200,000).\nCannot be stunned.\nTemporary Items Dropped:\nUltra Avatar Tyndarius Defeated (Used in the '\nUltra Avatar Tyndarius\n' quest)\nItems Dropped:\nTreasure Chest (Misc)\nNotes:\nHas a 30 second respawn timer.\nAlso see\nAvatar Tyndarius\n.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_lv100\n_u\naggro\nboss\nbossshield\nchallenge\nflaming\nfreeplayer\nimmune\nmonster",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+        "alt": "BossShield.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://imgur.com/DHcUlqt.png",
+        "alt": "DHcUlqt.png",
+        "localCandidate": "content-sources/v678/ultra-tyndarius-boss-0.png",
+        "mime": "image/png",
+        "sha256": "640541cb78cc69d50a5e4528dd206c8dad3b16038fbb173b7b52304850bcfbd0"
+      }
+    ],
+    "links": [
+      "/ultra-avatar-tyndarius-location",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "/galanoth-s-quests#UltraTyn",
+      "/treasure-chest-misc",
+      "/avatar-tyndarius",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_lv100#pages",
+      "/system:page-tags/tag/_u#pages",
+      "/system:page-tags/tag/aggro#pages",
+      "/system:page-tags/tag/boss#pages",
+      "/system:page-tags/tag/bossshield#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/flaming#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/monster#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://imgur.com/DHcUlqt.png",
+        "alt": "DHcUlqt.png",
+        "localCandidate": "content-sources/v678/ultra-tyndarius-boss-0.png",
+        "mime": "image/png",
+        "sha256": "640541cb78cc69d50a5e4528dd206c8dad3b16038fbb173b7b52304850bcfbd0"
+      }
+    ]
+  },
+  {
+    "name": "Ultra Fire Orb",
+    "kind": "monster",
+    "entityId": "ultra-tyndarius-orb",
+    "url": "https://aqwwiki.wikidot.com/ultra-fire-orb-monster",
+    "text": ">\nLocation:\nUltra Avatar Tyndarius (Location)\nLevel:\n75\nDifficulty:\n5 stars\nTotal HP:\n700,000\nAI:\nAggressive on entering Screen 2.\nAttacks:\n+ Auto Attack\n- Auto Attack\nAuto Attack\nDamage\n605 - 741\nAnimations\nExplosion, Fireball\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n1\nType\nPhysical\nNotes\n{$notes}\n+ Charge Attack\n- Charge Attack\nCharge Attack\nDamage\n363 - 444\nAnimations\nCharge Attack, Melt Down\nCooldown\n20 seconds\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nThe Charge time for this skill is 3 seconds.\nApplies Vulnerable to the players upon hit, increasing All In by 50% for 10 seconds\nApplies Melting Armor to itself when it begins the charge, increasing All In by 200% for 10 seconds\nPlays message “Ultra Fire Orb’s armor softens as it charges up for an attack!”\n+ Melting\n- Melting\nMelting\nDamage\n605 - 741\nAnimations\nMelting\nCooldown\n5 seconds\nMessage\n{$message}\nAoE\n4\nType\nMagical\nNotes\nApplies Melting to the players, increasing All In and decreasing Dodge by 25% per stack, lasting 25 seconds, stacks indefinitely.\n+ Absorbing\n- Absorbing\nAbsorbing\nDamage\n{$damage}\nAnimations\nAbsorb\nCooldown\n10 seconds\nMessage\n{$message}\nAoE\n4\nType\nStatus\nNotes\nApplies one stack of Absorbing Power and Rising Defence to itself per player in combat. Absorbing Power increases All Out by 50% per stack, lasts 30 seconds, stacks indefinitely. Rising Defence decreases All In by 25% per stack, lasts 30 seconds, stacks indefinitely.\nAbilities:\nAll attacks from Ultra Fire Orb cannot crit but cannot be avoided.\nBoss Shield:\nDamage over 150,000 dealt to Ultra Fire Orb is reduced by raising the difference to the exponent 0.5 (but is never reduced below 150,000).\nCannot be stunned.\nTemporary Items Dropped:\nN/A\nItems Dropped:\nTreasure Chest (Misc)\nNote:\nHas a 30 second respawn timer.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_lv75\n_u\naggro\nboss\nbossshield\nchallenge\nflaming\nfreeplayer\nimmune\nmonster",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+        "alt": "BossShield.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://imgur.com/Xyv3Pq3.png",
+        "alt": "Xyv3Pq3.png",
+        "localCandidate": "content-sources/v678/ultra-tyndarius-orb-0.png",
+        "mime": "image/png",
+        "sha256": "e48a6380e6725abf271fa356ed8b2b02e00ea0b90d74a1695369d73e889e83cd"
+      }
+    ],
+    "links": [
+      "/ultra-avatar-tyndarius-location",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "/treasure-chest-misc",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_lv75#pages",
+      "/system:page-tags/tag/_u#pages",
+      "/system:page-tags/tag/aggro#pages",
+      "/system:page-tags/tag/boss#pages",
+      "/system:page-tags/tag/bossshield#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/flaming#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/monster#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://imgur.com/Xyv3Pq3.png",
+        "alt": "Xyv3Pq3.png",
+        "localCandidate": "content-sources/v678/ultra-tyndarius-orb-0.png",
+        "mime": "image/png",
+        "sha256": "e48a6380e6725abf271fa356ed8b2b02e00ea0b90d74a1695369d73e889e83cd"
+      }
+    ]
+  },
+  {
+    "name": "Dage the Dark Lord",
+    "kind": "monster",
+    "entityId": "ultra-dage-boss",
+    "url": "https://aqwwiki.wikidot.com/dage-the-dark-lord",
+    "error": "Command '['curl', '-4', '-fLsS', '--max-time', '25', 'https://aqwwiki.wikidot.com/dage-the-dark-lord']' returned non-zero exit status 7."
+  },
+  {
+    "name": "Nulgath the Archfiend",
+    "kind": "monster",
+    "entityId": "ultra-nulgath-boss",
+    "url": "https://aqwwiki.wikidot.com/nulgath-the-archfiend",
+    "error": "Command '['curl', '-4', '-fLsS', '--max-time', '25', 'https://aqwwiki.wikidot.com/nulgath-the-archfiend']' returned non-zero exit status 7."
+  },
+  {
+    "name": "Overfiend Blade",
+    "kind": "monster",
+    "entityId": "ultra-nulgath-overfiend-blade",
+    "url": "https://aqwwiki.wikidot.com/overfiend-blade",
+    "error": "Command '['curl', '-4', '-fLsS', '--max-time', '25', 'https://aqwwiki.wikidot.com/overfiend-blade']' returned non-zero exit status 7."
+  },
+  {
+    "name": "Bowmaster Algie",
+    "kind": "monster",
+    "entityId": "ultra-drago-algie",
+    "url": "https://aqwwiki.wikidot.com/bowmaster-algie",
+    "text": ">\nLocation:\nUltra Drago\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n2,000,000\nAI:\nAggressive on entering Screen 2.\nAttacks:\n+ Auto Attack\n- Auto Attack\nAuto Attack\nDamage\n1,044 - 1,276\nAnimations\nFiring Arrow\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\nApplies Damage Drained to target, reducing all outgoing damage by 5% for 4 seconds, stacks indefinitely.\nApplies Damage Increasing to self, increasing all outgoing damage by 1% for each player hit, stacks indefinitely.\n+ Triple Shot\n- Triple Shot\nTriple Shot\nDamage\n1,044 - 1,276\nAnimations\nFiring Three Arrows\nCooldown\n12 seconds\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\nApplies Bleeding to target, a DoT that lasts 20 seconds.\nIgnores Focus\nAbilities:\nBoss Shield:\nDamage over 75,000 dealt to Bowmaster Algie is reduced by raising the difference to the exponent 0.7 (but is never reduced below 75,000).\nCannot be stunned.\nIf\nExecutioner Dene\ndies, Bowmaster Algie fully heals and gains Ally Boost, which increases his outgoing damage and outgoing physical damage by 100%, and reduces all incoming damage by 50% indefinitely.\nKing Drago (Monster)\ncannot be damaged while Bowmaster Algie is alive.\nTemporary Items Dropped:\nN/A\nItems Dropped:\nTreasure Chest (Misc)\nNote:\nHas a 30 second respawn timer which begins once all 3 monsters in the room are defeated.\nThanks to Darkfirekiller.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_b\n_lv100\naggro\nboss\nbossshield\nchallenge\nfreeplayer\nhuman\nhumankind\nimmune\njewelry\nmonster\nwinged",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/humankind.png",
+        "alt": "humankind.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+        "alt": "BossShield.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://imgur.com/9CCWCqn.png",
+        "alt": "9CCWCqn.png",
+        "localCandidate": "content-sources/v678/ultra-drago-algie-0.png",
+        "mime": "image/png",
+        "sha256": "6518695bbb40880eedb8b19429e81da7f1d277d0b4ff496de588d65a71b17630"
+      }
+    ],
+    "links": [
+      "http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2human",
+      "/ultra-drago",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "/executioner-dene",
+      "/king-drago-monster",
+      "/treasure-chest-misc",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_b#pages",
+      "/system:page-tags/tag/_lv100#pages",
+      "/system:page-tags/tag/aggro#pages",
+      "/system:page-tags/tag/boss#pages",
+      "/system:page-tags/tag/bossshield#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/human#pages",
+      "/system:page-tags/tag/humankind#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/monster#pages",
+      "/system:page-tags/tag/winged#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://imgur.com/9CCWCqn.png",
+        "alt": "9CCWCqn.png",
+        "localCandidate": "content-sources/v678/ultra-drago-algie-0.png",
+        "mime": "image/png",
+        "sha256": "6518695bbb40880eedb8b19429e81da7f1d277d0b4ff496de588d65a71b17630"
+      }
+    ]
+  },
+  {
+    "name": "Executioner Dene",
+    "kind": "monster",
+    "entityId": "ultra-drago-dene",
+    "url": "https://aqwwiki.wikidot.com/executioner-dene",
+    "text": ">\nLocation:\nUltra Drago\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n3,500,000\nAI:\nAggressive after\nKing Drago (Monster)\nand\nBowmaster Algie\nattack.\nAttacks:\n+ Auto Attack\n- Auto Attack\nAuto Attack\nDamage\n1,044 - 1,276\nAnimations\nAxe Swing\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\nApplies Defenses Shattered to target, increasing all incoming damage and incoming physical damage by 5% for 4 seconds, stacks indefinitely.\nApplies Defense Increasing to self, reducing incoming damage by 1% for each player hit, stacks indefinitely.\n+ Execution\n- Execution\nExecution\nDamage\n1,044 - 1,276\nAnimations\nEnergy Blast\nCooldown\n20 seconds\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\nIgnores Focus\nAbilities:\nCannot be stunned.\nDamage over 75,000 dealt to Executioner Dene is reduced by raising the difference to the exponent 0.7 (but is never reduced below 75,000).\nIf\nBowmaster Algie\ndies, Executioner Dene fully heals and gains Ally Boost, which increases his outgoing damage and outgoing physical damage by 100%, and reduces all incoming damage by 50% indefinitely.\nKing Drago (Monster)\ncannot be damaged while Executioner Dene is alive.\nTemporary Items Dropped:\nN/A\nItems Dropped:\nTreasure Chest (Misc)\nNote:\nHas a 30 second respawn timer which begins once all 3 monsters in the room are defeated.\nThanks to Darkfirekiller.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_e\n_lv100\naggro\nboss\nbossshield\nchallenge\nfreeplayer\nhuman\nhumankind\nimmune\njewelry\nmonster\nwinged",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/humankind.png",
+        "alt": "humankind.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+        "alt": "BossShield.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://imgur.com/xIxGEbc.png",
+        "alt": "xIxGEbc.png",
+        "localCandidate": "content-sources/v678/ultra-drago-dene-0.png",
+        "mime": "image/png",
+        "sha256": "3b3cb879ebc728cfcdb9514f375b4cefacec151b6380bc7e32ba359a23a04e0a"
+      }
+    ],
+    "links": [
+      "http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2human",
+      "/ultra-drago",
+      "/king-drago-monster",
+      "/bowmaster-algie",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "/bowmaster-algie",
+      "/king-drago-monster",
+      "/treasure-chest-misc",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_e#pages",
+      "/system:page-tags/tag/_lv100#pages",
+      "/system:page-tags/tag/aggro#pages",
+      "/system:page-tags/tag/boss#pages",
+      "/system:page-tags/tag/bossshield#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/human#pages",
+      "/system:page-tags/tag/humankind#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/monster#pages",
+      "/system:page-tags/tag/winged#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://imgur.com/xIxGEbc.png",
+        "alt": "xIxGEbc.png",
+        "localCandidate": "content-sources/v678/ultra-drago-dene-0.png",
+        "mime": "image/png",
+        "sha256": "3b3cb879ebc728cfcdb9514f375b4cefacec151b6380bc7e32ba359a23a04e0a"
+      }
+    ]
+  },
+  {
+    "name": "King Drago",
+    "kind": "monster",
+    "entityId": "ultra-drago-boss",
+    "url": "https://aqwwiki.wikidot.com/king-drago-monster",
+    "text": ">\nLocation:\nUltra Drago\nLevel:\n1\nDifficulty:\n1 star\nTotal HP:\n1,000\nAI:\nAggressive on entering Screen 2.\nAttacks:\n+ Judgement Day ➞ Judged\n- Judgement Day ➞ Judged\nJudgement Day\nDamage\n{$damage}\nAnimations\nLaugh\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\nJudgement Day begins after King Drago has been engaged in combat for 160 seconds.\nAfter King Drago laughs for 20 seconds, Judged is used.\nJudged is used 20 seconds after Judgement Day begins.\nJudged\nDamage\n{$damage}\nAnimations\nDoot Doot\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\nIgnores Focus\nDeals true damage.\nIf a player somehow survives the attack, Instant Death, a fatal DoT, will be applied to the player.\nAbilities:\nCannot be damaged unless both\nBowmaster Algie\nand\nExecutioner Dene\nare defeated.\nCannot be stunned.\nTemporary Items Dropped:\nDrago Dethroned (Used in the the '\nDrago, Tyrant of Astravia\n' quest)\nItems Dropped:\nTreasure Chest (Misc)\nNotes:\nHas a 30 second respawn timer which begins once all 3 monsters in the room are defeated.\nAlso see\nDrago\n.\nThanks to Darkfirekiller.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n1star\n_k\n_lv1\naggro\nchallenge\nfreeplayer\nhumankind\nimmune\nmonster",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/humankind.png",
+        "alt": "humankind.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+        "alt": "arrow.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://imgur.com/iGMPbvQ.png",
+        "alt": "iGMPbvQ.png",
+        "localCandidate": "content-sources/v678/ultra-drago-boss-0.png",
+        "mime": "image/png",
+        "sha256": "b9615d4b0222c3e6768a59bc2f07854e64213cab8d45f7966495ad903932f210"
+      }
+    ],
+    "links": [
+      "http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2human",
+      "/ultra-drago",
+      "javascript:;",
+      "javascript:;",
+      "/bowmaster-algie",
+      "/executioner-dene",
+      "/re-s-quests#UltraDrago",
+      "/treasure-chest-misc",
+      "/drago",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/1star#pages",
+      "/system:page-tags/tag/_k#pages",
+      "/system:page-tags/tag/_lv1#pages",
+      "/system:page-tags/tag/aggro#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/humankind#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/monster#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://imgur.com/iGMPbvQ.png",
+        "alt": "iGMPbvQ.png",
+        "localCandidate": "content-sources/v678/ultra-drago-boss-0.png",
+        "mime": "image/png",
+        "sha256": "b9615d4b0222c3e6768a59bc2f07854e64213cab8d45f7966495ad903932f210"
+      }
+    ]
+  },
+  {
+    "name": "The First Speaker",
+    "kind": "monster",
+    "entityId": "ultra-speaker-boss",
+    "url": "https://aqwwiki.wikidot.com/the-first-speaker",
+    "text": ">\nLocation:\nUltra Speaker\nLevel:\n100\nDifficulty:\n5 stars\nTotal HP:\n10,000,000\nAttacks:\n+ Shadowflame Slash\n- Shadowflame Slash\nShadowflame Slash\nDamage\n804 - 982\nAnimations\nWing Slash\nCooldown\n2 seconds\nMessage\n{$message}\nAoE\n4\nType\nPhysical\nNotes\nAlways hits, never crits\nApplies Corruption and Somber for 20 seconds, decreasing damage dealt and defense by 7% per stack, stacks infinitely\nApplies Mana Drought for 60 seconds, reducing Intelligence by 40%\nIgnores Focus\n+ Magia Draw ➞ Magia Burn\n- Magia Draw ➞ Magia Burn\nMagia Draw\nDamage\n{$damage}\nAnimations\nShadow Charge\nCooldown\n7 seconds\nMessage\nI will make you see the truth.\nAoE\n{$aoe}\nType\nCharge\nNotes\nCharges for 2 seconds.\nMagia Burn is used after Magia Draw charges for 2 seconds.\nMagia Burn\nDamage\n1,447 - 1,768\nAnimations\nShadow Burst\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nMagic Damage\nNotes\nApplies Magia Burn for 18 seconds, increasing Magic Damage taken by 300%, stacks infinitely.\n+ Energy Draw ➞ Stasis Field\n- Energy Draw ➞ Stasis Field\nEnergy Draw\nDamage\n{$damage}\nAnimations\nEnergy Charge\nCooldown\n12 seconds\nMessage\nYou shall listen.\nAoE\n{$aoe}\nType\nCharge / Aura\nNotes\nCharges for 2 seconds.\nStasis Field is used after Energy Draw charges for 2 seconds.\nEnergy Burst\nDamage\n{$damage}\nAnimations\nEnergy Burst\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nStatus\nNotes\nDeals no damage\nApplies Stasis for 6 seconds, stunning target(s).\n+ Power Split ➞ Equalize\n- Power Split ➞ Equalize\nPower Split\nDamage\n{$damage}\nAnimations\nSplit Power Charge\nCooldown\n16 seconds\nMessage\nAll stand equal beneath the eyes of the Eternal.\nAoE\n{$aoe}\nType\nCharge / Aura\nNotes\nCharges for 3 seconds.\nApplies Scintillation to self for 24 seconds, increasing damage dealt by 300%, DoT resistance by 100%, defense by 75%, and Dodge by 25%.\nApplies Revitalization to self, recovering a large amount of health after 2 seconds.\nEqualize is used after Power Split charges for 3 seconds.\nEqualize\nDamage\n2,411 - 2,946\nAnimations\nEqualizer Burst\nCooldown\n{$cooldown}\nMessage\n{$message}\nAoE\n4\nType\nTrue Damage\nNotes\nOnly hits players in the glowing zone.\nDoes +100% damage to each subsequent player hit.\nApplies Sanctity, removing Corruption and Somber. Sanctity lasts for 45 seconds.\nIf you have Magia Burn, applies Shattered Will, a lethal DoT.\nIf you have Stasis, applies Shattered Soul, a lethal DoT.\nIf you have Sanctity, applies Shattered Heart, a lethal DoT.\nAbilities:\nBoss Shield:\nDamage over 150,000 dealt to The First Speaker is reduced by raising the difference to the exponent 0.1 (but is never reduced below 150,000).\nCannot be stunned.\nVindication:\nWhen The First Speaker kills a player, he gains 30% defense, accompanied by the message “We move closer to wiping the slate clean.”\nBase stats:\n50% Dodge\n50% DoT resistance\n50% Defense\n500% Hit Chance\nTemporary Items Dropped:\nN/A\nItems Dropped:\nThe First Speaker Silenced\nTreasure Chest (Misc)\nNotes:\nHas a 30 second respawn timer.\nAlso see\nThe Mainyu\n.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_lv100\n_t\nboss\nbossshield\nchallenge\nfreeplayer\nhorns\nimmune\nmonster\ntailed\nwinged",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+        "alt": "BossShield.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+        "alt": "arrow.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+        "alt": "arrow.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+        "alt": "arrow.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+        "alt": "acsmall.png"
+      },
+      {
+        "url": "https://i.imgur.com/Ons3QgA.png",
+        "alt": "Ons3QgA.png",
+        "localCandidate": "content-sources/v678/ultra-speaker-boss-0.png",
+        "mime": "image/png",
+        "sha256": "3ce2df33d3237672b8f8fcfcc9c6565aa9b54ef608e4153d0f30e1a66ba19026"
+      }
+    ],
+    "links": [
+      "/ultra-speaker",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "javascript:;",
+      "/the-first-speaker-silenced",
+      "/treasure-chest-misc",
+      "/the-mainyu",
+      "http://www.aq.com/",
+      "/system:page-tags/tag/5star#pages",
+      "/system:page-tags/tag/_lv100#pages",
+      "/system:page-tags/tag/_t#pages",
+      "/system:page-tags/tag/boss#pages",
+      "/system:page-tags/tag/bossshield#pages",
+      "/system:page-tags/tag/challenge#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/horns#pages",
+      "/system:page-tags/tag/immune#pages",
+      "/system:page-tags/tag/monster#pages",
+      "/system:page-tags/tag/tailed#pages",
+      "/system:page-tags/tag/winged#pages"
+    ],
+    "candidates": [
+      {
+        "url": "https://i.imgur.com/Ons3QgA.png",
+        "alt": "Ons3QgA.png",
+        "localCandidate": "content-sources/v678/ultra-speaker-boss-0.png",
+        "mime": "image/png",
+        "sha256": "3ce2df33d3237672b8f8fcfcc9c6565aa9b54ef608e4153d0f30e1a66ba19026"
+      }
+    ]
+  },
+  {
+    "name": "Exalted Apotheosis",
+    "kind": "equipment",
+    "url": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+    "text": ">\nLocations:\nExaltia Merge\nInn at the Edge of Time\nUltra Engineer (Location)\nUltra Ezrajal (Location)\nUltra Warden (Location)\nPrice:\nN/A\nMerge the following:\nExalted Penultima\nx1\nEzrajal Insignia\nx4\nWarden Insignia\nx4\nEngineer Insignia\nx8\nSellback:\n0 AC\nRarity:\nChampion Rarity\nBase Level:\n95\nBase Damage:\n30-30\nDescription:\nA pinnacle of Exalted engineering, this ornate relic has never seen battle. Upgraded from the Exalted Penultima. Proof of your victory over the Exaltia Tower! (Weapon damage is static and does 51% more to all monsters when equipped.)\nNotes:\nThis item is themed from\nExalted Apotheosis\nfrom\nDragonFable\n.\nRequired to accept the '\nExalted Apotheosis\n' quest.\nUsed to merge\nDual Exalted Apotheosis\n.\nThanks to Darkfirekiller.\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n0ac\n_e\nac\naethemed\nangel\nfixed-dmg\nfreeplayer\nioda-excl\nitemreq\njewelry\nlv-locked\nmergeitem\nmergereward\nshopitem\nspectral\nsword\nwinged\nxdmg2monsters",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aclarge.png",
+        "alt": "aclarge.png"
+      },
+      {
+        "url": "https://i.imgur.com/rRfCTkM.png",
+        "alt": "rRfCTkM.png"
+      }
+    ],
+    "links": [
+      "/exaltia-merge",
+      "/inn-at-the-edge-of-time",
+      "/ultra-engineer-location",
+      "/ultra-ezrajal-location",
+      "/ultra-warden-location",
+      "/exalted-penultima",
+      "/ezrajal-insignia",
+      "/warden-insignia",
+      "/engineer-insignia",
+      "https://forums2.battleon.com/f/tm.asp?m=22363430",
+      "http://www.dragonfable.com/",
+      "/sir-cole-s-quests#Apoth",
+      "/dual-exalted-apotheosis",
+      "/system:page-tags/tag/0ac#pages",
+      "/system:page-tags/tag/_e#pages",
+      "/system:page-tags/tag/ac#pages",
+      "/system:page-tags/tag/aethemed#pages",
+      "/system:page-tags/tag/angel#pages",
+      "/system:page-tags/tag/fixed-dmg#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/ioda-excl#pages",
+      "/system:page-tags/tag/itemreq#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/lv-locked#pages",
+      "/system:page-tags/tag/mergeitem#pages",
+      "/system:page-tags/tag/mergereward#pages",
+      "/system:page-tags/tag/shopitem#pages",
+      "/system:page-tags/tag/spectral#pages",
+      "/system:page-tags/tag/sword#pages",
+      "/system:page-tags/tag/winged#pages",
+      "/system:page-tags/tag/xdmg2monsters#pages"
+    ]
+  },
+  {
+    "name": "Infernal Flame Khopesh",
+    "kind": "equipment",
+    "url": "https://aqwwiki.wikidot.com/infernal-flame-khopesh",
+    "text": ">\nLocations:\nFireAvatar Merge\n-\nFire Avatar\nFireAvatar Merge\n-\nUltra Avatar Tyndarius (Location)\nPrice:\nN/A\nMerge the following:\nAvatar Tyndarius Insignia\nx14\nFire Avatar's Favor\nx40\nSellback:\n0 AC\nRarity:\nLegendary Rarity\nBase Damage:\n30-30\nDescription:\nThe fire raging inside you has made you unstoppable… channel it and sear your way to victory! (75% damage boost against Elementals)\nAnimated GIF\nThanks to Darkfirekiller.\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n0ac\n_i\nac\nanimated\nfixed-dmg\nflaming\nfreeplayer\nioda-excl\njewelry\nmergereward\nshopitem\nsword\nxdmg2elemental",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aclarge.png",
+        "alt": "aclarge.png"
+      },
+      {
+        "url": "https://imgur.com/RSJfJG1.png",
+        "alt": "RSJfJG1.png"
+      }
+    ],
+    "links": [
+      "/fireavatar-merge",
+      "/fire-avatar",
+      "/fireavatar-merge",
+      "/ultra-avatar-tyndarius-location",
+      "/avatar-tyndarius-insignia",
+      "/fire-avatar-s-favor",
+      "https://imgur.com/q8dw70d.gifv",
+      "/system:page-tags/tag/0ac#pages",
+      "/system:page-tags/tag/_i#pages",
+      "/system:page-tags/tag/ac#pages",
+      "/system:page-tags/tag/animated#pages",
+      "/system:page-tags/tag/fixed-dmg#pages",
+      "/system:page-tags/tag/flaming#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/ioda-excl#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/mergereward#pages",
+      "/system:page-tags/tag/shopitem#pages",
+      "/system:page-tags/tag/sword#pages",
+      "/system:page-tags/tag/xdmg2elemental#pages"
+    ]
+  },
+  {
+    "name": "Sin of the Abyss",
+    "kind": "equipment",
+    "url": "https://aqwwiki.wikidot.com/sin-of-the-abyss",
+    "text": ">\nLocation:\nNulgath's Merge Shop\n-\nUltra Nulgath\nPrice:\nN/A\nMerge the following:\nBlood Gem of the Archfiend\nx50\nDark Crystal Shard\nx200\nDiamond of Nulgath\nx500\nGem of Nulgath\nx150\nNulgath Insignia\nx20\nSin of Revontheus (Sword)\nx1\nTainted Gem\nx300\nTotem of Nulgath\nx50\nSellback:\n0 AC\nRarity:\nChampion Rarity\nBase Level:\n95\nBase Damage:\n30-30\nDescription:\nYou who could barely grasp the true power of the Abyss; are you worthy of wielding its power? (This item does 51% more damage to all monsters and gives 25% more gold when equipped.)\nNotes:\nAlso see:\nBlessing of Chadough (Dagger)\n.\nBlessing of Chadough (Sword)\n.\nDark Sin Of Revontheus\n.\nSin of Revontheus (Pet)\n.\nSin Of The Underworld\n.\nSin of the Undying\n.\nThanks to Menace.\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n0ac\n_s\nac\ndemon\nevileyes\nfixed-dmg\nfreeplayer\ngoldboost\nhorns\nioda-excl\nlv-locked\nmergereward\nshopitem\nsword\nxdmg2monsters",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aclarge.png",
+        "alt": "aclarge.png"
+      },
+      {
+        "url": "https://i.imgur.com/CRgXcD9.png",
+        "alt": "CRgXcD9.png"
+      }
+    ],
+    "links": [
+      "/nulgath-s-merge-shop",
+      "/ultra-nulgath",
+      "/blood-gem-of-the-archfiend",
+      "/dark-crystal-shard",
+      "/diamond-of-nulgath",
+      "/gem-of-nulgath",
+      "/nulgath-insignia",
+      "/sin-of-revontheus-sword",
+      "/tainted-gem",
+      "/totem-of-nulgath",
+      "/blessing-of-chadough-dagger",
+      "/blessing-of-chadough-sword",
+      "/dark-sin-of-revontheus",
+      "/sin-of-revontheus-pet",
+      "/sin-of-the-underworld",
+      "/sin-of-the-undying",
+      "/system:page-tags/tag/0ac#pages",
+      "/system:page-tags/tag/_s#pages",
+      "/system:page-tags/tag/ac#pages",
+      "/system:page-tags/tag/demon#pages",
+      "/system:page-tags/tag/evileyes#pages",
+      "/system:page-tags/tag/fixed-dmg#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/goldboost#pages",
+      "/system:page-tags/tag/horns#pages",
+      "/system:page-tags/tag/ioda-excl#pages",
+      "/system:page-tags/tag/lv-locked#pages",
+      "/system:page-tags/tag/mergereward#pages",
+      "/system:page-tags/tag/shopitem#pages",
+      "/system:page-tags/tag/sword#pages",
+      "/system:page-tags/tag/xdmg2monsters#pages"
+    ]
+  },
+  {
+    "name": "Drago's Royal Guard",
+    "kind": "equipment",
+    "url": "https://aqwwiki.wikidot.com/drago-s-royal-guard",
+    "text": ">\nLocation:\nUltra Drago Merge\n-\nUltra Drago\nPrice:\nN/A\nMerge the following:\nKing Drago Insignia\nx5\nSellback:\n0 AC\nRarity:\nChampion Rarity\nBase Level:\n80\nDescription:\nTraditions have changed since the executions of the former heads of the Royal Guard. With Drago's Ascension, he outfitted his loyalists with gold vambraces, reflecting the decadence of his loyalists.\nNote:\nWhen equipped, this item provides a 35% bonus to Class Points and EXP.\nMale\nFemale\n//<![CDATA[\nOZONE.dom.onDomReady(function(){\n        var tabView854f8cbb25b0f586b8855349e65a1107 = new YAHOO.widget.TabView('wiki-tabview-854f8cbb25b0f586b8855349e65a1107');\n                }, \"dummy-ondomready-block\");\n        \n//]]>\nThanks to Darkfirekiller.\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n0ac\n_d\nac\narmor\nchain\ncpboost\nfreeplayer\nioda-excl\njewelry\nlv-locked\nmergereward\nshopitem\nwinged\nxpboost",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aclarge.png",
+        "alt": "aclarge.png"
+      },
+      {
+        "url": "https://imgur.com/HbI8ShN.png",
+        "alt": "HbI8ShN.png"
+      },
+      {
+        "url": "https://imgur.com/lwOikbr.png",
+        "alt": "lwOikbr.png"
+      }
+    ],
+    "links": [
+      "/ultra-drago-merge",
+      "/ultra-drago",
+      "/king-drago-insignia",
+      "javascript:;",
+      "javascript:;",
+      "/system:page-tags/tag/0ac#pages",
+      "/system:page-tags/tag/_d#pages",
+      "/system:page-tags/tag/ac#pages",
+      "/system:page-tags/tag/armor#pages",
+      "/system:page-tags/tag/chain#pages",
+      "/system:page-tags/tag/cpboost#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/ioda-excl#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/lv-locked#pages",
+      "/system:page-tags/tag/mergereward#pages",
+      "/system:page-tags/tag/shopitem#pages",
+      "/system:page-tags/tag/winged#pages",
+      "/system:page-tags/tag/xpboost#pages"
+    ]
+  },
+  {
+    "name": "Malgor's ShadowFlame Blade",
+    "kind": "equipment",
+    "url": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade",
+    "text": ">\nLocation:\nUltra Speaker Merge\n-\nUltra Speaker\nPrice:\nN/A\nMerge the following:\nMalgor Insignia\nx20\nShadowFlame Dragon Blade\nx1\nElemental Core\nx20\nSellback:\n0 AC\nRarity:\nChampion Rarity\nBase Damage:\n30-30\nBase Level:\n95\nDescription:\nMalgor's personal blade, in your hands. You can feel his conviction, sorrow, anger, and desperation engraved into the features of the sword.\nNotes:\nWhen equipped, this item does 51% more damage to\nall monsters\n.\nHandle is Color Custom to Trim Color.\nGlow is Color Custom to Accessory Color.\nRequired to accept the '\nDauntless\n' quest.\nThanks to Apus.\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n0ac\n_m\nac\ncolorcustom\nfixed-dmg\nfreeplayer\ninscription\nioda-excl\nitemreq\nmergereward\nshopitem\nsword\nxdmg2monsters",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aclarge.png",
+        "alt": "aclarge.png"
+      },
+      {
+        "url": "https://i.imgur.com/4fknVeI.png",
+        "alt": "4fknVeI.png"
+      }
+    ],
+    "links": [
+      "/ultra-speaker-merge",
+      "/ultra-speaker",
+      "/malgor-insignia",
+      "/shadowflame-dragon-blade",
+      "/elemental-core",
+      "/monsters",
+      "/cysero-s-forge-s-quests#Weapons",
+      "/system:page-tags/tag/0ac#pages",
+      "/system:page-tags/tag/_m#pages",
+      "/system:page-tags/tag/ac#pages",
+      "/system:page-tags/tag/colorcustom#pages",
+      "/system:page-tags/tag/fixed-dmg#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/inscription#pages",
+      "/system:page-tags/tag/ioda-excl#pages",
+      "/system:page-tags/tag/itemreq#pages",
+      "/system:page-tags/tag/mergereward#pages",
+      "/system:page-tags/tag/shopitem#pages",
+      "/system:page-tags/tag/sword#pages",
+      "/system:page-tags/tag/xdmg2monsters#pages"
+    ]
+  },
+  {
+    "name": "Dual Exalted Apotheosis",
+    "kind": "equipment",
+    "url": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis",
+    "text": ">\nLocations:\nExaltia Merge\nInn at the Edge of Time\nUltra Engineer (Location)\nUltra Ezrajal (Location)\nUltra Warden (Location)\nPrice:\nN/A\nMerge the following:\nExalted Apotheosis\nx1\nEzrajal Insignia\nx14\nWarden Insignia\nx14\nEngineer Insignia\nx14\nSellback:\n0 AC\nRarity:\nChampion Rarity\nBase Level:\n95\nBase Damage:\n30-30\nDescription:\nA pinnacle of Exalted engineering, this ornate relic has never seen battle. Upgraded from the Exalted Penultima. Proof of your victory over the Exaltia Tower! (Weapon damage is static and does 51% more to all monsters when equipped.)\nNote:\nThis item is themed from\nExalted Apotheosis\nfrom\nDragonFable\n.\nThanks to Bad.\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n0ac\n_d\nac\naethemed\nangel\ndagger\nfixed-dmg\nfreeplayer\nioda-excl\njewelry\nlv-locked\nmergereward\nshopitem\nspectral\nwinged\nxdmg2monsters",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aclarge.png",
+        "alt": "aclarge.png"
+      },
+      {
+        "url": "https://i.imgur.com/4t1HNK9.png",
+        "alt": "4t1HNK9.png"
+      }
+    ],
+    "links": [
+      "/exaltia-merge",
+      "/inn-at-the-edge-of-time",
+      "/ultra-engineer-location",
+      "/ultra-ezrajal-location",
+      "/ultra-warden-location",
+      "/exalted-apotheosis",
+      "/ezrajal-insignia",
+      "/warden-insignia",
+      "/engineer-insignia",
+      "https://forums2.battleon.com/f/tm.asp?m=22363430",
+      "http://www.dragonfable.com/",
+      "/system:page-tags/tag/0ac#pages",
+      "/system:page-tags/tag/_d#pages",
+      "/system:page-tags/tag/ac#pages",
+      "/system:page-tags/tag/aethemed#pages",
+      "/system:page-tags/tag/angel#pages",
+      "/system:page-tags/tag/dagger#pages",
+      "/system:page-tags/tag/fixed-dmg#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/ioda-excl#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/lv-locked#pages",
+      "/system:page-tags/tag/mergereward#pages",
+      "/system:page-tags/tag/shopitem#pages",
+      "/system:page-tags/tag/spectral#pages",
+      "/system:page-tags/tag/winged#pages",
+      "/system:page-tags/tag/xdmg2monsters#pages"
+    ]
+  },
+  {
+    "name": "Exalted Duality",
+    "kind": "equipment",
+    "url": "https://aqwwiki.wikidot.com/exalted-duality",
+    "text": ">\nLocations:\nExaltia Merge\nInn at the Edge of Time\nUltra Engineer (Location)\nUltra Ezrajal (Location)\nUltra Warden (Location)\nPrice:\nN/A\nMerge the following:\nThaumaturgus Ultima\nx1\nApostate Ultima\nx1\nEzrajal Insignia\nx4\nWarden Insignia\nx4\nEngineer Insignia\nx4\nSellback:\n0 AC\nRarity:\nChampion Rarity\nBase Level:\n95\nBase Damage:\n27-33\nDescription:\nDual blades of Exalted design, brought together by a single purpose. (Item deals 40% more damage to all monsters when equipped.)\nNote:\nThis item is themed from\nApostate Ultima\nand\nThaumaturgus Ultima\nfrom\nDragonFable\n.\nThanks to Darkfirekiller.\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n0ac\n2diffweapons\n_e\nac\naethemed\ndagger\ndefaultdmg\nfreeplayer\nioda-excl\njewelry\nlv-locked\nmergereward\nscythe\nshopitem\nspectral\nsword\nwinged\nxdmg2monsters",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aclarge.png",
+        "alt": "aclarge.png"
+      },
+      {
+        "url": "https://imgur.com/18qhdiw.png",
+        "alt": "18qhdiw.png"
+      }
+    ],
+    "links": [
+      "/exaltia-merge",
+      "/inn-at-the-edge-of-time",
+      "/ultra-engineer-location",
+      "/ultra-ezrajal-location",
+      "/ultra-warden-location",
+      "/thaumaturgus-ultima",
+      "/apostate-ultima",
+      "/ezrajal-insignia",
+      "/warden-insignia",
+      "/engineer-insignia",
+      "https://forums2.battleon.com/f/tm.asp?m=22357170",
+      "https://forums2.battleon.com/f/tm.asp?m=22357171",
+      "http://www.dragonfable.com/",
+      "/system:page-tags/tag/0ac#pages",
+      "/system:page-tags/tag/2diffweapons#pages",
+      "/system:page-tags/tag/_e#pages",
+      "/system:page-tags/tag/ac#pages",
+      "/system:page-tags/tag/aethemed#pages",
+      "/system:page-tags/tag/dagger#pages",
+      "/system:page-tags/tag/defaultdmg#pages",
+      "/system:page-tags/tag/freeplayer#pages",
+      "/system:page-tags/tag/ioda-excl#pages",
+      "/system:page-tags/tag/jewelry#pages",
+      "/system:page-tags/tag/lv-locked#pages",
+      "/system:page-tags/tag/mergereward#pages",
+      "/system:page-tags/tag/scythe#pages",
+      "/system:page-tags/tag/shopitem#pages",
+      "/system:page-tags/tag/spectral#pages",
+      "/system:page-tags/tag/sword#pages",
+      "/system:page-tags/tag/winged#pages",
+      "/system:page-tags/tag/xdmg2monsters#pages"
+    ]
+  },
+  {
+    "name": "Necrotic Blade of the Underworld",
+    "kind": "equipment",
+    "url": "https://aqwwiki.wikidot.com/necrotic-blade-of-the-underworld",
+    "text": ">\nLocation:\nUltra Dage\nPrice:\nN/A (Reward from the '\nNecrotic Sword of the Underworld\n' quest)\nSellback:\n0 AC\nRarity:\nChampion Rarity\nBase Damage:\n30-30\nDescription:\nAfter Sepulchure's defeat, his blade was found in the Underworld. Its darkness resonates with the DOOM coursing through the realm. This item does 51% more damage to all monsters and gives 25% more gold when equipped.\nNote:\nAlso see\nList of all Necrotic Swords\n.\nNormal\nAnimated\n//<![CDATA[\nOZONE.dom.onDomReady(function(){\n        var tabView1195b8dac56f9e343041668c99a6f360 = new YAHOO.widget.TabView('wiki-tabview-1195b8dac56f9e343041668c99a6f360');\n                }, \"dummy-ondomready-block\");\n        \n//]]>\nThanks to Bad.\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n0ac\n_n\nac\nanimated\nchain\nfixed-dmg\nglowingeyes\ngoldboost\nioda-excl\nnsod\nquestreward\nskeletal\nstaffbirthday\nsword\nxdmg2monsters",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/staffbirthday.png",
+        "alt": "staffbirthday.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aclarge.png",
+        "alt": "aclarge.png"
+      },
+      {
+        "url": "https://i.imgur.com/OFIZBff.png",
+        "alt": "OFIZBff.png"
+      },
+      {
+        "url": "https://i.imgur.com/yEnecck.png",
+        "alt": "yEnecck.png"
+      }
+    ],
+    "links": [
+      "http://aqwwiki.wikidot.com/staff-birthday",
+      "/ultra-dage",
+      "/calamitus-quests#Empower",
+      "/list-of-all-necrotic-swords",
+      "javascript:;",
+      "javascript:;",
+      "/system:page-tags/tag/0ac#pages",
+      "/system:page-tags/tag/_n#pages",
+      "/system:page-tags/tag/ac#pages",
+      "/system:page-tags/tag/animated#pages",
+      "/system:page-tags/tag/chain#pages",
+      "/system:page-tags/tag/fixed-dmg#pages",
+      "/system:page-tags/tag/glowingeyes#pages",
+      "/system:page-tags/tag/goldboost#pages",
+      "/system:page-tags/tag/ioda-excl#pages",
+      "/system:page-tags/tag/nsod#pages",
+      "/system:page-tags/tag/questreward#pages",
+      "/system:page-tags/tag/skeletal#pages",
+      "/system:page-tags/tag/staffbirthday#pages",
+      "/system:page-tags/tag/sword#pages",
+      "/system:page-tags/tag/xdmg2monsters#pages"
+    ]
+  },
+  {
+    "name": "Empowered Undead Champion",
+    "kind": "equipment",
+    "url": "https://aqwwiki.wikidot.com/empowered-undead-champion",
+    "text": ">\nLocation:\nUltra Dage\nPrice:\nN/A (Reward from the '\nEmpowered Undead Champion\n' quest)\nSellback:\n0 AC\nRarity:\nChampion Rarity\nDescription:\nThis item does 50% more damage to Undead monsters when equipped. Unaffected by emotions and impervious to remorse, Champions pledge their full allegiance to the Undead Legion. Showing mercy is a sign of weakness, and weakness is not tolerated.\nNotes:\nAlso see:\nAeacus\n.\nSkeletal Champion\n.\nUltra Aeacus\n.\nUndead Champion (Armor)\n.\nUndead Legion Champion\n.\nMale\nFemale\n//<![CDATA[\nOZONE.dom.onDomReady(function(){\n        var tabViewabafa3f91702bacc9f321cf4452a8f0a = new YAHOO.widget.TabView('wiki-tabview-abafa3f91702bacc9f321cf4452a8f0a');\n                }, \"dummy-ondomready-block\");\n        \n//]]>\nThanks to Amduscia.\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n0ac\n_e\nac\narmor\nbelt\nbodyart\nevileyes\nglowingeyes\nhorns\nioda-excl\nmorph\nquestreward\nskeletal\nstaffbirthday\nxdmg2undead",
+    "images": [
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/staffbirthday.png",
+        "alt": "staffbirthday.png"
+      },
+      {
+        "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/aclarge.png",
+        "alt": "aclarge.png"
+      },
+      {
+        "url": "http://i.imgur.com/9gSlmFt.png",
+        "alt": "9gSlmFt.png"
+      },
+      {
+        "url": "http://i.imgur.com/6YJuVs4.png",
+        "alt": "6YJuVs4.png"
+      }
+    ],
+    "links": [
+      "http://aqwwiki.wikidot.com/staff-birthday",
+      "/ultra-dage",
+      "/calamitus-quests#Empower",
+      "/aeacus",
+      "/skeletal-champion",
+      "/ultra-aeacus",
+      "/undead-champion-armor",
+      "/undead-legion-champion",
+      "javascript:;",
+      "javascript:;",
+      "/system:page-tags/tag/0ac#pages",
+      "/system:page-tags/tag/_e#pages",
+      "/system:page-tags/tag/ac#pages",
+      "/system:page-tags/tag/armor#pages",
+      "/system:page-tags/tag/belt#pages",
+      "/system:page-tags/tag/bodyart#pages",
+      "/system:page-tags/tag/evileyes#pages",
+      "/system:page-tags/tag/glowingeyes#pages",
+      "/system:page-tags/tag/horns#pages",
+      "/system:page-tags/tag/ioda-excl#pages",
+      "/system:page-tags/tag/morph#pages",
+      "/system:page-tags/tag/questreward#pages",
+      "/system:page-tags/tag/skeletal#pages",
+      "/system:page-tags/tag/staffbirthday#pages",
+      "/system:page-tags/tag/xdmg2undead#pages"
+    ]
+  }
+]

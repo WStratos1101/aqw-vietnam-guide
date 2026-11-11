@@ -1,0 +1,948 @@
+[
+  {
+    "classId": "arcana-invoker-ai",
+    "skillId": "wiki-passive-thearcana",
+    "sourceHash": "907143798578a2b7b4f17e1f6f4ba245e5719d08ce93435fa4025177ea0d45fc",
+    "source": "https://aqwwiki.wikidot.com/arcana-invoker",
+    "originalEffect": "The Arcana\nRank Needed: 4\nType: Passive Ability\nDescription:\nMagician: 22% INT\nHigh Priestess: 22% WIS\nEmpress: HoT\nEmperor: 22% outgoing damage\nHierophant: 22% Heal Power\nLovers: 22% END\nChariot: 22% Haste\nJustice: 22% Phys and Mag damage\nHermit: 22% Dodge\nWheel of Fortune: 22% LUCK\nStrength: 22% STR\nHanged Man: 22% DEX\nDeath: 22% Crit Damage\nTemperance: Enhanced HoT\nDevil: 22% Crit Chance\nTower: 22% Phys and Mag Resist\nStar: MoT\nMoon: -22% Mana Costs\nSun: 22% Hit Chance\nJudgement: Awakens The World",
+    "effects": [
+      {
+        "name": "Magician",
+        "text": "Tăng 22% INT.",
+        "targets": []
+      },
+      {
+        "name": "High Priestess",
+        "text": "Tăng 22% WIS.",
+        "targets": []
+      },
+      {
+        "name": "Empress",
+        "text": "Nhận HoT.",
+        "targets": []
+      },
+      {
+        "name": "Emperor",
+        "text": "Tăng 22% sát thương gây ra.",
+        "targets": []
+      },
+      {
+        "name": "Hierophant",
+        "text": "Tăng 22% sức mạnh hồi máu.",
+        "targets": []
+      },
+      {
+        "name": "Lovers",
+        "text": "Tăng 22% END.",
+        "targets": []
+      },
+      {
+        "name": "Chariot",
+        "text": "Tăng 22% Haste.",
+        "targets": []
+      },
+      {
+        "name": "Justice",
+        "text": "Tăng 22% sát thương vật lý và phép.",
+        "targets": []
+      },
+      {
+        "name": "Hermit",
+        "text": "Tăng 22% Dodge.",
+        "targets": []
+      },
+      {
+        "name": "Wheel of Fortune",
+        "text": "Tăng 22% Luck.",
+        "targets": []
+      },
+      {
+        "name": "Strength",
+        "text": "Tăng 22% STR.",
+        "targets": []
+      },
+      {
+        "name": "Hanged Man",
+        "text": "Tăng 22% DEX.",
+        "targets": []
+      },
+      {
+        "name": "Death",
+        "text": "Tăng 22% Crit Damage.",
+        "targets": []
+      },
+      {
+        "name": "Temperance",
+        "text": "Nhận HoT cường hóa.",
+        "targets": []
+      },
+      {
+        "name": "Devil",
+        "text": "Tăng 22% Crit Chance.",
+        "targets": []
+      },
+      {
+        "name": "Tower",
+        "text": "Tăng 22% kháng vật lý và kháng phép.",
+        "targets": []
+      },
+      {
+        "name": "Star",
+        "text": "Nhận MoT.",
+        "targets": []
+      },
+      {
+        "name": "Moon",
+        "text": "Giảm 22% Mana Cost.",
+        "targets": []
+      },
+      {
+        "name": "Sun",
+        "text": "Tăng 22% Hit Chance.",
+        "targets": []
+      },
+      {
+        "name": "Judgement",
+        "text": "Đánh thức The World.",
+        "targets": []
+      }
+    ]
+  },
+  {
+    "classId": "arcana-invoker-ai",
+    "skillId": "wiki-passive-thearcanareversed",
+    "sourceHash": "907143798578a2b7b4f17e1f6f4ba245e5719d08ce93435fa4025177ea0d45fc",
+    "source": "https://aqwwiki.wikidot.com/arcana-invoker",
+    "originalEffect": "The Arcana (Reversed)\nRank Needed: 4\nType: Passive Ability\nDescription:\nFool: -22% Damage Resist\nMagician: -22% damage\nHigh Priestess: -22% Crit Chance\nEmpress: DoT\nEmperor: -22% Damage Resist\nHierophant: -22% DoT Resist\nLovers: 15s Decay\nChariot: -22% Haste\nJustice: -22% Phys/Mag damage\nHermit: -22% Dodge\nWheel of Fortune: -22% Hit Chance\nStrength: -22% damage\nHanged Man: 4s stun (50%)\nDeath: 5s Delayed DoT\nTemperance: Ramping DoT\nDevil: -22% Crit Chance\nTower: -22% Phys/Mag Resist\nStar: -22% DoT Resist\nMoon: -22% Haste\nSun: -22% Hit Chance",
+    "effects": [
+      {
+        "name": "Fool",
+        "text": "Giảm 22% Damage Resistance.",
+        "targets": []
+      },
+      {
+        "name": "Magician",
+        "text": "Giảm 22% sát thương.",
+        "targets": []
+      },
+      {
+        "name": "High Priestess",
+        "text": "Giảm 22% Crit Chance.",
+        "targets": []
+      },
+      {
+        "name": "Empress",
+        "text": "Áp DoT.",
+        "targets": []
+      },
+      {
+        "name": "Emperor",
+        "text": "Giảm 22% Damage Resistance.",
+        "targets": []
+      },
+      {
+        "name": "Hierophant",
+        "text": "Giảm 22% DoT Resistance.",
+        "targets": []
+      },
+      {
+        "name": "Lovers",
+        "text": "Áp Decay trong 15 giây.",
+        "targets": []
+      },
+      {
+        "name": "Chariot",
+        "text": "Giảm 22% Haste.",
+        "targets": []
+      },
+      {
+        "name": "Justice",
+        "text": "Giảm 22% sát thương vật lý và phép.",
+        "targets": []
+      },
+      {
+        "name": "Hermit",
+        "text": "Giảm 22% Dodge.",
+        "targets": []
+      },
+      {
+        "name": "Wheel of Fortune",
+        "text": "Giảm 22% Hit Chance.",
+        "targets": []
+      },
+      {
+        "name": "Strength",
+        "text": "Giảm 22% sát thương.",
+        "targets": []
+      },
+      {
+        "name": "Hanged Man",
+        "text": "Có 50% cơ hội Stun trong 4 giây.",
+        "targets": []
+      },
+      {
+        "name": "Death",
+        "text": "Áp DoT trễ 5 giây.",
+        "targets": []
+      },
+      {
+        "name": "Temperance",
+        "text": "Áp DoT tăng dần.",
+        "targets": []
+      },
+      {
+        "name": "Devil",
+        "text": "Giảm 22% Crit Chance.",
+        "targets": []
+      },
+      {
+        "name": "Tower",
+        "text": "Giảm 22% kháng vật lý và kháng phép.",
+        "targets": []
+      },
+      {
+        "name": "Star",
+        "text": "Giảm 22% DoT Resistance.",
+        "targets": []
+      },
+      {
+        "name": "Moon",
+        "text": "Giảm 22% Haste.",
+        "targets": []
+      },
+      {
+        "name": "Sun",
+        "text": "Giảm 22% Hit Chance.",
+        "targets": []
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowslayer",
+    "skillId": "wiki-active-fire",
+    "sourceHash": "7c8ba0f5055cadf421447a72e1db3d74828a47af1c2dd6045dbaedbe0db0aced",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Bắn một phát không thể né."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Mỗi phát áp Bang, tối đa 6 stack. Đủ 6 stack sẽ tiêu hao Bang và áp Rounds Empty, đưa Mana về 0 và tăng Mana Cost 5.000%."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tracer Rounds tự kích hoạt Fire! và áp Painted. FMJ Rounds tự kích hoạt Fire! và áp Shredded."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Trong Gunslinger Stance, phát bắn tích Chaos Rift. Mỗi stack tăng 20% Crit Damage trong 10 giây, tối đa 20 stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowslayer",
+    "skillId": "wiki-active-reload",
+    "sourceHash": "7c8ba0f5055cadf421447a72e1db3d74828a47af1c2dd6045dbaedbe0db0aced",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nạp 6 viên đạn, hồi đầy Mana và gỡ Rounds Empty, Tracers và FMJ."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi có ít nhất 4 Temporal Rift, tiêu hao chúng để vào Gunslinger Stance trong 2 giây. Trong lúc này, bắn miễn Mana và không tích Bang."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowslayer",
+    "skillId": "wiki-active-tracerrounds",
+    "sourceHash": "7c8ba0f5055cadf421447a72e1db3d74828a47af1c2dd6045dbaedbe0db0aced",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nạp đạn Tracers thay FMJ. Tăng 20% Defense và 40% Dodge đến khi Reload."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 10 giây, tối đa 4 stack."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận HoT theo HP tối đa trong 4 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tự kích hoạt Fire! và áp Painted."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowslayer",
+    "skillId": "wiki-active-fmjrounds",
+    "sourceHash": "7c8ba0f5055cadf421447a72e1db3d74828a47af1c2dd6045dbaedbe0db0aced",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nạp đạn FMJ thay Tracers. Tăng 25% sát thương vật lý đến khi Reload."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Bắn một phát cường hóa gây thêm sát thương và áp Shredded."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 10 giây, tối đa 4 stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowslayer",
+    "skillId": "wiki-active-silverbullet",
+    "sourceHash": "7c8ba0f5055cadf421447a72e1db3d74828a47af1c2dd6045dbaedbe0db0aced",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowslayer-class",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương theo lượng sát thương đã gây trong 10 giây trước khi Rift còn hiệu lực."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Áp Blind, giảm 50% Hit Chance trong 1 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Tiêu hao mọi Temporal Rift và Chaos Rift. Làm trống đạn và áp Rounds Empty, tăng Mana Cost 5.000%."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowhunter",
+    "skillId": "wiki-active-fire",
+    "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Bắn một phát không thể né."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Mỗi phát áp Bang, tối đa 6 stack. Đủ 6 stack sẽ tiêu hao Bang và áp Rounds Empty, đưa Mana về 0 và tăng Mana Cost 5.000%."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tracer Rounds tự kích hoạt Fire! và áp Painted. FMJ Rounds tự kích hoạt Fire! và áp Shredded."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Trong Gunslinger Stance, phát bắn tích Chaos Rift. Mỗi stack tăng 20% Crit Damage trong 10 giây, tối đa 20 stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowhunter",
+    "skillId": "wiki-active-reload",
+    "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nạp 6 viên đạn, hồi đầy Mana và gỡ Rounds Empty, Tracers và FMJ."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Khi có ít nhất 4 Temporal Rift, tiêu hao chúng để vào Gunslinger Stance trong 2 giây. Trong lúc này, bắn miễn Mana và không tích Bang."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowhunter",
+    "skillId": "wiki-active-tracerrounds",
+    "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nạp đạn Tracers thay FMJ. Tăng 20% Defense và 40% Dodge đến khi Reload."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 10 giây, tối đa 4 stack."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận HoT theo HP tối đa trong 4 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Tự kích hoạt Fire! và áp Painted."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowhunter",
+    "skillId": "wiki-active-fmjrounds",
+    "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nạp đạn FMJ thay Tracers. Tăng 25% sát thương vật lý đến khi Reload."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Bắn một phát cường hóa gây thêm sát thương và áp Shredded."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 10 giây, tối đa 4 stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-shadowhunter",
+    "skillId": "wiki-active-silverbullet",
+    "sourceHash": "4f7107662a18181776c237c84e28ea77fad5cb27f333a59fcc5c391b6d3302f4",
+    "source": "https://aqwwiki.wikidot.com/chrono-shadowhunter",
+    "supportingSource": "https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương theo lượng sát thương đã gây trong 10 giây trước khi Rift còn hiệu lực."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Áp Blind, giảm 50% Hit Chance trong 1 giây."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Tiêu hao mọi Temporal Rift và Chaos Rift. Làm trống đạn và áp Rounds Empty, tăng Mana Cost 5.000%."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dataknight",
+    "skillId": "wiki-active-spellblade",
+    "source": "https://aqwwiki.wikidot.com/chrono-dataknight",
+    "sourceHash": "0c8ecf898c3501c1b34ba1a2e81bea9fcd3cca57b7b48c2653edb8c93a1ca02a",
+    "supportingSource": "https://aqwwiki.wikidot.com/chrono-dataknight",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương vật lý theo Spell Power. Hiệu ứng bổ sung phụ thuộc phép đã dùng."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Đánh mục tiêu có Flammable áp Dragon’s Fire, gây DoT trong 15 giây, tối đa 10 stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dataknight",
+    "skillId": "wiki-active-dragonsrift",
+    "source": "https://aqwwiki.wikidot.com/chrono-dataknight",
+    "sourceHash": "0c8ecf898c3501c1b34ba1a2e81bea9fcd3cca57b7b48c2653edb8c93a1ca02a",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương nhẹ."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 30 giây, tối đa 4 stack. Thời hạn làm mới khi tích thêm stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dataknight",
+    "skillId": "wiki-active-riftrelease",
+    "source": "https://aqwwiki.wikidot.com/chrono-dataknight",
+    "sourceHash": "0c8ecf898c3501c1b34ba1a2e81bea9fcd3cca57b7b48c2653edb8c93a1ca02a",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương theo số Temporal Rift. Cần ít nhất 1 stack và giữ nguyên stack sau khi dùng."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Chrono Dragon’s Skin, giảm 30% sát thương nhận vào trong 10 giây."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dataknight",
+    "skillId": "wiki-active-chronodragonsblade",
+    "source": "https://aqwwiki.wikidot.com/chrono-dataknight",
+    "sourceHash": "0c8ecf898c3501c1b34ba1a2e81bea9fcd3cca57b7b48c2653edb8c93a1ca02a",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Áp Flammable trong 15 giây, tăng 15% sát thương phép mục tiêu nhận."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Auto Attack lên mục tiêu có Flammable áp Dragon’s Fire trong 15 giây, tối đa 10 stack. Thời hạn làm mới khi tích thêm stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dataknight",
+    "skillId": "wiki-active-timeofthedragon",
+    "source": "https://aqwwiki.wikidot.com/chrono-dataknight",
+    "sourceHash": "0c8ecf898c3501c1b34ba1a2e81bea9fcd3cca57b7b48c2653edb8c93a1ca02a",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Temporal Rift, gây sát thương dựa trên sát thương đã gây trong tối đa 10 giây trước đó khi Rift hoạt động."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Sát thương tăng theo từng stack Temporal Rift và tiêu hao các stack khi dùng."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dragonknight",
+    "skillId": "wiki-active-spellblade",
+    "source": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+    "sourceHash": "4ea49a2058953079d1c1c536fd0dad1268a9eb204361a545bdb6a10de6d7d96f",
+    "supportingSource": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương vật lý theo Spell Power. Hiệu ứng bổ sung phụ thuộc phép đã dùng."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Đánh mục tiêu có Flammable áp Dragon’s Fire, gây DoT trong 15 giây, tối đa 10 stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dragonknight",
+    "skillId": "wiki-active-dragonsrift",
+    "source": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+    "sourceHash": "4ea49a2058953079d1c1c536fd0dad1268a9eb204361a545bdb6a10de6d7d96f",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương nhẹ."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 30 giây, tối đa 4 stack. Thời hạn làm mới khi tích thêm stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dragonknight",
+    "skillId": "wiki-active-riftrelease",
+    "source": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+    "sourceHash": "4ea49a2058953079d1c1c536fd0dad1268a9eb204361a545bdb6a10de6d7d96f",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương theo số Temporal Rift. Cần ít nhất 1 stack và giữ nguyên stack sau khi dùng."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Chrono Dragon’s Skin, giảm 30% sát thương nhận vào trong 10 giây."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dragonknight",
+    "skillId": "wiki-active-chronodragonsblade",
+    "source": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+    "sourceHash": "4ea49a2058953079d1c1c536fd0dad1268a9eb204361a545bdb6a10de6d7d96f",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Áp Flammable trong 15 giây, tăng 15% sát thương phép mục tiêu nhận."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Auto Attack lên mục tiêu có Flammable áp Dragon’s Fire trong 15 giây, tối đa 10 stack. Thời hạn làm mới khi tích thêm stack."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-chrono-dragonknight",
+    "skillId": "wiki-active-timeofthedragon",
+    "source": "https://aqwwiki.wikidot.com/chrono-dragonknight-class",
+    "sourceHash": "4ea49a2058953079d1c1c536fd0dad1268a9eb204361a545bdb6a10de6d7d96f",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Temporal Rift, gây sát thương dựa trên sát thương đã gây trong tối đa 10 giây trước đó khi Rift hoạt động."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Sát thương tăng theo từng stack Temporal Rift và tiêu hao các stack khi dùng."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-obsidian-paladin-chronomancer",
+    "skillId": "wiki-active-hammerofvirtue",
+    "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+    "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên HP hiện tại của bản thân. Đòn đánh không Crit."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-obsidian-paladin-chronomancer",
+    "skillId": "wiki-active-radiantrift",
+    "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+    "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương, tăng sát thương lên Undead và không Crit."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 30 giây, tối đa 4 stack."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Áp Ascendancy và Reprisal, giảm 10% Dodge, Haste, Crit Chance, sát thương gây ra và phòng thủ trong 10 giây, tối đa 5 stack."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Indomitable, áp Radiant Light gây DoT theo HP hiện tại của bản thân trong 6 giây. Hiệu lực không làm mới."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-obsidian-paladin-chronomancer",
+    "skillId": "wiki-active-holyvow",
+    "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+    "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326",
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Hồi máu cho bản thân và đồng minh. Hồi máu luôn Crit."
+      },
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Áp Holy Shield trong 15 giây, tăng 10% Haste và 33% phòng thủ vật lý và phép."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-obsidian-paladin-chronomancer",
+    "skillId": "wiki-active-divineintervention",
+    "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+    "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326",
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Hồi máu mạnh cho bản thân và đồng minh, luôn Crit."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Áp Indomitable, tăng 400% Endurance trong 5 giây."
+      },
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Áp Guardian Angel trong 15 giây. Holy Vow kế tiếp tiêu hao nó để áp Intervention, HoT mạnh trong 5 giây."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-obsidian-paladin-chronomancer",
+    "skillId": "wiki-active-divineretribution",
+    "source": "https://aqwwiki.wikidot.com/obsidian-paladin-chronomancer-class",
+    "sourceHash": "6b7340f64c1b3966ea87ed6e961e4a8bc6176f6d94abc53276dce36e1f942326",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Temporal Rift, gây sát thương theo lượng sát thương đã gây trong tối đa 10 giây trước khi Rift còn hiệu lực. Sát thương tăng theo stack và tiêu hao Rift. Đòn đánh không Crit."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Áp Spirits Within, hồi 45 Mana trong 5 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Nếu mục tiêu là Undead, áp Stun trong 3 giây."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-paladin-chronomancer",
+    "skillId": "wiki-active-hammerofvirtue",
+    "source": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+    "sourceHash": "8b41eb2a182327902d7bcc3658ed289ea2f8157aee876c640e957d6a1a91a916",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương dựa trên HP hiện tại của bản thân. Đòn đánh không Crit."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-paladin-chronomancer",
+    "skillId": "wiki-active-radiantrift",
+    "source": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+    "sourceHash": "8b41eb2a182327902d7bcc3658ed289ea2f8157aee876c640e957d6a1a91a916",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Gây sát thương, tăng sát thương lên Undead và không Crit."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Nhận Temporal Rift trong 30 giây, tối đa 4 stack."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Áp Ascendancy và Reprisal, giảm 10% Dodge, Haste, Crit Chance, sát thương gây ra và phòng thủ trong 10 giây, tối đa 5 stack."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Indomitable, áp Radiant Light gây DoT theo HP hiện tại của bản thân trong 6 giây. Hiệu lực không làm mới."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-paladin-chronomancer",
+    "skillId": "wiki-active-holyvow",
+    "source": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+    "sourceHash": "8b41eb2a182327902d7bcc3658ed289ea2f8157aee876c640e957d6a1a91a916",
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Hồi máu cho bản thân và đồng minh. Hồi máu luôn Crit."
+      },
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Áp Holy Shield trong 15 giây, tăng 10% Haste và 33% phòng thủ vật lý và phép."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-paladin-chronomancer",
+    "skillId": "wiki-active-divineintervention",
+    "source": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+    "sourceHash": "8b41eb2a182327902d7bcc3658ed289ea2f8157aee876c640e957d6a1a91a916",
+    "effects": [
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Hồi máu mạnh cho bản thân và đồng minh, luôn Crit."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Áp Indomitable, tăng 400% Endurance trong 5 giây."
+      },
+      {
+        "targets": [
+          "SELF",
+          "ALLY"
+        ],
+        "text": "Áp Guardian Angel trong 15 giây. Holy Vow kế tiếp tiêu hao nó để áp Intervention, HoT mạnh trong 5 giây."
+      }
+    ]
+  },
+  {
+    "classId": "calendar-paladin-chronomancer",
+    "skillId": "wiki-active-divineretribution",
+    "source": "https://aqwwiki.wikidot.com/paladin-chronomancer-class",
+    "sourceHash": "8b41eb2a182327902d7bcc3658ed289ea2f8157aee876c640e957d6a1a91a916",
+    "effects": [
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Khi có Temporal Rift, gây sát thương theo lượng sát thương đã gây trong tối đa 10 giây trước khi Rift còn hiệu lực. Sát thương tăng theo stack và tiêu hao Rift. Đòn đánh không Crit."
+      },
+      {
+        "targets": [
+          "SELF"
+        ],
+        "text": "Áp Spirits Within, hồi 45 Mana trong 5 giây."
+      },
+      {
+        "targets": [
+          "ENEMY"
+        ],
+        "text": "Nếu mục tiêu là Undead, áp Stun trong 3 giây."
+      }
+    ]
+  }
+]

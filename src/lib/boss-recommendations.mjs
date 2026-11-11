@@ -1,0 +1,2 @@
+export function eligibleBossRecommendations(entries,currentSlug){const seen=new Set();return entries.filter(e=>e.id!==currentSlug&&!seen.has(e.id)&&/^[-a-z0-9]+$/.test(e.id)&&e.href==='/ultra-boss/'+e.id&&(seen.add(e.id),true));}
+export function chooseBossRecommendations(entries,currentSlug,random=Math.random){const candidates=[...eligibleBossRecommendations(entries,currentSlug)];for(let i=candidates.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[candidates[i],candidates[j]]=[candidates[j],candidates[i]];}return candidates.slice(0,3);}

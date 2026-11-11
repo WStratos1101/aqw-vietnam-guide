@@ -1,0 +1,105 @@
+{
+  "url": "https://aqwwiki.wikidot.com/whirlpool",
+  "text": ">\nLocation:\nLavarock Shore\nLevel:\n90\nDifficulty:\n5 stars\nTotal HP:\n1,000,000\nAI:\nAggressive when player attacks\nKasuko\nfirst.\nAttacks:\n+ Auto Attack\n- Auto Attack\nAuto Attack\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n2.25 seconds\nMessage\n{$message}\nAoE\n7\nType\nTrue Status\nNotes\nIgnores focus.\n+ Whirlpool Spin ➞ Drowning ➞ Drowned\n- Whirlpool Spin ➞ Drowning ➞ Drowned\nWhirlpool Spin\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe whirlpool is stirring.\nAoE\nSelf\nType\nCharge\nNotes\n{$notes}\nDrowning is used after Whirlpool Spin charges for 25 seconds.\nDrowning\nDamage\n{$damage}\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nThe whirlpool is gaining strength.\nAoE\nSelf\nType\nCharge\nNotes\n{$notes}\nDrowned is used after Drowning charges for 5 seconds.\nDrowned\nDamage\nInstant Death\nAnimations\n{$animations}\nCooldown\n{$cooldown}\nMessage\nDragged into the deep.\nAoE\n7\nType\nTrue Damage\nNotes\nApplies Instant Death to all players, a Lethal DoT.\nRemoves Invulnerable effect on all players.\nCannot miss.\nCannot crit.\nIgnores focus.\nAbilities:\nBoss Shield:\nDamage over 75,000 dealt to Whirlpool is reduced by raising the difference to the exponent 0.8 (but is never reduced below 75,000).\nCannot be stunned.\nTemporary Items Dropped:\nN/A\nItems Dropped:\nTreasure Chest (Misc)\nThanks to Tempu.\nBattle this monster in our free web game at\nwww.AQ.com\n!\nwindow['nitroAds'].createAd('wad-aqwwiki-below-content', {\n  \"refreshTime\": 30,\n  \"renderVisibleOnly\": false,\n  \"refreshVisibleOnly\": true,\n  \"sizes\": [ [ 300, 250 ] ],\n  \"report\": {\n    \"enabled\": true,\n    \"wording\": \"Report Ad\",\n    \"position\": \"bottom-right\"\n  }\n  });\n5star\n_lv90\n_w\nbossshield\nchallenge\nfreeplayer\nimmune\nmonster\nseasonal\nsummerbreak",
+  "images": [
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/BossShield.png",
+      "alt": "BossShield.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/seasonallarge.png",
+      "alt": "seasonallarge.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/dev:boss-skill-link/arrow.png",
+      "alt": "arrow.png"
+    },
+    {
+      "url": "https://aqwwiki.wdfiles.com/local--files/image-tags/acsmall.png",
+      "alt": "acsmall.png"
+    },
+    {
+      "url": "https://i.imgur.com/aOpJVan.png",
+      "alt": "aOpJVan.png"
+    }
+  ],
+  "links": [
+    {
+      "url": "/lavarock-shore",
+      "index": 2
+    },
+    {
+      "url": "/kasuko",
+      "index": 11
+    },
+    {
+      "url": "javascript:;",
+      "index": 14
+    },
+    {
+      "url": "javascript:;",
+      "index": 15
+    },
+    {
+      "url": "javascript:;",
+      "index": 31
+    },
+    {
+      "url": "javascript:;",
+      "index": 32
+    },
+    {
+      "url": "/treasure-chest-misc",
+      "index": 91
+    },
+    {
+      "url": "http://www.aq.com/",
+      "index": 94
+    },
+    {
+      "url": "/system:page-tags/tag/5star#pages",
+      "index": 97
+    },
+    {
+      "url": "/system:page-tags/tag/_lv90#pages",
+      "index": 98
+    },
+    {
+      "url": "/system:page-tags/tag/_w#pages",
+      "index": 99
+    },
+    {
+      "url": "/system:page-tags/tag/bossshield#pages",
+      "index": 100
+    },
+    {
+      "url": "/system:page-tags/tag/challenge#pages",
+      "index": 101
+    },
+    {
+      "url": "/system:page-tags/tag/freeplayer#pages",
+      "index": 102
+    },
+    {
+      "url": "/system:page-tags/tag/immune#pages",
+      "index": 103
+    },
+    {
+      "url": "/system:page-tags/tag/monster#pages",
+      "index": 104
+    },
+    {
+      "url": "/system:page-tags/tag/seasonal#pages",
+      "index": 105
+    },
+    {
+      "url": "/system:page-tags/tag/summerbreak#pages",
+      "index": 106
+    }
+  ],
+  "reviewedAt": "2026-11-08"
+}

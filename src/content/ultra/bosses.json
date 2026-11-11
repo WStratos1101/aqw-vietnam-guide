@@ -1,0 +1,3554 @@
+[
+  {
+    "id": "ultra-ezrajal",
+    "slug": "ultra-ezrajal",
+    "name": "Ultra Ezrajal",
+    "subtitle": "Exaltia Tower",
+    "description": "Quan sát Counter Attack và nhịp khóa kỹ năng; chuẩn bị đội hình trước khi vào trận.",
+    "location": "ultraezrajal",
+    "joinCommand": "/join ultraezrajal",
+    "accessRequirements": [
+      "Level 61 trở lên để vào map."
+    ],
+    "questRequirements": [
+      "Hoàn thành quest 'The Engineer' của Sir Cole để nhận quest Ultra Ezrajal."
+    ],
+    "images": {
+      "portrait": "ultra-ezrajal-portrait"
+    },
+    "accent": "#c9b36c",
+    "status": "Hướng dẫn cộng đồng",
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 2500000,
+        "explanation": "Máu tối đa.",
+        "source": "monster"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss.",
+        "source": "monster"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "counter",
+        "name": "Counter Attack",
+        "description": "Boss phản lại sát thương trong thời gian hiệu ứng.",
+        "counterStrategy": "Dừng đánh khi nhận thông báo counter; xem chi tiết đội hình bên dưới.",
+        "severity": "danger",
+        "source": "monster"
+      },
+      {
+        "id": "prism",
+        "name": "Celestial Prism Explosion",
+        "description": "Đòn đánh diện rộng giúp boss hồi máu.",
+        "counterStrategy": "Giữ khả năng hồi phục và theo dõi nhịp tấn công.",
+        "severity": "danger",
+        "source": "monster"
+      }
+    ],
+    "recommendedTeams": [
+      {
+        "id": "source-team-1",
+        "title": "VHL/CAv/VDK, LR, LoO, FB",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Void Highlord",
+            "icon": "class-void-highlord",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Chaos Avenger",
+              "Verus DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Frostval Barbarian",
+            "icon": "class-frostval-barbarian",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-1"
+      },
+      {
+        "id": "source-team-2",
+        "title": "VHL, QCM/VHL/CAv/VDK, LR, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Void Highlord",
+            "icon": "class-void-highlord",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Void Highlord",
+              "Chaos Avenger",
+              "Verus DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-2"
+      },
+      {
+        "id": "source-team-3",
+        "title": "IK/DT/EDoT, DT/EDoT, LR, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Infinity Knight",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Dragon of Time"
+            ]
+          },
+          {
+            "className": "Dragon of Time",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-3"
+      },
+      {
+        "id": "source-team-4",
+        "title": "VHL/CAv/DT/EDoT/VDK/LC/SC/IT, LR, PCM/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Void Highlord",
+            "icon": "class-void-highlord",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Chaos Avenger",
+              "Dragon of Time",
+              "Verus DoomKnight",
+              "LightCaster",
+              "StoneCrusher",
+              "Infinity Titan"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-4"
+      },
+      {
+        "id": "source-team-5",
+        "title": "CMP/CCR/TK/CMD/QCM, LR, LoO, FB",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chronomancer Prime",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ChronoCorruptor",
+              "TimeKeeper",
+              "Chrono Commandant",
+              "Quantum Chronomancer"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Frostval Barbarian",
+            "icon": "class-frostval-barbarian",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-5"
+      },
+      {
+        "id": "source-team-6",
+        "title": "CMP/CCR/TK/CMD, QCM, LoO, LH/DLH",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chronomancer Prime",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ChronoCorruptor",
+              "TimeKeeper",
+              "Chrono Commandant"
+            ]
+          },
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legendary Hero",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Dark Legendary Hero"
+            ]
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-6"
+      }
+    ],
+    "equipmentRoutes": [
+      {
+        "id": "apotheosis",
+        "itemName": "Exalted Apotheosis",
+        "image": "item-apotheosis",
+        "category": "weapon",
+        "note": "Chuỗi Apostate + Thaumaturgus → Exalted Unity → Exalted Penultima → Exalted Apotheosis.",
+        "prerequisites": [
+          "Level 95 để trang bị.",
+          "Các mốc merge dưới đây là ghi chú sở hữu item, không khẳng định merge chỉ được làm một lần.",
+          "Insignia lấy từ cả ba Ultra Time Inn; quest ngày không tính là mốc sở hữu vĩnh viễn."
+        ],
+        "quests": [
+          {
+            "id": "cole",
+            "name": "The Engineer",
+            "requirements": [
+              "Hoàn thành các quest trước của Sir Cole"
+            ],
+            "items": [
+              "The Engineer Defeated ×1"
+            ],
+            "reward": "Mở chuỗi Daily Ultra",
+            "dependencies": [],
+            "repeatability": "once",
+            "source": "cole"
+          },
+          {
+            "id": "ezrajal",
+            "name": "Ultra Ezrajal",
+            "requirements": [
+              "Đã hoàn thành The Engineer"
+            ],
+            "items": [
+              "Ultra Ezrajal Defeated ×1"
+            ],
+            "reward": "Ezrajal Insignia ×1",
+            "dependencies": [
+              "cole"
+            ],
+            "repeatability": "daily",
+            "source": "cole"
+          },
+          {
+            "id": "warden",
+            "name": "Ultra Warden",
+            "requirements": [
+              "Đã hoàn thành Ultra Ezrajal"
+            ],
+            "items": [
+              "Ultra Warden Defeated ×1"
+            ],
+            "reward": "Warden Insignia ×1",
+            "dependencies": [
+              "ezrajal"
+            ],
+            "repeatability": "daily",
+            "source": "cole"
+          },
+          {
+            "id": "engineer",
+            "name": "Ultra Engineer",
+            "requirements": [
+              "Đã hoàn thành Ultra Warden"
+            ],
+            "items": [
+              "Ultra Engineer Defeated ×1"
+            ],
+            "reward": "Engineer Insignia ×1",
+            "dependencies": [
+              "warden"
+            ],
+            "repeatability": "daily",
+            "source": "cole"
+          },
+          {
+            "id": "apostate-alpha",
+            "name": "Exaltia Merge — Apostate Alpha",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Node ×150",
+              "Exalted Relic Piece ×5",
+              "Exalted Artillery Shard ×5",
+              "Exalted Forgemetal ×5"
+            ],
+            "reward": "Apostate Alpha",
+            "dependencies": [
+              "cole"
+            ],
+            "repeatability": "once",
+            "source": "recipe-apostate-alpha"
+          },
+          {
+            "id": "thaum-alpha",
+            "name": "Exaltia Merge — Thaumaturgus Alpha",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Node ×150",
+              "Exalted Relic Piece ×5",
+              "Exalted Artillery Shard ×5",
+              "Exalted Forgemetal ×5"
+            ],
+            "reward": "Thaumaturgus Alpha",
+            "dependencies": [
+              "cole"
+            ],
+            "repeatability": "once",
+            "source": "recipe-thaum-alpha"
+          },
+          {
+            "id": "apostate-omega",
+            "name": "Exaltia Merge — Apostate Omega",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Apostate Alpha ×1",
+              "Ezrajal Insignia ×2",
+              "Exalted Node ×150"
+            ],
+            "reward": "Apostate Omega",
+            "dependencies": [
+              "apostate-alpha"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "thaum-omega",
+            "name": "Exaltia Merge — Thaumaturgus Omega",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Thaumaturgus Alpha ×1",
+              "Ezrajal Insignia ×2",
+              "Exalted Node ×150"
+            ],
+            "reward": "Thaumaturgus Omega",
+            "dependencies": [
+              "thaum-alpha"
+            ],
+            "repeatability": "once",
+            "source": "recipe-thaum-omega"
+          },
+          {
+            "id": "apostate-ultima",
+            "name": "Exaltia Merge — Apostate Ultima",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Apostate Omega ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×6"
+            ],
+            "reward": "Apostate Ultima",
+            "dependencies": [
+              "apostate-omega"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "thaum-ultima",
+            "name": "Exaltia Merge — Thaumaturgus Ultima",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Thaumaturgus Omega ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×6"
+            ],
+            "reward": "Thaumaturgus Ultima",
+            "dependencies": [
+              "thaum-omega"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "unity",
+            "name": "Exaltia Merge — Exalted Unity",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Thaumaturgus Ultima ×1",
+              "Apostate Ultima ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×4",
+              "Engineer Insignia ×4"
+            ],
+            "reward": "Exalted Unity",
+            "dependencies": [
+              "apostate-ultima",
+              "thaum-ultima"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "penultima",
+            "name": "Exaltia Merge — Exalted Penultima",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Unity ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×4",
+              "Engineer Insignia ×4"
+            ],
+            "reward": "Exalted Penultima",
+            "dependencies": [
+              "unity"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "merge",
+            "name": "Exaltia Merge — Exalted Apotheosis",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Penultima ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×4",
+              "Engineer Insignia ×8"
+            ],
+            "reward": "Exalted Apotheosis",
+            "dependencies": [
+              "penultima"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          }
+        ],
+        "rewards": [
+          "Exalted Apotheosis"
+        ],
+        "source": "apotheosis",
+        "canonicalId": "exalted-apotheosis"
+      }
+    ],
+    "sources": [
+      {
+        "id": "monster",
+        "title": "Exaltia Tower",
+        "url": "https://aqwwiki.wikidot.com/ultra-ezrajal-monster",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "cole",
+        "title": "Sir Cole’s Quests",
+        "url": "https://aqwwiki.wikidot.com/sir-cole-s-quests",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "community-guide",
+        "title": "AQW Challenge Boss Guide — Vietnam Collector",
+        "url": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "kind": "community",
+        "verified": "2026-11-05"
+      },
+      {
+        "id": "apotheosis",
+        "title": "Exalted Apotheosis",
+        "url": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "exaltia-merge",
+        "title": "Exaltia Merge — recipes",
+        "url": "https://aqwwiki.wikidot.com/exaltia-merge",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "recipe-apostate-alpha",
+        "title": "Apostate Alpha",
+        "url": "https://aqwwiki.wikidot.com/apostate-alpha",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "recipe-thaum-alpha",
+        "title": "Thaumaturgus Alpha",
+        "url": "https://aqwwiki.wikidot.com/thaumaturgus-alpha",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "recipe-thaum-omega",
+        "title": "Thaumaturgus Omega",
+        "url": "https://aqwwiki.wikidot.com/thaumaturgus-omega",
+        "kind": "community",
+        "verified": "2026-11-06"
+      }
+    ],
+    "lastVerified": "2026-11-06",
+    "relatedGuides": [],
+    "rewardSummary": "Insignia • Exalted Apotheosis",
+    "sourceContentUrl": "/content/ultra/ultra-ezrajal.json"
+  },
+  {
+    "id": "ultra-warden",
+    "slug": "ultra-warden",
+    "name": "Ultra Warden",
+    "subtitle": "The Reliquary",
+    "description": "Shockwaves ép HP xuống sát đáy. Phối hợp hồi máu và giữ bình tĩnh khi Warden bước vào Berserk.",
+    "location": "ultrawarden",
+    "joinCommand": "/join ultrawarden",
+    "accessRequirements": [
+      "Level 61 trở lên để vào map."
+    ],
+    "questRequirements": [
+      "Hoàn thành quest 'The Engineer' của Sir Cole để nhận quest Ultra Warden."
+    ],
+    "images": {
+      "portrait": "ultra-warden-portrait",
+      "map": "ultra-warden-map"
+    },
+    "accent": "#b4c9d1",
+    "status": "Đã biên soạn",
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 1500000,
+        "explanation": "Máu tối đa.",
+        "source": "monster"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level của boss.",
+        "source": "monster"
+      },
+      {
+        "key": "auto",
+        "label": "Auto Attack",
+        "value": "4.844–5.882",
+        "explanation": "Sát thương cơ bản trước modifier.",
+        "source": "monster"
+      },
+      {
+        "key": "shield",
+        "label": "Ngưỡng Boss Shield",
+        "value": 100000,
+        "explanation": "Phần sát thương vượt ngưỡng bị giảm.",
+        "source": "monster"
+      },
+      {
+        "key": "berserk",
+        "label": "Mốc Berserk",
+        "value": 30,
+        "explanation": "Kích hoạt khi HP còn 30%.",
+        "source": "monster",
+        "unit": "%"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "shock",
+        "name": "Celestial Shockwaves",
+        "description": "Mỗi mốc mất 5% HP có thể kích hoạt một lần; mục tiêu còn 1 HP.",
+        "counterStrategy": "Thống nhất thứ tự Heal ngay sau Shockwaves.",
+        "severity": "danger",
+        "source": "monster"
+      },
+      {
+        "id": "berserk",
+        "name": "Berserk",
+        "description": "Từ 30% HP, boss tăng Hit, Crit, Dodge và đánh nhanh hơn.",
+        "counterStrategy": "Giữ nhịp hồi máu, tránh chồng Heal trước Shockwaves.",
+        "severity": "danger",
+        "source": "monster",
+        "phase": "HP ≤ 30%"
+      },
+      {
+        "id": "scream",
+        "name": "Petrifying Scream",
+        "description": "Có thể thay Auto Attack và gây stun 6 giây.",
+        "counterStrategy": "Support dự phòng sẵn nhịp hồi máu khi đồng đội bị stun.",
+        "severity": "normal",
+        "source": "monster"
+      },
+      {
+        "id": "taunt",
+        "name": "Focus và Boss Shield",
+        "description": "Shockwaves có thể chịu Focus; boss không thể bị stun.",
+        "counterStrategy": "Chỉ phân công Taunt khi đội hình có kế hoạch rõ ràng.",
+        "severity": "normal",
+        "source": "monster"
+      }
+    ],
+    "recommendedTeams": [
+      {
+        "id": "healing",
+        "title": "VHL · AP · LoO · FB",
+        "description": "Đề xuất cộng đồng: phối hợp Heal sau Shockwaves.",
+        "classes": [
+          {
+            "className": "Void Highlord",
+            "icon": "class-void-highlord",
+            "role": "DPS",
+            "notes": "Tập trung DPS, theo dõi máu và chờ hồi phục sau Shockwaves.",
+            "alternatives": []
+          },
+          {
+            "className": "ArchPaladin",
+            "icon": "class-archpaladin",
+            "role": "Hỗ trợ / giảm sát thương",
+            "notes": "Phối hợp LoO, tránh hai người cùng dùng Heal trước đòn Shockwaves.",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Hỗ trợ",
+            "notes": "Giữ buff và luân phiên hồi máu với ArchPaladin.",
+            "alternatives": []
+          },
+          {
+            "className": "Frostval Barbarian",
+            "icon": "class-frostval-barbarian",
+            "role": "HoT / hỗ trợ",
+            "notes": "Duy trì HoT và hỗ trợ đội trong giai đoạn Berserk.",
+            "alternatives": []
+          }
+        ],
+        "strategy": [
+          "Thống nhất người Heal trước và người dự phòng.",
+          "Giữ phối hợp ở giai đoạn dưới 30% HP.",
+          "Các lựa chọn thay thế có trong guide Time Inn liên quan; không hoán đổi nhiều Class mà bỏ phân công."
+        ],
+        "source": "community-guide"
+      }
+    ],
+    "equipmentRoutes": [
+      {
+        "id": "apotheosis",
+        "itemName": "Exalted Apotheosis",
+        "image": "item-apotheosis",
+        "category": "weapon",
+        "note": "Chuỗi Apostate + Thaumaturgus → Exalted Unity → Exalted Penultima → Exalted Apotheosis.",
+        "prerequisites": [
+          "Level 95 để trang bị.",
+          "Các mốc merge dưới đây là ghi chú sở hữu item, không khẳng định merge chỉ được làm một lần.",
+          "Insignia lấy từ cả ba Ultra Time Inn; quest ngày không tính là mốc sở hữu vĩnh viễn."
+        ],
+        "quests": [
+          {
+            "id": "cole",
+            "name": "The Engineer",
+            "requirements": [
+              "Hoàn thành các quest trước của Sir Cole"
+            ],
+            "items": [
+              "The Engineer Defeated ×1"
+            ],
+            "reward": "Mở chuỗi Daily Ultra",
+            "dependencies": [],
+            "repeatability": "once",
+            "source": "cole"
+          },
+          {
+            "id": "ezrajal",
+            "name": "Ultra Ezrajal",
+            "requirements": [
+              "Đã hoàn thành The Engineer"
+            ],
+            "items": [
+              "Ultra Ezrajal Defeated ×1"
+            ],
+            "reward": "Ezrajal Insignia ×1",
+            "dependencies": [
+              "cole"
+            ],
+            "repeatability": "daily",
+            "source": "cole"
+          },
+          {
+            "id": "warden",
+            "name": "Ultra Warden",
+            "requirements": [
+              "Đã hoàn thành Ultra Ezrajal"
+            ],
+            "items": [
+              "Ultra Warden Defeated ×1"
+            ],
+            "reward": "Warden Insignia ×1",
+            "dependencies": [
+              "ezrajal"
+            ],
+            "repeatability": "daily",
+            "source": "cole"
+          },
+          {
+            "id": "engineer",
+            "name": "Ultra Engineer",
+            "requirements": [
+              "Đã hoàn thành Ultra Warden"
+            ],
+            "items": [
+              "Ultra Engineer Defeated ×1"
+            ],
+            "reward": "Engineer Insignia ×1",
+            "dependencies": [
+              "warden"
+            ],
+            "repeatability": "daily",
+            "source": "cole"
+          },
+          {
+            "id": "apostate-alpha",
+            "name": "Exaltia Merge — Apostate Alpha",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Node ×150",
+              "Exalted Relic Piece ×5",
+              "Exalted Artillery Shard ×5",
+              "Exalted Forgemetal ×5"
+            ],
+            "reward": "Apostate Alpha",
+            "dependencies": [
+              "cole"
+            ],
+            "repeatability": "once",
+            "source": "recipe-apostate-alpha"
+          },
+          {
+            "id": "thaum-alpha",
+            "name": "Exaltia Merge — Thaumaturgus Alpha",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Node ×150",
+              "Exalted Relic Piece ×5",
+              "Exalted Artillery Shard ×5",
+              "Exalted Forgemetal ×5"
+            ],
+            "reward": "Thaumaturgus Alpha",
+            "dependencies": [
+              "cole"
+            ],
+            "repeatability": "once",
+            "source": "recipe-thaum-alpha"
+          },
+          {
+            "id": "apostate-omega",
+            "name": "Exaltia Merge — Apostate Omega",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Apostate Alpha ×1",
+              "Ezrajal Insignia ×2",
+              "Exalted Node ×150"
+            ],
+            "reward": "Apostate Omega",
+            "dependencies": [
+              "apostate-alpha"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "thaum-omega",
+            "name": "Exaltia Merge — Thaumaturgus Omega",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Thaumaturgus Alpha ×1",
+              "Ezrajal Insignia ×2",
+              "Exalted Node ×150"
+            ],
+            "reward": "Thaumaturgus Omega",
+            "dependencies": [
+              "thaum-alpha"
+            ],
+            "repeatability": "once",
+            "source": "recipe-thaum-omega"
+          },
+          {
+            "id": "apostate-ultima",
+            "name": "Exaltia Merge — Apostate Ultima",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Apostate Omega ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×6"
+            ],
+            "reward": "Apostate Ultima",
+            "dependencies": [
+              "apostate-omega"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "thaum-ultima",
+            "name": "Exaltia Merge — Thaumaturgus Ultima",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Thaumaturgus Omega ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×6"
+            ],
+            "reward": "Thaumaturgus Ultima",
+            "dependencies": [
+              "thaum-omega"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "unity",
+            "name": "Exaltia Merge — Exalted Unity",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Thaumaturgus Ultima ×1",
+              "Apostate Ultima ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×4",
+              "Engineer Insignia ×4"
+            ],
+            "reward": "Exalted Unity",
+            "dependencies": [
+              "apostate-ultima",
+              "thaum-ultima"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "penultima",
+            "name": "Exaltia Merge — Exalted Penultima",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Unity ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×4",
+              "Engineer Insignia ×4"
+            ],
+            "reward": "Exalted Penultima",
+            "dependencies": [
+              "unity"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "merge",
+            "name": "Exaltia Merge — Exalted Apotheosis",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Penultima ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×4",
+              "Engineer Insignia ×8"
+            ],
+            "reward": "Exalted Apotheosis",
+            "dependencies": [
+              "penultima"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          }
+        ],
+        "rewards": [
+          "Exalted Apotheosis"
+        ],
+        "source": "apotheosis",
+        "canonicalId": "exalted-apotheosis"
+      }
+    ],
+    "sources": [
+      {
+        "id": "monster",
+        "title": "The Reliquary",
+        "url": "https://aqwwiki.wikidot.com/ultra-warden-monster",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "cole",
+        "title": "Sir Cole’s Quests",
+        "url": "https://aqwwiki.wikidot.com/sir-cole-s-quests",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "map",
+        "title": "Ultra Warden — map",
+        "url": "https://aqwwiki.wikidot.com/ultra-warden-location",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "community-guide",
+        "title": "AQW Challenge Boss Guide — Vietnam Collector",
+        "url": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "kind": "community",
+        "verified": "2026-11-05"
+      },
+      {
+        "id": "apotheosis",
+        "title": "Exalted Apotheosis",
+        "url": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "exaltia-merge",
+        "title": "Exaltia Merge — recipes",
+        "url": "https://aqwwiki.wikidot.com/exaltia-merge",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "recipe-apostate-alpha",
+        "title": "Apostate Alpha",
+        "url": "https://aqwwiki.wikidot.com/apostate-alpha",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "recipe-thaum-alpha",
+        "title": "Thaumaturgus Alpha",
+        "url": "https://aqwwiki.wikidot.com/thaumaturgus-alpha",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "recipe-thaum-omega",
+        "title": "Thaumaturgus Omega",
+        "url": "https://aqwwiki.wikidot.com/thaumaturgus-omega",
+        "kind": "community",
+        "verified": "2026-11-06"
+      }
+    ],
+    "lastVerified": "2026-11-06",
+    "relatedGuides": [
+      {
+        "title": "Time Inn và ba Ultra Boss",
+        "url": "/huong-dan/time-inn-ultra-challenge-bosses"
+      }
+    ],
+    "rewardSummary": "Insignia • Exalted Apotheosis"
+  },
+  {
+    "id": "ultra-engineer",
+    "slug": "ultra-engineer",
+    "name": "Ultra Engineer",
+    "subtitle": "The Apex",
+    "description": "Xử lý Drone trước, phối hợp hồi máu để vượt qua Devastator Beam.",
+    "location": "ultraengineer",
+    "joinCommand": "/join ultraengineer",
+    "accessRequirements": [
+      "Level 61 trở lên để vào map."
+    ],
+    "questRequirements": [
+      "Hoàn thành quest 'The Engineer' của Sir Cole để nhận quest Ultra Engineer."
+    ],
+    "images": {
+      "portrait": "ultra-engineer-portrait"
+    },
+    "accent": "#e4ac60",
+    "status": "Hướng dẫn cộng đồng",
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 1000000,
+        "explanation": "Máu tối đa.",
+        "source": "monster"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss.",
+        "source": "monster"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "drones",
+        "name": "Attack Drone / Defense Drone",
+        "description": "Engineer không nhận sát thương khi cả hai Drone còn sống.",
+        "counterStrategy": "Theo guide cộng đồng: tập trung Defense Drone rồi Attack Drone.",
+        "severity": "danger",
+        "source": "monster"
+      },
+      {
+        "id": "beam",
+        "name": "Devastator Beam",
+        "description": "Sau niệm, đòn đánh chia sát thương theo số người đang tham chiến.",
+        "counterStrategy": "Giữ cả đội tham chiến, phối hợp Heal trước và sau Beam.",
+        "severity": "danger",
+        "source": "monster"
+      }
+    ],
+    "recommendedTeams": [
+      {
+        "id": "source-team-1",
+        "title": "VHL/CAv/VDK, LR, PCM/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Void Highlord",
+            "icon": "class-void-highlord",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Chaos Avenger",
+              "Verus DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-1"
+      },
+      {
+        "id": "source-team-2",
+        "title": "DT/EDoT, LR, AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Dragon of Time",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "ArchPaladin",
+            "icon": "class-archpaladin",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-2"
+      },
+      {
+        "id": "source-team-3",
+        "title": "CMP/CCR/TK/CMD/QCM, LR, PCM/AP/SC/IT, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chronomancer Prime",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ChronoCorruptor",
+              "TimeKeeper",
+              "Chrono Commandant",
+              "Quantum Chronomancer"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin",
+              "StoneCrusher",
+              "Infinity Titan"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-3"
+      },
+      {
+        "id": "source-team-4",
+        "title": "QCM, VHL/CAv/DT/EDoT/VDK, LR, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Void Highlord",
+            "icon": "class-void-highlord",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Chaos Avenger",
+              "Dragon of Time",
+              "Verus DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-4"
+      },
+      {
+        "id": "source-team-5",
+        "title": "CMP/CCR/TK/CMD, QCM, LoO, LH/DLH",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chronomancer Prime",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ChronoCorruptor",
+              "TimeKeeper",
+              "Chrono Commandant"
+            ]
+          },
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legendary Hero",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Dark Legendary Hero"
+            ]
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-5"
+      }
+    ],
+    "equipmentRoutes": [
+      {
+        "id": "apotheosis",
+        "itemName": "Exalted Apotheosis",
+        "image": "item-apotheosis",
+        "category": "weapon",
+        "note": "Chuỗi Apostate + Thaumaturgus → Exalted Unity → Exalted Penultima → Exalted Apotheosis.",
+        "prerequisites": [
+          "Level 95 để trang bị.",
+          "Các mốc merge dưới đây là ghi chú sở hữu item, không khẳng định merge chỉ được làm một lần.",
+          "Insignia lấy từ cả ba Ultra Time Inn; quest ngày không tính là mốc sở hữu vĩnh viễn."
+        ],
+        "quests": [
+          {
+            "id": "cole",
+            "name": "The Engineer",
+            "requirements": [
+              "Hoàn thành các quest trước của Sir Cole"
+            ],
+            "items": [
+              "The Engineer Defeated ×1"
+            ],
+            "reward": "Mở chuỗi Daily Ultra",
+            "dependencies": [],
+            "repeatability": "once",
+            "source": "cole"
+          },
+          {
+            "id": "ezrajal",
+            "name": "Ultra Ezrajal",
+            "requirements": [
+              "Đã hoàn thành The Engineer"
+            ],
+            "items": [
+              "Ultra Ezrajal Defeated ×1"
+            ],
+            "reward": "Ezrajal Insignia ×1",
+            "dependencies": [
+              "cole"
+            ],
+            "repeatability": "daily",
+            "source": "cole"
+          },
+          {
+            "id": "warden",
+            "name": "Ultra Warden",
+            "requirements": [
+              "Đã hoàn thành Ultra Ezrajal"
+            ],
+            "items": [
+              "Ultra Warden Defeated ×1"
+            ],
+            "reward": "Warden Insignia ×1",
+            "dependencies": [
+              "ezrajal"
+            ],
+            "repeatability": "daily",
+            "source": "cole"
+          },
+          {
+            "id": "engineer",
+            "name": "Ultra Engineer",
+            "requirements": [
+              "Đã hoàn thành Ultra Warden"
+            ],
+            "items": [
+              "Ultra Engineer Defeated ×1"
+            ],
+            "reward": "Engineer Insignia ×1",
+            "dependencies": [
+              "warden"
+            ],
+            "repeatability": "daily",
+            "source": "cole"
+          },
+          {
+            "id": "apostate-alpha",
+            "name": "Exaltia Merge — Apostate Alpha",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Node ×150",
+              "Exalted Relic Piece ×5",
+              "Exalted Artillery Shard ×5",
+              "Exalted Forgemetal ×5"
+            ],
+            "reward": "Apostate Alpha",
+            "dependencies": [
+              "cole"
+            ],
+            "repeatability": "once",
+            "source": "recipe-apostate-alpha"
+          },
+          {
+            "id": "thaum-alpha",
+            "name": "Exaltia Merge — Thaumaturgus Alpha",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Node ×150",
+              "Exalted Relic Piece ×5",
+              "Exalted Artillery Shard ×5",
+              "Exalted Forgemetal ×5"
+            ],
+            "reward": "Thaumaturgus Alpha",
+            "dependencies": [
+              "cole"
+            ],
+            "repeatability": "once",
+            "source": "recipe-thaum-alpha"
+          },
+          {
+            "id": "apostate-omega",
+            "name": "Exaltia Merge — Apostate Omega",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Apostate Alpha ×1",
+              "Ezrajal Insignia ×2",
+              "Exalted Node ×150"
+            ],
+            "reward": "Apostate Omega",
+            "dependencies": [
+              "apostate-alpha"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "thaum-omega",
+            "name": "Exaltia Merge — Thaumaturgus Omega",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Thaumaturgus Alpha ×1",
+              "Ezrajal Insignia ×2",
+              "Exalted Node ×150"
+            ],
+            "reward": "Thaumaturgus Omega",
+            "dependencies": [
+              "thaum-alpha"
+            ],
+            "repeatability": "once",
+            "source": "recipe-thaum-omega"
+          },
+          {
+            "id": "apostate-ultima",
+            "name": "Exaltia Merge — Apostate Ultima",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Apostate Omega ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×6"
+            ],
+            "reward": "Apostate Ultima",
+            "dependencies": [
+              "apostate-omega"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "thaum-ultima",
+            "name": "Exaltia Merge — Thaumaturgus Ultima",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Thaumaturgus Omega ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×6"
+            ],
+            "reward": "Thaumaturgus Ultima",
+            "dependencies": [
+              "thaum-omega"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "unity",
+            "name": "Exaltia Merge — Exalted Unity",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Thaumaturgus Ultima ×1",
+              "Apostate Ultima ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×4",
+              "Engineer Insignia ×4"
+            ],
+            "reward": "Exalted Unity",
+            "dependencies": [
+              "apostate-ultima",
+              "thaum-ultima"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "penultima",
+            "name": "Exaltia Merge — Exalted Penultima",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Unity ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×4",
+              "Engineer Insignia ×4"
+            ],
+            "reward": "Exalted Penultima",
+            "dependencies": [
+              "unity"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          },
+          {
+            "id": "merge",
+            "name": "Exaltia Merge — Exalted Apotheosis",
+            "requirements": [
+              "Mở Exaltia Merge tại Sir Cole"
+            ],
+            "items": [
+              "Exalted Penultima ×1",
+              "Ezrajal Insignia ×4",
+              "Warden Insignia ×4",
+              "Engineer Insignia ×8"
+            ],
+            "reward": "Exalted Apotheosis",
+            "dependencies": [
+              "penultima"
+            ],
+            "repeatability": "once",
+            "source": "exaltia-merge"
+          }
+        ],
+        "rewards": [
+          "Exalted Apotheosis"
+        ],
+        "source": "apotheosis",
+        "canonicalId": "exalted-apotheosis"
+      }
+    ],
+    "sources": [
+      {
+        "id": "monster",
+        "title": "The Apex",
+        "url": "https://aqwwiki.wikidot.com/ultra-engineer-monster",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "cole",
+        "title": "Sir Cole’s Quests",
+        "url": "https://aqwwiki.wikidot.com/sir-cole-s-quests",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "community-guide",
+        "title": "AQW Challenge Boss Guide — Vietnam Collector",
+        "url": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "kind": "community",
+        "verified": "2026-11-05"
+      },
+      {
+        "id": "apotheosis",
+        "title": "Exalted Apotheosis",
+        "url": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "exaltia-merge",
+        "title": "Exaltia Merge — recipes",
+        "url": "https://aqwwiki.wikidot.com/exaltia-merge",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "recipe-apostate-alpha",
+        "title": "Apostate Alpha",
+        "url": "https://aqwwiki.wikidot.com/apostate-alpha",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "recipe-thaum-alpha",
+        "title": "Thaumaturgus Alpha",
+        "url": "https://aqwwiki.wikidot.com/thaumaturgus-alpha",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "recipe-thaum-omega",
+        "title": "Thaumaturgus Omega",
+        "url": "https://aqwwiki.wikidot.com/thaumaturgus-omega",
+        "kind": "community",
+        "verified": "2026-11-06"
+      }
+    ],
+    "lastVerified": "2026-11-06",
+    "relatedGuides": [],
+    "rewardSummary": "Insignia • Exalted Apotheosis",
+    "sourceContentUrl": "/content/ultra/ultra-engineer.json"
+  },
+  {
+    "id": "ultra-tyndarius",
+    "slug": "ultra-tyndarius",
+    "name": "Ultra Tyndarius",
+    "subtitle": "Ultra Avatar Tyndarius",
+    "description": "Phân công mục tiêu và Taunt cho Tyndarius cùng hai Ultra Fire Orb.",
+    "location": "ultratyndarius",
+    "joinCommand": "/join ultratyndarius",
+    "accessRequirements": [
+      "Level 61 trở lên; hoàn thành Avatar of Fire."
+    ],
+    "images": {
+      "portrait": "ultra-tyndarius-portrait"
+    },
+    "accent": "#e89b65",
+    "status": "Hướng dẫn cộng đồng",
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 6000000,
+        "explanation": "HP của boss chính, không cộng HP các mục tiêu phụ.",
+        "source": "monster"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss trong game; khác điều kiện level vào map.",
+        "source": "monster"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "drawing",
+        "name": "Drawing Power",
+        "description": "Boss tăng sát thương trong thời gian buff.",
+        "counterStrategy": "Giữ phân công bảo vệ và buff phòng thủ.",
+        "severity": "danger",
+        "source": "monster"
+      },
+      {
+        "id": "elusion",
+        "name": "Elusion",
+        "description": "Tăng khả năng né tránh và độ chính xác.",
+        "counterStrategy": "Theo dõi buff; xem phân công từng Class ở đội hình.",
+        "severity": "danger",
+        "source": "monster"
+      }
+    ],
+    "recommendedTeams": [
+      {
+        "id": "source-team-1",
+        "title": "VHL/DT/EDoT/VDK, LR, PCM/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Void Highlord",
+            "icon": "class-void-highlord",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Dragon of Time",
+              "Verus DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-1"
+      },
+      {
+        "id": "source-team-2",
+        "title": "CAv, LR, PCM/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chaos Avenger",
+            "icon": "class-chaos-avenger",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-2"
+      },
+      {
+        "id": "source-team-3",
+        "title": "QCM, LR, PCM/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-3"
+      },
+      {
+        "id": "source-team-4",
+        "title": "CMD, LR, PCM/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chrono Commandant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-4"
+      },
+      {
+        "id": "source-team-5",
+        "title": "DT/EDoT, LR, AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Dragon of Time",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "ArchPaladin",
+            "icon": "class-archpaladin",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-5"
+      },
+      {
+        "id": "source-team-6",
+        "title": "CDK, LR, LoO, LH/DLH",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chrono DragonKnight",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legendary Hero",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Dark Legendary Hero"
+            ]
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-6"
+      }
+    ],
+    "equipmentRoutes": [
+      {
+        "id": "infernal-khopesh",
+        "itemName": "Infernal Flame Khopesh",
+        "category": "weapon",
+        "note": "Tuyến trong guide cộng đồng. Xem phần chi tiết mở rộng cho các cách farm và điều kiện liên quan.",
+        "prerequisites": [
+          "Các dòng mốc sở hữu là ghi chú cá nhân; không khẳng định quest/merge chỉ được làm một lần."
+        ],
+        "quests": [
+          {
+            "id": "daily",
+            "name": "Ultra Avatar Tyndarius",
+            "requirements": [
+              "Nhận quest của Galanoth"
+            ],
+            "items": [
+              "Ultra Avatar Tyndarius Defeated ×1"
+            ],
+            "reward": "Avatar Tyndarius Insignia ×2",
+            "dependencies": [],
+            "repeatability": "daily",
+            "source": "community-guide"
+          },
+          {
+            "id": "merge",
+            "name": "FireAvatar Merge — Infernal Flame Khopesh",
+            "requirements": [
+              "Thu thập Fire Avatar’s Favor từ Avatar’s Rage"
+            ],
+            "items": [
+              "Avatar Tyndarius Insignia ×14",
+              "Fire Avatar's Favor ×40"
+            ],
+            "reward": "Infernal Flame Khopesh",
+            "dependencies": [
+              "daily"
+            ],
+            "repeatability": "once",
+            "source": "item-recipe"
+          }
+        ],
+        "rewards": [
+          "Infernal Flame Khopesh"
+        ],
+        "source": "item-recipe",
+        "canonicalId": "infernal-flame-khopesh",
+        "image": "equipment-infernal-flame-khopesh"
+      }
+    ],
+    "sources": [
+      {
+        "id": "monster",
+        "title": "Ultra Avatar Tyndarius",
+        "url": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-monster",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "map",
+        "title": "Điều kiện map",
+        "url": "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-location",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "community-guide",
+        "title": "AQW Challenge Boss Guide — Vietnam Collector",
+        "url": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "kind": "community",
+        "verified": "2026-11-05"
+      },
+      {
+        "id": "item-recipe",
+        "title": "Infernal Flame Khopesh",
+        "url": "https://aqwwiki.wikidot.com/infernal-flame-khopesh",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "reviewed-quest-access",
+        "title": "Điều kiện nhận Quest",
+        "url": "https://aqwwiki.wikidot.com/galanoth-s-quests",
+        "kind": "community",
+        "verified": "2026-11-08"
+      }
+    ],
+    "lastVerified": "2026-11-06",
+    "relatedGuides": [],
+    "rewardSummary": "Infernal Flame Khopesh",
+    "sourceContentUrl": "/content/ultra/ultra-tyndarius.json",
+    "questAcceptanceEvidence": {
+      "sourceUrl": "https://aqwwiki.wikidot.com/galanoth-s-quests",
+      "sourceType": "wiki",
+      "confidenceStatus": "verified",
+      "requirements": [
+        "Hoàn thành Avatar of Fire để nhận Ultra Avatar Tyndarius từ Galanoth."
+      ],
+      "notes": "Ultra encounter quest section; once daily. Separate from Fire Avatar's Avatar's Rage.",
+      "verifiedAt": "2026-11-08"
+    },
+    "questRequirements": [
+      "Hoàn thành Avatar of Fire để nhận Ultra Avatar Tyndarius từ Galanoth."
+    ]
+  },
+  {
+    "id": "ultra-dage",
+    "slug": "ultra-dage",
+    "name": "Ultra Dage",
+    "subtitle": "Dage the Dark Lord",
+    "description": "Giữ nhịp Taunt, quan sát vùng bảo hộ và kiểm soát hồi máu. Một sai lầm có thể tiếp sức cho cả Undead Legion.",
+    "location": "ultradage",
+    "joinCommand": "/join ultradage",
+    "accessRequirements": [
+      "Level 80 trở lên; hoàn thành 'Fail to the King' để vào map."
+    ],
+    "questRequirements": [
+      "Quest tuần và một số quest empower yêu cầu hoàn thành 'Power of the Undead Legion'."
+    ],
+    "images": {
+      "portrait": "ultra-dage-portrait",
+      "map": "ultra-dage-map"
+    },
+    "accent": "#72c9da",
+    "status": "Đã biên soạn",
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 6500000,
+        "explanation": "Máu tối đa.",
+        "source": "monster"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level của boss, khác yêu cầu level vào map.",
+        "source": "monster"
+      },
+      {
+        "key": "auto",
+        "label": "Auto Attack",
+        "value": "1.495–1.827",
+        "explanation": "Sát thương cơ bản trước modifier của trận.",
+        "source": "monster"
+      },
+      {
+        "key": "shield",
+        "label": "Ngưỡng Boss Shield",
+        "value": 150000,
+        "explanation": "Phần vượt ngưỡng được giảm; đây không phải giới hạn sát thương cứng.",
+        "source": "monster"
+      },
+      {
+        "key": "soul",
+        "label": "Soul Eater",
+        "value": 500000,
+        "explanation": "Lượng HP hồi khi hạ một người chơi.",
+        "source": "monster"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "decay",
+        "name": "Noxious Decay",
+        "description": "Decaying Strike đảo chiều hồi máu trực tiếp và HoT.",
+        "counterStrategy": "Không spam Heal. Đọc aura trước khi hồi máu.",
+        "severity": "danger",
+        "source": "monster"
+      },
+      {
+        "id": "zone",
+        "name": "Brute Zone Strike",
+        "description": "Đòn đánh sau thời gian niệm Summon Brute Undead.",
+        "counterStrategy": "Di chuyển vào vùng bảo hộ sáng.",
+        "severity": "danger",
+        "source": "monster"
+      },
+      {
+        "id": "legion",
+        "name": "Summon Legion Mages",
+        "description": "Boss nhận HoT và tăng sức mạnh trong chu kỳ này.",
+        "counterStrategy": "Người giữ Decay phải chặn hồi máu.",
+        "severity": "normal",
+        "source": "monster"
+      },
+      {
+        "id": "soul",
+        "name": "Soul Eater",
+        "description": "Mỗi người chết giúp Dage hồi máu.",
+        "counterStrategy": "Ưu tiên sống sót; thống nhất Taunter trước trận.",
+        "severity": "danger",
+        "source": "monster"
+      }
+    ],
+    "recommendedTeams": [
+      {
+        "id": "starter",
+        "title": "CAv · LDK · AP · LoO",
+        "description": "Đề xuất cộng đồng: phân công Taunt và Decay riêng.",
+        "classes": [
+          {
+            "className": "Chaos Avenger",
+            "icon": "class-chaos-avenger",
+            "role": "DPS / Taunter",
+            "notes": "Giữ Focus bằng skill 3 và Scroll of Enrage; tạm ngưng trong Summon Legion Mages, tiếp tục sau nuke.",
+            "enhancement": "Dauntless hoặc Ravenous; Lucky class, Anima, Vainglory",
+            "alternatives": []
+          },
+          {
+            "className": "Legion DoomKnight",
+            "icon": "class-legion-doomknight",
+            "role": "Decay / DPS",
+            "notes": "Duy trì skill 5 để giữ Decay lên Dage.",
+            "enhancement": "Dauntless hoặc Arcana’s Concerto/Smite; Lucky class/helm, Lament",
+            "alternatives": []
+          },
+          {
+            "className": "ArchPaladin",
+            "icon": "class-archpaladin",
+            "role": "Hỗ trợ / giảm sát thương",
+            "notes": "Không spam Heal dưới Decay. Giữ Auto Attack hoạt động để kích Health Vamp.",
+            "enhancement": "Lucky Health Vamp; Lucky class, Forge helm, Penitence",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Hỗ trợ",
+            "notes": "Giữ buff; chỉ dùng lại Heal khi aura Decay đã hết.",
+            "enhancement": "Lucky Health Vamp; Lucky class, Heartty, Absolution",
+            "alternatives": []
+          }
+        ],
+        "strategy": [
+          "Đây là đội hình đề xuất, không bắt buộc.",
+          "Kiểm tra aura Decay và phạm vi Auto Attack trước khi bắt đầu.",
+          "Health Vamp là chuẩn bị của guide; các phương án Forge có yêu cầu riêng."
+        ],
+        "source": "community-guide"
+      },
+      {
+        "id": "double-cav",
+        "title": "2 CAv · AP · LoO",
+        "description": "Đề xuất cộng đồng: hai Chaos Avenger chia Taunt và Decay.",
+        "classes": [
+          {
+            "className": "Chaos Avenger",
+            "icon": "class-chaos-avenger",
+            "role": "DPS / Taunter",
+            "notes": "Giữ Focus bằng skill 3 và Scroll of Enrage; tạm ngưng trong Summon Legion Mages, tiếp tục sau nuke.",
+            "enhancement": "Dauntless hoặc Ravenous; Lucky class, Anima, Vainglory",
+            "alternatives": []
+          },
+          {
+            "className": "Chaos Avenger",
+            "icon": "class-chaos-avenger",
+            "role": "Decay / DPS",
+            "notes": "Dùng Scroll of Decay khi Summon Legion Mages bắt đầu. Người CAv còn lại giữ nhiệm vụ Taunt.",
+            "enhancement": "Dauntless hoặc Ravenous; Lucky class, Anima, Vainglory",
+            "alternatives": []
+          },
+          {
+            "className": "ArchPaladin",
+            "icon": "class-archpaladin",
+            "role": "Hỗ trợ / giảm sát thương",
+            "notes": "Không spam Heal dưới Decay. Giữ Auto Attack hoạt động để kích Health Vamp.",
+            "enhancement": "Lucky Health Vamp; Lucky class, Forge helm, Penitence",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Hỗ trợ",
+            "notes": "Giữ buff; chỉ dùng lại Heal khi aura Decay đã hết.",
+            "enhancement": "Lucky Health Vamp; Lucky class, Heartty, Absolution",
+            "alternatives": []
+          }
+        ],
+        "strategy": [
+          "Phân công hai CAv trước trận: một Taunter, một người giữ Decay.",
+          "Scroll of Decay thuộc phân công người thứ hai; tránh để hai người cùng bỏ Taunt.",
+          "Đây là một cấu hình có trong guide cộng đồng, không phải yêu cầu bắt buộc."
+        ],
+        "source": "community-guide"
+      }
+    ],
+    "equipmentRoutes": [
+      {
+        "id": "nbou",
+        "itemName": "Necrotic Blade of the Underworld",
+        "image": "item-nbou",
+        "category": "weapon",
+        "note": "Tuyến Empowered của Calamitus",
+        "prerequisites": [
+          "Hoàn thành Power of the Undead Legion",
+          "Level 95; có Underworld Blade of DOOM và Necrotic Sword of Doom trong túi"
+        ],
+        "quests": [
+          {
+            "id": "weekly",
+            "name": "Dage, Lord of the Undead Legion",
+            "requirements": [
+              "Hoàn thành Power of the Undead Legion"
+            ],
+            "items": [
+              "Dage the Dark Lord Defeated ×1"
+            ],
+            "reward": "Dage the Evil Insignia ×5",
+            "dependencies": [],
+            "repeatability": "weekly",
+            "source": "quests"
+          },
+          {
+            "id": "empower",
+            "name": "Necrotic Sword of the Underworld",
+            "requirements": [
+              "Level 95; có Underworld Blade of DOOM và Necrotic Sword of Doom trong túi"
+            ],
+            "items": [
+              "Legion Token ×25.000",
+              "Beast Soul ×25",
+              "Soul Sand ×7",
+              "Dage the Evil Insignia ×5"
+            ],
+            "reward": "Necrotic Blade of the Underworld",
+            "dependencies": [
+              "weekly"
+            ],
+            "repeatability": "once",
+            "source": "quests"
+          }
+        ],
+        "rewards": [
+          "Necrotic Blade of the Underworld"
+        ],
+        "source": "quests",
+        "canonicalId": "necrotic-blade-of-the-underworld"
+      },
+      {
+        "id": "euc",
+        "itemName": "Empowered Undead Champion",
+        "image": "item-euc",
+        "category": "armor",
+        "note": "Tuyến Empowered của Calamitus",
+        "prerequisites": [
+          "Hoàn thành Power of the Undead Legion",
+          "Level 80"
+        ],
+        "quests": [
+          {
+            "id": "weekly",
+            "name": "Dage, Lord of the Undead Legion",
+            "requirements": [
+              "Hoàn thành Power of the Undead Legion"
+            ],
+            "items": [
+              "Dage the Dark Lord Defeated ×1"
+            ],
+            "reward": "Dage the Evil Insignia ×5",
+            "dependencies": [],
+            "repeatability": "weekly",
+            "source": "quests"
+          },
+          {
+            "id": "empower",
+            "name": "Empowered Undead Champion",
+            "requirements": [
+              "Level 80"
+            ],
+            "items": [
+              "Undead Champion ×1",
+              "Legion Token ×10.000",
+              "Blinding Aura ×1",
+              "Dage the Evil Insignia ×10"
+            ],
+            "reward": "Empowered Undead Champion",
+            "dependencies": [
+              "weekly"
+            ],
+            "repeatability": "once",
+            "source": "quests"
+          }
+        ],
+        "rewards": [
+          "Empowered Undead Champion"
+        ],
+        "source": "quests",
+        "canonicalId": "empowered-undead-champion"
+      }
+    ],
+    "sources": [
+      {
+        "id": "monster",
+        "title": "Dage the Dark Lord",
+        "url": "https://aqwwiki.wikidot.com/dage-the-dark-lord",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "map",
+        "title": "Điều kiện map",
+        "url": "https://aqwwiki.wikidot.com/ultra-dage",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "quests",
+        "title": "Calamitus’ Quests",
+        "url": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "community-guide",
+        "title": "AQW Challenge Boss Guide — Vietnam Collector",
+        "url": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "kind": "community",
+        "verified": "2026-11-05"
+      }
+    ],
+    "lastVerified": "2026-11-06",
+    "relatedGuides": [
+      {
+        "title": "Guide Dage chi tiết",
+        "url": "/huong-dan/dage-the-dark-lord"
+      },
+      {
+        "title": "Hệ thống Enhancement",
+        "url": "/he-thong/enhancement"
+      }
+    ],
+    "rewardSummary": "Dage the Evil Insignia • Trang bị Empowered"
+  },
+  {
+    "id": "ultra-nulgath",
+    "slug": "ultra-nulgath",
+    "name": "Ultra Nulgath",
+    "subtitle": "Nulgath the Archfiend",
+    "description": "Phối hợp giữa Nulgath và Overfiend Blade, giữ nhịp Taunt để tránh chồng debuff.",
+    "location": "ultranulgath",
+    "joinCommand": "/join ultranulgath",
+    "accessRequirements": [
+      "Level 80 trở lên."
+    ],
+    "images": {
+      "portrait": "ultra-nulgath-portrait"
+    },
+    "accent": "#ef8667",
+    "status": "Hướng dẫn cộng đồng",
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 10000000,
+        "explanation": "HP của boss chính, không cộng HP các mục tiêu phụ.",
+        "source": "monster"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss trong game; khác điều kiện level vào map.",
+        "source": "monster"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "contracts",
+        "name": "Contracts of the Abyss",
+        "description": "Các tầng Contract làm suy yếu đội.",
+        "counterStrategy": "Luân phiên Taunt theo sơ đồ trong đội hình, tránh chồng debuff lên cùng người.",
+        "severity": "danger",
+        "source": "monster"
+      },
+      {
+        "id": "essence",
+        "name": "Essence Gathered",
+        "description": "Hạ Overfiend Blade làm Nulgath tăng sát thương, có thể cộng dồn.",
+        "counterStrategy": "Phối hợp thời điểm hạ Blade thay vì đánh tùy ý.",
+        "severity": "danger",
+        "source": "monster"
+      }
+    ],
+    "recommendedTeams": [
+      {
+        "id": "source-team-1",
+        "title": "VHL/CAv/VDK, LR, PCM/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Void Highlord",
+            "icon": "class-void-highlord",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Chaos Avenger",
+              "Verus DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-1"
+      },
+      {
+        "id": "source-team-2",
+        "title": "DT/EDoT/Shaman, LR, SC/IT, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Dragon of Time",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Shaman"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "StoneCrusher",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Infinity Titan"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-2"
+      },
+      {
+        "id": "source-team-3",
+        "title": "2 DT/EDoT, LR, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Dragon of Time",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Dragon of Time",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-3"
+      },
+      {
+        "id": "source-team-4",
+        "title": "IK/QCM, DT/EDoT, LR, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Infinity Knight",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Quantum Chronomancer"
+            ]
+          },
+          {
+            "className": "Dragon of Time",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-4"
+      },
+      {
+        "id": "source-team-5",
+        "title": "IK/QCM, LR, PCM/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Infinity Knight",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Quantum Chronomancer"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-5"
+      },
+      {
+        "id": "source-team-6",
+        "title": "CDK, QCM, LR, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chrono DragonKnight",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-6"
+      }
+    ],
+    "equipmentRoutes": [
+      {
+        "id": "sin-abyss",
+        "itemName": "Sin of the Abyss",
+        "category": "weapon",
+        "note": "Tuyến trong guide cộng đồng. Xem phần chi tiết mở rộng cho các cách farm và điều kiện liên quan.",
+        "prerequisites": [
+          "Level 95 cho bước merge cuối",
+          "Các dòng mốc sở hữu là ghi chú cá nhân; không khẳng định quest/merge chỉ được làm một lần."
+        ],
+        "quests": [
+          {
+            "id": "weekly",
+            "name": "Nulgath, the Archfiend",
+            "requirements": [
+              "Nhận quest weekly"
+            ],
+            "items": [
+              "Nulgath the Archfiend Defeated ×1"
+            ],
+            "reward": "Nulgath Insignia ×5",
+            "dependencies": [],
+            "repeatability": "weekly",
+            "source": "community-guide"
+          },
+          {
+            "id": "revontheus",
+            "name": "Nulgath’s Merge — Sin of Revontheus",
+            "requirements": [
+              "Mở Nulgath’s Merge Shop"
+            ],
+            "items": [
+              "Nulgath Insignia ×5"
+            ],
+            "reward": "Sin of Revontheus",
+            "dependencies": [
+              "weekly"
+            ],
+            "repeatability": "once",
+            "source": "revontheus-recipe"
+          },
+          {
+            "id": "merge",
+            "name": "Nulgath’s Merge — Sin of the Abyss",
+            "requirements": [
+              "Level 95"
+            ],
+            "items": [
+              "Sin of Revontheus ×1",
+              "Tainted Gem ×300",
+              "Dark Crystal Shard ×200",
+              "Diamond of Nulgath ×500",
+              "Totem of Nulgath ×50",
+              "Gem of Nulgath ×150",
+              "Blood Gem of the Archfiend ×50",
+              "Nulgath Insignia ×20"
+            ],
+            "reward": "Sin of the Abyss",
+            "dependencies": [
+              "revontheus"
+            ],
+            "repeatability": "once",
+            "source": "item-recipe"
+          }
+        ],
+        "rewards": [
+          "Sin of the Abyss"
+        ],
+        "source": "item-recipe",
+        "canonicalId": "sin-of-the-abyss",
+        "image": "equipment-sin-of-the-abyss"
+      }
+    ],
+    "sources": [
+      {
+        "id": "monster",
+        "title": "Nulgath the Archfiend",
+        "url": "https://aqwwiki.wikidot.com/nulgath-the-archfiend",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "map",
+        "title": "Điều kiện map",
+        "url": "https://aqwwiki.wikidot.com/ultra-nulgath",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "community-guide",
+        "title": "AQW Challenge Boss Guide — Vietnam Collector",
+        "url": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "kind": "community",
+        "verified": "2026-11-05"
+      },
+      {
+        "id": "item-recipe",
+        "title": "Sin of the Abyss",
+        "url": "https://aqwwiki.wikidot.com/sin-of-the-abyss",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "revontheus-recipe",
+        "title": "Sin of Revontheus (Sword)",
+        "url": "https://aqwwiki.wikidot.com/sin-of-revontheus-sword",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "reviewed-quest-access",
+        "title": "Điều kiện nhận Quest",
+        "url": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "kind": "community",
+        "verified": "2026-11-08"
+      }
+    ],
+    "lastVerified": "2026-11-06",
+    "relatedGuides": [],
+    "rewardSummary": "Sin of the Abyss",
+    "sourceContentUrl": "/content/ultra/ultra-nulgath.json",
+    "questAcceptanceEvidence": {
+      "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+      "sourceType": "wiki",
+      "confidenceStatus": "verified",
+      "requirements": [
+        "Level 80 để nhận Nulgath, the Archfiend."
+      ],
+      "notes": "Weekly challenge quest, not Empowered item quests.",
+      "verifiedAt": "2026-11-08"
+    },
+    "questRequirements": [
+      "Level 80 để nhận Nulgath, the Archfiend."
+    ]
+  },
+  {
+    "id": "ultra-drago",
+    "slug": "ultra-drago",
+    "name": "Ultra Drago",
+    "subtitle": "King Drago",
+    "description": "Hạ hai hộ vệ và kết thúc trận trước chu kỳ phán quyết của King Drago.",
+    "location": "ultradrago",
+    "joinCommand": "/join ultradrago",
+    "accessRequirements": [
+      "Level 80 trở lên; hoàn thành Mahapadma."
+    ],
+    "images": {
+      "portrait": "ultra-drago-portrait"
+    },
+    "accent": "#da8c9d",
+    "status": "Hướng dẫn cộng đồng",
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 1000,
+        "explanation": "HP của boss chính, không cộng HP các mục tiêu phụ.",
+        "source": "monster"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 1,
+        "explanation": "Level boss trong game; khác điều kiện level vào map.",
+        "source": "monster"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "guards",
+        "name": "Bowmaster Algie / Executioner Dene",
+        "description": "King Drago không nhận sát thương khi hai hộ vệ chưa bị hạ.",
+        "counterStrategy": "Thống nhất mục tiêu và nhịp hạ hộ vệ theo guide.",
+        "severity": "danger",
+        "source": "monster"
+      },
+      {
+        "id": "judgement",
+        "name": "Judgement Day",
+        "description": "Drago bắt đầu niệm sau 160 giây tham chiến; Judged đến sau 20 giây.",
+        "counterStrategy": "Kết thúc trận trước phán quyết; Taunt không chặn được đòn này.",
+        "severity": "danger",
+        "source": "monster"
+      }
+    ],
+    "recommendedTeams": [
+      {
+        "id": "source-team-1",
+        "title": "CAv, LR, PCM/LP/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chaos Avenger",
+            "icon": "class-chaos-avenger",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Legion Paladin",
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-1"
+      },
+      {
+        "id": "source-team-2",
+        "title": "CAv, CAv/VDK, LR, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chaos Avenger",
+            "icon": "class-chaos-avenger",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Chaos Avenger",
+            "icon": "class-chaos-avenger",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Verus DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-2"
+      },
+      {
+        "id": "source-team-3",
+        "title": "QCM, LR, PCM/LP/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Legion Paladin",
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-3"
+      },
+      {
+        "id": "source-team-4",
+        "title": "DT/EDoT, LR, PCM/LP/AP, LoO",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Dragon of Time",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Legion Paladin",
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-4"
+      }
+    ],
+    "equipmentRoutes": [
+      {
+        "id": "royal-guard",
+        "itemName": "Drago's Royal Guard",
+        "category": "armor",
+        "note": "Tuyến trong guide cộng đồng. Xem phần chi tiết mở rộng cho các cách farm và điều kiện liên quan.",
+        "prerequisites": [
+          "Các dòng mốc sở hữu là ghi chú cá nhân; không khẳng định quest/merge chỉ được làm một lần."
+        ],
+        "quests": [
+          {
+            "id": "weekly",
+            "name": "Drago, Tyrant of Astravia",
+            "requirements": [
+              "Nhận quest weekly của Re"
+            ],
+            "items": [
+              "Drago Dethroned ×1"
+            ],
+            "reward": "King Drago Insignia ×5",
+            "dependencies": [],
+            "repeatability": "weekly",
+            "source": "community-guide"
+          },
+          {
+            "id": "merge",
+            "name": "Ultra Drago Merge — Drago's Royal Guard",
+            "requirements": [
+              "Mở Ultra Drago Merge"
+            ],
+            "items": [
+              "King Drago Insignia ×5"
+            ],
+            "reward": "Drago's Royal Guard",
+            "dependencies": [
+              "weekly"
+            ],
+            "repeatability": "once",
+            "source": "item-recipe"
+          }
+        ],
+        "rewards": [
+          "Drago's Royal Guard"
+        ],
+        "source": "item-recipe",
+        "canonicalId": "drago-s-royal-guard",
+        "image": "equipment-drago-s-royal-guard"
+      }
+    ],
+    "sources": [
+      {
+        "id": "monster",
+        "title": "King Drago",
+        "url": "https://aqwwiki.wikidot.com/king-drago-monster",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "map",
+        "title": "Điều kiện map",
+        "url": "https://aqwwiki.wikidot.com/ultra-drago",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "community-guide",
+        "title": "AQW Challenge Boss Guide — Vietnam Collector",
+        "url": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "kind": "community",
+        "verified": "2026-11-05"
+      },
+      {
+        "id": "item-recipe",
+        "title": "Drago's Royal Guard",
+        "url": "https://aqwwiki.wikidot.com/drago-s-royal-guard",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "reviewed-quest-access",
+        "title": "Điều kiện nhận Quest",
+        "url": "https://aqwwiki.wikidot.com/re-s-quests",
+        "kind": "community",
+        "verified": "2026-11-08"
+      }
+    ],
+    "lastVerified": "2026-11-06",
+    "relatedGuides": [],
+    "rewardSummary": "Drago’s Royal Guard",
+    "sourceContentUrl": "/content/ultra/ultra-drago.json",
+    "questAcceptanceEvidence": {
+      "sourceUrl": "https://aqwwiki.wikidot.com/re-s-quests",
+      "sourceType": "wiki",
+      "confidenceStatus": "verified",
+      "requirements": [
+        "Hoàn thành Mahapadma để nhận Drago, Tyrant of Astravia từ Re."
+      ],
+      "notes": "Weekly quest; equipment merge has independent material requirements.",
+      "verifiedAt": "2026-11-08"
+    },
+    "questRequirements": [
+      "Hoàn thành Mahapadma để nhận Drago, Tyrant of Astravia từ Re."
+    ]
+  },
+  {
+    "id": "ultra-speaker",
+    "slug": "ultra-speaker",
+    "name": "Ultra Speaker",
+    "subtitle": "The First Speaker",
+    "description": "Một trận đấu đòi hỏi phân công Taunt và di chuyển chính xác qua từng thông báo.",
+    "location": "ultraspeaker",
+    "joinCommand": "/join ultraspeaker",
+    "accessRequirements": [
+      "Level 90 trở lên; hoàn thành Your Hero."
+    ],
+    "images": {
+      "portrait": "ultra-speaker-portrait"
+    },
+    "accent": "#8cd1a2",
+    "status": "Hướng dẫn cộng đồng",
+    "stats": [
+      {
+        "key": "hp",
+        "label": "HP",
+        "value": 10000000,
+        "explanation": "HP của boss chính, không cộng HP các mục tiêu phụ.",
+        "source": "monster"
+      },
+      {
+        "key": "level",
+        "label": "Level",
+        "value": 100,
+        "explanation": "Level boss trong game; khác điều kiện level vào map.",
+        "source": "monster"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "burn",
+        "name": "Magia Burn",
+        "description": "Hiệu ứng làm tăng sát thương phép nhận vào và có thể cộng dồn.",
+        "counterStrategy": "Đọc lịch Taunt của đội hình, không tự đổi vị trí giữa chu kỳ.",
+        "severity": "danger",
+        "source": "monster"
+      },
+      {
+        "id": "stasis",
+        "name": "Stasis Field",
+        "description": "Sau Energy Draw, mục tiêu có thể bị stun.",
+        "counterStrategy": "Theo phân công Taunt và vị trí đã thống nhất; đọc hướng dẫn đầy đủ bên dưới.",
+        "severity": "danger",
+        "source": "monster"
+      }
+    ],
+    "recommendedTeams": [
+      {
+        "id": "source-team-1",
+        "title": "QCM/VHL/VDK/LDK, LR, PCM/LP/AP, LoO (4 Taunt)",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Void Highlord",
+              "Verus DoomKnight",
+              "Legion DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Legion Paladin",
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-1"
+      },
+      {
+        "id": "source-team-2",
+        "title": "CAv, LR, AP, LoO (3 Taunt)",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chaos Avenger",
+            "icon": "class-chaos-avenger",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "ArchPaladin",
+            "icon": "class-archpaladin",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-2"
+      },
+      {
+        "id": "source-team-3",
+        "title": "VHL, QCM/VDK, LR, LoO (3 Taunt)",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Void Highlord",
+            "icon": "class-void-highlord",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Verus DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-3"
+      },
+      {
+        "id": "source-team-4",
+        "title": "CAv, LR, PCM/AP, LoO (2 Taunt)",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Chaos Avenger",
+            "icon": "class-chaos-avenger",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Paladin Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "ArchPaladin"
+            ]
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-4"
+      },
+      {
+        "id": "source-team-5",
+        "title": "QCM/VHL/VDK, LP, LR, LoO (2 Taunt)",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Void Highlord",
+              "Verus DoomKnight"
+            ]
+          },
+          {
+            "className": "Legion Paladin",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Legion Revenant",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-5"
+      },
+      {
+        "id": "source-team-6",
+        "title": "GT, QCM/Arach, VDK, LoO (3 Taunt)",
+        "description": "Đề xuất cộng đồng; các tên ngăn bằng / là lựa chọn thay thế trong cùng vị trí.",
+        "classes": [
+          {
+            "className": "Great Thief",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Quantum Chronomancer",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": [
+              "Arachnomancer"
+            ]
+          },
+          {
+            "className": "Verus DoomKnight",
+            "icon": "",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          },
+          {
+            "className": "Lord of Order",
+            "icon": "class-lord-of-order",
+            "role": "Phân công trong hướng dẫn",
+            "notes": "",
+            "alternatives": []
+          }
+        ],
+        "strategy": [],
+        "source": "community-guide",
+        "guideKey": "source-team-6"
+      }
+    ],
+    "equipmentRoutes": [
+      {
+        "id": "shadowflame-blade",
+        "itemName": "Malgor's ShadowFlame Blade",
+        "category": "weapon",
+        "note": "Tuyến trong guide cộng đồng. Xem phần chi tiết mở rộng cho các cách farm và điều kiện liên quan.",
+        "prerequisites": [
+          "Các dòng mốc sở hữu là ghi chú cá nhân; không khẳng định quest/merge chỉ được làm một lần."
+        ],
+        "quests": [
+          {
+            "id": "weekly",
+            "name": "Malgor, the First Speaker",
+            "requirements": [
+              "Nhận quest weekly của Vohu"
+            ],
+            "items": [
+              "The First Speaker Defeated ×1"
+            ],
+            "reward": "Malgor Insignia ×5",
+            "dependencies": [],
+            "repeatability": "weekly",
+            "source": "community-guide"
+          },
+          {
+            "id": "merge",
+            "name": "Ultra Speaker Merge — Malgor's ShadowFlame Blade",
+            "requirements": [
+              "Thu thập Elemental Core từ Once Upon Another Time; xem chi tiết mở rộng"
+            ],
+            "items": [
+              "Malgor Insignia ×20",
+              "ShadowFlame Dragon Blade ×1",
+              "Elemental Core ×20"
+            ],
+            "reward": "Malgor's ShadowFlame Blade",
+            "dependencies": [
+              "weekly"
+            ],
+            "repeatability": "once",
+            "source": "item-recipe"
+          }
+        ],
+        "rewards": [
+          "Malgor's ShadowFlame Blade"
+        ],
+        "source": "item-recipe",
+        "canonicalId": "malgor-s-shadowflame-blade",
+        "image": "equipment-malgor-s-shadowflame-blade"
+      }
+    ],
+    "sources": [
+      {
+        "id": "monster",
+        "title": "The First Speaker",
+        "url": "https://aqwwiki.wikidot.com/the-first-speaker",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "map",
+        "title": "Điều kiện map",
+        "url": "https://aqwwiki.wikidot.com/ultra-speaker",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "community-guide",
+        "title": "AQW Challenge Boss Guide — Vietnam Collector",
+        "url": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+        "kind": "community",
+        "verified": "2026-11-05"
+      },
+      {
+        "id": "item-recipe",
+        "title": "Malgor's ShadowFlame Blade",
+        "url": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade",
+        "kind": "community",
+        "verified": "2026-11-06"
+      },
+      {
+        "id": "reviewed-quest-access",
+        "title": "Điều kiện nhận Quest",
+        "url": "https://aqwwiki.wikidot.com/vohu-s-quests",
+        "kind": "community",
+        "verified": "2026-11-08"
+      }
+    ],
+    "lastVerified": "2026-11-06",
+    "relatedGuides": [],
+    "rewardSummary": "Malgor's ShadowFlame Blade",
+    "sourceContentUrl": "/content/ultra/ultra-speaker.json",
+    "questAcceptanceEvidence": {
+      "sourceUrl": "https://aqwwiki.wikidot.com/vohu-s-quests",
+      "sourceType": "wiki",
+      "confidenceStatus": "verified",
+      "requirements": [
+        "Level 90 để nhận Malgor, The First Speaker từ Vohu."
+      ],
+      "notes": "Not the level 100 Goddess of War quest requirements; map access separately requires Your Hero.",
+      "verifiedAt": "2026-11-08"
+    },
+    "questRequirements": [
+      "Level 90 để nhận Malgor, The First Speaker từ Vohu."
+    ]
+  }
+]

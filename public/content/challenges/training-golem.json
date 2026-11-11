@@ -1,0 +1,1416 @@
+{
+  "challengeContent": true,
+  "id": "training-golem",
+  "name": "Training Golem",
+  "type": "other_challenge",
+  "map": "chchallenge",
+  "levelRequirement": 60,
+  "partySize": 10,
+  "description": "Thử thách Training Golem; mỗi trận có cơ chế và điều kiện riêng.",
+  "bodyUrl": "/content/challenges/training-golem.json",
+  "href": "/other-challenges/training-golem",
+  "image": "monster-training-golem",
+  "stageCount": 0,
+  "sources": [
+    "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit"
+  ],
+  "unlockRequirements": [
+    "Cần đạt ít nhất lvl 60 để vượt qua được Challenge Boss."
+  ],
+  "rewardSummary": "",
+  "sourceSlug": "training-golem",
+  "stages": [
+    {
+      "id": "training-golem-stage-1",
+      "name": "Training Golem",
+      "stageType": "combat",
+      "encounter": {
+        "encounterTitle": "Training Golem",
+        "locationName": "",
+        "monsters": [
+          {
+            "id": "training-golem-0",
+            "canonicalName": "Training Golem",
+            "role": "Monster",
+            "level": 255,
+            "maxHp": 600000,
+            "count": 1,
+            "source": "https://aqwwiki.wikidot.com/training-golem"
+          }
+        ],
+        "activeSkills": [
+          {
+            "id": "training-golem-0-auto-attack-0",
+            "monsterId": "training-golem-0",
+            "name": "Auto Attack",
+            "type": "True Damage",
+            "damage": "603-737",
+            "damageType": "True Damage",
+            "cooldown": "2.25 seconds",
+            "targets": "10",
+            "activation": "",
+            "playerEffects": [
+              "Never Crits",
+              "Bỏ qua Focus.",
+              "Heals Training Golem a small amount for every target hit."
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/training-golem"
+          },
+          {
+            "id": "training-golem-0-curse-of-blades-1",
+            "monsterId": "training-golem-0",
+            "name": "Curse of Blades",
+            "type": "Physical",
+            "damage": "603 - 737",
+            "damageType": "Physical",
+            "cooldown": "6 seconds",
+            "targets": "4",
+            "activation": "",
+            "playerEffects": [
+              "Không thể chí mạng.",
+              "Bỏ qua Focus.",
+              "Áp Curse of Blades to all targets hit, giảm Critical Damage 700% và inversing the player's critical damage into heals for the monster và turning the player's critical heals into damage against the player trong 7 giây"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/training-golem"
+          },
+          {
+            "id": "training-golem-0-brutal-strike-2",
+            "monsterId": "training-golem-0",
+            "name": "Brutal Strike",
+            "type": "Physical",
+            "damage": "115% of Target Health",
+            "damageType": "Physical",
+            "cooldown": "30 seconds",
+            "targets": "10",
+            "activation": "You survived but feel… weaker.",
+            "playerEffects": [
+              "Không thể chí mạng.",
+              "Bỏ qua Focus.",
+              "Áp Maladaptive to the target, tăng tiêu hao Mana 10% trong 45 giây, cộng dồn to 5"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/training-golem"
+          },
+          {
+            "id": "training-golem-0-evasion-3",
+            "monsterId": "training-golem-0",
+            "name": "Evasion",
+            "type": "Magical",
+            "damage": "201 - 246",
+            "damageType": "Magical",
+            "cooldown": "45 seconds",
+            "activation": "Training Golem grows elusive, becoming harder to hit and more accurate!",
+            "playerEffects": [
+              "Không thể chí mạng.",
+              "Bỏ qua Focus.",
+              "Áp Elusion lên bản thân, tăng dodge 50% và tỷ lệ trúng 200% trong 20 giây"
+            ],
+            "bossEffects": [],
+            "source": "https://aqwwiki.wikidot.com/training-golem"
+          }
+        ],
+        "passiveSkills": [
+          {
+            "id": "training-golem-0-passive-0",
+            "monsterId": "training-golem-0",
+            "label": "Nội tại",
+            "condition": "Trong trận",
+            "effect": "Cannot be stunned.",
+            "source": "https://aqwwiki.wikidot.com/training-golem"
+          },
+          {
+            "id": "training-golem-0-passive-1",
+            "monsterId": "training-golem-0",
+            "label": "Nội tại",
+            "condition": "Trong trận",
+            "effect": "Most forms of sát thương gây ra to Training Golem is significantly reduced.",
+            "source": "https://aqwwiki.wikidot.com/training-golem"
+          }
+        ]
+      },
+      "objectives": [
+        "Hạ các mục tiêu theo thứ tự và điều kiện của màn."
+      ],
+      "mechanics": [
+        "“Master of Your Craft” quest’s Rewards",
+        "Đây là quest của NPC Psiae ở /join chchallenge",
+        "Để hoàn thành quest này bạn cần đánh bại được Training Golem, cách đánh bại con Golem này sẽ được hướng dẫn bên dưới. Khi trả quest, bạn sẽ nhận được 1 trong các phần thưởng sau một cách ngẫu nhiên (cần giữ lại phần thưởng trong inventory để tránh trùng):",
+        "→ Master Trainer: Armor tăng 25% Gold, XP, Rep và CP.",
+        "→ GrandMaster Trainer: Chỉ cho member, Armor tăng 25% Gold, XP, Rep và CP.",
+        "→ Master Trainer's Helm + Locks: Helm tăng 10% All DMG.",
+        "→ Master Trainer's Helm: Helm tăng 10% All DMG.",
+        "→ Master Trainer's Minion: Chỉ cho member, Pet tăng 30% DMG với Dragon, Human, Undead, Chaos và Elemental.",
+        "→ Master Trainer's Sword: Weapon tăng 30% All DMG.",
+        "Note: Trước khi trả quest, bạn nên dùng boost exp (chưa đạt lvl tối đa) để tăng lượng exp thưởng nhận được của quest.",
+        "TRAINING GOLEM",
+        "Đây là một con Golem được tạo ra nhằm luyện tập các kỹ năng cơ bản cho các players trước khi bắt đầu tham gia thử thách của các Ultra Challenge Boss thực thụ. Vì vậy về độ khó thì không quá cao nhưng lại đem đến tính thực hành cao, giúp các players làm quen với các cơ chế trước khi bắt đầu thử thách thật sự.",
+        "Boss nằm ở map /join chchallenge - Room limit: 10",
+        "Cần đạt ít nhất lvl 60 để vượt qua được Challenge Boss.",
+        "Cơ chế:",
+        "◆ Total HP: 600,000",
+        "◆ Shield giúp giảm đáng kể tất cả các sát thương nhận được.",
+        "◆ Miễn nhiễm với Stun và Focus/Taunt.",
+        "◆ Tất cả đón đánh đều không thể bạo kích.",
+        "◆ Base có 25% Dodge và 200% Hit Chance.",
+        "◆ Auto-Attack mỗi 2.25s gây True DMG từ 603 đến 737 lên tất cả players.",
+        "→ Hồi lượng máu nhỏ cho bản thân với mỗi mục tiêu trúng đòn.",
+        "→ Sử dụng các class có Decay như LR, LDK.",
+        "◆ Mỗi 6s, sử dụng Curse of Blades gây Phys DMG từ 603 đến 737 lên 4 players.",
+        "→ Giảm 700% Crit DMG lên players trong 7s.",
+        "→ Sử dụng các class gây DoT hoặc không thể bạo kích.",
+        "◆ Mỗi 30s, sử dụng Brutal Strike gây Phys DMG bằng 115% lượng HP của player lên tất cả players.",
+        "→ Tăng 10% Mana Costs trong 45s, stack đến 5 (max 50% Mana Costs).",
+        "◆ Mỗi 45s, sử dụng Evasion gây Magi DMG từ 201 đến 246.",
+        "→ Bản thân tăng 50% Dodge và 200% Hit Chance trong 20s."
+      ],
+      "strategy": [
+        "Cách đánh:",
+        "→ Với con Golem này thì không quá khó, bằng cách sử dụng các class không thể bạo kích hay các class có hiệu ứng DoT đặc biệt là Dragon of Time (DT/EDoT) có thể solo nó nhưng bạn sẽ cần có kỹ năng rất tốt để không bị one-shot.",
+        "→ Nếu không, có thể kết hợp thêm CAv, VHL, LR, AP, LC, LoO, SC/IT, VDK, Arach, FB, AF, QCM… và các class có hiệu ứng DoT khác giúp có tốc độ cao nhất",
+        ".→ Sử dụng các loại Enhancement có effect như Awe hay Blacksmithing/Forge."
+      ],
+      "sourceBlocks": [
+        {
+          "type": "paragraph",
+          "id": "p-339965",
+          "runs": [
+            {
+              "text": "“",
+              "bold": true
+            },
+            {
+              "text": "Master of Your Craft",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/psiae-s-quest"
+            },
+            {
+              "text": "” quest’s Rewards\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340004",
+          "runs": [
+            {
+              "text": "Đây là quest của NPC Psiae ở "
+            },
+            {
+              "text": "/join chchallenge",
+              "href": "http://aqwwiki.wikidot.com/class-hall-challenge"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340053",
+          "runs": [
+            {
+              "text": "Để hoàn thành quest này bạn cần đánh bại đ"
+            },
+            {
+              "text": "ược "
+            },
+            {
+              "text": "Training Golem",
+              "href": "http://aqwwiki.wikidot.com/training-golem"
+            },
+            {
+              "text": ", cách đánh bại con Golem này sẽ được hướng dẫn bên dưới. "
+            },
+            {
+              "text": "Khi trả quest, bạn sẽ nhận được 1 trong các phần thưởng sau một cách ngẫu nhiên",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(cần giữ lại phần thưởng trong inventory để tránh trùng)",
+              "italic": true
+            },
+            {
+              "text": ":"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340309",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer",
+              "href": "http://aqwwiki.wikidot.com/master-trainer"
+            },
+            {
+              "text": ": Armor tăng 25% Gold, XP, Rep và CP."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340363",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "GrandMaster Trainer",
+              "href": "http://aqwwiki.wikidot.com/grandmaster-trainer"
+            },
+            {
+              "text": ": Chỉ cho "
+            },
+            {
+              "text": "member",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ", Armor tăng 25% Gold, XP, Rep và CP."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340438",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer's Helm + Locks",
+              "href": "http://aqwwiki.wikidot.com/master-trainer-s-helm-locks"
+            },
+            {
+              "text": ": Helm tăng 10% All DMG."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340494",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer's Helm",
+              "href": "http://aqwwiki.wikidot.com/master-trainer-s-helm"
+            },
+            {
+              "text": ": Helm tăng 10% All DMG."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340542",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer's Minion",
+              "href": "http://aqwwiki.wikidot.com/master-trainer-s-minion"
+            },
+            {
+              "text": ": Chỉ cho "
+            },
+            {
+              "text": "member",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ", Pet tăng 30% DMG với Dragon, Human, Undead, Chaos và Elemental."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340649",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer's Sword",
+              "href": "http://aqwwiki.wikidot.com/master-trainer-s-sword"
+            },
+            {
+              "text": ": Weapon tăng 30% All DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340700",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Trước khi trả quest, bạn nên dùng boost exp (chưa đạt lvl tối đa) để tăng lượng exp thưởng nhận được của quest.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340819",
+          "runs": [
+            {
+              "text": "TRAINING GOLEM",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/training-golem"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340834",
+          "runs": [
+            {
+              "text": "Đây là một con Golem được tạo ra nhằm luyện tập các kỹ năng cơ bản cho các players trước khi bắt đầu tham gia thử thách của các Ultra Challenge Boss thực thụ. Vì vậy về độ khó thì không quá cao nhưng lại đem đến tính thực hành cao, giúp các players làm quen với các cơ chế trước khi bắt đầu thử thách thật sự.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341145",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join chchallenge",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/class-hall-challenge"
+            },
+            {
+              "text": " - Room limit: 10\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341195",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 60",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341252",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341260",
+          "runs": [
+            {
+              "text": "◆ Total HP: 600,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341280",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm đáng kể tất cả các sát thương nhận được.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341340",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341378",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341420",
+          "runs": [
+            {
+              "text": "◆ Base có 25% Dodge và 200% Hit Chance.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341460",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.25s gây True DMG từ 603 đến 737 lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341532",
+          "runs": [
+            {
+              "text": "→ Hồi lượng máu nhỏ cho bản thân với mỗi mục tiêu trúng đòn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341593",
+          "runs": [
+            {
+              "text": "→ Sử dụng các class có Decay như LR, LDK.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341635",
+          "runs": [
+            {
+              "text": "◆ Mỗi 6s, sử dụng Curse of Blades gây Phys DMG từ 603 đến 737 lên 4 players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341712",
+          "runs": [
+            {
+              "text": "→ Giảm 700% Crit DMG lên players trong 7s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341755",
+          "runs": [
+            {
+              "text": "→ Sử dụng các class gây DoT hoặc không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341808",
+          "runs": [
+            {
+              "text": "◆ Mỗi 30s, sử dụng Brutal Strike gây Phys DMG bằng 115% lượng HP của player lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341904",
+          "runs": [
+            {
+              "text": "→ Tăng 10% Mana Costs trong 45s, stack đến 5 "
+            },
+            {
+              "text": "(max 50% Mana Costs)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341971",
+          "runs": [
+            {
+              "text": "◆ Mỗi 45s, sử dụng Evasion gây Magi DMG từ 201 đến 246.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342027",
+          "runs": [
+            {
+              "text": "→ Bản thân tăng 50% Dodge và 200% Hit Chance trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342084",
+          "runs": [
+            {
+              "text": "Cách đánh:\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342095",
+          "runs": [
+            {
+              "text": "→ Với con Golem này thì không quá khó, bằng cách sử dụng các class không thể bạo kích hay các class có hiệu ứng DoT đặc biệt là "
+            },
+            {
+              "text": "Dragon of Time ",
+              "bold": true
+            },
+            {
+              "text": "(DT/EDoT)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " có thể solo nó nhưng bạn sẽ cần có kỹ năng rất tốt để không bị one-shot.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342321",
+          "runs": [
+            {
+              "text": "→ Nếu không, có thể kết hợp thêm "
+            },
+            {
+              "text": "CAv, VHL, LR, AP, LC, LoO, SC/IT, VDK, Arach, FB, AF, QCM…",
+              "bold": true
+            },
+            {
+              "text": " và các class có hiệu ứng DoT khác giúp có tốc độ cao nhất\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342471",
+          "runs": [
+            {
+              "text": ".→ Sử dụng các loại Enhancement có effect như Awe hay Blacksmithing/Forge."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ],
+      "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
+      "order": 1
+    }
+  ],
+  "teams": [
+    {
+      "type": "paragraph",
+      "id": "p-340309",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Master Trainer",
+          "href": "http://aqwwiki.wikidot.com/master-trainer"
+        },
+        {
+          "text": ": Armor tăng 25% Gold, XP, Rep và CP."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-340363",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "GrandMaster Trainer",
+          "href": "http://aqwwiki.wikidot.com/grandmaster-trainer"
+        },
+        {
+          "text": ": Chỉ cho "
+        },
+        {
+          "text": "member",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": ", Armor tăng 25% Gold, XP, Rep và CP."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-340438",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Master Trainer's Helm + Locks",
+          "href": "http://aqwwiki.wikidot.com/master-trainer-s-helm-locks"
+        },
+        {
+          "text": ": Helm tăng 10% All DMG."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-340494",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Master Trainer's Helm",
+          "href": "http://aqwwiki.wikidot.com/master-trainer-s-helm"
+        },
+        {
+          "text": ": Helm tăng 10% All DMG."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-340542",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Master Trainer's Minion",
+          "href": "http://aqwwiki.wikidot.com/master-trainer-s-minion"
+        },
+        {
+          "text": ": Chỉ cho "
+        },
+        {
+          "text": "member",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": ", Pet tăng 30% DMG với Dragon, Human, Undead, Chaos và Elemental."
+        },
+        {
+          "text": "\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-340649",
+      "runs": [
+        {
+          "text": "→ "
+        },
+        {
+          "text": "Master Trainer's Sword",
+          "href": "http://aqwwiki.wikidot.com/master-trainer-s-sword"
+        },
+        {
+          "text": ": Weapon tăng 30% All DMG.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-341532",
+      "runs": [
+        {
+          "text": "→ Hồi lượng máu nhỏ cho bản thân với mỗi mục tiêu trúng đòn.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-341593",
+      "runs": [
+        {
+          "text": "→ Sử dụng các class có Decay như LR, LDK.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-341712",
+      "runs": [
+        {
+          "text": "→ Giảm 700% Crit DMG lên players trong 7s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-341755",
+      "runs": [
+        {
+          "text": "→ Sử dụng các class gây DoT hoặc không thể bạo kích.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-341904",
+      "runs": [
+        {
+          "text": "→ Tăng 10% Mana Costs trong 45s, stack đến 5 "
+        },
+        {
+          "text": "(max 50% Mana Costs)",
+          "italic": true
+        },
+        {
+          "text": ".\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-342027",
+      "runs": [
+        {
+          "text": "→ Bản thân tăng 50% Dodge và 200% Hit Chance trong 20s.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-342095",
+      "runs": [
+        {
+          "text": "→ Với con Golem này thì không quá khó, bằng cách sử dụng các class không thể bạo kích hay các class có hiệu ứng DoT đặc biệt là "
+        },
+        {
+          "text": "Dragon of Time ",
+          "bold": true
+        },
+        {
+          "text": "(DT/EDoT)",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": " có thể solo nó nhưng bạn sẽ cần có kỹ năng rất tốt để không bị one-shot.\n"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "p-342321",
+      "runs": [
+        {
+          "text": "→ Nếu không, có thể kết hợp thêm "
+        },
+        {
+          "text": "CAv, VHL, LR, AP, LC, LoO, SC/IT, VDK, Arach, FB, AF, QCM…",
+          "bold": true
+        },
+        {
+          "text": " và các class có hiệu ứng DoT khác giúp có tốc độ cao nhất\n"
+        }
+      ]
+    }
+  ],
+  "equipmentRoutes": [],
+  "progression": [
+    {
+      "id": "noi-dung",
+      "title": "Nội dung hướng dẫn",
+      "paragraphs": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "p-339965",
+          "runs": [
+            {
+              "text": "“",
+              "bold": true
+            },
+            {
+              "text": "Master of Your Craft",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/psiae-s-quest"
+            },
+            {
+              "text": "” quest’s Rewards\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340004",
+          "runs": [
+            {
+              "text": "Đây là quest của NPC Psiae ở "
+            },
+            {
+              "text": "/join chchallenge",
+              "href": "http://aqwwiki.wikidot.com/class-hall-challenge"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340053",
+          "runs": [
+            {
+              "text": "Để hoàn thành quest này bạn cần đánh bại đ"
+            },
+            {
+              "text": "ược "
+            },
+            {
+              "text": "Training Golem",
+              "href": "http://aqwwiki.wikidot.com/training-golem"
+            },
+            {
+              "text": ", cách đánh bại con Golem này sẽ được hướng dẫn bên dưới. "
+            },
+            {
+              "text": "Khi trả quest, bạn sẽ nhận được 1 trong các phần thưởng sau một cách ngẫu nhiên",
+              "bold": true
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "(cần giữ lại phần thưởng trong inventory để tránh trùng)",
+              "italic": true
+            },
+            {
+              "text": ":"
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340309",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer",
+              "href": "http://aqwwiki.wikidot.com/master-trainer"
+            },
+            {
+              "text": ": Armor tăng 25% Gold, XP, Rep và CP."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340363",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "GrandMaster Trainer",
+              "href": "http://aqwwiki.wikidot.com/grandmaster-trainer"
+            },
+            {
+              "text": ": Chỉ cho "
+            },
+            {
+              "text": "member",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ", Armor tăng 25% Gold, XP, Rep và CP."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340438",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer's Helm + Locks",
+              "href": "http://aqwwiki.wikidot.com/master-trainer-s-helm-locks"
+            },
+            {
+              "text": ": Helm tăng 10% All DMG."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340494",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer's Helm",
+              "href": "http://aqwwiki.wikidot.com/master-trainer-s-helm"
+            },
+            {
+              "text": ": Helm tăng 10% All DMG."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340542",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer's Minion",
+              "href": "http://aqwwiki.wikidot.com/master-trainer-s-minion"
+            },
+            {
+              "text": ": Chỉ cho "
+            },
+            {
+              "text": "member",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": ", Pet tăng 30% DMG với Dragon, Human, Undead, Chaos và Elemental."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340649",
+          "runs": [
+            {
+              "text": "→ "
+            },
+            {
+              "text": "Master Trainer's Sword",
+              "href": "http://aqwwiki.wikidot.com/master-trainer-s-sword"
+            },
+            {
+              "text": ": Weapon tăng 30% All DMG.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340700",
+          "runs": [
+            {
+              "text": "Note:",
+              "italic": true
+            },
+            {
+              "text": " Trước khi trả quest, bạn nên dùng boost exp (chưa đạt lvl tối đa) để tăng lượng exp thưởng nhận được của quest.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340819",
+          "runs": [
+            {
+              "text": "TRAINING GOLEM",
+              "bold": true,
+              "href": "http://aqwwiki.wikidot.com/training-golem"
+            },
+            {
+              "text": "\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-340834",
+          "runs": [
+            {
+              "text": "Đây là một con Golem được tạo ra nhằm luyện tập các kỹ năng cơ bản cho các players trước khi bắt đầu tham gia thử thách của các Ultra Challenge Boss thực thụ. Vì vậy về độ khó thì không quá cao nhưng lại đem đến tính thực hành cao, giúp các players làm quen với các cơ chế trước khi bắt đầu thử thách thật sự.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341145",
+          "runs": [
+            {
+              "text": "Boss nằm ở map ",
+              "italic": true
+            },
+            {
+              "text": "/join chchallenge",
+              "italic": true,
+              "href": "http://aqwwiki.wikidot.com/class-hall-challenge"
+            },
+            {
+              "text": " - Room limit: 10\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341195",
+          "runs": [
+            {
+              "text": "Cần đạt ít nhất ",
+              "italic": true
+            },
+            {
+              "text": "lvl 60",
+              "bold": true,
+              "italic": true,
+              "href": "/farm/leveling-up"
+            },
+            {
+              "text": " để vượt qua được Challenge Boss.",
+              "italic": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341252",
+          "runs": [
+            {
+              "text": "Cơ chế:",
+              "bold": true
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341260",
+          "runs": [
+            {
+              "text": "◆ Total HP: 600,000"
+            },
+            {
+              "text": "\n",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341280",
+          "runs": [
+            {
+              "text": "◆ Shield giúp giảm đáng kể tất cả các sát thương nhận được.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341340",
+          "runs": [
+            {
+              "text": "◆ Miễn nhiễm với Stun và Focus/Taunt.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341378",
+          "runs": [
+            {
+              "text": "◆ Tất cả đón đánh đều không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341420",
+          "runs": [
+            {
+              "text": "◆ Base có 25% Dodge và 200% Hit Chance.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341460",
+          "runs": [
+            {
+              "text": "◆ Auto-Attack mỗi 2.25s gây True DMG từ 603 đến 737 lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341532",
+          "runs": [
+            {
+              "text": "→ Hồi lượng máu nhỏ cho bản thân với mỗi mục tiêu trúng đòn.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341593",
+          "runs": [
+            {
+              "text": "→ Sử dụng các class có Decay như LR, LDK.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341635",
+          "runs": [
+            {
+              "text": "◆ Mỗi 6s, sử dụng Curse of Blades gây Phys DMG từ 603 đến 737 lên 4 players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341712",
+          "runs": [
+            {
+              "text": "→ Giảm 700% Crit DMG lên players trong 7s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341755",
+          "runs": [
+            {
+              "text": "→ Sử dụng các class gây DoT hoặc không thể bạo kích.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341808",
+          "runs": [
+            {
+              "text": "◆ Mỗi 30s, sử dụng Brutal Strike gây Phys DMG bằng 115% lượng HP của player lên tất cả players.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341904",
+          "runs": [
+            {
+              "text": "→ Tăng 10% Mana Costs trong 45s, stack đến 5 "
+            },
+            {
+              "text": "(max 50% Mana Costs)",
+              "italic": true
+            },
+            {
+              "text": ".\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-341971",
+          "runs": [
+            {
+              "text": "◆ Mỗi 45s, sử dụng Evasion gây Magi DMG từ 201 đến 246.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342027",
+          "runs": [
+            {
+              "text": "→ Bản thân tăng 50% Dodge và 200% Hit Chance trong 20s.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342084",
+          "runs": [
+            {
+              "text": "Cách đánh:\n",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342095",
+          "runs": [
+            {
+              "text": "→ Với con Golem này thì không quá khó, bằng cách sử dụng các class không thể bạo kích hay các class có hiệu ứng DoT đặc biệt là "
+            },
+            {
+              "text": "Dragon of Time ",
+              "bold": true
+            },
+            {
+              "text": "(DT/EDoT)",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " có thể solo nó nhưng bạn sẽ cần có kỹ năng rất tốt để không bị one-shot.\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342321",
+          "runs": [
+            {
+              "text": "→ Nếu không, có thể kết hợp thêm "
+            },
+            {
+              "text": "CAv, VHL, LR, AP, LC, LoO, SC/IT, VDK, Arach, FB, AF, QCM…",
+              "bold": true
+            },
+            {
+              "text": " và các class có hiệu ứng DoT khác giúp có tốc độ cao nhất\n"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "id": "p-342471",
+          "runs": [
+            {
+              "text": ".→ Sử dụng các loại Enhancement có effect như Awe hay Blacksmithing/Forge."
+            },
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendedTeams": []
+}
