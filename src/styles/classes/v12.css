@@ -60,7 +60,7 @@
   animation: codex-entry 240ms both;
 }
 .class-card > .class-art {
-  height: 176px;
+  height: 210px;
   background: var(--class-midnight);
   padding: 10px;
 }
@@ -606,3 +606,11 @@
 .coming-soon-page { min-height:50vh; display:grid; place-content:center; justify-items:center; gap:24px; padding:60px 20px; text-align:center; }
 .coming-soon-page h1 { font-size:clamp(1.5rem,4vw,3rem); overflow-wrap:anywhere; }
 @media(max-width:600px) { .hero .calendar-poster > img { max-height:55vh; } .starter-class-art { height:320px; } }
+
+/* Class identity and full-body framing; no scale may crop artwork on hover. */
+.class-abbreviation{display:block;color:var(--class-accent);font-size:12px;font-weight:700;line-height:1.5;margin-top:5px}
+.hero-abbreviation{font-size:16px;margin:8px 0 16px}
+.class-art-switch button{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.class-art-switch button small{font-size:11px;opacity:.85}
+.class-card>.class-art{display:grid;place-items:center;min-width:0}
+.class-card>.class-art>.class-character-art{display:block;width:100%;height:100%;min-height:0;object-fit:contain;object-position:center;transform:none}

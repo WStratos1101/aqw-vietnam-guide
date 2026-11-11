@@ -3,7 +3,7 @@
     "name": "Alpha Omega/DOOMmega (AO)",
     "classId": "alpha-omega-doommega-ao",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "alpha-omega-legend-merge-0",
@@ -24,19 +24,6 @@
         "missingFields": []
       },
       {
-        "id": "alpha-doommega-merge-0",
-        "type": "merge",
-        "variant": "Alpha DOOMmega",
-        "source": "https://aqwwiki.wikidot.com/alpha-doommega",
-        "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Merge Shop",
-          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
-          "Shop identity is not yet verified"
-        ]
-      },
-      {
         "id": "alpha-doommega-merge-1",
         "type": "merge",
         "variant": "Alpha DOOMmega",
@@ -44,19 +31,6 @@
         "verificationStatus": "verified",
         "detailsStatus": "complete",
         "missingFields": []
-      },
-      {
-        "id": "alpha-doommega-merge-2",
-        "type": "merge",
-        "variant": "Alpha DOOMmega",
-        "source": "https://aqwwiki.wikidot.com/alpha-doommega",
-        "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Merge Shop",
-          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
-          "Shop identity is not yet verified"
-        ]
       },
       {
         "id": "alpha-doommega-merge-3",
@@ -91,7 +65,7 @@
     "name": "Alpha Pirate - Pirate",
     "classId": "alpha-pirate-pirate",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "alpha-pirate-class-merge-0",
@@ -131,20 +105,25 @@
       },
       {
         "id": "pirate-merge-2",
-        "type": "merge",
+        "type": "ac_purchase",
         "variant": "Pirate",
         "source": "https://aqwwiki.wikidot.com/pirate",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Merge Shop",
-          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
-          "Shop identity is not yet verified"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       },
       {
         "id": "pirate-merge-3",
         "type": "merge",
+        "variant": "Pirate",
+        "source": "https://aqwwiki.wikidot.com/pirate",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "pirate-map-recovery-quest-reviewed",
+        "type": "quest_reward",
         "variant": "Pirate",
         "source": "https://aqwwiki.wikidot.com/pirate",
         "verificationStatus": "verified",
@@ -334,7 +313,7 @@
     "name": "Blaze Binder",
     "classId": "blaze-binder-bb-firelord-summoner-fls",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "blaze-binder-merge-merge-0",
@@ -360,12 +339,8 @@
         "variant": "Blaze Binder (AC)",
         "source": "https://aqwwiki.wikidot.com/blaze-binder-ac",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Shop Name",
-          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 252 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 275 ms: Couldn't connect to server",
-          "Shop identity is not yet verified"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       },
       {
         "id": "blaze-binder-ac-shop-1",
@@ -373,12 +348,8 @@
         "variant": "Blaze Binder (AC)",
         "source": "https://aqwwiki.wikidot.com/blaze-binder-ac",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Shop Name",
-          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 252 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 275 ms: Couldn't connect to server",
-          "Shop identity is not yet verified"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       },
       {
         "id": "blaze-binder-ac-shop-2",
@@ -484,7 +455,7 @@
     "name": "Chaos Slayer (CS) - Chaos Champion Prime (CCP)",
     "classId": "chaos-slayer-cs-chaos-champion-prime-ccp",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "chaos-slayer-berserker-ac-shop-0",
@@ -494,19 +465,6 @@
         "verificationStatus": "verified",
         "detailsStatus": "complete",
         "missingFields": []
-      },
-      {
-        "id": "chaos-slayer-berserker-ac-shop-1",
-        "type": "ac_purchase",
-        "variant": "Chaos Slayer Berserker (AC)",
-        "source": "https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac",
-        "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Shop Name",
-          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
-          "Shop identity is not yet verified"
-        ]
       },
       {
         "id": "chaos-slayer-berserker-0-ac-shop-0",
@@ -674,26 +632,31 @@
     "name": "Dark Lord (DL) - Darkside",
     "classId": "dark-lord-dl-darkside",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
-      {
-        "id": "dark-lord-merge-0",
-        "type": "merge",
-        "variant": "Dark Lord",
-        "source": "https://aqwwiki.wikidot.com/dark-lord",
-        "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Merge Shop",
-          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
-          "Shop identity is not yet verified"
-        ]
-      },
       {
         "id": "dark-lord-merge-1",
         "type": "merge",
         "variant": "Dark Lord",
         "source": "https://aqwwiki.wikidot.com/dark-lord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "dark-lord-darkside-gear-quest",
+        "type": "quest_reward",
+        "variant": "Dark Lord",
+        "source": "https://aqwwiki.wikidot.com/dark-lord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "darkside-golden-cheezburger-legacy",
+        "type": "other_verified",
+        "variant": "Darkside",
+        "source": "https://aqwwiki.wikidot.com/darkside",
         "verificationStatus": "verified",
         "detailsStatus": "complete",
         "missingFields": []
@@ -1066,7 +1029,7 @@
     "name": "Enforcer - ProtoSartorium",
     "classId": "enforcer-protosartorium",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "enforcer-quest-0",
@@ -1074,10 +1037,8 @@
         "variant": "Enforcer",
         "source": "https://aqwwiki.wikidot.com/enforcer",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Nested material scope requires review"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       },
       {
         "id": "protosartorium-class-drop-0",
@@ -1094,7 +1055,7 @@
     "name": "Evolved Pumpkin Lord (EPL)",
     "classId": "evolved-pumpkin-lord-epl",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "evolved-pumpkin-lord-non-legend-shop-0",
@@ -1134,16 +1095,12 @@
       },
       {
         "id": "evolved-pumpkin-lord-legend-merge-1",
-        "type": "merge",
+        "type": "other_verified",
         "variant": "Evolved Pumpkin Lord (Legend)",
         "source": "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Merge Shop",
-          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
-          "Shop identity is not yet verified"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       }
     ]
   },
@@ -1151,13 +1108,31 @@
     "name": "Frostval Barbarian (FB)",
     "classId": "frostval-barbarian-fb",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "frostval-barbarian-ac-shop-0",
         "type": "ac_purchase",
         "variant": "Frostval Barbarian (AC)",
         "source": "https://aqwwiki.wikidot.com/frostval-barbarian-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "frostval-barbarian-quest-reviewed",
+        "type": "quest_reward",
+        "variant": "Frostval Barbarian (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "frostval-barbarian-icestorm-shop-reviewed",
+        "type": "ac_purchase",
+        "variant": "Frostval Barbarian (0 AC)",
+        "source": "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac",
         "verificationStatus": "verified",
         "detailsStatus": "complete",
         "missingFields": []
@@ -1453,7 +1428,7 @@
     "name": "Kathool Adept (KA)",
     "classId": "kathool-adept-ka",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "kathool-adept-quest-0",
@@ -1461,10 +1436,8 @@
         "variant": "Kathool Adept",
         "source": "https://aqwwiki.wikidot.com/kathool-adept",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Nested material scope requires review"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       }
     ]
   },
@@ -1587,34 +1560,8 @@
     "name": "MechaJouster (MJ)",
     "classId": "mechajouster-mj",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
-      {
-        "id": "mechajouster-merge-0",
-        "type": "merge",
-        "variant": "MechaJouster",
-        "source": "https://aqwwiki.wikidot.com/mechajouster",
-        "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Merge Shop",
-          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
-          "Shop identity is not yet verified"
-        ]
-      },
-      {
-        "id": "mechajouster-merge-1",
-        "type": "merge",
-        "variant": "MechaJouster",
-        "source": "https://aqwwiki.wikidot.com/mechajouster",
-        "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Merge Shop",
-          "Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused",
-          "Shop identity is not yet verified"
-        ]
-      },
       {
         "id": "mechajouster-merge-2",
         "type": "merge",
@@ -1634,15 +1581,6 @@
         "missingFields": []
       },
       {
-        "id": "mechajouster-other-reward-0",
-        "type": "other_verified",
-        "variant": "MechaJouster",
-        "source": "https://aqwwiki.wikidot.com/mechajouster",
-        "verificationStatus": "verified",
-        "detailsStatus": "complete",
-        "missingFields": []
-      },
-      {
         "id": "mechajouster-other-reward-1",
         "type": "other_verified",
         "variant": "MechaJouster",
@@ -1654,6 +1592,15 @@
       {
         "id": "mechajouster-other-reward-2",
         "type": "other_verified",
+        "variant": "MechaJouster",
+        "source": "https://aqwwiki.wikidot.com/mechajouster",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "mechajouster-gerrick-quest-reviewed",
+        "type": "quest_reward",
         "variant": "MechaJouster",
         "source": "https://aqwwiki.wikidot.com/mechajouster",
         "verificationStatus": "verified",
@@ -1732,7 +1679,7 @@
     "name": "Oracle",
     "classId": "oracle",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "oracle-shop-0",
@@ -1745,16 +1692,12 @@
       },
       {
         "id": "oracle-shop-1",
-        "type": "ac_purchase",
+        "type": "free",
         "variant": "Oracle",
         "source": "https://aqwwiki.wikidot.com/oracle",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Shop Name",
-          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 239 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 263 ms: Couldn't connect to server",
-          "Shop identity is not yet verified"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       }
     ]
   },
@@ -1797,7 +1740,7 @@
     "name": "Rogue - Renegade",
     "classId": "rogue-renegade",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "rogue-shop-0",
@@ -1906,6 +1849,15 @@
         "verificationStatus": "verified",
         "detailsStatus": "complete",
         "missingFields": []
+      },
+      {
+        "id": "classic-alpha-pirate-legacy-creation",
+        "type": "other_verified",
+        "variant": "Classic Alpha Pirate",
+        "source": "https://aqwwiki.wikidot.com/classic-alpha-pirate",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
       }
     ]
   },
@@ -1921,12 +1873,8 @@
         "variant": "Sentinel",
         "source": "https://aqwwiki.wikidot.com/sentinel",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Shop Name",
-          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 300 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 257 ms: Couldn't connect to server",
-          "Shop identity is not yet verified"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       },
       {
         "id": "sentinel-shop-1",
@@ -2019,12 +1967,8 @@
         "variant": "Sentinel",
         "source": "https://aqwwiki.wikidot.com/sentinel",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "Shop Name",
-          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 257 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 318 ms: Couldn't connect to server",
-          "Shop identity is not yet verified"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       },
       {
         "id": "sentinel-shop-11",
@@ -2134,7 +2078,7 @@
     "name": "Vindicator Of They (VoT) - The Collector (TC)",
     "classId": "vindicator-of-they-vot-the-collector-tc",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "vindicator-of-they-ac-shop-0",
@@ -2187,10 +2131,8 @@
         "variant": "The Collector (Class) (0 AC)",
         "source": "https://aqwwiki.wikidot.com/the-collector-class-0-ac",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 278 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 261 ms: Couldn't connect to server"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       },
       {
         "id": "the-collector-class-0-ac-shop-1",
@@ -2198,10 +2140,8 @@
         "variant": "The Collector (Class) (0 AC)",
         "source": "https://aqwwiki.wikidot.com/the-collector-class-0-ac",
         "verificationStatus": "verified",
-        "detailsStatus": "partial",
-        "missingFields": [
-          "curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 360 ms: Couldn't connect to server\ncurl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 277 ms: Couldn't connect to server"
-        ]
+        "detailsStatus": "complete",
+        "missingFields": []
       },
       {
         "id": "the-collector-class-merge-merge-0",
@@ -2237,7 +2177,7 @@
     "name": "Warrior - Beast Warrior - Pumpkin Lord - Warlord",
     "classId": "warrior-beast-warrior-pumpkin-lord-warlord",
     "beforeStatus": "partial",
-    "currentStatus": "partial",
+    "currentStatus": "reviewed",
     "methods": [
       {
         "id": "warrior-rare-shop-0",
@@ -2343,6 +2283,15 @@
         "type": "ac_purchase",
         "variant": "Warlord",
         "source": "https://aqwwiki.wikidot.com/warlord",
+        "verificationStatus": "verified",
+        "detailsStatus": "complete",
+        "missingFields": []
+      },
+      {
+        "id": "pumpkin-lord-drop-reviewed",
+        "type": "other_verified",
+        "variant": "Pumpkin Lord",
+        "source": "https://aqwwiki.wikidot.com/pumpkin-lord",
         "verificationStatus": "verified",
         "detailsStatus": "complete",
         "missingFields": []

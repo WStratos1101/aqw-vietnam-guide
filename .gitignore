@@ -60,3 +60,30 @@ Incoming/
 Processed/
 Update Tool/
 AQW Update Tool/
+
+# AQW Update inbox/tool/backups (không đưa lên GitHub)
+Update/
+
+# AQW_AUTO_SYNC_SAFETY_V3
+Update/
+.aqw-branding-backups/
+node_modules/
+dist/
+build/
+.wrangler/
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.npmrc
+*.pem
+*.p12
+*.pfx
+*.key
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+*.log
+.DS_Store

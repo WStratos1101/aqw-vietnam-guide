@@ -52,4 +52,4 @@ Browser: browser_launch_blocked; 0 browser cases executed, 0 screenshots. No Vis
 
 ## Data remaining
 
-See V12_7_DATA_COMPLETION_REPORT.md. There are 22 partial acquisition profiles, 3 original Calendar pages still incomplete, two incomplete Arena profiles (one with recovered stats), and 85 low-confidence progression metadata records. No data gap is silently marked complete by a UI refactor.
+See V12_7_DATA_COMPLETION_REPORT.md. There are 8 partial acquisition profiles, 3 original Calendar pages still incomplete, two incomplete Arena profiles (one with recovered stats), and 79 low-confidence progression metadata records. No data gap is silently marked complete by a UI refactor.

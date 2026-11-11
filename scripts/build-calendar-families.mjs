@@ -6,8 +6,12 @@ const profiles = read("src/content/classes/catalog.json");
 const portraits = read("src/content/classes/portrait-registry.json");
 const shadowArt = read("content-sources/v12-6/shadow-family-art.json");
 const result = {};
+const equivalence = read("src/content/classes/family-equivalence-reviews.json");
 for (const family of families) {
   let reference;
+  const review = equivalence.find(r=>r.id===family.id);
+  const primaryProfile=profiles.find(c=>c.id===family.primaryClassId);
+  const primaryBody=read("public"+primaryProfile.bodyUrl);
   for (const variant of family.variants) {
     const page = await parseClassPage(variant.source);
     const skills = page.entries.map(
@@ -31,7 +35,9 @@ for (const family of families) {
         notes,
       }),
     );
-    if (!skills.length || (reference && reference !== JSON.stringify(skills))) {
+    const reviewedSource=review?.sources.find(s=>s.url===variant.source);
+    if(review && (!reviewedSource || reviewedSource.sourceHash!==page.sourceHash))throw Error("Family equivalence review invalidated by source change: "+variant.name);
+    if (!skills.length || (reference && reference !== JSON.stringify(skills) && !review)) {
       throw Error("Calendar family source data differs: " + variant.name);
     }
     reference ??= JSON.stringify(skills);
@@ -46,7 +52,17 @@ for (const family of families) {
     const methods =
       record?.methods.filter((method) => method.source === variant.source) ||
       [];
+    const skillNameOverrides=[];
+    if(review){
+      for(const skill of body.skills.filter(s=>!s.quarantined)){
+        const canonical=primaryBody.skills.find(s=>s.name===(review.aliases[skill.name]||skill.name));
+        if(!canonical)throw Error("No named canonical skill for "+skill.name);
+        if(skill.name!==canonical.name)skillNameOverrides.push({skillId:canonical.id,variantSkillId:skill.id,name:skill.name,source:variant.source});
+      }
+    }
     result[variant.id] = {
+      skillNameOverrides,
+      familyId:family.id,
       portrait: {
         imagePath: art.imagePath,
         width: art.width,

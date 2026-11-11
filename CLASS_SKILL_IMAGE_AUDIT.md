@@ -219,3 +219,7 @@ Validation: artifacts/qa/class-icon-validation.json. Browser interaction/image-l
 ## V12.9 / V12.10
 
 133 hồ sơ, 1080 bản ghi, 1042 icon xác minh và 38 bản ghi cách ly. Năm hồ sơ Calendar khôi phục đủ 39 icon. Passive đã đối chiếu 377/377. Xem V12_10_CLASS_SKILL_INSPECTION_REPORT.md và skill-audit.json để rà phần hiệu ứng/Range/Target thiếu.
+
+## V12.11 verification recovery
+
+1042 verified visible icon mappings unchanged; 38 quarantined records retained. Data recovery: 640/665 active ranges, 665/665 target counts; all 377 passives retain verified effects. Original missing effect descriptions now 0; source conflicts remaining 1. Icon verification does not imply that every Range is known. See V12_11_VERIFICATION_RECOVERY_REPORT.md.

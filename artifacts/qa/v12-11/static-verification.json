@@ -1,0 +1,54 @@
+{
+  "at": "2026-11-11T10:28:31.439Z",
+  "version": "0.1.0",
+  "checks": [
+    {
+      "name": "lint",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-6/lint.log"
+    },
+    {
+      "name": "typecheck",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-6/typecheck.log"
+    },
+    {
+      "name": "test",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-6/test.log"
+    },
+    {
+      "name": "test:semantic",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-6/test-semantic.log"
+    },
+    {
+      "name": "assets:validate-class-skills",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-6/assets-validate-class-skills.log"
+    },
+    {
+      "name": "build",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-6/build.log"
+    },
+    {
+      "name": "test:build",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-6/test-build.log"
+    },
+    {
+      "name": "test:server",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/qa/v12-6/test-server.log"
+    }
+  ]
+}

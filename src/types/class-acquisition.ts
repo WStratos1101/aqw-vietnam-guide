@@ -5,11 +5,33 @@ export interface AcquisitionPrice {
   currency: string;
   sourceText: string;
 }
-export type AcquisitionKind = "ac_purchase"|"gold_purchase"|"quest_reward"|"merge"|"shop_unlock"|"free"|"calendar_code"|"heromart"|"heropoints"|"other_verified";
+export type AcquisitionKind =
+  | "ac_purchase"
+  | "gold_purchase"
+  | "quest_reward"
+  | "merge"
+  | "shop_unlock"
+  | "free"
+  | "calendar_code"
+  | "heromart"
+  | "heropoints"
+  | "other_verified";
 export interface ClassAcquisitionMethod {
-  acquisitionKind?:AcquisitionKind;
-  purchaseKind?:"ac_purchase"|"gold_purchase"|null;
-  verifiedFields?:{shopName:string|null;npc:string|null;map:string|null;currency:string|null;price:number|null;requiredQuest:string|null;materials:MaterialNode|null;prerequisites:string[];availability:string;sourceUrl:string;verificationStatus:string};
+  acquisitionKind?: AcquisitionKind;
+  purchaseKind?: "ac_purchase" | "gold_purchase" | null;
+  verifiedFields?: {
+    shopName: string | null;
+    npc: string | null;
+    map: string | null;
+    currency: string | null;
+    price: number | null;
+    requiredQuest: string | null;
+    materials: MaterialNode | null;
+    prerequisites: string[];
+    availability: string;
+    sourceUrl: string;
+    verificationStatus: string;
+  };
   id: string;
   classId: string;
   type: "shop" | "quest" | "merge" | "drop" | "other";
@@ -85,6 +107,6 @@ export interface ClassAcquisition {
   methods: ClassAcquisitionMethod[];
   reviewStatus: "reviewed" | "partial";
   reviewedPages: string[];
-  excludedSources?:{source:string;game:string;reason:string}[];
+  excludedSources?: { source: string; game: string; reason: string }[];
   issues: { source: string; reason: string }[];
 }

@@ -37,7 +37,7 @@
     "assets:class-skills": "node scripts/reconcile-class-imports.mjs && node scripts/collect-class-icons.mjs --include-passives --include-current-actives",
     "assets:validate-class-skills": "node scripts/validate-class-icons.mjs",
     "qa:verify": "node scripts/verify-v12-6.mjs",
-    "qa:report": "node scripts/audit-v12-6.mjs && node scripts/audit-boss-class-ui.mjs && node scripts/audit-v12-7-8.mjs && node scripts/audit-v12-9-10.mjs",
+    "qa:report": "node scripts/audit-v12-6.mjs && node scripts/audit-boss-class-ui.mjs && node scripts/audit-v12-7-8.mjs && node scripts/audit-v12-9-10.mjs && npm run qa:recovery",
     "content:class-acquisition": "node scripts/collect-class-acquisition.mjs && node scripts/collect-merge-dependencies.mjs && node scripts/recover-acquisition-v12-11.mjs && node scripts/normalize-acquisition-v12-7.mjs && node scripts/apply-class-acquisition.mjs && node scripts/apply-class-ui.mjs && node scripts/build-progression-tiers.mjs && node scripts/build-calendar-families.mjs && node scripts/build-home-starters.mjs",
     "content:boss-ui": "node scripts/build-boss-ui-v12-5.mjs",
     "qa:boss-ui": "node scripts/qa-boss-v12-5.mjs",
@@ -49,7 +49,7 @@
     "qa:browser": "node scripts/qa-browser.mjs",
     "qa:browser:chromium": "node scripts/qa-browser.mjs --engine=chromium",
     "qa:browser:webkit": "node scripts/qa-browser.mjs --engine=webkit",
-    "qa:recovery": "node scripts/audit-v12-11.mjs"
+    "qa:recovery": "node scripts/build-conflicts-v12-11.mjs && node scripts/audit-v12-11.mjs && node scripts/report-v12-11.mjs"
   },
   "dependencies": {
     "@fontsource/source-sans-3": "5.3.1",

@@ -70,7 +70,7 @@ html[data-theme=dark] :is(.source-table td,.article-body td,.article-body th){ba
 :root[data-theme=dark] :is(a,button):hover{--interaction-accent:var(--theme-hover)}
 :root[data-theme=dark] :is(.class-inspection-tabs,.enemy-skill-tabs,.boss-main-tabs,.class-role-filters,.equipment-type-filters,.boss-phase-selector) button:hover{border-color:var(--theme-hover);color:var(--theme-hover)}
 
-.ultra-detail{--boss-accent:var(--boss-accent-dark,var(--ultra-gold));--u-gold:var(--boss-accent);--chaos-accent:var(--boss-accent);--theme-hover:color-mix(in srgb,var(--boss-accent),white 18%);--ultra-border:color-mix(in srgb,var(--boss-accent) 30%,var(--theme-line));--ultra-control-border:var(--boss-accent)}
+.ultra-codex.ultra-detail{--boss-accent:var(--boss-accent-dark,var(--ultra-gold));--u-gold:var(--boss-accent);--gold:var(--boss-accent);--border:var(--boss-border);--boss-accent-text:var(--boss-accent);--boss-accent-muted:color-mix(in srgb,var(--boss-accent) 15%,var(--theme-panel));--boss-border:color-mix(in srgb,var(--boss-accent) 35%,var(--theme-line));--boss-active-background:var(--boss-accent-muted);--chaos-accent:var(--boss-accent);--theme-hover:color-mix(in srgb,var(--boss-accent),white 18%);--ultra-border:color-mix(in srgb,var(--boss-accent) 30%,var(--theme-line));--ultra-control-border:var(--boss-accent)}
 .class-codex,.class-card{--class-accent:var(--class-accent-dark,var(--class-gold))}
 html[data-theme=light] .class-card{--class-accent:var(--class-accent-light,#515900)}
 .ultra-detail .boss-display-title{overflow-wrap:normal;word-break:normal;font-size:clamp(32px,4.1vw,76px)}
@@ -78,7 +78,7 @@ html[data-theme=light] .class-card{--class-accent:var(--class-accent-light,#5159
 .ultra-boss-card{--boss-accent:var(--boss-accent-dark,var(--ultra-gold));--u-gold:var(--boss-accent);border-color:color-mix(in srgb,var(--boss-accent) 35%,var(--theme-line))}html[data-theme=light] .ultra-boss-card{--boss-accent:var(--boss-accent-light,#414d31)}.ultra-boss-card :is(h2,.ultra-card-action){color:var(--boss-accent)}
 .class-detail{--theme-hover:color-mix(in srgb,var(--class-accent),white 18%)}
 
-.ultra-detail{--theme-accent:var(--boss-accent);--accent:var(--boss-accent);--theme-focus:var(--boss-accent);--chaos-border:var(--ultra-border);--entity-accent-ink:#08050d;--theme-accent-ink:var(--entity-accent-ink)}
+.ultra-codex.ultra-detail{--theme-accent:var(--boss-accent);--accent:var(--boss-accent);--theme-focus:var(--boss-accent);--chaos-border:var(--ultra-border);--entity-accent-ink:#08050d;--theme-accent-ink:var(--entity-accent-ink)}
 .class-detail{--theme-accent:var(--class-accent);--accent:var(--class-accent);--theme-focus:var(--class-accent);--entity-accent-ink:#08050d;--theme-accent-ink:var(--entity-accent-ink)}
 html[data-theme=light] :is(.ultra-detail,.class-detail){--entity-accent-ink:#ffffff}
 /* Codex identity is independent of encounter / target category accents. */

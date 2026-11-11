@@ -180,6 +180,40 @@
     }
   },
   {
+    "classId": "abyssal-angel-aa-abyssal-angel-s-shadow-aas",
+    "skillId": "skill-5",
+    "officialName": "Crystallis Veil",
+    "sourceHash": "bf9a30c9b8c66385fbb287a884f4a927d6c30d4b29ce443cfc928737e20f9843",
+    "patch": {
+      "effects": [
+        {
+          "targets": [
+            "SELF"
+          ],
+          "name": "Crystallis Veil",
+          "text": "Tăng 25% Damage Resistance."
+        },
+        {
+          "targets": [
+            "SELF"
+          ],
+          "name": "Clean Cut",
+          "text": "Tăng 15% Crit Chance."
+        }
+      ],
+      "effectsVerificationStatus": "source_conflict",
+      "conflictId": "crystallis-duration"
+    },
+    "evidence": {
+      "source": "https://www.aq.com/gamedesignnotes/ClassBalanceUpdatesMay15-7494",
+      "snapshotPath": "content-sources/v12-11/abyssal2020.html",
+      "snapshotHash": "cee66e6b978f16be160b4595ad4f4d4a723507934a9e21ea08c82d21c14a255b",
+      "verifiedAt": "2026-11-11",
+      "rationale": "UNRESOLVED duration: current Wiki description 8s/6s conflicts with Notes 9s/7s. Retain mutually supported amounts; do not render an invented duration or internal audit explanation.",
+      "excerpt": "May 2020 Crystallis Veil Crit Chance update: 25% > 15%; current Wiki agrees on 25% Damage Resistance."
+    }
+  },
+  {
     "classId": "calendar-quantum-chronomancer",
     "skillId": "wiki-active-quantumshift",
     "officialName": "Quantum Shift",

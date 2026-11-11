@@ -138,7 +138,7 @@ Version 0.1.0. Quét ${catalog.length} hồ sơ với ${rows.length} bản ghi s
 
 | Mục | Kết quả |
 | --- | ---: |
-| Active trong registry, gồm bản ghi cách ly | ${rows.filter(row => !row.passive).length} |
+| Active trong registry, gồm bản ghi cách ly | ${rows.filter((row) => !row.passive).length} |
 | Active hiển thị | ${active.length} |
 | Active có Range xác minh | ${hasRange.length} |
 | Active có Target xác minh | ${hasTarget.length} |
@@ -147,7 +147,7 @@ Version 0.1.0. Quét ${catalog.length} hồ sơ với ${rows.length} bản ghi s
 | Passive có hiệu ứng tiếng Việt đã đối chiếu | ${verifiedPassive.length} |
 | Passive còn thiếu hiệu ứng | ${passive.length - verifiedPassive.length} |
 | Skill có placeholder Wiki được loại khỏi UI | ${placeholders.length} |
-| Auto Attack đã xác minh chỉ có sát thương cơ bản | ${basic.length} |
+| Normal Attack đã xác minh chỉ có sát thương cơ bản | ${basic.length} |
 | Active còn thiếu bản mô tả hiệu ứng | ${visiblePending.length} |
 | Active giữ một phần hiệu ứng từ guide | ${retainedPartial.length} |
 | Skill có trường hiệu ứng mâu thuẫn nguồn | ${disputed.length} |
@@ -157,11 +157,11 @@ Range chỉ nhận Close, Medium, Long và Infinite. Trường thiếu dùng “
 ## Sai khác nguồn
 
 - TimeKeeper giữ Compress Time ở phím 3 và Relive the Past ở phím 4 theo trang Class Wiki. Class Guide đảo hai tên này, chuỗi phím trong Guide vẫn trỏ đúng hồi phục và nuke sau khi đối chiếu.
-- Flight ghi 75% DoT trong mô tả và 50% trong Notes. Crystallis Veil ghi các mốc 8/6 giây trong mô tả và 9/7 giây trong Notes. Quantum Shift và Passive Quantum Spiral ghi 23 và 20 giây. Các trường tranh chấp dùng trạng thái source_conflict và ghi chú ngắn trên effect. ${disputed.map((row) => row.className + " · " + row.name).join(", ")}.
+- Flight ghi 75% DoT trong mô tả và 50% trong Notes. Crystallis Veil ghi các mốc 8/6 giây trong mô tả và 9/7 giây trong Notes. Quantum Shift và Passive Quantum Spiral ghi 23 và 20 giây. Đây là các mâu thuẫn được phát hiện ở V12.10; quyết định và bằng chứng mới nhất nằm trong V12_11_SOURCE_CONFLICTS.md. Hiện còn source_conflict: ${disputed.map((row) => row.className + " · " + row.name).join(", ")}.
 
 - Wiki CSS/CSH hiện ghi Fire! hồi chiêu 0,2 giây và Rank 0. Design Notes ra mắt ghi 0,15 giây và Default Attack. Panel dùng dữ liệu Wiki hiện tại. [Design Notes](https://www.aq.com/gamedesignnotes/aqw-30nov23-chronoshadowslayerclass-9386) · [Wiki](https://aqwwiki.wikidot.com/chrono-shadowslayer-class).
 - Bỏ số liệu gạch bỏ trong ${retired.length} bản ghi có bằng chứng, gồm Time of the Dragon 25 giây và Don’t Blink Twice 75% trong 8 giây. Giữ giá trị cũ và hash trong artifacts/qa/v12-10/retired-values.json.
-- ${special.map((s) => s.name + " (" + s.className + ")").join(", ") || "Không có trường Range đặc biệt"} có bằng chứng nguồn trong artifacts/qa/v12-10/skill-audit.json. Hai skill thiếu mô tả hiệu ứng là Forbidden Form (Dark Lord) và Auto Attack (Not a Mod), nguồn chỉ có câu mô tả chung. Audit liệt kê theo Class và Skill các trường hoặc hiệu ứng còn thiếu. Sai khác giữa số liệu Wiki và dữ liệu import có trong artifacts/qa/class-data-conflicts.json (${Array.isArray(skillChanges) ? skillChanges.length : "xem tệp"} mục của lượt chạy).
+- ${special.map((s) => s.name + " (" + s.className + ")").join(", ") || "Không có trường Range đặc biệt"} có bằng chứng nguồn trong artifacts/qa/v12-10/skill-audit.json. ${visiblePending.length ? "Skill thiếu mô tả: " + visiblePending.map((row) => row.className + " / " + row.name).join(", ") : "Forbidden Form và Auto Attack (NOT A MOD) đã được bổ sung từ Design Notes trong V12.11."} Audit liệt kê theo Class và Skill các trường hoặc hiệu ứng còn thiếu. Sai khác giữa số liệu Wiki và dữ liệu import có trong artifacts/qa/class-data-conflicts.json (${Array.isArray(skillChanges) ? skillChanges.length : "xem tệp"} mục của lượt chạy).
 
 ## Tệp và kiểm thử
 
@@ -193,7 +193,7 @@ updateAudit(
 );
 updateAudit(
   "CALENDAR_CLASS_AUDIT.md",
-  `Khôi phục 5 trang thiếu từ V12.8 với hồ sơ và artwork. ${membership.length} liên kết nguồn được biểu diễn trong registry, ${calendar.length} thẻ sau gộp. Nguồn Overworld Merge còn vấn đề asset riêng. Giữ Quantum/Continuum tách vì tên Passive khác nhau. Giữ CCM/TCM và UCM/OCM tách vì dữ liệu Wiki hiện có khác ở mô tả kỹ năng.\n\n${families.map((f) => "- " + f.year + " · " + f.variants.map((v) => v.name).join(" / ")).join("\n")}\n\nCác flow mới đọc từ Class Guide. Các nhánh nâng cao về consumable và timing chưa chuyển hết được liệt kê trong báo cáo V12.9.`,
+  `Khôi phục 5 trang thiếu từ V12.8 với hồ sơ và artwork. ${membership.length} liên kết nguồn được biểu diễn trong registry, ${calendar.length} thẻ sau gộp. Nguồn Overworld Merge còn vấn đề asset riêng. V12.12 đã đối chiếu same-skills Notes, Class Guide và từng field để gộp Quantum/Continuum, CCM/TCM và UCM/OCM. Các khác biệt tên Passive và mức độ chi tiết Notes được lưu trong family-equivalence-reviews.json; không gộp gameplay 2019 với 2020.\n\n${families.map((f) => "- " + f.year + " · " + f.variants.map((v) => v.name).join(" / ")).join("\n")}\n\nCác flow mới đọc từ Class Guide. Các nhánh nâng cao về consumable và timing chưa chuyển hết được liệt kê trong báo cáo V12.9.`,
 );
 updateAudit(
   "CLASS_ART_VARIANT_AUDIT.md",

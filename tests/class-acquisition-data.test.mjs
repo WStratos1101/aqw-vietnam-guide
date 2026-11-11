@@ -24,7 +24,10 @@ function html(url) {
   return fs.readFileSync(path, "utf8");
 }
 test("All 113 Class acquisition records retain source evidence, scoped identities and explicit availability", () => {
-  assert.equal(catalog.length, 113 + read("src/content/classes/calendar-extension.json").profiles.length);
+  assert.equal(
+    catalog.length,
+    113 + read("src/content/classes/calendar-extension.json").profiles.length,
+  );
   assert.equal(Object.keys(data.classes).length, catalog.length);
   for (const c of catalog) {
     const record = data.classes[c.id],
@@ -40,12 +43,25 @@ test("All 113 Class acquisition records retain source evidence, scoped identitie
     );
     for (const m of record.methods) {
       assert.equal(m.classId, c.id);
-      assert.equal(m.sourceHash, sourceHash(html(m.source)));
+      assert.equal(
+        m.sourceHash,
+        sourceHash(
+          m.sourceSnapshotPath
+            ? fs.readFileSync(m.sourceSnapshotPath, "utf8")
+            : html(m.source),
+        ),
+      );
       assert.equal(m.verificationStatus, "verified");
       if (m.availability === "legacy") assert.equal(m.isAvailable, false);
       if (m.availability === "seasonal") assert.equal(m.isAvailable, null);
       if (m.type === "shop") {
-        assert.deepEqual(m.shop.price, parsePrice(m.evidence.priceText));
+        const priceText =
+          m.evidence.purchasePrice?.sourceText || m.evidence.priceText;
+        assert.deepEqual(m.shop.price, parsePrice(priceText));
+        if (m.evidence.purchasePrice) {
+          assert.equal(m.evidence.purchasePrice.source, m.shop.source);
+          assert.equal(m.evidence.recovery.source, m.shop.source);
+        }
         assert.ok(["AC", "Gold"].includes(m.shop.price.currency));
         assert.ok(!m.quest && !m.merge);
       }

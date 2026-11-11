@@ -185,7 +185,7 @@
   transition: transform var(--class-reveal) var(--class-ease);
 }
 .class-card:hover > .class-art > * {
-  transform: scale(1.035);
+  transform: none;
 }
 .class-card > div:last-child {
   padding: 18px 18px 22px;

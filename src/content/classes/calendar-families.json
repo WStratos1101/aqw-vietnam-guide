@@ -106,6 +106,50 @@
     ]
   },
   {
+    "id": "chrono-corrupted",
+    "year": 2019,
+    "primaryClassId": "calendar-corrupted-chronomancer",
+    "sharedSkillSetId": "chrono-corrupted",
+    "sharedComboSetId": "chrono-corrupted",
+    "equivalenceReviewId": "chrono-corrupted",
+    "variants": [
+      {
+        "id": "corrupted-chronomancer",
+        "classId": "calendar-corrupted-chronomancer",
+        "name": "Corrupted Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class"
+      },
+      {
+        "id": "timeless-chronomancer",
+        "classId": "calendar-timeless-chronomancer",
+        "name": "Timeless Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac"
+      }
+    ]
+  },
+  {
+    "id": "chrono-underworld",
+    "year": 2020,
+    "primaryClassId": "calendar-underworld-chronomancer",
+    "sharedSkillSetId": "chrono-underworld",
+    "sharedComboSetId": "chrono-underworld",
+    "equivalenceReviewId": "chrono-underworld",
+    "variants": [
+      {
+        "id": "underworld-chronomancer",
+        "classId": "calendar-underworld-chronomancer",
+        "name": "Underworld Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/underworld-chronomancer-class"
+      },
+      {
+        "id": "overworld-chronomancer",
+        "classId": "calendar-overworld-chronomancer",
+        "name": "Overworld Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/overworld-chronomancer-ac"
+      }
+    ]
+  },
+  {
     "id": "chrono-necrotic",
     "year": 2021,
     "primaryClassId": "calendar-nechronomancer",
@@ -122,6 +166,28 @@
         "classId": "calendar-necrotic-chronomancer",
         "name": "Necrotic Chronomancer",
         "source": "https://aqwwiki.wikidot.com/necrotic-chronomancer"
+      }
+    ]
+  },
+  {
+    "id": "chrono-quantum",
+    "year": 2022,
+    "primaryClassId": "calendar-quantum-chronomancer",
+    "sharedSkillSetId": "chrono-quantum",
+    "sharedComboSetId": "chrono-quantum",
+    "equivalenceReviewId": "chrono-quantum",
+    "variants": [
+      {
+        "id": "quantum-chronomancer",
+        "classId": "calendar-quantum-chronomancer",
+        "name": "Quantum Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/quantum-chronomancer-class"
+      },
+      {
+        "id": "continuum-chronomancer",
+        "classId": "calendar-continuum-chronomancer",
+        "name": "Continuum Chronomancer",
+        "source": "https://aqwwiki.wikidot.com/continuum-chronomancer-class"
       }
     ]
   },

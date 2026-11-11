@@ -191,12 +191,16 @@ Design: local Taste skill, True-black flat, seed 194819239; existing bronze/dark
 
 ## Boss / Class UI refinement
 
-133 source-derived acquisition summaries and editorial tier labels; 133 sourced combo profiles use visual flows. 18 art selectors, including VHL/DHL. 22 acquisition records remain partial; tier labels are not official difficulty assertions. See BOSS_CLASS_UI_CONTENT_REPORT.md.
+133 source-derived acquisition summaries and editorial tier labels; 133 sourced combo profiles use visual flows. 18 art selectors, including VHL/DHL. 8 acquisition records remain partial; tier labels are not official difficulty assertions. See BOSS_CLASS_UI_CONTENT_REPORT.md.
 
 ## V12.7 / V12.8 verified update
 
-133 current profiles. Original acquisition backlog 41: 22 completed, 19 remain; current partial records 22. 26 Calendar profiles in their exclusive display category, 26 verified years. 18 genuine alternative selectors (gender selectors hidden). 1042 verified skill mappings; 38 quarantined. Reports: V12_7_DATA_COMPLETION_REPORT.md and V12_8_CLASS_BOSS_UI_REFINEMENT_REPORT.md. Browser browser_launch_blocked.
+133 current profiles. Original acquisition backlog 41: 36 completed, 5 remain; current partial records 8. 26 Calendar profiles in their exclusive display category, 26 verified years. 18 genuine alternative selectors (gender selectors hidden). 1042 verified skill mappings; 38 quarantined. Reports: V12_7_DATA_COMPLETION_REPORT.md and V12_8_CLASS_BOSS_UI_REFINEMENT_REPORT.md. Browser browser_launch_blocked.
 
 ## V12.9 / V12.10
 
-133 hồ sơ, 111 acquisition reviewed và 22 partial. Backlog V12.7 giữ 22/41 hoàn tất. Quest Reward rút gọn cho 15 hồ sơ. 19 thẻ Calendar và 8 Calendar Family có chuyển biến thể.
+133 hồ sơ, 125 acquisition reviewed và 8 partial. Backlog V12.7 giữ 36/41 hoàn tất. Quest Reward rút gọn cho 19 hồ sơ. 19 thẻ Calendar và 8 Calendar Family có chuyển biến thể.
+
+## V12.11 verification recovery
+
+133 profiles; 125 acquisition reviewed / 8 partial. Original backlog 41: 36 completed, 5 remaining. This run recovered 14/19 profiles. Source and reason per entry: V12_11_VERIFICATION_QUEUE.md. Quest Reward stays compact; original metadata and non-Class trackers preserved. Unit/semantic/build passed; Browser QA BLOCKED.

@@ -123,8 +123,8 @@ var bosses_default = {
   "ultra-nulgath": {
     officialName: "Nulgath the Archfiend",
     ultraName: "Ultra Nulgath",
-    dark: "#BE8BEE",
-    light: "#6B329A"
+    dark: "#F18B91",
+    light: "#A12432"
   },
   "ultra-drago": {
     officialName: "King Draco",
@@ -172,8 +172,8 @@ var bosses_default = {
   "gramiel-the-graceful": {
     officialName: "Gramiel the Graceful",
     ultraName: "Ultra Gramiel",
-    dark: "#A5D9AA",
-    light: "#2E6C41"
+    dark: "#E0BC70",
+    light: "#795612"
   },
   kasuko: {
     officialName: "Kasuko",
@@ -44637,7 +44637,7 @@ var catalog_default = [
     ],
     playstyle: "Duy tr\xEC h\u1ED3i ph\u1EE5c cho \u0111\u1ED3ng \u0111\u1ED9i",
     acquisitionType: [],
-    acquisitionSummary: "Merge t\u1EA1i: Alpha Omega Merge \xB7 +5 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "Merge t\u1EA1i: Alpha Omega Merge \xB7 +3 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -44693,16 +44693,6 @@ var catalog_default = [
           kind: "material",
           value: "Treasure Potion \xD730",
           source: "https://aqwwiki.wikidot.com/alpha-doommega"
-        },
-        {
-          kind: "material",
-          value: "Treasure Potion \xD730",
-          source: "https://aqwwiki.wikidot.com/alpha-doommega"
-        },
-        {
-          kind: "material",
-          value: "Treasure Potion \xD730",
-          source: "https://aqwwiki.wikidot.com/alpha-doommega"
         }
       ]
     },
@@ -44721,7 +44711,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Merge t\u1EA1i: Blazebeard Merge \xB7 +2 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "Merge t\u1EA1i: Blazebeard Merge \xB7 +3 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -44784,8 +44774,8 @@ var catalog_default = [
           source: "https://aqwwiki.wikidot.com/pirate"
         },
         {
-          kind: "material",
-          value: "Pirate Class Token \xD71",
+          kind: "prerequisite",
+          value: "Must have one of Classic Alpha Pirate, Classic Pirate (Class), or Pirate in inventory.",
           source: "https://aqwwiki.wikidot.com/pirate"
         },
         {
@@ -44796,6 +44786,16 @@ var catalog_default = [
         {
           kind: "material",
           value: "Pirate Class Token \xD71",
+          source: "https://aqwwiki.wikidot.com/pirate"
+        },
+        {
+          kind: "quest_reward",
+          value: "Map Recovery",
+          source: "https://aqwwiki.wikidot.com/pirate"
+        },
+        {
+          kind: "material",
+          value: "Map Fragment \xD75",
           source: "https://aqwwiki.wikidot.com/pirate"
         }
       ]
@@ -45612,7 +45612,7 @@ var catalog_default = [
       "reputation",
       "questline"
     ],
-    acquisitionSummary: "Merge t\u1EA1i: Blaze Binder Rep Class \xB7 +4 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "Merge t\u1EA1i: Blaze Binder Rep Class \xB7 +3 ph\u01B0\u01A1ng \xE1n",
     strengths: [
       "C\xF3 nhi\u1EC1u k\u1EF9 n\u0103ng \u0111\xE1nh nhi\u1EC1u m\u1EE5c ti\xEAu.",
       "C\xF3 c\xF4ng c\u1EE5 ph\xF2ng th\u1EE7 v\xE0 h\u1ED3i ph\u1EE5c."
@@ -45965,7 +45965,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "2,000 ACs \xB7 Chaos Slayer Class \xB7 Battle Drakath / Battleon PvP / Battleon War (Location) / Chaos Beast / Confrontation (Location) / Crownsreach / Darkovia Forest - Attack / Darkovia Forest - Defend / Doomwood Forest - Attack / Doomwood Forest - Defend / Mount Doomskull (Location) / New Finale / Vasalkar Lair - Attack (1) / Vasalkar Lair - Defend (1) / Willow Creek - Attack / Willow Creek - Defend / World War Lore (Location) \xB7 +3 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "2,000 ACs \xB7 Chaos Slayer Class \xB7 Battle Drakath / Battleon PvP / Battleon War (Location) / Chaos Beast / Confrontation (Location) / Crownsreach / Darkovia Forest - Attack / Darkovia Forest - Defend / Doomwood Forest - Attack / Doomwood Forest - Defend / Mount Doomskull (Location) / New Finale / Vasalkar Lair - Attack (1) / Vasalkar Lair - Defend (1) / Willow Creek - Attack / Willow Creek - Defend / World War Lore (Location) \xB7 +2 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -46487,7 +46487,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Merge t\u1EA1i: Curiosities \xB7 +1 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "Merge t\u1EA1i: Murder Moon Merge \xB7 +1 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -46526,8 +46526,8 @@ var catalog_default = [
     difficultyStatus: "editorial",
     progressionTier: "Midgame",
     progressionTierVerification: {
-      status: "unverified",
-      confidence: "low",
+      status: "editorial_inferred",
+      confidence: "medium",
       evidence: [
         {
           kind: "material",
@@ -46560,33 +46560,8 @@ var catalog_default = [
           source: "https://aqwwiki.wikidot.com/dark-lord"
         },
         {
-          kind: "material",
-          value: "Cyber Crystal \xD766",
-          source: "https://aqwwiki.wikidot.com/dark-lord"
-        },
-        {
-          kind: "material",
-          value: "S Ring \xD715",
-          source: "https://aqwwiki.wikidot.com/dark-lord"
-        },
-        {
-          kind: "material",
-          value: "Fifth Lord's Filtrinator \xD715",
-          source: "https://aqwwiki.wikidot.com/dark-lord"
-        },
-        {
-          kind: "material",
-          value: "Dark Helmet \xD71",
-          source: "https://aqwwiki.wikidot.com/dark-lord"
-        },
-        {
-          kind: "material",
-          value: "Dotty \xD715",
-          source: "https://aqwwiki.wikidot.com/dark-lord"
-        },
-        {
-          kind: "material",
-          value: "Gold Voucher 25k \xD74",
+          kind: "quest_reward",
+          value: "Darkside Gear",
           source: "https://aqwwiki.wikidot.com/dark-lord"
         }
       ]
@@ -47557,12 +47532,17 @@ var catalog_default = [
     difficultyStatus: "editorial",
     progressionTier: "Midgame",
     progressionTierVerification: {
-      status: "unverified",
-      confidence: "low",
+      status: "editorial_inferred",
+      confidence: "medium",
       evidence: [
         {
           kind: "quest_reward",
           value: "Protosartorium Parts",
+          source: "https://aqwwiki.wikidot.com/enforcer"
+        },
+        {
+          kind: "material",
+          value: "ProtoSartorium Parts \xD71",
           source: "https://aqwwiki.wikidot.com/enforcer"
         }
       ]
@@ -47772,11 +47752,6 @@ var catalog_default = [
       status: "unverified",
       confidence: "low",
       evidence: [
-        {
-          kind: "material",
-          value: "Glowing Pumpkinseed \xD7500",
-          source: "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend"
-        },
         {
           kind: "material",
           value: "Glowing Pumpkinseed \xD7500",
@@ -48070,7 +48045,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "2,000 ACs \xB7 Frostvale Barbarian",
+    acquisitionSummary: "2,000 ACs \xB7 Frostvale Barbarian \xB7 +2 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -48109,9 +48084,50 @@ var catalog_default = [
     difficultyStatus: "editorial",
     progressionTier: "Midgame",
     progressionTierVerification: {
-      status: "unverified",
-      confidence: "low",
-      evidence: []
+      status: "editorial_inferred",
+      confidence: "medium",
+      evidence: [
+        {
+          kind: "quest_reward",
+          value: "Unleash the Frostvale Barbarian",
+          source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+        },
+        {
+          kind: "material",
+          value: "Sword Of Hope (Sword) \xD71",
+          source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+        },
+        {
+          kind: "material",
+          value: "Sassafras' War Helm \xD71",
+          source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+        },
+        {
+          kind: "material",
+          value: "Fur Tuft \xD71",
+          source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+        },
+        {
+          kind: "material",
+          value: "Icy Holly \xD71",
+          source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+        },
+        {
+          kind: "material",
+          value: "Glaceran Key \xD71",
+          source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+        },
+        {
+          kind: "material",
+          value: "Infernal Ice Heart \xD71",
+          source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+        },
+        {
+          kind: "prerequisite",
+          value: "Must have IceStorm Collection Chest Pet 2018 in inventory.",
+          source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+        }
+      ]
     },
     displayCategory: "Midgame"
   },
@@ -48749,12 +48765,17 @@ var catalog_default = [
     difficultyStatus: "editorial",
     progressionTier: "Midgame",
     progressionTierVerification: {
-      status: "unverified",
-      confidence: "low",
+      status: "editorial_inferred",
+      confidence: "medium",
       evidence: [
         {
           kind: "quest_reward",
           value: "Call of Kathool",
+          source: "https://aqwwiki.wikidot.com/kathool-adept"
+        },
+        {
+          kind: "material",
+          value: "Kathoo's Morsel Consumed \xD71",
           source: "https://aqwwiki.wikidot.com/kathool-adept"
         }
       ]
@@ -49812,7 +49833,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Merge t\u1EA1i: Air Storm \xB7 +3 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "Merge t\u1EA1i: Doom Merge (2) \xB7 +1 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -49851,8 +49872,8 @@ var catalog_default = [
     difficultyStatus: "editorial",
     progressionTier: "Midgame",
     progressionTierVerification: {
-      status: "unverified",
-      confidence: "low",
+      status: "editorial_inferred",
+      confidence: "medium",
       evidence: [
         {
           kind: "material",
@@ -49865,13 +49886,13 @@ var catalog_default = [
           source: "https://aqwwiki.wikidot.com/mechajouster"
         },
         {
-          kind: "material",
-          value: "Treasure Potion \xD730",
+          kind: "quest_reward",
+          value: "Quest to Unlock Jouster Class",
           source: "https://aqwwiki.wikidot.com/mechajouster"
         },
         {
           kind: "material",
-          value: "Treasure Potion \xD730",
+          value: "Energy Orb \xD71",
           source: "https://aqwwiki.wikidot.com/mechajouster"
         }
       ]
@@ -50776,7 +50797,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "0 ACs \xB7 1st Upholder - Book of Lore \xB7 1st Upholder / Book of Lore \xB7 +17 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 1st Upholder - Book of Lore \xB7 +17 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -50820,6 +50841,11 @@ var catalog_default = [
       evidence: [
         {
           kind: "prerequisite",
+          value: "Must have purchased membership or AdventureCoins between October 1 and October 31, 2009.",
+          source: "https://aqwwiki.wikidot.com/sentinel"
+        },
+        {
+          kind: "prerequisite",
           value: `Must have purchased a membership any time from October 1st to October 31st, 2010. Weapons Classes / Armors Helms Back Items Misc. Items Name Price Classic Onyx Star Sword 0 AC Onyx Star Sword 0 AC Sentinel Sword 0 AC Name Price Sentinel 0 AC Sentinel Armor 0 AC Name Price Sentinel Helm 0 AC Name Price Sentinel Cape 0 AC Name Price DragonRoad Merge Access Card 0 AC //<![CDATA[ OZONE.dom.onDomReady(function(){ var tabView2bde01db0066769bc836034584164e49 = new YAHOO.widget.TabView('wiki-tabview-2bde01db0066769bc836034584164e49'); }, "dummy-ondomready-block"); //]]> Browse this shop in our free web game at www.AQ.com!`,
           source: "https://aqwwiki.wikidot.com/sentinel"
         },
@@ -50851,6 +50877,11 @@ var catalog_default = [
         {
           kind: "prerequisite",
           value: `Must have an active membership that expires on or after November 2nd, 2018 in order to access this shop. Weapons Classes / Armors Helms Back Items Misc. Items Name Price Bloodborne Star Sword 0 AC Classic Bloodborne Star Sword 0 AC Classic Gilded Star Sword 0 AC Classic Guncraft Star Sword 0 AC Classic Plasma Star Sword 0 AC Classic Spiderkin Star Sword 0 AC Gilded Star Sword 0 AC Plasma Star Sword 0 AC Quickdraw Star Gun 0 AC Sentinel Sword 0 AC Spiderkin Star Sword 0 AC Name Price Sentinel 0 AC Sentinel Armor 0 AC Name Price Sentinel Helm 0 AC Name Price Sentinel Cape 0 AC Name Price DragonRoad Merge Access Card 0 AC //<![CDATA[ OZONE.dom.onDomReady(function(){ var tabView6d33f7f4e3b77a24aa4d41fccb50063c = new YAHOO.widget.TabView('wiki-tabview-6d33f7f4e3b77a24aa4d41fccb50063c'); }, "dummy-ondomready-block"); //]]> Browse this shop in our free web game at www.AQ.com!`,
+          source: "https://aqwwiki.wikidot.com/sentinel"
+        },
+        {
+          kind: "prerequisite",
+          value: "Must have had active membership expiring on or after November 4, 2019.",
           source: "https://aqwwiki.wikidot.com/sentinel"
         },
         {
@@ -51899,13 +51930,23 @@ var catalog_default = [
     difficultyStatus: "editorial",
     progressionTier: "Midgame",
     progressionTierVerification: {
-      status: "unverified",
-      confidence: "low",
+      status: "editorial_inferred",
+      confidence: "medium",
       evidence: [
         {
           kind: "material",
           value: "Token of Vindication \xD790",
           source: "https://aqwwiki.wikidot.com/vindicator-of-they-merge"
+        },
+        {
+          kind: "prerequisite",
+          value: "Must have Vindicator Of They (Merge) in your inventory with at least 1 Class Point to access this shop.",
+          source: "https://aqwwiki.wikidot.com/the-collector-class-0-ac"
+        },
+        {
+          kind: "prerequisite",
+          value: "Must have Vindicator Of They (AC) in your inventory with at least 1 Class Point to access this shop.",
+          source: "https://aqwwiki.wikidot.com/the-collector-class-0-ac"
         },
         {
           kind: "material",
@@ -52008,7 +52049,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Character Creation \xB7 +6 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "Character Creation \xB7 +7 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],

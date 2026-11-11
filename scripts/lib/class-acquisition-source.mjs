@@ -61,9 +61,11 @@ function materialTree(ul, source) {
   for (const li of [...ul.children].filter((n) => n.nodeName === "LI")) {
     const nested = li.querySelector(":scope > ul");
     const own = li.cloneNode(true);
-    own.querySelectorAll(":scope > ul").forEach(n => n.remove());
+    own.querySelectorAll(":scope > ul").forEach((n) => n.remove());
     const ownValue = text(own);
-    const informational = nested && [...nested.children].every(n => /^Dropped by(?:\s|:)/i.test(text(n)));
+    const informational =
+      nested &&
+      [...nested.children].every((n) => /^Dropped by(?:\s|:)/i.test(text(n)));
     if (nested && !informational) {
       if (/(?:one|any) of the following/i.test(text(li.firstChild))) {
         const branch = materialTree(nested, source);
@@ -99,16 +101,19 @@ function materialTree(ul, source) {
       (a) => text(a) === m[1],
     );
     const material = item(
-        m[1],
-        Number(m[2].replaceAll(",", "")),
-        link
-          ? new URL(link.getAttribute("href"), source).href.replace(
-              /^http:/,
-              "https:",
-            )
-          : source,
+      m[1],
+      Number(m[2].replaceAll(",", "")),
+      link
+        ? new URL(link.getAttribute("href"), source).href.replace(
+            /^http:/,
+            "https:",
+          )
+        : source,
+    );
+    if (informational)
+      material.acquisitionSources = [...nested.querySelectorAll("a[href]")].map(
+        (a) => linkData(a, source),
       );
-    if (informational) material.acquisitionSources = [...nested.querySelectorAll("a[href]")].map(a => linkData(a, source));
     nodes.push(material);
   }
   const tree = { kind: "allOf", requirements: nodes };
@@ -150,7 +155,14 @@ export async function parseClassAcquisitionPage(html, url) {
       ];
     else {
       const next = location.strong.parentElement.nextElementSibling;
-      const ul=next?.matches("ul")?next:next?.matches(".collapsible-block")&&/Locations/i.test(text(next.querySelector(".collapsible-block-link")))?next.querySelector(".collapsible-block-content > ul"):null;
+      const ul = next?.matches("ul")
+        ? next
+        : next?.matches(".collapsible-block") &&
+            /Locations/i.test(
+              text(next.querySelector(".collapsible-block-link")),
+            )
+          ? next.querySelector(".collapsible-block-content > ul")
+          : null;
       if (ul?.matches("ul"))
         locations = [...ul.children]
           .filter((n) => n.nodeName === "LI")
@@ -183,11 +195,19 @@ export async function parseClassAcquisitionPage(html, url) {
     questLink?.name ||
     priceValue?.match(/Reward from (?:the )?['‘’"]([^'‘’"]+)['‘’"]/i)?.[1] ||
     null;
-  const dropPriceList=price?.strong.parentElement.nextElementSibling;
-  const droppedList=dropPriceList?.matches("ul")?[...dropPriceList.querySelectorAll(":scope > li")].find(li=>/^Dropped by:/i.test(text(li))):null;
-  const dropSources=droppedList?[...droppedList.querySelectorAll("a[href]")].map(a=>linkData(a,url)):[];
-  const dropName = dropSources.length?dropSources.map(s=>s.name).join(" / "):
-    priceValue?.match(/Drop(?:ped)? (?:from|by)\s+(.+?)(?:\)|$)/i)?.[1] || null;
+  const dropPriceList = price?.strong.parentElement.nextElementSibling;
+  const droppedList = dropPriceList?.matches("ul")
+    ? [...dropPriceList.querySelectorAll(":scope > li")].find((li) =>
+        /^Dropped by:/i.test(text(li)),
+      )
+    : null;
+  const dropSources = droppedList
+    ? [...droppedList.querySelectorAll("a[href]")].map((a) => linkData(a, url))
+    : [];
+  const dropName = dropSources.length
+    ? dropSources.map((s) => s.name).join(" / ")
+    : priceValue?.match(/Drop(?:ped)? (?:from|by)\s+(.+?)(?:\)|$)/i)?.[1] ||
+      null;
   const prerequisites = [...d.querySelectorAll("li")]
     .filter((li) => !li.closest(".skills,.collapsible-block-content"))
     .map(text)
@@ -213,8 +233,27 @@ export async function parseClassAcquisitionPage(html, url) {
         : dropName
           ? "drop"
           : "other";
-  const priceList=price?.strong.parentElement.nextElementSibling;
-  const additionalAcquisitions=priceList?.matches("ul")?[...priceList.querySelectorAll(":scope > li")].filter(li=>/^Reward from the:$/i.test(text(li.firstChild))).flatMap(li=>[...li.querySelectorAll(":scope > ul > li")].map(row=>{const a=row.querySelector("a[href]");return a?{...linkData(a,url),availability:[...row.querySelectorAll("img")].some(i=>/raresmall/i.test(i.src))?"legacy":"available"}:null;})).filter(Boolean):[];
+  const priceList = price?.strong.parentElement.nextElementSibling;
+  const additionalAcquisitions = priceList?.matches("ul")
+    ? [...priceList.querySelectorAll(":scope > li")]
+        .filter((li) => /^Reward from the:$/i.test(text(li.firstChild)))
+        .flatMap((li) =>
+          [...li.querySelectorAll(":scope > ul > li")].map((row) => {
+            const a = row.querySelector("a[href]");
+            return a
+              ? {
+                  ...linkData(a, url),
+                  availability: [...row.querySelectorAll("img")].some((i) =>
+                    /raresmall/i.test(i.src),
+                  )
+                    ? "legacy"
+                    : "available",
+                }
+              : null;
+          }),
+        )
+        .filter(Boolean)
+    : [];
   const result = {
     title,
     url,
@@ -228,8 +267,19 @@ export async function parseClassAcquisitionPage(html, url) {
     questSource: questLink?.url || null,
     dropName,
     dropSources,
-    excludedGame:/only works in Infinity/i.test(d.textContent)?"AQWorlds Infinity":null,
-    otherAcquisition:/This item can only be obtained by redeeming any[^.]*Digital Awesomeness/i.test(d.textContent)?{label:"IoDA",description:"Đổi token … of Digital Awesomeness tại Awesome Prizes trong AQW Account Manager. Phiên bản này không cấp badge và không thay thế bản farm trong Quest/Shop yêu cầu bản gốc."}:null,
+    excludedGame: /only works in Infinity/i.test(d.textContent)
+      ? "AQWorlds Infinity"
+      : null,
+    otherAcquisition:
+      /This item can only be obtained by redeeming any[^.]*Digital Awesomeness/i.test(
+        d.textContent,
+      )
+        ? {
+            label: "IoDA",
+            description:
+              "Đổi token … of Digital Awesomeness tại Awesome Prizes trong AQW Account Manager. Phiên bản này không cấp badge và không thay thế bản farm trong Quest/Shop yêu cầu bản gốc.",
+          }
+        : null,
     materials: merge.tree,
     rawMaterials: merge.rows,
     materialIssue: merge.issue,
@@ -274,7 +324,9 @@ export async function parseLinkedAcquisitionPage(html, url, questName) {
     title,
     url,
     sourceHash: sourceHash(html),
-    isMergeShop:[...w.document.querySelectorAll(".page-tags a")].some(a=>/^merge$/i.test(text(a))),
+    isMergeShop: [...w.document.querySelectorAll(".page-tags a")].some((a) =>
+      /^merge$/i.test(text(a)),
+    ),
     isShop:
       !!field(d, "Shop Owner|Shop NPC") ||
       [...w.document.querySelectorAll(".page-tags a")].some((a) =>
@@ -297,10 +349,13 @@ export async function parseLinkedAcquisitionPage(html, url, questName) {
       : tags.some((s) => /seasonal/i.test(s))
         ? "seasonal"
         : "unknown",
-    prerequisites: [...d.querySelectorAll("li"), ...[...d.querySelectorAll("p")].filter(p=>/^Notes?:/i.test(text(p)))]
+    prerequisites: [
+      ...d.querySelectorAll("li"),
+      ...[...d.querySelectorAll("p")].filter((p) => /^Notes?:/i.test(text(p))),
+    ]
       .filter((li) => !li.closest(".skills,.collapsible-block-content"))
-      .map(n=>text(n).replace(/^Notes?:\s*/i,""))
-      .concat(field(d,"Notes?")?.value || "")
+      .map((n) => text(n).replace(/^Notes?:\s*/i, ""))
+      .concat(field(d, "Notes?")?.value || "")
       .filter(
         (t) =>
           /^Requires?\s|^Must (?:have|be|complete)/i.test(t) &&

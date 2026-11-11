@@ -21,14 +21,16 @@
 .ultra-codex {
   --u-bg: var(--ultra-obsidian);
   --u-panel: var(--ultra-charcoal);
-  --u-gold: var(--ultra-gold);
+  --u-gold: var(--boss-accent, var(--ultra-gold));
   --u-text: var(--ultra-bone);
   --u-muted: var(--ultra-muted);
-  --boss-accent: var(--ultra-gold);
   color: var(--u-text);
   background: var(--u-bg);
   padding: 40px clamp(20px, 4.5vw, 88px) 100px;
   animation: ultra-enter var(--ultra-reveal) var(--ultra-ease) both;
+}
+.ultra-codex:not(.ultra-detail) {
+  --boss-accent: var(--ultra-gold);
 }
 .ultra-codex *,
 .ultra-codex *::before,
@@ -806,8 +808,8 @@
   display: grid;
   place-items: center;
   background: var(--ultra-charcoal);
-  color: var(--ultra-gold);
-  border: 1px solid var(--ultra-gold);
+  color: var(--u-gold);
+  border: 1px solid var(--u-gold);
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
@@ -823,12 +825,12 @@
   transform: none;
 }
 .back-to-top:hover {
-  background: var(--ultra-gold);
+  background: var(--u-gold);
   color: var(--entity-accent-ink, var(--ultra-obsidian));
   transform: translateY(-3px);
 }
 .back-to-top:focus-visible {
-  outline: 3px solid var(--ultra-gold);
+  outline: 3px solid var(--u-gold);
   outline-offset: 4px;
 }
 @keyframes ultra-enter {

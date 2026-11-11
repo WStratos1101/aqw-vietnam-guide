@@ -84,9 +84,9 @@ function MethodPanel({
         ? "Seasonal · Kiểm tra thời gian event"
         : method.availability === "limited"
           ? "Yêu cầu quyền sở hữu từ đợt phát hành cũ"
-        : method.availability === "unknown"
-          ? "Availability chưa xác minh"
-          : "Khả dụng";
+          : method.availability === "unknown"
+            ? "Availability chưa xác minh"
+            : "Khả dụng";
   const quest = method.quest;
   const code = method.acquisitionKind === "calendar_code";
   return (

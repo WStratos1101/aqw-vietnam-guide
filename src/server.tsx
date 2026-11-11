@@ -1,3 +1,4 @@
+import {classIdentityLabel} from "./lib/class-identity";
 import { primaryCalendarClass } from "./lib/calendar-families";
 import {isComingSoon} from './lib/site-feature-access.mjs';
 import challengeCatalog from './content/challenges/catalog.json';
@@ -44,7 +45,7 @@ export function render(path: string) {
     title:
       (comingSoon ? "Thông tin đang được cập nhật" : is404
         ? "Không tìm thấy trang"
-        : challenge?.name || (path === "/challenge-dungeon" ? "Challenge Dungeon" : path === "/other-challenges" ? "Other Challenges" : undefined) || (path === "/class" ? "Class Codex" : profile?.name) ||
+        : challenge?.name || (path === "/challenge-dungeon" ? "Challenge Dungeon" : path === "/other-challenges" ? "Other Challenges" : undefined) || (path === "/class" ? "Class Codex" : (profile ? classIdentityLabel(profile.id) : undefined)) ||
           (path === "/ultra-boss"
             ? "Ultra Boss Codex"
             : path.startsWith("/ultra-boss/")

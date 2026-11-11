@@ -1,3 +1,4 @@
+import {classIdentity,classIdentityAliases} from "../../lib/class-identity";
 import {
   calendarFamily,
   primaryCalendarClass,
@@ -15,7 +16,8 @@ import { ClassAsset } from "./ClassAsset";
 
 export function ClassCard({ profile }: { profile: AqwClass }) {
   const family = calendarFamily(profile.id);
-  const name = family?.variants[0].name ?? profile.name;
+  const identity=classIdentity(profile.id,family?.variants[0].name);
+  const name = identity?.officialName ?? family?.variants[0].name ?? profile.name;
   return (
     <a
       href={`/class/${profile.slug}`}
@@ -27,7 +29,7 @@ export function ClassCard({ profile }: { profile: AqwClass }) {
         } as CSSProperties
       }
     >
-      <ClassAsset id={profile.image} name={profile.name} />
+      <ClassAsset id={profile.image} name={name} />
       <div>
         <ClassRoles roles={profile.role} />
         {calendar.some((e) => e.classId === profile.id) && (
@@ -41,6 +43,7 @@ export function ClassCard({ profile }: { profile: AqwClass }) {
           </small>
         )}
         <h2>{name}</h2>
+        {identity?.primaryAbbreviation && <small className="class-abbreviation">{identity.primaryAbbreviation}</small>}
         <ArrowRight size={18} />
       </div>
     </a>
@@ -57,10 +60,10 @@ export function ClassDirectory() {
     .filter((c) => primaryCalendarClass(c.id) === c.id)
     .map((c) => {
       const family = calendarFamily(c.id);
-      if (!family) return c;
+      if (!family) return {...c,aliases:[...c.aliases,...classIdentityAliases(c.id)]};
       return {
         ...c,
-        aliases: [...c.aliases, ...family.variants.map((v) => v.name)],
+        aliases: [...c.aliases,...classIdentityAliases(c.id), ...family.variants.flatMap((v) => [v.name,...classIdentityAliases(v.classId)])],
         acquisitionType: [
           ...new Set(
             family.variants.flatMap(

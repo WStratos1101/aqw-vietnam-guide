@@ -4,10 +4,10 @@ Version 0.1.0; no push/deploy, Cloudflare bindings or D1 changes. Baseline acqui
 
 | Category | Before | Completed | Remaining |
 |---|---:|---:|---:|
-| Acquisition | 41 | 22 | 19 |
+| Acquisition | 41 | 36 | 5 |
 | Calendar source verification | 8 | 5 | 3 |
 | Arena encounter verification | 2 | 0 | 2 |
-| Temporary progression tiers | 95 | 28 | 67 |
+| Temporary progression tiers | 95 | 34 | 61 |
 | Browser QA | Blocked | 0 | Blocked |
 
 ## Metric definitions
@@ -16,33 +16,32 @@ Acquisition completion uses existing record.reviewStatus plus method-level evide
 
 Arena metric is intentionally strict: both remain incomplete as complete profiles. Infernal Revenger now has verified Level 23, HP 6,500, Red Mist / Sword Slash 79–97 and source rewards in the evidence registry. Its local illustration/direct URL is still unresolved. Infernal Mage stats remain unavailable. Direct URLs return redirect loops; Docs explains only the final five Infernal encounters. No unrelated illustration or borrowed rotation is used.
 
-Temporary-tier baseline is reconstructed from the saved original acquisition records and unchanged classification rules for the original 125 identities; new Calendar profiles are excluded from Before. Completion means a documented editorial inference supported by multiple types of acquisition evidence, not an official Wiki tier. Overall 85 current profiles still have low-confidence/unverified progression metadata.
+Temporary-tier baseline is reconstructed from the saved original acquisition records and unchanged classification rules for the original 125 identities; new Calendar profiles are excluded from Before. Completion means a documented editorial inference supported by multiple types of acquisition evidence, not an official Wiki tier. Overall 79 current profiles still have low-confidence/unverified progression metadata.
 
 ## Acquisition audit — original baseline
 
 ### Alpha Omega/DOOMmega (AO) — alpha-omega-doommega-ao
 
-Status: partial → partial
+Status: partial → reviewed
 
 - merge / Alpha Omega (Legend): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/alpha-omega-legend
 - ac_purchase / Alpha Omega (Non-Legend): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/alpha-omega-non-legend
-- merge / Alpha DOOMmega: partial; missing: Merge Shop; Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused; Shop identity is not yet verified; https://aqwwiki.wikidot.com/alpha-doommega
 - merge / Alpha DOOMmega: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/alpha-doommega
-- merge / Alpha DOOMmega: partial; missing: Merge Shop; Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused; Shop identity is not yet verified; https://aqwwiki.wikidot.com/alpha-doommega
 - merge / Alpha DOOMmega: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/alpha-doommega
 - other_verified / Alpha DOOMmega: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/alpha-doommega
 - other_verified / Alpha DOOMmega: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/alpha-doommega
 
 ### Alpha Pirate - Pirate — alpha-pirate-pirate
 
-Status: partial → partial
+Status: partial → reviewed
 
 - merge / Alpha Pirate (Class): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/alpha-pirate-class
 - merge / Alpha Pirate (Class): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/alpha-pirate-class
 - merge / Pirate: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/pirate
 - merge / Pirate: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/pirate
-- merge / Pirate: partial; missing: Merge Shop; Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused; Shop identity is not yet verified; https://aqwwiki.wikidot.com/pirate
+- ac_purchase / Pirate: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/pirate
 - merge / Pirate: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/pirate
+- quest_reward / Pirate: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/pirate
 
 ### Abyssal Angel (AA) - Abyssal Angel's Shadow (AAS) — abyssal-angel-aa-abyssal-angel-s-shadow-aas
 
@@ -78,14 +77,12 @@ Status: partial → reviewed
 
 ### Blaze Binder — blaze-binder-bb-firelord-summoner-fls
 
-Status: partial → partial
+Status: partial → reviewed
 
 - merge / Blaze Binder (Merge): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/blaze-binder-merge
 - merge / Blaze Binder (Merge): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/blaze-binder-merge
-- ac_purchase / Blaze Binder (AC): partial; missing: Shop Name; curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 252 ms: Couldn't connect to server
-curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 275 ms: Couldn't connect to server; Shop identity is not yet verified; https://aqwwiki.wikidot.com/blaze-binder-ac
-- ac_purchase / Blaze Binder (AC): partial; missing: Shop Name; curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 252 ms: Couldn't connect to server
-curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 275 ms: Couldn't connect to server; Shop identity is not yet verified; https://aqwwiki.wikidot.com/blaze-binder-ac
+- ac_purchase / Blaze Binder (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/blaze-binder-ac
+- ac_purchase / Blaze Binder (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/blaze-binder-ac
 - ac_purchase / Blaze Binder (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/blaze-binder-ac
 - ac_purchase / FireLord Summoner (Class): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/firelord-summoner-class
 
@@ -104,10 +101,9 @@ Status: partial → reviewed
 
 ### Chaos Slayer (CS) - Chaos Champion Prime (CCP) — chaos-slayer-cs-chaos-champion-prime-ccp
 
-Status: partial → partial
+Status: partial → reviewed
 
 - shop_unlock / Chaos Slayer Berserker (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac
-- ac_purchase / Chaos Slayer Berserker (AC): partial; missing: Shop Name; Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused; Shop identity is not yet verified; https://aqwwiki.wikidot.com/chaos-slayer-berserker-ac
 - shop_unlock / Chaos Slayer Berserker (0 AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/chaos-slayer-berserker-0-ac
 - shop_unlock / Chaos Slayer Cleric (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/chaos-slayer-cleric-ac
 - shop_unlock / Chaos Slayer Cleric (0 AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/chaos-slayer-cleric-0-ac
@@ -137,10 +133,11 @@ Status: partial → reviewed
 
 ### Dark Lord (DL) - Darkside — dark-lord-dl-darkside
 
-Status: partial → partial
+Status: partial → reviewed
 
-- merge / Dark Lord: partial; missing: Merge Shop; Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused; Shop identity is not yet verified; https://aqwwiki.wikidot.com/dark-lord
 - merge / Dark Lord: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/dark-lord
+- quest_reward / Dark Lord: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/dark-lord
+- other_verified / Darkside: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/darkside
 
 ### Deathknight Lord (DKL) — deathknight-lord-dkl
 
@@ -208,26 +205,28 @@ Status: partial → reviewed
 
 ### Enforcer - ProtoSartorium — enforcer-protosartorium
 
-Status: partial → partial
+Status: partial → reviewed
 
-- quest_reward / Enforcer: partial; missing: Nested material scope requires review; https://aqwwiki.wikidot.com/enforcer
+- quest_reward / Enforcer: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/enforcer
 - other_verified / ProtoSartorium (Class): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/protosartorium-class
 
 ### Evolved Pumpkin Lord (EPL) — evolved-pumpkin-lord-epl
 
-Status: partial → partial
+Status: partial → reviewed
 
 - ac_purchase / Evolved Pumpkin Lord (Non-Legend): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend
 - ac_purchase / Evolved Pumpkin Lord (Non-Legend): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend
 - ac_purchase / Evolved Pumpkin Lord (Non-Legend): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend
 - merge / Evolved Pumpkin Lord (Legend): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend
-- merge / Evolved Pumpkin Lord (Legend): partial; missing: Merge Shop; Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused; Shop identity is not yet verified; https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend
+- other_verified / Evolved Pumpkin Lord (Legend): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend
 
 ### Frostval Barbarian (FB) — frostval-barbarian-fb
 
-Status: partial → partial
+Status: partial → reviewed
 
 - ac_purchase / Frostval Barbarian (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/frostval-barbarian-ac
+- quest_reward / Frostval Barbarian (0 AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/frostval-barbarian-0-ac
+- ac_purchase / Frostval Barbarian (0 AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/frostval-barbarian-0-ac
 
 ### Glacial/Glaceran Warlord - Dark/Savage Glaceran Warlord (GW/DGW/SGW) — glacial-glaceran-warlord-dark-savage-glaceran-warlord-gw-dgw-sgw
 
@@ -275,9 +274,9 @@ Status: partial → reviewed
 
 ### Kathool Adept (KA) — kathool-adept-ka
 
-Status: partial → partial
+Status: partial → reviewed
 
-- quest_reward / Kathool Adept: partial; missing: Nested material scope requires review; https://aqwwiki.wikidot.com/kathool-adept
+- quest_reward / Kathool Adept: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/kathool-adept
 
 ### Legendary/Ultra/Mythic Elemental Warrior (LEW/UEW/MEW) — legendary-ultra-mythic-elemental-warrior-lew-uew-mew
 
@@ -302,15 +301,13 @@ Status: partial → reviewed
 
 ### MechaJouster (MJ) — mechajouster-mj
 
-Status: partial → partial
+Status: partial → reviewed
 
-- merge / MechaJouster: partial; missing: Merge Shop; Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused; Shop identity is not yet verified; https://aqwwiki.wikidot.com/mechajouster
-- merge / MechaJouster: partial; missing: Merge Shop; Observed Location link is not proven to be a Shop; linked NPC/map fields are not reused; Shop identity is not yet verified; https://aqwwiki.wikidot.com/mechajouster
 - merge / MechaJouster: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/mechajouster
 - merge / MechaJouster: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/mechajouster
 - other_verified / MechaJouster: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/mechajouster
 - other_verified / MechaJouster: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/mechajouster
-- other_verified / MechaJouster: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/mechajouster
+- quest_reward / MechaJouster: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/mechajouster
 
 ### Necromancer (Necro) - Pinkomancer — necromancer-necro-pinkomancer
 
@@ -326,11 +323,10 @@ curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 244 ms: Couldn
 
 ### Oracle — oracle
 
-Status: partial → partial
+Status: partial → reviewed
 
 - ac_purchase / Oracle: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/oracle
-- ac_purchase / Oracle: partial; missing: Shop Name; curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 239 ms: Couldn't connect to server
-curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 263 ms: Couldn't connect to server; Shop identity is not yet verified; https://aqwwiki.wikidot.com/oracle
+- free / Oracle: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/oracle
 
 ### Northlands Monk (NLM) — northlands-monk-nlm
 
@@ -342,7 +338,7 @@ Status: partial → reviewed
 
 ### Rogue - Renegade — rogue-renegade
 
-Status: partial → partial
+Status: partial → reviewed
 
 - other_verified / Rogue: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/rogue
 - free / Rogue: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/rogue
@@ -356,13 +352,13 @@ Status: partial → partial
 - ac_purchase / Renegade: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/renegade
 - ac_purchase / Renegade: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/renegade
 - ac_purchase / Renegade: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/renegade
+- other_verified / Classic Alpha Pirate: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/classic-alpha-pirate
 
 ### Sentinel — sentinel
 
 Status: partial → partial
 
-- ac_purchase / Sentinel: partial; missing: Shop Name; curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 300 ms: Couldn't connect to server
-curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 257 ms: Couldn't connect to server; Shop identity is not yet verified; https://aqwwiki.wikidot.com/sentinel
+- ac_purchase / Sentinel: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/sentinel
 - ac_purchase / Sentinel: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/sentinel
 - ac_purchase / Sentinel: partial; missing: Shop Name; curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 261 ms: Couldn't connect to server
 curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 277 ms: Couldn't connect to server; Shop identity is not yet verified; https://aqwwiki.wikidot.com/sentinel
@@ -373,8 +369,7 @@ curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 277 ms: Couldn
 - ac_purchase / Sentinel: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/sentinel
 - ac_purchase / Sentinel: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/sentinel
 - ac_purchase / Sentinel: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/sentinel
-- ac_purchase / Sentinel: partial; missing: Shop Name; curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 257 ms: Couldn't connect to server
-curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 318 ms: Couldn't connect to server; Shop identity is not yet verified; https://aqwwiki.wikidot.com/sentinel
+- ac_purchase / Sentinel: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/sentinel
 - ac_purchase / Sentinel: partial; missing: Shop Name; curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 246 ms: Couldn't connect to server
 curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 263 ms: Couldn't connect to server; Shop identity is not yet verified; https://aqwwiki.wikidot.com/sentinel
 - ac_purchase / Sentinel: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/sentinel
@@ -394,17 +389,15 @@ Status: partial → reviewed
 
 ### Vindicator Of They (VoT) - The Collector (TC) — vindicator-of-they-vot-the-collector-tc
 
-Status: partial → partial
+Status: partial → reviewed
 
 - ac_purchase / Vindicator Of They (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/vindicator-of-they-ac
 - ac_purchase / Vindicator Of They (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/vindicator-of-they-ac
 - merge / Vindicator Of They (Merge): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/vindicator-of-they-merge
 - ac_purchase / The Collector (Class) (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/the-collector-class-ac
 - ac_purchase / The Collector (Class) (AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/the-collector-class-ac
-- ac_purchase / The Collector (Class) (0 AC): partial; missing: curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 278 ms: Couldn't connect to server
-curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 261 ms: Couldn't connect to server; https://aqwwiki.wikidot.com/the-collector-class-0-ac
-- ac_purchase / The Collector (Class) (0 AC): partial; missing: curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 360 ms: Couldn't connect to server
-curl: (7) Failed to connect to aqwwiki.wikidot.com port 443 after 277 ms: Couldn't connect to server; https://aqwwiki.wikidot.com/the-collector-class-0-ac
+- ac_purchase / The Collector (Class) (0 AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/the-collector-class-0-ac
+- ac_purchase / The Collector (Class) (0 AC): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/the-collector-class-0-ac
 - merge / The Collector (Class) (Merge): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/the-collector-class-merge
 
 ### Yami no Ronin (YnR) — yami-no-ronin-ynr
@@ -415,7 +408,7 @@ Status: partial → partial
 
 ### Warrior - Beast Warrior - Pumpkin Lord - Warlord — warrior-beast-warrior-pumpkin-lord-warlord
 
-Status: partial → partial
+Status: partial → reviewed
 
 - other_verified / Warrior (Rare): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/warrior-rare
 - gold_purchase / Warrior (Rare): complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/warrior-rare
@@ -429,6 +422,7 @@ Status: partial → partial
 - ac_purchase / Beast Warrior: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/beast-warrior
 - ac_purchase / Warlord: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/warlord
 - ac_purchase / Warlord: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/warlord
+- other_verified / Pumpkin Lord: complete; missing: none in applicable reviewed fields; https://aqwwiki.wikidot.com/pumpkin-lord
 
 ### Phantom/Phantasm Chronomancer (PhCM) — phantom-phantasm-chronomancer-phcm
 

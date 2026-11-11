@@ -26,7 +26,10 @@ test("Active skill range and target are separate typed fields with evidence", ()
       }
       if (skill.noAdditionalEffects) {
         if (skill.effectEvidence.normalAttackVerified) {
-          assert.match(skill.effectEvidence.supportingSource, /^https:\/\/www.aq.com\/gamedesignnotes\//);
+          assert.match(
+            skill.effectEvidence.supportingSource,
+            /^https:\/\/www.aq.com\/gamedesignnotes\//,
+          );
           assert(skill.damageDisplay);
         } else {
           assert.equal(skill.name, "Auto Attack");

@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chrono-quantum",
+    "year": 2022,
+    "ids": [
+      "calendar-quantum-chronomancer",
+      "calendar-continuum-chronomancer"
+    ],
+    "names": [
+      "Quantum Chronomancer",
+      "Continuum Chronomancer"
+    ],
+    "line": 9769,
+    "aliases": {
+      "Quantum Mending": "Quantum Spiral"
+    },
+    "reason": "Same eight skills and identical numeric mechanics; Rank 10 passive label differs, while both descriptions apply Quantum Spiral. Preserve the variant’s official passive name.",
+    "primaryClassId": "calendar-quantum-chronomancer",
+    "sources": [
+      {
+        "url": "https://aqwwiki.wikidot.com/quantum-chronomancer-class",
+        "sourceHash": "6a1957e2430431c197895e39da8afc8585b08585baeee6e2b085e40a805a5bd3",
+        "sameSkillVariants": [
+          {
+            "name": "Continuum Chronomancer (Class)",
+            "url": "https://aqwwiki.wikidot.com/continuum-chronomancer-class"
+          }
+        ]
+      },
+      {
+        "url": "https://aqwwiki.wikidot.com/continuum-chronomancer-class",
+        "sourceHash": "b806c7ed129950279676f6fbdbdf454ff93a692c4c3c26e8b4b17af1c40af4a1",
+        "sameSkillVariants": [
+          {
+            "name": "Quantum Chronomancer (Class)",
+            "url": "https://aqwwiki.wikidot.com/quantum-chronomancer-class"
+          }
+        ]
+      }
+    ],
+    "differences": [
+      {
+        "skill": "Quantum Spiral",
+        "field": "officialName",
+        "primary": "Quantum Spiral",
+        "alternative": "Quantum Mending"
+      }
+    ],
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-11-11"
+  },
+  {
+    "id": "chrono-corrupted",
+    "year": 2019,
+    "ids": [
+      "calendar-corrupted-chronomancer",
+      "calendar-timeless-chronomancer"
+    ],
+    "names": [
+      "Corrupted Chronomancer",
+      "Timeless Chronomancer"
+    ],
+    "line": 9719,
+    "aliases": {},
+    "reason": "Same skill names, descriptions, ranks, costs, cooldowns, ranges, targets and icons. Corrupted page additionally documents Hourglass of Transience branches; these remain conditional on the explicitly named consumables, not unconditional buffs.",
+    "primaryClassId": "calendar-corrupted-chronomancer",
+    "sources": [
+      {
+        "url": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+        "sourceHash": "d8e34674c3a7353fed6fc4f990052fa61a0f293dc4009f5e24ea5898a66be27c",
+        "sameSkillVariants": [
+          {
+            "name": "Overworld Chronomancer (AC)",
+            "url": "https://aqwwiki.wikidot.com/overworld-chronomancer-ac"
+          },
+          {
+            "name": "Overworld Chronomancer (Merge)",
+            "url": "https://aqwwiki.wikidot.com/overworld-chronomancer-merge"
+          },
+          {
+            "name": "Timeless Chronomancer (Class) (AC)",
+            "url": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac"
+          },
+          {
+            "name": "Timeless Chronomancer (Class) (Merge)",
+            "url": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge"
+          },
+          {
+            "name": "Underworld Chronomancer (Class)",
+            "url": "https://aqwwiki.wikidot.com/underworld-chronomancer-class"
+          }
+        ]
+      },
+      {
+        "url": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac",
+        "sourceHash": "2095cc640fa7225ef833109efd17df605ef827acd611542ec6464b36ce2222d4",
+        "sameSkillVariants": [
+          {
+            "name": "Corrupted Chronomancer (Class)",
+            "url": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class"
+          },
+          {
+            "name": "Overworld Chronomancer (AC)",
+            "url": "https://aqwwiki.wikidot.com/overworld-chronomancer-ac"
+          },
+          {
+            "name": "Overworld Chronomancer (Merge)",
+            "url": "https://aqwwiki.wikidot.com/overworld-chronomancer-merge"
+          },
+          {
+            "name": "Timeless Chronomancer (Class) (Merge)",
+            "url": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge"
+          },
+          {
+            "name": "Underworld Chronomancer (Class)",
+            "url": "https://aqwwiki.wikidot.com/underworld-chronomancer-class"
+          }
+        ]
+      }
+    ],
+    "differences": [
+      {
+        "skill": "Sand Rift",
+        "field": "notes",
+        "primary": [
+          "If Hourglass of Transience is active, applies the following effects:",
+          "Flow if Transient is active, increasing enemy damage taken by 8% for 5 seconds, stacks to 3.",
+          "Ebb if Stabilize is active, applying an infinite growing DoT for 8 seconds."
+        ],
+        "alternative": []
+      },
+      {
+        "skill": "Hourglass Inversion",
+        "field": "notes",
+        "primary": [
+          "If Hourglass of Power is active, applies Power for 30 seconds, increasing damage, haste, crit chance, crit damage, hit chance, dodge chance and damage reduction by 10%.",
+          "If Hourglass of Transience is active, applies the following effect:",
+          "Incorporeal if either Transient or Ephemeral are in effect, consuming them and increasing Endurance and Haste by 50% for 10 seconds.",
+          "If Infinite Corruption is active, applies Hourglass Heal for 20 seconds, a Heal over Time."
+        ],
+        "alternative": [
+          "If Hourglass of Power is active, applies Power for 30 seconds, increasing damage, haste, crit chance, crit damage, hit chance, dodge chance and damage reduction by 10%.",
+          "If Infinite Corruption is active, applies Hourglass Heal for 20 seconds, a Heal over Time."
+        ]
+      }
+    ],
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-11-11"
+  },
+  {
+    "id": "chrono-underworld",
+    "year": 2020,
+    "ids": [
+      "calendar-underworld-chronomancer",
+      "calendar-overworld-chronomancer"
+    ],
+    "names": [
+      "Underworld Chronomancer",
+      "Overworld Chronomancer"
+    ],
+    "line": 9736,
+    "aliases": {},
+    "reason": "Same active/passive names, ranks, costs, cooldowns, ranges, targets, notes and icons. Auto/nuke descriptions are wording variants: weapon damage plus equipped hourglasses, and Temporal Rift damage from the past 10 seconds consuming the stacks.",
+    "primaryClassId": "calendar-underworld-chronomancer",
+    "sources": [
+      {
+        "url": "https://aqwwiki.wikidot.com/underworld-chronomancer-class",
+        "sourceHash": "2f7ac7530c66d0838db0528fc63e4f4289f4310a3c2cd513705355816f0a6406",
+        "sameSkillVariants": [
+          {
+            "name": "Corrupted Chronomancer (Class)",
+            "url": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class"
+          },
+          {
+            "name": "Overworld Chronomancer (AC)",
+            "url": "https://aqwwiki.wikidot.com/overworld-chronomancer-ac"
+          },
+          {
+            "name": "Overworld Chronomancer (Merge)",
+            "url": "https://aqwwiki.wikidot.com/overworld-chronomancer-merge"
+          },
+          {
+            "name": "Timeless Chronomancer (Class) (AC)",
+            "url": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac"
+          },
+          {
+            "name": "Timeless Chronomancer (Class) (Merge)",
+            "url": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge"
+          }
+        ]
+      },
+      {
+        "url": "https://aqwwiki.wikidot.com/overworld-chronomancer-ac",
+        "sourceHash": "ced600b1d5cb56ea0d8e95f885b1c3209651a218e92c8cee329a354078e2b421",
+        "sameSkillVariants": [
+          {
+            "name": "Corrupted Chronomancer (Class)",
+            "url": "https://aqwwiki.wikidot.com/corrupted-chronomancer-class"
+          },
+          {
+            "name": "Overworld Chronomancer (Merge)",
+            "url": "https://aqwwiki.wikidot.com/overworld-chronomancer-merge"
+          },
+          {
+            "name": "Timeless Chronomancer (Class) (AC)",
+            "url": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac"
+          },
+          {
+            "name": "Timeless Chronomancer (Class) (Merge)",
+            "url": "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge"
+          },
+          {
+            "name": "Underworld Chronomancer (Class)",
+            "url": "https://aqwwiki.wikidot.com/underworld-chronomancer-class"
+          }
+        ]
+      }
+    ],
+    "differences": [
+      {
+        "skill": "Timeless Strike",
+        "field": "officialDescription",
+        "primary": "Deals damage based on your weapon damage. Each of your skills gets an additional benefit from hourglasses you equip in your consumables slot. Hourglasses can be obtained from the Hourglass Pet available from the Book of Lore.",
+        "alternative": "Deals damage based on weapon damage. Each of your skills gets an additional benefit from hourglasses you equip in your consumables slot. Hourglasses can be obtained from the hourglass pet available from the Book of Lore."
+      },
+      {
+        "skill": "Temporal Collapse",
+        "field": "officialDescription",
+        "primary": "If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks",
+        "alternative": "Deals damage to your target based on the damage you've recently dealt while under the effects of Temporal Rift (in the past 10 seconds). Consumes Temporal Rift stacks."
+      }
+    ],
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-11-11"
+  }
+]

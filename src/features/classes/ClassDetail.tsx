@@ -1,3 +1,4 @@
+import {classIdentity,classIdentityLabel} from "../../lib/class-identity";
 import { acquisitionSummary } from "../../lib/class-presentation.mjs";
 import {
   calendarFamily,
@@ -35,6 +36,8 @@ const known = [
 ];
 export function ClassDetail({ profile }: { profile: AqwClass }) {
   const family = calendarFamily(profile.id);
+  const defaultIdentity=classIdentity(profile.id);
+  const [selectedArt,setSelectedArt]=useState<{name:string;source?:string}>({name:defaultIdentity?.officialName||profile.name});
   const routeSlug = location.pathname.split("/")[2];
   const initialVariant =
     family?.variants.find((v) => v.id === routeSlug) ??
@@ -49,10 +52,18 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
   const selectedProfile =
     classProfiles.find((c) => c.id === variant?.classId) ?? profile;
   const { body, error, retry } = useClassBody(sharedProfile);
-  const acquisition = variantRecord
+  const familyAcquisition = variantRecord
     ? ((variantRecord.acquisition as ClassAcquisition | null) ?? undefined)
     : body?.acquisition;
-  const inspectedBody = body && { ...body, acquisition };
+  const selectedName=variant?.name ?? selectedArt.name;
+  const selectedIdentity=classIdentity(variant?.classId||profile.id,selectedName);
+  const acquisition = !family && selectedArt.source && familyAcquisition
+    ? {...familyAcquisition,methods:familyAcquisition.methods.filter(m=>m.source===selectedArt.source || m.variantName.replace(/\s*\([^)]*\)/g,'').toLowerCase()===selectedName.toLowerCase())}
+    : familyAcquisition;
+  const inspectedBody = body && {...body,acquisition,skills:body.skills.map(skill=>{
+    const nameOverride=variantRecord?.skillNameOverrides.find(row=>row.skillId===skill.id);
+    return nameOverride ? {...skill,name:nameOverride.name,officialName:nameOverride.name}:skill;
+  })};
   const [related, setRelated] = useState<AqwClass[]>([]);
   useEffect(() => {
     setRelated(
@@ -98,7 +109,8 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
       <section className="class-hero">
         <div className="class-hero-copy">
           <p className="class-label">AQW Class</p>
-          <h1>{variant?.name ?? profile.name}</h1>
+          <h1>{selectedName}</h1>
+          {selectedIdentity?.primaryAbbreviation && <span className="class-abbreviation hero-abbreviation">{selectedIdentity.primaryAbbreviation}</span>}
           <p className="class-role">
             <ClassRoles roles={profile.role} />
           </p>
@@ -131,7 +143,7 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
               <dd>
                 <AcquisitionInfo
                   summary={
-                    variant
+                    variant || selectedArt.source
                       ? acquisitionSummary(acquisition)
                       : profile.acquisitionSummary
                   }
@@ -160,6 +172,7 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
                     onClick={() => setSelectedVariant(v.id)}
                   >
                     {v.name}
+                    <small aria-hidden="true">{classIdentity(v.classId,v.name)?.primaryAbbreviation}</small>
                   </button>
                 ))}
               </div>
@@ -177,12 +190,14 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
                   }}
                 />
               </div>
+              <span className="class-art-caption">{classIdentityLabel(variant?.classId||profile.id,variant?.name)}</span>
             </div>
           ) : (
             <ClassArtSelector
               classId={profile.id}
               image={profile.image}
-              name={profile.name}
+              name={defaultIdentity?.officialName||profile.name}
+              onSelect={setSelectedArt}
             />
           )}
         </div>
