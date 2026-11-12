@@ -1,3 +1,5 @@
+import farmIndex from '../content/farm/index.json';
+import {farmItemId} from './farm-catalog.mjs';
 import {isComingSoon} from './site-feature-access.mjs';
 import challengeCatalog from '../content/challenges/catalog.json';
 import {findClass,findBoss} from './route-summaries';
@@ -24,7 +26,9 @@ export function resolveRoute(
   const is404 = !comingSoon &&
     path !== "/" &&
     path !== "/gioi-thieu" &&
-    (["challenge-dungeon","other-challenges"].includes(category)
+    (category === "farm" && slug === "item"
+      ? !farmIndex.some(i=>i.id===farmItemId(path))
+      : ["challenge-dungeon","other-challenges"].includes(category)
       ? rest.length > 0 || (!!slug && !challengeCatalog.some(c => c.id === slug && c.href === path))
       : category === "ultra-boss"
       ? rest.length > 0 || (!!slug && !findBoss(slug)&&!findChallenge(slug))

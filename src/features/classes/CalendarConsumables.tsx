@@ -1,4 +1,4 @@
-import { Zap, Flame, ShieldAlert, CircleHelp } from "lucide-react";
+import { Zap, Flame, ShieldAlert, CircleHelp, Hourglass, FlameKindling, Clock } from "lucide-react";
 import { useState } from "react";
 import type { ClassSkill } from "../../types/classes";
 import { SkillSequenceFlow } from "./SkillSequenceFlow";
@@ -7,7 +7,8 @@ import "../../styles/classes/calendar-v020.css";
 type ClassItem = { name: string; summary: string; wiki: string; image?: string; group: "hourglass" | "other" };
 
 // Wiki shop inventory and Artix design notes: 3 Hourglasses + 3 Corruptions/Timepieces per year.
-// Cached inventories only supply misc icons. Keep explicit neutral placeholders until item artwork is verified.
+// Item-specific Wiki artwork is documented in docs/calendar-item-art.md.
+// No image is assigned until its bytes can be downloaded and visually verified locally.
 const itemSets: Record<string, { heading: string; second: string; items: ClassItem[] }> = {
   "2019": {
     heading: "Corrupted / Timeless Chronomancer",
@@ -39,8 +40,15 @@ function yearFor(classId?: string) {
   if (/^calendar-(?:underworld|overworld)-chronomancer$/.test(classId ?? "")) return "2020";
   return null;
 }
-function IconArt({ item }: { item: ClassItem }) {
-  return <span className="calendar-item-icon" role="img" aria-label={`${item.name}: ảnh chưa xác minh`} title="Ảnh item chưa xác minh">?</span>;
+export function IconArt({ item }: { item: ClassItem }) {
+  const [failedImage, setFailedImage] = useState<string>();
+  const Icon = item.group === "hourglass" ? Hourglass : /Corruption$/.test(item.name) ? FlameKindling : Clock;
+  return <span className="calendar-item-icon">
+    {item.image && failedImage !== item.image ? <img
+      src={item.image} alt={item.name} loading="lazy" decoding="async" width={42} height={42}
+      onError={() => setFailedImage(item.image)}
+    /> : <span role="img" aria-label={`${item.name}: biểu tượng loại item, ảnh chưa xác minh`} title="Biểu tượng loại item · ảnh item chưa xác minh"><Icon size={24} aria-hidden="true" /></span>}
+  </span>;
 }
 export function CalendarConsumables({ classId }: { classId?: string }) {
   const [selection, setSelection] = useState<Record<string, string>>({});

@@ -100,6 +100,7 @@ export function ClassCombos({
                         f.sequences.length > 0 ||
                         f.kind === "spam" ||
                         f.kind === "loop" ||
+                        f.kind === "cooldown" ||
                         f.kind === "warning" ||
                         f.kind === "setup",
                     )
@@ -108,6 +109,7 @@ export function ClassCombos({
                         className={`combo-flow-group ${flow.kind}`}
                         key={flow.id}
                       >
+                        {flow.kind === "cooldown" && flow.afterOpening && <p className="combo-cooldown-intro">Sau combo mở đầu →</p>}
                         <FlowLabel
                           label={flow.kind === "warning" ? "Lưu ý" : flow.label}
                           kind={flow.kind}
@@ -117,7 +119,11 @@ export function ClassCombos({
                             Dừng · {flow.stopCondition}
                           </span>
                         )}
-                        {!flow.sequences.length && <CalendarSetup classId={classId} comboTitle={active.title} text={flow.label} />}
+                        {flow.kind === "cooldown" && flow.prioritySkill && <div className="combo-cooldown-priority">
+                          <SkillSequenceFlow sequence={[flow.prioritySkill]} skills={skills} label="Kỹ năng ưu tiên khi hồi chiêu" onSelect={s => { setStepId(s.id); onSelectSkill?.(s.id); }} />
+                          <strong>{flow.priorityLabel}</strong>
+                        </div>}
+                        {!flow.sequences.length && flow.kind === "setup" && <CalendarSetup classId={classId} comboTitle={active.title} text={flow.label} />}
                         {flow.sequences.map((sequence, i) => (
                           <div key={i}>
                             {i > 0 && <span className="combo-or">HOẶC</span>}

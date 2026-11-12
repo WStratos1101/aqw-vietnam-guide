@@ -1,0 +1,53 @@
+{
+  "verifiedAt": "2026-11-11",
+  "method": "Manual bounded web-tool reads; no crawler, no build-time network. Curated summaries, not copied Wiki prose.",
+  "checkedPages": [
+    "https://aqwwiki.wikidot.com/locations",
+    "https://aqwwiki.wikidot.com/greenguard-forest",
+    "https://aqwwiki.wikidot.com/museum",
+    "https://aqwwiki.wikidot.com/blade-of-awe",
+    "https://aqwwiki.wikidot.com/blade-of-awe-shop",
+    "https://aqwwiki.wikidot.com/armor-of-awe-armor",
+    "https://aqwwiki.wikidot.com/armor-of-awe-shop",
+    "https://aqwwiki.wikidot.com/armor-of-awe-pass",
+    "https://aqwwiki.wikidot.com/cape-of-awe",
+    "https://aqwwiki.wikidot.com/cape-relic",
+    "https://aqwwiki.wikidot.com/helm-of-awe",
+    "https://aqwwiki.wikidot.com/valencia-s-quests",
+    "https://aqwwiki.wikidot.com/doom-vault",
+    "https://aqwwiki.wikidot.com/binky",
+    "https://aqwwiki.wikidot.com/polly-roger",
+    "https://aqwwiki.wikidot.com/shaman",
+    "https://aqwwiki.wikidot.com/arcangrove",
+    "https://aqwwiki.wikidot.com/arcangrove-rep-shop",
+    "https://www.aq.com/gamedesignnotes/",
+    "https://www.aq.com/cms/images/DN-CosmeticEquip-1.jpg"
+  ],
+  "failedPages": [
+    {
+      "url": "https://aqwwiki.wikidot.com/dwarfhold",
+      "error": "web tool: 400 Redirect loop detected"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/aureate-shield-aegis",
+      "error": "web tool: 400 Redirect loop detected"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/ancient-skull-blade",
+      "error": "web tool: 400 Redirect loop detected; not imported"
+    }
+  ],
+  "discrepancies": [
+    "Helm Relic: shop lists Helm Fragment x10; Valencia quest prose says x50. Helm of Awe is needs_review, excluded from Farmable Now. Direct recipe remains Helm Relic x1; unresolved lower dependency is not asserted.",
+    "Blade of Awe originally inherited Museum geography for both recipes. Reverse dual exchange is at Nostalgia Quest, whose Region/map command remains unverified. Route geography is now independent; Museum filter shows only Museum recipe.",
+    "Original curated snapshot had 24 identities: 23 marked verified, 6 geographically mapped, 18 unmapped, 10 approved local images, 8 unresolved URLs. All 24 lacked permanent availability confirmation; Polly Roger alone carried seasonal evidence. These are prior local assertions, not fresh checks of all 24 pages.",
+    "Four Awe pages and Shaman shop are listed without rare/seasonal markers in the checked sources. Permanent availability is an inference from the current Wiki listings, not an in-game login or official availability guarantee.",
+    "No paid AC-only item was added. Shaman costs 0 AC and requires Arcangrove Rank 10. AC-tagged and AC-only purchase are distinct.",
+    "Dwarfhold/Lolosia overlapping geography remains retained local evidence, not revalidated in this session. Polly Roger stays seasonal; event currently open is not asserted.",
+    "Unknown drop rates remain unknown. Material quest locations do not become item Regions. No game artwork was downloaded, generated or hotlinked. Missing images use labelled equipment category icons.",
+    "Original community Google Docs was not re-fetched in this session; checked-in export read 2026-11-05 is retained. Existing manifest offline_fallback is historical, not a new Docs access attempt.",
+    "Legacy Farm articles had source heading fragments pointing to gated guide pages, which do not render those anchors. The importer now preserves the destination route without its nonexistent fragment; original document links remain in the source export."
+  ],
+  "networkLimit": "Shell curl to fonts.googleapis.com failed with curl (6): Could not resolve host. Web tool can read selected public pages. Be Vietnam Pro stylesheet uses Google Fonts with Source Sans 3 fallback; its runtime loading is not browser-verified.",
+  "browser": "Safari 26.2 (20623.1.14.18.4), no --mcp in safaridriver help, no Technology Preview installed. Playwright 1.65.0 / Node 24.22.0: localhost listen EPERM; minimal WebKit launch Abort trap 6/134, Chromium SIGTRAP and headed Chromium bootstrap_check_in Permission denied (1100). Browser smoke BLOCKED; no screenshots, no Safari remote-automation settings changed."
+}

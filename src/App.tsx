@@ -1,3 +1,5 @@
+import farmIndex from './content/farm/index.json';
+import {farmItemId} from './lib/farm-catalog.mjs';
 import {ComingSoonPage} from './features/ComingSoonPage';
 import {isComingSoon} from './lib/site-feature-access.mjs';
 import challengeCatalog from './content/challenges/catalog.json';
@@ -125,6 +127,7 @@ export function App() {
         url.origin !== location.origin ||
         !(
           /^\/(ultra-boss|challenge-dungeon|other-challenges)(?:\/|$)/.test(url.pathname) ||
+          /^\/farm(?:\/item\/[^/]+)?$/.test(url.pathname) ||
           isComingSoon(url.pathname) || url.pathname === "/" ||
           url.pathname === "/class" ||
           url.pathname === "/class/thu-vien" ||
@@ -157,6 +160,8 @@ export function App() {
     guides,
     categories,
   );
+  const farmItem = farmIndex.find(i=>i.id===farmItemId(path));
+  const farmTitle = path === "/farm" ? "Farm Codex" : farmItem?.name;
   const classProfile = path.startsWith("/class/")
     ? findClass(path.split("/")[2])
     : undefined;
@@ -170,7 +175,8 @@ export function App() {
   const ultraTitle =
     path === "/ultra-boss" ? "Ultra Boss Codex" : ultraBoss?.name||challenge?.name;
   useEffect(() => {
-    document.title = `${comingSoon ? "Thông tin đang được cập nhật" : is404 ? "Không tìm thấy trang" : challengeTitle || classTitle || ultraTitle || entry?.title || (valid ? categories[category as SectionKey] : path === "/gioi-thieu" ? "Giới thiệu" : "Cẩm nang phiêu lưu")} | AQW Vietnam Guide`;
+    document.title = `${comingSoon ? "Thông tin đang được cập nhật" : is404 ? "Không tìm thấy trang" : farmTitle || challengeTitle || classTitle || ultraTitle || entry?.title || (valid ? categories[category as SectionKey] : path === "/gioi-thieu" ? "Giới thiệu" : "Cẩm nang phiêu lưu")} | AQW Vietnam Guide`;
+    if (farmTitle) document.querySelector('meta[name="description"]')?.setAttribute("content",`Farm Codex: ${farmItem?.name || "trang bị theo Region"}. Cách nhận, nguyên liệu và nguồn Wiki, hướng dẫn cộng đồng.`);
     if (classTitle)
       document
         .querySelector('meta[name="description"]')
@@ -214,12 +220,14 @@ export function App() {
       observer.observe(el);
     });
     return () => observer.disconnect();
-  }, [path, is404, entry, category, ultraTitle, classTitle, classProfile, challengeTitle, comingSoon]);
+  }, [path, is404, entry, category, farmTitle, farmItem, ultraTitle, classTitle, classProfile, challengeTitle, comingSoon]);
   return (
     <ErrorBoundary>
       <Header path={path} />
       {comingSoon ? <ComingSoonPage/> : is404 ? (
         <NotFound />
+      ) : path === "/farm" || farmItem ? (
+        <RouteView kind="farm-catalog" slug={farmItem?.id}/>
       ) : challengeEntry ? (
         <RouteView kind="challenge-detail" slug={challengeEntry.id}/>
       ) : path === "/challenge-dungeon" ? (

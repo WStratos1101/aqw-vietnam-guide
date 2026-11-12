@@ -1,0 +1,2766 @@
+{
+  "schemaVersion": 1,
+  "regions": [
+    {
+      "id": "greenguard-forest",
+      "name": "Greenguard Forest",
+      "evidence": [
+        "https://aqwwiki.wikidot.com/museum",
+        "https://aqwwiki.wikidot.com/locations"
+      ],
+      "mappingNote": "Wiki breadcrumb: Greenguard Forest → Battleon → Museum."
+    },
+    {
+      "id": "dwarfhold",
+      "name": "Dwarfhold",
+      "evidence": [
+        "https://aqwwiki.wikidot.com/dwarfhold",
+        "https://aqwwiki.wikidot.com/lolosia",
+        "https://aqwwiki.wikidot.com/locations"
+      ],
+      "mappingNote": "Dwarfhold map liệt kê Dwarfhold Keep và Lolosia. Lolosia đồng thời xuất hiện trên Yokai Map; catalog dùng Dwarfhold."
+    },
+    {
+      "id": "arcangrove",
+      "name": "Arcangrove",
+      "evidence": [
+        "https://aqwwiki.wikidot.com/locations",
+        "https://aqwwiki.wikidot.com/arcangrove"
+      ],
+      "mappingNote": "Wiki Locations → Arcangrove; Arcangrove Rep Shop tại Rayst."
+    }
+  ],
+  "items": [
+    {
+      "id": "blade-of-awe",
+      "officialName": "Blade of Awe",
+      "type": "weapon",
+      "regionId": "greenguard-forest",
+      "regionEvidence": [
+        "https://aqwwiki.wikidot.com/museum"
+      ],
+      "location": {
+        "value": "Blade of Awe (Shop) - Museum Gear of Awe - Museum Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+        "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Blade of Awe (Shop) / Gear of Awe ở Museum.",
+          "source": "https://aqwwiki.wikidot.com/blade-of-awe",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "legendary-stonewrit",
+                "name": "Legendary Stonewrit",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+              },
+              {
+                "kind": "item",
+                "itemId": "legendary-handle",
+                "name": "Legendary Handle",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+              },
+              {
+                "kind": "item",
+                "itemId": "legendary-hilt",
+                "name": "Legendary Hilt",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+              },
+              {
+                "kind": "item",
+                "itemId": "legendary-blade",
+                "name": "Legendary Blade",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+              },
+              {
+                "kind": "item",
+                "itemId": "legendary-runes",
+                "name": "Legendary Runes",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+              }
+            ]
+          },
+          "regionId": "greenguard-forest",
+          "regionEvidence": [
+            "https://aqwwiki.wikidot.com/museum"
+          ],
+          "location": {
+            "value": "Museum · Valencia",
+            "source": "https://aqwwiki.wikidot.com/museum"
+          },
+          "joinCommand": {
+            "value": "/join museum",
+            "source": "https://aqwwiki.wikidot.com/museum"
+          },
+          "steps": [
+            {
+              "value": "Đến Museum, gặp Valencia và thu thập đủ nguyên liệu trong công thức bên dưới.",
+              "source": "https://aqwwiki.wikidot.com/museum"
+            },
+            {
+              "value": "Làm chuỗi Find the Stonewrit! → Find the Handle! → Find the Hilt! → Find the Blade! → Find the Runes! của Valencia. Giữ năm phần thưởng Legendary để merge.",
+              "source": "https://aqwwiki.wikidot.com/valencia-s-quests"
+            },
+            {
+              "value": "Mở shop tương ứng và đổi nguyên liệu để nhận trang bị.",
+              "source": "https://aqwwiki.wikidot.com/blade-of-awe-shop"
+            }
+          ]
+        },
+        {
+          "id": "merge-2",
+          "method": "Merge",
+          "description": "Đổi Dual Blades of Awe tại Yulgar's Dual Wield Drop Off ở Nostalgia Quest. Đây là cách đổi lại từ bản dual, không thay thế chuỗi farm ban đầu.",
+          "source": "https://aqwwiki.wikidot.com/blade-of-awe",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "dual-blades-of-awe",
+                "name": "Dual Blades of Awe",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Nostalgia Quest · Yulgar's Dual Wield Drop Off",
+            "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/blade-of-awe",
+        "https://aqwwiki.wikidot.com/valencia-s-quests"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "available",
+        "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+      },
+      "requiredLevel": null,
+      "price": {
+        "value": "0 AC",
+        "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+      },
+      "joinCommand": {
+        "value": "/join museum",
+        "source": "https://aqwwiki.wikidot.com/museum"
+      },
+      "boosts": [
+        {
+          "value": "10% damage: Chaos, Dragon, Elemental, Human, Undead",
+          "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [
+        {
+          "value": "Blade of Awe Rank 6",
+          "source": "https://aqwwiki.wikidot.com/blade-of-awe"
+        },
+        {
+          "value": "Hoàn thành Find the Runes! để mở Blade of Awe (Shop).",
+          "source": "https://aqwwiki.wikidot.com/blade-of-awe-shop"
+        }
+      ],
+      "image": null,
+      "reviewReason": null,
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/blade-of-awe",
+        "type": "https://aqwwiki.wikidot.com/blade-of-awe",
+        "acquisition": "https://aqwwiki.wikidot.com/blade-of-awe"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          195,
+          2272,
+          2276,
+          2501,
+          2507,
+          2530,
+          2533,
+          2539,
+          2570,
+          2664,
+          3242,
+          7017,
+          10207
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/original-drakath-armor-oda",
+          "/farm/set-of-awe-unlock-awe-enhancement",
+          "/farm/awescended-omni-set",
+          "/farm/how-to-unlock-blacksmithing-enhancement",
+          "/farm/dragon-of-time-dt-edot",
+          "/farm/scavenger-hunts"
+        ]
+      }
+    },
+    {
+      "id": "armor-of-awe",
+      "officialName": "Armor of Awe",
+      "type": "armor",
+      "regionId": "greenguard-forest",
+      "regionEvidence": [
+        "https://aqwwiki.wikidot.com/museum"
+      ],
+      "location": {
+        "value": "Armor of Awe (Shop) - Museum",
+        "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Armor of Awe (Shop) - Museum",
+          "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "pauldron-relic",
+                "name": "Pauldron Relic",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+              },
+              {
+                "kind": "item",
+                "itemId": "breastplate-relic",
+                "name": "Breastplate Relic",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+              },
+              {
+                "kind": "item",
+                "itemId": "vambrace-relic",
+                "name": "Vambrace Relic",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+              },
+              {
+                "kind": "item",
+                "itemId": "gauntlet-relic",
+                "name": "Gauntlet Relic",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+              },
+              {
+                "kind": "item",
+                "itemId": "greaves-relic",
+                "name": "Greaves Relic",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+              }
+            ]
+          },
+          "regionId": "greenguard-forest",
+          "regionEvidence": [
+            "https://aqwwiki.wikidot.com/museum"
+          ],
+          "location": {
+            "value": "Museum · Valencia",
+            "source": "https://aqwwiki.wikidot.com/museum"
+          },
+          "joinCommand": {
+            "value": "/join museum",
+            "source": "https://aqwwiki.wikidot.com/museum"
+          },
+          "steps": [
+            {
+              "value": "Đến Museum, gặp Valencia và thu thập đủ nguyên liệu trong công thức bên dưới.",
+              "source": "https://aqwwiki.wikidot.com/museum"
+            },
+            {
+              "value": "Farm các quest Pauldron/Breastplate/Vambrace/Gauntlets/Greaves of Awe của Valencia. Đổi lần lượt 15/10/15/25/10 Fragment tương ứng thành mỗi Relic; cần đủ cả năm Relic.",
+              "source": "https://aqwwiki.wikidot.com/armor-of-awe-shop"
+            },
+            {
+              "value": "Mở shop tương ứng và đổi nguyên liệu để nhận trang bị.",
+              "source": "https://aqwwiki.wikidot.com/armor-of-awe-shop"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/armor-of-awe-armor",
+        "https://aqwwiki.wikidot.com/valencia-s-quests"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "available",
+        "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": {
+        "value": "/join museum",
+        "source": "https://aqwwiki.wikidot.com/museum"
+      },
+      "boosts": [
+        {
+          "value": "25% XP, CP, Gold, Rep",
+          "source": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [
+        {
+          "value": "Lộ trình non-member qua quest thường: Level 55, Blade of Awe Rank 10 và Armor of Awe Pass trong inventory. Các lộ trình Legendary/Guardian có điều kiện riêng.",
+          "source": "https://aqwwiki.wikidot.com/valencia-s-quests"
+        }
+      ],
+      "image": null,
+      "reviewReason": null,
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/armor-of-awe-armor",
+        "type": "https://aqwwiki.wikidot.com/armor-of-awe-armor",
+        "acquisition": "https://aqwwiki.wikidot.com/armor-of-awe-armor"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          145,
+          2547,
+          2562,
+          2708,
+          3247,
+          6451
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/set-of-awe-unlock-awe-enhancement",
+          "/farm/awescended-omni-set",
+          "/farm/how-to-unlock-blacksmithing-enhancement",
+          "/farm/yami-no-ronin-ynr"
+        ]
+      }
+    },
+    {
+      "id": "helm-of-awe",
+      "officialName": "Helm of Awe",
+      "type": "helm",
+      "regionId": "greenguard-forest",
+      "regionEvidence": [
+        "https://aqwwiki.wikidot.com/museum"
+      ],
+      "location": {
+        "value": "Armor of Awe (Shop) - Museum",
+        "source": "https://aqwwiki.wikidot.com/helm-of-awe"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Armor of Awe (Shop) - Museum",
+          "source": "https://aqwwiki.wikidot.com/helm-of-awe",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "helm-relic",
+                "name": "Helm Relic",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/helm-of-awe"
+              }
+            ]
+          },
+          "regionId": "greenguard-forest",
+          "regionEvidence": [
+            "https://aqwwiki.wikidot.com/museum"
+          ],
+          "location": {
+            "value": "Museum · Valencia",
+            "source": "https://aqwwiki.wikidot.com/museum"
+          },
+          "joinCommand": {
+            "value": "/join museum",
+            "source": "https://aqwwiki.wikidot.com/museum"
+          },
+          "steps": [
+            {
+              "value": "Đến Museum, gặp Valencia và thu thập đủ nguyên liệu trong công thức bên dưới.",
+              "source": "https://aqwwiki.wikidot.com/museum"
+            },
+            {
+              "value": "Mở shop tương ứng và đổi nguyên liệu để nhận trang bị.",
+              "source": "https://aqwwiki.wikidot.com/armor-of-awe-shop"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/helm-of-awe",
+        "https://aqwwiki.wikidot.com/valencia-s-quests"
+      ],
+      "verificationStatus": "needs_review",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "available",
+        "source": "https://aqwwiki.wikidot.com/helm-of-awe"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/helm-of-awe"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": {
+        "value": "/join museum",
+        "source": "https://aqwwiki.wikidot.com/museum"
+      },
+      "boosts": [
+        {
+          "value": "25% XP, CP, Gold, Rep",
+          "source": "https://aqwwiki.wikidot.com/helm-of-awe"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [
+        {
+          "value": "Lộ trình non-member qua quest thường: Level 55, Blade of Awe Rank 10 và Armor of Awe Pass trong inventory. Các lộ trình Legendary/Guardian có điều kiện riêng.",
+          "source": "https://aqwwiki.wikidot.com/valencia-s-quests"
+        }
+      ],
+      "image": null,
+      "reviewReason": "Mâu thuẫn phụ thuộc Helm Relic: Armor of Awe (Shop) ghi Helm Fragment x10, nhưng prose Valencia ghi x50. Giữ công thức trực tiếp Helm Relic x1; chờ kiểm tra trong game trước khi đưa vào Farmable Now.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/helm-of-awe",
+        "type": "https://aqwwiki.wikidot.com/helm-of-awe",
+        "acquisition": "https://aqwwiki.wikidot.com/helm-of-awe"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          168,
+          2547,
+          2709
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/set-of-awe-unlock-awe-enhancement",
+          "/farm/awescended-omni-set"
+        ]
+      }
+    },
+    {
+      "id": "cape-of-awe",
+      "officialName": "Cape of Awe",
+      "type": "cape",
+      "regionId": "greenguard-forest",
+      "regionEvidence": [
+        "https://aqwwiki.wikidot.com/museum"
+      ],
+      "location": {
+        "value": "Armor of Awe (Shop) - Museum",
+        "source": "https://aqwwiki.wikidot.com/cape-of-awe"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Armor of Awe (Shop) - Museum",
+          "source": "https://aqwwiki.wikidot.com/cape-of-awe",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "cape-relic",
+                "name": "Cape Relic",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/cape-of-awe"
+              }
+            ]
+          },
+          "regionId": "greenguard-forest",
+          "regionEvidence": [
+            "https://aqwwiki.wikidot.com/museum"
+          ],
+          "location": {
+            "value": "Museum · Valencia",
+            "source": "https://aqwwiki.wikidot.com/museum"
+          },
+          "joinCommand": {
+            "value": "/join museum",
+            "source": "https://aqwwiki.wikidot.com/museum"
+          },
+          "steps": [
+            {
+              "value": "Đến Museum, gặp Valencia và thu thập đủ nguyên liệu trong công thức bên dưới.",
+              "source": "https://aqwwiki.wikidot.com/museum"
+            },
+            {
+              "value": "Nhận quest Cape of Awe; lấy Cape Shard x1 từ Binky, trả quest nhận Cape Fragment. Đổi Cape Fragment x1 → Cape Relic x1 → Cape of Awe.",
+              "source": "https://aqwwiki.wikidot.com/valencia-s-quests"
+            },
+            {
+              "value": "Dùng nút Cape Boss của Valencia để đến Binky ở Doom Vault; map /join doomvault là khu vực khóa, cần tuân theo điều kiện mở phòng. Chưa xác minh tỷ lệ rơi.",
+              "source": "https://aqwwiki.wikidot.com/doom-vault"
+            },
+            {
+              "value": "Mở shop tương ứng và đổi nguyên liệu để nhận trang bị.",
+              "source": "https://aqwwiki.wikidot.com/armor-of-awe-shop"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/cape-of-awe",
+        "https://aqwwiki.wikidot.com/valencia-s-quests"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "available",
+        "source": "https://aqwwiki.wikidot.com/cape-of-awe"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/cape-of-awe"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": {
+        "value": "/join museum",
+        "source": "https://aqwwiki.wikidot.com/museum"
+      },
+      "boosts": [
+        {
+          "value": "25% XP, CP, Gold, Rep",
+          "source": "https://aqwwiki.wikidot.com/cape-of-awe"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [
+        {
+          "value": "Lộ trình non-member qua quest thường: Level 55, Blade of Awe Rank 10 và Armor of Awe Pass trong inventory. Các lộ trình Legendary/Guardian có điều kiện riêng.",
+          "source": "https://aqwwiki.wikidot.com/valencia-s-quests"
+        }
+      ],
+      "image": null,
+      "reviewReason": null,
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/cape-of-awe",
+        "type": "https://aqwwiki.wikidot.com/cape-of-awe",
+        "acquisition": "https://aqwwiki.wikidot.com/cape-of-awe"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          189,
+          2547,
+          2562,
+          2571
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/set-of-awe-unlock-awe-enhancement"
+        ]
+      }
+    },
+    {
+      "id": "aureate-shield-aegis",
+      "officialName": "Aureate Shield Aegis",
+      "type": "armor",
+      "regionId": "dwarfhold",
+      "regionEvidence": [
+        "https://aqwwiki.wikidot.com/dwarfhold",
+        "https://aqwwiki.wikidot.com/aureate-shield-aegis"
+      ],
+      "location": {
+        "value": "Dwarfhold Keep",
+        "source": "https://aqwwiki.wikidot.com/aureate-shield-aegis"
+      },
+      "acquisition": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "description": "Hoàn thành quest The Empty Mountains Cold tại Dwarfhold Keep",
+          "source": "https://aqwwiki.wikidot.com/aureate-shield-aegis",
+          "regionId": "dwarfhold",
+          "regionEvidence": [
+            "https://aqwwiki.wikidot.com/dwarfhold",
+            "https://aqwwiki.wikidot.com/aureate-shield-aegis"
+          ],
+          "location": {
+            "value": "Dwarfhold Keep",
+            "source": "https://aqwwiki.wikidot.com/aureate-shield-aegis"
+          },
+          "joinCommand": {
+            "value": "/join dwarfhold",
+            "source": "https://aqwwiki.wikidot.com/dwarfhold-keep"
+          }
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/aureate-shield-aegis"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/aureate-shield-aegis"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/aureate-shield-aegis"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": {
+        "value": "/join dwarfhold",
+        "source": "https://aqwwiki.wikidot.com/dwarfhold-keep"
+      },
+      "boosts": [
+        {
+          "value": "30% Gold",
+          "source": "https://aqwwiki.wikidot.com/aureate-shield-aegis"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": null,
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/aureate-shield-aegis",
+        "type": "https://aqwwiki.wikidot.com/aureate-shield-aegis",
+        "acquisition": "https://aqwwiki.wikidot.com/aureate-shield-aegis"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          9566
+        ],
+        "guideHrefs": [
+          "/farm/aureate-shield-aegis-asa"
+        ]
+      }
+    },
+    {
+      "id": "polly-roger",
+      "officialName": "Polly Roger",
+      "type": "pet",
+      "regionId": "dwarfhold",
+      "regionEvidence": [
+        "https://aqwwiki.wikidot.com/dwarfhold",
+        "https://aqwwiki.wikidot.com/polly-roger"
+      ],
+      "location": {
+        "value": "Lolosia",
+        "source": "https://aqwwiki.wikidot.com/polly-roger"
+      },
+      "acquisition": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "description": "Hoàn thành quest Sailor of the Celestial Skies tại Lolosia",
+          "source": "https://aqwwiki.wikidot.com/polly-roger",
+          "regionId": "dwarfhold",
+          "regionEvidence": [
+            "https://aqwwiki.wikidot.com/dwarfhold",
+            "https://aqwwiki.wikidot.com/polly-roger"
+          ],
+          "location": {
+            "value": "Lolosia",
+            "source": "https://aqwwiki.wikidot.com/polly-roger"
+          },
+          "joinCommand": {
+            "value": "/join pirates",
+            "source": "https://aqwwiki.wikidot.com/lolosia"
+          }
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/polly-roger"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "seasonal",
+        "source": "https://aqwwiki.wikidot.com/polly-roger"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/polly-roger"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": {
+        "value": "/join pirates",
+        "source": "https://aqwwiki.wikidot.com/lolosia"
+      },
+      "boosts": [
+        {
+          "value": "30% damage: Chaos, Dragon, Elemental, Human, Undead",
+          "source": "https://aqwwiki.wikidot.com/polly-roger"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": null,
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/polly-roger",
+        "type": "https://aqwwiki.wikidot.com/polly-roger",
+        "acquisition": "https://aqwwiki.wikidot.com/polly-roger"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          9532
+        ],
+        "guideHrefs": [
+          "/farm/celestial-pirate-commander-cpc-polly-roger-polly"
+        ]
+      }
+    },
+    {
+      "id": "sepulchure-s-doomknight-armor",
+      "officialName": "Sepulchure's DoomKnight Armor",
+      "type": "armor",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Necropolis",
+        "source": "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor"
+      },
+      "acquisition": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "description": "Hoàn thành quest Summoning Sepulchure's Armor tại Necropolis",
+          "source": "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor",
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Necropolis",
+            "source": "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor"
+          },
+          "joinCommand": {
+            "value": "/join necropolis",
+            "source": "https://aqwwiki.wikidot.com/necropolis"
+          }
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor"
+      ],
+      "verificationStatus": "needs_review",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor"
+      },
+      "membership": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": {
+        "value": "/join necropolis",
+        "source": "https://aqwwiki.wikidot.com/necropolis"
+      },
+      "boosts": [
+        {
+          "value": "51% damage: Human",
+          "source": "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": "Wiki ghi armor trước đây chỉ dành cho Legend; điều kiện chuỗi quest hiện tại chưa được đối chiếu. Không khẳng định farm non-member.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor",
+        "type": "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor",
+        "acquisition": "https://aqwwiki.wikidot.com/sepulchure-s-doomknight-armor"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          86,
+          244,
+          1235,
+          1395,
+          1546,
+          1651,
+          1676,
+          1702,
+          2022,
+          3010,
+          8154
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/necrotic-sword-of-doom-nsod",
+          "/farm/sepulchure-s-doomknight-armor-sdka",
+          "/farm/vordred-s-armor",
+          "/farm/how-to-unlock-blacksmithing-enhancement",
+          "/farm/hollowborn-doomknight-hbdk"
+        ]
+      }
+    },
+    {
+      "id": "blinding-light-of-destiny",
+      "officialName": "Blinding Light of Destiny",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Blinding Light of Destiny (Shop) - Book of Lore Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+        "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+      },
+      "acquisition": [
+        {
+          "id": "book-of-lore",
+          "method": "Shop",
+          "description": "Blinding Light of Destiny (Shop) trong Book of Lore. Điều kiện mở shop: xem hướng dẫn cộng đồng và trang shop.",
+          "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe",
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Blinding Light of Destiny (Shop) - Book of Lore Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+            "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+          },
+          "joinCommand": null
+        },
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Đổi Dual Blinding Light of Destiny tại Yulgar's Dual Wield Drop Off ở Nostalgia Quest. Đây là cách đổi lại từ bản dual.",
+          "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "dual-blinding-light-of-destiny",
+                "name": "Dual Blinding Light of Destiny",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Blinding Light of Destiny (Shop) - Book of Lore Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+            "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+      },
+      "requiredLevel": null,
+      "price": {
+        "value": "0 AC",
+        "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+      },
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "75% damage: Undead",
+          "source": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe",
+        "type": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe",
+        "acquisition": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          129,
+          243,
+          362,
+          391,
+          490,
+          591,
+          592,
+          611,
+          614,
+          617,
+          640,
+          647,
+          652,
+          660,
+          683,
+          2272,
+          2277,
+          2658,
+          2659,
+          2733,
+          4471,
+          5155,
+          7347,
+          7982,
+          8008,
+          8009,
+          9748
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/blinding-light-of-destiny-blod",
+          "/farm/original-drakath-armor-oda",
+          "/farm/awescended-omni-set",
+          "/farm/cysero-s-upgrade-items-quests",
+          "/farm/void-series-set",
+          "/farm/nation-theme-items",
+          "/farm/archmage-am",
+          "/farm/hollowborn-paladin-hbp",
+          "/farm/travel-portals"
+        ]
+      }
+    },
+    {
+      "id": "necrotic-sword-of-doom",
+      "officialName": "Necrotic Sword of Doom",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Necrotic Sword of Doom (Shop) - Shadowfall Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+        "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Necrotic Sword of Doom (Shop) ở Shadowfall.",
+          "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "necrotic-sword-s-blade",
+                "name": "Necrotic Sword's Blade",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+              },
+              {
+                "kind": "item",
+                "itemId": "necrotic-sword-s-hilt",
+                "name": "Necrotic Sword's Hilt",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+              },
+              {
+                "kind": "item",
+                "itemId": "necrotic-sword-s-aura",
+                "name": "Necrotic Sword's Aura",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+              },
+              {
+                "kind": "item",
+                "itemId": "void-aura",
+                "name": "Void Aura",
+                "quantity": 800,
+                "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+              },
+              {
+                "kind": "item",
+                "itemId": "doom-heart",
+                "name": "Doom Heart",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Necrotic Sword of Doom (Shop) - Shadowfall Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+            "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+          },
+          "joinCommand": null
+        },
+        {
+          "id": "merge-2",
+          "method": "Merge",
+          "description": "Đổi Dual Necrotic Swords of Doom tại Yulgar's Dual Wield Drop Off ở Nostalgia Quest. Đây là cách đổi lại từ bản dual.",
+          "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "dual-necrotic-swords-of-doom",
+                "name": "Dual Necrotic Swords of Doom",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Necrotic Sword of Doom (Shop) - Shadowfall Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+            "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "51% damage: All monsters",
+          "source": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword",
+        "type": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword",
+        "acquisition": "https://aqwwiki.wikidot.com/necrotic-sword-of-doom-sword"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          54,
+          243,
+          1162,
+          1375,
+          1385,
+          1392,
+          1406,
+          1755,
+          2990,
+          3015,
+          4248,
+          4254,
+          4465,
+          4478,
+          5379,
+          8154,
+          8160
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/necrotic-sword-of-doom-nsod",
+          "/farm/sepulchure-s-doomknight-armor-sdka",
+          "/farm/sepulchure-s-original-helm-soh",
+          "/farm/how-to-unlock-blacksmithing-enhancement",
+          "/farm/void-highlord-vhl",
+          "/farm/void-series-set",
+          "/farm/nation-theme-items",
+          "/farm/hollowborn-doomknight-hbdk"
+        ]
+      }
+    },
+    {
+      "id": "sepulchure-s-original-helm",
+      "officialName": "Sepulchure's Original Helm",
+      "type": "helm",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "SDKA Gift - Shadowfall Sepulchure ShadowScythe Armor - Book of Lore Shadowfall Toy Sepulchure Shop - Book of Lore",
+        "source": "https://aqwwiki.wikidot.com/sepulchure-s-original-helm"
+      },
+      "acquisition": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "description": "Hoàn thành quest Sepulchure's Helm tại SDKA Gift - Shadowfall Sepulchure ShadowScythe Armor - Book of Lore Shadowfall Toy Sepulchure Shop - Book of Lore",
+          "source": "https://aqwwiki.wikidot.com/sepulchure-s-original-helm",
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "SDKA Gift - Shadowfall Sepulchure ShadowScythe Armor - Book of Lore Shadowfall Toy Sepulchure Shop - Book of Lore",
+            "source": "https://aqwwiki.wikidot.com/sepulchure-s-original-helm"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/sepulchure-s-original-helm"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/sepulchure-s-original-helm"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/sepulchure-s-original-helm"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": null,
+      "boosts": [],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/sepulchure-s-original-helm",
+        "type": "https://aqwwiki.wikidot.com/sepulchure-s-original-helm",
+        "acquisition": "https://aqwwiki.wikidot.com/sepulchure-s-original-helm"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          1171,
+          1409,
+          1709,
+          1731,
+          1765,
+          1768,
+          1868,
+          2710,
+          2813,
+          8154
+        ],
+        "guideHrefs": [
+          "/farm/necrotic-sword-of-doom-nsod",
+          "/farm/sepulchure-s-doomknight-armor-sdka",
+          "/farm/sepulchure-s-original-helm-soh",
+          "/farm/verus-doomknight-vdk",
+          "/farm/awescended-omni-set",
+          "/farm/cysero-s-upgrade-items-quests",
+          "/farm/hollowborn-doomknight-hbdk"
+        ]
+      }
+    },
+    {
+      "id": "original-drakath-armor",
+      "officialName": "Original Drakath Armor",
+      "type": "armor",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Drakath's Armor - Book of Lore",
+        "source": "https://aqwwiki.wikidot.com/original-drakath-armor"
+      },
+      "acquisition": [
+        {
+          "id": "shop",
+          "method": "Shop",
+          "description": "Nhận tại Drakath's Armor - Book of Lore",
+          "source": "https://aqwwiki.wikidot.com/original-drakath-armor",
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Drakath's Armor - Book of Lore",
+            "source": "https://aqwwiki.wikidot.com/original-drakath-armor"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/original-drakath-armor"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/original-drakath-armor"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/original-drakath-armor"
+      },
+      "requiredLevel": {
+        "value": 50,
+        "source": "https://aqwwiki.wikidot.com/original-drakath-armor"
+      },
+      "price": {
+        "value": "0 AC",
+        "source": "https://aqwwiki.wikidot.com/original-drakath-armor"
+      },
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "40% damage: Chaos",
+          "source": "https://aqwwiki.wikidot.com/original-drakath-armor"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/original-drakath-armor",
+        "type": "https://aqwwiki.wikidot.com/original-drakath-armor",
+        "acquisition": "https://aqwwiki.wikidot.com/original-drakath-armor"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          114,
+          371,
+          651,
+          2254,
+          2265,
+          2286,
+          2514,
+          2707,
+          8304,
+          8305
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/blinding-light-of-destiny-blod",
+          "/farm/original-drakath-armor-oda",
+          "/farm/set-of-awe-unlock-awe-enhancement",
+          "/farm/awescended-omni-set",
+          "/farm/hollowborn-envoy-of-chaos-hbeoc"
+        ]
+      }
+    },
+    {
+      "id": "chaorrupter-unlocked-free-player",
+      "officialName": "Chaorrupter Unlocked (Free Player)",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Chaos War Merge - Chaos War (Location)",
+        "source": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Chaos War Merge - Chaos War (Location)",
+          "source": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "chaos-eye-1",
+                "name": "Chaos Eye (1)",
+                "quantity": 250,
+                "source": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player"
+              },
+              {
+                "kind": "item",
+                "itemId": "chaos-tentacle",
+                "name": "Chaos Tentacle",
+                "quantity": 250,
+                "source": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Chaos War Merge - Chaos War (Location)",
+            "source": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "50% damage: Chaos, Drakath",
+          "source": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player",
+        "type": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player",
+        "acquisition": "https://aqwwiki.wikidot.com/chaorrupter-unlocked-free-player"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          2303,
+          2308,
+          2350,
+          6317
+        ],
+        "guideHrefs": [
+          "/farm/chaorrupter-unlocked-cu",
+          "/farm/drakath-the-eternal-dte",
+          "/farm/legion-revenant-lr"
+        ]
+      }
+    },
+    {
+      "id": "archfiend-doomlord",
+      "officialName": "ArchFiend DoomLord",
+      "type": "armor",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Tercessuinotlim",
+        "source": "https://aqwwiki.wikidot.com/archfiend-doomlord"
+      },
+      "acquisition": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "description": "Hoàn thành quest Enough DOOM for an Archfiend tại Tercessuinotlim",
+          "source": "https://aqwwiki.wikidot.com/archfiend-doomlord",
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Tercessuinotlim",
+            "source": "https://aqwwiki.wikidot.com/archfiend-doomlord"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/archfiend-doomlord"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/archfiend-doomlord"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/archfiend-doomlord"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "35% damage: All monsters",
+          "source": "https://aqwwiki.wikidot.com/archfiend-doomlord"
+        },
+        {
+          "value": "25% XP, CP, Gold, Rep",
+          "source": "https://aqwwiki.wikidot.com/archfiend-doomlord"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/archfiend-doomlord",
+        "type": "https://aqwwiki.wikidot.com/archfiend-doomlord",
+        "acquisition": "https://aqwwiki.wikidot.com/archfiend-doomlord"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          84,
+          4257,
+          4364,
+          4367,
+          5429,
+          5504
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/archfiend-doomlord-afdl1",
+          "/farm/nation-theme-items"
+        ]
+      }
+    },
+    {
+      "id": "head-of-the-legion-beast",
+      "officialName": "Head of the Legion Beast",
+      "type": "helm",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Seven Circles War Merge - Seven Circles War",
+        "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Seven Circles War Merge - Seven Circles War",
+          "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "penance-misc",
+                "name": "Penance (Misc)",
+                "quantity": 30,
+                "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+              },
+              {
+                "kind": "item",
+                "itemId": "indulgence",
+                "name": "Indulgence",
+                "quantity": 30,
+                "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+              },
+              {
+                "kind": "item",
+                "itemId": "legion-token",
+                "name": "Legion Token",
+                "quantity": 15000,
+                "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+              },
+              {
+                "kind": "item",
+                "itemId": "beast-soul",
+                "name": "Beast Soul",
+                "quantity": 15,
+                "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+              },
+              {
+                "kind": "item",
+                "itemId": "helms-of-the-seven-circles",
+                "name": "Helms of the Seven Circles",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Seven Circles War Merge - Seven Circles War",
+            "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+      },
+      "membership": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "40% damage: Human, Undead",
+          "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+        },
+        {
+          "value": "30% damage: Dragon",
+          "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+        },
+        {
+          "value": "30% XP, CP, Gold, Rep",
+          "source": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [],
+      "image": null,
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/head-of-the-legion-beast",
+        "type": "https://aqwwiki.wikidot.com/head-of-the-legion-beast",
+        "acquisition": "https://aqwwiki.wikidot.com/head-of-the-legion-beast"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          133,
+          6161,
+          6535,
+          6631,
+          6645
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/legion-token-lt",
+          "/farm/head-of-the-legion-beast-helm-holb"
+        ]
+      }
+    },
+    {
+      "id": "exalted-apotheosis",
+      "officialName": "Exalted Apotheosis",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Exaltia Merge Inn at the Edge of Time Ultra Engineer (Location) Ultra Ezrajal (Location) Ultra Warden (Location)",
+        "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Exaltia Merge Inn at the Edge of Time Ultra Engineer (Location) Ultra Ezrajal (Location) Ultra Warden (Location)",
+          "source": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "exalted-penultima",
+                "name": "Exalted Penultima",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+              },
+              {
+                "kind": "item",
+                "itemId": "ezrajal-insignia",
+                "name": "Ezrajal Insignia",
+                "quantity": 4,
+                "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+              },
+              {
+                "kind": "item",
+                "itemId": "warden-insignia",
+                "name": "Warden Insignia",
+                "quantity": 4,
+                "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+              },
+              {
+                "kind": "item",
+                "itemId": "engineer-insignia",
+                "name": "Engineer Insignia",
+                "quantity": 8,
+                "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Exaltia Merge Inn at the Edge of Time Ultra Engineer (Location) Ultra Ezrajal (Location) Ultra Warden (Location)",
+            "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/exalted-apotheosis"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+      },
+      "requiredLevel": {
+        "value": 95,
+        "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+      },
+      "price": null,
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "51% damage: All monsters",
+          "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+        }
+      ],
+      "stability": {
+        "value": "stable",
+        "source": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+      },
+      "prerequisites": [],
+      "image": {
+        "path": "/images/aqw/weapons/item-apotheosis.png",
+        "source": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+        "assetId": "item-apotheosis",
+        "credit": "AdventureQuest Worlds artwork © Artix Entertainment LLC; nguồn ảnh người dùng chỉ định: Vietnam Collector",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+        "type": "https://aqwwiki.wikidot.com/exalted-apotheosis",
+        "acquisition": "https://aqwwiki.wikidot.com/exalted-apotheosis"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          80,
+          224,
+          239
+        ],
+        "guideHrefs": [
+          "/farm/farming-list"
+        ]
+      }
+    },
+    {
+      "id": "dual-exalted-apotheosis",
+      "officialName": "Dual Exalted Apotheosis",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Exaltia Merge Inn at the Edge of Time Ultra Engineer (Location) Ultra Ezrajal (Location) Ultra Warden (Location)",
+        "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Exaltia Merge Inn at the Edge of Time Ultra Engineer (Location) Ultra Ezrajal (Location) Ultra Warden (Location)",
+          "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "exalted-apotheosis",
+                "name": "Exalted Apotheosis",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+              },
+              {
+                "kind": "item",
+                "itemId": "ezrajal-insignia",
+                "name": "Ezrajal Insignia",
+                "quantity": 14,
+                "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+              },
+              {
+                "kind": "item",
+                "itemId": "warden-insignia",
+                "name": "Warden Insignia",
+                "quantity": 14,
+                "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+              },
+              {
+                "kind": "item",
+                "itemId": "engineer-insignia",
+                "name": "Engineer Insignia",
+                "quantity": 14,
+                "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Exaltia Merge Inn at the Edge of Time Ultra Engineer (Location) Ultra Ezrajal (Location) Ultra Warden (Location)",
+            "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+      },
+      "requiredLevel": {
+        "value": 95,
+        "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+      },
+      "price": null,
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "51% damage: All monsters",
+          "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+        }
+      ],
+      "stability": {
+        "value": "stable",
+        "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+      },
+      "prerequisites": [],
+      "image": {
+        "path": "/images/aqw/equipment/dual-exalted-apotheosis.png",
+        "source": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis",
+        "assetId": "equipment-dual-exalted-apotheosis",
+        "credit": "AdventureQuest Worlds game graphics © Artix Entertainment LLC; AQW Wiki contributors.",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis",
+        "type": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis",
+        "acquisition": "https://aqwwiki.wikidot.com/dual-exalted-apotheosis"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [],
+        "guideHrefs": []
+      }
+    },
+    {
+      "id": "sin-of-the-abyss",
+      "officialName": "Sin of the Abyss",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Nulgath's Merge Shop - Ultra Nulgath",
+        "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Nulgath's Merge Shop - Ultra Nulgath",
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "blood-gem-of-the-archfiend",
+                "name": "Blood Gem of the Archfiend",
+                "quantity": 50,
+                "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+              },
+              {
+                "kind": "item",
+                "itemId": "dark-crystal-shard",
+                "name": "Dark Crystal Shard",
+                "quantity": 200,
+                "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+              },
+              {
+                "kind": "item",
+                "itemId": "diamond-of-nulgath",
+                "name": "Diamond of Nulgath",
+                "quantity": 500,
+                "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+              },
+              {
+                "kind": "item",
+                "itemId": "gem-of-nulgath",
+                "name": "Gem of Nulgath",
+                "quantity": 150,
+                "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+              },
+              {
+                "kind": "item",
+                "itemId": "nulgath-insignia",
+                "name": "Nulgath Insignia",
+                "quantity": 20,
+                "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+              },
+              {
+                "kind": "item",
+                "itemId": "sin-of-revontheus-sword",
+                "name": "Sin of Revontheus (Sword)",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+              },
+              {
+                "kind": "item",
+                "itemId": "tainted-gem",
+                "name": "Tainted Gem",
+                "quantity": 300,
+                "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+              },
+              {
+                "kind": "item",
+                "itemId": "totem-of-nulgath",
+                "name": "Totem of Nulgath",
+                "quantity": 50,
+                "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Nulgath's Merge Shop - Ultra Nulgath",
+            "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+          },
+          "joinCommand": {
+            "value": "/join ultranulgath",
+            "source": "https://aqwwiki.wikidot.com/ultra-nulgath"
+          }
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+      },
+      "requiredLevel": {
+        "value": 95,
+        "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+      },
+      "price": null,
+      "joinCommand": {
+        "value": "/join ultranulgath",
+        "source": "https://aqwwiki.wikidot.com/ultra-nulgath"
+      },
+      "boosts": [
+        {
+          "value": "51% damage: All monsters",
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        },
+        {
+          "value": "25% Gold",
+          "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+        }
+      ],
+      "stability": {
+        "value": "stable",
+        "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+      },
+      "prerequisites": [
+        {
+          "value": "Để vào Ultra Nulgath: level 80+.",
+          "source": "https://aqwwiki.wikidot.com/ultra-nulgath"
+        }
+      ],
+      "image": {
+        "path": "/images/aqw/equipment/sin-of-the-abyss.png",
+        "source": "https://aqwwiki.wikidot.com/sin-of-the-abyss",
+        "assetId": "equipment-sin-of-the-abyss",
+        "credit": "AdventureQuest Worlds game graphics © Artix Entertainment LLC; AQW Wiki contributors.",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/sin-of-the-abyss",
+        "type": "https://aqwwiki.wikidot.com/sin-of-the-abyss",
+        "acquisition": "https://aqwwiki.wikidot.com/sin-of-the-abyss"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          82
+        ],
+        "guideHrefs": [
+          "/farm/farming-list"
+        ]
+      }
+    },
+    {
+      "id": "empowered-undead-champion",
+      "officialName": "Empowered Undead Champion",
+      "type": "armor",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Ultra Dage",
+        "source": "https://aqwwiki.wikidot.com/empowered-undead-champion"
+      },
+      "acquisition": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "description": "Hoàn thành quest Empowered Undead Champion tại Ultra Dage",
+          "source": "https://aqwwiki.wikidot.com/empowered-undead-champion",
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Ultra Dage",
+            "source": "https://aqwwiki.wikidot.com/empowered-undead-champion"
+          },
+          "joinCommand": {
+            "value": "/join ultradage",
+            "source": "https://aqwwiki.wikidot.com/ultra-dage"
+          }
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/empowered-undead-champion"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/empowered-undead-champion"
+      },
+      "membership": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/empowered-undead-champion"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": {
+        "value": "/join ultradage",
+        "source": "https://aqwwiki.wikidot.com/ultra-dage"
+      },
+      "boosts": [
+        {
+          "value": "50% damage: Undead",
+          "source": "https://aqwwiki.wikidot.com/empowered-undead-champion"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [
+        {
+          "value": "Để vào Ultra Dage: level 80+, hoàn thành quest 'Fail to the King'.",
+          "source": "https://aqwwiki.wikidot.com/ultra-dage"
+        }
+      ],
+      "image": {
+        "path": "/images/aqw/equipment/empowered-undead-champion.png",
+        "source": "https://aqwwiki.wikidot.com/empowered-undead-champion",
+        "assetId": "item-euc",
+        "credit": "AdventureQuest Worlds game graphics © Artix Entertainment LLC; AQW Wiki contributors.",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/empowered-undead-champion",
+        "type": "https://aqwwiki.wikidot.com/empowered-undead-champion",
+        "acquisition": "https://aqwwiki.wikidot.com/empowered-undead-champion"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          100,
+          6181
+        ],
+        "guideHrefs": [
+          "/farm/farming-list",
+          "/farm/legion-token-lt"
+        ]
+      }
+    },
+    {
+      "id": "infernal-flame-khopesh",
+      "officialName": "Infernal Flame Khopesh",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "FireAvatar Merge - Fire Avatar FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
+        "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại FireAvatar Merge - Fire Avatar FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
+          "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "avatar-tyndarius-insignia",
+                "name": "Avatar Tyndarius Insignia",
+                "quantity": 14,
+                "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+              },
+              {
+                "kind": "item",
+                "itemId": "fire-avatar-s-favor",
+                "name": "Fire Avatar's Favor",
+                "quantity": 40,
+                "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "FireAvatar Merge - Fire Avatar FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
+            "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+      },
+      "requiredLevel": null,
+      "price": null,
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "75% damage: Elemental",
+          "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+        }
+      ],
+      "stability": {
+        "value": "stable",
+        "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+      },
+      "prerequisites": [],
+      "image": {
+        "path": "/images/aqw/equipment/infernal-flame-khopesh.png",
+        "source": "https://aqwwiki.wikidot.com/infernal-flame-khopesh",
+        "assetId": "equipment-infernal-flame-khopesh",
+        "credit": "AdventureQuest Worlds game graphics © Artix Entertainment LLC; AQW Wiki contributors.",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/infernal-flame-khopesh",
+        "type": "https://aqwwiki.wikidot.com/infernal-flame-khopesh",
+        "acquisition": "https://aqwwiki.wikidot.com/infernal-flame-khopesh"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          104
+        ],
+        "guideHrefs": [
+          "/farm/farming-list"
+        ]
+      }
+    },
+    {
+      "id": "greatblade-of-the-entwined-eclipse",
+      "officialName": "Greatblade of the Entwined Eclipse",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Celestial Temple Forge - Eclipse Ascent",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Celestial Temple Forge - Eclipse Ascent",
+          "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "blade-of-the-bound-eclipse",
+                "name": "Blade of the Bound Eclipse",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+              },
+              {
+                "kind": "item",
+                "itemId": "greatblade-of-the-solstice-moon",
+                "name": "Greatblade of the Solstice Moon",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+              },
+              {
+                "kind": "item",
+                "itemId": "greatblade-of-the-midnight-sun",
+                "name": "Greatblade of the Midnight Sun",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+              },
+              {
+                "kind": "item",
+                "itemId": "ecliptic-offering",
+                "name": "Ecliptic Offering",
+                "quantity": 100,
+                "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Celestial Temple Forge - Eclipse Ascent",
+            "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+          },
+          "joinCommand": {
+            "value": "/join templeshrine",
+            "source": "https://aqwwiki.wikidot.com/eclipse-ascent"
+          }
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+      },
+      "requiredLevel": {
+        "value": 95,
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+      },
+      "price": null,
+      "joinCommand": {
+        "value": "/join templeshrine",
+        "source": "https://aqwwiki.wikidot.com/eclipse-ascent"
+      },
+      "boosts": [
+        {
+          "value": "51% damage: All monsters",
+          "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+        }
+      ],
+      "stability": {
+        "value": "stable",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+      },
+      "prerequisites": [],
+      "image": {
+        "path": "/images/aqw/challenges/ea9e9977b56437b88c2f32d3.png",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse",
+        "assetId": "equipment-greatblade-of-the-entwined-eclipse",
+        "credit": "AdventureQuest Worlds © Artix Entertainment LLC",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse",
+        "type": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse",
+        "acquisition": "https://aqwwiki.wikidot.com/greatblade-of-the-entwined-eclipse"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          69
+        ],
+        "guideHrefs": [
+          "/farm/farming-list"
+        ]
+      }
+    },
+    {
+      "id": "greatblade-of-the-solstice-moon",
+      "officialName": "Greatblade of the Solstice Moon",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Celestial Temple Forge - Eclipse Ascent",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Celestial Temple Forge - Eclipse Ascent",
+          "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "blade-of-the-glowing-moon",
+                "name": "Blade of the Glowing Moon",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+              },
+              {
+                "kind": "item",
+                "itemId": "sliver-of-moonlight",
+                "name": "Sliver of Moonlight",
+                "quantity": 100,
+                "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Celestial Temple Forge - Eclipse Ascent",
+            "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+          },
+          "joinCommand": {
+            "value": "/join templeshrine",
+            "source": "https://aqwwiki.wikidot.com/eclipse-ascent"
+          }
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+      },
+      "requiredLevel": {
+        "value": 70,
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+      },
+      "price": null,
+      "joinCommand": {
+        "value": "/join templeshrine",
+        "source": "https://aqwwiki.wikidot.com/eclipse-ascent"
+      },
+      "boosts": [
+        {
+          "value": "25% damage: All monsters",
+          "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+        }
+      ],
+      "stability": {
+        "value": "stable",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+      },
+      "prerequisites": [],
+      "image": {
+        "path": "/images/aqw/challenges/afa443aae08044cce16048fc.png",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon",
+        "assetId": "equipment-greatblade-of-the-solstice-moon",
+        "credit": "AdventureQuest Worlds © Artix Entertainment LLC",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon",
+        "type": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon",
+        "acquisition": "https://aqwwiki.wikidot.com/greatblade-of-the-solstice-moon"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [],
+        "guideHrefs": []
+      }
+    },
+    {
+      "id": "greatblade-of-the-midnight-sun",
+      "officialName": "Greatblade of the Midnight Sun",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Celestial Temple Forge - Eclipse Ascent",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Celestial Temple Forge - Eclipse Ascent",
+          "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "blade-of-the-burning-sun",
+                "name": "Blade of the Burning Sun",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+              },
+              {
+                "kind": "item",
+                "itemId": "sliver-of-sunlight",
+                "name": "Sliver of Sunlight",
+                "quantity": 100,
+                "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Celestial Temple Forge - Eclipse Ascent",
+            "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+          },
+          "joinCommand": {
+            "value": "/join templeshrine",
+            "source": "https://aqwwiki.wikidot.com/eclipse-ascent"
+          }
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+      },
+      "requiredLevel": {
+        "value": 70,
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+      },
+      "price": null,
+      "joinCommand": {
+        "value": "/join templeshrine",
+        "source": "https://aqwwiki.wikidot.com/eclipse-ascent"
+      },
+      "boosts": [
+        {
+          "value": "25% damage: All monsters",
+          "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+        }
+      ],
+      "stability": {
+        "value": "stable",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+      },
+      "prerequisites": [],
+      "image": {
+        "path": "/images/aqw/challenges/e508ae0b91cfbdb99875233f.png",
+        "source": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun",
+        "assetId": "equipment-greatblade-of-the-midnight-sun",
+        "credit": "AdventureQuest Worlds © Artix Entertainment LLC",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun",
+        "type": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun",
+        "acquisition": "https://aqwwiki.wikidot.com/greatblade-of-the-midnight-sun"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [],
+        "guideHrefs": []
+      }
+    },
+    {
+      "id": "drago-s-royal-guard",
+      "officialName": "Drago's Royal Guard",
+      "type": "armor",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Ultra Drago Merge - Ultra Drago",
+        "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Ultra Drago Merge - Ultra Drago",
+          "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "king-drago-insignia",
+                "name": "King Drago Insignia",
+                "quantity": 5,
+                "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Ultra Drago Merge - Ultra Drago",
+            "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+          },
+          "joinCommand": {
+            "value": "/join ultradrago",
+            "source": "https://aqwwiki.wikidot.com/ultra-drago"
+          }
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+      },
+      "requiredLevel": {
+        "value": 80,
+        "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+      },
+      "price": null,
+      "joinCommand": {
+        "value": "/join ultradrago",
+        "source": "https://aqwwiki.wikidot.com/ultra-drago"
+      },
+      "boosts": [
+        {
+          "value": "35% XP, CP",
+          "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+        }
+      ],
+      "stability": null,
+      "prerequisites": [
+        {
+          "value": "Để vào Ultra Drago: level 80+, hoàn thành quest 'Mahapadma'.",
+          "source": "https://aqwwiki.wikidot.com/ultra-drago"
+        }
+      ],
+      "image": {
+        "path": "/images/aqw/equipment/drago-s-royal-guard.png",
+        "source": "https://aqwwiki.wikidot.com/drago-s-royal-guard",
+        "assetId": "equipment-drago-s-royal-guard",
+        "credit": "AdventureQuest Worlds game graphics © Artix Entertainment LLC; AQW Wiki contributors.",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/drago-s-royal-guard",
+        "type": "https://aqwwiki.wikidot.com/drago-s-royal-guard",
+        "acquisition": "https://aqwwiki.wikidot.com/drago-s-royal-guard"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          239
+        ],
+        "guideHrefs": [
+          "/farm/farming-list"
+        ]
+      }
+    },
+    {
+      "id": "malgor-s-shadowflame-blade",
+      "officialName": "Malgor's ShadowFlame Blade",
+      "type": "weapon",
+      "regionId": null,
+      "regionEvidence": [],
+      "location": {
+        "value": "Ultra Speaker Merge - Ultra Speaker",
+        "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+      },
+      "acquisition": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "description": "Merge tại Ultra Speaker Merge - Ultra Speaker",
+          "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade",
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "malgor-insignia",
+                "name": "Malgor Insignia",
+                "quantity": 20,
+                "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+              },
+              {
+                "kind": "item",
+                "itemId": "shadowflame-dragon-blade",
+                "name": "ShadowFlame Dragon Blade",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+              },
+              {
+                "kind": "item",
+                "itemId": "elemental-core",
+                "name": "Elemental Core",
+                "quantity": 20,
+                "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+              }
+            ]
+          },
+          "regionId": null,
+          "regionEvidence": [],
+          "location": {
+            "value": "Ultra Speaker Merge - Ultra Speaker",
+            "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+          },
+          "joinCommand": null
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "unknown",
+        "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+      },
+      "requiredLevel": {
+        "value": 95,
+        "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+      },
+      "price": null,
+      "joinCommand": null,
+      "boosts": [
+        {
+          "value": "51% damage: All monsters",
+          "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+        }
+      ],
+      "stability": {
+        "value": "stable",
+        "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+      },
+      "prerequisites": [],
+      "image": {
+        "path": "/images/aqw/equipment/malgor-s-shadowflame-blade.png",
+        "source": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade",
+        "assetId": "equipment-malgor-s-shadowflame-blade",
+        "credit": "AdventureQuest Worlds game graphics © Artix Entertainment LLC; AQW Wiki contributors.",
+        "verificationStatus": "verified",
+        "usageStatus": "approved"
+      },
+      "reviewReason": "Đã xác minh item và nơi nhận; chưa đủ bằng chứng gán Region địa lý.",
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade",
+        "type": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade",
+        "acquisition": "https://aqwwiki.wikidot.com/malgor-s-shadowflame-blade"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          3072
+        ],
+        "guideHrefs": [
+          "/farm/how-to-unlock-blacksmithing-enhancement"
+        ]
+      }
+    },
+    {
+      "id": "shaman",
+      "officialName": "Shaman",
+      "type": "class",
+      "classHref": "/class/shaman",
+      "regionId": "arcangrove",
+      "regionEvidence": [
+        "https://aqwwiki.wikidot.com/arcangrove",
+        "https://aqwwiki.wikidot.com/locations"
+      ],
+      "location": {
+        "value": "Arcangrove Rep Shop · Rayst",
+        "source": "https://aqwwiki.wikidot.com/arcangrove-rep-shop"
+      },
+      "acquisition": [
+        {
+          "id": "reputation",
+          "method": "Reputation",
+          "description": "Đạt Arcangrove Rank 10 rồi nhận Shaman tại Arcangrove Rep Shop với giá 0 AC.",
+          "source": "https://aqwwiki.wikidot.com/arcangrove-rep-shop",
+          "regionId": "arcangrove",
+          "regionEvidence": [
+            "https://aqwwiki.wikidot.com/arcangrove"
+          ],
+          "location": {
+            "value": "Arcangrove Rep Shop · Rayst",
+            "source": "https://aqwwiki.wikidot.com/arcangrove-rep-shop"
+          },
+          "joinCommand": {
+            "value": "/join arcangrove",
+            "source": "https://aqwwiki.wikidot.com/arcangrove"
+          },
+          "steps": [
+            {
+              "value": "Làm quest có thưởng Arcangrove reputation cho đến Rank 10.",
+              "source": "https://aqwwiki.wikidot.com/arcangrove-rep-shop"
+            },
+            {
+              "value": "Đến Arcangrove, gặp Rayst và mở Arcangrove Rep Shop; chọn Shaman (0 AC).",
+              "source": "https://aqwwiki.wikidot.com/arcangrove-rep-shop"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://aqwwiki.wikidot.com/shaman",
+        "https://aqwwiki.wikidot.com/arcangrove-rep-shop",
+        "https://aqwwiki.wikidot.com/arcangrove"
+      ],
+      "verificationStatus": "verified",
+      "retrievedAt": "2026-11-11",
+      "availability": {
+        "value": "available",
+        "source": "https://aqwwiki.wikidot.com/arcangrove-rep-shop"
+      },
+      "membership": {
+        "value": "non-member",
+        "source": "https://aqwwiki.wikidot.com/shaman"
+      },
+      "requiredLevel": null,
+      "price": {
+        "value": "0 AC",
+        "source": "https://aqwwiki.wikidot.com/shaman"
+      },
+      "joinCommand": {
+        "value": "/join arcangrove",
+        "source": "https://aqwwiki.wikidot.com/arcangrove"
+      },
+      "boosts": [],
+      "stability": null,
+      "prerequisites": [
+        {
+          "value": "Arcangrove Rank 10",
+          "source": "https://aqwwiki.wikidot.com/arcangrove-rep-shop"
+        }
+      ],
+      "reviewReason": null,
+      "image": null,
+      "fieldEvidence": {
+        "officialName": "https://aqwwiki.wikidot.com/shaman",
+        "type": "https://aqwwiki.wikidot.com/shaman",
+        "acquisition": "https://aqwwiki.wikidot.com/arcangrove-rep-shop"
+      },
+      "communityEvidence": {
+        "url": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "readAt": "2026-11-05",
+        "sourceIndices": [
+          6218,
+          7724
+        ],
+        "guideHrefs": [
+          "/farm/legion-revenant-lr",
+          "/farm/stonecrusher-sc"
+        ]
+      }
+    }
+  ]
+}

@@ -16,24 +16,8 @@ import { useEffect, useState, type CSSProperties } from "react";
 import { ArrowLeft } from "lucide-react";
 import type { AqwClass } from "../../types/classes";
 import { classProfiles } from "../../content/classes";
-import { guides, href, categories } from "../../content/data";
-import { ultraBosses } from "../../content/ultra";
-import { safeBackPath } from "../../lib/ultra-progress";
 import { useClassBody } from "./useClassBody";
 import { ClassCard } from "./ClassDirectory";
-const known = [
-  "/",
-  "/gioi-thieu",
-  "/class",
-  "/class/thu-vien",
-  ...Object.keys(categories).map((c) => "/" + c),
-  ...guides.map(href),
-  ...classProfiles.flatMap((c) =>
-    [c.slug, ...c.aliases].map((s) => "/class/" + s),
-  ),
-  "/ultra-boss",
-  ...ultraBosses.map((b) => "/ultra-boss/" + b.slug),
-];
 export function ClassDetail({ profile }: { profile: AqwClass }) {
   const family = calendarFamily(profile.id);
   const defaultIdentity=classIdentity(profile.id);
@@ -87,18 +71,9 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
       <div className="class-back-row">
         <button
           onClick={() => {
-            const target = safeBackPath(
-              history.state?.aqwPrevious || document.referrer,
-              location.origin,
-              known,
-            );
-            if (target && target !== location.pathname && history.length > 1)
-              history.back();
-            else {
-              history.replaceState(null, "", "/class");
-              window.dispatchEvent(new PopStateEvent("popstate"));
-              scrollTo(0, 0);
-            }
+            history.pushState(null, "", "/class");
+            window.dispatchEvent(new PopStateEvent("popstate"));
+            scrollTo(0, 0);
           }}
         >
           <ArrowLeft size={18} />

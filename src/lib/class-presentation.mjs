@@ -15,8 +15,19 @@ export function difficultyTier(profile,record){
  const tier=matched?.[1]||(level>=90?'Endgame':level>=70?'Lategame':level>=30?'Midgame':({'Cơ bản':'Newbie','Cần luyện tập':'Midgame','Nâng cao':'Lategame','Newbie':'Newbie','Midgame':'Midgame','Lategame':'Lategame','Endgame':'Endgame'}[profile.difficulty]||'Midgame'));
  return{tier,status:'editorial',basis:matched?'Phân tầng biên tập theo điều kiện sở hữu và hướng dẫn Class đã lưu; không phải nhãn chính thức của game.':level!==null?`Phân tầng tạm theo Level yêu cầu đã xác minh (${level}); cần tiếp tục rà độ phức tạp rotation.`:'Phân tầng tạm thời; hồ sơ chưa đủ căn cứ để đánh giá toàn bộ độ phức tạp rotation.'};
 }
+// A cooldown priority is an independent rule, never a sequence inferred from prose.
+// Require an explicit instruction and explicit skill priority; numbers in "1 trong 2"
+// are not skill slots. Keep conditional or ambiguous instructions as source notes.
+function cooldownRule(flow) {
+ if(flow.sequences.length) return flow;
+ const text=flow.sourceText;
+ const cooldown=/(?:sử dụng|dùng)\s+skill\s+mỗi khi\s+(?:CD|hồi chiêu)/i.test(text);
+ const priority=text.match(/ưu tiên\s+(?:loop\s+)?skill\s+([1-5])\s+để có\s+Haste buff/i);
+ if(!cooldown || !priority || /không|ngoại trừ|trừ\s+[1-5]/i.test(text)) return flow;
+ return {...flow,kind:'cooldown',label:'Khi hồi chiêu',prioritySkill:Number(priority[1]),priorityLabel:'Ưu tiên / Haste',afterOpening:/sau khi mở đầu/i.test(text)};
+}
 export function comboFlow(combo){
- if(combo.flow?.length) return combo.flow;
+ if(combo.flow?.length) return combo.flow.map(cooldownRule);
  const lines=[combo.explanation,...combo.notes].filter(Boolean);const chain=/\b[1-5](?:\s*[-→]\s*[1-5])+\b/g;
- return lines.map((sourceText,i)=>{const sequences=[...sourceText.matchAll(chain)].map(m=>m[0].match(/[1-5]/g).map(Number));const negativeSpam=/không\s+(?:nên\s+|được\s+)?spam|tránh\s+spam/i.test(sourceText);const spam=negativeSpam?null:sourceText.match(/spam\s+(?:skill\s*)?([1-5](?:\s*(?:,|và|and|\/)\s*[1-5])*)/i);if(spam&&!sequences.length)sequences.push(spam[1].match(/[1-5]/g).map(Number));if(i===0&&!sequences.length&&combo.sequence.length)sequences.push(combo.sequence);if(negativeSpam)sequences.length=0;const prefix=sourceText.replace(/^[→◆*\s]+/,'').split(':')[0];const label=prefix.length<65&&sourceText.includes(':')?prefix:/mở đầu|bắt đầu|^start rotation/i.test(sourceText)?'Mở đầu':/spam/i.test(sourceText)?'Spam':/nuke|kết thúc/i.test(sourceText)?'Nuke':/lặp|loop/i.test(sourceText)?'Loop':i===0?combo.title:'Nhịp bổ sung';return{id:combo.id+'-flow-'+i,label,sequences,sourceText,stopCondition:/đến khi|until/i.test(sourceText)?sourceText.match(/(?:đến khi|until)\s+[^.!?\n]+/i)?.[0].split(/\s+thì\s+/)[0]:undefined,kind:negativeSpam?'warning':/spam/i.test(sourceText)?'spam':/lặp|loop/i.test(sourceText)?'loop':'sequence'};});
+ return lines.map((sourceText,i)=>{const sequences=[...sourceText.matchAll(chain)].map(m=>m[0].match(/[1-5]/g).map(Number));const negativeSpam=/không\s+(?:nên\s+|được\s+)?spam|tránh\s+spam/i.test(sourceText);const spam=negativeSpam?null:sourceText.match(/spam\s+(?:skill\s*)?([1-5](?:\s*(?:,|và|and|\/)\s*[1-5])*)/i);if(spam&&!sequences.length)sequences.push(spam[1].match(/[1-5]/g).map(Number));if(i===0&&!sequences.length&&combo.sequence.length)sequences.push(combo.sequence);if(negativeSpam)sequences.length=0;const prefix=sourceText.replace(/^[→◆*\s]+/,'').split(':')[0];const label=prefix.length<65&&sourceText.includes(':')?prefix:/mở đầu|bắt đầu|^start rotation/i.test(sourceText)?'Mở đầu':/spam/i.test(sourceText)?'Spam':/nuke|kết thúc/i.test(sourceText)?'Nuke':/lặp|loop/i.test(sourceText)?'Loop':i===0?combo.title:'Nhịp bổ sung';return{id:combo.id+'-flow-'+i,label,sequences,sourceText,stopCondition:/đến khi|until/i.test(sourceText)?sourceText.match(/(?:đến khi|until)\s+[^.!?\n]+/i)?.[0].split(/\s+thì\s+/)[0]:undefined,kind:negativeSpam?'warning':/spam/i.test(sourceText)?'spam':/lặp|loop/i.test(sourceText)?'loop':'sequence'};}).map(cooldownRule);
 }

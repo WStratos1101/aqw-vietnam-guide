@@ -18,18 +18,21 @@ function load(file) {
       ? JSON.parse(
           fs.readFileSync(path.resolve(path.dirname(file), name), "utf8"),
         )
-      : name.endsWith("site-feature-access.mjs") ? { isComingSoon } : load(path.resolve(path.dirname(file), name + ".ts")),
+      : name.endsWith("site-feature-access.mjs") ? { isComingSoon } : load(path.resolve(path.dirname(file), name + (name.endsWith(".mjs") ? "" : ".ts"))),
   );
   return exports;
 }
 const { guides, href } = load("src/content/data.ts");
 const { searchEntries } = load("src/lib/search.ts");
 const { readStored, readStoredValue, writeStored } = load("src/lib/storage.ts");
-test("Class identity resolves confirmed aliases to a single canonical entity",()=>{
-  const {classIdentity}=load('src/lib/class-identity.ts');
-  assert.equal(classIdentity('DT').id,'dragon-of-time');
-  assert.equal(classIdentity('EDoT').id,classIdentity('Dragon of Time').id);
-  assert.equal(classIdentity('CDK').name,'Chrono DragonKnight');
+test("Class canonical identities preserve confirmed aliases and variant names",()=>{
+  const {classIdentity, classIdentityAliases}=load('src/lib/class-identity.ts');
+  const time=classIdentity('dragon-of-time-dt-edot');
+  assert.equal(time.officialName,'Dragon of Time');
+  assert.equal(time.primaryAbbreviation,'DT');
+  assert.ok(classIdentityAliases(time.classId).includes('EDoT'));
+  assert.equal(classIdentity(time.classId,'Dragon of Time').classId,time.classId);
+  assert.equal(classIdentity('calendar-chrono-dragonknight').officialName,'Chrono DragonKnight');
   assert.equal(classIdentity('unverified-abbreviation'),undefined);
 });
 test("object-shaped material progress persists through a guarded storage reader",()=>{

@@ -1,0 +1,23 @@
+{
+  "kind": "farm",
+  "status": "failed",
+  "startedAt": "2026-11-12T01:01:33.289Z",
+  "browser": "webkit",
+  "browserPath": "/Users/wstratos/Desktop/Project/aqw-vietnam-guide/.playwright-browsers",
+  "cases": [
+    {
+      "width": 375,
+      "status": "passed",
+      "overflow": false,
+      "brokenImages": []
+    }
+  ],
+  "screenshots": [
+    "artifacts/qa/farm/inventory-375.png"
+  ],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at file:///Users/wstratos/Desktop/Project/aqw-vietnam-guide/scripts/qa-farm.mjs:97:14\n    at async runQa (file:///Users/wstratos/Desktop/Project/aqw-vietnam-guide/scripts/qa-runtime.mjs:113:5)\n    at async file:///Users/wstratos/Desktop/Project/aqw-vietnam-guide/scripts/qa-farm.mjs:5:1"
+  ],
+  "baseUrl": "http://127.0.0.1:54185",
+  "finishedAt": "2026-11-12T01:01:35.672Z"
+}

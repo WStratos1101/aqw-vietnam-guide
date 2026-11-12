@@ -1,0 +1,1271 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "content-sources/farming-guide.json",
+    "sha256": "4d01953cb326b0f19af70f79102739687c36a7f57e44d67c0e9aa567c708bb08",
+    "documentUrl": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+    "readAt": "2026-11-05",
+    "modifiedAt": "2026-11-04T17:57:39.165Z",
+    "retrievalAttemptAt": "2026-11-11",
+    "retrievalStatus": "offline_fallback",
+    "reason": "Original Google Docs URL was not accessible via web tool; using the checked-in text export."
+  },
+  "wiki": {
+    "retrievedAt": "2026-11-11",
+    "availabilityConfirmedInGameAt": null,
+    "indexSources": [
+      "https://aqwwiki.wikidot.com/locations",
+      "https://aqwwiki.wikidot.com/maps"
+    ]
+  },
+  "coverage": {
+    "sourceNodes": 10755,
+    "sourceGuideRecords": 87,
+    "goalRecords": 74,
+    "verifiedItemRecords": 23,
+    "mappedItems": 7,
+    "unknownRegionItems": 18,
+    "unmappedGuideRecords": 55,
+    "unmappedGoalRecords": 59,
+    "unresolvedSources": 8,
+    "imageItems": 10
+  },
+  "scope": "Initial verified equipment import. Goal records and guide chapters include Classes, houses, materials, sets and mechanics; unmapped records require triage and are not a count of missing equipment. Not a complete inventory of every item mentioned in the document.",
+  "guideRecords": [
+    {
+      "id": "farming-guide-farm-farming-list",
+      "title": "Farming List",
+      "href": "/farm/farming-list",
+      "sourceIndex": 36,
+      "itemIds": [
+        "blade-of-awe",
+        "armor-of-awe",
+        "helm-of-awe",
+        "cape-of-awe",
+        "sepulchure-s-doomknight-armor",
+        "blinding-light-of-destiny",
+        "necrotic-sword-of-doom",
+        "original-drakath-armor",
+        "archfiend-doomlord",
+        "head-of-the-legion-beast",
+        "exalted-apotheosis",
+        "sin-of-the-abyss",
+        "empowered-undead-champion",
+        "infernal-flame-khopesh",
+        "greatblade-of-the-entwined-eclipse",
+        "drago-s-royal-guard"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-good",
+      "title": "Good",
+      "href": "/farm/good",
+      "sourceIndex": 359,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-blinding-light-of-destiny-blod",
+      "title": "Blinding Light of Destiny (BLoD)",
+      "href": "/farm/blinding-light-of-destiny-blod",
+      "sourceIndex": 362,
+      "itemIds": [
+        "blinding-light-of-destiny",
+        "original-drakath-armor"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-archpaladin-ap",
+      "title": "ArchPaladin (AP)",
+      "href": "/farm/archpaladin-ap",
+      "sourceIndex": 715,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-king-s-echo-ke",
+      "title": "King's Echo (KE)",
+      "href": "/farm/king-s-echo-ke",
+      "sourceIndex": 821,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-lightcaster-lc",
+      "title": "LightCaster (LC)",
+      "href": "/farm/lightcaster-lc",
+      "sourceIndex": 904,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-celestial-of-mysteries-com",
+      "title": "Celestial of Mysteries (CoM)",
+      "href": "/farm/celestial-of-mysteries-com",
+      "sourceIndex": 949,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-lord-of-order-loo",
+      "title": "Lord of Order (LoO)",
+      "href": "/farm/lord-of-order-loo",
+      "sourceIndex": 1000,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-gold-and-silver-exalted-paladin",
+      "title": "Gold and Silver Exalted Paladin",
+      "href": "/farm/gold-and-silver-exalted-paladin",
+      "sourceIndex": 1100,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-evil",
+      "title": "Evil",
+      "href": "/farm/evil",
+      "sourceIndex": 1159,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-necrotic-sword-of-doom-nsod",
+      "title": "Necrotic Sword of Doom (NSoD)",
+      "href": "/farm/necrotic-sword-of-doom-nsod",
+      "sourceIndex": 1162,
+      "itemIds": [
+        "sepulchure-s-doomknight-armor",
+        "necrotic-sword-of-doom",
+        "sepulchure-s-original-helm"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-sepulchure-s-doomknight-armor-sdka",
+      "title": "Sepulchure's DoomKnight Armor (SDKA)",
+      "href": "/farm/sepulchure-s-doomknight-armor-sdka",
+      "sourceIndex": 1395,
+      "itemIds": [
+        "sepulchure-s-doomknight-armor",
+        "necrotic-sword-of-doom",
+        "sepulchure-s-original-helm"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-sepulchure-s-original-helm-soh",
+      "title": "Sepulchure's Original Helm (SOH)",
+      "href": "/farm/sepulchure-s-original-helm-soh",
+      "sourceIndex": 1731,
+      "itemIds": [
+        "necrotic-sword-of-doom",
+        "sepulchure-s-original-helm"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-verus-doomknight-vdk",
+      "title": "Verus DoomKnight (VDK)",
+      "href": "/farm/verus-doomknight-vdk",
+      "sourceIndex": 1775,
+      "itemIds": [
+        "sepulchure-s-original-helm"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-upgrade-doom-weapons",
+      "title": "Upgrade Doom Weapons",
+      "href": "/farm/upgrade-doom-weapons",
+      "sourceIndex": 1897,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-vordred-s-armor",
+      "title": "Vordred's Armor",
+      "href": "/farm/vordred-s-armor",
+      "sourceIndex": 1946,
+      "itemIds": [
+        "sepulchure-s-doomknight-armor"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-lich",
+      "title": "Lich",
+      "href": "/farm/lich",
+      "sourceIndex": 2054,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-evil-theme-items",
+      "title": "Evil-theme Items",
+      "href": "/farm/evil-theme-items",
+      "sourceIndex": 2086,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-chaos",
+      "title": "Chaos",
+      "href": "/farm/chaos",
+      "sourceIndex": 2251,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-original-drakath-armor-oda",
+      "title": "Original Drakath Armor (ODA)",
+      "href": "/farm/original-drakath-armor-oda",
+      "sourceIndex": 2254,
+      "itemIds": [
+        "blade-of-awe",
+        "blinding-light-of-destiny",
+        "original-drakath-armor"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-chaorrupter-unlocked-cu",
+      "title": "Chaorrupter Unlocked (CU)",
+      "href": "/farm/chaorrupter-unlocked-cu",
+      "sourceIndex": 2303,
+      "itemIds": [
+        "chaorrupter-unlocked-free-player"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-drakath-the-eternal-dte",
+      "title": "Drakath the Eternal (DtE)",
+      "href": "/farm/drakath-the-eternal-dte",
+      "sourceIndex": 2327,
+      "itemIds": [
+        "chaorrupter-unlocked-free-player"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-titan-drakath-td",
+      "title": "Titan Drakath (TD)",
+      "href": "/farm/titan-drakath-td",
+      "sourceIndex": 2369,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-ouroboros-warlock-ow",
+      "title": "Ouroboros Warlock (OW)",
+      "href": "/farm/ouroboros-warlock-ow",
+      "sourceIndex": 2466,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-museum",
+      "title": "Museum",
+      "href": "/farm/museum",
+      "sourceIndex": 2495,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-set-of-awe-unlock-awe-enhancement",
+      "title": "Set of Awe - Unlock AWE Enhancement",
+      "href": "/farm/set-of-awe-unlock-awe-enhancement",
+      "sourceIndex": 2498,
+      "itemIds": [
+        "blade-of-awe",
+        "armor-of-awe",
+        "helm-of-awe",
+        "cape-of-awe",
+        "original-drakath-armor"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-awescended-omni-set",
+      "title": "Awescended Omni Set",
+      "href": "/farm/awescended-omni-set",
+      "sourceIndex": 2589,
+      "itemIds": [
+        "blade-of-awe",
+        "armor-of-awe",
+        "helm-of-awe",
+        "blinding-light-of-destiny",
+        "sepulchure-s-original-helm",
+        "original-drakath-armor"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-forge",
+      "title": "Forge",
+      "href": "/farm/forge",
+      "sourceIndex": 2723,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-cysero-s-upgrade-items-quests",
+      "title": "Cysero's Upgrade items Quests",
+      "href": "/farm/cysero-s-upgrade-items-quests",
+      "sourceIndex": 2726,
+      "itemIds": [
+        "blinding-light-of-destiny",
+        "sepulchure-s-original-helm"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-how-to-unlock-blacksmithing-enhancement",
+      "title": "How to unlock Blacksmithing Enhancement",
+      "href": "/farm/how-to-unlock-blacksmithing-enhancement",
+      "sourceIndex": 2828,
+      "itemIds": [
+        "blade-of-awe",
+        "armor-of-awe",
+        "sepulchure-s-doomknight-armor",
+        "necrotic-sword-of-doom",
+        "malgor-s-shadowflame-blade"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-nation",
+      "title": "Nation",
+      "href": "/farm/nation",
+      "sourceIndex": 3312,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-tercessuinotlim",
+      "title": "Tercessuinotlim",
+      "href": "/farm/tercessuinotlim",
+      "sourceIndex": 3315,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-nulgath-s-resources-farming",
+      "title": "Nulgath’s resources Farming",
+      "href": "/farm/nulgath-s-resources-farming",
+      "sourceIndex": 3342,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-void-highlord-vhl",
+      "title": "Void Highlord (VHL)",
+      "href": "/farm/void-highlord-vhl",
+      "sourceIndex": 4040,
+      "itemIds": [
+        "necrotic-sword-of-doom"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-archfiend-doomlord-afdl1",
+      "title": "ArchFiend DoomLord (AFDL1)",
+      "href": "/farm/archfiend-doomlord-afdl1",
+      "sourceIndex": 4257,
+      "itemIds": [
+        "archfiend-doomlord"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-dragonblade-of-nulgath-dbon",
+      "title": "DragonBlade of Nulgath (DBoN)",
+      "href": "/farm/dragonblade-of-nulgath-dbon",
+      "sourceIndex": 4376,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-void-series-set",
+      "title": "Void Series Set",
+      "href": "/farm/void-series-set",
+      "sourceIndex": 4412,
+      "itemIds": [
+        "blinding-light-of-destiny",
+        "necrotic-sword-of-doom"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-celestial-infernal-archfiend-caf-iaf",
+      "title": "Celestial & Infernal ArchFiend (CAF & IAF)",
+      "href": "/farm/celestial-infernal-archfiend-caf-iaf",
+      "sourceIndex": 4695,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-evolved-orb-of-nulgath",
+      "title": "Evolved Orb of Nulgath",
+      "href": "/farm/evolved-orb-of-nulgath",
+      "sourceIndex": 4849,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-nation-theme-items",
+      "title": "Nation-theme Items",
+      "href": "/farm/nation-theme-items",
+      "sourceIndex": 5129,
+      "itemIds": [
+        "blinding-light-of-destiny",
+        "necrotic-sword-of-doom",
+        "archfiend-doomlord"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-legion",
+      "title": "Legion",
+      "href": "/farm/legion",
+      "sourceIndex": 5941,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-joining-the-legion",
+      "title": "Joining the Legion",
+      "href": "/farm/joining-the-legion",
+      "sourceIndex": 5944,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-legion-token-lt",
+      "title": "Legion Token (LT)",
+      "href": "/farm/legion-token-lt",
+      "sourceIndex": 5995,
+      "itemIds": [
+        "head-of-the-legion-beast",
+        "empowered-undead-champion"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-legion-revenant-lr",
+      "title": "Legion Revenant (LR)",
+      "href": "/farm/legion-revenant-lr",
+      "sourceIndex": 6191,
+      "itemIds": [
+        "chaorrupter-unlocked-free-player",
+        "shaman"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-yami-no-ronin-ynr",
+      "title": "Yami no Ronin (YnR)",
+      "href": "/farm/yami-no-ronin-ynr",
+      "sourceIndex": 6391,
+      "itemIds": [
+        "armor-of-awe"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-sin-of-the-undying-sou",
+      "title": "Sin of the Undying (SoU)",
+      "href": "/farm/sin-of-the-undying-sou",
+      "sourceIndex": 6497,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-head-of-the-legion-beast-helm-holb",
+      "title": "Head of the Legion Beast Helm (HoLB)",
+      "href": "/farm/head-of-the-legion-beast-helm-holb",
+      "sourceIndex": 6535,
+      "itemIds": [
+        "head-of-the-legion-beast"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-legion-bonfire-set",
+      "title": "Legion Bonfire Set",
+      "href": "/farm/legion-bonfire-set",
+      "sourceIndex": 6650,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-legion-theme-items",
+      "title": "Legion-theme Items",
+      "href": "/farm/legion-theme-items",
+      "sourceIndex": 6800,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-dragonkin",
+      "title": "Dragonkin",
+      "href": "/farm/dragonkin",
+      "sourceIndex": 7003,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-dragon-of-time-dt-edot",
+      "title": "Dragon of Time (DT/EDoT)",
+      "href": "/farm/dragon-of-time-dt-edot",
+      "sourceIndex": 7006,
+      "itemIds": [
+        "blade-of-awe"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-fire-champion-s-armor-fca",
+      "title": "Fire Champion’s Armor (FCA)",
+      "href": "/farm/fire-champion-s-armor-fca",
+      "sourceIndex": 7118,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-dark-dragon-slayer-s-halberd-ddsh",
+      "title": "Dark Dragon Slayer's Halberd (DDSH)",
+      "href": "/farm/dark-dragon-slayer-s-halberd-ddsh",
+      "sourceIndex": 7161,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-enchanted-yokai-dragonslayer-eyds",
+      "title": "Enchanted Yokai Dragonslayer (EYDS)",
+      "href": "/farm/enchanted-yokai-dragonslayer-eyds",
+      "sourceIndex": 7194,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-dragonslayer-general-dsg",
+      "title": "Dragonslayer General (DSG)",
+      "href": "/farm/dragonslayer-general-dsg",
+      "sourceIndex": 7223,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-dragonsoul-shinobi-va-shadow-dragon-shinobi-dss",
+      "title": "DragonSoul Shinobi và Shadow Dragon Shinobi (DSS)",
+      "href": "/farm/dragonsoul-shinobi-va-shadow-dragon-shinobi-dss",
+      "sourceIndex": 7243,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-elemental",
+      "title": "Elemental",
+      "href": "/farm/elemental",
+      "sourceIndex": 7270,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-archmage-am",
+      "title": "ArchMage (AM)",
+      "href": "/farm/archmage-am",
+      "sourceIndex": 7273,
+      "itemIds": [
+        "blinding-light-of-destiny"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-elemental-warrior-lew-uew-mew",
+      "title": "Elemental Warrior (LEW/UEW/MEW)",
+      "href": "/farm/elemental-warrior-lew-uew-mew",
+      "sourceIndex": 7500,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-malgor-the-shadowlord-msl",
+      "title": "Malgor the ShadowLord (MSL)",
+      "href": "/farm/malgor-the-shadowlord-msl",
+      "sourceIndex": 7526,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-mystical-devotee-of-mana-mdom",
+      "title": "Mystical Devotee of Mana (MDoM)",
+      "href": "/farm/mystical-devotee-of-mana-mdom",
+      "sourceIndex": 7601,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-kathool-adept-ka",
+      "title": "Kathool Adept (KA)",
+      "href": "/farm/kathool-adept-ka",
+      "sourceIndex": 7629,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-stonecrusher-sc",
+      "title": "StoneCrusher (SC)",
+      "href": "/farm/stonecrusher-sc",
+      "sourceIndex": 7713,
+      "itemIds": [
+        "shaman"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-scion-of-flames-sof",
+      "title": "Scion of Flames (SoF)",
+      "href": "/farm/scion-of-flames-sof",
+      "sourceIndex": 7731,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-blaze-binder-bb",
+      "title": "Blaze Binder (BB)",
+      "href": "/farm/blaze-binder-bb",
+      "sourceIndex": 7798,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-frostval-barbarian-fb",
+      "title": "Frostval Barbarian (FB)",
+      "href": "/farm/frostval-barbarian-fb",
+      "sourceIndex": 7825,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-frost-spiritreaver-fsr",
+      "title": "Frost SpiritReaver (FSR)",
+      "href": "/farm/frost-spiritreaver-fsr",
+      "sourceIndex": 7852,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-hollowborn",
+      "title": "Hollowborn",
+      "href": "/farm/hollowborn",
+      "sourceIndex": 7908,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-hollowborn-vindicator-hbv",
+      "title": "Hollowborn Vindicator (HBV)",
+      "href": "/farm/hollowborn-vindicator-hbv",
+      "sourceIndex": 7911,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-hollowborn-paladin-hbp",
+      "title": "Hollowborn Paladin (HBP)",
+      "href": "/farm/hollowborn-paladin-hbp",
+      "sourceIndex": 7964,
+      "itemIds": [
+        "blinding-light-of-destiny"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-hollowborn-doomknight-hbdk",
+      "title": "Hollowborn DoomKnight (HBDK)",
+      "href": "/farm/hollowborn-doomknight-hbdk",
+      "sourceIndex": 8081,
+      "itemIds": [
+        "sepulchure-s-doomknight-armor",
+        "necrotic-sword-of-doom",
+        "sepulchure-s-original-helm"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-hollowborn-envoy-of-chaos-hbeoc",
+      "title": "Hollowborn Envoy of Chaos (HBEoC)",
+      "href": "/farm/hollowborn-envoy-of-chaos-hbeoc",
+      "sourceIndex": 8249,
+      "itemIds": [
+        "original-drakath-armor"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-hollowborn-archfiend-hbaf",
+      "title": "Hollowborn Archfiend (HBAF)",
+      "href": "/farm/hollowborn-archfiend-hbaf",
+      "sourceIndex": 8403,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-hollowborn-lich-king-hblk",
+      "title": "Hollowborn Lich King (HBLK)",
+      "href": "/farm/hollowborn-lich-king-hblk",
+      "sourceIndex": 8622,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-hollowborn-theme-items",
+      "title": "Hollowborn-theme Items",
+      "href": "/farm/hollowborn-theme-items",
+      "sourceIndex": 8885,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-debris-astravian",
+      "title": "Debris & Astravian",
+      "href": "/farm/debris-astravian",
+      "sourceIndex": 9104,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-arcana-invoker-ai",
+      "title": "Arcana Invoker (AI)",
+      "href": "/farm/arcana-invoker-ai",
+      "sourceIndex": 9107,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-higure-astravian-corsair",
+      "title": "Higure & Astravian Corsair",
+      "href": "/farm/higure-astravian-corsair",
+      "sourceIndex": 9455,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-other-items",
+      "title": "Other Items",
+      "href": "/farm/other-items",
+      "sourceIndex": 9529,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-celestial-pirate-commander-cpc-polly-roger-polly",
+      "title": "Celestial Pirate Commander (CPC) - Polly Roger (Polly)",
+      "href": "/farm/celestial-pirate-commander-cpc-polly-roger-polly",
+      "sourceIndex": 9532,
+      "itemIds": [
+        "polly-roger"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-aureate-shield-aegis-asa",
+      "title": "Aureate Shield Aegis (ASA)",
+      "href": "/farm/aureate-shield-aegis-asa",
+      "sourceIndex": 9566,
+      "itemIds": [
+        "aureate-shield-aegis"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-martial-artist-ma",
+      "title": "Martial Artist (MA)",
+      "href": "/farm/martial-artist-ma",
+      "sourceIndex": 9592,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-travel-portals",
+      "title": "Travel Portals",
+      "href": "/farm/travel-portals",
+      "sourceIndex": 9698,
+      "itemIds": [
+        "blinding-light-of-destiny"
+      ]
+    },
+    {
+      "id": "farming-guide-farm-combat-trophy-ct-pvp-trophy-ultimate",
+      "title": "Combat Trophy (CT) - PvP Trophy Ultimate",
+      "href": "/farm/combat-trophy-ct-pvp-trophy-ultimate",
+      "sourceIndex": 9863,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-npc-friendship-feature",
+      "title": "NPC Friendship Feature",
+      "href": "/farm/npc-friendship-feature",
+      "sourceIndex": 9905,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-dark-box-key-secret-questline-depths-enhancement",
+      "title": "Dark Box & Key Secret Questline - Depths Enhancement",
+      "href": "/farm/dark-box-key-secret-questline-depths-enhancement",
+      "sourceIndex": 10133,
+      "itemIds": []
+    },
+    {
+      "id": "farming-guide-farm-scavenger-hunts",
+      "title": "Scavenger Hunts",
+      "href": "/farm/scavenger-hunts",
+      "sourceIndex": 10174,
+      "itemIds": [
+        "blade-of-awe"
+      ]
+    }
+  ],
+  "goalRecords": [
+    {
+      "id": "line-45",
+      "title": "Radiant Goddess Of War",
+      "sourceIndex": 45,
+      "itemIds": []
+    },
+    {
+      "id": "line-47",
+      "title": "Hollowborn DoomKnight",
+      "sourceIndex": 47,
+      "itemIds": []
+    },
+    {
+      "id": "line-49",
+      "title": "Blacksmithing Enhancement",
+      "sourceIndex": 49,
+      "itemIds": []
+    },
+    {
+      "id": "line-54",
+      "title": "Necrotic Sword of Doom",
+      "sourceIndex": 54,
+      "itemIds": [
+        "necrotic-sword-of-doom"
+      ]
+    },
+    {
+      "id": "line-56",
+      "title": "Awescended",
+      "sourceIndex": 56,
+      "itemIds": []
+    },
+    {
+      "id": "line-58",
+      "title": "Celestial & Infernal ArchFiend",
+      "sourceIndex": 58,
+      "itemIds": []
+    },
+    {
+      "id": "line-60",
+      "title": "Arcana Invoker",
+      "sourceIndex": 60,
+      "itemIds": []
+    },
+    {
+      "id": "line-63",
+      "title": "Void Warlock",
+      "sourceIndex": 63,
+      "itemIds": []
+    },
+    {
+      "id": "line-65",
+      "title": "Nightmare Carnax's Guardians",
+      "sourceIndex": 65,
+      "itemIds": []
+    },
+    {
+      "id": "line-67",
+      "title": "Empowered Vordred's Armor",
+      "sourceIndex": 67,
+      "itemIds": []
+    },
+    {
+      "id": "line-69",
+      "title": "Greatblade of the Entwined Eclipse",
+      "sourceIndex": 69,
+      "itemIds": [
+        "greatblade-of-the-entwined-eclipse"
+      ]
+    },
+    {
+      "id": "line-71",
+      "title": "Void Highlord",
+      "sourceIndex": 71,
+      "itemIds": []
+    },
+    {
+      "id": "line-73",
+      "title": "Legion Revenant",
+      "sourceIndex": 73,
+      "itemIds": []
+    },
+    {
+      "id": "line-75",
+      "title": "ArchMage",
+      "sourceIndex": 75,
+      "itemIds": []
+    },
+    {
+      "id": "line-77",
+      "title": "Enchanted Nulgath Nation House",
+      "sourceIndex": 77,
+      "itemIds": []
+    },
+    {
+      "id": "line-80",
+      "title": "Exalted Apotheosis",
+      "sourceIndex": 80,
+      "itemIds": [
+        "exalted-apotheosis"
+      ]
+    },
+    {
+      "id": "line-82",
+      "title": "Sin of the Abyss",
+      "sourceIndex": 82,
+      "itemIds": [
+        "sin-of-the-abyss"
+      ]
+    },
+    {
+      "id": "line-84",
+      "title": "ArchFiend DoomLord",
+      "sourceIndex": 84,
+      "itemIds": [
+        "archfiend-doomlord"
+      ]
+    },
+    {
+      "id": "line-86",
+      "title": "Sepulchure's DoomKnight Armor",
+      "sourceIndex": 86,
+      "itemIds": [
+        "sepulchure-s-doomknight-armor"
+      ]
+    },
+    {
+      "id": "line-88",
+      "title": "Darkon's Debris 2 (Reconstructed)",
+      "sourceIndex": 88,
+      "itemIds": []
+    },
+    {
+      "id": "line-90",
+      "title": "Binky's Man Eating Uni-horn",
+      "sourceIndex": 90,
+      "itemIds": []
+    },
+    {
+      "id": "line-92",
+      "title": "Prince Darkon's Poleaxe",
+      "sourceIndex": 92,
+      "itemIds": []
+    },
+    {
+      "id": "line-94",
+      "title": "Hollowborn Envoy of Chaos",
+      "sourceIndex": 94,
+      "itemIds": []
+    },
+    {
+      "id": "line-96",
+      "title": "Classic Hollowborn Paladin Armor",
+      "sourceIndex": 96,
+      "itemIds": []
+    },
+    {
+      "id": "line-98",
+      "title": "Void Light of Destiny",
+      "sourceIndex": 98,
+      "itemIds": []
+    },
+    {
+      "id": "line-100",
+      "title": "Empowered Undead Champion",
+      "sourceIndex": 100,
+      "itemIds": [
+        "empowered-undead-champion"
+      ]
+    },
+    {
+      "id": "line-102",
+      "title": "Hollowborn Lich King",
+      "sourceIndex": 102,
+      "itemIds": []
+    },
+    {
+      "id": "line-104",
+      "title": "Infernal Flame Khopesh",
+      "sourceIndex": 104,
+      "itemIds": [
+        "infernal-flame-khopesh"
+      ]
+    },
+    {
+      "id": "line-106",
+      "title": "Malgor the ShadowLord",
+      "sourceIndex": 106,
+      "itemIds": []
+    },
+    {
+      "id": "line-108",
+      "title": "Chaos Avenger",
+      "sourceIndex": 108,
+      "itemIds": []
+    },
+    {
+      "id": "line-110",
+      "title": "Dragon of Time",
+      "sourceIndex": 110,
+      "itemIds": []
+    },
+    {
+      "id": "line-112",
+      "title": "Yami no Ronin",
+      "sourceIndex": 112,
+      "itemIds": []
+    },
+    {
+      "id": "line-114",
+      "title": "Original Drakath Armor",
+      "sourceIndex": 114,
+      "itemIds": [
+        "original-drakath-armor"
+      ]
+    },
+    {
+      "id": "line-116",
+      "title": "Evolved Blood Orb Quests",
+      "sourceIndex": 116,
+      "itemIds": []
+    },
+    {
+      "id": "line-118",
+      "title": "Evolved Hex Orb Quests",
+      "sourceIndex": 118,
+      "itemIds": []
+    },
+    {
+      "id": "line-120",
+      "title": "Evolved Shadow Orb Quests",
+      "sourceIndex": 120,
+      "itemIds": []
+    },
+    {
+      "id": "line-125",
+      "title": "Hollowborn Reaper's Scythe",
+      "sourceIndex": 125,
+      "itemIds": []
+    },
+    {
+      "id": "line-127",
+      "title": "Void Avenger Scythe",
+      "sourceIndex": 127,
+      "itemIds": []
+    },
+    {
+      "id": "line-129",
+      "title": "Blinding Light of Destiny",
+      "sourceIndex": 129,
+      "itemIds": [
+        "blinding-light-of-destiny"
+      ]
+    },
+    {
+      "id": "line-131",
+      "title": "ArchFiend DeathLord",
+      "sourceIndex": 131,
+      "itemIds": []
+    },
+    {
+      "id": "line-133",
+      "title": "Head of the Legion Beast",
+      "sourceIndex": 133,
+      "itemIds": [
+        "head-of-the-legion-beast"
+      ]
+    },
+    {
+      "id": "line-135",
+      "title": "Dark Dragon Slayer's Halberd",
+      "sourceIndex": 135,
+      "itemIds": []
+    },
+    {
+      "id": "line-137",
+      "title": "Fire Champion's Armor",
+      "sourceIndex": 137,
+      "itemIds": []
+    },
+    {
+      "id": "line-139",
+      "title": "Void Beetle Warlord",
+      "sourceIndex": 139,
+      "itemIds": []
+    },
+    {
+      "id": "line-141",
+      "title": "Arch DoomKnight",
+      "sourceIndex": 141,
+      "itemIds": []
+    },
+    {
+      "id": "line-143",
+      "title": "Adeptus Kathooli",
+      "sourceIndex": 143,
+      "itemIds": []
+    },
+    {
+      "id": "line-145",
+      "title": "Armor of Awe",
+      "sourceIndex": 145,
+      "itemIds": [
+        "armor-of-awe"
+      ]
+    },
+    {
+      "id": "line-147",
+      "title": "Verus DoomKnight",
+      "sourceIndex": 147,
+      "itemIds": []
+    },
+    {
+      "id": "line-149",
+      "title": "ArchPaladin (non-member)",
+      "sourceIndex": 149,
+      "itemIds": []
+    },
+    {
+      "id": "line-151",
+      "title": "ArchFiend",
+      "sourceIndex": 151,
+      "itemIds": []
+    },
+    {
+      "id": "line-153",
+      "title": "Legion Castle",
+      "sourceIndex": 153,
+      "itemIds": []
+    },
+    {
+      "id": "line-155",
+      "title": "Yulgath's Inn",
+      "sourceIndex": 155,
+      "itemIds": []
+    },
+    {
+      "id": "line-157",
+      "title": "Void Shogun",
+      "sourceIndex": 157,
+      "itemIds": []
+    },
+    {
+      "id": "line-159",
+      "title": "Void Spartan",
+      "sourceIndex": 159,
+      "itemIds": []
+    },
+    {
+      "id": "line-162",
+      "title": "(Legion) DragonBlade of Nulgath",
+      "sourceIndex": 162,
+      "itemIds": []
+    },
+    {
+      "id": "line-164",
+      "title": "Taro's Prismatic Manslayer",
+      "sourceIndex": 164,
+      "itemIds": []
+    },
+    {
+      "id": "line-166",
+      "title": "Hollowborn Oblivion Blade",
+      "sourceIndex": 166,
+      "itemIds": []
+    },
+    {
+      "id": "line-168",
+      "title": "Helm of Awe",
+      "sourceIndex": 168,
+      "itemIds": [
+        "helm-of-awe"
+      ]
+    },
+    {
+      "id": "line-170",
+      "title": "Drakath the Eternal",
+      "sourceIndex": 170,
+      "itemIds": []
+    },
+    {
+      "id": "line-172",
+      "title": "Lord of Order",
+      "sourceIndex": 172,
+      "itemIds": []
+    },
+    {
+      "id": "line-174",
+      "title": "LightCaster",
+      "sourceIndex": 174,
+      "itemIds": []
+    },
+    {
+      "id": "line-176",
+      "title": "ArchPaladin (member)",
+      "sourceIndex": 176,
+      "itemIds": []
+    },
+    {
+      "id": "line-178",
+      "title": "Chrono Assassin",
+      "sourceIndex": 178,
+      "itemIds": []
+    },
+    {
+      "id": "line-180",
+      "title": "Juggernaut Item of Nulgath",
+      "sourceIndex": 180,
+      "itemIds": []
+    },
+    {
+      "id": "line-182",
+      "title": "Golden Hanzo Void",
+      "sourceIndex": 182,
+      "itemIds": []
+    },
+    {
+      "id": "line-184",
+      "title": "Ultimate Lich King",
+      "sourceIndex": 184,
+      "itemIds": []
+    },
+    {
+      "id": "line-187",
+      "title": "Burning Blade of Abezeth",
+      "sourceIndex": 187,
+      "itemIds": []
+    },
+    {
+      "id": "line-189",
+      "title": "Cape of Awe",
+      "sourceIndex": 189,
+      "itemIds": [
+        "cape-of-awe"
+      ]
+    },
+    {
+      "id": "line-191",
+      "title": "Hollowborn DragonSlayer's Blade",
+      "sourceIndex": 191,
+      "itemIds": []
+    },
+    {
+      "id": "line-193",
+      "title": "StoneCrusher",
+      "sourceIndex": 193,
+      "itemIds": []
+    },
+    {
+      "id": "line-195",
+      "title": "Blade of Awe",
+      "sourceIndex": 195,
+      "itemIds": [
+        "blade-of-awe"
+      ]
+    },
+    {
+      "id": "line-197",
+      "title": "ArchFiend Baby Dragon",
+      "sourceIndex": 197,
+      "itemIds": []
+    },
+    {
+      "id": "line-200",
+      "title": "Burning Blade",
+      "sourceIndex": 200,
+      "itemIds": []
+    },
+    {
+      "id": "line-202",
+      "title": "Scarlet Sorceress",
+      "sourceIndex": 202,
+      "itemIds": []
+    }
+  ],
+  "unresolvedSources": [
+    {
+      "candidate": "Sin of the Undying",
+      "url": "https://aqwwiki.wikidot.com/sin-of-the-undying",
+      "reason": "<urlopen error [Errno 65] No route to host>"
+    },
+    {
+      "candidate": "Dark Dragon Slayer's Halberd",
+      "url": "https://aqwwiki.wikidot.com/dark-dragon-slayer-s-halberd",
+      "reason": "<urlopen error [Errno 65] No route to host>"
+    },
+    {
+      "candidate": "Enchanted Yokai Dragonslayer",
+      "url": "https://aqwwiki.wikidot.com/enchanted-yokai-dragonslayer",
+      "reason": "<urlopen error [Errno 65] No route to host>"
+    },
+    {
+      "candidate": "Location / Region: shadowfall",
+      "url": "https://aqwwiki.wikidot.com/shadowfall",
+      "reason": "<urlopen error [Errno 65] No route to host>"
+    },
+    {
+      "candidate": "Location / Region: inn-at-the-edge-of-time",
+      "url": "https://aqwwiki.wikidot.com/inn-at-the-edge-of-time",
+      "reason": "<urlopen error [Errno 65] No route to host>"
+    },
+    {
+      "candidate": "Location / Region: seven-circles-war",
+      "url": "https://aqwwiki.wikidot.com/seven-circles-war",
+      "reason": "<urlopen error [Errno 65] No route to host>"
+    },
+    {
+      "candidate": "Location / Region: ultra-speaker",
+      "url": "https://aqwwiki.wikidot.com/ultra-speaker",
+      "reason": "<urlopen error [Errno 65] No route to host>"
+    },
+    {
+      "candidate": "Location / Region: fire-avatar",
+      "url": "https://aqwwiki.wikidot.com/fire-avatar",
+      "reason": "<urlopen error [Errno 65] No route to host>"
+    }
+  ]
+}

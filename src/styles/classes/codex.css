@@ -326,6 +326,11 @@
   transform: translateX(-6px);
 }
 .class-back-row > span {
+  font-family: var(--codex-display-font, Georgia, "Times New Roman", serif);
+  font-style: var(--codex-display-style, italic);
+  font-weight: var(--codex-display-weight, 400);
+  letter-spacing: var(--codex-display-tracking, -.04em);
+  color: var(--codex-title-gold);
   font-size: 14px;
 }
 .class-hero {

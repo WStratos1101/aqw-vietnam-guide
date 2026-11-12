@@ -1,0 +1,15 @@
+{
+  "kind": "farm",
+  "status": "server_start_blocked",
+  "phase": "server_start",
+  "startedAt": "2026-11-12T01:05:53.050Z",
+  "browser": "chromium",
+  "browserPath": "/Users/wstratos/Desktop/Project/aqw-vietnam-guide/.playwright-browsers",
+  "cases": [],
+  "screenshots": [],
+  "errors": [
+    "Error: listen EPERM: operation not permitted 127.0.0.1\n    at Server.setupListenHandle [as _listen2] (node:net:2368:21)\n    at listenInCluster (node:net:2499:12)\n    at node:net:2728:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)"
+  ],
+  "cause": "os_or_sandbox_permission_denied",
+  "finishedAt": "2026-11-12T01:05:53.054Z"
+}

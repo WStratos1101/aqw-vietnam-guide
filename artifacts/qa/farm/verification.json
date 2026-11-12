@@ -1,0 +1,92 @@
+{
+  "at": "2026-11-12T00:20:04.133Z",
+  "commands": [
+    {
+      "command": "npm run lint",
+      "status": "PASS",
+      "files": 93
+    },
+    {
+      "command": "npm run typecheck",
+      "status": "PASS"
+    },
+    {
+      "command": "npm run test:farm",
+      "status": "PASS",
+      "passed": 12
+    },
+    {
+      "command": "npm test",
+      "status": "PASS",
+      "passed": 155
+    },
+    {
+      "command": "npm run build",
+      "status": "PASS",
+      "prerenderedRoutes": 434,
+      "warning": "Existing Vite chunks exceed 500 kB"
+    },
+    {
+      "command": "npm run test:build",
+      "status": "PASS",
+      "passed": 9
+    },
+    {
+      "command": "npm run browser:smoke",
+      "status": "BLOCKED",
+      "browser": "webkit",
+      "cause": "os_or_sandbox_permission_denied",
+      "error": "Error: listen EPERM: operation not permitted 127.0.0.1\n    at Server.setupListenHandle [as _listen2] (node:net:2368:21)\n    at listenInCluster (node:net:2499:12)\n    at node:net:2728:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)"
+    },
+    {
+      "command": "node scripts/audit-farm.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "/bin/bash -n Update/_codex-focus/AQW-Focus.command Update/_codex-focus/AutoPublish-AQW.command",
+      "status": "PASS"
+    }
+  ],
+  "coverage": {
+    "farmableNowItems": 4,
+    "regions": 2,
+    "categories": 4,
+    "referenceIdentities": 25,
+    "unknownRegionIdentities": 18,
+    "needsReview": 2
+  },
+  "safari": "26.2; no --mcp support; no Technology Preview installed",
+  "browserVisualQA": "BLOCKED. No screenshots or real browser interaction were completed.",
+  "commitCreated": false,
+  "pushed": false,
+  "deployed": false,
+  "launcherFiles": "Local files under Update/_codex-focus remain Git-ignored.",
+  "smokeFollowUp": {
+    "at": "2026-11-12T01:05:53.059652+00:00",
+    "unitTests": {
+      "command": "npm run test:farm",
+      "passed": 18,
+      "failed": 0
+    },
+    "browserRuns": [
+      {
+        "command": "FARM_BROWSER=webkit npm run browser:smoke",
+        "exitCode": 1,
+        "status": "server_start_blocked",
+        "phase": "server_start",
+        "cause": "os_or_sandbox_permission_denied"
+      },
+      {
+        "command": "FARM_BROWSER=chromium npm run browser:smoke",
+        "exitCode": 1,
+        "status": "server_start_blocked",
+        "phase": "server_start",
+        "cause": "os_or_sandbox_permission_denied"
+      }
+    ],
+    "previousUiFailure": "previous-ui-failure.json",
+    "previousScreenshotInspected": "inventory-375.png",
+    "newScreenshots": 0,
+    "published": false
+  }
+}

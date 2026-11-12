@@ -154,7 +154,6 @@ test("Calendar family art, original year, shared skill evidence and variant acqu
 test("Draft feature locks cover direct routes and leave working codices open", () => {
   for (const route of [
     "/huong-dan",
-    "/farm/blade-of-awe",
     "/trang-bi",
     "/he-thong/old-bookmark",
     "/cot-truyen/abc",
@@ -170,6 +169,9 @@ test("Draft feature locks cover direct routes and leave working codices open", (
     "/ultra-boss/ultra-nulgath",
     "/challenge-dungeon",
     "/other-challenges",
+    "/farm",
+    "/farm/blade-of-awe",
+    "/farm/item/blade-of-awe",
     "/farmers",
   ])
     assert(!isComingSoon(route), route);

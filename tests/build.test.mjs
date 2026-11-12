@@ -26,7 +26,7 @@ test("all published routes ship readable HTML, one h1 and metadata", () => {
   assert.equal(
     routes.length,
     JSON.parse(fs.readFileSync("src/content/imported/catalog.json", "utf8"))
-      .length + 41 + JSON.parse(fs.readFileSync('src/content/ultra/recovery.json')).bosses.length + JSON.parse(fs.readFileSync('src/content/classes/calendar-extension.json')).profiles.length + JSON.parse(fs.readFileSync('src/content/challenges/catalog.json')).length + 2,
+      .length + 41 + JSON.parse(fs.readFileSync('src/content/ultra/recovery.json')).bosses.length + JSON.parse(fs.readFileSync('src/content/classes/calendar-extension.json')).profiles.length + JSON.parse(fs.readFileSync('src/content/challenges/catalog.json')).length + 2 + JSON.parse(fs.readFileSync('src/content/farm/index.json')).length,
   );
   assert.equal(new Set(routes).size, routes.length);
   for (const route of routes) {

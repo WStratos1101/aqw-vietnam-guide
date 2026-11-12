@@ -12,9 +12,9 @@ process.env.PLAYWRIGHT_BROWSERS_PATH = path.join(
   projectRoot,
   ".playwright-browsers",
 );
-const browserTemp=path.join(projectRoot,".playwright-browsers",".tmp");
-await fs.mkdir(browserTemp,{recursive:true});
-process.env.TMPDIR=browserTemp;
+const browserTemp = path.join(projectRoot, ".playwright-browsers", ".tmp");
+await fs.mkdir(browserTemp, { recursive: true });
+process.env.TMPDIR = browserTemp;
 export async function ensureServer() {
   if (process.env.AQW_QA_URL) {
     const url = process.env.AQW_QA_URL;
@@ -22,8 +22,9 @@ export async function ensureServer() {
     if (!r.ok) throw Error(`Localhost unavailable: ${r.status}`);
     return { url, close: async () => {} };
   }
-  const port = await new Promise((resolve) => {
+  const port = await new Promise((resolve, reject) => {
     const s = net.createServer();
+    s.once("error", reject);
     s.listen(0, "127.0.0.1", () => {
       const p = s.address().port;
       s.close(() => resolve(p));
@@ -77,61 +78,118 @@ export function classifyLaunchError(message) {
     return "browser_process_crash";
   return "unclassified_launch_failure";
 }
-export async function runQa(kind, run) {
-  const dir = `artifacts/qa/${kind}`;
+export function formatQaError(error) {
+  if (!(error instanceof Error)) return String(error);
+  return (
+    (error.stack || error.message) +
+    (error.cause ? "\nCaused by: " + formatQaError(error.cause) : "")
+  );
+}
+export function selectFarmBrowser(env = process.env) {
+  return env.FARM_BROWSER || env.AQW_BROWSER || "webkit";
+}
+export async function runQa(kind, run, options = {}) {
+  const dir = options.outputDir || `artifacts/qa/${kind}`;
+  const logger = options.logger || console;
   await fs.mkdir(dir, { recursive: true });
   const result = {
     kind,
     status: "not_run",
+    phase: "configuration",
     startedAt: new Date().toISOString(),
-    browser: process.env.AQW_BROWSER || "chromium",
+    browser: options.browserName || process.env.AQW_BROWSER || "chromium",
     browserPath: process.env.PLAYWRIGHT_BROWSERS_PATH,
     cases: [],
     screenshots: [],
     errors: [],
   };
   let server, browser;
+  const recordError = (error, phase) => {
+    const stack = formatQaError(error);
+    result.errors.push(stack);
+    logger.error(
+      `[QA ${kind}] ${phase}; browser=${result.browser}; step=${JSON.stringify(result.currentStep || null)}\n${stack}`,
+    );
+  };
   try {
-    server = await ensureServer();
+    if (!["chromium", "webkit", "firefox"].includes(result.browser))
+      throw Error(
+        `Unsupported browser "${result.browser}". Use FARM_BROWSER=webkit, chromium or firefox for Farm.`,
+      );
+    result.phase = "server_start";
+    server = await (options.serverFactory || ensureServer)();
     result.baseUrl = server.url;
-    const pw = await import("@playwright/test");
+    result.phase = "browser_launch";
+    const pw = await (
+      options.playwrightFactory || (() => import("@playwright/test"))
+    )();
     const engine = pw[result.browser];
-    if (!engine) throw Error("Unsupported AQW_BROWSER");
-    try {
-      browser = await engine.launch({
-        headless: process.env.AQW_HEADED !== "1",
-        timeout: 15000,
-        ...(result.browser === "chromium" ? { chromiumSandbox: true } : {}),
-      });
-    } catch (e) {
-      result.status = "browser_launch_blocked";
-      result.cause = classifyLaunchError(e.message);
-      throw e;
-    }
+    browser = await engine.launch({
+      headless: process.env.AQW_HEADED !== "1",
+      timeout: 15000,
+      ...(result.browser === "chromium" ? { chromiumSandbox: true } : {}),
+    });
+    result.phase = "ui";
     result.status = "running";
     await run({ browser, base: server.url, result, dir, expect: pw.expect });
     result.status = result.cases.some((c) => c.status === "failed")
       ? "failed"
       : "passed";
-  } catch (e) {
-    if (result.status === "not_run") result.status = "not_run";
-    else if (result.status === "running") result.status = "failed";
-    result.errors.push(e.stack || e.message);
+    if (result.status === "failed")
+      throw Error("One or more QA cases failed; inspect case details.");
+  } catch (error) {
+    const cause = classifyLaunchError(error.message || String(error));
+    if (result.phase === "server_start") {
+      result.status =
+        cause === "os_or_sandbox_permission_denied"
+          ? "server_start_blocked"
+          : "failed";
+      result.cause =
+        cause === "unclassified_launch_failure" ? "server_start_failed" : cause;
+    } else if (result.phase === "browser_launch") {
+      result.status = "browser_launch_blocked";
+      result.cause = cause;
+    } else {
+      result.status = "failed";
+      result.cause =
+        result.phase === "configuration"
+          ? "invalid_configuration"
+          : error.code === "ERR_ASSERTION" || error.name === "AssertionError"
+            ? "ui_assertion_failed"
+            : "ui_test_error";
+    }
+    recordError(error, result.phase);
     process.exitCode = 1;
   } finally {
-    await browser?.close();
-    await server?.close();
+    // Cleanup must not hide the original stack or prevent writing the report.
+    for (const [name, resource] of [
+      ["browser", browser],
+      ["server", server],
+    ]) {
+      try {
+        await resource?.close();
+      } catch (error) {
+        recordError(error, `${name}_cleanup`);
+        if (result.status === "passed") {
+          result.status = "failed";
+          result.cause = "cleanup_failed";
+        }
+        process.exitCode = 1;
+      }
+    }
     result.finishedAt = new Date().toISOString();
     await fs.writeFile(
       `${dir}/results.json`,
       JSON.stringify(result, null, 2) + "\n",
     );
-    console.log({
+    logger.log({
       kind,
       status: result.status,
+      phase: result.phase,
+      browser: result.browser,
       cases: result.cases.length,
       screenshots: result.screenshots.length,
-      cause: result.cause,
+      ...(result.cause ? { cause: result.cause } : {}),
     });
   }
   return result;

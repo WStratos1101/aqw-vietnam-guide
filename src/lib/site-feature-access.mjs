@@ -1,7 +1,7 @@
 // Frontend availability only. Keep source content and game progress intact.
 export const siteFeatureAccess = Object.freeze({
   guides: { prefix: "/huong-dan", status: "comingSoon" },
-  farming: { prefix: "/farm", status: "comingSoon" },
+  farming: { prefix: "/farm", status: "enabled" },
   equipmentLanding: { prefix: "/trang-bi", status: "comingSoon" },
   systems: { prefix: "/he-thong", status: "comingSoon" },
   lore: { prefix: "/cot-truyen", status: "comingSoon" },

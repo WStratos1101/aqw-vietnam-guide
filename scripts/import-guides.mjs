@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { isComingSoon } from "../src/lib/site-feature-access.mjs";
 import path from "node:path";
 import { createHash } from "node:crypto";
 const input = "content-sources";
@@ -340,7 +341,15 @@ function convert(nodes, current) {
         continue;
       }
       if (!r.text) continue;
-      const href = linkFor(r.link, r.text, current);
+      const originalHref = linkFor(r.link, r.text, current);
+      // Gated pages do not render their source anchors. Preserve the destination,
+      // but never emit a broken fragment from an enabled Farm article.
+      const href =
+        current.category === "farm" &&
+        originalHref?.startsWith("/") &&
+        isComingSoon(originalHref.split("#")[0])
+          ? originalHref.split("#")[0]
+          : originalHref;
       runs.push({
         text: r.text,
         ...(r.bold ? { bold: true } : {}),

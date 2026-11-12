@@ -1,5 +1,6 @@
 import type { ComponentType } from "react";
 type Kind =
+  | "farm-catalog"
   | "class-directory"
   | "class-detail"
   | "ultra-directory"
@@ -15,6 +16,10 @@ export function installRouteViews(
   Object.assign(views, next);
 }
 export async function loadRouteViews(path: string) {
+  if ((path.replace(/\/$/, "") === "/farm" || path.startsWith("/farm/item/")) && !views["farm-catalog"]) {
+    const module = await import("./farm/route");
+    installRouteViews({"farm-catalog":module.Directory});
+  }
   if (/^\/(challenge-dungeon|other-challenges)(\/|$)/.test(path)) {
     const module = await import("./challenges/route");
     installRouteViews({"challenge-dungeons":module.Dungeons,"other-challenges":module.Others,"challenge-detail":module.Detail});
