@@ -179,3 +179,6 @@ fs.writeFileSync(
   "src/content/farm/index.json",
   JSON.stringify(items.map((i) => ({ id: i.id, name: i.officialName }))) + "\n",
 );
+
+// V2 consumes the same curated recipes/assets and the reviewed public-source snapshot.
+await import("./build-farm-v2.mjs");

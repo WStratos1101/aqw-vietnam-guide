@@ -36,7 +36,7 @@ function selectedComboContent(combos, active) {
     if (headers.includes(header)) {
       related = header === active.title.toLowerCase();
       if (related && line !== active.explanation) notes.push(line);
-    } else if (related && line !== active.explanation) notes.push(line);
+    } else if ((related || /sau khi mở đầu bằng 1 trong 2 combo Start/i.test(line)) && line !== active.explanation) notes.push(line);
   }
   return { ...active, notes };
 }
@@ -57,8 +57,16 @@ function targetEffects(skill) {
 }
 
 // src/lib/class-presentation.mjs
+function cooldownRule(flow) {
+  if (flow.sequences.length) return flow;
+  const text = flow.sourceText;
+  const cooldown = /(?:sử dụng|dùng)\s+skill\s+mỗi khi\s+(?:CD|hồi chiêu)/i.test(text);
+  const priority = text.match(/ưu tiên\s+(?:loop\s+)?skill\s+([1-5])\s+để có\s+Haste buff/i);
+  if (!cooldown || !priority || /không|ngoại trừ|trừ\s+[1-5]/i.test(text)) return flow;
+  return { ...flow, kind: "cooldown", label: "Khi h\u1ED3i chi\xEAu", prioritySkill: Number(priority[1]), priorityLabel: "\u01AFu ti\xEAn / Haste", afterOpening: /sau khi mở đầu/i.test(text) };
+}
 function comboFlow(combo) {
-  if (combo.flow?.length) return combo.flow;
+  if (combo.flow?.length) return combo.flow.map(cooldownRule);
   const lines = [combo.explanation, ...combo.notes].filter(Boolean);
   const chain = /\b[1-5](?:\s*[-→]\s*[1-5])+\b/g;
   return lines.map((sourceText, i) => {
@@ -71,7 +79,7 @@ function comboFlow(combo) {
     const prefix = sourceText.replace(/^[→◆*\s]+/, "").split(":")[0];
     const label = prefix.length < 65 && sourceText.includes(":") ? prefix : /mở đầu|bắt đầu|^start rotation/i.test(sourceText) ? "M\u1EDF \u0111\u1EA7u" : /spam/i.test(sourceText) ? "Spam" : /nuke|kết thúc/i.test(sourceText) ? "Nuke" : /lặp|loop/i.test(sourceText) ? "Loop" : i === 0 ? combo.title : "Nh\u1ECBp b\u1ED5 sung";
     return { id: combo.id + "-flow-" + i, label, sequences, sourceText, stopCondition: /đến khi|until/i.test(sourceText) ? sourceText.match(/(?:đến khi|until)\s+[^.!?\n]+/i)?.[0].split(/\s+thì\s+/)[0] : void 0, kind: negativeSpam ? "warning" : /spam/i.test(sourceText) ? "spam" : /lặp|loop/i.test(sourceText) ? "loop" : "sequence" };
-  });
+  }).map(cooldownRule);
 }
 
 // src/features/classes/TargetEffects.tsx
@@ -106,6 +114,10 @@ function TargetEffects({ skill }) {
     ] })
   ] }, i)) });
 }
+
+// src/features/classes/CalendarConsumables.tsx
+import { Zap, Flame as Flame2, ShieldAlert, CircleHelp, Hourglass, FlameKindling, Clock } from "lucide-react";
+import { useState as useState2 } from "react";
 
 // src/features/classes/SkillSequenceFlow.tsx
 import { ArrowRight, Repeat2, Flame, TriangleAlert } from "lucide-react";
@@ -159,31 +171,136 @@ function SkillSequenceFlow({ sequence, skills, label, onSelect }) {
   }) });
 }
 function FlowLabel({ label, kind }) {
-  const Icon = kind === "warning" ? TriangleAlert : kind === "loop" || kind === "spam" ? Repeat2 : Flame;
+  const Icon = kind === "warning" ? TriangleAlert : kind === "loop" || kind === "spam" || kind === "cooldown" ? Repeat2 : Flame;
   return /* @__PURE__ */ jsxs2("h4", { className: "combo-flow-label", children: [
     /* @__PURE__ */ jsx3(Icon, { size: 15 }),
     label
   ] });
 }
 
-// src/features/classes/ClassCombos.tsx
-import { useId, useRef, useState as useState2 } from "react";
+// src/features/classes/CalendarConsumables.tsx
 import { jsx as jsx4, jsxs as jsxs3 } from "react/jsx-runtime";
+var itemSets = {
+  "2019": {
+    heading: "Corrupted / Timeless Chronomancer",
+    second: "Corruptions",
+    items: [
+      { name: "Hourglass of Power", summary: "Buff ch\u1EC9 s\u1ED1 t\u1EA5n c\xF4ng, Haste v\xE0 ph\xF2ng th\u1EE7 khi d\xF9ng Hourglass Inversion.", wiki: "https://aqwwiki.wikidot.com/class-item-hourglass-of-power-1", group: "hourglass" },
+      { name: "Hourglass of Paradise", summary: "Chuy\u1EC3n tr\u1EA1ng th\xE1i h\u1ED3i HP/MP v\xE0 gi\u1EA3m s\xE1t th\u01B0\u01A1ng nh\u1EADn; \u0111i k\xE8m \u0111\xE1nh \u0111\u1ED5i s\u1EE9c t\u1EA5n c\xF4ng.", wiki: "https://aqwwiki.wikidot.com/class-item-hourglass-of-paradise-1", group: "hourglass" },
+      { name: "Hourglass of Transience", summary: "Transient \u2192 Ephemeral: t\u0103ng Dodge v\xE0 s\xE1t th\u01B0\u01A1ng, ho\u1EB7c \u1ED5n \u0111\u1ECBnh \u0111\u1EC3 t\u0103ng END/Haste.", wiki: "https://aqwwiki.wikidot.com/class-item-hourglass-of-transience-1", group: "hourglass" },
+      { name: "Entropic Corruption", summary: "T\u0103ng s\xE1t th\u01B0\u01A1ng v\xE0 Haste, gi\u1EA3m mana cost; \u0111\u1ED3ng th\u1EDDi t\u0103ng s\xE1t th\u01B0\u01A1ng b\u1EA3n th\xE2n ph\u1EA3i ch\u1ECBu.", wiki: "https://aqwwiki.wikidot.com/class-item-entropic-corruption", group: "other" },
+      { name: "Foresee Corruption", summary: "Chu\u1EA9n b\u1ECB Foresee \u2192 Seer \u2192 Change the Future cho c\u1EEDa s\u1ED5 burst/ph\xF2ng th\u1EE7.", wiki: "https://aqwwiki.wikidot.com/class-item-foresee-corruption", group: "other" },
+      { name: "Infinite Corruption", summary: "Auto Attack t\u1EA1o DoT t\xEDch t\u1EA7ng; Hourglass Inversion b\u1ED5 sung Heal-over-Time.", wiki: "https://aqwwiki.wikidot.com/class-item-infinite-corruption", group: "other" }
+    ]
+  },
+  "2020": {
+    heading: "Underworld / Overworld Chronomancer",
+    second: "Timepieces",
+    items: [
+      { name: "Hourglass of Power", summary: "Hourglass Reversal b\u1ED5 sung c\xE1c buff ch\u1EC9 s\u1ED1 t\u1EA5n c\xF4ng, Haste v\xE0 ph\xF2ng th\u1EE7.", wiki: "https://aqwwiki.wikidot.com/class-item-hourglass-of-power-2", group: "hourglass" },
+      { name: "Hourglass of Paradise", summary: "Cung c\u1EA5p kh\u1EA3 n\u0103ng h\u1ED3i ph\u1EE5c/ph\xF2ng th\u1EE7 k\xE8m \u0111i\u1EC1u ki\u1EC7n \u0111\xE1nh \u0111\u1ED5i s\xE1t th\u01B0\u01A1ng.", wiki: "https://aqwwiki.wikidot.com/class-item-hourglass-of-paradise-2", group: "hourglass" },
+      { name: "Hourglass of Transience", summary: "T\u1EA1o Transient/Ephemeral; c\xE2n b\u1EB1ng burst v\xE0 hi\u1EC7u \u1EE9ng b\u1EA5t l\u1EE3i theo th\u1EDDi gian.", wiki: "https://aqwwiki.wikidot.com/class-item-hourglass-of-transience-2", group: "hourglass" },
+      { name: "Timepiece of Inevitability", summary: "T\u0103ng damage/Haste; k\xEDch ho\u1EA1t Snap khi \u0111\xE3 c\xF3 Inevitable Corruption.", wiki: "https://aqwwiki.wikidot.com/class-item-timepiece-of-inevitability", group: "other" },
+      { name: "Timepiece of Madness", summary: "T\xEDch Mad b\u1EB1ng \u0111\xF2n \u0111\xE1nh; \u0111\u1EA1t ng\u01B0\u1EE1ng s\u1EBD chuy\u1EC3n th\xE0nh Eternal t\u0103ng c\u01A1 h\u1ED9i Crit.", wiki: "https://aqwwiki.wikidot.com/class-item-timepiece-of-madness", group: "other" },
+      { name: "Timepiece of Pestilence", summary: "T\u0103ng s\xE1t th\u01B0\u01A1ng k\u1EBB \u0111\u1ECBch nh\u1EADn, \xE1p DoT/Decay; c\xF3 \u0111\xE1nh \u0111\u1ED5i v\u1EC1 s\xE1t th\u01B0\u01A1ng nh\u1EADn.", wiki: "https://aqwwiki.wikidot.com/class-item-timepiece-of-pestilence", group: "other" }
+    ]
+  }
+};
+function yearFor(classId) {
+  if (/^calendar-(?:corrupted|timeless)-chronomancer$/.test(classId ?? "")) return "2019";
+  if (/^calendar-(?:underworld|overworld)-chronomancer$/.test(classId ?? "")) return "2020";
+  return null;
+}
+function IconArt({ item }) {
+  const [failedImage, setFailedImage] = useState2();
+  const Icon = item.group === "hourglass" ? Hourglass : /Corruption$/.test(item.name) ? FlameKindling : Clock;
+  return /* @__PURE__ */ jsx4("span", { className: "calendar-item-icon", children: item.image && failedImage !== item.image ? /* @__PURE__ */ jsx4(
+    "img",
+    {
+      src: item.image,
+      alt: item.name,
+      loading: "lazy",
+      decoding: "async",
+      width: 42,
+      height: 42,
+      onError: () => setFailedImage(item.image)
+    }
+  ) : /* @__PURE__ */ jsx4("span", { role: "img", "aria-label": `${item.name}: bi\u1EC3u t\u01B0\u1EE3ng lo\u1EA1i item, \u1EA3nh ch\u01B0a x\xE1c minh`, title: "Bi\u1EC3u t\u01B0\u1EE3ng lo\u1EA1i item \xB7 \u1EA3nh item ch\u01B0a x\xE1c minh", children: /* @__PURE__ */ jsx4(Icon, { size: 24, "aria-hidden": "true" }) }) });
+}
+function findSetupItems(classId, comboTitle, sourceText) {
+  const year = yearFor(classId);
+  if (!year) return [];
+  const items = itemSets[year].items;
+  const source = sourceText.toLowerCase();
+  const title = comboTitle.toLowerCase();
+  const matches = (item, text) => {
+    const short = item.name.replace(/^Hourglass of |^Timepiece of /i, "").toLowerCase();
+    return text.includes(item.name.toLowerCase()) || new RegExp(`\\b${short.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(text);
+  };
+  const hourglass = items.find((item) => item.group === "hourglass" && matches(item, source)) || (/hourglass/i.test(source) ? items.find((item) => item.group === "hourglass" && matches(item, title)) : void 0);
+  const other = items.find((item) => item.group === "other" && matches(item, source)) || (/corruption|timepiece/i.test(source) ? items.find((item) => item.group === "other" && matches(item, title)) : void 0);
+  return [hourglass, other].filter((item) => !!item).sort((a, b) => source.indexOf(a.name.toLowerCase()) - source.indexOf(b.name.toLowerCase()));
+}
+function CalendarSetup({ classId, comboTitle, text }) {
+  const year = yearFor(classId);
+  if (!year) return /* @__PURE__ */ jsx4("p", { children: text });
+  const items = findSetupItems(classId, comboTitle, text);
+  if (!items.length) return /* @__PURE__ */ jsx4("p", { children: text });
+  return /* @__PURE__ */ jsxs3("div", { className: "calendar-item-setup", "aria-label": "Class items d\xF9ng \u0111\u1EC3 kh\u1EDFi \u0111\u1ED9ng combo", children: [
+    /* @__PURE__ */ jsx4("small", { children: /lại/i.test(text) ? "D\xF9ng l\u1EA1i t\u1EA1i b\u01B0\u1EDBc n\xE0y:" : /trang bị/i.test(text) ? "Tr\u01B0\u1EDBc tr\u1EADn: k\xEDch ho\u1EA1t \u2192 trang b\u1ECB" : "D\xF9ng t\u1EA1i b\u01B0\u1EDBc n\xE0y:" }),
+    items.map((item) => /* @__PURE__ */ jsxs3("span", { className: "calendar-item-chip", children: [
+      /* @__PURE__ */ jsx4(IconArt, { item }),
+      item.name
+    ] }, item.name))
+  ] });
+}
+function AbyssalConditionIcons({ classId, text, skills, onSelect }) {
+  if (!/abyssal.angel/i.test(classId ?? "")) return null;
+  const cases = [
+    { slot: 3, when: "C\xF2n Vantage Point", effect: "Skill 3 \u2192 Stun", Icon: ShieldAlert },
+    { slot: 3, when: "H\u1EBFt Vantage Point", effect: "Skill 3 \u2192 Haste", Icon: Zap },
+    { slot: 5, when: "Thi\u1EBFu mana", effect: "Ng\u1EEBng d\xF9ng skill 5", Icon: Flame2 },
+    { slot: 4, when: "C\u1EA7n h\u1ED3i m\xE1u", effect: "D\xF9ng skill 4", Icon: CircleHelp }
+  ];
+  const supported = cases.filter(({ slot }) => slot === 3 ? /vantage.point/i.test(text) : slot === 5 ? /mana.*ngưng sử dụng 5/i.test(text) : /heal.*sử dụng 4/i.test(text));
+  if (!supported.length) return null;
+  return /* @__PURE__ */ jsx4("div", { className: "combo-conditional-guide", "aria-label": "\u0110i\u1EC1u ki\u1EC7n d\xF9ng skill", children: supported.map(({ slot, when, effect, Icon }, i) => /* @__PURE__ */ jsxs3("div", { children: [
+    /* @__PURE__ */ jsxs3("span", { children: [
+      /* @__PURE__ */ jsx4(Icon, { size: 13, "aria-hidden": "true" }),
+      " ",
+      when
+    ] }),
+    /* @__PURE__ */ jsx4(SkillSequenceFlow, { sequence: [slot], skills, label: effect, onSelect: (skill) => onSelect?.(skill) }),
+    /* @__PURE__ */ jsx4("strong", { children: effect })
+  ] }, i)) });
+}
+
+// src/features/classes/ClassCombos.tsx
+import { useId, useRef, useState as useState3 } from "react";
+import { jsx as jsx5, jsxs as jsxs4 } from "react/jsx-runtime";
 function ClassCombos({
+  classId,
   combos,
   skills,
   onSelectSkill
 }) {
-  const [stepId, setStepId] = useState2();
-  const [selected, setSelected] = useState2(0);
+  const [stepId, setStepId] = useState3();
+  const [selected, setSelected] = useState3(0);
   const id = useId();
   const refs = useRef([]);
   const original = combos[selected] || combos[0];
   const active = original ? selectedComboContent(combos, original) : void 0;
-  return /* @__PURE__ */ jsxs3("section", { className: "class-section", id: "combo", "aria-labelledby": "combo-title", children: [
-    /* @__PURE__ */ jsx4("div", { className: "class-section-title", children: /* @__PURE__ */ jsx4("h2", { id: "combo-title", tabIndex: -1, children: "H\u01B0\u1EDBng d\u1EABn combo" }) }),
-    active ? /* @__PURE__ */ jsxs3("div", { className: "class-combo-book", "data-ui": "class-codex", children: [
-      combos.length > 1 && /* @__PURE__ */ jsx4(
+  const canonical = (line) => line.toLowerCase().replace(/^[→◆*\s]+/, "").replace(/^[^:\n]{1,42}:\s*/, "").replace(/\s+/g, " ").trim();
+  const flows = active ? comboFlow(active) : [];
+  const flowText = new Set(flows.map((flow) => canonical(flow.sourceText)));
+  const extraNotes = (active?.notes || []).filter((note, index, all) => {
+    const normalized2 = canonical(note);
+    return normalized2.length > 0 && !flowText.has(normalized2) && normalized2 !== canonical(active?.explanation || "") && all.findIndex((n) => canonical(n) === normalized2) === index;
+  });
+  return /* @__PURE__ */ jsxs4("section", { className: "class-section", id: "combo", "aria-labelledby": "combo-title", children: [
+    /* @__PURE__ */ jsx5("div", { className: "class-section-title", children: /* @__PURE__ */ jsx5("h2", { id: "combo-title", tabIndex: -1, children: "H\u01B0\u1EDBng d\u1EABn combo" }) }),
+    active ? /* @__PURE__ */ jsxs4("div", { className: "class-combo-book", "data-ui": "class-codex", children: [
+      combos.length > 1 && /* @__PURE__ */ jsx5(
         "div",
         {
           role: "tablist",
@@ -198,7 +315,7 @@ function ClassCombos({
             setStepId(void 0);
             refs.current[next]?.focus();
           },
-          children: combos.map((c, i) => /* @__PURE__ */ jsx4(
+          children: combos.map((c, i) => /* @__PURE__ */ jsx5(
             "button",
             {
               ref: (el) => {
@@ -219,7 +336,7 @@ function ClassCombos({
           ))
         }
       ),
-      /* @__PURE__ */ jsx4(
+      /* @__PURE__ */ jsx5(
         "div",
         {
           className: "class-combo-panel",
@@ -227,29 +344,37 @@ function ClassCombos({
           id: `${id}-panel`,
           "aria-labelledby": combos.length > 1 ? `${id}-tab-${selected}` : "combo-title",
           tabIndex: 0,
-          children: /* @__PURE__ */ jsxs3("div", { className: "class-combo-reveal", children: [
-            active.verificationStatus !== "needs_review" && /* @__PURE__ */ jsx4("div", { className: "combo-flow-groups", children: comboFlow(active).filter(
-              (f) => f.sequences.length > 0 || f.kind === "spam" || f.kind === "loop" || f.kind === "warning" || f.kind === "setup"
-            ).map((flow) => /* @__PURE__ */ jsxs3(
+          children: /* @__PURE__ */ jsxs4("div", { className: "class-combo-reveal", children: [
+            active.verificationStatus !== "needs_review" && /* @__PURE__ */ jsx5("div", { className: "combo-flow-groups", children: flows.filter(
+              (f) => f.sequences.length > 0 || f.kind === "spam" || f.kind === "loop" || f.kind === "cooldown" || f.kind === "warning" || f.kind === "setup"
+            ).map((flow) => /* @__PURE__ */ jsxs4(
               "article",
               {
                 className: `combo-flow-group ${flow.kind}`,
                 children: [
-                  /* @__PURE__ */ jsx4(
+                  flow.kind === "cooldown" && flow.afterOpening && /* @__PURE__ */ jsx5("p", { className: "combo-cooldown-intro", children: "Sau combo m\u1EDF \u0111\u1EA7u \u2192" }),
+                  /* @__PURE__ */ jsx5(
                     FlowLabel,
                     {
                       label: flow.kind === "warning" ? "L\u01B0u \xFD" : flow.label,
                       kind: flow.kind
                     }
                   ),
-                  flow.kind === "spam" && flow.stopCondition && /* @__PURE__ */ jsxs3("span", { className: "spam-stop-condition", children: [
-                    "D\u1EEANG SPAM \xB7 ",
+                  (flow.kind === "spam" || flow.kind === "loop") && flow.stopCondition && /* @__PURE__ */ jsxs4("span", { className: "spam-stop-condition", children: [
+                    "D\u1EEBng \xB7 ",
                     flow.stopCondition
                   ] }),
-                  !flow.sequences.length && /* @__PURE__ */ jsx4("p", { children: flow.sourceText }),
-                  flow.sequences.map((sequence, i) => /* @__PURE__ */ jsxs3("div", { children: [
-                    i > 0 && /* @__PURE__ */ jsx4("span", { className: "combo-or", children: "HO\u1EB6C" }),
-                    /* @__PURE__ */ jsx4(
+                  flow.kind === "cooldown" && flow.prioritySkill && /* @__PURE__ */ jsxs4("div", { className: "combo-cooldown-priority", children: [
+                    /* @__PURE__ */ jsx5(SkillSequenceFlow, { sequence: [flow.prioritySkill], skills, label: "K\u1EF9 n\u0103ng \u01B0u ti\xEAn khi h\u1ED3i chi\xEAu", onSelect: (s) => {
+                      setStepId(s.id);
+                      onSelectSkill?.(s.id);
+                    } }),
+                    /* @__PURE__ */ jsx5("strong", { children: flow.priorityLabel })
+                  ] }),
+                  !flow.sequences.length && flow.kind === "setup" && /* @__PURE__ */ jsx5(CalendarSetup, { classId, comboTitle: active.title, text: flow.label }),
+                  flow.sequences.map((sequence, i) => /* @__PURE__ */ jsxs4("div", { children: [
+                    i > 0 && /* @__PURE__ */ jsx5("span", { className: "combo-or", children: "HO\u1EB6C" }),
+                    /* @__PURE__ */ jsx5(
                       SkillSequenceFlow,
                       {
                         sequence,
@@ -262,32 +387,35 @@ function ClassCombos({
                       }
                     )
                   ] }, i)),
-                  /* @__PURE__ */ jsxs3("details", { className: "combo-flow-condition", children: [
-                    /* @__PURE__ */ jsx4("summary", { children: "Timing & \u0111i\u1EC1u ki\u1EC7n" }),
-                    /* @__PURE__ */ jsx4("p", { children: flow.sourceText })
+                  /* @__PURE__ */ jsx5(AbyssalConditionIcons, { classId, text: flow.sourceText, skills, onSelect: (s) => {
+                    setStepId(s.id);
+                    onSelectSkill?.(s.id);
+                  } }),
+                  flows.find((f) => f.sourceText === flow.sourceText)?.id === flow.id && /* @__PURE__ */ jsxs4("details", { className: "combo-flow-condition", children: [
+                    /* @__PURE__ */ jsx5("summary", { children: "Timing & \u0111i\u1EC1u ki\u1EC7n" }),
+                    /* @__PURE__ */ jsx5("p", { children: flow.sourceText })
                   ] })
                 ]
               },
               flow.id
             )) }),
-            stepId && skills.find((s) => s.id === stepId) && /* @__PURE__ */ jsxs3("div", { className: "combo-step-detail", children: [
-              /* @__PURE__ */ jsx4("strong", { children: skills.find((s) => s.id === stepId).name }),
-              /* @__PURE__ */ jsx4(TargetEffects, { skill: skills.find((s) => s.id === stepId) })
+            stepId && skills.find((s) => s.id === stepId) && /* @__PURE__ */ jsxs4("div", { className: "combo-step-detail", children: [
+              /* @__PURE__ */ jsx5("strong", { children: skills.find((s) => s.id === stepId).name }),
+              /* @__PURE__ */ jsx5(TargetEffects, { skill: skills.find((s) => s.id === stepId) })
             ] }),
-            active.verificationNote && /* @__PURE__ */ jsx4("p", { className: "ability-verification", children: active.verificationNote }),
-            /* @__PURE__ */ jsxs3("details", { className: "combo-source-notes", children: [
-              /* @__PURE__ */ jsxs3("summary", { children: [
-                "L\u01B0u \xFD & h\u01B0\u1EDBng d\u1EABn \u0111\u1EA7y \u0111\u1EE7 (",
-                active.notes.length + 1,
+            active.verificationNote && /* @__PURE__ */ jsx5("p", { className: "ability-verification", children: active.verificationNote }),
+            extraNotes.length > 0 && /* @__PURE__ */ jsxs4("details", { className: "combo-source-notes", children: [
+              /* @__PURE__ */ jsxs4("summary", { children: [
+                "L\u01B0u \xFD b\u1ED5 sung (",
+                extraNotes.length,
                 ")"
               ] }),
-              /* @__PURE__ */ jsx4("p", { children: active.explanation }),
-              /* @__PURE__ */ jsx4("ul", { children: active.notes.map((n, i) => /* @__PURE__ */ jsx4("li", { children: n }, i)) })
+              /* @__PURE__ */ jsx5("ul", { children: extraNotes.map((n, i) => /* @__PURE__ */ jsx5("li", { children: n }, i)) })
             ] })
           ] }, active.id)
         }
       )
-    ] }) : /* @__PURE__ */ jsx4("div", { className: "class-empty", children: /* @__PURE__ */ jsx4("p", { children: "Combo: Ch\u01B0a x\xE1c minh." }) })
+    ] }) : /* @__PURE__ */ jsx5("div", { className: "class-empty", children: /* @__PURE__ */ jsx5("p", { children: "Combo: Ch\u01B0a x\xE1c minh." }) })
   ] });
 }
 
@@ -819,7 +947,7 @@ import {
   BookOpen,
   Crosshair
 } from "lucide-react";
-import { jsx as jsx5, jsxs as jsxs4 } from "react/jsx-runtime";
+import { jsx as jsx6, jsxs as jsxs5 } from "react/jsx-runtime";
 var icons = {
   Tank: Shield,
   DPS: Swords,
@@ -835,20 +963,20 @@ function ClassRoles({
   primaryOnly = false
 }) {
   const list = primaryOnly ? roles2.slice(0, 1) : roles2;
-  return /* @__PURE__ */ jsx5("span", { className: "class-role-icons", children: list.length ? list.map((r, i) => {
+  return /* @__PURE__ */ jsx6("span", { className: "class-role-icons", children: list.length ? list.map((r, i) => {
     const Icon = icons[r] || BookOpen;
-    return /* @__PURE__ */ jsxs4("span", { "data-primary": i === 0, children: [
-      /* @__PURE__ */ jsx5(Icon, { size: 16, "aria-hidden": "true" }),
+    return /* @__PURE__ */ jsxs5("span", { "data-primary": i === 0, children: [
+      /* @__PURE__ */ jsx6(Icon, { size: 16, "aria-hidden": "true" }),
       r
     ] }, r);
-  }) : /* @__PURE__ */ jsxs4("span", { children: [
-    /* @__PURE__ */ jsx5(BookOpen, { size: 16, "aria-hidden": "true" }),
+  }) : /* @__PURE__ */ jsxs5("span", { children: [
+    /* @__PURE__ */ jsx6(BookOpen, { size: 16, "aria-hidden": "true" }),
     "Ch\u01B0a ph\xE2n lo\u1EA1i"
   ] }) });
 }
 
 // src/features/classes/ClassDirectory.tsx
-import { useState as useState4 } from "react";
+import { useState as useState5 } from "react";
 import { Search, ArrowRight as ArrowRight2 } from "lucide-react";
 
 // src/content/classes/catalog.json
@@ -8491,7 +8619,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 AE Calendar Shop \xB7 +3 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 AE Calendar Shop \xB7 +3 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -8565,7 +8693,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2016 Calendar \xB7 +3 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2016 Calendar \xB7 +3 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -8639,7 +8767,7 @@ var catalog_default = [
     ],
     playstyle: "Ki\u1EC3m so\xE1t Focus theo \u0111\u1ED9i h\xECnh",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2017 Calendar \xB7 +5 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2017 Calendar \xB7 +5 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -8728,7 +8856,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2018 Calendar \xB7 +5 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2018 Calendar \xB7 +5 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -8817,7 +8945,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2025 Calendar \xB7 +5 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2025 Calendar \xB7 +5 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -8901,7 +9029,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2026 Artix Calendar \xB7 +5 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2026 Artix Calendar \xB7 +5 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -9665,7 +9793,7 @@ var catalog_default = [
     ],
     playstyle: "Ki\u1EC3m so\xE1t Focus theo \u0111\u1ED9i h\xECnh",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2014 Calendar",
+    acquisitionSummary: "0 ACs \xB7 2014 Calendar",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -9726,7 +9854,7 @@ var catalog_default = [
     ],
     playstyle: "Duy tr\xEC buff v\xE0 h\u1ED7 tr\u1EE3 \u0111\u1ED9i",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2022 Artix Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2022 Artix Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -9792,7 +9920,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2019 Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2019 Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -9868,7 +9996,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2021 Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2021 Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -9934,7 +10062,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2020 Calendar Shop \xB7 +3 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2020 Calendar Shop \xB7 +3 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -10091,7 +10219,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2013 Calendar Shop",
+    acquisitionSummary: "0 ACs \xB7 2013 Calendar Shop",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -10152,7 +10280,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2019 Calendar \xB7 +3 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2019 Calendar \xB7 +3 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -10238,7 +10366,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2020 Calendar Shop \xB7 +1 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2020 Calendar Shop \xB7 +1 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -10519,7 +10647,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2024 Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2024 Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -10671,7 +10799,7 @@ var catalog_default = [
     ],
     playstyle: "S\xE1t th\u01B0\u01A1ng theo nh\u1ECBp k\u1EF9 n\u0103ng",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2015 Calendar",
+    acquisitionSummary: "0 ACs \xB7 2015 Calendar",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -10815,7 +10943,7 @@ var catalog_default = [
     ],
     playstyle: "Duy tr\xEC h\u1ED3i ph\u1EE5c cho \u0111\u1ED3ng \u0111\u1ED9i",
     acquisitionType: [],
-    acquisitionSummary: "Calendar Code \xB7 2023 Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
+    acquisitionSummary: "0 ACs \xB7 2023 Calendar \xB7 +1 ph\u01B0\u01A1ng \xE1n",
     strengths: [],
     weaknesses: [],
     skills: [],
@@ -10889,7 +11017,7 @@ function isClassBody(value, id) {
 }
 
 // src/features/classes/ClassAsset.tsx
-import { useState as useState3 } from "react";
+import { useState as useState4 } from "react";
 import { UserRound as UserRound2 } from "lucide-react";
 
 // src/content/classes/portraits.json
@@ -12094,7 +12222,7 @@ var portraits_default = [
 ];
 
 // src/features/classes/ClassAsset.tsx
-import { jsx as jsx6, jsxs as jsxs5 } from "react/jsx-runtime";
+import { jsx as jsx7, jsxs as jsxs6 } from "react/jsx-runtime";
 function ClassAsset({
   id,
   name,
@@ -12102,8 +12230,8 @@ function ClassAsset({
   eager = false
 }) {
   const asset = portraits_default.find((a) => a.id === id);
-  const [failed, setFailed] = useState3(false);
-  return /* @__PURE__ */ jsx6("div", { className: `class-art ${compact ? "class-art-compact" : ""}`, children: asset && !failed ? /* @__PURE__ */ jsx6(
+  const [failed, setFailed] = useState4(false);
+  return /* @__PURE__ */ jsx7("div", { className: `class-art ${compact ? "class-art-compact" : ""}`, children: asset && !failed ? /* @__PURE__ */ jsx7(
     "img",
     {
       className: "class-character-art",
@@ -12117,27 +12245,27 @@ function ClassAsset({
       onError: () => setFailed(true)
     },
     asset.imagePath
-  ) : /* @__PURE__ */ jsxs5(
+  ) : /* @__PURE__ */ jsxs6(
     "div",
     {
       className: "class-portrait-pending",
       role: "img",
       "aria-label": `${name}: portrait ch\u01B0a x\xE1c minh`,
       children: [
-        /* @__PURE__ */ jsx6(UserRound2, { size: compact ? 24 : 48, "aria-hidden": "true" }),
-        /* @__PURE__ */ jsx6("small", { children: "Portrait \u0111ang \u0111\u1ED1i chi\u1EBFu" })
+        /* @__PURE__ */ jsx7(UserRound2, { size: compact ? 24 : 48, "aria-hidden": "true" }),
+        /* @__PURE__ */ jsx7("small", { children: "Portrait \u0111ang \u0111\u1ED1i chi\u1EBFu" })
       ]
     }
   ) });
 }
 
 // src/features/classes/ClassDirectory.tsx
-import { jsx as jsx7, jsxs as jsxs6 } from "react/jsx-runtime";
+import { jsx as jsx8, jsxs as jsxs7 } from "react/jsx-runtime";
 function ClassCard({ profile }) {
   const family = calendarFamily(profile.id);
   const identity = classIdentity(profile.id, family?.variants[0].name);
   const name = identity?.officialName ?? family?.variants[0].name ?? profile.name;
-  return /* @__PURE__ */ jsxs6(
+  return /* @__PURE__ */ jsxs7(
     "a",
     {
       href: `/class/${profile.slug}`,
@@ -12147,25 +12275,25 @@ function ClassCard({ profile }) {
         "--class-accent-light": classColors(profile).light
       },
       children: [
-        /* @__PURE__ */ jsx7(ClassAsset, { id: profile.image, name }),
-        /* @__PURE__ */ jsxs6("div", { children: [
-          /* @__PURE__ */ jsx7(ClassRoles, { roles: profile.role }),
-          calendar_membership_default.some((e) => e.classId === profile.id) && /* @__PURE__ */ jsx7("small", { className: "calendar-year", children: family?.year || calendar_membership_default.filter((e) => e.classId === profile.id && e.year).map((e) => e.year).sort((a, b) => (a || 0) - (b || 0))[0] || "N\u0103m ch\u01B0a x\xE1c minh" }),
-          /* @__PURE__ */ jsx7("h2", { children: name }),
-          identity?.primaryAbbreviation && /* @__PURE__ */ jsx7("small", { className: "class-abbreviation", children: identity.primaryAbbreviation }),
-          /* @__PURE__ */ jsx7(ArrowRight2, { size: 18 })
+        /* @__PURE__ */ jsx8(ClassAsset, { id: profile.image, name }),
+        /* @__PURE__ */ jsxs7("div", { children: [
+          /* @__PURE__ */ jsx8(ClassRoles, { roles: profile.role }),
+          calendar_membership_default.some((e) => e.classId === profile.id) && /* @__PURE__ */ jsx8("small", { className: "calendar-year", children: family?.year || calendar_membership_default.filter((e) => e.classId === profile.id && e.year).map((e) => e.year).sort((a, b) => (a || 0) - (b || 0))[0] || "N\u0103m ch\u01B0a x\xE1c minh" }),
+          /* @__PURE__ */ jsx8("h2", { children: name }),
+          identity?.primaryAbbreviation && /* @__PURE__ */ jsx8("small", { className: "class-abbreviation", children: identity.primaryAbbreviation }),
+          /* @__PURE__ */ jsx8(ArrowRight2, { size: 18 })
         ] })
       ]
     }
   );
 }
 function ClassDirectory() {
-  const [category, setCategory] = useState4("all");
-  const [query, setQuery] = useState4("");
-  const [role, setRole] = useState4("all");
-  const [difficulty, setDifficulty] = useState4("all");
-  const [acquisition, setAcquisition] = useState4("all");
-  const [page, setPage] = useState4(1);
+  const [category, setCategory] = useState5("all");
+  const [query, setQuery] = useState5("");
+  const [role, setRole] = useState5("all");
+  const [difficulty, setDifficulty] = useState5("all");
+  const [acquisition, setAcquisition] = useState5("all");
+  const [page, setPage] = useState5(1);
   const cards = classProfiles.filter((c) => primaryCalendarClass(c.id) === c.id).map((c) => {
     const family = calendarFamily(c.id);
     if (!family) return { ...c, aliases: [...c.aliases, ...classIdentityAliases(c.id)] };
@@ -12202,16 +12330,16 @@ function ClassDirectory() {
     fn(v);
     setPage(1);
   };
-  return /* @__PURE__ */ jsxs6("main", { id: "main", className: "class-codex class-directory", children: [
-    /* @__PURE__ */ jsx7("header", { className: "class-intro", children: /* @__PURE__ */ jsxs6("div", { children: [
-      /* @__PURE__ */ jsx7("p", { className: "class-label", children: "AdventureQuest Worlds" }),
-      /* @__PURE__ */ jsx7("h1", { className: "codex-heading", children: "Class Codex" })
+  return /* @__PURE__ */ jsxs7("main", { id: "main", className: "class-codex class-directory", children: [
+    /* @__PURE__ */ jsx8("header", { className: "class-intro", children: /* @__PURE__ */ jsxs7("div", { children: [
+      /* @__PURE__ */ jsx8("p", { className: "class-label", children: "AdventureQuest Worlds" }),
+      /* @__PURE__ */ jsx8("h1", { className: "codex-heading", children: "Class Codex" })
     ] }) }),
-    /* @__PURE__ */ jsxs6("section", { className: "class-filter-panel", "aria-label": "T\xECm v\xE0 l\u1ECDc Class", children: [
-      /* @__PURE__ */ jsxs6("label", { className: "class-search", children: [
-        /* @__PURE__ */ jsx7(Search, { size: 20 }),
-        /* @__PURE__ */ jsx7("span", { className: "sr-only", children: "T\xECm t\xEAn Class" }),
-        /* @__PURE__ */ jsx7(
+    /* @__PURE__ */ jsxs7("section", { className: "class-filter-panel", "aria-label": "T\xECm v\xE0 l\u1ECDc Class", children: [
+      /* @__PURE__ */ jsxs7("label", { className: "class-search", children: [
+        /* @__PURE__ */ jsx8(Search, { size: 20 }),
+        /* @__PURE__ */ jsx8("span", { className: "sr-only", children: "T\xECm t\xEAn Class" }),
+        /* @__PURE__ */ jsx8(
           "input",
           {
             type: "search",
@@ -12221,14 +12349,14 @@ function ClassDirectory() {
           }
         )
       ] }),
-      /* @__PURE__ */ jsx7(
+      /* @__PURE__ */ jsx8(
         "div",
         {
           className: "class-role-filters",
           role: "group",
           "aria-label": "Ph\xE2n lo\u1EA1i Class",
           children: ["all", "Newbie", "Midgame", "Lategame", "Endgame", "Calendar"].map(
-            (value) => /* @__PURE__ */ jsx7(
+            (value) => /* @__PURE__ */ jsx8(
               "button",
               {
                 "aria-pressed": category === value,
@@ -12244,16 +12372,16 @@ function ClassDirectory() {
           )
         }
       ),
-      /* @__PURE__ */ jsxs6("div", { className: "class-filters", children: [
-        /* @__PURE__ */ jsxs6("label", { children: [
+      /* @__PURE__ */ jsxs7("div", { className: "class-filters", children: [
+        /* @__PURE__ */ jsxs7("label", { children: [
           "Vai tr\xF2",
-          /* @__PURE__ */ jsxs6(
+          /* @__PURE__ */ jsxs7(
             "select",
             {
               value: role,
               onChange: (e) => update(setRole, e.target.value),
               children: [
-                /* @__PURE__ */ jsx7("option", { value: "all", children: "M\u1ECDi vai tr\xF2" }),
+                /* @__PURE__ */ jsx8("option", { value: "all", children: "M\u1ECDi vai tr\xF2" }),
                 [
                   "DPS",
                   "Tank",
@@ -12263,21 +12391,21 @@ function ClassDirectory() {
                   "Farming",
                   "PvP",
                   "Utility"
-                ].map((r) => /* @__PURE__ */ jsx7("option", { children: r }, r)),
-                /* @__PURE__ */ jsx7("option", { value: "unknown", children: "Ch\u01B0a ph\xE2n lo\u1EA1i" })
+                ].map((r) => /* @__PURE__ */ jsx8("option", { children: r }, r)),
+                /* @__PURE__ */ jsx8("option", { value: "unknown", children: "Ch\u01B0a ph\xE2n lo\u1EA1i" })
               ]
             }
           )
         ] }),
-        /* @__PURE__ */ jsxs6("label", { children: [
+        /* @__PURE__ */ jsxs7("label", { children: [
           "C\xE1ch s\u1EDF h\u1EEFu",
-          /* @__PURE__ */ jsxs6(
+          /* @__PURE__ */ jsxs7(
             "select",
             {
               value: acquisition,
               onChange: (e) => update(setAcquisition, e.target.value),
               children: [
-                /* @__PURE__ */ jsx7("option", { value: "all", children: "M\u1ECDi h\xECnh th\u1EE9c" }),
+                /* @__PURE__ */ jsx8("option", { value: "all", children: "M\u1ECDi h\xECnh th\u1EE9c" }),
                 [
                   ["free", "Free"],
                   ["reputation", "Reputation"],
@@ -12286,25 +12414,25 @@ function ClassDirectory() {
                   ["seasonal", "Seasonal"],
                   ["token", "Boss / Token shop"],
                   ["ac-shop", "AC / Shop"]
-                ].map(([v, label]) => /* @__PURE__ */ jsx7("option", { value: v, children: label }, v)),
-                /* @__PURE__ */ jsx7("option", { value: "unknown", children: "Ch\u01B0a \u0111\u1ED1i chi\u1EBFu" })
+                ].map(([v, label]) => /* @__PURE__ */ jsx8("option", { value: v, children: label }, v)),
+                /* @__PURE__ */ jsx8("option", { value: "unknown", children: "Ch\u01B0a \u0111\u1ED1i chi\u1EBFu" })
               ]
             }
           )
         ] })
       ] })
     ] }),
-    /* @__PURE__ */ jsxs6("div", { className: "class-results", role: "status", children: [
+    /* @__PURE__ */ jsxs7("div", { className: "class-results", role: "status", children: [
       filtered.length,
       " h\u1ED3 s\u01A1 ph\xF9 h\u1EE3p \xB7 Trang ",
       current,
       "/",
       pages
     ] }),
-    list.length ? /* @__PURE__ */ jsx7("section", { className: "class-grid", "aria-label": "Danh s\xE1ch Class", children: list.map((c) => /* @__PURE__ */ jsx7(ClassCard, { profile: c }, c.id)) }) : /* @__PURE__ */ jsxs6("section", { className: "class-empty", children: [
-      /* @__PURE__ */ jsx7("h2", { children: "Ch\u01B0a c\xF3 Class ph\xF9 h\u1EE3p" }),
-      /* @__PURE__ */ jsx7("p", { children: "Th\u1EED t\xEAn kh\xE1c ho\u1EB7c m\u1EDF r\u1ED9ng b\u1ED9 l\u1ECDc." }),
-      /* @__PURE__ */ jsx7(
+    list.length ? /* @__PURE__ */ jsx8("section", { className: "class-grid", "aria-label": "Danh s\xE1ch Class", children: list.map((c) => /* @__PURE__ */ jsx8(ClassCard, { profile: c }, c.id)) }) : /* @__PURE__ */ jsxs7("section", { className: "class-empty", children: [
+      /* @__PURE__ */ jsx8("h2", { children: "Ch\u01B0a c\xF3 Class ph\xF9 h\u1EE3p" }),
+      /* @__PURE__ */ jsx8("p", { children: "Th\u1EED t\xEAn kh\xE1c ho\u1EB7c m\u1EDF r\u1ED9ng b\u1ED9 l\u1ECDc." }),
+      /* @__PURE__ */ jsx8(
         "button",
         {
           onClick: () => {
@@ -12319,14 +12447,14 @@ function ClassDirectory() {
         }
       )
     ] }),
-    pages > 1 && /* @__PURE__ */ jsxs6("nav", { className: "class-pagination", "aria-label": "Ph\xE2n trang Class", children: [
-      /* @__PURE__ */ jsx7("button", { disabled: current === 1, onClick: () => setPage(current - 1), children: "Trang tr\u01B0\u1EDBc" }),
-      /* @__PURE__ */ jsxs6("span", { children: [
+    pages > 1 && /* @__PURE__ */ jsxs7("nav", { className: "class-pagination", "aria-label": "Ph\xE2n trang Class", children: [
+      /* @__PURE__ */ jsx8("button", { disabled: current === 1, onClick: () => setPage(current - 1), children: "Trang tr\u01B0\u1EDBc" }),
+      /* @__PURE__ */ jsxs7("span", { children: [
         current,
         " / ",
         pages
       ] }),
-      /* @__PURE__ */ jsx7(
+      /* @__PURE__ */ jsx8(
         "button",
         {
           disabled: current === pages,
@@ -12335,40 +12463,40 @@ function ClassDirectory() {
         }
       )
     ] }),
-    /* @__PURE__ */ jsxs6("nav", { className: "class-guide-links", "aria-label": "H\u01B0\u1EDBng d\u1EABn h\u1EC7 th\u1ED1ng Class", children: [
-      /* @__PURE__ */ jsx7("a", { href: "/class/general-class", children: "T\u1ED5ng quan Class" }),
-      /* @__PURE__ */ jsx7("a", { href: "/class/class-mechanic", children: "C\u01A1 ch\u1EBF Class" }),
-      /* @__PURE__ */ jsx7("a", { href: "/class/class-enhancements", children: "Enhancement" })
+    /* @__PURE__ */ jsxs7("nav", { className: "class-guide-links", "aria-label": "H\u01B0\u1EDBng d\u1EABn h\u1EC7 th\u1ED1ng Class", children: [
+      /* @__PURE__ */ jsx8("a", { href: "/class/general-class", children: "T\u1ED5ng quan Class" }),
+      /* @__PURE__ */ jsx8("a", { href: "/class/class-mechanic", children: "C\u01A1 ch\u1EBF Class" }),
+      /* @__PURE__ */ jsx8("a", { href: "/class/class-enhancements", children: "Enhancement" })
     ] })
   ] });
 }
 
 // src/features/classes/ClassArtSelector.tsx
-import { useState as useState5 } from "react";
+import { useState as useState6 } from "react";
 
 // src/content/classes/art-runtime.json
 var art_runtime_default = [{ id: "alpha-omega-doommega-ao-male", classId: "alpha-omega-doommega-ao", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/5bdae3c751ba2b66bba97c6d.png", width: 329, height: 522, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/alpha-omega-legend" }, { id: "alpha-omega-doommega-ao-female", classId: "alpha-omega-doommega-ao", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/d51ce7b62183bd8e6bdd1f54.png", width: 324, height: 512, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/alpha-omega-legend" }, { id: "archfiend-af-male", classId: "archfiend-af", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/50fa99a8bfd3a38d251c43c3.png", width: 319, height: 540, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archfiend-0-ac" }, { id: "arachnomancer-arach-male", classId: "arachnomancer-arach", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/babcdc6ced699a97ac016235.png", width: 342, height: 615, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/arachnomancer-ac" }, { id: "arcana-invoker-ai-male", classId: "arcana-invoker-ai", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/f7872646a544e48e88e76440.png", width: 314, height: 605, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/arcana-invoker" }, { id: "archfiend-af-female", classId: "archfiend-af", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/7986c54e54b9dbc52ba27748.png", width: 308, height: 530, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archfiend-0-ac" }, { id: "arcana-invoker-ai-female", classId: "arcana-invoker-ai", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/5318d5f083c1084671b72ca2.png", width: 275, height: 598, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/arcana-invoker" }, { id: "arachnomancer-arach-female", classId: "arachnomancer-arach", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/707fe259ef599105e4aee2ab.png", width: 304, height: 558, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/arachnomancer-ac" }, { id: "archmage-am-male", classId: "archmage-am", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/c017de0a4953e9042e0d3a48.png", width: 374, height: 582, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archmage-class" }, { id: "artifact-antique-hunter-ah-male", classId: "artifact-antique-hunter-ah", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/0c3ad2c76156fb2ae31b7b9b.png", width: 314, height: 577, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/artifact-hunter-class-ac" }, { id: "archmage-am-female", classId: "archmage-am", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/b6b35fdd257094482a76a0d5.png", width: 354, height: 565, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archmage-class" }, { id: "artifact-antique-hunter-ah-female", classId: "artifact-antique-hunter-ah", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/331d9787c023703fe4b533a4.png", width: 304, height: 562, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/artifact-hunter-class-ac" }, { id: "barber-male", classId: "barber", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/6556a8735742089ccb60adf0.png", width: 279, height: 609, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/barber" }, { id: "bard-troubador-of-love-male", classId: "bard-troubador-of-love", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/45fba02114dcde108caf6061.png", width: 306, height: 526, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/bard" }, { id: "battlemage-dark-royal-battlemage-dbm-rbm-male", classId: "battlemage-dark-royal-battlemage-dbm-rbm", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/e04eded73aec70049dc0b95d.png", width: 348, height: 634, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/battlemage-class" }, { id: "barber-female", classId: "barber", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/788a935c17dcf3f9d7245535.png", width: 263, height: 604, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/barber" }, { id: "bard-troubador-of-love-female", classId: "bard-troubador-of-love", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/57982ae5d77c12ac788b4fab.png", width: 286, height: 516, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/bard" }, { id: "battlemage-dark-royal-battlemage-dbm-rbm-female", classId: "battlemage-dark-royal-battlemage-dbm-rbm", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/d4d78c93fd0990a49aadee38.png", width: 368, height: 628, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/battlemage-class" }, { id: "berserker-beta-berserker-brutal-berserker-male", classId: "berserker-beta-berserker-brutal-berserker", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/56ec9d790c17ec17a8a099ae.png", width: 347, height: 575, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/berserker" }, { id: "beastmaster-male", classId: "beastmaster", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/55da6a7ec4fbe7b40a163f6c.png", width: 339, height: 566, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/beastmaster-ac" }, { id: "berserker-beta-berserker-brutal-berserker-female", classId: "berserker-beta-berserker-brutal-berserker", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/d47b361e2ac9e8e0a38fdd14.png", width: 347, height: 575, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/berserker" }, { id: "beastmaster-female", classId: "beastmaster", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/de582318880f8e8800634eb3.png", width: 357, height: 628, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/beastmaster-ac" }, { id: "chaos-avenger-cav-male", classId: "chaos-avenger-cav", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/fee490079e1e4eaa83828f81.png", width: 330, height: 580, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chaos-avenger" }, { id: "blood-ancient-ba-male", classId: "blood-ancient-ba", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/789ca1a7a0e5d075c150ee50.png", width: 304, height: 566, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/blood-ancient-ac" }, { id: "blood-ancient-ba-female", classId: "blood-ancient-ba", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/45a33179236e3523da834b1e.png", width: 358, height: 555, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/blood-ancient-ac" }, { id: "chaos-avenger-cav-female", classId: "chaos-avenger-cav", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/92321b2d1809522548b387eb.png", width: 322, height: 568, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chaos-avenger" }, { id: "chrono-assassin-ca-male", classId: "chrono-assassin-ca", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/2638952fba0899dca826c32f.png", width: 290, height: 525, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chrono-assassin-ac" }, { id: "chrono-assassin-ca-female", classId: "chrono-assassin-ca", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/b17fc3dc051be55ad4606b45.png", width: 290, height: 595, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chrono-assassin-ac" }, { id: "chunin-imperial-chunin-imc-male", classId: "chunin-imperial-chunin-imc", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/3da4b71fe3d0fe21e5df74d9.png", width: 346, height: 622, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chunin-ac" }, { id: "classic-legion-doomknight-cldk-male", classId: "classic-legion-doomknight-cldk", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/045b8c5a0d52292ea0b49f24.png", width: 462, height: 667, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/classic-legion-doomknight-merge-2" }, { id: "classic-legion-doomknight-cldk-female", classId: "classic-legion-doomknight-cldk", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/f8979a4a264a50e28fc1476e.png", width: 385, height: 672, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/classic-legion-doomknight-merge-2" }, { id: "chunin-imperial-chunin-imc-female", classId: "chunin-imperial-chunin-imc", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/0b3263865c3436e7012cb1b6.png", width: 337, height: 589, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chunin-ac" }, { id: "dark-lord-dl-darkside-male", classId: "dark-lord-dl-darkside", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/8e2b142cc245a0d6f9dda06c.png", width: 324, height: 580, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dark-lord" }, { id: "cryomancer-cryo-dark-sakura-cryomancer-male", classId: "cryomancer-cryo-dark-sakura-cryomancer", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/efb4b5fd0f0c9b16ce067bc5.png", width: 315, height: 552, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/cryomancer-merge" }, { id: "dark-lord-dl-darkside-female", classId: "dark-lord-dl-darkside", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/891db5d86e64ce7bbbcae8a9.png", width: 294, height: 581, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dark-lord" }, { id: "cryomancer-cryo-dark-sakura-cryomancer-female", classId: "cryomancer-cryo-dark-sakura-cryomancer", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/4b85f7bd3cdcb05ecef40107.png", width: 301, height: 563, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/cryomancer-merge" }, { id: "deathknight-dk-male", classId: "deathknight-dk", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/1d7448e9621f92e22c2a9462.png", width: 276, height: 508, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/deathknight-class-ac" }, { id: "deathknight-dk-female", classId: "deathknight-dk", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/fe4ef7d71ab538ae48d8e743.png", width: 265, height: 519, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/deathknight-class-ac" }, { id: "dragon-drakkar-draco-knight-drk-male", classId: "dragon-drakkar-draco-knight-drk", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/31311af5da5496cebd53aec9.png", width: 296, height: 517, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragon-knight-class" }, { id: "dragon-of-time-dt-edot-male", classId: "dragon-of-time-dt-edot", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/5b95fad548430be49e22ea07.png", width: 458, height: 629, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragon-of-time-class" }, { id: "doomknight-dmk-male", classId: "doomknight-dmk", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/f7be6d489f0d11c3077f63d1.png", width: 368, height: 575, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/doomknight-ac" }, { id: "dragon-of-time-dt-edot-female", classId: "dragon-of-time-dt-edot", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/b4347f1cc22f1e781841349b.png", width: 431, height: 645, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragon-of-time-class" }, { id: "dragon-drakkar-draco-knight-drk-female", classId: "dragon-drakkar-draco-knight-drk", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/7700968e72416ffd0a7d2732.png", width: 284, height: 501, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragon-knight-class" }, { id: "doomknight-dmk-female", classId: "doomknight-dmk", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/c3214332bd51c6ee7272f18f.png", width: 501, height: 687, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/doomknight-ac" }, { id: "dragonlord-drl-male", classId: "dragonlord-drl", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/f11113578ab4260fd159067e.png", width: 350, height: 574, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragonlord-class" }, { id: "dragonslayer-ds-male", classId: "dragonslayer-ds", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/72e1de3114192d9b67602a2d.png", width: 326, height: 538, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragonslayer-class" }, { id: "dragonslayer-ds-female", classId: "dragonslayer-ds", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/4ef5af0826223940fc4af99c.png", width: 308, height: 528, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragonslayer-class" }, { id: "dragonlord-drl-female", classId: "dragonlord-drl", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/93948d3445b722bd65caf085.png", width: 296, height: 536, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragonlord-class" }, { id: "drakel-warlord-dw-male", classId: "drakel-warlord-dw", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/c2ff0f66a87278bf89a683ac.png", width: 295, height: 539, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/drakel-warlord-legend" }, { id: "drakel-warlord-dw-female", classId: "drakel-warlord-dw", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/50eebe7d89815d5fde2759b0.png", width: 297, height: 532, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/drakel-warlord-legend" }, { id: "eternal-inversionist-ei-male", classId: "eternal-inversionist-ei", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/8858dd1e5ff53fe209d3ca36.png", width: 304, height: 552, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/eternal-inversionist-class-0-ac" }, { id: "evolved-leprechaun-el-male", classId: "evolved-leprechaun-el", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/c2c877a3dddd28e110f3c436.png", width: 310, height: 596, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-leprechaun-ac" }, { id: "evolved-pumpkin-lord-epl-male", classId: "evolved-pumpkin-lord-epl", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/8bcc63e864f24b9766678838.png", width: 372, height: 629, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend" }, { id: "eternal-inversionist-ei-female", classId: "eternal-inversionist-ei", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/4da5dd5d6daf117860f81ef9.png", width: 292, height: 555, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/eternal-inversionist-class-0-ac" }, { id: "evolved-leprechaun-el-female", classId: "evolved-leprechaun-el", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/27b64fc1b93a9ffe74350ab0.png", width: 310, height: 596, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-leprechaun-ac" }, { id: "evolved-pumpkin-lord-epl-female", classId: "evolved-pumpkin-lord-epl", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/f8f1cd6ed1e6131906cd20e1.png", width: 352, height: 637, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend" }, { id: "flame-dragon-warrior-fdw-male", classId: "flame-dragon-warrior-fdw", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/8d061ceed26a791bf2fc9663.png", width: 447, height: 601, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/flame-dragon-warrior-class" }, { id: "evolved-shaman-es-male", classId: "evolved-shaman-es", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/9c3cac7bbb97cdbedcc48535.png", width: 373, height: 593, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-shaman-ac" }, { id: "exalted-soul-cleaver-esc-exalted-dark-harbinger-eh-dh-male", classId: "exalted-soul-cleaver-esc-exalted-dark-harbinger-eh-dh", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/060b325f96c7c477bc0faf0e.png", width: 341, height: 575, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/exalted-soul-cleaver" }, { id: "flame-dragon-warrior-fdw-female", classId: "flame-dragon-warrior-fdw", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/0b1d418fba8d8d4a8b78f140.png", width: 410, height: 641, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/flame-dragon-warrior-class" }, { id: "evolved-shaman-es-female", classId: "evolved-shaman-es", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/e7ef1ff9131c1be93bdc0f3a.png", width: 343, height: 594, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-shaman-ac" }, { id: "exalted-soul-cleaver-esc-exalted-dark-harbinger-eh-dh-female", classId: "exalted-soul-cleaver-esc-exalted-dark-harbinger-eh-dh", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/0a4cc9971fcbc35ee144c181.png", width: 302, height: 560, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/exalted-soul-cleaver" }, { id: "frostval-barbarian-fb-male", classId: "frostval-barbarian-fb", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/2e24223caf66e53eed425663.png", width: 353, height: 610, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/frostval-barbarian-ac" }, { id: "frost-spiritreaver-fsr-male", classId: "frost-spiritreaver-fsr", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/f2b7137f8a7dc04cca4c9b17.png", width: 352, height: 593, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/frost-spiritreaver-class" }, { id: "glacial-berserker-gb-male", classId: "glacial-berserker-gb", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/ce144fd1036ec62139749e8c.png", width: 358, height: 698, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/glacial-berserker-class-ac" }, { id: "frostval-barbarian-fb-female", classId: "frostval-barbarian-fb", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/1e35a943eef797b969f5c388.png", width: 328, height: 604, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/frostval-barbarian-ac" }, { id: "frost-spiritreaver-fsr-female", classId: "frost-spiritreaver-fsr", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/eca6c81b6938f632dac04513.png", width: 351, height: 597, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/frost-spiritreaver-class" }, { id: "glacial-berserker-gb-female", classId: "glacial-berserker-gb", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/bf4de9d16e9385e6a071d770.png", width: 339, height: 645, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/glacial-berserker-class-ac" }, { id: "grim-necromancer-gn-male", classId: "grim-necromancer-gn", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/af249a91d1bd917db4fa1b6f.png", width: 443, height: 632, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/grim-necromancer-class" }, { id: "guardian-male", classId: "guardian", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/27cb94d0d7490d63b7cfb36b.png", width: 348, height: 539, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/guardian-class" }, { id: "grim-necromancer-gn-female", classId: "grim-necromancer-gn", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/3fb7c02719fe6e23d1ec0b76.png", width: 367, height: 601, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/grim-necromancer-class" }, { id: "guardian-female", classId: "guardian", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/c9c13aeb1fc825162eb530ef.png", width: 291, height: 589, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/guardian-class" }, { id: "highseas-commander-hsc-male", classId: "highseas-commander-hsc", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/bdcf026d8d4bdf8838b9f78d.png", width: 393, height: 623, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/highseas-commander" }, { id: "hollowborn-vindicator-hbv-male", classId: "hollowborn-vindicator-hbv", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/dbf068a3a207ad995bb1aad7.png", width: 541, height: 587, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/hollowborn-vindicator" }, { id: "healer-acolyte-witch-male", classId: "healer-acolyte-witch", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/8b8ea1247d372ab67da9f8ba.png", width: 340, height: 606, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/healer" }, { id: "highseas-commander-hsc-female", classId: "highseas-commander-hsc", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/37292ea90d87b0cb1c4506eb.png", width: 360, height: 614, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/highseas-commander" }, { id: "hollowborn-vindicator-hbv-female", classId: "hollowborn-vindicator-hbv", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/d16ba647bbe21bbaa274b368.png", width: 508, height: 558, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/hollowborn-vindicator" }, { id: "healer-acolyte-witch-female", classId: "healer-acolyte-witch", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/2080f59268d76dffeae1be41.png", width: 281, height: 591, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/healer" }, { id: "horc-evader-he-male", classId: "horc-evader-he", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/c81bb7059e42f87df8a03a94.png", width: 341, height: 595, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/horc-evader-ac" }, { id: "king-s-echo-ke-male", classId: "king-s-echo-ke", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/ba76819ebe799b36b0de9943.png", width: 346, height: 564, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/king-s-echo" }, { id: "king-s-echo-ke-female", classId: "king-s-echo-ke", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/610b298ac3dea100346d4bcd.png", width: 326, height: 569, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/king-s-echo" }, { id: "horc-evader-he-female", classId: "horc-evader-he", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/aa9d99461923bcf668871525.png", width: 338, height: 595, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/horc-evader-ac" }, { id: "legion-doomknight-ldk-male", classId: "legion-doomknight-ldk", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/045b8c5a0d52292ea0b49f24.png", width: 462, height: 667, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-doomknight-class-0-ac" }, { id: "legion-doomknight-ldk-female", classId: "legion-doomknight-ldk", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/f8979a4a264a50e28fc1476e.png", width: 385, height: 672, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-doomknight-class-0-ac" }, { id: "legendary-hero-lh-dark-legendary-hero-dlh-male", classId: "legendary-hero-lh-dark-legendary-hero-dlh", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/bc91a5c17832414a48275866.png", width: 334, height: 597, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legendary-hero-class" }, { id: "legendary-hero-lh-dark-legendary-hero-dlh-female", classId: "legendary-hero-lh-dark-legendary-hero-dlh", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/5382bfbb5b743d4823a323fd.png", width: 296, height: 582, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legendary-hero-class" }, { id: "lightcaster-lc-male", classId: "lightcaster-lc", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/d09dd89c2e60e10dad4cce6c.png", width: 380, height: 614, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lightcaster-class" }, { id: "lich-male", classId: "lich", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/e91b834a3d2257836765e404.png", width: 577, height: 600, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lich-class" }, { id: "lich-female", classId: "lich", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/5cbc565ac2493a636a6938bc.png", width: 556, height: 606, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lich-class" }, { id: "lightcaster-lc-female", classId: "lightcaster-lc", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/19f7029c01c9364096180a0e.png", width: 358, height: 594, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lightcaster-class" }, { id: "mage-sorcerer-male", classId: "mage-sorcerer", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/e44816bd8cb3ccc06ebe0cd8.png", width: 341, height: 586, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/mage" }, { id: "lord-of-order-loo-male", classId: "lord-of-order-loo", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/808deccdcc20c40b33d73c9c.png", width: 417, height: 649, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lord-of-order-quest" }, { id: "lycan-male", classId: "lycan", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/053032c73b0aac1212841deb.png", width: 449, height: 639, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lycan-class-ac" }, { id: "mage-sorcerer-female", classId: "mage-sorcerer", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/969a147e63e94fc29d4a54c4.png", width: 302, height: 578, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/mage" }, { id: "lycan-female", classId: "lycan", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/16c7d4119c0c05f275153d50.png", width: 379, height: 629, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lycan-class-ac" }, { id: "lord-of-order-loo-female", classId: "lord-of-order-loo", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/5ef3efc120d0255394efed92.png", width: 398, height: 579, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lord-of-order-quest" }, { id: "martial-artist-ma-master-martial-artist-mma-male", classId: "martial-artist-ma-master-martial-artist-mma", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/85052bbeb0fc241778f26bee.png", width: 321, height: 571, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/martial-artist-class" }, { id: "master-ranger-mr-ranger-male", classId: "master-ranger-mr-ranger", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/9d811e4392b60bf0d3a4c80d.png", width: 302, height: 515, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/master-ranger" }, { id: "martial-artist-ma-master-martial-artist-mma-female", classId: "martial-artist-ma-master-martial-artist-mma", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/ca1167e61b7f4d6f69fc22fd.png", width: 291, height: 569, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/martial-artist-class" }, { id: "master-ranger-mr-ranger-female", classId: "master-ranger-mr-ranger", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/1ffca8d2cfd4cc4c43fb4c56.png", width: 266, height: 510, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/master-ranger" }, { id: "naval-commander-nc-heroic-legendary-naval-commander-hnc-lnc-male", classId: "naval-commander-nc-heroic-legendary-naval-commander-hnc-lnc", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/d4308e8864d6ba47b7cd56bd.png", width: 359, height: 608, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/naval-commander-class" }, { id: "mindbreaker-mb-male", classId: "mindbreaker-mb", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/98c2bb15b89e24076e1c2035.png", width: 301, height: 493, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/mindbreaker" }, { id: "naval-commander-nc-heroic-legendary-naval-commander-hnc-lnc-female", classId: "naval-commander-nc-heroic-legendary-naval-commander-hnc-lnc", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/b39e30e4be151d176c277c17.png", width: 359, height: 631, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/naval-commander-class" }, { id: "mindbreaker-mb-female", classId: "mindbreaker-mb", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/0d6e78d90fcd5301867153b5.png", width: 291, height: 542, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/mindbreaker" }, { id: "ninja-assassin-ninja-warrior-male", classId: "ninja-assassin-ninja-warrior", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/3620d75df0e4497e3bcd2f83.png", width: 296, height: 510, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/ninja-class" }, { id: "northlands-monk-nlm-male", classId: "northlands-monk-nlm", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/ca261019ff58d5a12ecc2784.png", width: 362, height: 630, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/northlands-monk-class-0-ac" }, { id: "ninja-assassin-ninja-warrior-female", classId: "ninja-assassin-ninja-warrior", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/ed2cb99d3e1719315efe69d5.png", width: 352, height: 623, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/ninja-class" }, { id: "oracle-male", classId: "oracle", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/033df3b039c4579f2766c33e.png", width: 293, height: 532, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/oracle" }, { id: "northlands-monk-nlm-female", classId: "northlands-monk-nlm", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/1e9e760a5fa2f364c6cb3d2b.png", width: 356, height: 596, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/northlands-monk-class-0-ac" }, { id: "oracle-female", classId: "oracle", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/c0a39828852d527162b3ef0e.png", width: 284, height: 539, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/oracle" }, { id: "psionic-mindbreaker-pmb-male", classId: "psionic-mindbreaker-pmb", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/ce4e22c52d63b1bbb1f72b4c.png", width: 298, height: 577, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/psionic-mindbreaker" }, { id: "paladin-silver-paladin-male", classId: "paladin-silver-paladin", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/499756d937a90f4bfa12349e.png", width: 351, height: 569, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/paladin-class" }, { id: "prismatic-evolved-clawsuit-pcs-ecs-male", classId: "prismatic-evolved-clawsuit-pcs-ecs", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/8f5ccef8a71cee5973c6247f.png", width: 357, height: 573, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/prismatic-clawsuit-class" }, { id: "paladin-silver-paladin-female", classId: "paladin-silver-paladin", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/0e27ae97b74c5f0b3a5c03d2.png", width: 289, height: 533, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/paladin-class" }, { id: "psionic-mindbreaker-pmb-female", classId: "psionic-mindbreaker-pmb", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/a23808f8215adbb3bd1da0fd.png", width: 306, height: 578, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/psionic-mindbreaker" }, { id: "prismatic-evolved-clawsuit-pcs-ecs-female", classId: "prismatic-evolved-clawsuit-pcs-ecs", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/dfff73fd34c7f54d689cba24.png", width: 341, height: 579, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/prismatic-clawsuit-class" }, { id: "pyromancer-pyro-pink-romancer-pr-male", classId: "pyromancer-pyro-pink-romancer-pr", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/f212ad76bfc504f721b7497c.png", width: 302, height: 541, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/pyromancer-class-ac" }, { id: "rogue-renegade-male", classId: "rogue-renegade", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/f88690ed56560991dacdb2e8.png", width: 297, height: 533, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/rogue" }, { id: "pyromancer-pyro-pink-romancer-pr-female", classId: "pyromancer-pyro-pink-romancer-pr", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/e5d73be9d615b17983a8dd8b.png", width: 275, height: 538, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/pyromancer-class-ac" }, { id: "rogue-renegade-female", classId: "rogue-renegade", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/2bcbf9de2121597dd0ecf35d.png", width: 282, height: 534, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/rogue" }, { id: "shadowscythe-general-ssg-male", classId: "shadowscythe-general-ssg", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/3bf484b43e510bdfcb68d6f0.png", width: 413, height: 685, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/shadowscythe-general-class-ac" }, { id: "scion-of-flames-sof-male", classId: "scion-of-flames-sof", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/b194db013f3ba7a8abed8bca.png", width: 522, height: 631, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/scion-of-flames-class" }, { id: "shadowscythe-general-ssg-female", classId: "shadowscythe-general-ssg", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/17896760986e32935d4e6f3c.png", width: 385, height: 642, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/shadowscythe-general-class-ac" }, { id: "scion-of-flames-sof-female", classId: "scion-of-flames-sof", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/d8c11fd53ed2d9dca308097b.png", width: 492, height: 620, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/scion-of-flames-class" }, { id: "shaman-male", classId: "shaman", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/d5afc021cb0c69008d72f906.png", width: 324, height: 539, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/shaman" }, { id: "skycharged-grenadier-scg-male", classId: "skycharged-grenadier-scg", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/65b3ee2dd19d6acc6fab5888.png", width: 339, height: 611, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/skycharged-grenadier" }, { id: "skyguard-grenadier-sgg-male", classId: "skyguard-grenadier-sgg", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/0a5a1c85dd91bb1171630cf9.png", width: 295, height: 548, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/skyguard-grenadier-ac" }, { id: "skycharged-grenadier-scg-female", classId: "skycharged-grenadier-scg", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/ef58babb07083b7c5dbbcda4.png", width: 335, height: 613, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/skycharged-grenadier" }, { id: "shaman-female", classId: "shaman", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/c4b4def2af9f78bdd6c255b5.png", width: 289, height: 542, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/shaman" }, { id: "skyguard-grenadier-sgg-female", classId: "skyguard-grenadier-sgg", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/50b7053d2fb8e8ec6c427ced.png", width: 309, height: 615, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/skyguard-grenadier-ac" }, { id: "stone-crusher-sc-infinity-titan-it-male", classId: "stone-crusher-sc-infinity-titan-it", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/221ef43c4365e4a77a137f8c.png", width: 328, height: 615, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/stonecrusher-ac" }, { id: "stone-crusher-sc-infinity-titan-it-female", classId: "stone-crusher-sc-infinity-titan-it", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/36dfd53efbe48a680fd21004.png", width: 325, height: 617, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/stonecrusher-ac" }, { id: "troll-spellsmith-tss-male", classId: "troll-spellsmith-tss", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/5527972dea4978eefdb76c7b.png", width: 301, height: 589, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/troll-spellsmith-ac" }, { id: "ultra-omniknight-uok-dark-ultra-omninight-duon-male", classId: "ultra-omniknight-uok-dark-ultra-omninight-duon", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/663040bfb46e8015fc10f89a.png", width: 315, height: 568, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/ultra-omniknight-ac" }, { id: "troll-spellsmith-tss-female", classId: "troll-spellsmith-tss", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/38d0e34e76e07740cafa3e17.png", width: 301, height: 589, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/troll-spellsmith-ac" }, { id: "ultra-omniknight-uok-dark-ultra-omninight-duon-female", classId: "ultra-omniknight-uok-dark-ultra-omninight-duon", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/9b8cdf042a487e21fb27b7c8.png", width: 315, height: 546, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/ultra-omniknight-ac" }, { id: "vampire-lord-vl-enchanted-royal-vampire-lord-evl-rvl-male", classId: "vampire-lord-vl-enchanted-royal-vampire-lord-evl-rvl", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/0b5524e333fd1592a78080d9.png", width: 334, height: 622, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/vampire-lord-class-ac" }, { id: "undeadslayer-us-male", classId: "undeadslayer-us", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/b9eb1f0e6ca5ef83d3617860.png", width: 292, height: 499, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/undeadslayer-ac" }, { id: "vampire-lord-vl-enchanted-royal-vampire-lord-evl-rvl-female", classId: "vampire-lord-vl-enchanted-royal-vampire-lord-evl-rvl", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/675b8537983c58017b7a5458.png", width: 424, height: 628, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/vampire-lord-class-ac" }, { id: "undead-goat-unundead-goat-ug-male", classId: "undead-goat-unundead-goat-ug", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/7222d11a78f4c2892d083c00.png", width: 351, height: 613, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/undead-goat" }, { id: "undeadslayer-us-female", classId: "undeadslayer-us", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/acc26ef92f899571ca11998e.png", width: 304, height: 555, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/undeadslayer-ac" }, { id: "verus-doomknight-vdk-male", classId: "verus-doomknight-vdk", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/3168f78cf2074a452f2c78bc.png", width: 337, height: 645, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/verus-doomknight-class" }, { id: "void-highlord-vhl-debris-highlord-dhl-male", classId: "void-highlord-vhl-debris-highlord-dhl", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/0f298209b73522383e2c82da.png", width: 337, height: 642, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/void-highlord-class" }, { id: "vindicator-of-they-vot-the-collector-tc-male", classId: "vindicator-of-they-vot-the-collector-tc", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/452913fa9e73443a1b50e50d.png", width: 326, height: 597, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/vindicator-of-they-ac" }, { id: "verus-doomknight-vdk-female", classId: "verus-doomknight-vdk", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/3bed535bd9f377300ba4834c.png", width: 315, height: 619, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/verus-doomknight-class" }, { id: "void-highlord-vhl-debris-highlord-dhl-female", classId: "void-highlord-vhl-debris-highlord-dhl", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/c88268adffc0395d4208cace.png", width: 306, height: 593, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/void-highlord-class" }, { id: "vindicator-of-they-vot-the-collector-tc-female", classId: "vindicator-of-they-vot-the-collector-tc", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/34ab770dd131f7a70033be42.png", width: 299, height: 526, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/vindicator-of-they-ac" }, { id: "yami-no-ronin-ynr-male", classId: "yami-no-ronin-ynr", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/10f7b7f8d30d35ad384cdd9e.png", width: 340, height: 618, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/yami-no-ronin-class" }, { id: "chronomancer-cm-chronomancer-prime-cmp-male", classId: "chronomancer-cm-chronomancer-prime-cmp", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/850c2036683d597df54b3f64.png", width: 363, height: 557, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chronomancer" }, { id: "yami-no-ronin-ynr-female", classId: "yami-no-ronin-ynr", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/54ef9925bf3136c25a64a734.png", width: 346, height: 612, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/yami-no-ronin-class" }, { id: "infinity-interstellar-knight-ik-male", classId: "infinity-interstellar-knight-ik", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/138ca705b2b83e302c7c9806.png", width: 300, height: 600, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/infinity-knight" }, { id: "infinity-interstellar-knight-ik-female", classId: "infinity-interstellar-knight-ik", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/ea837db72764b24f2d49138a.png", width: 322, height: 569, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/infinity-knight" }, { id: "cardclasher-cc-male", classId: "cardclasher-cc", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/dd06ef0d352516181b9c4523.png", width: 330, height: 564, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/cardclasher-class" }, { id: "phantom-phantasm-chronomancer-phcm-male", classId: "phantom-phantasm-chronomancer-phcm", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/8aa23cb90091b53dee65d574.png", width: 319, height: 589, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/phantom-chronomancer-class" }, { id: "archivist-of-time-temporis-aot-male", classId: "archivist-of-time-temporis-aot", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/e5d078333094d133006b1be6.png", width: 359, height: 606, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archivist-of-time" }, { id: "cardclasher-cc-female", classId: "cardclasher-cc", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/6ec32795d47034bdd08d37a3.png", width: 330, height: 564, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/cardclasher-class" }, { id: "phantom-phantasm-chronomancer-phcm-female", classId: "phantom-phantasm-chronomancer-phcm", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/6f737249412cc0ea69a62ae1.png", width: 315, height: 577, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/phantom-chronomancer-class" }, { id: "archivist-of-time-temporis-aot-female", classId: "archivist-of-time-temporis-aot", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/2fd0172c85b6185415050094.png", width: 343, height: 593, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archivist-of-time" }, { id: "great-thief-gt-male", classId: "great-thief-gt", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/7bdfcf20db9458363ed90f5c.png", width: 309, height: 555, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/great-thief" }, { id: "master-of-moglins-mom-dark-master-of-moglins-dmom-male", classId: "master-of-moglins-mom-dark-master-of-moglins-dmom", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/95af93f2e9b0623b7c4ca7eb.png", width: 316, height: 528, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/master-of-moglins-class-2" }, { id: "legion-paladin-lp-male", classId: "legion-paladin-lp", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/99a5e0367538bbceaeeede20.png", width: 397, height: 632, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-paladin-class" }, { id: "great-thief-gt-female", classId: "great-thief-gt", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/f322e5df24abb6fc7b6d5f12.png", width: 300, height: 540, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/great-thief" }, { id: "master-of-moglins-mom-dark-master-of-moglins-dmom-female", classId: "master-of-moglins-mom-dark-master-of-moglins-dmom", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/90a664a839408c0e63962968.png", width: 378, height: 633, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/master-of-moglins-class-2" }, { id: "legion-paladin-lp-female", classId: "legion-paladin-lp", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/a1edb85e4dcdb28d8ce16d47.png", width: 358, height: 611, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-paladin-class" }, { id: "calendar-chrono-commandant-male", classId: "calendar-chrono-commandant", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/e91cdbc676ac9331ba7182df.png", width: 313, height: 577, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chrono-commandant" }, { id: "not-a-mod-nam-male", classId: "not-a-mod-nam", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/dcd43717f7b468a049d6daf0.png", width: 330, height: 575, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/not-a-mod" }, { id: "paladinslayer-ps-male", classId: "paladinslayer-ps", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/c71f373edd6a0e1fdeffa2e9.png", width: 315, height: 574, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/paladinslayer" }, { id: "calendar-chrono-commandant-female", classId: "calendar-chrono-commandant", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/e9182c05b7e76526e270e987.png", width: 328, height: 570, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chrono-commandant" }, { id: "not-a-mod-nam-female", classId: "not-a-mod-nam", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/a49cc4a053a725c6d270f137.png", width: 330, height: 575, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/not-a-mod" }, { id: "paladinslayer-ps-female", classId: "paladinslayer-ps", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/3071806529498bc16f8dd157.png", width: 315, height: 574, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/paladinslayer" }, { id: "calendar-necrotic-chronomancer-male", classId: "calendar-necrotic-chronomancer", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/83bc2d2cc10ab43943f5b8b3.png", width: 397, height: 614, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/necrotic-chronomancer" }, { id: "calendar-necrotic-chronomancer-female", classId: "calendar-necrotic-chronomancer", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/d46dfc9377f499c7ad0644c0.png", width: 350, height: 604, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/necrotic-chronomancer" }, { id: "calendar-nechronomancer-male", classId: "calendar-nechronomancer", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/54427568e9331e1e31424d22.png", width: 376, height: 576, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/nechronomancer" }, { id: "calendar-corrupted-chronomancer-male", classId: "calendar-corrupted-chronomancer", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/dcbc765c5d113e1dcdb84ffd.png", width: 453, height: 652, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/corrupted-chronomancer-class" }, { id: "calendar-nechronomancer-female", classId: "calendar-nechronomancer", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/e9b3f4beb7f0381ede06fd20.png", width: 343, height: 577, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/nechronomancer" }, { id: "calendar-corrupted-chronomancer-female", classId: "calendar-corrupted-chronomancer", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/736a07f9ea8bee9d054932c3.png", width: 378, height: 626, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/corrupted-chronomancer-class" }, { id: "calendar-timekeeper-male", classId: "calendar-timekeeper", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/d3f24fb75bcc2faf0f97a053.png", width: 360, height: 597, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/timekeeper" }, { id: "calendar-timekiller-male", classId: "calendar-timekiller", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/91aef4d17deafbee7567dec9.png", width: 296, height: 559, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/timekiller" }, { id: "calendar-timekeeper-female", classId: "calendar-timekeeper", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/0cacb6f9141e035f05d79a58.png", width: 337, height: 615, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/timekeeper" }, { id: "calendar-timeless-chronomancer-male", classId: "calendar-timeless-chronomancer", variantName: "Male", variantType: "art", imagePath: "/images/aqw/class-art/edc8f67fabcc3044570d6c84.png", width: 397, height: 591, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac" }, { id: "calendar-timeless-chronomancer-female", classId: "calendar-timeless-chronomancer", variantName: "Female", variantType: "art", imagePath: "/images/aqw/class-art/5b4d9b331f47ce436ac1d30c.png", width: 373, height: 582, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/timeless-chronomancer-class-ac" }, { id: "alpha-pirate-pirate-pirate-male", classId: "alpha-pirate-pirate", variantName: "Pirate \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/06fce0fe800e0bec7a08635a.png", width: 290, height: 522, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/pirate" }, { id: "alpha-omega-doommega-ao-alpha-omega-non-legend-male", classId: "alpha-omega-doommega-ao", variantName: "Alpha Omega (Non-Legend) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/5bdae3c751ba2b66bba97c6d.png", width: 329, height: 522, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/alpha-omega-non-legend" }, { id: "abyssal-angel-aa-abyssal-angel-s-shadow-aas-abyssal-angel-non-legend-male", classId: "abyssal-angel-aa-abyssal-angel-s-shadow-aas", variantName: "Abyssal Angel (Non-Legend) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/f0dc001ccf86b016af531349.png", width: 327, height: 570, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/abyssal-angel-non-legend" }, { id: "alpha-omega-doommega-ao-alpha-omega-non-legend-female", classId: "alpha-omega-doommega-ao", variantName: "Alpha Omega (Non-Legend) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/d51ce7b62183bd8e6bdd1f54.png", width: 324, height: 512, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/alpha-omega-non-legend" }, { id: "alpha-pirate-pirate-pirate-female", classId: "alpha-pirate-pirate", variantName: "Pirate \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/b01da059c2c7a2522d9a9ac4.png", width: 281, height: 544, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/pirate" }, { id: "archfiend-af-archfiend-ac-male", classId: "archfiend-af", variantName: "ArchFiend (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/50fa99a8bfd3a38d251c43c3.png", width: 319, height: 540, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archfiend-ac" }, { id: "archfiend-af-archfiend-ac-female", classId: "archfiend-af", variantName: "ArchFiend (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/7986c54e54b9dbc52ba27748.png", width: 308, height: 530, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archfiend-ac" }, { id: "artifact-antique-hunter-ah-antique-hunter-class-0-ac-male", classId: "artifact-antique-hunter-ah", variantName: "Antique Hunter (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/dc6db7c18605d309941c4e54.png", width: 314, height: 576, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/antique-hunter-class-0-ac" }, { id: "archpaladin-ap-archpaladin-ac-male", classId: "archpaladin-ap", variantName: "ArchPaladin (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/82467bb0cd10a5f4893a007d.png", width: 370, height: 623, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archpaladin-ac" }, { id: "artifact-antique-hunter-ah-antique-hunter-class-0-ac-female", classId: "artifact-antique-hunter-ah", variantName: "Antique Hunter (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/7ae7e5c03c3a90319050e7d2.png", width: 290, height: 571, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/antique-hunter-class-0-ac" }, { id: "artifact-antique-hunter-ah-antique-hunter-class-ac-male", classId: "artifact-antique-hunter-ah", variantName: "Antique Hunter (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/dc6db7c18605d309941c4e54.png", width: 314, height: 576, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/antique-hunter-class-ac" }, { id: "artifact-antique-hunter-ah-antique-hunter-class-ac-female", classId: "artifact-antique-hunter-ah", variantName: "Antique Hunter (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/7ae7e5c03c3a90319050e7d2.png", width: 290, height: 571, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/antique-hunter-class-ac" }, { id: "archpaladin-ap-archpaladin-ac-female", classId: "archpaladin-ap", variantName: "ArchPaladin (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/3f3de1f0e3e9a31cb864d889.png", width: 306, height: 563, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/archpaladin-ac" }, { id: "berserker-beta-berserker-brutal-berserker-brutal-berserker-class-male", classId: "berserker-beta-berserker-brutal-berserker", variantName: "Brutal Berserker \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/43ccaaf874925e469cb8d712.png", width: 354, height: 562, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/brutal-berserker-class" }, { id: "beastmaster-beastmaster-0-ac-male", classId: "beastmaster", variantName: "BeastMaster (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/55da6a7ec4fbe7b40a163f6c.png", width: 339, height: 566, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/beastmaster-0-ac" }, { id: "berserker-beta-berserker-brutal-berserker-brutal-berserker-class-female", classId: "berserker-beta-berserker-brutal-berserker", variantName: "Brutal Berserker \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/5c25196a322f8ace635355c1.png", width: 332, height: 580, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/brutal-berserker-class" }, { id: "beastmaster-beastmaster-0-ac-female", classId: "beastmaster", variantName: "BeastMaster (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/de582318880f8e8800634eb3.png", width: 357, height: 628, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/beastmaster-0-ac" }, { id: "blood-titan-bt-frostblood-titan-fbt-frostblood-titan-male", classId: "blood-titan-bt-frostblood-titan-fbt", variantName: "Frostblood Titan \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/d56d8b72b015a5a9c46837cc.png", width: 482, height: 633, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/frostblood-titan" }, { id: "blood-ancient-ba-blood-ancient-merge-male", classId: "blood-ancient-ba", variantName: "Blood Ancient (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/789ca1a7a0e5d075c150ee50.png", width: 304, height: 566, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/blood-ancient-merge" }, { id: "blood-titan-bt-frostblood-titan-fbt-frostblood-titan-female", classId: "blood-titan-bt-frostblood-titan-fbt", variantName: "Frostblood Titan \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/7ed229f354537ac0cce7c141.png", width: 430, height: 615, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/frostblood-titan" }, { id: "blood-ancient-ba-blood-ancient-merge-female", classId: "blood-ancient-ba", variantName: "Blood Ancient (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/45a33179236e3523da834b1e.png", width: 358, height: 555, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/blood-ancient-merge" }, { id: "chrono-assassin-ca-chrono-assassin-merge-male", classId: "chrono-assassin-ca", variantName: "Chrono Assassin (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/2638952fba0899dca826c32f.png", width: 290, height: 525, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chrono-assassin-merge" }, { id: "chrono-assassin-ca-chrono-assassin-merge-female", classId: "chrono-assassin-ca", variantName: "Chrono Assassin (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/b17fc3dc051be55ad4606b45.png", width: 290, height: 595, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chrono-assassin-merge" }, { id: "classic-legion-doomknight-cldk-classic-legion-doomknight-ac-male", classId: "classic-legion-doomknight-cldk", variantName: "Classic Legion DoomKnight (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/045b8c5a0d52292ea0b49f24.png", width: 462, height: 667, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/classic-legion-doomknight-ac" }, { id: "chunin-imperial-chunin-imc-chunin-merge-male", classId: "chunin-imperial-chunin-imc", variantName: "Chunin (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/efa10ce33fb6a274acbd4851.png", width: 346, height: 622, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chunin-merge" }, { id: "classic-legion-doomknight-cldk-classic-legion-doomknight-ac-female", classId: "classic-legion-doomknight-cldk", variantName: "Classic Legion DoomKnight (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/f8979a4a264a50e28fc1476e.png", width: 385, height: 672, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/classic-legion-doomknight-ac" }, { id: "classic-legion-doomknight-cldk-classic-legion-doomknight-merge-1-male", classId: "classic-legion-doomknight-cldk", variantName: "Classic Legion DoomKnight (Merge) (1) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/045b8c5a0d52292ea0b49f24.png", width: 462, height: 667, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/classic-legion-doomknight-merge-1" }, { id: "classic-legion-doomknight-cldk-classic-legion-doomknight-merge-1-female", classId: "classic-legion-doomknight-cldk", variantName: "Classic Legion DoomKnight (Merge) (1) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/f8979a4a264a50e28fc1476e.png", width: 385, height: 672, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/classic-legion-doomknight-merge-1" }, { id: "chunin-imperial-chunin-imc-chunin-merge-female", classId: "chunin-imperial-chunin-imc", variantName: "Chunin (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/897190d533778eb078110034.png", width: 337, height: 589, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chunin-merge" }, { id: "chunin-imperial-chunin-imc-imperial-chunin-male", classId: "chunin-imperial-chunin-imc", variantName: "Imperial Chunin \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/0bd09f4b8318714442faabcd.png", width: 362, height: 643, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/imperial-chunin" }, { id: "chunin-imperial-chunin-imc-imperial-chunin-female", classId: "chunin-imperial-chunin-imc", variantName: "Imperial Chunin \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/7c478697c032f3a6cd170d05.png", width: 341, height: 627, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/imperial-chunin" }, { id: "cryomancer-cryo-dark-sakura-cryomancer-cryomancer-ac-male", classId: "cryomancer-cryo-dark-sakura-cryomancer", variantName: "Cryomancer (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/efb4b5fd0f0c9b16ce067bc5.png", width: 315, height: 552, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/cryomancer-ac" }, { id: "cryomancer-cryo-dark-sakura-cryomancer-cryomancer-ac-female", classId: "cryomancer-cryo-dark-sakura-cryomancer", variantName: "Cryomancer (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/4b85f7bd3cdcb05ecef40107.png", width: 301, height: 563, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/cryomancer-ac" }, { id: "cryomancer-cryo-dark-sakura-cryomancer-sakura-cryomancer-class-male", classId: "cryomancer-cryo-dark-sakura-cryomancer", variantName: "Sakura Cryomancer \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/29df29de8b92ba359f685db8.png", width: 323, height: 547, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/sakura-cryomancer-class" }, { id: "cryomancer-cryo-dark-sakura-cryomancer-sakura-cryomancer-class-female", classId: "cryomancer-cryo-dark-sakura-cryomancer", variantName: "Sakura Cryomancer \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/d14c07bfed93c0278ed13274.png", width: 299, height: 569, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/sakura-cryomancer-class" }, { id: "deathknight-dk-deathknight-class-0-ac-male", classId: "deathknight-dk", variantName: "DeathKnight (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/1d7448e9621f92e22c2a9462.png", width: 276, height: 508, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/deathknight-class-0-ac" }, { id: "deathknight-dk-deathknight-class-0-ac-female", classId: "deathknight-dk", variantName: "DeathKnight (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/fe4ef7d71ab538ae48d8e743.png", width: 265, height: 519, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/deathknight-class-0-ac" }, { id: "doomknight-dmk-doomknight-0-ac-male", classId: "doomknight-dmk", variantName: "DoomKnight (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/f7be6d489f0d11c3077f63d1.png", width: 368, height: 575, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/doomknight-0-ac" }, { id: "doomknight-dmk-doomknight-0-ac-female", classId: "doomknight-dmk", variantName: "DoomKnight (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/c3214332bd51c6ee7272f18f.png", width: 501, height: 687, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/doomknight-0-ac" }, { id: "dragonslayer-ds-dragonslayer-infinity-male", classId: "dragonslayer-ds", variantName: "Dragonslayer (Infinity) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/3a8fcf76c1f3b4be6d47b9b3.png", width: 360, height: 535, verificationStatus: "excluded_wrong_game", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragonslayer-infinity" }, { id: "dragonslayer-ds-dragonslayer-infinity-female", classId: "dragonslayer-ds", variantName: "Dragonslayer (Infinity) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/14d01e928ddfaf0c7af4ffc2.png", width: 345, height: 525, verificationStatus: "excluded_wrong_game", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dragonslayer-infinity" }, { id: "drakel-warlord-dw-drakel-warlord-non-legend-male", classId: "drakel-warlord-dw", variantName: "Drakel Warlord (Non-Legend) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/c2ff0f66a87278bf89a683ac.png", width: 295, height: 539, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/drakel-warlord-non-legend" }, { id: "drakel-warlord-dw-drakel-warlord-non-legend-female", classId: "drakel-warlord-dw", variantName: "Drakel Warlord (Non-Legend) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/50eebe7d89815d5fde2759b0.png", width: 297, height: 532, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/drakel-warlord-non-legend" }, { id: "eternal-inversionist-ei-eternal-inversionist-class-ac-male", classId: "eternal-inversionist-ei", variantName: "Eternal Inversionist (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/8858dd1e5ff53fe209d3ca36.png", width: 304, height: 552, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/eternal-inversionist-class-ac" }, { id: "evolved-leprechaun-el-evolved-leprechaun-merge-male", classId: "evolved-leprechaun-el", variantName: "Evolved Leprechaun (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/c2c877a3dddd28e110f3c436.png", width: 310, height: 596, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-leprechaun-merge" }, { id: "evolved-pumpkin-lord-epl-evolved-pumpkin-lord-legend-male", classId: "evolved-pumpkin-lord-epl", variantName: "Evolved Pumpkin Lord (Legend) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/8bcc63e864f24b9766678838.png", width: 372, height: 629, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend" }, { id: "eternal-inversionist-ei-eternal-inversionist-class-ac-female", classId: "eternal-inversionist-ei", variantName: "Eternal Inversionist (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/4da5dd5d6daf117860f81ef9.png", width: 292, height: 555, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/eternal-inversionist-class-ac" }, { id: "evolved-leprechaun-el-evolved-leprechaun-merge-female", classId: "evolved-leprechaun-el", variantName: "Evolved Leprechaun (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/27b64fc1b93a9ffe74350ab0.png", width: 310, height: 596, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-leprechaun-merge" }, { id: "evolved-pumpkin-lord-epl-evolved-pumpkin-lord-legend-female", classId: "evolved-pumpkin-lord-epl", variantName: "Evolved Pumpkin Lord (Legend) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/f8f1cd6ed1e6131906cd20e1.png", width: 352, height: 637, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-pumpkin-lord-legend" }, { id: "evolved-shaman-es-evolved-shaman-0-ac-male", classId: "evolved-shaman-es", variantName: "Evolved Shaman (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/9c3cac7bbb97cdbedcc48535.png", width: 373, height: 593, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-shaman-0-ac" }, { id: "evolved-shaman-es-evolved-shaman-0-ac-female", classId: "evolved-shaman-es", variantName: "Evolved Shaman (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/e7ef1ff9131c1be93bdc0f3a.png", width: 343, height: 594, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/evolved-shaman-0-ac" }, { id: "frostval-barbarian-fb-frostval-barbarian-0-ac-male", classId: "frostval-barbarian-fb", variantName: "Frostval Barbarian (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/2e24223caf66e53eed425663.png", width: 353, height: 610, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac" }, { id: "frostval-barbarian-fb-frostval-barbarian-0-ac-female", classId: "frostval-barbarian-fb", variantName: "Frostval Barbarian (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/1e35a943eef797b969f5c388.png", width: 328, height: 604, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac" }, { id: "glacial-berserker-gb-glacial-berserker-class-0-ac-male", classId: "glacial-berserker-gb", variantName: "Glacial Berserker (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/ce144fd1036ec62139749e8c.png", width: 358, height: 698, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/glacial-berserker-class-0-ac" }, { id: "glacial-berserker-gb-glacial-berserker-class-0-ac-female", classId: "glacial-berserker-gb", variantName: "Glacial Berserker (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/bf4de9d16e9385e6a071d770.png", width: 339, height: 645, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/glacial-berserker-class-0-ac" }, { id: "glacial-glaceran-warlord-dark-savage-glaceran-warlord-gw-dgw-sgw-glaceran-warlord-male", classId: "glacial-glaceran-warlord-dark-savage-glaceran-warlord-gw-dgw-sgw", variantName: "Glaceran Warlord \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/b5bf2ef282146587377b19de.png", width: 370, height: 618, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/glaceran-warlord" }, { id: "glacial-glaceran-warlord-dark-savage-glaceran-warlord-gw-dgw-sgw-glaceran-warlord-female", classId: "glacial-glaceran-warlord-dark-savage-glaceran-warlord-gw-dgw-sgw", variantName: "Glaceran Warlord \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/aed9a694a25a215642640201.png", width: 318, height: 579, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/glaceran-warlord" }, { id: "horc-evader-he-horc-evader-0-ac-male", classId: "horc-evader-he", variantName: "Horc Evader (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/c81bb7059e42f87df8a03a94.png", width: 341, height: 595, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/horc-evader-0-ac" }, { id: "horc-evader-he-horc-evader-0-ac-female", classId: "horc-evader-he", variantName: "Horc Evader (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/aa9d99461923bcf668871525.png", width: 338, height: 595, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/horc-evader-0-ac" }, { id: "legion-doomknight-ldk-legion-doomknight-class-ac-male", classId: "legion-doomknight-ldk", variantName: "Legion Doomknight (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/045b8c5a0d52292ea0b49f24.png", width: 462, height: 667, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-doomknight-class-ac" }, { id: "legion-doomknight-ldk-legion-doomknight-class-ac-female", classId: "legion-doomknight-ldk", variantName: "Legion Doomknight (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/f8979a4a264a50e28fc1476e.png", width: 385, height: 672, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-doomknight-class-ac" }, { id: "legion-doomknight-ldk-legion-doomknight-class-merge-1-male", classId: "legion-doomknight-ldk", variantName: "Legion DoomKnight (Merge) (1) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/045b8c5a0d52292ea0b49f24.png", width: 462, height: 667, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-doomknight-class-merge-1" }, { id: "legion-doomknight-ldk-legion-doomknight-class-merge-1-female", classId: "legion-doomknight-ldk", variantName: "Legion DoomKnight (Merge) (1) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/f8979a4a264a50e28fc1476e.png", width: 385, height: 672, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-doomknight-class-merge-1" }, { id: "legion-doomknight-ldk-legion-doomknight-class-merge-2-male", classId: "legion-doomknight-ldk", variantName: "Legion DoomKnight (Merge) (2) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/045b8c5a0d52292ea0b49f24.png", width: 462, height: 667, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-doomknight-class-merge-2" }, { id: "legion-doomknight-ldk-legion-doomknight-class-merge-2-female", classId: "legion-doomknight-ldk", variantName: "Legion DoomKnight (Merge) (2) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/f8979a4a264a50e28fc1476e.png", width: 385, height: 672, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/legion-doomknight-class-merge-2" }, { id: "legendary-hero-lh-dark-legendary-hero-dlh-dark-legendary-hero-male", classId: "legendary-hero-lh-dark-legendary-hero-dlh", variantName: "Dark Legendary Hero \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/ae5aad98596b85288e432e0b.png", width: 325, height: 605, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dark-legendary-hero" }, { id: "legendary-hero-lh-dark-legendary-hero-dlh-dark-legendary-hero-female", classId: "legendary-hero-lh-dark-legendary-hero-dlh", variantName: "Dark Legendary Hero \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/ecb8fe56252c8dfac7604a77.png", width: 283, height: 578, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dark-legendary-hero" }, { id: "lord-of-order-loo-lord-of-order-0-ac-male", classId: "lord-of-order-loo", variantName: "Lord Of Order (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/808deccdcc20c40b33d73c9c.png", width: 417, height: 649, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lord-of-order-0-ac" }, { id: "lord-of-order-loo-lord-of-order-0-ac-female", classId: "lord-of-order-loo", variantName: "Lord Of Order (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/5ef3efc120d0255394efed92.png", width: 398, height: 579, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lord-of-order-0-ac" }, { id: "lord-of-order-loo-lord-of-order-ac-male", classId: "lord-of-order-loo", variantName: "Lord Of Order (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/808deccdcc20c40b33d73c9c.png", width: 417, height: 649, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lord-of-order-ac" }, { id: "lord-of-order-loo-lord-of-order-ac-female", classId: "lord-of-order-loo", variantName: "Lord Of Order (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/5ef3efc120d0255394efed92.png", width: 398, height: 579, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lord-of-order-ac" }, { id: "mage-sorcerer-mage-rare-male", classId: "mage-sorcerer", variantName: "Mage (Rare) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/2221f3683ee83703d4861dc2.png", width: 350, height: 606, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/mage-rare" }, { id: "lycan-lycan-class-0-ac-male", classId: "lycan", variantName: "Lycan (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/053032c73b0aac1212841deb.png", width: 449, height: 639, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lycan-class-0-ac" }, { id: "mage-sorcerer-mage-rare-female", classId: "mage-sorcerer", variantName: "Mage (Rare) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/0794d66e09179f734a55adeb.png", width: 345, height: 611, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/mage-rare" }, { id: "lycan-lycan-class-0-ac-female", classId: "lycan", variantName: "Lycan (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/16c7d4119c0c05f275153d50.png", width: 379, height: 629, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/lycan-class-0-ac" }, { id: "martial-artist-ma-master-martial-artist-mma-master-martial-artist-class-0-ac-male", classId: "martial-artist-ma-master-martial-artist-mma", variantName: "Master Martial Artist (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/8784a2f4e9c1cf0a1d7b66e6.png", width: 298, height: 580, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/master-martial-artist-class-0-ac" }, { id: "master-ranger-mr-ranger-ranger-male", classId: "master-ranger-mr-ranger", variantName: "Ranger \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/9d811e4392b60bf0d3a4c80d.png", width: 302, height: 515, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/ranger" }, { id: "master-ranger-mr-ranger-ranger-female", classId: "master-ranger-mr-ranger", variantName: "Ranger \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/1ffca8d2cfd4cc4c43fb4c56.png", width: 266, height: 510, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/ranger" }, { id: "martial-artist-ma-master-martial-artist-mma-master-martial-artist-class-0-ac-female", classId: "martial-artist-ma-master-martial-artist-mma", variantName: "Master Martial Artist (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/1a787bef4b3cbf86bc102fd3.png", width: 296, height: 572, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/master-martial-artist-class-0-ac" }, { id: "martial-artist-ma-master-martial-artist-mma-master-martial-artist-class-ac-male", classId: "martial-artist-ma-master-martial-artist-mma", variantName: "Master Martial Artist (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/8784a2f4e9c1cf0a1d7b66e6.png", width: 298, height: 580, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/master-martial-artist-class-ac" }, { id: "martial-artist-ma-master-martial-artist-mma-master-martial-artist-class-ac-female", classId: "martial-artist-ma-master-martial-artist-mma", variantName: "Master Martial Artist (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/1a787bef4b3cbf86bc102fd3.png", width: 296, height: 572, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/master-martial-artist-class-ac" }, { id: "northlands-monk-nlm-northlands-monk-class-ac-male", classId: "northlands-monk-nlm", variantName: "Northlands Monk (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/ca261019ff58d5a12ecc2784.png", width: 362, height: 630, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/northlands-monk-class-ac" }, { id: "northlands-monk-nlm-northlands-monk-class-ac-female", classId: "northlands-monk-nlm", variantName: "Northlands Monk (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/1e9e760a5fa2f364c6cb3d2b.png", width: 356, height: 596, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/northlands-monk-class-ac" }, { id: "northlands-monk-nlm-northlands-monk-class-free-player-male", classId: "northlands-monk-nlm", variantName: "Northlands Monk (Free Player) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/ca261019ff58d5a12ecc2784.png", width: 362, height: 630, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/northlands-monk-class-free-player" }, { id: "northlands-monk-nlm-northlands-monk-class-free-player-female", classId: "northlands-monk-nlm", variantName: "Northlands Monk (Free Player) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/1e9e760a5fa2f364c6cb3d2b.png", width: 356, height: 596, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/northlands-monk-class-free-player" }, { id: "paladin-silver-paladin-silver-paladin-male", classId: "paladin-silver-paladin", variantName: "Silver Paladin \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/499756d937a90f4bfa12349e.png", width: 351, height: 569, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/silver-paladin" }, { id: "paladin-silver-paladin-silver-paladin-female", classId: "paladin-silver-paladin", variantName: "Silver Paladin \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/87c296d402c6a84f5e3bbc01.png", width: 269, height: 520, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/silver-paladin" }, { id: "pyromancer-pyro-pink-romancer-pr-pyromancer-class-merge-male", classId: "pyromancer-pyro-pink-romancer-pr", variantName: "Pyromancer (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/f212ad76bfc504f721b7497c.png", width: 302, height: 541, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/pyromancer-class-merge" }, { id: "pyromancer-pyro-pink-romancer-pr-pyromancer-class-merge-female", classId: "pyromancer-pyro-pink-romancer-pr", variantName: "Pyromancer (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/e5d73be9d615b17983a8dd8b.png", width: 275, height: 538, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/pyromancer-class-merge" }, { id: "rogue-renegade-rogue-rare-male", classId: "rogue-renegade", variantName: "Rogue (Rare) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/796a0008ea1b415055a1b8ff.png", width: 355, height: 603, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/rogue-rare" }, { id: "rogue-renegade-rogue-rare-female", classId: "rogue-renegade", variantName: "Rogue (Rare) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/891750ffe20c21344f104e2e.png", width: 324, height: 636, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/rogue-rare" }, { id: "shadowscythe-general-ssg-shadowscythe-general-class-merge-male", classId: "shadowscythe-general-ssg", variantName: "ShadowScythe General (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/3bf484b43e510bdfcb68d6f0.png", width: 413, height: 685, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/shadowscythe-general-class-merge" }, { id: "shadowscythe-general-ssg-shadowscythe-general-class-merge-female", classId: "shadowscythe-general-ssg", variantName: "ShadowScythe General (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/17896760986e32935d4e6f3c.png", width: 385, height: 642, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/shadowscythe-general-class-merge" }, { id: "skyguard-grenadier-sgg-skyguard-grenadier-0-ac-male", classId: "skyguard-grenadier-sgg", variantName: "SkyGuard Grenadier (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/0a5a1c85dd91bb1171630cf9.png", width: 295, height: 548, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/skyguard-grenadier-0-ac" }, { id: "skyguard-grenadier-sgg-skyguard-grenadier-0-ac-female", classId: "skyguard-grenadier-sgg", variantName: "SkyGuard Grenadier (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/50b7053d2fb8e8ec6c427ced.png", width: 309, height: 615, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/skyguard-grenadier-0-ac" }, { id: "stone-crusher-sc-infinity-titan-it-stonecrusher-merge-male", classId: "stone-crusher-sc-infinity-titan-it", variantName: "StoneCrusher (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/221ef43c4365e4a77a137f8c.png", width: 328, height: 615, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/stonecrusher-merge" }, { id: "stone-crusher-sc-infinity-titan-it-stonecrusher-merge-female", classId: "stone-crusher-sc-infinity-titan-it", variantName: "StoneCrusher (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/36dfd53efbe48a680fd21004.png", width: 325, height: 617, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/stonecrusher-merge" }, { id: "ultra-omniknight-uok-dark-ultra-omninight-duon-dark-ultra-omninight-0-ac-male", classId: "ultra-omniknight-uok-dark-ultra-omninight-duon", variantName: "Dark Ultra OmniNight (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/79b0f625e7b445d86e8e4e31.png", width: 383, height: 634, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dark-ultra-omninight-0-ac" }, { id: "troll-spellsmith-tss-troll-spellsmith-0-ac-male", classId: "troll-spellsmith-tss", variantName: "Troll Spellsmith (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/5527972dea4978eefdb76c7b.png", width: 301, height: 589, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/troll-spellsmith-0-ac" }, { id: "ultra-omniknight-uok-dark-ultra-omninight-duon-dark-ultra-omninight-0-ac-female", classId: "ultra-omniknight-uok-dark-ultra-omninight-duon", variantName: "Dark Ultra OmniNight (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/1ee4b9e1d2772105fb7013c9.png", width: 353, height: 629, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dark-ultra-omninight-0-ac" }, { id: "ultra-omniknight-uok-dark-ultra-omninight-duon-dark-ultra-omninight-ac-male", classId: "ultra-omniknight-uok-dark-ultra-omninight-duon", variantName: "Dark Ultra OmniNight (AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/79b0f625e7b445d86e8e4e31.png", width: 383, height: 634, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dark-ultra-omninight-ac" }, { id: "ultra-omniknight-uok-dark-ultra-omninight-duon-dark-ultra-omninight-ac-female", classId: "ultra-omniknight-uok-dark-ultra-omninight-duon", variantName: "Dark Ultra OmniNight (AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/1ee4b9e1d2772105fb7013c9.png", width: 353, height: 629, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/dark-ultra-omninight-ac" }, { id: "ultra-omniknight-uok-dark-ultra-omninight-duon-ultra-omniknight-merge-male", classId: "ultra-omniknight-uok-dark-ultra-omninight-duon", variantName: "Ultra OmniKnight (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/663040bfb46e8015fc10f89a.png", width: 315, height: 568, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/ultra-omniknight-merge" }, { id: "ultra-omniknight-uok-dark-ultra-omninight-duon-ultra-omniknight-merge-female", classId: "ultra-omniknight-uok-dark-ultra-omninight-duon", variantName: "Ultra OmniKnight (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/9b8cdf042a487e21fb27b7c8.png", width: 315, height: 546, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/ultra-omniknight-merge" }, { id: "troll-spellsmith-tss-troll-spellsmith-0-ac-female", classId: "troll-spellsmith-tss", variantName: "Troll Spellsmith (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/38d0e34e76e07740cafa3e17.png", width: 301, height: 589, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/troll-spellsmith-0-ac" }, { id: "vampire-lord-vl-enchanted-royal-vampire-lord-evl-rvl-vampire-lord-class-merge-male", classId: "vampire-lord-vl-enchanted-royal-vampire-lord-evl-rvl", variantName: "Vampire Lord (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/0b5524e333fd1592a78080d9.png", width: 334, height: 622, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/vampire-lord-class-merge" }, { id: "vampire-lord-vl-enchanted-royal-vampire-lord-evl-rvl-vampire-lord-class-merge-female", classId: "vampire-lord-vl-enchanted-royal-vampire-lord-evl-rvl", variantName: "Vampire Lord (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/675b8537983c58017b7a5458.png", width: 424, height: 628, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/vampire-lord-class-merge" }, { id: "undeadslayer-us-undeadslayer-0-ac-male", classId: "undeadslayer-us", variantName: "UndeadSlayer (0 AC) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/b9eb1f0e6ca5ef83d3617860.png", width: 292, height: 499, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/undeadslayer-0-ac" }, { id: "undeadslayer-us-undeadslayer-0-ac-female", classId: "undeadslayer-us", variantName: "UndeadSlayer (0 AC) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/acc26ef92f899571ca11998e.png", width: 304, height: 555, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/undeadslayer-0-ac" }, { id: "vindicator-of-they-vot-the-collector-tc-vindicator-of-they-merge-male", classId: "vindicator-of-they-vot-the-collector-tc", variantName: "Vindicator Of They (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/452913fa9e73443a1b50e50d.png", width: 326, height: 597, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/vindicator-of-they-merge" }, { id: "vindicator-of-they-vot-the-collector-tc-vindicator-of-they-merge-female", classId: "vindicator-of-they-vot-the-collector-tc", variantName: "Vindicator Of They (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/34ab770dd131f7a70033be42.png", width: 299, height: 526, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/vindicator-of-they-merge" }, { id: "void-highlord-vhl-debris-highlord-dhl-debris-highlord-class-male", classId: "void-highlord-vhl-debris-highlord-dhl", variantName: "Debris Highlord \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/78051e766a19dffb474ba4e4.png", width: 348, height: 598, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/debris-highlord-class" }, { id: "void-highlord-vhl-debris-highlord-dhl-debris-highlord-class-female", classId: "void-highlord-vhl-debris-highlord-dhl", variantName: "Debris Highlord \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/6bff0810659291fa527db871.png", width: 332, height: 568, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/debris-highlord-class" }, { id: "void-highlord-vhl-debris-highlord-dhl-void-highlord-ioda-class-male", classId: "void-highlord-vhl-debris-highlord-dhl", variantName: "Void Highlord (IoDA) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/0f298209b73522383e2c82da.png", width: 337, height: 642, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/void-highlord-ioda-class" }, { id: "void-highlord-vhl-debris-highlord-dhl-void-highlord-ioda-class-female", classId: "void-highlord-vhl-debris-highlord-dhl", variantName: "Void Highlord (IoDA) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/c88268adffc0395d4208cace.png", width: 306, height: 593, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/void-highlord-ioda-class" }, { id: "warrior-beast-warrior-pumpkin-lord-warlord-warrior-class-male", classId: "warrior-beast-warrior-pumpkin-lord-warlord", variantName: "Warrior \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/350c5b824d3cd19417ce5935.png", width: 333, height: 563, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/warrior-class" }, { id: "chronomancer-cm-chronomancer-prime-cmp-chronomancer-prime-male", classId: "chronomancer-cm-chronomancer-prime-cmp", variantName: "Chronomancer Prime \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/63b2a05770f04dffeb6c8ac8.png", width: 409, height: 623, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chronomancer-prime" }, { id: "chronomancer-cm-chronomancer-prime-cmp-chronomancer-prime-female", classId: "chronomancer-cm-chronomancer-prime-cmp", variantName: "Chronomancer Prime \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/df734ee67e309229d4dd0736.png", width: 370, height: 609, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/chronomancer-prime" }, { id: "warrior-beast-warrior-pumpkin-lord-warlord-warrior-class-female", classId: "warrior-beast-warrior-pumpkin-lord-warlord", variantName: "Warrior \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/0ae1a5678c211d2e8a914e4f.png", width: 276, height: 536, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/warrior-class" }, { id: "phantom-phantasm-chronomancer-phcm-phantasm-chronomancer-male", classId: "phantom-phantasm-chronomancer-phcm", variantName: "Phantasm Chronomancer \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/213b432787f8085fbe555149.png", width: 305, height: 562, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/phantasm-chronomancer" }, { id: "phantom-phantasm-chronomancer-phcm-phantasm-chronomancer-female", classId: "phantom-phantasm-chronomancer-phcm", variantName: "Phantasm Chronomancer \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/aebe90af21a41b3d51c03e74.png", width: 308, height: 567, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/phantasm-chronomancer" }, { id: "calendar-timeless-chronomancer-timeless-chronomancer-class-merge-male", classId: "calendar-timeless-chronomancer", variantName: "Timeless Chronomancer (Merge) \xB7 Male", variantType: "class_skin", imagePath: "/images/aqw/class-art/edc8f67fabcc3044570d6c84.png", width: 397, height: 591, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge" }, { id: "calendar-timeless-chronomancer-timeless-chronomancer-class-merge-female", classId: "calendar-timeless-chronomancer", variantName: "Timeless Chronomancer (Merge) \xB7 Female", variantType: "class_skin", imagePath: "/images/aqw/class-art/5b4d9b331f47ce436ac1d30c.png", width: 373, height: 582, verificationStatus: "verified", usageStatus: "approved_noncommercial", source: "https://aqwwiki.wikidot.com/timeless-chronomancer-class-merge" }];
 
 // src/features/classes/ClassArtSelector.tsx
-import { jsx as jsx8, jsxs as jsxs7 } from "react/jsx-runtime";
+import { jsx as jsx9, jsxs as jsxs8 } from "react/jsx-runtime";
 function ClassArtSelector({ classId, image, name, onSelect }) {
   const arts = alternativeChoices(art_runtime_default, classId, name);
-  const [selected, setSelected] = useState5(0);
-  if (arts.length < 2) return /* @__PURE__ */ jsx8(ClassAsset, { id: image, name, eager: true });
+  const [selected, setSelected] = useState6(0);
+  if (arts.length < 2) return /* @__PURE__ */ jsx9(ClassAsset, { id: image, name, eager: true });
   const art = arts[selected % arts.length];
-  return /* @__PURE__ */ jsxs7("div", { className: "class-art-selector", children: [
-    /* @__PURE__ */ jsx8("div", { className: "class-art-switch", role: "group", "aria-label": "\u0110\u1ED5i Art", children: arts.map((a, i) => /* @__PURE__ */ jsx8("button", { type: "button", "aria-pressed": i === selected, onClick: () => {
+  return /* @__PURE__ */ jsxs8("div", { className: "class-art-selector", children: [
+    /* @__PURE__ */ jsx9("div", { className: "class-art-switch", role: "group", "aria-label": "\u0110\u1ED5i Art", children: arts.map((a, i) => /* @__PURE__ */ jsx9("button", { type: "button", "aria-pressed": i === selected, onClick: () => {
       setSelected(i);
       onSelect?.({ name: a.variantName, source: a.source });
     }, children: a.variantName }, a.id)) }),
-    /* @__PURE__ */ jsx8("div", { className: "class-art", children: /* @__PURE__ */ jsx8("img", { className: "class-character-art", src: art.imagePath, width: art.width, height: art.height, style: { maxWidth: art.width, maxHeight: art.height }, alt: `${art.variantName} \u2014 AdventureQuest Worlds`, decoding: "async" }, art.imagePath) }),
-    /* @__PURE__ */ jsx8("span", { className: "class-art-caption", children: classIdentityLabel(classId, art.variantName) })
+    /* @__PURE__ */ jsx9("div", { className: "class-art", children: /* @__PURE__ */ jsx9("img", { className: "class-character-art", src: art.imagePath, width: art.width, height: art.height, style: { maxWidth: art.width, maxHeight: art.height }, alt: `${art.variantName} \u2014 AdventureQuest Worlds`, decoding: "async" }, art.imagePath) }),
+    /* @__PURE__ */ jsx9("span", { className: "class-art-caption", children: classIdentityLabel(classId, art.variantName) })
   ] });
 }
 
 // src/features/ultra/BossOfficialTitle.tsx
 import { useEffect, useRef as useRef2 } from "react";
-import { jsx as jsx9, jsxs as jsxs8 } from "react/jsx-runtime";
+import { jsx as jsx10, jsxs as jsxs9 } from "react/jsx-runtime";
 function BossOfficialTitle({ name, eyebrow = "ULTRA BOSS" }) {
   const ref = useRef2(null);
   const text = name.toUpperCase();
@@ -12394,14 +12522,14 @@ function BossOfficialTitle({ name, eyebrow = "ULTRA BOSS" }) {
       observer?.disconnect();
     };
   }, [text]);
-  return /* @__PURE__ */ jsxs8("header", { className: "boss-official-heading", children: [
-    /* @__PURE__ */ jsx9("p", { className: "ultra-eyebrow", children: eyebrow }),
-    /* @__PURE__ */ jsx9("h1", { id: "boss-name", ref, className: "boss-display-title boss-title-fit", style: { "--title-length": text.length }, children: text })
+  return /* @__PURE__ */ jsxs9("header", { className: "boss-official-heading", children: [
+    /* @__PURE__ */ jsx10("p", { className: "ultra-eyebrow", children: eyebrow }),
+    /* @__PURE__ */ jsx10("h1", { id: "boss-name", ref, className: "boss-display-title boss-title-fit", style: { "--title-length": text.length }, children: text })
   ] });
 }
 
 // src/features/ultra/TeamAssignments.tsx
-import { useState as useState6 } from "react";
+import { useState as useState7 } from "react";
 import {
   Shield as Shield2,
   Heart,
@@ -58155,7 +58283,7 @@ var team_ui_default = {
 };
 
 // src/features/ultra/TeamAssignments.tsx
-import { Fragment, jsx as jsx10, jsxs as jsxs9 } from "react/jsx-runtime";
+import { Fragment, jsx as jsx11, jsxs as jsxs10 } from "react/jsx-runtime";
 var roles = [
   { pattern: /taunt/i, label: "Taunter", Icon: Crosshair2 },
   { pattern: /heal|hồi máu/i, label: "Healer", Icon: Heart },
@@ -58182,10 +58310,10 @@ function Enhancement({ value }) {
   if (parts.length === 4) slots = parts;
   else if (parts.length === 3 && /class\/helm/i.test(parts[1]))
     slots = [parts[0], parts[1], parts[1], parts[2]];
-  return /* @__PURE__ */ jsx10("div", { children: slots.length ? /* @__PURE__ */ jsx10("dl", { className: "loadout-slots", children: ["Weapon", "Class", "Helm", "Cape"].map((name, i) => /* @__PURE__ */ jsxs9("div", { children: [
-    /* @__PURE__ */ jsx10("dt", { children: name }),
-    /* @__PURE__ */ jsx10("dd", { children: slots[i] })
-  ] }, name)) }) : /* @__PURE__ */ jsx10("p", { children: value }) });
+  return /* @__PURE__ */ jsx11("div", { children: slots.length ? /* @__PURE__ */ jsx11("dl", { className: "loadout-slots", children: ["Weapon", "Class", "Helm", "Cape"].map((name, i) => /* @__PURE__ */ jsxs10("div", { children: [
+    /* @__PURE__ */ jsx11("dt", { children: name }),
+    /* @__PURE__ */ jsx11("dd", { children: slots[i] })
+  ] }, name)) }) : /* @__PURE__ */ jsx11("p", { children: value }) });
 }
 function AssignmentCard({
   assignment,
@@ -58193,7 +58321,7 @@ function AssignmentCard({
   onSelect
 }) {
   const choices = [assignment.primaryClass, ...assignment.alternativeClasses];
-  const [selected, setSelected] = useState6(0);
+  const [selected, setSelected] = useState7(0);
   const c = choices.find((c2) => c2.classId === selectedId) || choices[selected] || choices[0];
   const { Icon, label } = roleFor(c);
   const consumables = c.instructions.filter(
@@ -58202,41 +58330,41 @@ function AssignmentCard({
   const rotation = c.instructions.filter(
     (t) => !/^Potion(?:\/Scroll)?:/i.test(t)
   );
-  return /* @__PURE__ */ jsxs9("article", { className: "team-role-card", children: [
-    /* @__PURE__ */ jsx10("small", { children: c.classId === assignment.primaryClass.classId ? "CLASS CH\xCDNH" : "CLASS THAY TH\u1EBE" }),
-    /* @__PURE__ */ jsxs9("details", { children: [
-      /* @__PURE__ */ jsxs9("summary", { children: [
-        /* @__PURE__ */ jsx10(Icon, { size: 20, "aria-hidden": "true" }),
-        /* @__PURE__ */ jsxs9("span", { children: [
-          /* @__PURE__ */ jsx10("strong", { children: c.name }),
-          /* @__PURE__ */ jsxs9("small", { children: [
+  return /* @__PURE__ */ jsxs10("article", { className: "team-role-card", children: [
+    /* @__PURE__ */ jsx11("small", { children: c.classId === assignment.primaryClass.classId ? "CLASS CH\xCDNH" : "CLASS THAY TH\u1EBE" }),
+    /* @__PURE__ */ jsxs10("details", { children: [
+      /* @__PURE__ */ jsxs10("summary", { children: [
+        /* @__PURE__ */ jsx11(Icon, { size: 20, "aria-hidden": "true" }),
+        /* @__PURE__ */ jsxs10("span", { children: [
+          /* @__PURE__ */ jsx11("strong", { children: c.name }),
+          /* @__PURE__ */ jsxs10("small", { children: [
             c.abbreviation,
             " \xB7 ",
             label
           ] })
         ] }),
-        /* @__PURE__ */ jsx10(ChevronDown, { size: 16 })
+        /* @__PURE__ */ jsx11(ChevronDown, { size: 16 })
       ] }),
-      /* @__PURE__ */ jsxs9("div", { className: "team-loadout", children: [
-        /* @__PURE__ */ jsx10("h5", { children: "Enhancement" }),
-        c.enhancement.length ? c.enhancement.map((e, i) => /* @__PURE__ */ jsx10(Enhancement, { value: e }, i)) : /* @__PURE__ */ jsx10("p", { children: "\u0110ang c\u1EADp nh\u1EADt" }),
-        /* @__PURE__ */ jsx10("h5", { children: "Rotation & nhi\u1EC7m v\u1EE5 trong \u0111\u1ED9i" }),
-        rotation.length ? rotation.map((line, i) => /* @__PURE__ */ jsx10("p", { children: line.replace(/^→\s*/, "") }, i)) : /* @__PURE__ */ jsx10("p", { children: "\u0110ang c\u1EADp nh\u1EADt c\u1EA5u h\xECnh ri\xEAng cho l\u1EF1a ch\u1ECDn n\xE0y." }),
-        consumables.length > 0 && /* @__PURE__ */ jsxs9(Fragment, { children: [
-          /* @__PURE__ */ jsx10("h5", { children: "Consumables" }),
-          consumables.map((t) => /* @__PURE__ */ jsx10("p", { children: t.replace(/^Potion(?:\/Scroll)?:\s*/i, "") }, t))
+      /* @__PURE__ */ jsxs10("div", { className: "team-loadout", children: [
+        /* @__PURE__ */ jsx11("h5", { children: "Enhancement" }),
+        c.enhancement.length ? c.enhancement.map((e, i) => /* @__PURE__ */ jsx11(Enhancement, { value: e }, i)) : /* @__PURE__ */ jsx11("p", { children: "\u0110ang c\u1EADp nh\u1EADt" }),
+        /* @__PURE__ */ jsx11("h5", { children: "Rotation & nhi\u1EC7m v\u1EE5 trong \u0111\u1ED9i" }),
+        rotation.length ? rotation.map((line, i) => /* @__PURE__ */ jsx11("p", { children: line.replace(/^→\s*/, "") }, i)) : /* @__PURE__ */ jsx11("p", { children: "\u0110ang c\u1EADp nh\u1EADt c\u1EA5u h\xECnh ri\xEAng cho l\u1EF1a ch\u1ECDn n\xE0y." }),
+        consumables.length > 0 && /* @__PURE__ */ jsxs10(Fragment, { children: [
+          /* @__PURE__ */ jsx11("h5", { children: "Consumables" }),
+          consumables.map((t) => /* @__PURE__ */ jsx11("p", { children: t.replace(/^Potion(?:\/Scroll)?:\s*/i, "") }, t))
         ] })
       ] })
     ] }, c.classId),
-    choices.length > 1 && /* @__PURE__ */ jsxs9(
+    choices.length > 1 && /* @__PURE__ */ jsxs10(
       "div",
       {
         className: "team-slot-alternatives",
         role: "group",
         "aria-label": `Class thay th\u1EBF ${assignment.id}`,
         children: [
-          /* @__PURE__ */ jsx10("span", { children: "Thay th\u1EBF:" }),
-          choices.map((option, i) => /* @__PURE__ */ jsxs9(
+          /* @__PURE__ */ jsx11("span", { children: "Thay th\u1EBF:" }),
+          choices.map((option, i) => /* @__PURE__ */ jsxs10(
             "button",
             {
               type: "button",
@@ -58284,7 +58412,7 @@ function assignmentsFor(slug, teamId) {
 }
 
 // src/features/challenges/ChallengeCodex.tsx
-import { useEffect as useEffect6, useState as useState17 } from "react";
+import { useEffect as useEffect6, useState as useState18 } from "react";
 import { ArrowLeft, Check as Check2, MapPin as MapPin3, ChevronRight as ChevronRight4, Swords as Swords9, ScrollText } from "lucide-react";
 
 // src/content/challenges/catalog.json
@@ -68985,7 +69113,7 @@ var aqw_assets_default = [
 ];
 
 // src/features/ultra/Asset.tsx
-import { useState as useState7, useEffect as useEffect2 } from "react";
+import { useState as useState8, useEffect as useEffect2 } from "react";
 import { ImageOff } from "lucide-react";
 
 // src/content/ultra/assets.json
@@ -69183,7 +69311,7 @@ var assets_default2 = [
 ];
 
 // src/features/ultra/Asset.tsx
-import { Fragment as Fragment2, jsx as jsx11, jsxs as jsxs10 } from "react/jsx-runtime";
+import { Fragment as Fragment2, jsx as jsx12, jsxs as jsxs11 } from "react/jsx-runtime";
 var findAsset = (id) => [...assets_default2, ...assets_default].find((a) => a.id === id);
 function Asset({
   id,
@@ -69202,25 +69330,25 @@ function Asset({
     name: verified.entityName,
     localPath: verified.imagePath
   } : registered;
-  const [failed, setFailed] = useState7(false);
+  const [failed, setFailed] = useState8(false);
   useEffect2(() => setFailed(false), [id, asset?.localPath]);
   if (!asset || asset.usageStatus !== "approved" || !asset.localPath || failed)
-    return /* @__PURE__ */ jsxs10(
+    return /* @__PURE__ */ jsxs11(
       "div",
       {
         className: `ultra-asset-placeholder ${compact ? "compact" : ""}`,
         role: "img",
         "aria-label": `${asset?.name || label || "\u1EA2nh game"}: asset c\u1EA7n b\u1ED5 sung`,
         children: [
-          /* @__PURE__ */ jsx11(ImageOff, { size: compact ? 18 : 32, "aria-hidden": "true" }),
-          !compact && /* @__PURE__ */ jsxs10(Fragment2, { children: [
-            /* @__PURE__ */ jsx11("strong", { children: asset?.name || label || "\u1EA2nh game" }),
-            /* @__PURE__ */ jsx11("span", { children: "Asset c\u1EA7n b\u1ED5 sung" })
+          /* @__PURE__ */ jsx12(ImageOff, { size: compact ? 18 : 32, "aria-hidden": "true" }),
+          !compact && /* @__PURE__ */ jsxs11(Fragment2, { children: [
+            /* @__PURE__ */ jsx12("strong", { children: asset?.name || label || "\u1EA2nh game" }),
+            /* @__PURE__ */ jsx12("span", { children: "Asset c\u1EA7n b\u1ED5 sung" })
           ] })
         ]
       }
     );
-  return /* @__PURE__ */ jsx11(
+  return /* @__PURE__ */ jsx12(
     "img",
     {
       className: `ultra-game-art ${compact ? "compact" : ""}`,
@@ -69248,9 +69376,9 @@ import {
   HeartPulse as HeartPulse3,
   Shield as Shield8,
   Swords as Swords7,
-  Zap
+  Zap as Zap2
 } from "lucide-react";
-import { useId as useId5, useState as useState15 } from "react";
+import { useId as useId5, useState as useState16 } from "react";
 
 // src/content/ultra/inspection.json
 var inspection_default = {
@@ -70478,7 +70606,7 @@ import {
   Heart as Heart2,
   Crosshair as Crosshair7,
   Shield as Shield6,
-  Clock,
+  Clock as Clock2,
   MapPin as MapPin2
 } from "lucide-react";
 
@@ -78597,7 +78725,7 @@ var details_default = {
 };
 
 // src/features/Interactions.tsx
-import { useState as useState8 } from "react";
+import { useState as useState9 } from "react";
 import { Bookmark, Check, Copy } from "lucide-react";
 
 // src/lib/storage.ts
@@ -78633,12 +78761,12 @@ function readStoredValue(key2, fallback, validate) {
 }
 
 // src/features/Interactions.tsx
-import { Fragment as Fragment3, jsx as jsx12, jsxs as jsxs11 } from "react/jsx-runtime";
+import { Fragment as Fragment3, jsx as jsx13, jsxs as jsxs12 } from "react/jsx-runtime";
 function CopyCommand({ command }) {
-  const [message, setMessage] = useState8("");
-  return /* @__PURE__ */ jsxs11("div", { className: "command", children: [
-    /* @__PURE__ */ jsx12("code", { children: command }),
-    /* @__PURE__ */ jsxs11(
+  const [message, setMessage] = useState9("");
+  return /* @__PURE__ */ jsxs12("div", { className: "command", children: [
+    /* @__PURE__ */ jsx13("code", { children: command }),
+    /* @__PURE__ */ jsxs12(
       "button",
       {
         onClick: async () => {
@@ -78652,25 +78780,25 @@ function CopyCommand({ command }) {
           }
         },
         children: [
-          message === "\u0110\xE3 sao ch\xE9p" ? /* @__PURE__ */ jsx12(Check, { size: 18 }) : /* @__PURE__ */ jsx12(Copy, { size: 18 }),
+          message === "\u0110\xE3 sao ch\xE9p" ? /* @__PURE__ */ jsx13(Check, { size: 18 }) : /* @__PURE__ */ jsx13(Copy, { size: 18 }),
           " ",
           "Sao ch\xE9p"
         ]
       }
     ),
-    /* @__PURE__ */ jsx12("span", { className: "copy-status", role: "status", children: message })
+    /* @__PURE__ */ jsx13("span", { className: "copy-status", role: "status", children: message })
   ] });
 }
 
 // src/features/RichContent.tsx
-import { Fragment as Fragment4, jsx as jsx13, jsxs as jsxs12 } from "react/jsx-runtime";
+import { Fragment as Fragment4, jsx as jsx14, jsxs as jsxs13 } from "react/jsx-runtime";
 function Runs({ runs }) {
-  return /* @__PURE__ */ jsx13(Fragment4, { children: runs.map((run, i) => {
-    let text = /* @__PURE__ */ jsx13(Fragment4, { children: run.text });
-    if (run.bold) text = /* @__PURE__ */ jsx13("strong", { children: text });
-    if (run.italic) text = /* @__PURE__ */ jsx13("em", { children: text });
-    if (run.sup) text = /* @__PURE__ */ jsx13("sup", { children: text });
-    return run.href && !/^https?:/.test(run.href) ? /* @__PURE__ */ jsx13(
+  return /* @__PURE__ */ jsx14(Fragment4, { children: runs.map((run, i) => {
+    let text = /* @__PURE__ */ jsx14(Fragment4, { children: run.text });
+    if (run.bold) text = /* @__PURE__ */ jsx14("strong", { children: text });
+    if (run.italic) text = /* @__PURE__ */ jsx14("em", { children: text });
+    if (run.sup) text = /* @__PURE__ */ jsx14("sup", { children: text });
+    return run.href && !/^https?:/.test(run.href) ? /* @__PURE__ */ jsx14(
       "a",
       {
         href: run.href,
@@ -78678,7 +78806,7 @@ function Runs({ runs }) {
         children: text
       },
       i
-    ) : /* @__PURE__ */ jsx13("span", { children: text }, i);
+    ) : /* @__PURE__ */ jsx14("span", { children: text }, i);
   }) });
 }
 var knownCommands = /* @__PURE__ */ new Set([
@@ -78706,12 +78834,12 @@ function RichContent({
       groups[groups.length - 1].push(block);
     }
     if (groups.length > 1)
-      return /* @__PURE__ */ jsx13("div", { className: "guide-subtopics", children: groups.map((group, index) => /* @__PURE__ */ jsx13(
+      return /* @__PURE__ */ jsx14("div", { className: "guide-subtopics", children: groups.map((group, index) => /* @__PURE__ */ jsx14(
         "section",
         {
           className: "guide-subtopic",
           "aria-label": `Chi ti\u1EBFt ${index + 1}`,
-          children: /* @__PURE__ */ jsx13(RichContent, { blocks: group, grouped: true, parentId })
+          children: /* @__PURE__ */ jsx14(RichContent, { blocks: group, grouped: true, parentId })
         },
         group[0].id
       )) });
@@ -78721,7 +78849,7 @@ function RichContent({
     const block = blocks[i];
     if (block.type === "table") {
       rendered.push(
-        /* @__PURE__ */ jsx13(
+        /* @__PURE__ */ jsx14(
           "div",
           {
             id: block.id,
@@ -78729,9 +78857,9 @@ function RichContent({
             role: "region",
             "aria-label": "B\u1EA3ng h\u01B0\u1EDBng d\u1EABn",
             tabIndex: 0,
-            children: /* @__PURE__ */ jsxs12("table", { children: [
-              /* @__PURE__ */ jsx13("caption", { className: "sr-only", children: "B\u1EA3ng d\u1EEF li\u1EC7u trong h\u01B0\u1EDBng d\u1EABn" }),
-              /* @__PURE__ */ jsx13("tbody", { children: block.rows.map((row, ri) => /* @__PURE__ */ jsx13("tr", { children: row.cells.map((cell, ci) => /* @__PURE__ */ jsx13("td", { colSpan: cell.colSpan, rowSpan: cell.rowSpan, children: /* @__PURE__ */ jsx13(RichContent, { blocks: cell.blocks, depth: depth + 1 }) }, ci)) }, ri)) })
+            children: /* @__PURE__ */ jsxs13("table", { children: [
+              /* @__PURE__ */ jsx14("caption", { className: "sr-only", children: "B\u1EA3ng d\u1EEF li\u1EC7u trong h\u01B0\u1EDBng d\u1EABn" }),
+              /* @__PURE__ */ jsx14("tbody", { children: block.rows.map((row, ri) => /* @__PURE__ */ jsx14("tr", { children: row.cells.map((cell, ci) => /* @__PURE__ */ jsx14("td", { colSpan: cell.colSpan, rowSpan: cell.rowSpan, children: /* @__PURE__ */ jsx14(RichContent, { blocks: cell.blocks, depth: depth + 1 }) }, ci)) }, ri)) })
             ] })
           },
           block.id
@@ -78748,14 +78876,14 @@ function RichContent({
         i++;
       }
       rendered.push(
-        /* @__PURE__ */ jsx13("ul", { className: "source-list", children: items.map((item) => /* @__PURE__ */ jsx13(
+        /* @__PURE__ */ jsx14("ul", { className: "source-list", children: items.map((item) => /* @__PURE__ */ jsx14(
           "li",
           {
             id: item.id,
             style: {
               marginInlineStart: Math.min(item.listDepth || 0, 4) * 16
             },
-            children: /* @__PURE__ */ jsx13(Runs, { runs: item.runs })
+            children: /* @__PURE__ */ jsx14(Runs, { runs: item.runs })
           },
           item.id
         )) }, block.id)
@@ -78766,24 +78894,24 @@ function RichContent({
     if (block.type === "heading") {
       const Heading = plain.length > 140 ? "p" : "h3";
       rendered.push(
-        /* @__PURE__ */ jsx13(Heading, { id: block.id, children: /* @__PURE__ */ jsx13(Runs, { runs: block.runs }) }, block.id)
+        /* @__PURE__ */ jsx14(Heading, { id: block.id, children: /* @__PURE__ */ jsx14(Runs, { runs: block.runs }) }, block.id)
       );
     } else {
       rendered.push(
-        /* @__PURE__ */ jsx13("p", { id: block.id, children: /* @__PURE__ */ jsx13(Runs, { runs: block.runs }) }, block.id)
+        /* @__PURE__ */ jsx14("p", { id: block.id, children: /* @__PURE__ */ jsx14(Runs, { runs: block.runs }) }, block.id)
       );
       const command = knownCommands.has(plain) ? plain : plain.split(/\s+/)[0];
       if (depth === 0 && knownCommands.has(command))
         rendered.push(
-          /* @__PURE__ */ jsx13(CopyCommand, { command }, block.id + "-copy")
+          /* @__PURE__ */ jsx14(CopyCommand, { command }, block.id + "-copy")
         );
     }
   }
-  return /* @__PURE__ */ jsx13("div", { className: "rich-content", children: rendered });
+  return /* @__PURE__ */ jsx14("div", { className: "rich-content", children: rendered });
 }
 
 // src/features/ultra/TacticalBoard.tsx
-import { useState as useState13 } from "react";
+import { useState as useState14 } from "react";
 import { Info, Crosshair as Crosshair5, MapPin } from "lucide-react";
 
 // src/content/ultra/darkon-phases.json
@@ -80573,7 +80701,7 @@ function encounterForPhase(encounter, phase, attacks) {
 
 // src/features/ultra/PhaseTransitionIndicator.tsx
 import { Clock3, HeartPulse as HeartPulse2, ChevronRight } from "lucide-react";
-import { Fragment as Fragment5, jsx as jsx14, jsxs as jsxs13 } from "react/jsx-runtime";
+import { Fragment as Fragment5, jsx as jsx15, jsxs as jsxs14 } from "react/jsx-runtime";
 var indicators = {
   overture: { from: 100, to: 70, next: "Recitative" },
   recitative: { from: 70, to: 20, next: "Aria" }
@@ -80583,65 +80711,65 @@ function PhaseTransitionIndicator({
   id
 }) {
   const hp = indicators[phase.id];
-  return /* @__PURE__ */ jsxs13(
+  return /* @__PURE__ */ jsxs14(
     "div",
     {
       className: "boss-phase-transition phase-transition-status",
       id,
       "data-phase-indicator": phase.id,
       children: [
-        /* @__PURE__ */ jsxs13("div", { className: "phase-status-heading", children: [
-          /* @__PURE__ */ jsx14("strong", { children: phase.name }),
-          /* @__PURE__ */ jsx14("small", { children: "Minh h\u1ECDa \xB7 ch\u1ECDn phase th\u1EE7 c\xF4ng" })
+        /* @__PURE__ */ jsxs14("div", { className: "phase-status-heading", children: [
+          /* @__PURE__ */ jsx15("strong", { children: phase.name }),
+          /* @__PURE__ */ jsx15("small", { children: "Minh h\u1ECDa \xB7 ch\u1ECDn phase th\u1EE7 c\xF4ng" })
         ] }),
-        hp ? /* @__PURE__ */ jsxs13(Fragment5, { children: [
-          /* @__PURE__ */ jsxs13(
+        hp ? /* @__PURE__ */ jsxs14(Fragment5, { children: [
+          /* @__PURE__ */ jsxs14(
             "div",
             {
               className: "phase-hp-track",
               "aria-label": `${hp.from}% \u0111\u1EBFn ${hp.to}% HP`,
               children: [
-                /* @__PURE__ */ jsxs13("span", { children: [
+                /* @__PURE__ */ jsxs14("span", { children: [
                   hp.from,
                   "%"
                 ] }),
-                /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsx14("i", { style: { width: hp.to + "%" }, "data-hp-marker": hp.to }) }),
-                /* @__PURE__ */ jsxs13("b", { children: [
+                /* @__PURE__ */ jsx15("div", { children: /* @__PURE__ */ jsx15("i", { style: { width: hp.to + "%" }, "data-hp-marker": hp.to }) }),
+                /* @__PURE__ */ jsxs14("b", { children: [
                   hp.to,
                   "%"
                 ] })
               ]
             }
           ),
-          /* @__PURE__ */ jsxs13("p", { children: [
+          /* @__PURE__ */ jsxs14("p", { children: [
             hp.to,
             "% HP ",
-            /* @__PURE__ */ jsx14(ChevronRight, { size: 14 }),
+            /* @__PURE__ */ jsx15(ChevronRight, { size: 14 }),
             hp.next
           ] })
-        ] }) : phase.id === "madness" ? /* @__PURE__ */ jsxs13(Fragment5, { children: [
-          /* @__PURE__ */ jsxs13("div", { className: "phase-aria-event", children: [
-            /* @__PURE__ */ jsx14("span", { children: "20% HP" }),
-            /* @__PURE__ */ jsx14(ChevronRight, { size: 16 }),
-            /* @__PURE__ */ jsx14(HeartPulse2, { size: 22 }),
-            /* @__PURE__ */ jsx14("strong", { children: "ARIA" }),
-            /* @__PURE__ */ jsx14(ChevronRight, { size: 16 }),
-            /* @__PURE__ */ jsx14("b", { children: "90% HP" })
+        ] }) : phase.id === "madness" ? /* @__PURE__ */ jsxs14(Fragment5, { children: [
+          /* @__PURE__ */ jsxs14("div", { className: "phase-aria-event", children: [
+            /* @__PURE__ */ jsx15("span", { children: "20% HP" }),
+            /* @__PURE__ */ jsx15(ChevronRight, { size: 16 }),
+            /* @__PURE__ */ jsx15(HeartPulse2, { size: 22 }),
+            /* @__PURE__ */ jsx15("strong", { children: "ARIA" }),
+            /* @__PURE__ */ jsx15(ChevronRight, { size: 16 }),
+            /* @__PURE__ */ jsx15("b", { children: "90% HP" })
           ] }),
-          /* @__PURE__ */ jsx14("p", { children: "S\u1ED1ng s\xF3t trong Aria \u2192 c\xE1c buff ch\u1EE7 ch\u1ED1t h\u1EBFt h\u1EA1n \u2192 Rush" })
-        ] }) : /* @__PURE__ */ jsxs13(Fragment5, { children: [
-          /* @__PURE__ */ jsxs13("div", { className: "phase-aria-event", children: [
-            /* @__PURE__ */ jsx14(Clock3, { size: 22 }),
-            /* @__PURE__ */ jsx14("span", { children: "Aria Buffs Expire" }),
-            /* @__PURE__ */ jsx14(ChevronRight, { size: 16 }),
-            /* @__PURE__ */ jsx14("strong", { children: "RUSH" })
+          /* @__PURE__ */ jsx15("p", { children: "S\u1ED1ng s\xF3t trong Aria \u2192 c\xE1c buff ch\u1EE7 ch\u1ED1t h\u1EBFt h\u1EA1n \u2192 Rush" })
+        ] }) : /* @__PURE__ */ jsxs14(Fragment5, { children: [
+          /* @__PURE__ */ jsxs14("div", { className: "phase-aria-event", children: [
+            /* @__PURE__ */ jsx15(Clock3, { size: 22 }),
+            /* @__PURE__ */ jsx15("span", { children: "Aria Buffs Expire" }),
+            /* @__PURE__ */ jsx15(ChevronRight, { size: 16 }),
+            /* @__PURE__ */ jsx15("strong", { children: "RUSH" })
           ] }),
-          /* @__PURE__ */ jsx14("p", { children: "K\u1EBFt th\xFAc tr\u1EADn tr\u01B0\u1EDBc Curtain Call \xB7 kh\xF4ng c\xF3 ng\u01B0\u1EE1ng HP ri\xEAng" })
+          /* @__PURE__ */ jsx15("p", { children: "K\u1EBFt th\xFAc tr\u1EADn tr\u01B0\u1EDBc Curtain Call \xB7 kh\xF4ng c\xF3 ng\u01B0\u1EE1ng HP ri\xEAng" })
         ] }),
-        /* @__PURE__ */ jsxs13("details", { children: [
-          /* @__PURE__ */ jsx14("summary", { children: "\u0110i\u1EC1u ki\u1EC7n chuy\u1EC3n phase" }),
-          /* @__PURE__ */ jsx14("p", { children: phase.trigger }),
-          /* @__PURE__ */ jsx14("p", { children: phase.exitCondition })
+        /* @__PURE__ */ jsxs14("details", { children: [
+          /* @__PURE__ */ jsx15("summary", { children: "\u0110i\u1EC1u ki\u1EC7n chuy\u1EC3n phase" }),
+          /* @__PURE__ */ jsx15("p", { children: phase.trigger }),
+          /* @__PURE__ */ jsx15("p", { children: phase.exitCondition })
         ] })
       ]
     }
@@ -80649,7 +80777,7 @@ function PhaseTransitionIndicator({
 }
 
 // src/features/ultra/DarkonTacticalInspection.tsx
-import { useState as useState10 } from "react";
+import { useState as useState11 } from "react";
 import {
   Compass as Compass2,
   Crosshair as Crosshair3,
@@ -84223,7 +84351,7 @@ var ultraBosses = [...bosses_default, ...recovery_default.bosses].map((b) => ({ 
 var findBoss = (slug) => ultraBosses.find((boss) => boss.slug === slug);
 
 // src/features/classes/useClassBody.ts
-import { useEffect as useEffect3, useState as useState9 } from "react";
+import { useEffect as useEffect3, useState as useState10 } from "react";
 
 // src/lib/imported.ts
 function initialImportedBody() {
@@ -84239,12 +84367,12 @@ function initialImportedBody() {
 
 // src/features/classes/useClassBody.ts
 function useClassBody(profile) {
-  const [body, setBody] = useState9(() => {
+  const [body, setBody] = useState10(() => {
     const seed = initialImportedBody();
     return isClassBody(seed, profile.id) ? seed : null;
   });
-  const [error, setError] = useState9("");
-  const [attempt, setAttempt] = useState9(0);
+  const [error, setError] = useState10("");
+  const [attempt, setAttempt] = useState10(0);
   useEffect3(() => {
     if (body) return;
     const controller = new AbortController();
@@ -84265,7 +84393,7 @@ function useClassBody(profile) {
 }
 
 // src/features/ultra/DarkonTacticalInspection.tsx
-import { Fragment as Fragment6, jsx as jsx15, jsxs as jsxs14 } from "react/jsx-runtime";
+import { Fragment as Fragment6, jsx as jsx16, jsxs as jsxs15 } from "react/jsx-runtime";
 var normalized = (s) => s.toLowerCase().replace(/\([^)]*\)/g, "").replace(/[^a-z0-9]/g, "");
 function profileForTacticalClass(name) {
   return classProfiles.find(
@@ -84279,9 +84407,9 @@ function ResolvedRotation({
   sequence
 }) {
   const { body } = useClassBody(profile);
-  const [selected, setSelected] = useState10();
-  return /* @__PURE__ */ jsxs14(Fragment6, { children: [
-    /* @__PURE__ */ jsx15(
+  const [selected, setSelected] = useState11();
+  return /* @__PURE__ */ jsxs15(Fragment6, { children: [
+    /* @__PURE__ */ jsx16(
       "ol",
       {
         className: "tactical-rotation-sequence",
@@ -84291,9 +84419,9 @@ function ResolvedRotation({
             (s) => !s.passive && !s.quarantined && s.skillNumber === Number(n)
           ) || [];
           const skill = matches.length === 1 ? matches[0] : null;
-          return /* @__PURE__ */ jsxs14("li", { children: [
-            i > 0 && /* @__PURE__ */ jsx15(ChevronRight2, { size: 14, "aria-hidden": "true" }),
-            /* @__PURE__ */ jsxs14(
+          return /* @__PURE__ */ jsxs15("li", { children: [
+            i > 0 && /* @__PURE__ */ jsx16(ChevronRight2, { size: 14, "aria-hidden": "true" }),
+            /* @__PURE__ */ jsxs15(
               "button",
               {
                 type: "button",
@@ -84301,8 +84429,8 @@ function ResolvedRotation({
                 "aria-label": skill ? `Xem ${skill.name}` : `Slot ${n}: ch\u01B0a \u0111\u1ED1i chi\u1EBFu icon`,
                 onClick: () => skill && setSelected(skill),
                 children: [
-                  skill ? /* @__PURE__ */ jsx15(SkillIcon, { skill }, skill.id) : /* @__PURE__ */ jsx15("span", { className: "tactical-slot-pending", children: n }),
-                  /* @__PURE__ */ jsx15("span", { children: n })
+                  skill ? /* @__PURE__ */ jsx16(SkillIcon, { skill }, skill.id) : /* @__PURE__ */ jsx16("span", { className: "tactical-slot-pending", children: n }),
+                  /* @__PURE__ */ jsx16("span", { children: n })
                 ]
               }
             )
@@ -84310,13 +84438,13 @@ function ResolvedRotation({
         })
       }
     ),
-    selected && /* @__PURE__ */ jsxs14("div", { className: "tactical-skill-preview", children: [
-      /* @__PURE__ */ jsx15("strong", { children: selected.name }),
-      /* @__PURE__ */ jsx15("p", { children: selected.description })
+    selected && /* @__PURE__ */ jsxs15("div", { className: "tactical-skill-preview", children: [
+      /* @__PURE__ */ jsx16("strong", { children: selected.name }),
+      /* @__PURE__ */ jsx16("p", { children: selected.description })
     ] }),
-    /* @__PURE__ */ jsxs14("a", { href: "/class/" + profile.slug, className: "tactical-source", children: [
+    /* @__PURE__ */ jsxs15("a", { href: "/class/" + profile.slug, className: "tactical-source", children: [
       "M\u1EDF Class Codex ",
-      /* @__PURE__ */ jsx15(ArrowUpRight, { size: 13 })
+      /* @__PURE__ */ jsx16(ArrowUpRight, { size: 13 })
     ] })
   ] });
 }
@@ -84329,39 +84457,39 @@ function Rotation({
     (r) => r.teamIds.includes(teamId) && r.className.split(" / ").some((n) => normalized(n) === normalized(choice.name))
   );
   const profile = profileForTacticalClass(choice.name);
-  return /* @__PURE__ */ jsxs14(
+  return /* @__PURE__ */ jsxs15(
     "section",
     {
       className: "tactical-class-inspection",
       "aria-label": "Class Rotation theo phase",
       children: [
-        /* @__PURE__ */ jsxs14("header", { children: [
-          /* @__PURE__ */ jsxs14("div", { children: [
-            /* @__PURE__ */ jsxs14("span", { children: [
+        /* @__PURE__ */ jsxs15("header", { children: [
+          /* @__PURE__ */ jsxs15("div", { children: [
+            /* @__PURE__ */ jsxs15("span", { children: [
               "Nhi\u1EC7m v\u1EE5 \xB7 ",
               phase.name
             ] }),
-            /* @__PURE__ */ jsx15("h4", { children: choice.name })
+            /* @__PURE__ */ jsx16("h4", { children: choice.name })
           ] }),
-          /* @__PURE__ */ jsx15(Swords3, { size: 20 })
+          /* @__PURE__ */ jsx16(Swords3, { size: 20 })
         ] }),
-        rotation ? /* @__PURE__ */ jsxs14(Fragment6, { children: [
-          /* @__PURE__ */ jsx15("p", { className: "tactical-assignment", children: rotation.notes }),
-          rotation.sequence.length ? profile ? /* @__PURE__ */ jsx15(
+        rotation ? /* @__PURE__ */ jsxs15(Fragment6, { children: [
+          /* @__PURE__ */ jsx16("p", { className: "tactical-assignment", children: rotation.notes }),
+          rotation.sequence.length ? profile ? /* @__PURE__ */ jsx16(
             ResolvedRotation,
             {
               profile,
               sequence: rotation.sequence
             },
             choice.classId + phase.id
-          ) : /* @__PURE__ */ jsxs14(Fragment6, { children: [
-            /* @__PURE__ */ jsx15("div", { className: "tactical-rotation-fallback", children: rotation.sequence.join(" \u2192 ") }),
-            /* @__PURE__ */ jsx15("p", { className: "tactical-muted", children: "Ch\u01B0a c\xF3 h\u1ED3 s\u01A1 Class t\u01B0\u01A1ng \u1EE9ng \u0111\u1EC3 l\u1EA5y icon; gi\u1EEF slot theo h\u01B0\u1EDBng d\u1EABn." })
-          ] }) : /* @__PURE__ */ jsx15("p", { className: "tactical-muted", children: "Canh th\u1EDDi \u0111i\u1EC3m theo nhi\u1EC7m v\u1EE5; ch\u01B0a c\xF3 chu\u1ED7i ph\xEDm ri\xEAng cho phase n\xE0y." })
-        ] }) : /* @__PURE__ */ jsx15("p", { children: "Ch\u01B0a c\xF3 rotation ri\xEAng cho l\u1EF1a ch\u1ECDn n\xE0y trong phase hi\u1EC7n t\u1EA1i." }),
-        choice.enhancement.length > 0 && /* @__PURE__ */ jsxs14("div", { className: "tactical-enhancement", children: [
-          /* @__PURE__ */ jsx15("strong", { children: "Enhancement" }),
-          choice.enhancement.map((e) => /* @__PURE__ */ jsx15("p", { children: e }, e))
+          ) : /* @__PURE__ */ jsxs15(Fragment6, { children: [
+            /* @__PURE__ */ jsx16("div", { className: "tactical-rotation-fallback", children: rotation.sequence.join(" \u2192 ") }),
+            /* @__PURE__ */ jsx16("p", { className: "tactical-muted", children: "Ch\u01B0a c\xF3 h\u1ED3 s\u01A1 Class t\u01B0\u01A1ng \u1EE9ng \u0111\u1EC3 l\u1EA5y icon; gi\u1EEF slot theo h\u01B0\u1EDBng d\u1EABn." })
+          ] }) : /* @__PURE__ */ jsx16("p", { className: "tactical-muted", children: "Canh th\u1EDDi \u0111i\u1EC3m theo nhi\u1EC7m v\u1EE5; ch\u01B0a c\xF3 chu\u1ED7i ph\xEDm ri\xEAng cho phase n\xE0y." })
+        ] }) : /* @__PURE__ */ jsx16("p", { children: "Ch\u01B0a c\xF3 rotation ri\xEAng cho l\u1EF1a ch\u1ECDn n\xE0y trong phase hi\u1EC7n t\u1EA1i." }),
+        choice.enhancement.length > 0 && /* @__PURE__ */ jsxs15("div", { className: "tactical-enhancement", children: [
+          /* @__PURE__ */ jsx16("strong", { children: "Enhancement" }),
+          choice.enhancement.map((e) => /* @__PURE__ */ jsx16("p", { children: e }, e))
         ] })
       ]
     }
@@ -84369,10 +84497,10 @@ function Rotation({
 }
 function DarkonTacticalInspection({ phase }) {
   const boss = findBoss("darkon-the-conductor");
-  const [teamId, setTeamId] = useState10(boss.recommendedTeams[0].id);
-  const [slot, setSlot] = useState10(0);
-  const [alternatives, setAlternatives] = useState10({});
-  const [tauntMethod, setTauntMethod] = useState10("docs");
+  const [teamId, setTeamId] = useState11(boss.recommendedTeams[0].id);
+  const [slot, setSlot] = useState11(0);
+  const [alternatives, setAlternatives] = useState11({});
+  const [tauntMethod, setTauntMethod] = useState11("docs");
   const team = boss.recommendedTeams.find((t) => t.id === teamId) || boss.recommendedTeams[0];
   const assignments = assignmentsFor(boss.slug, team.id);
   const activeSlot = assignments[Math.min(slot, assignments.length - 1)];
@@ -84382,32 +84510,32 @@ function DarkonTacticalInspection({ phase }) {
   const active = activeSlot && selected(activeSlot);
   const tauntNames = team.id.endsWith("-4") ? [assignments[2], assignments[3]].map((a) => selected(a).name) : [assignments[1], assignments[2]].map((a) => selected(a).name);
   const risk = phase.id === "overture" ? "Stun l\u1EB7p v\xE0 Do Dusk" : phase.id === "recitative" ? "Grown \u2192 Harvested" : phase.id === "madness" ? "Heal In \u221280% v\xE0 ng\u01B0\u1EDDi Taunt t\u1EED vong" : "The Last Symphony v\xE0 Mana Cost t\xEDch l\u0169y";
-  return /* @__PURE__ */ jsxs14(
+  return /* @__PURE__ */ jsxs15(
     "section",
     {
       className: "darkon-tactical-inspection",
       "aria-labelledby": "darkon-tactical-title",
       "data-ui": "darkon-tactical",
       children: [
-        /* @__PURE__ */ jsxs14("header", { className: "tactical-heading", children: [
-          /* @__PURE__ */ jsx15("h3", { id: "darkon-tactical-title", children: "Tactical Inspection" }),
-          /* @__PURE__ */ jsx15("span", { children: phase.name === phase.officialState ? phase.name : `${phase.name} \xB7 ${phase.officialState}` })
+        /* @__PURE__ */ jsxs15("header", { className: "tactical-heading", children: [
+          /* @__PURE__ */ jsx16("h3", { id: "darkon-tactical-title", children: "Tactical Inspection" }),
+          /* @__PURE__ */ jsx16("span", { children: phase.name === phase.officialState ? phase.name : `${phase.name} \xB7 ${phase.officialState}` })
         ] }),
-        /* @__PURE__ */ jsxs14("div", { className: "tactical-layout", children: [
-          /* @__PURE__ */ jsxs14("div", { className: "tactical-overview", children: [
-            /* @__PURE__ */ jsxs14("h4", { children: [
-              /* @__PURE__ */ jsx15(Compass2, { size: 18 }),
+        /* @__PURE__ */ jsxs15("div", { className: "tactical-layout", children: [
+          /* @__PURE__ */ jsxs15("div", { className: "tactical-overview", children: [
+            /* @__PURE__ */ jsxs15("h4", { children: [
+              /* @__PURE__ */ jsx16(Compass2, { size: 18 }),
               "Tactical Overview"
             ] }),
-            /* @__PURE__ */ jsxs14("div", { className: "tactical-objective", children: [
-              /* @__PURE__ */ jsx15("strong", { children: "Phase Objective" }),
-              /* @__PURE__ */ jsx15("p", { children: phase.objective })
+            /* @__PURE__ */ jsxs15("div", { className: "tactical-objective", children: [
+              /* @__PURE__ */ jsx16("strong", { children: "Phase Objective" }),
+              /* @__PURE__ */ jsx16("p", { children: phase.objective })
             ] }),
-            /* @__PURE__ */ jsxs14("section", { className: "tactical-focus", "aria-label": "Focus / Taunt", children: [
-              /* @__PURE__ */ jsxs14("header", { children: [
-                /* @__PURE__ */ jsx15("h5", { children: "Focus / Taunt" }),
-                /* @__PURE__ */ jsxs14("div", { role: "group", "aria-label": "Ph\u01B0\u01A1ng \xE1n Taunt", children: [
-                  /* @__PURE__ */ jsx15(
+            /* @__PURE__ */ jsxs15("section", { className: "tactical-focus", "aria-label": "Focus / Taunt", children: [
+              /* @__PURE__ */ jsxs15("header", { children: [
+                /* @__PURE__ */ jsx16("h5", { children: "Focus / Taunt" }),
+                /* @__PURE__ */ jsxs15("div", { role: "group", "aria-label": "Ph\u01B0\u01A1ng \xE1n Taunt", children: [
+                  /* @__PURE__ */ jsx16(
                     "button",
                     {
                       "aria-pressed": tauntMethod === "docs",
@@ -84415,7 +84543,7 @@ function DarkonTacticalInspection({ phase }) {
                       children: "2 ng\u01B0\u1EDDi ch\xEDnh"
                     }
                   ),
-                  /* @__PURE__ */ jsx15(
+                  /* @__PURE__ */ jsx16(
                     "button",
                     {
                       "aria-pressed": tauntMethod === "site",
@@ -84425,69 +84553,69 @@ function DarkonTacticalInspection({ phase }) {
                   )
                 ] })
               ] }),
-              /* @__PURE__ */ jsxs14("div", { className: "tactical-focus-row", children: [
-                /* @__PURE__ */ jsx15(Crosshair3, { size: 18 }),
-                /* @__PURE__ */ jsxs14("div", { children: [
-                  /* @__PURE__ */ jsx15("strong", { children: "Focus" }),
-                  /* @__PURE__ */ jsx15("p", { children: "Target: Darkon. Auto Attack b\u1ECF qua Focus." })
+              /* @__PURE__ */ jsxs15("div", { className: "tactical-focus-row", children: [
+                /* @__PURE__ */ jsx16(Crosshair3, { size: 18 }),
+                /* @__PURE__ */ jsxs15("div", { children: [
+                  /* @__PURE__ */ jsx16("strong", { children: "Focus" }),
+                  /* @__PURE__ */ jsx16("p", { children: "Target: Darkon. Auto Attack b\u1ECF qua Focus." })
                 ] })
               ] }),
-              /* @__PURE__ */ jsxs14("div", { className: "tactical-focus-row", children: [
-                /* @__PURE__ */ jsx15(Shield3, { size: 18 }),
-                /* @__PURE__ */ jsxs14("div", { children: [
-                  /* @__PURE__ */ jsx15("strong", { children: "Taunt assignment" }),
-                  tauntMethod === "docs" ? /* @__PURE__ */ jsxs14("ul", { children: [
-                    /* @__PURE__ */ jsxs14("li", { children: [
+              /* @__PURE__ */ jsxs15("div", { className: "tactical-focus-row", children: [
+                /* @__PURE__ */ jsx16(Shield3, { size: 18 }),
+                /* @__PURE__ */ jsxs15("div", { children: [
+                  /* @__PURE__ */ jsx16("strong", { children: "Taunt assignment" }),
+                  tauntMethod === "docs" ? /* @__PURE__ */ jsxs15("ul", { children: [
+                    /* @__PURE__ */ jsxs15("li", { children: [
                       tauntNames.join(" \u2194 "),
                       " \xB7 hai ng\u01B0\u1EDDi Taunt ch\xEDnh."
                     ] }),
-                    /* @__PURE__ */ jsx15("li", { children: "B\u1EADt Class Actives/Auras UI; d\xF9ng SoE so le khi Focus c\xF2n kho\u1EA3ng 1/8." }),
-                    /* @__PURE__ */ jsx15("li", { children: team.id.endsWith("-4") ? "\u0110\u1ED9i Speedrun: LR v\xE0 LoO gi\u1EEF ph\xE2n c\xF4ng Taunt ch\xEDnh." : "LoO c\xF3 th\u1EC3 d\u1EF1 b\u1ECB khi m\u1ED9t ng\u01B0\u1EDDi ch\xEDnh ch\u1EBFt, \u0111\u1EBFn khi h\u1ECD tr\u1EDF l\u1EA1i." }),
-                    /* @__PURE__ */ jsx15("li", { children: "DPS ch\xEDnh kh\xF4ng Taunt th\u01B0\u1EDDng quy." })
-                  ] }) : /* @__PURE__ */ jsxs14("ul", { children: [
-                    /* @__PURE__ */ jsx15("li", { children: "LoO m\u1EDF \u0111\u1EA7u v\xE0 d\xF9ng Scroll of Enrage khi h\u1ED3i xong." }),
-                    /* @__PURE__ */ jsx15("li", { children: "Hai Support c\xF2n l\u1EA1i so le khi Focus c\xF2n kho\u1EA3ng 1/8\u20131/10." }),
-                    /* @__PURE__ */ jsx15("li", { children: "N\u1EBFu LoO ch\u1EBFt ho\u1EB7c Stun: hai Support b\xF9 nh\u1ECBp \u0111\u1EBFn khi LoO tr\u1EDF l\u1EA1i." }),
-                    /* @__PURE__ */ jsx15("li", { children: "Kh\xF4ng nh\u1EA7m icon Decay c\u1EE7a LR v\u1EDBi Focus." })
+                    /* @__PURE__ */ jsx16("li", { children: "B\u1EADt Class Actives/Auras UI; d\xF9ng SoE so le khi Focus c\xF2n kho\u1EA3ng 1/8." }),
+                    /* @__PURE__ */ jsx16("li", { children: team.id.endsWith("-4") ? "\u0110\u1ED9i Speedrun: LR v\xE0 LoO gi\u1EEF ph\xE2n c\xF4ng Taunt ch\xEDnh." : "LoO c\xF3 th\u1EC3 d\u1EF1 b\u1ECB khi m\u1ED9t ng\u01B0\u1EDDi ch\xEDnh ch\u1EBFt, \u0111\u1EBFn khi h\u1ECD tr\u1EDF l\u1EA1i." }),
+                    /* @__PURE__ */ jsx16("li", { children: "DPS ch\xEDnh kh\xF4ng Taunt th\u01B0\u1EDDng quy." })
+                  ] }) : /* @__PURE__ */ jsxs15("ul", { children: [
+                    /* @__PURE__ */ jsx16("li", { children: "LoO m\u1EDF \u0111\u1EA7u v\xE0 d\xF9ng Scroll of Enrage khi h\u1ED3i xong." }),
+                    /* @__PURE__ */ jsx16("li", { children: "Hai Support c\xF2n l\u1EA1i so le khi Focus c\xF2n kho\u1EA3ng 1/8\u20131/10." }),
+                    /* @__PURE__ */ jsx16("li", { children: "N\u1EBFu LoO ch\u1EBFt ho\u1EB7c Stun: hai Support b\xF9 nh\u1ECBp \u0111\u1EBFn khi LoO tr\u1EDF l\u1EA1i." }),
+                    /* @__PURE__ */ jsx16("li", { children: "Kh\xF4ng nh\u1EA7m icon Decay c\u1EE7a LR v\u1EDBi Focus." })
                   ] })
                 ] })
               ] }),
-              /* @__PURE__ */ jsxs14("div", { className: "tactical-focus-row", children: [
-                /* @__PURE__ */ jsx15(Repeat22, { size: 18 }),
-                /* @__PURE__ */ jsxs14("div", { children: [
-                  /* @__PURE__ */ jsx15("strong", { children: "Tactical Sequence" }),
-                  /* @__PURE__ */ jsx15("p", { children: tauntMethod === "docs" ? "Taunter 1 \u2192 Focus g\u1EA7n h\u1EBFt \u2192 Taunter 2 \u2192 l\u1EB7p; LoO d\u1EF1 b\u1ECB theo \u0111\u1ED9i h\xECnh." : "LoO \u2192 Support 2 \u2192 LoO \u2192 Support 3 \u2192 l\u1EB7p." })
+              /* @__PURE__ */ jsxs15("div", { className: "tactical-focus-row", children: [
+                /* @__PURE__ */ jsx16(Repeat22, { size: 18 }),
+                /* @__PURE__ */ jsxs15("div", { children: [
+                  /* @__PURE__ */ jsx16("strong", { children: "Tactical Sequence" }),
+                  /* @__PURE__ */ jsx16("p", { children: tauntMethod === "docs" ? "Taunter 1 \u2192 Focus g\u1EA7n h\u1EBFt \u2192 Taunter 2 \u2192 l\u1EB7p; LoO d\u1EF1 b\u1ECB theo \u0111\u1ED9i h\xECnh." : "LoO \u2192 Support 2 \u2192 LoO \u2192 Support 3 \u2192 l\u1EB7p." })
                 ] })
               ] }),
-              /* @__PURE__ */ jsxs14("div", { className: "tactical-focus-row is-threat", children: [
-                /* @__PURE__ */ jsx15(AlertTriangle, { size: 18 }),
-                /* @__PURE__ */ jsxs14("div", { children: [
-                  /* @__PURE__ */ jsxs14("strong", { children: [
+              /* @__PURE__ */ jsxs15("div", { className: "tactical-focus-row is-threat", children: [
+                /* @__PURE__ */ jsx16(AlertTriangle, { size: 18 }),
+                /* @__PURE__ */ jsxs15("div", { children: [
+                  /* @__PURE__ */ jsxs15("strong", { children: [
                     "Nguy c\u01A1 \xB7 ",
                     risk
                   ] }),
-                  /* @__PURE__ */ jsx15("p", { children: "Kh\xF4ng \u0111\u1EC3 kho\u1EA3ng tr\u1ED1ng Focus; thay ng\u01B0\u1EDDi d\u1EF1 b\u1ECB theo ph\xE2n c\xF4ng khi ng\u01B0\u1EDDi ch\xEDnh ch\u1EBFt." })
+                  /* @__PURE__ */ jsx16("p", { children: "Kh\xF4ng \u0111\u1EC3 kho\u1EA3ng tr\u1ED1ng Focus; thay ng\u01B0\u1EDDi d\u1EF1 b\u1ECB theo ph\xE2n c\xF4ng khi ng\u01B0\u1EDDi ch\xEDnh ch\u1EBFt." })
                 ] })
               ] })
             ] }),
-            /* @__PURE__ */ jsxs14("div", { className: "tactical-mechanics", children: [
-              /* @__PURE__ */ jsx15("h5", { children: "Important Mechanics / Phase Response" }),
-              /* @__PURE__ */ jsx15("ul", { children: phase.combatNotes.map((n) => /* @__PURE__ */ jsx15("li", { children: n }, n)) }),
-              /* @__PURE__ */ jsx15("p", { className: "tactical-warning", children: "Khuy\u1EBFn c\xE1o: Tr\xE1nh Vainglory n\u1EBFu g\xE2y b\u1EA5t l\u1EE3i cho h\u1ED3i m\xE1u trong Aria. M\u1ED9t s\u1ED1 loadout v\u1EABn li\u1EC7t k\xEA Vainglory; \u01B0u ti\xEAn kh\u1EA3 n\u0103ng s\u1ED1ng s\xF3t c\u1EE7a \u0111\u1ED9i." })
+            /* @__PURE__ */ jsxs15("div", { className: "tactical-mechanics", children: [
+              /* @__PURE__ */ jsx16("h5", { children: "Important Mechanics / Phase Response" }),
+              /* @__PURE__ */ jsx16("ul", { children: phase.combatNotes.map((n) => /* @__PURE__ */ jsx16("li", { children: n }, n)) }),
+              /* @__PURE__ */ jsx16("p", { className: "tactical-warning", children: "Khuy\u1EBFn c\xE1o: Tr\xE1nh Vainglory n\u1EBFu g\xE2y b\u1EA5t l\u1EE3i cho h\u1ED3i m\xE1u trong Aria. M\u1ED9t s\u1ED1 loadout v\u1EABn li\u1EC7t k\xEA Vainglory; \u01B0u ti\xEAn kh\u1EA3 n\u0103ng s\u1ED1ng s\xF3t c\u1EE7a \u0111\u1ED9i." })
             ] })
           ] }),
-          /* @__PURE__ */ jsxs14("section", { className: "tactical-formation", "aria-label": "Team Formation", children: [
-            /* @__PURE__ */ jsxs14("h4", { children: [
-              /* @__PURE__ */ jsx15(Swords3, { size: 18 }),
+          /* @__PURE__ */ jsxs15("section", { className: "tactical-formation", "aria-label": "Team Formation", children: [
+            /* @__PURE__ */ jsxs15("h4", { children: [
+              /* @__PURE__ */ jsx16(Swords3, { size: 18 }),
               "Team Formation"
             ] }),
-            /* @__PURE__ */ jsx15(
+            /* @__PURE__ */ jsx16(
               "div",
               {
                 className: "tactical-team-selector",
                 role: "group",
                 "aria-label": "Ch\u1ECDn \u0111\u1ED9i h\xECnh Darkon",
-                children: boss.recommendedTeams.map((t, i) => /* @__PURE__ */ jsxs14(
+                children: boss.recommendedTeams.map((t, i) => /* @__PURE__ */ jsxs15(
                   "button",
                   {
                     "aria-pressed": t.id === team.id,
@@ -84504,44 +84632,44 @@ function DarkonTacticalInspection({ phase }) {
                 ))
               }
             ),
-            /* @__PURE__ */ jsx15("p", { className: "tactical-team-summary", children: team.description }),
-            /* @__PURE__ */ jsx15("div", { className: "tactical-formation-slots", children: assignments.map((a, i) => {
+            /* @__PURE__ */ jsx16("p", { className: "tactical-team-summary", children: team.description }),
+            /* @__PURE__ */ jsx16("div", { className: "tactical-formation-slots", children: assignments.map((a, i) => {
               const c = selected(a);
               const { Icon, label } = roleFor(c);
-              return /* @__PURE__ */ jsxs14(
+              return /* @__PURE__ */ jsxs15(
                 "div",
                 {
                   className: "formation-slot " + (i === slot ? "is-selected" : ""),
                   children: [
-                    /* @__PURE__ */ jsxs14(
+                    /* @__PURE__ */ jsxs15(
                       "button",
                       {
                         className: "formation-primary",
                         "aria-pressed": i === slot,
                         onClick: () => setSlot(i),
                         children: [
-                          /* @__PURE__ */ jsx15(Icon, { size: 18 }),
-                          /* @__PURE__ */ jsxs14("span", { children: [
-                            /* @__PURE__ */ jsxs14("small", { children: [
+                          /* @__PURE__ */ jsx16(Icon, { size: 18 }),
+                          /* @__PURE__ */ jsxs15("span", { children: [
+                            /* @__PURE__ */ jsxs15("small", { children: [
                               "V\u1ECB tr\xED ",
                               i + 1
                             ] }),
-                            /* @__PURE__ */ jsx15("strong", { children: c.name }),
-                            /* @__PURE__ */ jsx15("small", { children: label })
+                            /* @__PURE__ */ jsx16("strong", { children: c.name }),
+                            /* @__PURE__ */ jsx16("small", { children: label })
                           ] })
                         ]
                       }
                     ),
-                    a.alternativeClasses.length > 0 && /* @__PURE__ */ jsxs14(
+                    a.alternativeClasses.length > 0 && /* @__PURE__ */ jsxs15(
                       "div",
                       {
                         className: "formation-alternatives",
                         role: "group",
                         "aria-label": `Class thay th\u1EBF v\u1ECB tr\xED ${i + 1}`,
                         children: [
-                          /* @__PURE__ */ jsx15("span", { className: "formation-alternatives-label", children: "Thay th\u1EBF:" }),
+                          /* @__PURE__ */ jsx16("span", { className: "formation-alternatives-label", children: "Thay th\u1EBF:" }),
                           [a.primaryClass, ...a.alternativeClasses].map(
-                            (option) => /* @__PURE__ */ jsxs14(
+                            (option) => /* @__PURE__ */ jsxs15(
                               "button",
                               {
                                 title: option.name,
@@ -84570,7 +84698,7 @@ function DarkonTacticalInspection({ phase }) {
                 a.id
               );
             }) }),
-            active && /* @__PURE__ */ jsx15(Rotation, { choice: active, phase, teamId: team.id })
+            active && /* @__PURE__ */ jsx16(Rotation, { choice: active, phase, teamId: team.id })
           ] })
         ] })
       ]
@@ -84579,14 +84707,14 @@ function DarkonTacticalInspection({ phase }) {
 }
 
 // src/features/ultra/BossPhaseInspection.tsx
-import { Clock3 as Clock32, Repeat2 as Repeat23, Flame as Flame2, Skull as Skull2 } from "lucide-react";
+import { Clock3 as Clock32, Repeat2 as Repeat23, Flame as Flame3, Skull as Skull2 } from "lucide-react";
 import {
   createContext,
   useContext,
-  useState as useState11,
+  useState as useState12,
   useId as useId2
 } from "react";
-import { jsx as jsx16, jsxs as jsxs15 } from "react/jsx-runtime";
+import { jsx as jsx17, jsxs as jsxs16 } from "react/jsx-runtime";
 var PhaseContext = createContext({
   phaseId: "overture",
   selectPhase: (_id) => {
@@ -84599,8 +84727,8 @@ function BossPhaseSelector({
   onChange
 }) {
   const id = useId2();
-  return /* @__PURE__ */ jsxs15("section", { className: "boss-phase-control", "aria-label": "Boss Phase Selection", children: [
-    /* @__PURE__ */ jsx16(
+  return /* @__PURE__ */ jsxs16("section", { className: "boss-phase-control", "aria-label": "Boss Phase Selection", children: [
+    /* @__PURE__ */ jsx17(
       "div",
       {
         className: "boss-phase-selector",
@@ -84615,7 +84743,7 @@ function BossPhaseSelector({
           onChange(phases[index].id);
           e.currentTarget.querySelectorAll("button")[index]?.focus();
         },
-        children: phases.map((p) => /* @__PURE__ */ jsxs15(
+        children: phases.map((p) => /* @__PURE__ */ jsxs16(
           "button",
           {
             type: "button",
@@ -84623,7 +84751,7 @@ function BossPhaseSelector({
             "aria-describedby": id,
             onClick: () => onChange(p.id),
             children: [
-              /* @__PURE__ */ jsx16("span", { children: p.phaseOrder }),
+              /* @__PURE__ */ jsx17("span", { children: p.phaseOrder }),
               p.name.toUpperCase()
             ]
           },
@@ -84631,38 +84759,38 @@ function BossPhaseSelector({
         ))
       }
     ),
-    /* @__PURE__ */ jsx16(PhaseTransitionIndicator, { phase, id })
+    /* @__PURE__ */ jsx17(PhaseTransitionIndicator, { phase, id })
   ] });
 }
 function PhaseStrategy({
   phase
 }) {
-  return /* @__PURE__ */ jsx16(DarkonTacticalInspection, { phase });
+  return /* @__PURE__ */ jsx17(DarkonTacticalInspection, { phase });
 }
 function BossGlobalTimeline({ slug }) {
   const system = phaseSystemFor(slug);
   if (!system) return null;
-  return /* @__PURE__ */ jsxs15(
+  return /* @__PURE__ */ jsxs16(
     "aside",
     {
       className: "boss-global-timeline tactical-encounter-timeline",
       "aria-label": "Encounter Timeline",
       children: [
-        /* @__PURE__ */ jsxs15("h3", { children: [
-          /* @__PURE__ */ jsx16(Clock32, { size: 17 }),
+        /* @__PURE__ */ jsxs16("h3", { children: [
+          /* @__PURE__ */ jsx17(Clock32, { size: 17 }),
           "Encounter Timeline"
         ] }),
-        /* @__PURE__ */ jsx16("ol", { children: system.timeline.map((event, i) => {
-          const Icon = [Repeat23, Flame2, Skull2][i];
+        /* @__PURE__ */ jsx17("ol", { children: system.timeline.map((event, i) => {
+          const Icon = [Repeat23, Flame3, Skull2][i];
           const name = system.attacks.find((a) => a.id === event.id)?.officialName || event.id;
-          return /* @__PURE__ */ jsxs15("li", { children: [
-            /* @__PURE__ */ jsx16(Icon, { size: 18 }),
-            /* @__PURE__ */ jsxs15("strong", { children: [
+          return /* @__PURE__ */ jsxs16("li", { children: [
+            /* @__PURE__ */ jsx17(Icon, { size: 18 }),
+            /* @__PURE__ */ jsxs16("strong", { children: [
               event.triggerValue,
               "s"
             ] }),
-            /* @__PURE__ */ jsx16("span", { children: name }),
-            /* @__PURE__ */ jsxs15(
+            /* @__PURE__ */ jsx17("span", { children: name }),
+            /* @__PURE__ */ jsxs16(
               "button",
               {
                 type: "button",
@@ -84670,30 +84798,30 @@ function BossGlobalTimeline({ slug }) {
                 "aria-label": `Chi ti\u1EBFt ${name}`,
                 "aria-describedby": `timeline-${event.id}`,
                 children: [
-                  /* @__PURE__ */ jsx16("span", { "aria-hidden": "true", children: "i" }),
-                  /* @__PURE__ */ jsx16("span", { role: "tooltip", id: `timeline-${event.id}`, children: event.description })
+                  /* @__PURE__ */ jsx17("span", { "aria-hidden": "true", children: "i" }),
+                  /* @__PURE__ */ jsx17("span", { role: "tooltip", id: `timeline-${event.id}`, children: event.description })
                 ]
               }
             )
           ] }, event.id);
         }) }),
-        /* @__PURE__ */ jsx16("p", { children: "M\u1ED1c t\xEDnh t\u1EEB \u0111\u1EA7u tr\u1EADn \xB7 Tham kh\u1EA3o th\u1EE7 c\xF4ng, kh\xF4ng \u0111\u1ED3ng b\u1ED9 v\u1EDBi game." })
+        /* @__PURE__ */ jsx17("p", { children: "M\u1ED1c t\xEDnh t\u1EEB \u0111\u1EA7u tr\u1EADn \xB7 Tham kh\u1EA3o th\u1EE7 c\xF4ng, kh\xF4ng \u0111\u1ED3ng b\u1ED9 v\u1EDBi game." })
       ]
     }
   );
 }
 
 // src/features/ultra/Teams.tsx
-import { useState as useState12, useId as useId3 } from "react";
+import { useState as useState13, useId as useId3 } from "react";
 import { ChevronDown as ChevronDown2, Crosshair as Crosshair4 } from "lucide-react";
-import { Fragment as Fragment7, jsx as jsx17, jsxs as jsxs16 } from "react/jsx-runtime";
+import { Fragment as Fragment7, jsx as jsx18, jsxs as jsxs17 } from "react/jsx-runtime";
 
 // src/features/ultra/TacticalBoard.tsx
-import { jsx as jsx18, jsxs as jsxs17 } from "react/jsx-runtime";
+import { jsx as jsx19, jsxs as jsxs18 } from "react/jsx-runtime";
 
 // src/features/ultra/SpeakerTutorial.tsx
 import { Crosshair as Crosshair6, TriangleAlert as TriangleAlert2, Shield as Shield4, Repeat, ArrowDown } from "lucide-react";
-import { jsx as jsx19, jsxs as jsxs18 } from "react/jsx-runtime";
+import { jsx as jsx20, jsxs as jsxs19 } from "react/jsx-runtime";
 
 // src/content/challenges/equipment.json
 var equipment_default = {
@@ -86234,7 +86362,7 @@ var equipment_default2 = {
 };
 
 // src/features/ultra/MaterialTree.tsx
-import { useEffect as useEffect4, useId as useId4, useState as useState14 } from "react";
+import { useEffect as useEffect4, useId as useId4, useState as useState15 } from "react";
 import { Package } from "lucide-react";
 
 // src/lib/material-requirements.mjs
@@ -86250,7 +86378,7 @@ function materialProgress(tree, selections = {}, done = []) {
 }
 
 // src/features/ultra/MaterialTree.tsx
-import { jsx as jsx20, jsxs as jsxs19 } from "react/jsx-runtime";
+import { jsx as jsx21, jsxs as jsxs20 } from "react/jsx-runtime";
 function isState(value) {
   if (!value || typeof value !== "object") return false;
   const s = value;
@@ -86258,8 +86386,8 @@ function isState(value) {
 }
 function MaterialTree({ tree, scope }) {
   const key2 = "aqw:materials:v2:" + scope, id = useId4();
-  const [state, setState] = useState14({ selections: {}, done: [] });
-  const [error, setError] = useState14("");
+  const [state, setState] = useState15({ selections: {}, done: [] });
+  const [error, setError] = useState15("");
   useEffect4(() => {
     const load = () => setState(readStoredValue(key2, { selections: {}, done: [] }, isState));
     load();
@@ -86280,11 +86408,11 @@ function MaterialTree({ tree, scope }) {
     if (node.kind === "item") {
       const token = path + ":" + node.itemId;
       const asset = aqw_assets_default.find((a) => a.entityType === "item" && a.entityName === node.name && a.verificationStatus === "verified" && a.usageStatus === "approved" && a.imagePath);
-      return /* @__PURE__ */ jsx20("li", { className: "material-tree-item", children: /* @__PURE__ */ jsxs19("label", { children: [
-        /* @__PURE__ */ jsx20("input", { type: "checkbox", checked: state.done.includes(token), onChange: () => update({ ...state, done: state.done.includes(token) ? state.done.filter((k) => k !== token) : [...state.done, token] }) }),
-        asset ? /* @__PURE__ */ jsx20("img", { src: asset.imagePath, alt: "", width: 24, height: 24, loading: "lazy", style: { objectFit: "contain" } }) : /* @__PURE__ */ jsx20(Package, { size: 15, "aria-hidden": "true" }),
-        /* @__PURE__ */ jsx20("span", { children: node.name }),
-        /* @__PURE__ */ jsxs19("strong", { children: [
+      return /* @__PURE__ */ jsx21("li", { className: "material-tree-item", children: /* @__PURE__ */ jsxs20("label", { children: [
+        /* @__PURE__ */ jsx21("input", { type: "checkbox", checked: state.done.includes(token), onChange: () => update({ ...state, done: state.done.includes(token) ? state.done.filter((k) => k !== token) : [...state.done, token] }) }),
+        asset ? /* @__PURE__ */ jsx21("img", { src: asset.imagePath, alt: "", width: 24, height: 24, loading: "lazy", style: { objectFit: "contain" } }) : /* @__PURE__ */ jsx21(Package, { size: 15, "aria-hidden": "true" }),
+        /* @__PURE__ */ jsx21("span", { children: node.name }),
+        /* @__PURE__ */ jsxs20("strong", { children: [
           "\xD7",
           node.quantity.toLocaleString("vi-VN")
         ] })
@@ -86292,41 +86420,41 @@ function MaterialTree({ tree, scope }) {
     }
     const stored = state.selections[path];
     const choices = Array.isArray(stored) ? stored : Array.from({ length: node.requiredChoices || 1 }, (_, i) => i);
-    return /* @__PURE__ */ jsx20("li", { className: "material-tree-group " + node.kind, children: node.kind === "anyOf" ? /* @__PURE__ */ jsxs19("fieldset", { children: [
-      /* @__PURE__ */ jsxs19("legend", { children: [
+    return /* @__PURE__ */ jsx21("li", { className: "material-tree-group " + node.kind, children: node.kind === "anyOf" ? /* @__PURE__ */ jsxs20("fieldset", { children: [
+      /* @__PURE__ */ jsxs20("legend", { children: [
         "Ch\u1ECDn ",
         node.requiredChoices || 1,
         " trong c\xE1c ph\u01B0\u01A1ng \xE1n"
       ] }),
-      node.requirements.map((child, i) => /* @__PURE__ */ jsxs19("div", { children: [
-        /* @__PURE__ */ jsxs19("label", { className: "material-option", children: [
-          /* @__PURE__ */ jsx20("input", { type: (node.requiredChoices || 1) === 1 ? "radio" : "checkbox", name: id + path, checked: choices.includes(i), onChange: () => {
+      node.requirements.map((child, i) => /* @__PURE__ */ jsxs20("div", { children: [
+        /* @__PURE__ */ jsxs20("label", { className: "material-option", children: [
+          /* @__PURE__ */ jsx21("input", { type: (node.requiredChoices || 1) === 1 ? "radio" : "checkbox", name: id + path, checked: choices.includes(i), onChange: () => {
             let selected = (node.requiredChoices || 1) === 1 ? [i] : choices.includes(i) ? choices.filter((c) => c !== i) : [...choices, i].slice(-(node.requiredChoices || 1));
             update({ ...state, selections: { ...state.selections, [path]: selected } });
           } }),
           child.kind === "item" ? `${child.name} \xD7${child.quantity}` : `Ph\u01B0\u01A1ng \xE1n ${i + 1}`
         ] }),
-        choices.includes(i) && /* @__PURE__ */ jsx20("ul", { children: render(child, path + "." + i) })
+        choices.includes(i) && /* @__PURE__ */ jsx21("ul", { children: render(child, path + "." + i) })
       ] }, i))
-    ] }) : /* @__PURE__ */ jsx20("ul", { children: node.requirements.map((n, i) => render(n, path + "." + i)) }) }, path);
+    ] }) : /* @__PURE__ */ jsx21("ul", { children: node.requirements.map((n, i) => render(n, path + "." + i)) }) }, path);
   }
   const progress = materialProgress(tree, state.selections, state.done);
   const count = selectedMaterials(tree, state.selections).length;
-  return /* @__PURE__ */ jsxs19("div", { className: "material-tree", children: [
-    /* @__PURE__ */ jsxs19("p", { className: "material-progress", children: [
+  return /* @__PURE__ */ jsxs20("div", { className: "material-tree", children: [
+    /* @__PURE__ */ jsxs20("p", { className: "material-progress", children: [
       "Nguy\xEAn li\u1EC7u \u0111\xE3 \u0111\xE1nh d\u1EA5u: ",
       progress.done,
       " / ",
       count,
       " lo\u1EA1i theo ph\u01B0\u01A1ng \xE1n \u0111ang ch\u1ECDn"
     ] }),
-    /* @__PURE__ */ jsx20("ul", { children: render(tree) }),
-    error && /* @__PURE__ */ jsx20("p", { role: "status", children: error })
+    /* @__PURE__ */ jsx21("ul", { children: render(tree) }),
+    error && /* @__PURE__ */ jsx21("p", { role: "status", children: error })
   ] });
 }
 
 // src/features/ultra/EquipmentMetadata.tsx
-import { jsx as jsx21, jsxs as jsxs20 } from "react/jsx-runtime";
+import { jsx as jsx22, jsxs as jsxs21 } from "react/jsx-runtime";
 var equipmentId = (name) => name.normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "-").replace(/^-|-$/g, "");
 function equipmentFor(name) {
   const alias = recovery_default.equipmentAliases[name] || equipment_default2.aliases[name] || name;
@@ -86335,42 +86463,42 @@ function equipmentFor(name) {
 function EquipmentStatStrip({ name }) {
   const item = equipmentFor(name);
   const range = item?.weaponDamageRange;
-  return /* @__PURE__ */ jsxs20("dl", { className: "weapon-stat-strip", children: [
-    /* @__PURE__ */ jsxs20("div", { children: [
-      /* @__PURE__ */ jsxs20("dt", { children: [
-        /* @__PURE__ */ jsx21(Shield5, { size: 12 }),
+  return /* @__PURE__ */ jsxs21("dl", { className: "weapon-stat-strip", children: [
+    /* @__PURE__ */ jsxs21("div", { children: [
+      /* @__PURE__ */ jsxs21("dt", { children: [
+        /* @__PURE__ */ jsx22(Shield5, { size: 12 }),
         "Level lock"
       ] }),
-      /* @__PURE__ */ jsx21("dd", { children: item?.levelRequirement == null ? "Ch\u01B0a x\xE1c minh" : `LV. ${item.levelRequirement}` })
+      /* @__PURE__ */ jsx22("dd", { children: item?.levelRequirement == null ? "Ch\u01B0a x\xE1c minh" : `LV. ${item.levelRequirement}` })
     ] }),
-    /* @__PURE__ */ jsxs20("div", { children: [
-      /* @__PURE__ */ jsxs20("dt", { children: [
-        /* @__PURE__ */ jsx21(Swords4, { size: 12 }),
+    /* @__PURE__ */ jsxs21("div", { children: [
+      /* @__PURE__ */ jsxs21("dt", { children: [
+        /* @__PURE__ */ jsx22(Swords4, { size: 12 }),
         "Damage boost"
       ] }),
-      /* @__PURE__ */ jsx21("dd", { children: item?.damageBoost ? `+${item.damageBoost.value}% ${item.damageBoost.targetType}` : item?.boostStatus === "none" ? "Kh\xF4ng" : "Ch\u01B0a x\xE1c minh" })
+      /* @__PURE__ */ jsx22("dd", { children: item?.damageBoost ? `+${item.damageBoost.value}% ${item.damageBoost.targetType}` : item?.boostStatus === "none" ? "Kh\xF4ng" : "Ch\u01B0a x\xE1c minh" })
     ] }),
-    item?.equipmentType === "weapon" && /* @__PURE__ */ jsxs20("div", { children: [
-      /* @__PURE__ */ jsx21("dt", { children: "Weapon range / stability" }),
-      /* @__PURE__ */ jsx21("dd", { children: range ? `${range.minimum}\u2013${range.maximum} \xB7 ${range.classification === "unknown" ? "Ch\u01B0a x\xE1c minh" : range.classification.toUpperCase()}` : "Ch\u01B0a x\xE1c minh" })
+    item?.equipmentType === "weapon" && /* @__PURE__ */ jsxs21("div", { children: [
+      /* @__PURE__ */ jsx22("dt", { children: "Weapon range / stability" }),
+      /* @__PURE__ */ jsx22("dd", { children: range ? `${range.minimum}\u2013${range.maximum} \xB7 ${range.classification === "unknown" ? "Ch\u01B0a x\xE1c minh" : range.classification.toUpperCase()}` : "Ch\u01B0a x\xE1c minh" })
     ] })
   ] });
 }
 function MaterialRequirements({ name }) {
   const e = equipmentFor(name), materials = e?.materialRequirements || [], tree = e?.materialTree;
-  return /* @__PURE__ */ jsxs20("details", { className: "material-requirements", children: [
-    /* @__PURE__ */ jsxs20("summary", { children: [
+  return /* @__PURE__ */ jsxs21("details", { className: "material-requirements", children: [
+    /* @__PURE__ */ jsxs21("summary", { children: [
       "Nguy\xEAn li\u1EC7u c\u1EA7n thi\u1EBFt",
-      /* @__PURE__ */ jsx21("span", { "aria-hidden": "true", children: "\u2304" })
+      /* @__PURE__ */ jsx22("span", { "aria-hidden": "true", children: "\u2304" })
     ] }),
-    tree ? /* @__PURE__ */ jsx21(MaterialTree, { tree, scope: e.id }) : materials.length ? /* @__PURE__ */ jsx21("ul", { className: "equipment-materials", children: materials.map((m) => /* @__PURE__ */ jsxs20("li", { children: [
-      /* @__PURE__ */ jsx21(Package2, { size: 15, "aria-hidden": "true" }),
-      /* @__PURE__ */ jsx21("span", { children: m.name }),
-      /* @__PURE__ */ jsxs20("strong", { children: [
+    tree ? /* @__PURE__ */ jsx22(MaterialTree, { tree, scope: e.id }) : materials.length ? /* @__PURE__ */ jsx22("ul", { className: "equipment-materials", children: materials.map((m) => /* @__PURE__ */ jsxs21("li", { children: [
+      /* @__PURE__ */ jsx22(Package2, { size: 15, "aria-hidden": "true" }),
+      /* @__PURE__ */ jsx22("span", { children: m.name }),
+      /* @__PURE__ */ jsxs21("strong", { children: [
         "\xD7",
         m.quantity.toLocaleString("vi-VN")
       ] })
-    ] }, m.itemId)) }) : /* @__PURE__ */ jsx21("p", { className: "material-pending", children: "\u0110ang x\xE1c minh nguy\xEAn li\u1EC7u." })
+    ] }, m.itemId)) }) : /* @__PURE__ */ jsx22("p", { className: "material-pending", children: "\u0110ang x\xE1c minh nguy\xEAn li\u1EC7u." })
   ] });
 }
 
@@ -86421,31 +86549,31 @@ function combatNotesFor(notes) {
 }
 
 // src/features/ultra/BossTactics.tsx
-import { jsx as jsx22, jsxs as jsxs21 } from "react/jsx-runtime";
+import { jsx as jsx23, jsxs as jsxs22 } from "react/jsx-runtime";
 var detailFor = (slug) => ({ ...details_default, ...recovery_default.details })[slug];
 var icons2 = {
   heal: Heart2,
   taunt: Crosshair7,
   target: Crosshair7,
   shield: Shield6,
-  timer: Clock,
+  timer: Clock2,
   zone: MapPin2
 };
 function QuickNotes({ detail }) {
   const notes = combatNotesFor(detail.notes);
   if (!notes.length) return null;
-  return /* @__PURE__ */ jsx22("div", { className: "boss-quick-notes", children: notes.map((n) => {
+  return /* @__PURE__ */ jsx23("div", { className: "boss-quick-notes", children: notes.map((n) => {
     const Icon = icons2[n.icon] || AlertTriangle2;
-    return /* @__PURE__ */ jsxs21("article", { children: [
-      /* @__PURE__ */ jsx22(Icon, { size: 20, "aria-hidden": "true" }),
-      /* @__PURE__ */ jsx22("p", { children: n.shortText })
+    return /* @__PURE__ */ jsxs22("article", { children: [
+      /* @__PURE__ */ jsx23(Icon, { size: 20, "aria-hidden": "true" }),
+      /* @__PURE__ */ jsx23("p", { children: n.shortText })
     ] }, n.id);
   }) });
 }
 
 // src/features/ultra/PassivePanel.tsx
 import { Shield as Shield7, ShieldCheck, ShieldPlus, Footprints, Swords as Swords5, Activity, Crosshair as Crosshair8, ArrowUp, ArrowDown as ArrowDown2, Info as Info2 } from "lucide-react";
-import { jsx as jsx23, jsxs as jsxs22 } from "react/jsx-runtime";
+import { jsx as jsx24, jsxs as jsxs23 } from "react/jsx-runtime";
 function iconFor(text) {
   if (/stun/i.test(text)) return ShieldCheck;
   if (/dodge/i.test(text)) return Footprints;
@@ -86458,32 +86586,32 @@ function iconFor(text) {
   return Shield7;
 }
 function PassivePanel({ entries }) {
-  return /* @__PURE__ */ jsx23("div", { className: "passive-compact-grid", children: entries.map((p) => {
+  return /* @__PURE__ */ jsx24("div", { className: "passive-compact-grid", children: entries.map((p) => {
     const stun = /miễn nhiễm Stun/i.test(p.effect);
     const title = p.name || (stun ? "Mi\u1EC5n nhi\u1EC5m Stun" : p.label);
     const values = p.values?.length ? p.values : [p.effect];
     const Icon = iconFor(stun ? "stun" : p.name === "Boss Shield" ? "shield" : p.effect);
-    return /* @__PURE__ */ jsxs22("article", { className: "passive-compact", children: [
-      /* @__PURE__ */ jsxs22("h4", { children: [
-        /* @__PURE__ */ jsx23(Icon, { size: 17, "aria-hidden": "true" }),
+    return /* @__PURE__ */ jsxs23("article", { className: "passive-compact", children: [
+      /* @__PURE__ */ jsxs23("h4", { children: [
+        /* @__PURE__ */ jsx24(Icon, { size: 17, "aria-hidden": "true" }),
         title
       ] }),
-      /* @__PURE__ */ jsx23("div", { className: "passive-chips", children: values.map((v) => {
+      /* @__PURE__ */ jsx24("div", { className: "passive-chips", children: values.map((v) => {
         const ValueIcon = iconFor(p.name === "Boss Shield" ? "shield" : v);
-        return /* @__PURE__ */ jsxs22("span", { children: [
-          /* @__PURE__ */ jsx23(ValueIcon, { size: 14, "aria-hidden": "true" }),
+        return /* @__PURE__ */ jsxs23("span", { children: [
+          /* @__PURE__ */ jsx24(ValueIcon, { size: 14, "aria-hidden": "true" }),
           v
         ] }, v);
       }) }),
-      /* @__PURE__ */ jsxs22("details", { children: [
-        /* @__PURE__ */ jsxs22("summary", { "aria-label": `Gi\u1EA3i th\xEDch ${title}`, children: [
-          /* @__PURE__ */ jsx23(Info2, { size: 14 }),
+      /* @__PURE__ */ jsxs23("details", { children: [
+        /* @__PURE__ */ jsxs23("summary", { "aria-label": `Gi\u1EA3i th\xEDch ${title}`, children: [
+          /* @__PURE__ */ jsx24(Info2, { size: 14 }),
           " Chi ti\u1EBFt"
         ] }),
-        /* @__PURE__ */ jsxs22("div", { children: [
-          /* @__PURE__ */ jsx23("p", { children: p.condition }),
-          p.values?.length && p.label !== "Ch\u1EC9 s\u1ED1 n\u1EC1n" && /* @__PURE__ */ jsx23("p", { children: p.effect }),
-          p.name === "Boss Shield" && /* @__PURE__ */ jsx23("p", { children: "Ng\u01B0\u1EE1ng v\xE0 h\u1EC7 s\u1ED1 \u1EDF tr\xEAn thu\u1ED9c ri\xEAng Monster n\xE0y. Quy t\u1EAFc gi\u1EA3m ch\u1EC9 \xE1p d\u1EE5ng khi s\xE1t th\u01B0\u01A1ng v\u01B0\u1EE3t ng\u01B0\u1EE1ng; k\u1EBFt qu\u1EA3 kh\xF4ng b\u1ECB h\u1EA1 th\u1EA5p h\u01A1n ng\u01B0\u1EE1ng. Kh\xF4ng \xE1p d\u1EE5ng h\u1EC7 s\u1ED1 c\u1EE7a encounter kh\xE1c." })
+        /* @__PURE__ */ jsxs23("div", { children: [
+          /* @__PURE__ */ jsx24("p", { children: p.condition }),
+          p.values?.length && p.label !== "Ch\u1EC9 s\u1ED1 n\u1EC1n" && /* @__PURE__ */ jsx24("p", { children: p.effect }),
+          p.name === "Boss Shield" && /* @__PURE__ */ jsx24("p", { children: "Ng\u01B0\u1EE1ng v\xE0 h\u1EC7 s\u1ED1 \u1EDF tr\xEAn thu\u1ED9c ri\xEAng Monster n\xE0y. Quy t\u1EAFc gi\u1EA3m ch\u1EC9 \xE1p d\u1EE5ng khi s\xE1t th\u01B0\u01A1ng v\u01B0\u1EE3t ng\u01B0\u1EE1ng; k\u1EBFt qu\u1EA3 kh\xF4ng b\u1ECB h\u1EA1 th\u1EA5p h\u01A1n ng\u01B0\u1EE1ng. Kh\xF4ng \xE1p d\u1EE5ng h\u1EC7 s\u1ED1 c\u1EE7a encounter kh\xE1c." })
         ] })
       ] })
     ] }, p.id);
@@ -86491,106 +86619,106 @@ function PassivePanel({ entries }) {
 }
 
 // src/features/ultra/MonsterPortrait.tsx
-import { jsx as jsx24 } from "react/jsx-runtime";
+import { jsx as jsx25 } from "react/jsx-runtime";
 function MonsterPortrait({ source, name, compact = false }) {
   const a = aqw_assets_default.find((a2) => a2.entityType === "monster" && a2.sourcePage === source && a2.verificationStatus === "verified" && a2.usageStatus === "approved");
   const extra = assets_default.find((a2) => a2.sourceUrl === source && a2.usageStatus === "approved");
-  return /* @__PURE__ */ jsx24(Asset, { asset: extra, id: a?.assetId || extra?.id || "pending-monster", label: name, compact });
+  return /* @__PURE__ */ jsx25(Asset, { asset: extra, id: a?.assetId || extra?.id || "pending-monster", label: name, compact });
 }
 
 // src/features/ultra/AttackDamageTable.tsx
 import { Swords as Swords6 } from "lucide-react";
-import { jsx as jsx25, jsxs as jsxs23 } from "react/jsx-runtime";
+import { jsx as jsx26, jsxs as jsxs24 } from "react/jsx-runtime";
 function AttackDamageTable({ encounter, monster }) {
   const rows = attackDamageFor(encounter.activeSkills, monster.id);
-  return /* @__PURE__ */ jsxs23("section", { className: "attack-damage-section", children: [
-    /* @__PURE__ */ jsx25("h4", { className: "attack-damage-heading", children: "S\xE1t th\u01B0\u01A1ng k\u1EF9 n\u0103ng" }),
-    !rows.length ? /* @__PURE__ */ jsx25("p", { className: "material-pending", children: "Ch\u01B0a x\xE1c minh s\xE1t th\u01B0\u01A1ng \u0111\u1ECBnh l\u01B0\u1EE3ng." }) : /* @__PURE__ */ jsxs23("div", { className: "attack-damage-table", role: "table", "aria-label": `S\xE1t th\u01B0\u01A1ng ${monster.canonicalName}`, children: [
-      /* @__PURE__ */ jsxs23("div", { role: "row", className: "attack-damage-row", children: [
-        /* @__PURE__ */ jsx25("span", { role: "columnheader", children: "Skill" }),
-        /* @__PURE__ */ jsx25("span", { role: "columnheader", children: "Damage Type" }),
-        /* @__PURE__ */ jsx25("span", { role: "columnheader", children: "Damage" })
+  return /* @__PURE__ */ jsxs24("section", { className: "attack-damage-section", children: [
+    /* @__PURE__ */ jsx26("h4", { className: "attack-damage-heading", children: "S\xE1t th\u01B0\u01A1ng k\u1EF9 n\u0103ng" }),
+    !rows.length ? /* @__PURE__ */ jsx26("p", { className: "material-pending", children: "Ch\u01B0a x\xE1c minh s\xE1t th\u01B0\u01A1ng \u0111\u1ECBnh l\u01B0\u1EE3ng." }) : /* @__PURE__ */ jsxs24("div", { className: "attack-damage-table", role: "table", "aria-label": `S\xE1t th\u01B0\u01A1ng ${monster.canonicalName}`, children: [
+      /* @__PURE__ */ jsxs24("div", { role: "row", className: "attack-damage-row", children: [
+        /* @__PURE__ */ jsx26("span", { role: "columnheader", children: "Skill" }),
+        /* @__PURE__ */ jsx26("span", { role: "columnheader", children: "Damage Type" }),
+        /* @__PURE__ */ jsx26("span", { role: "columnheader", children: "Damage" })
       ] }),
-      rows.map((row) => /* @__PURE__ */ jsxs23("div", { role: "row", className: "attack-damage-row", children: [
-        /* @__PURE__ */ jsxs23("span", { role: "cell", children: [
-          /* @__PURE__ */ jsx25(Swords6, { size: 14, "aria-hidden": "true" }),
-          /* @__PURE__ */ jsxs23("span", { children: [
+      rows.map((row) => /* @__PURE__ */ jsxs24("div", { role: "row", className: "attack-damage-row", children: [
+        /* @__PURE__ */ jsxs24("span", { role: "cell", children: [
+          /* @__PURE__ */ jsx26(Swords6, { size: 14, "aria-hidden": "true" }),
+          /* @__PURE__ */ jsxs24("span", { children: [
             row.officialSkillName,
-            row.phase && /* @__PURE__ */ jsx25("small", { className: "attack-phase-label", children: row.phase })
+            row.phase && /* @__PURE__ */ jsx26("small", { className: "attack-phase-label", children: row.phase })
           ] })
         ] }),
-        /* @__PURE__ */ jsx25("span", { role: "cell", children: row.damageType || "Ch\u01B0a x\xE1c minh" }),
-        /* @__PURE__ */ jsx25("strong", { role: "cell", children: row.displayDamage })
+        /* @__PURE__ */ jsx26("span", { role: "cell", children: row.damageType || "Ch\u01B0a x\xE1c minh" }),
+        /* @__PURE__ */ jsx26("strong", { role: "cell", children: row.displayDamage })
       ] }, row.skillId + row.officialSkillName))
     ] })
   ] });
 }
 
 // src/features/ultra/EnemyInspection.tsx
-import { Fragment as Fragment8, jsx as jsx26, jsxs as jsxs24 } from "react/jsx-runtime";
+import { Fragment as Fragment8, jsx as jsx27, jsxs as jsxs25 } from "react/jsx-runtime";
 var inspectionFor = (slug) => ({ ...inspection_default, ...recovery_default.inspection })[slug];
 function MonsterStatuses({
   encounter,
   phase
 }) {
-  return /* @__PURE__ */ jsxs24("section", { className: "enemy-status", "aria-labelledby": "enemy-status-title", children: [
-    /* @__PURE__ */ jsx26("header", { className: "enemy-section-heading", children: /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("h3", { id: "enemy-status-title", children: "Th\xF4ng s\u1ED1 Monster" }) }) }),
-    /* @__PURE__ */ jsx26("div", { className: "enemy-status-grid", children: encounter.monsters.map((monster) => /* @__PURE__ */ jsxs24(
+  return /* @__PURE__ */ jsxs25("section", { className: "enemy-status", "aria-labelledby": "enemy-status-title", children: [
+    /* @__PURE__ */ jsx27("header", { className: "enemy-section-heading", children: /* @__PURE__ */ jsx27("div", { children: /* @__PURE__ */ jsx27("h3", { id: "enemy-status-title", children: "Th\xF4ng s\u1ED1 Monster" }) }) }),
+    /* @__PURE__ */ jsx27("div", { className: "enemy-status-grid", children: encounter.monsters.map((monster) => /* @__PURE__ */ jsxs25(
       "article",
       {
         className: `enemy-status-card ${monster.id === "boss" ? "is-primary" : ""}`,
         children: [
-          /* @__PURE__ */ jsx26("div", { className: "monster-status-portrait", children: /* @__PURE__ */ jsx26(
+          /* @__PURE__ */ jsx27("div", { className: "monster-status-portrait", children: /* @__PURE__ */ jsx27(
             MonsterPortrait,
             {
               source: monster.source,
               name: monsterDisplayName(monster)
             }
           ) }),
-          /* @__PURE__ */ jsxs24("div", { className: "enemy-status-card-heading", children: [
-            /* @__PURE__ */ jsxs24("div", { children: [
-              /* @__PURE__ */ jsx26("small", { children: monster.role.split(" \xB7 ")[0] }),
-              /* @__PURE__ */ jsx26("h4", { children: monsterDisplayName(monster) })
+          /* @__PURE__ */ jsxs25("div", { className: "enemy-status-card-heading", children: [
+            /* @__PURE__ */ jsxs25("div", { children: [
+              /* @__PURE__ */ jsx27("small", { children: monster.role.split(" \xB7 ")[0] }),
+              /* @__PURE__ */ jsx27("h4", { children: monsterDisplayName(monster) })
             ] }),
-            monster.count > 1 && /* @__PURE__ */ jsxs24("span", { className: "enemy-count", children: [
+            monster.count > 1 && /* @__PURE__ */ jsxs25("span", { className: "enemy-count", children: [
               "\xD7",
               monster.count
             ] })
           ] }),
-          /* @__PURE__ */ jsxs24("dl", { children: [
-            /* @__PURE__ */ jsxs24("div", { children: [
-              /* @__PURE__ */ jsx26("dt", { children: "Level" }),
-              /* @__PURE__ */ jsx26("dd", { children: monster.level ?? "\u2014" })
+          /* @__PURE__ */ jsxs25("dl", { children: [
+            /* @__PURE__ */ jsxs25("div", { children: [
+              /* @__PURE__ */ jsx27("dt", { children: "Level" }),
+              /* @__PURE__ */ jsx27("dd", { children: monster.level ?? "\u2014" })
             ] }),
-            /* @__PURE__ */ jsxs24("div", { children: [
-              /* @__PURE__ */ jsx26("dt", { children: "T\u1ED5ng HP" }),
-              /* @__PURE__ */ jsx26("dd", { children: monster.maxHp == null ? "\u0110ang \u0111\u1ED1i chi\u1EBFu" : monster.maxHp.toLocaleString("vi-VN") })
+            /* @__PURE__ */ jsxs25("div", { children: [
+              /* @__PURE__ */ jsx27("dt", { children: "T\u1ED5ng HP" }),
+              /* @__PURE__ */ jsx27("dd", { children: monster.maxHp == null ? "\u0110ang \u0111\u1ED1i chi\u1EBFu" : monster.maxHp.toLocaleString("vi-VN") })
             ] })
           ] }),
-          phase && /* @__PURE__ */ jsxs24(Fragment8, { children: [
-            /* @__PURE__ */ jsxs24("dl", { children: [
-              /* @__PURE__ */ jsxs24("div", { children: [
-                /* @__PURE__ */ jsx26("dt", { children: "Current Phase" }),
-                /* @__PURE__ */ jsx26("dd", { children: phase.name === phase.officialState ? phase.name : `${phase.name} \xB7 ${phase.officialState}` })
+          phase && /* @__PURE__ */ jsxs25(Fragment8, { children: [
+            /* @__PURE__ */ jsxs25("dl", { children: [
+              /* @__PURE__ */ jsxs25("div", { children: [
+                /* @__PURE__ */ jsx27("dt", { children: "Current Phase" }),
+                /* @__PURE__ */ jsx27("dd", { children: phase.name === phase.officialState ? phase.name : `${phase.name} \xB7 ${phase.officialState}` })
               ] }),
-              /* @__PURE__ */ jsxs24("div", { children: [
-                /* @__PURE__ */ jsx26("dt", { children: "Damage Type" }),
-                /* @__PURE__ */ jsx26("dd", { children: [
+              /* @__PURE__ */ jsxs25("div", { children: [
+                /* @__PURE__ */ jsx27("dt", { children: "Damage Type" }),
+                /* @__PURE__ */ jsx27("dd", { children: [
                   ...new Set(
                     encounter.activeSkills.map((s) => s.damageType).filter(Boolean)
                   )
                 ].join(" \xB7 ") })
               ] })
             ] }),
-            /* @__PURE__ */ jsx26("div", { className: "phase-stat-modifiers", children: phase.phaseModifiers.map((m) => /* @__PURE__ */ jsxs24("p", { children: [
-              /* @__PURE__ */ jsx26("strong", { children: m.name }),
+            /* @__PURE__ */ jsx27("div", { className: "phase-stat-modifiers", children: phase.phaseModifiers.map((m) => /* @__PURE__ */ jsxs25("p", { children: [
+              /* @__PURE__ */ jsx27("strong", { children: m.name }),
               " \xB7 ",
               m.effect,
               " ",
-              /* @__PURE__ */ jsx26("small", { children: m.condition })
+              /* @__PURE__ */ jsx27("small", { children: m.condition })
             ] }, m.id)) })
           ] }),
-          /* @__PURE__ */ jsx26(AttackDamageTable, { encounter, monster })
+          /* @__PURE__ */ jsx27(AttackDamageTable, { encounter, monster })
         ]
       },
       monster.id
@@ -86608,25 +86736,25 @@ function InspectionSkill({
   const summaryBits = passive ? [p.condition] : [s.type, s.cooldown, s.damage].filter(Boolean);
   const playerEffects = passive ? [] : s.playerEffects || [];
   const bossEffects = passive ? [] : s.bossEffects || [];
-  return /* @__PURE__ */ jsxs24(
+  return /* @__PURE__ */ jsxs25(
     "details",
     {
       className: `enemy-skill-entry ${passive ? "is-passive" : "is-active"}`,
       children: [
-        /* @__PURE__ */ jsxs24("summary", { children: [
-          /* @__PURE__ */ jsx26("span", { className: "enemy-skill-mark", "aria-hidden": "true", children: passive ? /* @__PURE__ */ jsx26(Shield8, { size: 18 }) : /* @__PURE__ */ jsx26(Swords7, { size: 18 }) }),
-          /* @__PURE__ */ jsxs24("span", { className: "enemy-skill-heading", children: [
-            /* @__PURE__ */ jsxs24("small", { children: [
+        /* @__PURE__ */ jsxs25("summary", { children: [
+          /* @__PURE__ */ jsx27("span", { className: "enemy-skill-mark", "aria-hidden": "true", children: passive ? /* @__PURE__ */ jsx27(Shield8, { size: 18 }) : /* @__PURE__ */ jsx27(Swords7, { size: 18 }) }),
+          /* @__PURE__ */ jsxs25("span", { className: "enemy-skill-heading", children: [
+            /* @__PURE__ */ jsxs25("small", { children: [
               monsterName,
               !passive && s.phase ? ` \xB7 ${s.phase}` : "",
               " \xB7",
               " ",
               passive ? p.label : s.type || "Active Skill"
             ] }),
-            /* @__PURE__ */ jsx26("strong", { children: title }),
-            /* @__PURE__ */ jsx26("span", { children: summaryBits.join(" \xB7 ") })
+            /* @__PURE__ */ jsx27("strong", { children: title }),
+            /* @__PURE__ */ jsx27("span", { children: summaryBits.join(" \xB7 ") })
           ] }),
-          /* @__PURE__ */ jsx26(
+          /* @__PURE__ */ jsx27(
             ChevronDown3,
             {
               className: "enemy-skill-chevron",
@@ -86635,52 +86763,52 @@ function InspectionSkill({
             }
           )
         ] }),
-        /* @__PURE__ */ jsx26("div", { className: "enemy-skill-detail", children: passive ? /* @__PURE__ */ jsxs24("dl", { className: "enemy-skill-fields", children: [
-          /* @__PURE__ */ jsxs24("div", { children: [
-            /* @__PURE__ */ jsx26("dt", { children: "\u0110i\u1EC1u ki\u1EC7n" }),
-            /* @__PURE__ */ jsx26("dd", { children: p.condition })
+        /* @__PURE__ */ jsx27("div", { className: "enemy-skill-detail", children: passive ? /* @__PURE__ */ jsxs25("dl", { className: "enemy-skill-fields", children: [
+          /* @__PURE__ */ jsxs25("div", { children: [
+            /* @__PURE__ */ jsx27("dt", { children: "\u0110i\u1EC1u ki\u1EC7n" }),
+            /* @__PURE__ */ jsx27("dd", { children: p.condition })
           ] }),
-          /* @__PURE__ */ jsxs24("div", { children: [
-            /* @__PURE__ */ jsx26("dt", { children: "T\xE1c d\u1EE5ng" }),
-            /* @__PURE__ */ jsx26("dd", { children: p.effect })
+          /* @__PURE__ */ jsxs25("div", { children: [
+            /* @__PURE__ */ jsx27("dt", { children: "T\xE1c d\u1EE5ng" }),
+            /* @__PURE__ */ jsx27("dd", { children: p.effect })
           ] }),
-          !!p.values?.length && /* @__PURE__ */ jsxs24("div", { className: "is-wide", children: [
-            /* @__PURE__ */ jsx26("dt", { children: "Gi\xE1 tr\u1ECB" }),
-            /* @__PURE__ */ jsx26("dd", { children: p.values.map((v) => /* @__PURE__ */ jsx26("span", { className: "enemy-value", children: v }, v)) })
+          !!p.values?.length && /* @__PURE__ */ jsxs25("div", { className: "is-wide", children: [
+            /* @__PURE__ */ jsx27("dt", { children: "Gi\xE1 tr\u1ECB" }),
+            /* @__PURE__ */ jsx27("dd", { children: p.values.map((v) => /* @__PURE__ */ jsx27("span", { className: "enemy-value", children: v }, v)) })
           ] })
-        ] }) : /* @__PURE__ */ jsxs24("dl", { className: "enemy-skill-fields", children: [
-          !!s.activation && /* @__PURE__ */ jsxs24("div", { children: [
-            /* @__PURE__ */ jsx26("dt", { children: "K\xEDch ho\u1EA1t" }),
-            /* @__PURE__ */ jsx26("dd", { children: s.activation })
+        ] }) : /* @__PURE__ */ jsxs25("dl", { className: "enemy-skill-fields", children: [
+          !!s.activation && /* @__PURE__ */ jsxs25("div", { children: [
+            /* @__PURE__ */ jsx27("dt", { children: "K\xEDch ho\u1EA1t" }),
+            /* @__PURE__ */ jsx27("dd", { children: s.activation })
           ] }),
-          /* @__PURE__ */ jsxs24("div", { children: [
-            /* @__PURE__ */ jsx26("dt", { children: "Cooldown" }),
-            /* @__PURE__ */ jsx26("dd", { children: s.cooldown || "Theo \u0111i\u1EC1u ki\u1EC7n k\xEDch ho\u1EA1t; ch\u01B0a c\xF4ng b\u1ED1 cooldown ri\xEAng" })
+          /* @__PURE__ */ jsxs25("div", { children: [
+            /* @__PURE__ */ jsx27("dt", { children: "Cooldown" }),
+            /* @__PURE__ */ jsx27("dd", { children: s.cooldown || "Theo \u0111i\u1EC1u ki\u1EC7n k\xEDch ho\u1EA1t; ch\u01B0a c\xF4ng b\u1ED1 cooldown ri\xEAng" })
           ] }),
-          !!s.damageType && /* @__PURE__ */ jsxs24("div", { children: [
-            /* @__PURE__ */ jsx26("dt", { children: "S\xE1t th\u01B0\u01A1ng" }),
-            /* @__PURE__ */ jsxs24("dd", { children: [
+          !!s.damageType && /* @__PURE__ */ jsxs25("div", { children: [
+            /* @__PURE__ */ jsx27("dt", { children: "S\xE1t th\u01B0\u01A1ng" }),
+            /* @__PURE__ */ jsxs25("dd", { children: [
               s.damage || "Ch\u01B0a c\xF4ng b\u1ED1 l\u01B0\u1EE3ng s\xE1t th\u01B0\u01A1ng",
               s.damageType ? ` \xB7 ${s.damageType}` : ""
             ] })
           ] }),
-          !!s.targets && /* @__PURE__ */ jsxs24("div", { children: [
-            /* @__PURE__ */ jsx26("dt", { children: "M\u1EE5c ti\xEAu" }),
-            /* @__PURE__ */ jsx26("dd", { children: s.targets })
+          !!s.targets && /* @__PURE__ */ jsxs25("div", { children: [
+            /* @__PURE__ */ jsx27("dt", { children: "M\u1EE5c ti\xEAu" }),
+            /* @__PURE__ */ jsx27("dd", { children: s.targets })
           ] }),
-          !!playerEffects.length && /* @__PURE__ */ jsxs24("div", { className: "is-wide", children: [
-            /* @__PURE__ */ jsx26("dt", { children: "\u1EA2nh h\u01B0\u1EDFng l\xEAn ng\u01B0\u1EDDi ch\u01A1i" }),
-            /* @__PURE__ */ jsx26("dd", { children: playerEffects.map((effect) => /* @__PURE__ */ jsx26("span", { className: "enemy-effect", children: effect }, effect)) })
+          !!playerEffects.length && /* @__PURE__ */ jsxs25("div", { className: "is-wide", children: [
+            /* @__PURE__ */ jsx27("dt", { children: "\u1EA2nh h\u01B0\u1EDFng l\xEAn ng\u01B0\u1EDDi ch\u01A1i" }),
+            /* @__PURE__ */ jsx27("dd", { children: playerEffects.map((effect) => /* @__PURE__ */ jsx27("span", { className: "enemy-effect", children: effect }, effect)) })
           ] }),
-          !!bossEffects.length && /* @__PURE__ */ jsxs24("div", { className: "is-wide", children: [
-            /* @__PURE__ */ jsx26("dt", { children: "\u1EA2nh h\u01B0\u1EDFng l\xEAn Monster" }),
-            /* @__PURE__ */ jsx26("dd", { children: bossEffects.map((effect) => /* @__PURE__ */ jsx26("span", { className: "enemy-effect", children: effect }, effect)) })
+          !!bossEffects.length && /* @__PURE__ */ jsxs25("div", { className: "is-wide", children: [
+            /* @__PURE__ */ jsx27("dt", { children: "\u1EA2nh h\u01B0\u1EDFng l\xEAn Monster" }),
+            /* @__PURE__ */ jsx27("dd", { children: bossEffects.map((effect) => /* @__PURE__ */ jsx27("span", { className: "enemy-effect", children: effect }, effect)) })
           ] }),
-          !!s.phaseEffects?.length && /* @__PURE__ */ jsxs24("div", { className: "is-wide", children: [
-            /* @__PURE__ */ jsx26("dt", { children: "Hi\u1EC7u \u1EE9ng theo phase" }),
-            /* @__PURE__ */ jsx26("dd", { children: s.phaseEffects.map((effect) => /* @__PURE__ */ jsxs24("div", { className: "enemy-phase-effect", children: [
-              /* @__PURE__ */ jsx26("strong", { children: effect.phase }),
-              effect.playerEffects.map((text) => /* @__PURE__ */ jsx26("span", { className: "enemy-effect", children: text }, text))
+          !!s.phaseEffects?.length && /* @__PURE__ */ jsxs25("div", { className: "is-wide", children: [
+            /* @__PURE__ */ jsx27("dt", { children: "Hi\u1EC7u \u1EE9ng theo phase" }),
+            /* @__PURE__ */ jsx27("dd", { children: s.phaseEffects.map((effect) => /* @__PURE__ */ jsxs25("div", { className: "enemy-phase-effect", children: [
+              /* @__PURE__ */ jsx27("strong", { children: effect.phase }),
+              effect.playerEffects.map((text) => /* @__PURE__ */ jsx27("span", { className: "enemy-effect", children: text }, text))
             ] }, effect.phase)) })
           ] })
         ] }) })
@@ -86694,12 +86822,12 @@ function EnemyInspection({ slug, encounter: supplied }) {
   const system = supplied ? void 0 : phaseSystemFor(slug);
   const phase = system?.phases.find((p) => p.id === phaseId) || system?.phases[0];
   const encounter = baseEncounter && phase && system ? encounterForPhase(baseEncounter, phase, system.attacks) : baseEncounter;
-  const [tab, setTab] = useState15("active");
-  const [mainTab, setMainTab] = useState15("stats");
-  const [monsterId, setMonsterId] = useState15("");
+  const [tab, setTab] = useState16("active");
+  const [mainTab, setMainTab] = useState16("stats");
+  const [monsterId, setMonsterId] = useState16("");
   const id = useId5();
   if (!encounter)
-    return /* @__PURE__ */ jsx26("p", { className: "ultra-empty", children: "D\u1EEF li\u1EC7u ki\u1EC3m tra Monster \u0111ang \u0111\u01B0\u1EE3c c\u1EADp nh\u1EADt." });
+    return /* @__PURE__ */ jsx27("p", { className: "ultra-empty", children: "D\u1EEF li\u1EC7u ki\u1EC3m tra Monster \u0111ang \u0111\u01B0\u1EE3c c\u1EADp nh\u1EADt." });
   const selectedMonster = encounter.monsters.find((m) => m.id === monsterId) || encounter.monsters.find((m) => m.id === "boss") || encounter.monsters[0];
   const selectedEncounter = { ...encounter, monsters: [selectedMonster] };
   const monsterNames = new Map(
@@ -86714,8 +86842,8 @@ function EnemyInspection({ slug, encounter: supplied }) {
     setTab(next);
     event.currentTarget.querySelector(`#${id}-${next}-tab`)?.focus();
   };
-  return /* @__PURE__ */ jsxs24("div", { className: "enemy-inspection", children: [
-    phase && system && /* @__PURE__ */ jsx26(
+  return /* @__PURE__ */ jsxs25("div", { className: "enemy-inspection", children: [
+    phase && system && /* @__PURE__ */ jsx27(
       BossPhaseSelector,
       {
         phases: system.phases,
@@ -86723,14 +86851,14 @@ function EnemyInspection({ slug, encounter: supplied }) {
         onChange: selectPhase
       }
     ),
-    /* @__PURE__ */ jsxs24("div", { className: "phase-content", children: [
-      encounter.monsters.length > 1 && /* @__PURE__ */ jsx26("div", { className: "monster-selector", "aria-label": "Ch\u1ECDn Monster", children: encounter.monsters.map((m) => /* @__PURE__ */ jsxs24(
+    /* @__PURE__ */ jsxs25("div", { className: "phase-content", children: [
+      encounter.monsters.length > 1 && /* @__PURE__ */ jsx27("div", { className: "monster-selector", "aria-label": "Ch\u1ECDn Monster", children: encounter.monsters.map((m) => /* @__PURE__ */ jsxs25(
         "button",
         {
           "aria-pressed": m.id === selectedMonster.id,
           onClick: () => setMonsterId(m.id),
           children: [
-            /* @__PURE__ */ jsx26(
+            /* @__PURE__ */ jsx27(
               MonsterPortrait,
               {
                 source: m.source,
@@ -86738,12 +86866,12 @@ function EnemyInspection({ slug, encounter: supplied }) {
                 compact: true
               }
             ),
-            /* @__PURE__ */ jsx26("span", { children: monsterDisplayName(m) })
+            /* @__PURE__ */ jsx27("span", { children: monsterDisplayName(m) })
           ]
         },
         m.id
       )) }),
-      /* @__PURE__ */ jsxs24(
+      /* @__PURE__ */ jsxs25(
         "div",
         {
           className: "enemy-skill-tabs inspection-main-tabs",
@@ -86758,7 +86886,7 @@ function EnemyInspection({ slug, encounter: supplied }) {
             }
           },
           children: [
-            /* @__PURE__ */ jsx26(
+            /* @__PURE__ */ jsx27(
               "button",
               {
                 role: "tab",
@@ -86771,7 +86899,7 @@ function EnemyInspection({ slug, encounter: supplied }) {
                 children: "TH\xD4NG S\u1ED0"
               }
             ),
-            /* @__PURE__ */ jsx26(
+            /* @__PURE__ */ jsx27(
               "button",
               {
                 role: "tab",
@@ -86790,16 +86918,16 @@ function EnemyInspection({ slug, encounter: supplied }) {
           ]
         }
       ),
-      mainTab === "stats" ? /* @__PURE__ */ jsx26(
+      mainTab === "stats" ? /* @__PURE__ */ jsx27(
         "div",
         {
           role: "tabpanel",
           id: `${id}-stats`,
           "aria-labelledby": `${id}-stats-tab`,
           className: "enemy-skill-list",
-          children: /* @__PURE__ */ jsx26(MonsterStatuses, { encounter: selectedEncounter, phase })
+          children: /* @__PURE__ */ jsx27(MonsterStatuses, { encounter: selectedEncounter, phase })
         }
-      ) : /* @__PURE__ */ jsxs24(
+      ) : /* @__PURE__ */ jsxs25(
         "section",
         {
           role: "tabpanel",
@@ -86807,8 +86935,8 @@ function EnemyInspection({ slug, encounter: supplied }) {
           className: `enemy-skill-section ${tab === "active" ? "active-mode" : "passive-mode"}`,
           "aria-labelledby": `${id}-skills-tab`,
           children: [
-            /* @__PURE__ */ jsx26("h3", { id: "enemy-skills-title", className: "sr-only", children: "K\u1EF9 n\u0103ng Monster" }),
-            /* @__PURE__ */ jsxs24(
+            /* @__PURE__ */ jsx27("h3", { id: "enemy-skills-title", className: "sr-only", children: "K\u1EF9 n\u0103ng Monster" }),
+            /* @__PURE__ */ jsxs25(
               "div",
               {
                 className: "enemy-skill-tabs",
@@ -86816,7 +86944,7 @@ function EnemyInspection({ slug, encounter: supplied }) {
                 "aria-label": "Nh\xF3m k\u1EF9 n\u0103ng Monster",
                 onKeyDown: handleTabKeyDown,
                 children: [
-                  /* @__PURE__ */ jsxs24(
+                  /* @__PURE__ */ jsxs25(
                     "button",
                     {
                       role: "tab",
@@ -86826,12 +86954,12 @@ function EnemyInspection({ slug, encounter: supplied }) {
                       tabIndex: tab === "active" ? 0 : -1,
                       onClick: () => setTab("active"),
                       children: [
-                        /* @__PURE__ */ jsx26(Zap, { size: 16 }),
+                        /* @__PURE__ */ jsx27(Zap2, { size: 16 }),
                         "ACTIVE SKILL"
                       ]
                     }
                   ),
-                  /* @__PURE__ */ jsxs24(
+                  /* @__PURE__ */ jsxs25(
                     "button",
                     {
                       role: "tab",
@@ -86841,7 +86969,7 @@ function EnemyInspection({ slug, encounter: supplied }) {
                       tabIndex: tab === "passive" ? 0 : -1,
                       onClick: () => setTab("passive"),
                       children: [
-                        /* @__PURE__ */ jsx26(Shield8, { size: 16 }),
+                        /* @__PURE__ */ jsx27(Shield8, { size: 16 }),
                         "PASSIVE SKILL"
                       ]
                     }
@@ -86849,7 +86977,7 @@ function EnemyInspection({ slug, encounter: supplied }) {
                 ]
               }
             ),
-            /* @__PURE__ */ jsxs24(
+            /* @__PURE__ */ jsxs25(
               "div",
               {
                 role: "tabpanel",
@@ -86862,22 +86990,22 @@ function EnemyInspection({ slug, encounter: supplied }) {
                       (skill) => skill.monsterId === monster.id
                     );
                     if (!entries.length) return null;
-                    return /* @__PURE__ */ jsxs24("section", { className: "enemy-skill-group", children: [
-                      encounter.monsters.length > 1 && /* @__PURE__ */ jsxs24("h4", { children: [
+                    return /* @__PURE__ */ jsxs25("section", { className: "enemy-skill-group", children: [
+                      encounter.monsters.length > 1 && /* @__PURE__ */ jsxs25("h4", { children: [
                         monsterDisplayName(monster),
                         monster.count > 1 ? ` \xD7${monster.count}` : ""
                       ] }),
-                      tab === "passive" ? /* @__PURE__ */ jsxs24(Fragment8, { children: [
-                        /* @__PURE__ */ jsx26("h4", { children: phase ? "Global Passive" : "Passive Skill" }),
-                        /* @__PURE__ */ jsx26(PassivePanel, { entries }),
-                        phase && /* @__PURE__ */ jsxs24(Fragment8, { children: [
-                          /* @__PURE__ */ jsxs24("h4", { children: [
+                      tab === "passive" ? /* @__PURE__ */ jsxs25(Fragment8, { children: [
+                        /* @__PURE__ */ jsx27("h4", { children: phase ? "Global Passive" : "Passive Skill" }),
+                        /* @__PURE__ */ jsx27(PassivePanel, { entries }),
+                        phase && /* @__PURE__ */ jsxs25(Fragment8, { children: [
+                          /* @__PURE__ */ jsxs25("h4", { children: [
                             "Phase Effects \xB7 ",
                             phase.name
                           ] }),
-                          /* @__PURE__ */ jsx26(PassivePanel, { entries: phase.phaseModifiers })
+                          /* @__PURE__ */ jsx27(PassivePanel, { entries: phase.phaseModifiers })
                         ] })
-                      ] }) : entries.map((skill) => /* @__PURE__ */ jsx26(
+                      ] }) : entries.map((skill) => /* @__PURE__ */ jsx27(
                         InspectionSkill,
                         {
                           skill,
@@ -86887,7 +87015,7 @@ function EnemyInspection({ slug, encounter: supplied }) {
                       ))
                     ] }, monster.id);
                   }),
-                  !skills.length && /* @__PURE__ */ jsx26("p", { className: "ultra-empty", children: "Ch\u01B0a c\xF3 k\u1EF9 n\u0103ng \u0111\u01B0\u1EE3c x\xE1c minh cho Monster n\xE0y." })
+                  !skills.length && /* @__PURE__ */ jsx27("p", { className: "ultra-empty", children: "Ch\u01B0a c\xF3 k\u1EF9 n\u0103ng \u0111\u01B0\u1EE3c x\xE1c minh cho Monster n\xE0y." })
                 ]
               },
               tab
@@ -86895,22 +87023,22 @@ function EnemyInspection({ slug, encounter: supplied }) {
           ]
         }
       ),
-      !phase && detailFor(slug)?.notes.some((n) => n.text.trim()) && /* @__PURE__ */ jsxs24("section", { className: "enemy-notes", "aria-labelledby": "enemy-notes-title", children: [
-        /* @__PURE__ */ jsxs24("header", { children: [
-          /* @__PURE__ */ jsx26(HeartPulse3, { size: 18 }),
-          /* @__PURE__ */ jsx26("h3", { id: "enemy-notes-title", children: "L\u01B0u \xFD trong tr\u1EADn" }),
-          /* @__PURE__ */ jsx26(Clock33, { size: 15 })
+      !phase && detailFor(slug)?.notes.some((n) => n.text.trim()) && /* @__PURE__ */ jsxs25("section", { className: "enemy-notes", "aria-labelledby": "enemy-notes-title", children: [
+        /* @__PURE__ */ jsxs25("header", { children: [
+          /* @__PURE__ */ jsx27(HeartPulse3, { size: 18 }),
+          /* @__PURE__ */ jsx27("h3", { id: "enemy-notes-title", children: "L\u01B0u \xFD trong tr\u1EADn" }),
+          /* @__PURE__ */ jsx27(Clock33, { size: 15 })
         ] }),
-        /* @__PURE__ */ jsx26(QuickNotes, { detail: detailFor(slug) })
+        /* @__PURE__ */ jsx27(QuickNotes, { detail: detailFor(slug) })
       ] })
     ] }, phase?.id || slug),
-    phase && /* @__PURE__ */ jsx26(PhaseStrategy, { phase }),
-    /* @__PURE__ */ jsx26(BossGlobalTimeline, { slug })
+    phase && /* @__PURE__ */ jsx27(PhaseStrategy, { phase }),
+    /* @__PURE__ */ jsx27(BossGlobalTimeline, { slug })
   ] });
 }
 
 // src/features/ultra/RPGEquipmentSelector.tsx
-import { useEffect as useEffect5, useRef as useRef3, useState as useState16 } from "react";
+import { useEffect as useEffect5, useRef as useRef3, useState as useState17 } from "react";
 import { ChevronLeft, ChevronRight as ChevronRight3, Swords as Swords8, Shield as Shield9, Shirt, Package as Package3 } from "lucide-react";
 
 // src/lib/equipment-category.mjs
@@ -86930,18 +87058,18 @@ function selectEquipment(routes, filter, selectedId) {
 }
 
 // src/features/ultra/RPGEquipmentSelector.tsx
-import { Fragment as Fragment9, jsx as jsx27, jsxs as jsxs25 } from "react/jsx-runtime";
+import { Fragment as Fragment9, jsx as jsx28, jsxs as jsxs26 } from "react/jsx-runtime";
 function EquipmentArtwork({ route, thumbnail = false }) {
-  const [failed, setFailed] = useState16(false);
+  const [failed, setFailed] = useState17(false);
   const asset = aqw_assets_default.find((a) => a.assetId === route.image && a.verificationStatus === "verified" && a.usageStatus === "approved" && a.imagePath) || equipment_default.assets.find((a) => a.id === route.image && a.verificationStatus === "verified" && a.usageStatus === "approved");
   const category = equipmentCategory(route.category), Icon = category === "weapon" ? Swords8 : category === "armor" ? Shirt : category === "helm" || category === "cape" ? Shield9 : Package3;
-  return asset && !failed ? /* @__PURE__ */ jsx27("img", { src: asset.imagePath, alt: thumbnail ? "" : route.itemName, width: asset.width || 320, height: asset.height || 320, loading: thumbnail ? "lazy" : "eager", decoding: "async", onError: () => setFailed(true) }) : /* @__PURE__ */ jsx27("span", { className: "equipment-type-fallback", role: thumbnail ? void 0 : "img", "aria-label": thumbnail ? void 0 : route.itemName, children: /* @__PURE__ */ jsx27(Icon, { size: thumbnail ? 28 : 80, "aria-hidden": "true" }) });
+  return asset && !failed ? /* @__PURE__ */ jsx28("img", { src: asset.imagePath, alt: thumbnail ? "" : route.itemName, width: asset.width || 320, height: asset.height || 320, loading: thumbnail ? "lazy" : "eager", decoding: "async", onError: () => setFailed(true) }) : /* @__PURE__ */ jsx28("span", { className: "equipment-type-fallback", role: thumbnail ? void 0 : "img", "aria-label": thumbnail ? void 0 : route.itemName, children: /* @__PURE__ */ jsx28(Icon, { size: thumbnail ? 28 : 80, "aria-hidden": "true" }) });
 }
 function RPGEquipmentSelector({ routes, renderDetails }) {
-  const [filter, setFilter] = useState16("all"), [selectedId, setSelectedId] = useState16(routes[0]?.id);
+  const [filter, setFilter] = useState17("all"), [selectedId, setSelectedId] = useState17(routes[0]?.id);
   const strip = useRef3(null);
   const { choices, selected } = selectEquipment(routes, filter, selectedId);
-  const [edges, setEdges] = useState16({ start: true, end: false });
+  const [edges, setEdges] = useState17({ start: true, end: false });
   useEffect5(() => {
     setSelectedId(selected?.id);
   }, [selected?.id]);
@@ -86967,65 +87095,65 @@ function RPGEquipmentSelector({ routes, renderDetails }) {
     if (el) el.scrollBy({ left: direction * el.clientWidth * 0.8, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
   };
   const item = selected && equipmentFor(selected.itemName);
-  return /* @__PURE__ */ jsxs25("div", { className: "rpg-equipment-selector", children: [
-    /* @__PURE__ */ jsx27("div", { className: "challenge-filters equipment-type-filters", role: "group", "aria-label": "Lo\u1EA1i trang b\u1ECB", children: equipmentFilters.map((f) => /* @__PURE__ */ jsx27("button", { "aria-pressed": filter === f.id, onClick: () => setFilter(f.id), children: f.label }, f.id)) }),
-    selected ? /* @__PURE__ */ jsxs25(Fragment9, { children: [
-      /* @__PURE__ */ jsxs25("div", { className: "equipment-strip-navigation", children: [
-        /* @__PURE__ */ jsx27("button", { className: "equipment-strip-arrow", "aria-label": "Trang b\u1ECB tr\u01B0\u1EDBc", disabled: edges.start, onClick: () => move(-1), children: /* @__PURE__ */ jsx27(ChevronLeft, { size: 18 }) }),
-        /* @__PURE__ */ jsx27("div", { className: "equipment-selection-strip ultra-equipment-gallery", ref: strip, role: "group", "aria-label": "Ch\u1ECDn trang b\u1ECB", children: choices.map((route) => /* @__PURE__ */ jsx27("button", { className: `equipment-thumbnail ultra-equipment-choice ${selected.id === route.id ? "selected" : ""}`, title: route.itemName, "aria-label": route.itemName, "aria-pressed": selected.id === route.id, onClick: () => setSelectedId(route.id), children: /* @__PURE__ */ jsx27(EquipmentArtwork, { route, thumbnail: true }, route.image) }, route.id)) }, filter),
-        /* @__PURE__ */ jsx27("button", { className: "equipment-strip-arrow", "aria-label": "Trang b\u1ECB ti\u1EBFp theo", disabled: edges.end, onClick: () => move(1), children: /* @__PURE__ */ jsx27(ChevronRight3, { size: 18 }) })
+  return /* @__PURE__ */ jsxs26("div", { className: "rpg-equipment-selector", children: [
+    /* @__PURE__ */ jsx28("div", { className: "challenge-filters equipment-type-filters", role: "group", "aria-label": "Lo\u1EA1i trang b\u1ECB", children: equipmentFilters.map((f) => /* @__PURE__ */ jsx28("button", { "aria-pressed": filter === f.id, onClick: () => setFilter(f.id), children: f.label }, f.id)) }),
+    selected ? /* @__PURE__ */ jsxs26(Fragment9, { children: [
+      /* @__PURE__ */ jsxs26("div", { className: "equipment-strip-navigation", children: [
+        /* @__PURE__ */ jsx28("button", { className: "equipment-strip-arrow", "aria-label": "Trang b\u1ECB tr\u01B0\u1EDBc", disabled: edges.start, onClick: () => move(-1), children: /* @__PURE__ */ jsx28(ChevronLeft, { size: 18 }) }),
+        /* @__PURE__ */ jsx28("div", { className: "equipment-selection-strip ultra-equipment-gallery", ref: strip, role: "group", "aria-label": "Ch\u1ECDn trang b\u1ECB", children: choices.map((route) => /* @__PURE__ */ jsx28("button", { className: `equipment-thumbnail ultra-equipment-choice ${selected.id === route.id ? "selected" : ""}`, title: route.itemName, "aria-label": route.itemName, "aria-pressed": selected.id === route.id, onClick: () => setSelectedId(route.id), children: /* @__PURE__ */ jsx28(EquipmentArtwork, { route, thumbnail: true }, route.image) }, route.id)) }, filter),
+        /* @__PURE__ */ jsx28("button", { className: "equipment-strip-arrow", "aria-label": "Trang b\u1ECB ti\u1EBFp theo", disabled: edges.end, onClick: () => move(1), children: /* @__PURE__ */ jsx28(ChevronRight3, { size: 18 }) })
       ] }),
-      /* @__PURE__ */ jsxs25("div", { className: "equipment-selection-meta", children: [
-        /* @__PURE__ */ jsx27("span", { children: "SELECTED EQUIPMENT" }),
-        /* @__PURE__ */ jsxs25("span", { children: [
+      /* @__PURE__ */ jsxs26("div", { className: "equipment-selection-meta", children: [
+        /* @__PURE__ */ jsx28("span", { children: "SELECTED EQUIPMENT" }),
+        /* @__PURE__ */ jsxs26("span", { children: [
           choices.findIndex((r) => r.id === selected.id) + 1,
           " / ",
           choices.length
         ] })
       ] }),
-      /* @__PURE__ */ jsxs25("div", { className: "rpg-equipment-preview", "data-equipment-id": selected.canonicalId || selected.id, children: [
-        /* @__PURE__ */ jsx27("div", { className: "equipment-large-art", children: /* @__PURE__ */ jsx27(EquipmentArtwork, { route: selected }, selected.image) }),
-        /* @__PURE__ */ jsxs25("div", { className: "equipment-selected-content", children: [
-          /* @__PURE__ */ jsxs25("p", { className: "equipment-selected-type", children: [
+      /* @__PURE__ */ jsxs26("div", { className: "rpg-equipment-preview", "data-equipment-id": selected.canonicalId || selected.id, children: [
+        /* @__PURE__ */ jsx28("div", { className: "equipment-large-art", children: /* @__PURE__ */ jsx28(EquipmentArtwork, { route: selected }, selected.image) }),
+        /* @__PURE__ */ jsxs26("div", { className: "equipment-selected-content", children: [
+          /* @__PURE__ */ jsxs26("p", { className: "equipment-selected-type", children: [
             equipmentCategoryLabel(item?.equipmentType || selected.category),
             selected.group === "empowered" ? " \xB7 EMPOWERED" : ""
           ] }),
-          /* @__PURE__ */ jsx27("h3", { children: selected.itemName }),
-          /* @__PURE__ */ jsx27(EquipmentStatStrip, { name: selected.itemName }),
-          /* @__PURE__ */ jsx27(MaterialRequirements, { name: selected.itemName }),
+          /* @__PURE__ */ jsx28("h3", { children: selected.itemName }),
+          /* @__PURE__ */ jsx28(EquipmentStatStrip, { name: selected.itemName }),
+          /* @__PURE__ */ jsx28(MaterialRequirements, { name: selected.itemName }),
           renderDetails(selected)
         ] })
       ] }, selected.id)
-    ] }) : /* @__PURE__ */ jsx27("p", { className: "ultra-empty", role: "status", children: "Kh\xF4ng c\xF3 trang b\u1ECB thu\u1ED9c lo\u1EA1i n\xE0y." })
+    ] }) : /* @__PURE__ */ jsx28("p", { className: "ultra-empty", role: "status", children: "Kh\xF4ng c\xF3 trang b\u1ECB thu\u1ED9c lo\u1EA1i n\xE0y." })
   ] });
 }
 
 // src/features/challenges/ChallengeCodex.tsx
-import { Fragment as Fragment10, jsx as jsx28, jsxs as jsxs26 } from "react/jsx-runtime";
+import { Fragment as Fragment10, jsx as jsx29, jsxs as jsxs27 } from "react/jsx-runtime";
 var challenges = catalog_default2;
 function ChallengeTeams({ teams }) {
-  const [selected, setSelected] = useState17(0);
+  const [selected, setSelected] = useState18(0);
   const team = teams[selected] || teams[0];
   if (!team) return null;
-  return /* @__PURE__ */ jsxs26("section", { className: "ultra-section", children: [
-    /* @__PURE__ */ jsx28("h2", { children: "Recommended Teams" }),
-    /* @__PURE__ */ jsx28("div", { className: "challenge-stage-selector", children: teams.map((t, i) => /* @__PURE__ */ jsxs26("button", { "aria-pressed": selected === i, onClick: () => setSelected(i), title: t.name, children: [
+  return /* @__PURE__ */ jsxs27("section", { className: "ultra-section", children: [
+    /* @__PURE__ */ jsx29("h2", { children: "Recommended Teams" }),
+    /* @__PURE__ */ jsx29("div", { className: "challenge-stage-selector", children: teams.map((t, i) => /* @__PURE__ */ jsxs27("button", { "aria-pressed": selected === i, onClick: () => setSelected(i), title: t.name, children: [
       "TEAM ",
       i + 1
     ] }, t.id)) }),
-    /* @__PURE__ */ jsx28("p", { children: team.name }),
-    /* @__PURE__ */ jsx28("div", { className: "team-assignment-list", children: team.assignments.map((a) => /* @__PURE__ */ jsx28(AssignmentCard, { assignment: a }, team.id + a.id)) })
+    /* @__PURE__ */ jsx29("p", { children: team.name }),
+    /* @__PURE__ */ jsx29("div", { className: "team-assignment-list", children: team.assignments.map((a) => /* @__PURE__ */ jsx29(AssignmentCard, { assignment: a }, team.id + a.id)) })
   ] });
 }
 function routeGroup(type) {
   return type === "dungeon" ? "/challenge-dungeon" : "/other-challenges";
 }
 function ChallengeDetail({ summary }) {
-  const [data, setData] = useState17();
-  const [error, setError] = useState17("");
-  const [index, setIndex] = useState17(0);
-  const [done, setDone] = useState17([]);
-  const [saveError, setSaveError] = useState17("");
+  const [data, setData] = useState18();
+  const [error, setError] = useState18("");
+  const [index, setIndex] = useState18(0);
+  const [done, setDone] = useState18([]);
+  const [saveError, setSaveError] = useState18("");
   const key2 = "aqw:challenge:v12-6:" + summary.id;
   useEffect6(() => {
     const controller = new AbortController();
@@ -87042,77 +87170,77 @@ function ChallengeDetail({ summary }) {
     return () => controller.abort();
   }, [summary.id, summary.bodyUrl, key2]);
   const stage = data?.stages[index];
-  return /* @__PURE__ */ jsxs26("main", { id: "main", className: "ultra-codex challenge-codex", children: [
-    /* @__PURE__ */ jsx28("div", { className: "ultra-back-row", children: /* @__PURE__ */ jsxs26("a", { className: "ultra-back", href: routeGroup(summary.type), children: [
-      /* @__PURE__ */ jsx28(ArrowLeft, { size: 17 }),
+  return /* @__PURE__ */ jsxs27("main", { id: "main", className: "ultra-codex challenge-codex", children: [
+    /* @__PURE__ */ jsx29("div", { className: "ultra-back-row", children: /* @__PURE__ */ jsxs27("a", { className: "ultra-back", href: routeGroup(summary.type), children: [
+      /* @__PURE__ */ jsx29(ArrowLeft, { size: 17 }),
       "Quay l\u1EA1i danh s\xE1ch"
     ] }) }),
-    /* @__PURE__ */ jsxs26("section", { className: "ultra-hero " + (!summary.image ? "challenge-no-art" : ""), children: [
-      /* @__PURE__ */ jsx28(BossOfficialTitle, { name: summary.name, eyebrow: summary.type.replaceAll("_", " ") }),
-      /* @__PURE__ */ jsxs26("div", { className: "ultra-hero-copy", children: [
-        /* @__PURE__ */ jsx28("p", { className: "ultra-description", children: summary.description }),
-        /* @__PURE__ */ jsxs26("dl", { className: "ultra-hero-meta", children: [
-          /* @__PURE__ */ jsxs26("div", { children: [
-            /* @__PURE__ */ jsx28("dt", { children: "Map / Access Hub" }),
-            /* @__PURE__ */ jsx28("dd", { children: summary.map && "/join " + summary.map })
+    /* @__PURE__ */ jsxs27("section", { className: "ultra-hero " + (!summary.image ? "challenge-no-art" : ""), children: [
+      /* @__PURE__ */ jsx29(BossOfficialTitle, { name: summary.name, eyebrow: summary.type.replaceAll("_", " ") }),
+      /* @__PURE__ */ jsxs27("div", { className: "ultra-hero-copy", children: [
+        /* @__PURE__ */ jsx29("p", { className: "ultra-description", children: summary.description }),
+        /* @__PURE__ */ jsxs27("dl", { className: "ultra-hero-meta", children: [
+          /* @__PURE__ */ jsxs27("div", { children: [
+            /* @__PURE__ */ jsx29("dt", { children: "Map / Access Hub" }),
+            /* @__PURE__ */ jsx29("dd", { children: summary.map && "/join " + summary.map })
           ] }),
-          summary.levelRequirement != null && /* @__PURE__ */ jsxs26("div", { children: [
-            /* @__PURE__ */ jsx28("dt", { children: "Level y\xEAu c\u1EA7u" }),
-            /* @__PURE__ */ jsx28("dd", { children: summary.levelRequirement })
+          summary.levelRequirement != null && /* @__PURE__ */ jsxs27("div", { children: [
+            /* @__PURE__ */ jsx29("dt", { children: "Level y\xEAu c\u1EA7u" }),
+            /* @__PURE__ */ jsx29("dd", { children: summary.levelRequirement })
           ] }),
-          summary.partySize != null && /* @__PURE__ */ jsxs26("div", { children: [
-            /* @__PURE__ */ jsx28("dt", { children: "Party / Room limit" }),
-            /* @__PURE__ */ jsx28("dd", { children: summary.partySize })
+          summary.partySize != null && /* @__PURE__ */ jsxs27("div", { children: [
+            /* @__PURE__ */ jsx29("dt", { children: "Party / Room limit" }),
+            /* @__PURE__ */ jsx29("dd", { children: summary.partySize })
           ] })
         ] }),
-        data && /* @__PURE__ */ jsxs26("details", { className: "challenge-unlock", children: [
-          /* @__PURE__ */ jsxs26("summary", { children: [
-            /* @__PURE__ */ jsx28(ScrollText, { size: 16 }),
+        data && /* @__PURE__ */ jsxs27("details", { className: "challenge-unlock", children: [
+          /* @__PURE__ */ jsxs27("summary", { children: [
+            /* @__PURE__ */ jsx29(ScrollText, { size: 16 }),
             "\u0110i\u1EC1u ki\u1EC7n m\u1EDF kh\xF3a"
           ] }),
-          /* @__PURE__ */ jsx28("ul", { children: data.unlockRequirements.map((s, i) => /* @__PURE__ */ jsx28("li", { children: s }, i)) })
+          /* @__PURE__ */ jsx29("ul", { children: data.unlockRequirements.map((s, i) => /* @__PURE__ */ jsx29("li", { children: s }, i)) })
         ] })
       ] }),
-      summary.image && /* @__PURE__ */ jsx28("div", { className: "ultra-hero-art", children: /* @__PURE__ */ jsx28(Asset, { id: summary.image, eager: true }) })
+      summary.image && /* @__PURE__ */ jsx29("div", { className: "ultra-hero-art", children: /* @__PURE__ */ jsx29(Asset, { id: summary.image, eager: true }) })
     ] }),
-    !data ? /* @__PURE__ */ jsx28("p", { role: "status", children: error || "\u0110ang t\u1EA3i c\xE1c Stage\u2026" }) : /* @__PURE__ */ jsxs26(Fragment10, { children: [
-      data.progressionRelation && /* @__PURE__ */ jsxs26("nav", { className: "celestial-path", "aria-label": "Celestial Progression", children: [
-        /* @__PURE__ */ jsx28("div", { children: data.progressionRelation.branches.map((id) => {
+    !data ? /* @__PURE__ */ jsx29("p", { role: "status", children: error || "\u0110ang t\u1EA3i c\xE1c Stage\u2026" }) : /* @__PURE__ */ jsxs27(Fragment10, { children: [
+      data.progressionRelation && /* @__PURE__ */ jsxs27("nav", { className: "celestial-path", "aria-label": "Celestial Progression", children: [
+        /* @__PURE__ */ jsx29("div", { children: data.progressionRelation.branches.map((id) => {
           const c = challenges.find((c2) => c2.id === id);
-          return /* @__PURE__ */ jsx28("a", { href: c.href, children: c.name }, id);
+          return /* @__PURE__ */ jsx29("a", { href: c.href, children: c.name }, id);
         }) }),
-        /* @__PURE__ */ jsx28(ChevronRight4, {}),
-        /* @__PURE__ */ jsxs26("a", { href: "/challenge-dungeon/ascension-of-the-eclipse", children: [
+        /* @__PURE__ */ jsx29(ChevronRight4, {}),
+        /* @__PURE__ */ jsxs27("a", { href: "/challenge-dungeon/ascension-of-the-eclipse", children: [
           "Ascension of the Eclipse ",
-          /* @__PURE__ */ jsx28("small", { children: "Rite of Ascension \xB7 Festival of Victors" })
+          /* @__PURE__ */ jsx29("small", { children: "Rite of Ascension \xB7 Festival of Victors" })
         ] })
       ] }),
-      /* @__PURE__ */ jsxs26("section", { className: "challenge-stage-inspection", children: [
-        /* @__PURE__ */ jsxs26("header", { className: "challenge-progress", children: [
-          /* @__PURE__ */ jsxs26("h2", { children: [
-            /* @__PURE__ */ jsx28(Swords9, { size: 20 }),
+      /* @__PURE__ */ jsxs27("section", { className: "challenge-stage-inspection", children: [
+        /* @__PURE__ */ jsxs27("header", { className: "challenge-progress", children: [
+          /* @__PURE__ */ jsxs27("h2", { children: [
+            /* @__PURE__ */ jsx29(Swords9, { size: 20 }),
             "Dungeon / Encounter Stages"
           ] }),
-          /* @__PURE__ */ jsxs26("span", { children: [
+          /* @__PURE__ */ jsxs27("span", { children: [
             done.length,
             "/",
             data.stages.length,
             " \u0111\xE3 \u0111\xE1nh d\u1EA5u"
           ] }),
-          /* @__PURE__ */ jsx28("progress", { value: done.length, max: data.stages.length })
+          /* @__PURE__ */ jsx29("progress", { value: done.length, max: data.stages.length })
         ] }),
-        /* @__PURE__ */ jsx28("div", { className: "challenge-stage-selector", role: "group", "aria-label": "Ch\u1ECDn Stage", children: data.stages.map((s, i) => /* @__PURE__ */ jsxs26("button", { type: "button", title: s.name, "aria-pressed": index === i, onClick: () => setIndex(i), children: [
+        /* @__PURE__ */ jsx29("div", { className: "challenge-stage-selector", role: "group", "aria-label": "Ch\u1ECDn Stage", children: data.stages.map((s, i) => /* @__PURE__ */ jsxs27("button", { type: "button", title: s.name, "aria-pressed": index === i, onClick: () => setIndex(i), children: [
           String(i + 1).padStart(2, "0"),
-          done.includes(s.id) && /* @__PURE__ */ jsx28(Check2, { size: 12 })
+          done.includes(s.id) && /* @__PURE__ */ jsx29(Check2, { size: 12 })
         ] }, s.id)) }),
-        stage && /* @__PURE__ */ jsxs26("div", { className: "challenge-stage-content", "data-stage-id": stage.id, children: [
-          /* @__PURE__ */ jsxs26("header", { children: [
-            /* @__PURE__ */ jsxs26("div", { children: [
-              /* @__PURE__ */ jsx28("small", { children: stage.stageType.replaceAll("_", " ") }),
-              /* @__PURE__ */ jsx28("h3", { children: stage.name })
+        stage && /* @__PURE__ */ jsxs27("div", { className: "challenge-stage-content", "data-stage-id": stage.id, children: [
+          /* @__PURE__ */ jsxs27("header", { children: [
+            /* @__PURE__ */ jsxs27("div", { children: [
+              /* @__PURE__ */ jsx29("small", { children: stage.stageType.replaceAll("_", " ") }),
+              /* @__PURE__ */ jsx29("h3", { children: stage.name })
             ] }),
-            /* @__PURE__ */ jsxs26("label", { children: [
-              /* @__PURE__ */ jsx28("input", { type: "checkbox", checked: done.includes(stage.id), onChange: () => {
+            /* @__PURE__ */ jsxs27("label", { children: [
+              /* @__PURE__ */ jsx29("input", { type: "checkbox", checked: done.includes(stage.id), onChange: () => {
                 const next = done.includes(stage.id) ? done.filter((id) => id !== stage.id) : [...done, stage.id];
                 setDone(next);
                 setSaveError(writeStored(key2, next) ? "" : "Kh\xF4ng l\u01B0u \u0111\u01B0\u1EE3c ti\u1EBFn \u0111\u1ED9; ch\u1EC9 gi\u1EEF trong phi\xEAn n\xE0y.");
@@ -87120,41 +87248,41 @@ function ChallengeDetail({ summary }) {
               "Ho\xE0n th\xE0nh Stage"
             ] })
           ] }),
-          saveError && /* @__PURE__ */ jsx28("p", { role: "status", children: saveError }),
-          /* @__PURE__ */ jsx28("p", { className: "challenge-tracker-note", children: "Checklist th\u1EE7 c\xF4ng, kh\xF4ng \u0111\u1ED3ng b\u1ED9 t\xE0i kho\u1EA3n AQW." }),
-          stage.mechanics.length > 0 && /* @__PURE__ */ jsxs26("div", { className: "stage-mechanic-summary", children: [
-            /* @__PURE__ */ jsx28("h4", { children: "\u0110i\u1EC1u ki\u1EC7n \u0111\u1EB7c bi\u1EC7t" }),
-            /* @__PURE__ */ jsx28("ul", { children: stage.mechanics.slice(0, 8).map((s, i) => /* @__PURE__ */ jsx28("li", { children: s }, i)) })
+          saveError && /* @__PURE__ */ jsx29("p", { role: "status", children: saveError }),
+          /* @__PURE__ */ jsx29("p", { className: "challenge-tracker-note", children: "Checklist th\u1EE7 c\xF4ng, kh\xF4ng \u0111\u1ED3ng b\u1ED9 t\xE0i kho\u1EA3n AQW." }),
+          stage.mechanics.length > 0 && /* @__PURE__ */ jsxs27("div", { className: "stage-mechanic-summary", children: [
+            /* @__PURE__ */ jsx29("h4", { children: "\u0110i\u1EC1u ki\u1EC7n \u0111\u1EB7c bi\u1EC7t" }),
+            /* @__PURE__ */ jsx29("ul", { children: stage.mechanics.slice(0, 8).map((s, i) => /* @__PURE__ */ jsx29("li", { children: s }, i)) })
           ] }),
-          /* @__PURE__ */ jsx28("ul", { className: "stage-objectives", children: stage.objectives.map((s) => /* @__PURE__ */ jsx28("li", { children: s }, s)) }),
-          stage.encounter && /* @__PURE__ */ jsx28(EnemyInspection, { slug: stage.id, encounter: stage.encounter }, stage.id),
-          /* @__PURE__ */ jsxs26("div", { className: "challenge-tactical-notes", children: [
-            /* @__PURE__ */ jsx28("h4", { children: "M\u1EE5c ti\xEAu & chi\u1EBFn thu\u1EADt" }),
-            stage.strategy.length ? /* @__PURE__ */ jsx28("ul", { children: stage.strategy.map((s, i) => /* @__PURE__ */ jsx28("li", { children: s }, i)) }) : /* @__PURE__ */ jsx28("ul", { children: stage.mechanics.map((s, i) => /* @__PURE__ */ jsx28("li", { children: s }, i)) })
+          /* @__PURE__ */ jsx29("ul", { className: "stage-objectives", children: stage.objectives.map((s) => /* @__PURE__ */ jsx29("li", { children: s }, s)) }),
+          stage.encounter && /* @__PURE__ */ jsx29(EnemyInspection, { slug: stage.id, encounter: stage.encounter }, stage.id),
+          /* @__PURE__ */ jsxs27("div", { className: "challenge-tactical-notes", children: [
+            /* @__PURE__ */ jsx29("h4", { children: "M\u1EE5c ti\xEAu & chi\u1EBFn thu\u1EADt" }),
+            stage.strategy.length ? /* @__PURE__ */ jsx29("ul", { children: stage.strategy.map((s, i) => /* @__PURE__ */ jsx29("li", { children: s }, i)) }) : /* @__PURE__ */ jsx29("ul", { children: stage.mechanics.map((s, i) => /* @__PURE__ */ jsx29("li", { children: s }, i)) })
           ] }),
-          /* @__PURE__ */ jsxs26("details", { children: [
-            /* @__PURE__ */ jsx28("summary", { children: "C\u01A1 ch\u1EBF v\xE0 h\u01B0\u1EDBng d\u1EABn chi ti\u1EBFt c\u1EE7a Stage" }),
-            /* @__PURE__ */ jsx28(RichContent, { blocks: stage.sourceBlocks })
+          /* @__PURE__ */ jsxs27("details", { children: [
+            /* @__PURE__ */ jsx29("summary", { children: "C\u01A1 ch\u1EBF v\xE0 h\u01B0\u1EDBng d\u1EABn chi ti\u1EBFt c\u1EE7a Stage" }),
+            /* @__PURE__ */ jsx29(RichContent, { blocks: stage.sourceBlocks })
           ] })
         ] }, stage.id)
       ] }),
-      data.recommendedTeams && /* @__PURE__ */ jsx28(ChallengeTeams, { teams: data.recommendedTeams }),
-      data.teams.length > 0 && /* @__PURE__ */ jsxs26("details", { className: "challenge-team-guide", children: [
-        /* @__PURE__ */ jsx28("summary", { children: "Recommended Teams & Class Loadout" }),
-        /* @__PURE__ */ jsx28(RichContent, { blocks: data.teams })
+      data.recommendedTeams && /* @__PURE__ */ jsx29(ChallengeTeams, { teams: data.recommendedTeams }),
+      data.teams.length > 0 && /* @__PURE__ */ jsxs27("details", { className: "challenge-team-guide", children: [
+        /* @__PURE__ */ jsx29("summary", { children: "Recommended Teams & Class Loadout" }),
+        /* @__PURE__ */ jsx29(RichContent, { blocks: data.teams })
       ] }),
-      data.equipmentRoutes.length > 0 && /* @__PURE__ */ jsxs26("section", { className: "ultra-section", children: [
-        /* @__PURE__ */ jsx28("h2", { children: "Equipment & Rewards" }),
-        /* @__PURE__ */ jsx28(RPGEquipmentSelector, { routes: data.equipmentRoutes, renderDetails: (r) => /* @__PURE__ */ jsxs26(Fragment10, { children: [
-          /* @__PURE__ */ jsx28("p", { children: r.note }),
-          /* @__PURE__ */ jsx28("a", { href: r.source, target: "_blank", rel: "noreferrer", children: "Wiki v\u1EADt ph\u1EA9m" })
+      data.equipmentRoutes.length > 0 && /* @__PURE__ */ jsxs27("section", { className: "ultra-section", children: [
+        /* @__PURE__ */ jsx29("h2", { children: "Equipment & Rewards" }),
+        /* @__PURE__ */ jsx29(RPGEquipmentSelector, { routes: data.equipmentRoutes, renderDetails: (r) => /* @__PURE__ */ jsxs27(Fragment10, { children: [
+          /* @__PURE__ */ jsx29("p", { children: r.note }),
+          /* @__PURE__ */ jsx29("a", { href: r.source, target: "_blank", rel: "noreferrer", children: "Wiki v\u1EADt ph\u1EA9m" })
         ] }) })
       ] }),
-      data.progression.length > 0 && /* @__PURE__ */ jsxs26("details", { className: "challenge-progression", children: [
-        /* @__PURE__ */ jsx28("summary", { children: "Quest / Materials / Rewards" }),
-        data.progression.map((s) => /* @__PURE__ */ jsxs26("section", { children: [
-          /* @__PURE__ */ jsx28("h3", { children: s.title }),
-          s.blocks && /* @__PURE__ */ jsx28(RichContent, { blocks: s.blocks })
+      data.progression.length > 0 && /* @__PURE__ */ jsxs27("details", { className: "challenge-progression", children: [
+        /* @__PURE__ */ jsx29("summary", { children: "Quest / Materials / Rewards" }),
+        data.progression.map((s) => /* @__PURE__ */ jsxs27("section", { children: [
+          /* @__PURE__ */ jsx29("h3", { children: s.title }),
+          s.blocks && /* @__PURE__ */ jsx29(RichContent, { blocks: s.blocks })
         ] }, s.id))
       ] })
     ] })

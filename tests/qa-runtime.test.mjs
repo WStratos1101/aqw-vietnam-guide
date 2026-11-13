@@ -9,8 +9,8 @@ import {
   formatQaError,
 } from "../scripts/qa-runtime.mjs";
 
-test("FARM_BROWSER overrides legacy AQW_BROWSER; default is WebKit", () => {
-  assert.equal(selectFarmBrowser({}), "webkit");
+test("FARM_BROWSER overrides legacy AQW_BROWSER; default is Chromium", () => {
+  assert.equal(selectFarmBrowser({}), "chromium");
   assert.equal(selectFarmBrowser({ AQW_BROWSER: "chromium" }), "chromium");
   assert.equal(
     selectFarmBrowser({ FARM_BROWSER: "webkit", AQW_BROWSER: "chromium" }),

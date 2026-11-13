@@ -79,99 +79,217 @@ await runQa(
         result.screenshots.push(path);
       };
       try {
-        await step("load Farm inventory", () =>
-          navigate("/farm", ".farm-codex"),
+        await step(
+          "load active Farm V2 inventory and canonical counts",
+          async () => {
+            await navigate("/farm", ".fv2-root");
+            const { default: data } = await import(
+              "../src/content/farm/catalog-v2.generated.json",
+              { with: { type: "json" } }
+            );
+            await expect(page.locator(".fv2-count")).toContainText(
+              `${data.items.length} trang bị`,
+            );
+            await expect(
+              page.locator(".fv2-regions button").first().locator("b"),
+            ).toHaveText(String(data.items.length));
+          },
         );
-        await step("Region → class → Shaman acquisition/source", async () => {
-          if (width <= 1100)
+        await step(
+          "Region → class → Shaman acquisition/source and conditional tabs",
+          async () => {
             await page
-              .locator(".farm-mobile-region select")
-              .selectOption("arcangrove");
-          else
-            await page
-              .locator(".farm-region-list button")
+              .locator(".fv2-regions button")
               .filter({ hasText: "Arcangrove" })
               .click();
-          await expect(page.locator(".farm-item-row")).toHaveCount(1);
-          await page
-            .locator(".farm-item-row")
-            .filter({ hasText: "Shaman" })
-            .click();
-          await expect(page.locator('[data-item-id="shaman"]')).toBeVisible();
-          await expect(page.locator(".farm-detail")).toContainText(
-            "Arcangrove Rank 10",
-          );
-          await expect(
-            page
-              .locator(
-                '.farm-detail a[href="https://aqwwiki.wikidot.com/arcangrove-rep-shop"]',
-              )
-              .first(),
-          ).toBeAttached();
-          await expect(
-            page.locator('.farm-type-tabs button[aria-pressed="true"]'),
-          ).toContainText("Classes");
-        });
+            await page
+              .locator(".fv2-categories button")
+              .filter({ hasText: "Classes" })
+              .click();
+            await expect(page.locator(".fv2-item")).toHaveCount(1);
+            await page.locator(".fv2-item").click();
+            await expect(page.locator('[data-item-id="shaman"]')).toBeVisible();
+            await expect(
+              page.getByRole("tab", { name: "Nguyên liệu", exact: true }),
+            ).toHaveCount(0);
+            await page
+              .getByRole("tab", { name: "Cách nhận", exact: true })
+              .click();
+            await expect(page.getByRole("tabpanel")).toContainText(
+              "Arcangrove Rank 10",
+            );
+            await expect(
+              page
+                .getByRole("tabpanel")
+                .locator(
+                  'a[href="https://aqwwiki.wikidot.com/arcangrove-rep-shop"]',
+                )
+                .first(),
+            ).toBeAttached();
+            await expect(page.locator(".fv2-specs")).toBeVisible();
+          },
+        );
         await step("item direct route and image fallback", async () => {
           await navigate(
             "/farm/item/sin-of-the-abyss",
             '[data-item-id="sin-of-the-abyss"]',
           );
-          const image = page.locator(".farm-preview img");
-          if (await image.count())
-            await image.evaluate((img) =>
-              img.dispatchEvent(new Event("error")),
+          const image = page.locator(".fv2-image-large img");
+          await expect(image).toHaveCount(1);
+          await image.evaluate((img) => img.dispatchEvent(new Event("error")));
+          await expect(
+            page.locator(".fv2-image-large .fv2-placeholder"),
+          ).toBeVisible();
+        });
+        await step(
+          "all detail tabs, materials, expansion and persisted checklist",
+          async () => {
+            await navigate(
+              "/farm?region=greenguard-forest&category=cape&view=now&item=cape-of-awe",
+              '[data-item-id="cape-of-awe"]',
             );
-          await expect(
-            page.locator(".farm-preview .farm-art-fallback"),
-          ).toBeVisible();
-        });
-        await step("query route, recipe and persisted checklist", async () => {
-          await navigate(
-            "/farm?region=greenguard-forest&category=cape&view=now&item=cape-of-awe",
-            '[data-item-id="cape-of-awe"]',
-          );
-          await expect(page.locator(".farm-detail")).toContainText(
-            "Cape Relic",
-          );
-          await page.locator(".material-tree input").first().check();
-          await page.reload();
-          await expect(
-            page.locator('[data-item-id="cape-of-awe"]'),
-          ).toBeVisible();
-          await expect(
-            page.locator(".material-tree input").first(),
-          ).toBeChecked();
-        });
-        await step("empty search and category filtering", async () => {
-          if (width <= 640) await page.locator(".farm-mobile-back").click();
-          await page
-            .getByLabel("Tìm trang bị trong mọi Region")
-            .fill("no-matching-equipment");
-          await expect(page.locator(".farm-item-row")).toHaveCount(0);
-          await expect(
-            page.locator(".farm-list-pane .farm-empty"),
-          ).toBeVisible();
-          await page.getByLabel("Tìm trang bị trong mọi Region").fill("");
-          await page
-            .locator(".farm-type-tabs button")
-            .filter({ hasText: "Armors" })
-            .click();
-          await expect(page.locator(".farm-item-row")).toHaveCount(1);
-          await page
-            .locator(".farm-item-row")
-            .filter({ hasText: "Armor of Awe" })
-            .click();
-          await expect(
-            page.locator('[data-item-id="armor-of-awe"]'),
-          ).toBeVisible();
-        });
+            for (const name of [
+              "Thông tin",
+              "Cách nhận",
+              "Nguyên liệu",
+              "Hướng dẫn Farm",
+              "Nguồn",
+            ]) {
+              await page.getByRole("tab", { name, exact: true }).click();
+              await expect(page.getByRole("tabpanel")).toBeVisible();
+              await expect(page.locator(".fv2-specs")).toBeVisible();
+              if (name === "Nguyên liệu") {
+                await page.locator(".material-tree input").first().check();
+                await page
+                  .locator(".fv2-material-source summary")
+                  .first()
+                  .click();
+                await expect(
+                  page.locator(".fv2-material-source[open]"),
+                ).toHaveCount(1);
+              }
+              await screenshot("tab-" + name.replaceAll(" ", "-"));
+            }
+            await page.reload();
+            await page
+              .getByRole("tab", { name: "Nguyên liệu", exact: true })
+              .click();
+            await expect(
+              page.locator(".material-tree input").first(),
+            ).toBeChecked();
+          },
+        );
+        await step(
+          "canonical multi-route item filters known and unknown Region precisely",
+          async () => {
+            await navigate(
+              "/farm?item=blade-of-awe&region=unknown-region",
+              '[data-item-id="blade-of-awe"]',
+            );
+            await page
+              .getByRole("tab", { name: "Nguyên liệu", exact: true })
+              .click();
+            await expect(page.getByRole("tabpanel")).toContainText(
+              "Dual Blades of Awe",
+            );
+            await expect(page.getByRole("tabpanel")).not.toContainText(
+              "Legendary Stonewrit",
+            );
+            await navigate(
+              "/farm?item=blade-of-awe&region=greenguard-forest",
+              '[data-item-id="blade-of-awe"]',
+            );
+            await page
+              .getByRole("tab", { name: "Nguyên liệu", exact: true })
+              .click();
+            await expect(page.getByRole("tabpanel")).toContainText(
+              "Legendary Stonewrit",
+            );
+            await expect(page.getByRole("tabpanel")).not.toContainText(
+              "Dual Blades of Awe",
+            );
+            await navigate(
+              "/farm?item=blade-of-awe",
+              '[data-item-id="blade-of-awe"]',
+            );
+            await page
+              .getByRole("tab", { name: "Cách nhận", exact: true })
+              .click();
+            await expect(page.locator(".fv2-route-chips button")).toHaveCount(
+              2,
+            );
+            await page.locator(".fv2-route-chips button").nth(1).click();
+            await expect(page.getByRole("tabpanel")).toContainText(
+              "Nostalgia Quest",
+            );
+          },
+        );
+        await step(
+          "material internal navigation restores item and filter state",
+          async () => {
+            await navigate(
+              "/farm?item=dual-exalted-apotheosis&category=weapon&region=unknown-region",
+              '[data-item-id="dual-exalted-apotheosis"]',
+            );
+            await page
+              .getByRole("tab", { name: "Nguyên liệu", exact: true })
+              .click();
+            await page
+              .locator(".fv2-material-source summary")
+              .filter({ hasText: "Exalted Apotheosis" })
+              .click();
+            await page
+              .locator(".fv2-material-source button")
+              .filter({ hasText: "Exalted Apotheosis" })
+              .click();
+            await expect(
+              page.locator('[data-item-id="exalted-apotheosis"]'),
+            ).toBeVisible();
+            await page.locator(".fv2-return").click();
+            await expect(
+              page.locator('[data-item-id="dual-exalted-apotheosis"]'),
+            ).toBeVisible();
+            await expect(page).toHaveURL(/region=unknown-region/);
+            await navigate(
+              "/farm?item=blade-of-awe",
+              '[data-item-id="blade-of-awe"]',
+            );
+          },
+        );
+        await step(
+          "empty search, category filter and mobile back",
+          async () => {
+            if (width <= 720) await page.locator(".fv2-back").click();
+            await page
+              .getByLabel("Tìm trang bị", { exact: true })
+              .fill("no-matching-equipment");
+            await expect(page.locator(".fv2-item")).toHaveCount(0);
+            await expect(page.locator(".fv2-empty")).toBeVisible();
+            await page.getByLabel("Tìm trang bị", { exact: true }).fill("");
+            await page
+              .locator(".fv2-categories button")
+              .filter({ hasText: "Armors" })
+              .click();
+            await page
+              .locator(".fv2-item")
+              .filter({ hasText: "Armor of Awe" })
+              .click();
+            await expect(
+              page.locator('[data-item-id="armor-of-awe"]'),
+            ).toBeVisible();
+          },
+        );
         await step("keyboard, screenshot, images and overflow", async () => {
-          await page.keyboard.press("Tab");
-          assert.ok(
-            await page.evaluate(() => document.activeElement !== document.body),
-            "Tab must focus a control",
-          );
+          await page
+            .getByRole("tab", { name: "Thông tin", exact: true })
+            .focus();
+          await page.keyboard.press("End");
+          await expect(
+            page.getByRole("tab", { name: "Nguồn", exact: true }),
+          ).toBeFocused();
+          await expect(
+            page.getByRole("tab", { name: "Nguồn", exact: true }),
+          ).toHaveAttribute("aria-selected", "true");
           const measure = await inspectPage(page);
           Object.assign(currentCase, measure);
           await screenshot("inventory");

@@ -2,8 +2,8 @@
   "kind": "farm",
   "status": "passed",
   "phase": "ui",
-  "startedAt": "2026-11-12T01:08:52.582Z",
-  "browser": "webkit",
+  "startedAt": "2026-11-13T14:56:30.104Z",
+  "browser": "chromium",
   "browserPath": "/Users/wstratos/Desktop/Project/aqw-vietnam-guide/.playwright-browsers",
   "cases": [
     {
@@ -11,64 +11,74 @@
       "status": "passed",
       "steps": [
         {
-          "name": "load Farm inventory",
+          "name": "load active Farm V2 inventory and canonical counts",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm"
+          "url": "http://127.0.0.1:49976/farm"
         },
         {
-          "name": "Region → class → Shaman acquisition/source",
+          "name": "Region → class → Shaman acquisition/source and conditional tabs",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=arcangrove&category=class&view=now&item=shaman"
+          "url": "http://127.0.0.1:49976/farm?region=arcangrove&category=Classes&item=shaman&view=reference"
         },
         {
           "name": "item direct route and image fallback",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm/item/sin-of-the-abyss"
+          "url": "http://127.0.0.1:49976/farm/item/sin-of-the-abyss"
         },
         {
-          "name": "query route, recipe and persisted checklist",
+          "name": "all detail tabs, materials, expansion and persisted checklist",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=greenguard-forest&category=cape&view=now&item=cape-of-awe"
+          "url": "http://127.0.0.1:49976/farm?region=greenguard-forest&category=cape&view=now&item=cape-of-awe"
         },
         {
-          "name": "empty search and category filtering",
+          "name": "canonical multi-route item filters known and unknown Region precisely",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=greenguard-forest&category=armor&view=now&item=armor-of-awe"
+          "url": "http://127.0.0.1:49976/farm?item=blade-of-awe"
+        },
+        {
+          "name": "material internal navigation restores item and filter state",
+          "status": "passed",
+          "url": "http://127.0.0.1:49976/farm?item=blade-of-awe"
+        },
+        {
+          "name": "empty search, category filter and mobile back",
+          "status": "passed",
+          "url": "http://127.0.0.1:49976/farm?category=Armors&item=armor-of-awe&view=reference"
         },
         {
           "name": "keyboard, screenshot, images and overflow",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=greenguard-forest&category=armor&view=now&item=armor-of-awe"
+          "url": "http://127.0.0.1:49976/farm?category=Armors&item=armor-of-awe&view=reference"
         },
         {
           "name": "route /farm/necrotic-sword-of-doom-nsod",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm/necrotic-sword-of-doom-nsod"
+          "url": "http://127.0.0.1:49976/farm/necrotic-sword-of-doom-nsod"
         },
         {
           "name": "route /class",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/class"
+          "url": "http://127.0.0.1:49976/class"
         },
         {
           "name": "route /ultra-boss",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/ultra-boss"
+          "url": "http://127.0.0.1:49976/ultra-boss"
         },
         {
           "name": "route /challenge-dungeon",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/challenge-dungeon"
+          "url": "http://127.0.0.1:49976/challenge-dungeon"
         },
         {
           "name": "route /other-challenges",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/other-challenges"
+          "url": "http://127.0.0.1:49976/other-challenges"
         },
         {
           "name": "no console, hydration or page errors",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/other-challenges"
+          "url": "http://127.0.0.1:49976/other-challenges"
         }
       ],
       "consoleErrors": [],
@@ -80,64 +90,74 @@
       "status": "passed",
       "steps": [
         {
-          "name": "load Farm inventory",
+          "name": "load active Farm V2 inventory and canonical counts",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm"
+          "url": "http://127.0.0.1:49976/farm"
         },
         {
-          "name": "Region → class → Shaman acquisition/source",
+          "name": "Region → class → Shaman acquisition/source and conditional tabs",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=arcangrove&category=class&view=now&item=shaman"
+          "url": "http://127.0.0.1:49976/farm?region=arcangrove&category=Classes&item=shaman&view=reference"
         },
         {
           "name": "item direct route and image fallback",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm/item/sin-of-the-abyss"
+          "url": "http://127.0.0.1:49976/farm/item/sin-of-the-abyss"
         },
         {
-          "name": "query route, recipe and persisted checklist",
+          "name": "all detail tabs, materials, expansion and persisted checklist",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=greenguard-forest&category=cape&view=now&item=cape-of-awe"
+          "url": "http://127.0.0.1:49976/farm?region=greenguard-forest&category=cape&view=now&item=cape-of-awe"
         },
         {
-          "name": "empty search and category filtering",
+          "name": "canonical multi-route item filters known and unknown Region precisely",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=greenguard-forest&category=armor&view=now&item=armor-of-awe"
+          "url": "http://127.0.0.1:49976/farm?item=blade-of-awe"
+        },
+        {
+          "name": "material internal navigation restores item and filter state",
+          "status": "passed",
+          "url": "http://127.0.0.1:49976/farm?item=blade-of-awe"
+        },
+        {
+          "name": "empty search, category filter and mobile back",
+          "status": "passed",
+          "url": "http://127.0.0.1:49976/farm?category=Armors&item=armor-of-awe&view=reference"
         },
         {
           "name": "keyboard, screenshot, images and overflow",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=greenguard-forest&category=armor&view=now&item=armor-of-awe"
+          "url": "http://127.0.0.1:49976/farm?category=Armors&item=armor-of-awe&view=reference"
         },
         {
           "name": "route /farm/necrotic-sword-of-doom-nsod",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm/necrotic-sword-of-doom-nsod"
+          "url": "http://127.0.0.1:49976/farm/necrotic-sword-of-doom-nsod"
         },
         {
           "name": "route /class",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/class"
+          "url": "http://127.0.0.1:49976/class"
         },
         {
           "name": "route /ultra-boss",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/ultra-boss"
+          "url": "http://127.0.0.1:49976/ultra-boss"
         },
         {
           "name": "route /challenge-dungeon",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/challenge-dungeon"
+          "url": "http://127.0.0.1:49976/challenge-dungeon"
         },
         {
           "name": "route /other-challenges",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/other-challenges"
+          "url": "http://127.0.0.1:49976/other-challenges"
         },
         {
           "name": "no console, hydration or page errors",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/other-challenges"
+          "url": "http://127.0.0.1:49976/other-challenges"
         }
       ],
       "consoleErrors": [],
@@ -149,64 +169,74 @@
       "status": "passed",
       "steps": [
         {
-          "name": "load Farm inventory",
+          "name": "load active Farm V2 inventory and canonical counts",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm"
+          "url": "http://127.0.0.1:49976/farm"
         },
         {
-          "name": "Region → class → Shaman acquisition/source",
+          "name": "Region → class → Shaman acquisition/source and conditional tabs",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=arcangrove&category=class&view=now&item=shaman"
+          "url": "http://127.0.0.1:49976/farm?region=arcangrove&category=Classes&item=shaman&view=reference"
         },
         {
           "name": "item direct route and image fallback",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm/item/sin-of-the-abyss"
+          "url": "http://127.0.0.1:49976/farm/item/sin-of-the-abyss"
         },
         {
-          "name": "query route, recipe and persisted checklist",
+          "name": "all detail tabs, materials, expansion and persisted checklist",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=greenguard-forest&category=cape&view=now&item=cape-of-awe"
+          "url": "http://127.0.0.1:49976/farm?region=greenguard-forest&category=cape&view=now&item=cape-of-awe"
         },
         {
-          "name": "empty search and category filtering",
+          "name": "canonical multi-route item filters known and unknown Region precisely",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=greenguard-forest&category=armor&view=now&item=armor-of-awe"
+          "url": "http://127.0.0.1:49976/farm?item=blade-of-awe"
+        },
+        {
+          "name": "material internal navigation restores item and filter state",
+          "status": "passed",
+          "url": "http://127.0.0.1:49976/farm?item=blade-of-awe"
+        },
+        {
+          "name": "empty search, category filter and mobile back",
+          "status": "passed",
+          "url": "http://127.0.0.1:49976/farm?category=Armors&item=armor-of-awe&view=reference"
         },
         {
           "name": "keyboard, screenshot, images and overflow",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm?region=greenguard-forest&category=armor&view=now&item=armor-of-awe"
+          "url": "http://127.0.0.1:49976/farm?category=Armors&item=armor-of-awe&view=reference"
         },
         {
           "name": "route /farm/necrotic-sword-of-doom-nsod",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/farm/necrotic-sword-of-doom-nsod"
+          "url": "http://127.0.0.1:49976/farm/necrotic-sword-of-doom-nsod"
         },
         {
           "name": "route /class",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/class"
+          "url": "http://127.0.0.1:49976/class"
         },
         {
           "name": "route /ultra-boss",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/ultra-boss"
+          "url": "http://127.0.0.1:49976/ultra-boss"
         },
         {
           "name": "route /challenge-dungeon",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/challenge-dungeon"
+          "url": "http://127.0.0.1:49976/challenge-dungeon"
         },
         {
           "name": "route /other-challenges",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/other-challenges"
+          "url": "http://127.0.0.1:49976/other-challenges"
         },
         {
           "name": "no console, hydration or page errors",
           "status": "passed",
-          "url": "http://127.0.0.1:54310/other-challenges"
+          "url": "http://127.0.0.1:49976/other-challenges"
         }
       ],
       "consoleErrors": [],
@@ -215,16 +245,31 @@
     }
   ],
   "screenshots": [
+    "artifacts/qa/farm/tab-Thông-tin-375.png",
+    "artifacts/qa/farm/tab-Cách-nhận-375.png",
+    "artifacts/qa/farm/tab-Nguyên-liệu-375.png",
+    "artifacts/qa/farm/tab-Hướng-dẫn-Farm-375.png",
+    "artifacts/qa/farm/tab-Nguồn-375.png",
     "artifacts/qa/farm/inventory-375.png",
+    "artifacts/qa/farm/tab-Thông-tin-768.png",
+    "artifacts/qa/farm/tab-Cách-nhận-768.png",
+    "artifacts/qa/farm/tab-Nguyên-liệu-768.png",
+    "artifacts/qa/farm/tab-Hướng-dẫn-Farm-768.png",
+    "artifacts/qa/farm/tab-Nguồn-768.png",
     "artifacts/qa/farm/inventory-768.png",
+    "artifacts/qa/farm/tab-Thông-tin-1440.png",
+    "artifacts/qa/farm/tab-Cách-nhận-1440.png",
+    "artifacts/qa/farm/tab-Nguyên-liệu-1440.png",
+    "artifacts/qa/farm/tab-Hướng-dẫn-Farm-1440.png",
+    "artifacts/qa/farm/tab-Nguồn-1440.png",
     "artifacts/qa/farm/inventory-1440.png"
   ],
   "errors": [],
-  "baseUrl": "http://127.0.0.1:54310",
+  "baseUrl": "http://127.0.0.1:49976",
   "currentStep": {
     "width": 1440,
     "name": "no console, hydration or page errors",
-    "url": "http://127.0.0.1:54310/other-challenges"
+    "url": "http://127.0.0.1:49976/other-challenges"
   },
-  "finishedAt": "2026-11-12T01:08:58.923Z"
+  "finishedAt": "2026-11-13T14:56:39.425Z"
 }

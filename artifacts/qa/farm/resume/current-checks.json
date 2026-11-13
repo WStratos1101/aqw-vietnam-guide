@@ -1,0 +1,51 @@
+[
+  {
+    "command": "npm run content:farm",
+    "exit": 0,
+    "result": "passed",
+    "durationSeconds": 1.49,
+    "log": "artifacts/qa/farm/resume/acquisition-content-farm-final.log"
+  },
+  {
+    "command": "npm run test:farm",
+    "exit": 0,
+    "result": "passed",
+    "durationSeconds": 2.3,
+    "log": "artifacts/qa/farm/resume/acquisition-test-farm-final.log"
+  },
+  {
+    "command": "npm run typecheck",
+    "exit": 0,
+    "result": "passed",
+    "durationSeconds": 2.75,
+    "log": "artifacts/qa/farm/resume/acquisition-typecheck-final.log"
+  },
+  {
+    "command": "npm run lint",
+    "exit": 0,
+    "result": "passed",
+    "durationSeconds": 0.3,
+    "log": "artifacts/qa/farm/resume/acquisition-lint-final.log"
+  },
+  {
+    "command": "npm test",
+    "exit": 0,
+    "result": "passed",
+    "durationSeconds": 1.96,
+    "log": "artifacts/qa/farm/resume/acquisition-test-final.log"
+  },
+  {
+    "command": "npm run build",
+    "exit": 0,
+    "result": "passed",
+    "durationSeconds": 15.11,
+    "log": "artifacts/qa/farm/resume/acquisition-build-final.log"
+  },
+  {
+    "command": "npm run test:build",
+    "exit": 0,
+    "result": "passed",
+    "durationSeconds": 0.45,
+    "log": "artifacts/qa/farm/resume/acquisition-test-build-final.log"
+  }
+]

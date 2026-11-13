@@ -1,1 +1,930 @@
-[{"id":"blade-of-awe","name":"Blade of Awe"},{"id":"armor-of-awe","name":"Armor of Awe"},{"id":"helm-of-awe","name":"Helm of Awe"},{"id":"cape-of-awe","name":"Cape of Awe"},{"id":"aureate-shield-aegis","name":"Aureate Shield Aegis"},{"id":"polly-roger","name":"Polly Roger"},{"id":"sepulchure-s-doomknight-armor","name":"Sepulchure's DoomKnight Armor"},{"id":"blinding-light-of-destiny","name":"Blinding Light of Destiny"},{"id":"necrotic-sword-of-doom","name":"Necrotic Sword of Doom"},{"id":"sepulchure-s-original-helm","name":"Sepulchure's Original Helm"},{"id":"original-drakath-armor","name":"Original Drakath Armor"},{"id":"chaorrupter-unlocked-free-player","name":"Chaorrupter Unlocked (Free Player)"},{"id":"archfiend-doomlord","name":"ArchFiend DoomLord"},{"id":"head-of-the-legion-beast","name":"Head of the Legion Beast"},{"id":"exalted-apotheosis","name":"Exalted Apotheosis"},{"id":"dual-exalted-apotheosis","name":"Dual Exalted Apotheosis"},{"id":"sin-of-the-abyss","name":"Sin of the Abyss"},{"id":"empowered-undead-champion","name":"Empowered Undead Champion"},{"id":"infernal-flame-khopesh","name":"Infernal Flame Khopesh"},{"id":"greatblade-of-the-entwined-eclipse","name":"Greatblade of the Entwined Eclipse"},{"id":"greatblade-of-the-solstice-moon","name":"Greatblade of the Solstice Moon"},{"id":"greatblade-of-the-midnight-sun","name":"Greatblade of the Midnight Sun"},{"id":"drago-s-royal-guard","name":"Drago's Royal Guard"},{"id":"malgor-s-shadowflame-blade","name":"Malgor's ShadowFlame Blade"},{"id":"shaman","name":"Shaman"}]
+[
+  {
+    "id": "blade-of-awe",
+    "name": "Blade of Awe"
+  },
+  {
+    "id": "armor-of-awe",
+    "name": "Armor of Awe"
+  },
+  {
+    "id": "helm-of-awe",
+    "name": "Helm of Awe"
+  },
+  {
+    "id": "cape-of-awe",
+    "name": "Cape of Awe"
+  },
+  {
+    "id": "aureate-shield-aegis",
+    "name": "Aureate Shield Aegis"
+  },
+  {
+    "id": "polly-roger",
+    "name": "Polly Roger"
+  },
+  {
+    "id": "sepulchure-s-doomknight-armor",
+    "name": "Sepulchure's DoomKnight Armor"
+  },
+  {
+    "id": "blinding-light-of-destiny",
+    "name": "Blinding Light of Destiny"
+  },
+  {
+    "id": "necrotic-sword-of-doom",
+    "name": "Necrotic Sword of Doom"
+  },
+  {
+    "id": "sepulchure-s-original-helm",
+    "name": "Sepulchure's Original Helm"
+  },
+  {
+    "id": "original-drakath-armor",
+    "name": "Original Drakath Armor"
+  },
+  {
+    "id": "chaorrupter-unlocked-free-player",
+    "name": "Chaorrupter Unlocked (Free Player)"
+  },
+  {
+    "id": "archfiend-doomlord",
+    "name": "ArchFiend DoomLord"
+  },
+  {
+    "id": "head-of-the-legion-beast",
+    "name": "Head of the Legion Beast"
+  },
+  {
+    "id": "exalted-apotheosis",
+    "name": "Exalted Apotheosis"
+  },
+  {
+    "id": "dual-exalted-apotheosis",
+    "name": "Dual Exalted Apotheosis"
+  },
+  {
+    "id": "sin-of-the-abyss",
+    "name": "Sin of the Abyss"
+  },
+  {
+    "id": "empowered-undead-champion",
+    "name": "Empowered Undead Champion"
+  },
+  {
+    "id": "infernal-flame-khopesh",
+    "name": "Infernal Flame Khopesh"
+  },
+  {
+    "id": "greatblade-of-the-entwined-eclipse",
+    "name": "Greatblade of the Entwined Eclipse"
+  },
+  {
+    "id": "greatblade-of-the-solstice-moon",
+    "name": "Greatblade of the Solstice Moon"
+  },
+  {
+    "id": "greatblade-of-the-midnight-sun",
+    "name": "Greatblade of the Midnight Sun"
+  },
+  {
+    "id": "drago-s-royal-guard",
+    "name": "Drago's Royal Guard"
+  },
+  {
+    "id": "malgor-s-shadowflame-blade",
+    "name": "Malgor's ShadowFlame Blade"
+  },
+  {
+    "id": "shaman",
+    "name": "Shaman"
+  },
+  {
+    "id": "adeptus-kathooli",
+    "name": "Adeptus Kathooli"
+  },
+  {
+    "id": "altar-of-vordred",
+    "name": "Altar Of Vordred"
+  },
+  {
+    "id": "ancient-shogun-helm",
+    "name": "Ancient Shogun Helm"
+  },
+  {
+    "id": "ancient-shogun-katanas",
+    "name": "Ancient Shogun Katanas"
+  },
+  {
+    "id": "arcane-blade-of-glory",
+    "name": "Arcane Blade of Glory"
+  },
+  {
+    "id": "arch-doomknight",
+    "name": "Arch DoomKnight"
+  },
+  {
+    "id": "archfiend-enchanted-orbs",
+    "name": "ArchFiend Enchanted Orbs"
+  },
+  {
+    "id": "archfiend-warlord",
+    "name": "Archfiend Warlord"
+  },
+  {
+    "id": "armor-of-zular",
+    "name": "Armor of Zular"
+  },
+  {
+    "id": "aspect-of-luxuria",
+    "name": "Aspect of Luxuria"
+  },
+  {
+    "id": "astral-mantle",
+    "name": "Astral Mantle"
+  },
+  {
+    "id": "avatar-of-death-s-scythe",
+    "name": "Avatar Of Death's Scythe"
+  },
+  {
+    "id": "awethur-s-accoutrements",
+    "name": "Awethur's Accoutrements"
+  },
+  {
+    "id": "beast-warrior",
+    "name": "Beast Warrior"
+  },
+  {
+    "id": "beetle-warlord-pet",
+    "name": "Beetle Warlord Pet"
+  },
+  {
+    "id": "behemoth-blade-of-shadow",
+    "name": "Behemoth Blade of Shadow"
+  },
+  {
+    "id": "binky-s-uni-horn",
+    "name": "Binky's Uni-horn"
+  },
+  {
+    "id": "black-oversoul-cape",
+    "name": "Black OverSoul Cape"
+  },
+  {
+    "id": "black-star-blade",
+    "name": "Black Star Blade"
+  },
+  {
+    "id": "blaze-of-awe",
+    "name": "Blaze of Awe"
+  },
+  {
+    "id": "blinding-blade-of-destiny",
+    "name": "Blinding Blade of Destiny"
+  },
+  {
+    "id": "blinding-bow-of-destiny",
+    "name": "Blinding Bow of Destiny"
+  },
+  {
+    "id": "blinding-mace-of-destiny",
+    "name": "Blinding Mace of Destiny"
+  },
+  {
+    "id": "blinding-scythe-of-destiny",
+    "name": "Blinding Scythe of Destiny"
+  },
+  {
+    "id": "blood-ranger-bow",
+    "name": "Blood Ranger Bow"
+  },
+  {
+    "id": "blood-ranger-cape",
+    "name": "Blood Ranger Cape"
+  },
+  {
+    "id": "blood-ranger-morph",
+    "name": "Blood Ranger Morph"
+  },
+  {
+    "id": "blood-ranger-sword-and-sheath",
+    "name": "Blood Ranger Sword and Sheath"
+  },
+  {
+    "id": "blood-sorceress",
+    "name": "Blood Sorceress"
+  },
+  {
+    "id": "bounty-hunter-s-drone-pet",
+    "name": "Bounty Hunter's Drone Pet"
+  },
+  {
+    "id": "bow-of-destiny",
+    "name": "Bow of Destiny"
+  },
+  {
+    "id": "bright-blade-of-destiny",
+    "name": "Bright Blade of Destiny"
+  },
+  {
+    "id": "bright-bow-of-destiny",
+    "name": "Bright Bow of Destiny"
+  },
+  {
+    "id": "bright-knight-armor",
+    "name": "Bright Knight (Armor)"
+  },
+  {
+    "id": "bright-mace-of-destiny",
+    "name": "Bright Mace of Destiny"
+  },
+  {
+    "id": "bright-paragon-pet",
+    "name": "Bright Paragon Pet"
+  },
+  {
+    "id": "bright-scythe-of-destiny",
+    "name": "Bright Scythe of Destiny"
+  },
+  {
+    "id": "broadsword-of-bane",
+    "name": "Broadsword of Bane"
+  },
+  {
+    "id": "burning-sword-of-doom",
+    "name": "Burning Sword of Doom"
+  },
+  {
+    "id": "caladbolg",
+    "name": "Caladbolg"
+  },
+  {
+    "id": "candy-corn-crusher",
+    "name": "Candy Corn Crusher"
+  },
+  {
+    "id": "celestial-archfiend",
+    "name": "Celestial ArchFiend"
+  },
+  {
+    "id": "celestial-pirate-commander",
+    "name": "Celestial Pirate Commander"
+  },
+  {
+    "id": "chibi-vordred",
+    "name": "Chibi Vordred"
+  },
+  {
+    "id": "classic-hollowborn-doomknight-armor",
+    "name": "Classic Hollowborn DoomKnight (Armor)"
+  },
+  {
+    "id": "classic-hollowborn-paladin-armor",
+    "name": "Classic Hollowborn Paladin Armor"
+  },
+  {
+    "id": "combat-soulreaper-of-nulgath",
+    "name": "Combat Soulreaper of Nulgath"
+  },
+  {
+    "id": "corrupted-dragon-slayer",
+    "name": "Corrupted Dragon Slayer"
+  },
+  {
+    "id": "crag-bamboozle",
+    "name": "Crag & Bamboozle"
+  },
+  {
+    "id": "crested-void-war-helm",
+    "name": "Crested Void War Helm"
+  },
+  {
+    "id": "crimson-face-plate-of-nulgath",
+    "name": "Crimson Face Plate of Nulgath"
+  },
+  {
+    "id": "crimson-orb-pet",
+    "name": "Crimson Orb Pet"
+  },
+  {
+    "id": "crimson-plate-of-nulgath",
+    "name": "Crimson Plate of Nulgath"
+  },
+  {
+    "id": "crown-of-wrath",
+    "name": "Crown of Wrath"
+  },
+  {
+    "id": "crystal-phoenix-blade-of-nulgath",
+    "name": "Crystal Phoenix Blade of Nulgath"
+  },
+  {
+    "id": "cursed-doomblade",
+    "name": "Cursed DoomBlade"
+  },
+  {
+    "id": "cyber-crystal-phoenix-blade",
+    "name": "Cyber Crystal Phoenix Blade"
+  },
+  {
+    "id": "cyber-void-cape",
+    "name": "Cyber Void Cape"
+  },
+  {
+    "id": "cyber-void-light-of-destiny",
+    "name": "Cyber Void Light of Destiny"
+  },
+  {
+    "id": "cyber-void-paladin",
+    "name": "Cyber Void Paladin"
+  },
+  {
+    "id": "cyber-void-paladin-helm",
+    "name": "Cyber Void Paladin Helm"
+  },
+  {
+    "id": "daggers-of-destruction",
+    "name": "Daggers of Destruction"
+  },
+  {
+    "id": "dark-dragon-slayer",
+    "name": "Dark Dragon Slayer"
+  },
+  {
+    "id": "dark-dragon-slayer-s-halberd",
+    "name": "Dark Dragon Slayer's Halberd"
+  },
+  {
+    "id": "dark-lord",
+    "name": "Dark Lord"
+  },
+  {
+    "id": "darkon-s-debris-2-reconstructed",
+    "name": "Darkon's Debris 2 (Reconstructed)"
+  },
+  {
+    "id": "divine-mantle",
+    "name": "Divine Mantle"
+  },
+  {
+    "id": "divine-veil",
+    "name": "Divine Veil"
+  },
+  {
+    "id": "divine-veil-and-locks",
+    "name": "Divine Veil and Locks"
+  },
+  {
+    "id": "doomtech-doomknight",
+    "name": "DoomTech DoomKnight"
+  },
+  {
+    "id": "dragon-of-time-class",
+    "name": "Dragon of Time (Class)"
+  },
+  {
+    "id": "dragonblade-of-nulgath",
+    "name": "DragonBlade of Nulgath"
+  },
+  {
+    "id": "dragonfire-of-nulgath",
+    "name": "DragonFire of Nulgath"
+  },
+  {
+    "id": "dragonlord-grandmaster",
+    "name": "DragonLord Grandmaster"
+  },
+  {
+    "id": "dragonlord-of-evil",
+    "name": "Dragonlord of Evil"
+  },
+  {
+    "id": "dragonoid-of-hours",
+    "name": "Dragonoid of Hours"
+  },
+  {
+    "id": "dragonsoul-shinobi-class",
+    "name": "DragonSoul Shinobi (Class)"
+  },
+  {
+    "id": "drakath-the-eternal",
+    "name": "Drakath the Eternal"
+  },
+  {
+    "id": "drudgen-the-assistant",
+    "name": "Drudgen the Assistant"
+  },
+  {
+    "id": "dual-blinding-light-of-destiny",
+    "name": "Dual Blinding Light of Destiny"
+  },
+  {
+    "id": "dual-caladbolgs",
+    "name": "Dual Caladbolgs"
+  },
+  {
+    "id": "dual-champion-blade-of-nulgath",
+    "name": "Dual Champion Blade of Nulgath"
+  },
+  {
+    "id": "dual-hollowborn-shadows-of-fate",
+    "name": "Dual Hollowborn Shadows of Fate"
+  },
+  {
+    "id": "dual-legion-soul-devourers",
+    "name": "Dual Legion Soul Devourers"
+  },
+  {
+    "id": "dual-tainted-claymore-of-nulgath",
+    "name": "Dual Tainted Claymore of Nulgath"
+  },
+  {
+    "id": "dual-toxic-void-katanas",
+    "name": "Dual Toxic Void Katanas"
+  },
+  {
+    "id": "ebony-dragonblade-of-nulgath",
+    "name": "Ebony DragonBlade of Nulgath"
+  },
+  {
+    "id": "eclipse-emperor",
+    "name": "Eclipse Emperor"
+  },
+  {
+    "id": "eclipse-emperor-crown",
+    "name": "Eclipse Emperor Crown"
+  },
+  {
+    "id": "elite-void",
+    "name": "Elite Void"
+  },
+  {
+    "id": "empowered-vordred-s-armor",
+    "name": "Empowered Vordred's Armor"
+  },
+  {
+    "id": "eternity-blade",
+    "name": "Eternity Blade"
+  },
+  {
+    "id": "evolved-blood-guard",
+    "name": "Evolved Blood Guard"
+  },
+  {
+    "id": "evolved-blood-of-nulgath",
+    "name": "Evolved Blood of Nulgath"
+  },
+  {
+    "id": "evolved-blood-orb",
+    "name": "Evolved Blood Orb"
+  },
+  {
+    "id": "evolved-fiend-cape",
+    "name": "Evolved Fiend Cape"
+  },
+  {
+    "id": "evolved-fiend-helm",
+    "name": "Evolved Fiend Helm"
+  },
+  {
+    "id": "evolved-fiend-of-nulgath",
+    "name": "Evolved Fiend Of Nulgath"
+  },
+  {
+    "id": "evolved-hex-staff",
+    "name": "Evolved Hex Staff"
+  },
+  {
+    "id": "evolved-primal-orb",
+    "name": "Evolved Primal Orb"
+  },
+  {
+    "id": "evolved-shadow-helm",
+    "name": "Evolved Shadow Helm"
+  },
+  {
+    "id": "evolved-shadow-of-nulgath",
+    "name": "Evolved Shadow of Nulgath"
+  },
+  {
+    "id": "evolved-shadow-orb",
+    "name": "Evolved Shadow Orb"
+  },
+  {
+    "id": "face-of-treachery",
+    "name": "Face of Treachery"
+  },
+  {
+    "id": "faces-of-violence",
+    "name": "Faces of Violence"
+  },
+  {
+    "id": "fiend-of-light",
+    "name": "Fiend of Light"
+  },
+  {
+    "id": "fire-champion-s-armor",
+    "name": "Fire Champion's Armor"
+  },
+  {
+    "id": "fortitude-hubris",
+    "name": "Fortitude + Hubris"
+  },
+  {
+    "id": "frost-spiritreaver-class",
+    "name": "Frost SpiritReaver (Class)"
+  },
+  {
+    "id": "frost-spiritreaver-s-cloak",
+    "name": "Frost SpiritReaver's Cloak"
+  },
+  {
+    "id": "frost-spiritreaver-s-hair",
+    "name": "Frost SpiritReaver's Hair"
+  },
+  {
+    "id": "frost-spiritreaver-s-locks",
+    "name": "Frost SpiritReaver's Locks"
+  },
+  {
+    "id": "gemstone-of-nulgath",
+    "name": "Gemstone of Nulgath"
+  },
+  {
+    "id": "gluttony-s-maw",
+    "name": "Gluttony's Maw"
+  },
+  {
+    "id": "gold-exalted-paladin",
+    "name": "Gold Exalted Paladin"
+  },
+  {
+    "id": "golden-blade-of-fate-sword",
+    "name": "Golden Blade of Fate (Sword)"
+  },
+  {
+    "id": "golden-hanzo-void",
+    "name": "Golden Hanzo Void"
+  },
+  {
+    "id": "golden-inquisitor-of-shadowfall",
+    "name": "Golden Inquisitor of ShadowFall"
+  },
+  {
+    "id": "headless-pumpkin",
+    "name": "Headless Pumpkin"
+  },
+  {
+    "id": "healer",
+    "name": "Healer"
+  },
+  {
+    "id": "hollowborn-dragonslayer-s-blade",
+    "name": "Hollowborn DragonSlayer's Blade"
+  },
+  {
+    "id": "hollowborn-oblivion-blade",
+    "name": "Hollowborn Oblivion Blade"
+  },
+  {
+    "id": "horned-void-war-helm",
+    "name": "Horned Void War Helm"
+  },
+  {
+    "id": "infernal-flame-pyromancer",
+    "name": "Infernal Flame Pyromancer"
+  },
+  {
+    "id": "infinity-titan-class",
+    "name": "Infinity Titan (Class)"
+  },
+  {
+    "id": "legendary-elemental-warrior",
+    "name": "Legendary Elemental Warrior"
+  },
+  {
+    "id": "legendary-naval-commander",
+    "name": "Legendary Naval Commander"
+  },
+  {
+    "id": "legion-dragonblade-of-nulgath",
+    "name": "Legion DragonBlade of Nulgath"
+  },
+  {
+    "id": "legion-forge-spawn",
+    "name": "Legion Forge Spawn"
+  },
+  {
+    "id": "legion-forge-visor",
+    "name": "Legion Forge Visor"
+  },
+  {
+    "id": "legion-revenant-class",
+    "name": "Legion Revenant (Class)"
+  },
+  {
+    "id": "legion-soul-devourer",
+    "name": "Legion Soul Devourer"
+  },
+  {
+    "id": "lightcaster-class",
+    "name": "LightCaster (Class)"
+  },
+  {
+    "id": "mace-of-destiny",
+    "name": "Mace of Destiny"
+  },
+  {
+    "id": "mage",
+    "name": "Mage"
+  },
+  {
+    "id": "malgor-the-shadowlord",
+    "name": "Malgor the ShadowLord"
+  },
+  {
+    "id": "mini-void-shogun",
+    "name": "Mini Void Shogun"
+  },
+  {
+    "id": "mini-void-shogun-battlepet",
+    "name": "Mini Void Shogun Battlepet"
+  },
+  {
+    "id": "mystical-devotee-of-mana",
+    "name": "Mystical Devotee of Mana"
+  },
+  {
+    "id": "naval-commander-class",
+    "name": "Naval Commander (Class)"
+  },
+  {
+    "id": "necrotic-blade-of-doom",
+    "name": "Necrotic Blade of Doom"
+  },
+  {
+    "id": "necrotic-blade-of-the-underworld",
+    "name": "Necrotic Blade of the Underworld"
+  },
+  {
+    "id": "necrotic-bow-of-the-shadow",
+    "name": "Necrotic Bow of the Shadow"
+  },
+  {
+    "id": "necrotic-broadsword-of-bane",
+    "name": "Necrotic Broadsword of Bane"
+  },
+  {
+    "id": "necrotic-daggers-of-destruction",
+    "name": "Necrotic Daggers of Destruction"
+  },
+  {
+    "id": "necrotic-scythe-of-scourge",
+    "name": "Necrotic Scythe of Scourge"
+  },
+  {
+    "id": "necrotic-sword-of-the-abyss",
+    "name": "Necrotic Sword of the Abyss"
+  },
+  {
+    "id": "oracle",
+    "name": "Oracle"
+  },
+  {
+    "id": "paladin-class",
+    "name": "Paladin (Class)"
+  },
+  {
+    "id": "platinum-coin-of-nulgath-300",
+    "name": "Platinum Coin of Nulgath: 300"
+  },
+  {
+    "id": "prince-darkon-s-poleaxe",
+    "name": "Prince Darkon's Poleaxe"
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue"
+  },
+  {
+    "id": "scythe-of-destiny",
+    "name": "Scythe of Destiny"
+  },
+  {
+    "id": "scythe-of-scourge",
+    "name": "Scythe of Scourge"
+  },
+  {
+    "id": "sentinel",
+    "name": "Sentinel"
+  },
+  {
+    "id": "shadow-blade-of-despair",
+    "name": "Shadow Blade of Despair"
+  },
+  {
+    "id": "shadow-broadsword-of-bane",
+    "name": "Shadow Broadsword of Bane"
+  },
+  {
+    "id": "shadow-daggers-of-destruction",
+    "name": "Shadow Daggers of Destruction"
+  },
+  {
+    "id": "shadowlord-s-helm",
+    "name": "ShadowLord's Helm"
+  },
+  {
+    "id": "shadowscythe-of-scourge",
+    "name": "ShadowScythe of Scourge"
+  },
+  {
+    "id": "silver-exalted-paladin",
+    "name": "Silver Exalted Paladin"
+  },
+  {
+    "id": "silver-paladin",
+    "name": "Silver Paladin"
+  },
+  {
+    "id": "stare-of-greed",
+    "name": "Stare of Greed"
+  },
+  {
+    "id": "storm-knight",
+    "name": "Storm Knight"
+  },
+  {
+    "id": "storm-knight-helm",
+    "name": "Storm Knight Helm"
+  },
+  {
+    "id": "tainted-destruction-blade",
+    "name": "Tainted Destruction Blade"
+  },
+  {
+    "id": "the-point",
+    "name": "The Point"
+  },
+  {
+    "id": "toxic-void-katana",
+    "name": "Toxic Void Katana"
+  },
+  {
+    "id": "undead-spawn-minion",
+    "name": "Undead Spawn Minion"
+  },
+  {
+    "id": "unstable-betrayal-blade",
+    "name": "Unstable Betrayal Blade"
+  },
+  {
+    "id": "void-battlemage",
+    "name": "Void BattleMage"
+  },
+  {
+    "id": "void-beetle-general",
+    "name": "Void Beetle General"
+  },
+  {
+    "id": "void-beetle-warlord",
+    "name": "Void Beetle Warlord"
+  },
+  {
+    "id": "void-destroyer",
+    "name": "Void Destroyer"
+  },
+  {
+    "id": "void-destruction-blade",
+    "name": "Void Destruction Blade"
+  },
+  {
+    "id": "void-highlord-class",
+    "name": "Void Highlord (Class)"
+  },
+  {
+    "id": "void-light-of-destiny",
+    "name": "Void Light of Destiny"
+  },
+  {
+    "id": "void-paladin",
+    "name": "Void Paladin"
+  },
+  {
+    "id": "void-paladin-cape",
+    "name": "Void Paladin Cape"
+  },
+  {
+    "id": "void-paladin-helm",
+    "name": "Void Paladin Helm"
+  },
+  {
+    "id": "void-paladin-horns",
+    "name": "Void Paladin Horns"
+  },
+  {
+    "id": "void-paladin-katana",
+    "name": "Void Paladin Katana"
+  },
+  {
+    "id": "void-paladin-katanas",
+    "name": "Void Paladin Katanas"
+  },
+  {
+    "id": "void-shogun-armor",
+    "name": "Void Shogun (Armor)"
+  },
+  {
+    "id": "void-shogun-helm",
+    "name": "Void Shogun Helm"
+  },
+  {
+    "id": "void-shogun-katana",
+    "name": "Void Shogun Katana"
+  },
+  {
+    "id": "void-shogun-katanas-on-your-hip",
+    "name": "Void Shogun Katanas on your Hip"
+  },
+  {
+    "id": "void-shogun-mask",
+    "name": "Void Shogun Mask"
+  },
+  {
+    "id": "void-shogun-masked-helm",
+    "name": "Void Shogun Masked Helm"
+  },
+  {
+    "id": "void-shogun-naginata",
+    "name": "Void Shogun Naginata"
+  },
+  {
+    "id": "void-spartan",
+    "name": "Void Spartan"
+  },
+  {
+    "id": "void-spartan-blade",
+    "name": "Void Spartan Blade"
+  },
+  {
+    "id": "void-spartan-blade-and-shield",
+    "name": "Void Spartan Blade and Shield"
+  },
+  {
+    "id": "void-spartan-helm",
+    "name": "Void Spartan Helm"
+  },
+  {
+    "id": "void-spartan-helm-and-scarf",
+    "name": "Void Spartan Helm and Scarf"
+  },
+  {
+    "id": "void-spartan-shielded-cape",
+    "name": "Void Spartan Shielded Cape"
+  },
+  {
+    "id": "void-spartan-spear",
+    "name": "Void Spartan Spear"
+  },
+  {
+    "id": "void-spartan-spear-and-shield",
+    "name": "Void Spartan Spear and Shield"
+  },
+  {
+    "id": "void-spear-of-war",
+    "name": "Void Spear of War"
+  },
+  {
+    "id": "void-warlock",
+    "name": "Void Warlock"
+  },
+  {
+    "id": "void-warlock-cape",
+    "name": "Void Warlock Cape"
+  },
+  {
+    "id": "void-warlock-helm",
+    "name": "Void Warlock Helm"
+  },
+  {
+    "id": "void-warlock-hood",
+    "name": "Void Warlock Hood"
+  },
+  {
+    "id": "void-warlock-horns",
+    "name": "Void Warlock Horns"
+  },
+  {
+    "id": "void-warlock-tendrils-cape",
+    "name": "Void Warlock Tendrils Cape"
+  },
+  {
+    "id": "warrior-class",
+    "name": "Warrior (Class)"
+  },
+  {
+    "id": "yami-no-ronin-class",
+    "name": "Yami no Ronin (Class)"
+  }
+]

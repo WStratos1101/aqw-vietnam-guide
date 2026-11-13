@@ -1,0 +1,162 @@
+[
+  {
+    "id": "locations-2026-11-13-01",
+    "status": "partial",
+    "checkedAt": "2026-11-13T14:27:39.888800+00:00",
+    "baseline": {
+      "items": 232,
+      "wikiPending": 1110,
+      "unknownRegion": 225,
+      "missingImages": 199,
+      "images": 33
+    },
+    "after": {
+      "items": 232,
+      "wikiPending": 1104,
+      "unknownRegion": 207,
+      "unknownRouteRegion": 208,
+      "missingImages": 199,
+      "images": 33,
+      "regions": 4
+    },
+    "reviewedPages": [
+      {
+        "url": "https://aqwwiki.wikidot.com/alchemy-location",
+        "title": "Alchemy (Location)",
+        "status": "reviewed",
+        "kind": "location",
+        "method": "web-reader",
+        "checkedAt": "2026-11-13T14:25:53.803371+00:00",
+        "facts": {
+          "mapName": "alchemy",
+          "roomLimit": 6
+        },
+        "scope": "Location content reviewed; not an equipment identity or in-game availability check",
+        "evidenceFile": "artifacts/qa/farm/resume/wiki-locations-batch-01.txt"
+      },
+      {
+        "url": "https://aqwwiki.wikidot.com/ancient-trigoras-location",
+        "title": "Ancient Trigoras (Location)",
+        "status": "reviewed",
+        "kind": "location",
+        "method": "web-reader",
+        "checkedAt": "2026-11-13T14:25:53.803371+00:00",
+        "facts": {
+          "mapName": "ancienttrigoras",
+          "roomLimit": 6
+        },
+        "scope": "Location content reviewed; not an equipment identity or in-game availability check",
+        "evidenceFile": "artifacts/qa/farm/resume/wiki-locations-batch-01.txt"
+      },
+      {
+        "url": "https://aqwwiki.wikidot.com/arcana-location",
+        "title": "Arcana (Location)",
+        "status": "reviewed",
+        "kind": "location",
+        "method": "web-reader",
+        "checkedAt": "2026-11-13T14:25:53.803371+00:00",
+        "facts": {
+          "mapName": "arcana",
+          "roomLimit": 22
+        },
+        "scope": "Location content reviewed; not an equipment identity or in-game availability check",
+        "evidenceFile": "artifacts/qa/farm/resume/wiki-locations-batch-01.txt"
+      },
+      {
+        "url": "https://aqwwiki.wikidot.com/archmage-location",
+        "title": "ArchMage (Location)",
+        "status": "reviewed",
+        "kind": "location",
+        "method": "web-reader",
+        "checkedAt": "2026-11-13T14:25:53.803371+00:00",
+        "facts": {
+          "mapName": "archmage",
+          "roomLimit": 7
+        },
+        "scope": "Location content reviewed; not an equipment identity or in-game availability check",
+        "evidenceFile": "artifacts/qa/farm/resume/wiki-locations-batch-01.txt"
+      },
+      {
+        "url": "https://aqwwiki.wikidot.com/necropolis",
+        "title": "Necropolis",
+        "status": "reviewed",
+        "kind": "location",
+        "method": "web-reader",
+        "checkedAt": "2026-11-13T14:25:53.803371+00:00",
+        "facts": {
+          "mapName": "necropolis",
+          "roomLimit": 6
+        },
+        "scope": "Location content reviewed; not an equipment identity or in-game availability check",
+        "evidenceFile": "artifacts/qa/farm/resume/wiki-regions-batch-02.txt"
+      },
+      {
+        "url": "https://aqwwiki.wikidot.com/heiwa-valley",
+        "title": "Heiwa Valley",
+        "status": "reviewed",
+        "kind": "location",
+        "method": "web-reader",
+        "checkedAt": "2026-11-13T14:25:53.803371+00:00",
+        "facts": {
+          "mapName": "heiwavalley",
+          "roomLimit": 7
+        },
+        "scope": "Location content reviewed; not an equipment identity or in-game availability check",
+        "evidenceFile": "artifacts/qa/farm/resume/wiki-regions-batch-02.txt"
+      },
+      {
+        "url": "https://aqwwiki.wikidot.com/doomwood-part-2",
+        "title": "Doomwood Part 2",
+        "status": "reviewed",
+        "kind": "region",
+        "method": "web-reader",
+        "checkedAt": "2026-11-13T14:25:53.803371+00:00",
+        "facts": {
+          "mapName": null,
+          "roomLimit": null
+        },
+        "scope": "Location content reviewed; not an equipment identity or in-game availability check",
+        "evidenceFile": "artifacts/qa/farm/resume/wiki-regions-batch-02.txt"
+      }
+    ],
+    "newQueueUrlsReviewed": 6,
+    "supportingPagesNotNewInQueue": 1,
+    "regionRoutesResolved": 18,
+    "joinCommandsAdded": 26,
+    "imageAudit": {
+      "reviewedMissingItems": 199,
+      "withCandidates": 195,
+      "withoutCandidates": 4,
+      "integrated": 0,
+      "downloadAttemptLog": "artifacts/qa/farm/resume/image-fetch-batch-01.json"
+    },
+    "supportFailures": [
+      {
+        "url": "https://aqwwiki.wikidot.com/yokai",
+        "reason": "Web reader: redirect loop; do not infer Heiwa Valley Region from faction or geographic flavor"
+      }
+    ],
+    "docsStatus": "Rich/native scope remains blocked; previous connector/export failures not retried; cached complete plain text preserved",
+    "browser": "not_run",
+    "checks": [
+      {
+        "command": "npm run content:farm",
+        "exit": 0,
+        "log": "artifacts/qa/farm/resume/location-content.log"
+      },
+      {
+        "command": "node --test tests/farm-v2.test.mjs tests/farm-v2-interactions.test.mjs tests/farm-source-import.test.mjs",
+        "exit": 0,
+        "result": "19/19 passed",
+        "log": "artifacts/qa/farm/resume/location-tests.log"
+      },
+      {
+        "command": "npm run typecheck",
+        "exit": 0,
+        "log": "artifacts/qa/farm/resume/location-typecheck.log"
+      }
+    ],
+    "previousIntegrationChecks": "Farm35 / main unit155 / production9 / build from previous session; not rerun or relabeled as current pass",
+    "next": "Continue unread observed URLs only; exact item-location-Region evidence required. Inspect staged image candidates with permitted download and source/policy proof; no icon substitution."
+  }
+]

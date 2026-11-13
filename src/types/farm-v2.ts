@@ -1,0 +1,54 @@
+import type { MaterialNode } from "../lib/material-requirements.mjs";
+export type Source = { url: string; label: string; sourceType?: string };
+export type FarmV2RouteData = {
+  id: string;
+  regionId: string | null;
+  method: string;
+  questReward?: string | null;
+  purchase?: { amount: number; currency: "Gold" | "ACs" } | null;
+  description?: string;
+  location?: string | null;
+  mapCommand?: string | null;
+  steps: string[];
+  materialTree?: MaterialNode | null;
+  prerequisites?: { value: string; source: string }[];
+  sources: Source[];
+};
+export type FarmV2Item = {
+  id: string;
+  name: string;
+  originalName: string;
+  category: string;
+  subtype?: string | null;
+  image?: string | null;
+  previewImage?: string | null;
+  imageEvidence?: {
+    path: string;
+    source: string;
+    credit: string;
+    verificationStatus: string;
+    usageStatus: string;
+    policyUrl?: string;
+  } | null;
+  wikiUrl: string;
+  level: number | null;
+  membership: string | null;
+  rarity: string | null;
+  availability: string | null;
+  effects: string[];
+  verificationStatus: string;
+  lastChecked: string | null;
+  reviewReason?: string | null;
+  unknownFields?: string[];
+  classHref?: string | null;
+  prerequisites?: { value: string; source: string }[];
+  acquisitionRoutes: FarmV2RouteData[];
+  regions: string[];
+  sources: Source[];
+  provenance: {
+    sourceDocument: string;
+    sourceUrl: string;
+    lines: number[];
+    lastChecked: string;
+  }[];
+};

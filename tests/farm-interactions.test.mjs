@@ -20,7 +20,7 @@ const { createRoot } = await import("react-dom/client");
 await fs.mkdir("artifacts/qa", { recursive: true });
 const result = await build({
   stdin: {
-    contents: "export {Directory} from './src/features/farm/route';",
+    contents: "export {Directory} from './src/features/farm/route.farm-v2-legacy';",
     resolveDir: process.cwd(),
     loader: "tsx",
   },

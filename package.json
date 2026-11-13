@@ -20,7 +20,7 @@
     "test:clean": "node scripts/clean-check.mjs",
     "test:server": "node --test tests/server.test.mjs",
     "content:farm": "node scripts/build-farm.mjs && node scripts/audit-farm.mjs",
-    "test:farm": "node --test tests/farm.test.mjs tests/farm-interactions.test.mjs tests/farm-launcher.test.mjs tests/qa-runtime.test.mjs",
+    "test:farm": "node --test tests/farm.test.mjs tests/farm-interactions.test.mjs tests/farm-launcher.test.mjs tests/qa-runtime.test.mjs tests/farm-v2.test.mjs tests/farm-v2-interactions.test.mjs tests/farm-source-import.test.mjs",
     "qa:farm": "node scripts/qa-farm.mjs",
     "content:import": "node scripts/import-guides.mjs",
     "assets:ultra": "node scripts/ultra-assets.mjs",
@@ -55,7 +55,8 @@
     "qa:recovery": "node scripts/build-conflicts-v12-11.mjs && node scripts/audit-v12-11.mjs && node scripts/report-v12-11.mjs",
     "browser:smoke": "node scripts/qa-farm.mjs",
     "browser:smoke:webkit": "FARM_BROWSER=webkit node scripts/qa-farm.mjs",
-    "browser:smoke:chromium": "FARM_BROWSER=chromium node scripts/qa-farm.mjs"
+    "browser:smoke:chromium": "FARM_BROWSER=chromium node scripts/qa-farm.mjs",
+    "content:farm:sources": "python3 scripts/import-farm-sources.py"
   },
   "dependencies": {
     "@fontsource/source-sans-3": "5.3.1",

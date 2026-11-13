@@ -172,4 +172,18 @@ const lines = [
   "`npm run content:farm` tái sinh catalog/index/manifest và audit, hoàn toàn offline. Generator từ chối canonical IDs trùng, category lạ, URL sai, Region không tồn tại. Không chạy crawler đại trà. Các lỗi QA/build/child exit chặn Auto Publish; phiên này không push/deploy.",
   "",
 ];
+if (fs.existsSync("content-sources/farm/import/coverage.json")) {
+  const v2 = read("content-sources/farm/import/coverage.json");
+  lines.splice(
+    2,
+    0,
+    "## Cập nhật Farm V2 — 2026-11-13",
+    "",
+    `UI hiện tại dùng catalog-v2.generated.json: ${v2.unique} canonical items; Source A ${v2.sourceA}, Source B ${v2.sourceB}, giao ${v2.overlap}. ${v2.verifiedSnapshot} verified kế thừa; ${v2.pendingReview} cần đối chiếu; ${v2.withImage} ảnh local, ${v2.missingImage} thiếu ảnh.`,
+    "Nguồn A: phần text/link của trang gốc + 146 trang con đã được trích xuất; hình nhúng còn cần đối chiếu. Nguồn B: giữ snapshot text export đã đọc trước đó, connector/HTML export timeout; chưa xác minh link/bảng/ảnh nhúng. Xem FARM_DATA_AUDIT.md và content-sources/farm/import/source-access.json.",
+    `Wiki còn ${v2.wikiPending} URL nguồn chưa đọc thành công; không coi đây là số trang bị còn thiếu. Browser QA UNVERIFIED: không chạy trong Codex; chờ AQW-Safe-Browser-QA.command trên Terminal macOS (Chromium).`,
+    "Phần dưới giữ nguyên bằng chứng snapshot 2026-11-11 cho catalog curated 25 items; không đại diện toàn bộ UI V2 hoặc xác minh live hôm nay.",
+    "",
+  );
+}
 fs.writeFileSync("FARM_SOURCE_AUDIT.md", lines.join("\n"));

@@ -1,0 +1,74 @@
+[
+  {
+    "command": "npm run test:farm",
+    "exit": 0,
+    "result": "PASS 29/29; active Directory + legacy regression + offline source replay",
+    "log": "artifacts/qa/farm/resume/farm-tests-final.log"
+  },
+  {
+    "command": "npm run typecheck",
+    "exit": 0,
+    "result": "PASS",
+    "log": "artifacts/qa/farm/resume/typecheck-final.log"
+  },
+  {
+    "command": "npm run lint",
+    "exit": 0,
+    "result": "PASS: 96 TS files; project linter, not ESLint",
+    "log": "artifacts/qa/farm/resume/lint-final.log"
+  },
+  {
+    "command": "npm test",
+    "exit": 0,
+    "result": "PASS 155/155; Class/Boss/Endgame regression",
+    "log": "artifacts/qa/farm/resume/unit.log"
+  },
+  {
+    "command": "npm run build (first attempt)",
+    "exit": 1,
+    "result": "FAILED at server esbuild public-font resolution; corrected",
+    "log": "artifacts/qa/farm/resume/build-first-failure.log"
+  },
+  {
+    "command": "npm run build (after font fix)",
+    "exit": 0,
+    "result": "PASS, 585 prerendered routes; before main landmark fix",
+    "log": "artifacts/qa/farm/resume/build-final.log"
+  },
+  {
+    "command": "npm run test:build (first attempt)",
+    "exit": 1,
+    "result": "7/9: missing main and #main in V2; fixed, tests retained",
+    "log": "artifacts/qa/farm/resume/test-build-first-failure.log"
+  },
+  {
+    "command": "npx --no-install vite build && node scripts/prerender.mjs",
+    "exit": 0,
+    "result": "PASS final source after landmark fix; 585 routes + 404",
+    "log": "artifacts/qa/farm/resume/prerender-final.log"
+  },
+  {
+    "command": "npm run test:build (final)",
+    "exit": 0,
+    "result": "PASS 9/9 across production routes, internal links and regressions",
+    "log": "artifacts/qa/farm/resume/test-build-final.log"
+  },
+  {
+    "command": "npm run browser:smoke:webkit",
+    "exit": 1,
+    "result": "BLOCKED browser launch; Abort trap 6 / exit 134; 0 cases/screenshots",
+    "log": "artifacts/qa/farm/resume/webkit-final.log"
+  },
+  {
+    "command": "npm run browser:smoke:chromium",
+    "exit": 1,
+    "result": "BLOCKED browser launch; Permission denied 1100 / SIGTRAP; 0 cases/screenshots",
+    "log": "artifacts/qa/farm/resume/chromium.log"
+  },
+  {
+    "command": "tasteskill lint (Farm files, --app)",
+    "exit": 0,
+    "result": "0 FAIL / 2 WARN; static only, no visual PASS",
+    "log": "artifacts/qa/farm/resume/design-lint.log"
+  }
+]

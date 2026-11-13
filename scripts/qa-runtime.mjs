@@ -86,7 +86,7 @@ export function formatQaError(error) {
   );
 }
 export function selectFarmBrowser(env = process.env) {
-  return env.FARM_BROWSER || env.AQW_BROWSER || "webkit";
+  return env.FARM_BROWSER || env.AQW_BROWSER || "chromium";
 }
 export async function runQa(kind, run, options = {}) {
   const dir = options.outputDir || `artifacts/qa/${kind}`;

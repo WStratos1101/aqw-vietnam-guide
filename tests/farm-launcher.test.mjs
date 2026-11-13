@@ -55,13 +55,23 @@ test(
     );
     assert.equal(verify.status, 9);
     assert.doesNotMatch(verify.stdout, /hoàn tất/);
+    // Exercise only the actual early nonzero-child guard in an isolated shell.
+    // Never invoke the host AutoPublish runner from tests.
+    const publishSource = fs.readFileSync(
+      "Update/_codex-focus/AutoPublish-AQW.command",
+      "utf8",
+    );
+    const guard = publishSource.match(
+      /run\(\)\{\n(\s*case \"?\$CODEX_RC\"? in[^\n]+)/,
+    )?.[1];
+    assert.ok(guard, "actual nonzero-child release guard must exist");
     const publish = spawnSync(
       "/bin/bash",
-      ["Update/_codex-focus/AutoPublish-AQW.command", "run", "42"],
-      {
-        encoding: "utf8",
-        env: { ...process.env, AQW_PROJECT_ROOT: process.cwd() },
-      },
+      [
+        "-c",
+        `CODEX_RC=42\nfail(){ echo "$*" >&2; exit 1; }\n${guard}\necho UNEXPECTED_RELEASE`,
+      ],
+      { encoding: "utf8" },
     );
     assert.equal(publish.status, 1);
     assert.match(publish.stderr, /Codex exit=42/);
