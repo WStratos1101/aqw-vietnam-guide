@@ -141,6 +141,20 @@ export function importUltraFarm(items) {
       ],
     };
     if (!acquisition.guidePaths[0].steps.length) acquisition.guidePaths = [];
+    const labelValue = (label) =>
+      text
+        .match(new RegExp("^" + label + ":\\s*([^\\n]+)", "im"))?.[1]
+        ?.trim() || null;
+    const damage = [
+      ...text.matchAll(
+        /(?:does|deals)\s+(\d+(?:\.\d+)?)%\s+more\s+damage\s+to\s+(all monsters|humans?|undead|dragons?|elementals?|chaos monsters)/gi,
+      ),
+    ].map((match) => `${match[1]}% Damage to ${match[2]}`);
+    const rewards = [
+      ...text.matchAll(
+        /\d+% (?:bonus|boost to) (?:Gold|Reputation|Experience|Class Points)[^.\n]*/gi,
+      ),
+    ].map((match) => match[0]);
     const item = {
       id: entity.id,
       name: entity.name,
@@ -151,10 +165,16 @@ export function importUltraFarm(items) {
         : null,
       wikiUrl: entity.source,
       level: entity.levelRequirement ?? null,
-      membership: null,
-      rarity: null,
+      membership:
+        /^freeplayer$/im.test(text) && !/^legend$/im.test(text)
+          ? "non-member"
+          : /^legend$/im.test(text) && !/^freeplayer$/im.test(text)
+            ? "member"
+            : null,
+      rarity: labelValue("Rarity"),
+      sellback: labelValue("Sellback"),
       availability: null,
-      effects: [],
+      effects: [...new Set([...damage, ...rewards])],
       image: asset?.imagePath || null,
       previewImage: asset?.imagePath || null,
       imageEvidence: asset

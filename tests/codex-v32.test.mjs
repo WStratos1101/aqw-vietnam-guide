@@ -30,7 +30,7 @@ test("every combo branch and priority slot resolves to its own canonical skill a
 test("recovered slot mapping retains exact source bytes and named skills of the same class", () => {
   const registry = read("src/content/classes/skill-registry.json");
   for (const [classId, record] of Object.entries(
-    read("content-sources/class-combo-slot-evidence.json"),
+    read("content-sources/class-recovery/combo-slot-evidence.json"),
   )) {
     assert.equal(
       createHash("sha256")
@@ -116,5 +116,27 @@ test("Ultra import is canonical, recipe verified, preserves operators and record
     );
     assert.ok(item.groupIds.length <= 1);
     assert.ok(audit.records.some((r) => r.id === id && r.sourceTextHash));
+  }
+});
+
+test("Calendar skill effects never borrow consumables from a different year; raw excluded rows stay in audit", () => {
+  const profiles = read("src/content/classes/catalog.json");
+  for (const id of [
+    "calendar-corrupted-chronomancer",
+    "calendar-timeless-chronomancer",
+    "calendar-underworld-chronomancer",
+    "calendar-overworld-chronomancer",
+  ]) {
+    const body = read("public" + profiles.find((p) => p.id === id).bodyUrl);
+    const text = body.skills
+      .flatMap((s) => (s.effects || []).map((e) => e.text))
+      .join(" ");
+    if (/corrupted|timeless/.test(id)) {
+      assert.doesNotMatch(text, /Timepiece of/);
+      assert.doesNotMatch(text, /giảm 500%/);
+      assert.match(text, /giảm 80%/);
+    } else
+      assert.doesNotMatch(text, /(?:Entropic|Foresee|Infinite) Corruption/);
+    assert.ok(body.skills.some((s) => s.calendarItemScope?.excluded.length));
   }
 });

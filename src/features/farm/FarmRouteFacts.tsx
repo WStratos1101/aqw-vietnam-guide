@@ -73,7 +73,12 @@ export function FarmRouteFacts({
             {maps.map((map) => (
               <div key={map}>
                 <h5>{map}</h5>
-                <div className="fv32-table-scroll">
+                <div
+                  className="fv32-table-scroll"
+                  role="region"
+                  aria-label={`Nguyên liệu tại ${map}`}
+                  tabIndex={0}
+                >
                   <table>
                     <thead>
                       <tr>

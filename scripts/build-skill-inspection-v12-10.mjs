@@ -1,3 +1,4 @@
+import { applyCalendarItemScope } from "./lib/calendar-item-scope.mjs";
 import fs from "node:fs";
 import { applySkillRecovery } from "./lib/verification-v12-11.mjs";
 import { Window } from "happy-dom";
@@ -225,6 +226,7 @@ for (const c of catalog) {
       s.damageDisplay = s.damage;
     if (s.healing && hasVietnamese(s.healing)) s.healingDisplay = s.healing;
     applySkillRecovery(c.id, s, r);
+    applyCalendarItemScope(c.id, s);
     audit.push({
       classId: c.id,
       className: c.name,

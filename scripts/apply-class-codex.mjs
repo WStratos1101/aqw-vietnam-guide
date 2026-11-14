@@ -1,5 +1,7 @@
-const comboSlots = JSON.parse(fs.readFileSync("content-sources/class-combo-slot-evidence.json", "utf8"));
 import fs from "node:fs";
+const comboSlots = JSON.parse(
+  fs.readFileSync("content-sources/class-recovery/combo-slot-evidence.json", "utf8"),
+);
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const translations = read(
   "src/content/classes/current-skill-translations.json",
@@ -80,7 +82,8 @@ for (const c of catalog) {
     (r) =>
       r.classId === c.id &&
       r.supplemental &&
-      (r.verificationStatus === "verified" || r.dataVerificationStatus === "verified"),
+      (r.verificationStatus === "verified" ||
+        r.dataVerificationStatus === "verified"),
   ))
     if (!b.skills.some((s) => s.id === r.skillId))
       b.skills.push({
@@ -111,10 +114,23 @@ for (const c of catalog) {
       delete s.iconAsset;
       delete s.iconAssetId;
     }
-    if(r?.dataVerificationStatus === "verified") {
-      s.rankRequirement=r.rankRequirement;s.name=r.officialName;s.officialName=r.officialName;
-      for(const key of ["manaCost","cooldown","passive","target","officialDescription","wikiNotes","manaCostDisplay","cooldownDisplay"])s[key]=r[key];
-      s.effectType=r.skillType;s.sourceUrl=r.sourceUrl;
+    if (r?.dataVerificationStatus === "verified") {
+      s.rankRequirement = r.rankRequirement;
+      s.name = r.officialName;
+      s.officialName = r.officialName;
+      for (const key of [
+        "manaCost",
+        "cooldown",
+        "passive",
+        "target",
+        "officialDescription",
+        "wikiNotes",
+        "manaCostDisplay",
+        "cooldownDisplay",
+      ])
+        s[key] = r[key];
+      s.effectType = r.skillType;
+      s.sourceUrl = r.sourceUrl;
     }
     if (r?.verificationStatus !== "verified") continue;
     const a = registry.assets.find((a) => a.id === r.iconAssetId);
@@ -163,10 +179,20 @@ for (const c of catalog) {
         };
       }
     }
-    const declaredSlot = comboSlots[c.id]?.slots.find(row => row.skillId === s.id && row.name === r.officialName && row.iconAssetId === r.iconAssetId);
+    const declaredSlot = comboSlots[c.id]?.slots.find(
+      (row) =>
+        row.skillId === s.id &&
+        row.name === r.officialName &&
+        row.iconAssetId === r.iconAssetId,
+    );
     if (declaredSlot && !s.quarantined && !r.passive) {
       s.skillNumber = declaredSlot.slot;
-      s.slotEvidence = { source: comboSlots[c.id].source, sourceHash: comboSlots[c.id].sourceHash, officialName: r.officialName, declaredSlot: declaredSlot.slot };
+      s.slotEvidence = {
+        source: comboSlots[c.id].source,
+        sourceHash: comboSlots[c.id].sourceHash,
+        officialName: r.officialName,
+        declaredSlot: declaredSlot.slot,
+      };
     }
     s.sourceUrl = r.sourceUrl;
     s.officialDescription = r.officialDescription;

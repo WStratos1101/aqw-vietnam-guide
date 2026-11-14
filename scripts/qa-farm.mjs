@@ -575,6 +575,6 @@ await runQa(
   },
   {
     browserName: selectFarmBrowser(),
-    outputDir: "artifacts/qa/farm/ui-rework",
+    outputDir: "artifacts/qa/v3-2/farm",
   },
 );

@@ -144,6 +144,7 @@ export function ClassDirectory() {
           <label>
             Vai trò
             <select
+              aria-label="Vai trò"
               value={role}
               onChange={(e) => update(setRole, e.target.value)}
             >
@@ -157,6 +158,7 @@ export function ClassDirectory() {
           <label>
             Cách sở hữu
             <select
+              aria-label="Cách sở hữu"
               value={acquisition}
               onChange={(e) => update(setAcquisition, e.target.value)}
             >

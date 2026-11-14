@@ -111,6 +111,7 @@ export type FarmV2Item = {
   rarity: string | null;
   availability: string | null;
   effects: string[];
+  sellback?: string | null;
   verificationStatus: string;
   lastChecked: string | null;
   reviewReason?: string | null;

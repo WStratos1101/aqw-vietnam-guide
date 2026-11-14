@@ -1210,3 +1210,23 @@ html[data-theme="light"] .fv2-root {
     margin: 0;
   }
 }
+
+.fv2-root .fv32-facts :is(table, thead, tbody, tr, th, td) {
+  background: var(--fv2-panel);
+  color: var(--fv2-text);
+  border-color: var(--fv2-line);
+}
+.fv2-root .fv32-facts th {
+  color: var(--fv2-muted);
+}
+/* Keep material and map names intact on narrow screens; scroll the table itself. */
+.fv2-root .fv32-table-scroll table {
+  min-width: 560px;
+}
+.fv2-root .fv32-facts :is(th, td) {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.fv2-root .fv32-facts :is(th, td):last-child {
+  white-space: nowrap;
+}

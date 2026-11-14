@@ -24,7 +24,7 @@ export function FarmWikiInfo({
   const fields = [
     ["Nơi nhận", route?.location || d?.location],
     ["Phương thức / Giá mua", price || d?.priceRaw || route?.method],
-    ["Giá bán lại", d?.sellback],
+    ["Giá bán lại", d?.sellback || item.sellback],
     ["Sát thương vũ khí", d?.weaponDamage],
     ["Tốc độ", d?.speed ? d.speed + " speed" : null],
     ["Enhancement khuyến nghị", d?.enhancement],
