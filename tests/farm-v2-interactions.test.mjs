@@ -327,7 +327,7 @@ test("V3.1 shows only selected guide step, resets route/item/path, and keeps sav
     0,
   );
   assert.match(panel().textContent, /Merge Blade of Awe/);
-  assert.match(host.querySelector(".fv2-guide").textContent, /Cách nhận ngắn/);
+  assert.equal(host.querySelector(".fv2-guide > small"), null);
   assert.equal(host.querySelector(".fv31-step-actions"), null);
   assert.doesNotMatch(panel().textContent, /Bước 1\s*\/\s*1/);
   await click(panel().querySelector("input"));

@@ -1,3 +1,4 @@
+const comboSlots = JSON.parse(fs.readFileSync("content-sources/class-combo-slot-evidence.json", "utf8"));
 import fs from "node:fs";
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const translations = read(
@@ -161,6 +162,11 @@ for (const c of catalog) {
           declaredSlot: s.skillNumber,
         };
       }
+    }
+    const declaredSlot = comboSlots[c.id]?.slots.find(row => row.skillId === s.id && row.name === r.officialName && row.iconAssetId === r.iconAssetId);
+    if (declaredSlot && !s.quarantined && !r.passive) {
+      s.skillNumber = declaredSlot.slot;
+      s.slotEvidence = { source: comboSlots[c.id].source, sourceHash: comboSlots[c.id].sourceHash, officialName: r.officialName, declaredSlot: declaredSlot.slot };
     }
     s.sourceUrl = r.sourceUrl;
     s.officialDescription = r.officialDescription;

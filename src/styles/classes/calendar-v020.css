@@ -29,3 +29,12 @@
 .combo-cooldown-priority{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .combo-cooldown-priority strong{font-size:13px;color:var(--class-accent)}
 .combo-cooldown-priority .skill-sequence-flow{margin:0}
+
+.class-codex .calendar-item-choice { width:100%; display:flex; align-items:center; justify-content:flex-start; gap:10px; text-align:left; min-height:52px; height:auto; }
+.class-codex .calendar-item-choice strong { color:var(--class-white); font-size:14px; font-weight:600; }
+.class-codex .calendar-item-list > li { display:block; }
+.class-codex .calendar-item-detail { padding:12px 0; color:var(--class-white); font-size:14px; line-height:1.7; }
+.class-codex .calendar-item-detail li { display:list-item; margin:8px 0; }
+.class-codex .calendar-item-icon img { object-fit:contain; }
+
+.class-codex .calendar-item-detail li { border:0; padding:0; grid-template-columns:none; }

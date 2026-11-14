@@ -1095,3 +1095,118 @@ html[data-theme="light"] .fv2-root {
   min-height: 44px;
   padding-top: 13px;
 }
+
+/* V3.2: one primary faction; one row per icon filter. */
+.fv2-groups {
+  position: relative;
+}
+.fv2-groups h2 {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-right: 110px;
+}
+.fv2-groups .fv2-group-all {
+  position: absolute;
+  top: 12px;
+  left: 155px;
+  min-height: 36px;
+  padding: 6px 10px;
+}
+.fv2-groups nav {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+.fv2-groups button {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.fv2-root :is(.fv2-item-text strong, .fv2-heading h2, .fv2-tabs button) {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.fv2-categories,
+.fv2-subtypes {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.fv2-categories button,
+.fv2-subtypes button {
+  flex: 0 0 auto;
+}
+.fv2-material-source summary {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) auto 16px;
+  gap: 8px;
+  align-items: start;
+  padding: 12px 0;
+}
+.fv2-material-source summary strong {
+  margin-left: 0;
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.fv2-material-source summary::after {
+  width: 16px;
+  text-align: center;
+}
+.fv2-material-source summary > span {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.fv32-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.fv32-facts table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 13px;
+}
+.fv32-facts th,
+.fv32-facts td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--fv2-line);
+  vertical-align: top;
+}
+.fv32-facts th {
+  color: var(--fv2-muted);
+  font-weight: 600;
+}
+.fv32-facts td:nth-child(2) {
+  text-align: right;
+  white-space: nowrap;
+}
+.fv32-facts ul {
+  padding-left: 20px;
+}
+.fv32-route-picker {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+}
+.fv32-route-picker button {
+  background: var(--fv2-panel2);
+  color: var(--fv2-text);
+  min-height: 44px;
+  border: 1px solid var(--fv2-line);
+  padding: 8px;
+}
+.fv32-route-picker button[aria-pressed="true"] {
+  border-color: var(--fv2-accent);
+}
+@media (max-width: 720px) {
+  .fv2-groups nav {
+    display: grid;
+    grid-template-columns: repeat(16, max-content);
+  }
+  .fv2-groups .fv2-group-all {
+    left: 145px;
+    margin: 0;
+  }
+}

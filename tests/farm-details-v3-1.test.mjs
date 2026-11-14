@@ -15,6 +15,7 @@ const c = read("src/content/farm/catalog-v2.generated.json");
 const records = [
   ...read("content-sources/farm/import/wiki-records.json"),
   ...read("content-sources/farm/import/detail-wiki-records.json"),
+  ...read("content-sources/farm/import/ultra-import-audit.json").records,
 ];
 
 test("Wiki header fields stay outside skills; Level requirement, damage, price and sellback are distinct", () => {
@@ -194,9 +195,14 @@ test("membership and availability require explicit page evidence; AC tag and abs
 });
 
 test("completion snapshots are exact canonical bodies; incomplete indexed evidence is never counted complete", () => {
-  assert.equal(c.items.length, 232);
+  const added = read(
+    "content-sources/farm/import/ultra-import-audit.json",
+  ).added;
+  assert.equal(c.items.filter((i) => !added.includes(i.id)).length, 232);
   assert.equal(
-    c.items.reduce((n, i) => n + i.acquisitionRoutes.length, 0),
+    c.items
+      .filter((i) => !added.includes(i.id))
+      .reduce((n, i) => n + i.acquisitionRoutes.length, 0),
     228,
   );
   const audit = read("content-sources/farm/import/detail-audit.json");
@@ -206,7 +212,7 @@ test("completion snapshots are exact canonical bodies; incomplete indexed eviden
   const translations = read(
     "content-sources/farm/import/detail-translations.json",
   );
-  for (const item of c.items) {
+  for (const item of c.items.filter((i) => !added.includes(i.id))) {
     assert.ok(item.wikiDetails.descriptionVi, item.id);
     const record = records.find((r) => r.wikiUrl === item.wikiUrl);
     assert.equal(

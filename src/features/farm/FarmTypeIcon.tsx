@@ -2,6 +2,7 @@ import { useState } from "react";
 // Mapping verified against https://aqwwiki.wikidot.com/key (2026-11-14).
 // The Wiki explicitly uses the same Gun/Bow type icon for both subtypes.
 const files: Record<string, string> = {
+  Inventory: "Inventory.png",
   Weapons: "Sword_Table.png",
   Armors: "Armor_Table.png",
   Helms: "Helmet_table.png",

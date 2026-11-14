@@ -27,10 +27,13 @@ export const stable = (value) =>
       : v,
   );
 test("all baseline canonical facts, approved images, geography, sources and recipes survive", () => {
-  assert.equal(catalog.items.length, baseline.canonicalTotal);
+  assert.equal(
+    catalog.items.filter((i) => baseline.itemHashes[i.id]).length,
+    baseline.canonicalTotal,
+  );
   assert.ok(catalog.items.length >= 232);
   assert.deepEqual(catalog.regions, baseline.regions);
-  for (const item of catalog.items) {
+  for (const item of catalog.items.filter((i) => baseline.itemHashes[i.id])) {
     // V3.1 adds independently tested details/roles/guides. Preserve the exact
     // complete V3 baseline projection; no existing gameplay field is excluded.
     const {
@@ -129,16 +132,24 @@ test("mixed Docs chapter splits by heading; unknown geography and name cannot as
   assignFarmGroups(items, { pages }, override);
   assert.deepEqual(items[0].groupIds, ["awe"]);
 });
-test("multi-group membership and category counts do not duplicate canonical totals", () => {
+test("one primary group prevents contextual references from becoming multiple factions", () => {
   const item = {
     id: "fixture",
     category: "Weapons",
     groupIds: ["good", "awe", "good"],
   };
   const counts = groupCounts([item, item], manifest.groups);
-  for (const id of ["all", "good", "awe"])
-    assert.equal(counts.find((g) => g.id === id).count, 1);
-  assert.equal(counts.find((g) => g.id === "unknown").count, 0);
+  assert.equal(counts.find((g) => g.id === "all").count, 1);
+  assert.equal(counts.find((g) => g.id === "unknown").count, 1);
+  assert.equal(counts.find((g) => g.id === "good").count, 0);
+  assert.equal(counts.find((g) => g.id === "awe").count, 0);
+  assert.ok(catalog.items.every((i) => i.groupIds.length <= 1));
+  assert.equal(
+    groupCounts(catalog.items, manifest.groups)
+      .filter((g) => g.id !== "all")
+      .reduce((n, g) => n + g.count, 0),
+    catalog.items.length,
+  );
   for (const group of manifest.groups) {
     const scoped = catalog.items.filter((i) => matchesGroup(i, group.id));
     assert.equal(new Set(scoped.map((i) => i.id)).size, scoped.length);
@@ -198,6 +209,6 @@ test("Chaorrupter Free Player has exact variant evidence in the Chaos chapter, w
   assert.equal(
     groupCounts(catalog.items, manifest.groups).find((g) => g.id === "all")
       .count,
-    232,
+    catalog.items.length,
   );
 });

@@ -1,3 +1,4 @@
+import { ComboContext } from "./ComboContext";
 import { selectedComboContent } from "../../lib/class-ui-v12-8.mjs";
 import { comboFlow } from "../../lib/class-presentation.mjs";
 import { TargetEffects } from "./TargetEffects";
@@ -22,12 +23,23 @@ export function ClassCombos({
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
   const original = combos[selected] || combos[0];
   const active = original ? selectedComboContent(combos, original) : undefined;
-  const canonical = (line: string) => line.toLowerCase().replace(/^[→◆*\s]+/, "").replace(/^[^:\n]{1,42}:\s*/, "").replace(/\s+/g, " ").trim();
+  const canonical = (line: string) =>
+    line
+      .toLowerCase()
+      .replace(/^[→◆*\s]+/, "")
+      .replace(/^[^:\n]{1,42}:\s*/, "")
+      .replace(/\s+/g, " ")
+      .trim();
   const flows = active ? comboFlow(active) : [];
-  const flowText = new Set(flows.map(flow => canonical(flow.sourceText)));
+  const flowText = new Set(flows.map((flow) => canonical(flow.sourceText)));
   const extraNotes = (active?.notes || []).filter((note, index, all) => {
     const normalized = canonical(note);
-    return normalized.length > 0 && !flowText.has(normalized) && normalized !== canonical(active?.explanation || "") && all.findIndex((n) => canonical(n) === normalized) === index;
+    return (
+      normalized.length > 0 &&
+      !flowText.has(normalized) &&
+      normalized !== canonical(active?.explanation || "") &&
+      all.findIndex((n) => canonical(n) === normalized) === index
+    );
   });
   return (
     <section className="class-section" id="combo" aria-labelledby="combo-title">
@@ -109,21 +121,42 @@ export function ClassCombos({
                         className={`combo-flow-group ${flow.kind}`}
                         key={flow.id}
                       >
-                        {flow.kind === "cooldown" && flow.afterOpening && <p className="combo-cooldown-intro">Sau combo mở đầu →</p>}
+                        {flow.kind === "cooldown" && flow.afterOpening && (
+                          <p className="combo-cooldown-intro">
+                            Sau combo mở đầu →
+                          </p>
+                        )}
                         <FlowLabel
                           label={flow.kind === "warning" ? "Lưu ý" : flow.label}
                           kind={flow.kind}
                         />
-                        {(flow.kind === "spam" || flow.kind === "loop") && flow.stopCondition && (
-                          <span className="spam-stop-condition">
-                            Dừng · {flow.stopCondition}
-                          </span>
+                        {(flow.kind === "spam" || flow.kind === "loop") &&
+                          flow.stopCondition && (
+                            <span className="spam-stop-condition">
+                              Dừng · {flow.stopCondition}
+                            </span>
+                          )}
+                        {flow.kind === "cooldown" && flow.prioritySkill && (
+                          <div className="combo-cooldown-priority">
+                            <SkillSequenceFlow
+                              sequence={[flow.prioritySkill]}
+                              skills={skills}
+                              label="Kỹ năng ưu tiên khi hồi chiêu"
+                              onSelect={(s) => {
+                                setStepId(s.id);
+                                onSelectSkill?.(s.id);
+                              }}
+                            />
+                            <strong>{flow.priorityLabel}</strong>
+                          </div>
                         )}
-                        {flow.kind === "cooldown" && flow.prioritySkill && <div className="combo-cooldown-priority">
-                          <SkillSequenceFlow sequence={[flow.prioritySkill]} skills={skills} label="Kỹ năng ưu tiên khi hồi chiêu" onSelect={s => { setStepId(s.id); onSelectSkill?.(s.id); }} />
-                          <strong>{flow.priorityLabel}</strong>
-                        </div>}
-                        {!flow.sequences.length && flow.kind === "setup" && <CalendarSetup classId={classId} comboTitle={active.title} text={flow.label} />}
+                        {!flow.sequences.length && flow.kind === "setup" && (
+                          <CalendarSetup
+                            classId={classId}
+                            comboTitle={active.title}
+                            text={flow.label}
+                          />
+                        )}
                         {flow.sequences.map((sequence, i) => (
                           <div key={i}>
                             {i > 0 && <span className="combo-or">HOẶC</span>}
@@ -138,11 +171,19 @@ export function ClassCombos({
                             />
                           </div>
                         ))}
-                        <AbyssalConditionIcons classId={classId} text={flow.sourceText} skills={skills} onSelect={(s) => { setStepId(s.id); onSelectSkill?.(s.id); }} />
-                        {flows.find(f => f.sourceText === flow.sourceText)?.id === flow.id && <details className="combo-flow-condition">
-                          <summary>Timing & điều kiện</summary>
-                          <p>{flow.sourceText}</p>
-                        </details>}
+                        <AbyssalConditionIcons
+                          classId={classId}
+                          text={flow.sourceText}
+                          skills={skills}
+                          onSelect={(s) => {
+                            setStepId(s.id);
+                            onSelectSkill?.(s.id);
+                          }}
+                        />
+                        {flows.find((f) => f.sourceText === flow.sourceText)
+                          ?.id === flow.id && (
+                          <ComboContext text={flow.sourceText} />
+                        )}
                       </article>
                     ))}
                 </div>
@@ -158,10 +199,16 @@ export function ClassCombos({
                   {active.verificationNote}
                 </p>
               )}
-              {extraNotes.length > 0 && <details className="combo-source-notes">
-                <summary>Lưu ý bổ sung ({extraNotes.length})</summary>
-                <ul>{extraNotes.map((n,i) => <li key={i}>{n}</li>)}</ul>
-              </details>}
+              {extraNotes.length > 0 && (
+                <details className="combo-source-notes">
+                  <summary>Lưu ý bổ sung ({extraNotes.length})</summary>
+                  <ul>
+                    {extraNotes.map((n, i) => (
+                      <li key={i}>{n}</li>
+                    ))}
+                  </ul>
+                </details>
+              )}
             </div>
           </div>
         </div>

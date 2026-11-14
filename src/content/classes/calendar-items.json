@@ -1,0 +1,248 @@
+{
+  "2019": {
+    "heading": "Corrupted / Timeless Chronomancer",
+    "second": "Corruptions",
+    "items": [
+      {
+        "name": "Hourglass of Power",
+        "summary": "Buff chỉ số tấn công, Haste và phòng thủ khi dùng Hourglass Inversion.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-hourglass-of-power-1",
+        "group": "hourglass",
+        "details": [
+          "Sau khi dùng, hiệu lực điều chỉnh Skill kéo dài 2 giờ.",
+          "Hourglass Inversion áp Power trong 30 giây: tăng 10% outgoing damage, Haste, Critical Strike Chance, Critical Strike Damage, Hit Chance, Dodge Chance; giảm 10% sát thương nhận. Không cộng dồn."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-hourglass-of-power-1.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-hourglass-of-power-1",
+          "sourceFile": null,
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ChronoHGoPo.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "73d1a21189ff75fcfd0d1d46f592077d29174e70d7bb4fd7062da3fa70e95d88"
+        }
+      },
+      {
+        "name": "Hourglass of Paradise",
+        "summary": "Corruption Through Time bật/tắt Welcome to Paradise: hồi phục và phòng thủ, đổi lại giảm sức tấn công.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-hourglass-of-paradise-1",
+        "group": "hourglass",
+        "details": [
+          "Trong 2 giờ sau khi dùng, Corruption Through Time bật Welcome to Paradise. Dùng lại Skill khi buff đang có sẽ tắt trạng thái.",
+          "Welcome to Paradise giảm 60% sát thương nhận, tăng 50% Haste và hồi HP/mana theo thời gian; đổi lại giảm 30% outgoing damage và Critical Strike Chance."
+        ],
+        "imageStatus": "PENDING_SOURCE",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-hourglass-of-paradise-1",
+          "sourceFile": "content-sources/calendar-items/class-item-hourglass-of-paradise-1.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ChronoHGoPa.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": null
+        }
+      },
+      {
+        "name": "Hourglass of Transience",
+        "summary": "Transient → Ephemeral: tăng Dodge và sát thương, hoặc ổn định để tăng END/Haste.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-hourglass-of-transience-1",
+        "group": "hourglass",
+        "details": [
+          "Trong 2 giờ, Corruption Through Time áp Transient: DoT lên bản thân tăng dần trong 20 giây. Transient tạo Ephemeral, tăng 50% Dodge và damage trong 5 giây.",
+          "Dùng Hourglass Inversion khi có Transient hoặc Ephemeral để bỏ các trạng thái đó và nhận Incorporeal: tăng 50% END/Haste trong 10 giây.",
+          "Khi Transient, Sand Rift áp Flow lên địch: tăng 8% sát thương nhận trong 5 giây, tối đa 3 tầng. Khi Stable, Skill áp Ebb, DoT tăng dần trong 8 giây."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-hourglass-of-transience-1.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-hourglass-of-transience-1",
+          "sourceFile": null,
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ChronoHGoT.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "f2091c31dbad490af43a69d851bd59517218a32962b8ab3ef50709171f42f67c"
+        }
+      },
+      {
+        "name": "Entropic Corruption",
+        "summary": "Tăng sát thương và Haste, giảm mana cost; đồng thời tăng sát thương bản thân phải chịu.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-entropic-corruption",
+        "group": "other",
+        "details": [
+          "Cửa sổ kích hoạt 30 giây; cooldown item 6 giây.",
+          "Corruption Through Time giảm 50% mana cost và tăng 30% Haste trong 7 giây; tăng 100% outgoing damage trong 4 giây.",
+          "Đổi lại, sát thương bản thân nhận tăng 150% trong 10 giây. Focus ép mục tiêu đánh bạn trong 3 giây."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-entropic-corruption.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-entropic-corruption",
+          "sourceFile": "content-sources/calendar-items/class-item-entropic-corruption.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ChronoEC.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "a123220b1ce7a7cdfa5f24f1a7f2c0dbc63b313b17ae4035ecc4c25e4128c27c"
+        }
+      },
+      {
+        "name": "Foresee Corruption",
+        "summary": "Chuẩn bị Foresee → Seer → Change the Future cho cửa sổ burst/phòng thủ.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-foresee-corruption",
+        "group": "other",
+        "details": [
+          "Cửa sổ kích hoạt 10 giây; cooldown item 60 giây. Corruption Through Time áp Foresee trong 150 giây.",
+          "Dùng Foresee Corruption khi đang có Foresee để tiêu thụ Foresee và nhận Seer trong 20 giây.",
+          "Dùng Corruption Through Time khi có Seer để đổi sang Change the Future: giảm 80% sát thương nhận; tăng 100% Dodge Chance, Haste, Hit Chance, Critical Strike Damage và Outgoing Damage trong 5 giây."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-foresee-corruption.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-foresee-corruption",
+          "sourceFile": "content-sources/calendar-items/class-item-foresee-corruption.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ChronoFC.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "9b93cbb103024966d087107310c66b63ba8aeb012882773f3696ebdfe3bdb217"
+        }
+      },
+      {
+        "name": "Infinite Corruption",
+        "summary": "Auto Attack tạo DoT tích tầng; Hourglass Inversion bổ sung Heal-over-Time.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-infinite-corruption",
+        "group": "other",
+        "details": [
+          "Cửa sổ kích hoạt 30 giây; cooldown item 6 giây.",
+          "Corrupted Sand Strike áp DoT trong 40 giây, tối đa 15 tầng. Hourglass Inversion áp Heal over Time trong 20 giây, không cộng dồn."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-infinite-corruption.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-infinite-corruption",
+          "sourceFile": "content-sources/calendar-items/class-item-infinite-corruption.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/ChronoIC.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "c674a8c31491be2338b8ed84730bdb55c03da1676afc5fa46def977ee8415e4a"
+        }
+      }
+    ]
+  },
+  "2020": {
+    "heading": "Underworld / Overworld Chronomancer",
+    "second": "Timepieces",
+    "items": [
+      {
+        "name": "Hourglass of Power",
+        "summary": "Hourglass Reversal bổ sung các buff chỉ số tấn công, Haste và phòng thủ.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-hourglass-of-power-2",
+        "group": "hourglass",
+        "details": [
+          "Sau khi dùng, hiệu lực điều chỉnh Skill kéo dài 2 giờ.",
+          "Hourglass Reversal áp Power trong 30 giây: tăng 10% outgoing damage, Haste, Critical Strike Chance, Critical Strike Damage, Hit Chance, Dodge Chance; giảm 10% sát thương nhận. Không cộng dồn."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-hourglass-of-power-2.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-hourglass-of-power-2",
+          "sourceFile": "content-sources/calendar-items/class-item-hourglass-of-power-2.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/TimelessHGoPo.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "32b92be484f5f667b4cfb142bbfbb8ee6a646550da0e47dbc2163c215786f824"
+        }
+      },
+      {
+        "name": "Hourglass of Paradise",
+        "summary": "Distortion Through Time bật/tắt Welcome to Paradise: hồi phục và phòng thủ, đổi lại giảm sức tấn công.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-hourglass-of-paradise-2",
+        "group": "hourglass",
+        "details": [
+          "Trong 2 giờ, Distortion Through Time bật Welcome to Paradise. Dùng lại Skill khi buff đang có sẽ tắt trạng thái.",
+          "Giảm 60% sát thương nhận, tăng 50% Haste, hồi HP/mana theo thời gian; đổi lại giảm 30% outgoing damage và Critical Strike Chance."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-hourglass-of-paradise-2.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-hourglass-of-paradise-2",
+          "sourceFile": "content-sources/calendar-items/class-item-hourglass-of-paradise-2.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/TimelessHGoPa.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "6aa13de858c9edd1d574de91bd54f1ca2d637ff9826fbf4065fa72d4e578fb73"
+        }
+      },
+      {
+        "name": "Hourglass of Transience",
+        "summary": "Tạo Transient/Ephemeral; cân bằng burst và hiệu ứng bất lợi theo thời gian.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-hourglass-of-transience-2",
+        "group": "hourglass",
+        "details": [
+          "Trong 2 giờ, Distortion Through Time áp Transient: DoT lên bản thân tăng dần trong 20 giây. Ephemeral tăng 50% Dodge/damage trong 5 giây.",
+          "Hourglass Reversal khi có Transient hoặc Ephemeral bỏ các trạng thái đó và áp Incorporeal: tăng 50% END/Haste trong 10 giây.",
+          "Khi Transient, Timeless Rift áp Flow lên địch: tăng 8% sát thương nhận trong 5 giây, tối đa 3 tầng. Khi Stable, áp Ebb, DoT tăng dần trong 8 giây."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-hourglass-of-transience-2.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-hourglass-of-transience-2",
+          "sourceFile": "content-sources/calendar-items/class-item-hourglass-of-transience-2.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/TimelessHGoT.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "9e1b91fb80fddd64836f290605141e010f80c21c7f81a608a471f658bae84c6c"
+        }
+      },
+      {
+        "name": "Timepiece of Inevitability",
+        "summary": "Tăng damage/Haste; kích hoạt Snap khi đã có Inevitable Corruption.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-timepiece-of-inevitability",
+        "group": "other",
+        "details": [
+          "Cửa sổ kích hoạt 10 giây; cooldown item 20 giây.",
+          "Distortion Through Time áp Inevitable Corruption: tăng 12% outgoing damage/Haste trong 20 giây.",
+          "Dùng lại Timepiece of Inevitability khi Inevitable Corruption đang có để áp Snap lên địch, gây sát thương sau một khoảng trễ."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-timepiece-of-inevitability.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-timepiece-of-inevitability",
+          "sourceFile": "content-sources/calendar-items/class-item-timepiece-of-inevitability.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/TimelessTI.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "31ecb986c5ab5026565accf1011c34c68670b361f2ffa58c52fd623f7a3c02fa"
+        }
+      },
+      {
+        "name": "Timepiece of Madness",
+        "summary": "Tích Mad bằng đòn đánh; đạt ngưỡng sẽ chuyển thành Eternal tăng cơ hội Crit.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-timepiece-of-madness",
+        "group": "other",
+        "details": [
+          "Cửa sổ kích hoạt 30 giây; cooldown item 12 giây. Timeless Strike áp Mad: tăng 5% outgoing damage trong 3 giây, tối đa 5 tầng.",
+          "Sau 5 tầng Mad, Timeless Strike tiếp theo tiêu thụ các tầng và áp Eternal: tăng 80% Critical Strike Chance nhưng giảm 30% outgoing damage trong 2 giây.",
+          "Distortion Through Time áp Potential: tăng 20% Hit Chance trong 20 giây."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-timepiece-of-madness.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-timepiece-of-madness",
+          "sourceFile": "content-sources/calendar-items/class-item-timepiece-of-madness.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/TimelessTM.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "8acbc5faa6f1b369e4a83633d5bc7e74370978a6e0eebcbfea597428f6ab9d55"
+        }
+      },
+      {
+        "name": "Timepiece of Pestilence",
+        "summary": "Tăng sát thương kẻ địch nhận, áp DoT/Decay; có đánh đổi về sát thương nhận.",
+        "wiki": "https://aqwwiki.wikidot.com/class-item-timepiece-of-pestilence",
+        "group": "other",
+        "details": [
+          "Cửa sổ kích hoạt 10 giây; cooldown item 10 giây.",
+          "Distortion Through Time áp Infectious Air trong 10 giây: tăng 20% sát thương địch nhận, tối đa 3 tầng; Temporal Collapse tiêu thụ hiệu ứng.",
+          "Sát thương bản thân nhận tăng 100% trong 10 giây. Mục tiêu chịu DoT nhẹ và Decay trong 10 giây, ngăn hồi máu."
+        ],
+        "image": "/images/aqw/calendar-items/class-item-timepiece-of-pestilence.png",
+        "imageStatus": "verified",
+        "evidence": {
+          "source": "https://aqwwiki.wikidot.com/class-item-timepiece-of-pestilence",
+          "sourceFile": "content-sources/calendar-items/class-item-timepiece-of-pestilence.html",
+          "artSource": "https://aqwwiki.wdfiles.com/local--files/classes-skills/TimelessTP.png",
+          "descriptionStatus": "reviewed-source",
+          "imageHash": "39af2a73f3fc177d8ca5a221c179301efffbc8fa6da182971aed0102fbf42d68"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+.class-codex .combo-context-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.class-codex .combo-context-actions button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  background: var(--class-slate);
+  border: 1px solid var(--class-line);
+  color: var(--class-accent);
+  cursor: pointer;
+}
+.class-codex .combo-context-actions button[aria-expanded="true"] {
+  background: color-mix(in srgb, var(--class-accent) 14%, var(--class-slate));
+  border-color: var(--class-accent);
+}
+.class-codex .combo-context-tooltip {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: max-content;
+  background: var(--class-slate);
+  color: var(--class-white);
+  padding: 6px 9px;
+  border: 1px solid var(--class-line);
+  font-size: 12px;
+  z-index: 3;
+}
+.class-codex .combo-context-actions button:hover .combo-context-tooltip,
+.class-codex
+  .combo-context-actions
+  button:focus-visible
+  .combo-context-tooltip {
+  display: block;
+}
+.class-codex .combo-context [role="region"] {
+  line-height: 1.7;
+  font-size: 14px;
+}
+.class-codex .skill-sequence-flow button {
+  position: relative;
+}
+.class-codex .skill-sequence-flow .combo-skill-tooltip {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: max-content;
+  max-width: 210px;
+  white-space: normal;
+  background: var(--class-slate);
+  color: var(--class-white);
+  border: 1px solid var(--class-line);
+  padding: 6px 9px;
+  z-index: 4;
+}
+.class-codex .skill-sequence-flow button:hover .combo-skill-tooltip,
+.class-codex .skill-sequence-flow button:focus-visible .combo-skill-tooltip {
+  display: block;
+}
+.class-codex .skill-sequence-flow .ability-icon img {
+  object-fit: contain;
+}

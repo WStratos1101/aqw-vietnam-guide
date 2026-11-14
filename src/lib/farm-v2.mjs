@@ -51,11 +51,24 @@ export function validateFarmV2(catalog) {
     if (ids.has(i.id)) errors.push("Duplicate ID " + i.id);
     ids.add(i.id);
     if (catalog.groups) {
-      const groupIds = new Set(catalog.groups.map(g => g.id));
-      if (!Array.isArray(i.groupIds) || new Set(i.groupIds).size !== i.groupIds.length)
+      const groupIds = new Set(catalog.groups.map((g) => g.id));
+      if (
+        !Array.isArray(i.groupIds) ||
+        i.groupIds.length > 1 ||
+        new Set(i.groupIds).size !== i.groupIds.length
+      )
         errors.push("Invalid group memberships " + i.id);
       for (const group of i.groupIds || [])
-        if (!groupIds.has(group) || !i.groupEvidence?.some(e => e.groupId === group && url(e.sourceUrl) && e.heading && e.lines?.length))
+        if (
+          !groupIds.has(group) ||
+          !i.groupEvidence?.some(
+            (e) =>
+              e.groupId === group &&
+              url(e.sourceUrl) &&
+              e.heading &&
+              e.lines?.length,
+          )
+        )
           errors.push("Missing group provenance " + i.id + ":" + group);
     }
     if (wiki.has(i.wikiUrl))
@@ -73,9 +86,12 @@ export function validateFarmV2(catalog) {
         i.image.startsWith("//") ||
         !i.imageEvidence ||
         i.imageEvidence.verificationStatus !== "verified" ||
-        !(i.imageEvidence.usageStatus === "approved" ||
-          (i.category === "Classes" && i.imageEvidence.usageStatus === "approved_noncommercial" &&
-            url(i.imageEvidence.policyUrl))))
+        !(
+          i.imageEvidence.usageStatus === "approved" ||
+          (i.category === "Classes" &&
+            i.imageEvidence.usageStatus === "approved_noncommercial" &&
+            url(i.imageEvidence.policyUrl))
+        ))
     )
       errors.push("Unapproved image " + i.id);
     for (const s of i.sources)

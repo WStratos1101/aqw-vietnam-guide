@@ -1,4 +1,5 @@
 import { useEffect, useId, useState, type ReactNode } from "react";
+import { FarmActions, FarmRouteFacts } from "./FarmRouteFacts";
 import { Check, ChevronLeft, ChevronRight } from "lucide-react";
 import { guidePaths, conciseFarmText } from "../../lib/farm-details.mjs";
 import type {
@@ -10,8 +11,10 @@ function Stepper({
   path,
   scope,
   materials,
+  route,
 }: {
   path: FarmGuidePath;
+  route: FarmV2RouteData;
   scope: string;
   materials?: ReactNode;
 }) {
@@ -104,7 +107,12 @@ function Stepper({
           </small>
         )}
         {!/^Bước \d+$/.test(step.title) && <h3>{step.title}</h3>}
-        <p>{conciseFarmText(step.text)}</p>
+        {!route.farmTasks?.some((t) => t.id === step.id) && (
+          <FarmActions text={conciseFarmText(step.text)} />
+        )}
+        {route.farmTasks?.some((t) => t.id === step.id) && (
+          <FarmRouteFacts route={route} taskId={step.id} />
+        )}
         {materials && index === path.steps.length - 1 && (
           <details className="fv31-step-materials">
             <summary>Nguyên liệu tuyến nhận</summary>
@@ -180,12 +188,6 @@ export function FarmGuide({
     );
   return (
     <div className="fv2-guide">
-      {active.coverage === "acquisition_only" && (
-        <small className="fv2-muted">Cách nhận ngắn</small>
-      )}
-      {active.coverage === "source_notes" && (
-        <small className="fv2-muted">Ghi chú tuyến nhận</small>
-      )}
       {paths.length > 1 && (
         <div className="fv2-route-chips" aria-label="Chọn hướng dẫn">
           {paths.map((p) => (
@@ -205,6 +207,7 @@ export function FarmGuide({
         key={itemId + ":" + route.id + ":" + active.id}
         scope={itemId + ":" + route.id + ":" + active.id}
         path={active}
+        route={route}
         materials={materials}
       />
     </div>

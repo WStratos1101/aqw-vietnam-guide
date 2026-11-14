@@ -88,6 +88,63 @@ export function assignFarmGroups(items, extracts, manifest) {
       item.groupIds = [...new Set(evidence.map((e) => e.groupId))];
       item.groupStatus = evidence.length ? "source-context" : "unknown";
     }
+    // V3.2: references in a guide are provenance, not simultaneous allegiance.
+    // Prefer a named item section. Ambiguous contexts stay explicitly pending.
+    const normalized = (value) =>
+      value
+        .toLowerCase()
+        .replace(/\(class\)/g, "")
+        .replace(/[^\p{L}\p{N}]+/gu, " ")
+        .trim();
+    const name = normalized(item.originalName || item.name || "");
+    const scored = item.groupEvidence.map((entry) => {
+      const page = pages.get(entry.sourceUrl);
+      if (!page || !name || page.sourceDocument !== "vncollector")
+        return { entry, score: 0 };
+      const title = normalized(page.title || "")
+        .replace(/^aqw vietnam collector /, "")
+        .replace(/^farm /, "");
+      const namesItem = (value) =>
+        value === name || value.startsWith(name + " ");
+      if (namesItem(title)) return { entry, score: 100 };
+      const top = page.text.split(/\r?\n/).slice(0, 3).map(normalized);
+      return {
+        entry,
+        score: namesItem(top[0] || "")
+          ? 100
+          : /set/.test(top[0] || "") && top.slice(1).some(namesItem)
+            ? 80
+            : 0,
+      };
+    });
+    const highest = Math.max(0, ...scored.map((e) => e.score));
+    const namedGroups = [
+      ...new Set(
+        scored
+          .filter((e) => highest > 0 && e.score === highest)
+          .map((e) => e.entry.groupId),
+      ),
+    ];
+    const contexts = [...new Set(item.groupIds)];
+    const primary = override
+      ? contexts.length === 1
+        ? contexts[0]
+        : null
+      : namedGroups.length === 1
+        ? namedGroups[0]
+        : namedGroups.length === 0 && contexts.length === 1
+          ? contexts[0]
+          : null;
+    item.groupIds = primary ? [primary] : [];
+    item.groupStatus = primary
+      ? override
+        ? "manual-reviewed"
+        : namedGroups.length === 1
+          ? "named-source-primary"
+          : "source-context-primary"
+      : contexts.length
+        ? "pending-conflicting-contexts"
+        : "unknown";
     for (const id of item.groupIds) {
       if (
         !ids.has(id) ||

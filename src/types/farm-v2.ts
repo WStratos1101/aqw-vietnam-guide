@@ -53,7 +53,28 @@ export type FarmWikiDetails = {
   };
   conflicts: string[];
 };
+export type FarmTask = {
+  id: string;
+  quest: string | null;
+  title?: string;
+  requirements: string[];
+  reward?: string;
+  source: string;
+  map?: string | null;
+  npc?: string | null;
+  repeatability?: string;
+  rows: {
+    name: string;
+    quantity: number | null;
+    monster?: string | null;
+    sourceName?: string | null;
+    map?: string | null;
+    source?: string;
+  }[];
+  destination?: { npc: string; map: string; shop: string; item: string };
+};
 export type FarmV2RouteData = {
+  farmTasks?: FarmTask[];
   id: string;
   regionId: string | null;
   method: string;

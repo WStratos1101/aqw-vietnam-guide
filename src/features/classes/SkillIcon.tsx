@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { ClassSkill } from "../../types/classes";
 export function SkillIcon({
   skill,
@@ -9,6 +9,7 @@ export function SkillIcon({
 }) {
   const [failed, setFailed] = useState(false);
   const a = skill.iconAsset;
+  useEffect(() => setFailed(false), [a?.imagePath]);
   const usable =
     a?.verificationStatus === "verified" &&
     a.usageStatus === "approved_noncommercial" &&

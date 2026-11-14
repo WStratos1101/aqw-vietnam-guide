@@ -1,5 +1,6 @@
 // Offline deterministic adapter: curated recipes remain authoritative; imports never infer routes.
 import fs from "node:fs";
+import { importUltraFarm } from "./lib/farm-ultra-import.mjs";
 import { assignFarmGroups } from "./lib/farm-groups.mjs";
 import { createHash } from "node:crypto";
 import { validateFarmV2 } from "../src/lib/farm-v2.mjs";
@@ -492,6 +493,8 @@ write("content-sources/farm/import/detail-audit.json", detailAudit);
 const geography = read("content-sources/farm/import/geography-evidence.json");
 const geographyChanges = enrichFarmGeography(items, geography);
 write("content-sources/farm/import/geography-changes.json", geographyChanges);
+const ultraImport = importUltraFarm(items);
+write("content-sources/farm/import/ultra-import-audit.json", ultraImport);
 const groupManifest = read("content-sources/farm/faction-groups.json");
 assignFarmGroups(items, extracts, groupManifest);
 const usedRegions = new Set(items.flatMap((i) => i.regions));

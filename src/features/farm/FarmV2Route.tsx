@@ -60,14 +60,6 @@ const categoryAliases: Record<string, string> = {
   pet: "Pets",
   class: "Classes",
 };
-const availabilityLabels: Record<string, string> = {
-  available: "Có thể nhận",
-  unknown: "Chưa rõ thời điểm mở",
-  seasonal: "Seasonal",
-  permanent: "Permanent",
-  rare: "Rare",
-  legacy: "Legacy",
-};
 const tabDefs = [
   { id: "overview", name: "Thông tin", Icon: Info },
   { id: "methods", name: "Cách nhận", Icon: Route },
@@ -276,17 +268,6 @@ function Detail({
             {item.subtype ? " · " + item.subtype : ""}
           </span>
           <h2 id={id + "-title"}>{item.name}</h2>
-          <div className="fv2-tags">
-            <span>
-              {item.verificationStatus === "verified"
-                ? "Wiki snapshot đã đối chiếu"
-                : "Cần đối chiếu"}
-            </span>
-            <span>
-              {availabilityLabels[item.availability || "unknown"] ||
-                item.availability}
-            </span>
-          </div>
           <a href={"/farm/item/" + item.id}>Liên kết vật phẩm</a>
         </div>
       </div>
@@ -308,16 +289,6 @@ function Detail({
         <div>
           <small>Rarity</small>
           <strong>{show(item.rarity || item.wikiDetails?.rarity)}</strong>
-        </div>
-        <div>
-          <small>Availability</small>
-          <strong>
-            {availabilityLabels[
-              (item.availability && item.availability !== "unknown"
-                ? item.availability
-                : item.wikiDetails?.availability) || "unknown"
-            ] || "—"}
-          </strong>
         </div>
       </div>
       <div
@@ -674,7 +645,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
                   setReturns([]);
                 }}
               >
-                {cat === "all" ? "Tất cả" : <FarmTypeIcon name={cat} />}{" "}
+                {<FarmTypeIcon name={cat === "all" ? "Inventory" : cat} />}{" "}
                 <small>
                   {
                     scoped.filter(
@@ -716,7 +687,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
                     aria-pressed={subtype === s}
                     onClick={() => update({ subtype: s })}
                   >
-                    {s ? <FarmTypeIcon name={s} /> : "Tất cả"}
+                    {<FarmTypeIcon name={s || "Inventory"} />}
                   </button>
                 ))}
               </div>

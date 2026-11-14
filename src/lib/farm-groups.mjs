@@ -10,8 +10,8 @@ export function matchesGroup(item, group = "all") {
   return (
     group === "all" ||
     (group === UNKNOWN_GROUP
-      ? !item.groupIds?.length
-      : item.groupIds?.includes(group) === true)
+      ? item.groupIds?.length !== 1
+      : item.groupIds?.length === 1 && item.groupIds[0] === group)
   );
 }
 export function groupCounts(items, groups) {
