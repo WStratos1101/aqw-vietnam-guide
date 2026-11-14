@@ -58,6 +58,7 @@ export type FarmTask = {
   quest: string | null;
   title?: string;
   requirements: string[];
+  preconditions?: string[];
   reward?: string;
   source: string;
   map?: string | null;
@@ -130,9 +131,10 @@ export type FarmV2Item = {
   groupEvidence: {
     groupId: string | null;
     sourceDocument: string;
-    sourceFile: string;
+    sourceFile: string | null;
+    sourceUrl?: string;
     goalName: string;
-    sourceLine: number;
+    sourceLine: number | null;
     sourceChapter: string;
     recordKind: string;
     parentGoalId?: string | null;
@@ -142,7 +144,23 @@ export type FarmV2Item = {
     matchKind?: string;
     aliasReason?: string | null;
     status: string;
+    questName?: string;
+    questNpc?: string;
+    sourceBoss?: string;
+    insigniaName?: string;
+    insigniaQuantity?: number;
   }[];
+  acquisitionFactionEvidence?: {
+    sourceUrl: string;
+    questName: string;
+    questNpc: string;
+    sourceBoss: string;
+    sourceLine: number;
+    insigniaName: string;
+    insigniaQuantity: number;
+    evidenceText: string;
+    status: string;
+  };
   sources: Source[];
   provenance: {
     sourceDocument: string;

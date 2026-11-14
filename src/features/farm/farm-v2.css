@@ -381,6 +381,34 @@
   font-size: 12px;
   line-height: 1.65;
 }
+.fv2-join-command,
+.fv32-join {
+  margin: -3px 0 10px;
+  color: var(--fv2-muted);
+  font-size: 12px;
+}
+.fv2-join-command code,
+.fv32-join code {
+  color: var(--fv2-text);
+  font-size: 12px;
+}
+.fv32-quest-conditions {
+  margin: 6px 0 12px;
+  padding: 9px 11px;
+  border-left: 2px solid var(--fv2-accent);
+  background: var(--fv2-panel2);
+  color: var(--fv2-muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.fv32-quest-conditions > b {
+  color: var(--fv2-text);
+  font-weight: 600;
+}
+.fv32-quest-conditions ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
 .fv2-smallbtn {
   border: 1px solid var(--fv2-accent);
   border-radius: 5px;

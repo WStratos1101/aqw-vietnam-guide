@@ -120,7 +120,8 @@ test("Quest material tables are divided by map, preserve quantity and keep unkno
         id: "q",
         quest: "Verified Quest",
         source: "https://aqwwiki.wikidot.com/fixture",
-        requirements: ["Level 80"],
+        requirements: ["Legacy requirement"],
+        preconditions: ["Level 80"],
         rows: [
           {
             name: "Token A",
@@ -133,8 +134,19 @@ test("Quest material tables are divided by map, preserve quantity and keep unkno
         reward: "Verified reward",
       },
     ],
+    location: "Quest NPC",
+    mapCommand: "/join verifiedmap",
   };
   await act(async () => root.render(createElement(FarmRouteFacts, { route })));
+  const questTitle = host.querySelector("h4");
+  assert.equal(questTitle.textContent, "Verified Quest");
+  assert.equal(questTitle.nextElementSibling.className, "fv32-quest-conditions");
+  assert.match(questTitle.nextElementSibling.textContent, /Điều kiện nhận Quest/);
+  assert.match(questTitle.nextElementSibling.textContent, /Level 80/);
+  assert.doesNotMatch(questTitle.nextElementSibling.textContent, /Legacy requirement/);
+  assert.match(host.textContent, /Nơi nhận: Quest NPC/);
+  assert.match(host.textContent, /\/join verifiedmap/);
+  assert.doesNotMatch(host.textContent, /\bRegion\b|<dt>Map<\/dt>/);
   assert.equal(host.querySelectorAll("table").length, 2);
   assert.equal(
     host.querySelectorAll('.fv32-table-scroll[tabindex="0"]').length,
@@ -146,6 +158,21 @@ test("Quest material tables are divided by map, preserve quantity and keep unkno
     host.querySelectorAll("tbody tr")[1].children[1].textContent,
     "20",
   );
+});
+test("Quest location keeps its receiver while hiding an unverified map command", async () => {
+  const route = {
+    id: "fixture-no-map",
+    method: "Quest",
+    regionId: null,
+    location: "Known NPC",
+    mapCommand: "unknown map name",
+    steps: [],
+    sources: [],
+  };
+  await act(async () => root.render(createElement(FarmRouteFacts, { route })));
+  assert.match(host.textContent, /Known NPC/);
+  assert.doesNotMatch(host.textContent, /\/join/);
+  assert.doesNotMatch(host.textContent, /\bRegion\b|<dt>Map<\/dt>/);
 });
 test.after(async () => {
   await act(async () => root.unmount());

@@ -508,6 +508,9 @@ const factionItemMappings = read(
 const legacyFactionGroups = read(
   "content-sources/farm/import/group-reconciliation-before.json",
 ).items;
+const empoweredUltraFactionEvidence = read(
+  "content-sources/farm/import/empowered-ultra-faction-evidence.json",
+);
 assignFarmGroups(
   items,
   manualFactionGoals,
@@ -515,6 +518,7 @@ assignFarmGroups(
   factionGoalAliases,
   factionItemMappings,
   legacyFactionGroups,
+  empoweredUltraFactionEvidence,
 );
 const usedRegions = new Set(items.flatMap((i) => i.regions));
 const catalog = {

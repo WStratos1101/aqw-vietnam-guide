@@ -172,22 +172,26 @@ function PreviewImage({
 }
 function CopyJoin({ value }: { value: string }) {
   const [status, setStatus] = useState("");
+  const match = value.match(/^\s*\/?join\s+([a-z0-9_-]+)\s*$/i);
+  const command = match ? `/join ${match[1]}` : null;
   useEffect(() => setStatus(""), [value]);
+  if (!command) return null;
   return (
-    <div>
+    <div className="fv2-join-command">
+      <code>{command}</code>
       <button
         className="fv2-smallbtn"
         type="button"
         onClick={async () => {
           try {
-            await navigator.clipboard.writeText(value);
+            await navigator.clipboard.writeText(command);
             setStatus("Đã chép");
           } catch {
-            setStatus("Không chép được. Hãy chọn và chép lệnh bên dưới.");
+            setStatus("Không chép được. Hãy chọn và chép lệnh bên trên.");
           }
         }}
       >
-        <Copy size={14} aria-hidden="true" /> Sao chép <code>{value}</code>
+        <Copy size={14} aria-hidden="true" /> Sao chép lệnh
       </button>
       <span role="status">{status}</span>
     </div>
@@ -375,11 +379,6 @@ function Detail({
                   <b>Nơi nhận:</b> {route.location}
                 </p>
               )}
-              <p className="fv2-muted">
-                Region:{" "}
-                {catalog.regions.find((r) => r.id === route.regionId)?.name ||
-                  "Chưa xác minh"}
-              </p>
               {route.mapCommand && <CopyJoin value={route.mapCommand} />}{" "}
               {!!route.prerequisites?.length && (
                 <>

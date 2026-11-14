@@ -17,6 +17,9 @@ const goals = read(
 ).goals;
 const aliases = read("content-sources/farm/import/faction-goal-aliases.json");
 const itemMappings = read("content-sources/farm/import/faction-item-mappings.json");
+const empoweredUltraEvidence = read(
+  "content-sources/farm/import/empowered-ultra-faction-evidence.json",
+);
 const legacyGroups = read("content-sources/farm/import/group-reconciliation-before.json").items;
 
 test("manual guide chapters and aliases define the only selectable groups", () => {
@@ -44,7 +47,7 @@ test("manual guide chapters and aliases define the only selectable groups", () =
 
 test("catalog primary groups match exact canonical names and retain guide line evidence", () => {
   const checked = structuredClone(catalog.items);
-  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups);
+  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence);
   assert.deepEqual(checked, catalog.items);
   for (const item of checked) {
     assert.equal(item.groupIds.length, item.primaryGroupId ? 1 : 0, item.id);
@@ -54,19 +57,25 @@ test("catalog primary groups match exact canonical names and retain guide line e
         (entry) => entry.groupId === item.primaryGroupId,
       );
       assert.ok(evidence, item.id);
-      assert.equal(evidence.sourceDocument, "manual-faction-guide");
-      assert.ok(Number.isInteger(evidence.sourceLine));
-      const goalEvidence = goals.some(
-          (goal) =>
-            goal.name === evidence.goalName &&
-            goal.source_line === evidence.sourceLine &&
-            goal.group_id === item.primaryGroupId,
-        );
-      if (evidence.matchKind === "reviewed-canonical-item") {
+      if (evidence.sourceDocument === "aqwwiki-ultra-quest") {
+        assert.equal(evidence.sourceUrl, item.acquisitionFactionEvidence.sourceUrl);
+        assert.equal(evidence.sourceBoss, item.acquisitionFactionEvidence.sourceBoss);
+        assert.equal(evidence.questName, item.acquisitionFactionEvidence.questName);
+      } else {
+        assert.equal(evidence.sourceDocument, "manual-faction-guide");
+        assert.ok(Number.isInteger(evidence.sourceLine));
+        const goalEvidence = goals.some(
+            (goal) =>
+              goal.name === evidence.goalName &&
+              goal.source_line === evidence.sourceLine &&
+              goal.group_id === item.primaryGroupId,
+          );
+        if (evidence.matchKind === "reviewed-canonical-item") {
         assert.ok(itemMappings.some((mapping) =>
           mapping.itemId === item.id && mapping.sourceLine === evidence.sourceLine && mapping.primaryGroupId === item.primaryGroupId,
         ));
-      } else assert.equal(goalEvidence, true, item.id);
+        } else assert.equal(goalEvidence, true, item.id);
+      }
     }
   }
 });
@@ -149,13 +158,13 @@ test("all-inventory and faction counts count unique canonical identities exactly
     chaos: 2,
     awe: 6,
     blacksmithing: 1,
-    nation: 80,
-    legion: 25,
+    nation: 95,
+    legion: 32,
     dragonkin: 4,
     elemental: 12,
     hollowborn: 7,
     "debris-astravian": 0,
-    unknown: 108,
+    unknown: 86,
   };
   for (const [id, count] of Object.entries(expected))
     assert.equal(counts.find((entry) => entry.id === id)?.count, count, id);
@@ -208,7 +217,7 @@ test("every catalog group assignment validates against manual guide provenance",
 
 test("canonical reward mappings survive goal fallback and generation is idempotent", () => {
   const checked = structuredClone(catalog.items);
-  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups);
+  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence);
   assert.deepEqual(checked, catalog.items);
   for (const mapping of itemMappings) {
     const item = checked.find((entry) => entry.id === mapping.itemId);
@@ -220,4 +229,62 @@ test("canonical reward mappings survive goal fallback and generation is idempote
       ), mapping.itemId);
   }
   assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 280);
+});
+
+test("direct Ultra Empower rewards map by verified boss quest, never by Empowered name or prerequisite", () => {
+  const byId = new Map(catalog.items.map((item) => [item.id, item]));
+  assert.equal(empoweredUltraEvidence.length, 27);
+  for (const entry of empoweredUltraEvidence) {
+    const item = byId.get(entry.itemId);
+    assert.ok(item, entry.itemId);
+    assert.equal(item.name, entry.itemName);
+    assert.equal(item.primaryGroupId, entry.primaryGroupId, entry.itemId);
+    assert.equal(item.acquisitionFactionEvidence.sourceUrl, entry.sourceUrl);
+    assert.equal(item.acquisitionFactionEvidence.questName, entry.questName);
+    assert.equal(item.acquisitionFactionEvidence.questNpc, entry.questNpc);
+    assert.equal(item.acquisitionFactionEvidence.sourceBoss, entry.sourceBoss);
+    assert.equal(item.acquisitionFactionEvidence.sourceLine, entry.sourceLine);
+    assert.equal(
+      entry.primaryGroupId,
+      entry.sourceBoss === "Ultra Nulgath" ? "nation" : "legion",
+    );
+  }
+  assert.equal(
+    empoweredUltraEvidence.filter((entry) => entry.primaryGroupId === "nation").length,
+    15,
+  );
+  assert.equal(
+    empoweredUltraEvidence.filter((entry) => entry.primaryGroupId === "legion").length,
+    12,
+  );
+  assert.equal(byId.get("empowered-vordred-s-armor").primaryGroupId, "evil");
+  assert.equal(byId.get("empowered-sole-bloodletter").primaryGroupId, null);
+  assert.equal(byId.get("empowered-hollowborn-caladbolg").primaryGroupId, "hollowborn");
+  assert.equal(
+    empoweredUltraEvidence
+      .filter((entry) => entry.sourceBoss === "Ultra Nulgath")
+      .every((entry) => entry.insigniaName === "Nulgath Insignia"),
+    true,
+  );
+  assert.equal(
+    empoweredUltraEvidence
+      .filter((entry) => entry.sourceBoss === "Ultra Dage")
+      .every((entry) => entry.insigniaName === "Dage the Evil Insignia"),
+    true,
+  );
+  const empoweredAuditRows = fs
+    .readFileSync("FARM_FACTION_PENDING_ITEMS.csv", "utf8")
+    .split(/\r?\n/)
+    .filter((line) => /^empowered-[^,]+,/.test(line));
+  assert.equal(empoweredAuditRows.length, 31);
+  assert.equal(
+    new Set(empoweredAuditRows.map((line) => line.split(",", 1)[0])).size,
+    31,
+  );
+  assert.match(
+    empoweredAuditRows.find((line) =>
+      line.startsWith("empowered-sole-bloodletter,"),
+    ),
+    /UNKNOWN_NO_SOURCE/,
+  );
 });

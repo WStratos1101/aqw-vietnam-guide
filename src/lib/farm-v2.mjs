@@ -72,13 +72,33 @@ export function validateFarmV2(catalog) {
         !i.groupEvidence?.some(
           (e) =>
             e.groupId === i.primaryGroupId &&
-            e.sourceDocument === "manual-faction-guide" &&
-            e.sourceFile &&
-            Number.isInteger(e.sourceLine) &&
-            e.sourceLine > 0,
+            ((e.sourceDocument === "manual-faction-guide" &&
+              e.sourceFile &&
+              Number.isInteger(e.sourceLine) &&
+              e.sourceLine > 0) ||
+              (e.sourceDocument === "aqwwiki-ultra-quest" &&
+                url(e.sourceUrl) &&
+                e.matchKind === "verified-direct-ultra-quest" &&
+                e.questName &&
+                e.questNpc &&
+                e.sourceBoss &&
+                e.insigniaName &&
+                Number.isInteger(e.insigniaQuantity))),
         )
       )
-        errors.push("Missing manual guide faction evidence " + i.id);
+        errors.push("Missing verified faction evidence " + i.id);
+      if (
+        i.acquisitionFactionEvidence &&
+        (!url(i.acquisitionFactionEvidence.sourceUrl) ||
+          !i.acquisitionFactionEvidence.questName ||
+          !i.acquisitionFactionEvidence.questNpc ||
+          !i.acquisitionFactionEvidence.sourceBoss ||
+          !Number.isInteger(i.acquisitionFactionEvidence.sourceLine) ||
+          !i.acquisitionFactionEvidence.insigniaName ||
+          !Number.isInteger(i.acquisitionFactionEvidence.insigniaQuantity) ||
+          i.acquisitionFactionEvidence.status !== "verified")
+      )
+        errors.push("Invalid acquisition faction evidence " + i.id);
     }
     if (wiki.has(i.wikiUrl))
       errors.push("Duplicate canonical URL " + i.wikiUrl);

@@ -86,6 +86,7 @@ export function importUltraFarm(items) {
           id: q.id,
           quest: q.name,
           requirements: q.requirements || [],
+          preconditions: q.requirements || [],
           reward: q.reward,
           repeatability: q.repeatability,
           source: url,

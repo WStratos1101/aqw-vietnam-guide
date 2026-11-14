@@ -1,4 +1,15 @@
 import type { FarmV2RouteData } from "../../types/farm-v2";
+
+function verifiedJoinCommand(value?: string | null) {
+  const match = value?.match(/^\s*\/?join\s+([a-z0-9_-]+)\s*$/i);
+  return match ? `/join ${match[1]}` : null;
+}
+
+function JoinLine({ value }: { value?: string | null }) {
+  const command = verifiedJoinCommand(value);
+  return command ? <div className="fv32-join"><code>{command}</code></div> : null;
+}
+
 export function FarmActions({ text }: { text: string }) {
   const lines = text
     .split(/\n+|;\s+|(?<=[.!?])\s+(?=[A-ZĐÀÁÂĂÊÔƠƯ])/u)
@@ -32,16 +43,11 @@ export function FarmRouteFacts({
           </div>
           <div>
             <dt>Nơi nhận</dt>
-            <dd>{route.location || "Chưa xác minh"}</dd>
+            <dd>
+              {route.location || "Chưa xác minh"}
+              <JoinLine value={route.mapCommand} />
+            </dd>
           </div>
-          {route.mapCommand && (
-            <div>
-              <dt>Map</dt>
-              <dd>
-                <code>{route.mapCommand}</code>
-              </dd>
-            </div>
-          )}
           {route.questReward && (
             <div>
               <dt>Quest</dt>
@@ -63,13 +69,25 @@ export function FarmRouteFacts({
         return (
           <section key={task.id}>
             <h4>{task.quest || task.title}</h4>
-            {task.requirements.length > 0 && (
-              <ul>
-                {task.requirements.map((line, i) => (
-                  <li key={i}>{line}</li>
-                ))}
-              </ul>
+            {(task.preconditions || task.requirements || []).length > 0 && (
+              <div className="fv32-quest-conditions">
+                <b>Điều kiện nhận Quest</b>
+                <ul>
+                  {(task.preconditions || task.requirements).map((line, i) => (
+                    <li key={i}>{line}</li>
+                  ))}
+                </ul>
+              </div>
             )}
+            {(task.npc || route.location) && (
+              <p><b>Nơi nhận:</b> {task.npc || route.location}</p>
+            )}
+            <JoinLine
+              value={
+                verifiedJoinCommand(task.map) ||
+                verifiedJoinCommand(route.mapCommand)
+              }
+            />
             {maps.map((map) => (
               <div key={map}>
                 <h5>{map}</h5>

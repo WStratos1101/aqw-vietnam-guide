@@ -5864,6 +5864,17 @@
         "legion"
       ],
       "groupStatus": "verified-guide-item",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered Undead Champion",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 444,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 10,
+        "evidenceText": "The Empowered Undead Champion quest lists this exact item as reward and requires Dage the Evil Insignia ×10.",
+        "status": "verified"
+      },
       "groupEvidence": [
         {
           "groupId": "legion",
@@ -62118,6 +62129,7 @@
               "id": "ingredient-infernal-flame-hood",
               "quest": "Merge Infernal Flame Hood",
               "requirements": [],
+              "preconditions": [],
               "reward": "Infernal Flame Hood",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/infernal-flame-hood",
@@ -62144,6 +62156,7 @@
               "id": "acquire",
               "quest": "Merge Infernal Flame Horns",
               "requirements": [],
+              "preconditions": [],
               "reward": "Infernal Flame Horns",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/infernal-flame-horns",
@@ -62285,6 +62298,7 @@
               "id": "acquire",
               "quest": "Merge Infernal Flame Hood",
               "requirements": [],
+              "preconditions": [],
               "reward": "Infernal Flame Hood",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/infernal-flame-hood",
@@ -62427,6 +62441,7 @@
               "id": "ingredient-infernal-flame-claws",
               "quest": "Merge Infernal Flame Claws",
               "requirements": [],
+              "preconditions": [],
               "reward": "Infernal Flame Claws",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/infernal-flame-claws",
@@ -62453,6 +62468,7 @@
               "id": "ingredient-infernal-flame-runes",
               "quest": "Merge Infernal Flame Runes",
               "requirements": [],
+              "preconditions": [],
               "reward": "Infernal Flame Runes",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/infernal-flame-runes",
@@ -62479,6 +62495,7 @@
               "id": "acquire",
               "quest": "Merge Infernal Claws + Runes",
               "requirements": [],
+              "preconditions": [],
               "reward": "Infernal Claws + Runes",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/infernal-claws-runes",
@@ -62635,6 +62652,7 @@
               "id": "acquire",
               "quest": "Merge Infernal Flame Claws",
               "requirements": [],
+              "preconditions": [],
               "reward": "Infernal Flame Claws",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/infernal-flame-claws",
@@ -62768,6 +62786,7 @@
               "id": "acquire",
               "quest": "Merge Infernal Flame Runes",
               "requirements": [],
+              "preconditions": [],
               "reward": "Infernal Flame Runes",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/infernal-flame-runes",
@@ -62919,6 +62938,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -62938,6 +62960,7 @@
               "id": "acquire",
               "quest": "Merge War Blade of Courage",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Courage",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-courage",
@@ -63095,6 +63118,7 @@
               "id": "ingredient-war-blade-of-courage",
               "quest": "Merge War Blade of Courage",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Courage",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-courage",
@@ -63137,6 +63161,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -63156,6 +63183,7 @@
               "id": "acquire",
               "quest": "Merge War Blades of Courage",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blades of Courage",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blades-of-courage",
@@ -63323,6 +63351,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -63342,6 +63373,7 @@
               "id": "acquire",
               "quest": "Merge War Blade of Power",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Power",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-power",
@@ -63515,6 +63547,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -63534,6 +63569,7 @@
               "id": "acquire",
               "quest": "Merge War Blade of Speed",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Speed",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-speed",
@@ -63691,6 +63727,7 @@
               "id": "ingredient-war-blade-of-speed",
               "quest": "Merge War Blade of Speed",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Speed",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-speed",
@@ -63733,6 +63770,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -63752,6 +63792,7 @@
               "id": "acquire",
               "quest": "Merge War Blades of Speed",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blades of Speed",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blades-of-speed",
@@ -63919,6 +63960,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -63938,6 +63982,7 @@
               "id": "acquire",
               "quest": "Merge War Blade of Strength",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Strength",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-strength",
@@ -64109,6 +64154,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -64128,6 +64176,7 @@
               "id": "acquire",
               "quest": "Merge War Blade of Wisdom",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Wisdom",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-wisdom",
@@ -64304,6 +64353,7 @@
               "id": "ingredient-war-blade-of-courage",
               "quest": "Merge War Blade of Courage",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Courage",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-courage",
@@ -64344,6 +64394,7 @@
               "id": "ingredient-war-blade-of-power",
               "quest": "Merge War Blade of Power",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Power",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-power",
@@ -64384,6 +64435,7 @@
               "id": "ingredient-war-blade-of-speed",
               "quest": "Merge War Blade of Speed",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Speed",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-speed",
@@ -64424,6 +64476,7 @@
               "id": "ingredient-war-blade-of-strength",
               "quest": "Merge War Blade of Strength",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Strength",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-strength",
@@ -64464,6 +64517,7 @@
               "id": "ingredient-war-blade-of-wisdom",
               "quest": "Merge War Blade of Wisdom",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Wisdom",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-wisdom",
@@ -64506,6 +64560,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -64525,6 +64582,7 @@
               "id": "acquire",
               "quest": "Merge Goddess Of War Blades",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess Of War Blades",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-blades",
@@ -64729,6 +64787,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -64748,6 +64809,7 @@
               "id": "acquire",
               "quest": "Merge Goddess of War Cloak",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess of War Cloak",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-cloak",
@@ -64889,6 +64951,7 @@
               "id": "ingredient-war-blade-of-courage",
               "quest": "Merge War Blade of Courage",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Courage",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-courage",
@@ -64929,6 +64992,7 @@
               "id": "ingredient-war-blade-of-power",
               "quest": "Merge War Blade of Power",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Power",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-power",
@@ -64969,6 +65033,7 @@
               "id": "ingredient-war-blade-of-speed",
               "quest": "Merge War Blade of Speed",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Speed",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-speed",
@@ -65009,6 +65074,7 @@
               "id": "ingredient-war-blade-of-strength",
               "quest": "Merge War Blade of Strength",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Strength",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-strength",
@@ -65049,6 +65115,7 @@
               "id": "ingredient-war-blade-of-wisdom",
               "quest": "Merge War Blade of Wisdom",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Wisdom",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-wisdom",
@@ -65089,6 +65156,7 @@
               "id": "ingredient-goddess-of-war-blades",
               "quest": "Merge Goddess Of War Blades",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess Of War Blades",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-blades",
@@ -65136,6 +65204,7 @@
               "id": "ingredient-goddess-of-war-cloak",
               "quest": "Merge Goddess of War Cloak",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess of War Cloak",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-cloak",
@@ -65164,6 +65233,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -65183,6 +65255,7 @@
               "id": "acquire",
               "quest": "Merge Goddess Of War Prestige Cloak",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess Of War Prestige Cloak",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-prestige-cloak",
@@ -65401,6 +65474,7 @@
               "id": "ingredient-war-blade-of-courage",
               "quest": "Merge War Blade of Courage",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Courage",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-courage",
@@ -65441,6 +65515,7 @@
               "id": "ingredient-war-blade-of-power",
               "quest": "Merge War Blade of Power",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Power",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-power",
@@ -65481,6 +65556,7 @@
               "id": "ingredient-war-blade-of-speed",
               "quest": "Merge War Blade of Speed",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Speed",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-speed",
@@ -65521,6 +65597,7 @@
               "id": "ingredient-war-blade-of-strength",
               "quest": "Merge War Blade of Strength",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Strength",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-strength",
@@ -65561,6 +65638,7 @@
               "id": "ingredient-war-blade-of-wisdom",
               "quest": "Merge War Blade of Wisdom",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Wisdom",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-wisdom",
@@ -65601,6 +65679,7 @@
               "id": "ingredient-goddess-of-war-blades",
               "quest": "Merge Goddess Of War Blades",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess Of War Blades",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-blades",
@@ -65648,6 +65727,7 @@
               "id": "ingredient-goddess-of-war-cloak",
               "quest": "Merge Goddess of War Cloak",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess of War Cloak",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-cloak",
@@ -65674,6 +65754,7 @@
               "id": "ingredient-goddess-of-war-prestige-cloak",
               "quest": "Merge Goddess Of War Prestige Cloak",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess Of War Prestige Cloak",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-prestige-cloak",
@@ -65702,6 +65783,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -65721,6 +65805,7 @@
               "id": "acquire",
               "quest": "Merge Goddess Of War",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess Of War",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war",
@@ -65956,6 +66041,7 @@
               "id": "ingredient-war-blade-of-courage",
               "quest": "Merge War Blade of Courage",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Courage",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-courage",
@@ -65996,6 +66082,7 @@
               "id": "ingredient-war-blade-of-power",
               "quest": "Merge War Blade of Power",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Power",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-power",
@@ -66036,6 +66123,7 @@
               "id": "ingredient-war-blade-of-speed",
               "quest": "Merge War Blade of Speed",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Speed",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-speed",
@@ -66076,6 +66164,7 @@
               "id": "ingredient-war-blade-of-strength",
               "quest": "Merge War Blade of Strength",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Strength",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-strength",
@@ -66116,6 +66205,7 @@
               "id": "ingredient-war-blade-of-wisdom",
               "quest": "Merge War Blade of Wisdom",
               "requirements": [],
+              "preconditions": [],
               "reward": "War Blade of Wisdom",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/war-blade-of-wisdom",
@@ -66156,6 +66246,7 @@
               "id": "ingredient-goddess-of-war-blades",
               "quest": "Merge Goddess Of War Blades",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess Of War Blades",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-blades",
@@ -66203,6 +66294,7 @@
               "id": "ingredient-goddess-of-war-cloak",
               "quest": "Merge Goddess of War Cloak",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess of War Cloak",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-cloak",
@@ -66229,6 +66321,7 @@
               "id": "ingredient-goddess-of-war-prestige-cloak",
               "quest": "Merge Goddess Of War Prestige Cloak",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess Of War Prestige Cloak",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war-prestige-cloak",
@@ -66255,6 +66348,7 @@
               "id": "ingredient-goddess-of-war",
               "quest": "Merge Goddess Of War",
               "requirements": [],
+              "preconditions": [],
               "reward": "Goddess Of War",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/goddess-of-war",
@@ -66304,6 +66398,9 @@
               "requirements": [
                 "Nhận quest weekly của Vohu"
               ],
+              "preconditions": [
+                "Nhận quest weekly của Vohu"
+              ],
               "reward": "Malgor Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -66323,6 +66420,10 @@
               "id": "acquire",
               "quest": "The Goddess of War",
               "requirements": [
+                "Must be Level 100.",
+                "Must have Fire Champion's Armor, Empowered Drakath Armor, Void Beetle Warlord, Malgor the ShadowLord, Classic Hollowborn Paladin Armor, and Awescended in inventory."
+              ],
+              "preconditions": [
                 "Must be Level 100.",
                 "Must have Fire Champion's Armor, Empowered Drakath Armor, Void Beetle Warlord, Malgor the ShadowLord, Classic Hollowborn Paladin Armor, and Awescended in inventory."
               ],
@@ -66595,6 +66696,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -66614,6 +66718,12 @@
               "id": "acquire",
               "quest": "Empowered Overfiend Blade",
               "requirements": [
+                "Must be Level 95.",
+                "Must have",
+                "Overfiend Blade of Nulgath",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have",
                 "Overfiend Blade of Nulgath",
@@ -66714,11 +66824,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Overfiend Blade",
+          "sourceLine": 1462,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Overfiend Blade",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Ultra Nulgath quest section lists this exact item under Items as the reward; the quest requires Nulgath Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Overfiend Blade",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1462,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Ultra Nulgath quest section lists this exact item under Items as the reward; the quest requires Nulgath Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-ungodly-reavers",
@@ -66851,6 +66997,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -66870,6 +67019,12 @@
               "id": "acquire",
               "quest": "Empowered Ungodly Reavers",
               "requirements": [
+                "Must be Level 95.",
+                "Must have",
+                "Ungodly Reavers of Nulgath",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have",
                 "Ungodly Reavers of Nulgath",
@@ -66970,11 +67125,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Ungodly Reavers",
+          "sourceLine": 1491,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Ungodly Reavers",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Ultra Nulgath quest section lists this exact item under Items as the reward; the quest requires Nulgath Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Ungodly Reavers",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1491,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Ultra Nulgath quest section lists this exact item under Items as the reward; the quest requires Nulgath Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-shadow-spear",
@@ -67093,6 +67284,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -67112,6 +67306,12 @@
               "id": "acquire",
               "quest": "Empowered Shadow Spear",
               "requirements": [
+                "Must be Level 95.",
+                "Must have",
+                "Shadow Spear of Nulgath",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have",
                 "Shadow Spear of Nulgath",
@@ -67198,11 +67398,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Shadow Spear",
+          "sourceLine": 1519,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Shadow Spear",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Ultra Nulgath quest section lists this exact item under Items as the reward; the quest requires Nulgath Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Shadow Spear",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1519,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Ultra Nulgath quest section lists this exact item under Items as the reward; the quest requires Nulgath Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-bloodletter",
@@ -67321,6 +67557,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -67340,6 +67579,12 @@
               "id": "acquire",
               "quest": "Empowered Bloodletter",
               "requirements": [
+                "Must be Level 95.",
+                "Must have",
+                "Bloodletter of Nulgath",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have",
                 "Bloodletter of Nulgath",
@@ -67426,11 +67671,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Bloodletter",
+          "sourceLine": 1547,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Bloodletter",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Ultra Nulgath quest section lists this exact item under Items as the reward; the quest requires Nulgath Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Bloodletter",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1547,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Ultra Nulgath quest section lists this exact item under Items as the reward; the quest requires Nulgath Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-prismatic-manslayer",
@@ -67556,6 +67837,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -67575,6 +67859,12 @@
               "id": "acquire",
               "quest": "Empowered Prismatic Manslayers",
               "requirements": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "Taro's Prismatic Manslayer",
+                "Taro's Dual Prismatic Manslayers"
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have the following items in your inventory:",
                 "Taro's Prismatic Manslayer",
@@ -67668,11 +67958,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Prismatic Manslayer",
+          "sourceLine": 1577,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Prismatic Manslayers",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The quest offers a choice between the exact singular and plural canonical items; Nulgath Insignia ×25 is required.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Prismatic Manslayers",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1577,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The quest offers a choice between the exact singular and plural canonical items; Nulgath Insignia ×25 is required.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-prismatic-manslayers",
@@ -67798,6 +68124,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -67817,6 +68146,12 @@
               "id": "acquire",
               "quest": "Empowered Prismatic Manslayers",
               "requirements": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "Taro's Prismatic Manslayer",
+                "Taro's Dual Prismatic Manslayers"
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have the following items in your inventory:",
                 "Taro's Prismatic Manslayer",
@@ -67910,11 +68245,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Prismatic Manslayers",
+          "sourceLine": 1578,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Prismatic Manslayers",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The quest offers a choice between the exact singular and plural canonical items; Nulgath Insignia ×25 is required.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Prismatic Manslayers",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1578,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The quest offers a choice between the exact singular and plural canonical items; Nulgath Insignia ×25 is required.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-oblivion-blade",
@@ -68040,6 +68411,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -68059,6 +68433,12 @@
               "id": "acquire",
               "quest": "Empowered Oblivion Blade",
               "requirements": [
+                "Must be Level 95.",
+                "Must have",
+                "Oblivion Blade of Nulgath (Sword)",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have",
                 "Oblivion Blade of Nulgath (Sword)",
@@ -68152,11 +68532,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Oblivion Blade",
+          "sourceLine": 1726,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Oblivion Blade",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Ultra Nulgath quest lists this exact item as the reward and requires Nulgath Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Oblivion Blade",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1726,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Ultra Nulgath quest lists this exact item as the reward and requires Nulgath Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-charged-oblivion-blade",
@@ -68282,6 +68698,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -68301,6 +68720,12 @@
               "id": "acquire",
               "quest": "Empowered Charged Oblivion Blade",
               "requirements": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "Oblivion Blade of Nulgath (Pet)",
+                "Oblivion Blade of Nulgath (Sword)"
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have the following items in your inventory:",
                 "Oblivion Blade of Nulgath (Pet)",
@@ -68394,11 +68819,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Charged Oblivion Blade",
+          "sourceLine": 1756,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Charged Oblivion Blade",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Ultra Nulgath quest lists this exact item as the reward and requires Nulgath Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Charged Oblivion Blade",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1756,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Ultra Nulgath quest lists this exact item as the reward and requires Nulgath Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-legacy-of-nulgath",
@@ -68496,6 +68957,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -68515,6 +68979,12 @@
               "id": "acquire",
               "quest": "Empowered Legacy of Nulgath",
               "requirements": [
+                "Must be Level 80.",
+                "Must have",
+                "Legacy of Nulgath",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have",
                 "Legacy of Nulgath",
@@ -68580,11 +69050,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Legacy of Nulgath",
+          "sourceLine": 1603,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Legacy of Nulgath",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Ultra Nulgath quest lists this exact item as the reward and requires Nulgath Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Legacy of Nulgath",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1603,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Ultra Nulgath quest lists this exact item as the reward and requires Nulgath Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-worshipper-of-nulgath",
@@ -68682,6 +69188,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -68701,6 +69210,12 @@
               "id": "acquire",
               "quest": "Empowered Worshipper of Nulgath",
               "requirements": [
+                "Must be Level 80.",
+                "Must have",
+                "Worshipper of Nulgath",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have",
                 "Worshipper of Nulgath",
@@ -68766,11 +69281,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Worshipper of Nulgath",
+          "sourceLine": 1628,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Worshipper of Nulgath",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Ultra Nulgath quest lists this exact item as the reward and requires Nulgath Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Worshipper of Nulgath",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1628,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Ultra Nulgath quest lists this exact item as the reward and requires Nulgath Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-evolved-void",
@@ -68910,6 +69461,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -68929,6 +69483,12 @@
               "id": "acquire",
               "quest": "Empowered Evolved Void Armors 1",
               "requirements": [
+                "Must be Level 80.",
+                "Must have the following items in your inventory:",
+                "Evolved Fiend Of Nulgath",
+                "Evolved Void Of Nulgath"
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have the following items in your inventory:",
                 "Evolved Fiend Of Nulgath",
@@ -69036,11 +69596,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Evolved Void",
+          "sourceLine": 1662,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Evolved Void Armors 1",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The quest offers Empowered Evolved Void as one of two exact armor rewards; Nulgath Insignia ×25 is required.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Evolved Void Armors 1",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1662,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The quest offers Empowered Evolved Void as one of two exact armor rewards; Nulgath Insignia ×25 is required.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-evolved-fiend",
@@ -69180,6 +69776,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -69199,6 +69798,12 @@
               "id": "acquire",
               "quest": "Empowered Evolved Void Armors 1",
               "requirements": [
+                "Must be Level 80.",
+                "Must have the following items in your inventory:",
+                "Evolved Fiend Of Nulgath",
+                "Evolved Void Of Nulgath"
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have the following items in your inventory:",
                 "Evolved Fiend Of Nulgath",
@@ -69306,11 +69911,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Evolved Fiend",
+          "sourceLine": 1663,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Evolved Void Armors 1",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The quest offers Empowered Evolved Fiend as one of two exact armor rewards; Nulgath Insignia ×25 is required.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Evolved Void Armors 1",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1663,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The quest offers Empowered Evolved Fiend as one of two exact armor rewards; Nulgath Insignia ×25 is required.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-evolved-blood",
@@ -69454,6 +70095,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -69473,6 +70117,13 @@
               "id": "acquire",
               "quest": "Empowered Evolved Void Armors 2",
               "requirements": [
+                "Must be Level 80.",
+                "Must have the following items in your inventory:",
+                "Evolved Hex of Nulgath",
+                "Evolved Shadow of Nulgath",
+                "Evolved Blood of Nulgath"
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have the following items in your inventory:",
                 "Evolved Hex of Nulgath",
@@ -69581,11 +70232,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Evolved Blood",
+          "sourceLine": 1696,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Evolved Void Armors 2",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The quest offers Empowered Evolved Blood among three exact armor rewards; Nulgath Insignia ×25 is required.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Evolved Void Armors 2",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1696,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The quest offers Empowered Evolved Blood among three exact armor rewards; Nulgath Insignia ×25 is required.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-evolved-hex",
@@ -69729,6 +70416,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -69748,6 +70438,13 @@
               "id": "acquire",
               "quest": "Empowered Evolved Void Armors 2",
               "requirements": [
+                "Must be Level 80.",
+                "Must have the following items in your inventory:",
+                "Evolved Hex of Nulgath",
+                "Evolved Shadow of Nulgath",
+                "Evolved Blood of Nulgath"
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have the following items in your inventory:",
                 "Evolved Hex of Nulgath",
@@ -69856,11 +70553,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Evolved Hex",
+          "sourceLine": 1697,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Evolved Void Armors 2",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The quest offers Empowered Evolved Hex among three exact armor rewards; Nulgath Insignia ×25 is required.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Evolved Void Armors 2",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1697,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The quest offers Empowered Evolved Hex among three exact armor rewards; Nulgath Insignia ×25 is required.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-evolved-shadow",
@@ -70004,6 +70737,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -70023,6 +70759,13 @@
               "id": "acquire",
               "quest": "Empowered Evolved Void Armors 2",
               "requirements": [
+                "Must be Level 80.",
+                "Must have the following items in your inventory:",
+                "Evolved Hex of Nulgath",
+                "Evolved Shadow of Nulgath",
+                "Evolved Blood of Nulgath"
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have the following items in your inventory:",
                 "Evolved Hex of Nulgath",
@@ -70131,11 +70874,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "nation"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "nation",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+          "goalName": "Empowered Evolved Shadow",
+          "sourceLine": 1698,
+          "sourceChapter": "Ultra Nulgath",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Evolved Void Armors 2",
+          "questNpc": "Nulgath (NPC)",
+          "sourceBoss": "Ultra Nulgath",
+          "insigniaName": "Nulgath Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The quest offers Empowered Evolved Shadow among three exact armor rewards; Nulgath Insignia ×25 is required.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "nation",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "questName": "Empowered Evolved Void Armors 2",
+        "questNpc": "Nulgath (NPC)",
+        "sourceBoss": "Ultra Nulgath",
+        "sourceLine": 1698,
+        "insigniaName": "Nulgath Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The quest offers Empowered Evolved Shadow among three exact armor rewards; Nulgath Insignia ×25 is required.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-sole-bloodletter",
@@ -70265,6 +71044,9 @@
               "requirements": [
                 "Nhận quest weekly"
               ],
+              "preconditions": [
+                "Nhận quest weekly"
+              ],
               "reward": "Nulgath Insignia ×5",
               "repeatability": "weekly",
               "source": "https://docs.google.com/document/d/18Z2Yu0O40dVyh0enB_2k_v4U-De3mg1y-HtThUmvxfU/edit",
@@ -70284,6 +71066,13 @@
               "id": "acquire",
               "quest": "Sole Empowered Blood Blade",
               "requirements": [
+                "Must be Level 95.",
+                "Must have",
+                "Sole Bloodletter of Nulgath",
+                "in your inventory.",
+                "For a small price I'll give you a sword to cut through anyone."
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have",
                 "Sole Bloodletter of Nulgath",
@@ -70484,6 +71273,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -70503,6 +71295,13 @@
               "id": "acquire",
               "quest": "Empowered BladeMaster",
               "requirements": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "BladeMaster's Dual Katanas",
+                "Living BladeMaster",
+                "Dark Unicorn Rib"
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have the following items in your inventory:",
                 "BladeMaster's Dual Katanas",
@@ -70569,11 +71368,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "legion"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "legion",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+          "goalName": "Empowered BladeMaster",
+          "sourceLine": 526,
+          "sourceChapter": "Ultra Dage",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered BladeMaster",
+          "questNpc": "Calamitus",
+          "sourceBoss": "Ultra Dage",
+          "insigniaName": "Dage the Evil Insignia",
+          "insigniaQuantity": 30,
+          "evidenceText": "The Empowered BladeMaster quest offers this exact item among three choices; it requires Dage the Evil Insignia ×30.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered BladeMaster",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 526,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 30,
+        "evidenceText": "The Empowered BladeMaster quest offers this exact item among three choices; it requires Dage the Evil Insignia ×30.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-blademaster-s-katana",
@@ -70675,6 +71510,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -70694,6 +71532,13 @@
               "id": "acquire",
               "quest": "Empowered BladeMaster",
               "requirements": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "BladeMaster's Dual Katanas",
+                "Living BladeMaster",
+                "Dark Unicorn Rib"
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have the following items in your inventory:",
                 "BladeMaster's Dual Katanas",
@@ -70760,11 +71605,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "legion"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "legion",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+          "goalName": "Empowered BladeMaster's Katana",
+          "sourceLine": 527,
+          "sourceChapter": "Ultra Dage",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered BladeMaster",
+          "questNpc": "Calamitus",
+          "sourceBoss": "Ultra Dage",
+          "insigniaName": "Dage the Evil Insignia",
+          "insigniaQuantity": 30,
+          "evidenceText": "The Empowered BladeMaster quest offers this exact item among three choices; it requires Dage the Evil Insignia ×30.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered BladeMaster",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 527,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 30,
+        "evidenceText": "The Empowered BladeMaster quest offers this exact item among three choices; it requires Dage the Evil Insignia ×30.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-dual-katanas",
@@ -70866,6 +71747,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -70885,6 +71769,13 @@
               "id": "acquire",
               "quest": "Empowered BladeMaster",
               "requirements": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "BladeMaster's Dual Katanas",
+                "Living BladeMaster",
+                "Dark Unicorn Rib"
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have the following items in your inventory:",
                 "BladeMaster's Dual Katanas",
@@ -70951,11 +71842,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "legion"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "legion",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+          "goalName": "Empowered Dual Katanas",
+          "sourceLine": 528,
+          "sourceChapter": "Ultra Dage",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered BladeMaster",
+          "questNpc": "Calamitus",
+          "sourceBoss": "Ultra Dage",
+          "insigniaName": "Dage the Evil Insignia",
+          "insigniaQuantity": 30,
+          "evidenceText": "The Empowered BladeMaster quest offers this exact item among three choices; it requires Dage the Evil Insignia ×30.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered BladeMaster",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 528,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 30,
+        "evidenceText": "The Empowered BladeMaster quest offers this exact item among three choices; it requires Dage the Evil Insignia ×30.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-caladbolg",
@@ -71053,6 +71980,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -71072,6 +72002,12 @@
               "id": "acquire",
               "quest": "Empowered Caladbolg",
               "requirements": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "Caladbolg",
+                "Dual Caladbolgs"
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have the following items in your inventory:",
                 "Caladbolg",
@@ -71160,7 +72096,18 @@
       ],
       "groupStatus": "verified-guide-item",
       "legacyGroupId": "legion",
-      "primaryGroupId": "legion"
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered Caladbolg",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 390,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 35,
+        "evidenceText": "The Empowered Caladbolg quest offers this exact item or Empowered Dual Caladbolgs; it requires Dage the Evil Insignia ×35.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-dual-caladbolgs",
@@ -71258,6 +72205,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -71277,6 +72227,12 @@
               "id": "acquire",
               "quest": "Empowered Caladbolg",
               "requirements": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "Caladbolg",
+                "Dual Caladbolgs"
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have the following items in your inventory:",
                 "Caladbolg",
@@ -71365,7 +72321,18 @@
       ],
       "groupStatus": "verified-guide-item",
       "legacyGroupId": "legion",
-      "primaryGroupId": "legion"
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered Caladbolg",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 391,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 35,
+        "evidenceText": "The Empowered Caladbolg quest offers this exact item or Empowered Caladbolg; it requires Dage the Evil Insignia ×35.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-dark-caster",
@@ -71463,6 +72430,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -71482,6 +72452,12 @@
               "id": "acquire",
               "quest": "Empowered Dark Caster",
               "requirements": [
+                "Must be Level 80.",
+                "Must have",
+                "Classic Dark Caster",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have",
                 "Classic Dark Caster",
@@ -71547,11 +72523,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "legion"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "legion",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+          "goalName": "Empowered Dark Caster",
+          "sourceLine": 553,
+          "sourceChapter": "Ultra Dage",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Dark Caster",
+          "questNpc": "Calamitus",
+          "sourceBoss": "Ultra Dage",
+          "insigniaName": "Dage the Evil Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Empowered Dark Caster quest lists this exact item as reward and requires Dage the Evil Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered Dark Caster",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 553,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Empowered Dark Caster quest lists this exact item as reward and requires Dage the Evil Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-forge-spawn",
@@ -71653,6 +72665,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -71672,6 +72687,13 @@
               "id": "acquire",
               "quest": "Empowered Forge Spawn",
               "requirements": [
+                "Must be Level 80.",
+                "Must have the following items in your inventory:",
+                "Legion Bonfire Altar",
+                "Legion Bonfire",
+                "Legion Forge Spawn"
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have the following items in your inventory:",
                 "Legion Bonfire Altar",
@@ -71738,11 +72760,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "legion"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "legion",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+          "goalName": "Empowered Forge Spawn",
+          "sourceLine": 473,
+          "sourceChapter": "Ultra Dage",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Forge Spawn",
+          "questNpc": "Calamitus",
+          "sourceBoss": "Ultra Dage",
+          "insigniaName": "Dage the Evil Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Empowered Forge Spawn quest offers this exact item or Empowered Bonfire Altar; it requires Dage the Evil Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered Forge Spawn",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 473,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Empowered Forge Spawn quest offers this exact item or Empowered Bonfire Altar; it requires Dage the Evil Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-lich-king",
@@ -71844,6 +72902,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -71863,6 +72924,13 @@
               "id": "acquire",
               "quest": "Empowered Lich King",
               "requirements": [
+                "Must be Level 80.",
+                "Must have the following items in your inventory:",
+                "Original Paragon Helm",
+                "Ultimate Lich King (Permanent)",
+                "Ultimate Lich King Helm"
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have the following items in your inventory:",
                 "Original Paragon Helm",
@@ -71952,7 +73020,18 @@
       ],
       "groupStatus": "verified-guide-item",
       "legacyGroupId": "legion",
-      "primaryGroupId": "legion"
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered Lich King",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 419,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Empowered Lich King quest lists this exact item as reward and requires Dage the Evil Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-paragon-plate",
@@ -72050,6 +73129,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -72069,6 +73151,12 @@
               "id": "acquire",
               "quest": "Empowered Paragon Plate",
               "requirements": [
+                "Must be Level 80.",
+                "Must have",
+                "Paragon Plate",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have",
                 "Paragon Plate",
@@ -72134,11 +73222,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "legion"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "legion",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+          "goalName": "Empowered Paragon Plate",
+          "sourceLine": 498,
+          "sourceChapter": "Ultra Dage",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Paragon Plate",
+          "questNpc": "Calamitus",
+          "sourceBoss": "Ultra Dage",
+          "insigniaName": "Dage the Evil Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Empowered Paragon Plate quest lists this exact item as reward and requires Dage the Evil Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered Paragon Plate",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 498,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Empowered Paragon Plate quest lists this exact item as reward and requires Dage the Evil Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "empowered-hollowborn-caladbolg",
@@ -72222,6 +73346,12 @@
                 "Caladbolg",
                 "Dual Caladbolgs"
               ],
+              "preconditions": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "Caladbolg",
+                "Dual Caladbolgs"
+              ],
               "reward": "Empowered Caladbolg",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -72250,6 +73380,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -72269,6 +73402,7 @@
               "id": "acquire",
               "quest": "Merge Empowered Hollowborn Caladbolg",
               "requirements": [],
+              "preconditions": [],
               "reward": "Empowered Hollowborn Caladbolg",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/empowered-hollowborn-caladbolg",
@@ -72444,6 +73578,12 @@
                 "Caladbolg",
                 "Dual Caladbolgs"
               ],
+              "preconditions": [
+                "Must be Level 95.",
+                "Must have the following items in your inventory:",
+                "Caladbolg",
+                "Dual Caladbolgs"
+              ],
               "reward": "Empowered Dual Caladbolgs",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -72472,6 +73612,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -72491,6 +73634,7 @@
               "id": "acquire",
               "quest": "Merge Empowered Dual Hollowborn Caladbolgs",
               "requirements": [],
+              "preconditions": [],
               "reward": "Empowered Dual Hollowborn Caladbolgs",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/empowered-dual-hollowborn-caladbolgs",
@@ -72680,6 +73824,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -72699,6 +73846,12 @@
               "id": "acquire",
               "quest": "Empowered Prismatic Paragon",
               "requirements": [
+                "Must be Level 80.",
+                "Must have",
+                "Prismatic Paragon Plate",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have",
                 "Prismatic Paragon Plate",
@@ -72764,11 +73917,47 @@
         }
       ],
       "provenance": [],
-      "groupIds": [],
-      "groupEvidence": [],
-      "groupStatus": "unknown",
+      "groupIds": [
+        "legion"
+      ],
+      "groupEvidence": [
+        {
+          "groupId": "legion",
+          "sourceDocument": "aqwwiki-ultra-quest",
+          "sourceFile": null,
+          "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+          "goalName": "Empowered Prismatic Paragon",
+          "sourceLine": 579,
+          "sourceChapter": "Ultra Dage",
+          "recordKind": "canonical-item-quest-reward",
+          "parentGoalId": null,
+          "relatedGoalId": null,
+          "relationship": "direct-quest-reward",
+          "questName": "Empowered Prismatic Paragon",
+          "questNpc": "Calamitus",
+          "sourceBoss": "Ultra Dage",
+          "insigniaName": "Dage the Evil Insignia",
+          "insigniaQuantity": 25,
+          "evidenceText": "The Empowered Prismatic Paragon quest lists this exact item as reward and requires Dage the Evil Insignia ×25.",
+          "matchKind": "verified-direct-ultra-quest",
+          "aliasReason": null,
+          "status": "verified"
+        }
+      ],
+      "groupStatus": "verified-ultra-quest",
       "legacyGroupId": null,
-      "primaryGroupId": null
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered Prismatic Paragon",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 579,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Empowered Prismatic Paragon quest lists this exact item as reward and requires Dage the Evil Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "sin-of-the-underworld",
@@ -72908,6 +74097,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -72927,6 +74119,12 @@
               "id": "acquire",
               "quest": "Sin of the Underworld",
               "requirements": [
+                "Must be Level 95.",
+                "Must have",
+                "Sin of the Undying",
+                "in your inventory."
+              ],
+              "preconditions": [
                 "Must be Level 95.",
                 "Must have",
                 "Sin of the Undying",
@@ -73159,6 +74357,9 @@
               "requirements": [
                 "Hoàn thành Power of the Undead Legion"
               ],
+              "preconditions": [
+                "Hoàn thành Power of the Undead Legion"
+              ],
               "reward": "Dage the Evil Insignia ×5",
               "repeatability": "weekly",
               "source": "https://aqwwiki.wikidot.com/calamitus-quests",
@@ -73178,6 +74379,13 @@
               "id": "acquire",
               "quest": "Empowered Forge Spawn",
               "requirements": [
+                "Must be Level 80.",
+                "Must have the following items in your inventory:",
+                "Legion Bonfire Altar",
+                "Legion Bonfire",
+                "Legion Forge Spawn"
+              ],
+              "preconditions": [
                 "Must be Level 80.",
                 "Must have the following items in your inventory:",
                 "Legion Bonfire Altar",
@@ -73267,7 +74475,18 @@
       ],
       "groupStatus": "verified-guide-item",
       "legacyGroupId": "legion",
-      "primaryGroupId": "legion"
+      "primaryGroupId": "legion",
+      "acquisitionFactionEvidence": {
+        "sourceUrl": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "questName": "Empowered Forge Spawn",
+        "questNpc": "Calamitus",
+        "sourceBoss": "Ultra Dage",
+        "sourceLine": 472,
+        "insigniaName": "Dage the Evil Insignia",
+        "insigniaQuantity": 25,
+        "evidenceText": "The Empowered Forge Spawn quest offers this exact item or Empowered Forge Spawn; it requires Dage the Evil Insignia ×25.",
+        "status": "verified"
+      }
     },
     {
       "id": "exalted-duality",
@@ -73367,6 +74586,7 @@
               "id": "acquire",
               "quest": "Merge Exalted Duality",
               "requirements": [],
+              "preconditions": [],
               "reward": "Exalted Duality",
               "repeatability": "once",
               "source": "https://aqwwiki.wikidot.com/exalted-duality",

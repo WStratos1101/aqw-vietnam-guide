@@ -9,7 +9,7 @@ export function normalizeFactionGoalName(value) {
     .trim();
 }
 
-export function assignFarmGroups(items, goals, manifest, aliases = [], mappings = [], legacy = {}) {
+export function assignFarmGroups(items, goals, manifest, aliases = [], mappings = [], legacy = {}, ultraEvidence = []) {
   const groups = new Set(manifest.groups.map((group) => group.id));
   const aggregateKinds = new Set([
     "set",
@@ -29,10 +29,46 @@ export function assignFarmGroups(items, goals, manifest, aliases = [], mappings 
   }
   const aliasById = new Map(aliases.map((entry) => [entry.itemId, entry]));
   const mappingById = new Map(mappings.map((entry) => [entry.itemId, entry]));
+  const ultraById = new Map(ultraEvidence.map((entry) => [entry.itemId, entry]));
   for (const item of items) {
     const old = legacy[item.id];
     item.legacyGroupId = old?.groupIds?.length === 1 ? old.groupIds[0] : null;
     const explicit = mappingById.get(item.id);
+    const ultra = ultraById.get(item.id);
+    if (ultra) {
+      const expectedGroup =
+        ultra.sourceBoss === "Ultra Nulgath"
+          ? "nation"
+          : ultra.sourceBoss === "Ultra Dage"
+            ? "legion"
+            : null;
+      const expectedSource =
+        ultra.sourceBoss === "Ultra Nulgath"
+          ? {
+              url: "https://aqwwiki.wikidot.com/nulgath-s-quests",
+              npc: "Nulgath (NPC)",
+              insignia: "Nulgath Insignia",
+            }
+          : {
+              url: "https://aqwwiki.wikidot.com/calamitus-quests",
+              npc: "Calamitus",
+              insignia: "Dage the Evil Insignia",
+            };
+      if (
+        !expectedGroup ||
+        ultra.primaryGroupId !== expectedGroup ||
+        ultra.itemName !== item.name ||
+        ultra.sourceUrl !== expectedSource.url ||
+        !ultra.questName ||
+        ultra.questNpc !== expectedSource.npc ||
+        ultra.insigniaName !== expectedSource.insignia ||
+        !Number.isInteger(ultra.sourceLine) ||
+        ultra.sourceLine < 1 ||
+        !Number.isInteger(ultra.insigniaQuantity) ||
+        !ultra.sourceEvidence
+      )
+        throw Error("Invalid direct Ultra faction evidence: " + item.id);
+    }
     const names = new Set(
       [item.name, item.originalName].map(normalizeFactionGoalName),
     );
@@ -59,18 +95,40 @@ export function assignFarmGroups(items, goals, manifest, aliases = [], mappings 
       goal && goal.group_id !== "other-items" && groups.has(goal.group_id)
         ? goal.group_id
         : null;
-    const primaryGroupId = explicit
+    const guideGroupId = explicit
       ? explicit.status === "verified"
         ? explicit.primaryGroupId
         : null
       : goalGroupId;
+    if (ultra && guideGroupId && guideGroupId !== ultra.primaryGroupId)
+      throw Error("Conflicting guide and direct Ultra faction evidence: " + item.id);
+    const primaryGroupId = ultra?.primaryGroupId || guideGroupId;
     if (explicit?.status === "verified") {
       if (!groups.has(primaryGroupId) || !Number.isInteger(explicit.sourceLine) || !explicit.evidenceText)
         throw Error("Invalid canonical faction mapping: " + item.id);
     }
     item.primaryGroupId = primaryGroupId;
     item.groupIds = primaryGroupId ? [primaryGroupId] : [];
-    item.groupStatus = primaryGroupId ? (explicit ? "verified-guide-item" : "verified-guide") : "unknown";
+    item.groupStatus = primaryGroupId
+      ? ultra && !explicit && !goal
+        ? "verified-ultra-quest"
+        : explicit
+          ? "verified-guide-item"
+          : "verified-guide"
+      : "unknown";
+    if (ultra) {
+      item.acquisitionFactionEvidence = {
+          sourceUrl: ultra.sourceUrl,
+          questName: ultra.questName,
+          questNpc: ultra.questNpc,
+          sourceBoss: ultra.sourceBoss,
+          sourceLine: ultra.sourceLine,
+          insigniaName: ultra.insigniaName,
+          insigniaQuantity: ultra.insigniaQuantity,
+          evidenceText: ultra.sourceEvidence,
+          status: "verified",
+      };
+    } else delete item.acquisitionFactionEvidence;
     item.groupEvidence = explicit
       ? [{
           groupId: primaryGroupId,
@@ -104,7 +162,30 @@ export function assignFarmGroups(items, goals, manifest, aliases = [], mappings 
             status: primaryGroupId ? "verified" : "ungrouped-source-chapter",
           },
         ]
-      : [];
+      : ultra
+        ? [{
+            groupId: primaryGroupId,
+            sourceDocument: "aqwwiki-ultra-quest",
+            sourceFile: null,
+            sourceUrl: ultra.sourceUrl,
+            goalName: ultra.itemName,
+            sourceLine: ultra.sourceLine,
+            sourceChapter: ultra.sourceBoss,
+            recordKind: "canonical-item-quest-reward",
+            parentGoalId: null,
+            relatedGoalId: null,
+            relationship: "direct-quest-reward",
+            questName: ultra.questName,
+            questNpc: ultra.questNpc,
+            sourceBoss: ultra.sourceBoss,
+            insigniaName: ultra.insigniaName,
+            insigniaQuantity: ultra.insigniaQuantity,
+            evidenceText: ultra.sourceEvidence,
+            matchKind: "verified-direct-ultra-quest",
+            aliasReason: null,
+            status: "verified",
+          }]
+        : [];
   }
   return items;
 }
