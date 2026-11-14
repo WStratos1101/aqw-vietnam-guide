@@ -64,6 +64,8 @@ export function FarmMaterials({
             >
               <summary
                 aria-controls={id + "-" + node.itemId}
+                aria-label={`Cách lấy ${node.name}, số lượng ${node.quantity}`}
+                title={`Cách lấy ${node.name} · ×${node.quantity.toLocaleString("vi-VN")}`}
                 onClick={(event) => {
                   event.preventDefault();
                   setOpened(opened === token ? "" : token);

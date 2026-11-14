@@ -269,8 +269,12 @@ test("group tiles, category counts, aliases, search/sort and history restoration
     assert.equal(tile.type, "button");
     assert.equal(tile.tabIndex, 0);
     assert.ok(tile.hasAttribute("aria-pressed"));
+    assert.ok(tile.getAttribute("aria-label").startsWith("Lọc phe phái:"));
+    assert.ok(tile.title);
     assert.equal(tile.querySelector(".fv2-group-initial"), null);
   }
+  for (const tile of host.querySelectorAll(".fv2-item"))
+    assert.doesNotMatch(tile.textContent, /Cần đối chiếu|Chưa rõ thời điểm mở/);
   const css = await fs.readFile("src/features/farm/farm-v2.css", "utf8");
   assert.match(css, /grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
   assert.match(css, /:focus-visible/);

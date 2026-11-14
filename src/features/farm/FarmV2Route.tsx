@@ -208,6 +208,8 @@ function RouteChips({
       {routes.map((r, i) => (
         <button
           type="button"
+          aria-label={`Chọn cách nhận: ${r.method} · ${r.location || `Tuyến ${i + 1}`}`}
+          title={`${r.method} · ${r.location || `Tuyến ${i + 1}`}`}
           aria-pressed={r.id === selected}
           className={r.id === selected ? "active" : ""}
           key={r.id}
@@ -607,6 +609,8 @@ export function FarmV2Route({ slug }: { slug?: string }) {
               <button
                 type="button"
                 key={r.id}
+                aria-label={`Lọc phe phái: ${r.id === "all" ? "Tất cả" : r.name}`}
+                title={r.id === "all" ? "Tất cả phe phái" : r.name}
                 aria-pressed={r.id === group}
                 className={
                   (r.id === "all" ? "fv2-group-all " : "") +
@@ -704,16 +708,15 @@ export function FarmV2Route({ slug }: { slug?: string }) {
                 type="button"
                 key={i.id}
                 onClick={() => chooseItem(i.id)}
+                aria-label={`Chọn ${i.name}`}
+                title={i.name}
                 aria-pressed={i.id === active?.id}
               >
                 <PreviewImage item={i} />
                 <span className="fv2-item-text">
                   <strong>{i.name}</strong>
                   <small>
-                    {i.category} · {routesFor(i, region).length} cách nhận ·{" "}
-                    {i.verificationStatus === "verified"
-                      ? "Wiki snapshot"
-                      : "Cần đối chiếu"}
+                    {i.category} · {routesFor(i, region).length} cách nhận
                   </small>
                 </span>
                 <span aria-hidden="true">›</span>

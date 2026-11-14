@@ -84,6 +84,7 @@ function Stepper({
               }
               onClick={() => move(n)}
               aria-label={`Bước ${n + 1}${done.includes(s.id) ? " · Đã hoàn thành" : ""}`}
+              title={`Bước ${n + 1}: ${s.title}`}
             >
               {done.includes(s.id) ? (
                 <Check size={16} aria-hidden="true" />
@@ -148,6 +149,8 @@ function Stepper({
           <button
             type="button"
             disabled={index === 0}
+            aria-label="Bước trước"
+            title="Bước trước"
             onClick={() => move(index - 1)}
           >
             <ChevronLeft size={16} aria-hidden="true" />
@@ -156,6 +159,8 @@ function Stepper({
           <button
             type="button"
             disabled={index === path.steps.length - 1}
+            aria-label="Bước tiếp theo"
+            title="Bước tiếp theo"
             onClick={() => move(index + 1)}
           >
             Tiếp
