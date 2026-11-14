@@ -182,7 +182,24 @@ test("all filtered aggregate goals have an explicit expansion or a blocker", () 
       assert.ok(!seenChildren.has(child.canonicalId), `duplicate aggregate child: ${child.canonicalId}`);
       seenChildren.add(child.canonicalId);
     }
+    for (const output of expansion.unmatchedOutputs || []) {
+      assert.ok(Number.isInteger(output.sourceLine), expansion.goalId);
+      assert.ok(output.reason, `${expansion.goalId}: ${output.itemName}`);
+    }
   }
+  const warlock = expansions.goals.find((goal) => goal.goalId === "nation:3880:void-warlock");
+  assert.deepEqual(
+    warlock.canonicalChildren.map((child) => child.canonicalId).sort(),
+    [
+      "void-warlock",
+      "void-warlock-cape",
+      "void-warlock-helm",
+      "void-warlock-hood",
+      "void-warlock-horns",
+      "void-warlock-tendrils-cape",
+    ],
+  );
+  assert.equal(warlock.unmatchedOutputs.length, 6);
 });
 
 test("every catalog group assignment validates against manual guide provenance", () => {
