@@ -173,3 +173,31 @@ test("catalog validation rejects invented groups and unsupported provenance", ()
     assert.ok(validateFarmV2(copy).some((e) => e.includes("group")));
   }
 });
+
+test("Chaorrupter Free Player has exact variant evidence in the Chaos chapter, without guessing Legion", () => {
+  const item = catalog.items.find(
+    (i) => i.id === "chaorrupter-unlocked-free-player",
+  );
+  assert.deepEqual(item.groupIds, ["chaos"]);
+  assert.equal(item.groupStatus, "manual-reviewed");
+  const override = manifest.overrides[item.id];
+  assert.equal(override.evidence.length, 2);
+  for (const evidence of override.evidence) {
+    const page = extracts.pages.find((p) => p.url === evidence.sourceUrl);
+    assert.ok(page);
+    assert.equal(
+      createHash("sha256").update(page.text).digest("hex"),
+      evidence.sourceTextHash,
+    );
+    assert.ok(evidence.sourceQuotes.some((q) => /Free Player/.test(q)));
+    assert.deepEqual(
+      evidence.sourceQuotes,
+      evidence.lines.map((n) => page.text.split("\n")[n - 1]),
+    );
+  }
+  assert.equal(
+    groupCounts(catalog.items, manifest.groups).find((g) => g.id === "all")
+      .count,
+    232,
+  );
+});

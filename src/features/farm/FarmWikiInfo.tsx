@@ -23,7 +23,7 @@ export function FarmWikiInfo({
         : null;
   const fields = [
     ["Nơi nhận", route?.location || d?.location],
-    ["Phương thức / Giá mua", price],
+    ["Phương thức / Giá mua", price || d?.priceRaw || route?.method],
     ["Giá bán lại", d?.sellback],
     ["Sát thương vũ khí", d?.weaponDamage],
     ["Tốc độ", d?.speed ? d.speed + " speed" : null],
@@ -36,11 +36,6 @@ export function FarmWikiInfo({
         : null,
     ],
   ].filter(([, v]) => v);
-  const effects = [
-    ...new Set([
-      ...(d?.specialEffectsVi?.length ? d.specialEffectsVi : item.effects),
-    ]),
-  ];
   return (
     <div className="fv31-wiki-info">
       {fields.length > 0 && (
@@ -59,28 +54,8 @@ export function FarmWikiInfo({
           <p>{d.descriptionVi}</p>
         </section>
       )}
-      {effects.length > 0 && (
-        <section>
-          <h3>Hiệu ứng đặc biệt</h3>
-          <ul>
-            {effects.map((e) => (
-              <li key={e}>{e}</li>
-            ))}
-          </ul>
-        </section>
-      )}
-      {!fields.length && !d?.descriptionVi && !effects.length && (
+      {!fields.length && !d?.descriptionVi && (
         <p className="fv2-muted">Thông tin bổ sung: —</p>
-      )}
-      {!!item.prerequisites?.length && (
-        <section>
-          <h3>Điều kiện</h3>
-          <ul>
-            {item.prerequisites.map((p, i) => (
-              <li key={i}>{p.value}</li>
-            ))}
-          </ul>
-        </section>
       )}
       {item.classHref && (
         <a href={item.classHref}>Xem kỹ năng và combo Class</a>

@@ -2,6 +2,7 @@ import classRoleOptions from "../../data/class-roles.json";
 import {
   matchesFarmSubtype,
   farmSubtypeOptions,
+  farmBoost,
 } from "../../lib/farm-details.mjs";
 import { FarmGuide } from "./FarmGuide";
 import { FarmWikiInfo } from "./FarmWikiInfo";
@@ -35,8 +36,9 @@ import {
   UNKNOWN_REGION,
 } from "../../lib/farm-v2.mjs";
 import type { FarmV2Item as Item, FarmV2RouteData } from "../../types/farm-v2";
-import type { MaterialNode } from "../../lib/material-requirements.mjs";
-import { MaterialTree } from "../ultra/MaterialTree";
+import { FarmMaterials } from "./FarmMaterials";
+import { FarmTypeIcon } from "./FarmTypeIcon";
+import { factionTokens } from "./faction-tokens";
 import "./farm-v2.css";
 const catalog = farmData as unknown as {
   items: Item[];
@@ -101,7 +103,7 @@ function initialState(slug?: string): State {
     categoryAliases[p.get("category") || ""] || p.get("category") || "all";
   return {
     group: resolveGroup(p.get("group") || "all", groupManifest),
-    sort: p.get("sort") === "name" ? "name" : "source",
+    sort: "name",
     region: [
       "all",
       UNKNOWN_REGION,
@@ -199,46 +201,6 @@ function CopyJoin({ value }: { value: string }) {
     </div>
   );
 }
-function MaterialSources({
-  node,
-  onItemClick,
-}: {
-  node: MaterialNode;
-  onItemClick: (id: string) => void;
-}) {
-  if (node.kind !== "item")
-    return (
-      <>
-        {node.requirements.map((n, i) => (
-          <MaterialSources key={i} node={n} onItemClick={onItemClick} />
-        ))}
-      </>
-    );
-  const item = catalog.items.find(
-    (i) => i.id === node.itemId || i.originalName === node.name,
-  );
-  return (
-    <details className="fv2-material-source">
-      <summary>
-        {node.name} ×{node.quantity.toLocaleString("vi-VN")}
-      </summary>
-      <p>
-        <a href={node.source} target="_blank" rel="noopener noreferrer">
-          Nguồn nguyên liệu
-        </a>
-        {item && (
-          <button
-            className="fv2-linkbutton"
-            type="button"
-            onClick={() => onItemClick(item.id)}
-          >
-            Xem {item.name}
-          </button>
-        )}
-      </p>
-    </details>
-  );
-}
 function RouteChips({
   routes,
   selected,
@@ -330,8 +292,8 @@ function Detail({
       </div>
       <div className="fv2-specs">
         <div>
-          <small>Level yêu cầu</small>
-          <strong>{show(item.level ?? item.wikiDetails?.levelRequired)}</strong>
+          <small>Boost</small>
+          <strong className="fv2-boost">{farmBoost(item).join(" · ")}</strong>
         </div>
         <div>
           <small>Membership</small>
@@ -466,13 +428,10 @@ function Detail({
           ))}
         {activeTab === "materials" && route?.materialTree && (
           <>
-            <MaterialTree
+            <FarmMaterials
               tree={route.materialTree}
-              scope={`farm:${item.id}:${route.id}`}
-            />
-            <MaterialSources
-              node={route.materialTree}
               onItemClick={onItemClick}
+              scope={`farm:${item.id}:${route.id}`}
             />
           </>
         )}
@@ -486,13 +445,10 @@ function Detail({
               materials={
                 route.materialTree ? (
                   <>
-                    <MaterialTree
+                    <FarmMaterials
                       tree={route.materialTree}
-                      scope={`farm:${item.id}:${route.id}`}
-                    />
-                    <MaterialSources
-                      node={route.materialTree}
                       onItemClick={onItemClick}
+                      scope={`farm:${item.id}:${route.id}`}
                     />
                   </>
                 ) : undefined
@@ -509,8 +465,7 @@ function Detail({
 }
 export function FarmV2Route({ slug }: { slug?: string }) {
   const [state, setState] = useState<State>(() => initialState(slug));
-  const { group, sort, region, category, query, selected, view, subtype } =
-    state;
+  const { group, region, category, query, selected, view, subtype } = state;
   const [visibleCount, setVisibleCount] = useState(80);
   const [detailMobile, setDetailMobile] = useState(
     Boolean(slug || state.selected),
@@ -533,7 +488,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
     const p = new URLSearchParams();
     for (const [key, value] of Object.entries({
       group: next.group,
-      sort: next.sort === "source" ? "" : next.sort,
+
       region: next.region,
       category: next.category,
       q: next.query,
@@ -587,8 +542,8 @@ export function FarmV2Route({ slug }: { slug?: string }) {
             (category === "all" || i.category === category) &&
             matchesFarmSubtype(i, category, subtype),
         )
-        .sort((a, b) => (sort === "name" ? a.name.localeCompare(b.name) : 0)),
-    [scoped, group, sort, region, category, subtype],
+        .sort((a, b) => a.name.localeCompare(b.name, "en")),
+    [scoped, group, region, category, subtype],
   );
   const active = filtered.find((i) => i.id === selected) || filtered[0] || null;
   const counts = groupCounts(scoped, groupManifest.groups);
@@ -633,11 +588,16 @@ export function FarmV2Route({ slug }: { slug?: string }) {
     } else setDetailMobile(false);
   };
   return (
-    <main id="main" className="fv2-root" ref={container}>
+    <main
+      id="main"
+      className="fv2-root"
+      ref={container}
+      data-faction={group}
+      style={factionTokens(group)}
+    >
       <header className="fv2-top">
         <div>
-          <h1>Farm Inventory</h1>
-          <p>Phe / Nhóm → Loại trang bị → Vật phẩm</p>
+          <h1 className="codex-heading">Farming Codex</h1>
         </div>
         <label className="fv2-search">
           <Search size={18} aria-hidden="true" />
@@ -649,36 +609,6 @@ export function FarmV2Route({ slug }: { slug?: string }) {
           />
         </label>
       </header>
-      <p className="fv2-muted">
-        Nhóm theo Vietnam Collector; gồm phe và bộ sưu tập, không đồng nghĩa với
-        faction reputation trong game. Ảnh thiếu có nhãn.
-      </p>
-      <label className="fv2-view">
-        Phạm vi availability{" "}
-        <select
-          aria-label="Phạm vi availability"
-          value={view}
-          onChange={(e) => {
-            update({ view: e.target.value, selected: "" });
-            setDetailMobile(false);
-          }}
-        >
-          <option value="reference">Tất cả · gồm mục cần đối chiếu</option>
-          <option value="now">Đã xác minh có thể nhận</option>
-          <option value="seasonal">Seasonal · chưa xác nhận đang mở</option>
-        </select>
-      </label>
-      <label className="fv2-view">
-        Sắp xếp
-        <select
-          aria-label="Sắp xếp"
-          value={sort}
-          onChange={(e) => update({ sort: e.target.value })}
-        >
-          <option value="source">Thứ tự danh mục</option>
-          <option value="name">Tên A–Z</option>
-        </select>
-      </label>
       {region !== "all" && (
         <p className="fv2-muted">
           Đang dùng bộ lọc địa lý từ liên kết cũ:{" "}
@@ -700,17 +630,17 @@ export function FarmV2Route({ slug }: { slug?: string }) {
         }
       >
         <aside className="fv2-groups">
-          <h2>Phe / Nhóm</h2>
-          <p className="fv2-count">
-            Ô chữ thay logo · số lượng theo tìm kiếm và availability
-          </p>
-          <nav aria-label="Lọc Phe / Nhóm">
+          <h2>Phe phái</h2>
+          <nav aria-label="Lọc Phe phái">
             {counts.map((r) => (
               <button
                 type="button"
                 key={r.id}
                 aria-pressed={r.id === group}
-                className={r.id === group ? "active" : ""}
+                className={
+                  (r.id === "all" ? "fv2-group-all " : "") +
+                  (r.id === group ? "active" : "")
+                }
                 onClick={() => {
                   update({
                     group: r.id,
@@ -722,10 +652,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
                   setReturns([]);
                 }}
               >
-                <span className="fv2-group-initial" aria-hidden="true">
-                  {r.fallback}
-                </span>
-                <span>{r.name}</span>
+                <span>{r.id === "all" ? "Tất cả" : r.name}</span>
                 <b>{r.count}</b>
               </button>
             ))}
@@ -739,13 +666,15 @@ export function FarmV2Route({ slug }: { slug?: string }) {
                 aria-pressed={category === cat}
                 className={category === cat ? "active" : ""}
                 key={cat}
+                aria-label={cat === "all" ? "Tất cả" : cat}
+                title={cat === "all" ? "Tất cả" : cat}
                 onClick={() => {
                   update({ category: cat, selected: "", subtype: "" });
                   setDetailMobile(false);
                   setReturns([]);
                 }}
               >
-                {cat === "all" ? "Tất cả" : cat}{" "}
+                {cat === "all" ? "Tất cả" : <FarmTypeIcon name={cat} />}{" "}
                 <small>
                   {
                     scoped.filter(
@@ -759,23 +688,39 @@ export function FarmV2Route({ slug }: { slug?: string }) {
               </button>
             ))}
           </div>
-          {subtypes.length > 0 && (
-            <label>
-              {category === "Classes" ? "Role" : "Subtype"}{" "}
-              <select
-                aria-label={category === "Classes" ? "Role Class" : "Subtype"}
-                value={subtype}
-                onChange={(e) => update({ subtype: e.target.value })}
-              >
-                <option value="">Tất cả</option>
-                {subtypes.map((s) => (
-                  <option key={s} value={s}>
-                    {s === "unknown" ? "Chưa phân loại" : s}
-                  </option>
+          {subtypes.length > 0 &&
+            (category === "Classes" ? (
+              <label className="fv2-subtype-label">
+                Role{" "}
+                <select
+                  aria-label="Role Class"
+                  value={subtype}
+                  onChange={(e) => update({ subtype: e.target.value })}
+                >
+                  <option value="">Tất cả</option>
+                  {subtypes.map((s) => (
+                    <option key={s} value={s}>
+                      {s === "unknown" ? "Chưa phân loại" : s}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            ) : (
+              <div className="fv2-subtypes" role="group" aria-label="Subtype">
+                {["", ...subtypes].map((s) => (
+                  <button
+                    key={s}
+                    type="button"
+                    aria-label={s || "Tất cả subtype"}
+                    title={s || "Tất cả subtype"}
+                    aria-pressed={subtype === s}
+                    onClick={() => update({ subtype: s })}
+                  >
+                    {s ? <FarmTypeIcon name={s} /> : "Tất cả"}
+                  </button>
                 ))}
-              </select>
-            </label>
-          )}
+              </div>
+            ))}
           <p className="fv2-count">
             {filtered.length} trang bị ·{" "}
             {counts.find((r) => r.id === group)?.name}

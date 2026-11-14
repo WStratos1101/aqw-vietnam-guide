@@ -193,6 +193,7 @@ test("deep-link slug, approved image error fallback, empty search and popstate f
     "/farm?item=dual-exalted-apotheosis&category=weapon&region=unknown-region&view=reference",
   );
   await click(tab("Nguyên liệu"));
+  await click(button(".fv2-material-source summary", "Exalted Apotheosis"));
   const materialButton = button(
     ".fv2-material-source button",
     "Exalted Apotheosis",
@@ -249,7 +250,15 @@ test("group tiles, category counts, aliases, search/sort and history restoration
   await navigate("/farm?group=good&q=nonexistent");
   assert.ok(host.querySelector(".fv2-empty"));
   await navigate("/farm?group=unknown&sort=name");
-  assert.equal(host.querySelector('[aria-label="Sắp xếp"]').value, "name");
+  assert.equal(host.querySelector('[aria-label="Sắp xếp"]'), null);
+  assert.equal(host.querySelector('[aria-label="Phạm vi availability"]'), null);
+  const names = [...host.querySelectorAll(".fv2-item strong")].map(
+    (e) => e.textContent,
+  );
+  assert.deepEqual(
+    names,
+    [...names].sort((a, b) => a.localeCompare(b, "en")),
+  );
   assert.equal(
     host
       .querySelector(".fv2-groups button[aria-pressed=true]")
@@ -260,7 +269,7 @@ test("group tiles, category counts, aliases, search/sort and history restoration
     assert.equal(tile.type, "button");
     assert.equal(tile.tabIndex, 0);
     assert.ok(tile.hasAttribute("aria-pressed"));
-    assert.ok(tile.querySelector('[aria-hidden="true"]'));
+    assert.equal(tile.querySelector(".fv2-group-initial"), null);
   }
   const css = await fs.readFile("src/features/farm/farm-v2.css", "utf8");
   assert.match(css, /grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
@@ -315,11 +324,14 @@ test("V3.1 shows only selected guide step, resets route/item/path, and keeps sav
   await click(host.querySelectorAll(".fv2-route-chips button")[1]);
   assert.equal(
     host.querySelectorAll(".fv31-step-numbers [role=tab]").length,
-    1,
+    0,
   );
   assert.match(panel().textContent, /Merge Blade of Awe/);
   assert.match(host.querySelector(".fv2-guide").textContent, /Cách nhận ngắn/);
-  assert.equal(button(".fv31-step-actions button", "Tiếp").disabled, true);
+  assert.equal(host.querySelector(".fv31-step-actions"), null);
+  assert.doesNotMatch(panel().textContent, /Bước 1\s*\/\s*1/);
+  await click(panel().querySelector("input"));
+  assert.equal(panel().querySelector("input").checked, true);
   await click(host.querySelectorAll(".fv2-route-chips button")[0]);
   assert.match(panel().textContent, /Bước 1/);
 });
@@ -330,7 +342,11 @@ test("V3.1 Wiki info is localized, Sources cards removed, and Role filters share
     host.querySelector(".fv31-wiki-info").textContent,
     /Offensive Caster/,
   );
-  assert.match(host.querySelector(".fv31-wiki-info").textContent, /Hồi mana/);
+  assert.doesNotMatch(
+    host.querySelector(".fv31-wiki-info").textContent,
+    /Hiệu ứng đặc biệt|Điều kiện/,
+  );
+  assert.match(host.querySelector(".fv2-boost").textContent, /Chưa xác minh/);
   assert.doesNotMatch(
     host.querySelector(".fv31-wiki-info").textContent,
     /Tên và loại khớp Wiki/,
@@ -388,6 +404,49 @@ test("V3.1 Wiki info is localized, Sources cards removed, and Role filters share
       (i) => i.category === "Classes" && !i.classRoles.length,
     ).length,
   );
+});
+test("Farming Codex icons, Boost and exclusive material lookup preserve source and keyboard controls", async () => {
+  await navigate("/farm?category=Weapons&subtype=Axe");
+  assert.equal(host.querySelector("h1").textContent, "Farming Codex");
+  assert.equal(
+    host
+      .querySelector('.fv2-subtypes [aria-label="Axe"]')
+      .getAttribute("aria-pressed"),
+    "true",
+  );
+  assert.match(
+    host.querySelector('.fv2-subtypes [aria-label="Axe"] img').src,
+    /Axe_Table.png$/,
+  );
+  await click(host.querySelector('.fv2-subtypes [aria-label="Sword"]'));
+  const data = JSON.parse(
+    await fs.readFile("src/content/farm/catalog-v2.generated.json", "utf8"),
+  );
+  assert.ok(
+    [...host.querySelectorAll(".fv2-item")].every(
+      (row) =>
+        data.items.find((i) => i.id === row.dataset.inventoryItem)?.subtype ===
+        "Sword",
+    ),
+  );
+  assert.match(window.location.search, /subtype=Sword/);
+  await navigate("/farm?item=sin-of-the-abyss");
+  assert.match(host.querySelector(".fv2-boost").textContent, /51%.*25% Gold/);
+  assert.doesNotMatch(
+    host.querySelector(".fv2-specs").textContent,
+    /Level yêu cầu/,
+  );
+  await navigate("/farm?item=blade-of-awe&region=greenguard-forest");
+  await click(tab("Nguyên liệu"));
+  const summaries = host.querySelectorAll(".fv2-material-source summary");
+  assert.ok(summaries.length >= 2);
+  await click(summaries[0]);
+  assert.equal(host.querySelectorAll(".fv2-material-source[open]").length, 1);
+  await click(summaries[1]);
+  assert.equal(host.querySelectorAll(".fv2-material-source[open]").length, 1);
+  assert.equal(host.querySelectorAll(".fv2-material-facts").length, 1);
+  await click(summaries[1]);
+  assert.equal(host.querySelectorAll(".fv2-material-facts").length, 0);
 });
 test.after(async () => {
   await act(async () => root.unmount());

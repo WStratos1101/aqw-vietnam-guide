@@ -4,7 +4,12 @@ import fs from "node:fs";
 import { createHash } from "node:crypto";
 import { farmWikiDetails } from "../scripts/lib/farm-wiki-details.mjs";
 import { farmClassRoles } from "../scripts/lib/farm-class-media.mjs";
-import { matchesFarmSubtype, guidePaths } from "../src/lib/farm-details.mjs";
+import {
+  matchesFarmSubtype,
+  guidePaths,
+  farmBoost,
+  conciseFarmText,
+} from "../src/lib/farm-details.mjs";
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const c = read("src/content/farm/catalog-v2.generated.json");
 const records = [
@@ -351,5 +356,66 @@ test("every canonical item has acquisition facts; multi-Quest rewards are altern
     c.items.find((i) => i.id === "dual-champion-blade-of-nulgath")
       .acquisitionBrief.text,
     /Rare Rarity/,
+  );
+});
+
+test("Boost keeps damage targets and percentages, distinguishes absent and explicit none", () => {
+  assert.deepEqual(farmBoost({ effects: [] }), ["Chưa xác minh"]);
+  assert.deepEqual(farmBoost({ effects: ["Không có boost"] }), [
+    "Không có boost",
+  ]);
+  assert.deepEqual(farmBoost({ effects: ["Hồi 10% HP"] }), ["Chưa xác minh"]);
+  assert.deepEqual(
+    farmBoost(c.items.find((i) => i.id === "sin-of-the-abyss")),
+    ["Tăng 51% Damage to All và 25% Gold khi trang bị."],
+  );
+  assert.ok(
+    farmBoost(c.items.find((i) => i.id === "head-of-the-legion-beast"))
+      .join(" ")
+      .includes("30% Damage to Dragon"),
+  );
+});
+test("AQW type icon mappings retain verified local PNG bytes and the shared Gun/Bow classification", () => {
+  const manifest = read("content-sources/farm/type-icons.json");
+  assert.equal(manifest.source, "https://aqwwiki.wikidot.com/key");
+  assert.equal(manifest.mapping.Bow, manifest.mapping.Gun);
+  for (const name of [
+    "Sword",
+    "Axe",
+    "Dagger",
+    "Bow",
+    "Mace",
+    "Polearm",
+    "Staff",
+    "Gun",
+    "Weapons",
+    "Armors",
+    "Helms",
+    "Capes / Back Items",
+    "Pets",
+    "Classes",
+  ]) {
+    const asset = manifest.assets.find((a) =>
+      a.path.endsWith("/" + manifest.mapping[name]),
+    );
+    assert.ok(asset, name);
+    const bytes = fs.readFileSync("public" + asset.path);
+    assert.equal(bytes.subarray(1, 4).toString(), "PNG");
+    assert.equal(
+      createHash("sha256").update(bytes).digest("hex"),
+      asset.sha256,
+    );
+  }
+});
+
+test("concise guide copy retains names, counts and prerequisite actions", () => {
+  const text =
+    "Cần Level 80, Rank 10 Rep Evil; nhận Quest x25 tại /join revenant.";
+  assert.equal(conciseFarmText(text), text);
+  assert.equal(
+    conciseFarmText(
+      "Đến Museum, gặp Valencia và thu thập đủ nguyên liệu trong công thức bên dưới.",
+    ),
+    "Đến Museum, gặp Valencia.",
   );
 });

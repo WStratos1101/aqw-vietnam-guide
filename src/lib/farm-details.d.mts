@@ -15,3 +15,5 @@ export function farmSubtypeOptions(
   roles: string[],
 ): string[];
 export function guidePaths(route?: FarmV2RouteData): FarmGuidePath[];
+export function farmBoost(item: FarmV2Item): string[];
+export function conciseFarmText(text: string): string;

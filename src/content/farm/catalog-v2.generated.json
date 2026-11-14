@@ -5158,9 +5158,54 @@
           ]
         }
       },
-      "groupEvidence": [],
-      "groupIds": [],
-      "groupStatus": "unknown"
+      "groupEvidence": [
+        {
+          "groupId": "chaos",
+          "sourceUrl": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/chaos/cu",
+          "sourceDocument": "vncollector",
+          "heading": "IV. Chaos · Chaorrupter Unlocked · Free Player",
+          "lines": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "status": "manual-reviewed",
+          "sourceTextHash": "ad27f2c30760272932a0f661c08941669a87449f7965bce9b674c313a9de7220",
+          "sourceQuotes": [
+            "Chaorrupter Unlocked",
+            "- Có 3 phiên bản Chaorrupter Unlocked: Free Player, Legend và AC tagged.",
+            "- Với bản Free Player thì có boosted 50% DMG với tất cả Chaos và Drakath Monsters.",
+            "Với mỗi bản khác nhau sẽ có phương pháp lấy khác nhau:",
+            "- Bản Free Player: Merge tại Chaos War Merge ở /join chaoswar."
+          ]
+        },
+        {
+          "groupId": "chaos",
+          "sourceUrl": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+          "sourceDocument": "google-docs",
+          "heading": "IV. Chaos · Chaorrupter Unlocked · Free Player",
+          "lines": [
+            2304,
+            2309,
+            2310,
+            2315
+          ],
+          "status": "manual-reviewed",
+          "sourceTextHash": "0de12babccfc54bd781189627909542cd923a9667e146ab2f2e4994e2c608579",
+          "sourceQuotes": [
+            "2. Chaorrupter Unlocked (CU) Guide",
+            "- Có 3 phiên bản Chaorrupter Unlocked: Free Player, Legend và AC.",
+            "- Với bản Free Player thì có boosted 50% DMG với tất cả Chaos và Drakath Monsters.",
+            "- Bản Free Player: Merge tại Chaos War Merge ở /join chaoswar."
+          ]
+        }
+      ],
+      "groupIds": [
+        "chaos"
+      ],
+      "groupStatus": "manual-reviewed"
     },
     {
       "id": "archfiend-doomlord",

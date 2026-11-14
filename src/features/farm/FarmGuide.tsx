@@ -1,6 +1,6 @@
 import { useEffect, useId, useState, type ReactNode } from "react";
 import { Check, ChevronLeft, ChevronRight } from "lucide-react";
-import { guidePaths } from "../../lib/farm-details.mjs";
+import { guidePaths, conciseFarmText } from "../../lib/farm-details.mjs";
 import type {
   FarmAcquisitionBrief,
   FarmGuidePath,
@@ -18,6 +18,7 @@ function Stepper({
   const [index, setIndex] = useState(0),
     [done, setDone] = useState<string[]>([]),
     [error, setError] = useState("");
+  const multiple = path.steps.length > 1;
   const id = useId(),
     step = path.steps[index];
   useEffect(() => {
@@ -41,65 +42,69 @@ function Stepper({
     setIndex(Math.max(0, Math.min(path.steps.length - 1, n)));
   return (
     <section className="fv31-stepper" aria-label="Hướng dẫn theo bước">
-      <div
-        className="fv31-step-numbers"
-        role="tablist"
-        aria-label="Các bước Farm"
-        onKeyDown={(e) => {
-          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key))
-            return;
-          e.preventDefault();
-          const n =
-            e.key === "Home"
-              ? 0
-              : e.key === "End"
-                ? path.steps.length - 1
-                : (index +
-                    (e.key === "ArrowRight" ? 1 : -1) +
-                    path.steps.length) %
-                  path.steps.length;
-          move(n);
-          e.currentTarget
-            .querySelectorAll<HTMLButtonElement>('[role="tab"]')
-            [n]?.focus();
-        }}
-      >
-        {path.steps.map((s, n) => (
-          <button
-            type="button"
-            role="tab"
-            key={s.id}
-            id={`${id}-step-${n}`}
-            aria-controls={id + "-content"}
-            aria-selected={index === n}
-            tabIndex={index === n ? 0 : -1}
-            className={
-              (index === n ? "active " : "") +
-              (done.includes(s.id) ? "completed" : "")
-            }
-            onClick={() => move(n)}
-            aria-label={`Bước ${n + 1}${done.includes(s.id) ? " · Đã hoàn thành" : ""}`}
-          >
-            {done.includes(s.id) ? (
-              <Check size={16} aria-hidden="true" />
-            ) : (
-              n + 1
-            )}
-          </button>
-        ))}
-      </div>
+      {multiple && (
+        <div
+          className="fv31-step-numbers"
+          role="tablist"
+          aria-label="Các bước Farm"
+          onKeyDown={(e) => {
+            if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key))
+              return;
+            e.preventDefault();
+            const n =
+              e.key === "Home"
+                ? 0
+                : e.key === "End"
+                  ? path.steps.length - 1
+                  : (index +
+                      (e.key === "ArrowRight" ? 1 : -1) +
+                      path.steps.length) %
+                    path.steps.length;
+            move(n);
+            e.currentTarget
+              .querySelectorAll<HTMLButtonElement>('[role="tab"]')
+              [n]?.focus();
+          }}
+        >
+          {path.steps.map((s, n) => (
+            <button
+              type="button"
+              role="tab"
+              key={s.id}
+              id={`${id}-step-${n}`}
+              aria-controls={id + "-content"}
+              aria-selected={index === n}
+              tabIndex={index === n ? 0 : -1}
+              className={
+                (index === n ? "active " : "") +
+                (done.includes(s.id) ? "completed" : "")
+              }
+              onClick={() => move(n)}
+              aria-label={`Bước ${n + 1}${done.includes(s.id) ? " · Đã hoàn thành" : ""}`}
+            >
+              {done.includes(s.id) ? (
+                <Check size={16} aria-hidden="true" />
+              ) : (
+                n + 1
+              )}
+            </button>
+          ))}
+        </div>
+      )}
       <div
         className="fv31-step-content"
-        role="tabpanel"
+        role={multiple ? "tabpanel" : undefined}
         id={id + "-content"}
-        aria-labelledby={`${id}-step-${index}`}
+        aria-labelledby={multiple ? `${id}-step-${index}` : undefined}
         tabIndex={0}
       >
-        <small>
-          Bước {index + 1} / {path.steps.length}
-        </small>
-        <h3>{step.title}</h3>
-        <p>{step.text}</p>
+        {multiple && (
+          <small>
+            Bước {index + 1} / {path.steps.length}
+          </small>
+        )}
+        {!/^Bước \d+$/.test(step.title) && <h3>{step.title}</h3>}
+        <p>{conciseFarmText(step.text)}</p>
         {materials && index === path.steps.length - 1 && (
           <details className="fv31-step-materials">
             <summary>Nguyên liệu tuyến nhận</summary>
@@ -130,24 +135,26 @@ function Stepper({
         </label>
         {error && <p role="status">{error}</p>}
       </div>
-      <div className="fv31-step-actions">
-        <button
-          type="button"
-          disabled={index === 0}
-          onClick={() => move(index - 1)}
-        >
-          <ChevronLeft size={16} aria-hidden="true" />
-          Trước
-        </button>
-        <button
-          type="button"
-          disabled={index === path.steps.length - 1}
-          onClick={() => move(index + 1)}
-        >
-          Tiếp
-          <ChevronRight size={16} aria-hidden="true" />
-        </button>
-      </div>
+      {multiple && (
+        <div className="fv31-step-actions">
+          <button
+            type="button"
+            disabled={index === 0}
+            onClick={() => move(index - 1)}
+          >
+            <ChevronLeft size={16} aria-hidden="true" />
+            Trước
+          </button>
+          <button
+            type="button"
+            disabled={index === path.steps.length - 1}
+            onClick={() => move(index + 1)}
+          >
+            Tiếp
+            <ChevronRight size={16} aria-hidden="true" />
+          </button>
+        </div>
+      )}
     </section>
   );
 }
