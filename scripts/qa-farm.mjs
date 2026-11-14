@@ -143,9 +143,10 @@ await runQa(
             await expect(
               page.locator(".fv2-groups button[aria-pressed=true]"),
             ).toContainText("AWE");
-            const good = page
-              .locator(".fv2-groups button")
-              .filter({ hasText: "GOOD" });
+            const good = page.getByRole("button", {
+              name: "Lọc phe phái: GOOD",
+              exact: true,
+            });
             // The group selector remains available even on a mobile detail deep link.
             await expect(
               good,
@@ -371,7 +372,7 @@ await runQa(
             );
             await page
               .locator(".fv31-step-actions")
-              .getByRole("button", { name: "Tiếp", exact: true })
+              .getByRole("button", { name: "Bước tiếp theo", exact: true })
               .click();
             await expect(page.locator(".fv31-step-content")).toContainText(
               "Aeacus",
