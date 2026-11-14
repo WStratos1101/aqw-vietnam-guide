@@ -66,7 +66,10 @@ test("production Directory renders V2, honors legacy query aliases, tabs and mat
     host.querySelector(".fv2-root"),
     "live route must not silently render legacy Directory",
   );
-  assert.ok(host.querySelector("main#main.fv2-root"), "skip link target and landmark must survive integration");
+  assert.ok(
+    host.querySelector("main#main.fv2-root"),
+    "skip link target and landmark must survive integration",
+  );
   assert.equal(
     host.querySelector("[data-item-id]").dataset.itemId,
     "cape-of-awe",
@@ -78,16 +81,16 @@ test("production Directory renders V2, honors legacy query aliases, tabs and mat
   assert.equal(host.querySelector(".material-tree input").checked, true);
   await click(host.querySelector(".fv2-material-source summary"));
   assert.ok(host.querySelector(".fv2-material-source").open);
-  await click(tab("Nguồn"));
+  assert.equal(tab("Nguồn"), undefined);
+  await click(tab("Thông tin"));
   assert.ok(
     host.querySelector(".fv2-specs"),
     "basic specs must remain above all tabs",
   );
   assert.ok(
-    host.querySelector(
-      '[role=tabpanel] a[href="https://aqwwiki.wikidot.com/cape-of-awe"]',
-    ),
+    host.querySelector("[role=tabpanel]").textContent.includes("Mô tả"),
   );
+  assert.equal(host.querySelector(".fv2-sources"), null);
   await click(tab("Nguyên liệu"));
   assert.equal(
     host.querySelector(".material-tree input").checked,
@@ -142,11 +145,11 @@ test("active item change resets tabs; tab keyboard controls focus and ARIA relat
       new window.KeyboardEvent("keydown", { bubbles: true, key: "End" }),
     ),
   );
-  assert.equal(document.activeElement, tab("Nguồn"));
-  assert.equal(tab("Nguồn").getAttribute("aria-selected"), "true");
+  assert.equal(document.activeElement, tab("Hướng dẫn Farm"));
+  assert.equal(tab("Hướng dẫn Farm").getAttribute("aria-selected"), "true");
   assert.equal(
     host.querySelector("[role=tabpanel]").getAttribute("aria-labelledby"),
-    tab("Nguồn").id,
+    tab("Hướng dẫn Farm").id,
   );
   await navigate("/farm?item=blade-of-awe");
   assert.equal(tab("Thông tin").getAttribute("aria-selected"), "true");
@@ -207,5 +210,213 @@ test("deep-link slug, approved image error fallback, empty search and popstate f
   );
   assert.match(window.location.search, /region=unknown-region/);
   assert.match(window.location.search, /category=Weapons/);
+});
+
+test("group tiles, category counts, aliases, search/sort and history restoration retain accessible controls", async () => {
+  await navigate("/farm?group=museum&category=weapon&item=blade-of-awe");
+  assert.equal(
+    host
+      .querySelector(".fv2-groups button[aria-pressed=true]")
+      .textContent.includes("AWE"),
+    true,
+  );
+  assert.equal(
+    host.querySelector("[data-item-id]").dataset.itemId,
+    "blade-of-awe",
+  );
+  assert.equal(host.querySelector(".fv2-regions"), null);
+  const data = JSON.parse(
+    await fs.readFile("src/content/farm/catalog-v2.generated.json", "utf8"),
+  );
+  const awe = data.items.filter((i) => i.groupIds.includes("awe"));
+  const weapons = awe.filter((i) => i.category === "Weapons");
+  assert.equal(
+    Number(
+      button(".fv2-categories button", "Weapons").querySelector("small")
+        .textContent,
+    ),
+    weapons.length,
+  );
+  await click(button(".fv2-groups button", "GOOD"));
+  assert.match(window.location.search, /group=good/);
+  assert.doesNotMatch(window.location.search, /region=/);
+  // Simulate the URLs supplied by browser back/forward; real browser execution is host-only.
+  await navigate("/farm?group=awe&category=weapon&item=blade-of-awe");
+  assert.equal(
+    host.querySelector("[data-item-id]").dataset.itemId,
+    "blade-of-awe",
+  );
+  await navigate("/farm?group=good&q=nonexistent");
+  assert.ok(host.querySelector(".fv2-empty"));
+  await navigate("/farm?group=unknown&sort=name");
+  assert.equal(host.querySelector('[aria-label="Sắp xếp"]').value, "name");
+  assert.equal(
+    host
+      .querySelector(".fv2-groups button[aria-pressed=true]")
+      .textContent.includes("Chưa xác minh nhóm"),
+    true,
+  );
+  for (const tile of host.querySelectorAll(".fv2-groups button")) {
+    assert.equal(tile.type, "button");
+    assert.equal(tile.tabIndex, 0);
+    assert.ok(tile.hasAttribute("aria-pressed"));
+    assert.ok(tile.querySelector('[aria-hidden="true"]'));
+  }
+  const css = await fs.readFile("src/features/farm/farm-v2.css", "utf8");
+  assert.match(css, /grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
+  assert.match(css, /:focus-visible/);
+});
+
+test("V3.1 shows only selected guide step, resets route/item/path, and keeps saved completion", async () => {
+  await navigate("/farm?item=legion-revenant-class");
+  assert.equal(tab("Nguồn"), undefined);
+  await click(tab("Hướng dẫn Farm"));
+  assert.equal(
+    host.querySelectorAll(".fv31-step-numbers [role=tab]").length,
+    11,
+  );
+  const panel = () => host.querySelector(".fv31-step-content");
+  assert.match(panel().textContent, /Điều kiện mở khóa/);
+  assert.doesNotMatch(panel().textContent, /Cohort Conquered/);
+  await click(button(".fv31-step-actions button", "Tiếp"));
+  assert.match(panel().textContent, /Aeacus/);
+  await click(button(".fv31-step-actions button", "Trước"));
+  assert.match(panel().textContent, /Điều kiện mở khóa/);
+  const numbers = host.querySelector(".fv31-step-numbers");
+  await act(async () =>
+    numbers
+      .querySelector("[role=tab]")
+      .dispatchEvent(
+        new window.KeyboardEvent("keydown", { bubbles: true, key: "End" }),
+      ),
+  );
+  assert.equal(
+    document.activeElement,
+    numbers.querySelectorAll("[role=tab]")[10],
+  );
+  assert.match(panel().textContent, /Nhận Legion Revenant/);
+  await click(panel().querySelector("input"));
+  assert.equal(panel().querySelector("input").checked, true);
+  await click(button('[aria-label="Chọn hướng dẫn"] button', "Ultra Dage"));
+  assert.equal(
+    host.querySelectorAll(".fv31-step-numbers [role=tab]").length,
+    2,
+  );
+  assert.match(panel().textContent, /Nguồn bổ sung/);
+  await click(button('[aria-label="Chọn hướng dẫn"] button', "Legion Fealty"));
+  assert.match(panel().textContent, /Điều kiện mở khóa/);
+  await click(host.querySelectorAll(".fv31-step-numbers button")[10]);
+  assert.equal(panel().querySelector("input").checked, true);
+  await navigate("/farm?item=blade-of-awe");
+  assert.equal(tab("Thông tin").getAttribute("aria-selected"), "true");
+  await click(tab("Hướng dẫn Farm"));
+  assert.match(panel().textContent, /Bước 1/);
+  await click(button(".fv31-step-actions button", "Tiếp"));
+  await click(host.querySelectorAll(".fv2-route-chips button")[1]);
+  assert.equal(
+    host.querySelectorAll(".fv31-step-numbers [role=tab]").length,
+    1,
+  );
+  assert.match(panel().textContent, /Merge Blade of Awe/);
+  assert.match(host.querySelector(".fv2-guide").textContent, /Cách nhận ngắn/);
+  assert.equal(button(".fv31-step-actions button", "Tiếp").disabled, true);
+  await click(host.querySelectorAll(".fv2-route-chips button")[0]);
+  assert.match(panel().textContent, /Bước 1/);
+});
+test("V3.1 Wiki info is localized, Sources cards removed, and Role filters share Codex membership/history", async () => {
+  await navigate("/farm?item=legion-revenant-class");
+  assert.match(host.querySelector(".fv31-wiki-info").textContent, /Wizard/);
+  assert.match(
+    host.querySelector(".fv31-wiki-info").textContent,
+    /Offensive Caster/,
+  );
+  assert.match(host.querySelector(".fv31-wiki-info").textContent, /Hồi mana/);
+  assert.doesNotMatch(
+    host.querySelector(".fv31-wiki-info").textContent,
+    /Tên và loại khớp Wiki/,
+  );
+  await click(tab("Cách nhận"));
+  assert.equal(host.querySelector(".fv2-sources"), null);
+  assert.equal(
+    host.querySelector(
+      'a[href="https://aqwwiki.wikidot.com/legion-revenant-class"]',
+    ),
+    null,
+  );
+  const catalog = JSON.parse(
+    await fs.readFile("src/content/farm/catalog-v2.generated.json", "utf8"),
+  );
+  const roles = JSON.parse(
+    await fs.readFile("src/data/class-roles.json", "utf8"),
+  );
+  await navigate("/farm?category=Classes&subtype=Support");
+  const selector = host.querySelector('[aria-label="Role Class"]');
+  assert.ok(selector);
+  assert.equal(selector.value, "Support");
+  assert.deepEqual(
+    [...selector.options].map((o) => o.value),
+    ["", ...roles, "unknown"],
+  );
+  const expected = catalog.items.filter(
+    (i) => i.category === "Classes" && i.classRoles.includes("Support"),
+  );
+  assert.equal(host.querySelectorAll(".fv2-item").length, expected.length);
+  assert.equal(
+    new Set(
+      [...host.querySelectorAll(".fv2-item")].map(
+        (i) => i.dataset.inventoryItem,
+      ),
+    ).size,
+    expected.length,
+  );
+  await click(button(".fv2-categories button", "Weapons"));
+  assert.equal(host.querySelector('[aria-label="Role Class"]'), null);
+  assert.doesNotMatch(window.location.search, /subtype=/);
+  await navigate("/farm?category=Classes&subtype=Support");
+  assert.equal(
+    host.querySelector('[aria-label="Role Class"]').value,
+    "Support",
+  );
+  await click(button(".fv2-groups button", "AWE"));
+  assert.doesNotMatch(window.location.search, /subtype=/);
+  await navigate("/farm?category=Classes&subtype=Endgame");
+  assert.equal(host.querySelector('[aria-label="Role Class"]').value, "");
+  await navigate("/farm?category=Classes&subtype=unknown");
+  assert.equal(
+    host.querySelectorAll(".fv2-item").length,
+    catalog.items.filter(
+      (i) => i.category === "Classes" && !i.classRoles.length,
+    ).length,
+  );
+});
+test.after(async () => {
   await act(async () => root.unmount());
+});
+
+test("zero-route acquisition facts remain visible without fabricating a route or stepper", async () => {
+  await navigate("/farm?item=crag-bamboozle");
+  await click(tab("Cách nhận"));
+  assert.match(host.querySelector(".fv2-tab-body").textContent, /5,000 ACs/);
+  assert.match(
+    host.querySelector(".fv2-tab-body").textContent,
+    /Assistance of Nulgath/,
+  );
+  await click(tab("Hướng dẫn Farm"));
+  assert.match(host.querySelector(".fv2-tab-body").textContent, /5,000 ACs/);
+  assert.equal(host.querySelector(".fv31-stepper"), null);
+  await navigate("/farm?item=crimson-plate-of-nulgath");
+  await click(tab("Hướng dẫn Farm"));
+  assert.equal(
+    host.querySelectorAll(".fv31-step-numbers [role=tab]").length,
+    3,
+  );
+  assert.match(
+    host.querySelector(".fv31-step-content").textContent,
+    /Twisted Items of Nulgath/,
+  );
+  await click(button(".fv31-step-actions button", "Tiếp"));
+  assert.match(
+    host.querySelector(".fv31-step-content").textContent,
+    /Totem of Nulgath ×3/,
+  );
 });

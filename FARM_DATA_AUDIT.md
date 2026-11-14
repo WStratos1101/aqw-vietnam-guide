@@ -1,4 +1,43 @@
+## FARM V3.1 completion recovery — final local checkpoint, 2026-11-14
+
+**PARTIAL — Browser QA UNVERIFIED; not FARM V3.1 COMPLETE.**
+
+| Metric | Baseline | Current | Remaining / status |
+|---|---:|---:|---|
+| Canonical items | 232 | 232 | DONE retention |
+| Original acquisition routes | 228 | 228 | DONE retention |
+| Verified images | 33 | 33 | 199 missing; unchanged |
+| Complete Wiki bodies | 224 | 231 | 1 partial: Aureate Shield Aegis, redirect loop |
+| Vietnamese descriptions | 32 | 232 | 0 untranslated available texts; Aureate evidence remains partial |
+| Items with localized effects | 27 | 102 | Explicit source values only; not all items have effects |
+| Useful acquisition facts | 6 | 232 | Known method facts; whole-item verification not implied |
+| Items with stepper paths | 6 | 221 | 11 brief-only; no fabricated routes |
+| Existing/source guide items | 6 | 58 | 174 source-walkthrough reviews pending |
+| Class Codex Role | 20/23 | 22/23 | Blood Sorceress PENDING_SOURCE |
+| Browser QA | UNVERIFIED | NOT RUN | Host Chromium smoke required |
+
+- New source walkthroughs: 52 VNCollector/Docs item paths plus original LR and five inherited source guides = 58 items. Acquisition-only paths, source_notes and full walkthroughs remain distinct. Total all 232 items have source-bound short acquisition information.
+- Three cache translation batches add 192 descriptions; fourth adds eight recovered snippets/bodies. Seven full Wiki bodies recovered. Aureate partial is NEVER counted complete. All translations/effects/relationships bind exact canonical source hashes.
+- Two Role gaps recovered (Beast Warrior, Infinity Titan), one retained pending. Eight ambiguous acquisition header reviews added without changing existing routes/recipes.
+- Golden Hanzo guide recipe conflicts with canonical Wiki; exact Wiki technical recipe retained, obsolete recipe omitted from AFDL walkthrough. YnR 4400 total vs 444 ×10 remains UNRESOLVED; existing short acquisition retained. Hollowborn rare path is source_notes because Quest name missing. Repeated Wiki merge headers stay flagged/null where ambiguous.
+- UI keeps Sources tab removed, faction navigation, step reset, keyboard controls, independent guide paths, material tracking, zero-route useful facts and all original assets. External smoke now covers 375/768/1024/1440 and explicitly asserts mobile AWE → GOOD visibility; no assertion skipped.
+- Checks actually run: Farm **58/58**, unit **155/155**, production **9/9**, typecheck PASS, package lint **0 findings**, production build PASS (**641 routes**), post-build integrity **17/17**. Vite chunk-size warning remains. Build dirtied **no additional tracked paths**; canonical baseline hash still passes after generation.
+- Browser **UNVERIFIED / prohibited in sandbox**; no launch or screenshot. Host-only: `./AQW-Safe-Browser-QA.command` (Chromium). No push/deploy/Auto Publish/D1/dependency/version changes. Actual package version **0.2.0** retained.
+- BLOCKED: full Aureate page, Docs rich links/tables/images from prior connector/export failures. 199 missing images and 207 unknown Regions remain; no image/Region guessing. 174 detailed source-guide reviews remain possible future work; do not claim they all lack source.
+- Evidence/results: `artifacts/qa/farm/completion/{checks,metrics}.json` and individual logs. Full per-item inventory/conflicts/remaining work: `FARM_V3_1_DETAIL_AUDIT.md`. Source manifests and rerunnable source-guide/translation review scripts retained. Existing dirty work/backups preserved.
+
+Next: host Browser Smoke; investigate Aureate from a supported source when access changes; recover verified Blood Sorceress Codex classification; continue remaining detailed source walkthroughs using retained cache and registered conflicts. Do not reprocess completed translation batches or launch browser in Codex.
+
+---
+
 # FARM DATA AUDIT — Farm V2
+
+## V3.1 detail integration — 2026-11-14
+
+Current UI has four conditional tabs (Sources removed), Wiki-detail fields, selected-only farm stepper and shared Class Codex Role filtering. Canonical 232, routes 228 and images 33 preserved; 224 detail snapshots, 32 localized descriptions, 27 localized effects, 6 sourced guide items, 20/23 mapped Class Roles. Rarity known count now 201 via explicit detail fallback; no other core defaults inserted. Current tests: Farm52 / unit155 / production9 / typecheck / lint / build PASS; browser NOT RUN. Full current audit and pending inventory: [FARM_V3_1_DETAIL_AUDIT.md](FARM_V3_1_DETAIL_AUDIT.md). Sections below are earlier milestones, not certification of V3.1 source completeness.
+
+---
+
 
 2026-11-13 · package 0.2.0 · HEAD 4962382a7b9dc41d02a348e41e5aa123e70156d7. **PARTIAL**.
 

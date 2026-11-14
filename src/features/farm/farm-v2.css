@@ -83,55 +83,12 @@
   gap: 14px;
   align-items: start;
 }
-.fv2-regions,
 .fv2-inventory,
 .fv2-detail {
   background: var(--fv2-panel);
   border: 1px solid var(--fv2-line);
   border-radius: 10px;
   min-width: 0;
-}
-.fv2-regions {
-  padding: 12px;
-  position: sticky;
-  top: 15px;
-  max-height: 80vh;
-  overflow: auto;
-}
-.fv2-regions h2 {
-  margin: 5px 8px 10px;
-  font-size: 14px;
-}
-.fv2-regions nav {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.fv2-regions button {
-  display: flex;
-  justify-content: space-between;
-  gap: 5px;
-  align-items: center;
-  width: 100%;
-  border: 0;
-  background: transparent;
-  color: #c3bdd1;
-  border-radius: 6px;
-  padding: 10px 9px;
-  text-align: left;
-  font-size: 12px;
-}
-.fv2-regions button b {
-  color: #c3b2f1;
-  font-size: 12px;
-}
-.fv2-regions button:hover,
-.fv2-regions button.active {
-  background: #34274f;
-  color: #fff;
-}
-.fv2-regions button.active {
-  box-shadow: inset 3px 0 0 var(--fv2-accent);
 }
 .fv2-inventory {
   overflow: hidden;
@@ -503,9 +460,6 @@
   .fv2-no-selection {
     grid-column: 2;
   }
-  .fv2-regions {
-    grid-row: span 2;
-  }
   .fv2-rows {
     max-height: 54vh;
   }
@@ -523,25 +477,6 @@
   .fv2-layout {
     display: block;
   }
-  .fv2-regions {
-    position: static;
-    max-height: 240px;
-    margin-bottom: 9px;
-    overflow: auto;
-  }
-  .fv2-regions nav {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
-  .fv2-regions button {
-    flex: 0 0 auto;
-    width: auto;
-    white-space: nowrap;
-  }
-  .fv2-regions button b {
-    margin-left: 6px;
-  }
   .fv2-inventory {
     margin-bottom: 9px;
   }
@@ -551,8 +486,7 @@
   .fv2-detail-wrap {
     display: none;
   }
-  .fv2-show-mobile-detail .fv2-inventory,
-  .fv2-show-mobile-detail .fv2-regions {
+  .fv2-show-mobile-detail .fv2-inventory {
     display: none;
   }
   .fv2-show-mobile-detail .fv2-detail-wrap {
@@ -703,19 +637,6 @@
   .fv2-layout {
     grid-template-columns: minmax(230px, 1fr) minmax(300px, 1.2fr);
   }
-  .fv2-regions {
-    grid-row: auto;
-    grid-column: 1/-1;
-    position: static;
-    max-height: 180px;
-  }
-  .fv2-regions nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .fv2-regions button {
-    width: auto;
-  }
   .fv2-detail-wrap {
     grid-column: 2;
     grid-row: 2;
@@ -744,9 +665,6 @@
     min-height: 44px;
     font-size: 12px;
   }
-  .fv2-regions button {
-    min-height: 44px;
-  }
   .fv2-heading h2 {
     font-size: 19px;
   }
@@ -770,4 +688,201 @@
 .fv2-root input,
 .fv2-root select {
   font-family: inherit;
+}
+
+/* Farm V3: compact source-ordered group selector above inventory and detail. */
+.fv2-layout {
+  grid-template-columns: minmax(250px, 0.9fr) minmax(300px, 1.4fr);
+}
+.fv2-groups {
+  grid-column: 1 / -1;
+  min-width: 0;
+  background: var(--fv2-panel);
+  padding: 12px;
+  border-radius: 8px;
+}
+.fv2-groups h2 {
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+.fv2-groups .fv2-count {
+  margin: 0 0 10px;
+}
+.fv2-groups nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 6px;
+}
+.fv2-groups button {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--fv2-panel2);
+  color: var(--fv2-text);
+  text-align: left;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.fv2-groups button:hover {
+  background: #34274f;
+}
+.fv2-groups button.active {
+  background: #34274f;
+  outline: 2px solid var(--fv2-accent);
+  outline-offset: -2px;
+}
+.fv2-group-initial {
+  font-size: 20px;
+  color: var(--fv2-muted);
+  text-align: center;
+}
+.fv2-groups b {
+  font-variant-numeric: tabular-nums;
+}
+.fv2-detail-wrap {
+  position: sticky;
+  top: 15px;
+}
+@media (max-width: 1120px) and (min-width: 721px) {
+  .fv2-detail-wrap {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+@media (max-width: 720px) {
+  .fv2-groups {
+    margin-bottom: 9px;
+  }
+  .fv2-groups nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .fv2-detail-wrap {
+    position: static;
+  }
+}
+
+/* V3.1 scoped detail/stepper refinements; preserve inventory, groups and palette. */
+.fv31-wiki-info {
+  display: grid;
+  gap: 18px;
+}
+.fv31-wiki-info section > h3 {
+  margin: 0 0 8px;
+}
+.fv31-wiki-info section > p {
+  margin: 0;
+}
+.fv31-wiki-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+  margin: 0;
+}
+.fv31-wiki-fields > div {
+  min-width: 0;
+}
+.fv31-wiki-fields dt {
+  color: var(--fv2-muted);
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.fv31-wiki-fields dd {
+  margin: 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+  white-space: pre-line;
+}
+.fv31-stepper {
+  min-width: 0;
+}
+.fv31-step-numbers {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 4px 2px 10px;
+}
+.fv31-step-numbers button {
+  flex: 0 0 40px;
+  height: 40px;
+  border: 1px solid var(--fv2-line);
+  background: var(--fv2-panel2);
+  color: var(--fv2-text);
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+}
+.fv31-step-numbers button.active {
+  background: var(--fv2-accent);
+  color: #10091c;
+  border-color: var(--fv2-accent);
+  font-weight: 700;
+}
+.fv31-step-numbers button.completed:not(.active) {
+  border-color: var(--fv2-accent);
+}
+.fv31-step-content {
+  padding: 16px 0;
+  overflow-wrap: anywhere;
+}
+.fv31-step-content > small {
+  color: var(--fv2-muted);
+}
+.fv31-step-content h3 {
+  margin: 6px 0 12px;
+}
+.fv31-step-content p {
+  line-height: 1.7;
+}
+.fv31-step-complete {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-top: 18px;
+}
+.fv31-step-complete input {
+  accent-color: var(--fv2-accent);
+}
+.fv31-step-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--fv2-line);
+  padding-top: 12px;
+}
+.fv31-step-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 8px 12px;
+  background: var(--fv2-panel2);
+  color: var(--fv2-text);
+  border: 1px solid var(--fv2-line);
+  border-radius: 4px;
+}
+.fv31-step-actions button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.fv31-step-materials {
+  margin: 14px 0;
+}
+.fv31-step-materials summary {
+  cursor: pointer;
+  padding: 10px 0;
+}
+.fv2-root select:focus-visible {
+  outline: 2px solid var(--fv2-accent);
+  outline-offset: 3px;
+}
+@media (max-width: 420px) {
+  .fv31-wiki-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

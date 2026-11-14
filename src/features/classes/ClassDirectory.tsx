@@ -1,3 +1,4 @@
+import classRoleOptions from "../../data/class-roles.json";
 import {classIdentity,classIdentityAliases} from "../../lib/class-identity";
 import {
   calendarFamily,
@@ -147,16 +148,7 @@ export function ClassDirectory() {
               onChange={(e) => update(setRole, e.target.value)}
             >
               <option value="all">Mọi vai trò</option>
-              {[
-                "DPS",
-                "Tank",
-                "Support",
-                "Healer",
-                "Solo",
-                "Farming",
-                "PvP",
-                "Utility",
-              ].map((r) => (
+              {classRoleOptions.map((r) => (
                 <option key={r}>{r}</option>
               ))}
               <option value="unknown">Chưa phân loại</option>

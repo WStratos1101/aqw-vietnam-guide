@@ -1,0 +1,29 @@
+import runpy,json
+from pathlib import Path
+m=runpy.run_path('scripts/expand-farm-source-guides-batch5.py');add=m['add']
+add(['archfiend-doomlord'],'/nation/afdl1',[('Enough DOOM for an Archfiend',[
+ ('Mở khóa','Cần Rank 10 Rep Evil, Rank 7 Rep Arcangrove, Unidentified 13 để nhận Quest và hoàn thành chuỗi /join lair đến Dragonslayer Rewards.',[9,10,11]),
+ ('Willpower Extraction · Reagents','Chuẩn bị Essence of Nulgath ×10, Totem of Nulgath ×1, Archfiend\'s Favor ×50. Mua Shadow Lich ở Evil Rep Shop /join shadowfall HOẶC /join dreadrock; mua Mystic Tribal Sword ở Arcangrove Rep Shop /join arcangrove.',[16,18,19,20,21,24]),
+ ('Willpower Extraction · Unidentified 19','Lấy Unidentified 19 từ The Assistant HOẶC Supplies to Spin the Wheel of Chance (3%); Member có thể mua tại Swindle\'s Ripoff Emporium với 1,800,000 Gold.',[22]),
+ ('Willpower Extraction · Drops','Doomatter ×5 từ Creature Creation /join maul HOẶC Vordred /join vordredboss; Necrot ×5 từ Skeleton Fighters /join deathsrealm; Chaoroot ×5 từ Hydra Head /join hydra. Ba nguyên liệu cũng được bán tại Swindle\'s Ripoff Emporium.',[25,26,27,28]),
+ ('Willpower Extraction · Gear','Mua Mortality Cape of Revontheus tại Nulgath War Merge /join evilwarnul (Archfiend\'s Favor ×35 và 10,000 Gold); lấy King Klunk\'s Crown từ Legion Fenrir /join evilwarnul. Facebreaker of Nulgath nhận từ "Kindness" of Nulgath.',[29,30,31]),
+ ('Facebreaker of Nulgath','Cho "Kindness" of Nulgath: Golden Shadow Breaker từ Grand Inquisitor /join citadel; Shadow Terror Axe từ Bone Terror /join battleundera; Unidentified 13 ×1, Tainted Gem ×5, Dark Crystal Shard ×5, Diamond of Nulgath ×1. Giữ SightBlinder Axe trong inventory để thuận lợi cho các lượt Facebreaker tiếp theo.',list(range(32,40))),
+ ('Unidentified 34','Lặp Willpower Extraction để tích lũy Unidentified 34; Quest tiếp theo dùng 10 mỗi lượt và Quest cuối cần 4. Số lượt phụ thuộc việc nhận Unidentified 35 và các phần thưởng cần thiết, không đặt số lượt cố định.',[40,41,52,62,77,78]),
+ ('Nulgath Demands Work · Reagents','Cần Unidentified 13 ×1, Tainted Gem ×15, Dark Crystal Shard ×30, Diamond of Nulgath ×10, Voucher of Nulgath (member), Gem of Nulgath ×15, Blood Gem of the Archfiend ×2 và Unidentified 34 ×10.',list(range(42,51))+[52]),
+ ('Nulgath Demands Work · Unidentified 27','Lấy Unidentified 27 từ Ordinary Cape của Sword of Nulgath: cần Unidentified 26 từ The Assistant HOẶC Supplies to Spin the Wheel of Chance, Tainted Gem ×5 và Nulgath Rune 9 từ Dark Makai.',[51]),
+ ('Golden Hanzo Void / Rewards','Chuẩn bị Golden Hanzo Void theo công thức trong thông tin riêng của item. Lặp Nulgath Demands Work đến khi đủ bốn trang bị thưởng và Unidentified 35. Giữ Archfiend Essence Fragment để merge Unidentified 35 tại Swindle\'s Ripoff Emporium.',[53,62,63,64]),
+ ('Enough DOOM · Reagents','Để mở Enough DOOM for an Archfiend cần Nulgath\'s Approval và bốn trang bị thưởng từ Quest trước. Chuẩn bị Voucher of Nulgath (non-mem), Essence of Nulgath ×100, Archfiend\'s Favor ×5,000 và Blood Gem of the Archfiend ×10.',list(range(65,72))),
+ ('Enough DOOM · Essence','Undead Essence ×1,000 từ undead /join battleunderb; Chaorruption Essence ×75 từ chaorrupted monsters /join alliance; Essence Potion ×5 từ Alchemy bằng Arashtite Ore và Chaoroot. Arashtite Ore lấy từ Deathmole /join orecavern HOẶC Alina; Chaoroot từ Hydra Heads /join hydra HOẶC Swindle\'s Ripoff Emporium.',[72,73,74]),
+ ('Enough DOOM · Hoàn tất','Lấy Essence of Klunk từ Klunk /join evilwardage; nhận Quest trước khi farm Living Star Essence ×100 từ Living Star /join starsinc. Chuẩn bị Unidentified 34 ×4, Unidentified 35 ×1 và Aelita\'s Emerald ×1 từ Yulgar\'s Free Player Shop /join yulgar, rồi trả Enough DOOM for an Archfiend.',[75,76,77,78,79])])])
+# Record actual source conflicts; retain exact Wiki technical facts, do not copy an obsolete recipe.
+o=add.__globals__['overrides']
+Path('content-sources/farm/import/guide-overrides.json').write_text(json.dumps(o,ensure_ascii=False,indent=2)+'\n')
+ps=add.__globals__['pages'];records=json.loads(Path('content-sources/farm/import/wiki-records.json').read_text());hashmod=__import__('hashlib')
+gold=next(r for r in records if r.get('id')=='golden-hanzo-void')
+y=next(p for p in ps if p['url'].endswith('/legion/ynr'))
+a=next(p for p in ps if p['url'].endswith('/nation/afdl1'))
+conflicts=[
+ dict(id='golden-hanzo-recipe',itemId='golden-hanzo-void',field='Merge materials',status='RETAIN_WIKI_TECHNICAL_FACTS',sourceA=a['url'],sourceALines=list(range(53,62)),sourceAHash=hashmod.sha256(a['text'].encode()).hexdigest(),wikiUrl=gold['wikiUrl'],wikiHash=hashmod.sha256(gold['text'].encode()).hexdigest(),guideValue="Archfiend's Favor 200; Diamond 50; Tainted Gem 30; Dark Crystal Shard 15; Approval 50; Voucher 1; Gold 100000",wikiValue="Dark Crystal Shard 45; Diamond 75; Approval 50; Tainted Gem 45; Voucher 1; Gold 100000",decision='Retain exact canonical Wiki recipe in acquisition brief; omit conflicting recipe from AFDL source walkthrough. Existing route and material baseline unchanged.',confidence='medium',remaining='Historical recipe/variant date not established; do not claim all source differences resolved.'),
+ dict(id='ynr-dark-wisps-total',itemId='yami-no-ronin-class',field='Dark Wisps total',status='UNRESOLVED',sourceA=y['url'],sourceALines=[31,32],sourceAHash=hashmod.sha256(y['text'].encode()).hexdigest(),guideValue='10 turns and total 4400 vs 444 per turn',decision='Do not synthesize a verified complete YnR walkthrough until the Quest count/quantity is verified. Retain existing acquisition summary.',remaining='Need authoritative Embracing the Darkness Quest requirements.',confidence='low')]
+Path('content-sources/farm/import/completion-source-conflicts.json').write_text(json.dumps(conflicts,ensure_ascii=False,indent=2)+'\n')
+print('Reviewed source guide items:',len(o),'registered source conflicts:',len(conflicts))

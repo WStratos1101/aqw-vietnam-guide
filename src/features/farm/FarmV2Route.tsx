@@ -1,3 +1,10 @@
+import classRoleOptions from "../../data/class-roles.json";
+import {
+  matchesFarmSubtype,
+  farmSubtypeOptions,
+} from "../../lib/farm-details.mjs";
+import { FarmGuide } from "./FarmGuide";
+import { FarmWikiInfo } from "./FarmWikiInfo";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
   ArrowLeft,
@@ -14,6 +21,12 @@ import {
   Shirt,
   Swords,
 } from "lucide-react";
+import groupManifest from "../../../content-sources/farm/faction-groups.json";
+import {
+  matchesGroup,
+  groupCounts,
+  resolveGroup,
+} from "../../lib/farm-groups.mjs";
 import farmData from "../../content/farm/catalog-v2.generated.json";
 import {
   categories,
@@ -21,11 +34,7 @@ import {
   routesFor,
   UNKNOWN_REGION,
 } from "../../lib/farm-v2.mjs";
-import type {
-  FarmV2Item as Item,
-  FarmV2RouteData,
-  Source,
-} from "../../types/farm-v2";
+import type { FarmV2Item as Item, FarmV2RouteData } from "../../types/farm-v2";
 import type { MaterialNode } from "../../lib/material-requirements.mjs";
 import { MaterialTree } from "../ultra/MaterialTree";
 import "./farm-v2.css";
@@ -53,6 +62,7 @@ const availabilityLabels: Record<string, string> = {
   available: "Có thể nhận",
   unknown: "Chưa rõ thời điểm mở",
   seasonal: "Seasonal",
+  permanent: "Permanent",
   rare: "Rare",
   legacy: "Legacy",
 };
@@ -61,10 +71,11 @@ const tabDefs = [
   { id: "methods", name: "Cách nhận", Icon: Route },
   { id: "materials", name: "Nguyên liệu", Icon: Package },
   { id: "guide", name: "Hướng dẫn Farm", Icon: MapIcon },
-  { id: "sources", name: "Nguồn", Icon: BookOpen },
 ] as const;
 type Tab = (typeof tabDefs)[number]["id"];
 type State = {
+  group: string;
+  sort: string;
   region: string;
   category: string;
   query: string;
@@ -76,7 +87,11 @@ function initialState(slug?: string): State {
   const p = new URLSearchParams(
     typeof window === "undefined" ? "" : window.location.search,
   );
-  const direct = slug || p.get("item") || "";
+  const pathItem =
+    typeof window === "undefined"
+      ? ""
+      : window.location.pathname.match(/^\/farm\/item\/([^/]+)\/?$/)?.[1];
+  const direct = slug || p.get("item") || pathItem || "";
   const item = catalog.items.find((i) => i.id === direct);
   const region =
     p.get("region") === "unverified"
@@ -85,6 +100,8 @@ function initialState(slug?: string): State {
   const category =
     categoryAliases[p.get("category") || ""] || p.get("category") || "all";
   return {
+    group: resolveGroup(p.get("group") || "all", groupManifest),
+    sort: p.get("sort") === "name" ? "name" : "source",
     region: [
       "all",
       UNKNOWN_REGION,
@@ -98,7 +115,13 @@ function initialState(slug?: string): State {
     view: ["now", "seasonal", "reference"].includes(p.get("view") || "")
       ? p.get("view")!
       : "reference",
-    subtype: p.get("subtype") || "",
+    subtype: farmSubtypeOptions(
+      catalog.items,
+      category,
+      classRoleOptions,
+    ).includes(p.get("subtype") || "")
+      ? p.get("subtype")!
+      : "",
   };
 }
 const isNow = (i: Item) =>
@@ -113,7 +136,7 @@ const matchesView = (i: Item, view: string) =>
       : true;
 const show = (v: unknown) =>
   v === null || v === undefined || v === "" || v === "unknown"
-    ? "Chưa xác minh"
+    ? "—"
     : String(v);
 const localImage = (s?: string | null) =>
   s?.startsWith("/") && !s.startsWith("//") ? s : null;
@@ -150,18 +173,6 @@ function PreviewImage({
           <small>{large ? "Chưa có ảnh xác minh" : "Thiếu ảnh"}</small>
         </span>
       )}
-    </div>
-  );
-}
-function SourceLinks({ sources }: { sources: Source[] }) {
-  return (
-    <div className="fv2-sources">
-      {[...new Map(sources.map((s) => [s.url, s])).values()].map((s) => (
-        <a href={s.url} key={s.url} target="_blank" rel="noopener noreferrer">
-          {s.label}
-          <span aria-hidden="true">↗</span>
-        </a>
-      ))}
     </div>
   );
 }
@@ -281,7 +292,6 @@ function Detail({
     if (tab === "materials" && !routes.find((r) => r.id === next)?.materialTree)
       setTab("methods");
   };
-  const sources = [...item.sources, ...(route?.sources || [])];
   return (
     <section
       className="fv2-detail"
@@ -321,31 +331,33 @@ function Detail({
       <div className="fv2-specs">
         <div>
           <small>Level yêu cầu</small>
-          <strong>{show(item.level)}</strong>
+          <strong>{show(item.level ?? item.wikiDetails?.levelRequired)}</strong>
         </div>
         <div>
           <small>Membership</small>
-          <strong>{show(item.membership)}</strong>
+          <strong>
+            {show(
+              item.membership && item.membership !== "unknown"
+                ? item.membership
+                : item.wikiDetails?.membership,
+            )}
+          </strong>
         </div>
         <div>
           <small>Rarity</small>
-          <strong>{show(item.rarity)}</strong>
+          <strong>{show(item.rarity || item.wikiDetails?.rarity)}</strong>
         </div>
         <div>
           <small>Availability</small>
           <strong>
-            {availabilityLabels[item.availability || "unknown"] ||
-              show(item.availability)}
+            {availabilityLabels[
+              (item.availability && item.availability !== "unknown"
+                ? item.availability
+                : item.wikiDetails?.availability) || "unknown"
+            ] || "—"}
           </strong>
         </div>
       </div>
-      {item.effects.length > 0 && (
-        <div className="fv2-effects">
-          {item.effects.map((e) => (
-            <span key={e}>{e}</span>
-          ))}
-        </div>
-      )}
       <div
         className="fv2-tabs"
         role="tablist"
@@ -394,30 +406,7 @@ function Detail({
         aria-labelledby={`${id}-${activeTab}-tab`}
         tabIndex={0}
       >
-        {activeTab === "overview" && (
-          <>
-            <p className="fv2-muted">
-              Đối chiếu thông số: {item.lastChecked || "Chưa xác minh đầy đủ"}.
-              Availability chưa được xác nhận trong game.
-            </p>
-            {item.reviewReason && <p>{item.reviewReason}</p>}
-            {!!item.prerequisites?.length && (
-              <>
-                <h3>Điều kiện chung theo nguồn</h3>
-                <ul>
-                  {item.prerequisites.map((p, i) => (
-                    <li key={i}>
-                      <a href={p.source}>{p.value}</a>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-            {item.classHref && (
-              <a href={item.classHref}>Xem kỹ năng và combo Class</a>
-            )}
-          </>
-        )}
+        {activeTab === "overview" && <FarmWikiInfo item={item} route={route} />}
         {["methods", "materials", "guide"].includes(activeTab) && (
           <RouteChips
             routes={routes}
@@ -429,7 +418,11 @@ function Detail({
           (route ? (
             <div className="fv2-method">
               <h3>{route.method}</h3>
-              <p>{route.description}</p>
+              <p>
+                {routes.length === 1 && item.acquisitionBrief?.text
+                  ? item.acquisitionBrief.text
+                  : route.description}
+              </p>
               {!!item.prerequisites?.length && (
                 <>
                   <h3>Điều kiện chung theo nguồn</h3>
@@ -465,10 +458,11 @@ function Detail({
                   </ul>
                 </>
               )}
-              <SourceLinks sources={route.sources} />
             </div>
           ) : (
-            <p>Chưa có tuyến nhận được xác minh cho Region này.</p>
+            <p>
+              {item.acquisitionBrief?.text || "Chưa có cách nhận đã xác minh."}
+            </p>
           ))}
         {activeTab === "materials" && route?.materialTree && (
           <>
@@ -484,55 +478,39 @@ function Detail({
         )}
         {activeTab === "guide" &&
           (route ? (
-            <div className="fv2-guide">
-              {route.mapCommand && <CopyJoin value={route.mapCommand} />}{" "}
-              {route.steps.length ? (
-                <ol>
-                  {route.steps.map((s, i) => (
-                    <li key={i}>{s}</li>
-                  ))}
-                </ol>
-              ) : (
-                <p>
-                  Chưa có hướng dẫn từng bước được đối chiếu nguồn. Xem Cách
-                  nhận và Nguồn.
-                </p>
-              )}
-              <SourceLinks sources={route.sources} />
-            </div>
+            <FarmGuide
+              key={item.id + ":" + route.id}
+              route={route}
+              itemId={item.id}
+              brief={routes.length === 1 ? item.acquisitionBrief : undefined}
+              materials={
+                route.materialTree ? (
+                  <>
+                    <MaterialTree
+                      tree={route.materialTree}
+                      scope={`farm:${item.id}:${route.id}`}
+                    />
+                    <MaterialSources
+                      node={route.materialTree}
+                      onItemClick={onItemClick}
+                    />
+                  </>
+                ) : undefined
+              }
+            />
           ) : (
-            <p>Chưa có hướng dẫn Farm cho Region này.</p>
-          ))}
-        {activeTab === "sources" && (
-          <>
             <p className="fv2-muted">
-              Tên / loại: {item.wikiUrl}.{" "}
-              {item.verificationStatus === "verified"
-                ? `Snapshot ${item.lastChecked}; không phải kiểm tra trực tiếp hôm nay.`
-                : "Region, routes, nguyên liệu và availability còn cần đối chiếu."}
+              {item.acquisitionBrief?.text || "Chưa có hướng dẫn đã xác minh."}
             </p>
-            {item.imageEvidence && (
-              <p className="fv2-muted">
-                Ảnh: {item.imageEvidence.credit} ·{" "}
-                <a href={item.imageEvidence.source}>Nguồn ảnh</a>
-              </p>
-            )}
-            <SourceLinks sources={sources} />
-            {item.provenance.map((p) => (
-              <p className="fv2-muted" key={p.sourceUrl}>
-                {p.sourceDocument}: dòng {p.lines.join(", ")} · đọc{" "}
-                {p.lastChecked}
-              </p>
-            ))}
-          </>
-        )}
+          ))}
       </div>
     </section>
   );
 }
 export function FarmV2Route({ slug }: { slug?: string }) {
   const [state, setState] = useState<State>(() => initialState(slug));
-  const { region, category, query, selected, view, subtype } = state;
+  const { group, sort, region, category, query, selected, view, subtype } =
+    state;
   const [visibleCount, setVisibleCount] = useState(80);
   const [detailMobile, setDetailMobile] = useState(
     Boolean(slug || state.selected),
@@ -540,11 +518,22 @@ export function FarmV2Route({ slug }: { slug?: string }) {
   const [returns, setReturns] = useState<State[]>([]);
   const container = useRef<HTMLElement>(null);
   const lastSlug = useRef(slug);
-  const update = (patch: Partial<State>) => {
+  const update = (patch: Partial<State>, replace = false) => {
     const next = { ...state, ...patch };
+    if (
+      next.subtype &&
+      !farmSubtypeOptions(
+        catalog.items,
+        next.category,
+        classRoleOptions,
+      ).includes(next.subtype)
+    )
+      next.subtype = "";
     setState(next);
     const p = new URLSearchParams();
     for (const [key, value] of Object.entries({
+      group: next.group,
+      sort: next.sort === "source" ? "" : next.sort,
       region: next.region,
       category: next.category,
       q: next.query,
@@ -553,7 +542,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
       subtype: next.subtype,
     }))
       if (value && value !== "all") p.set(key, value);
-    window.history.replaceState(
+    window.history[replace ? "replaceState" : "pushState"](
       window.history.state,
       "",
       "/farm" + (p.size ? "?" + p.toString() : ""),
@@ -590,38 +579,29 @@ export function FarmV2Route({ slug }: { slug?: string }) {
   );
   const filtered = useMemo(
     () =>
-      scoped.filter(
-        (i) =>
-          matchesRegion(i, region) &&
-          (category === "all" || i.category === category) &&
-          (!subtype || i.subtype === subtype),
-      ),
-    [scoped, region, category, subtype],
-  );
-  const active = filtered.find((i) => i.id === selected) || filtered[0] || null;
-  const regionCounts = [
-    { id: "all", name: "Tất cả Region" },
-    ...catalog.regions,
-    { id: UNKNOWN_REGION, name: "Chưa xác minh Region" },
-  ].map((r) => ({
-    ...r,
-    count: scoped.filter((i) => matchesRegion(i, r.id)).length,
-  }));
-  const subtypes = [
-    ...new Set(
       scoped
         .filter(
           (i) =>
+            matchesGroup(i, group) &&
             matchesRegion(i, region) &&
-            (category === "all" || i.category === category),
+            (category === "all" || i.category === category) &&
+            matchesFarmSubtype(i, category, subtype),
         )
-        .map((i) => i.subtype)
-        .filter((s): s is string => Boolean(s)),
+        .sort((a, b) => (sort === "name" ? a.name.localeCompare(b.name) : 0)),
+    [scoped, group, sort, region, category, subtype],
+  );
+  const active = filtered.find((i) => i.id === selected) || filtered[0] || null;
+  const counts = groupCounts(scoped, groupManifest.groups);
+  const subtypes = farmSubtypeOptions(
+    catalog.items.filter(
+      (i) => matchesGroup(i, group) && matchesRegion(i, region),
     ),
-  ];
+    category,
+    classRoleOptions,
+  );
   useEffect(
     () => setVisibleCount(80),
-    [region, category, query, view, subtype],
+    [group, region, category, query, view, subtype],
   );
   useEffect(() => {
     if (!window.matchMedia("(max-width: 720px)").matches) return;
@@ -636,6 +616,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
     if (!catalog.items.some((i) => i.id === id)) return;
     setReturns([...returns, { ...state, selected: active?.id || selected }]);
     update({
+      group: "all",
       region: "all",
       category: "all",
       query: "",
@@ -656,21 +637,21 @@ export function FarmV2Route({ slug }: { slug?: string }) {
       <header className="fv2-top">
         <div>
           <h1>Farm Inventory</h1>
-          <p>Region → Loại trang bị → Vật phẩm</p>
+          <p>Phe / Nhóm → Loại trang bị → Vật phẩm</p>
         </div>
         <label className="fv2-search">
           <Search size={18} aria-hidden="true" />
           <input
             aria-label="Tìm trang bị"
             value={query}
-            onChange={(e) => update({ query: e.target.value })}
+            onChange={(e) => update({ query: e.target.value }, true)}
             placeholder="Tìm trang bị..."
           />
         </label>
       </header>
       <p className="fv2-muted">
-        Danh mục đang đối chiếu nguồn. Mục chưa rõ Region hoặc thời điểm mở được
-        giữ riêng; ảnh thiếu có nhãn.
+        Nhóm theo Vietnam Collector; gồm phe và bộ sưu tập, không đồng nghĩa với
+        faction reputation trong game. Ảnh thiếu có nhãn.
       </p>
       <label className="fv2-view">
         Phạm vi availability{" "}
@@ -687,26 +668,63 @@ export function FarmV2Route({ slug }: { slug?: string }) {
           <option value="seasonal">Seasonal · chưa xác nhận đang mở</option>
         </select>
       </label>
+      <label className="fv2-view">
+        Sắp xếp
+        <select
+          aria-label="Sắp xếp"
+          value={sort}
+          onChange={(e) => update({ sort: e.target.value })}
+        >
+          <option value="source">Thứ tự danh mục</option>
+          <option value="name">Tên A–Z</option>
+        </select>
+      </label>
+      {region !== "all" && (
+        <p className="fv2-muted">
+          Đang dùng bộ lọc địa lý từ liên kết cũ:{" "}
+          {catalog.regions.find((r) => r.id === region)?.name ||
+            "Chưa xác minh"}
+          .{" "}
+          <button
+            type="button"
+            className="fv2-linkbutton"
+            onClick={() => update({ region: "all" })}
+          >
+            Bỏ lọc địa lý
+          </button>
+        </p>
+      )}
       <div
         className={
           "fv2-layout " + (detailMobile ? "fv2-show-mobile-detail" : "")
         }
       >
-        <aside className="fv2-regions">
-          <h2>Region</h2>
-          <nav aria-label="Lọc Region">
-            {regionCounts.map((r) => (
+        <aside className="fv2-groups">
+          <h2>Phe / Nhóm</h2>
+          <p className="fv2-count">
+            Ô chữ thay logo · số lượng theo tìm kiếm và availability
+          </p>
+          <nav aria-label="Lọc Phe / Nhóm">
+            {counts.map((r) => (
               <button
                 type="button"
                 key={r.id}
-                aria-pressed={r.id === region}
-                className={r.id === region ? "active" : ""}
+                aria-pressed={r.id === group}
+                className={r.id === group ? "active" : ""}
                 onClick={() => {
-                  update({ region: r.id, selected: "" });
+                  update({
+                    group: r.id,
+                    region: "all",
+                    selected: "",
+                    subtype: "",
+                  });
                   setDetailMobile(false);
                   setReturns([]);
                 }}
               >
+                <span className="fv2-group-initial" aria-hidden="true">
+                  {r.fallback}
+                </span>
                 <span>{r.name}</span>
                 <b>{r.count}</b>
               </button>
@@ -732,6 +750,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
                   {
                     scoped.filter(
                       (i) =>
+                        matchesGroup(i, group) &&
                         matchesRegion(i, region) &&
                         (cat === "all" || i.category === cat),
                     ).length
@@ -742,21 +761,24 @@ export function FarmV2Route({ slug }: { slug?: string }) {
           </div>
           {subtypes.length > 0 && (
             <label>
-              Subtype{" "}
+              {category === "Classes" ? "Role" : "Subtype"}{" "}
               <select
+                aria-label={category === "Classes" ? "Role Class" : "Subtype"}
                 value={subtype}
                 onChange={(e) => update({ subtype: e.target.value })}
               >
                 <option value="">Tất cả</option>
                 {subtypes.map((s) => (
-                  <option key={s}>{s}</option>
+                  <option key={s} value={s}>
+                    {s === "unknown" ? "Chưa phân loại" : s}
+                  </option>
                 ))}
               </select>
             </label>
           )}
           <p className="fv2-count">
             {filtered.length} trang bị ·{" "}
-            {regionCounts.find((r) => r.id === region)?.name}
+            {counts.find((r) => r.id === group)?.name}
           </p>
           <div className="fv2-rows">
             {filtered.slice(0, visibleCount).map((i) => (
@@ -783,7 +805,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
             ))}
             {!filtered.length && (
               <p className="fv2-empty" role="status">
-                Không tìm thấy trang bị. Hãy chọn Region hoặc loại khác.
+                Không tìm thấy trang bị. Hãy chọn nhóm hoặc loại khác.
               </p>
             )}
             {visibleCount < filtered.length && (

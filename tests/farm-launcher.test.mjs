@@ -57,10 +57,23 @@ test(
     assert.doesNotMatch(verify.stdout, /hoàn tất/);
     // Exercise only the actual early nonzero-child guard in an isolated shell.
     // Never invoke the host AutoPublish runner from tests.
-    const publishSource = fs.readFileSync(
+    let publishSource = fs.readFileSync(
       "Update/_codex-focus/AutoPublish-AQW.command",
       "utf8",
     );
+    if (publishSource.includes("AQW_QA_GUARD_WRAPPER_V12")) {
+      // Verify the real wrapper's fail-closed branch without launching its
+      // external QA tool or the original publishing command.
+      const wrapperGuard = publishSource.match(/^([ \t]*python3 [^\n]+ full \|\|[^\n]+)/m)?.[1];
+      assert.ok(wrapperGuard, "wrapper must gate execution on full QA");
+      assert.ok(publishSource.indexOf(wrapperGuard.trim()) < publishSource.indexOf('exec /bin/bash "$ORIGINAL" "$@"'));
+      const blockedWrapper = spawnSync("/bin/bash", ["-c",
+        `python3(){ return 9; }\n${wrapperGuard}\necho UNEXPECTED_RELEASE`], {encoding:"utf8"});
+      assert.equal(blockedWrapper.status, 1);
+      assert.match(blockedWrapper.stderr, /QA Guard FAIL/);
+      assert.doesNotMatch(blockedWrapper.stdout, /UNEXPECTED_RELEASE/);
+      publishSource = fs.readFileSync("Update/_codex-focus/AutoPublish-AQW.qa-guard-original.command", "utf8");
+    }
     const guard = publishSource.match(
       /run\(\)\{\n(\s*case \"?\$CODEX_RC\"? in[^\n]+)/,
     )?.[1];

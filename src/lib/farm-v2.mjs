@@ -50,6 +50,14 @@ export function validateFarmV2(catalog) {
   for (const i of catalog.items) {
     if (ids.has(i.id)) errors.push("Duplicate ID " + i.id);
     ids.add(i.id);
+    if (catalog.groups) {
+      const groupIds = new Set(catalog.groups.map(g => g.id));
+      if (!Array.isArray(i.groupIds) || new Set(i.groupIds).size !== i.groupIds.length)
+        errors.push("Invalid group memberships " + i.id);
+      for (const group of i.groupIds || [])
+        if (!groupIds.has(group) || !i.groupEvidence?.some(e => e.groupId === group && url(e.sourceUrl) && e.heading && e.lines?.length))
+          errors.push("Missing group provenance " + i.id + ":" + group);
+    }
     if (wiki.has(i.wikiUrl))
       errors.push("Duplicate canonical URL " + i.wikiUrl);
     wiki.add(i.wikiUrl);

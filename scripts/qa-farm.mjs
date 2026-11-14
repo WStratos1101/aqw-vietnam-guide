@@ -16,7 +16,7 @@ export const farmSmokeRoutes = [
 await runQa(
   "farm",
   async ({ browser, base, result, dir, expect }) => {
-    for (const width of [375, 768, 1440]) {
+    for (const width of [375, 768, 1024, 1440]) {
       const page = await browser.newPage({
         viewport: { width, height: 1000 },
         reducedMotion: "reduce",
@@ -87,27 +87,26 @@ await runQa(
               "../src/content/farm/catalog-v2.generated.json",
               { with: { type: "json" } }
             );
-            await expect(page.locator(".fv2-count")).toContainText(
+            await expect(page.locator(".fv2-count").filter({ hasText: /\d+\s+trang bị(?:\s|·|$)/ })).toContainText(
               `${data.items.length} trang bị`,
             );
             await expect(
-              page.locator(".fv2-regions button").first().locator("b"),
+              page.locator(".fv2-groups button").first().locator("b"),
             ).toHaveText(String(data.items.length));
           },
         );
         await step(
-          "Region → class → Shaman acquisition/source and conditional tabs",
+          "legacy geography URL → Shaman acquisition/source and conditional tabs",
           async () => {
-            await page
-              .locator(".fv2-regions button")
-              .filter({ hasText: "Arcangrove" })
-              .click();
-            await page
-              .locator(".fv2-categories button")
-              .filter({ hasText: "Classes" })
-              .click();
+            await navigate("/farm?region=arcangrove&category=class&item=shaman", '[data-item-id="shaman"]');
+            await expect(
+              page.locator(".fv2-categories button")
+                .filter({ hasText: "Classes" })
+            ).toHaveAttribute("aria-pressed", "true");
             await expect(page.locator(".fv2-item")).toHaveCount(1);
-            await page.locator(".fv2-item").click();
+            await expect(
+              page.locator('[data-inventory-item="shaman"]')
+            ).toHaveAttribute("aria-pressed", "true");
             await expect(page.locator('[data-item-id="shaman"]')).toBeVisible();
             await expect(
               page.getByRole("tab", { name: "Nguyên liệu", exact: true }),
@@ -115,20 +114,46 @@ await runQa(
             await page
               .getByRole("tab", { name: "Cách nhận", exact: true })
               .click();
-            await expect(page.getByRole("tabpanel")).toContainText(
+            await expect(page.locator(".fv2-tab-body[role=tabpanel]")).toContainText(
               "Arcangrove Rank 10",
             );
-            await expect(
-              page
-                .getByRole("tabpanel")
-                .locator(
-                  'a[href="https://aqwwiki.wikidot.com/arcangrove-rep-shop"]',
-                )
-                .first(),
-            ).toBeAttached();
+            await expect(page.locator(".fv2-sources")).toHaveCount(0);
+            await expect(page.locator(".fv2-tab-body[role=tabpanel]")).toContainText("Arcangrove Rep Shop");
             await expect(page.locator(".fv2-specs")).toBeVisible();
           },
         );
+        await step("group navigation, category counts, keyboard and browser history", async () => {
+          await navigate("/farm?group=awe&category=weapon&item=blade-of-awe", '[data-item-id="blade-of-awe"]');
+          await expect(page.locator('.fv2-groups button[aria-pressed=true]')).toContainText("AWE");
+          const good = page.locator('.fv2-groups button').filter({ hasText: "GOOD" });
+          // The group selector remains available even on a mobile detail deep link.
+          await expect(good, 'Faction switcher must remain visible in item detail').toBeVisible();
+          await good.focus();
+          await expect(good).toBeFocused();
+          await good.press("Enter");
+          await expect(page).toHaveURL(/group=good/);
+          await expect(good).toHaveAttribute("aria-pressed", "true");
+          const { default: groupData } = await import(
+            "../src/content/farm/catalog-v2.generated.json",
+            { with: { type: "json" } }
+          );
+          const goodItems = groupData.items.filter((item) => item.groupIds.includes("good"));
+          await expect(good.locator("b")).toHaveText(String(goodItems.length));
+          for (const category of await page.locator(".fv2-categories button").all()) {
+            const label = (await category.innerText()).replace(/\s*\d+\s*$/, "").trim();
+            const count = goodItems.filter((item) => label === "Tất cả" || item.category === label).length;
+            await expect(category.locator("small")).toHaveText(String(count));
+          }
+          await expect(page.locator('.fv2-categories button[aria-pressed=true]')).toContainText("Weapons");
+          await page.goBack();
+          await expect(page).toHaveURL(/group=awe&category=weapon&item=blade-of-awe/);
+          await expect(page.locator('[data-item-id="blade-of-awe"]')).toBeVisible();
+          await expect(page.locator('.fv2-groups button[aria-pressed=true]')).toContainText("AWE");
+          await expect(good).toBeVisible();
+          await page.goForward();
+          await expect(page.locator('.fv2-groups button[aria-pressed=true]')).toContainText("GOOD");
+          await screenshot("group-selector");
+        });
         await step("item direct route and image fallback", async () => {
           await navigate(
             "/farm/item/sin-of-the-abyss",
@@ -153,10 +178,9 @@ await runQa(
               "Cách nhận",
               "Nguyên liệu",
               "Hướng dẫn Farm",
-              "Nguồn",
             ]) {
               await page.getByRole("tab", { name, exact: true }).click();
-              await expect(page.getByRole("tabpanel")).toBeVisible();
+              await expect(page.locator(".fv2-tab-body[role=tabpanel]")).toBeVisible();
               await expect(page.locator(".fv2-specs")).toBeVisible();
               if (name === "Nguyên liệu") {
                 await page.locator(".material-tree input").first().check();
@@ -189,10 +213,10 @@ await runQa(
             await page
               .getByRole("tab", { name: "Nguyên liệu", exact: true })
               .click();
-            await expect(page.getByRole("tabpanel")).toContainText(
+            await expect(page.locator(".fv2-tab-body[role=tabpanel]")).toContainText(
               "Dual Blades of Awe",
             );
-            await expect(page.getByRole("tabpanel")).not.toContainText(
+            await expect(page.locator(".fv2-tab-body[role=tabpanel]")).not.toContainText(
               "Legendary Stonewrit",
             );
             await navigate(
@@ -202,10 +226,10 @@ await runQa(
             await page
               .getByRole("tab", { name: "Nguyên liệu", exact: true })
               .click();
-            await expect(page.getByRole("tabpanel")).toContainText(
+            await expect(page.locator(".fv2-tab-body[role=tabpanel]")).toContainText(
               "Legendary Stonewrit",
             );
-            await expect(page.getByRole("tabpanel")).not.toContainText(
+            await expect(page.locator(".fv2-tab-body[role=tabpanel]")).not.toContainText(
               "Dual Blades of Awe",
             );
             await navigate(
@@ -219,7 +243,7 @@ await runQa(
               2,
             );
             await page.locator(".fv2-route-chips button").nth(1).click();
-            await expect(page.getByRole("tabpanel")).toContainText(
+            await expect(page.locator(".fv2-tab-body[role=tabpanel]")).toContainText(
               "Nostalgia Quest",
             );
           },
@@ -279,16 +303,35 @@ await runQa(
             ).toBeVisible();
           },
         );
+        await step("V3.1 localized Wiki details, selected guide step and shared Role filter", async () => {
+          await navigate("/farm?item=legion-revenant-class", '[data-item-id="legion-revenant-class"]');
+          await expect(page.getByRole("tab", {name:"Nguồn",exact:true})).toHaveCount(0);
+          await expect(page.locator(".fv31-wiki-info")).toContainText("Wizard");
+          await page.getByRole("tab", {name:"Hướng dẫn Farm",exact:true}).click();
+          await expect(page.locator(".fv31-step-numbers button")).toHaveCount(11);
+          await expect(page.locator(".fv31-step-content")).toContainText("Điều kiện mở khóa");
+          await page.locator(".fv31-step-actions").getByRole("button", {name:"Tiếp",exact:true}).click();
+          await expect(page.locator(".fv31-step-content")).toContainText("Aeacus");
+          await page.getByRole("button", {name:"Ultra Dage · bổ sung",exact:true}).click();
+          await expect(page.locator(".fv31-step-numbers button")).toHaveCount(2);
+          await expect(page.locator(".fv31-step-content")).toContainText("Nguồn bổ sung");
+          await screenshot("v31-stepper");
+          await navigate("/farm?category=Classes&subtype=Support", ".fv2-root");
+          if (width <= 720 && await page.locator(".fv2-back").isVisible()) await page.locator(".fv2-back").click();
+          await expect(page.getByLabel("Role Class", {exact:true})).toHaveValue("Support");
+          await screenshot("v31-class-role");
+          await navigate("/farm?item=blade-of-awe", '[data-item-id="blade-of-awe"]');
+        });
         await step("keyboard, screenshot, images and overflow", async () => {
           await page
             .getByRole("tab", { name: "Thông tin", exact: true })
             .focus();
           await page.keyboard.press("End");
           await expect(
-            page.getByRole("tab", { name: "Nguồn", exact: true }),
+            page.getByRole("tab", { name: "Hướng dẫn Farm", exact: true }),
           ).toBeFocused();
           await expect(
-            page.getByRole("tab", { name: "Nguồn", exact: true }),
+            page.getByRole("tab", { name: "Hướng dẫn Farm", exact: true }),
           ).toHaveAttribute("aria-selected", "true");
           const measure = await inspectPage(page);
           Object.assign(currentCase, measure);

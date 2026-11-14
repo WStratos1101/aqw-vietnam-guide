@@ -1,5 +1,58 @@
 import type { MaterialNode } from "../lib/material-requirements.mjs";
 export type Source = { url: string; label: string; sourceType?: string };
+export type FarmGuideStep = {
+  id: string;
+  title: string;
+  text: string;
+  sources: string[];
+  evidence?: { sourceUrl: string; lines: number[]; sourceTextHash?: string }[];
+};
+export type FarmAcquisitionBrief = {
+  status: string;
+  kind: string;
+  text: string | null;
+  source?: string;
+  alternatives?: string[];
+};
+export type FarmGuidePath = {
+  id: string;
+  label: string;
+  coverage?: string;
+  availability?: string;
+  verificationStatus: string;
+  steps: FarmGuideStep[];
+};
+export type FarmWikiDetails = {
+  membership: string | null;
+  rarity: string | null;
+  availability: string | null;
+  location: string | null;
+  priceRaw: string | null;
+  sellback: string | null;
+  weaponDamage: string | null;
+  speed: string | null;
+  descriptionVi: string | null;
+  specialEffectsVi: string[];
+  enhancement: string | null;
+  statModel: string | null;
+  levelRequired: number | null;
+  raw: {
+    description: string | null;
+    specialEffects: string | null;
+    weaponDamage: string | null;
+    sellback: string | null;
+  };
+  evidence: {
+    sourceUrl: string;
+    sourceTextHash: string;
+    snapshotCheckedAt: string | null;
+    inspectedAt?: string;
+    status: string;
+    translationStatus: string;
+    fields?: Record<string, string>;
+  };
+  conflicts: string[];
+};
 export type FarmV2RouteData = {
   id: string;
   regionId: string | null;
@@ -10,6 +63,7 @@ export type FarmV2RouteData = {
   location?: string | null;
   mapCommand?: string | null;
   steps: string[];
+  guidePaths?: FarmGuidePath[];
   materialTree?: MaterialNode | null;
   prerequisites?: { value: string; source: string }[];
   sources: Source[];
@@ -41,9 +95,21 @@ export type FarmV2Item = {
   reviewReason?: string | null;
   unknownFields?: string[];
   classHref?: string | null;
+  classRoles?: string[];
+  wikiDetails?: FarmWikiDetails;
+  acquisitionBrief?: FarmAcquisitionBrief;
   prerequisites?: { value: string; source: string }[];
   acquisitionRoutes: FarmV2RouteData[];
   regions: string[];
+  groupIds: string[];
+  groupStatus: string;
+  groupEvidence: {
+    groupId: string;
+    sourceUrl: string;
+    heading: string;
+    lines: number[];
+    status: string;
+  }[];
   sources: Source[];
   provenance: {
     sourceDocument: string;
