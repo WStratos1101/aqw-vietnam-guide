@@ -119,7 +119,7 @@ export function enrichFarmReview(items, pages, bosses, approvals = [], candidate
       const directQuest = rewardMatches.filter(({ quest }) => quest.name === route.questReward);
       const match = directQuest.length === 1 ? directQuest[0] : rewardMatches.length === 1 && route.method === "Quest" ? rewardMatches[0] : null;
       const hasSingleReceivingLocation = page?.location && page.location !== "N/A" &&
-        page.location.split(/\r?\n/).map(value => value.trim()).filter(Boolean).length === 1;
+        page.location.split(/\r?\n|\s+·\s+/).map(value => value.trim()).filter(Boolean).length === 1;
       if (imported && hasSingleReceivingLocation) {
         route.location = page.location;
         const mapMatches = pages.filter(p => p.joinCommands.length === 1 && page.locationLinks.some(l => wiki(l.url) === wiki(p.url)));

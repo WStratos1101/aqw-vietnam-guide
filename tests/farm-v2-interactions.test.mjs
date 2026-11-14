@@ -277,6 +277,11 @@ test("group tiles, category counts, aliases, search/sort and history restoration
     assert.doesNotMatch(tile.textContent, /Cần đối chiếu|Chưa rõ thời điểm mở/);
   const css = await fs.readFile("src/features/farm/farm-v2.css", "utf8");
   assert.match(css, /grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
+  const mobileGroupLayout = css.match(/@media \(max-width: 720px\) \{\s*\.fv2-groups nav \{([^}]+)\}([\s\S]*?)\n\}/g)?.at(-1);
+  assert.ok(mobileGroupLayout, "mobile faction layout is defined");
+  assert.match(mobileGroupLayout, /grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
+  assert.match(mobileGroupLayout, /overflow: visible/);
+  assert.match(mobileGroupLayout, /\.fv2-group-all \{\s*position: static/);
   assert.match(css, /:focus-visible/);
 });
 
@@ -456,16 +461,17 @@ test.after(async () => {
   await act(async () => root.unmount());
 });
 
-test("zero-route acquisition facts remain visible without fabricating a route or stepper", async () => {
+test("multiple acquisition routes show the selected shop price or Quest reward without fabricating a stepper", async () => {
   await navigate("/farm?item=crag-bamboozle");
   await click(tab("Cách nhận"));
   assert.match(host.querySelector(".fv2-tab-body").textContent, /5,000 ACs/);
+  await click(host.querySelectorAll(".fv2-route-chips button")[1]);
   assert.match(
     host.querySelector(".fv2-tab-body").textContent,
     /Assistance of Nulgath/,
   );
+  await click(host.querySelectorAll(".fv2-route-chips button")[0]);
   await click(tab("Hướng dẫn Farm"));
-  assert.match(host.querySelector(".fv2-tab-body").textContent, /5,000 ACs/);
   assert.equal(host.querySelector(".fv31-stepper"), null);
   await navigate("/farm?item=crimson-plate-of-nulgath");
   await click(tab("Hướng dẫn Farm"));

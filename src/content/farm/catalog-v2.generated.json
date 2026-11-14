@@ -6953,7 +6953,7 @@
           "description": "Merge tại FireAvatar Merge - Fire Avatar FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
           "regionId": null,
           "location": "FireAvatar Merge - Fire Avatar FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
-          "mapCommand": "/join ultratyndarius",
+          "mapCommand": null,
           "steps": [],
           "guidePaths": [
             {
@@ -21885,7 +21885,7 @@
           "purchase": null,
           "location": null,
           "description": "Hoàn thành Quest: Combat Style: Soulreaper of Nulgath",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "materialTree": null,
           "sources": [
@@ -21928,7 +21928,7 @@
               "id": "reviewed-acquire",
               "quest": "Combat Style: Soulreaper of Nulgath",
               "npc": "Nulgath (NPC)",
-              "map": "/join tercessuinotlim",
+              "map": null,
               "requirements": [
                 "Must have completed the 'Contract With the Abyss' quest."
               ],
@@ -22441,7 +22441,7 @@
           "regionId": null,
           "method": "Shop",
           "location": "Nulgath (Shop) - Enchanted Nulgath Nation House · Nulgath (Shop) - Tercessuinotlim",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "sources": [
             {
@@ -22462,7 +22462,7 @@
           "regionId": null,
           "method": "Quest",
           "location": "Nulgath (Shop) - Enchanted Nulgath Nation House · Nulgath (Shop) - Tercessuinotlim",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "sources": [
             {
@@ -24183,7 +24183,7 @@
           "purchase": null,
           "location": null,
           "description": "Công thức Merge theo snapshot Wiki; Region và điều kiện mở khóa còn cần đối chiếu.",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "materialTree": {
             "kind": "allOf",
@@ -29643,7 +29643,7 @@
           "purchase": null,
           "location": null,
           "description": "Công thức Merge theo snapshot Wiki; Region và điều kiện mở khóa còn cần đối chiếu.",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "materialTree": {
             "kind": "allOf",
@@ -31586,7 +31586,7 @@
           "regionId": null,
           "method": "Shop",
           "location": "Nulgath (Shop) - Enchanted Nulgath Nation House · Nulgath (Shop) - Tercessuinotlim",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "sources": [
             {
@@ -31607,7 +31607,7 @@
           "regionId": null,
           "method": "Quest",
           "location": "Nulgath (Shop) - Enchanted Nulgath Nation House · Nulgath (Shop) - Tercessuinotlim",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "sources": [
             {
@@ -32423,7 +32423,7 @@
           "regionId": null,
           "method": "Quest",
           "location": "Enchanted Nulgath Nation House · Tercessuinotlim",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "sources": [
             {
@@ -32446,7 +32446,7 @@
               "id": "reviewed-acquire",
               "quest": "Combat Style: Champion Blade",
               "npc": "Nulgath (NPC)",
-              "map": "/join tercessuinotlim",
+              "map": null,
               "requirements": [
                 "Must have completed the 'Contract With the Abyss' quest."
               ],
@@ -33288,7 +33288,7 @@
           "purchase": null,
           "location": null,
           "description": "Hoàn thành Quest: Combat Style: Tainted Claymore",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "materialTree": null,
           "sources": [
@@ -33331,7 +33331,7 @@
               "id": "reviewed-acquire",
               "quest": "Combat Style: Tainted Claymore",
               "npc": "Nulgath (NPC)",
-              "map": "/join tercessuinotlim",
+              "map": null,
               "requirements": [
                 "Must have completed the 'Contract With the Abyss' quest."
               ],
@@ -33851,7 +33851,7 @@
           "regionId": null,
           "method": "Quest",
           "location": "Enchanted Nulgath Nation House · Tercessuinotlim",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "sources": [
             {
@@ -33891,7 +33891,7 @@
               "id": "reviewed-acquire",
               "quest": "Demanding Items of Nulgath",
               "npc": "Nulgath (NPC)",
-              "map": "/join tercessuinotlim",
+              "map": null,
               "requirements": [
                 "Must have completed the 'Contract With the Abyss' quest."
               ],
@@ -44479,7 +44479,7 @@
           "purchase": null,
           "location": null,
           "description": "Công thức Merge theo snapshot Wiki; Region và điều kiện mở khóa còn cần đối chiếu.",
-          "mapCommand": "/join ultratyndarius",
+          "mapCommand": null,
           "steps": [],
           "materialTree": {
             "kind": "allOf",
@@ -53521,7 +53521,7 @@
           },
           "location": null,
           "description": "300 ACs · —",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "materialTree": null,
           "sources": [
@@ -71555,8 +71555,8 @@
           "regionId": null,
           "method": "Merge",
           "questReward": null,
-          "location": "FireAvatar Merge - Fire Avatar · FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
-          "mapCommand": "/join ultratyndarius",
+          "location": null,
+          "mapCommand": null,
           "description": "Merge Infernal Flame Horns",
           "steps": [],
           "materialTree": {
@@ -71673,13 +71673,6 @@
               ]
             }
           ],
-          "geographyEvidence": {
-            "sources": [
-              "https://aqwwiki.wikidot.com/infernal-flame-horns",
-              "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-location"
-            ],
-            "checkedAt": "2026-11-14T17:19:48.205Z"
-          },
           "insigniaSources": [
             {
               "materialId": "avatar-tyndarius-insignia",
@@ -71800,8 +71793,8 @@
           "regionId": null,
           "method": "Merge",
           "questReward": null,
-          "location": "FireAvatar Merge - Fire Avatar · FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
-          "mapCommand": "/join ultratyndarius",
+          "location": null,
+          "mapCommand": null,
           "description": "Merge Infernal Flame Hood",
           "steps": [],
           "materialTree": {
@@ -71883,13 +71876,6 @@
               ]
             }
           ],
-          "geographyEvidence": {
-            "sources": [
-              "https://aqwwiki.wikidot.com/infernal-flame-hood",
-              "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-location"
-            ],
-            "checkedAt": "2026-11-14T17:19:49.122Z"
-          },
           "insigniaSources": [
             {
               "materialId": "avatar-tyndarius-insignia",
@@ -72012,8 +71998,8 @@
           "regionId": null,
           "method": "Merge",
           "questReward": null,
-          "location": "FireAvatar Merge - Fire Avatar · FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
-          "mapCommand": "/join ultratyndarius",
+          "location": null,
+          "mapCommand": null,
           "description": "Merge Infernal Claws + Runes",
           "steps": [],
           "materialTree": {
@@ -72179,13 +72165,6 @@
               ]
             }
           ],
-          "geographyEvidence": {
-            "sources": [
-              "https://aqwwiki.wikidot.com/infernal-claws-runes",
-              "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-location"
-            ],
-            "checkedAt": "2026-11-14T17:19:49.523Z"
-          },
           "insigniaSources": [
             {
               "materialId": "avatar-tyndarius-insignia",
@@ -72306,8 +72285,8 @@
           "regionId": null,
           "method": "Merge",
           "questReward": null,
-          "location": "FireAvatar Merge - Fire Avatar · FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
-          "mapCommand": "/join ultratyndarius",
+          "location": null,
+          "mapCommand": null,
           "description": "Merge Infernal Flame Claws",
           "steps": [],
           "materialTree": {
@@ -72389,13 +72368,6 @@
               ]
             }
           ],
-          "geographyEvidence": {
-            "sources": [
-              "https://aqwwiki.wikidot.com/infernal-flame-claws",
-              "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-location"
-            ],
-            "checkedAt": "2026-11-14T17:19:50.475Z"
-          },
           "insigniaSources": [
             {
               "materialId": "avatar-tyndarius-insignia",
@@ -86127,8 +86099,8 @@
           "regionId": null,
           "method": "Merge",
           "questReward": null,
-          "location": "Dage Challenge Merge · Dage Challenge · Ultra Dage",
-          "mapCommand": "/join ultradage",
+          "location": null,
+          "mapCommand": null,
           "description": "Merge Empowered Hollowborn Caladbolg",
           "steps": [],
           "materialTree": {
@@ -86291,13 +86263,6 @@
               ]
             }
           ],
-          "geographyEvidence": {
-            "sources": [
-              "https://aqwwiki.wikidot.com/empowered-hollowborn-caladbolg",
-              "https://aqwwiki.wikidot.com/ultra-dage"
-            ],
-            "checkedAt": "2026-11-14T17:24:56.461Z"
-          },
           "insigniaSources": [
             {
               "materialId": "dage-the-evil-insignia",
@@ -86443,8 +86408,8 @@
           "regionId": null,
           "method": "Merge",
           "questReward": null,
-          "location": "Dage Challenge Merge · Dage Challenge · Ultra Dage",
-          "mapCommand": "/join ultradage",
+          "location": null,
+          "mapCommand": null,
           "description": "Merge Empowered Dual Hollowborn Caladbolgs",
           "steps": [],
           "materialTree": {
@@ -86607,13 +86572,6 @@
               ]
             }
           ],
-          "geographyEvidence": {
-            "sources": [
-              "https://aqwwiki.wikidot.com/empowered-dual-hollowborn-caladbolgs",
-              "https://aqwwiki.wikidot.com/ultra-dage"
-            ],
-            "checkedAt": "2026-11-14T17:24:57.044Z"
-          },
           "insigniaSources": [
             {
               "materialId": "dage-the-evil-insignia",
@@ -87755,7 +87713,7 @@
           "regionId": null,
           "method": "Merge",
           "questReward": null,
-          "location": "Exaltia Merge · Inn at the Edge of Time · Ultra Engineer (Location) · Ultra Ezrajal (Location) · Ultra Warden (Location)",
+          "location": null,
           "mapCommand": null,
           "description": "Merge Exalted Duality",
           "steps": [],
@@ -87880,16 +87838,6 @@
               ]
             }
           ],
-          "geographyEvidence": {
-            "sources": [
-              "https://aqwwiki.wikidot.com/exalted-duality",
-              "https://aqwwiki.wikidot.com/inn-at-the-edge-of-time",
-              "https://aqwwiki.wikidot.com/ultra-ezrajal-location",
-              "https://aqwwiki.wikidot.com/ultra-warden-location",
-              "https://aqwwiki.wikidot.com/ultra-engineer-location"
-            ],
-            "checkedAt": "2026-11-14T17:20:12.445Z"
-          },
           "insigniaSources": [
             {
               "materialId": "ezrajal-insignia",

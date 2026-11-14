@@ -1231,10 +1231,16 @@ html[data-theme="light"] .fv2-root {
 @media (max-width: 720px) {
   .fv2-groups nav {
     display: grid;
-    grid-template-columns: repeat(16, max-content);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+  }
+  .fv2-groups button {
+    min-width: 0;
   }
   .fv2-groups .fv2-group-all {
-    left: 145px;
+    position: static;
+    grid-column: 1 / -1;
+    justify-self: start;
     margin: 0;
   }
 }
