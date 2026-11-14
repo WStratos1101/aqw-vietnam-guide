@@ -1,4 +1,5 @@
 import materialGuides from "../../../content-sources/farm/material-guides.json";
+import insigniaGuides from "../../content/farm/material-sources.generated.json";
 import type { FarmTask } from "../../types/farm-v2";
 import { useId, useState } from "react";
 import type { MaterialNode } from "../../lib/material-requirements.mjs";
@@ -46,6 +47,7 @@ export function FarmMaterials({
         );
         const token = node.itemId + ":" + node.name;
         const materialGuide =
+          (insigniaGuides as Record<string, { method: string; tasks: FarmTask[] }>)[node.itemId] ||
           materialGuides[node.itemId as keyof typeof materialGuides];
         const routes = item?.acquisitionRoutes || [];
         const activeRoute =

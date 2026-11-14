@@ -154,7 +154,7 @@ test("all-inventory and faction counts count unique canonical identities exactly
   }
   const expected = {
     good: 17,
-    evil: 18,
+    evil: 17,
     chaos: 2,
     awe: 6,
     blacksmithing: 1,
@@ -221,6 +221,13 @@ test("canonical reward mappings survive goal fallback and generation is idempote
   assert.deepEqual(checked, catalog.items);
   for (const mapping of itemMappings) {
     const item = checked.find((entry) => entry.id === mapping.itemId);
+    if (!item) {
+      const exclusion = read("content-sources/farm/review/enrichment-audit.json").excluded.find(e => e.itemId === mapping.itemId);
+      assert.ok(exclusion, mapping.itemId + ": missing mapping must have an explicit exclusion");
+      assert.ok(exclusion.breadcrumbs.some(c => c.path === "/housing"));
+      assert.ok(exclusion.sourceHash);
+      continue;
+    }
     assert.equal(item.primaryGroupId, mapping.primaryGroupId, mapping.itemId);
     assert.equal(item.groupEvidence[0].sourceLine, mapping.sourceLine, mapping.itemId);
     if (mapping.parentGoalId)
@@ -228,7 +235,7 @@ test("canonical reward mappings survive goal fallback and generation is idempote
         `${goal.group_id}:${goal.source_line}:${goal.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}` === mapping.parentGoalId,
       ), mapping.itemId);
   }
-  assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 280);
+  assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 279);
 });
 
 test("direct Ultra Empower rewards map by verified boss quest, never by Empowered name or prerequisite", () => {

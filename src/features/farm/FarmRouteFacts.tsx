@@ -23,6 +23,29 @@ export function FarmActions({ text }: { text: string }) {
     </ul>
   );
 }
+function InsigniaSources({ route }: { route: FarmV2RouteData }) {
+  if (!route.insigniaSources?.length) return null;
+  return (
+    <section className="fv32-insignia-sources" aria-label="Ultra Boss và Insignia">
+      <h4>Ultra Boss / Insignia</h4>
+      {route.insigniaSources.map((source, index) => (
+        <div key={`${source.materialId}-${source.scope}-${index}`}>
+          <p><b>{source.name} ×{source.quantity.toLocaleString("vi-VN")}</b>
+            {source.scope !== "direct" && " · Nguyên liệu trung gian"}</p>
+          {source.status === "PENDING_SOURCE" ? <p>Quest, NPC và map: chưa xác minh.</p> : (
+            <>
+              <p>Quest: <b>{source.quest}</b> · NPC: {source.npc}</p>
+              {source.bossId && <p>Đánh <a href={`/ultra-boss/${source.bossId}`}>{source.bossName}</a></p>}
+              <JoinLine value={source.map} />
+              <p>Nhận {source.rewardQuantity} Insignia / {source.repeatability === "weekly" ? "tuần" : "ngày"} từ quest.</p>
+              {source.sourcePage && <a href={source.sourcePage} target="_blank" rel="noreferrer">Quest trên AQW Wiki</a>}
+            </>
+          )}
+        </div>
+      ))}
+    </section>
+  );
+}
 export function FarmRouteFacts({
   route,
   taskId,
@@ -54,8 +77,13 @@ export function FarmRouteFacts({
               <dd>{route.questReward}</dd>
             </div>
           )}
+          {route.npc && <div><dt>NPC</dt><dd>{route.npc}</dd></div>}
+          {route.dropSource && <div><dt>Quái drop / nguồn nhận</dt><dd>{route.dropSource}</dd></div>}
+          {route.purchase && <div><dt>Giá mua</dt><dd>{route.purchase.amount.toLocaleString("vi-VN")} {route.purchase.currency}</dd></div>}
+          {!!route.questAlternatives?.length && <div><dt>Các quest có thể nhận</dt><dd><ul>{route.questAlternatives.map((option, index) => <li key={index}>{option.sources[0] ? <a href={option.sources[0]} target="_blank" rel="noreferrer">{option.quest}</a> : option.quest}{option.npc && ` · ${option.npc}`}</li>)}</ul></dd></div>}
         </dl>
         {route.description && <FarmActions text={route.description} />}
+        <InsigniaSources route={route} />
       </div>
     );
   return (
@@ -63,7 +91,7 @@ export function FarmRouteFacts({
       {tasks.map((task) => {
         const maps = [
           ...new Set(
-            task.rows.map((row) => row.map || task.map || "Map chưa xác minh"),
+            task.rows.map((row) => row.map || "Map chưa xác minh"),
           ),
         ];
         return (
@@ -88,6 +116,7 @@ export function FarmRouteFacts({
                 verifiedJoinCommand(route.mapCommand)
               }
             />
+            {task.bossId && <p>Đánh <a href={`/ultra-boss/${task.bossId}`}>{task.bossName}</a></p>}
             {maps.map((map) => (
               <div key={map}>
                 <h5>{map}</h5>
@@ -110,7 +139,7 @@ export function FarmRouteFacts({
                       {task.rows
                         .filter(
                           (row) =>
-                            (row.map || task.map || "Map chưa xác minh") ===
+                            (row.map || "Map chưa xác minh") ===
                             map,
                         )
                         .map((row, i) => (
@@ -120,7 +149,7 @@ export function FarmRouteFacts({
                             <td>
                               {row.monster || row.sourceName || "Chưa xác minh"}
                             </td>
-                            <td>{row.map || task.map || "Chưa xác minh"}</td>
+                            <td>{row.map || "Chưa xác minh"}</td>
                           </tr>
                         ))}
                     </tbody>
@@ -143,6 +172,7 @@ export function FarmRouteFacts({
           </section>
         );
       })}
+      {!taskId && <InsigniaSources route={route} />}
     </div>
   );
 }

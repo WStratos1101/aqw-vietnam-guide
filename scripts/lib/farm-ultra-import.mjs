@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import { createHash } from "node:crypto";
+import { verifiedFarmAsset, farmAssetEvidence } from "./farm-image-evidence.mjs";
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const categories = {
   weapon: "Weapons",
@@ -67,13 +68,7 @@ export function importUltraFarm(items) {
             /^(sword|axe|dagger|bow|gun|mace|polearm|staff|wand)\s*$/im,
           )?.[1]
         : null;
-    const asset = assets.find(
-      (a) =>
-        a.entityName === entity.name &&
-        a.verificationStatus === "verified" &&
-        a.usageStatus === "approved" &&
-        a.imagePath,
-    );
+    const asset = verifiedFarmAsset({ id: entity.id, originalName: entity.name, wikiUrl: entity.source }, assets);
     const sourceHash = createHash("sha256").update(text).digest("hex");
     const sources = [source(entity.source)];
     const tasks = (route.quests || []).flatMap((q) => {
@@ -110,8 +105,10 @@ export function importUltraFarm(items) {
       regionId: null,
       method,
       questReward: method === "Quest" ? finish.name : null,
-      location: boss?.location || null,
-      mapCommand: boss?.joinCommand || null,
+      // A boss route describes ingredient farming, not necessarily the final
+      // item's quest/shop. Exact item/quest geography is applied separately.
+      location: null,
+      mapCommand: null,
       description:
         method === "Quest"
           ? `Hoàn thành Quest: ${finish.name}`
@@ -178,15 +175,7 @@ export function importUltraFarm(items) {
       effects: [...new Set([...damage, ...rewards])],
       image: asset?.imagePath || null,
       previewImage: asset?.imagePath || null,
-      imageEvidence: asset
-        ? {
-            path: asset.imagePath,
-            source: asset.sourcePage,
-            credit: asset.credit || "Artix Entertainment",
-            verificationStatus: "verified",
-            usageStatus: "approved",
-          }
-        : null,
+      imageEvidence: asset ? farmAssetEvidence(asset) : null,
       verificationStatus: "needs-review",
       lastChecked: entity.lastVerified,
       reviewReason:

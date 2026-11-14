@@ -198,12 +198,12 @@ test("completion snapshots are exact canonical bodies; incomplete indexed eviden
   const added = read(
     "content-sources/farm/import/ultra-import-audit.json",
   ).added;
-  assert.equal(c.items.filter((i) => !added.includes(i.id)).length, 232);
+  assert.equal(c.items.filter((i) => !added.includes(i.id)).length, 231);
   assert.equal(
     c.items
       .filter((i) => !added.includes(i.id))
       .reduce((n, i) => n + i.acquisitionRoutes.length, 0),
-    228,
+    236,
   );
   const audit = read("content-sources/farm/import/detail-audit.json");
   assert.equal(audit.filter((i) => i.completeWikiSnapshot).length, 231);
@@ -353,7 +353,9 @@ test("every canonical item has acquisition facts; multi-Quest rewards are altern
   assert.equal(shadow.alternatives.length, 3);
   assert.match(shadow.text, / HOẶC /);
   const crag = c.items.find((i) => i.id === "crag-bamboozle");
-  assert.equal(crag.acquisitionRoutes.length, 0);
+  assert.equal(crag.acquisitionRoutes.length, 2);
+  assert.deepEqual(crag.acquisitionRoutes.map(r => r.method), ["Shop", "Quest"]);
+  assert.deepEqual(crag.acquisitionRoutes[0].purchase, { amount: 5000, currency: "ACs" });
   assert.match(crag.acquisitionBrief.text, /5,000 ACs/);
   assert.doesNotMatch(crag.acquisitionBrief.text, /Free/);
   const golden = c.items.find((i) => i.id === "golden-hanzo-void");

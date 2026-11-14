@@ -20,7 +20,7 @@
     "test:clean": "node scripts/clean-check.mjs",
     "test:server": "node --test tests/server.test.mjs",
     "content:farm": "node scripts/build-farm.mjs && node scripts/audit-farm.mjs",
-    "test:farm": "node --test tests/farm.test.mjs tests/farm-interactions.test.mjs tests/farm-launcher.test.mjs tests/qa-runtime.test.mjs tests/farm-v2.test.mjs tests/farm-v2-interactions.test.mjs tests/farm-source-import.test.mjs tests/farm-groups.test.mjs tests/farm-details-v3-1.test.mjs tests/codex-v32.test.mjs tests/codex-v32-interactions.test.mjs",
+    "test:farm": "node --test tests/farm.test.mjs tests/farm-interactions.test.mjs tests/farm-launcher.test.mjs tests/qa-runtime.test.mjs tests/farm-v2.test.mjs tests/farm-v2-interactions.test.mjs tests/farm-source-import.test.mjs tests/farm-groups.test.mjs tests/farm-details-v3-1.test.mjs tests/codex-v32.test.mjs tests/codex-v32-interactions.test.mjs tests/farm-source-review.test.mjs",
     "qa:farm": "node scripts/qa-farm.mjs",
     "content:import": "node scripts/import-guides.mjs",
     "assets:ultra": "node scripts/ultra-assets.mjs",

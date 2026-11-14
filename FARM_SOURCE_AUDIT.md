@@ -2,7 +2,7 @@
 
 ## Cập nhật Farm V2 — 2026-11-13
 
-UI hiện tại dùng catalog-v2.generated.json: 280 canonical items; Source A 197, Source B 225, giao 194. 23 verified kế thừa; 257 cần đối chiếu; 81 ảnh local, 199 thiếu ảnh.
+UI hiện tại dùng catalog-v2.generated.json: 279 canonical items; Source A 196, Source B 224, giao 193. 23 verified kế thừa; 256 cần đối chiếu; 268 ảnh local, 11 thiếu ảnh.
 Nguồn A: phần text/link của trang gốc + 146 trang con đã được trích xuất; hình nhúng còn cần đối chiếu. Nguồn B: giữ snapshot text export đã đọc trước đó, connector/HTML export timeout; chưa xác minh link/bảng/ảnh nhúng. Xem FARM_DATA_AUDIT.md và content-sources/farm/import/source-access.json.
 Wiki còn 1104 URL nguồn chưa đọc thành công; không coi đây là số trang bị còn thiếu. Browser QA UNVERIFIED: không chạy trong Codex; chờ AQW-Safe-Browser-QA.command trên Terminal macOS (Chromium).
 Phần dưới giữ nguyên bằng chứng snapshot 2026-11-11 cho catalog curated 25 items; không đại diện toàn bộ UI V2 hoặc xác minh live hôm nay.

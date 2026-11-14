@@ -1,0 +1,1037 @@
+{
+  "nulgath-insignia": {
+    "name": "Nulgath Insignia",
+    "method": "Ultra Quest",
+    "bossId": "ultra-nulgath",
+    "bossName": "Ultra Nulgath",
+    "bossHref": "/ultra-boss/ultra-nulgath",
+    "sourcePage": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+    "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+    "mapEvidence": [
+      "https://aqwwiki.wikidot.com/ultra-nulgath"
+    ],
+    "tasks": [
+      {
+        "id": "insignia-nulgath-insignia",
+        "quest": "Nulgath, the Archfiend",
+        "npc": "Nulgath (NPC)",
+        "map": "/join ultranulgath",
+        "location": "Ultra Nulgath",
+        "requirements": [
+          "Must be Level 80."
+        ],
+        "preconditions": [
+          "Must be Level 80."
+        ],
+        "reward": "Nulgath Insignia ×5",
+        "rewardQuantity": 5,
+        "repeatability": "weekly",
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "bossId": "ultra-nulgath",
+        "bossName": "Ultra Nulgath",
+        "rows": [
+          {
+            "name": "Nulgath the Archfiend Defeated?",
+            "quantity": 1,
+            "monster": "Nulgath the Archfiend",
+            "map": "/join ultranulgath",
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "dage-the-evil-insignia": {
+    "name": "Dage the Evil Insignia",
+    "method": "Ultra Quest",
+    "bossId": "ultra-dage",
+    "bossName": "Ultra Dage",
+    "bossHref": "/ultra-boss/ultra-dage",
+    "sourcePage": "https://aqwwiki.wikidot.com/calamitus-quests",
+    "sourceHash": "5cc66bb99d53978e29495ce7e3eafcee637461a21d3b502a2cbc0f300361f27c",
+    "mapEvidence": [
+      "https://aqwwiki.wikidot.com/ultra-dage"
+    ],
+    "tasks": [
+      {
+        "id": "insignia-dage-the-evil-insignia",
+        "quest": "Dage, Lord of the Undead Legion",
+        "npc": "Calamitus",
+        "map": "/join ultradage",
+        "location": "Ultra Dage",
+        "requirements": [
+          "Must have completed the 'Power of the Undead Legion' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Power of the Undead Legion' quest."
+        ],
+        "reward": "Dage the Evil Insignia ×5",
+        "rewardQuantity": 5,
+        "repeatability": "weekly",
+        "source": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "bossId": "ultra-dage",
+        "bossName": "Ultra Dage",
+        "rows": [
+          {
+            "name": "Dage the Dark Lord Defeated",
+            "quantity": 1,
+            "monster": "Dage the Dark Lord",
+            "map": "/join ultradage",
+            "source": "https://aqwwiki.wikidot.com/calamitus-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "avatar-tyndarius-insignia": {
+    "name": "Avatar Tyndarius Insignia",
+    "method": "Ultra Quest",
+    "bossId": "ultra-tyndarius",
+    "bossName": "Ultra Tyndarius",
+    "bossHref": "/ultra-boss/ultra-tyndarius",
+    "sourcePage": "https://aqwwiki.wikidot.com/galanoth-s-quests",
+    "sourceHash": "93daf21559393d70ad1eb736eafdb8eb323bb4c9b05843cc65965e699bdf2a81",
+    "mapEvidence": [
+      "https://aqwwiki.wikidot.com/ultra-avatar-tyndarius-location"
+    ],
+    "tasks": [
+      {
+        "id": "insignia-avatar-tyndarius-insignia",
+        "quest": "Ultra Avatar Tyndarius",
+        "npc": "Galanoth (NPC)",
+        "map": "/join ultratyndarius",
+        "location": "Ultra Avatar Tyndarius (Location)",
+        "requirements": [
+          "Must have completed the 'Avatar of Fire' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Avatar of Fire' quest."
+        ],
+        "reward": "Avatar Tyndarius Insignia ×2",
+        "rewardQuantity": 2,
+        "repeatability": "daily",
+        "source": "https://aqwwiki.wikidot.com/galanoth-s-quests",
+        "bossId": "ultra-tyndarius",
+        "bossName": "Ultra Tyndarius",
+        "rows": [
+          {
+            "name": "Ultra Avatar Tyndarius Defeated",
+            "quantity": 1,
+            "monster": "Ultra Avatar Tyndarius (Monster)",
+            "map": "/join ultratyndarius",
+            "source": "https://aqwwiki.wikidot.com/galanoth-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "king-drago-insignia": {
+    "name": "King Drago Insignia",
+    "method": "Ultra Quest",
+    "bossId": "ultra-drago",
+    "bossName": "Ultra Drago",
+    "bossHref": "/ultra-boss/ultra-drago",
+    "sourcePage": "https://aqwwiki.wikidot.com/re-s-quests",
+    "sourceHash": "3ba55c83e72a2bfab1de2fab6c07c2c6616a02a0b36950fb8fafe95509d9aa67",
+    "mapEvidence": [
+      "https://aqwwiki.wikidot.com/ultra-drago"
+    ],
+    "tasks": [
+      {
+        "id": "insignia-king-drago-insignia",
+        "quest": "Drago, Tyrant of Astravia",
+        "npc": "Re (NPC)",
+        "map": "/join ultradrago",
+        "location": "Ultra Drago",
+        "requirements": [
+          "Must have completed the 'Mahapadma' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Mahapadma' quest."
+        ],
+        "reward": "King Drago Insignia ×5",
+        "rewardQuantity": 5,
+        "repeatability": "weekly",
+        "source": "https://aqwwiki.wikidot.com/re-s-quests",
+        "bossId": "ultra-drago",
+        "bossName": "Ultra Drago",
+        "rows": [
+          {
+            "name": "Drago Dethroned",
+            "quantity": 1,
+            "monster": "King Drago (Monster)",
+            "map": "/join ultradrago",
+            "source": "https://aqwwiki.wikidot.com/re-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "malgor-insignia": {
+    "name": "Malgor Insignia",
+    "method": "Ultra Quest",
+    "bossId": "ultra-speaker",
+    "bossName": "Ultra Speaker",
+    "bossHref": "/ultra-boss/ultra-speaker",
+    "sourcePage": "https://aqwwiki.wikidot.com/vohu-s-quests",
+    "sourceHash": "39e5dd6ad576e2554ceb5f19c0637f0a25284ef1dd28f59f0b1fe7fb87c97b11",
+    "mapEvidence": [
+      "https://aqwwiki.wikidot.com/ultra-speaker"
+    ],
+    "tasks": [
+      {
+        "id": "insignia-malgor-insignia",
+        "quest": "Malgor, The First Speaker",
+        "npc": "Vohu",
+        "map": "/join ultraspeaker",
+        "location": "Ultra Speaker",
+        "requirements": [
+          "Must be Level 90."
+        ],
+        "preconditions": [
+          "Must be Level 90."
+        ],
+        "reward": "Malgor Insignia ×5",
+        "rewardQuantity": 5,
+        "repeatability": "weekly",
+        "source": "https://aqwwiki.wikidot.com/vohu-s-quests",
+        "bossId": "ultra-speaker",
+        "bossName": "Ultra Speaker",
+        "rows": [
+          {
+            "name": "The First Speaker Silenced",
+            "quantity": 1,
+            "monster": null,
+            "map": "/join ultraspeaker",
+            "source": "https://aqwwiki.wikidot.com/vohu-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "darkon-insignia": {
+    "name": "Darkon Insignia",
+    "method": "Ultra Quest",
+    "bossId": "darkon-the-conductor",
+    "bossName": "Darkon the Conductor",
+    "bossHref": "/ultra-boss/darkon-the-conductor",
+    "sourcePage": "https://aqwwiki.wikidot.com/la-s-quests",
+    "sourceHash": "edc72b6a937b4f8f231c5061cbed47f97e746efe4d13ec7772efb757e5fb7b78",
+    "mapEvidence": [
+      "https://aqwwiki.wikidot.com/ultra-darkon"
+    ],
+    "tasks": [
+      {
+        "id": "insignia-darkon-insignia",
+        "quest": "Darkon, the Conductor",
+        "npc": "La (NPC)",
+        "map": "/join ultradarkon",
+        "location": "Ultra Darkon",
+        "requirements": [
+          "Must have completed the 'The World' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'The World' quest."
+        ],
+        "reward": "Darkon Insignia ×5",
+        "rewardQuantity": 5,
+        "repeatability": "weekly",
+        "source": "https://aqwwiki.wikidot.com/la-s-quests",
+        "bossId": "darkon-the-conductor",
+        "bossName": "Darkon the Conductor",
+        "rows": [
+          {
+            "name": "Darkon the Conductor Defeated",
+            "quantity": 1,
+            "monster": "Darkon the Conductor",
+            "map": "/join ultradarkon",
+            "source": "https://aqwwiki.wikidot.com/la-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "ezrajal-insignia": {
+    "name": "Ezrajal Insignia",
+    "method": "Ultra Quest",
+    "bossId": "ultra-ezrajal",
+    "bossName": "Ultra Ezrajal",
+    "bossHref": "/ultra-boss/ultra-ezrajal",
+    "sourcePage": "https://aqwwiki.wikidot.com/sir-cole-s-quests",
+    "sourceHash": "44aa588b1488eafc6daaacdc69b679f58e303009f460b291bd9ea600d90f8343",
+    "mapEvidence": [],
+    "tasks": [
+      {
+        "id": "insignia-ezrajal-insignia",
+        "quest": "Ultra Ezrajal",
+        "npc": "Sir Cole",
+        "map": "/join ultraezrajal",
+        "location": "Inn at the Edge of Time",
+        "requirements": [
+          "Must have completed the 'The Engineer' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'The Engineer' quest."
+        ],
+        "reward": "Ezrajal Insignia ×1",
+        "rewardQuantity": 1,
+        "repeatability": "daily",
+        "source": "https://aqwwiki.wikidot.com/sir-cole-s-quests",
+        "bossId": "ultra-ezrajal",
+        "bossName": "Ultra Ezrajal",
+        "rows": [
+          {
+            "name": "Ultra Ezrajal Defeated",
+            "quantity": 1,
+            "monster": "Ultra Ezrajal (Monster)",
+            "map": "/join ultraezrajal",
+            "source": "https://aqwwiki.wikidot.com/sir-cole-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "warden-insignia": {
+    "name": "Warden Insignia",
+    "method": "Ultra Quest",
+    "bossId": "ultra-warden",
+    "bossName": "Ultra Warden",
+    "bossHref": "/ultra-boss/ultra-warden",
+    "sourcePage": "https://aqwwiki.wikidot.com/sir-cole-s-quests",
+    "sourceHash": "44aa588b1488eafc6daaacdc69b679f58e303009f460b291bd9ea600d90f8343",
+    "mapEvidence": [
+      "https://aqwwiki.wikidot.com/ultra-warden-location"
+    ],
+    "tasks": [
+      {
+        "id": "insignia-warden-insignia",
+        "quest": "Ultra Warden",
+        "npc": "Sir Cole",
+        "map": "/join ultrawarden",
+        "location": "Inn at the Edge of Time",
+        "requirements": [
+          "Must have completed the 'The Engineer' quest.",
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'The Engineer' quest.",
+          "Must have completed the previous quest."
+        ],
+        "reward": "Warden Insignia ×1",
+        "rewardQuantity": 1,
+        "repeatability": "daily",
+        "source": "https://aqwwiki.wikidot.com/sir-cole-s-quests",
+        "bossId": "ultra-warden",
+        "bossName": "Ultra Warden",
+        "rows": [
+          {
+            "name": "Ultra Warden Defeated",
+            "quantity": 1,
+            "monster": "Ultra Warden (Monster)",
+            "map": "/join ultrawarden",
+            "source": "https://aqwwiki.wikidot.com/sir-cole-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "engineer-insignia": {
+    "name": "Engineer Insignia",
+    "method": "Ultra Quest",
+    "bossId": "ultra-engineer",
+    "bossName": "Ultra Engineer",
+    "bossHref": "/ultra-boss/ultra-engineer",
+    "sourcePage": "https://aqwwiki.wikidot.com/sir-cole-s-quests",
+    "sourceHash": "44aa588b1488eafc6daaacdc69b679f58e303009f460b291bd9ea600d90f8343",
+    "mapEvidence": [],
+    "tasks": [
+      {
+        "id": "insignia-engineer-insignia",
+        "quest": "Ultra Engineer",
+        "npc": "Sir Cole",
+        "map": "/join ultraengineer",
+        "location": "Inn at the Edge of Time",
+        "requirements": [
+          "Must have completed the 'The Engineer' quest.",
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'The Engineer' quest.",
+          "Must have completed the previous quest."
+        ],
+        "reward": "Engineer Insignia ×1",
+        "rewardQuantity": 1,
+        "repeatability": "daily",
+        "source": "https://aqwwiki.wikidot.com/sir-cole-s-quests",
+        "bossId": "ultra-engineer",
+        "bossName": "Ultra Engineer",
+        "rows": [
+          {
+            "name": "Ultra Engineer Defeated",
+            "quantity": 1,
+            "monster": "Ultra Engineer (Monster)\nYoshino's Engineer",
+            "map": "/join ultraengineer",
+            "source": "https://aqwwiki.wikidot.com/sir-cole-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "blood-gem-of-the-archfiend": {
+    "name": "Blood Gem of the Archfiend",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Kiss the Void",
+        "npc": "Nulgath (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Contract With the Abyss' quest.",
+          "Must have Tendurrr The Assistant in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Contract With the Abyss' quest.",
+          "Must have Tendurrr The Assistant in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+        "reward": "Blood Gem of the Archfiend ×1",
+        "rows": [
+          {
+            "name": "Fragment of Chaos",
+            "quantity": 80,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Broken Betrayal Blade",
+            "quantity": 8,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "dark-crystal-shard": {
+    "name": "Dark Crystal Shard",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Essence of Defeat Reagent",
+        "npc": "Nulgath (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+        "reward": "Dark Crystal Shard ×2",
+        "rows": [
+          {
+            "name": "Defeated Makai",
+            "quantity": 50,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Escherion's Chain",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "O-dokuro's Tooth",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Strand of Vath's Hair",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Aracara's Fang",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Hydra Scale",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Tibicenas' Chain",
+            "quantity": 1,
+            "monster": "Tibicenas (Monster) (Level 40)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "tainted-gem": {
+    "name": "Tainted Gem",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Bone Dust Reagent",
+        "npc": "Nulgath (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+        "reward": "Tainted Gem ×1",
+        "rows": [
+          {
+            "name": "Bone Dust",
+            "quantity": 25,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Cube Reagent",
+        "npc": "Nulgath (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+        "reward": "Tainted Gem ×1",
+        "rows": [
+          {
+            "name": "Cubes",
+            "quantity": 25,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Ice Cubes",
+            "quantity": 1,
+            "monster": "Snow Golem (Monster) (2)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "totem-of-nulgath": {
+    "name": "Totem of Nulgath",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Totem of Nulgath",
+        "npc": "Nulgath (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+        "reward": "Totem of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Taro's Manslayer",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Essence of Nulgath",
+            "quantity": 25,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "fire-avatar-s-favor": {
+    "name": "Fire Avatar's Favor",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Avatar's Rage",
+        "npc": "Galanoth (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Avatar of Fire' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Avatar of Fire' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/galanoth-s-quests",
+        "sourceHash": "93daf21559393d70ad1eb736eafdb8eb323bb4c9b05843cc65965e699bdf2a81",
+        "reward": "Fire Avatar's Favor ×1",
+        "rows": [
+          {
+            "name": "Onslaught Defeated",
+            "quantity": 6,
+            "monster": "Shadefire Cavalry (Level 65)\nShadefire Colonel (Level 65) (Version 2)\nShadefire Major (Level 65)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/galanoth-s-quests"
+          },
+          {
+            "name": "Elemental Defeated",
+            "quantity": 6,
+            "monster": "Living Shadowflame (Level 65)\nShadefire Elemental (Level 65)\nShadow Lava",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/galanoth-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "crystal-phoenix-blade-of-nulgath": {
+    "name": "Crystal Phoenix Blade of Nulgath",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Juggernaut Items of Nulgath",
+        "npc": "Nulgath (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Contract With the Abyss' quest.",
+          "Must be Level 30",
+          "Must have Unidentified 13: \"The Contract of Nulgath\" in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Contract With the Abyss' quest.",
+          "Must be Level 30",
+          "Must have Unidentified 13: \"The Contract of Nulgath\" in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+        "reward": "Crystal Phoenix Blade of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Tainted Gem",
+            "quantity": 50,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Dark Crystal Shard",
+            "quantity": 50,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Diamond of Nulgath",
+            "quantity": 13,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Voucher of Nulgath (non-mem)",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Totem of Nulgath",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Gem of Nulgath",
+            "quantity": 20,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Undead Bruiser Rune",
+            "quantity": 1,
+            "monster": "Undead Bruiser (Level 35)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "enchanted-scale": {
+    "name": "Enchanted Scale",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "DragonSlayer General Class",
+        "npc": "Galanoth (NPC)",
+        "map": null,
+        "requirements": [
+          "Rank 10 Dragonslayer (Class)."
+        ],
+        "preconditions": [
+          "Rank 10 Dragonslayer (Class)."
+        ],
+        "source": "https://aqwwiki.wikidot.com/galanoth-s-quests",
+        "sourceHash": "93daf21559393d70ad1eb736eafdb8eb323bb4c9b05843cc65965e699bdf2a81",
+        "reward": "Enchanted Scale ×1",
+        "rows": [
+          {
+            "name": "Dracolich Slain",
+            "quantity": 12,
+            "monster": "Blood Dracolich\nChaos Dracolich (Level 30)\nChaos Fluffy\nDeluge Dracolich (Level 20)\nDeluge Dracolich (Level 40)\nGranite Dracolich (Level 20)\nGranite Dracolich (Level 40)\nInferno Dracolich (Level 20)\nInferno Dracolich (Level 40)\nTempest Dracolich (Level 20)\nTempest Dracolich (Level 40)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/galanoth-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "dragonblade-of-nulgath": {
+    "name": "DragonBlade of Nulgath",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Demanding Items of Nulgath",
+        "npc": "Nulgath (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Contract With the Abyss' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+        "reward": "DragonBlade of Nulgath ×1",
+        "rows": [
+          {
+            "name": "DragonFire of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Crimson Plate of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Crimson Face Plate of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Totem of Nulgath",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Behemoth Blade of Light",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Behemoth Blade of Shadow",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Legion Fenrir Rune",
+            "quantity": 1,
+            "monster": "Legion Fenrir (Level 29)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Dragonblade of Nulgath",
+        "npc": "Nulgath (NPC)",
+        "map": "/join tercessuinotlim",
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+        "reward": "DragonBlade of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Totem of Nulgath",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Crimson Plate of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Crimson Face Plate of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "DragonFire of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Behemoth Blade of Light",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          },
+          {
+            "name": "Behemoth Blade of Shadow",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "teeth": {
+    "name": "Teeth",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Sweet Dreams Are Made of Teeth",
+        "npc": "Re (NPC)",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/re-s-quests",
+        "sourceHash": "3ba55c83e72a2bfab1de2fab6c07c2c6616a02a0b36950fb8fafe95509d9aa67",
+        "reward": "Teeth ×1",
+        "rows": [
+          {
+            "name": "Tooth",
+            "quantity": 28,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/re-s-quests"
+          },
+          {
+            "name": "Wisdom Tooth",
+            "quantity": 4,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/re-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "la-s-gratitude": {
+    "name": "La's Gratitude",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Let Sleeping Dogs Lie",
+        "npc": "La (NPC)",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/la-s-quests",
+        "sourceHash": "edc72b6a937b4f8f231c5061cbed47f97e746efe4d13ec7772efb757e5fb7b78",
+        "reward": "La's Gratitude ×1",
+        "rows": [
+          {
+            "name": "Broken Dog Tag",
+            "quantity": 20,
+            "monster": "Creature 27 (Version 1)\nCreature 28 (Version 1)\nThe Moon",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/la-s-quests"
+          },
+          {
+            "name": "Intact Dog Tag",
+            "quantity": 5,
+            "monster": "Creature 27 (Version 1)\nCreature 28 (Version 1)\nThe Moon",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/la-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "ice-shard-2": {
+    "name": "Ice Shard (2)",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Enchanted Ice Shards",
+        "npc": "Galanoth (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Akriloth' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Akriloth' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/galanoth-s-quests",
+        "sourceHash": "93daf21559393d70ad1eb736eafdb8eb323bb4c9b05843cc65965e699bdf2a81",
+        "reward": "Ice Shard (2) ×1",
+        "rows": [
+          {
+            "name": "Ice Crystal",
+            "quantity": 1,
+            "monster": "Izotz",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/galanoth-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "empowered-caladbolg": {
+    "name": "Empowered Caladbolg",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Empowered Caladbolg",
+        "npc": "Calamitus",
+        "map": "/join ultradage",
+        "requirements": [
+          "Must have completed the 'Power of the Undead Legion' quest to access these quests.",
+          "Must be Level 95.",
+          "Must have the following items in your inventory: Caladbolg Dual Caladbolgs"
+        ],
+        "preconditions": [
+          "Must have completed the 'Power of the Undead Legion' quest to access these quests.",
+          "Must be Level 95.",
+          "Must have the following items in your inventory: Caladbolg Dual Caladbolgs"
+        ],
+        "source": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "sourceHash": "5cc66bb99d53978e29495ce7e3eafcee637461a21d3b502a2cbc0f300361f27c",
+        "reward": "Empowered Caladbolg ×1",
+        "rows": [
+          {
+            "name": "Legion Token",
+            "quantity": 25000,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/calamitus-quests"
+          },
+          {
+            "name": "Dage the Evil Insignia",
+            "quantity": 35,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/calamitus-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "empowered-dual-caladbolgs": {
+    "name": "Empowered Dual Caladbolgs",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Empowered Caladbolg",
+        "npc": "Calamitus",
+        "map": "/join ultradage",
+        "requirements": [
+          "Must have completed the 'Power of the Undead Legion' quest to access these quests.",
+          "Must be Level 95.",
+          "Must have the following items in your inventory: Caladbolg Dual Caladbolgs"
+        ],
+        "preconditions": [
+          "Must have completed the 'Power of the Undead Legion' quest to access these quests.",
+          "Must be Level 95.",
+          "Must have the following items in your inventory: Caladbolg Dual Caladbolgs"
+        ],
+        "source": "https://aqwwiki.wikidot.com/calamitus-quests",
+        "sourceHash": "5cc66bb99d53978e29495ce7e3eafcee637461a21d3b502a2cbc0f300361f27c",
+        "reward": "Empowered Dual Caladbolgs ×1",
+        "rows": [
+          {
+            "name": "Legion Token",
+            "quantity": 25000,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/calamitus-quests"
+          },
+          {
+            "name": "Dage the Evil Insignia",
+            "quantity": 35,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/calamitus-quests"
+          }
+        ]
+      }
+    ]
+  }
+}

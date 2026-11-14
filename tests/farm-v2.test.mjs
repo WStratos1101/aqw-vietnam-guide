@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { farmWikiFacts } from "../scripts/lib/farm-wiki-facts.mjs";
 import {
   routesFor,
@@ -60,6 +61,45 @@ test("active V2 catalog has unique canonical equipment, valid routes/sources/mat
     "Weapons",
   );
 });
+test("Hollowborn Oblivion Blade keeps the Wiki recipe and separates Quest reward routes", () => {
+  const item = catalog.items.find((entry) => entry.id === "hollowborn-oblivion-blade");
+  assert.ok(item);
+  assert.equal(item.category, "Weapons");
+  assert.equal(item.subtype, "Sword");
+  assert.equal(item.primaryGroupId, "hollowborn");
+  const merge = item.acquisitionRoutes.find((route) => route.materialTree);
+  assert.ok(merge);
+  assert.equal(merge.materialTree.requirements[0].itemId, "dual-hollowborn-oblivion-blade");
+  assert.equal(merge.materialTree.requirements[0].quantity, 1);
+  assert.equal(merge.location, "Yulgar's Dual Wield Drop Off - Nostalgia Quest");
+  assert.equal(merge.mapCommand, null);
+  const quests = item.acquisitionRoutes.find((route) => route.id === "guide-verified-quest-rewards");
+  assert.ok(quests);
+  assert.equal(quests.method, "Quest");
+  assert.deepEqual(quests.questAlternatives.map((entry) => entry.quest), [
+    "Summoning and Stuff",
+    "Trading and Stuff (Dual)",
+    "Trading and Stuff (Single)",
+  ]);
+  assert.equal(quests.npc, "Lae");
+  assert.equal(quests.mapCommand, "/join tercessuinotlim");
+  assert.deepEqual(quests.sourceEvidence, {
+    source: "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+    startLine: 7685,
+    endLine: 7735,
+    wikiSource: "https://aqwwiki.wikidot.com/hollowborn-oblivion-blade",
+    wikiPageHash: "1df2c66e58c4a889807e83638ef9e6c5524231d528b6ea705f24635b9c771d7d",
+  });
+});
+test("a single mapped shop does not lend its map to a different receiving location", () => {
+  const item = catalog.items.find((entry) => entry.id === "crag-bamboozle");
+  const shop = item.acquisitionRoutes.find((route) => route.method === "Shop");
+  assert.ok(shop);
+  assert.equal(shop.purchase.amount, 5000);
+  assert.match(shop.location, /Enchanted Nulgath Nation House/);
+  assert.match(shop.location, /Tercessuinotlim/);
+  assert.equal(shop.mapCommand, null);
+});
 test("curated identities, recipes, unknown routes, classes and approved art survive V2 adapter", () => {
   const legacy = read("src/content/farm/catalog.json");
   for (const old of legacy.items) {
@@ -68,6 +108,13 @@ test("curated identities, recipes, unknown routes, classes and approved art surv
     assert.equal(item.name, old.officialName);
     if (old.image) assert.equal(item.image, old.image.path);
     else if (item.image) {
+      if (item.imageEvidence.review) {
+        const approval = read("content-sources/farm/review/image-approvals.json").find(a => a.itemId === item.id);
+        assert.ok(approval, item.id);
+        assert.equal(approval.sourcePage, item.wikiUrl);
+        assert.equal(approval.fileHash, createHash("sha256").update(fs.readFileSync("public" + item.image)).digest("hex"));
+        assert.equal(item.imageEvidence.originalImageUrl, approval.originalImageUrl);
+      } else {
       assert.equal(item.category, "Classes");
       const portraits = read("src/content/classes/portrait-registry.json");
       const asset = portraits.find(a => a.id === item.imageEvidence.assetId);
@@ -77,6 +124,7 @@ test("curated identities, recipes, unknown routes, classes and approved art surv
       assert.equal(asset.verificationStatus, "verified");
       assert.equal(asset.usageStatus, "approved_noncommercial");
       assert.ok(asset.policyUrl);
+      }
     } else assert.equal(item.image, null);
     assert.equal(item.acquisitionRoutes.length, old.acquisition.length);
     for (const r of old.acquisition)

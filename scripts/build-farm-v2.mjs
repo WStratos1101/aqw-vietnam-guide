@@ -9,6 +9,9 @@ import { farmClassMedia, farmClassRoles } from "./lib/farm-class-media.mjs";
 import { enrichFarmGeography } from "./lib/farm-geography.mjs";
 import { addAcquisitionGuides } from "./lib/farm-acquisition-instructions.mjs";
 import { farmWikiDetails } from "./lib/farm-wiki-details.mjs";
+import { verifiedFarmAsset, farmAssetEvidence } from "./lib/farm-image-evidence.mjs";
+import { enrichFarmReview, loadFarmReviewPages } from "./lib/farm-review-enrichment.mjs";
+import { applyFarmRouteCorrections } from "./lib/farm-route-corrections.mjs";
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const write = (p, d) => fs.writeFileSync(p, JSON.stringify(d, null, 2) + "\n");
 const legacy = read("src/content/farm/catalog.json");
@@ -31,6 +34,7 @@ const acquisitionOverrides = read(
   "content-sources/farm/import/acquisition-brief-overrides.json",
 );
 const guideOverrides = read("content-sources/farm/import/guide-overrides.json");
+const routeCorrections = read("content-sources/farm/import/acquisition-route-corrections.json");
 const classPortraits = read("src/content/classes/portrait-registry.json");
 const input = "content-sources/farm/import/wiki-records.json";
 if (!fs.existsSync(input))
@@ -334,19 +338,7 @@ for (const item of items) {
   );
   item.subtype = matched.length === 1 ? subtypes[matched[0]] : null;
   if (!item.image) {
-    const asset = assets.find(
-      (a) =>
-        a.entityType === "item" &&
-        a.entityName === item.originalName &&
-        a.verificationStatus === "verified" &&
-        a.usageStatus === "approved" &&
-        a.sourcePage &&
-        canonical(a.sourcePage) === canonical(item.wikiUrl) &&
-        a.imagePath?.startsWith("/images/") &&
-        !a.imagePath.includes("..") &&
-        a.fileHash &&
-        fs.existsSync("public" + a.imagePath),
-    );
+    const asset = verifiedFarmAsset(item, assets);
     if (asset) {
       const hash = createHash("sha256")
         .update(fs.readFileSync("public" + asset.imagePath))
@@ -354,14 +346,7 @@ for (const item of items) {
       if (hash !== asset.fileHash)
         throw Error("Farm image hash mismatch: " + item.id);
       item.image = item.previewImage = asset.imagePath;
-      item.imageEvidence = {
-        path: asset.imagePath,
-        source: asset.sourcePage,
-        assetId: asset.assetId,
-        credit: asset.authorOrCredit,
-        verificationStatus: "verified",
-        usageStatus: "approved",
-      };
+      item.imageEvidence = farmAssetEvidence(asset);
     }
   }
   if (item.image && item.unknownFields)
@@ -520,6 +505,21 @@ assignFarmGroups(
   legacyFactionGroups,
   empoweredUltraFactionEvidence,
 );
+const reviewRoot = "content-sources/farm/review";
+const optionalReview = name => fs.existsSync(`${reviewRoot}/${name}.json`) ? read(`${reviewRoot}/${name}.json`) : [];
+const ultraRecovery = read("src/content/ultra/recovery.json");
+const farmWikiPages = loadFarmReviewPages();
+const review = enrichFarmReview(items, farmWikiPages,
+  [...read("src/content/ultra/bosses.json"), ...ultraRecovery.bosses],
+  optionalReview("image-approvals"), optionalReview("image-candidates"));
+review.routeCorrections = applyFarmRouteCorrections(
+  items,
+  routeCorrections,
+  farmWikiPages,
+  fs.readFileSync("content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt", "utf8"),
+);
+write("src/content/farm/material-sources.generated.json", review.materialSources);
+write(`${reviewRoot}/enrichment-audit.json`, { changes: review.changes, conflicts: review.conflicts, excluded: review.excluded, routeCorrections: review.routeCorrections });
 const usedRegions = new Set(items.flatMap((i) => i.regions));
 const catalog = {
   schemaVersion: 2,

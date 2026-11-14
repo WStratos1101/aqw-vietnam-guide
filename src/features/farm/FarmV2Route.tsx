@@ -360,8 +360,30 @@ function Detail({
               <p>
                 {routes.length === 1 && item.acquisitionBrief?.text
                   ? item.acquisitionBrief.text
-                  : route.description}
+                  : route.description ||
+                    (route.purchase
+                      ? `Giá mua: ${route.purchase.amount.toLocaleString("en-US")} ${route.purchase.currency}`
+                      : route.questReward
+                        ? `Hoàn thành Quest: ${route.questReward} để nhận ${item.name}.`
+                        : "")}
               </p>
+              {!!route.questAlternatives?.length && (
+                <>
+                  <h4>Quest nhận vật phẩm</h4>
+                  <ul>
+                    {route.questAlternatives.map((option, index) => (
+                      <li key={`${option.quest}-${index}`}>
+                        {option.sources[0] ? (
+                          <a href={option.sources[0]} target="_blank" rel="noreferrer">
+                            {option.quest}
+                          </a>
+                        ) : option.quest}
+                        {option.npc ? ` · ${option.npc}` : ""}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
               {!!item.prerequisites?.length && (
                 <>
                   <h3>Điều kiện chung theo nguồn</h3>

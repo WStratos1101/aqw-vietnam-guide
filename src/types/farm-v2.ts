@@ -64,6 +64,9 @@ export type FarmTask = {
   map?: string | null;
   npc?: string | null;
   repeatability?: string;
+  bossId?: string;
+  bossName?: string;
+  rewardQuantity?: number;
   rows: {
     name: string;
     quantity: number | null;
@@ -74,8 +77,27 @@ export type FarmTask = {
   }[];
   destination?: { npc: string; map: string; shop: string; item: string };
 };
+export type FarmInsigniaSource = {
+  materialId: string;
+  name: string;
+  quantity: number;
+  scope: string;
+  status: string;
+  quest?: string;
+  npc?: string | null;
+  map?: string | null;
+  bossId?: string;
+  bossName?: string;
+  sourcePage?: string;
+  rewardQuantity?: number;
+  repeatability?: string;
+};
 export type FarmV2RouteData = {
   farmTasks?: FarmTask[];
+  insigniaSources?: FarmInsigniaSource[];
+  npc?: string | null;
+  dropSource?: string;
+  questAlternatives?: { quest: string; npc: string | null; sources: string[] }[];
   id: string;
   regionId: string | null;
   method: string;
@@ -105,6 +127,8 @@ export type FarmV2Item = {
     verificationStatus: string;
     usageStatus: string;
     policyUrl?: string;
+    originalImageUrl?: string | null;
+    fileHash?: string;
   } | null;
   wikiUrl: string;
   level: number | null;
