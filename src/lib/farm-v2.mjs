@@ -55,21 +55,30 @@ export function validateFarmV2(catalog) {
       if (
         !Array.isArray(i.groupIds) ||
         i.groupIds.length > 1 ||
-        new Set(i.groupIds).size !== i.groupIds.length
+        new Set(i.groupIds).size !== i.groupIds.length ||
+        (i.primaryGroupId ?? null) !== (i.groupIds[0] ?? null)
       )
         errors.push("Invalid group memberships " + i.id);
       for (const group of i.groupIds || [])
         if (
           !groupIds.has(group) ||
           !i.groupEvidence?.some(
-            (e) =>
-              e.groupId === group &&
-              url(e.sourceUrl) &&
-              e.heading &&
-              e.lines?.length,
+            (e) => e.groupId === group && e.status === "verified",
           )
         )
           errors.push("Missing group provenance " + i.id + ":" + group);
+      if (
+        i.primaryGroupId &&
+        !i.groupEvidence?.some(
+          (e) =>
+            e.groupId === i.primaryGroupId &&
+            e.sourceDocument === "manual-faction-guide" &&
+            e.sourceFile &&
+            Number.isInteger(e.sourceLine) &&
+            e.sourceLine > 0,
+        )
+      )
+        errors.push("Missing manual guide faction evidence " + i.id);
     }
     if (wiki.has(i.wikiUrl))
       errors.push("Duplicate canonical URL " + i.wikiUrl);

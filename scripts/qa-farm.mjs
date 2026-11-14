@@ -50,8 +50,11 @@ await runQa(
       };
       const navigate = async (path, selector) => {
         const response = await page.goto(base + path);
+        // WebKit can return a valid conditional-cache response when the same
+        // Vite shell is revisited; the rendered-main assertion below still
+        // verifies the browser received and rendered the cached document.
         assert.ok(
-          response?.ok(),
+          response?.ok() || response?.status() === 304,
           `${path}: HTTP ${response?.status() ?? "no response"}`,
         );
         assert.equal(

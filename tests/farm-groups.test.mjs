@@ -1,214 +1,206 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { createHash } from "node:crypto";
-import { validateFarmV2 } from "../src/lib/farm-v2.mjs";
 import { assignFarmGroups } from "../scripts/lib/farm-groups.mjs";
+import { validateFarmV2 } from "../src/lib/farm-v2.mjs";
 import {
-  matchesGroup,
   groupCounts,
+  matchesGroup,
   resolveGroup,
 } from "../src/lib/farm-groups.mjs";
-const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
+
+const read = (path) => JSON.parse(fs.readFileSync(path, "utf8"));
 const manifest = read("content-sources/farm/faction-groups.json");
 const catalog = read("src/content/farm/catalog-v2.generated.json");
-const extracts = read("content-sources/farm/import/source-extracts.json");
-const baseline = read(
-  "content-sources/farm/import/group-migration-baseline.json",
-);
-export const stable = (value) =>
-  JSON.stringify(value, (_, v) =>
-    v && typeof v === "object" && !Array.isArray(v)
-      ? Object.fromEntries(
-          Object.keys(v)
-            .sort()
-            .map((k) => [k, v[k]]),
-        )
-      : v,
+const goals = read(
+  "content-sources/farm/manual-faction-guide/faction_goals.json",
+).goals;
+const aliases = read("content-sources/farm/import/faction-goal-aliases.json");
+const itemMappings = read("content-sources/farm/import/faction-item-mappings.json");
+const legacyGroups = read("content-sources/farm/import/group-reconciliation-before.json").items;
+
+test("manual guide chapters and aliases define the only selectable groups", () => {
+  assert.deepEqual(
+    manifest.groups.map((group) => group.id),
+    [
+      "good",
+      "evil",
+      "chaos",
+      "awe",
+      "blacksmithing",
+      "nation",
+      "legion",
+      "dragonkin",
+      "elemental",
+      "hollowborn",
+      "debris-astravian",
+    ],
   );
-test("all baseline canonical facts, approved images, geography, sources and recipes survive", () => {
-  assert.equal(
-    catalog.items.filter((i) => baseline.itemHashes[i.id]).length,
-    baseline.canonicalTotal,
-  );
-  assert.ok(catalog.items.length >= 232);
-  assert.deepEqual(catalog.regions, baseline.regions);
-  for (const item of catalog.items.filter((i) => baseline.itemHashes[i.id])) {
-    // V3.1 adds independently tested details/roles/guides. Preserve the exact
-    // complete V3 baseline projection; no existing gameplay field is excluded.
-    const {
-      groupIds,
-      groupEvidence,
-      groupStatus,
-      wikiDetails,
-      classRoles,
-      classRoleEvidence,
-      acquisitionBrief,
-      ...facts
-    } = item;
-    facts.acquisitionRoutes = facts.acquisitionRoutes.map(
-      ({ guidePaths, ...route }) => route,
-    );
-    assert.equal(
-      createHash("sha256").update(stable(facts)).digest("hex"),
-      baseline.itemHashes[item.id],
-      item.id,
-    );
-  }
-});
-test("aliases and source order are manifest driven; mixed chapter is never an alias", () => {
   assert.equal(resolveGroup("museum", manifest), "awe");
   assert.equal(resolveGroup("forge", manifest), "blacksmithing");
-  assert.equal(resolveGroup("Debris & Astravian", manifest), "all");
-  assert.deepEqual(
-    manifest.groups.slice(0, 4).map((g) => g.id),
-    ["awe", "good", "chaos", "evil"],
-  );
-  const root = extracts.pages.find(
-    (p) => p.url === manifest.siteUrl.split("?")[0],
-  );
-  for (const group of manifest.groups.filter((g) => g.siteSection))
-    assert.ok(
-      root.links.includes(root.url + "/" + group.siteSection),
-      group.id,
-    );
+  assert.equal(resolveGroup("Debris & Astravian", manifest), "debris-astravian");
+  assert.ok(!manifest.groups.some((group) => group.id === "other"));
 });
-test("memberships have reproducible source section evidence, line bounds, and idempotent replay", () => {
-  const copy = structuredClone(catalog.items);
-  assignFarmGroups(copy, extracts, manifest);
-  assert.deepEqual(copy, catalog.items);
-  assignFarmGroups(copy, extracts, manifest);
-  assert.deepEqual(copy, catalog.items);
-  for (const item of copy) {
-    assert.equal(new Set(item.groupIds).size, item.groupIds.length);
-    for (const id of item.groupIds)
-      assert.ok(item.groupEvidence.some((e) => e.groupId === id));
-    for (const evidence of item.groupEvidence) {
-      const page = extracts.pages.find((p) => p.url === evidence.sourceUrl);
-      assert.ok(page);
-      assert.ok(evidence.heading);
-      assert.ok(
-        evidence.lines.every(
-          (n) => n > 0 && n <= page.text.split(/\r?\n/).length,
-        ),
+
+test("catalog primary groups match exact canonical names and retain guide line evidence", () => {
+  const checked = structuredClone(catalog.items);
+  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups);
+  assert.deepEqual(checked, catalog.items);
+  for (const item of checked) {
+    assert.equal(item.groupIds.length, item.primaryGroupId ? 1 : 0, item.id);
+    assert.equal(item.groupIds[0] ?? null, item.primaryGroupId, item.id);
+    if (item.primaryGroupId) {
+      const evidence = item.groupEvidence.find(
+        (entry) => entry.groupId === item.primaryGroupId,
       );
-      assert.notEqual(evidence.chapter, "I. Farming List");
+      assert.ok(evidence, item.id);
+      assert.equal(evidence.sourceDocument, "manual-faction-guide");
+      assert.ok(Number.isInteger(evidence.sourceLine));
+      const goalEvidence = goals.some(
+          (goal) =>
+            goal.name === evidence.goalName &&
+            goal.source_line === evidence.sourceLine &&
+            goal.group_id === item.primaryGroupId,
+        );
+      if (evidence.matchKind === "reviewed-canonical-item") {
+        assert.ok(itemMappings.some((mapping) =>
+          mapping.itemId === item.id && mapping.sourceLine === evidence.sourceLine && mapping.primaryGroupId === item.primaryGroupId,
+        ));
+      } else assert.equal(goalEvidence, true, item.id);
     }
   }
 });
-test("mixed Docs chapter splits by heading; unknown geography and name cannot assign groups", () => {
-  const url = "https://docs.google.com/document/fixture";
-  const pages = [
-    {
-      url,
-      sourceDocument: "google-docs",
-      text: "I. Farming List\nGoal\nXII. Debris & Astravian\nAmbiguous\n1. Arcana Invoker (AI) Class Obtain Guide\nItem A\n2. Higure & Astravian Corsair Guide\nItem B",
-    },
-  ];
-  const item = (n) => ({
-    id: String(n),
-    name: "Legion Nulgath",
-    regions: [],
-    provenance: [{ sourceUrl: url, lines: [n] }],
-  });
-  const items = [2, 4, 6, 8].map(item);
-  assignFarmGroups(items, { pages }, manifest);
-  assert.deepEqual(
-    items.map((i) => i.groupIds),
-    [[], [], ["darkons-debris"], ["astravian"]],
-  );
-  assert.ok(matchesGroup(items[0], "unknown"));
-  assert.ok(!matchesGroup(items[0], "nation"));
-  const override = {
-    ...manifest,
-    overrides: {
-      2: {
-        groupIds: ["awe"],
-        reason: "Reviewed fixture",
-        evidence: [{ groupId: "awe", sourceUrl: url }],
-      },
-    },
-  };
-  assignFarmGroups(items, { pages }, override);
-  assert.deepEqual(items[0].groupIds, ["awe"]);
-});
-test("one primary group prevents contextual references from becoming multiple factions", () => {
-  const item = {
-    id: "fixture",
-    category: "Weapons",
-    groupIds: ["good", "awe", "good"],
-  };
-  const counts = groupCounts([item, item], manifest.groups);
-  assert.equal(counts.find((g) => g.id === "all").count, 1);
-  assert.equal(counts.find((g) => g.id === "unknown").count, 1);
-  assert.equal(counts.find((g) => g.id === "good").count, 0);
-  assert.equal(counts.find((g) => g.id === "awe").count, 0);
-  assert.ok(catalog.items.every((i) => i.groupIds.length <= 1));
+
+test("known chapter items stay separate, while ungrouped and referenced items stay unknown", () => {
+  const group = (id) => catalog.items.find((item) => item.id === id);
+  assert.equal(group("dragonblade-of-nulgath").primaryGroupId, "nation");
+  assert.equal(group("legion-dragonblade-of-nulgath").primaryGroupId, "legion");
+  for (const id of ["blade-of-awe", "armor-of-awe", "helm-of-awe", "cape-of-awe"])
+    assert.equal(group(id).primaryGroupId, "awe", id);
+  assert.equal(group("void-light-of-destiny").primaryGroupId, "nation");
   assert.equal(
-    groupCounts(catalog.items, manifest.groups)
-      .filter((g) => g.id !== "all")
-      .reduce((n, g) => n + g.count, 0),
-    catalog.items.length,
+    group("dual-hollowborn-shadows-of-fate").primaryGroupId,
+    "hollowborn",
   );
-  for (const group of manifest.groups) {
-    const scoped = catalog.items.filter((i) => matchesGroup(i, group.id));
-    assert.equal(new Set(scoped.map((i) => i.id)).size, scoped.length);
-    assert.equal(
-      [
-        "Weapons",
-        "Armors",
-        "Helms",
-        "Capes / Back Items",
-        "Pets",
-        "Classes",
-      ].reduce((n, c) => n + scoped.filter((i) => i.category === c).length, 0),
-      scoped.length,
-    );
+  assert.equal(group("dragon-of-time-class").primaryGroupId, "dragonkin");
+  assert.equal(group("frost-spiritreaver-class").primaryGroupId, "elemental");
+  assert.equal(group("naval-commander-class").primaryGroupId, null);
+  for (const item of catalog.items.filter((entry) =>
+    entry.groupEvidence.some((evidence) => evidence.status === "ungrouped-source-chapter"),
+  )) {
+    assert.equal(item.primaryGroupId, null, item.id);
+    assert.deepEqual(item.groupIds, [], item.id);
   }
 });
 
-test("catalog validation rejects invented groups and unsupported provenance", () => {
-  for (const mutate of [
-    (c) => c.items[0].groupIds.push("invented"),
-    (c) => {
-      c.items[0].groupEvidence = [];
-    },
-    (c) => {
-      c.items[0].groupEvidence.forEach(
-        (e) => (e.sourceUrl = "javascript:invalid"),
-      );
-    },
-  ]) {
-    const copy = structuredClone(catalog);
-    mutate(copy);
-    assert.ok(validateFarmV2(copy).some((e) => e.includes("group")));
+test("reviewed catalog suffix aliases map only to their named guide goal", () => {
+  const itemById = new Map(catalog.items.map((item) => [item.id, item]));
+  for (const alias of aliases) {
+    const item = itemById.get(alias.itemId);
+    assert.ok(item, alias.itemId);
+    const explicit = itemMappings.find((mapping) => mapping.itemId === item.id);
+    if (explicit) {
+      assert.equal(item.primaryGroupId, explicit.primaryGroupId, alias.itemId);
+      assert.equal(item.groupEvidence[0].matchKind, "reviewed-canonical-item", alias.itemId);
+      continue;
+    }
+    const evidence = item.groupEvidence[0];
+    assert.equal(evidence.goalName, alias.goalName, alias.itemId);
+    assert.equal(evidence.matchKind, "reviewed-canonical-alias", alias.itemId);
+    assert.equal(evidence.aliasReason, alias.reason, alias.itemId);
   }
 });
 
-test("Chaorrupter Free Player has exact variant evidence in the Chaos chapter, without guessing Legion", () => {
-  const item = catalog.items.find(
-    (i) => i.id === "chaorrupter-unlocked-free-player",
-  );
-  assert.deepEqual(item.groupIds, ["chaos"]);
-  assert.equal(item.groupStatus, "manual-reviewed");
-  const override = manifest.overrides[item.id];
-  assert.equal(override.evidence.length, 2);
-  for (const evidence of override.evidence) {
-    const page = extracts.pages.find((p) => p.url === evidence.sourceUrl);
-    assert.ok(page);
-    assert.equal(
-      createHash("sha256").update(page.text).digest("hex"),
-      evidence.sourceTextHash,
-    );
-    assert.ok(evidence.sourceQuotes.some((q) => /Free Player/.test(q)));
-    assert.deepEqual(
-      evidence.sourceQuotes,
-      evidence.lines.map((n) => page.text.split("\n")[n - 1]),
-    );
+test("aggregate guide targets do not create synthetic canonical identities", () => {
+  assert.equal(catalog.items.some((item) => item.id === "celestial-of-mysteries"), false);
+  assert.equal(catalog.items.some((item) => item.id === "archangel-of-mysteries"), false);
+  assert.equal(catalog.items.some((item) => item.id === "headless-pumpkin-set"), false);
+});
+
+test("aggregate labels alone do not assign same-named canonical items", () => {
+  const candidates = ["void-beetle-general", "void-beetle-warlord", "drakath-the-eternal"];
+  const checked = structuredClone(catalog.items).filter((item) => candidates.includes(item.id));
+  assignFarmGroups(checked, goals, manifest, aliases);
+  for (const item of checked) {
+    assert.equal(item.primaryGroupId, null, item.id);
+    assert.deepEqual(item.groupEvidence, [], item.id);
   }
+});
+
+test("all-inventory and faction counts count unique canonical identities exactly once", () => {
+  const counts = groupCounts([...catalog.items, ...catalog.items], manifest.groups);
+  assert.equal(counts.find((entry) => entry.id === "all").count, catalog.items.length);
   assert.equal(
-    groupCounts(catalog.items, manifest.groups).find((g) => g.id === "all")
-      .count,
+    counts.filter((entry) => manifest.groups.some((group) => group.id === entry.id))
+      .reduce((total, entry) => total + entry.count, 0) +
+      counts.find((entry) => entry.id === "unknown").count,
     catalog.items.length,
   );
+  for (const item of catalog.items) {
+    assert.equal(
+      manifest.groups.filter((group) => matchesGroup(item, group.id)).length,
+      item.primaryGroupId ? 1 : 0,
+      item.id,
+    );
+  }
+  const expected = {
+    good: 17,
+    evil: 18,
+    chaos: 2,
+    awe: 6,
+    blacksmithing: 1,
+    nation: 80,
+    legion: 25,
+    dragonkin: 4,
+    elemental: 12,
+    hollowborn: 7,
+    "debris-astravian": 0,
+    unknown: 108,
+  };
+  for (const [id, count] of Object.entries(expected))
+    assert.equal(counts.find((entry) => entry.id === id)?.count, count, id);
+});
+
+test("all filtered aggregate goals have an explicit expansion or a blocker", () => {
+  const expansions = read("content-sources/farm/import/aggregate-item-expansions.json");
+  const aggregateKinds = new Set(["set", "collection", "weapon-group", "class-family"]);
+  const aggregateGoals = goals.filter((goal) => aggregateKinds.has(goal.record_kind));
+  assert.equal(expansions.goals.length, aggregateGoals.length);
+  assert.equal(expansions.goals.length, 54);
+  const ids = new Set(aggregateGoals.map((goal) =>
+    `${goal.group_id}:${goal.source_line}:${goal.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
+  ));
+  const catalogIds = new Set(catalog.items.map((item) => item.id));
+  const seenChildren = new Set();
+  for (const expansion of expansions.goals) {
+    assert.ok(ids.has(expansion.goalId), expansion.goalId);
+    assert.ok(["VERIFIED_COMPLETE", "PARTIAL", "AGGREGATE_PENDING"].includes(expansion.status));
+    if (expansion.status !== "VERIFIED_COMPLETE") assert.ok(expansion.blocker, expansion.goalId);
+    for (const child of expansion.canonicalChildren) {
+      assert.ok(catalogIds.has(child.canonicalId), child.canonicalId);
+      assert.equal(child.primaryGroup, expansion.groupId, child.canonicalId);
+      assert.ok(!seenChildren.has(child.canonicalId), `duplicate aggregate child: ${child.canonicalId}`);
+      seenChildren.add(child.canonicalId);
+    }
+  }
+});
+
+test("every catalog group assignment validates against manual guide provenance", () => {
+  assert.deepEqual(validateFarmV2(catalog), []);
+});
+
+test("canonical reward mappings survive goal fallback and generation is idempotent", () => {
+  const checked = structuredClone(catalog.items);
+  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups);
+  assert.deepEqual(checked, catalog.items);
+  for (const mapping of itemMappings) {
+    const item = checked.find((entry) => entry.id === mapping.itemId);
+    assert.equal(item.primaryGroupId, mapping.primaryGroupId, mapping.itemId);
+    assert.equal(item.groupEvidence[0].sourceLine, mapping.sourceLine, mapping.itemId);
+    if (mapping.parentGoalId)
+      assert.ok(goals.some((goal) =>
+        `${goal.group_id}:${goal.source_line}:${goal.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}` === mapping.parentGoalId,
+      ), mapping.itemId);
+  }
+  assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 280);
 });

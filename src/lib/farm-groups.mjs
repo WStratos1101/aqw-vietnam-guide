@@ -2,7 +2,16 @@ export const UNKNOWN_GROUP = "unknown";
 export function resolveGroup(value, manifest) {
   if (value === UNKNOWN_GROUP || value === "all") return value;
   return (
-    manifest.groups.find((g) => g.id === value || g.aliases?.includes(value))
+    manifest.groups.find(
+      (g) =>
+        g.id === value ||
+        g.name?.toLocaleLowerCase("en") === String(value).toLocaleLowerCase("en") ||
+        g.guideChapter?.toLocaleLowerCase("en") ===
+          String(value).toLocaleLowerCase("en") ||
+        g.aliases?.some(
+          (alias) => alias.toLocaleLowerCase("en") === String(value).toLocaleLowerCase("en"),
+        ),
+    )
       ?.id || "all"
   );
 }

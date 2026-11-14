@@ -496,7 +496,26 @@ write("content-sources/farm/import/geography-changes.json", geographyChanges);
 const ultraImport = importUltraFarm(items);
 write("content-sources/farm/import/ultra-import-audit.json", ultraImport);
 const groupManifest = read("content-sources/farm/faction-groups.json");
-assignFarmGroups(items, extracts, groupManifest);
+const manualFactionGoals = read(
+  "content-sources/farm/manual-faction-guide/faction_goals.json",
+).goals;
+const factionGoalAliases = read(
+  "content-sources/farm/import/faction-goal-aliases.json",
+);
+const factionItemMappings = read(
+  "content-sources/farm/import/faction-item-mappings.json",
+);
+const legacyFactionGroups = read(
+  "content-sources/farm/import/group-reconciliation-before.json",
+).items;
+assignFarmGroups(
+  items,
+  manualFactionGoals,
+  groupManifest,
+  factionGoalAliases,
+  factionItemMappings,
+  legacyFactionGroups,
+);
 const usedRegions = new Set(items.flatMap((i) => i.regions));
 const catalog = {
   schemaVersion: 2,

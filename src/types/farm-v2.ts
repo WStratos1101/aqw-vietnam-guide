@@ -123,13 +123,24 @@ export type FarmV2Item = {
   prerequisites?: { value: string; source: string }[];
   acquisitionRoutes: FarmV2RouteData[];
   regions: string[];
+  primaryGroupId: string | null;
+  legacyGroupId?: string | null;
   groupIds: string[];
   groupStatus: string;
   groupEvidence: {
-    groupId: string;
-    sourceUrl: string;
-    heading: string;
-    lines: number[];
+    groupId: string | null;
+    sourceDocument: string;
+    sourceFile: string;
+    goalName: string;
+    sourceLine: number;
+    sourceChapter: string;
+    recordKind: string;
+    parentGoalId?: string | null;
+    relatedGoalId?: string | null;
+    relationship?: string | null;
+    evidenceText: string;
+    matchKind?: string;
+    aliasReason?: string | null;
     status: string;
   }[];
   sources: Source[];
