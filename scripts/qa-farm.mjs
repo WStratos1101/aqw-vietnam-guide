@@ -496,13 +496,45 @@ await runQa(
             await screenshot("single-step");
           },
         );
-        await step("Alternative Hero and Khác keep unique filtered identities",async()=>{
-          await navigate("/farm?group=alternative-hero&view=reference",".fv2-root");
-          if(width<=720 && await page.locator(".fv2-back").isVisible())await page.locator(".fv2-back").click();
-          await expect(page.locator(".fv2-item")).toHaveCount(8);
-          await expect(page.getByRole("button",{name:"Lọc phe phái: Alternative Hero",exact:true})).toHaveAttribute("aria-pressed","true");
-          await page.getByRole("button",{name:"Lọc phe phái: Khác",exact:true}).click();
-          await expect(page.locator(".fv2-item")).toHaveCount(73);
+        await step("Alternative Hero and Khác keep unique filtered identities", async () => {
+          const { default: data } = await import(
+            "../src/content/farm/catalog-v2.generated.json",
+            { with: { type: "json" } }
+          );
+          await navigate("/farm?group=alternative-hero&view=reference", ".fv2-root");
+          for (const [id, name] of [["alternative-hero", "Alternative Hero"], ["unknown", "Khác"]]) {
+            const control = page.getByRole("button", {
+              name: `Lọc phe phái: ${name}`,
+              exact: true,
+            });
+            await expect(control).toBeVisible();
+            if (id === "unknown") await control.click();
+            await expect(page).toHaveURL(new RegExp(`group=${id}(?:&|$)`));
+            await expect(control).toHaveAttribute("aria-pressed", "true");
+            // Use canonical membership, independently of the UI's groupIds filter.
+            // Source-backed collection imports can increase these totals.
+            const expected = data.items
+              .filter((item) => id === "unknown" ? !item.primaryGroupId : item.primaryGroupId === id)
+              .sort((a, b) => a.name.localeCompare(b.name, "en"));
+            await expect(control.locator("b")).toHaveText(String(expected.length));
+            await expect(page.locator(".fv2-inventory > .fv2-count")).toHaveText(
+              `${expected.length} trang bị · ${name}`,
+            );
+            await expect(page.locator(".fv2-inventory")).toBeVisible();
+            await expect(page.locator(".fv2-item")).toHaveCount(Math.min(80, expected.length));
+            for (let shown = 80; shown < expected.length; shown += 80) {
+              const more = page.getByRole("button", { name: `Xem thêm (${expected.length - shown})`, exact: true });
+              await expect(more).toBeVisible();
+              await more.click();
+              await expect(page.locator(".fv2-item")).toHaveCount(Math.min(shown + 80, expected.length));
+            }
+            assert.deepEqual(
+              await page.locator(".fv2-item").evaluateAll((items) => items.map((item) => item.getAttribute("data-inventory-item"))),
+              expected.map((item) => item.id),
+              `${name}: exact canonical identities in name order`,
+            );
+            await expect(page.locator(".fv2-more")).toHaveCount(0);
+          }
         });
         await step("keyboard, screenshot, images and overflow", async () => {
           await navigate("/farm?item=legion-revenant-class","[data-item-id=legion-revenant-class]");

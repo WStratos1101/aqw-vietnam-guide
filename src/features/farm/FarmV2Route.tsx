@@ -451,8 +451,9 @@ export function FarmV2Route({ slug }: { slug?: string }) {
   useEffect(() => {
     if (lastSlug.current === slug) return;
     lastSlug.current = slug;
-    setState(initialState(slug));
-    setDetailMobile(Boolean(slug));
+    const next = initialState(slug);
+    setState(next);
+    setDetailMobile(Boolean(next.selected));
     setReturns([]);
   }, [slug]);
   const scoped = useMemo(
