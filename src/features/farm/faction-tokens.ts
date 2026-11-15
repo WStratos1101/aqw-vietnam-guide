@@ -13,6 +13,8 @@ const palettes: Record<string, [string, string]> = {
   hollowborn: ["#bdaceb", "#6b4c9e"],
   crystallis: ["#83daca", "#236f64"],
   "darkons-debris": ["#f09ab4", "#983d5b"],
+  "debris-astravian": ["#f09ab4", "#983d5b"],
+  "alternative-hero": ["#e9b388", "#875127"],
   dragonkin: ["#d4b17e", "#80571f"],
   elemental: ["#8ed4a4", "#326d43"],
   astravian: ["#a6bbf1", "#4c5f9a"],

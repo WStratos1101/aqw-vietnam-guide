@@ -67,11 +67,12 @@ test("Hollowborn Oblivion Blade keeps the Wiki recipe and separates Quest reward
   assert.equal(item.category, "Weapons");
   assert.equal(item.subtype, "Sword");
   assert.equal(item.primaryGroupId, "hollowborn");
-  const merge = item.acquisitionRoutes.find((route) => route.materialTree);
+  assert.ok(item.acquisitionRoutes.every(route=>!route.materialTree));
+  const merge = read("content-sources/farm/review/public-workflow-audit.json").removedRoutes.find(entry=>entry.itemId===item.id).previous;
   assert.ok(merge);
   assert.equal(merge.materialTree.requirements[0].itemId, "dual-hollowborn-oblivion-blade");
   assert.equal(merge.materialTree.requirements[0].quantity, 1);
-  assert.equal(merge.location, "Yulgar's Dual Wield Drop Off - Nostalgia Quest");
+  assert.match(merge.location, /Nostalgia Quest/);
   assert.equal(merge.mapCommand, null);
   const quests = item.acquisitionRoutes.find((route) => route.id === "guide-verified-quest-rewards");
   assert.ok(quests);
@@ -145,8 +146,10 @@ test("curated identities, recipes, unknown routes, classes and approved art surv
       assert.ok(asset.policyUrl);
       }
     } else assert.equal(item.image, null);
-    assert.equal(item.acquisitionRoutes.length, old.acquisition.length);
+    const removed = read("content-sources/farm/review/public-workflow-audit.json").removedRoutes.filter(entry=>entry.itemId===item.id);
+    assert.equal(item.acquisitionRoutes.length, old.acquisition.length-removed.filter(entry=>old.acquisition.some(r=>r.id===entry.previous.id)).length);
     for (const r of old.acquisition) {
+      if(removed.some(entry=>entry.previous.id===r.id)) {assert.match(removed.find(entry=>entry.previous.id===r.id).previous.location,/Nostalgia/);continue;}
       const workflow = read("content-sources/farm/external-guide-evidence/FARM_CANONICAL_QUEST_WORKFLOWS.json").records
         .find(record => record.canonicalId === item.id)?.routes.find(route => route.routeId === r.id && route.materialQuest);
       const reviewedTree = workflow ? { kind: "allOf", requirements: workflow.tasks.find(task => task.quest === workflow.materialQuest).rows
@@ -160,8 +163,8 @@ test("curated identities, recipes, unknown routes, classes and approved art surv
   }
   const blade = catalog.items.find((i) => i.id === "blade-of-awe");
   assert.equal(routesFor(blade, "greenguard-forest").length, 1);
-  assert.equal(routesFor(blade, UNKNOWN_REGION).length, 1);
-  assert.equal(matchesRegion(blade, UNKNOWN_REGION), true);
+  assert.equal(routesFor(blade, UNKNOWN_REGION).length, 0);
+  assert.equal(matchesRegion(blade, UNKNOWN_REGION), false);
 });
 test("multi-Region fixtures count once globally and once per matching Region, without leaking materials", () => {
   const item = {
@@ -200,10 +203,15 @@ test("validator rejects duplicate canonical identities, unknown regions, bad URL
   }
 });
 test("offline generation is idempotent and source coverage counts refer to distinct canonical identities", () => {
-  const path = "src/content/farm/catalog-v2.generated.json";
-  const before = fs.readFileSync(path, "utf8");
+  const paths=["src/content/farm/catalog-v2.generated.json","src/content/farm/quest-workflows.generated.json",
+    "src/content/farm/material-sources.generated.json","src/content/farm/class-workflows.generated.json",
+    "content-sources/farm/review/public-workflow-audit.json",
+    "content-sources/farm/external-guide-evidence/FARM_CANONICAL_QUEST_WORKFLOWS.json",
+    "content-sources/farm/external-guide-evidence/FARM_PENDING_WIKI_REVIEW.csv",
+    "content-sources/farm/external-guide-evidence/FARM_WORKFLOW_AUDIT_SUMMARY.json"];
+  const before=paths.map(path=>fs.readFileSync(path,"utf8"));
   execFileSync(process.execPath, ["scripts/build-farm-v2.mjs"]);
-  assert.equal(fs.readFileSync(path, "utf8"), before);
+  paths.forEach((path,index)=>assert.equal(fs.readFileSync(path,"utf8"),before[index],path));
   const coverage = read("content-sources/farm/import/coverage.json");
   const ids = (k) =>
     catalog.items

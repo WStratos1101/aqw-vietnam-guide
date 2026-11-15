@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import { createHash } from "node:crypto";
 import { Window } from "happy-dom";
-import { parseFarmReviewPage, wikiText } from "./farm-review-parser.mjs";
+import { loadVerifiedFarmPages, wikiText } from "./farm-review-parser.mjs";
 import { materialId } from "../../src/lib/material-requirements.mjs";
 
 const root = "content-sources/farm/external-guide-evidence";
@@ -10,17 +10,14 @@ const hash = bytes => createHash("sha256").update(bytes).digest("hex");
 
 // The allowlist is a reviewed source, not a list of extraction candidates.
 // Every accepted snapshot is pinned; builds run offline and fail on changes.
-export function buildReviewedFarmWorkflows(items, materialSources) {
+export function buildReviewedFarmWorkflows(items, materialSources, cachedPages = []) {
   const review = read("content-sources/farm/quest-workflow-review.json");
   if (hash(fs.readFileSync(review.guideSource)) !== review.guideSourceHash) throw Error("Changed supplied farming guide; recheck line evidence");
   const crosswalk = new Map(read(`${root}/CANONICAL_ITEM_EVIDENCE_CROSSWALK.json`).map(row => [row.canonical_id, row]));
   const guideEvidence = fs.readFileSync(`${root}/FARM_CATALOG_SOURCE_EVIDENCE.jsonl`, "utf8").trim().split(/\r?\n/).map(JSON.parse);
-  const pages = new Map();
-  for (const source of review.sources) {
-    const html = fs.readFileSync(source.sourceFile, "utf8");
-    if (hash(html) !== source.sourceHash) throw Error("Changed workflow evidence: " + source.url);
-    pages.set(source.url, { ...source, html, ...parseFarmReviewPage(html, source.url) });
-  }
+  const pages = new Map(cachedPages.map(page => [page.url, page]));
+  for(const source of review.sources)if(hash(fs.readFileSync(source.sourceFile))!==source.sourceHash)throw Error("Changed workflow evidence: "+source.url);
+  for (const page of loadVerifiedFarmPages(review.sources.filter(source=>pages.get(source.url)?.sourceHash!==source.sourceHash))) pages.set(page.url,page);
   const evidence = page => ({ source: "wiki", url: page.url, sourceFile: page.sourceFile,
     sourceHash: page.sourceHash, verifiedAt: review.verifiedAt });
   const getPage = url => {
@@ -106,7 +103,7 @@ export function buildReviewedFarmWorkflows(items, materialSources) {
     const page = getPage(spec.url);
     const window = new Window({ settings: { disableJavaScriptEvaluation: true, disableCSSFileLoading: true, disableJavaScriptFileLoading: true } });
     try {
-      window.document.write(page.html);
+      window.document.write(fs.readFileSync(page.sourceFile,"utf8"));
       const matches = [...window.document.querySelectorAll("#page-content table tr")].flatMap(tr => {
         const cells = [...tr.children].filter(cell => wikiText(cell));
         if (cells.length < 2) return [];
@@ -209,10 +206,12 @@ export function buildReviewedFarmWorkflows(items, materialSources) {
         lines: crosswalk.get(item.id)?.guide_source_lines || null, status: "candidate-pointers-only" },
       verificationScope: reviewedItem ? "reviewed-fields-only" : "inventory-only; existing evidence retained, not reverified" };
   });
-  return { schemaVersion: 1, verifiedAt: review.verifiedAt, records,
+  const result = { schemaVersion: 1, verifiedAt: review.verifiedAt, records,
     classReferences: reviewed.filter(r => r.target === "class"),
     materialWorkflows: [...review.materials.map(m => m.id), ...dropGuides].map(id => ({ id, ...materialSources[id] })),
     sourceCount: review.sources.length };
+  Object.defineProperty(result, "cachedWikiPages", { value: [...pages.values()], enumerable: false });
+  return result;
 }
 
 export function writeFarmWorkflowReports(workflows) {
@@ -242,6 +241,7 @@ export function writeFarmWorkflowReports(workflows) {
     done: workflows.records.filter(r => r.status === "DONE").length,
     partial: workflows.records.filter(r => r.status === "PARTIAL").length,
     pending: workflows.records.filter(r => r.status === "PENDING").length,
+    blocked: workflows.records.filter(r => r.status === "BLOCKED").length,
     reviewedClassReferences: workflows.classReferences.length,
     materialWorkflows: workflows.materialWorkflows.length,
     reviewedCanonicalWithMethod: reviewed.filter(r => r.routes.every(rt => rt.kind)).length,

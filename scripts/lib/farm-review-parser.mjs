@@ -1,5 +1,13 @@
 import { Window } from "happy-dom";
+import fs from "node:fs";
+import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { item, validateMaterials } from "../../src/lib/material-requirements.mjs";
+
+// Detached documents avoid retaining a Window (and its asynchronous teardown)
+// for every cached Wiki page in a synchronous catalog build.
+const parserWindow = new Window({ settings: { disableJavaScriptEvaluation: true, disableCSSFileLoading: true, disableJavaScriptFileLoading: true } });
+const parser = new parserWindow.DOMParser();
 
 export function wikiText(element) {
   const clone = element.cloneNode(true);
@@ -42,18 +50,16 @@ function rows(list, url) {
 }
 
 function requirements(root) {
-  const node = labelNode(root, "Requirements");
+  const node = labelNode(root, "Requirements") || labelNode(root,"Requirement");
   if (!node) return [];
   const list = listAfter(node);
   if (list) return [...list.children].map(el => el.textContent.replace(/\s+/g, " ").trim());
-  return [field(wikiText(node.parentElement), "Requirements")].filter(Boolean);
+  return [field(wikiText(node.parentElement), "Requirements?")].filter(Boolean);
 }
 
 export function parseFarmReviewPage(html, url) {
-  const window = new Window({ settings: { disableJavaScriptEvaluation: true, disableCSSFileLoading: true, disableJavaScriptFileLoading: true } });
-  try {
-    window.document.write(html);
-    const doc = window.document, body = doc.querySelector("#page-content");
+  {
+    const doc = parser.parseFromString(html, "text/html"), body = doc.querySelector("#page-content");
     if (!body) throw Error("Missing Wiki main body");
     const text = wikiText(body);
     const quests = [];
@@ -62,14 +68,20 @@ export function parseFarmReviewPage(html, url) {
       const panels = [...view.querySelectorAll(":scope > .yui-content > div")];
       const context = [];
       for (let el = view.previousElementSibling; el && el.tagName !== "HR"; el = el.previousElementSibling)
-        if (el.tagName === "P") context.unshift(el);
+        if (["P","UL"].includes(el.tagName)) context.unshift(el);
       const contextText = context.map(wikiText).join("\n");
+      const locationLabel=context.flatMap(root=>[...root.querySelectorAll("strong")]).find(node=>/^Quest Locations?:$/.test(node.textContent.trim()));
+      const locationNames=listAfter(locationLabel)?[...listAfter(locationLabel).querySelectorAll("a[href]")].map(a=>a.textContent.trim()):[];
       for (const [index, panel] of panels.entries()) {
         const required = labelNode(panel, "Items Required");
         if (!required || !labels[index]) continue; // Item artwork tabs are not quests.
         const panelText = wikiText(panel);
         const rewardList = listAfter(labelNode(panel, "Items") || labelNode(panel, "You may also choose one of"));
-        quests.push({ name: labels[index], location: field(contextText, "Quest Locations?"), npc: field(contextText, "Quests Begun From"),
+        quests.push({ name: labels[index], locationNames, location: field(contextText, "Quest Locations?"), npc: field(contextText, "Quests Begun From"),
+          previousQuest: labels[index - 1] || null,
+          ownedItems: [...context, panel].flatMap(root => [root,...root.querySelectorAll("li,p")]
+            .filter(node => ["P","LI"].includes(node.tagName) && /(?:in your inventory|in inventory)/i.test(node.textContent))
+            .flatMap(node => [...node.querySelectorAll("a[href]")].filter(a=>node.textContent.indexOf(a.textContent)>=Math.max(0,node.textContent.search(/Must (?:have|own)/i))).map(a => ({ name: a.textContent.trim(), wikiUrl: new URL(a.getAttribute("href"), url).href })))),
           locationLinks: context.flatMap(el => [...el.querySelectorAll("a[href]")].map(a => ({ name: a.textContent.trim(), url: new URL(a.getAttribute("href"), url).href }))),
           requirements: [...context.flatMap(requirements), ...requirements(panel)],
           repeatability: /once.*per week/i.test(contextText + "\n" + panelText) ? "weekly" : /once.*per day/i.test(contextText + "\n" + panelText) ? "daily" : null,
@@ -90,7 +102,7 @@ export function parseFarmReviewPage(html, url) {
     for (const node of body.querySelectorAll("strong,a[href]")) {
       if (node === locationNode) { inLocation = true; continue; }
       if (!inLocation) continue;
-      if (node.tagName === "STRONG" && /^Price:/.test(node.textContent.trim())) break;
+      if (node.tagName === "STRONG" && /^(?:Price|Note|Notes|Level|HP|Total HP|Attacks|Type|Description|Sellback):/.test(node.textContent.trim())) break;
       if (node.tagName === "A") locationLinks.push({ name: node.textContent.trim(), url: new URL(node.getAttribute("href"), url).href });
     }
     if (locationNode?.parentElement.tagName === "P") {
@@ -125,14 +137,40 @@ export function parseFarmReviewPage(html, url) {
       }) };
       return { status: validateMaterials(tree).length ? "PENDING_STRUCTURE" : "explicit-list", tree: validateMaterials(tree).length ? null : tree };
     });
+    const dropLists=[listAfter(labelNode(body,"Dropped by")),...[...body.querySelectorAll("li > ul")].filter(list=>{
+      const label=list.parentElement.cloneNode(true);label.querySelectorAll("ul,ol").forEach(el=>el.remove());
+      return /^Dropped by:$/i.test(label.textContent.trim());
+    })];
+    const droppedBy=dropLists.flatMap(list=>rows(list,url));
     const alternativeBlock = text.match(/^Reward from the following quests?:\n([^]*?)(?=^Sellback:)/im)?.[1] || "";
     const questAlternatives = alternativeBlock.split("\n").flatMap(line => {
       const match = line.match(/^'(.+)'(?:\s+\((.+)\))?$/);
       if (!match) return [];
       return [{ quest: match[1], npc: match[2] || null, sources: [...new Set([...body.querySelectorAll("a[href]")].filter(a => a.textContent.trim() === match[1]).map(a => new URL(a.getAttribute("href"), url).href))] }];
     });
-    return { text, quests, location: locationBlock?.replace(/\n/g, " · ") || null,
+    return { text, quests, droppedBy, price: field(text,"Price"), location: locationBlock?.replace(/\n/g, " · ") || null,
+      itemLinks: [...body.querySelectorAll("a[href]")].filter(a => /^(?:\/|https?:\/\/aqwwiki\.wikidot\.com\/)/.test(a.getAttribute("href")))
+        .map(a => ({ name: a.textContent.trim(), url: new URL(a.getAttribute("href"), url).href })),
       mergeRecipes, questAlternatives, locationLinks: [...new Map(locationLinks.map(link => [link.url + "|" + link.name, link])).values()],
       joinCommands: [...new Set([...text.matchAll(/\/join\s+([a-z0-9_-]+)/gi)].map(m => "/join " + m[1]))] };
-  } finally { window.happyDOM.close(); }
+  }
+}
+
+// Parsing runs in bounded batches: happy-dom retains document internals until
+// its realm is collected. No DOM objects cross this process boundary.
+export function loadVerifiedFarmPages(sources) {
+  const result=[];
+  for(let start=0;start<sources.length;start+=12){
+    const batch=sources.slice(start,start+12);
+    for(const source of batch) if(createHash("sha256").update(fs.readFileSync(source.sourceFile)).digest("hex")!==source.sourceHash)
+      throw Error("Changed Farm Wiki snapshot: "+source.url);
+    const parsed=JSON.parse(execFileSync(process.execPath,["--input-type=module","-e",`
+      import fs from 'node:fs';
+      import { parseFarmReviewPage } from './scripts/lib/farm-review-parser.mjs';
+      const batch=JSON.parse(fs.readFileSync(0,'utf8'));
+      process.stdout.write(JSON.stringify(batch.map(source=>({...source,...parseFarmReviewPage(fs.readFileSync(source.sourceFile,'utf8'),source.url)}))));
+    `],{input:JSON.stringify(batch),encoding:"utf8",maxBuffer:32*1024*1024}));
+    result.push(...parsed);
+  }
+  return result;
 }

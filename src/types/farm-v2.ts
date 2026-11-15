@@ -54,6 +54,7 @@ export type FarmWikiDetails = {
   conflicts: string[];
 };
 export type FarmTask = {
+  acceptanceMaps?: string[];
   id: string;
   quest: string | null;
   title?: string;
@@ -70,6 +71,10 @@ export type FarmTask = {
   quantityScope?: "perTurn";
   numberOfRuns?: number;
   totalRequired?: number;
+  purchase?: { amount: number; currency: string } | null;
+  location?: string | null;
+  dependencies?: string[];
+  ownedItems?: { name: string; wikiUrl: string }[];
   alternativeGroup?: string;
   fixedRewards?: { name: string; quantity: number }[];
   rewardChoices?: { name: string; quantity: number }[];
@@ -86,6 +91,7 @@ export type FarmTask = {
     quantityTotal?: number;
     maxStack?: number | null;
     requiredQuest?: string | null;
+    usage?: "owned";
     sourceDetails?: {
       kind: string;
       monster?: string | null;
@@ -113,6 +119,14 @@ export type FarmInsigniaSource = {
   repeatability?: string;
 };
 export type FarmV2RouteData = {
+  questWorkflowIds?: string[];
+  completionTasks?: FarmTask[];
+  materialTotalsComplete?: boolean;
+  questFinishIds?: string[];
+  operationGroups?: { beforeQuestId: string; tasks: FarmTask[] }[];
+  questOptions?: { name: string; questId: string; workflowIds: string[] }[];
+  farmModes?: FarmMode[];
+  mixRule?: {dailyQuestId:string;weeklyQuestId:string;remainingMaterials:FarmTask["rows"]};
   farmTasks?: FarmTask[];
   insigniaSources?: FarmInsigniaSource[];
   npc?: string | null;
@@ -131,6 +145,20 @@ export type FarmV2RouteData = {
   materialTree?: MaterialNode | null;
   prerequisites?: { value: string; source: string }[];
   sources: Source[];
+};
+export type FarmMode = {
+  id: string;
+  label: string;
+  questIds: string[];
+  questRuns: Record<string, number>;
+  materials: FarmTask["rows"];
+  finishingTasks: FarmTask[];
+  finishingBeforeQuestId?: string;
+  notes?: string[];
+  insignia?: { name: string; quantity: number; perQuest: number; questCompletions: number;
+    quest?: string; npc?: string | null; bossName?: string;
+    bossId: string; map: string; repeatability: string; exchanges?: number; exchangeInput?: number; exchangeOutput?: number; excess?: number };
+  insignias?: (FarmInsigniaSource & { perQuest?: number; questCompletions: number })[];
 };
 export type FarmV2Item = {
   id: string;

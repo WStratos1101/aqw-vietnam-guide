@@ -6,6 +6,7 @@ import {
 } from "../../lib/farm-details.mjs";
 import { FarmGuide } from "./FarmGuide";
 import { FarmWikiInfo } from "./FarmWikiInfo";
+import { FarmQuestWorkflow, FarmWorkflowSummary, type WorkflowFocus } from "./FarmQuestWorkflow";
 import { FarmRouteFacts } from "./FarmRouteFacts";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
@@ -240,14 +241,33 @@ function Detail({
   returning: boolean;
 }) {
   const id = useId();
-  const routes = routesFor(item, region);
-  const [selectedRoute, setSelectedRoute] = useState(routes[0]?.id || "");
+  const filteredRoutes = routesFor(item, region);
+  const routes = filteredRoutes.length ? filteredRoutes : item.acquisitionRoutes;
+  const readFocus = (): WorkflowFocus => { const params = new URLSearchParams(typeof window === "undefined" ? "" : window.location.search); return {questId:params.get("farm-quest") || undefined,materialId:params.get("farm-material") || undefined,modeId:params.get("farm-mode") || undefined,optionId:params.get("farm-option") || undefined,dailyRuns:params.has("farm-daily")&&Number.isInteger(Number(params.get("farm-daily")))&&Number(params.get("farm-daily"))>=0&&Number(params.get("farm-daily"))<=15?Number(params.get("farm-daily")):undefined}; };
+  const [focus,setFocus] = useState<WorkflowFocus>(readFocus);
+  const [selectedRoute, setSelectedRoute] = useState(new URLSearchParams(typeof window === "undefined" ? "" : window.location.search).get("farm-route") || routes[0]?.id || "");
   const route = routes.find((r) => r.id === selectedRoute) || routes[0];
   const hasMaterials = (value?: FarmV2RouteData) => Boolean(value?.materialTree || value?.farmTasks?.some(task => task.rows.length));
   const available = tabDefs.filter(
     (t) => t.id !== "materials" || hasMaterials(route),
   );
-  const [tab, setTab] = useState<Tab>("overview");
+  const [tab, setTab] = useState<Tab>(() => (new URLSearchParams(typeof window === "undefined" ? "" : window.location.search).get("farm-tab") as Tab) || "overview");
+  const navigateWorkflow = (next: WorkflowFocus) => {
+    const before = new URL(window.location.href);
+    before.searchParams.set("farm-tab",tab); before.searchParams.set("farm-route",route.id);
+    window.history.replaceState(window.history.state,"",before.pathname+before.search);
+    const url = new URL(before);
+    url.searchParams.set("farm-tab","guide");
+    for(const [key,value] of Object.entries({"farm-quest":next.questId,"farm-material":next.materialId,"farm-mode":next.modeId,"farm-option":next.optionId,"farm-daily":next.dailyRuns==null?undefined:String(next.dailyRuns)})) {
+      if(value)url.searchParams.set(key,value); else url.searchParams.delete(key);
+    }
+    window.history.pushState(window.history.state,"",url.pathname+url.search);
+    setFocus(next);setTab("guide");
+  };
+  useEffect(()=>{
+    const load = () => { const params=new URLSearchParams(typeof window === "undefined" ? "" : window.location.search);setFocus(readFocus());setTab((params.get("farm-tab") as Tab)||"overview");setSelectedRoute(params.get("farm-route")||routes[0]?.id||""); };
+    window.addEventListener("popstate",load);return()=>window.removeEventListener("popstate",load);
+  },[item.id]);
   const activeTab = available.some((t) => t.id === tab) ? tab : "overview";
   const selectRoute = (next: string) => {
     setSelectedRoute(next);
@@ -355,74 +375,8 @@ function Detail({
             onChange={selectRoute}
           />
         )}
-        {activeTab === "methods" &&
-          (route ? (
-            <div className="fv2-method">
-              <h3>{route.method}</h3>
-              <p>
-                {routes.length === 1 && item.acquisitionBrief?.text
-                  ? item.acquisitionBrief.text
-                  : route.description ||
-                    (route.purchase
-                      ? `Giá mua: ${route.purchase.amount.toLocaleString("en-US")} ${route.purchase.currency}`
-                      : route.questReward
-                        ? `Hoàn thành Quest: ${route.questReward} để nhận ${item.name}.`
-                        : "")}
-              </p>
-              {!!route.questAlternatives?.length && (
-                <>
-                  <h4>Quest nhận vật phẩm</h4>
-                  <ul>
-                    {route.questAlternatives.map((option, index) => (
-                      <li key={`${option.quest}-${index}`}>
-                        {option.sources[0] ? (
-                          <a href={option.sources[0]} target="_blank" rel="noreferrer">
-                            {option.quest}
-                          </a>
-                        ) : option.quest}
-                        {option.npc ? ` · ${option.npc}` : ""}
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-              {!!item.prerequisites?.length && (
-                <>
-                  <h3>Điều kiện chung theo nguồn</h3>
-                  <ul>
-                    {item.prerequisites.map((p, i) => (
-                      <li key={i}>
-                        <a href={p.source}>{p.value}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-              {route.location && (
-                <p>
-                  <b>Nơi nhận:</b> {route.location}
-                </p>
-              )}
-              {route.mapCommand && <CopyJoin value={route.mapCommand} />}{" "}
-              {!!route.prerequisites?.length && (
-                <>
-                  <h3>Điều kiện tuyến nhận</h3>
-                  <ul>
-                    {route.prerequisites.map((p, i) => (
-                      <li key={i}>
-                        <a href={p.source}>{p.value}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </div>
-          ) : (
-            <p>
-              {item.acquisitionBrief?.text || "Chưa có cách nhận đã xác minh."}
-            </p>
-          ))}
-        {activeTab === "materials" && route && (route.materialTree ? (
+        {activeTab === "methods" && (route ? <FarmWorkflowSummary brief={item.acquisitionBrief} route={route} focus={focus} onNavigate={navigateWorkflow} /> : <p>Chưa có phương án nhận thông thường được xác minh.</p>)}
+        {activeTab === "materials" && route && (route.materialTree && !route.farmModes?.length ? (
           <>
             <FarmMaterials
               tree={route.materialTree}
@@ -430,31 +384,9 @@ function Detail({
               scope={`farm:${item.id}:${route.id}`}
             />
           </>
-        ) : <FarmRouteFacts route={route} />)}
-        {activeTab === "guide" &&
-          (route ? (
-            <FarmGuide
-              key={item.id + ":" + route.id}
-              route={route}
-              itemId={item.id}
-              brief={routes.length === 1 ? item.acquisitionBrief : undefined}
-              materials={
-                route.materialTree ? (
-                  <>
-                    <FarmMaterials
-                      tree={route.materialTree}
-                      onItemClick={onItemClick}
-                      scope={`farm:${item.id}:${route.id}`}
-                    />
-                  </>
-                ) : undefined
-              }
-            />
-          ) : (
-            <p className="fv2-muted">
-              {item.acquisitionBrief?.text || "Chưa có hướng dẫn đã xác minh."}
-            </p>
-          ))}
+        ) : <FarmQuestWorkflow itemId={item.id} materialsOnly route={route} focus={focus} onNavigate={navigateWorkflow} />)}
+        {activeTab === "guide" && route && <FarmQuestWorkflow key={item.id+":"+route.id} itemId={item.id} route={route} focus={focus} onNavigate={navigateWorkflow} />}
+
       </div>
     </section>
   );
@@ -541,7 +473,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
         .sort((a, b) => a.name.localeCompare(b.name, "en")),
     [scoped, group, region, category, subtype],
   );
-  const active = filtered.find((i) => i.id === selected) || filtered[0] || null;
+  const active = filtered.find((i) => i.id === selected) || catalog.items.find(item=>item.id===selected) || filtered[0] || null;
   const counts = groupCounts(scoped, groupManifest.groups);
   const subtypes = farmSubtypeOptions(
     catalog.items.filter(

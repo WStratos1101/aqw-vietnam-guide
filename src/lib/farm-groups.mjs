@@ -29,7 +29,7 @@ export function groupCounts(items, groups) {
   return [
     { id: "all", name: "Tất cả nhóm", fallback: "*" },
     ...groups,
-    { id: UNKNOWN_GROUP, name: "Chưa xác minh nhóm", fallback: "?" },
+    { id: UNKNOWN_GROUP, name: "Khác", fallback: "?" },
   ].map((g) => ({
     ...g,
     count: unique.filter((i) => matchesGroup(i, g.id)).length,

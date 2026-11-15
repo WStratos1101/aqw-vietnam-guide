@@ -83,7 +83,10 @@ export function validateFarmV2(catalog) {
                 e.questNpc &&
                 e.sourceBoss &&
                 e.insigniaName &&
-                Number.isInteger(e.insigniaQuantity))),
+                Number.isInteger(e.insigniaQuantity)) ||
+              (e.sourceDocument === "aqwwiki-ultra-exchange" && url(e.sourceUrl) && url(e.recipeUrl) &&
+                /^[a-f0-9]{64}$/.test(e.sourceHash || "") && e.sourceBossId && e.insigniaName &&
+                e.matchKind === "verified-direct-ultra-exchange" && Number.isInteger(e.insigniaQuantity) && e.insigniaQuantity > 0)),
         )
       )
         errors.push("Missing verified faction evidence " + i.id);

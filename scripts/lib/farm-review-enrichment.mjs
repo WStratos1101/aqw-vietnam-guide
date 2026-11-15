@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import { createHash } from "node:crypto";
 import { materialLeaves, materialId } from "../../src/lib/material-requirements.mjs";
-import { parseFarmReviewPage } from "./farm-review-parser.mjs";
+import { loadVerifiedFarmPages } from "./farm-review-parser.mjs";
 
 const read = p => JSON.parse(fs.readFileSync(p, "utf8"));
 const hash = bytes => createHash("sha256").update(bytes).digest("hex");
@@ -12,11 +12,7 @@ const insigniaBosses = { "Nulgath Insignia": "ultra-nulgath", "Dage the Evil Ins
 
 export function loadFarmReviewPages(root = "content-sources/farm/review") {
   if (!fs.existsSync(root + "/pages.json")) return [];
-  return read(root + "/pages.json").filter(p => p.status === "read").map(page => {
-    const html = fs.readFileSync(page.sourceFile, "utf8");
-    if (hash(html) !== page.sourceHash) throw Error("Changed Farm Wiki snapshot: " + page.url);
-    return { ...page, ...parseFarmReviewPage(html, page.url) };
-  });
+  return loadVerifiedFarmPages(read(root + "/pages.json").filter(p => p.status === "read"));
 }
 
 function sourceRef(url) { return { url, label: "AQW Wiki", sourceType: "wiki" }; }

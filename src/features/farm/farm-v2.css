@@ -1273,3 +1273,23 @@ html[data-theme="light"] .fv2-root {
 .fv2-root .fv32-facts :is(th, td):last-child {
   white-space: nowrap;
 }
+
+/* Quest workflow shares the Codex panels; only the selected Quest/material is mounted. */
+.fv32-workflow { min-width: 0; }
+.fv32-workflow > section { margin-top: 1.25rem; min-width: 0; }
+.fv32-workflow [aria-label="Chọn nguyên liệu"] { flex-wrap: wrap; max-height: 220px; overflow: auto; }
+.fv32-workflow table { width: 100%; border-collapse: collapse; }
+.fv32-workflow :is(th,td) { padding: 10px 8px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--fv2-line); }
+.fv32-workflow :is(th,td):nth-child(2) { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.fv32-workflow-summary li { margin: .6rem 0; }
+.fv32-workflow .fv31-step-content { scroll-margin-top: 90px; }
+.fv32-material-body { padding: 1rem; border: 1px solid var(--fv2-line); margin-top: .75rem; min-width: 0; }
+.fv32-workflow [aria-label="Nguyên liệu đang chọn"] { scroll-margin-top: 90px; }
+
+/* The Quest view has three columns; keep quantities visible at 375px. */
+.fv32-workflow .fv32-table-scroll table { min-width: 0; width: 100%; table-layout: fixed; }
+.fv32-workflow .fv32-table-scroll th:first-child { width: 45%; }
+.fv32-workflow .fv32-table-scroll th:nth-child(2) { width: 24%; }
+.fv32-workflow .fv32-table-scroll th:nth-child(3) { width: 31%; }
+.fv32-workflow .fv32-table-scroll :is(th,td) { overflow-wrap: anywhere; padding: 8px; }
+.fv32-workflow .fv32-table-scroll :is(th,td):nth-child(2) { white-space: nowrap; text-align: right; }

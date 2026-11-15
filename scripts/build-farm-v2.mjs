@@ -12,6 +12,7 @@ import { farmWikiDetails } from "./lib/farm-wiki-details.mjs";
 import { verifiedFarmAsset, farmAssetEvidence } from "./lib/farm-image-evidence.mjs";
 import { enrichFarmReview, loadFarmReviewPages } from "./lib/farm-review-enrichment.mjs";
 import { applyFarmRouteCorrections } from "./lib/farm-route-corrections.mjs";
+import { applyFarmPublicWorkflows } from "./lib/farm-public-workflows.mjs";
 import { buildReviewedFarmWorkflows, writeFarmWorkflowReports } from "./lib/farm-quest-workflows.mjs";
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const write = (p, d) => fs.writeFileSync(p, JSON.stringify(d, null, 2) + "\n");
@@ -530,7 +531,56 @@ revenantRoute.farmTasks = questRecovery.tasks;
 revenantRoute.materialTree = { kind: "allOf", requirements: questRecovery.tasks[0].rows.map(row => ({
   kind: "item", itemId: row.itemId, name: row.name, quantity: row.quantity, source: row.source,
 })) };
-const questWorkflows = buildReviewedFarmWorkflows(items, review.materialSources);
+const questWorkflows = buildReviewedFarmWorkflows(items, review.materialSources, farmWikiPages);
+const publicWorkflows = applyFarmPublicWorkflows(items, questWorkflows.cachedWikiPages, review.materialSources,
+  [...read("src/content/ultra/bosses.json"), ...ultraRecovery.bosses]);
+write("src/content/farm/quest-workflows.generated.json", publicWorkflows.registry);
+
+const publicProfiles={...publicWorkflows.registry.materials,...read("content-sources/farm/material-guides.json"),...review.materialSources};
+for (const record of questWorkflows.records) {
+  const item = items.find(item => item.id === record.canonicalId);
+  if(!item.acquisitionRoutes.length && publicWorkflows.audit.removedRoutes.some(route=>route.itemId===item.id)) {
+    record.status="BLOCKED";
+    record.blockers=["Only Nostalgia acquisition is evidenced in cached sources; no permitted ordinary route verified. Canonical identity retained."];
+  }
+  record.primaryGroupId = item.primaryGroupId;
+  record.publicWorkflowIds = item.acquisitionRoutes.map(route => ({ routeId: route.id, questIds: route.questWorkflowIds, modes:(route.farmModes || []).map(mode=>({id:mode.id,questIds:mode.questIds})) }));
+  const tasks=[...new Set(item.acquisitionRoutes.flatMap(route=>[...(route.questWorkflowIds || []),...(route.farmModes || []).flatMap(mode=>mode.questIds)]))].map(id=>publicWorkflows.registry.quests[id]);
+  const profiles=publicProfiles;
+  const inputs=[...new Map(tasks.flatMap(task=>task.rows).map(row=>[row.itemId || row.name.toLowerCase().replace(/[^a-z0-9]+/g,"-"),row])).values()];
+  record.publicReview={
+    questCount:tasks.length,
+    questsMissingNpc:tasks.filter(task=>!task.npc).map(task=>task.quest),
+    questsMissingAcceptMap:tasks.filter(task=>!task.map&&!task.acceptanceMaps?.length).map(task=>task.quest),
+    unresolvedQuestDependencies:tasks.flatMap(task=>task.unresolvedDependencies || []),
+    materialsWithoutSharedSources:inputs.filter(row=>{const profile=profiles[row.itemId];return !profile?.tasks?.length&&!profile?.questIds?.length;}).map(row=>row.name),
+    image:item.image?"verified-existing":"PENDING",
+    primaryGroup:item.primaryGroupId?"verified-existing":"PENDING",
+    nestedMaterialAndAlternativeAudit:record.status==="DONE"?"DONE":"PENDING",
+  };
+
+  if (record.status === "PENDING" && (item.acquisitionRoutes.some(route => route.questWorkflowIds.length || route.farmModes?.some(mode=>mode.questIds.length)) || publicWorkflows.audit.factionChanges.some(change => change.itemId === item.id))) {
+    record.status = "PARTIAL";
+    record.blockers = [
+      ...(record.publicReview.questsMissingNpc.length?["Quest NPC missing: "+record.publicReview.questsMissingNpc.join("; ")]:[]),
+      ...(record.publicReview.questsMissingAcceptMap.length?["Quest acceptance /join missing: "+record.publicReview.questsMissingAcceptMap.join("; ")]:[]),
+      ...(record.publicReview.unresolvedQuestDependencies.length?["Mandatory Quest dependencies pending: "+record.publicReview.unresolvedQuestDependencies.map(row=>row.name).join("; ")]:[]),
+      ...(record.publicReview.materialsWithoutSharedSources.length?["Shared material sources missing: "+record.publicReview.materialsWithoutSharedSources.join("; ")]:[]),
+      "Nested material sources, alternatives and ownership/shop unlock audit remain incomplete.",
+    ];
+  }
+}
+const statusById=new Map(questWorkflows.records.map(record=>[record.canonicalId,record.status]));
+for(const batch of publicWorkflows.audit.batches)for(const row of batch.items)row.status=statusById.get(row.id);
+publicWorkflows.audit.coverage={canonicalItems:items.length,removedNostalgiaRoutes:publicWorkflows.audit.removedRoutes.length,
+  sharedQuests:Object.keys(publicWorkflows.registry.quests).length,sharedMaterials:Object.keys(publicWorkflows.registry.materials).length,
+  itemsWithQuestGraph:items.filter(item=>item.acquisitionRoutes.some(route=>route.questWorkflowIds.length || route.farmModes?.some(mode=>mode.questIds.length))).length,
+  itemsWithTwoFarmModes:items.filter(item=>item.acquisitionRoutes.some(route=>route.farmModes?.length===2)).length,
+  itemsWithUltraLink:items.filter(item=>item.acquisitionRoutes.some(route=>route.insigniaSources?.some(source=>source.bossId))).length,
+  alternativeHero:items.filter(item=>item.primaryGroupId==="alternative-hero").length,
+  statuses:Object.fromEntries(["DONE","PARTIAL","PENDING","BLOCKED"].map(status=>[status,questWorkflows.records.filter(record=>record.status===status).length])),
+  completionPolicy:"Quest graph coverage is not full verified workflow completion; only CPC and Polly Roger remain DONE."};
+write("content-sources/farm/review/public-workflow-audit.json",publicWorkflows.audit);
 write("src/content/farm/material-sources.generated.json", review.materialSources);
 write(`${reviewRoot}/enrichment-audit.json`, { changes: review.changes, conflicts: review.conflicts, excluded: review.excluded, routeCorrections: review.routeCorrections });
 const usedRegions = new Set(items.flatMap((i) => i.regions));

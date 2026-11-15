@@ -107,14 +107,8 @@ test("unknown-Region route remains discoverable for mapped canonical item and fi
     "blade-of-awe",
   );
   await click(tab("Nguyên liệu"));
-  assert.match(
-    host.querySelector("[role=tabpanel]").textContent,
-    /Dual Blades of Awe/,
-  );
-  assert.doesNotMatch(
-    host.querySelector("[role=tabpanel]").textContent,
-    /Legendary Stonewrit/,
-  );
+  assert.match(host.querySelector("[role=tabpanel]").textContent,/Legendary Stonewrit/);
+  assert.doesNotMatch(host.querySelector("[role=tabpanel]").textContent,/Nostalgia|Dual Blades of Awe/);
   await navigate("/farm?item=blade-of-awe&region=greenguard-forest");
   await click(tab("Nguyên liệu"));
   assert.match(
@@ -155,12 +149,8 @@ test("active item change resets tabs; tab keyboard controls focus and ARIA relat
   assert.equal(tab("Thông tin").getAttribute("aria-selected"), "true");
   await click(tab("Cách nhận"));
   const routes = host.querySelectorAll(".fv2-route-chips button");
-  assert.equal(routes.length, 2);
-  await click(routes[1]);
-  assert.match(
-    host.querySelector("[role=tabpanel]").textContent,
-    /Nostalgia Quest/,
-  );
+  assert.equal(routes.length, 0,"one ordinary route needs no route picker");
+  assert.doesNotMatch(host.querySelector("[role=tabpanel]").textContent,/Nostalgia Quest/);
 });
 test("deep-link slug, approved image error fallback, empty search and popstate filters", async () => {
   await act(async () =>
@@ -193,24 +183,10 @@ test("deep-link slug, approved image error fallback, empty search and popstate f
     "/farm?item=dual-exalted-apotheosis&category=weapon&region=unknown-region&view=reference",
   );
   await click(tab("Nguyên liệu"));
-  await click(button(".fv2-material-source summary", "Exalted Apotheosis"));
-  const materialButton = button(
-    ".fv2-material-source button",
-    "Exalted Apotheosis",
-  );
-  await click(materialButton);
-  assert.equal(
-    host.querySelector("[data-item-id]").dataset.itemId,
-    "exalted-apotheosis",
-  );
-  assert.equal(tab("Thông tin").getAttribute("aria-selected"), "true");
-  await click(host.querySelector(".fv2-return"));
-  assert.equal(
-    host.querySelector("[data-item-id]").dataset.itemId,
-    "dual-exalted-apotheosis",
-  );
-  assert.match(window.location.search, /region=unknown-region/);
-  assert.match(window.location.search, /category=Weapons/);
+  await click(button('[aria-label="Chọn nguyên liệu"] button',"Exalted Apotheosis"));
+  assert.equal(host.querySelector('[data-item-id]').dataset.itemId,"dual-exalted-apotheosis");
+  assert.match(host.querySelector('[aria-label="Nguyên liệu đang chọn"]').textContent,/Exalted Apotheosis/);
+  assert.ok(window.location.search.includes('farm-material='));
 });
 
 test("group tiles, category counts, aliases, search/sort and history restoration retain accessible controls", async () => {
@@ -262,7 +238,7 @@ test("group tiles, category counts, aliases, search/sort and history restoration
   assert.equal(
     host
       .querySelector(".fv2-groups button[aria-pressed=true]")
-      .textContent.includes("Chưa xác minh nhóm"),
+      .textContent.includes("Khác"),
     true,
   );
   for (const tile of host.querySelectorAll(".fv2-groups button")) {
@@ -285,64 +261,33 @@ test("group tiles, category counts, aliases, search/sort and history restoration
   assert.match(css, /:focus-visible/);
 });
 
-test("V3.1 shows only selected guide step, resets route/item/path, and keeps saved completion", async () => {
+test("actual Quest tabs preserve completion, mode independence and keyboard navigation", async () => {
   await navigate("/farm?item=legion-revenant-class");
-  assert.equal(tab("Nguồn"), undefined);
-  await click(tab("Hướng dẫn Farm"));
-  assert.equal(
-    host.querySelectorAll(".fv31-step-numbers [role=tab]").length,
-    11,
-  );
-  const panel = () => host.querySelector(".fv31-step-content");
-  assert.match(panel().textContent, /Điều kiện mở khóa/);
-  assert.doesNotMatch(panel().textContent, /Cohort Conquered/);
-  await click(button(".fv31-step-actions button", "Tiếp"));
-  assert.match(panel().textContent, /Aeacus/);
-  await click(button(".fv31-step-actions button", "Trước"));
-  assert.match(panel().textContent, /Điều kiện mở khóa/);
-  const numbers = host.querySelector(".fv31-step-numbers");
-  await act(async () =>
-    numbers
-      .querySelector("[role=tab]")
-      .dispatchEvent(
-        new window.KeyboardEvent("keydown", { bubbles: true, key: "End" }),
-      ),
-  );
-  assert.equal(
-    document.activeElement,
-    numbers.querySelectorAll("[role=tab]")[10],
-  );
-  assert.match(panel().textContent, /Nhận Legion Revenant/);
-  await click(panel().querySelector("input"));
-  assert.equal(panel().querySelector("input").checked, true);
-  await click(button('[aria-label="Chọn hướng dẫn"] button', "Ultra Dage"));
-  assert.equal(
-    host.querySelectorAll(".fv31-step-numbers [role=tab]").length,
-    2,
-  );
-  assert.match(panel().textContent, /Nguồn bổ sung/);
-  await click(button('[aria-label="Chọn hướng dẫn"] button', "Legion Fealty"));
-  assert.match(panel().textContent, /Điều kiện mở khóa/);
-  await click(host.querySelectorAll(".fv31-step-numbers button")[10]);
-  assert.equal(panel().querySelector("input").checked, true);
+  await click(tab("Cách nhận"));
+  await click(button(".fv32-workflow-summary button","Legion Fealty 2"));
+  assert.equal(tab("Hướng dẫn Farm").getAttribute("aria-selected"),"true");
+  const panel=()=>host.querySelector('[aria-label="Quest đang chọn"]');
+  assert.equal(host.querySelectorAll('.fv31-step-numbers [role=tab]').length,4);
+  assert.match(panel().textContent,/Legion Fealty 2/);
+  assert.ok([...panel().querySelectorAll('thead')].every(head=>head.querySelectorAll('th').length===3));
+  assert.doesNotMatch(panel().querySelector('thead').textContent,/quái|Monster/);
+  await act(async()=>host.querySelector('.fv31-step-numbers [role=tab]').dispatchEvent(new window.KeyboardEvent("keydown",{bubbles:true,key:"End"})));
+  assert.match(panel().textContent,/Legion Fealty 4/);
+  assert.equal(document.activeElement,host.querySelectorAll(".fv31-step-numbers button")[3]);
+  assert.equal(host.querySelectorAll('.fv31-step-numbers [aria-selected=true]')[0].textContent,"4");
+  await click(panel().querySelector('input'));assert.equal(panel().querySelector('input').checked,true);
+  await click(button('[aria-label="Phương án farm"] button',"Farm bằng Insignia"));
+  assert.match(host.querySelector('.fv32-insignia-sources').textContent,/31/);
+  await click(host.querySelectorAll(".fv31-step-numbers button")[7]);
+  assert.match(panel().querySelector("table").textContent,/ultradage/);
+  await click(button('[aria-label="Phương án farm"] button',"Farm thông thường"));
+  await click(host.querySelectorAll('.fv31-step-numbers button')[3]);
+  assert.equal(panel().querySelector('input').checked,true);
   await navigate("/farm?item=blade-of-awe");
-  assert.equal(tab("Thông tin").getAttribute("aria-selected"), "true");
+  assert.equal(tab("Thông tin").getAttribute("aria-selected"),"true");
   await click(tab("Hướng dẫn Farm"));
-  assert.match(panel().textContent, /Bước 1/);
-  await click(button(".fv31-step-actions button", "Tiếp"));
-  await click(host.querySelectorAll(".fv2-route-chips button")[1]);
-  assert.equal(
-    host.querySelectorAll(".fv31-step-numbers [role=tab]").length,
-    0,
-  );
-  assert.match(panel().textContent, /Merge Blade of Awe/);
-  assert.equal(host.querySelector(".fv2-guide > small"), null);
-  assert.equal(host.querySelector(".fv31-step-actions"), null);
-  assert.doesNotMatch(panel().textContent, /Bước 1\s*\/\s*1/);
-  await click(panel().querySelector("input"));
-  assert.equal(panel().querySelector("input").checked, true);
-  await click(host.querySelectorAll(".fv2-route-chips button")[0]);
-  assert.match(panel().textContent, /Bước 1/);
+  assert.equal(host.querySelector('.fv31-step-actions'),null);
+  assert.doesNotMatch(panel().textContent,/Nostalgia|Bước 1\s*\/\s*1/);
 });
 test("V3.1 Wiki info is localized, Sources cards removed, and Role filters share Codex membership/history", async () => {
   await navigate("/farm?item=legion-revenant-class");
@@ -475,45 +420,29 @@ test("multiple acquisition routes show the selected shop price or Quest reward w
   assert.equal(host.querySelector(".fv31-stepper"), null);
   await navigate("/farm?item=crimson-plate-of-nulgath");
   await click(tab("Hướng dẫn Farm"));
-  assert.equal(
-    host.querySelectorAll(".fv31-step-numbers [role=tab]").length,
-    3,
-  );
-  assert.match(
-    host.querySelector(".fv31-step-content").textContent,
-    /Twisted Items of Nulgath/,
-  );
-  await click(button(".fv31-step-actions button", "Tiếp"));
-  assert.match(
-    host.querySelector(".fv31-step-content").textContent,
-    /Totem of Nulgath ×3/,
-  );
+  const questButtons=host.querySelectorAll('.fv31-step-numbers [role=tab]');
+  assert.equal(questButtons.length,0,"a single actual Quest needs no numbered navigation");
+  assert.ok([...questButtons].every(node=>node.title));
+  assert.match(host.querySelector('.fv31-step-content').textContent,/Twisted Items of Nulgath/);
 });
 
-test("VHL material drill-down shows separate daily and Ultra weekly sources with the canonical Boss link", async () => {
-  await navigate("/farm?item=void-highlord-class");
-  await click(tab("Nguyên liệu"));
-  await click(host.querySelector(".fv2-material-row summary"));
-  const facts = host.querySelector(".fv2-material-facts");
-  assert.match(facts.textContent, /Void HighLord's Challenge/);
-  assert.match(facts.textContent, /daily/);
-  assert.match(facts.textContent, /Roentgenium of Nulgath ×2/);
-  assert.match(facts.textContent, /Nulgath Insignia/);
-  assert.match(facts.textContent, /weekly/);
-  assert.equal(facts.querySelector('a[href="/ultra-boss/ultra-nulgath"]')?.textContent, "Ultra Nulgath");
+test("VHL modes preserve Crystal costs and internally navigate to Ultra materials",async()=>{
+  await navigate("/farm?item=void-highlord-class");await click(tab("Hướng dẫn Farm"));
+  assert.match(host.querySelector('.fv31-step-content').textContent,/Void HighLord's Challenge/);
+  await click(button('[aria-label="Phương án farm"] button',"Farm bằng Insignia"));
+  const ultra=host.querySelector('.fv32-insignia-sources');
+  assert.match(ultra.textContent,/40/);assert.match(ultra.textContent,/Weekly/);
+  assert.ok(ultra.querySelector('a[href="/ultra-boss/ultra-nulgath"]'));
+  await click(button('[aria-label="Chọn nguyên liệu"] button',"Elders' Blood"));
+  assert.match(host.querySelector('[aria-label="Nguyên liệu đang chọn"]').textContent,/2/);
+  assert.ok(window.location.search.includes('farm-material='));
 });
-
-test("Legion Fealty final ingredients open the per-turn Spellscroll table", async () => {
-  await navigate("/farm?item=legion-revenant-class");
-  await click(tab("Nguyên liệu"));
-  const scroll = [...host.querySelectorAll(".fv2-material-row summary")].find(node => node.textContent.includes("Spellscroll"));
-  assert.ok(scroll);
-  await click(scroll);
-  const facts = host.querySelector(".fv2-material-facts");
-  assert.match(facts.textContent, /Legion Fealty 1/);
-  assert.match(facts.textContent, /20 lần/);
-  assert.match(facts.textContent, /Dracolich Contract/);
-  assert.equal(facts.querySelector(".fv32-facts > section").querySelectorAll("tbody tr").length, 4);
-  assert.match(facts.textContent, /Dage the Evil Insignia/);
-  assert.match(facts.textContent, /ultra|Ultra/);
+test("Legion Fealty final ingredients navigate to the selected Spellscroll source",async()=>{
+  await navigate("/farm?item=legion-revenant-class");await click(tab("Hướng dẫn Farm"));
+  await click(host.querySelectorAll('.fv31-step-numbers button')[3]);
+  await click(button('.fv31-step-content button',"Revenant's Spellscroll"));
+  const facts=host.querySelector('[aria-label="Nguyên liệu đang chọn"]');
+  assert.match(facts.textContent,/Legion Fealty 1/);assert.match(facts.textContent,/20/);
+  assert.match(facts.textContent,/Dracolich Contract/);
+  assert.equal(facts.querySelectorAll('thead th').length>=3,true);
 });

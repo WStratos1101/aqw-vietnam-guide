@@ -210,7 +210,7 @@ test("completion snapshots are exact canonical bodies; incomplete indexed eviden
     c.items
       .filter((i) => !added.includes(i.id))
       .reduce((n, i) => n + i.acquisitionRoutes.length, 0),
-    236,
+    231,
   );
   const audit = read("content-sources/farm/import/detail-audit.json");
   assert.equal(audit.filter((i) => i.completeWikiSnapshot).length, 231);

@@ -1,6 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import { createHash } from "node:crypto";
+import { applyDirectUltraGroups } from "../scripts/lib/farm-public-workflows.mjs";
 import { assignFarmGroups } from "../scripts/lib/farm-groups.mjs";
 import { validateFarmV2 } from "../src/lib/farm-v2.mjs";
 import {
@@ -37,6 +39,7 @@ test("manual guide chapters and aliases define the only selectable groups", () =
       "elemental",
       "hollowborn",
       "debris-astravian",
+      "alternative-hero",
     ],
   );
   assert.equal(resolveGroup("museum", manifest), "awe");
@@ -48,6 +51,7 @@ test("manual guide chapters and aliases define the only selectable groups", () =
 test("catalog primary groups match exact canonical names and retain guide line evidence", () => {
   const checked = structuredClone(catalog.items);
   assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence);
+  applyDirectUltraGroups(checked,new Map([...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources].map(p=>[p.url,p])));
   assert.deepEqual(checked, catalog.items);
   for (const item of checked) {
     assert.equal(item.groupIds.length, item.primaryGroupId ? 1 : 0, item.id);
@@ -61,6 +65,10 @@ test("catalog primary groups match exact canonical names and retain guide line e
         assert.equal(evidence.sourceUrl, item.acquisitionFactionEvidence.sourceUrl);
         assert.equal(evidence.sourceBoss, item.acquisitionFactionEvidence.sourceBoss);
         assert.equal(evidence.questName, item.acquisitionFactionEvidence.questName);
+      } else if(evidence.sourceDocument === "aqwwiki-ultra-exchange") {
+        assert.equal(evidence.sourceUrl,item.wikiUrl);
+        assert.equal(evidence.sourceHash,createHash("sha256").update(fs.readFileSync(evidence.sourceFile)).digest("hex"));
+        assert.ok(evidence.sourceBossId);assert.ok(evidence.insigniaQuantity>0);
       } else {
         assert.equal(evidence.sourceDocument, "manual-faction-guide");
         assert.ok(Number.isInteger(evidence.sourceLine));
@@ -114,6 +122,7 @@ test("reviewed catalog suffix aliases map only to their named guide goal", () =>
       continue;
     }
     const evidence = item.groupEvidence[0];
+    if(evidence.sourceDocument === "aqwwiki-ultra-exchange") {assert.ok(evidence.sourceBossId);continue;}
     assert.equal(evidence.goalName, alias.goalName, alias.itemId);
     assert.equal(evidence.matchKind, "reviewed-canonical-alias", alias.itemId);
     assert.equal(evidence.aliasReason, alias.reason, alias.itemId);
@@ -158,13 +167,14 @@ test("all-inventory and faction counts count unique canonical identities exactly
     chaos: 2,
     awe: 6,
     blacksmithing: 1,
-    nation: 95,
+    nation: 97,
     legion: 32,
     dragonkin: 4,
     elemental: 12,
     hollowborn: 7,
-    "debris-astravian": 0,
-    unknown: 86,
+    "debris-astravian": 3,
+    "alternative-hero": 8,
+    unknown: 73,
   };
   for (const [id, count] of Object.entries(expected))
     assert.equal(counts.find((entry) => entry.id === id)?.count, count, id);
@@ -218,6 +228,7 @@ test("every catalog group assignment validates against manual guide provenance",
 test("canonical reward mappings survive goal fallback and generation is idempotent", () => {
   const checked = structuredClone(catalog.items);
   assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence);
+  applyDirectUltraGroups(checked,new Map([...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources].map(p=>[p.url,p])));
   assert.deepEqual(checked, catalog.items);
   for (const mapping of itemMappings) {
     const item = checked.find((entry) => entry.id === mapping.itemId);
@@ -265,7 +276,7 @@ test("direct Ultra Empower rewards map by verified boss quest, never by Empowere
     12,
   );
   assert.equal(byId.get("empowered-vordred-s-armor").primaryGroupId, "evil");
-  assert.equal(byId.get("empowered-sole-bloodletter").primaryGroupId, null);
+  assert.equal(byId.get("empowered-sole-bloodletter").primaryGroupId, "nation");
   assert.equal(byId.get("empowered-hollowborn-caladbolg").primaryGroupId, "hollowborn");
   assert.equal(
     empoweredUltraEvidence

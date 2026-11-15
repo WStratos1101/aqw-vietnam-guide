@@ -260,10 +260,10 @@ await runQa(
               .click();
             await expect(
               page.locator(".fv2-tab-body[role=tabpanel]"),
-            ).toContainText("Dual Blades of Awe");
+            ).toContainText("Legendary Stonewrit");
             await expect(
               page.locator(".fv2-tab-body[role=tabpanel]"),
-            ).not.toContainText("Legendary Stonewrit");
+            ).not.toContainText("Nostalgia");
             await navigate(
               "/farm?item=blade-of-awe&region=greenguard-forest",
               '[data-item-id="blade-of-awe"]',
@@ -284,13 +284,8 @@ await runQa(
             await page
               .getByRole("tab", { name: "Cách nhận", exact: true })
               .click();
-            await expect(page.locator(".fv2-route-chips button")).toHaveCount(
-              2,
-            );
-            await page.locator(".fv2-route-chips button").nth(1).click();
-            await expect(
-              page.locator(".fv2-tab-body[role=tabpanel]"),
-            ).toContainText("Nostalgia Quest");
+            await expect(page.locator(".fv2-route-chips button")).toHaveCount(0);
+            await expect(page.locator(".fv2-tab-body[role=tabpanel]")).not.toContainText("Nostalgia Quest");
           },
         );
         await step(
@@ -303,32 +298,17 @@ await runQa(
             await page
               .getByRole("tab", { name: "Nguyên liệu", exact: true })
               .click();
-            await page
-              .locator(".fv2-material-source summary")
-              .filter({ hasText: "Exalted Apotheosis" })
-              .click();
-            await page
-              .locator(".fv2-material-source button")
-              .filter({ hasText: "Exalted Apotheosis" })
-              .click();
-            await expect(
-              page.locator('[data-item-id="exalted-apotheosis"]'),
-            ).toBeVisible();
-            await page.locator(".fv2-return").click();
-            await expect(
-              page.locator('[data-item-id="dual-exalted-apotheosis"]'),
-            ).toBeVisible();
-            await expect(page).toHaveURL(/region=unknown-region/);
-            await navigate(
-              "/farm?item=blade-of-awe",
-              '[data-item-id="blade-of-awe"]',
-            );
+            await page.getByRole("group",{name:"Chọn nguyên liệu",exact:true}).getByRole("button",{name:"Exalted Apotheosis",exact:true}).click();
+            await expect(page.locator('[data-item-id="dual-exalted-apotheosis"]')).toBeVisible();
+            await expect(page.getByRole("region",{name:"Nguyên liệu đang chọn",exact:true})).toContainText("Exalted Apotheosis");
+            await expect(page).toHaveURL(/farm-material=exalted-apotheosis/);
           },
         );
         await step(
           "empty search, category filter and mobile back",
           async () => {
-            if (width <= 720) await page.locator(".fv2-back").click();
+            await navigate("/farm?view=reference",".fv2-root");
+            if (width <= 720 && await page.locator(".fv2-back").isVisible()) await page.locator(".fv2-back").click();
             await page
               .getByLabel("Tìm trang bị", { exact: true })
               .fill("no-matching-equipment");
@@ -361,34 +341,32 @@ await runQa(
             await expect(page.locator(".fv31-wiki-info")).toContainText(
               "Wizard",
             );
-            await page
-              .getByRole("tab", { name: "Hướng dẫn Farm", exact: true })
-              .click();
-            await expect(page.locator(".fv31-step-numbers button")).toHaveCount(
-              11,
-            );
-            await expect(page.locator(".fv31-step-content")).toContainText(
-              "Điều kiện mở khóa",
-            );
-            await page
-              .locator(".fv31-step-actions")
-              .getByRole("button", { name: "Bước tiếp theo", exact: true })
-              .click();
-            await expect(page.locator(".fv31-step-content")).toContainText(
-              "Aeacus",
-            );
-            await page
-              .getByRole("button", {
-                name: "Ultra Dage · bổ sung",
-                exact: true,
-              })
-              .click();
-            await expect(page.locator(".fv31-step-numbers button")).toHaveCount(
-              2,
-            );
-            await expect(page.locator(".fv31-step-content")).toContainText(
-              "Nguồn bổ sung",
-            );
+            await page.getByRole("tab",{name:"Cách nhận",exact:true}).click();
+            await page.locator(".fv32-workflow-summary").getByRole("button",{name:"Legion Fealty 2",exact:true}).click();
+            await expect(page.getByRole("tab",{name:"Hướng dẫn Farm",exact:true})).toHaveAttribute("aria-selected","true");
+            await expect(page.locator(".fv31-step-content")).toContainText("Legion Fealty 2");
+            await page.goBack();
+            await expect(page.getByRole("tab",{name:"Cách nhận",exact:true})).toHaveAttribute("aria-selected","true");
+            await page.getByRole("tab",{name:"Hướng dẫn Farm",exact:true}).click();
+            await expect(page.locator(".fv31-step-numbers button")).toHaveCount(4);
+
+            await page.locator(".fv31-step-numbers button").nth(1).click();
+            await expect(page.locator(".fv31-step-content")).toContainText("Cohort Conquered");
+            for(const head of await page.locator(".fv31-step-content thead").all()) await expect(head.locator("th")).toHaveCount(3);
+            await page.getByRole("button",{name:"Farm bằng Insignia",exact:true}).click();
+            await expect(page.locator(".fv32-insignia-sources")).toContainText("31");
+            await expect(page.locator('.fv32-insignia-sources a')).toHaveAttribute("href","/ultra-boss/ultra-dage");
+            const questTabs=page.locator(".fv31-step-numbers button");
+            await questTabs.first().focus();await page.keyboard.press("End");
+            await expect(questTabs.last()).toBeFocused();
+            await expect(page.locator(".fv31-step-content")).toContainText("Legion Fealty 4");
+            for(const table of await page.locator(".fv31-step-content .fv32-table-scroll").all()){
+              const visible=await table.evaluate(wrapper=>{
+                const bounds=wrapper.getBoundingClientRect();
+                return [...wrapper.querySelectorAll("tr > :nth-child(2)")].every(cell=>{const box=cell.getBoundingClientRect();return box.left>=bounds.left-1&&box.right<=bounds.right+1;});
+              });
+              assert.equal(visible,true,"Quest quantities remain visible without horizontal scrolling");
+            }
             await screenshot("v31-stepper");
             await navigate(
               "/farm?category=Classes&subtype=Support",
@@ -509,7 +487,7 @@ await runQa(
             await page
               .getByRole("tab", { name: "Hướng dẫn Farm", exact: true })
               .click();
-            await expect(page.locator(".fv31-step-numbers")).toHaveCount(0);
+            await expect(page.locator(".fv31-step-numbers button")).toHaveCount(0);
             await expect(page.locator(".fv31-step-actions")).toHaveCount(0);
             await expect(page.locator(".fv31-step-content")).toContainText(
               "Merge Blade of Awe",
@@ -518,7 +496,16 @@ await runQa(
             await screenshot("single-step");
           },
         );
+        await step("Alternative Hero and Khác keep unique filtered identities",async()=>{
+          await navigate("/farm?group=alternative-hero&view=reference",".fv2-root");
+          if(width<=720 && await page.locator(".fv2-back").isVisible())await page.locator(".fv2-back").click();
+          await expect(page.locator(".fv2-item")).toHaveCount(8);
+          await expect(page.getByRole("button",{name:"Lọc phe phái: Alternative Hero",exact:true})).toHaveAttribute("aria-pressed","true");
+          await page.getByRole("button",{name:"Lọc phe phái: Khác",exact:true}).click();
+          await expect(page.locator(".fv2-item")).toHaveCount(73);
+        });
         await step("keyboard, screenshot, images and overflow", async () => {
+          await navigate("/farm?item=legion-revenant-class","[data-item-id=legion-revenant-class]");
           await page
             .getByRole("tab", { name: "Thông tin", exact: true })
             .focus();
@@ -579,6 +566,6 @@ await runQa(
   },
   {
     browserName: selectFarmBrowser(),
-    outputDir: "artifacts/qa/v3-2/farm",
+    outputDir: "artifacts/qa/v3-2/farm/" + selectFarmBrowser(),
   },
 );
