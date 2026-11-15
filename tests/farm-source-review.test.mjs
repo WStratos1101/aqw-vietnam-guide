@@ -93,3 +93,36 @@ test("each new Wiki image has exact canonical provenance, inspected contact shee
   assert.equal(new Set(catalog.items.map(i=>i.wikiUrl)).size,catalog.items.length);
   for(const item of catalog.items) assert.ok(item.groupIds.length<=1,item.id);
 });
+
+test("VHL daily turn-in costs exclude ownership gates and remain separate from the fifteen-reward target", () => {
+  const task = read("content-sources/farm/material-guides.json")["roentgenium-of-nulgath"].tasks[0];
+  const quantities = Object.fromEntries(task.rows.map(row => [row.name, row.quantity]));
+  assert.equal(task.quantityScope, "perTurn");
+  assert.equal(task.numberOfRuns * task.rewardQuantity, task.totalRequired);
+  assert.equal(quantities["Emblem of Nulgath"], 20);
+  assert.equal(quantities["Essence of Nulgath"], 50);
+  assert.equal(quantities["Nulgath's Approval"], 300);
+  assert.equal(quantities["Hadean Onyx of Nulgath"], undefined);
+  assert.equal(quantities["Voucher of Nulgath (non-mem)"], undefined);
+  assert.ok(task.preconditions.some(text => text.includes("Voucher")));
+  assert.ok(task.rows.every(row => row.source === task.source && !row.map));
+  const guide = fs.readFileSync("Update/_farm-source-recovery/input/FARMING_ITEM_GUIDE_SOURCE.txt", "utf8");
+  assert.equal(quantities["Gem of Nulgath"] * task.numberOfRuns, 300);
+  assert.match(guide, /Gem of Nulgath ×20/);
+});
+
+test("Legion Fealty ingredient tables preserve per-turn costs and traditional route targets", () => {
+  const guides = read("content-sources/farm/material-guides.json");
+  const expected = [["revenant-s-spellscroll",20,4,"Dracolich Contract",1000],["conquest-wreath",6,10,"Grim Cohort Conquered",400],["exalted-crown",10,6,"Legion Token",4000]];
+  for (const [id,runs,count,name,cost] of expected) {
+    const guide = guides[id], task = guide.tasks[0];
+    assert.equal(hash(fs.readFileSync(guide.evidence.sourceFile)), guide.evidence.sourceHash);
+    assert.equal(task.rows.length, count);
+    assert.equal(task.numberOfRuns, runs);
+    assert.equal(task.rows.find(row => row.name === name).quantity, cost);
+    assert.equal(task.quantityScope, "perTurn");
+    assert.equal(task.totalRequired, runs * task.rewardQuantity);
+    assert.ok(task.rows.every(row => !row.map));
+    assert.match(task.requirements.join(" "), /Insignia/);
+  }
+});

@@ -67,6 +67,9 @@ export type FarmTask = {
   bossId?: string;
   bossName?: string;
   rewardQuantity?: number;
+  quantityScope?: "perTurn";
+  numberOfRuns?: number;
+  totalRequired?: number;
   rows: {
     name: string;
     quantity: number | null;

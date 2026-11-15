@@ -518,6 +518,17 @@ review.routeCorrections = applyFarmRouteCorrections(
   farmWikiPages,
   fs.readFileSync("content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt", "utf8"),
 );
+// Exact Quest recovery: retain the existing canonical item and its guide routes.
+const questRecovery = read("content-sources/farm/material-guides.json")["legion-revenant-class"];
+if (createHash("sha256").update(fs.readFileSync(questRecovery.evidence.sourceFile)).digest("hex") !== questRecovery.evidence.sourceHash)
+  throw Error("Legion Fealty snapshot changed; reverify Quest recipe");
+const revenant = items.find(item => item.id === "legion-revenant-class");
+const revenantRoute = revenant?.acquisitionRoutes.find(route => route.questReward === "Legion Fealty 4");
+if (!revenantRoute) throw Error("Missing canonical Legion Fealty 4 route");
+revenantRoute.farmTasks = questRecovery.tasks;
+revenantRoute.materialTree = { kind: "allOf", requirements: questRecovery.tasks[0].rows.map(row => ({
+  kind: "item", itemId: row.itemId, name: row.name, quantity: row.quantity, source: row.source,
+})) };
 write("src/content/farm/material-sources.generated.json", review.materialSources);
 write(`${reviewRoot}/enrichment-audit.json`, { changes: review.changes, conflicts: review.conflicts, excluded: review.excluded, routeCorrections: review.routeCorrections });
 const usedRegions = new Set(items.flatMap((i) => i.regions));

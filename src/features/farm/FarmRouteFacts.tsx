@@ -113,6 +113,13 @@ export function FarmRouteFacts({
             {task.repeatability && (
               <p><b>Giới hạn / nhịp lặp:</b> {task.repeatability}</p>
             )}
+            {task.quantityScope === "perTurn" && (
+              <p>Nguyên liệu cho mỗi lần trả Quest.
+                {task.numberOfRuns && task.totalRequired
+                  ? ` Nhánh chỉ làm Quest: ${task.numberOfRuns} lần → ${task.totalRequired} ${task.reward?.split(" ×")[0] || "phần thưởng"}.`
+                  : ""}
+              </p>
+            )}
             <JoinLine
               value={
                 verifiedJoinCommand(task.map) ||

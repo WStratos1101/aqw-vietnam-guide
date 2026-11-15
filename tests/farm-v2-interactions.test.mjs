@@ -502,3 +502,16 @@ test("VHL material drill-down shows separate daily and Ultra weekly sources with
   assert.match(facts.textContent, /weekly/);
   assert.equal(facts.querySelector('a[href="/ultra-boss/ultra-nulgath"]')?.textContent, "Ultra Nulgath");
 });
+
+test("Legion Fealty final ingredients open the per-turn Spellscroll table", async () => {
+  await navigate("/farm?item=legion-revenant-class");
+  await click(tab("Nguyên liệu"));
+  const scroll = [...host.querySelectorAll(".fv2-material-row summary")].find(node => node.textContent.includes("Spellscroll"));
+  assert.ok(scroll);
+  await click(scroll);
+  const facts = host.querySelector(".fv2-material-facts");
+  assert.match(facts.textContent, /Legion Fealty 1/);
+  assert.match(facts.textContent, /20 lần/);
+  assert.match(facts.textContent, /Dracolich Contract/);
+  assert.equal(facts.querySelectorAll("tbody tr").length, 4);
+});

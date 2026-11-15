@@ -46564,7 +46564,32 @@
           "description": "Hoàn thành Quest: Legion Fealty 4",
           "mapCommand": null,
           "steps": [],
-          "materialTree": null,
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "exalted-crown",
+                "name": "Exalted Crown",
+                "quantity": 10,
+                "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+              },
+              {
+                "kind": "item",
+                "itemId": "revenant-s-spellscroll",
+                "name": "Revenant's Spellscroll",
+                "quantity": 20,
+                "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+              },
+              {
+                "kind": "item",
+                "itemId": "conquest-wreath",
+                "name": "Conquest Wreath",
+                "quantity": 6,
+                "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+              }
+            ]
+          },
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/legion-revenant-class",
@@ -46829,6 +46854,40 @@
                       "sourceTextHash": "3c9f30e18d10761ee764208a50a2b49a8933ca113ef51d2c4eee95558be5029c"
                     }
                   ]
+                }
+              ]
+            }
+          ],
+          "farmTasks": [
+            {
+              "id": "legion-fealty-4",
+              "quest": "Legion Fealty 4",
+              "npc": "Legion Revenant (NPC)",
+              "map": "/join revenant",
+              "preconditions": [
+                "Hoàn thành Legion Fealty 3."
+              ],
+              "requirements": [],
+              "reward": "Legion Revenant (Class)",
+              "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+              "rows": [
+                {
+                  "name": "Exalted Crown",
+                  "itemId": "exalted-crown",
+                  "quantity": 10,
+                  "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+                },
+                {
+                  "name": "Revenant's Spellscroll",
+                  "itemId": "revenant-s-spellscroll",
+                  "quantity": 20,
+                  "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+                },
+                {
+                  "name": "Conquest Wreath",
+                  "itemId": "conquest-wreath",
+                  "quantity": 6,
+                  "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
                 }
               ]
             }
