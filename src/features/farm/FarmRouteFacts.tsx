@@ -110,6 +110,9 @@ export function FarmRouteFacts({
             {(task.npc || route.location) && (
               <p><b>Nơi nhận:</b> {task.npc || route.location}</p>
             )}
+            {task.repeatability && (
+              <p><b>Giới hạn / nhịp lặp:</b> {task.repeatability}</p>
+            )}
             <JoinLine
               value={
                 verifiedJoinCommand(task.map) ||

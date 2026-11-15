@@ -489,3 +489,16 @@ test("multiple acquisition routes show the selected shop price or Quest reward w
     /Totem of Nulgath ×3/,
   );
 });
+
+test("VHL material drill-down shows separate daily and Ultra weekly sources with the canonical Boss link", async () => {
+  await navigate("/farm?item=void-highlord-class");
+  await click(tab("Nguyên liệu"));
+  await click(host.querySelector(".fv2-material-row summary"));
+  const facts = host.querySelector(".fv2-material-facts");
+  assert.match(facts.textContent, /Void HighLord's Challenge/);
+  assert.match(facts.textContent, /daily/);
+  assert.match(facts.textContent, /Roentgenium of Nulgath ×2/);
+  assert.match(facts.textContent, /Nulgath Insignia/);
+  assert.match(facts.textContent, /weekly/);
+  assert.equal(facts.querySelector('a[href="/ultra-boss/ultra-nulgath"]')?.textContent, "Ultra Nulgath");
+});

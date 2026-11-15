@@ -100,6 +100,25 @@ test("a single mapped shop does not lend its map to a different receiving locati
   assert.match(shop.location, /Tercessuinotlim/);
   assert.equal(shop.mapCommand, null);
 });
+test("VHL Roentgenium material guide separates daily Quest and weekly Ultra Insignia routes", () => {
+  const guide = read("content-sources/farm/material-guides.json")["roentgenium-of-nulgath"];
+  assert.ok(guide);
+  assert.deepEqual(guide.evidence.lines, [3463, 3471]);
+  const sourceText = fs.readFileSync(guide.evidence.source, "utf8");
+  assert.equal(createHash("sha256").update(sourceText).digest("hex"), guide.evidence.sourceTextHash);
+  assert.match(sourceText.split(/\r?\n/)[3465], /Void HighLord NPC/);
+  assert.match(sourceText.split(/\r?\n/)[3469], /5 Nulgath Insignia thành 2 Roentgenium/);
+  const daily = guide.tasks.find((task) => task.id === "void-highlords-challenge");
+  const exchange = guide.tasks.find((task) => task.id === "ultra-nulgath-insignia-exchange");
+  const boss = guide.tasks.find((task) => task.id === "ultra-nulgath-insignia-reward");
+  assert.equal(daily.reward, "Roentgenium of Nulgath ×1");
+  assert.match(daily.repeatability, /daily/);
+  assert.equal(exchange.rows[0].name, "Nulgath Insignia");
+  assert.equal(exchange.rows[0].quantity, 5);
+  assert.equal(exchange.reward, "Roentgenium of Nulgath ×2");
+  assert.equal(boss.bossId, "ultra-nulgath");
+  assert.equal(boss.repeatability, "weekly");
+});
 test("curated identities, recipes, unknown routes, classes and approved art survive V2 adapter", () => {
   const legacy = read("src/content/farm/catalog.json");
   for (const old of legacy.items) {
