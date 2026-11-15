@@ -513,5 +513,7 @@ test("Legion Fealty final ingredients open the per-turn Spellscroll table", asyn
   assert.match(facts.textContent, /Legion Fealty 1/);
   assert.match(facts.textContent, /20 lần/);
   assert.match(facts.textContent, /Dracolich Contract/);
-  assert.equal(facts.querySelectorAll("tbody tr").length, 4);
+  assert.equal(facts.querySelector(".fv32-facts > section").querySelectorAll("tbody tr").length, 4);
+  assert.match(facts.textContent, /Dage the Evil Insignia/);
+  assert.match(facts.textContent, /ultra|Ultra/);
 });

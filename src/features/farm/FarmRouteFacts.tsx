@@ -1,4 +1,9 @@
-import type { FarmV2RouteData } from "../../types/farm-v2";
+import { useState } from "react";
+import materialSources from "../../content/farm/material-sources.generated.json";
+import materialGuides from "../../../content-sources/farm/material-guides.json";
+import type { FarmTask, FarmV2RouteData } from "../../types/farm-v2";
+
+const nestedGuides = { ...materialGuides, ...materialSources } as unknown as Record<string, { method: string; tasks: FarmTask[] }>;
 
 function verifiedJoinCommand(value?: string | null) {
   const match = value?.match(/^\s*\/?join\s+([a-z0-9_-]+)\s*$/i);
@@ -49,10 +54,13 @@ function InsigniaSources({ route }: { route: FarmV2RouteData }) {
 export function FarmRouteFacts({
   route,
   taskId,
+  visitedMaterials = [],
 }: {
   route: FarmV2RouteData;
   taskId?: string;
+  visitedMaterials?: string[];
 }) {
+  const [openedMaterials, setOpenedMaterials] = useState<string[]>([]);
   const tasks = (route.farmTasks || []).filter(
     (t) => !taskId || t.id === taskId,
   );
@@ -107,8 +115,8 @@ export function FarmRouteFacts({
                 </ul>
               </div>
             )}
-            {(task.npc || route.location) && (
-              <p><b>Nơi nhận:</b> {task.npc || route.location}</p>
+            {task.npc && (
+              <p><b>Nơi nhận:</b> {task.npc}</p>
             )}
             {task.repeatability && (
               <p><b>Giới hạn / nhịp lặp:</b> {task.repeatability}</p>
@@ -120,12 +128,10 @@ export function FarmRouteFacts({
                   : ""}
               </p>
             )}
-            <JoinLine
-              value={
-                verifiedJoinCommand(task.map) ||
-                verifiedJoinCommand(route.mapCommand)
-              }
-            />
+            <JoinLine value={task.map} />
+            {task.preconditions && task.requirements.length > 0 && (
+              <FarmActions text={task.requirements.join("\n")} />
+            )}
             {task.bossId && <p>Đánh <a href={`/ultra-boss/${task.bossId}`}>{task.bossName}</a></p>}
             {maps.map((map) => (
               <div key={map}>
@@ -152,16 +158,45 @@ export function FarmRouteFacts({
                             (row.map || "Map chưa xác minh") ===
                             map,
                         )
-                        .map((row, i) => (
+                        .map((row, i) => {
+                          const token = task.id + ":" + (row.itemId || row.name);
+                          const nested = row.itemId && !visitedMaterials.includes(row.itemId) ? nestedGuides[row.itemId] : null;
+                          return (
                           <tr key={i}>
-                            <td>{row.name}</td>
-                            <td>{row.quantity ?? "—"}</td>
+                            <td>
+                              <details onToggle={event => {
+                                if (event.target !== event.currentTarget) return;
+                                const open = event.currentTarget.open;
+                                setOpenedMaterials(current => open ? [...new Set([...current, token])] : current.filter(value => value !== token));
+                              }}>
+                                <summary>{row.name}</summary>
+                                {row.requiredQuest && <p>Nhận Quest trước khi farm: {row.requiredQuest}.</p>}
+                                {row.maxStack != null && <p>Stack tối đa: {row.maxStack.toLocaleString("vi-VN")}.</p>}
+                                {row.sourceDetails?.length ? row.sourceDetails.map((source, n) => (
+                                  <div key={n}>
+                                    <p>{source.monster || source.kind}</p>
+                                    <JoinLine value={source.mapJoin} />
+                                    {source.requiredQuest && source.requiredQuest !== row.requiredQuest && <p>Cần nhận Quest {source.requiredQuest}.</p>}
+                                    {!!source.unlockRequirements?.length && <ul>{source.unlockRequirements.map((line, j) => <li key={j}>{line}</li>)}</ul>}
+                                    {source.evidence?.map((e, j) => <p key={j}><a href={e.url} target="_blank" rel="noreferrer">{j === 0 ? "Nguồn nguyên liệu" : "Nguồn map"} trên Wiki</a></p>)}
+                                  </div>
+                                )) : <p>{row.monster || row.sourceName || nested?.method || "Nguồn farm chưa xác minh."}</p>}
+                                {row.source && <a href={row.source} target="_blank" rel="noreferrer">Yêu cầu trên AQW Wiki</a>}
+                                {nested && row.itemId && openedMaterials.includes(token) && (
+                                  <FarmRouteFacts route={{ id: row.itemId, method: nested.method, regionId: null, steps: [], sources: [], farmTasks: nested.tasks }}
+                                    visitedMaterials={[...visitedMaterials, row.itemId]} />
+                                )}
+                              </details>
+                            </td>
+                            <td>{row.quantity?.toLocaleString("vi-VN") ?? "—"}
+                              {row.quantityTotal != null && <small> · Tổng {row.quantityTotal.toLocaleString("vi-VN")}</small>}
+                            </td>
                             <td>
                               {row.monster || row.sourceName || "Chưa xác minh"}
                             </td>
                             <td>{row.map || "Chưa xác minh"}</td>
                           </tr>
-                        ))}
+                        ); })}
                     </tbody>
                   </table>
                 </div>
@@ -172,9 +207,20 @@ export function FarmRouteFacts({
                 <b>Nhận:</b> {task.reward}
               </p>
             )}
+            {!!task.rewardChoices?.length && (
+              <details><summary>Chọn đúng một phần thưởng ({task.rewardChoices.length} lựa chọn)</summary>
+                <ul>{task.rewardChoices.map((reward, n) => <li key={n}>{reward.name} ×{reward.quantity}</li>)}</ul>
+              </details>
+            )}
+            {!!task.randomChoiceRewards?.length && (
+              <p>Nhận ngẫu nhiên một trong: {task.randomChoiceRewards.map(r => `${r.name} ×${r.quantity}`).join("; ")}.</p>
+            )}
+            {!!task.randomRewards?.length && (
+              <p>Có thể nhận thêm ngẫu nhiên: {task.randomRewards.map(r => `${r.name} ×${r.quantity}`).join("; ")}.</p>
+            )}
             {task.destination && (
               <p>
-                <b>Nhận trang bị:</b> Gặp {task.destination.npc} tại{" "}
+                <b>Nhận trang bị:</b> {task.destination.npc ? `Gặp ${task.destination.npc} tại ` : "Mở "}
                 {task.destination.map}, mở {task.destination.shop} để lấy{" "}
                 {task.destination.item}.
               </p>

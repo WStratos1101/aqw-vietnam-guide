@@ -126,3 +126,129 @@ test("Legion Fealty ingredient tables preserve per-turn costs and traditional ro
     assert.match(task.requirements.join(" "), /Insignia/);
   }
 });
+
+test("reviewed Quest workflows preserve BLoD kit scope, exact names and the Book of Lore claim", () => {
+  const route = get("blinding-light-of-destiny").acquisitionRoutes.find(r => r.id === "book-of-lore");
+  assert.equal(route.method, "Shop");
+  const tasks = route.farmTasks;
+  assert.equal(new Set(tasks.map(t => t.id)).size, tasks.length);
+  assert.equal(tasks.find(t => t.quest === "Essential Essences").rows[0].quantity, 25);
+  assert.deepEqual(tasks.find(t => t.quest === "Essential Essences").randomChoiceRewards.map(r => r.quantity), [5,10,15,20]);
+  for (const [kit, runs] of [["Basic",3],["Advanced",3],["Ultimate",4]]) {
+    const task = tasks.find(t => t.quest === kit + " Weapon Kit Construction");
+    assert.equal(task.numberOfRuns, runs);
+    assert.equal(task.rewardQuantity, 1);
+    assert.ok(task.rows.every(row => row.quantityTotal === row.quantity * runs));
+  }
+  const basic = tasks.find(t => t.quest === "Basic Weapon Kit Construction");
+  assert.ok(basic.rows.some(r => r.name === "Bronze Brush"));
+  assert.ok(!basic.rows.some(r => r.name === "Bronze Bush"));
+  const final = tasks.at(-1);
+  assert.equal(final.quest, "The Blinding Light of Destiny");
+  assert.equal(final.reward, "Get Your Blinding Light of Destiny ×1");
+  assert.equal(final.rows.find(r => r.name === "Spirit Orb (Misc)").quantity, 500);
+  assert.equal(final.destination.shop, "Blinding Light of Destiny (Shop)");
+  assert.match(final.destination.map, /Book of Lore/);
+  const workflow = read("content-sources/farm/external-guide-evidence/FARM_CANONICAL_QUEST_WORKFLOWS.json").records.find(r => r.canonicalId === "blinding-light-of-destiny");
+  assert.equal(workflow.routes[0].shopUnlock.npc, null);
+  assert.equal(workflow.routes[0].shopUnlock.mapJoin, null);
+  assert.ok(route.guidePaths.find(path => path.id === "wiki-quest-workflow").steps.every(step => tasks.some(t => t.id === step.id)));
+});
+
+test("CPC and Polly require one selected reward, eight verified farm sources and Level 80", () => {
+  const expectedMaps = ["frozenlair","lostruinswar","iceplane","ivoliss","voidnightbane","extinction","starsinc","underlair"];
+  for (const [id, reward] of [["celestial-pirate-commander","Celestial Pirate Commander"],["polly-roger","Polly Roger"]]) {
+    const route = get(id).acquisitionRoutes[0], task = route.farmTasks[0];
+    assert.equal(task.numberOfRuns, 1);
+    assert.equal(task.reward, reward + " ×1");
+    assert.equal(task.rewardChoices.length, 12);
+    assert.equal(task.rows.length, 8);
+    assert.equal(task.map, "/join pirates");
+    assert.equal(task.npc, "Barnaby");
+    assert.ok(task.preconditions.includes("Must be Level 80."));
+    assert.deepEqual(task.rows.map(row => row.map), expectedMaps.map(map => "/join " + map));
+    assert.deepEqual(task.rows.map(row => row.quantity), [5,5,10,10,10,10,1,1]);
+    for (const row of task.rows) {
+      assert.ok(row.monster);
+      assert.ok(row.sourceDetails.every(s => s.evidence.length >= 2));
+    }
+    assert.equal(task.rows[1].requiredQuest, task.quest);
+    assert.equal(materialLeaves(route.materialTree).length, 8);
+  }
+});
+
+test("LR keeps 400 Cohorts, current Wiki stacks and the double-Wreath Ultra alternative", () => {
+  const tasks = get("legion-revenant-class").acquisitionRoutes[0].farmTasks;
+  assert.deepEqual(tasks.map(t => t.quest), [1,2,3,4].map(n => "Legion Fealty " + n));
+  assert.ok(tasks.every(t => t.map === "/join revenant"));
+  assert.equal(tasks[0].rows.find(r => r.name === "Tethered Soul").maxStack, 10000);
+  assert.equal(tasks[0].rows.find(r => r.name === "Darkened Essence").maxStack, 12000);
+  assert.ok(tasks[1].rows.every(r => r.quantity === 400 && r.maxStack === 2400));
+  const materials = read("src/content/farm/material-sources.generated.json");
+  const wreath = materials["conquest-wreath"].tasks;
+  assert.equal(wreath[0].numberOfRuns, 6);
+  assert.equal(wreath[1].quest, null);
+  assert.equal(wreath[1].rewardQuantity, 2);
+  assert.deepEqual(wreath[1].rows.map(r => [r.name,r.quantity]), [["Dage the Evil Insignia",1],["Legion Token",50]]);
+  assert.equal(wreath[2].bossId, "ultra-dage");
+  assert.equal(wreath[2].rewardQuantity, 5);
+  assert.equal(wreath[2].repeatability, "weekly");
+  const guide = read("content-sources/farm/import/guide-overrides.json")["https://aqwwiki.wikidot.com/legion-revenant-class"].routes["wiki-location"][0];
+  assert.match(guide.steps.find(s => s.id === "lr-5").text, /400 Cohort/);
+});
+
+test("Void Crystal branches retain the exact Merge direction and source quantities", () => {
+  const sources = read("src/content/farm/material-sources.generated.json");
+  const a = sources["void-crystal-a"].tasks[0], b = sources["void-crystal-b"].tasks[0];
+  assert.deepEqual(a.rows.map(r => r.quantity), [200,150,200,200]);
+  assert.deepEqual(b.rows.map(r => r.quantity), [200,30,15,2]);
+  assert.equal(b.rows.at(-1).name, "Elders' Blood");
+  assert.equal(a.map, "/join tercessuinotlim");
+  assert.equal(a.rewardQuantity, 1);
+});
+
+test("class workflows reuse Class Codex identities and separate the weekly Gramiel alternatives", () => {
+  const profiles = read("src/content/classes/catalog.json");
+  const workflows = read("src/content/farm/class-workflows.generated.json");
+  for (const record of workflows) {
+    assert.ok(profiles.some(p => p.id === record.canonicalId));
+    assert.ok(!get(record.canonicalId));
+    assert.ok(record.routes.every(r => r.tasks.every(t => t.map && t.npc)));
+  }
+  const ap = workflows.find(w => w.canonicalId === "archpaladin-ap");
+  assert.equal(ap.routes.length, 3);
+  assert.equal(ap.routes[0].tasks.length, 8);
+  assert.equal(ap.routes[0].tasks.at(-1).quest, "Sacred Magic: Eden");
+  assert.equal(ap.routes[0].shopUnlock.purchase.amount, 0);
+  const hbv = workflows.find(w => w.canonicalId === "hollowborn-vindicator-hbv");
+  assert.deepEqual(hbv.routes.map(r => r.tasks[0].rows.find(row => row.name === "Hollow Soul (Misc)").quantity), [1500,75]);
+  assert.equal(hbv.routes[1].tasks[0].rows.find(r => /Insignia/.test(r.name)).quantity, 5);
+  assert.equal(hbv.routes[1].tasks[1].bossId, "gramiel-the-graceful");
+  assert.equal(hbv.routes[1].tasks[1].rewardQuantity, 5);
+});
+
+test("Wrong Turn rewards stay outside required inputs and preserve one fixed plus one choice", () => {
+  const source = read("src/content/farm/material-sources.generated.json")["nation-wrong-turn-at-voidbuquerque"];
+  const task = source.tasks[0];
+  assert.equal(task.rows.length, 3);
+  assert.deepEqual(task.fixedRewards.map(r => [r.name,r.quantity]), [["Unidentified 13",1]]);
+  assert.equal(task.rewardChoices.length, 6);
+  assert.ok(task.rows.every(row => ![...task.fixedRewards,...task.rewardChoices].some(reward => reward.name === row.name)));
+  const gem = read("src/content/farm/material-sources.generated.json")["gem-of-nulgath"].tasks.find(task => task.quest === "Wrong Turn at Voidbuquerque");
+  assert.equal(gem.reward, "Unidentified 13 ×1; Gem of Nulgath ×35");
+});
+
+test("Arcana resource exchanges preserve OR recipes and direct drop materials keep their evidence", () => {
+  const materials = read("src/content/farm/material-sources.generated.json");
+  const arcana = materials["1-the-magician-s-desire"].tasks;
+  assert.equal(arcana.length, 2);
+  assert.equal(arcana[0].rows.length, 4);
+  assert.deepEqual(arcana[1].rows.map(r => [r.name,r.quantity]), [["Arcana's Debris",4]]);
+  assert.equal(arcana[0].alternativeGroup, arcana[1].alternativeGroup);
+  const debris = materials["arcana-s-debris"].tasks;
+  assert.deepEqual(debris.map(t => t.rows.map(r => [r.name,r.quantity])), [[["King Drago Insignia",1]],[["Darkon Insignia",1]]]);
+  const sapphire = materials["sapphire-orb"].tasks[0].rows[0];
+  assert.equal(sapphire.map, "/join frozenlair");
+  assert.equal(sapphire.monster, "Legion Lich Lord (Monster)");
+  assert.equal(sapphire.sourceDetails[0].evidence.length, 2);
+});

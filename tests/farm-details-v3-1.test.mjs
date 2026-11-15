@@ -131,10 +131,17 @@ test("guide alternatives stay separate, have source line/hash evidence and never
   const pages = read("content-sources/farm/import/source-extracts.json").pages;
   const lr = c.items.find((i) => i.id === "legion-revenant-class");
   const paths = guidePaths(lr.acquisitionRoutes[0]);
-  assert.equal(paths.length, 2);
+  assert.equal(paths.length, 3);
   assert.equal(paths[0].id, "legion-fealty");
   assert.equal(paths[1].id, "ultra-dage-supplement");
-  for (const path of paths)
+  const wikiPath = paths.find(path => path.id === "wiki-quest-workflow");
+  assert.deepEqual(wikiPath.steps.map(step => step.title), [1,2,3,4].map(n => "Legion Fealty " + n));
+  for (const task of lr.acquisitionRoutes[0].farmTasks) {
+    assert.ok(task.evidence.length);
+    for (const evidence of task.evidence)
+      assert.equal(createHash("sha256").update(fs.readFileSync(evidence.sourceFile)).digest("hex"), evidence.sourceHash);
+  }
+  for (const path of paths.filter(path => path.id !== "wiki-quest-workflow"))
     for (const step of path.steps) {
       assert.ok(step.sources.length);
       assert.ok(step.evidence.length);

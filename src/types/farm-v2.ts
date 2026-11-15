@@ -70,15 +70,32 @@ export type FarmTask = {
   quantityScope?: "perTurn";
   numberOfRuns?: number;
   totalRequired?: number;
+  alternativeGroup?: string;
+  fixedRewards?: { name: string; quantity: number }[];
+  rewardChoices?: { name: string; quantity: number }[];
+  randomRewards?: { name: string; quantity: number }[];
+  randomChoiceRewards?: { name: string; quantity: number }[];
   rows: {
     name: string;
+    itemId?: string;
     quantity: number | null;
     monster?: string | null;
     sourceName?: string | null;
     map?: string | null;
     source?: string;
+    quantityTotal?: number;
+    maxStack?: number | null;
+    requiredQuest?: string | null;
+    sourceDetails?: {
+      kind: string;
+      monster?: string | null;
+      mapJoin?: string | null;
+      requiredQuest?: string | null;
+      unlockRequirements?: string[];
+      evidence?: { url: string }[];
+    }[];
   }[];
-  destination?: { npc: string; map: string; shop: string; item: string };
+  destination?: { npc: string | null; map: string; shop: string; item: string };
 };
 export type FarmInsigniaSource = {
   materialId: string;

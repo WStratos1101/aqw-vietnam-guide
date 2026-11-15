@@ -12,6 +12,7 @@ import {
 import type { AqwClass, ClassBody } from "../../types/classes";
 import type { ClassAcquisitionMethod } from "../../types/class-acquisition";
 import { ClassObtain } from "./ClassObtain";
+import { ClassQuestWorkflow } from "./ClassQuestWorkflow";
 import { AcquisitionMaterials } from "./AcquisitionMaterials";
 import { presentedCalendarMethods, acquisitionTabLabel } from "../../lib/calendar-acquisition-v020";
 import "../../styles/classes/acquisition-v12-4.css";
@@ -417,6 +418,7 @@ export function ClassAcquisitionPanel({
           <p>Cách lấy Class: Chưa xác minh.</p>
         </div>
       )}
+      <ClassQuestWorkflow key={profile.id} classId={profile.id} />
     </section>
   );
 }

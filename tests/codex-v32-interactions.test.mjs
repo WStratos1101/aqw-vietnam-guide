@@ -20,7 +20,7 @@ const { createRoot } = await import("react-dom/client");
 const bundle = await build({
   stdin: {
     contents:
-      "export {ComboContext} from './src/features/classes/ComboContext';export {CalendarConsumables} from './src/features/classes/CalendarConsumables';export {FarmRouteFacts} from './src/features/farm/FarmRouteFacts';",
+      "export {ComboContext} from './src/features/classes/ComboContext';export {CalendarConsumables} from './src/features/classes/CalendarConsumables';export {FarmRouteFacts} from './src/features/farm/FarmRouteFacts';export {ClassQuestWorkflow} from './src/features/classes/ClassQuestWorkflow';",
     resolveDir: process.cwd(),
     loader: "tsx",
   },
@@ -36,7 +36,7 @@ await fs.writeFile(
   "artifacts/qa/v3-2/ui-interactions.mjs",
   bundle.outputFiles[0].text,
 );
-const { ComboContext, CalendarConsumables, FarmRouteFacts } = await import(
+const { ComboContext, CalendarConsumables, FarmRouteFacts, ClassQuestWorkflow } = await import(
   "../artifacts/qa/v3-2/ui-interactions.mjs"
 );
 const host = document.createElement("div");
@@ -119,6 +119,8 @@ test("Quest material tables are divided by map, preserve quantity and keep unkno
       {
         id: "q",
         quest: "Verified Quest",
+        npc: "Quest NPC",
+        map: "/join verifiedmap",
         source: "https://aqwwiki.wikidot.com/fixture",
         requirements: ["Legacy requirement"],
         preconditions: ["Level 80"],
@@ -174,6 +176,50 @@ test("Quest location keeps its receiver while hiding an unverified map command",
   assert.doesNotMatch(host.textContent, /\/join/);
   assert.doesNotMatch(host.textContent, /\bRegion\b|<dt>Map<\/dt>/);
 });
+test("a Quest never inherits the final shop's receiving map or NPC", async () => {
+  const route = { id: "different-receivers", method: "Shop", regionId: null, location: "Shop NPC",
+    mapCommand: "/join shopmap", steps: [], sources: [], farmTasks: [{ id: "unknown-quest", quest: "Unlocated Quest",
+      preconditions: [], requirements: [], rows: [], source: "https://aqwwiki.wikidot.com/fixture" }] };
+  await act(async () => root.render(createElement(FarmRouteFacts, { route })));
+  assert.match(host.textContent, /Unlocated Quest/);
+  assert.doesNotMatch(host.textContent, /shopmap|Shop NPC/);
+});
+
+test("Class Quest workflows reuse the current class and switch between exclusive weekly routes", async () => {
+  await act(async () => root.render(createElement(ClassQuestWorkflow, { classId: "hollowborn-vindicator-hbv" })));
+  const facts = () => host.querySelector(".fv32-facts");
+  assert.match(facts().textContent, /Trial of the Vessel/);
+  assert.match(facts().textContent, /1\.500/);
+  assert.doesNotMatch(facts().textContent, /Echoes of a Forgotten Fate/);
+  await click([...host.querySelectorAll("button")].find(button => button.textContent.includes("Ultra Gramiel")));
+  assert.match(facts().textContent, /Echoes of a Forgotten Fate/);
+  assert.doesNotMatch(facts().textContent, /Trial of the Vessel \(Weekly Quest\)/);
+  assert.ok(facts().querySelector('a[href="/ultra-boss/gramiel-the-graceful"]'));
+  assert.match(facts().textContent, /Chỉ được hoàn thành một trong hai Quest mỗi tuần/);
+  await act(async () => root.render(createElement(ClassQuestWorkflow, { classId: "archpaladin-ap" })));
+  assert.match(host.textContent, /Sacred Magic: Eden/);
+  assert.match(host.textContent, /ArchPaladin Shop/);
+  assert.match(host.textContent, /0 ACs/);
+  await click([...host.querySelectorAll("button")].find(button => button.textContent.includes("Silver Paladin")));
+  assert.match(facts().textContent, /Silver Paladin's Vow/);
+  assert.doesNotMatch(facts().textContent, /Stone Paladin Armor/);
+});
+
+test("opening an Arcana ingredient reveals separate traditional and Insignia recipes", async () => {
+  const row = { name: "1 - The Magician's Desire", itemId: "1-the-magician-s-desire", quantity: 1 };
+  const route = { id: "nested-arcana", method: "Quest", regionId: null, sources: [], steps: [],
+    farmTasks: [{ id: "your-garden", quest: "Your Garden", requirements: [], preconditions: [],
+      source: "https://aqwwiki.wikidot.com/arcana-particle-s-quests", rows: [row] }] };
+  await act(async () => root.render(createElement(FarmRouteFacts, { route })));
+  assert.doesNotMatch(host.textContent, /Calamitous Warlic's Tome/);
+  const details = host.querySelector("tbody details");
+  await act(async () => { details.open = true; details.dispatchEvent(new window.Event("toggle")); });
+  assert.match(details.textContent, /Calamitous Warlic's Tome/);
+  assert.match(details.textContent, /Arcana's Debris/);
+  assert.match(details.textContent, /không cộng hai công thức/);
+  assert.equal(details.querySelectorAll(".fv32-facts > section").length, 2);
+});
+
 test.after(async () => {
   await act(async () => root.unmount());
   await window.happyDOM.close();

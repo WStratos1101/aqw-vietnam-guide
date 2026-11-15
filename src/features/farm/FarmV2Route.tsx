@@ -6,6 +6,7 @@ import {
 } from "../../lib/farm-details.mjs";
 import { FarmGuide } from "./FarmGuide";
 import { FarmWikiInfo } from "./FarmWikiInfo";
+import { FarmRouteFacts } from "./FarmRouteFacts";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
   ArrowLeft,
@@ -242,14 +243,15 @@ function Detail({
   const routes = routesFor(item, region);
   const [selectedRoute, setSelectedRoute] = useState(routes[0]?.id || "");
   const route = routes.find((r) => r.id === selectedRoute) || routes[0];
+  const hasMaterials = (value?: FarmV2RouteData) => Boolean(value?.materialTree || value?.farmTasks?.some(task => task.rows.length));
   const available = tabDefs.filter(
-    (t) => t.id !== "materials" || Boolean(route?.materialTree),
+    (t) => t.id !== "materials" || hasMaterials(route),
   );
   const [tab, setTab] = useState<Tab>("overview");
   const activeTab = available.some((t) => t.id === tab) ? tab : "overview";
   const selectRoute = (next: string) => {
     setSelectedRoute(next);
-    if (tab === "materials" && !routes.find((r) => r.id === next)?.materialTree)
+    if (tab === "materials" && !hasMaterials(routes.find((r) => r.id === next)))
       setTab("methods");
   };
   return (
@@ -420,7 +422,7 @@ function Detail({
               {item.acquisitionBrief?.text || "Chưa có cách nhận đã xác minh."}
             </p>
           ))}
-        {activeTab === "materials" && route?.materialTree && (
+        {activeTab === "materials" && route && (route.materialTree ? (
           <>
             <FarmMaterials
               tree={route.materialTree}
@@ -428,7 +430,7 @@ function Detail({
               scope={`farm:${item.id}:${route.id}`}
             />
           </>
-        )}
+        ) : <FarmRouteFacts route={route} />)}
         {activeTab === "guide" &&
           (route ? (
             <FarmGuide

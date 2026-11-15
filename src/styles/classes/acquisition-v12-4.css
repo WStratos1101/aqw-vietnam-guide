@@ -373,3 +373,12 @@
 .acquisition-merge-dependencies .acquisition-materials {
   margin-block: 12px;
 }
+.class-quest-workflow { margin-top: 1rem; }
+.class-quest-workflow summary { cursor: pointer; }
+.class-quest-workflow .fv32-facts > section { margin: 1rem 0; padding: 1rem; border: 1px solid var(--theme-border, #555); border-radius: .5rem; }
+.class-quest-workflow .fv32-quest-conditions { font-size: .875rem; }
+.class-quest-workflow .fv32-table-scroll { overflow-x: auto; }
+.class-quest-workflow table { width: 100%; border-collapse: collapse; }
+.class-quest-workflow th, .class-quest-workflow td { text-align: left; padding: .5rem; vertical-align: top; border-bottom: 1px solid var(--theme-border, #555); }
+.class-quest-workflow th:nth-child(2), .class-quest-workflow td:nth-child(2) { text-align: right; }
+.class-quest-workflow .fv32-actions { padding-left: 1.25rem; }

@@ -146,11 +146,17 @@ test("curated identities, recipes, unknown routes, classes and approved art surv
       }
     } else assert.equal(item.image, null);
     assert.equal(item.acquisitionRoutes.length, old.acquisition.length);
-    for (const r of old.acquisition)
+    for (const r of old.acquisition) {
+      const workflow = read("content-sources/farm/external-guide-evidence/FARM_CANONICAL_QUEST_WORKFLOWS.json").records
+        .find(record => record.canonicalId === item.id)?.routes.find(route => route.routeId === r.id && route.materialQuest);
+      const reviewedTree = workflow ? { kind: "allOf", requirements: workflow.tasks.find(task => task.quest === workflow.materialQuest).rows
+        .map(row => ({ kind: "item", itemId: row.itemId, name: row.name, quantity: row.quantity, source: row.source })) } : null;
       assert.deepEqual(
         item.acquisitionRoutes.find((v) => v.id === r.id).materialTree,
-        r.materialTree || null,
+        reviewedTree || r.materialTree || null,
       );
+      if (workflow) assert.equal(workflow.materialQuest, "Sailor of the Celestial Skies");
+    }
   }
   const blade = catalog.items.find((i) => i.id === "blade-of-awe");
   assert.equal(routesFor(blade, "greenguard-forest").length, 1);

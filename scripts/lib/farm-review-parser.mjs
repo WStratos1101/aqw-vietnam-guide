@@ -73,12 +73,26 @@ export function parseFarmReviewPage(html, url) {
           locationLinks: context.flatMap(el => [...el.querySelectorAll("a[href]")].map(a => ({ name: a.textContent.trim(), url: new URL(a.getAttribute("href"), url).href }))),
           requirements: [...context.flatMap(requirements), ...requirements(panel)],
           repeatability: /once.*per week/i.test(contextText + "\n" + panelText) ? "weekly" : /once.*per day/i.test(contextText + "\n" + panelText) ? "daily" : null,
-          required: rows(listAfter(required), url), rewards: rows(rewardList, url), text: panelText });
+          required: rows(listAfter(required), url), rewards: rows(rewardList, url),
+          fixedRewards: rows(listAfter(labelNode(panel, "Items")), url),
+          choiceRewards: rows(listAfter(labelNode(panel, "You may also choose one of")), url),
+          randomRewards: rows(listAfter(labelNode(panel, "You may also receive, at random")), url),
+          randomChoiceRewards: rows(listAfter(labelNode(panel, "You will receive one of the following items")), url),
+          text: panelText });
       }
     }
     const locationBlock = text.match(/^Locations?:[ \t]*([^]*?)(?=^Price:)/im)?.[1]?.trim() || null;
     const locationNode = labelNode(body, "Location") || labelNode(body, "Locations");
     const locationLinks = [];
+    // Collapsible location lists may be siblings of the Location paragraph.
+    // Stop at Price so ingredient and "also see" links never become locations.
+    let inLocation = false;
+    for (const node of body.querySelectorAll("strong,a[href]")) {
+      if (node === locationNode) { inLocation = true; continue; }
+      if (!inLocation) continue;
+      if (node.tagName === "STRONG" && /^Price:/.test(node.textContent.trim())) break;
+      if (node.tagName === "A") locationLinks.push({ name: node.textContent.trim(), url: new URL(node.getAttribute("href"), url).href });
+    }
     if (locationNode?.parentElement.tagName === "P") {
       const container = locationNode.parentElement;
       let started = false;
@@ -118,7 +132,7 @@ export function parseFarmReviewPage(html, url) {
       return [{ quest: match[1], npc: match[2] || null, sources: [...new Set([...body.querySelectorAll("a[href]")].filter(a => a.textContent.trim() === match[1]).map(a => new URL(a.getAttribute("href"), url).href))] }];
     });
     return { text, quests, location: locationBlock?.replace(/\n/g, " · ") || null,
-      mergeRecipes, questAlternatives, locationLinks,
+      mergeRecipes, questAlternatives, locationLinks: [...new Map(locationLinks.map(link => [link.url + "|" + link.name, link])).values()],
       joinCommands: [...new Set([...text.matchAll(/\/join\s+([a-z0-9_-]+)/gi)].map(m => "/join " + m[1]))] };
   } finally { window.happyDOM.close(); }
 }

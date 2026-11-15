@@ -12,6 +12,7 @@ import { farmWikiDetails } from "./lib/farm-wiki-details.mjs";
 import { verifiedFarmAsset, farmAssetEvidence } from "./lib/farm-image-evidence.mjs";
 import { enrichFarmReview, loadFarmReviewPages } from "./lib/farm-review-enrichment.mjs";
 import { applyFarmRouteCorrections } from "./lib/farm-route-corrections.mjs";
+import { buildReviewedFarmWorkflows, writeFarmWorkflowReports } from "./lib/farm-quest-workflows.mjs";
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const write = (p, d) => fs.writeFileSync(p, JSON.stringify(d, null, 2) + "\n");
 const legacy = read("src/content/farm/catalog.json");
@@ -529,6 +530,7 @@ revenantRoute.farmTasks = questRecovery.tasks;
 revenantRoute.materialTree = { kind: "allOf", requirements: questRecovery.tasks[0].rows.map(row => ({
   kind: "item", itemId: row.itemId, name: row.name, quantity: row.quantity, source: row.source,
 })) };
+const questWorkflows = buildReviewedFarmWorkflows(items, review.materialSources);
 write("src/content/farm/material-sources.generated.json", review.materialSources);
 write(`${reviewRoot}/enrichment-audit.json`, { changes: review.changes, conflicts: review.conflicts, excluded: review.excluded, routeCorrections: review.routeCorrections });
 const usedRegions = new Set(items.flatMap((i) => i.regions));
@@ -548,6 +550,7 @@ const catalog = {
 };
 const errors = validateFarmV2(catalog);
 if (errors.length) throw Error(errors.join("\n"));
+writeFarmWorkflowReports(questWorkflows);
 write("src/content/farm/catalog-v2.generated.json", catalog);
 write(
   "src/content/farm/index.json",
