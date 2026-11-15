@@ -8,6 +8,7 @@ import { groupCounts, matchesGroup, resolveGroup } from "../src/lib/farm-groups.
 
 const read=path=>JSON.parse(fs.readFileSync(path,"utf8"));
 const catalog=read("src/content/farm/catalog-v2.generated.json"), registry=read("src/content/farm/quest-workflows.generated.json");
+const collectionRecords=read("content-sources/farm/equipment-sets/canonical-records.json");
 const audit=read("content-sources/farm/review/public-workflow-audit.json");
 const get=id=>catalog.items.find(item=>item.id===id);
 const route=id=>get(id).acquisitionRoutes[0];
@@ -15,8 +16,8 @@ const quantities=rows=>Object.fromEntries(rows.map(row=>[row.name,row.quantity])
 const policy={"champion-drakath":"chaos","darkon-the-conductor":"debris-astravian","ultra-drago":"debris-astravian","gramiel-the-graceful":"hollowborn","ultra-speaker":"alternative-hero","ultra-nulgath":"nation","ultra-dage":"legion"};
 
 test("all public Nostalgia routes are removed while the ordinary NSOD recipe and every identity survive",()=>{
-  assert.equal(catalog.items.length,279);
-  assert.equal(new Set(catalog.items.map(item=>item.id)).size,279);
+  assert.equal(catalog.items.length,279+collectionRecords.length);
+  assert.equal(new Set(catalog.items.map(item=>item.id)).size,279+collectionRecords.length);
   assert.equal(audit.removedRoutes.length,5);assert.equal(audit.cleanedRoutes.length,1);
   for(const item of catalog.items)assert.doesNotMatch(JSON.stringify({brief:item.acquisitionBrief,details:item.wikiDetails}),/nostalgia/i);
   for(const item of catalog.items) for(const r of item.acquisitionRoutes){
@@ -115,7 +116,7 @@ test("single Insignia-only items have no invented standard farm mode",()=>{
 });
 
 test("every shared Quest has real Wiki panel evidence and recipe source hashes remain valid",()=>{
-  const pages=[...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources];
+  const pages=[...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources,...read("content-sources/farm/equipment-sets/sources.json").sources];
   const valid=new Set(pages.map(page=>page.url));
   assert.ok(Object.values(registry.quests).every(task=>task.quest&&valid.has(task.source)));
   for(const change of audit.factionChanges){

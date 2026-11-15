@@ -26,3 +26,23 @@ export function voidHighlordMix(dailyRuns) {
     roentgenium: dailyRuns + exchanges * 2, excess: dailyRuns + exchanges * 2 - 15 };
 }
 import { materialId } from "./material-requirements.mjs";
+
+// Identify the exchange/reward, rather than treating every Ultra drop as Insignia.
+export function usesInsignia(task) {
+  return /\binsignia\b/i.test([task.reward, ...(task.rows || []).map(row => row.name),
+    ...(task.fixedRewards || []).map(row => row.name), ...(task.rewardChoices || []).map(row => row.name)].join(" "));
+}
+export function materialTasksForMode(tasks, modeId = "standard") {
+  return modeId === "insignia" ? tasks : tasks.filter(task => !usesInsignia(task));
+}
+export function materialFarmMaps(row, tasks, modeId) {
+  return [...new Set(materialTasksForMode(tasks, modeId).flatMap(task => task.quest ?
+    (modeId === "insignia" && task.bossId && task.map &&
+      ((task.fixedRewards || []).some(reward=>reward.name===row.name) || task.reward?.startsWith(row.name+" ×")) ? [task.map] : []) :
+    task.rows.filter(input => input.name === row.name && input.monster && input.map).map(input => input.map)))];
+}
+export function distinctFarmText(values, alreadyShown = []) {
+  const key = text => text?.normalize("NFKC").replace(/\s+/g, " ").trim().toLowerCase();
+  const seen = new Set(alreadyShown.filter(Boolean).map(key));
+  return values.filter(value => { const normalized = key(value); if (!normalized || seen.has(normalized)) return false; seen.add(normalized); return true; });
+}

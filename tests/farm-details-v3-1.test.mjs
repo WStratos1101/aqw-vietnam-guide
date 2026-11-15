@@ -12,7 +12,9 @@ import {
 } from "../src/lib/farm-details.mjs";
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const c = read("src/content/farm/catalog-v2.generated.json");
+const collectionRecords = read("content-sources/farm/equipment-sets/canonical-records.json");
 const records = [
+  ...collectionRecords,
   ...read("content-sources/farm/import/wiki-records.json"),
   ...read("content-sources/farm/import/detail-wiki-records.json"),
   ...read("content-sources/farm/import/ultra-import-audit.json").records,
@@ -204,7 +206,7 @@ test("membership and availability require explicit page evidence; AC tag and abs
 test("completion snapshots are exact canonical bodies; incomplete indexed evidence is never counted complete", () => {
   const added = read(
     "content-sources/farm/import/ultra-import-audit.json",
-  ).added;
+  ).added.concat(collectionRecords.map(record=>record.id));
   assert.equal(c.items.filter((i) => !added.includes(i.id)).length, 231);
   assert.equal(
     c.items
@@ -213,7 +215,7 @@ test("completion snapshots are exact canonical bodies; incomplete indexed eviden
     231,
   );
   const audit = read("content-sources/farm/import/detail-audit.json");
-  assert.equal(audit.filter((i) => i.completeWikiSnapshot).length, 231);
+  assert.equal(audit.filter((i) => i.completeWikiSnapshot).length, 231 + collectionRecords.length);
   const partial = c.items.find((i) => i.id === "aureate-shield-aegis");
   assert.equal(partial.wikiDetails.evidence.snapshotStatus, "partial");
   const translations = read(

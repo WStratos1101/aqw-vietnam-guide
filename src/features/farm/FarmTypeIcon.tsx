@@ -18,9 +18,9 @@ const files: Record<string, string> = {
   Polearm: "Polearm_Table.png",
   Staff: "Staff_Table.png",
 };
-export function FarmTypeIcon({ name }: { name: string }) {
+export function FarmTypeIcon({ name, fallbackName }: { name: string; fallbackName?: string }) {
   const [failed, setFailed] = useState(false);
-  const file = files[name];
+  const file = files[name] || (fallbackName ? files[fallbackName] : undefined);
   return file && !failed ? (
     <>
       <img

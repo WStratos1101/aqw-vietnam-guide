@@ -14,10 +14,13 @@ import { enrichFarmReview, loadFarmReviewPages } from "./lib/farm-review-enrichm
 import { applyFarmRouteCorrections } from "./lib/farm-route-corrections.mjs";
 import { applyFarmPublicWorkflows } from "./lib/farm-public-workflows.mjs";
 import { buildReviewedFarmWorkflows, writeFarmWorkflowReports } from "./lib/farm-quest-workflows.mjs";
+import { loadVerifiedFarmPages } from "./lib/farm-review-parser.mjs";
+import { buildEquipmentSets } from "./lib/farm-equipment-sets.mjs";
+import { applyFarmRefinement } from "./lib/farm-refinement.mjs";
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const write = (p, d) => fs.writeFileSync(p, JSON.stringify(d, null, 2) + "\n");
 const legacy = read("src/content/farm/catalog.json");
-const assets = read("src/data/aqw-assets.json");
+const assets = [...read("src/data/aqw-assets.json"), ...read("content-sources/farm/equipment-sets/assets.json")];
 const classProfiles = read("src/content/classes/catalog.json");
 const classSources = read("src/content/classes/skill-registry.json").classes;
 const effectOverrides = read(
@@ -43,10 +46,13 @@ if (!fs.existsSync(input))
   throw Error(
     "Run python3 scripts/import-farm-sources.py before building Farm V2. Source snapshot is required.",
   );
-const records = read(input);
+const collectionRecords = read("content-sources/farm/equipment-sets/canonical-records.json");
+const records = [...read(input),...collectionRecords];
 const detailRecords = [
+  ...collectionRecords,
   ...records,
   ...read("content-sources/farm/import/detail-wiki-records.json"),
+  ...collectionRecords,
 ];
 const extracts = read("content-sources/farm/import/source-extracts.json");
 const access = read("content-sources/farm/import/source-access.json");
@@ -190,9 +196,9 @@ for (const r of records) {
         ...(facts.questReward ? { questReward: r.wikiUrl } : {}),
         ...(facts.purchase ? { purchase: r.wikiUrl } : {}),
       },
-      effects: [],
+      effects: r.effects || [],
       acquisitionRoutes:
-        location || facts.materialTree || facts.questReward || facts.purchase
+        location || facts.materialTree || facts.questReward || facts.purchase || facts.dropSource
           ? [
               {
                 id: "wiki-location",
@@ -203,8 +209,9 @@ for (const r of records) {
                     ? "Quest"
                     : facts.purchase
                       ? "Shop"
-                      : "Other",
+                      : facts.dropSource ? "Drop" : "Other",
                 questReward: facts.questReward,
+                ...(facts.dropSource ? {dropSource:facts.dropSource} : {}),
                 purchase: facts.purchase,
                 location,
                 description: facts.materialTree
@@ -247,7 +254,7 @@ for (const r of records) {
   // routes, recipes, availability, verification dates or membership assertions.
   if (!item.rarity && facts.rarity) {
     item.rarity = facts.rarity;
-    item.fieldEvidence.rarity = r.wikiUrl;
+    (item.fieldEvidence ||= {}).rarity = r.wikiUrl;
   }
   item.provenance = r.provenance;
   item.sources = dedupe([
@@ -423,6 +430,11 @@ for (const item of items) {
             : "explicit_header_field",
         ]),
     );
+    if (!item.rarity && item.wikiDetails.rarity) {
+      item.rarity = item.wikiDetails.rarity;
+      (item.fieldEvidence ||= {}).rarity = item.wikiUrl;
+      item.unknownFields = (item.unknownFields || []).filter(field=>field!=="rarity");
+    }
     if (item.level == null && item.wikiDetails.levelRequired != null)
       item.level = item.wikiDetails.levelRequired;
   }
@@ -506,11 +518,17 @@ assignFarmGroups(
   factionItemMappings,
   legacyFactionGroups,
   empoweredUltraFactionEvidence,
+  collectionRecords,
 );
 const reviewRoot = "content-sources/farm/review";
 const optionalReview = name => fs.existsSync(`${reviewRoot}/${name}.json`) ? read(`${reviewRoot}/${name}.json`) : [];
 const ultraRecovery = read("src/content/ultra/recovery.json");
+const refinement = read("content-sources/farm/refinement/sources.json");
 const farmWikiPages = loadFarmReviewPages();
+for(const page of loadVerifiedFarmPages([...refinement.sources,...read("content-sources/farm/equipment-sets/sources.json").sources.filter(source=>!source.url.includes("#"))].map(source=>({breadcrumbs:[],...source})))){
+  const previous=farmWikiPages.findIndex(existing=>existing.url===page.url);
+  if(previous<0)farmWikiPages.push(page);
+}
 const review = enrichFarmReview(items, farmWikiPages,
   [...read("src/content/ultra/bosses.json"), ...ultraRecovery.bosses],
   optionalReview("image-approvals"), optionalReview("image-candidates"));
@@ -534,6 +552,8 @@ revenantRoute.materialTree = { kind: "allOf", requirements: questRecovery.tasks[
 const questWorkflows = buildReviewedFarmWorkflows(items, review.materialSources, farmWikiPages);
 const publicWorkflows = applyFarmPublicWorkflows(items, questWorkflows.cachedWikiPages, review.materialSources,
   [...read("src/content/ultra/bosses.json"), ...ultraRecovery.bosses]);
+applyFarmRefinement(items, publicWorkflows.registry, publicWorkflows.pages, refinement);
+buildEquipmentSets(items, publicWorkflows.pages);
 write("src/content/farm/quest-workflows.generated.json", publicWorkflows.registry);
 
 const publicProfiles={...publicWorkflows.registry.materials,...read("content-sources/farm/material-guides.json"),...review.materialSources};

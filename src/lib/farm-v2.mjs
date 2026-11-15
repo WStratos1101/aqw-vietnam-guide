@@ -72,7 +72,7 @@ export function validateFarmV2(catalog) {
         !i.groupEvidence?.some(
           (e) =>
             e.groupId === i.primaryGroupId &&
-            ((e.sourceDocument === "manual-faction-guide" &&
+            ((["manual-faction-guide","equipment-set-guide"].includes(e.sourceDocument) &&
               e.sourceFile &&
               Number.isInteger(e.sourceLine) &&
               e.sourceLine > 0) ||

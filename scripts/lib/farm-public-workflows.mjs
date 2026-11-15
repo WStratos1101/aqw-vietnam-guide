@@ -36,6 +36,28 @@ export function applyDirectUltraGroups(items, pages, audit = { factionChanges: [
   return items;
 }
 
+export function buildFarmPurchaseTasks(page, pages, name, id=materialId(name)) {
+  const mapFor=page=>{const map=page?.text.match(/^Map Name:\s*([a-z0-9_-]+)$/im)?.[1];return map&&page.joinCommands.includes("/join "+map)?"/join "+map:null;};
+        const shopLocations=(page.locationLinks || []).map(link=>pages.get(link.url)).filter(candidate=>candidate?.shopRows?.some(row=>row.url===page.url));
+        return shopLocations.flatMap(place=>{
+          const listed=place.shopRows.find(row=>row.url===page.url);
+          const shopName=page.locationLinks.find(link=>link.url===place.url)?.name;
+          const header=place.text.split(/^(?:Note:|Weapons$|Classes \/ Armors$|Name$)/m)[0];
+          const locations=header.replace(/^Locations?:\s*/m, "").split("\n").flatMap(line=>{
+            const pair=line.match(/^(.+?) - (.+)$/);
+            if(!pair)return [];
+            const link=place.locationLinks.find(link=>link.name===pair[2]), map=mapFor(pages.get(link?.url));
+            const menu=/^(?:Game Menu|Book of Lore)$/.test(pair[2]);
+            if(!map&&!menu)return [];
+            return [{npc:menu?null:pair[1],location:pair[2],map:map || null,shopAccess:menu?pair[2]+" → "+pair[1]:undefined}];
+          });
+          return (locations.length?locations:[{npc:null,location:page.location,map:null}]).map((location,index)=>({
+            id:"material-shop-"+id+":"+materialId(shopName || "shop")+":"+index,quest:null,title:name,source:page.url,
+            ...location,shop:shopName,purchase:listed.purchase,
+            preconditions:[...new Set([...listed.requirements,...[page,place].flatMap(source=>source.text.split("\n").filter(line=>/^(?:Note: )?(?:Must |Requires |Need )/i.test(line)))])],requirements:[],rows:[],reward:name+" ×1",rewardQuantity:1}));
+        });
+}
+
 export function applyFarmPublicWorkflows(items, cachedPages, materialSources, bosses) {
   const pages = new Map(cachedPages.map(page => [page.url, page]));
   for (const source of read("content-sources/farm/quest-workflow-review.json").sources) {
@@ -215,7 +237,13 @@ export function applyFarmPublicWorkflows(items, cachedPages, materialSources, bo
       if (nostalgia.test(route.description || "")) route.description = null;
       const reviewed = (route.farmTasks || []).map(useReviewedTask).filter(Boolean);
       const rewardMatches = questRows.filter(row => outputs(row.q).some(reward => reward.wikiUrl === item.wikiUrl));
-      const finish = route.questReward ? rewardMatches.filter(row => row.q.name === route.questReward) : [];
+      if(route.method==="Other" && !route.questReward && !route.questAlternatives?.length && rewardMatches.length){
+        route.method="Quest";
+        if(rewardMatches.length===1)route.questReward=rewardMatches[0].q.name;
+        else route.questAlternatives=rewardMatches.map(row=>({quest:row.q.name,npc:row.q.npc,sources:[row.page.url]}));
+        for(const row of rewardMatches)if(!route.sources.some(source=>source.url===row.page.url))route.sources.push({url:row.page.url,label:"AQW Wiki",sourceType:"wiki"});
+      }
+      const finish = route.questReward ? rewardMatches.filter(row => row.q.name.toLowerCase() === route.questReward.toLowerCase()) : [];
       const alternatives = (route.questAlternatives || []).flatMap(option => byName(option.quest).filter(row => option.sources.includes(row.page.url)));
       const shopUnlocks=[];
       if(["Shop","Merge"].includes(route.method)) {
@@ -254,7 +282,7 @@ export function applyFarmPublicWorkflows(items, cachedPages, materialSources, bo
       if (!route.farmTasks?.some(task=>!task.quest) && ["Merge","Shop","Drop"].includes(route.method)) route.completionTasks=[{
         id:"receive-"+item.id+"-"+route.id,quest:null,title:route.method==="Merge"?`Merge ${item.name}`:route.method==="Shop"?`Mua ${item.name}`:`Nhận ${item.name}`,
         source:item.wikiUrl,npc:route.npc,map:route.mapCommand,location:route.location,preconditions:(route.prerequisites || []).map(requirement=>requirement.value),requirements:[],
-        rows:materialLeaves(route.materialTree),reward:item.name,purchase:route.purchase,
+        rows:materialLeaves(route.materialTree),reward:item.name,purchase:route.purchase,dropSource:route.dropSource,
       }];
       makeModes(item, route);
       route.materialTotalsComplete=["void-highlord-class","legion-revenant-class","celestial-pirate-commander","polly-roger"].includes(item.id);
@@ -330,14 +358,7 @@ export function applyFarmPublicWorkflows(items, cachedPages, materialSources, bo
       const monsters=direct || page.droppedBy?.map(monster=>monster.name).join(", ");
       const price=page.price?.match(/^([\d,]+) (Gold|ACs?)$/);
       if(price){
-        const shopLocations=(page.locationLinks || []).map(link=>pages.get(link.url)).filter(candidate=>candidate && /^Locations?:/m.test(candidate.text));
-        const shopTasks=shopLocations.map((place,index)=>{
-          const maps=[...new Set(place.locationLinks.map(link=>mapFor(pages.get(link.url))).filter(Boolean))];
-          return {id:"material-shop-"+id+index,quest:null,title:row.name,source:page.url,
-            npc:place.text.match(/^Location:\s*(.+?) - /m)?.[1] || null,location:place.location,
-            map:maps.length===1?maps[0]:null,purchase:{amount:Number(price[1].replaceAll(",","")),currency:price[2]},
-            preconditions:[...new Set([page,place].flatMap(source=>source.text.split("\n").filter(line=>/^Must |^Requires |^Need /i.test(line))))],requirements:[],rows:[],reward:row.name+" ×1",rewardQuantity:1};
-        });
+        const shopTasks=buildFarmPurchaseTasks(page, pages, row.name, id);
         materials[id]={name:row.name,method:distinct.length?"Quest / Shop":"Shop",questIds:distinct.map(register),tasks:shopTasks,sourceHash:page.sourceHash};
       }
       if(monsters){

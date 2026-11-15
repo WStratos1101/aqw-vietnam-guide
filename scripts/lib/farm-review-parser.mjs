@@ -148,7 +148,24 @@ export function parseFarmReviewPage(html, url) {
       if (!match) return [];
       return [{ quest: match[1], npc: match[2] || null, sources: [...new Set([...body.querySelectorAll("a[href]")].filter(a => a.textContent.trim() === match[1]).map(a => new URL(a.getAttribute("href"), url).href))] }];
     });
-    return { text, quests, droppedBy, price: field(text,"Price"), location: locationBlock?.replace(/\n/g, " · ") || null,
+    const shopInventory=[...body.querySelectorAll("table")].filter(table=>[...table.querySelectorAll("th")].some(cell=>cell.textContent.trim()==="Name")).flatMap(table=>[...table.querySelectorAll("tr")].flatMap(tr=>{
+      const cells=[...tr.querySelectorAll(":scope > td")];
+      const link=cells.slice(0,-1).flatMap(cell=>[...cell.querySelectorAll("a[href]")]).find(a=>!a.querySelector("img")&&a.textContent.trim());
+      return link?[{name:link.textContent.trim(),url:new URL(link.getAttribute("href"),url).href}]:[];
+    }));
+    const shopRows=[...body.querySelectorAll("table")].filter(table=>{
+      const headers=[...table.querySelectorAll("th")].map(cell=>cell.textContent.trim());
+      return headers.includes("Name") && headers.includes("Price");
+    }).flatMap(table=>[...table.querySelectorAll("tr")].flatMap(tr=>{
+      const cells=[...tr.querySelectorAll(":scope > td")], price=cells.at(-1)?.textContent.trim().match(/^([\d,]+) (Gold|ACs?)$/);
+      if(!price)return [];
+      const link=cells.slice(0,-1).flatMap(cell=>[...cell.querySelectorAll("a[href]")]).find(a=>!a.querySelector("img")&&a.textContent.trim());
+      if(!link)return [];
+      return [{name:link.textContent.trim(),url:new URL(link.getAttribute("href"),url).href,
+        purchase:{amount:Number(price[1].replaceAll(",","")),currency:/^gold$/i.test(price[2])?"Gold":"ACs"},
+        requirements:cells.slice(0,-1).map(cell=>cell.textContent.trim()).filter(value=>value&&value!==link.textContent.trim()&&value!=="N/A")}];
+    }));
+    return { text, quests, droppedBy, shopRows, shopInventory, price: field(text,"Price"), location: locationBlock?.replace(/\n/g, " · ") || null,
       itemLinks: [...body.querySelectorAll("a[href]")].filter(a => /^(?:\/|https?:\/\/aqwwiki\.wikidot\.com\/)/.test(a.getAttribute("href")))
         .map(a => ({ name: a.textContent.trim(), url: new URL(a.getAttribute("href"), url).href })),
       mergeRecipes, questAlternatives, locationLinks: [...new Map(locationLinks.map(link => [link.url + "|" + link.name, link])).values()],

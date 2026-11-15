@@ -14,6 +14,7 @@ export function farmWikiFacts(record) {
   const quest = priceText?.match(/^N\/A \(Reward from the '(.+)' quest\)$/i);
   const facts = {
     location: field("Locations?"),
+    dropSource: text.match(/^Price:\s*N\/A\s*\(Dropped by ([^\n)]+)\)/im)?.[1] || null,
     questReward: quest?.[1] || null,
     purchase: purchase ? { amount: Number(purchase[1].replaceAll(",", "")), currency: /^gold$/i.test(purchase[2]) ? "Gold" : "ACs" } : null,
     rarity: field("Rarity"),

@@ -5,6 +5,8 @@ import {
   farmBoost,
 } from "../../lib/farm-details.mjs";
 import { FarmGuide } from "./FarmGuide";
+import { FarmEquipmentSets } from "./FarmEquipmentSets";
+import { farmSetItemHref } from "../../lib/farm-equipment-sets.mjs";
 import { FarmWikiInfo } from "./FarmWikiInfo";
 import { FarmQuestWorkflow, FarmWorkflowSummary, type WorkflowFocus } from "./FarmQuestWorkflow";
 import { FarmRouteFacts } from "./FarmRouteFacts";
@@ -67,6 +69,7 @@ const tabDefs = [
   { id: "methods", name: "Cách nhận", Icon: Route },
   { id: "materials", name: "Nguyên liệu", Icon: Package },
   { id: "guide", name: "Hướng dẫn Farm", Icon: MapIcon },
+  { id: "sets", name: "Set đồ", Icon: Shirt },
 ] as const;
 type Tab = (typeof tabDefs)[number]["id"];
 type State = {
@@ -233,12 +236,14 @@ function Detail({
   onItemClick,
   onBack,
   returning,
+  onSetItemClick,
 }: {
   item: Item;
   region: string;
   onItemClick: (id: string) => void;
   onBack: () => void;
   returning: boolean;
+  onSetItemClick: (id: string) => void;
 }) {
   const id = useId();
   const filteredRoutes = routesFor(item, region);
@@ -247,9 +252,9 @@ function Detail({
   const [focus,setFocus] = useState<WorkflowFocus>(readFocus);
   const [selectedRoute, setSelectedRoute] = useState(new URLSearchParams(typeof window === "undefined" ? "" : window.location.search).get("farm-route") || routes[0]?.id || "");
   const route = routes.find((r) => r.id === selectedRoute) || routes[0];
-  const hasMaterials = (value?: FarmV2RouteData) => Boolean(value?.materialTree || value?.farmTasks?.some(task => task.rows.length));
+  const hasMaterials = (value?: FarmV2RouteData) => Boolean(value?.materialTree || value?.farmModes?.some(mode=>mode.materials.length) || value?.questWorkflowIds?.length || value?.farmTasks?.some(task => task.rows.length));
   const available = tabDefs.filter(
-    (t) => t.id !== "materials" || hasMaterials(route),
+    (t) => (t.id !== "materials" || hasMaterials(route)) && (t.id !== "sets" || Boolean(item.setIds?.length)),
   );
   const [tab, setTab] = useState<Tab>(() => (new URLSearchParams(typeof window === "undefined" ? "" : window.location.search).get("farm-tab") as Tab) || "overview");
   const navigateWorkflow = (next: WorkflowFocus) => {
@@ -257,12 +262,13 @@ function Detail({
     before.searchParams.set("farm-tab",tab); before.searchParams.set("farm-route",route.id);
     window.history.replaceState(window.history.state,"",before.pathname+before.search);
     const url = new URL(before);
-    url.searchParams.set("farm-tab","guide");
+    const nextTab = next.materialId ? "materials" : next.questId ? "guide" : tab;
+    url.searchParams.set("farm-tab",nextTab);
     for(const [key,value] of Object.entries({"farm-quest":next.questId,"farm-material":next.materialId,"farm-mode":next.modeId,"farm-option":next.optionId,"farm-daily":next.dailyRuns==null?undefined:String(next.dailyRuns)})) {
       if(value)url.searchParams.set(key,value); else url.searchParams.delete(key);
     }
     window.history.pushState(window.history.state,"",url.pathname+url.search);
-    setFocus(next);setTab("guide");
+    setFocus(next);setTab(nextTab);
   };
   useEffect(()=>{
     const load = () => { const params=new URLSearchParams(typeof window === "undefined" ? "" : window.location.search);setFocus(readFocus());setTab((params.get("farm-tab") as Tab)||"overview");setSelectedRoute(params.get("farm-route")||routes[0]?.id||""); };
@@ -367,6 +373,7 @@ function Detail({
         aria-labelledby={`${id}-${activeTab}-tab`}
         tabIndex={0}
       >
+        {activeTab === "sets" && <FarmEquipmentSets item={item} items={catalog.items} onItemClick={onSetItemClick}/>}
         {activeTab === "overview" && <FarmWikiInfo item={item} route={route} />}
         {["methods", "materials", "guide"].includes(activeTab) && (
           <RouteChips
@@ -376,7 +383,7 @@ function Detail({
           />
         )}
         {activeTab === "methods" && (route ? <FarmWorkflowSummary brief={item.acquisitionBrief} route={route} focus={focus} onNavigate={navigateWorkflow} /> : <p>Chưa có phương án nhận thông thường được xác minh.</p>)}
-        {activeTab === "materials" && route && (route.materialTree && !route.farmModes?.length ? (
+        {activeTab === "materials" && route && (route.materialTree && !route.questWorkflowIds?.length && !focus.materialId && !route.farmModes?.length ? (
           <>
             <FarmMaterials
               tree={route.materialTree}
@@ -508,6 +515,13 @@ export function FarmV2Route({ slug }: { slug?: string }) {
       subtype: "",
     });
     setDetailMobile(true);
+  };
+  const openSetItem = (id: string) => {
+    const member=catalog.items.find(item=>item.id===id);if(!member)return;
+    window.history.pushState(window.history.state,"",farmSetItemHref(member));
+    setState(initialState());setDetailMobile(true);
+    window.dispatchEvent(new window.PopStateEvent("popstate"));
+    window.requestAnimationFrame(()=>container.current?.querySelector(".fv2-detail")?.scrollIntoView({block:"start"}));
   };
   const back = () => {
     if (returns.length) {
@@ -700,6 +714,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
               item={active}
               region={region}
               onItemClick={clickMat}
+              onSetItemClick={openSetItem}
               onBack={back}
               returning={returns.length > 0}
             />

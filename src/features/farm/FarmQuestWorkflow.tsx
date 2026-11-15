@@ -3,8 +3,8 @@ import registryData from "../../content/farm/quest-workflows.generated.json";
 import materialData from "../../content/farm/material-sources.generated.json";
 import manualData from "../../../content-sources/farm/material-guides.json";
 import { materialId, materialLeaves } from "../../lib/material-requirements.mjs";
-import { sumMaterials, workflowTasks, voidHighlordMix } from "../../lib/farm-workflows.mjs";
-import type { FarmTask, FarmV2RouteData, FarmAcquisitionBrief } from "../../types/farm-v2";
+import { sumMaterials, workflowTasks, voidHighlordMix, materialTasksForMode, materialFarmMaps, distinctFarmText } from "../../lib/farm-workflows.mjs";
+import type { FarmTask, FarmV2RouteData, FarmAcquisitionBrief, FarmMode } from "../../types/farm-v2";
 
 type Row = FarmTask["rows"][number];
 type MaterialClick = (id: string, row?: Row) => void;
@@ -16,22 +16,28 @@ const profiles = Object.fromEntries(Object.entries({ ...registry.materials, ...m
     const additional=registry.materials?.[id];
     const tasks=[...(profile.tasks || []),...(additional?.questIds?.map(id=>registry.quests[id]).filter(Boolean) || []),...(additional?.tasks || [])];
     const unique=new Map<string,FarmTask>();
-    for(const task of tasks){const key=task.quest?task.source+":"+task.quest:task.title+":"+task.npc+":"+task.map+JSON.stringify(task.rows.map(row=>[row.name,row.quantity,row.monster,row.map]));if(!unique.has(key))unique.set(key,task);}
+    for(const task of tasks){
+      const drop= !task.quest && task.rows.length>0 && task.rows.every(row=>row.name===profile.name&&row.monster);
+      if(drop && [...unique.values()].some(existing=>!existing.quest && task.rows.every(row=>existing.rows.some(other=>other.name===row.name&&other.monster===row.monster&&(!row.map || other.map===row.map)))))continue;
+      const key=task.quest?task.source+":"+task.quest:drop?
+        "drop:"+JSON.stringify(task.rows.map(row=>[row.name,row.monster,row.map || null])):
+        JSON.stringify([task.title,task.npc,task.map,task.rows.map(row=>[row.name,row.quantity,row.monster,row.map]),task.shop,task.shopAccess,task.purchase]);
+      if(!unique.has(key))unique.set(key,task);
+    }
     return [id,{...profile,tasks:[...unique.values()]}];
   })) as Record<string,Profile>;
 const keyFor = (row: Row) => row.itemId || materialId(row.name);
 const friendly = (text: string) => text.replace(/AND\/OR/g, "các phương án thay thế").replace(/(?:Wiki )?snapshot/gi, "nguồn Wiki");
 
-function MaterialTable({ rows, onMaterial }: { rows: Row[]; onMaterial: MaterialClick }) {
+function MaterialTable({ rows, onMaterial, modeId }: { rows: Row[]; onMaterial: MaterialClick; modeId?: string }) {
   rows = rows.map(row=>{
     if(row.map)return row;
     const sources=profiles[keyFor(row)]?.tasks || [];
-    const maps=[...new Set(sources.flatMap(task=>task.bossId&&task.map?[task.map]:task.quest?[]:task.rows.filter(input=>input.name===row.name&&input.monster&&input.map).map(input=>input.map!)))];
+    const maps=materialFarmMaps(row, sources, modeId);
     return maps.length===1?{...row,map:maps[0]}:row;
   });
   const maps = [...new Set(rows.map(row => row.map || ""))];
   return <>{maps.map(map => <div key={map}>
-    {map && <h5>{map}</h5>}
     <div className="fv32-table-scroll" role="region" tabIndex={0} aria-label={map ? `Nguyên liệu tại ${map}` : "Nguyên liệu Quest"}>
       <table><thead><tr><th>Tên nguyên liệu</th><th>Số lượng</th><th>Map farm</th></tr></thead>
         <tbody>{rows.filter(row => (row.map || "") === map).map(row => <tr key={keyFor(row)}>
@@ -43,21 +49,25 @@ function MaterialTable({ rows, onMaterial }: { rows: Row[]; onMaterial: Material
   </div>)}</>;
 }
 
-function QuestBody({ task, onMaterial }: { task: FarmTask; onMaterial: MaterialClick }) {
+function QuestBody({ task, onMaterial, modeId, alreadyShown=[] }: { task: FarmTask; onMaterial: MaterialClick; modeId?: string; alreadyShown?: (string | null | undefined)[] }) {
   return <section className="fv32-facts">
-    <h4>{task.quest || task.title}</h4>
+    {distinctFarmText([task.quest || task.title || ""], alreadyShown).map(title=><h4 key={title}>{title}</h4>)}
     {!!task.preconditions?.length && <div className="fv32-quest-conditions"><b>Điều kiện nhận Quest</b>
-      <ul>{task.preconditions.map((condition, i) => <li key={i}>{friendly(condition)}</li>)}</ul>
+      <ul>{distinctFarmText(task.preconditions).map((condition, i) => <li key={i}>{friendly(condition)}</li>)}</ul>
     </div>}
     {!!task.ownedItems?.length && <div><b>Trang bị cần sở hữu (không tiêu hao):</b> {task.ownedItems.map(item => <button type="button" className="fv2-linkbutton" key={item.wikiUrl} onClick={()=>onMaterial(materialId(item.name))}>{item.name}</button>)}</div>}
+    {task.dropSource && <p><b>Monster:</b> {task.dropSource}</p>}
     {task.npc && <p><b>NPC:</b> {task.npc}</p>}
-    {task.location && <p><b>Nơi nhận:</b> {task.location}</p>}
-    {!task.map && task.acceptanceMaps?.map(map=><p key={map}><code>{map}</code></p>)}
+    {task.location && distinctFarmText([task.location],[task.npc,task.map]).length>0 && <p><b>Nơi nhận:</b> {task.location}</p>}
+    {!task.map && [...new Set(task.acceptanceMaps || [])].map(map=><p key={map}><code>{map}</code></p>)}
     {task.map && <p><code>{task.map}</code></p>}
-    {task.purchase && <p><b>Giá:</b> {task.purchase.amount.toLocaleString("vi-VN")} {task.purchase.currency}</p>}
+    {task.purchase && <><p><b>Cách nhận:</b> Mua</p>{task.shop && <p><b>Shop:</b> {task.shop}</p>}
+      {task.shopAccess && <p><b>Mở Shop:</b> {task.shopAccess}</p>}
+      <div className="fv32-table-scroll" role="region" tabIndex={0} aria-label="Chi phí mua"><table><thead><tr><th>Giá mỗi món</th><th>Số lượng</th><th>Tổng chi phí</th></tr></thead>
+        <tbody><tr><td>{task.purchase.amount.toLocaleString("vi-VN")} {task.purchase.currency}</td><td>{(task.totalRequired ?? 1).toLocaleString("vi-VN")}</td><td>{(task.purchase.amount*(task.totalRequired ?? 1)).toLocaleString("vi-VN")} {task.purchase.currency}</td></tr></tbody></table></div></>}
     {task.numberOfRuns != null && <p><b>Số lần hoàn thành:</b> {task.numberOfRuns}. Bảng dưới tính cho mỗi lượt.</p>}
     {task.repeatability && <p><b>Giới hạn:</b> {task.repeatability.startsWith("weekly") ? "Mỗi tuần" : task.repeatability.startsWith("daily") ? "Mỗi ngày" : friendly(task.repeatability)}</p>}
-    <MaterialTable rows={task.rows} onMaterial={(id,row)=>onMaterial(id,row?{...row,quantity:row.quantity==null?null:row.quantity*(task.numberOfRuns || 1)}:undefined)} />
+    <MaterialTable modeId={modeId} rows={task.rows} onMaterial={(id,row)=>onMaterial(id,row?{...row,quantity:row.quantity==null?null:row.quantity*(task.numberOfRuns || 1)}:undefined)} />
     {task.reward && <p><b>Phần thưởng:</b> {task.reward}</p>}
     {!!task.rewardChoices?.length && <details><summary>Chọn một phần thưởng</summary><ul>{task.rewardChoices.map((reward, i) => <li key={i}>{reward.name} ×{reward.quantity}</li>)}</ul></details>}
     {!!task.randomChoiceRewards?.length && <p>Nhận ngẫu nhiên một trong: {task.randomChoiceRewards.map(reward => `${reward.name} ×${reward.quantity}`).join("; ")}</p>}
@@ -97,20 +107,19 @@ export function FarmWorkflowSummary({ route, focus, onNavigate, brief }: { route
   ]), ...(!mode?.finishingBeforeQuestId ? finish.map(task => ({ task, quest: false })) : [])];
   return <div className="fv2-method">
     <h3>Cách nhận</h3>
+    {route.purchase && <p>Giá: {route.purchase.amount.toLocaleString("en-US")} {route.purchase.currency}</p>}
     {route.method==="Reputation" && route.description && <p>{friendly(route.description)}</p>}
     {!tasks.length && route.questReward && <p>Quest: {route.questReward}</p>}
-    {route.purchase && <p>Giá: {route.purchase.amount.toLocaleString("en-US")} {route.purchase.currency}</p>}
     {(route.farmModes?.length || 0)>1 && <div className="fv32-route-picker" role="group" aria-label="Phương án farm">{route.farmModes!.map(option=><button type="button" key={option.id} aria-pressed={mode?.id===option.id} onClick={()=>onNavigate({modeId:option.id})}>{option.label}</button>)}</div>}
     {!!route.farmModes?.length && <p>{mode?.label}</p>}
     {actions.length ? <ol className="fv32-workflow-summary">{actions.map(({task,quest}) => <li key={task.id}>
       {quest ? <button type="button" className="fv2-linkbutton" onClick={() => onNavigate({ ...focus, questId: task.id, materialId: undefined })}>{task.quest}</button> : <b>{task.title || task.reward || route.location}</b>}
-      {task.npc && <span> · {task.npc}</span>}{task.location && <span> · {task.location}</span>}{!task.map && task.acceptanceMaps?.map(map=><code key={map}>{map} </code>)}{task.map && <code> {task.map}</code>}
+      {task.npc && <span> · {task.npc}</span>}{task.location && <span> · {task.location}</span>}{!task.map && [...new Set(task.acceptanceMaps || [])].map(map=><code key={map}>{map} </code>)}{task.map && <code> {task.map}</code>}
       {task.numberOfRuns != null && <span> · {task.numberOfRuns} lần</span>}
     </li>)}</ol> : <>
       {route.location && <p>{route.method}: {route.location}</p>}
       {route.npc && <p>NPC: {route.npc}</p>}{route.dropSource && <p>Quái drop: {route.dropSource}</p>}
       {route.mapCommand && <p><code>{route.mapCommand}</code></p>}
-      {route.purchase && <p>Giá: {route.purchase.amount.toLocaleString("vi-VN")} {route.purchase.currency}</p>}
     </>}
     {!!route.questOptions?.length && <ul>{route.questOptions.map(option => <li key={option.questId}>
       <button type="button" className="fv2-linkbutton" onClick={() => onNavigate({ ...focus, optionId: option.questId, questId: option.questId, materialId: undefined })}>{option.name}</button>
@@ -123,19 +132,20 @@ export function FarmWorkflowSummary({ route, focus, onNavigate, brief }: { route
 
 function MaterialBody({ row, modeId, plan, totalKnown, onMaterial }: { row: Row; modeId?: string; plan?: FarmTask[]; totalKnown?: boolean; onMaterial: MaterialClick }) {
   const profile = profiles[keyFor(row)];
-  const [selected, setSelected] = useState(modeId === "insignia" ? Math.max(0, profile?.tasks?.findIndex(task => !task.quest) || 0) : 0);
-  const task = profile?.tasks?.[selected] || profile?.tasks?.[0];
+  const availableTasks=materialTasksForMode(profile?.tasks || [], modeId);
+  const [selected, setSelected] = useState(modeId === "insignia" ? Math.max(0, availableTasks.findIndex(task => !task.quest)) : 0);
+  const task = availableTasks[selected] || availableTasks[0];
   const output = [...(task?.fixedRewards || []),...(task?.rewardChoices || [])].find(reward=>reward.name===row.name);
   const escapedName=row.name.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
   const perTurn=output?.quantity || task?.rewardQuantity || Number(task?.reward?.match(new RegExp(escapedName+"\\s*[×x](\\d+)"))?.[1]) || null;
   const planned=plan?.find(operation=>operation.source===task?.source&&operation.title===row.name)?.numberOfRuns;
   const runs=planned ?? (perTurn&&row.quantity!=null?Math.ceil(row.quantity/perTurn):task?.numberOfRuns);
-  const effective=task?{...task,numberOfRuns:runs}:null;
+  const effective=task?{...task,numberOfRuns:task.purchase?undefined:runs,totalRequired:task.purchase?row.quantity ?? undefined:task.totalRequired}:null;
   return <div className="fv32-material-body">
     <h4>{row.name}</h4><p><b>{row.usage==="owned"?"Cần sở hữu (không tiêu hao):":totalKnown?"Tổng số lượng cần chuẩn bị:":"Số lượng trong các bước đã ghi nhận:"}</b> {row.quantity?.toLocaleString("vi-VN") ?? "Số lượng phụ thuộc phương án nhận"}</p>
-    {profile && <p><b>Cách nhận:</b> {friendly(profile.method)}</p>}
-    {(profile?.tasks?.length || 0) > 1 && <div className="fv32-route-picker" role="group" aria-label="Nguồn nguyên liệu">
-      {profile.tasks.map((option,index) => <button type="button" key={option.id+index} aria-pressed={selected===index} onClick={() => setSelected(index)}>{option.quest || option.title || "Merge"}</button>)}
+    {profile && !task?.purchase && <p><b>Cách nhận:</b> {task?.quest ? "Quest" : friendly(profile.method)}</p>}
+    {availableTasks.length > 1 && <div className="fv32-route-picker" role="group" aria-label="Nguồn nguyên liệu">
+      {availableTasks.map((option,index) => <button type="button" key={option.id+index} aria-pressed={selected===index} onClick={() => setSelected(index)}>{option.quest || option.title || "Merge"}</button>)}
     </div>}
     {task ? <>
       {task.bossId && <p><a href={`/ultra-boss/${task.bossId}`}>{task.bossName}</a></p>}
@@ -144,14 +154,47 @@ function MaterialBody({ row, modeId, plan, totalKnown, onMaterial }: { row: Row;
         {input.requiredQuest && <p>Cần nhận Quest: {input.requiredQuest}</p>}
       </div>)}
       {task.rewardChoices?.some(reward=>reward.name===row.name) && <p>Chọn phần thưởng <b>{row.name}</b> khi trả Quest.</p>}
-      <QuestBody task={task.quest ? effective! : {...effective!,rows:task.rows.filter(input=>input.name!==row.name)}} onMaterial={onMaterial} />
-      {runs && runs>1 && task.rows.length>0 && <details><summary>Tổng nguyên liệu cho {runs} lượt</summary><MaterialTable rows={sumMaterials([effective!])} onMaterial={onMaterial}/></details>}
+      <QuestBody modeId={modeId} alreadyShown={[row.name,...task.rows.filter(input=>input.name===row.name).map(input=>input.monster)]} task={task.quest ? effective! : {...effective!,map:task.rows.some(input=>input.name===row.name&&input.map===task.map)?undefined:task.map,rows:task.rows.filter(input=>input.name!==row.name)}} onMaterial={onMaterial} />
+      {!task.purchase && runs && runs>1 && task.rows.length>0 && <details><summary>Tổng nguyên liệu cho {runs} lượt</summary><MaterialTable modeId={modeId} rows={sumMaterials([effective!])} onMaterial={onMaterial}/></details>}
     </> : <>
       {row.monster && <p><b>Monster:</b> {row.monster}</p>}{row.map && <p><code>{row.map}</code></p>}
-      {row.sourceDetails?.map((source,index) => <div key={index}><p>{source.monster}</p>{source.mapJoin && <code>{source.mapJoin}</code>}</div>)}
+      {distinctFarmText((row.sourceDetails || []).flatMap(source=>[source.monster || "", source.mapJoin || ""]),[row.monster,row.map]).map(text=><p key={text}>{text.startsWith("/join ")?<code>{text}</code>:text}</p>)}
       {(registry.materialLinks?.[keyFor(row)] || row.source) && <p><a href={registry.materialLinks?.[keyFor(row)] || row.source} target="_blank" rel="noreferrer">Xem trên AQW Wiki</a></p>}
     </>}
   </div>;
+}
+
+function InsigniaNotes({ mode, tasks, finish, materials }: { mode: FarmMode; tasks: FarmTask[]; finish: FarmTask[]; materials: Row[] }) {
+  const sources = mode.insignia ? [mode.insignia] : mode.insignias || [];
+  const exchanges = finish.filter(task => task.rows.some(row => /\binsignia\b/i.test(row.name)));
+  const required = tasks.filter(task => !sources.some(source => source.quest === task.quest));
+  const rewardNames = new Set(exchanges.flatMap(task => [task.title, ...(task.fixedRewards || []).map(row=>row.name)]));
+  return <aside className="fv32-insignia-notes" aria-label="Lưu ý khi farm bằng Insignia">
+    <h3>Lưu ý khi farm bằng Insignia</h3>
+    {mode.notes?.[0] && <p>{mode.notes[0]}</p>}
+    <div className="fv32-table-scroll" role="region" tabIndex={0} aria-label="Phân bổ Insignia"><table>
+      <caption>Phân bổ Insignia</caption><thead><tr><th>Nguyên liệu</th><th>Số lượng nên đổi</th><th>Insignia cần dùng</th></tr></thead>
+      <tbody>{exchanges.length ? exchanges.map(task => {
+        const runs=task.numberOfRuns ?? 1;
+        return <tr key={task.id}><td>{task.title || task.reward}</td><td>{(task.rewardQuantity ?? (Number(task.reward?.match(/[×x](\d+)/)?.[1]) || 1))*runs} ({runs} lượt)</td><td>{task.rows.filter(row=>/\binsignia\b/i.test(row.name)).map(row=>`${row.name} ×${(row.quantity ?? 0)*runs}`).join("; ")}</td></tr>;
+      }) : sources.map(source=><tr key={source.name}><td>{finish.map(task=>task.title || task.reward).filter(Boolean).join("; ") || "Trang bị đích"}</td><td>1</td><td>{source.name} ×{source.quantity}</td></tr>)}</tbody>
+    </table></div>
+    <div className="fv32-table-scroll" role="region" tabIndex={0} aria-label="Quest cần tự hoàn thành"><table>
+      <caption>Quest cần tự hoàn thành</caption><thead><tr><th>Quest</th><th>Số lượt</th><th>Lý do</th></tr></thead>
+      <tbody>{required.map(task=><tr key={task.id}><td>{task.quest}</td><td>{task.numberOfRuns ?? 1}</td><td>{task.quest === "Legion Fealty 4" ? "Quest nhận Class; vẫn bắt buộc khi dùng Insignia." : (task.fixedRewards || []).some(row=>rewardNames.has(row.name)) ? "Hoàn thành một lần để mở khóa Quest tiếp theo; phần thưởng còn thiếu đổi bằng Insignia." : "Quest truyền thống vẫn cần thực hiện trong phương án đang chọn."}</td></tr>)}</tbody>
+    </table></div>
+    <div className="fv32-table-scroll" role="region" tabIndex={0} aria-label="Tổng chi phí Insignia"><table>
+      <caption>Tổng chi phí</caption><thead><tr><th>Nội dung</th><th>Số lượng</th></tr></thead>
+      <tbody>{sources.flatMap(source=>{
+        const per=source.perQuest;
+        return [<tr key={source.name+"total"}><td>Tổng {source.name} cần sử dụng</td><td>{source.quantity}</td></tr>,
+          <tr key={source.name+"per"}><td>{source.name} nhận mỗi lượt Ultra Quest</td><td>{per ?? "Chưa xác minh"}</td></tr>,
+          <tr key={source.name+"runs"}><td>Số lượt Ultra Quest</td><td>{source.questCompletions}</td></tr>,
+          <tr key={source.name+"time"}><td>Số {source.repeatability?.startsWith("daily")?"ngày":"tuần"} tối thiểu (từ 0 Insignia)</td><td>{source.questCompletions}</td></tr>,
+          <tr key={source.name+"left"}><td>{source.name} còn dư</td><td>{per == null ? "Chưa xác minh" : source.questCompletions*per-source.quantity}</td></tr>];
+      })}{materials.filter(row=>!/\binsignia\b/i.test(row.name)).map(row=><tr key={keyFor(row)}><td>{/token|gold|acs?$/i.test(row.name)?"Currency bổ sung":"Nguyên liệu vẫn cần farm"}: {row.name}</td><td>{row.quantity?.toLocaleString("vi-VN") ?? "Theo phương án"}</td></tr>)}</tbody>
+    </table></div>
+  </aside>;
 }
 
 export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=false, itemId=route.id }: { route: FarmV2RouteData; focus: WorkflowFocus; onNavigate: (focus: WorkflowFocus) => void; materialsOnly?: boolean; itemId?: string }) {
@@ -160,7 +203,9 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
   const [extra, setExtra] = useState<Record<string, Row>>({});
   useEffect(()=>setExtra({}),[mode?.id,focus.optionId,focus.dailyRuns]);
   const owned: Row[]=tasks.flatMap(task=>(task.ownedItems || []).map(item=>({name:item.name,itemId:materialId(item.name),quantity:1,usage:"owned" as const,source:item.wikiUrl})));
-  const allMaterials = [...materials,...owned, ...Object.values(extra)].filter((row,index,rows) => rows.findIndex(other=>keyFor(other)===keyFor(row))===index);
+  const focusedRow=focus.materialId && ![...materials,...owned,...Object.values(extra)].some(row=>keyFor(row)===focus.materialId)
+    ? [...tasks,...finish,...Object.values(profiles).flatMap(profile=>profile.tasks || [])].flatMap(task=>task.rows).find(row=>keyFor(row)===focus.materialId) : undefined;
+  const allMaterials = [...materials,...owned, ...Object.values(extra),...(focusedRow?[focusedRow]:[])].filter((row,index,rows) => rows.findIndex(other=>keyFor(other)===keyFor(row))===index);
   const selectedMaterial = allMaterials.find(row => keyFor(row) === focus.materialId) || allMaterials[0];
   const keyboardSelection=useRef(false);
   const questRef = useRef<HTMLDivElement>(null), materialRef = useRef<HTMLDivElement>(null), id = useId();
@@ -188,14 +233,14 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
     {!!route.questOptions?.length && <div className="fv32-route-picker" role="group" aria-label="Quest nhận thưởng">
       {route.questOptions.map(option=><button type="button" key={option.questId} aria-pressed={focus.optionId===option.questId} onClick={()=>onNavigate({...focus,optionId:option.questId,questId:option.questId,materialId:undefined})}>{option.name}</button>)}
     </div>}
-    {insignias.map((source,index)=><aside className="fv32-insignia-sources" key={index}>
+    {!materialsOnly && insignias.map((source,index)=><aside className="fv32-insignia-sources" key={index}>
       <a href={`/ultra-boss/${source.bossId}`}>{source.bossName || "Ultra Boss Codex"}</a><p>{source.name} ×{source.quantity} · {source.perQuest} mỗi lượt Quest · {source.questCompletions} lượt</p>
       {source.quest && <p>Quest: {source.quest}</p>}{source.npc && <p>NPC: {source.npc}</p>}
       <p><code>{source.map}</code> · {source.repeatability === "daily" ? "Daily" : "Weekly"}</p>
       {"exchangeInput" in source && <p>Đổi {source.exchangeInput} Insignia → {source.exchangeOutput} nguyên liệu, {source.exchanges} lượt.</p>}
     </aside>)}
-    {mode?.notes?.map((note,index)=><p key={index}>{note}</p>)}
-    {route.mixRule && mode?.id==="insignia" && <label>Kết hợp Quest thường: <input type="number" min={0} max={15} step={1} aria-label="Số lượt Void HighLord's Challenge" value={focus.dailyRuns ?? 0} onChange={event=>{
+    {!materialsOnly && mode && insignias.length>0 && <InsigniaNotes mode={mode} tasks={tasks} finish={finish} materials={materials}/>}
+    {!materialsOnly && route.mixRule && mode?.id==="insignia" && <label>Kết hợp Quest thường: <input type="number" min={0} max={15} step={1} aria-label="Số lượt Void HighLord's Challenge" value={focus.dailyRuns ?? 0} onChange={event=>{
       const daily=Number(event.target.value);if(Number.isInteger(daily)&&daily>=0&&daily<=15)onNavigate({...focus,dailyRuns:daily,questId:undefined,materialId:undefined});
     }}/></label>}
     {!materialsOnly && <section aria-label="Quy trình Quest"><h3>{tasks.length?"1. Quy trình Quest":"Cách nhận"}</h3>
@@ -209,18 +254,18 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
       }}>{tasks.map((task,index)=><button type="button" role="tab" key={task.id} id={`${id}-q-${index}`} aria-controls={id+"-quest"} aria-selected={quest?.id===task.id} tabIndex={quest?.id===task.id?0:-1}
         title={task.quest || ""} aria-label={`Quest ${index+1}: ${task.quest}`} onClick={()=>onNavigate({...focus,questId:task.id,materialId:undefined})}>{index+1}</button>)}</div>}
       <div ref={questRef} tabIndex={-1} id={id+"-quest"} className="fv31-step-content" role="region" aria-label="Quest đang chọn">
-        {mode?.finishingBeforeQuestId===quest?.id && finish.map(task=><QuestBody key={task.id} task={task} onMaterial={selectMaterial}/>)}
-        {(registry.operationGroups?.[quest?.id] || []).map(task=><QuestBody key={task.id} task={task} onMaterial={selectMaterial}/>)}
-        {quest && <QuestBody task={quest} onMaterial={selectMaterial}/>}
+        {mode?.finishingBeforeQuestId===quest?.id && finish.map(task=><QuestBody modeId={mode?.id} key={task.id} task={task} onMaterial={selectMaterial}/>)}
+        {(registry.operationGroups?.[quest?.id] || []).map(task=><QuestBody modeId={mode?.id} key={task.id} task={task} onMaterial={selectMaterial}/>)}
+        {quest && <QuestBody modeId={mode?.id} task={quest} onMaterial={selectMaterial}/>}
         {quest && <label className="fv31-step-complete"><input type="checkbox" checked={completed.includes(quest.id)} onChange={()=>{
           const next=completed.includes(quest.id)?completed.filter(id=>id!==quest.id):[...completed,quest.id];setCompleted(next);
           try{localStorage.setItem(progressKey,JSON.stringify(next));}catch{/* Progress stays in this tab when storage is unavailable. */}
         }}/>Đã hoàn thành Quest này</label>}
-        {(!quest || quest.id===tasks.at(-1)?.id) && !mode?.finishingBeforeQuestId && finish.map(task=><QuestBody key={task.id} task={task} onMaterial={selectMaterial}/>)}
-        {!quest && !finish.length && <><p>{route.location}</p>{route.mapCommand && <code>{route.mapCommand}</code>}<MaterialTable rows={materialLeaves(route.materialTree)} onMaterial={selectMaterial}/></>}
+        {(!quest || quest.id===tasks.at(-1)?.id) && !mode?.finishingBeforeQuestId && finish.map(task=><QuestBody modeId={mode?.id} key={task.id} task={task} onMaterial={selectMaterial}/>)}
+        {!quest && !finish.length && <><p>{route.location}</p>{route.mapCommand && <code>{route.mapCommand}</code>}<MaterialTable modeId={mode?.id} rows={materialLeaves(route.materialTree)} onMaterial={selectMaterial}/></>}
       </div>
     </section>}
-    {!!allMaterials.length && <section aria-label="Hướng dẫn Farm nguyên liệu"><h3>2. Hướng dẫn Farm nguyên liệu</h3>
+    {materialsOnly && !!allMaterials.length && <section aria-label="Hướng dẫn Farm nguyên liệu"><h3>Hướng dẫn Farm nguyên liệu</h3>
       <div className="fv32-route-picker" role="group" aria-label="Chọn nguyên liệu">{allMaterials.map(row=><button type="button" key={keyFor(row)} aria-pressed={selectedMaterial && keyFor(selectedMaterial)===keyFor(row)} onClick={()=>selectMaterial(keyFor(row))}>{row.name}</button>)}</div>
       <div ref={materialRef} tabIndex={-1} role="region" aria-label="Nguyên liệu đang chọn">{selectedMaterial && <MaterialBody key={keyFor(selectedMaterial)+mode?.id} row={selectedMaterial} totalKnown={route.materialTotalsComplete} modeId={mode?.id} plan={mode?.finishingTasks} onMaterial={selectMaterial}/>}</div>
     </section>}

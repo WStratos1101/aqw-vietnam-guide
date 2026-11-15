@@ -48,9 +48,11 @@ test("manual guide chapters and aliases define the only selectable groups", () =
   assert.ok(!manifest.groups.some((group) => group.id === "other"));
 });
 
+const collectionRecords=read("content-sources/farm/equipment-sets/canonical-records.json");
+
 test("catalog primary groups match exact canonical names and retain guide line evidence", () => {
   const checked = structuredClone(catalog.items);
-  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence);
+  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence, collectionRecords);
   applyDirectUltraGroups(checked,new Map([...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources].map(p=>[p.url,p])));
   assert.deepEqual(checked, catalog.items);
   for (const item of checked) {
@@ -69,6 +71,11 @@ test("catalog primary groups match exact canonical names and retain guide line e
         assert.equal(evidence.sourceUrl,item.wikiUrl);
         assert.equal(evidence.sourceHash,createHash("sha256").update(fs.readFileSync(evidence.sourceFile)).digest("hex"));
         assert.ok(evidence.sourceBossId);assert.ok(evidence.insigniaQuantity>0);
+      } else if(evidence.sourceDocument === "equipment-set-guide") {
+        const source=collectionRecords.find(record=>record.id===item.id);
+        assert.ok(source,item.id);assert.equal(source.collectionEvidence.guideLines[0],evidence.sourceLine);
+        assert.equal(source.collectionEvidence.sourceChapter,evidence.sourceChapter);
+        assert.ok(fs.readFileSync(evidence.sourceFile,"utf8").split(/\r?\n/)[evidence.sourceLine-1]);
       } else {
         assert.equal(evidence.sourceDocument, "manual-faction-guide");
         assert.ok(Number.isInteger(evidence.sourceLine));
@@ -130,8 +137,11 @@ test("reviewed catalog suffix aliases map only to their named guide goal", () =>
 });
 
 test("aggregate guide targets do not create synthetic canonical identities", () => {
-  assert.equal(catalog.items.some((item) => item.id === "celestial-of-mysteries"), false);
-  assert.equal(catalog.items.some((item) => item.id === "archangel-of-mysteries"), false);
+  for(const id of ["celestial-of-mysteries","archangel-of-mysteries"]){
+    const item=catalog.items.find(item=>item.id===id),record=collectionRecords.find(record=>record.id===id);
+    assert.ok(item&&record,id);assert.equal(item.category,"Armors");assert.equal(record.wikiUrl,item.wikiUrl);
+    assert.ok(record.text.includes("Description:"));
+  }
   assert.equal(catalog.items.some((item) => item.id === "headless-pumpkin-set"), false);
 });
 
@@ -177,7 +187,7 @@ test("all-inventory and faction counts count unique canonical identities exactly
     unknown: 73,
   };
   for (const [id, count] of Object.entries(expected))
-    assert.equal(counts.find((entry) => entry.id === id)?.count, count, id);
+    assert.equal(counts.find((entry) => entry.id === id)?.count, count + collectionRecords.filter(record=>({Nation:"nation",Hollowborn:"hollowborn",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Other Items":"unknown"})[record.collectionEvidence.sourceChapter]===id).length, id);
 });
 
 test("all filtered aggregate goals have an explicit expansion or a blocker", () => {
@@ -227,7 +237,7 @@ test("every catalog group assignment validates against manual guide provenance",
 
 test("canonical reward mappings survive goal fallback and generation is idempotent", () => {
   const checked = structuredClone(catalog.items);
-  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence);
+  assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence, collectionRecords);
   applyDirectUltraGroups(checked,new Map([...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources].map(p=>[p.url,p])));
   assert.deepEqual(checked, catalog.items);
   for (const mapping of itemMappings) {
@@ -246,7 +256,7 @@ test("canonical reward mappings survive goal fallback and generation is idempote
         `${goal.group_id}:${goal.source_line}:${goal.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}` === mapping.parentGoalId,
       ), mapping.itemId);
   }
-  assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 279);
+  assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 279 + collectionRecords.length);
 });
 
 test("direct Ultra Empower rewards map by verified boss quest, never by Empowered name or prerequisite", () => {

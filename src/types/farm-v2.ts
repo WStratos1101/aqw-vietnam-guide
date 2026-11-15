@@ -71,6 +71,9 @@ export type FarmTask = {
   quantityScope?: "perTurn";
   numberOfRuns?: number;
   totalRequired?: number;
+  shop?: string;
+  shopAccess?: string;
+  dropSource?: string;
   purchase?: { amount: number; currency: string } | null;
   location?: string | null;
   dependencies?: string[];
@@ -161,6 +164,7 @@ export type FarmMode = {
   insignias?: (FarmInsigniaSource & { perQuest?: number; questCompletions: number })[];
 };
 export type FarmV2Item = {
+  setIds?: string[];
   id: string;
   name: string;
   originalName: string;

@@ -9,7 +9,9 @@ export function normalizeFactionGoalName(value) {
     .trim();
 }
 
-export function assignFarmGroups(items, goals, manifest, aliases = [], mappings = [], legacy = {}, ultraEvidence = []) {
+export function assignFarmGroups(items, goals, manifest, aliases = [], mappings = [], legacy = {}, ultraEvidence = [], collectionRecords = []) {
+  const collectionById = new Map(collectionRecords.map(record=>[record.id,record]));
+  const collectionGroups={Hollowborn:"hollowborn",Nation:"nation",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Other Items":null};
   const groups = new Set(manifest.groups.map((group) => group.id));
   const aggregateKinds = new Set([
     "set",
@@ -35,6 +37,13 @@ export function assignFarmGroups(items, goals, manifest, aliases = [], mappings 
     item.legacyGroupId = old?.groupIds?.length === 1 ? old.groupIds[0] : null;
     const explicit = mappingById.get(item.id);
     const ultra = ultraById.get(item.id);
+    const collection = collectionById.get(item.id);
+    if(collection && !explicit && !ultra){
+      const groupId=collectionGroups[collection.collectionEvidence.sourceChapter];
+      item.primaryGroupId=groupId || null;item.groupIds=groupId?[groupId]:[];item.groupStatus=groupId?"verified":"unknown";
+      item.groupEvidence=groupId?[{groupId,status:"verified",sourceDocument:"equipment-set-guide",sourceFile:"content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",sourceUrl:collection.provenance[0].sourceUrl,sourceLine:collection.collectionEvidence.guideLines[0],sourceChapter:collection.collectionEvidence.sourceChapter,goalName:item.name,recordKind:"equipment",evidenceText:collection.collectionEvidence.setId,matchKind:"exact-collection-member"}]:[];
+      continue;
+    }
     if (ultra) {
       const expectedGroup =
         ultra.sourceBoss === "Ultra Nulgath"

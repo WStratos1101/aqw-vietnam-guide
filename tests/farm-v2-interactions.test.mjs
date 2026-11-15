@@ -433,6 +433,9 @@ test("VHL modes preserve Crystal costs and internally navigate to Ultra material
   const ultra=host.querySelector('.fv32-insignia-sources');
   assert.match(ultra.textContent,/40/);assert.match(ultra.textContent,/Weekly/);
   assert.ok(ultra.querySelector('a[href="/ultra-boss/ultra-nulgath"]'));
+  assert.equal(host.querySelector('[aria-label="Hướng dẫn Farm nguyên liệu"]'),null);
+  await click(tab("Nguyên liệu"));
+  assert.equal(button('[aria-label="Phương án farm"] button',"Farm bằng Insignia").getAttribute("aria-pressed"),"true");
   await click(button('[aria-label="Chọn nguyên liệu"] button',"Elders' Blood"));
   assert.match(host.querySelector('[aria-label="Nguyên liệu đang chọn"]').textContent,/2/);
   assert.ok(window.location.search.includes('farm-material='));
@@ -445,4 +448,58 @@ test("Legion Fealty final ingredients navigate to the selected Spellscroll sourc
   assert.match(facts.textContent,/Legion Fealty 1/);assert.match(facts.textContent,/20/);
   assert.match(facts.textContent,/Dracolich Contract/);
   assert.equal(facts.querySelectorAll('thead th').length>=3,true);
+});
+
+
+test("material links open a single dedicated guide, keep the mode and display purchase totals",async()=>{
+  await navigate("/farm?item=legion-revenant-class&farm-tab=guide&farm-mode=insignia");
+  assert.equal(host.querySelector('[aria-label="Hướng dẫn Farm nguyên liệu"]'),null);
+  const notes=host.querySelector('[aria-label="Lưu ý khi farm bằng Insignia"]');
+  assert.equal(notes.querySelectorAll("table").length,3);
+  assert.match(notes.textContent,/31/);assert.match(notes.textContent,/5.550/);
+  await click(tab("Nguyên liệu"));
+  assert.equal(host.querySelectorAll('[aria-label="Hướng dẫn Farm nguyên liệu"]').length,1);
+  await click(button('[aria-label="Chọn nguyên liệu"] button',"Hooded Legion Cowl"));
+  assert.equal(tab("Nguyên liệu").getAttribute("aria-selected"),"true");
+  assert.match(window.location.search,/farm-mode=insignia/);
+  const material=host.querySelector('[aria-label="Nguyên liệu đang chọn"]');
+  assert.match(material.textContent,/Dage the Evil/);assert.match(material.textContent,/Undead Legion Shop/);
+  assert.match(material.textContent,/underworld/);assert.match(material.textContent,/500.000 Gold/);
+  assert.match(material.textContent,/Fail to the King/);
+  assert.equal(material.querySelector('[aria-label="Chi phí mua"] tbody tr').textContent,"500.000 Gold1500.000 Gold");
+});
+
+test("drop material body renders the Monster once and keeps the reward",async()=>{
+  await navigate("/farm?item=legion-revenant-class&farm-tab=materials&farm-material=darkblood-cohort-conquered");
+  const material=host.querySelector('[aria-label="Nguyên liệu đang chọn"]');
+  assert.equal(material.textContent.split("any monster in The Death Pits").length-1,1);
+  assert.equal(material.textContent.split("/join deathpits").length-1,1);
+  assert.match(material.textContent,/Phần thưởng: Darkblood Cohort Conquered/);
+});
+
+
+test("equivalent Ultra Aeacus drop profiles do not create duplicate source buttons",async()=>{
+  await navigate("/farm?item=legion-revenant-class&farm-tab=materials&farm-material=aeacus-empowered");
+  const material=host.querySelector('[aria-label="Nguyên liệu đang chọn"]');
+  assert.equal(material.textContent.split("Ultra Aeacus").length-1,1);
+  assert.match(material.textContent,/judgement/);
+});
+
+
+test("verified set inventory navigates to canonical Farm guides and standalone items have no empty tab",async()=>{
+  await navigate("/farm?item=void-paladin");
+  await click(tab("Set đồ"));
+  assert.equal(host.querySelectorAll(".fv-set-grid > a").length,8);
+  const current=host.querySelector('.fv-set-grid a[aria-current="page"]');assert.match(current.textContent,/Void Paladin/);
+  assert.equal(host.querySelectorAll(".fv-set-grid img:not(.fv2-type-icon)").length,8);
+  const helmet=host.querySelector('.fv-set-grid a[href*="/farm/item/void-paladin-helm?"]');
+  assert.ok(helmet);assert.equal(helmet.href.includes("farm-tab=guide"),true);
+  await click(helmet);
+  assert.equal(host.querySelector('[data-item-id]').dataset.itemId,"void-paladin-helm");
+  assert.equal(tab("Hướng dẫn Farm").getAttribute("aria-selected"),"true");
+  assert.match(window.location.pathname,/void-paladin-helm/);assert.match(window.location.search,/category=Helms/);
+  assert.match(host.querySelector('.fv31-step-content').textContent,/A Dark Temptation/);
+  await navigate("/farm?item=void-paladin&farm-tab=sets&farm-set=void-paladin");
+  assert.equal(tab("Set đồ").getAttribute("aria-selected"),"true");
+  await navigate("/farm?item=legion-revenant-class");assert.equal(tab("Set đồ"),undefined);
 });

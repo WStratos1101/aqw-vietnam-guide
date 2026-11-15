@@ -377,6 +377,315 @@
       }
     ]
   },
+  "legion-token": {
+    "name": "Legion Token",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Legion Loyalty Rewarded",
+        "npc": "Gresk",
+        "map": "/join shadowblast",
+        "requirements": [
+          "Must have Legion Round 4 Medal in your inventory to see this quest.",
+          "Must have Legion Token x50 in your inventory to access this quest."
+        ],
+        "preconditions": [
+          "Must have Legion Round 4 Medal in your inventory to see this quest.",
+          "Must have Legion Token x50 in your inventory to access this quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/gresk-s-quests",
+        "sourceHash": "b46a906afbf65a0464816815d53ebda9fdb8e5081f2f9ccc69336b73a750ca9b",
+        "reward": "Legion Token ×5",
+        "rows": [
+          {
+            "name": "Defeated Makai",
+            "quantity": 25,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/gresk-s-quests"
+          },
+          {
+            "name": "Carnax Eye",
+            "quantity": 1,
+            "monster": "Carnax",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/gresk-s-quests"
+          },
+          {
+            "name": "Kathool Tentacle",
+            "quantity": 1,
+            "monster": "Kathool (Level 41)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/gresk-s-quests"
+          },
+          {
+            "name": "Red Dragon's Fang",
+            "quantity": 1,
+            "monster": "Red Dragon (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/gresk-s-quests"
+          },
+          {
+            "name": "Fluffy's Bones",
+            "quantity": 1,
+            "monster": "Fluffy the Dracolich",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/gresk-s-quests"
+          },
+          {
+            "name": "Blood Titan's Blade",
+            "quantity": 1,
+            "monster": "Blood Titan (Monster)\nUltra Blood Titan",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/gresk-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Even More Souls!",
+        "npc": "Arcane Paragon Pet (Pet)",
+        "map": null,
+        "requirements": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "preconditions": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests",
+        "sourceHash": "dbaa162eaecf2dcb6c6fe8d84fbd37de01ec5b8c6a1bbd99143eb6b50b11d04e",
+        "reward": "Legion Token ×75",
+        "rows": [
+          {
+            "name": "Sky Pirate Dragon Soul",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Red Dragon Soul",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "French Horned Toadragon Soul",
+            "quantity": 5,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Mafic Dragon Soul",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Shadow Dragon Soul",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Keep Soul Searching!",
+        "npc": "Arcane Paragon Pet (Pet)",
+        "map": null,
+        "requirements": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "preconditions": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests",
+        "sourceHash": "dbaa162eaecf2dcb6c6fe8d84fbd37de01ec5b8c6a1bbd99143eb6b50b11d04e",
+        "reward": "Legion Token ×90",
+        "rows": [
+          {
+            "name": "Granite Dracolich Soul",
+            "quantity": 4,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Tempest Dracolich Soul",
+            "quantity": 4,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Inferno Dracolich Soul",
+            "quantity": 4,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Deluge Dracolich Soul",
+            "quantity": 4,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Sell Those Souls!",
+        "npc": "Arcane Paragon Pet (Pet)",
+        "map": null,
+        "requirements": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "preconditions": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests",
+        "sourceHash": "dbaa162eaecf2dcb6c6fe8d84fbd37de01ec5b8c6a1bbd99143eb6b50b11d04e",
+        "reward": "Legion Token ×110",
+        "rows": [
+          {
+            "name": "Avatar of Desolich's Soul (1)",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Fire Guardian Dragon Soul",
+            "quantity": 7,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Moganth's Soul",
+            "quantity": 5,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Razorclaw's Soul",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-4",
+        "quest": "Hearts and Souls!",
+        "npc": "Arcane Paragon Pet (Pet)",
+        "map": null,
+        "requirements": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "preconditions": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests",
+        "sourceHash": "dbaa162eaecf2dcb6c6fe8d84fbd37de01ec5b8c6a1bbd99143eb6b50b11d04e",
+        "reward": "Legion Token ×150",
+        "rows": [
+          {
+            "name": "Trigoras' Soul",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Zellare's Soul",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Onyx Lava Dragon Heart",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Chaos Dragon Heart",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-5",
+        "quest": "Hearts and Souls! (Member)",
+        "npc": "Arcane Paragon Pet (Pet)",
+        "map": null,
+        "requirements": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "preconditions": [
+          "Must have complete the 'Fail to the King' quest.",
+          "Must have Arcane Paragon Pet (Pet)."
+        ],
+        "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests",
+        "sourceHash": "dbaa162eaecf2dcb6c6fe8d84fbd37de01ec5b8c6a1bbd99143eb6b50b11d04e",
+        "reward": "Legion Token ×200",
+        "rows": [
+          {
+            "name": "Frost Dragon Soul",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Dreadmaw the Defiler's Soul",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Avatar of Desolich's Soul (2)",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          },
+          {
+            "name": "Desoloth the Final's Soul",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
+          }
+        ]
+      }
+    ]
+  },
   "blood-gem-of-the-archfiend": {
     "name": "Blood Gem of the Archfiend",
     "method": "Quest (alternative sources)",
@@ -411,6 +720,130 @@
             "monster": null,
             "map": null,
             "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Contract Exchange",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "preconditions": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Blood Gem of the Archfiend ×1",
+        "rows": [
+          {
+            "name": "Unidentified 13: \"The Contract of Nulgath\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Blade Master Rune",
+            "quantity": 1,
+            "monster": "Shadow of Nulgath (Monster) (1)\nTaro Blademaster",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Drudgen the Salesman",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Blood Gem of the Archfiend ×2",
+        "rows": [
+          {
+            "name": "Voucher of Nulgath (non-mem)",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Diamonds Of Time",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Tainted Rune of Evil",
+            "quantity": 1,
+            "monster": "Evil Elemental\nTainted Elemental",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Kiss the Void",
+        "npc": "Enchanted Nulgath Nation House",
+        "map": null,
+        "requirements": [
+          "Must have Tendurrr The Assistant in your inventory."
+        ],
+        "preconditions": [
+          "Must have Tendurrr The Assistant in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests",
+        "sourceHash": "7951a6a6e49d33c3732ee8cc53acaff9bea6359592c29c07643efa8c3e362df8",
+        "reward": "Blood Gem of the Archfiend ×1",
+        "rows": [
+          {
+            "name": "Fragment of Chaos",
+            "quantity": 80,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests"
+          },
+          {
+            "name": "Broken Betrayal Blade",
+            "quantity": 8,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-4",
+        "quest": "Tenacity Challenge",
+        "npc": "Nulgath Challenge Pet",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests",
+        "sourceHash": "6b57908d4d20d303aa594502af335f3f9a1c15fc1498f3bf11f949601f000050",
+        "reward": "Blood Gem of the Archfiend ×10",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "Dark Runes",
+            "quantity": 6,
+            "monster": "Ghastly Darkblood",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests"
+          },
+          {
+            "name": "Blood Runes",
+            "quantity": 7,
+            "monster": "Bloodfiend (Level 29)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests"
           }
         ]
       },
@@ -624,6 +1057,397 @@
         ]
       },
       {
+        "id": "material-quest-1",
+        "quest": "Astral Hanzo Orb Quest",
+        "npc": "Astral Orb Pet",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest",
+        "sourceHash": "9d69193cf626d7a65df9ab06943dbe9890c5209a6adb3232f3493619da30688b",
+        "reward": "Dark Crystal Shard ×1",
+        "rows": [
+          {
+            "name": "Jacked Eye",
+            "quantity": 5,
+            "monster": "Big Jack Sprat",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest"
+          },
+          {
+            "name": "Dreadspider Silk",
+            "quantity": 1,
+            "monster": "Dreadspider",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest"
+          },
+          {
+            "name": "Rattle Bones",
+            "quantity": 3,
+            "monster": "Rattlebones",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Contract Exchange",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "preconditions": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Dark Crystal Shard ×4",
+        "rows": [
+          {
+            "name": "Unidentified 13: \"The Contract of Nulgath\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Blade Master Rune",
+            "quantity": 1,
+            "monster": "Shadow of Nulgath (Monster) (1)\nTaro Blademaster",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Drudgen the Salesman",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Dark Crystal Shard ×12",
+        "rows": [
+          {
+            "name": "Voucher of Nulgath (non-mem)",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Diamonds Of Time",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Tainted Rune of Evil",
+            "quantity": 1,
+            "monster": "Evil Elemental\nTainted Elemental",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-4",
+        "quest": "Crimson Hanzo Orb Quest",
+        "npc": "Crimson Orb Pet",
+        "map": null,
+        "requirements": [
+          "Must have Crimson Orb Pet in your inventory."
+        ],
+        "preconditions": [
+          "Must have Crimson Orb Pet in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest",
+        "sourceHash": "f557dd30ee2e906ace81eb859f951cd36794f105f437b4624dedb33d2c66bee9",
+        "reward": "Dark Crystal Shard ×1",
+        "rows": [
+          {
+            "name": "Jacked Eye",
+            "quantity": 5,
+            "monster": "Big Jack Sprat",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest"
+          },
+          {
+            "name": "Dreadspider Silk",
+            "quantity": 1,
+            "monster": "Dreadspider",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest"
+          },
+          {
+            "name": "Rattle Bones",
+            "quantity": 3,
+            "monster": "Rattlebones",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-5",
+        "quest": "New Worlds, New Opportunities",
+        "npc": "Bounty Hunter's Drone Pet",
+        "map": null,
+        "requirements": [
+          "Must have Bounty Hunter's Drone Pet in your inventory."
+        ],
+        "preconditions": [
+          "Must have Bounty Hunter's Drone Pet in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests",
+        "sourceHash": "5ea86359550d347a033bc5db72f966c5bbfc81919eed4d5978d7bbbee9c4335c",
+        "reward": "Dark Crystal Shard ×1",
+        "rows": [
+          {
+            "name": "Slugfit Horn",
+            "quantity": 5,
+            "monster": "Slugfit (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai (Level 25)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          },
+          {
+            "name": "Imp Flame",
+            "quantity": 3,
+            "monster": "Fire Imp (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          },
+          {
+            "name": "Cyclops Horn",
+            "quantity": 3,
+            "monster": "Cyclops Warlord",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          },
+          {
+            "name": "Wereboar Tusk",
+            "quantity": 2,
+            "monster": "Big Bad Boar (Level 8)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-6",
+        "quest": "New Worlds, New Opportunities",
+        "npc": "Nulgath's Birthday Gift",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest",
+        "sourceHash": "7df1ae41f86294f1303f67e91cf4dec55ab0a5449a2262ffff939f564c6adcb7",
+        "reward": "Dark Crystal Shard ×1",
+        "rows": [
+          {
+            "name": "Slugfit Horn",
+            "quantity": 5,
+            "monster": "Slugfit (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai (Level 25)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          },
+          {
+            "name": "Imp Flame",
+            "quantity": 3,
+            "monster": "Fire Imp (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          },
+          {
+            "name": "Cyclops Horn",
+            "quantity": 3,
+            "monster": "Cyclops Warlord",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          },
+          {
+            "name": "Wereboar Tusk",
+            "quantity": 2,
+            "monster": "Big Bad Boar (Level 8)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-7",
+        "quest": "The Poisonous Deal",
+        "npc": "Crag & Bamboozle",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Dragonslayer Reward' quest to access these quests.",
+          "Must have Tainted Claymore in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Dragonslayer Reward' quest to access these quests.",
+          "Must have Tainted Claymore in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests",
+        "sourceHash": "8485a3941e036e1228b757dece09db40ddbace146bd3fd2fbbe1d776e504de6e",
+        "reward": "Dark Crystal Shard ×25",
+        "rows": [
+          {
+            "name": "Unidentified 3: \"Dragon Bone Hammer\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          },
+          {
+            "name": "Unidentified 10: \"Bag of Dirt\"",
+            "quantity": 30,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          },
+          {
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-8",
+        "quest": "Void Knight Sword Quest",
+        "npc": null,
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests",
+        "sourceHash": "7d273d8f0d5981a6d85811b2ee92212f646b577f9a59b72e194f57587097f6b8",
+        "reward": "Dark Crystal Shard ×1",
+        "rows": [
+          {
+            "name": "Slugfit Horn",
+            "quantity": 5,
+            "monster": "Slugfit (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          },
+          {
+            "name": "Aracara Silk",
+            "quantity": 1,
+            "monster": "Aracara",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai (Level 25)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          },
+          {
+            "name": "Imp Flame",
+            "quantity": 3,
+            "monster": "Fire Imp (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          },
+          {
+            "name": "Aquamarine of Nulgath",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-9",
+        "quest": "A Tainted Deal",
+        "npc": "Enn'tröpy",
+        "map": null,
+        "requirements": [
+          "Must have Unidentified 13: \"The Contract of Nulgath\" in inventory."
+        ],
+        "preconditions": [
+          "Must have Unidentified 13: \"The Contract of Nulgath\" in inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/enn-tropy-s-quests",
+        "sourceHash": "e3151b943143206018631f1198b12a1669c5dce1b5bafe2bd2bcbab028f3daab",
+        "reward": "Dark Crystal Shard ×5",
+        "rows": [
+          {
+            "name": "Tainted Gem",
+            "quantity": 50,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/enn-tropy-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-10",
+        "quest": "Tenacity Challenge",
+        "npc": "Nulgath Challenge Pet",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests",
+        "sourceHash": "6b57908d4d20d303aa594502af335f3f9a1c15fc1498f3bf11f949601f000050",
+        "reward": "Dark Crystal Shard ×40",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "Dark Runes",
+            "quantity": 6,
+            "monster": "Ghastly Darkblood",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests"
+          },
+          {
+            "name": "Blood Runes",
+            "quantity": 7,
+            "monster": "Bloodfiend (Level 29)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests"
+          }
+        ]
+      },
+      {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
         "npc": "Memory of Nulgath",
@@ -762,6 +1586,878 @@
       }
     ]
   },
+  "diamond-of-nulgath": {
+    "name": "Diamond of Nulgath",
+    "method": "Quest (alternative sources)",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Astral Hanzo Orb Quest",
+        "npc": "Astral Orb Pet",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest",
+        "sourceHash": "9d69193cf626d7a65df9ab06943dbe9890c5209a6adb3232f3493619da30688b",
+        "reward": "Diamond of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Jacked Eye",
+            "quantity": 5,
+            "monster": "Big Jack Sprat",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest"
+          },
+          {
+            "name": "Dreadspider Silk",
+            "quantity": 1,
+            "monster": "Dreadspider",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest"
+          },
+          {
+            "name": "Rattle Bones",
+            "quantity": 3,
+            "monster": "Rattlebones",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/astral-orb-pet-s-quest"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Contract Exchange",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "preconditions": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Diamond of Nulgath ×15",
+        "rows": [
+          {
+            "name": "Unidentified 13: \"The Contract of Nulgath\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Blade Master Rune",
+            "quantity": 1,
+            "monster": "Shadow of Nulgath (Monster) (1)\nTaro Blademaster",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Drudgen the Salesman",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Diamond of Nulgath ×70",
+        "rows": [
+          {
+            "name": "Voucher of Nulgath (non-mem)",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Diamonds Of Time",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Tainted Rune of Evil",
+            "quantity": 1,
+            "monster": "Evil Elemental\nTainted Elemental",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Crimson Hanzo Orb Quest",
+        "npc": "Crimson Orb Pet",
+        "map": null,
+        "requirements": [
+          "Must have Crimson Orb Pet in your inventory."
+        ],
+        "preconditions": [
+          "Must have Crimson Orb Pet in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest",
+        "sourceHash": "f557dd30ee2e906ace81eb859f951cd36794f105f437b4624dedb33d2c66bee9",
+        "reward": "Diamond of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Jacked Eye",
+            "quantity": 5,
+            "monster": "Big Jack Sprat",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest"
+          },
+          {
+            "name": "Dreadspider Silk",
+            "quantity": 1,
+            "monster": "Dreadspider",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest"
+          },
+          {
+            "name": "Rattle Bones",
+            "quantity": 3,
+            "monster": "Rattlebones",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/crimson-orb-pet-s-quest"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-4",
+        "quest": "New Worlds, New Opportunities",
+        "npc": "Bounty Hunter's Drone Pet",
+        "map": null,
+        "requirements": [
+          "Must have Bounty Hunter's Drone Pet in your inventory."
+        ],
+        "preconditions": [
+          "Must have Bounty Hunter's Drone Pet in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests",
+        "sourceHash": "5ea86359550d347a033bc5db72f966c5bbfc81919eed4d5978d7bbbee9c4335c",
+        "reward": "Diamond of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Slugfit Horn",
+            "quantity": 5,
+            "monster": "Slugfit (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai (Level 25)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          },
+          {
+            "name": "Imp Flame",
+            "quantity": 3,
+            "monster": "Fire Imp (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          },
+          {
+            "name": "Cyclops Horn",
+            "quantity": 3,
+            "monster": "Cyclops Warlord",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          },
+          {
+            "name": "Wereboar Tusk",
+            "quantity": 2,
+            "monster": "Big Bad Boar (Level 8)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-s-drone-pet-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-5",
+        "quest": "New Worlds, New Opportunities",
+        "npc": "Nulgath's Birthday Gift",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest",
+        "sourceHash": "7df1ae41f86294f1303f67e91cf4dec55ab0a5449a2262ffff939f564c6adcb7",
+        "reward": "Diamond of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Slugfit Horn",
+            "quantity": 5,
+            "monster": "Slugfit (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai (Level 25)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          },
+          {
+            "name": "Imp Flame",
+            "quantity": 3,
+            "monster": "Fire Imp (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          },
+          {
+            "name": "Cyclops Horn",
+            "quantity": 3,
+            "monster": "Cyclops Warlord",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          },
+          {
+            "name": "Wereboar Tusk",
+            "quantity": 2,
+            "monster": "Big Bad Boar (Level 8)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-birthday-gift-s-quest"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-6",
+        "quest": "Diamonds of Nulgath Sale",
+        "npc": "Oblivion Blade of Nulgath (Pet)",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests",
+        "sourceHash": "01787b01ac6cb9bcae92a9c4c1636f1fa7219f5a5dc2460e2abef7d2b2ba2cf3",
+        "reward": "Diamond of Nulgath ×9",
+        "rows": [
+          {
+            "name": "Voucher of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-7",
+        "quest": "Diamonds of Nulgath Sale (Rare)",
+        "npc": "Oblivion Blade of Nulgath Pet (Rare)",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests",
+        "sourceHash": "01787b01ac6cb9bcae92a9c4c1636f1fa7219f5a5dc2460e2abef7d2b2ba2cf3",
+        "reward": "Diamond of Nulgath ×9",
+        "rows": [
+          {
+            "name": "Voucher of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-8",
+        "quest": "Time is Money",
+        "npc": "Bounty Hunter Blade Pet",
+        "map": null,
+        "requirements": [
+          "Must have the Bounty Hunter Blade Pet in your inventory."
+        ],
+        "preconditions": [
+          "Must have the Bounty Hunter Blade Pet in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests",
+        "sourceHash": "dee6a1d77297572945193c0c29d3a3718bfe7939f9c6ec5c6b43883efe78a437",
+        "reward": "Diamond of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Slugfit Horn",
+            "quantity": 5,
+            "monster": "Slugfit (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          },
+          {
+            "name": "Tanuki Ears",
+            "quantity": 3,
+            "monster": "Tanuki",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          },
+          {
+            "name": "Wereboar Tusk",
+            "quantity": 2,
+            "monster": "Big Bad Boar",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          },
+          {
+            "name": "Onibaba Nails",
+            "quantity": 5,
+            "monster": "Onibaba",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          },
+          {
+            "name": "Imp Flame",
+            "quantity": 3,
+            "monster": "Fire Imp (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-9",
+        "quest": "Void Knight Sword Quest",
+        "npc": null,
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests",
+        "sourceHash": "7d273d8f0d5981a6d85811b2ee92212f646b577f9a59b72e194f57587097f6b8",
+        "reward": "Diamond of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Slugfit Horn",
+            "quantity": 5,
+            "monster": "Slugfit (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          },
+          {
+            "name": "Aracara Silk",
+            "quantity": 1,
+            "monster": "Aracara",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          },
+          {
+            "name": "Makai Fang",
+            "quantity": 5,
+            "monster": "Dark Makai (Level 25)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          },
+          {
+            "name": "Imp Flame",
+            "quantity": 3,
+            "monster": "Fire Imp (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          },
+          {
+            "name": "Aquamarine of Nulgath",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/ceremonial-void-blade-of-nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "wrong-turn-at-voidbuquerque",
+        "quest": "Wrong Turn at Voidbuquerque",
+        "npc": "Memory of Nulgath",
+        "map": "/join originul",
+        "preconditions": [
+          "Must have completed the 'Break their Muti-kneecaps' quest.",
+          "Must be Level 80."
+        ],
+        "requirements": [
+          "Unidentified 13 là phần thưởng cố định; sáu nguyên liệu còn lại chọn đúng một loại mỗi lượt. Không phải nguyên liệu nộp Quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+        "repeatability": "daily",
+        "quantityScope": "perTurn",
+        "rows": [
+          {
+            "name": "Flibbitiestgibbet's ??? Essence",
+            "itemId": "flibbitiestgibbet-s-essence",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "monster": null,
+            "map": null,
+            "maxStack": null,
+            "requiredQuest": null,
+            "sourceDetails": [],
+            "evidence": [
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+                "verifiedAt": "2026-11-15"
+              }
+            ]
+          },
+          {
+            "name": "Nightbane's ??? Essence",
+            "itemId": "nightbane-s-essence",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "monster": null,
+            "map": null,
+            "maxStack": null,
+            "requiredQuest": null,
+            "sourceDetails": [],
+            "evidence": [
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+                "verifiedAt": "2026-11-15"
+              }
+            ]
+          },
+          {
+            "name": "Xyfrag's ??? Essence",
+            "itemId": "xyfrag-s-essence",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "monster": null,
+            "map": null,
+            "maxStack": null,
+            "requiredQuest": null,
+            "sourceDetails": [],
+            "evidence": [
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+                "verifiedAt": "2026-11-15"
+              }
+            ]
+          }
+        ],
+        "fixedRewards": [
+          {
+            "name": "Unidentified 13",
+            "quantity": 1,
+            "wikiUrl": "https://aqwwiki.wikidot.com/unidentified-13"
+          }
+        ],
+        "rewardChoices": [
+          {
+            "name": "Tainted Gem",
+            "quantity": 60,
+            "wikiUrl": "https://aqwwiki.wikidot.com/tainted-gem"
+          },
+          {
+            "name": "Dark Crystal Shard",
+            "quantity": 35,
+            "wikiUrl": "https://aqwwiki.wikidot.com/dark-crystal-shard"
+          },
+          {
+            "name": "Diamond of Nulgath",
+            "quantity": 100,
+            "wikiUrl": "https://aqwwiki.wikidot.com/diamond-of-nulgath"
+          },
+          {
+            "name": "Totem of Nulgath",
+            "quantity": 2,
+            "wikiUrl": "https://aqwwiki.wikidot.com/totem-of-nulgath"
+          },
+          {
+            "name": "Gem of Nulgath",
+            "quantity": 35,
+            "wikiUrl": "https://aqwwiki.wikidot.com/gem-of-nulgath"
+          },
+          {
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 7,
+            "wikiUrl": "https://aqwwiki.wikidot.com/blood-gem-of-the-archfiend"
+          }
+        ],
+        "randomRewards": [],
+        "randomChoiceRewards": [],
+        "reward": "Unidentified 13 ×1; Diamond of Nulgath ×100",
+        "rewardQuantity": 100,
+        "evidence": [
+          {
+            "source": "wiki",
+            "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+            "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+            "verifiedAt": "2026-11-15"
+          },
+          {
+            "source": "wiki",
+            "url": "https://aqwwiki.wikidot.com/originul",
+            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
+            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
+            "verifiedAt": "2026-11-15"
+          }
+        ]
+      }
+    ]
+  },
+  "gem-of-nulgath": {
+    "name": "Gem of Nulgath",
+    "method": "Quest (alternative sources)",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Contract Exchange",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "preconditions": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Gem of Nulgath ×2",
+        "rows": [
+          {
+            "name": "Unidentified 13: \"The Contract of Nulgath\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Blade Master Rune",
+            "quantity": 1,
+            "monster": "Shadow of Nulgath (Monster) (1)\nTaro Blademaster",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Drudgen the Salesman",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Gem of Nulgath ×8",
+        "rows": [
+          {
+            "name": "Voucher of Nulgath (non-mem)",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Diamonds Of Time",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Tainted Rune of Evil",
+            "quantity": 1,
+            "monster": "Evil Elemental\nTainted Elemental",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Voucher Item: Totem of Nulgath",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [
+          "Must have Voucher of Nulgath (non-mem) in your inventory."
+        ],
+        "preconditions": [
+          "Must have Voucher of Nulgath (non-mem) in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Gem of Nulgath ×10",
+        "rows": [
+          {
+            "name": "Essence of Nulgath",
+            "quantity": 60,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Drowning in the Void",
+        "npc": "VoidCaster Orb Pet",
+        "map": null,
+        "requirements": [
+          "Must have VoidCaster Orb Pet in your inventory."
+        ],
+        "preconditions": [
+          "Must have VoidCaster Orb Pet in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest",
+        "sourceHash": "a56c415c8fb68fa45df1a732a43c0d8b9f38de73676d3187fea0bc4faddbd901",
+        "reward": "Gem of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Big 100K",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Unidentified 13: \"The Contract of Nulgath\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Dark Crystal Shard",
+            "quantity": 5,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Spinal Tap of the Wicked",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Nulgath's Approval",
+            "quantity": 50,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Magical Essence of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-4",
+        "quest": "The Refreshing Deal",
+        "npc": "Crag & Bamboozle",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Dragonslayer Reward' quest to access these quests.",
+          "Must have Purified Claymore of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Dragonslayer Reward' quest to access these quests.",
+          "Must have Purified Claymore of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests",
+        "sourceHash": "8485a3941e036e1228b757dece09db40ddbace146bd3fd2fbbe1d776e504de6e",
+        "reward": "Gem of Nulgath ×20",
+        "rows": [
+          {
+            "name": "Unidentified 3: \"Dragon Bone Hammer\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          },
+          {
+            "name": "Unidentified 10: \"Bag of Dirt\"",
+            "quantity": 30,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          },
+          {
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "wrong-turn-at-voidbuquerque",
+        "quest": "Wrong Turn at Voidbuquerque",
+        "npc": "Memory of Nulgath",
+        "map": "/join originul",
+        "preconditions": [
+          "Must have completed the 'Break their Muti-kneecaps' quest.",
+          "Must be Level 80."
+        ],
+        "requirements": [
+          "Unidentified 13 là phần thưởng cố định; sáu nguyên liệu còn lại chọn đúng một loại mỗi lượt. Không phải nguyên liệu nộp Quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+        "repeatability": "daily",
+        "quantityScope": "perTurn",
+        "rows": [
+          {
+            "name": "Flibbitiestgibbet's ??? Essence",
+            "itemId": "flibbitiestgibbet-s-essence",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "monster": null,
+            "map": null,
+            "maxStack": null,
+            "requiredQuest": null,
+            "sourceDetails": [],
+            "evidence": [
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+                "verifiedAt": "2026-11-15"
+              }
+            ]
+          },
+          {
+            "name": "Nightbane's ??? Essence",
+            "itemId": "nightbane-s-essence",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "monster": null,
+            "map": null,
+            "maxStack": null,
+            "requiredQuest": null,
+            "sourceDetails": [],
+            "evidence": [
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+                "verifiedAt": "2026-11-15"
+              }
+            ]
+          },
+          {
+            "name": "Xyfrag's ??? Essence",
+            "itemId": "xyfrag-s-essence",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "monster": null,
+            "map": null,
+            "maxStack": null,
+            "requiredQuest": null,
+            "sourceDetails": [],
+            "evidence": [
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+                "verifiedAt": "2026-11-15"
+              }
+            ]
+          }
+        ],
+        "fixedRewards": [
+          {
+            "name": "Unidentified 13",
+            "quantity": 1,
+            "wikiUrl": "https://aqwwiki.wikidot.com/unidentified-13"
+          }
+        ],
+        "rewardChoices": [
+          {
+            "name": "Tainted Gem",
+            "quantity": 60,
+            "wikiUrl": "https://aqwwiki.wikidot.com/tainted-gem"
+          },
+          {
+            "name": "Dark Crystal Shard",
+            "quantity": 35,
+            "wikiUrl": "https://aqwwiki.wikidot.com/dark-crystal-shard"
+          },
+          {
+            "name": "Diamond of Nulgath",
+            "quantity": 100,
+            "wikiUrl": "https://aqwwiki.wikidot.com/diamond-of-nulgath"
+          },
+          {
+            "name": "Totem of Nulgath",
+            "quantity": 2,
+            "wikiUrl": "https://aqwwiki.wikidot.com/totem-of-nulgath"
+          },
+          {
+            "name": "Gem of Nulgath",
+            "quantity": 35,
+            "wikiUrl": "https://aqwwiki.wikidot.com/gem-of-nulgath"
+          },
+          {
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 7,
+            "wikiUrl": "https://aqwwiki.wikidot.com/blood-gem-of-the-archfiend"
+          }
+        ],
+        "randomRewards": [],
+        "randomChoiceRewards": [],
+        "reward": "Unidentified 13 ×1; Gem of Nulgath ×35",
+        "rewardQuantity": 35,
+        "evidence": [
+          {
+            "source": "wiki",
+            "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+            "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+            "verifiedAt": "2026-11-15"
+          },
+          {
+            "source": "wiki",
+            "url": "https://aqwwiki.wikidot.com/originul",
+            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
+            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
+            "verifiedAt": "2026-11-15"
+          }
+        ]
+      }
+    ]
+  },
   "tainted-gem": {
     "name": "Tainted Gem",
     "method": "Quest (alternative sources)",
@@ -818,6 +2514,358 @@
             "monster": "Snow Golem (Monster) (2)",
             "map": null,
             "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Swindle Bulk",
+        "npc": null,
+        "map": "/join tercessuinotlim",
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/swindle-bilk-s-quests",
+        "sourceHash": "f3bae60a427939bf2a260e986b7494c2482f10e1260d3397f9fc76a0984d6766",
+        "reward": "Tainted Gem ×25",
+        "rows": [
+          {
+            "name": "Cubes",
+            "quantity": 500,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/swindle-bilk-s-quests"
+          },
+          {
+            "name": "Ice Cubes",
+            "quantity": 6,
+            "monster": "Snow Golem (Monster) (2)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/swindle-bilk-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Contract Exchange",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "preconditions": [
+          "Must have Drudgen the Assistant in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Tainted Gem ×8",
+        "rows": [
+          {
+            "name": "Unidentified 13: \"The Contract of Nulgath\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Blade Master Rune",
+            "quantity": 1,
+            "monster": "Shadow of Nulgath (Monster) (1)\nTaro Blademaster",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-4",
+        "quest": "Drudgen the Salesman",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Tainted Gem ×40",
+        "rows": [
+          {
+            "name": "Voucher of Nulgath (non-mem)",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Diamonds Of Time",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          },
+          {
+            "name": "Tainted Rune of Evil",
+            "quantity": 1,
+            "monster": "Evil Elemental\nTainted Elemental",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-5",
+        "quest": "Drowning in the Void",
+        "npc": "VoidCaster Orb Pet",
+        "map": null,
+        "requirements": [
+          "Must have VoidCaster Orb Pet in your inventory."
+        ],
+        "preconditions": [
+          "Must have VoidCaster Orb Pet in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest",
+        "sourceHash": "a56c415c8fb68fa45df1a732a43c0d8b9f38de73676d3187fea0bc4faddbd901",
+        "reward": "Tainted Gem ×3",
+        "rows": [
+          {
+            "name": "Big 100K",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Unidentified 13: \"The Contract of Nulgath\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Dark Crystal Shard",
+            "quantity": 5,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Spinal Tap of the Wicked",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Nulgath's Approval",
+            "quantity": 50,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          },
+          {
+            "name": "Magical Essence of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/voidcaster-orb-pet-s-quest"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-6",
+        "quest": "Bone Dust Reagent",
+        "npc": "Enchanted Nulgath Nation House",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests",
+        "sourceHash": "7951a6a6e49d33c3732ee8cc53acaff9bea6359592c29c07643efa8c3e362df8",
+        "reward": "Tainted Gem ×1",
+        "rows": [
+          {
+            "name": "Bone Dust",
+            "quantity": 25,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-7",
+        "quest": "Cube Reagent",
+        "npc": "Enchanted Nulgath Nation House",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests",
+        "sourceHash": "7951a6a6e49d33c3732ee8cc53acaff9bea6359592c29c07643efa8c3e362df8",
+        "reward": "Tainted Gem ×1",
+        "rows": [
+          {
+            "name": "Cubes",
+            "quantity": 25,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests"
+          },
+          {
+            "name": "Ice Cubes",
+            "quantity": 1,
+            "monster": "Snow Golem (Monster) (2)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-8",
+        "quest": "The Poisonous Deal",
+        "npc": "Crag & Bamboozle",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Dragonslayer Reward' quest to access these quests.",
+          "Must have Tainted Claymore in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Dragonslayer Reward' quest to access these quests.",
+          "Must have Tainted Claymore in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests",
+        "sourceHash": "8485a3941e036e1228b757dece09db40ddbace146bd3fd2fbbe1d776e504de6e",
+        "reward": "Tainted Gem ×65",
+        "rows": [
+          {
+            "name": "Unidentified 3: \"Dragon Bone Hammer\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          },
+          {
+            "name": "Unidentified 10: \"Bag of Dirt\"",
+            "quantity": 30,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          },
+          {
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-9",
+        "quest": "Swindle Bulk",
+        "npc": null,
+        "map": "/join tercessuinotlim",
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/swindle-bilk-s-to-go-hut-s-quests",
+        "sourceHash": "d0b9a63f280f1317c667d9d012015e05024f333b13646b5d85b802906c4c3422",
+        "reward": "Tainted Gem ×25",
+        "rows": [
+          {
+            "name": "Cubes",
+            "quantity": 500,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/swindle-bilk-s-to-go-hut-s-quests"
+          },
+          {
+            "name": "Ice Cubes",
+            "quantity": 6,
+            "monster": "Snow Golem (Monster) (2)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/swindle-bilk-s-to-go-hut-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-10",
+        "quest": "Time is Money",
+        "npc": "Bounty Hunter Blade Pet",
+        "map": null,
+        "requirements": [
+          "Must have the Bounty Hunter Blade Pet in your inventory."
+        ],
+        "preconditions": [
+          "Must have the Bounty Hunter Blade Pet in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests",
+        "sourceHash": "dee6a1d77297572945193c0c29d3a3718bfe7939f9c6ec5c6b43883efe78a437",
+        "reward": "Tainted Gem ×1",
+        "rows": [
+          {
+            "name": "Slugfit Horn",
+            "quantity": 5,
+            "monster": "Slugfit (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          },
+          {
+            "name": "Tanuki Ears",
+            "quantity": 3,
+            "monster": "Tanuki",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          },
+          {
+            "name": "Wereboar Tusk",
+            "quantity": 2,
+            "monster": "Big Bad Boar",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          },
+          {
+            "name": "Onibaba Nails",
+            "quantity": 5,
+            "monster": "Onibaba",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          },
+          {
+            "name": "Imp Flame",
+            "quantity": 3,
+            "monster": "Fire Imp (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bounty-hunter-blade-pet-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-11",
+        "quest": "Tenacity Challenge",
+        "npc": "Nulgath Challenge Pet",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests",
+        "sourceHash": "6b57908d4d20d303aa594502af335f3f9a1c15fc1498f3bf11f949601f000050",
+        "reward": "Tainted Gem ×40",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "Dark Runes",
+            "quantity": 6,
+            "monster": "Ghastly Darkblood",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests"
+          },
+          {
+            "name": "Blood Runes",
+            "quantity": 7,
+            "monster": "Bloodfiend (Level 29)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests"
           }
         ]
       },
@@ -996,6 +3044,70 @@
         ]
       },
       {
+        "id": "material-quest-1",
+        "quest": "Voucher Item: Totem of Nulgath",
+        "npc": "Drudgen the Assistant",
+        "map": null,
+        "requirements": [
+          "Must have Voucher of Nulgath (non-mem) in your inventory."
+        ],
+        "preconditions": [
+          "Must have Voucher of Nulgath (non-mem) in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests",
+        "sourceHash": "63f9b6b5cab89e65569d029f13bf7d822d3052604c6f5015dc3fecc28d35cf76",
+        "reward": "Totem of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Essence of Nulgath",
+            "quantity": 60,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/drudgen-the-assistant-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "The Refreshing Deal",
+        "npc": "Crag & Bamboozle",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Dragonslayer Reward' quest to access these quests.",
+          "Must have Purified Claymore of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Dragonslayer Reward' quest to access these quests.",
+          "Must have Purified Claymore of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests",
+        "sourceHash": "8485a3941e036e1228b757dece09db40ddbace146bd3fd2fbbe1d776e504de6e",
+        "reward": "Totem of Nulgath ×3",
+        "rows": [
+          {
+            "name": "Unidentified 3: \"Dragon Bone Hammer\"",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          },
+          {
+            "name": "Unidentified 10: \"Bag of Dirt\"",
+            "quantity": 30,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          },
+          {
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 2,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/bamboozle-s-quests"
+          }
+        ]
+      },
+      {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
         "npc": "Memory of Nulgath",
@@ -1142,7 +3254,7 @@
         "id": "material-quest-0",
         "quest": "Avatar's Rage",
         "npc": "Galanoth (NPC)",
-        "map": null,
+        "map": "/join fireavatar",
         "requirements": [
           "Must have completed the 'Avatar of Fire' quest."
         ],
@@ -1166,6 +3278,1290 @@
             "monster": "Living Shadowflame (Level 65)\nShadefire Elemental (Level 65)\nShadow Lava",
             "map": null,
             "source": "https://aqwwiki.wikidot.com/galanoth-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "elemental-core": {
+    "name": "Elemental Core",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Once Upon Another Time",
+        "npc": "Tara",
+        "map": "/join manacradle",
+        "requirements": [
+          "Must have completed the 'Your Hero' quest to access these quests."
+        ],
+        "preconditions": [
+          "Must have completed the 'Your Hero' quest to access these quests."
+        ],
+        "source": "https://aqwwiki.wikidot.com/tara-s-quests",
+        "sourceHash": "7b9c1293d69edf5b95b600db63e5db7abc5c277addb59800c03be3a76f1fc0d7",
+        "reward": "Elemental Core ×1",
+        "rows": [
+          {
+            "name": "Elemental Tear",
+            "quantity": 20,
+            "monster": "Dark Tainted Mana",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/tara-s-quests"
+          },
+          {
+            "name": "Weathered Armor Shard",
+            "quantity": 1,
+            "monster": "Malgor (Monster) (2)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/tara-s-quests"
+          },
+          {
+            "name": "Licorice Scale",
+            "quantity": 1,
+            "monster": "The Mainyu",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/tara-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "unidentified-36": {
+    "name": "Unidentified 36",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Let's Make a Deal",
+        "npc": "Lae",
+        "map": "/join tercessuinotlim",
+        "requirements": [
+          "Must be Level 50."
+        ],
+        "preconditions": [
+          "Must be Level 50."
+        ],
+        "source": "https://aqwwiki.wikidot.com/lae-s-quests",
+        "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d",
+        "reward": "Unidentified 36 ×1",
+        "rows": [
+          {
+            "name": "Fresh Soul?",
+            "quantity": 10,
+            "monster": "Crusader\nGrand Inquisitor (Monster) (Level 25)\nInquisitor Guard (Level 12)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "unidentified-13": {
+    "name": "Unidentified 13",
+    "method": "Quest (alternative sources)",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Wrong Turn at Voidbuquerque",
+        "npc": "Memory of Nulgath",
+        "map": "/join originul",
+        "requirements": [
+          "Must have completed the 'Break their Muti-kneecaps' quest.",
+          "Must be Level 80."
+        ],
+        "preconditions": [
+          "Must have completed the 'Break their Muti-kneecaps' quest.",
+          "Must be Level 80."
+        ],
+        "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+        "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+        "reward": "Unidentified 13 ×1",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "Flibbitiestgibbet's ??? Essence",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests"
+          },
+          {
+            "name": "Nightbane's ??? Essence",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests"
+          },
+          {
+            "name": "Xyfrag's ??? Essence",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "wrong-turn-at-voidbuquerque",
+        "quest": "Wrong Turn at Voidbuquerque",
+        "npc": "Memory of Nulgath",
+        "map": "/join originul",
+        "preconditions": [
+          "Must have completed the 'Break their Muti-kneecaps' quest.",
+          "Must be Level 80."
+        ],
+        "requirements": [
+          "Unidentified 13 là phần thưởng cố định; sáu nguyên liệu còn lại chọn đúng một loại mỗi lượt. Không phải nguyên liệu nộp Quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+        "repeatability": "daily",
+        "quantityScope": "perTurn",
+        "rows": [
+          {
+            "name": "Flibbitiestgibbet's ??? Essence",
+            "itemId": "flibbitiestgibbet-s-essence",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "monster": null,
+            "map": null,
+            "maxStack": null,
+            "requiredQuest": null,
+            "sourceDetails": [],
+            "evidence": [
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+                "verifiedAt": "2026-11-15"
+              }
+            ]
+          },
+          {
+            "name": "Nightbane's ??? Essence",
+            "itemId": "nightbane-s-essence",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "monster": null,
+            "map": null,
+            "maxStack": null,
+            "requiredQuest": null,
+            "sourceDetails": [],
+            "evidence": [
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+                "verifiedAt": "2026-11-15"
+              }
+            ]
+          },
+          {
+            "name": "Xyfrag's ??? Essence",
+            "itemId": "xyfrag-s-essence",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "monster": null,
+            "map": null,
+            "maxStack": null,
+            "requiredQuest": null,
+            "sourceDetails": [],
+            "evidence": [
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+                "verifiedAt": "2026-11-15"
+              }
+            ]
+          }
+        ],
+        "fixedRewards": [
+          {
+            "name": "Unidentified 13",
+            "quantity": 1,
+            "wikiUrl": "https://aqwwiki.wikidot.com/unidentified-13"
+          }
+        ],
+        "rewardChoices": [
+          {
+            "name": "Tainted Gem",
+            "quantity": 60,
+            "wikiUrl": "https://aqwwiki.wikidot.com/tainted-gem"
+          },
+          {
+            "name": "Dark Crystal Shard",
+            "quantity": 35,
+            "wikiUrl": "https://aqwwiki.wikidot.com/dark-crystal-shard"
+          },
+          {
+            "name": "Diamond of Nulgath",
+            "quantity": 100,
+            "wikiUrl": "https://aqwwiki.wikidot.com/diamond-of-nulgath"
+          },
+          {
+            "name": "Totem of Nulgath",
+            "quantity": 2,
+            "wikiUrl": "https://aqwwiki.wikidot.com/totem-of-nulgath"
+          },
+          {
+            "name": "Gem of Nulgath",
+            "quantity": 35,
+            "wikiUrl": "https://aqwwiki.wikidot.com/gem-of-nulgath"
+          },
+          {
+            "name": "Blood Gem of the Archfiend",
+            "quantity": 7,
+            "wikiUrl": "https://aqwwiki.wikidot.com/blood-gem-of-the-archfiend"
+          }
+        ],
+        "randomRewards": [],
+        "randomChoiceRewards": [],
+        "reward": "Unidentified 13 ×1",
+        "rewardQuantity": 1,
+        "evidence": [
+          {
+            "source": "wiki",
+            "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
+            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
+            "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
+            "verifiedAt": "2026-11-15"
+          },
+          {
+            "source": "wiki",
+            "url": "https://aqwwiki.wikidot.com/originul",
+            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
+            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
+            "verifiedAt": "2026-11-15"
+          }
+        ]
+      }
+    ]
+  },
+  "fresh-soul": {
+    "name": "Fresh Soul",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Let's Make a Deal",
+        "npc": "Lae",
+        "map": "/join tercessuinotlim",
+        "requirements": [
+          "Must be Level 50."
+        ],
+        "preconditions": [
+          "Must be Level 50."
+        ],
+        "source": "https://aqwwiki.wikidot.com/lae-s-quests",
+        "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d",
+        "reward": "Fresh Soul ×10",
+        "rows": [
+          {
+            "name": "Fresh Soul?",
+            "quantity": 10,
+            "monster": "Crusader\nGrand Inquisitor (Monster) (Level 25)\nInquisitor Guard (Level 12)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "ultimate-weapon-kit": {
+    "name": "Ultimate Weapon Kit",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Ultimate Weapon Kit Construction",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Ultimate Weapon Kit ×1",
+        "rows": [
+          {
+            "name": "Great Ornate Warhammer",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "No. 1337 Blade Oil",
+            "quantity": 1,
+            "monster": "Kitsune (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Greenguard Dragon Hide",
+            "quantity": 3,
+            "monster": "Greenguard Dragon",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Gold Brush",
+            "quantity": 1,
+            "monster": "Chaos Sphinx (Monster) (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Sharp Stone Sharpener",
+            "quantity": 1,
+            "monster": "Rock Roc (Monster) (Level 18)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Blinding Lacquer Finish",
+            "quantity": 1,
+            "monster": "Grand Inquisitor (Monster) (Level 25)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Non-abrasive Power Powder",
+            "quantity": 1,
+            "monster": "Protosartorium (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Suede Travel Case",
+            "quantity": 1,
+            "monster": "Harpy",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Ultimate Weapon Kit Construction",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Ultimate Weapon Kit ×1",
+        "rows": [
+          {
+            "name": "Great Ornate Warhammer",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "No. 1337 Blade Oil",
+            "quantity": 1,
+            "monster": "Kitsune (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Greenguard Dragon Hide",
+            "quantity": 3,
+            "monster": "Greenguard Dragon",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Gold Brush",
+            "quantity": 1,
+            "monster": "Chaos Sphinx (Monster) (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Sharp Stone Sharpener",
+            "quantity": 1,
+            "monster": "Rock Roc (Monster) (Level 18)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Blinding Lacquer Finish",
+            "quantity": 1,
+            "monster": "Grand Inquisitor (Monster) (Level 25)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Non-abrasive Power Powder",
+            "quantity": 1,
+            "monster": "Protosartorium (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Suede Travel Case",
+            "quantity": 1,
+            "monster": "Harpy",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      }
+    ]
+  },
+  "basic-weapon-kit": {
+    "name": "Basic Weapon Kit",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Basic Weapon Kit Construction",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed at least one ''... of Destiny' quest."
+        ],
+        "preconditions": [
+          "Must have completed at least one ''... of Destiny' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Basic Weapon Kit ×1",
+        "rows": [
+          {
+            "name": "Zardman's StoneHammer",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Triple Ply Mummy Wrap",
+            "quantity": 7,
+            "monster": "Mummy (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Noob Blade Oil",
+            "quantity": 1,
+            "monster": "Horc Noob",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Bronze Brush",
+            "quantity": 1,
+            "monster": "Bronze Draconian\nBronze DracoZombie",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Rocky Stone Sharpener",
+            "quantity": 1,
+            "monster": "Rock (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Golden Lacquer Finish",
+            "quantity": 1,
+            "monster": "Golden Scarab (Monster) (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Burlap Cloth",
+            "quantity": 4,
+            "monster": "Scarecrow",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Basic Weapon Kit Construction",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed at least one ''... of Destiny' quest."
+        ],
+        "preconditions": [
+          "Must have completed at least one ''... of Destiny' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Basic Weapon Kit ×1",
+        "rows": [
+          {
+            "name": "Zardman's StoneHammer",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Triple Ply Mummy Wrap",
+            "quantity": 7,
+            "monster": "Mummy (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Noob Blade Oil",
+            "quantity": 1,
+            "monster": "Horc Noob",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Bronze Brush",
+            "quantity": 1,
+            "monster": "Bronze Draconian\nBronze DracoZombie",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Rocky Stone Sharpener",
+            "quantity": 1,
+            "monster": "Rock (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Golden Lacquer Finish",
+            "quantity": 1,
+            "monster": "Golden Scarab (Monster) (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Burlap Cloth",
+            "quantity": 4,
+            "monster": "Scarecrow",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      }
+    ]
+  },
+  "spirit-orb-misc": {
+    "name": "Spirit Orb (Misc)",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Finding Fragments with Blinding Blade",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Blade of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Blade of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Spirit Orb (Misc) ×50",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Finding Fragments with Blinding Broadsword",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Broadsword of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Broadsword of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Spirit Orb (Misc) ×100",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Finding Fragments with Blinding Blade",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Blade of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Blade of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Spirit Orb (Misc) ×50",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Finding Fragments with Blinding Broadsword",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Broadsword of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Broadsword of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Spirit Orb (Misc) ×100",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      }
+    ]
+  },
+  "loyal-spirit-orb": {
+    "name": "Loyal Spirit Orb",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "A Loyal Follower",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Loyal Spirit Orb ×1",
+        "rows": [
+          {
+            "name": "Spirit Orb (Misc)",
+            "quantity": 100,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Celestial Compass",
+            "quantity": 1,
+            "monster": "Ephemerite (Level 28)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Finding Fragments with Blinding Blade",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Blade of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Blade of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Loyal Spirit Orb ×25",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Finding Fragments with Blinding Scythe",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Loyal Spirit Orb ×5",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Finding Fragments with Blinding Daggers",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Daggers of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Daggers of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Loyal Spirit Orb ×10",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-4",
+        "quest": "A Loyal Follower",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Loyal Spirit Orb ×1",
+        "rows": [
+          {
+            "name": "Spirit Orb (Misc)",
+            "quantity": 100,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Celestial Compass",
+            "quantity": 1,
+            "monster": "Ephemerite (Level 28)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-5",
+        "quest": "Finding Fragments with Blinding Blade",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Blade of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Blade of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Loyal Spirit Orb ×25",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-6",
+        "quest": "Finding Fragments with Blinding Scythe",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Loyal Spirit Orb ×5",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-7",
+        "quest": "Finding Fragments with Blinding Daggers",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Daggers of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Daggers of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Loyal Spirit Orb ×10",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      }
+    ]
+  },
+  "brilliant-aura": {
+    "name": "Brilliant Aura",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Finding Fragments with Blinding Mace",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Mace of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Mace of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Brilliant Aura ×1",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Finding Fragments with Blinding Mace",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Mace of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Mace of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Brilliant Aura ×1",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      }
+    ]
+  },
+  "advanced-weapon-kit": {
+    "name": "Advanced Weapon Kit",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Advanced Weapon Kit Construction",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Advanced Weapon Kit ×1",
+        "rows": [
+          {
+            "name": "WolfClaw Hammer",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Superior Blade Oil",
+            "quantity": 1,
+            "monster": "Dai Tengu (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Leatherwing Hide",
+            "quantity": 10,
+            "monster": "Leatherwing",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Silver Brush",
+            "quantity": 1,
+            "monster": "Chaos Vampire Knight (Monster)\nVampire Knight (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Brass Awl",
+            "quantity": 1,
+            "monster": "Cyclops Raider\nCyclops Warlord",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Slate Stone Sharpener",
+            "quantity": 1,
+            "monster": "Lich Of The Stone (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Shining Lacquer Finish",
+            "quantity": 1,
+            "monster": "Lightning Ball",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          },
+          {
+            "name": "Leather Case",
+            "quantity": 1,
+            "monster": "Tomb Robber (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Advanced Weapon Kit Construction",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Advanced Weapon Kit ×1",
+        "rows": [
+          {
+            "name": "WolfClaw Hammer",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Superior Blade Oil",
+            "quantity": 1,
+            "monster": "Dai Tengu (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Leatherwing Hide",
+            "quantity": 10,
+            "monster": "Leatherwing",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Silver Brush",
+            "quantity": 1,
+            "monster": "Chaos Vampire Knight (Monster)\nVampire Knight (Monster) (1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Brass Awl",
+            "quantity": 1,
+            "monster": "Cyclops Raider\nCyclops Warlord",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Slate Stone Sharpener",
+            "quantity": 1,
+            "monster": "Lich Of The Stone (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Shining Lacquer Finish",
+            "quantity": 1,
+            "monster": "Lightning Ball",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          },
+          {
+            "name": "Leather Case",
+            "quantity": 1,
+            "monster": "Tomb Robber (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      }
+    ]
+  },
+  "bright-aura": {
+    "name": "Bright Aura",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Finding Fragments with Blinding Broadsword",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Broadsword of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Broadsword of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Bright Aura ×3",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Finding Fragments with Blinding Scythe",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Bright Aura ×1",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Finding Fragments with Blinding Bow",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Bow of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Bow of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Bright Aura ×5",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Finding Fragments with Blinding Broadsword",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Broadsword of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Broadsword of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Bright Aura ×3",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-4",
+        "quest": "Finding Fragments with Blinding Scythe",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Bright Aura ×1",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-5",
+        "quest": "Finding Fragments with Blinding Bow",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Bow of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Bow of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Bright Aura ×5",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
           }
         ]
       }
@@ -1247,6 +4643,113 @@
       }
     ]
   },
+  "soul-essence": {
+    "name": "Soul Essence",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Let it Burn",
+        "npc": "Legion Bonfire",
+        "map": null,
+        "requirements": [
+          "Must be Level 65.",
+          "Must have Legion Bonfire in your inventory."
+        ],
+        "preconditions": [
+          "Must be Level 65.",
+          "Must have Legion Bonfire in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/legion-bonfire-s-quest",
+        "sourceHash": "f36e46a657e8640fce3cf4b2a2f674038d793fa992dfa8d904d6456d47247e01",
+        "reward": "Soul Essence ×1",
+        "rows": [
+          {
+            "name": "Grrberus' Flame",
+            "quantity": 1,
+            "monster": "Grrrberus",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/legion-bonfire-s-quest"
+          },
+          {
+            "name": "Soul Sand",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/legion-bonfire-s-quest"
+          }
+        ]
+      }
+    ]
+  },
+  "nulgath-s-approval": {
+    "name": "Nulgath's Approval",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Proof of Recruitment",
+        "npc": "Dirtlicker (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have ArchToken XI in your inventory."
+        ],
+        "preconditions": [
+          "Must have ArchToken XI in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dirtlicker-s-quests",
+        "sourceHash": "293557ee53cf4437c22231491fac82589de41d7d8da1433cf00616835cbcde47",
+        "reward": "Nulgath's Approval ×2",
+        "rows": [
+          {
+            "name": "Fiend Seal",
+            "quantity": 15,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dirtlicker-s-quests"
+          },
+          {
+            "name": "Emblem of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dirtlicker-s-quests"
+          },
+          {
+            "name": "Defeat the TR8T0R",
+            "quantity": 15,
+            "monster": "High Legion Inquisitor (Level 25)\nLegion Guard\nLegion Spy (1)\nSkull Warrior",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dirtlicker-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Zheleznymi Zubami",
+        "npc": "'Quest' button on Screen 6",
+        "map": null,
+        "requirements": [
+          "Must be Level 85."
+        ],
+        "preconditions": [
+          "Must be Level 85."
+        ],
+        "source": "https://aqwwiki.wikidot.com/deleuze-tundra-s-quest",
+        "sourceHash": "c4726c9f0e8c554a21c319d7a18ab9a7febd36e3fb08f42b026b1d2df5c1b7d2",
+        "reward": "Nulgath's Approval ×100",
+        "rows": [
+          {
+            "name": "Rotten Teeth",
+            "quantity": 1,
+            "monster": "Blighted Zubami",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/deleuze-tundra-s-quest"
+          }
+        ]
+      }
+    ]
+  },
   "enchanted-scale": {
     "name": "Enchanted Scale",
     "method": "Quest",
@@ -1255,7 +4758,7 @@
         "id": "material-quest-0",
         "quest": "DragonSlayer General Class",
         "npc": "Galanoth (NPC)",
-        "map": null,
+        "map": "/join dragontown",
         "requirements": [
           "Rank 10 Dragonslayer (Class)."
         ],
@@ -1272,6 +4775,96 @@
             "monster": "Blood Dracolich\nChaos Dracolich (Level 30)\nChaos Fluffy\nDeluge Dracolich (Level 20)\nDeluge Dracolich (Level 40)\nGranite Dracolich (Level 20)\nGranite Dracolich (Level 40)\nInferno Dracolich (Level 20)\nInferno Dracolich (Level 40)\nTempest Dracolich (Level 20)\nTempest Dracolich (Level 40)",
             "map": null,
             "source": "https://aqwwiki.wikidot.com/galanoth-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "ancient-alloy": {
+    "name": "Ancient Alloy",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Ancient Alloys",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the 'The Final Scroll' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'The Final Scroll' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Ancient Alloy ×1",
+        "rows": [
+          {
+            "name": "Alloy Materials",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-paladin": {
+    "name": "Silver Exalted Paladin",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Final Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Paladin ×1",
+        "rows": [
+          {
+            "name": "Paladin Armor Found",
+            "quantity": 1,
+            "monster": "General Drox",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "hollow-soul-misc": {
+    "name": "Hollow Soul (Misc)",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "How Much For One Rib?",
+        "npc": "Altar Of the Hollowborn Caladbolg",
+        "map": null,
+        "requirements": [
+          "Must have Altar Of the Hollowborn Caladbolg in your inventory."
+        ],
+        "preconditions": [
+          "Must have Altar Of the Hollowborn Caladbolg in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/altar-of-the-hollowborn-caladbolg-s-quests",
+        "sourceHash": "2b3742fc3adf5e11f911bb275330c4cde23fec1577bd6611293150aa41b318c4",
+        "reward": "Hollow Soul (Misc) ×250",
+        "rows": [
+          {
+            "name": "Dark Unicorn Rib",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/altar-of-the-hollowborn-caladbolg-s-quests"
           }
         ]
       }
@@ -1404,6 +4997,152 @@
       }
     ]
   },
+  "acquiescence": {
+    "name": "Acquiescence",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Tranquil Mediocrity",
+        "npc": "Tara",
+        "map": "/join worldscore",
+        "requirements": [
+          "Must have completed the 'Rippling Heartbeat' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Rippling Heartbeat' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/tara-s-quests",
+        "sourceHash": "7b9c1293d69edf5b95b600db63e5db7abc5c277addb59800c03be3a76f1fc0d7",
+        "reward": "Acquiescence ×1",
+        "rows": [
+          {
+            "name": "Cracked Elemental Stone",
+            "quantity": 14,
+            "monster": "Elemental Attempt (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/tara-s-quests"
+          },
+          {
+            "name": "Crystalized Tooth",
+            "quantity": 14,
+            "monster": "Crystalized Mana (Level 70) (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/tara-s-quests"
+          },
+          {
+            "name": "Creator's Favor",
+            "quantity": 1,
+            "monster": "Mask of Tranquility",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/tara-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "roentgenium-of-nulgath": {
+    "name": "Roentgenium of Nulgath",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Void HighLord's Challenge",
+        "npc": "Void HighLord (NPC)",
+        "map": "/join tercessuinotlim",
+        "requirements": [
+          "Must be Level 80.",
+          "Must have Hadean Onyx of Nulgath and Voucher of Nulgath (non-mem) in your inventory."
+        ],
+        "preconditions": [
+          "Must be Level 80.",
+          "Must have Hadean Onyx of Nulgath and Voucher of Nulgath (non-mem) in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest",
+        "sourceHash": "4fa02aa7de5bfcf00e73c366c0fde60db97259f72371e20a540e301b3c7b8f5b",
+        "reward": "Roentgenium of Nulgath ×1",
+        "rows": [
+          {
+            "name": "Black Knight Orb",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Nulgath Shaped Chocolate",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Elders' Blood",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Aelita's Emerald",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Unidentified 13",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Gem of Nulgath",
+            "quantity": 20,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Emblem of Nulgath",
+            "quantity": 20,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Essence of Nulgath",
+            "quantity": 50,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Tainted Gem",
+            "quantity": 100,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Nulgath's Approval",
+            "quantity": 300,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Archfiend's Favor",
+            "quantity": 300,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          }
+        ]
+      }
+    ]
+  },
   "teeth": {
     "name": "Teeth",
     "method": "Quest",
@@ -1412,7 +5151,7 @@
         "id": "material-quest-0",
         "quest": "Sweet Dreams Are Made of Teeth",
         "npc": "Re (NPC)",
-        "map": null,
+        "map": "/join eridani",
         "requirements": [
           "Must have completed the 'Time Moves the Moon' quest."
         ],
@@ -1449,7 +5188,7 @@
         "id": "material-quest-0",
         "quest": "Let Sleeping Dogs Lie",
         "npc": "La (NPC)",
-        "map": null,
+        "map": "/join astravia",
         "requirements": [
           "Must have completed the 'Isolani' quest."
         ],
@@ -1473,6 +5212,123 @@
             "monster": "Creature 27 (Version 1)\nCreature 28 (Version 1)\nThe Moon",
             "map": null,
             "source": "https://aqwwiki.wikidot.com/la-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "infernalis-penna": {
+    "name": "Infernalis Penna",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Head Hunters",
+        "npc": "Aranx (NPC)",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/aranx-s-quests",
+        "sourceHash": "424b2db1ec91336d80bc47c3f873307ef8e14113dd1451d02adf83c78743123b",
+        "reward": "Infernalis Penna ×1",
+        "rows": [
+          {
+            "name": "Maah-na's Wing",
+            "quantity": 1,
+            "monster": "Maah-na (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/aranx-s-quests"
+          },
+          {
+            "name": "Akh-a's Wing",
+            "quantity": 1,
+            "monster": "Akh-a (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/aranx-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "infernalis-oculus": {
+    "name": "Infernalis Oculus",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Azalith's Ambition",
+        "npc": "Aranx (NPC)",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/aranx-s-quests",
+        "sourceHash": "424b2db1ec91336d80bc47c3f873307ef8e14113dd1451d02adf83c78743123b",
+        "reward": "Infernalis Oculus ×1",
+        "rows": [
+          {
+            "name": "Azalith's Eye",
+            "quantity": 1,
+            "monster": "Azalith (Monster) (2) (Level 60)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/aranx-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "blinding-aura": {
+    "name": "Blinding Aura",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Finding Fragments with Blinding Scythe",
+        "npc": "Artix (NPC)",
+        "map": "/join necropolis",
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
+        "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
+        "reward": "Blinding Aura ×1",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/artix-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Finding Fragments with Blinding Scythe",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
+          "Must have Blinding Scythe of Destiny in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+        "sourceHash": "74a9221f77b8df423dfface174361c620d088ad3b8a4c476d3ae353870d6fee2",
+        "reward": "Blinding Aura ×1",
+        "rows": [
+          {
+            "name": "Blinding Light Fragments",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny"
           }
         ]
       }
@@ -1503,6 +5359,75 @@
             "monster": "Izotz",
             "map": null,
             "source": "https://aqwwiki.wikidot.com/galanoth-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "hollowborn-doomblade-sword": {
+    "name": "Hollowborn DoomBlade (Sword)",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "A Dark Knight Falls",
+        "npc": "Lae",
+        "map": "/join hollowdeep",
+        "requirements": [
+          "Must have completed the previous quest.",
+          "Must be Level 65.",
+          "Must have Lae's Hardcore Contract in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest.",
+          "Must be Level 65.",
+          "Must have Lae's Hardcore Contract in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/lae-s-quests",
+        "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d",
+        "reward": "Hollowborn DoomBlade (Sword) ×1",
+        "rows": [
+          {
+            "name": "Unidentified 25",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+          },
+          {
+            "name": "(Necro) Scroll of Dark Arts",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+          },
+          {
+            "name": "Royal ShadowScythe Blade",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+          },
+          {
+            "name": "Weapon Imprint",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+          },
+          {
+            "name": "Dark Fragment",
+            "quantity": 20,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+          },
+          {
+            "name": "Doom Fragment",
+            "quantity": 5,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lae-s-quests"
           }
         ]
       }
@@ -2753,6 +6678,13 @@
                 "sourceFile": "content-sources/class-acquisition/legion-revenant-s-quests.html",
                 "sourceHash": "e8d242c4665174614c00306e9df02121444f9909bbd7eeb2232822144e5ad61a",
                 "verifiedAt": "2026-11-15"
+              },
+              {
+                "source": "wiki",
+                "url": "https://aqwwiki.wikidot.com/hooded-legion-cowl",
+                "sourceFile": "content-sources/farm/refinement/wiki/hooded-legion-cowl.html",
+                "sourceHash": "b3a3b03eb62261d4eafd740025da939c6fabf9d6c2ceb170d6d6e091995c98bc",
+                "verifiedAt": "2026-11-15"
               }
             ],
             "quantityTotal": 10
@@ -3275,435 +7207,6 @@
         "randomRewards": [],
         "randomChoiceRewards": [],
         "reward": "Unidentified 13 ×1",
-        "evidence": [
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-            "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
-            "verifiedAt": "2026-11-15"
-          }
-        ]
-      }
-    ]
-  },
-  "unidentified-13": {
-    "name": "Unidentified 13",
-    "method": "Quest (alternative sources)",
-    "tasks": [
-      {
-        "id": "wrong-turn-at-voidbuquerque",
-        "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
-        "preconditions": [
-          "Must have completed the 'Break their Muti-kneecaps' quest.",
-          "Must be Level 80."
-        ],
-        "requirements": [
-          "Unidentified 13 là phần thưởng cố định; sáu nguyên liệu còn lại chọn đúng một loại mỗi lượt. Không phải nguyên liệu nộp Quest."
-        ],
-        "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-        "repeatability": "daily",
-        "quantityScope": "perTurn",
-        "rows": [
-          {
-            "name": "Flibbitiestgibbet's ??? Essence",
-            "itemId": "flibbitiestgibbet-s-essence",
-            "quantity": 1,
-            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "monster": null,
-            "map": null,
-            "maxStack": null,
-            "requiredQuest": null,
-            "sourceDetails": [],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          },
-          {
-            "name": "Nightbane's ??? Essence",
-            "itemId": "nightbane-s-essence",
-            "quantity": 1,
-            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "monster": null,
-            "map": null,
-            "maxStack": null,
-            "requiredQuest": null,
-            "sourceDetails": [],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          },
-          {
-            "name": "Xyfrag's ??? Essence",
-            "itemId": "xyfrag-s-essence",
-            "quantity": 1,
-            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "monster": null,
-            "map": null,
-            "maxStack": null,
-            "requiredQuest": null,
-            "sourceDetails": [],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          }
-        ],
-        "fixedRewards": [
-          {
-            "name": "Unidentified 13",
-            "quantity": 1,
-            "wikiUrl": "https://aqwwiki.wikidot.com/unidentified-13"
-          }
-        ],
-        "rewardChoices": [
-          {
-            "name": "Tainted Gem",
-            "quantity": 60,
-            "wikiUrl": "https://aqwwiki.wikidot.com/tainted-gem"
-          },
-          {
-            "name": "Dark Crystal Shard",
-            "quantity": 35,
-            "wikiUrl": "https://aqwwiki.wikidot.com/dark-crystal-shard"
-          },
-          {
-            "name": "Diamond of Nulgath",
-            "quantity": 100,
-            "wikiUrl": "https://aqwwiki.wikidot.com/diamond-of-nulgath"
-          },
-          {
-            "name": "Totem of Nulgath",
-            "quantity": 2,
-            "wikiUrl": "https://aqwwiki.wikidot.com/totem-of-nulgath"
-          },
-          {
-            "name": "Gem of Nulgath",
-            "quantity": 35,
-            "wikiUrl": "https://aqwwiki.wikidot.com/gem-of-nulgath"
-          },
-          {
-            "name": "Blood Gem of the Archfiend",
-            "quantity": 7,
-            "wikiUrl": "https://aqwwiki.wikidot.com/blood-gem-of-the-archfiend"
-          }
-        ],
-        "randomRewards": [],
-        "randomChoiceRewards": [],
-        "reward": "Unidentified 13 ×1",
-        "rewardQuantity": 1,
-        "evidence": [
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-            "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
-            "verifiedAt": "2026-11-15"
-          }
-        ]
-      }
-    ]
-  },
-  "diamond-of-nulgath": {
-    "name": "Diamond of Nulgath",
-    "method": "Quest (alternative sources)",
-    "tasks": [
-      {
-        "id": "wrong-turn-at-voidbuquerque",
-        "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
-        "preconditions": [
-          "Must have completed the 'Break their Muti-kneecaps' quest.",
-          "Must be Level 80."
-        ],
-        "requirements": [
-          "Unidentified 13 là phần thưởng cố định; sáu nguyên liệu còn lại chọn đúng một loại mỗi lượt. Không phải nguyên liệu nộp Quest."
-        ],
-        "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-        "repeatability": "daily",
-        "quantityScope": "perTurn",
-        "rows": [
-          {
-            "name": "Flibbitiestgibbet's ??? Essence",
-            "itemId": "flibbitiestgibbet-s-essence",
-            "quantity": 1,
-            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "monster": null,
-            "map": null,
-            "maxStack": null,
-            "requiredQuest": null,
-            "sourceDetails": [],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          },
-          {
-            "name": "Nightbane's ??? Essence",
-            "itemId": "nightbane-s-essence",
-            "quantity": 1,
-            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "monster": null,
-            "map": null,
-            "maxStack": null,
-            "requiredQuest": null,
-            "sourceDetails": [],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          },
-          {
-            "name": "Xyfrag's ??? Essence",
-            "itemId": "xyfrag-s-essence",
-            "quantity": 1,
-            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "monster": null,
-            "map": null,
-            "maxStack": null,
-            "requiredQuest": null,
-            "sourceDetails": [],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          }
-        ],
-        "fixedRewards": [
-          {
-            "name": "Unidentified 13",
-            "quantity": 1,
-            "wikiUrl": "https://aqwwiki.wikidot.com/unidentified-13"
-          }
-        ],
-        "rewardChoices": [
-          {
-            "name": "Tainted Gem",
-            "quantity": 60,
-            "wikiUrl": "https://aqwwiki.wikidot.com/tainted-gem"
-          },
-          {
-            "name": "Dark Crystal Shard",
-            "quantity": 35,
-            "wikiUrl": "https://aqwwiki.wikidot.com/dark-crystal-shard"
-          },
-          {
-            "name": "Diamond of Nulgath",
-            "quantity": 100,
-            "wikiUrl": "https://aqwwiki.wikidot.com/diamond-of-nulgath"
-          },
-          {
-            "name": "Totem of Nulgath",
-            "quantity": 2,
-            "wikiUrl": "https://aqwwiki.wikidot.com/totem-of-nulgath"
-          },
-          {
-            "name": "Gem of Nulgath",
-            "quantity": 35,
-            "wikiUrl": "https://aqwwiki.wikidot.com/gem-of-nulgath"
-          },
-          {
-            "name": "Blood Gem of the Archfiend",
-            "quantity": 7,
-            "wikiUrl": "https://aqwwiki.wikidot.com/blood-gem-of-the-archfiend"
-          }
-        ],
-        "randomRewards": [],
-        "randomChoiceRewards": [],
-        "reward": "Unidentified 13 ×1; Diamond of Nulgath ×100",
-        "rewardQuantity": 100,
-        "evidence": [
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-            "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
-            "verifiedAt": "2026-11-15"
-          }
-        ]
-      }
-    ]
-  },
-  "gem-of-nulgath": {
-    "name": "Gem of Nulgath",
-    "method": "Quest (alternative sources)",
-    "tasks": [
-      {
-        "id": "wrong-turn-at-voidbuquerque",
-        "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
-        "preconditions": [
-          "Must have completed the 'Break their Muti-kneecaps' quest.",
-          "Must be Level 80."
-        ],
-        "requirements": [
-          "Unidentified 13 là phần thưởng cố định; sáu nguyên liệu còn lại chọn đúng một loại mỗi lượt. Không phải nguyên liệu nộp Quest."
-        ],
-        "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-        "repeatability": "daily",
-        "quantityScope": "perTurn",
-        "rows": [
-          {
-            "name": "Flibbitiestgibbet's ??? Essence",
-            "itemId": "flibbitiestgibbet-s-essence",
-            "quantity": 1,
-            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "monster": null,
-            "map": null,
-            "maxStack": null,
-            "requiredQuest": null,
-            "sourceDetails": [],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          },
-          {
-            "name": "Nightbane's ??? Essence",
-            "itemId": "nightbane-s-essence",
-            "quantity": 1,
-            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "monster": null,
-            "map": null,
-            "maxStack": null,
-            "requiredQuest": null,
-            "sourceDetails": [],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          },
-          {
-            "name": "Xyfrag's ??? Essence",
-            "itemId": "xyfrag-s-essence",
-            "quantity": 1,
-            "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-            "monster": null,
-            "map": null,
-            "maxStack": null,
-            "requiredQuest": null,
-            "sourceDetails": [],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
-                "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          }
-        ],
-        "fixedRewards": [
-          {
-            "name": "Unidentified 13",
-            "quantity": 1,
-            "wikiUrl": "https://aqwwiki.wikidot.com/unidentified-13"
-          }
-        ],
-        "rewardChoices": [
-          {
-            "name": "Tainted Gem",
-            "quantity": 60,
-            "wikiUrl": "https://aqwwiki.wikidot.com/tainted-gem"
-          },
-          {
-            "name": "Dark Crystal Shard",
-            "quantity": 35,
-            "wikiUrl": "https://aqwwiki.wikidot.com/dark-crystal-shard"
-          },
-          {
-            "name": "Diamond of Nulgath",
-            "quantity": 100,
-            "wikiUrl": "https://aqwwiki.wikidot.com/diamond-of-nulgath"
-          },
-          {
-            "name": "Totem of Nulgath",
-            "quantity": 2,
-            "wikiUrl": "https://aqwwiki.wikidot.com/totem-of-nulgath"
-          },
-          {
-            "name": "Gem of Nulgath",
-            "quantity": 35,
-            "wikiUrl": "https://aqwwiki.wikidot.com/gem-of-nulgath"
-          },
-          {
-            "name": "Blood Gem of the Archfiend",
-            "quantity": 7,
-            "wikiUrl": "https://aqwwiki.wikidot.com/blood-gem-of-the-archfiend"
-          }
-        ],
-        "randomRewards": [],
-        "randomChoiceRewards": [],
-        "reward": "Unidentified 13 ×1; Gem of Nulgath ×35",
-        "rewardQuantity": 35,
         "evidence": [
           {
             "source": "wiki",

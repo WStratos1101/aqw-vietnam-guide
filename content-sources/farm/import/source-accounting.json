@@ -5717,10 +5717,13 @@
       {
         "line": 836,
         "text": "- Hoàn thành Scourge of Evil questline.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "celestial-of-mysteries",
+          "archangel-of-mysteries-companion"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 837,
@@ -5969,7 +5972,13 @@
       {
         "line": 878,
         "text": "* Merge từ Champion Drakath Insignia ×5 (tỷ lệ 5 đổi 13) tại Champion Drakath Merge ở /join championdrakath (cách farm Insignia này xem chi tiết tại Challenge Boss Guide).",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "archangel-of-mysteries",
+          "archangel-of-mysteries-helm",
+          "archangel-of-mysteries-wings",
+          "celestial-of-mysteries",
+          "archangel-of-mysteries-companion"
+        ],
         "excluded": [
           {
             "name": "Champion Drakath",
@@ -5977,8 +5986,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 879,
@@ -6458,10 +6467,21 @@
       {
         "line": 967,
         "text": "Đầu tiên, đến /join infernalparadise để lấy Archangel of Mysteries (AoM) set (điều kiện để unlock quest sau). Set này gồm 1 armor, 1 helm và 1 cape, tổng các nguyên liệu cần có:",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "silver-exalted-helmet",
+          "silver-exalted-visor",
+          "silver-exalted-winged-helm",
+          "silver-exalted-winged-visor",
+          "silver-exalted-haloed-wings",
+          "silver-exalted-paladin-spear",
+          "silver-exalted-paladin-poleaxe",
+          "silver-exalted-spears-of-light",
+          "silver-exalted-paladin-blade",
+          "silver-exalted-paladin-axe"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 968,
@@ -12182,7 +12202,9 @@
         "line": 1819,
         "text": "→ Shadowflame Spike ×150: Drop từ Shadowflame Paladin ở /join shadowoff (lên > phải hoặc trái).",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "fabled-doomknight",
+          "fabled-doom-blade"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -12192,7 +12214,14 @@
         "line": 1820,
         "text": "→ Light Fiend Horn ×150: Drop từ Paladin Fiend ở /join fiendshard (Screen 5).",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "arch-doomknight-cape",
+          "arch-doomknight-cape-sword",
+          "arch-doomknight-polearm",
+          "arch-doomknight-sword",
+          "arch-doomknight-s-edge",
+          "arch-doomknight-open-helm",
+          "arch-doomknight-helm"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -12929,10 +12958,18 @@
       {
         "line": 1929,
         "text": "Cả 3 món vũ khí trên đều được đổi tại Valkyrie's War Trophies ở /join carcossacourt. Tổng nguyên liệu cần có:",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "arch-doomknight-cape",
+          "arch-doomknight-cape-sword",
+          "arch-doomknight-polearm",
+          "arch-doomknight-sword",
+          "arch-doomknight-s-edge",
+          "arch-doomknight-open-helm",
+          "arch-doomknight-helm"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 1930,
@@ -13312,10 +13349,14 @@
       {
         "line": 1989,
         "text": "◆ 4th Quest | MORE SKULLS ON THOSE SKULLS",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "drakath-the-eternal-s-visor",
+          "everlasting-blade-of-chaos",
+          "dual-everlasting-blades-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 1990,
@@ -13464,10 +13505,14 @@
       {
         "line": 2022,
         "text": "Yêu cầu:",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "drakath-the-eternal-s-visor",
+          "everlasting-blade-of-chaos",
+          "dual-everlasting-blades-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 2023,
@@ -14506,10 +14551,27 @@
       {
         "line": 2206,
         "text": "ShadowScythe General (SSG) Class Obtain Guide",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "apprentice-of-awe-armblades",
+          "apprentice-of-awe",
+          "apprentice-of-awe-hood",
+          "apprentice-of-awe-scarf",
+          "adept-of-awe-battle-armblades",
+          "adept-of-awe",
+          "adept-of-awe-hood",
+          "adept-of-awe-battle-scarf",
+          "archmaster-of-awe-battle-armblades",
+          "archmaster-of-awe",
+          "archmaster-of-awe-battle-cowl",
+          "archmaster-of-awe-battle-wings",
+          "awescended-omni-armblades",
+          "awescended",
+          "awescended-omni-cowl",
+          "awescended-omni-wings"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 2212,
@@ -23268,10 +23330,15 @@
       {
         "line": 3649,
         "text": "→ Temp Items yêu cầu cho “New Worlds, New Opportunities” quest:",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "doomblade-of-destruction",
+          "doomlord-s-war-mask",
+          "shadowfiend-cloak",
+          "locks-of-the-doomlord"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3650,
@@ -24198,10 +24265,15 @@
       {
         "line": 3749,
         "text": "◆ Oblivion Blade of Nulgath (OBoN, AC tag - Rare - Legend-Use)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "doomblade-of-destruction",
+          "doomlord-s-war-mask",
+          "shadowfiend-cloak",
+          "locks-of-the-doomlord"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3750,
@@ -24418,10 +24490,12 @@
       {
         "line": 3779,
         "text": "→ Chuyển đến bước 2 chỉ khi đã có đủ Unidentified 1, 6, 9, 16, 20 trong Inventory.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "void-paladin-katana-cape"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3780,
@@ -24866,7 +24940,9 @@
       {
         "line": 3837,
         "text": "→ Chuyển đến bước 5 chỉ khi đã có đủ Essence of Nulgath (×60 hoăc ×100).",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "void-paladin-katana-cape"
+        ],
         "excluded": [
           {
             "name": "Essence of Nulgath",
@@ -24874,8 +24950,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3838,
@@ -24972,10 +25048,14 @@
       {
         "line": 3847,
         "text": "      * Với mem: Farm được nhanh hơn thông qua Taro’s “The Guardian Taro Blademaster” quest ở /join tercessuinotlim. Chi tiết xem tại đây.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "dual-void-shogun-katanas",
+          "void-shogun-banner",
+          "void-shogun-runes"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3848,
@@ -25204,7 +25284,11 @@
       {
         "line": 3879,
         "text": "→ Chuyển đến bước 5 chỉ khi đã có đủ Essence of Nulgath (×60 hoăc ×100).",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "dual-void-shogun-katanas",
+          "void-shogun-banner",
+          "void-shogun-runes"
+        ],
         "excluded": [
           {
             "name": "Essence of Nulgath",
@@ -25212,16 +25296,24 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3880,
         "text": "→ Tham khảo thêm bước phụ 2 bên dưới nếu bạn không cần dùng đến Voucher of Nulgath mỗi khi nhận được.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "void-warlock-scythe",
+          "void-warlock-staff",
+          "void-warlock-overfiend-blade",
+          "void-warlock-overfiend-blade-pet",
+          "void-warlock-crown",
+          "void-warlock-tendrils",
+          "wrap-of-the-void"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3883,
@@ -25708,7 +25800,9 @@
       {
         "line": 3939,
         "text": "→ Chuyển đến bước 5 nếu đã đủ Blood Gem of the Archfiend (×100).",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "wrap-of-the-void"
+        ],
         "excluded": [
           {
             "name": "Blood Gem of the Archfiend",
@@ -25716,8 +25810,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3942,
@@ -26362,7 +26456,19 @@
       {
         "line": 4017,
         "text": "→ Thứ tự ưu tiên nên đổi là: Blood Gem of the Archfiend > Gem of Nulgath > Dark Crystal Shard > Tainted Gem (đây chỉ là khuyến nghị bạn có thể đổi dựa theo nhu cầu của bạn).",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "void-beetle-warlord-hood",
+          "void-beetle-warlord-guard",
+          "void-beetle-warlord-spiked-wings",
+          "void-beetle-warlord-wings",
+          "void-beetle-warlord-blade",
+          "void-beetle-warlord-blades",
+          "void-beetle-warlord-armblade",
+          "void-beetle-warlord-armblades",
+          "void-beetle-warlord-fist",
+          "void-beetle-warlord-fists",
+          "void-beetle-warlord-armaments"
+        ],
         "excluded": [
           {
             "name": "Blood Gem of the Archfiend",
@@ -26385,8 +26491,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4018,
@@ -27571,10 +27677,12 @@
       {
         "line": 4205,
         "text": "\t200",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-hex-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4206,
@@ -27894,15 +28002,19 @@
       {
         "line": 4270,
         "text": "→ Roentgenium of Nulgath ×2",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-hex-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4271,
         "text": "→ Void Crystal A ×1",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-shadow-spear-of-nulgath"
+        ],
         "excluded": [
           {
             "name": "Void Crystal A",
@@ -27910,8 +28022,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4272,
@@ -28411,7 +28523,8 @@
         "line": 4339,
         "text": "→ Golden Hanzo Void: Merge trong shop Diamond Merge Shop ở /join evilwarnul",
         "matchedItemIds": [
-          "golden-hanzo-void"
+          "golden-hanzo-void",
+          "evolved-shadow-spear-of-nulgath"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -28689,10 +28802,12 @@
       {
         "line": 4372,
         "text": "      * Mua trực tiếp tại Alina’s Uruz Potions Shop với giá 2.5m Gold/1 lọ (xem thêm “Gold Farm Guide” nếu cần) ở /join alchemyacademy.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-void-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4373,
@@ -28796,10 +28911,12 @@
       {
         "line": 4394,
         "text": "Good luck!",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-void-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4397,
@@ -32905,7 +33022,10 @@
       {
         "line": 4904,
         "text": "→ Blood Gem of the Archfiend ×20",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "blood-ranger",
+          "blood-ranger-quiver"
+        ],
         "excluded": [
           {
             "name": "Blood Gem of the Archfiend",
@@ -32913,8 +33033,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4905,
@@ -33731,7 +33851,9 @@
       {
         "line": 5020,
         "text": "→ Rank 10 Bard Class: mua từ Mythsong Rep Shop ở /join mythsong - Yêu cầu Rank 4 Mythsong.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "ancient-shogun-armor"
+        ],
         "excluded": [
           {
             "name": "Bard Class",
@@ -33744,8 +33866,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 5021,
@@ -39961,10 +40083,16 @@
       {
         "line": 5862,
         "text": "→ Không có Item chuyển tiếp nên chỉ cần các nguyên liệu gồm:",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "legion-bonfire-altar",
+          "legion-undead-spawn",
+          "legion-undead-visor",
+          "legion-forge-banisher",
+          "legion-spawn-bonker"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 5863,
@@ -46707,7 +46835,17 @@
         "line": 6921,
         "text": "Có 2 cách để có được Altar Of Caladbolg, một là Pay hai là Luck:  ",
         "matchedItemIds": [
-          "caladbolg"
+          "caladbolg",
+          "hollowborn-paladin",
+          "hollowborn-paladin-helmet",
+          "hollowborn-shadow-of-fate",
+          "hollowborn-paladin-visor",
+          "hollowborn-paladin-hood",
+          "hollowborn-templar-helm",
+          "hollowborn-paladin-cape",
+          "hollowborn-paladin-cloak",
+          "hollowborn-daimyo-battlepet",
+          "hollowborn-daimyo"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -46717,7 +46855,9 @@
         "line": 6922,
         "text": "→ Cách 1, đây là vật phẩm seasonal và chỉ mở bán trong tháng sinh nhật Dage (tháng 3 hằng năm - March for Dage’s Birthday). Giá: 5000 ACs (không thể bán item). Map /join darkbirthday sẽ được mở trong dịp sinh nhật Dage, bạn có thể mua Altar of Caladbolg (Floor Item) từ shop Dage Birthday House.",
         "matchedItemIds": [
-          "caladbolg"
+          "caladbolg",
+          "hollowborn-doom-visage",
+          "hollowborn-doom-cape"
         ],
         "excluded": [
           {
@@ -47657,18 +47797,47 @@
       {
         "line": 7075,
         "text": "- Silenced Anomalies ×100, giết bất kỳ monsters ở /join portalwar.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-doom-visage",
+          "hollowborn-doom-cape"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 7076,
         "text": "- Chronolords Stopped ×50, giết Chronolords ở /join portalmaze.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-chaos-warrior",
+          "hollowborn-chaos-morph",
+          "hollowborn-chaotic-wings",
+          "hollowborn-omega-blades",
+          "hollowborn-omega-sword",
+          "hollowborn-chaos-unlocker",
+          "hollowborn-benevolent-locks",
+          "hollowborn-malignant-locks",
+          "hollowborn-face-of-chaos",
+          "hollowborn-gaze-of-chaos",
+          "hollowborn-eye-of-chaos",
+          "hollowborn-wings-of-chaos",
+          "hollowborn-envoy-of-chaos",
+          "hollowborn-alignment-aspects",
+          "hollowborn-blade-of-chaos-cape",
+          "hollowborn-blade-of-chaos",
+          "hollowborn-claw-of-chaos",
+          "hollowborn-benevolent",
+          "hollowborn-benevolent-morph",
+          "hollowborn-malignant",
+          "hollowborn-malignant-morph",
+          "idle-hollowborn-envoy-of-chaos",
+          "hollowborn-blades-of-chaos",
+          "hollowborn-omega-swords",
+          "hollowborn-chaos-unlockers"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 7077,
@@ -48482,7 +48651,32 @@
         "text": "- Cuối cùng, lấy Dark Dragon Slayer's Halberd bằng số nguyên liệu còn lại.",
         "matchedItemIds": [
           "dark-dragon-slayer",
-          "dark-dragon-slayer-s-halberd"
+          "dark-dragon-slayer-s-halberd",
+          "hollowborn-chaos-warrior",
+          "hollowborn-chaos-morph",
+          "hollowborn-chaotic-wings",
+          "hollowborn-omega-blades",
+          "hollowborn-omega-sword",
+          "hollowborn-chaos-unlocker",
+          "hollowborn-benevolent-locks",
+          "hollowborn-malignant-locks",
+          "hollowborn-face-of-chaos",
+          "hollowborn-gaze-of-chaos",
+          "hollowborn-eye-of-chaos",
+          "hollowborn-wings-of-chaos",
+          "hollowborn-envoy-of-chaos",
+          "hollowborn-alignment-aspects",
+          "hollowborn-blade-of-chaos-cape",
+          "hollowborn-blade-of-chaos",
+          "hollowborn-claw-of-chaos",
+          "hollowborn-benevolent",
+          "hollowborn-benevolent-morph",
+          "hollowborn-malignant",
+          "hollowborn-malignant-morph",
+          "idle-hollowborn-envoy-of-chaos",
+          "hollowborn-blades-of-chaos",
+          "hollowborn-omega-swords",
+          "hollowborn-chaos-unlockers"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -49528,18 +49722,62 @@
       {
         "line": 7404,
         "text": "→ Emblazoned Basalt ×200: Drop từ Mafic Dragon (50% DC) hoặc các monsters khác (10% DC) ở /join mafic.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-void-sword",
+          "hollowborn-void-of-nulgath",
+          "hollowborn-void-horns",
+          "hollowborn-void-helm",
+          "hollowborn-ungodly-reavers-of-nulgath",
+          "hollowborn-phoenix-blade-of-nulgath",
+          "hollowborn-overfiend-blade-of-nulgath",
+          "hollowborn-dragonblade-of-nulgath",
+          "hollowborn-makai-pet",
+          "hollowborn-makai-battle-pet",
+          "hollowborn-legacy-of-nulgath",
+          "hollowborn-cloak-of-nulgath",
+          "hollowborn-oblivion-blade-battle-pet",
+          "hollowborn-metamorphosis-of-nulgath",
+          "hollowborn-archfiend",
+          "hollowborn-nulgath-morph",
+          "hollowborn-hand-of-nulgath",
+          "hollowborn-battlefiend-of-nulgath",
+          "hollowborn-shadows-of-the-oversoul"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 7405,
         "text": "→ Dense Dragon Crystal ×200: Drop từ Void Draconian (lvl 85) ở /join underlair.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-undead-warrior",
+          "hollowborn-underworld-legacy-horns",
+          "hollowborn-underworld-legacy-helm",
+          "hollowborn-legion-champion",
+          "hollowborn-undead-legacy-horns",
+          "hollowborn-undead-legacy-helm",
+          "hollowborn-legion-champion-crest",
+          "hollowborn-soul-eater-blade",
+          "hollowborn-lich-king",
+          "hollowborn-lich-king-s-horns",
+          "hollowborn-lich-king-s-hood",
+          "hollowborn-lich-king-s-cloak",
+          "hollowborn-soul-eater-blades",
+          "hollowborn-lich-king-s-pride",
+          "hollowborn-lich-king-s-morph",
+          "hollowborn-lich-king-s-flaming-skull",
+          "hollowborn-apocalypse-flame",
+          "hollowborn-apocalypse-flames",
+          "hollowborn-shadow-of-the-legion",
+          "lesser-hollowborn-caladbolg",
+          "hollowborn-caladbolg",
+          "dual-hollowborn-caladbolgs",
+          "hollowborn-caladbolg-companion"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 7406,
@@ -51239,10 +51477,34 @@
       {
         "line": 7647,
         "text": "      * Creator's Favor ×1: Drop từ Mask of Tranquility.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-undead-warrior",
+          "hollowborn-underworld-legacy-horns",
+          "hollowborn-underworld-legacy-helm",
+          "hollowborn-legion-champion",
+          "hollowborn-undead-legacy-horns",
+          "hollowborn-undead-legacy-helm",
+          "hollowborn-legion-champion-crest",
+          "hollowborn-soul-eater-blade",
+          "hollowborn-lich-king",
+          "hollowborn-lich-king-s-horns",
+          "hollowborn-lich-king-s-hood",
+          "hollowborn-lich-king-s-cloak",
+          "hollowborn-soul-eater-blades",
+          "hollowborn-lich-king-s-pride",
+          "hollowborn-lich-king-s-morph",
+          "hollowborn-lich-king-s-flaming-skull",
+          "hollowborn-apocalypse-flame",
+          "hollowborn-apocalypse-flames",
+          "hollowborn-shadow-of-the-legion",
+          "lesser-hollowborn-caladbolg",
+          "hollowborn-caladbolg",
+          "dual-hollowborn-caladbolgs",
+          "hollowborn-caladbolg-companion"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 7650,
@@ -54817,7 +55079,14 @@
       {
         "line": 8226,
         "text": "\tWorshipper of Doom        (max 1)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "celestial-commander-s-hat",
+          "celestial-commander-s-locks-hat",
+          "celestial-commander-s-wings",
+          "celestial-commander-s-back-blade",
+          "celestial-commander-s-wings-blade",
+          "celestial-commander-s-morph-locks"
+        ],
         "excluded": [
           {
             "name": "Doom",
@@ -54825,8 +55094,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 8227,
@@ -54999,10 +55268,17 @@
       {
         "line": 8250,
         "text": "\t-",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "celestial-commander-s-hat",
+          "celestial-commander-s-locks-hat",
+          "celestial-commander-s-wings",
+          "celestial-commander-s-back-blade",
+          "celestial-commander-s-wings-blade",
+          "celestial-commander-s-morph-locks"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 8251,
@@ -59276,10 +59552,12 @@
       {
         "line": 8916,
         "text": "→ Hollow Soul: Có 2 cách để farm:",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "black-star-blades"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 8917,
@@ -83696,10 +83974,12 @@
       {
         "line": 11,
         "text": "→ Hollowborn Shadow of Fate (HBSoF)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-shadow-of-fate"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 12,
@@ -83806,7 +84086,9 @@
       {
         "line": 23,
         "text": "Hollowborn Doom Visage",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-doom-visage"
+        ],
         "excluded": [
           {
             "name": "Doom",
@@ -83814,8 +84096,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 24,
@@ -83850,7 +84132,9 @@
       {
         "line": 27,
         "text": "Hollowborn Doom Cape",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-doom-cape"
+        ],
         "excluded": [
           {
             "name": "Doom",
@@ -83858,8 +84142,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 28,
@@ -84137,7 +84421,8 @@
         "matchedItemIds": [
           "sepulchure-s-doomknight-armor",
           "necrotic-sword-of-doom",
-          "sepulchure-s-original-helm"
+          "sepulchure-s-original-helm",
+          "hollowborn-shadow-of-fate"
         ],
         "excluded": [
           {
@@ -87573,7 +87858,8 @@
         "line": 74,
         "text": "→ Arch DoomKnight Helm",
         "matchedItemIds": [
-          "arch-doomknight"
+          "arch-doomknight",
+          "arch-doomknight-helm"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -91021,7 +91307,9 @@
         "text": "◆ Hollowborn Shadow of Fate (HBSoF) và Dual Hollowborn Shadows of Fate (DHBSoF): chi tiết tại “Hollowborn Paladin Guide” (cần có bản gốc BLoD để unlock).",
         "matchedItemIds": [
           "dual-hollowborn-shadows-of-fate",
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-shadow-of-fate"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -92902,10 +93190,12 @@
       {
         "line": 19,
         "text": "→ Hollowborn Shadow of Fate (HBSoF)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-shadow-of-fate"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 20,
@@ -93012,7 +93302,9 @@
       {
         "line": 31,
         "text": "Hollowborn Doom Visage",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-doom-visage"
+        ],
         "excluded": [
           {
             "name": "Doom",
@@ -93020,8 +93312,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 32,
@@ -93056,7 +93348,9 @@
       {
         "line": 35,
         "text": "Hollowborn Doom Cape",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-doom-cape"
+        ],
         "excluded": [
           {
             "name": "Doom",
@@ -93064,8 +93358,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 36,
@@ -93343,7 +93637,8 @@
         "matchedItemIds": [
           "sepulchure-s-doomknight-armor",
           "necrotic-sword-of-doom",
-          "sepulchure-s-original-helm"
+          "sepulchure-s-original-helm",
+          "hollowborn-shadow-of-fate"
         ],
         "excluded": [
           {
@@ -93554,10 +93849,12 @@
       {
         "line": 2,
         "text": "Hollowborn Blade of Chaos",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-blade-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3,
@@ -93602,10 +93899,12 @@
       {
         "line": 8,
         "text": "Hollowborn Blade of Chaos",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-blade-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 9,
@@ -93788,7 +94087,8 @@
         "line": 29,
         "text": "Hollowborn Chaos Warrior (30% to Chaos)",
         "matchedItemIds": [
-          "warrior-class"
+          "warrior-class",
+          "hollowborn-chaos-warrior"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -93797,18 +94097,22 @@
       {
         "line": 30,
         "text": "Hollowborn Chaos Morph",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-chaos-morph"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 31,
         "text": "Hollowborn Chaotic Wings",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-chaotic-wings"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 32,
@@ -93929,26 +94233,32 @@
       {
         "line": 45,
         "text": "Hollowborn Omega Blades (50% to Chaos)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-omega-blades"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 46,
         "text": "Hollowborn Omega Sword (50% to Chaos)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-omega-sword"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 47,
         "text": "Hollowborn Chaos Unlocker (50% to Chaos)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-chaos-unlocker"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 48,
@@ -94076,34 +94386,44 @@
       {
         "line": 61,
         "text": "Hollowborn Benevolent Locks",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-benevolent-locks",
+          "hollowborn-benevolent"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 62,
         "text": "Hollowborn Malignant Locks",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-malignant-locks",
+          "hollowborn-malignant"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 63,
         "text": "Hollowborn Face of Chaos",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-face-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 64,
         "text": "Hollowborn Gaze of Chaos",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-gaze-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 65,
@@ -94240,18 +94560,22 @@
       {
         "line": 78,
         "text": "Hollowborn Eye of Chaos (25% Gold)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-eye-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 79,
         "text": "Hollowborn Wings of Chaos (25% Gold)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-wings-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 80,
@@ -94514,26 +94838,33 @@
       {
         "line": 106,
         "text": "Hollowborn Envoy of Chaos (50% to Chaos và 25% Gold)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-envoy-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 107,
         "text": "Hollowborn Alignment Aspects (25% Gold)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-alignment-aspects"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 108,
         "text": "Hollowborn Blade of Chaos Cape (25% Gold)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-blade-of-chaos-cape",
+          "hollowborn-blade-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 109,
@@ -94546,18 +94877,22 @@
       {
         "line": 110,
         "text": "Hollowborn Blade of Chaos (75% to Chaos và 25% Gold)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-blade-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 111,
         "text": "Hollowborn Claw of Chaos (50% to Chaos và 25% Gold)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-claw-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 112,
@@ -94616,74 +94951,97 @@
       {
         "line": 118,
         "text": "Hollowborn Benevolent",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-benevolent"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 119,
         "text": "Hollowborn Benevolent Morph",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-benevolent",
+          "hollowborn-benevolent-morph"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 120,
         "text": "Hollowborn Malignant",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-malignant"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 121,
         "text": "Hollowborn Malignant Morph",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-malignant",
+          "hollowborn-malignant-morph"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 122,
         "text": "Idle Hollowborn Envoy of Chaos (50% to Chaos và 25% Gold)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-envoy-of-chaos",
+          "idle-hollowborn-envoy-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 123,
         "text": "Hollowborn Blades of Chaos (75% to Chaos và 25% Gold)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-blades-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 124,
         "text": "Hollowborn Omega Swords (50% to Chaos)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-omega-sword",
+          "hollowborn-omega-swords"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 125,
         "text": "Hollowborn Chaos Unlockers (50% to Chaos)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-chaos-unlocker",
+          "hollowborn-chaos-unlockers"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 126,
         "text": "Hollowborn Blade of Chaos (Floor) (stack đến 6, tức làm 15 lần nếu muốn max stack item này)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-blade-of-chaos"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 127,
@@ -95127,7 +95485,8 @@
         "line": 1,
         "text": "Hollowborn Paladin Set",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95153,7 +95512,8 @@
         "line": 4,
         "text": "Hollowborn Paladin Set",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95164,7 +95524,8 @@
         "text": "Classic Hollowborn Paladin Armor (25% to Human)",
         "matchedItemIds": [
           "classic-hollowborn-paladin-armor",
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95174,7 +95535,9 @@
         "line": 6,
         "text": "Hollowborn Paladin Visor",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-visor"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95184,7 +95547,9 @@
         "line": 7,
         "text": "Hollowborn Paladin Hood",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-hood"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95193,16 +95558,20 @@
       {
         "line": 8,
         "text": "Hollowborn Templar Helm",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-templar-helm"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 9,
         "text": "Hollowborn Paladin Cape",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-cape"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95212,7 +95581,9 @@
         "line": 10,
         "text": "Hollowborn Paladin Cloak",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-cloak"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95231,18 +95602,23 @@
       {
         "line": 12,
         "text": "Hollowborn Daimyo Battlepet",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-daimyo-battlepet",
+          "hollowborn-daimyo"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 13,
         "text": "Hollowborn Daimyo",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-daimyo"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 14,
@@ -95454,7 +95830,8 @@
         "line": 36,
         "text": "Rewards: Hollowborn Paladin (HBP)",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95480,7 +95857,8 @@
         "line": 39,
         "text": "Must have Lae's Hardcore Contract and Hollowborn Paladin in your inventory.",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95552,7 +95930,9 @@
         "line": 46,
         "text": "Rewards: Hollowborn Paladin Helmet",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-helmet"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95578,7 +95958,9 @@
         "line": 49,
         "text": "Must have Lae's Hardcore Contract, Ascended Light of Destiny, Hollowborn Paladin and Hollowborn Paladin Helmet in your inventory.",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-helmet"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95726,10 +96108,12 @@
       {
         "line": 63,
         "text": "Rewards: Hollowborn Shadow of Fate (HBSoF - 51% to Undead và 25% Gold))",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-shadow-of-fate"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 64,
@@ -95750,10 +96134,12 @@
       {
         "line": 66,
         "text": "Must have Lae's Hardcore Contract, Hollowborn Shadow of Fate in your inventory.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-shadow-of-fate"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 67,
@@ -95792,7 +96178,8 @@
         "text": "Classic Hollowborn Paladin Armor (CHBPA - 25% to Human)",
         "matchedItemIds": [
           "classic-hollowborn-paladin-armor",
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95802,7 +96189,9 @@
         "line": 72,
         "text": "Hollowborn Paladin Visor",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-visor"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95812,7 +96201,9 @@
         "line": 73,
         "text": "Hollowborn Paladin Hood",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-hood"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95821,16 +96212,20 @@
       {
         "line": 74,
         "text": "Hollowborn Templar Helm",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-templar-helm"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 75,
         "text": "Hollowborn Paladin Cape",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-cape"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95840,7 +96235,9 @@
         "line": 76,
         "text": "Hollowborn Paladin Cloak",
         "matchedItemIds": [
-          "paladin-class"
+          "paladin-class",
+          "hollowborn-paladin",
+          "hollowborn-paladin-cloak"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -95859,18 +96256,23 @@
       {
         "line": 78,
         "text": "Hollowborn Daimyo Battlepet",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-daimyo-battlepet",
+          "hollowborn-daimyo"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 79,
         "text": "Hollowborn Daimyo",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-daimyo"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 80,
@@ -98397,7 +98799,8 @@
         "line": 2,
         "text": "Có Armor Legion Forge Spawn tăng 25% DMG với all monsters và Cape Legion Bonfire Altar tăng 25% DMG với all monsters + 25% Gold",
         "matchedItemIds": [
-          "legion-forge-spawn"
+          "legion-forge-spawn",
+          "legion-bonfire-altar"
         ],
         "excluded": [
           {
@@ -98603,7 +99006,11 @@
         "line": 18,
         "text": "- Ở quest này cũng nhận được thêm một số item như Legion Undead Spawn, Legion Undead Visor, Legion Forge Banisher, Legion Spawn Bonker. Sử dụng Legion Undead Visor để merge Legion Forge Visor.",
         "matchedItemIds": [
-          "legion-forge-visor"
+          "legion-forge-visor",
+          "legion-undead-spawn",
+          "legion-undead-visor",
+          "legion-forge-banisher",
+          "legion-spawn-bonker"
         ],
         "excluded": [
           {
@@ -98628,7 +99035,8 @@
         "text": "Note: Legion Forge Spawn và Legion Bonfire Altar có thể nâng cấp thành bản Empowered giúp có boost tăng 35% DMG với all monsters và 25% Gold/XP/Rep/CP thông qua Dage the Dark Lord. Xem chi tiết tại đây.",
         "matchedItemIds": [
           "dark-lord",
-          "legion-forge-spawn"
+          "legion-forge-spawn",
+          "legion-bonfire-altar"
         ],
         "excluded": [
           {
@@ -99911,10 +100319,12 @@
       {
         "line": 5,
         "text": "Hoàn thành tất cả Trissa's Quests sẽ cho phép bạn unlock một set gọi là “Awescended”.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "awescended"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 6,
@@ -99943,26 +100353,32 @@
       {
         "line": 9,
         "text": "Ở level 75, mở khóa set “Archmaster of Awe”, tăng 20% DMG lên all monsters.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "archmaster-of-awe"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 10,
         "text": "Ở level 50, mở khoá set “Adept of Awe”, tăng 15% DMG lên all monsters.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "adept-of-awe"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 11,
         "text": "Ở level 25, mở khoá set “Apprentice of Awe”, tăng 10% DMG lên all monsters.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "apprentice-of-awe"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 12,
@@ -101310,7 +101726,8 @@
         "line": 7,
         "text": "→ Celestial ArchFiend & Infernal ArchFiend Set (cần Doomblade of Destruction).",
         "matchedItemIds": [
-          "celestial-archfiend"
+          "celestial-archfiend",
+          "doomblade-of-destruction"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -102928,7 +103345,9 @@
       {
         "line": 68,
         "text": "→ Blood Ranger: Merge tại Nulgath Diamond Shop của NPC Klunk ở /join evilwarnul.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "blood-ranger"
+        ],
         "excluded": [
           {
             "name": "Blood Ranger",
@@ -102941,8 +103360,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 69,
@@ -103115,10 +103534,12 @@
       {
         "line": 84,
         "text": "→ Doomblade of Destruction: Nhận được từ “Nulgath Demands Work” quest của Oblivion ở /join tercessuinotlim. Chi tiết xem tại đây.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "doomblade-of-destruction"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 85,
@@ -103293,7 +103714,9 @@
       {
         "line": 101,
         "text": "→ Ancient Shogun Armor: Merge tại Nulgath Diamond Shop của NPC Klunk ở /join evilwarnul.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "ancient-shogun-armor"
+        ],
         "excluded": [
           {
             "name": "Ancient Shogun Armor",
@@ -103306,8 +103729,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 102,
@@ -104330,10 +104753,12 @@
       {
         "line": 46,
         "text": "◆ “Unlock the Evolved Hex Armor” quest for Evolved Hex of Nulgath",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-hex-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 47,
@@ -104963,10 +105388,12 @@
       {
         "line": 108,
         "text": "◆ “Shape your Nothingness” quest for Evolved Shadow Spear of Nulgath",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-shadow-spear-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 109,
@@ -105472,10 +105899,12 @@
       {
         "line": 159,
         "text": "◆ “Evolved Void Orb Quest” quest for Evolved Void Of Nulgath",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-void-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 160,
@@ -106122,10 +106551,12 @@
       {
         "line": 10,
         "text": "◆ “Unlock the Evolved Hex Armor” quest for Evolved Hex of Nulgath",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-hex-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 11,
@@ -107046,10 +107477,12 @@
       {
         "line": 24,
         "text": "◆ “Shape your Nothingness” quest for Evolved Shadow Spear of Nulgath",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-shadow-spear-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 25,
@@ -107336,10 +107769,12 @@
       {
         "line": 4,
         "text": "◆ “Evolved Void Orb Quest” quest for Evolved Void Of Nulgath",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-void-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 5,
@@ -107589,7 +108024,8 @@
         "line": 5,
         "text": "Blood Ranger Set & Storm Knight Set",
         "matchedItemIds": [
-          "storm-knight"
+          "storm-knight",
+          "blood-ranger"
         ],
         "excluded": [
           {
@@ -107940,7 +108376,9 @@
       {
         "line": 18,
         "text": "Tiếp theo với Armor, chỉ có duy nhất 1 món: Ancient Shogun Armor.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "ancient-shogun-armor"
+        ],
         "excluded": [
           {
             "name": "Ancient Shogun Armor",
@@ -107948,8 +108386,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 19,
@@ -108897,7 +109335,9 @@
       {
         "line": 2,
         "text": "Blood Ranger Set (tăng DMG lên Dragon monsters)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "blood-ranger"
+        ],
         "excluded": [
           {
             "name": "Blood Ranger",
@@ -108905,8 +109345,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3,
@@ -108942,7 +109382,8 @@
         "line": 5,
         "text": "Blood Ranger Set & Storm Knight Set Guide",
         "matchedItemIds": [
-          "storm-knight"
+          "storm-knight",
+          "blood-ranger"
         ],
         "excluded": [
           {
@@ -108972,7 +109413,8 @@
         "line": 7,
         "text": "Blood Ranger Set & Storm Knight Set & Ancient Shogun Set Guide",
         "matchedItemIds": [
-          "storm-knight"
+          "storm-knight",
+          "blood-ranger"
         ],
         "excluded": [
           {
@@ -114356,7 +114798,8 @@
           "void-light-of-destiny",
           "void-paladin",
           "void-paladin-helm",
-          "void-paladin-katana"
+          "void-paladin-katana",
+          "void-paladin-katana-cape"
         ],
         "excluded": [
           {
@@ -115045,10 +115488,12 @@
       {
         "line": 19,
         "text": "Wrap of the Void",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "wrap-of-the-void"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 20,
@@ -115450,7 +115895,8 @@
         "matchedItemIds": [
           "paladin-class",
           "void-paladin",
-          "void-paladin-katana"
+          "void-paladin-katana",
+          "void-paladin-katana-cape"
         ],
         "excluded": [
           {
@@ -115808,7 +116254,8 @@
         "line": 17,
         "text": "Rewards: Dual Void Shogun Katanas (100% drop)",
         "matchedItemIds": [
-          "void-shogun-armor"
+          "void-shogun-armor",
+          "dual-void-shogun-katanas"
         ],
         "excluded": [
           {
@@ -115899,7 +116346,8 @@
         "line": 23,
         "text": "Void Shogun Banner",
         "matchedItemIds": [
-          "void-shogun-armor"
+          "void-shogun-armor",
+          "void-shogun-banner"
         ],
         "excluded": [
           {
@@ -115920,7 +116368,8 @@
         "line": 24,
         "text": "Void Shogun Runes",
         "matchedItemIds": [
-          "void-shogun-armor"
+          "void-shogun-armor",
+          "void-shogun-runes"
         ],
         "excluded": [
           {
@@ -116201,7 +116650,8 @@
         "line": 18,
         "text": "Void Spartan Daggers",
         "matchedItemIds": [
-          "void-spartan"
+          "void-spartan",
+          "void-spartan-daggers"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -116245,7 +116695,8 @@
         "line": 22,
         "text": "Void Spartan Banners",
         "matchedItemIds": [
-          "void-spartan"
+          "void-spartan",
+          "void-spartan-banners"
         ],
         "excluded": [
           {
@@ -116261,7 +116712,8 @@
         "line": 23,
         "text": "Void Spartan Cape",
         "matchedItemIds": [
-          "void-spartan"
+          "void-spartan",
+          "void-spartan-cape"
         ],
         "excluded": [
           {
@@ -116457,7 +116909,8 @@
         "line": 13,
         "text": "Void Warlock Scythe (40% all DMG)",
         "matchedItemIds": [
-          "void-warlock"
+          "void-warlock",
+          "void-warlock-scythe"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -116467,7 +116920,8 @@
         "line": 14,
         "text": "Void Warlock Staff (40% all DMG)",
         "matchedItemIds": [
-          "void-warlock"
+          "void-warlock",
+          "void-warlock-staff"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -116477,7 +116931,8 @@
         "line": 15,
         "text": "Void Warlock Overfiend Blade (40% all DMG)",
         "matchedItemIds": [
-          "void-warlock"
+          "void-warlock",
+          "void-warlock-overfiend-blade"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -116487,7 +116942,9 @@
         "line": 16,
         "text": "Void Warlock Overfiend Blade Pet (25% all DMG)",
         "matchedItemIds": [
-          "void-warlock"
+          "void-warlock",
+          "void-warlock-overfiend-blade",
+          "void-warlock-overfiend-blade-pet"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -116497,7 +116954,8 @@
         "line": 17,
         "text": "Void Warlock Crown (25% all DMG)",
         "matchedItemIds": [
-          "void-warlock"
+          "void-warlock",
+          "void-warlock-crown"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -116645,7 +117103,8 @@
         "text": "Void Warlock Tendrils Cape",
         "matchedItemIds": [
           "void-warlock",
-          "void-warlock-tendrils-cape"
+          "void-warlock-tendrils-cape",
+          "void-warlock-tendrils"
         ],
         "excluded": [
           {
@@ -116661,7 +117120,8 @@
         "line": 32,
         "text": "Void Warlock Tendrils",
         "matchedItemIds": [
-          "void-warlock"
+          "void-warlock",
+          "void-warlock-tendrils"
         ],
         "excluded": [
           {
@@ -119196,10 +119656,12 @@
       {
         "line": 3,
         "text": "→ Black Star Blades: Drop từ Mysterious Stranger ở /join shadowbattleon (0.5% DC).",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "black-star-blades"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4,
