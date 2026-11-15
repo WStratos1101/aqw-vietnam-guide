@@ -4,8 +4,32 @@ import fs from "node:fs";
 import {createHash} from "node:crypto";
 import {equipmentSets,pendingSets,resolveEquipmentSets} from "../content-sources/farm/aqw-equipment-sets.mjs";
 import {equipmentSetMembers,farmSetItemHref,validateEquipmentSets} from "../src/lib/farm-equipment-sets.mjs";
+import {parseFarmReviewPage} from "../scripts/lib/farm-review-parser.mjs";
 const read=path=>JSON.parse(fs.readFileSync(path,"utf8")),catalog=read("src/content/farm/catalog-v2.generated.json"),sets=read("src/content/farm/equipment-sets.generated.json").sets;
 const records=read("content-sources/farm/equipment-sets/canonical-records.json"),assets=read("content-sources/farm/equipment-sets/assets.json"),audit=read("content-sources/farm/equipment-sets/audit.json");
+test("reviewed Evolved Fiend inventory parses lowercase required labels without losing inputs or rewards",()=>{
+ const proof=read("content-sources/farm/equipment-sets/reviewed-inventories.json").sets.find(set=>set.id==="evolved-fiend").inventoryEvidence.proofs[0];
+ const html=fs.readFileSync(proof.sourceFile,"utf8");
+ assert.match(html, /<strong>Items required:<\/strong>/);
+ assert.equal(createHash("sha256").update(html).digest("hex"),proof.sourceHash);
+ const parsed=parseFarmReviewPage(html,proof.url);
+ assert.deepEqual(parsed.quests.map(quest=>quest.name),["Evolved Fiend Orb Quest","Evolved Fiend Gear"]);
+ assert.deepEqual(parsed.quests.map(quest=>quest.required.map(row=>row.quantity)),[[1,10,1,1],[1,30,30,10,1,1]]);
+ assert.deepEqual(parsed.quests.flatMap(quest=>quest.fixedRewards.map(row=>row.wikiUrl)),[
+  "https://aqwwiki.wikidot.com/evolved-fiend-of-nulgath",
+  "https://aqwwiki.wikidot.com/evolved-fiend-talons",
+  "https://aqwwiki.wikidot.com/evolved-fiend-helm",
+  "https://aqwwiki.wikidot.com/evolved-fiend-cape",
+ ]);
+});
+test("reviewed Evolved Void members retain both exact reward Quest proofs",()=>{
+ const set=read("content-sources/farm/equipment-sets/reviewed-inventories.json").sets.find(set=>set.id==="evolved-void");
+ const proof=set.inventoryEvidence.proofs[0],html=fs.readFileSync(proof.sourceFile,"utf8");
+ assert.equal(createHash("sha256").update(html).digest("hex"),proof.sourceHash);
+ const quests=parseFarmReviewPage(html,proof.url).quests.filter(quest=>proof.quests.includes(quest.name));
+ assert.deepEqual(quests.map(quest=>quest.name),proof.quests);
+ assert.deepEqual(new Set(quests.flatMap(quest=>quest.fixedRewards.map(row=>row.wikiUrl))),new Set(set.members.map(member=>member.wikiUrl)));
+});
 test("the supplied 24/41 seed is preserved and a resolver match is never VERIFIED",()=>{
  assert.equal(equipmentSets.length,24);assert.equal(pendingSets.length,41);assert.equal(equipmentSets.reduce((n,set)=>n+set.members.length,0),209);
  const resolved=resolveEquipmentSets([{id:"known",name:"Void Paladin",category:"Armor"}]);

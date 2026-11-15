@@ -33,9 +33,9 @@ const seedResearch=read("seed-collection-research");
 for(const finding of seedResearch.scopeFindings || []){
  if(/lich.king/i.test(finding.id||finding.setId||"")){
   const members=finding.reviewedFullEquipmentInventory;
-  if(members?.length){const seed=equipmentSets.find(set=>set.id==="hollowborn-lich-king");const source=finding.source||finding.sources?.[0];
+  if(members?.length){const seed=equipmentSets.find(set=>set.id==="hollowborn-lich-king");const source=finding.source||finding.wikiSources?.[0]||finding.sources?.[0];
     if(source && !byUrl.has(source.url))byUrl.set(source.url,source);
-    byId.set(seed.id,{...seed,members:members.map(member=>({...member,itemId:null,category:null,status:"WIKI_INVENTORY_REVIEW"})),expectedCount:members.length,inventoryEvidence:{kind:"reviewed-inventory",complete:true,proofs:finding.sources||[source].filter(Boolean),reviewFile:root+"seed-collection-research.json",guideScope:"Explicit Guide set; all 24 scoped equipment rewards, house altar excluded."}});
+    byId.set(seed.id,{...seed,members:members.map(member=>({...member,itemId:null,category:null,status:"WIKI_INVENTORY_REVIEW"})),expectedCount:members.length,inventoryEvidence:{kind:"reviewed-inventory",complete:true,proofs:finding.wikiSources||finding.sources||[source].filter(Boolean),reviewFile:root+"seed-collection-research.json",guideScope:"Explicit Guide set; all 24 scoped equipment rewards, house altar excluded."}});
   }
  }
 }

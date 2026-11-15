@@ -22,7 +22,7 @@ export function FarmEquipmentSets({item,items,onItemClick}:{item:FarmV2Item;item
     if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
     event.preventDefault();const current=new URL(window.location.href);current.searchParams.set("farm-tab","sets");current.searchParams.set("farm-set",active.id);window.history.replaceState(window.history.state,"",current.pathname+current.search);onItemClick(member.id);
   }}>
-    <div className="fv-set-art">{member.image && <img src={member.image} alt={member.name} loading="lazy"/>}</div>
+    <div className="fv-set-art">{member.image && <img src={member.image} alt={member.name} width={145} height={145} loading="lazy"/>}</div>
     <span className="fv-set-name"><FarmTypeIcon name={member.subtype || member.category} fallbackName={member.category}/>{member.name}</span>
     {!farmBoost(member).includes("Chưa xác minh") && <small>{farmBoost(member).join(" · ")}</small>}
   </a>)}</div>

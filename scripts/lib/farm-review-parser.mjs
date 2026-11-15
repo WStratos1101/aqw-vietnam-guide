@@ -22,7 +22,7 @@ function field(text, label) {
 }
 
 function labelNode(root, label) {
-  return [...root.querySelectorAll("strong")].find(el => el.textContent.trim() === label + ":");
+  return [...root.querySelectorAll("strong")].find(el => el.textContent.trim().toLowerCase() === label.toLowerCase() + ":");
 }
 
 function listAfter(node) {

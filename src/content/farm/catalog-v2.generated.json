@@ -10338,11 +10338,58 @@
               "url": "https://aqwwiki.wikidot.com/sepulchure-s-original-helm",
               "label": "AQW Wiki",
               "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/gravelyn-s-quests",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
+            }
+          ],
+          "questReward": "Sepulchure's Helm",
+          "npc": null,
+          "farmTasks": [
+            {
+              "id": "reviewed-acquire",
+              "quest": "Sepulchure's Helm",
+              "npc": null,
+              "map": null,
+              "requirements": [
+                "Must have Royal ShadowScythe Blade in your inventory.",
+                "Must have completed the AQW: Zombies storyline.",
+                "Must be Level 70."
+              ],
+              "preconditions": [
+                "Must have Royal ShadowScythe Blade in your inventory.",
+                "Must have completed the AQW: Zombies storyline.",
+                "Must be Level 70."
+              ],
+              "reward": "Sepulchure's Original Helm",
+              "source": "https://aqwwiki.wikidot.com/gravelyn-s-quests",
+              "rows": [
+                {
+                  "name": "Gravelyn's DoomFire Token",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/gravelyn-s-quests"
+                },
+                {
+                  "name": "Lore's Champion Seal",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/gravelyn-s-quests"
+                }
+              ]
             }
           ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "gravelyn-s-quests:sepulchure-s-helm"
+          ],
+          "questFinishIds": [
+            "gravelyn-s-quests:sepulchure-s-helm"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -14315,6 +14362,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:empowered-undead-champion"
           ],
           "questFinishIds": [
@@ -22086,6 +22138,11 @@
               "url": "https://aqwwiki.wikidot.com/beetle-warlord-pet",
               "label": "AQW Wiki",
               "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/beetle-general-pet-s-quests",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
             }
           ],
           "guidePaths": [
@@ -22110,9 +22167,48 @@
               ]
             }
           ],
+          "npc": "Beetle General Pet",
+          "farmTasks": [
+            {
+              "id": "reviewed-acquire",
+              "quest": "Metamorphosis",
+              "npc": "Beetle General Pet",
+              "map": null,
+              "requirements": [
+                "Must have Beetle General Pet in your inventory.",
+                "Must be Level 80."
+              ],
+              "preconditions": [
+                "Must have Beetle General Pet in your inventory.",
+                "Must be Level 80."
+              ],
+              "reward": "Beetle Warlord Pet",
+              "source": "https://aqwwiki.wikidot.com/beetle-general-pet-s-quests",
+              "rows": [
+                {
+                  "name": "Unmoulded Fiend Essence",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/beetle-general-pet-s-quests"
+                },
+                {
+                  "name": "Beetle EXP",
+                  "quantity": 8,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/beetle-general-pet-s-quests"
+                }
+              ]
+            }
+          ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis"
+          ],
+          "questFinishIds": [
+            "beetle-general-pet-s-quests:metamorphosis"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -30671,25 +30767,76 @@
             }
           ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "fiend-shard-s-quests:feed-the-fiend-shard",
+            "fiend-shard-s-quests:grow-the-fiend-shard",
+            "fiend-shard-s-quests:evolve-the-fiend-shard",
+            "fiend-shard-s-quests:the-fiend-shard-s-demand",
+            "void-highlord-s-quest:void-highlord-s-challenge",
+            "fiend-shard-s-quests:the-fiend-shard-s-finale"
+          ],
+          "questFinishIds": [
+            "fiend-shard-s-quests:the-fiend-shard-s-finale",
+            "fiend-shard-s-quests:the-fiend-shard-s-demand",
+            "fiend-shard-s-quests:the-fiend-shard-s-finale",
+            "fiend-shard-s-quests:feed-the-fiend-shard",
+            "fiend-shard-s-quests:the-fiend-shard-s-finale",
+            "fiend-shard-s-quests:the-fiend-shard-s-demand",
+            "fiend-shard-s-quests:the-fiend-shard-s-finale",
+            "fiend-shard-s-quests:feed-the-fiend-shard",
+            "fiend-shard-s-quests:the-fiend-shard-s-demand",
+            "fiend-shard-s-quests:feed-the-fiend-shard",
+            "fiend-shard-s-quests:the-fiend-shard-s-demand",
+            "fiend-shard-s-quests:feed-the-fiend-shard",
+            "fiend-shard-s-quests:feed-the-fiend-shard",
+            "fiend-shard-s-quests:the-fiend-shard-s-finale",
+            "fiend-shard-s-quests:the-fiend-shard-s-demand",
+            "fiend-shard-s-quests:the-fiend-shard-s-finale",
+            "fiend-shard-s-quests:evolve-the-fiend-shard",
+            "fiend-shard-s-quests:grow-the-fiend-shard",
+            "fiend-shard-s-quests:evolve-the-fiend-shard",
+            "fiend-shard-s-quests:grow-the-fiend-shard",
+            "fiend-shard-s-quests:evolve-the-fiend-shard",
+            "fiend-shard-s-quests:evolve-the-fiend-shard",
+            "fiend-shard-s-quests:grow-the-fiend-shard",
+            "fiend-shard-s-quests:evolve-the-fiend-shard",
+            "fiend-shard-s-quests:grow-the-fiend-shard",
+            "fiend-shard-s-quests:the-fiend-shard-s-finale",
+            "fiend-shard-s-quests:the-fiend-shard-s-demand",
+            "fiend-shard-s-quests:evolve-the-fiend-shard",
+            "fiend-shard-s-quests:the-fiend-shard-s-finale",
+            "fiend-shard-s-quests:feed-the-fiend-shard",
+            "fiend-shard-s-quests:grow-the-fiend-shard"
+          ],
           "operationGroups": [],
+          "npc": "Prime Fiend Shard",
           "completionTasks": [
             {
-              "id": "receive-celestial-archfiend-wiki-location",
+              "id": "material-shop-celestial-archfiend:fiend-shard-shop:0",
               "quest": null,
-              "title": "Mua Celestial ArchFiend",
+              "title": "Celestial ArchFiend",
               "source": "https://aqwwiki.wikidot.com/celestial-archfiend",
-              "map": null,
+              "npc": null,
               "location": "Fiend Shard (Shop) - Prime Fiend Shard",
-              "preconditions": [],
-              "requirements": [],
-              "rows": [],
-              "reward": "Celestial ArchFiend",
+              "map": null,
+              "shop": "Fiend Shard (Shop)",
               "purchase": {
                 "amount": 0,
                 "currency": "ACs"
-              }
+              },
+              "preconditions": [
+                "Must have completed the 'The Fiend Shard's Finale' quest",
+                "Must have completed the 'The Fiend Shard's Finale' quest to purchase.",
+                "Must have completed the 'The Fiend Shard's Demand' quest",
+                "Must have completed the 'Feed the Fiend Shard' quest",
+                "Must have completed the 'Evolve the Fiend Shard' quest",
+                "Must have completed the 'Grow the Fiend Shard' quest",
+                "Must have completed the 'Famiglia di Carcano' quest"
+              ],
+              "requirements": [],
+              "rows": [],
+              "reward": "Celestial ArchFiend ×1",
+              "rewardQuantity": 1
             }
           ],
           "materialTotalsComplete": false
@@ -33173,8 +33320,12 @@
             }
           ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "dage-the-evil-s-champion-quests:legion-exercise-number-4"
+          ],
+          "questFinishIds": [
+            "dage-the-evil-s-champion-quests:legion-exercise-number-4"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -33984,21 +34135,16 @@
           "id": "wiki-location",
           "regionId": null,
           "method": "Quest",
-          "questReward": "Twisted Items of Nulgath",
+          "questReward": null,
           "purchase": null,
-          "location": "Tercessuinotlim",
+          "location": "N/A",
           "description": "Nơi nhận theo Wiki; chưa tách và xác minh từng tuyến.",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "materialTree": null,
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/crimson-face-plate-of-nulgath",
-              "label": "AQW Wiki",
-              "sourceType": "wiki"
-            },
-            {
-              "url": "https://aqwwiki.wikidot.com/nulgath-s-quests",
               "label": "AQW Wiki",
               "sourceType": "wiki"
             }
@@ -34084,34 +34230,29 @@
               ]
             }
           ],
-          "npc": "Nulgath (NPC)",
-          "farmTasks": [
-            {
-              "id": "reviewed-acquire",
-              "quest": "Twisted Items of Nulgath",
-              "npc": "Nulgath (NPC)",
-              "map": "/join tercessuinotlim",
-              "requirements": [],
-              "preconditions": [],
-              "reward": "Crimson Face Plate of Nulgath",
-              "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
-              "rows": [
-                {
-                  "name": "Totem of Nulgath",
-                  "quantity": 3,
-                  "monster": null,
-                  "map": null,
-                  "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
-                }
-              ]
-            }
-          ],
           "insigniaSources": [],
           "questWorkflowIds": [
-            "nulgath-s-quests:twisted-items-of-nulgath"
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
           ],
           "questFinishIds": [
-            "nulgath-s-quests:twisted-items-of-nulgath"
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+          ],
+          "questOptions": [
+            {
+              "name": "Twisted Items of Nulgath",
+              "questId": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+              "workflowIds": [
+                "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+              ]
+            },
+            {
+              "name": "Twisted Items of Nulgath",
+              "questId": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+              "workflowIds": [
+                "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+              ]
+            }
           ],
           "operationGroups": [],
           "materialTotalsComplete": false
@@ -34565,21 +34706,16 @@
           "id": "wiki-location",
           "regionId": null,
           "method": "Quest",
-          "questReward": "Twisted Items of Nulgath",
+          "questReward": null,
           "purchase": null,
-          "location": "Tercessuinotlim",
+          "location": "N/A",
           "description": "Nơi nhận theo Wiki; chưa tách và xác minh từng tuyến.",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "materialTree": null,
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/crimson-plate-of-nulgath",
-              "label": "AQW Wiki",
-              "sourceType": "wiki"
-            },
-            {
-              "url": "https://aqwwiki.wikidot.com/nulgath-s-quests",
               "label": "AQW Wiki",
               "sourceType": "wiki"
             }
@@ -34665,34 +34801,29 @@
               ]
             }
           ],
-          "npc": "Nulgath (NPC)",
-          "farmTasks": [
-            {
-              "id": "reviewed-acquire",
-              "quest": "Twisted Items of Nulgath",
-              "npc": "Nulgath (NPC)",
-              "map": "/join tercessuinotlim",
-              "requirements": [],
-              "preconditions": [],
-              "reward": "Crimson Plate of Nulgath",
-              "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
-              "rows": [
-                {
-                  "name": "Totem of Nulgath",
-                  "quantity": 3,
-                  "monster": null,
-                  "map": null,
-                  "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
-                }
-              ]
-            }
-          ],
           "insigniaSources": [],
           "questWorkflowIds": [
-            "nulgath-s-quests:twisted-items-of-nulgath"
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
           ],
           "questFinishIds": [
-            "nulgath-s-quests:twisted-items-of-nulgath"
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+          ],
+          "questOptions": [
+            {
+              "name": "Twisted Items of Nulgath",
+              "questId": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+              "workflowIds": [
+                "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+              ]
+            },
+            {
+              "name": "Twisted Items of Nulgath",
+              "questId": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+              "workflowIds": [
+                "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+              ]
+            }
           ],
           "operationGroups": [],
           "materialTotalsComplete": false
@@ -42148,21 +42279,16 @@
           "id": "wiki-location",
           "regionId": null,
           "method": "Quest",
-          "questReward": "Twisted Items of Nulgath",
+          "questReward": null,
           "purchase": null,
-          "location": "Tercessuinotlim",
+          "location": "N/A",
           "description": "Nơi nhận theo Wiki; chưa tách và xác minh từng tuyến.",
-          "mapCommand": "/join tercessuinotlim",
+          "mapCommand": null,
           "steps": [],
           "materialTree": null,
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/dragonfire-of-nulgath",
-              "label": "AQW Wiki",
-              "sourceType": "wiki"
-            },
-            {
-              "url": "https://aqwwiki.wikidot.com/nulgath-s-quests",
               "label": "AQW Wiki",
               "sourceType": "wiki"
             }
@@ -42248,34 +42374,29 @@
               ]
             }
           ],
-          "npc": "Nulgath (NPC)",
-          "farmTasks": [
-            {
-              "id": "reviewed-acquire",
-              "quest": "Twisted Items of Nulgath",
-              "npc": "Nulgath (NPC)",
-              "map": "/join tercessuinotlim",
-              "requirements": [],
-              "preconditions": [],
-              "reward": "DragonFire of Nulgath",
-              "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
-              "rows": [
-                {
-                  "name": "Totem of Nulgath",
-                  "quantity": 3,
-                  "monster": null,
-                  "map": null,
-                  "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
-                }
-              ]
-            }
-          ],
           "insigniaSources": [],
           "questWorkflowIds": [
-            "nulgath-s-quests:twisted-items-of-nulgath"
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
           ],
           "questFinishIds": [
-            "nulgath-s-quests:twisted-items-of-nulgath"
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+          ],
+          "questOptions": [
+            {
+              "name": "Twisted Items of Nulgath",
+              "questId": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+              "workflowIds": [
+                "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+              ]
+            },
+            {
+              "name": "Twisted Items of Nulgath",
+              "questId": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+              "workflowIds": [
+                "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+              ]
+            }
           ],
           "operationGroups": [],
           "materialTotalsComplete": false
@@ -46447,7 +46568,8 @@
             "nulgath-s-quests:demanding-items-of-nulgath"
           ],
           "questFinishIds": [
-            "nulgath-s-quests:demanding-items-of-nulgath"
+            "nulgath-s-quests:demanding-items-of-nulgath",
+            "sword-of-nulgath-s-quests:demanding-items-of-nulgath"
           ],
           "operationGroups": [],
           "materialTotalsComplete": false
@@ -47195,6 +47317,11 @@
               "url": "https://aqwwiki.wikidot.com/elite-void",
               "label": "AQW Wiki",
               "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
             }
           ],
           "guidePaths": [
@@ -47219,9 +47346,48 @@
               ]
             }
           ],
+          "npc": "Casparilla",
+          "farmTasks": [
+            {
+              "id": "reviewed-acquire",
+              "quest": "Spoiled Dragon",
+              "npc": "Casparilla",
+              "map": "/join tercessuinotlim",
+              "requirements": [
+                "Must have completed the previous quest."
+              ],
+              "preconditions": [
+                "Must have completed the previous quest."
+              ],
+              "reward": "Elite Void",
+              "source": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+              "rows": [
+                {
+                  "name": "Limited Time Drop",
+                  "quantity": 1,
+                  "monster": "Red Dragon (Monster)",
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/casparilla-s-quests"
+                }
+              ]
+            }
+          ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "casparilla-s-quests:easy-and-breezy",
+            "casparilla-s-quests:disguises-and-a-ruse",
+            "casparilla-s-quests:icky-and-smelly",
+            "casparilla-s-quests:dress-for-the-occasion",
+            "casparilla-s-quests:can-t-play-games-without-a-lunch-break",
+            "casparilla-s-quests:she-needs-a-hero",
+            "casparilla-s-quests:sun-and-fun",
+            "casparilla-s-quests:heebie-jeebies",
+            "casparilla-s-quests:a-new-pet",
+            "casparilla-s-quests:spoiled-dragon"
+          ],
+          "questFinishIds": [
+            "casparilla-s-quests:spoiled-dragon"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -49167,6 +49333,11 @@
               "url": "https://aqwwiki.wikidot.com/evolved-fiend-cape",
               "label": "AQW Wiki",
               "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
             }
           ],
           "guidePaths": [
@@ -49191,9 +49362,74 @@
               ]
             }
           ],
+          "npc": "Evolved Primal Orb",
+          "farmTasks": [
+            {
+              "id": "reviewed-acquire",
+              "quest": "Evolved Fiend Gear",
+              "npc": "Evolved Primal Orb",
+              "map": null,
+              "requirements": [
+                "Must have Evolved Primal Orb."
+              ],
+              "preconditions": [
+                "Must have Evolved Primal Orb."
+              ],
+              "reward": "Evolved Fiend Cape",
+              "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
+              "rows": [
+                {
+                  "name": "Voucher of Nulgath (non-mem)",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Tainted Gem",
+                  "quantity": 30,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Dark Crystal Shard",
+                  "quantity": 30,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Diamond of Nulgath",
+                  "quantity": 10,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Totem of Nulgath",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Voucher of Nulgath",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                }
+              ]
+            }
+          ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "evolved-primal-orb-s-quests:evolved-fiend-gear"
+          ],
+          "questFinishIds": [
+            "evolved-primal-orb-s-quests:evolved-fiend-gear"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -49424,6 +49660,11 @@
               "url": "https://aqwwiki.wikidot.com/evolved-fiend-helm",
               "label": "AQW Wiki",
               "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
             }
           ],
           "guidePaths": [
@@ -49448,9 +49689,74 @@
               ]
             }
           ],
+          "npc": "Evolved Primal Orb",
+          "farmTasks": [
+            {
+              "id": "reviewed-acquire",
+              "quest": "Evolved Fiend Gear",
+              "npc": "Evolved Primal Orb",
+              "map": null,
+              "requirements": [
+                "Must have Evolved Primal Orb."
+              ],
+              "preconditions": [
+                "Must have Evolved Primal Orb."
+              ],
+              "reward": "Evolved Fiend Helm",
+              "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
+              "rows": [
+                {
+                  "name": "Voucher of Nulgath (non-mem)",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Tainted Gem",
+                  "quantity": 30,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Dark Crystal Shard",
+                  "quantity": 30,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Diamond of Nulgath",
+                  "quantity": 10,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Totem of Nulgath",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Voucher of Nulgath",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                }
+              ]
+            }
+          ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "evolved-primal-orb-s-quests:evolved-fiend-gear"
+          ],
+          "questFinishIds": [
+            "evolved-primal-orb-s-quests:evolved-fiend-gear"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -49675,7 +49981,7 @@
           "id": "wiki-location",
           "regionId": null,
           "method": "Quest",
-          "questReward": "Evolved Primal Orb Quest",
+          "questReward": "Evolved Fiend Orb Quest",
           "purchase": null,
           "location": "N/A",
           "description": "Hoàn thành Quest: Evolved Primal Orb Quest",
@@ -49685,6 +49991,11 @@
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/evolved-fiend-of-nulgath",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
               "label": "AQW Wiki",
               "sourceType": "wiki"
             }
@@ -49711,9 +50022,64 @@
               ]
             }
           ],
+          "npc": "Evolved Primal Orb",
+          "farmTasks": [
+            {
+              "id": "reviewed-acquire",
+              "quest": "Evolved Fiend Orb Quest",
+              "npc": "Evolved Primal Orb",
+              "map": null,
+              "requirements": [
+                "Must have Rank 10 Beast Warrior in your inventory.",
+                "Must have Evolved Primal Orb.",
+                "Must have Evolved Void Orb Pet."
+              ],
+              "preconditions": [
+                "Must have Rank 10 Beast Warrior in your inventory.",
+                "Must have Evolved Primal Orb.",
+                "Must have Evolved Void Orb Pet."
+              ],
+              "reward": "Evolved Fiend Of Nulgath",
+              "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
+              "rows": [
+                {
+                  "name": "Unidentified 13: (The Contract Of Nulgath)",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Diamond of Nulgath",
+                  "quantity": 10,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Unidentified 24: (Essence of the Void Fiend)",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                },
+                {
+                  "name": "Blade Master Rune",
+                  "quantity": 1,
+                  "monster": "Shadow of Nulgath (Monster) (1)\nTaro Blademaster",
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests"
+                }
+              ]
+            }
+          ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "evolved-primal-orb-s-quests:evolved-fiend-orb-quest"
+          ],
+          "questFinishIds": [
+            "evolved-primal-orb-s-quests:evolved-fiend-orb-quest"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -56169,8 +56535,12 @@
             }
           ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "gravelyn-s-quests:inquisitor-inquiry"
+          ],
+          "questFinishIds": [
+            "gravelyn-s-quests:inquisitor-inquiry"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -56323,6 +56693,12 @@
       "groupIds": [],
       "groupStatus": "unknown",
       "groupEvidence": [],
+      "classificationEvidence": {
+        "sourcePage": "https://aqwwiki.wikidot.com/golden-inquisitor-of-shadowfall",
+        "sourceHash": "fa826c31d29527524b4e17b040844d8fb5403129df41217fbbbc5b495c19aeb5",
+        "breadcrumbs": [],
+        "checkedAt": "2026-11-15"
+      },
       "setIds": []
     },
     {
@@ -62998,6 +63374,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "legion-revenant-s-quests:legion-fealty-1",
                 "legion-revenant-s-quests:legion-fealty-2",
@@ -63979,6 +64360,70 @@
                   "monster": "Grrrberus",
                   "map": null,
                   "source": "https://aqwwiki.wikidot.com/calamitus-quests"
+                },
+                {
+                  "name": "Black Knight's Eternal Contract",
+                  "itemId": "black-knight-s-eternal-contract",
+                  "quantity": 1,
+                  "monster": "Black Knight (Monster)",
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+                },
+                {
+                  "name": "Skeletal Soldier slain",
+                  "itemId": "skeletal-soldier-slain",
+                  "quantity": 1,
+                  "monster": "Skeletal Soldier (1)",
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+                },
+                {
+                  "name": "Chaos Drow slain",
+                  "itemId": "chaos-drow-slain",
+                  "quantity": 1,
+                  "monster": "Chaos Drow (Level 15)",
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+                },
+                {
+                  "name": "Fishman Soldier slain",
+                  "itemId": "fishman-soldier-slain",
+                  "quantity": 1,
+                  "monster": "Fishman Soldier (Level 7)",
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+                },
+                {
+                  "name": "Dwakel Soldier slain",
+                  "itemId": "dwakel-soldier-slain",
+                  "quantity": 1,
+                  "monster": "Dwakel Soldier (Version 1)",
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+                },
+                {
+                  "name": "Ravaged Champion Soul",
+                  "itemId": "ravaged-champion-soul",
+                  "quantity": 80,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+                },
+                {
+                  "name": "Combat Trophy",
+                  "itemId": "combat-trophy",
+                  "quantity": 200,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+                },
+                {
+                  "name": "King's Guard Slain",
+                  "itemId": "king-s-guard-slain",
+                  "quantity": 25,
+                  "monster": "King Alteon's Knight",
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
                 }
               ],
               "finishingBeforeQuestId": "legion-revenant-s-quests:legion-fealty-4",
@@ -66817,7 +67262,9 @@
         ],
         "checkedAt": "2026-11-14T17:19:13.315Z"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "mini-void-shogun-battlepet",
@@ -67239,7 +67686,9 @@
         ],
         "checkedAt": "2026-11-14T17:19:14.472Z"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "mystical-devotee-of-mana",
@@ -68654,6 +69103,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:necrotic-sword-of-the-underworld"
           ],
           "questFinishIds": [
@@ -77552,12 +78006,17 @@
           "purchase": null,
           "location": "Coral Beach",
           "description": "Hoàn thành Quest: Buried Treasure",
-          "mapCommand": null,
+          "mapCommand": "/join coralbeach",
           "steps": [],
           "materialTree": null,
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/the-point",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/coral-beach-s-quest",
               "label": "AQW Wiki",
               "sourceType": "wiki"
             }
@@ -77584,9 +78043,39 @@
               ]
             }
           ],
+          "npc": "Click this spot at Coral Beach.",
+          "farmTasks": [
+            {
+              "id": "reviewed-acquire",
+              "quest": "Buried Treasure",
+              "npc": "Click this spot at Coral Beach.",
+              "map": "/join coralbeach",
+              "requirements": [
+                "Must have Deciphered Scroll in your inventory."
+              ],
+              "preconditions": [
+                "Must have Deciphered Scroll in your inventory."
+              ],
+              "reward": "The Point",
+              "source": "https://aqwwiki.wikidot.com/coral-beach-s-quest",
+              "rows": [
+                {
+                  "name": "Lost Key",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/coral-beach-s-quest"
+                }
+              ]
+            }
+          ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "coral-beach-s-quest:buried-treasure"
+          ],
+          "questFinishIds": [
+            "coral-beach-s-quest:buried-treasure"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -79076,9 +79565,14 @@
             }
           ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "beetle-general-pet-s-quests:i-m-hungry"
+          ],
+          "questFinishIds": [
+            "beetle-general-pet-s-quests:i-m-hungry"
+          ],
           "operationGroups": [],
+          "npc": "Beetle General Pet",
           "materialTotalsComplete": false
         }
       ],
@@ -79381,6 +79875,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -84010,7 +84505,9 @@
         ],
         "checkedAt": "2026-11-14T17:21:42.136Z"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-shogun-helm",
@@ -84427,7 +84924,9 @@
         ],
         "checkedAt": "2026-11-14T17:21:42.143Z"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-shogun-katana",
@@ -84849,7 +85348,9 @@
         ],
         "checkedAt": "2026-11-14T17:21:43.487Z"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-shogun-katanas-on-your-hip",
@@ -85266,7 +85767,9 @@
         ],
         "checkedAt": "2026-11-14T17:19:37.956Z"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-shogun-mask",
@@ -85680,7 +86183,9 @@
         ],
         "checkedAt": "2026-11-14T17:21:43.495Z"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-shogun-masked-helm",
@@ -86097,7 +86602,9 @@
         ],
         "checkedAt": "2026-11-14T17:19:38.750Z"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-shogun-naginata",
@@ -86518,7 +87025,9 @@
         ],
         "checkedAt": "2026-11-14T17:24:50.297Z"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-spartan",
@@ -93094,6 +93603,11 @@
               "url": "https://aqwwiki.wikidot.com/yami-no-ronin-class",
               "label": "AQW Wiki",
               "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
             }
           ],
           "guidePaths": [
@@ -93118,9 +93632,56 @@
               ]
             }
           ],
+          "npc": "Dage the Evil (NPC)",
+          "farmTasks": [
+            {
+              "id": "reviewed-acquire",
+              "quest": "Yami no Ronin",
+              "npc": "Dage the Evil (NPC)",
+              "map": null,
+              "requirements": [
+                "Must have completed the 'Defeat the Underfiend' quest."
+              ],
+              "preconditions": [
+                "Must have completed the 'Defeat the Underfiend' quest."
+              ],
+              "reward": "Yami no Ronin (Class)",
+              "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+              "rows": [
+                {
+                  "name": "Yokai Sword Scroll",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+                },
+                {
+                  "name": "Blademaster Sword Scroll",
+                  "quantity": 1,
+                  "monster": null,
+                  "map": null,
+                  "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+                }
+              ]
+            }
+          ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "dage-the-evil-s-quests:shadows-encroach",
+            "dage-the-evil-s-quests:strongest-armor",
+            "dage-the-evil-s-quests:gear-up",
+            "dage-the-evil-s-quests:souls-for-the-forge",
+            "dage-the-evil-s-quests:shred-the-shadows",
+            "dage-the-evil-s-quests:punish-the-defectors",
+            "dage-the-evil-s-quests:icy-hot",
+            "dage-the-evil-s-quests:infernal-coal",
+            "dage-the-evil-s-quests:cleanse-the-shadows",
+            "dage-the-evil-s-quests:defeat-the-underfiend",
+            "dage-the-evil-s-quests:yami-no-ronin"
+          ],
+          "questFinishIds": [
+            "dage-the-evil-s-quests:yami-no-ronin"
+          ],
           "operationGroups": [],
           "materialTotalsComplete": false
         }
@@ -105262,9 +105823,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
           "questFinishIds": [
@@ -105484,9 +106045,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
           "questFinishIds": [
@@ -105708,9 +106269,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
           "questFinishIds": [
@@ -105930,9 +106491,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
           "questFinishIds": [
@@ -106152,9 +106713,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
           "questFinishIds": [
@@ -106373,9 +106934,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
           "questFinishIds": [
@@ -106671,9 +107232,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
             "lae-s-quests:trading-and-stuff-dual",
@@ -106973,9 +107534,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
             "lae-s-quests:trading-and-stuff-dual",
@@ -107269,9 +107830,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
             "lae-s-quests:trading-and-stuff-dual",
@@ -107549,9 +108110,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
             "lae-s-quests:trading-and-stuff-dual",
@@ -107832,9 +108393,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
             "lae-s-quests:trading-and-stuff-dual",
@@ -108114,9 +108675,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
             "lae-s-quests:trading-and-stuff-dual",
@@ -108393,9 +108954,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
             "lae-s-quests:trading-and-stuff-dual",
@@ -108670,9 +109231,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
             "lae-s-quests:trading-and-stuff-dual",
@@ -108952,9 +109513,9 @@
           "questWorkflowIds": [
             "lae-s-quests:now-we-re-talking",
             "lae-s-quests:in-the-fiend-s-shadow",
-            "nulgath-s-quests:twisted-items-of-nulgath",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
             "lae-s-quests:trading-and-stuff-dual",
@@ -109316,9 +109877,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-underworld-legacy-horns",
@@ -109530,9 +110089,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-underworld-legacy-helm",
@@ -109743,9 +110300,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-legion-champion",
@@ -109962,9 +110517,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-undead-legacy-horns",
@@ -110178,9 +110731,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-undead-legacy-helm",
@@ -110393,9 +110944,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-legion-champion-crest",
@@ -110605,9 +111154,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-soul-eater-blade",
@@ -110825,9 +111372,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-lich-king",
@@ -111105,9 +111650,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-lich-king-s-horns",
@@ -111377,9 +111920,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-lich-king-s-hood",
@@ -111649,9 +112190,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-lich-king-s-cloak",
@@ -111917,9 +112456,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-soul-eater-blades",
@@ -112206,9 +112743,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-lich-king-s-pride",
@@ -112502,9 +113037,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-lich-king-s-morph",
@@ -112787,9 +113320,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-lich-king-s-flaming-skull",
@@ -113073,9 +113604,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-apocalypse-flame",
@@ -113355,9 +113884,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-apocalypse-flames",
@@ -113637,9 +114164,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-shadow-of-the-legion",
@@ -113929,9 +114454,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "lesser-hollowborn-caladbolg",
@@ -114150,9 +114673,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-caladbolg",
@@ -114374,9 +114895,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "dual-hollowborn-caladbolgs",
@@ -114598,9 +115117,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "hollowborn-caladbolg-companion",
@@ -114815,9 +115332,7 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": [
-        "hollowborn-lich-king"
-      ]
+      "setIds": []
     },
     {
       "id": "void-paladin-katana-cape",
@@ -115432,7 +115947,9 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-shogun-banner",
@@ -115728,7 +116245,9 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-shogun-runes",
@@ -116023,7 +116542,9 @@
         "breadcrumbs": [],
         "checkedAt": "2026-11-15"
       },
-      "setIds": []
+      "setIds": [
+        "void-shogun"
+      ]
     },
     {
       "id": "void-warlock-scythe",
@@ -130787,6 +131308,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -131047,6 +131569,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -131305,6 +131828,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -131562,6 +132086,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -131818,6 +132343,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -132078,6 +132604,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -132338,6 +132865,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -132595,6 +133123,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -132852,6 +133381,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -133109,6 +133639,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -133366,6 +133897,7 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry"
           ],
           "questFinishIds": [
@@ -148434,6 +148966,7 @@
             "tara-s-quests:cognitive-dissonance",
             "tara-s-quests:your-hero",
             "vohu-s-quests:malgor-the-first-speaker",
+            "beetle-general-pet-s-quests:metamorphosis",
             "beetle-warlord-pet-s-quest:still-hungry",
             "tara-s-quests:build-malgor-s-armor-set",
             "lae-s-quests:now-we-re-talking",
@@ -148506,6 +149039,7 @@
                 "tara-s-quests:cognitive-dissonance",
                 "tara-s-quests:your-hero",
                 "vohu-s-quests:malgor-the-first-speaker",
+                "beetle-general-pet-s-quests:metamorphosis",
                 "beetle-warlord-pet-s-quest:still-hungry",
                 "tara-s-quests:build-malgor-s-armor-set",
                 "lae-s-quests:now-we-re-talking",
@@ -155962,6 +156496,7 @@
           ],
           "questWorkflowIds": [
             "nulgath-s-quests:nulgath-the-archfiend",
+            "evolved-primal-orb-s-quests:evolved-fiend-orb-quest",
             "evolved-void-orb-pet-s-quests:evolved-void-orb-quest",
             "nulgath-s-quests:empowered-evolved-void-armors-1"
           ],
@@ -155975,6 +156510,7 @@
               "label": "Farm bằng Insignia",
               "questIds": [
                 "nulgath-s-quests:nulgath-the-archfiend",
+                "evolved-primal-orb-s-quests:evolved-fiend-orb-quest",
                 "evolved-void-orb-pet-s-quests:evolved-void-orb-quest",
                 "nulgath-s-quests:empowered-evolved-void-armors-1"
               ],
@@ -156484,6 +157020,7 @@
           ],
           "questWorkflowIds": [
             "nulgath-s-quests:nulgath-the-archfiend",
+            "evolved-primal-orb-s-quests:evolved-fiend-orb-quest",
             "evolved-void-orb-pet-s-quests:evolved-void-orb-quest",
             "nulgath-s-quests:empowered-evolved-void-armors-1"
           ],
@@ -156497,6 +157034,7 @@
               "label": "Farm bằng Insignia",
               "questIds": [
                 "nulgath-s-quests:nulgath-the-archfiend",
+                "evolved-primal-orb-s-quests:evolved-fiend-orb-quest",
                 "evolved-void-orb-pet-s-quests:evolved-void-orb-quest",
                 "nulgath-s-quests:empowered-evolved-void-armors-1"
               ],
@@ -159625,6 +160163,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-blademaster"
           ],
@@ -159640,6 +160183,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-blademaster"
               ],
@@ -160031,6 +160579,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-blademaster"
           ],
@@ -160046,6 +160599,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-blademaster"
               ],
@@ -160441,6 +160999,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-blademaster"
           ],
@@ -160456,6 +161019,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-blademaster"
               ],
@@ -160847,6 +161415,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-caladbolg"
           ],
@@ -160862,6 +161435,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-caladbolg"
               ],
@@ -161247,6 +161825,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-caladbolg"
           ],
@@ -161262,6 +161845,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-caladbolg"
               ],
@@ -161647,6 +162235,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-dark-caster"
           ],
@@ -161662,6 +162255,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-dark-caster"
               ],
@@ -162053,6 +162651,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-forge-spawn"
           ],
@@ -162068,6 +162671,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-forge-spawn"
               ],
@@ -162452,6 +163060,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-lich-king"
           ],
@@ -162467,6 +163080,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-lich-king"
               ],
@@ -162829,6 +163447,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-paragon-plate"
           ],
@@ -162844,6 +163467,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-paragon-plate"
               ],
@@ -163244,6 +163872,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion"
           ],
           "questFinishIds": [],
@@ -163594,6 +164227,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion"
           ],
           "questFinishIds": [],
@@ -163931,6 +164569,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-prismatic-paragon"
           ],
@@ -163946,6 +164589,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-prismatic-paragon"
               ],
@@ -164417,6 +165065,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:sin-of-the-underworld"
           ],
@@ -164432,6 +165085,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:sin-of-the-underworld"
               ],
@@ -164852,6 +165510,11 @@
             "calamitus-quests:training-with-dage",
             "calamitus-quests:darkness-for-darkness-sake",
             "calamitus-quests:power-of-the-undead-legion",
+            "dage-the-evil-s-quests:undead-champion-initiation",
+            "dage-the-evil-s-quests:mourn-the-soldiers",
+            "dage-the-evil-s-quests:understanding-undead-champions",
+            "dage-the-evil-s-quests:player-vs-power",
+            "dage-the-evil-s-quests:fail-to-the-king",
             "calamitus-quests:dage-lord-of-the-undead-legion",
             "calamitus-quests:empowered-forge-spawn"
           ],
@@ -164867,6 +165530,11 @@
                 "calamitus-quests:training-with-dage",
                 "calamitus-quests:darkness-for-darkness-sake",
                 "calamitus-quests:power-of-the-undead-legion",
+                "dage-the-evil-s-quests:undead-champion-initiation",
+                "dage-the-evil-s-quests:mourn-the-soldiers",
+                "dage-the-evil-s-quests:understanding-undead-champions",
+                "dage-the-evil-s-quests:player-vs-power",
+                "dage-the-evil-s-quests:fail-to-the-king",
                 "calamitus-quests:dage-lord-of-the-undead-legion",
                 "calamitus-quests:empowered-forge-spawn"
               ],

@@ -45,6 +45,10 @@ await runQa("farm-refinement", async ({ browser, base, result, dir, expect })=>{
       await page.goBack();
       await expect(page.getByRole("tab",{name:"Set đồ",exact:true})).toHaveAttribute("aria-selected","true");
       await expect(page.locator(".fv-set-grid > a")).toHaveCount(8);
+      const imagesContained=await page.locator(".fv-set-grid > a").evaluateAll(cards=>cards.every(card=>{
+        const image=card.querySelector(".fv-set-art img"),art=card.querySelector(".fv-set-art"),name=card.querySelector(".fv-set-name");
+        return image.getBoundingClientRect().bottom<=art.getBoundingClientRect().bottom+1 && name.getBoundingClientRect().top>=art.getBoundingClientRect().bottom;
+      }));assert.equal(imagesContained,true,"Inventory artwork must fit above the item label");
       const setImage=`${dir}/sets-${theme}-${width}.png`;await page.screenshot({path:setImage,fullPage:true});result.screenshots.push(setImage);
       const inspected=await inspectPage(page);
       if(inspected.overflow)entry.overflowElements=await page.evaluate(()=>[...document.querySelectorAll("body *")].filter(element=>element.getBoundingClientRect().right>innerWidth+1).slice(0,15).map(element=>({tag:element.tagName,classes:element.className,right:element.getBoundingClientRect().right})));

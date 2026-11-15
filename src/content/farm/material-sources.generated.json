@@ -683,6 +683,374 @@
             "source": "https://aqwwiki.wikidot.com/arcane-paragon-pet-s-quests"
           }
         ]
+      },
+      {
+        "id": "material-quest-6",
+        "quest": "Infernal Legion Betrayal",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Infernal Caladbolg in your inventory.",
+          "Must have completed the 'Fail to the King' quest."
+        ],
+        "preconditions": [
+          "Must have Infernal Caladbolg in your inventory.",
+          "Must have completed the 'Fail to the King' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+        "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+        "reward": "Legion Token ×50",
+        "rows": [
+          {
+            "name": "Betrayer Extinguished",
+            "quantity": 5,
+            "monster": "Fotia Elemental",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Fiend Felled",
+            "quantity": 2,
+            "monster": "Dreadfiend of Nulgath (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-7",
+        "quest": "Endurance Test",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Fail to The King' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Fail to The King' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+        "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Broken Blade",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Charred Skull",
+            "quantity": 20,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-8",
+        "quest": "Dage's Black Box",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Fail to The King' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Fail to The King' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+        "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Dage's Note",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Box Cutter",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Dage's 2nd Note",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Dage's 3rd Note",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-9",
+        "quest": "Dreadfiend Destruction (Legion)",
+        "npc": "Dage the Evil (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Conquer Death' quest.",
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Conquer Death' quest.",
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+        "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+        "reward": "Legion Token ×3",
+        "rows": [
+          {
+            "name": "Dread Head",
+            "quantity": 20,
+            "monster": "Dreadfiend of Nulgath (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-10",
+        "quest": "Undead Infantry Combat Training (Legion)",
+        "npc": "Dage the Evil (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Conquer Death' quest.",
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "preconditions": [
+          "Must have completed the 'Conquer Death' quest.",
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+        "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+        "reward": "Legion Token ×3",
+        "rows": [
+          {
+            "name": "Infantry Tears",
+            "quantity": 20,
+            "monster": "Undead Infantry (Monster) (Level 30) (Version 1)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-11",
+        "quest": "Legion Exercise Number 1",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "preconditions": [
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×25",
+        "rows": [
+          {
+            "name": "Flawless DracoHorn",
+            "quantity": 40,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Golden DracoHeart",
+            "quantity": 1,
+            "monster": "Golden Draconian",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Dark DracoHeart",
+            "quantity": 1,
+            "monster": "Dark Draconian",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Mammoth DracoHeart",
+            "quantity": 1,
+            "monster": "Bronze Draconian",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Water DracoHeart",
+            "quantity": 1,
+            "monster": "Water Draconian",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Venom DracoHeart",
+            "quantity": 1,
+            "monster": "Venom Draconian",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Iron DracoHeart",
+            "quantity": 1,
+            "monster": "Purple Draconian",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-12",
+        "quest": "Legion Exercise Number 2",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "preconditions": [
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×25",
+        "rows": [
+          {
+            "name": "Charred Skull",
+            "quantity": 20,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Intact Tiger Leech Hide",
+            "quantity": 1,
+            "monster": "Tiger Leech",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Grumble's Curse",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-13",
+        "quest": "Legion Exercise Number 3",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "preconditions": [
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×25",
+        "rows": [
+          {
+            "name": "Chaos Egg (Misc)",
+            "quantity": 24,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Chaorrupted Essence",
+            "quantity": 50,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Darkness Core",
+            "quantity": 1,
+            "monster": "Dreadfiend of Nulgath (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-14",
+        "quest": "Legion Exercise Number 4",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "preconditions": [
+          "Must have Undead Champion (Armor) in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×25",
+        "rows": [
+          {
+            "name": "Soul Scythe",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Frostbit Skull",
+            "quantity": 15,
+            "monster": "Skeletal Ice Mage (Level 2)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          },
+          {
+            "name": "Potent Viper's Blood",
+            "quantity": 1,
+            "monster": "Lesser Shadow Serpent",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-15",
+        "quest": "Legion Castle Quest",
+        "npc": "Legion Castle",
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/legion-castle-s-quests",
+        "sourceHash": "42220f17fedfc51a2027147706c6545b18f6a47d1f67c1e1da365584402082d2",
+        "reward": "Legion Token ×20",
+        "rows": [
+          {
+            "name": "Challenger Slain",
+            "quantity": 12,
+            "monster": "Blade Master (Level 56) x1\nDark Caster (Monster) x1\nDark Legion Guard (Monster) x1\nDark Legion Paladin (Monster) x1\nExalted Legion Champion (Monster) x1\nEvolved Paragon (Monster) x1\nUndead Legend (Level 45) x1\nLegion Gladiator x1\nLegion Sergeant (Level 30) x1",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/legion-castle-s-quests"
+          },
+          {
+            "name": "Legion Fiend Rider Slain",
+            "quantity": 1,
+            "monster": "Legion Fiend Rider (Level 90)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/legion-castle-s-quests"
+          }
+        ]
       }
     ]
   },
@@ -844,6 +1212,104 @@
             "monster": "Bloodfiend (Level 29)",
             "map": null,
             "source": "https://aqwwiki.wikidot.com/nulgath-challenge-pet-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-5",
+        "quest": "Eternal Rest",
+        "npc": "Skew (NPC)",
+        "map": "/join tercessuinotlim",
+        "requirements": [
+          "Must have completed the 'Contract with the Abyss' quest.",
+          "Rank 10 Evil.",
+          "Must be Level 90."
+        ],
+        "preconditions": [
+          "Must have completed the 'Contract with the Abyss' quest.",
+          "Rank 10 Evil.",
+          "Must be Level 90."
+        ],
+        "source": "https://aqwwiki.wikidot.com/skew-s-quests",
+        "sourceHash": "9b0843b390160c03b6f9a77ff2896424d13384e77554983425bbca7bf4290bd7",
+        "reward": "Blood Gem of the Archfiend ×5",
+        "rows": [
+          {
+            "name": "Batwing Scythe",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "Dark Crystal Shard",
+            "quantity": 200,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "Death Scythe of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "Ungodly Reavers of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "Scythe of Sisyphean",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "Heart of the Void",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "The Scythe of Eternal Rest",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "Nulgath's Approval",
+            "quantity": 1000,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "Dracolich Destroyer Scythe",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "Void Aura",
+            "quantity": 150,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+          },
+          {
+            "name": "Letter from Asuka and Tendou",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/skew-s-quests"
           }
         ]
       },
@@ -2843,6 +3309,53 @@
       },
       {
         "id": "material-quest-11",
+        "quest": "Bone Dust Reagent",
+        "npc": null,
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests",
+        "sourceHash": "cabbaef78037954ee18c5bd2f55d4a22ac337076030dbbb3aa6cdc8c95d998e7",
+        "reward": "Tainted Gem ×1",
+        "rows": [
+          {
+            "name": "Bone Dust",
+            "quantity": 25,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-12",
+        "quest": "Cube Reagent",
+        "npc": null,
+        "map": null,
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests",
+        "sourceHash": "cabbaef78037954ee18c5bd2f55d4a22ac337076030dbbb3aa6cdc8c95d998e7",
+        "reward": "Tainted Gem ×1",
+        "rows": [
+          {
+            "name": "Cubes",
+            "quantity": 25,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
+          },
+          {
+            "name": "Ice Cubes",
+            "quantity": 1,
+            "monster": "Snow Golem (Monster) (2)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-13",
         "quest": "Tenacity Challenge",
         "npc": "Nulgath Challenge Pet",
         "map": null,
@@ -5510,6 +6023,57 @@
             "monster": null,
             "map": null,
             "source": "https://aqwwiki.wikidot.com/calamitus-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "yami-no-ronin-katana": {
+    "name": "Yami no Ronin Katana",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Edge of an Era",
+        "npc": "Dage the Evil (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'Defeat the Underfiend' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'Defeat the Underfiend' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+        "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+        "reward": "Yami no Ronin Katana ×1",
+        "rows": [
+          {
+            "name": "Perfect Orochi Scales",
+            "quantity": 888,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Shadow Katana Blade",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Oni Skull Charm",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Darkened Essence",
+            "quantity": 600,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
           }
         ]
       }
