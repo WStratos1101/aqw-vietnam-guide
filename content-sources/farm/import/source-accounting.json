@@ -6742,10 +6742,15 @@
       {
         "line": 1010,
         "text": "LoO được yêu cầu hoặc cần để farm các Item sau:",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "gold-exalted-paladin-poleaxe",
+          "gold-exalted-paladin-spear",
+          "gold-exalted-winged-helm",
+          "gold-exalted-haloed-wings"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 1011,
@@ -11367,10 +11372,16 @@
       {
         "line": 1688,
         "text": "[2] Với nhiệm vụ “Dark Spirit Orbs” tiếp theo, bạn cần phải có một số items từ /join bludrut2 với /join bludrut4 và Dark Witch ở /join ruins. Bạn cần farm ít nhất 40 Dark Spirit Orbs từ nhiệm vụ này để đến bước tiếp theo.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "vordred-s-blade",
+          "vordred-s-armor",
+          "vordred-s-chestpiece",
+          "vordred-s-helm",
+          "vordred-s-cape"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 1689,
@@ -11759,10 +11770,20 @@
       {
         "line": 1748,
         "text": "- Hoàn thành The 13 Lords of Chaos Saga.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "skullbreaker-s-axe",
+          "dual-skullbreaker-s-reaver",
+          "skullbreaker-s-blade-axe",
+          "skullbreaker-s-spear",
+          "skullbreaker-knight-armor",
+          "skullbreaker-s-shadow-hood",
+          "skullbreaker-s-cloak",
+          "skullbreaker-s-spiked-cloak",
+          "skullbreaker-s-spikes"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 1749,
@@ -11842,18 +11863,30 @@
       {
         "line": 1758,
         "text": "* Burning Passion Flame ×1: nhận từ “Abyssal” quest, đánh Sepulchuroth ở /join shadowstrike.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "skullbreaker-s-axe",
+          "dual-skullbreaker-s-reaver",
+          "skullbreaker-s-blade-axe",
+          "skullbreaker-s-spear",
+          "skullbreaker-knight-armor",
+          "skullbreaker-s-shadow-hood",
+          "skullbreaker-s-cloak",
+          "skullbreaker-s-spiked-cloak",
+          "skullbreaker-s-spikes"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 1759,
         "text": "* Father's Sorrowful Tear ×1: nhận từ “Memories of The Past” quest, đánh Shadow of the Past ở /join shadowfall (cần hoàn thành Cynari's Quests hoặc Tibias' Quests đến “Swordhaven Candy Return” quest hoặc “Swordhaven Candy Thief” quest để vào được Screen này).",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "awakened-vordred-plate"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 1760,
@@ -11902,7 +11935,14 @@
       {
         "line": 1771,
         "text": "→ Darkness Shard ×1: Merge từ 3 Crypto Token ở /join curio, bạn có thể lấy Crypto Token từ Vinara's Daily \"Odd's 'n' Ends\" Quest.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "vordred-s-blade",
+          "vordred-s-armor",
+          "vordred-s-chestpiece",
+          "vordred-s-helm",
+          "vordred-s-cape",
+          "awakened-vordred-plate"
+        ],
         "excluded": [
           {
             "name": "Crypto Token",
@@ -11915,8 +11955,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 1772,
@@ -13351,6 +13391,7 @@
         "text": "◆ 4th Quest | MORE SKULLS ON THOSE SKULLS",
         "matchedItemIds": [
           "drakath-the-eternal-s-visor",
+          "eternal-chaos-tassels",
           "everlasting-blade-of-chaos",
           "dual-everlasting-blades-of-chaos"
         ],
@@ -13507,6 +13548,7 @@
         "text": "Yêu cầu:",
         "matchedItemIds": [
           "drakath-the-eternal-s-visor",
+          "eternal-chaos-tassels",
           "everlasting-blade-of-chaos",
           "dual-everlasting-blades-of-chaos"
         ],
@@ -13518,7 +13560,10 @@
         "line": 2023,
         "text": "→ Sepulchure's DoomKnight Armor (SDKA) - cần có member để lấy SDKA.",
         "matchedItemIds": [
-          "sepulchure-s-doomknight-armor"
+          "sepulchure-s-doomknight-armor",
+          "titan-drakath-armor",
+          "titan-drakath-s-helm",
+          "titan-drakath-s-tentacles"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -13903,18 +13948,25 @@
       {
         "line": 2109,
         "text": "* A Whisper ×666.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "titan-drakath-armor",
+          "titan-drakath-s-helm",
+          "titan-drakath-s-tentacles"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 2110,
         "text": "* Gold Voucher 500k ×20: Tổng 10m Gold.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "umbral-metamorphosis-scythe-and-tome",
+          "ouroboros-warlock"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 2111,
@@ -14037,10 +14089,13 @@
       {
         "line": 2132,
         "text": "- Hoàn thành storyline của 13 Lords of Chaos Saga để farm Required Items.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "umbral-metamorphosis-scythe-and-tome",
+          "ouroboros-warlock"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 2133,
@@ -23334,7 +23389,10 @@
           "doomblade-of-destruction",
           "doomlord-s-war-mask",
           "shadowfiend-cloak",
-          "locks-of-the-doomlord"
+          "locks-of-the-doomlord",
+          "digital-doomlord-s-blade-0-ac",
+          "digital-archfiend-doomlord-armor",
+          "digital-doomlord-s-mask"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -24269,7 +24327,10 @@
           "doomblade-of-destruction",
           "doomlord-s-war-mask",
           "shadowfiend-cloak",
-          "locks-of-the-doomlord"
+          "locks-of-the-doomlord",
+          "digital-doomlord-s-blade-0-ac",
+          "digital-archfiend-doomlord-armor",
+          "digital-doomlord-s-mask"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -26069,10 +26130,13 @@
       {
         "line": 3970,
         "text": "◆ Bước 1: Làm “Supplies to spin The Wheel of Chance” quest",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "void-beetle-general-armaments",
+          "void-beetle-general-wings"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3971,
@@ -26497,10 +26561,15 @@
       {
         "line": 4018,
         "text": "→ Nếu hết Receipt of Swindle nhưng vẫn còn Unidentified 10 thì có thể mua Receipt of Swindle giá 300k Gold tại chính NPC này để merge tiếp.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "celestial-blade-of-judgement",
+          "infernal-abyss-blade",
+          "infernal-blade-of-judgement",
+          "infernal-archfiend"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4021,
@@ -27678,7 +27747,8 @@
         "line": 4205,
         "text": "\t200",
         "matchedItemIds": [
-          "evolved-hex-of-nulgath"
+          "evolved-hex-of-nulgath",
+          "evolved-hex-helm"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -28003,7 +28073,8 @@
         "line": 4270,
         "text": "→ Roentgenium of Nulgath ×2",
         "matchedItemIds": [
-          "evolved-hex-of-nulgath"
+          "evolved-hex-of-nulgath",
+          "evolved-hex-helm"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -28533,7 +28604,9 @@
       {
         "line": 4340,
         "text": "      * Dark Crystal Shard ×45",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-fiend-talons"
+        ],
         "excluded": [
           {
             "name": "Dark Crystal Shard",
@@ -28541,8 +28614,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4341,
@@ -28788,7 +28861,9 @@
       {
         "line": 4371,
         "text": "→ Essence Potion ×5: Có 2 cách là mua trực tiếp và điều chế (điều chế tiết kiệm hơn):",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-fiend-talons"
+        ],
         "excluded": [
           {
             "name": "Essence Potion",
@@ -28796,14 +28871,17 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 4372,
         "text": "      * Mua trực tiếp tại Alina’s Uruz Potions Shop với giá 2.5m Gold/1 lọ (xem thêm “Gold Farm Guide” nếu cần) ở /join alchemyacademy.",
         "matchedItemIds": [
-          "evolved-void-of-nulgath"
+          "evolved-void-of-nulgath",
+          "evolved-void-sword",
+          "evolved-void-helm",
+          "evolved-void-cape"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -28912,7 +28990,10 @@
         "line": 4394,
         "text": "Good luck!",
         "matchedItemIds": [
-          "evolved-void-of-nulgath"
+          "evolved-void-of-nulgath",
+          "evolved-void-sword",
+          "evolved-void-helm",
+          "evolved-void-cape"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -33852,7 +33933,11 @@
         "line": 5020,
         "text": "→ Rank 10 Bard Class: mua từ Mythsong Rep Shop ở /join mythsong - Yêu cầu Rank 4 Mythsong.",
         "matchedItemIds": [
-          "ancient-shogun-armor"
+          "ancient-shogun-katana",
+          "ancient-shogun-sheathed-katana",
+          "ancient-shogun-katana-and-sheath",
+          "ancient-shogun-armor",
+          "ancient-shogun-back-arms"
         ],
         "excluded": [
           {
@@ -33944,10 +34029,18 @@
       {
         "line": 5031,
         "text": "      * Hoặc mua với 15m Gold ở Swindle's Ripoff Emporium (xem chi tiết ở “Nulgath Farming Guide”, check “Gold Farm Guide” nếu bạn cần).",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "elite-void-horns",
+          "elite-void-plume",
+          "elite-void-cape",
+          "elite-void-spiked-cape",
+          "elite-void-sword",
+          "elite-void-broadsword",
+          "elite-void-sword-pet"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 5032,
@@ -34095,18 +34188,40 @@
       {
         "line": 5049,
         "text": "→ Unidentified 29 ×1: nhận được từ \"The Assistant\" quest hoặc \"Supplies to Spin the Wheel of Chance\" quest (3% DC).",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "elite-void-horns",
+          "elite-void-plume",
+          "elite-void-cape",
+          "elite-void-spiked-cape",
+          "elite-void-sword",
+          "elite-void-broadsword",
+          "elite-void-sword-pet"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 5050,
         "text": "→ Random Weapon of Nulgath ×1: nhận được từ \"The Assistant\" quest hoặc \"Supplies to Spin the Wheel of Chance\" quest.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "fiend-s-creed-blade",
+          "fiend-s-creed-blades",
+          "wretched-vertebrae",
+          "wrought-ironblood-armblade",
+          "wrought-ironblood-armblades",
+          "void-warmonger-gauntlet",
+          "warlord-of-nulgath-blade",
+          "warlord-of-nulgath-blades",
+          "sin-of-the-warlord-cleaver",
+          "sin-of-the-warlord-cleavers",
+          "void-warmonger-armaments",
+          "fiendish-zweihander-of-bhamud",
+          "fiendish-zweihanders-of-bhamud"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 5051,
@@ -42089,7 +42204,9 @@
         "line": 6182,
         "text": "\t☆ Head of the Legion Beast Helm - 24k LTs",
         "matchedItemIds": [
-          "head-of-the-legion-beast"
+          "head-of-the-legion-beast",
+          "enchanted-kisshoten-naginata",
+          "enchanted-yokai-dragonslayer"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -42285,10 +42402,13 @@
       {
         "line": 6203,
         "text": "Tăng 50% damage lên Undead",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "enchanted-kisshoten-naginata",
+          "enchanted-yokai-dragonslayer"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 6204,
@@ -44692,10 +44812,17 @@
       {
         "line": 6527,
         "text": "- Level 80 (chi tiết tại “Leveling-up Guide” nếu cần)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "staff-of-miracles",
+          "mythical-devotee-s-helm",
+          "mythical-devotee-s-veil-locks",
+          "miraculous-orb-of-divination",
+          "radiant-orb-of-clarity",
+          "mystical-orb-of-illusions"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 6528,
@@ -44852,7 +44979,14 @@
       {
         "line": 6548,
         "text": "→ Essence of Treachery ×20: Nhận quest của Virgil ở /join sevencircleswar.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "staff-of-miracles",
+          "mythical-devotee-s-helm",
+          "mythical-devotee-s-veil-locks",
+          "miraculous-orb-of-divination",
+          "radiant-orb-of-clarity",
+          "mystical-orb-of-illusions"
+        ],
         "excluded": [
           {
             "name": "Essence of Treachery",
@@ -44860,8 +44994,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 6549,
@@ -52258,10 +52392,17 @@
       {
         "line": 7781,
         "text": "→ Gold Voucher 100k ×15 (2 cách đều cần)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-frost-king-s-cowl-0-ac",
+          "hollowborn-frost-king-s-mask-0-ac",
+          "hollowborn-frozen-crest-0-ac",
+          "hollowborn-frost-queen-s-mask-0-ac",
+          "hollowborn-frost-queen-s-stare-0-ac",
+          "hollowborn-necryomancer-s-minion-0-ac"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 7782,
@@ -52530,10 +52671,17 @@
       {
         "line": 7831,
         "text": "→ Đồng thời Rank up Rep Doomwood và Rep Embersea lên 10.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "hollowborn-frost-king-s-cowl-0-ac",
+          "hollowborn-frost-king-s-mask-0-ac",
+          "hollowborn-frozen-crest-0-ac",
+          "hollowborn-frost-queen-s-mask-0-ac",
+          "hollowborn-frost-queen-s-stare-0-ac",
+          "hollowborn-necryomancer-s-minion-0-ac"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 7832,
@@ -54551,10 +54699,14 @@
       {
         "line": 8161,
         "text": "→ (Necro) Scroll of Dark Arts ×1: drop từ Ultra Vordred ở /join epicvordred.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "astravian-corsair",
+          "astravian-corsair-hat",
+          "bearded-astravian-corsair-hat"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 8162,
@@ -55055,10 +55207,14 @@
       {
         "line": 8223,
         "text": "\t5",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "astravian-corsair",
+          "astravian-corsair-hat",
+          "bearded-astravian-corsair-hat"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 8224,
@@ -55085,7 +55241,8 @@
           "celestial-commander-s-wings",
           "celestial-commander-s-back-blade",
           "celestial-commander-s-wings-blade",
-          "celestial-commander-s-morph-locks"
+          "celestial-commander-s-morph-locks",
+          "celestial-commander-s-plank"
         ],
         "excluded": [
           {
@@ -55274,7 +55431,8 @@
           "celestial-commander-s-wings",
           "celestial-commander-s-back-blade",
           "celestial-commander-s-wings-blade",
-          "celestial-commander-s-morph-locks"
+          "celestial-commander-s-morph-locks",
+          "celestial-commander-s-plank"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -59520,10 +59678,19 @@
       {
         "line": 8906,
         "text": "7. Hollowborn-theme Items Farming Guides",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "golden-inquisitor-s-locks",
+          "golden-inquisitor-s-helm",
+          "golden-inquisitor-s-crested-helm",
+          "golden-inquisitor-s-spear",
+          "golden-inquisitor-s-blade",
+          "golden-inquisitor-s-wrap",
+          "golden-inquisitor-s-back-blade",
+          "golden-inquisitor-s-back-blade-wrap"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 8911,
@@ -74281,7 +74448,9 @@
       {
         "line": 4,
         "text": "Titan Drakath (Armor)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "titan-drakath-armor"
+        ],
         "excluded": [
           {
             "name": "Titan Drakath",
@@ -74289,13 +74458,15 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 5,
         "text": "Titan Drakath's Helm",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "titan-drakath-s-helm"
+        ],
         "excluded": [
           {
             "name": "Titan Drakath",
@@ -74303,13 +74474,15 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 6,
         "text": "Titan Drakath's Tentacles",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "titan-drakath-s-tentacles"
+        ],
         "excluded": [
           {
             "name": "Titan Drakath",
@@ -74317,8 +74490,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 7,
@@ -74585,7 +74758,9 @@
       {
         "line": 34,
         "text": "Titan Drakath (Armor)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "titan-drakath-armor"
+        ],
         "excluded": [
           {
             "name": "Titan Drakath",
@@ -74593,8 +74768,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 35,
@@ -74731,7 +74906,9 @@
       {
         "line": 50,
         "text": "Titan Drakath's Helm",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "titan-drakath-s-helm"
+        ],
         "excluded": [
           {
             "name": "Titan Drakath",
@@ -74739,8 +74916,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 51,
@@ -74891,7 +75068,9 @@
       {
         "line": 67,
         "text": "Titan Drakath's Tentacles",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "titan-drakath-s-tentacles"
+        ],
         "excluded": [
           {
             "name": "Titan Drakath",
@@ -74899,8 +75078,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 68,
@@ -77208,10 +77387,12 @@
       {
         "line": 6,
         "text": "Astravian Corsair Set",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "astravian-corsair"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 7,
@@ -82013,10 +82194,12 @@
       {
         "line": 12,
         "text": "- Hoàn thành “VOIDUMINANCE” quest trong bộ Quest for Vordred's Armor.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "vordred-s-armor"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 13,
@@ -85077,7 +85260,8 @@
         "line": 10,
         "text": "→ Farm Empowered Vordred's Armor (EVA).",
         "matchedItemIds": [
-          "empowered-vordred-s-armor"
+          "empowered-vordred-s-armor",
+          "vordred-s-armor"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -88046,10 +88230,12 @@
       {
         "line": 1,
         "text": "Vordred's Armor",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "vordred-s-armor"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 2,
@@ -88078,10 +88264,12 @@
       {
         "line": 5,
         "text": "Vordred's Armor",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "vordred-s-armor"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 6,
@@ -88502,10 +88690,12 @@
       {
         "line": 53,
         "text": "→ Vordred's Armor từ (Grave) Rob Vordred Shop.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "vordred-s-armor"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 54,
@@ -94605,7 +94795,8 @@
         "line": 83,
         "text": "Yêu cầu riêng: Cần có Drakath the Eternal và Titan Drakath (Armor).",
         "matchedItemIds": [
-          "drakath-the-eternal"
+          "drakath-the-eternal",
+          "titan-drakath-armor"
         ],
         "excluded": [
           {
@@ -101727,7 +101918,8 @@
         "text": "→ Celestial ArchFiend & Infernal ArchFiend Set (cần Doomblade of Destruction).",
         "matchedItemIds": [
           "celestial-archfiend",
-          "doomblade-of-destruction"
+          "doomblade-of-destruction",
+          "infernal-archfiend"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -102590,10 +102782,12 @@
       {
         "line": 1,
         "text": "Celestial & Infernal ArchFiend",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "infernal-archfiend"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 2,
@@ -102614,10 +102808,12 @@
       {
         "line": 4,
         "text": "Celestial & Infernal ArchFiend",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "infernal-archfiend"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 5,
@@ -103265,10 +103461,12 @@
       {
         "line": 61,
         "text": "→ Void Soul of Nulgath: Nhận được từ “The Swirling Abyss Gathers” quest của Oversoul Spirit ở /join fiendshard.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "void-soul-of-nulgath"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 62,
@@ -103544,10 +103742,12 @@
       {
         "line": 85,
         "text": "→ Archfiend DeathLord: Nhận được từ “It Calls to You” quest của Oversoul Spirit ở /join fiendshard.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "archfiend-deathlord"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 86,
@@ -104004,7 +104204,8 @@
         "line": 124,
         "text": "Riêng “The Fiend Shard's Finale” quest cuối cùng, sau khi hoàn thành sẽ mở khoá Celestial ArchFiend (CAF) và Infernal ArchFiend (IAF) armor (giúp tăng 40% DMG lên Chaos, Dragon, Elemental, Human, Undead monsters khi trang bị). Đồng thời có thêm Gluttonous Maw cần trong “Ravenous” quest tại /join forge giúp mở khoá Forge Ravenous Enhancement.",
         "matchedItemIds": [
-          "celestial-archfiend"
+          "celestial-archfiend",
+          "infernal-archfiend"
         ],
         "excluded": [
           {
@@ -105036,10 +105237,12 @@
       {
         "line": 74,
         "text": "◆ “Cut Off One Head…” quest for Evolved Hex Helm",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-hex-helm"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 75,
@@ -105768,7 +105971,8 @@
         "text": "◆ “Evolved Fiend Gear” quest for Evolved Fiend Talons, Evolved Fiend Helm and Evolved Fiend Cape",
         "matchedItemIds": [
           "evolved-fiend-cape",
-          "evolved-fiend-helm"
+          "evolved-fiend-helm",
+          "evolved-fiend-talons"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -105993,10 +106197,14 @@
       {
         "line": 169,
         "text": "◆ “Evolved Void Gear” quest for Evolved Void Sword, Evolved Void Helm and Evolved Void Cape",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-void-sword",
+          "evolved-void-helm",
+          "evolved-void-cape"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 170,
@@ -106834,10 +107042,12 @@
       {
         "line": 38,
         "text": "◆ “Cut Off One Head…” quest for Evolved Hex Helm",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-hex-helm"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 39,
@@ -107102,7 +107312,8 @@
         "text": "◆ “Evolved Fiend Gear” quest for Evolved Fiend Talons, Evolved Fiend Helm and Evolved Fiend Cape",
         "matchedItemIds": [
           "evolved-fiend-cape",
-          "evolved-fiend-helm"
+          "evolved-fiend-helm",
+          "evolved-fiend-talons"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -107863,10 +108074,14 @@
       {
         "line": 14,
         "text": "◆ “Evolved Void Gear” quest for Evolved Void Sword, Evolved Void Helm and Evolved Void Cape",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "evolved-void-sword",
+          "evolved-void-helm",
+          "evolved-void-cape"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 15,
@@ -107997,10 +108212,12 @@
       {
         "line": 2,
         "text": "Archfiend DeathLord (AFDL2)",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "archfiend-deathlord"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 3,
@@ -108209,7 +108426,10 @@
         "line": 4,
         "text": "Đầu tiên với Weapon, gồm 4 món: Ancient Shogun Katana, Ancient Shogun Sheathed Katana, Ancient Shogun Katana And Sheath và Ancient Shogun Katanas.",
         "matchedItemIds": [
-          "ancient-shogun-katanas"
+          "ancient-shogun-katanas",
+          "ancient-shogun-katana",
+          "ancient-shogun-sheathed-katana",
+          "ancient-shogun-katana-and-sheath"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -108674,10 +108894,12 @@
       {
         "line": 42,
         "text": "Cuối cùng với Cape, chỉ có duy nhất 1 món: Ancient Shogun Back Arms.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "ancient-shogun-back-arms"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 43,
@@ -108993,10 +109215,12 @@
       {
         "line": 1,
         "text": "Archfiend DeathLord (AFDL2) Set",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "archfiend-deathlord"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 2,
@@ -114066,7 +114290,8 @@
         "line": 10,
         "text": "→ Celestial ArchFiend & Infernal ArchFiend Set",
         "matchedItemIds": [
-          "celestial-archfiend"
+          "celestial-archfiend",
+          "infernal-archfiend"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -115724,7 +115949,8 @@
         "line": 2,
         "text": "→ Celestial ArchFiend & Infernal ArchFiend Set.",
         "matchedItemIds": [
-          "celestial-archfiend"
+          "celestial-archfiend",
+          "infernal-archfiend"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -116510,7 +116736,8 @@
         "line": 3,
         "text": "→ Celestial ArchFiend & Infernal ArchFiend Set.",
         "matchedItemIds": [
-          "celestial-archfiend"
+          "celestial-archfiend",
+          "infernal-archfiend"
         ],
         "excluded": [],
         "disposition": "imported-reference",

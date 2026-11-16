@@ -15,6 +15,27 @@ const route=id=>get(id).acquisitionRoutes[0];
 const quantities=rows=>Object.fromEntries(rows.map(row=>[row.name,row.quantity]));
 const policy={"champion-drakath":"chaos","darkon-the-conductor":"debris-astravian","ultra-drago":"debris-astravian","gramiel-the-graceful":"hollowborn","ultra-speaker":"alternative-hero","ultra-nulgath":"nation","ultra-dage":"legion"};
 
+test("BLoD mining keeps its unlock, daily limit and verified material acquisition gates",()=>{
+  const ids=route("blinding-light-of-destiny").questWorkflowIds;
+  const mining=ids.find(id=>registry.quests[id].quest==="Mine Crafting");
+  assert.equal(registry.quests[mining].repeatability,"daily");
+  assert.ok(registry.quests[mining].dependencies.some(id=>registry.quests[id].quest==="A Loyal Follower"));
+  const ore=registry.quests[mining].rows.find(row=>row.name==="Raw Ore");
+  assert.equal(ore.quantity,30);
+  assert.equal(ore.map,"/join mountainpath");
+  assert.equal(ore.requiredQuest,"Mine Crafting");
+  const axeRow=registry.quests[mining].rows.find(row=>row.name==="Axe of the Prospector");
+  assert.ok(axeRow.sourceDetails.some(source=>source.monster==="Ore Balboa"&&source.mapJoin==="/join mountainpath"));
+  assert.ok(!axeRow.sourceDetails.some(source=>source.monster.includes("Ore Balboa")&&source.mapJoin!=="/join mountainpath"));
+  const medal=registry.materials["bonegrinder-medal"].tasks;
+  assert.ok(medal.some(task=>task.map==="/join doomwood"&&task.purchase.amount===15000));
+  assert.ok(medal.every(task=>task.preconditions.some(gate=>gate.includes("Reinforced"))));
+  const axe=registry.materials["axe-of-the-prospector"].tasks;
+  for(const monster of ["Balboa (Monster)","Ore Balboa"])
+    assert.ok(axe.some(task=>task.rows.some(row=>row.monster===monster&&row.map==="/join mountainpath")));
+  assert.equal(route("blinding-light-of-destiny").materialTotalsComplete,false);
+});
+
 test("all public Nostalgia routes are removed while the ordinary NSOD recipe and every identity survive",()=>{
   assert.equal(catalog.items.length,279+collectionRecords.length);
   assert.equal(new Set(catalog.items.map(item=>item.id)).size,279+collectionRecords.length);

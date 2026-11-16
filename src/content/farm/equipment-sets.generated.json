@@ -1622,6 +1622,228 @@
       ]
     },
     {
+      "id": "ancient-shogun",
+      "name": "Ancient Shogun",
+      "sourceChapter": "Nation",
+      "memberIds": [
+        "ancient-shogun-katana",
+        "ancient-shogun-sheathed-katana",
+        "ancient-shogun-katana-and-sheath",
+        "ancient-shogun-katanas",
+        "ancient-shogun-armor",
+        "ancient-shogun-helm",
+        "ancient-shogun-back-arms"
+      ],
+      "sourceUrls": [
+        "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "https://aqwwiki.wikidot.com/ancient-shogun-katana",
+        "https://aqwwiki.wikidot.com/ancient-shogun-sheathed-katana",
+        "https://aqwwiki.wikidot.com/ancient-shogun-katana-and-sheath",
+        "https://aqwwiki.wikidot.com/ancient-shogun-katanas",
+        "https://aqwwiki.wikidot.com/ancient-shogun-armor",
+        "https://aqwwiki.wikidot.com/ancient-shogun-helm",
+        "https://aqwwiki.wikidot.com/ancient-shogun-back-arms"
+      ],
+      "evidence": [
+        {
+          "itemId": "ancient-shogun-katana",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4969,
+            "text": "Đầu tiên với Weapon, gồm 4 món: Ancient Shogun Katana, Ancient Shogun Sheathed Katana, Ancient Shogun Katana And Sheath và Ancient Shogun Katanas."
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/ancient-shogun-katana",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/ancient-shogun-katana.html",
+            "sourceHash": "7fb6ea29668b89acaa0545ddfd2206582e075a90a19d8cd1ae5107158aeafb16"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/dilligas-merge-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/seed-research/dilligas-merge-shop.html",
+                "sourceHash": "86cc9e164a9736867ad3649d3269cf24153acbe4169865560d156e126ea9261e",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "ancient-shogun-sheathed-katana",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4969,
+            "text": "Đầu tiên với Weapon, gồm 4 món: Ancient Shogun Katana, Ancient Shogun Sheathed Katana, Ancient Shogun Katana And Sheath và Ancient Shogun Katanas."
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/ancient-shogun-sheathed-katana",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/ancient-shogun-sheathed-katana.html",
+            "sourceHash": "0a3c12380284ed02cdb370cea41458aeb9a9dca0696f1d786dbaca09d29d6003"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/dilligas-merge-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/seed-research/dilligas-merge-shop.html",
+                "sourceHash": "86cc9e164a9736867ad3649d3269cf24153acbe4169865560d156e126ea9261e",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "ancient-shogun-katana-and-sheath",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4969,
+            "text": "Đầu tiên với Weapon, gồm 4 món: Ancient Shogun Katana, Ancient Shogun Sheathed Katana, Ancient Shogun Katana And Sheath và Ancient Shogun Katanas."
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/ancient-shogun-katana-and-sheath",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/ancient-shogun-katana-and-sheath.html",
+            "sourceHash": "7b40c1fec1771c2e2a37ced27f68a9c5aa648657f1e7242fa74182d9502fa8a3"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/dilligas-merge-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/seed-research/dilligas-merge-shop.html",
+                "sourceHash": "86cc9e164a9736867ad3649d3269cf24153acbe4169865560d156e126ea9261e",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "ancient-shogun-katanas",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4969,
+            "text": "Đầu tiên với Weapon, gồm 4 món: Ancient Shogun Katana, Ancient Shogun Sheathed Katana, Ancient Shogun Katana And Sheath và Ancient Shogun Katanas."
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/ancient-shogun-katanas",
+            "sourceFile": "content-sources/farm/review/wiki/ancient-shogun-katanas.html",
+            "sourceHash": "abdde378810828e9ec7f9f53ea0ab7eeb224f3fe0ff567269abfa4347fed2855"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/dilligas-merge-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/seed-research/dilligas-merge-shop.html",
+                "sourceHash": "86cc9e164a9736867ad3649d3269cf24153acbe4169865560d156e126ea9261e",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "ancient-shogun-armor",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4984,
+            "text": "Tiếp theo với Armor, chỉ có duy nhất 1 món: Ancient Shogun Armor."
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/ancient-shogun-armor",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/ancient-shogun-armor.html",
+            "sourceHash": "267a35785aa425b1e9ed3ce26e050b12ec3c6e42f66997b44b760966dd54c9f9"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/dilligas-merge-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/seed-research/dilligas-merge-shop.html",
+                "sourceHash": "86cc9e164a9736867ad3649d3269cf24153acbe4169865560d156e126ea9261e",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "ancient-shogun-helm",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4998,
+            "text": "Tiếp tục với Helm, chỉ có duy nhất 1 món: Ancient Shogun Helm."
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/ancient-shogun-helm",
+            "sourceFile": "content-sources/farm/review/wiki/ancient-shogun-helm.html",
+            "sourceHash": "96427641118613b35faafee704f48c332065877702422a336cb3c50b88534259"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/dilligas-merge-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/seed-research/dilligas-merge-shop.html",
+                "sourceHash": "86cc9e164a9736867ad3649d3269cf24153acbe4169865560d156e126ea9261e",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "ancient-shogun-back-arms",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 5010,
+            "text": "Cuối cùng với Cape, chỉ có duy nhất 1 món: Ancient Shogun Back Arms."
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/ancient-shogun-back-arms",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/ancient-shogun-back-arms.html",
+            "sourceHash": "2ecc24fc61dd2b89cd12fbbf240266a14bf1442749daa60f7a93f6f9fabebb08"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/dilligas-merge-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/seed-research/dilligas-merge-shop.html",
+                "sourceHash": "86cc9e164a9736867ad3649d3269cf24153acbe4169865560d156e126ea9261e",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        }
+      ]
+    },
+    {
       "id": "evolved-blood",
       "name": "Evolved Blood Orb Set",
       "sourceChapter": "Nation",
@@ -1661,6 +1883,126 @@
             "url": "https://aqwwiki.wikidot.com/evolved-blood-guard",
             "sourceFile": "content-sources/farm/review/wiki/evolved-blood-guard.html",
             "sourceHash": "47a3a879c442e7f5f5bbfaba2c3696b48815f39a523c13cd48547184ca9ef0b2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evolved-hex",
+      "name": "Evolved Hex Orb Set",
+      "sourceChapter": "Nation",
+      "memberIds": [
+        "evolved-hex-of-nulgath",
+        "evolved-hex-helm",
+        "evolved-hex-staff"
+      ],
+      "sourceUrls": [
+        "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "https://aqwwiki.wikidot.com/evolved-hex-of-nulgath",
+        "https://aqwwiki.wikidot.com/evolved-hex-helm",
+        "https://aqwwiki.wikidot.com/evolved-hex-staff"
+      ],
+      "evidence": [
+        {
+          "itemId": "evolved-hex-of-nulgath",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4217,
+            "text": "◆ “Unlock the Evolved Hex Armor” quest for Evolved Hex of Nulgath"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-hex-of-nulgath",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-hex-of-nulgath.html",
+            "sourceHash": "41ddaa8b5d32ede0484dc1349548cef7b1eb75c75bc3cb64896bddf2f25de9d7"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-hex-orb-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-hex-orb-s-quests.html",
+                "sourceHash": "3183abfbce6116adb1c62ee0c4cdae27483c09fbd4265149266cf1903a9f5cea",
+                "quests": [
+                  "Unlock the Evolved Hex Armor",
+                  "Unlock the Evolved Hex (Rare)",
+                  "Unlock the Evolved Hex (Arcane)",
+                  "Cut Off One Head...",
+                  "Empowering the Empowered"
+                ]
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "evolved-hex-helm",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4258,
+            "text": "◆ “Cut Off One Head…” quest for Evolved Hex Helm"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-hex-helm",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-hex-helm.html",
+            "sourceHash": "c3c062c788dba548351e32236d862c222622fdaad4ef79c27ef272c8cae86c19"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-hex-orb-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-hex-orb-s-quests.html",
+                "sourceHash": "3183abfbce6116adb1c62ee0c4cdae27483c09fbd4265149266cf1903a9f5cea",
+                "quests": [
+                  "Unlock the Evolved Hex Armor",
+                  "Unlock the Evolved Hex (Rare)",
+                  "Unlock the Evolved Hex (Arcane)",
+                  "Cut Off One Head...",
+                  "Empowering the Empowered"
+                ]
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "evolved-hex-staff",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4234,
+            "text": "◆ “Empowering the Empowered” quest for Evolved Hex Staff"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-hex-staff",
+            "sourceFile": "content-sources/farm/review/wiki/evolved-hex-staff.html",
+            "sourceHash": "4a9d88a96d78f9fabf6317eb9f03128139f8e0d236885dcc5fb47bff6dd3c546"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-hex-orb-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-hex-orb-s-quests.html",
+                "sourceHash": "3183abfbce6116adb1c62ee0c4cdae27483c09fbd4265149266cf1903a9f5cea",
+                "quests": [
+                  "Unlock the Evolved Hex Armor",
+                  "Unlock the Evolved Hex (Rare)",
+                  "Unlock the Evolved Hex (Arcane)",
+                  "Cut Off One Head...",
+                  "Empowering the Empowered"
+                ]
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
           }
         }
       ]
@@ -1721,6 +2063,282 @@
             "url": "https://aqwwiki.wikidot.com/evolved-shadow-helm",
             "sourceFile": "content-sources/farm/review/wiki/evolved-shadow-helm.html",
             "sourceHash": "c2d125653e321c8860a0fc13acb8610ce6da5d320f11b236b74cddd92c109b46"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evolved-fiend",
+      "name": "Evolved Fiend",
+      "sourceChapter": "Nation",
+      "memberIds": [
+        "evolved-fiend-of-nulgath",
+        "evolved-fiend-talons",
+        "evolved-fiend-helm",
+        "evolved-fiend-cape"
+      ],
+      "sourceUrls": [
+        "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "https://aqwwiki.wikidot.com/evolved-fiend-of-nulgath",
+        "https://aqwwiki.wikidot.com/evolved-fiend-talons",
+        "https://aqwwiki.wikidot.com/evolved-fiend-helm",
+        "https://aqwwiki.wikidot.com/evolved-fiend-cape"
+      ],
+      "evidence": [
+        {
+          "itemId": "evolved-fiend-of-nulgath",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4343,
+            "text": "◆ “Evolved Primal Orb Quest” quest for Evolved Fiend Of Nulgath"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-fiend-of-nulgath",
+            "sourceFile": "content-sources/farm/review/wiki/evolved-fiend-of-nulgath.html",
+            "sourceHash": "33c98ea7e71ca42343f15b8a547237dee980f66c11093b39adfa9c2fb9dad02a"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-primal-orb-s-quests.html",
+                "sourceHash": "39d2515cb4093cffcd3c78f4c2b5f3b4d1c77277b4180f85ce70c53be0b1e715",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "evolved-fiend-talons",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4357,
+            "text": "◆ “Evolved Fiend Gear” quest for Evolved Fiend Talons, Evolved Fiend Helm and Evolved Fiend Cape"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-fiend-talons",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-fiend-talons.html",
+            "sourceHash": "f49ca60ad0adce9a7e2daa1288b7be2b79da731e8ab2b3918641f83a2ab79d8a"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-primal-orb-s-quests.html",
+                "sourceHash": "39d2515cb4093cffcd3c78f4c2b5f3b4d1c77277b4180f85ce70c53be0b1e715",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "evolved-fiend-helm",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4357,
+            "text": "◆ “Evolved Fiend Gear” quest for Evolved Fiend Talons, Evolved Fiend Helm and Evolved Fiend Cape"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-fiend-helm",
+            "sourceFile": "content-sources/farm/review/wiki/evolved-fiend-helm.html",
+            "sourceHash": "9a47fa9b9d168eefdb4af329df01f1d3459d0374b4f112bd5d38cc97d2bd10a9"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-primal-orb-s-quests.html",
+                "sourceHash": "39d2515cb4093cffcd3c78f4c2b5f3b4d1c77277b4180f85ce70c53be0b1e715",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "evolved-fiend-cape",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4357,
+            "text": "◆ “Evolved Fiend Gear” quest for Evolved Fiend Talons, Evolved Fiend Helm and Evolved Fiend Cape"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-fiend-cape",
+            "sourceFile": "content-sources/farm/review/wiki/evolved-fiend-cape.html",
+            "sourceHash": "ec60275b701554c4113efa5e1454b0cfce19abc6988bc613b44f07a0f030c3c3"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-primal-orb-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-primal-orb-s-quests.html",
+                "sourceHash": "39d2515cb4093cffcd3c78f4c2b5f3b4d1c77277b4180f85ce70c53be0b1e715",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evolved-void",
+      "name": "Evolved Void",
+      "sourceChapter": "Nation",
+      "memberIds": [
+        "evolved-void-of-nulgath",
+        "evolved-void-sword",
+        "evolved-void-helm",
+        "evolved-void-cape"
+      ],
+      "sourceUrls": [
+        "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "https://aqwwiki.wikidot.com/evolved-void-of-nulgath",
+        "https://aqwwiki.wikidot.com/evolved-void-sword",
+        "https://aqwwiki.wikidot.com/evolved-void-helm",
+        "https://aqwwiki.wikidot.com/evolved-void-cape"
+      ],
+      "evidence": [
+        {
+          "itemId": "evolved-void-of-nulgath",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4372,
+            "text": "◆ “Evolved Void Orb Quest” quest for Evolved Void Of Nulgath"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-void-of-nulgath",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-void-of-nulgath.html",
+            "sourceHash": "85da6d718add8168eee3a544b7f6299f22e145632e22303a0853ab7d8ea0e39a"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-void-orb-pet-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-void-orb-pet-s-quests.html",
+                "sourceHash": "6bad4c12abaa49ce2e3949d4512b6ab5dfb81d512747245e900928aadce12d11",
+                "quests": [
+                  "Evolved Void Orb Quest",
+                  "Evolved Void Gear"
+                ]
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "evolved-void-sword",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4383,
+            "text": "◆ “Evolved Void Gear” quest for Evolved Void Sword, Evolved Void Helm and Evolved Void Cape"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-void-sword",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-void-sword.html",
+            "sourceHash": "b55554a909f3731f32456c524ede5047f1d458196f022f16f5455b41c21c6e14"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-void-orb-pet-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-void-orb-pet-s-quests.html",
+                "sourceHash": "6bad4c12abaa49ce2e3949d4512b6ab5dfb81d512747245e900928aadce12d11",
+                "quests": [
+                  "Evolved Void Orb Quest",
+                  "Evolved Void Gear"
+                ]
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "evolved-void-helm",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4383,
+            "text": "◆ “Evolved Void Gear” quest for Evolved Void Sword, Evolved Void Helm and Evolved Void Cape"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-void-helm",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-void-helm.html",
+            "sourceHash": "e52b33bc466423cd9af13342f04ee28353ea35ffa9ee0d17df997058bc13f708"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-void-orb-pet-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-void-orb-pet-s-quests.html",
+                "sourceHash": "6bad4c12abaa49ce2e3949d4512b6ab5dfb81d512747245e900928aadce12d11",
+                "quests": [
+                  "Evolved Void Orb Quest",
+                  "Evolved Void Gear"
+                ]
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "evolved-void-cape",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 4383,
+            "text": "◆ “Evolved Void Gear” quest for Evolved Void Sword, Evolved Void Helm and Evolved Void Cape"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/evolved-void-cape",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-void-cape.html",
+            "sourceHash": "04750d2ca371f0307b5a205ad13450b3d63ea2af15e3dd8495ae0f32dcbdbf80"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/evolved-void-orb-pet-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-void-orb-pet-s-quests.html",
+                "sourceHash": "6bad4c12abaa49ce2e3949d4512b6ab5dfb81d512747245e900928aadce12d11",
+                "quests": [
+                  "Evolved Void Orb Quest",
+                  "Evolved Void Gear"
+                ]
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
           }
         }
       ]
@@ -2992,6 +3610,143 @@
       ]
     },
     {
+      "id": "drakath-the-eternal",
+      "name": "Drakath the Eternal",
+      "sourceChapter": "Chaos",
+      "memberIds": [
+        "drakath-the-eternal",
+        "drakath-the-eternal-s-visor",
+        "eternal-chaos-tassels",
+        "everlasting-blade-of-chaos",
+        "dual-everlasting-blades-of-chaos"
+      ],
+      "sourceUrls": [
+        "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "https://aqwwiki.wikidot.com/drakath-the-eternal",
+        "https://aqwwiki.wikidot.com/drakath-the-eternal-s-visor",
+        "https://aqwwiki.wikidot.com/eternal-chaos-tassels",
+        "https://aqwwiki.wikidot.com/everlasting-blade-of-chaos",
+        "https://aqwwiki.wikidot.com/dual-everlasting-blades-of-chaos"
+      ],
+      "evidence": [
+        {
+          "itemId": "drakath-the-eternal",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 1989,
+            "text": "3. Drakath the Eternal (DtE) Guide"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/drakath-the-eternal",
+            "sourceFile": "content-sources/farm/review/wiki/drakath-the-eternal.html",
+            "sourceHash": "50b8744585f9dcdfa752e67f50a164619984cfea95072355fefabc27a605dc66"
+          },
+          "inventory": {
+            "url": "https://aqwwiki.wikidot.com/hero-s-quests",
+            "sourceHash": "abbb35cf40282a089d0e1185f82fc58fe56c21f1ab8d2d8709ef92342c142e45",
+            "kind": "scoped-quest-rewards",
+            "quests": [
+              "Eternal Drakath Set"
+            ],
+            "guideScope": "Named collection in the declared guide chapter; only its explicitly selected gear reward Quests, excluding prerequisite quests and materials."
+          }
+        },
+        {
+          "itemId": "drakath-the-eternal-s-visor",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 1989,
+            "text": "3. Drakath the Eternal (DtE) Guide"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/drakath-the-eternal-s-visor",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/drakath-the-eternal-s-visor.html",
+            "sourceHash": "6054c4a6acbfaf7d9eb5b25469071d913c1efb6421568d24b462047536428e82"
+          },
+          "inventory": {
+            "url": "https://aqwwiki.wikidot.com/hero-s-quests",
+            "sourceHash": "abbb35cf40282a089d0e1185f82fc58fe56c21f1ab8d2d8709ef92342c142e45",
+            "kind": "scoped-quest-rewards",
+            "quests": [
+              "Eternal Drakath Set"
+            ],
+            "guideScope": "Named collection in the declared guide chapter; only its explicitly selected gear reward Quests, excluding prerequisite quests and materials."
+          }
+        },
+        {
+          "itemId": "eternal-chaos-tassels",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 1989,
+            "text": "3. Drakath the Eternal (DtE) Guide"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/eternal-chaos-tassels",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/eternal-chaos-tassels.html",
+            "sourceHash": "e589f701aa45e4c905ab6ec28e435df30b3b8587cc1ddbf7c5ef339f1df7235a"
+          },
+          "inventory": {
+            "url": "https://aqwwiki.wikidot.com/hero-s-quests",
+            "sourceHash": "abbb35cf40282a089d0e1185f82fc58fe56c21f1ab8d2d8709ef92342c142e45",
+            "kind": "scoped-quest-rewards",
+            "quests": [
+              "Eternal Drakath Set"
+            ],
+            "guideScope": "Named collection in the declared guide chapter; only its explicitly selected gear reward Quests, excluding prerequisite quests and materials."
+          }
+        },
+        {
+          "itemId": "everlasting-blade-of-chaos",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 1989,
+            "text": "3. Drakath the Eternal (DtE) Guide"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/everlasting-blade-of-chaos",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/everlasting-blade-of-chaos.html",
+            "sourceHash": "f8e8a545bc4452ff920e1c52d14764c34f027d5d91bc243c380d264e99480a18"
+          },
+          "inventory": {
+            "url": "https://aqwwiki.wikidot.com/hero-s-quests",
+            "sourceHash": "abbb35cf40282a089d0e1185f82fc58fe56c21f1ab8d2d8709ef92342c142e45",
+            "kind": "scoped-quest-rewards",
+            "quests": [
+              "Eternal Drakath Set"
+            ],
+            "guideScope": "Named collection in the declared guide chapter; only its explicitly selected gear reward Quests, excluding prerequisite quests and materials."
+          }
+        },
+        {
+          "itemId": "dual-everlasting-blades-of-chaos",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 1989,
+            "text": "3. Drakath the Eternal (DtE) Guide"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/dual-everlasting-blades-of-chaos",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/dual-everlasting-blades-of-chaos.html",
+            "sourceHash": "6069c2c2408f1f87d7693bb18f1c6802c46a01ce923b0d2de6080efcfb782d71"
+          },
+          "inventory": {
+            "url": "https://aqwwiki.wikidot.com/hero-s-quests",
+            "sourceHash": "abbb35cf40282a089d0e1185f82fc58fe56c21f1ab8d2d8709ef92342c142e45",
+            "kind": "scoped-quest-rewards",
+            "quests": [
+              "Eternal Drakath Set"
+            ],
+            "guideScope": "Named collection in the declared guide chapter; only its explicitly selected gear reward Quests, excluding prerequisite quests and materials."
+          }
+        }
+      ]
+    },
+    {
       "id": "arch-doomknight",
       "name": "Arch DoomKnight",
       "sourceChapter": "Evil",
@@ -3285,6 +4040,689 @@
               "Build Malgor's Armor Set"
             ],
             "guideScope": "Named collection in the declared guide chapter; only its explicitly selected gear reward Quests, excluding prerequisite quests and materials."
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-point",
+      "name": "The Point",
+      "sourceChapter": "Other Items",
+      "memberIds": [
+        "the-point",
+        "the-point-sword"
+      ],
+      "sourceUrls": [
+        "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "https://aqwwiki.wikidot.com/the-point",
+        "https://aqwwiki.wikidot.com/the-point-sword"
+      ],
+      "evidence": [
+        {
+          "itemId": "the-point",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 9013,
+            "text": "The Point Set - Buried Treasure Hunt"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/the-point",
+            "sourceFile": "content-sources/farm/review/wiki/the-point.html",
+            "sourceHash": "446236fd95098ac061f756da8c65de3df2099458cd8a7822e41fac35a2fa7a3d"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/coral-beach-s-quest",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/coral-beach-s-quest.html",
+                "sourceHash": "19a62f235ab0e7f899a1f3514485251b9b009ddebdc8233359c0e804c9ae0975",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Buried Treasure"
+                ]
+              }
+            ],
+            "guideScope": [
+              9013,
+              9038
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "the-point-sword",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 9013,
+            "text": "The Point Set - Buried Treasure Hunt"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/the-point-sword",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/the-point-sword.html",
+            "sourceHash": "f114b7249924becfbceea9a3fc3a656bd52a7ce36f0ef6835d21671f3c339afb"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/coral-beach-s-quest",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/coral-beach-s-quest.html",
+                "sourceHash": "19a62f235ab0e7f899a1f3514485251b9b009ddebdc8233359c0e804c9ae0975",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Buried Treasure"
+                ]
+              }
+            ],
+            "guideScope": [
+              9013,
+              9038
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "elite-void",
+      "name": "Elite Void",
+      "sourceChapter": "Nation",
+      "memberIds": [
+        "elite-void",
+        "elite-void-horns",
+        "elite-void-plume",
+        "elite-void-cape",
+        "elite-void-spiked-cape",
+        "elite-void-sword",
+        "elite-void-broadsword",
+        "elite-void-sword-pet"
+      ],
+      "sourceUrls": [
+        "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "https://aqwwiki.wikidot.com/elite-void",
+        "https://aqwwiki.wikidot.com/elite-void-horns",
+        "https://aqwwiki.wikidot.com/elite-void-plume",
+        "https://aqwwiki.wikidot.com/elite-void-cape",
+        "https://aqwwiki.wikidot.com/elite-void-spiked-cape",
+        "https://aqwwiki.wikidot.com/elite-void-sword",
+        "https://aqwwiki.wikidot.com/elite-void-broadsword",
+        "https://aqwwiki.wikidot.com/elite-void-sword-pet"
+      ],
+      "evidence": [
+        {
+          "itemId": "elite-void",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 5031,
+            "text": "Elite Void Set"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/elite-void",
+            "sourceFile": "content-sources/farm/review/wiki/elite-void.html",
+            "sourceHash": "c1a60794e04ccbc6b1e264827d807079c8954ffecddd63db01cdce8757024086"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+                "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Spoiled Dragon",
+                  "The Unpredictable Element",
+                  "There, But Not There",
+                  "Slaying Humble"
+                ]
+              }
+            ],
+            "guideScope": [
+              5031,
+              5049
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "elite-void-horns",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 5031,
+            "text": "Elite Void Set"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/elite-void-horns",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/elite-void-horns.html",
+            "sourceHash": "18a098818296965a686ce82ad95dd9f514748f3c6339854321848f484233330c"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+                "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Spoiled Dragon",
+                  "The Unpredictable Element",
+                  "There, But Not There",
+                  "Slaying Humble"
+                ]
+              }
+            ],
+            "guideScope": [
+              5031,
+              5049
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "elite-void-plume",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 5031,
+            "text": "Elite Void Set"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/elite-void-plume",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/elite-void-plume.html",
+            "sourceHash": "244dee52007759b5dd25439d6f0302d50856580afa41d2b1e2dd2bd9f407c7c4"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+                "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Spoiled Dragon",
+                  "The Unpredictable Element",
+                  "There, But Not There",
+                  "Slaying Humble"
+                ]
+              }
+            ],
+            "guideScope": [
+              5031,
+              5049
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "elite-void-cape",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 5031,
+            "text": "Elite Void Set"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/elite-void-cape",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/elite-void-cape.html",
+            "sourceHash": "47a9fe91024dc90888bf98b2e792768dbb38e4e23a16fe980c6af67dcd0d346f"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+                "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Spoiled Dragon",
+                  "The Unpredictable Element",
+                  "There, But Not There",
+                  "Slaying Humble"
+                ]
+              }
+            ],
+            "guideScope": [
+              5031,
+              5049
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "elite-void-spiked-cape",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 5031,
+            "text": "Elite Void Set"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/elite-void-spiked-cape",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/elite-void-spiked-cape.html",
+            "sourceHash": "fb3203f85feadcdff043b8ec4aeb0fd48565586cadeb8f7ba8ae5119e14dc6da"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+                "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Spoiled Dragon",
+                  "The Unpredictable Element",
+                  "There, But Not There",
+                  "Slaying Humble"
+                ]
+              }
+            ],
+            "guideScope": [
+              5031,
+              5049
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "elite-void-sword",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 5031,
+            "text": "Elite Void Set"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/elite-void-sword",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/elite-void-sword.html",
+            "sourceHash": "8eb65ea02b71839c4b1a3797644a552545dc58f851396de6d279ea7db7c4dbfe"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+                "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Spoiled Dragon",
+                  "The Unpredictable Element",
+                  "There, But Not There",
+                  "Slaying Humble"
+                ]
+              }
+            ],
+            "guideScope": [
+              5031,
+              5049
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "elite-void-broadsword",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 5031,
+            "text": "Elite Void Set"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/elite-void-broadsword",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/elite-void-broadsword.html",
+            "sourceHash": "6ad0413b90db1370a41285916df361c7e865b75336aba3d9686eba4103e29fd5"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+                "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Spoiled Dragon",
+                  "The Unpredictable Element",
+                  "There, But Not There",
+                  "Slaying Humble"
+                ]
+              }
+            ],
+            "guideScope": [
+              5031,
+              5049
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "elite-void-sword-pet",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 5031,
+            "text": "Elite Void Set"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/elite-void-sword-pet",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/elite-void-sword-pet.html",
+            "sourceHash": "9d00e7e3368a524d35921652cd6e2e6d6f166d67480b1a3569de6feb4c2430b8"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+                "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+                "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+                "status": "read",
+                "retainedSource": false,
+                "quests": [
+                  "Spoiled Dragon",
+                  "The Unpredictable Element",
+                  "There, But Not There",
+                  "Slaying Humble"
+                ]
+              }
+            ],
+            "guideScope": [
+              5031,
+              5049
+            ],
+            "reviewFile": "content-sources/farm/equipment-sets/quest-inventory-research.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "headless-pumpkin",
+      "name": "Headless Pumpkin",
+      "sourceChapter": "Other Items",
+      "memberIds": [
+        "headless-pumpkin-blade",
+        "headless-pumpkin-blades",
+        "headless-pumpkin",
+        "headless-pumpkin-s-head",
+        "headless-pumpkin-cape"
+      ],
+      "sourceUrls": [
+        "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "https://aqwwiki.wikidot.com/headless-pumpkin-blade",
+        "https://aqwwiki.wikidot.com/headless-pumpkin-blades",
+        "https://aqwwiki.wikidot.com/headless-pumpkin",
+        "https://aqwwiki.wikidot.com/headless-pumpkin-s-head",
+        "https://aqwwiki.wikidot.com/headless-pumpkin-cape"
+      ],
+      "evidence": [
+        {
+          "itemId": "headless-pumpkin-blade",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 8837,
+            "text": "Headless Pumpkin Set - Seasonal"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/headless-pumpkin-blade",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/headless-pumpkin-blade.html",
+            "sourceHash": "dcbb189bc7f6da1129b0ac1223cc7143e5a0f4fb5205dd09dfeec429574cda64"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/harvest-merge",
+                "sourceFile": "content-sources/farm/equipment-sets/shop-research/harvest-merge.html",
+                "sourceHash": "4204d4c3bbbecaf5d720880a4a7117cc42f06299b796173a57ebfaa0b0d7acb2",
+                "quests": []
+              }
+            ],
+            "guideScope": "Guide explicitly distinguishes Headless Pumpkin set from Candy Corn Crusher. Its five rows cost7 Gold Voucher500k,290 Goredon sauce,145 Parfait,75 Ultra Turdrakogiblet,145 Rider Meat,215 Seed exactly matching guide totals.",
+            "reviewFile": "content-sources/farm/equipment-sets/shop-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "headless-pumpkin-blades",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 8837,
+            "text": "Headless Pumpkin Set - Seasonal"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/headless-pumpkin-blades",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/headless-pumpkin-blades.html",
+            "sourceHash": "666234026b01f2ed5074a4db782b41676454c55596883d2f4748f6ad96d4eeb4"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/harvest-merge",
+                "sourceFile": "content-sources/farm/equipment-sets/shop-research/harvest-merge.html",
+                "sourceHash": "4204d4c3bbbecaf5d720880a4a7117cc42f06299b796173a57ebfaa0b0d7acb2",
+                "quests": []
+              }
+            ],
+            "guideScope": "Guide explicitly distinguishes Headless Pumpkin set from Candy Corn Crusher. Its five rows cost7 Gold Voucher500k,290 Goredon sauce,145 Parfait,75 Ultra Turdrakogiblet,145 Rider Meat,215 Seed exactly matching guide totals.",
+            "reviewFile": "content-sources/farm/equipment-sets/shop-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "headless-pumpkin",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 8837,
+            "text": "Headless Pumpkin Set - Seasonal"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/headless-pumpkin",
+            "sourceFile": "content-sources/farm/review/wiki/headless-pumpkin.html",
+            "sourceHash": "87dddfcc1667871bf791fba0512bcbdcf9f63797da3a610f6e2345c2211e0306"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/harvest-merge",
+                "sourceFile": "content-sources/farm/equipment-sets/shop-research/harvest-merge.html",
+                "sourceHash": "4204d4c3bbbecaf5d720880a4a7117cc42f06299b796173a57ebfaa0b0d7acb2",
+                "quests": []
+              }
+            ],
+            "guideScope": "Guide explicitly distinguishes Headless Pumpkin set from Candy Corn Crusher. Its five rows cost7 Gold Voucher500k,290 Goredon sauce,145 Parfait,75 Ultra Turdrakogiblet,145 Rider Meat,215 Seed exactly matching guide totals.",
+            "reviewFile": "content-sources/farm/equipment-sets/shop-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "headless-pumpkin-s-head",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 8837,
+            "text": "Headless Pumpkin Set - Seasonal"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/headless-pumpkin-s-head",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/headless-pumpkin-s-head.html",
+            "sourceHash": "869e942332e8d03b956891e5bc8e310eccbd71155ffaff743519f40109bdeed8"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/harvest-merge",
+                "sourceFile": "content-sources/farm/equipment-sets/shop-research/harvest-merge.html",
+                "sourceHash": "4204d4c3bbbecaf5d720880a4a7117cc42f06299b796173a57ebfaa0b0d7acb2",
+                "quests": []
+              }
+            ],
+            "guideScope": "Guide explicitly distinguishes Headless Pumpkin set from Candy Corn Crusher. Its five rows cost7 Gold Voucher500k,290 Goredon sauce,145 Parfait,75 Ultra Turdrakogiblet,145 Rider Meat,215 Seed exactly matching guide totals.",
+            "reviewFile": "content-sources/farm/equipment-sets/shop-inventory-research.json"
+          }
+        },
+        {
+          "itemId": "headless-pumpkin-cape",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 8837,
+            "text": "Headless Pumpkin Set - Seasonal"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/headless-pumpkin-cape",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/headless-pumpkin-cape.html",
+            "sourceHash": "321be444cb9d34647a2cf586c08322e3b7c62ec9981926ebc93da93d15670b32"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/harvest-merge",
+                "sourceFile": "content-sources/farm/equipment-sets/shop-research/harvest-merge.html",
+                "sourceHash": "4204d4c3bbbecaf5d720880a4a7117cc42f06299b796173a57ebfaa0b0d7acb2",
+                "quests": []
+              }
+            ],
+            "guideScope": "Guide explicitly distinguishes Headless Pumpkin set from Candy Corn Crusher. Its five rows cost7 Gold Voucher500k,290 Goredon sauce,145 Parfait,75 Ultra Turdrakogiblet,145 Rider Meat,215 Seed exactly matching guide totals.",
+            "reviewFile": "content-sources/farm/equipment-sets/shop-inventory-research.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "digital-archfiend-doomlord",
+      "name": "Digital ArchFiend DoomLord",
+      "sourceChapter": "Nation",
+      "memberIds": [
+        "digital-doomlord-s-blade-0-ac",
+        "digital-archfiend-doomlord-armor",
+        "digital-doomlord-s-mask"
+      ],
+      "sourceUrls": [
+        "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
+        "https://aqwwiki.wikidot.com/digital-doomlord-s-blade-0-ac",
+        "https://aqwwiki.wikidot.com/digital-archfiend-doomlord-armor",
+        "https://aqwwiki.wikidot.com/digital-doomlord-s-mask"
+      ],
+      "variantOf": "archfiend-doomlord",
+      "evidence": [
+        {
+          "itemId": "digital-doomlord-s-blade-0-ac",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 3649,
+            "text": "4. ArchFiend DoomLord (AFDL1) Guide"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/digital-doomlord-s-blade-0-ac",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/digital-doomlord-s-blade-0-ac.html",
+            "sourceHash": "1d91b0c5d508b05d8a9d917e4e58c2b09dfdcf7cc8a27ea80fbe7a5543a2575e"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/digital-archfiend-doomlord-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/digital-archfiend-doomlord-shop.html",
+                "sourceHash": "a194160f30dcecbe8ae85c83fae0ff82cb96d02211da08b31c543d48f40d2afe",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "digital-archfiend-doomlord-armor",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 3649,
+            "text": "4. ArchFiend DoomLord (AFDL1) Guide"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/digital-archfiend-doomlord-armor",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/digital-archfiend-doomlord-armor.html",
+            "sourceHash": "f750d28a24b8158ba75912dd5794adc9241a6770725f4d405b41703f4c4f2d03"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/digital-archfiend-doomlord-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/digital-archfiend-doomlord-shop.html",
+                "sourceHash": "a194160f30dcecbe8ae85c83fae0ff82cb96d02211da08b31c543d48f40d2afe",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+          }
+        },
+        {
+          "itemId": "digital-doomlord-s-mask",
+          "guide": {
+            "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+            "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+            "line": 3649,
+            "text": "4. ArchFiend DoomLord (AFDL1) Guide"
+          },
+          "wiki": {
+            "url": "https://aqwwiki.wikidot.com/digital-doomlord-s-mask",
+            "sourceFile": "content-sources/farm/equipment-sets/wiki/digital-doomlord-s-mask.html",
+            "sourceHash": "cd69653a7d9c07fdfdba7b2decab74e5bfe62d146f61fd270b8269a0c7fa9957"
+          },
+          "inventory": {
+            "kind": "reviewed-inventory",
+            "complete": true,
+            "proofs": [
+              {
+                "url": "https://aqwwiki.wikidot.com/digital-archfiend-doomlord-shop",
+                "sourceFile": "content-sources/farm/equipment-sets/wiki/digital-archfiend-doomlord-shop.html",
+                "sourceHash": "a194160f30dcecbe8ae85c83fae0ff82cb96d02211da08b31c543d48f40d2afe",
+                "quests": []
+              }
+            ],
+            "guideScope": "COLLECTION_INVENTORY_REVIEWED",
+            "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
           }
         }
       ]

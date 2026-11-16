@@ -5789,6 +5789,268 @@
       }
     ]
   },
+  "silver-exalted-paladin-poleaxe": {
+    "name": "Silver Exalted Paladin Poleaxe",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Fourth Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Paladin Poleaxe ×1",
+        "rows": [
+          {
+            "name": "Paladin Polearm Found",
+            "quantity": 1,
+            "monster": "Roach",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-paladin-spear": {
+    "name": "Silver Exalted Paladin Spear",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Fourth Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Paladin Spear ×1",
+        "rows": [
+          {
+            "name": "Paladin Polearm Found",
+            "quantity": 1,
+            "monster": "Roach",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-winged-helm": {
+    "name": "Silver Exalted Winged Helm",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Second Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Winged Helm ×1",
+        "rows": [
+          {
+            "name": "Paladin Helmet Wings",
+            "quantity": 1,
+            "monster": "Frostdeep Dweller",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-haloed-wings": {
+    "name": "Silver Exalted Haloed Wings",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Third Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Haloed Wings ×1",
+        "rows": [
+          {
+            "name": "Wings Found",
+            "quantity": 1,
+            "monster": "Great Solar Elemental",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "archfiend-s-favor": {
+    "name": "Archfiend's Favor",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Proof of Recruitment",
+        "npc": "Dirtlicker (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have ArchToken XI in your inventory."
+        ],
+        "preconditions": [
+          "Must have ArchToken XI in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dirtlicker-s-quests",
+        "sourceHash": "293557ee53cf4437c22231491fac82589de41d7d8da1433cf00616835cbcde47",
+        "reward": "Archfiend's Favor ×2",
+        "rows": [
+          {
+            "name": "Fiend Seal",
+            "quantity": 15,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dirtlicker-s-quests"
+          },
+          {
+            "name": "Emblem of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dirtlicker-s-quests"
+          },
+          {
+            "name": "Defeat the TR8T0R",
+            "quantity": 15,
+            "monster": "High Legion Inquisitor (Level 25)\nLegion Guard\nLegion Spy (1)\nSkull Warrior",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dirtlicker-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Zheleznymi Zubami",
+        "npc": "'Quest' button on Screen 6",
+        "map": null,
+        "requirements": [
+          "Must be Level 85."
+        ],
+        "preconditions": [
+          "Must be Level 85."
+        ],
+        "source": "https://aqwwiki.wikidot.com/deleuze-tundra-s-quest",
+        "sourceHash": "c4726c9f0e8c554a21c319d7a18ab9a7febd36e3fb08f42b026b1d2df5c1b7d2",
+        "reward": "Archfiend's Favor ×100",
+        "rows": [
+          {
+            "name": "Rotten Teeth",
+            "quantity": 1,
+            "monster": "Blighted Zubami",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/deleuze-tundra-s-quest"
+          }
+        ]
+      }
+    ]
+  },
+  "obsidian-rock": {
+    "name": "Obsidian Rock",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Undead Legion Member Special",
+        "npc": "Dage the Evil (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have Soulforge Hammer in your inventory."
+        ],
+        "preconditions": [
+          "Must have Soulforge Hammer in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+        "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+        "reward": "Obsidian Rock ×5",
+        "rows": [
+          {
+            "name": "Obsidian Deposit",
+            "quantity": 6,
+            "monster": "Burning Souleater (Monster)\nCrystallized Living Fire\nFireStorm Hatchling\nFire Dragon Warrior\nFire Imp (Monster) (1)\nFire Spirit (1)\nFlamethrower Dwakel\nLava Goblin\nLava Golem\nLava Mage (Version 1)\nLiving Fire (Level 31)\nMafic Dragon\nObsidian Golem\nOnyx Lava Dragon\nRed Bird\nRed Dragon (Monster)\nScoria Serpent\nShurpu Ring Guardian\nSkeletal Fire Mage\nSoultaker\nSsikari (Level 39)\nSulfur Imp\nTainted Phoenix\nVolcanic Ash Imp\nVolcanic Maggot\nXan (1)\nZellare",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Shard of a Soul",
+            "quantity": 6,
+            "monster": "Ghost Monsters\nUndead and Zombie Monsters",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "solidified-soul": {
+    "name": "Solidified Soul",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Undead Legion Member Special",
+        "npc": "Dage the Evil (NPC)",
+        "map": null,
+        "requirements": [
+          "Must have Soulforge Hammer in your inventory."
+        ],
+        "preconditions": [
+          "Must have Soulforge Hammer in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+        "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+        "reward": "Solidified Soul ×5",
+        "rows": [
+          {
+            "name": "Obsidian Deposit",
+            "quantity": 6,
+            "monster": "Burning Souleater (Monster)\nCrystallized Living Fire\nFireStorm Hatchling\nFire Dragon Warrior\nFire Imp (Monster) (1)\nFire Spirit (1)\nFlamethrower Dwakel\nLava Goblin\nLava Golem\nLava Mage (Version 1)\nLiving Fire (Level 31)\nMafic Dragon\nObsidian Golem\nOnyx Lava Dragon\nRed Bird\nRed Dragon (Monster)\nScoria Serpent\nShurpu Ring Guardian\nSkeletal Fire Mage\nSoultaker\nSsikari (Level 39)\nSulfur Imp\nTainted Phoenix\nVolcanic Ash Imp\nVolcanic Maggot\nXan (1)\nZellare",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          },
+          {
+            "name": "Shard of a Soul",
+            "quantity": 6,
+            "monster": "Ghost Monsters\nUndead and Zombie Monsters",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+          }
+        ]
+      }
+    ]
+  },
   "blinding-aura": {
     "name": "Blinding Aura",
     "method": "Quest",
@@ -6229,35 +6491,11 @@
             "itemId": "darkened-essence",
             "quantity": 500,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
-            "monster": "Pure Shadowscythe, Shadow Guardian (Monster) (1), Shadow Warrior (Monster) (1)",
-            "map": "/join shadowrealmpast",
+            "monster": null,
+            "map": null,
             "maxStack": 12000,
-            "requiredQuest": "Legion Fealty 1",
-            "sourceDetails": [
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Pure Shadowscythe, Shadow Guardian (Monster) (1), Shadow Warrior (Monster) (1)",
-                "mapJoin": "/join shadowrealmpast",
-                "requiredQuest": "Legion Fealty 1",
-                "unlockRequirements": [],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/darkened-essence",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/darkened-essence.html",
-                    "sourceHash": "3de958b45b892aeaea640bb230cc844e4a29adfd6b23c3191dc16c64b2259929",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/shadow-realm-past",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/shadow-realm-past.html",
-                    "sourceHash": "e29101af7eaa8cd6b86b47212a8ea154bcfd854bac013202847af7a08f241bbc",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              }
-            ],
+            "requiredQuest": null,
+            "sourceDetails": [],
             "evidence": [
               {
                 "source": "wiki",
@@ -6281,35 +6519,11 @@
             "itemId": "dracolich-contract",
             "quantity": 1000,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
-            "monster": "Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5",
-            "map": "/join necrodungeon",
+            "monster": null,
+            "map": null,
             "maxStack": 20000,
-            "requiredQuest": "Legion Fealty 1",
-            "sourceDetails": [
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5",
-                "mapJoin": "/join necrodungeon",
-                "requiredQuest": "Legion Fealty 1",
-                "unlockRequirements": [],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/dracolich-contract",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/dracolich-contract.html",
-                    "sourceHash": "d74ae99a8ebca78660f846572852872973ddbeb22d05ec6a5217c1475f15ce0a",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/necropolis-dungeon",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necropolis-dungeon.html",
-                    "sourceHash": "860c478ed6810a4bd945dbb4655ec0b3cfd25e08f0335a8964232d30795df0a8",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              }
-            ],
+            "requiredQuest": null,
+            "sourceDetails": [],
             "evidence": [
               {
                 "source": "wiki",
@@ -10142,70 +10356,144 @@
       }
     ]
   },
-  "undead-essence": {
-    "name": "Undead Essence",
+  "axe-of-the-prospector": {
+    "name": "Axe of the Prospector",
     "method": "Drop",
     "tasks": [
       {
-        "id": "drop-undead-essence",
+        "id": "drop-axe-of-the-prospector",
         "quest": null,
-        "title": "Undead Essence",
+        "title": "Axe of the Prospector",
         "source": "https://aqwwiki.wikidot.com/artix-s-quests",
         "requirements": [],
         "preconditions": [],
-        "reward": "Undead Essence",
+        "reward": "Axe of the Prospector",
         "rows": [
           {
-            "name": "Undead Essence",
+            "name": "Axe of the Prospector",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
-            "monster": "Blue Crystalized Undead (Level 30), Bone Terror (1), Green Crystalized Undead, Purple Crystalized Undead, Skeleton Fighter (1), Skeleton Warrior, Undead Champion (Monster)",
-            "map": "/join battleunderb",
+            "monster": "Balboa (Monster)",
+            "map": "/join dwarfprison",
             "maxStack": null,
             "requiredQuest": null,
             "sourceDetails": [
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Blue Crystalized Undead (Level 30), Bone Terror (1), Green Crystalized Undead, Purple Crystalized Undead, Skeleton Fighter (1), Skeleton Warrior, Undead Champion (Monster)",
-                "mapJoin": "/join battleunderb",
+                "monster": "Balboa (Monster)",
+                "mapJoin": "/join dwarfprison",
                 "requiredQuest": null,
                 "unlockRequirements": [],
                 "evidence": [
                   {
                     "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-essence",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-essence.html",
-                    "sourceHash": "dc9250e02e5190c3b8513fe0165a8941a48e50c099b5225e9de0d079036e7d0f",
+                    "url": "https://aqwwiki.wikidot.com/axe-of-the-prospector",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/axe-of-the-prospector.html",
+                    "sourceHash": "5b6709aadaa830f45d8c59251dc9d8496b19301ada72fd7681b2a53eca3da88a",
                     "verifiedAt": "2026-11-15"
                   },
                   {
                     "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/battle-under-b",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/battle-under-b.html",
-                    "sourceHash": "98759ddbac1094fc7b9efd5b8dbd953ad27187f79276bdba2fc120bc4405c4e5",
+                    "url": "https://aqwwiki.wikidot.com/dwarf-prison",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/dwarf-prison.html",
+                    "sourceHash": "95ed893534b405d45535bee6c9b079a6ba943667fe874c3583894bec24b9adad",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/balboa-monster",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/balboa-monster.html",
+                    "sourceHash": "edbdfc3b9921684b040f0a442db1963f319c1a9028fd8e1cd3c311c0826ac602",
                     "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Blue Crystalized Undead (Level 30), Bone Terror (1), Green Crystalized Undead, Purple Crystalized Undead, Skeleton Fighter (1), Skeleton Warrior, Undead Champion (Monster)",
-                "mapJoin": "/join temple",
+                "monster": "Balboa (Monster)",
+                "mapJoin": "/join mountainpath",
                 "requiredQuest": null,
                 "unlockRequirements": [],
                 "evidence": [
                   {
                     "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-essence",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-essence.html",
-                    "sourceHash": "dc9250e02e5190c3b8513fe0165a8941a48e50c099b5225e9de0d079036e7d0f",
+                    "url": "https://aqwwiki.wikidot.com/axe-of-the-prospector",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/axe-of-the-prospector.html",
+                    "sourceHash": "5b6709aadaa830f45d8c59251dc9d8496b19301ada72fd7681b2a53eca3da88a",
                     "verifiedAt": "2026-11-15"
                   },
                   {
                     "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/temple-of-the-light",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/temple-of-the-light.html",
-                    "sourceHash": "51e504a2774921d956e04b961354fe2c14803bef02d6bf9bcdb9b4c56d4769de",
+                    "url": "https://aqwwiki.wikidot.com/mountain-path",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/mountain-path.html",
+                    "sourceHash": "c9076d0df2fadd650cf9491640c468ad6573c81d7b1817dd88ffc577ce643ae3",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/balboa-monster",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/balboa-monster.html",
+                    "sourceHash": "edbdfc3b9921684b040f0a442db1963f319c1a9028fd8e1cd3c311c0826ac602",
+                    "verifiedAt": "2026-11-15"
+                  }
+                ]
+              },
+              {
+                "kind": "MONSTER_DROP",
+                "monster": "Ore Balboa",
+                "mapJoin": "/join mountainpath",
+                "requiredQuest": null,
+                "unlockRequirements": [],
+                "evidence": [
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/axe-of-the-prospector",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/axe-of-the-prospector.html",
+                    "sourceHash": "5b6709aadaa830f45d8c59251dc9d8496b19301ada72fd7681b2a53eca3da88a",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/mountain-path",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/mountain-path.html",
+                    "sourceHash": "c9076d0df2fadd650cf9491640c468ad6573c81d7b1817dd88ffc577ce643ae3",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/ore-balboa",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/ore-balboa.html",
+                    "sourceHash": "3fa7f10543ed2eb1d6e6b1ad12e28f0a2e3611dc3e79911829a886aa7a245923",
+                    "verifiedAt": "2026-11-15"
+                  }
+                ]
+              },
+              {
+                "kind": "MONSTER_DROP",
+                "monster": "Balboa (Monster)",
+                "mapJoin": "/join stalagbite",
+                "requiredQuest": null,
+                "unlockRequirements": [],
+                "evidence": [
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/axe-of-the-prospector",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/axe-of-the-prospector.html",
+                    "sourceHash": "5b6709aadaa830f45d8c59251dc9d8496b19301ada72fd7681b2a53eca3da88a",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/stalagbite-location",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/stalagbite-location.html",
+                    "sourceHash": "a2d9e6f1b7007d9c02341400ca4759b697b9e1dc018a91922c127bf6f61d52bc",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/balboa-monster",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/balboa-monster.html",
+                    "sourceHash": "edbdfc3b9921684b040f0a442db1963f319c1a9028fd8e1cd3c311c0826ac602",
                     "verifiedAt": "2026-11-15"
                   }
                 ]
@@ -10221,9 +10509,9 @@
               },
               {
                 "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/undead-essence",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-essence.html",
-                "sourceHash": "dc9250e02e5190c3b8513fe0165a8941a48e50c099b5225e9de0d079036e7d0f",
+                "url": "https://aqwwiki.wikidot.com/axe-of-the-prospector",
+                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/axe-of-the-prospector.html",
+                "sourceHash": "5b6709aadaa830f45d8c59251dc9d8496b19301ada72fd7681b2a53eca3da88a",
                 "verifiedAt": "2026-11-15"
               }
             ]
@@ -10232,70 +10520,46 @@
       }
     ]
   },
-  "bone-dust": {
-    "name": "Bone Dust",
+  "raw-ore": {
+    "name": "Raw Ore",
     "method": "Drop",
     "tasks": [
       {
-        "id": "drop-bone-dust",
+        "id": "drop-raw-ore",
         "quest": null,
-        "title": "Bone Dust",
+        "title": "Raw Ore",
         "source": "https://aqwwiki.wikidot.com/artix-s-quests",
         "requirements": [],
         "preconditions": [],
-        "reward": "Bone Dust",
+        "reward": "Raw Ore",
         "rows": [
           {
-            "name": "Bone Dust",
+            "name": "Raw Ore",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
-            "monster": "Imperial Noxus (Monster), Skeleton Fighter (1), Skeleton Warrior",
-            "map": "/join battleunderb",
-            "maxStack": 10000,
-            "requiredQuest": null,
+            "monster": "Balboa (Monster)",
+            "map": "/join mountainpath",
+            "maxStack": null,
+            "requiredQuest": "Mine Crafting",
             "sourceDetails": [
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Imperial Noxus (Monster), Skeleton Fighter (1), Skeleton Warrior",
-                "mapJoin": "/join battleunderb",
-                "requiredQuest": null,
-                "unlockRequirements": [],
+                "monster": "Balboa (Monster)",
+                "mapJoin": "/join mountainpath",
+                "requiredQuest": "Mine Crafting",
                 "evidence": [
                   {
                     "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/bone-dust",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/bone-dust.html",
-                    "sourceHash": "02e5209bdb6daa04cc1e4d69120c70ddd0317f381094669654b8fccfb2c07af4",
+                    "url": "https://aqwwiki.wikidot.com/artix-s-quests",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/artix-s-quests.html",
+                    "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
                     "verifiedAt": "2026-11-15"
                   },
                   {
                     "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/battle-under-b",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/battle-under-b.html",
-                    "sourceHash": "98759ddbac1094fc7b9efd5b8dbd953ad27187f79276bdba2fc120bc4405c4e5",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Imperial Noxus (Monster), Skeleton Fighter (1), Skeleton Warrior",
-                "mapJoin": "/join temple",
-                "requiredQuest": null,
-                "unlockRequirements": [],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/bone-dust",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/bone-dust.html",
-                    "sourceHash": "02e5209bdb6daa04cc1e4d69120c70ddd0317f381094669654b8fccfb2c07af4",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/temple-of-the-light",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/temple-of-the-light.html",
-                    "sourceHash": "51e504a2774921d956e04b961354fe2c14803bef02d6bf9bcdb9b4c56d4769de",
+                    "url": "https://aqwwiki.wikidot.com/mountain-path",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/mountain-path.html",
+                    "sourceHash": "c9076d0df2fadd650cf9491640c468ad6573c81d7b1817dd88ffc577ce643ae3",
                     "verifiedAt": "2026-11-15"
                   }
                 ]
@@ -10307,422 +10571,6 @@
                 "url": "https://aqwwiki.wikidot.com/artix-s-quests",
                 "sourceFile": "content-sources/farm/external-guide-evidence/wiki/artix-s-quests.html",
                 "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
-                "verifiedAt": "2026-11-15"
-              },
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/bone-dust",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/bone-dust.html",
-                "sourceHash": "02e5209bdb6daa04cc1e4d69120c70ddd0317f381094669654b8fccfb2c07af4",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "undead-energy": {
-    "name": "Undead Energy",
-    "method": "Drop",
-    "tasks": [
-      {
-        "id": "drop-undead-energy",
-        "quest": null,
-        "title": "Undead Energy",
-        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
-        "requirements": [
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop.",
-          "Must have completed the 'A Loyal Follower' quest for this item to drop."
-        ],
-        "preconditions": [],
-        "reward": "Undead Energy",
-        "rows": [
-          {
-            "name": "Undead Energy",
-            "quantity": null,
-            "source": "https://aqwwiki.wikidot.com/artix-s-quests",
-            "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-            "map": "/join battleunderb",
-            "maxStack": 10000,
-            "requiredQuest": null,
-            "sourceDetails": [
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join battleunderb",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/battle-under-b",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/battle-under-b.html",
-                    "sourceHash": "98759ddbac1094fc7b9efd5b8dbd953ad27187f79276bdba2fc120bc4405c4e5",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join wanders",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/cave-of-wanders",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/cave-of-wanders.html",
-                    "sourceHash": "64adaddb58812acf4325c8d32021a2bbf3767ec63f83aeaa653e56bf03160ae7",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join curseshore",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/curse-shore",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/curse-shore.html",
-                    "sourceHash": "0f3323eb5b6cdb72c54b4701cc46b90d6d4be52959d086c383e266e5291aa962",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join darkoviaforest",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/darkovia-forest",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/darkovia-forest.html",
-                    "sourceHash": "ddd9608a794d250085a85f3a7bc689ad1878508162bf7ed621262c9c0224b82d",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join doomhaven",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/doom-haven",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/doom-haven.html",
-                    "sourceHash": "7503662223bcb3cd1810b98f33da0131ea8516da304b3974e14fba0ccdf129bc",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join doomwar",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/doom-war-location",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/doom-war-location.html",
-                    "sourceHash": "f938419072d4975ea9124ebb9e47b1c93e193cb79a51863f56568271a5e735d6",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join doomwood",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/doomwood-forest",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/doomwood-forest.html",
-                    "sourceHash": "cd47540580f9d49385209d2022009ac36d6c6d930f93f5ae736d03644d510694",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join lightguard",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/lightguard-keep",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/lightguard-keep.html",
-                    "sourceHash": "4e08af880d70fbc7e1907bb94368cdb49b3d7975aca1bf930bbf343cd0ce0353",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join pirates",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/lolosia",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/lolosia.html",
-                    "sourceHash": "807c6f241aac887a7d83119974d430e16a1f8d9c7c305704ee1e28c639ab0712",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join necrotower",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/necro-tower",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necro-tower.html",
-                    "sourceHash": "d493f069b495ccc08a1c90011fe63055c904d18340e04e93041c4268cec9797a",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join necrou",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/necro-u",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necro-u.html",
-                    "sourceHash": "fc16121786e4daf6dc77e6d4e7bf9bbadf8d87496da07a24ae4657414f6e562e",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join necrocavern",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/necropolis-cavern",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necropolis-cavern.html",
-                    "sourceHash": "29382bdcb07de449dce4889e848f4b80ea4545dc3110bd4b8c24af4ae62af6e8",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join necrodungeon",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/necropolis-dungeon",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necropolis-dungeon.html",
-                    "sourceHash": "860c478ed6810a4bd945dbb4655ec0b3cfd25e08f0335a8964232d30795df0a8",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Angry Undead Giant, Angry Zombie (Level 45), Anubis Deathguard, Archwraith (Monster), Beast of Pirate's Bay, BlightFang, Blue Crystalized Undead (Level 30), Bone Terror (1), Bonemuncher, Bronze Dracozombie, Capt. Beard (Version 1), Chaos Vordred, Coal Ghoul, Cryptkeeper Lich, Cyclops Warlord Ghost, Cyzerombie, Dark Dracozombie, Deady Monster, Doom Crawler (Level 40), Doom Overlord, Doomwood Bonemuncher (Level 35), Doomwood Ectomancer (Level 35), Doomwood Soldier (Level 35), Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5, Ectomancer, Enraged Vordred, Enraged Zombie, Electric Undead, Escaped Dai Tenghost, Escaped Ghostly Zardman, Escaped Wendighost, Evolved Overlord, Extreme Noxus (1), Fishbones (Level 10), Ghostly Aracara, Ghostly Conductor, Ghostly Deathgazer, Ghostly Twisted Paw, Ghoul (1) (Level 35), Grateful Undead (Level 26), Green Crystalized Undead, Hollowsoul Wraith (Monster), Lich (Monster), Lich Of The Stone (Monster), Mummy (Monster) (1), Mysterious Spirit, Necropolis Soldier, Necrosian Soldier, Necrosian Walker (Monster), Noxus (Monster), O-dokuro (Level 23), O-dokuro's Head, Personal Chopper, Pink Skeletal Soldier, Purple Crystalized Undead, Sek Duat (Monster), Shelleton (Level 35), Shadow Vordred, Skeletal Fire Mage (Level 35), Skeletal Soldier (1), Skeleton (Monster) (1) (Level 23), Skeleton Fighter (1), Skeleton Fighter (2), Skeleton Warrior, Skello Kitty (Monster), Soldier, Soulseeker, Ultra Vordred (1), Undead Berserker (Monster) (1), Undead Champion (Monster), Undead Mage (Level 35), Undead Paladin (Monster) (Level 36), Undead Pirate (1) (Level 10), Undead Pirate (1) (Level 40), Undead Pirate (2), Undead Pirate V, Undead Soldier (1), Undead Temple Mage, Undead War Mage, Vordred (Monster) (2), Zhoombie, Zombie (1) (Level 39), Zombie Alina, Zombie Galanoth, Zombie Knight (Level 39), Zombie Rolith, Zombie Warlic",
-                "mapJoin": "/join temple",
-                "requiredQuest": null,
-                "unlockRequirements": [
-                  "Must have completed the 'A Loyal Follower' quest for this item to drop."
-                ],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/undead-energy",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/temple-of-the-light",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/temple-of-the-light.html",
-                    "sourceHash": "51e504a2774921d956e04b961354fe2c14803bef02d6bf9bcdb9b4c56d4769de",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              }
-            ],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/artix-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/artix-s-quests.html",
-                "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
-                "verifiedAt": "2026-11-15"
-              },
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/undead-energy",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
-                "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
                 "verifiedAt": "2026-11-15"
               }
             ]
@@ -11405,14 +11253,14 @@
             "name": "Blinding Light Fragments",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
-            "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+            "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
             "map": "/join battleunderb",
             "maxStack": 1000,
             "requiredQuest": null,
             "sourceDetails": [
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join battleunderb",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11430,12 +11278,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/battle-under-b.html",
                     "sourceHash": "98759ddbac1094fc7b9efd5b8dbd953ad27187f79276bdba2fc120bc4405c4e5",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join wanders",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11453,12 +11308,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/cave-of-wanders.html",
                     "sourceHash": "64adaddb58812acf4325c8d32021a2bbf3767ec63f83aeaa653e56bf03160ae7",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join curseshore",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11476,12 +11338,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/curse-shore.html",
                     "sourceHash": "0f3323eb5b6cdb72c54b4701cc46b90d6d4be52959d086c383e266e5291aa962",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join darkoviaforest",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11499,12 +11368,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/darkovia-forest.html",
                     "sourceHash": "ddd9608a794d250085a85f3a7bc689ad1878508162bf7ed621262c9c0224b82d",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join doomhaven",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11522,12 +11398,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/doom-haven.html",
                     "sourceHash": "7503662223bcb3cd1810b98f33da0131ea8516da304b3974e14fba0ccdf129bc",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join doomwar",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11545,12 +11428,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/doom-war-location.html",
                     "sourceHash": "f938419072d4975ea9124ebb9e47b1c93e193cb79a51863f56568271a5e735d6",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join doomwood",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11568,12 +11458,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/doomwood-forest.html",
                     "sourceHash": "cd47540580f9d49385209d2022009ac36d6c6d930f93f5ae736d03644d510694",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join lightguard",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11591,12 +11488,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/lightguard-keep.html",
                     "sourceHash": "4e08af880d70fbc7e1907bb94368cdb49b3d7975aca1bf930bbf343cd0ce0353",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join pirates",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11614,12 +11518,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/lolosia.html",
                     "sourceHash": "807c6f241aac887a7d83119974d430e16a1f8d9c7c305704ee1e28c639ab0712",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join necrotower",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11637,12 +11548,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necro-tower.html",
                     "sourceHash": "d493f069b495ccc08a1c90011fe63055c904d18340e04e93041c4268cec9797a",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join necrou",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11660,12 +11578,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necro-u.html",
                     "sourceHash": "fc16121786e4daf6dc77e6d4e7bf9bbadf8d87496da07a24ae4657414f6e562e",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join necrocavern",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11683,12 +11608,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necropolis-cavern.html",
                     "sourceHash": "29382bdcb07de449dce4889e848f4b80ea4545dc3110bd4b8c24af4ae62af6e8",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join necrodungeon",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11706,12 +11638,19 @@
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necropolis-dungeon.html",
                     "sourceHash": "860c478ed6810a4bd945dbb4655ec0b3cfd25e08f0335a8964232d30795df0a8",
                     "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
+                    "verifiedAt": "2026-11-15"
                   }
                 ]
               },
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker), Big Jack Sprat (Version 1), Skeletal Fire Mage (Level 2) (Version 1), Skeletal Ice Mage (Level 1) (Version 1), Skeletal Soldier (1), Skeletal Warrior (Level 3) (Version 1)",
+                "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
                 "mapJoin": "/join temple",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -11728,6 +11667,13 @@
                     "url": "https://aqwwiki.wikidot.com/temple-of-the-light",
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/temple-of-the-light.html",
                     "sourceHash": "51e504a2774921d956e04b961354fe2c14803bef02d6bf9bcdb9b4c56d4769de",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/undead-energy",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/undead-energy.html",
+                    "sourceHash": "e85b9d9cd0ac5cdcc8bd191049a2b353ea03bdf746cc3a5d3e0de5e0d0581901",
                     "verifiedAt": "2026-11-15"
                   }
                 ]
@@ -11903,140 +11849,6 @@
                 "url": "https://aqwwiki.wikidot.com/tethered-soul",
                 "sourceFile": "content-sources/farm/external-guide-evidence/wiki/tethered-soul.html",
                 "sourceHash": "c6eb06aae441fc876f37c3a63b9ffed9fe01d2017c1fda969c9f8de376468677",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "darkened-essence": {
-    "name": "Darkened Essence",
-    "method": "Drop",
-    "tasks": [
-      {
-        "id": "drop-darkened-essence",
-        "quest": null,
-        "title": "Darkened Essence",
-        "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
-        "requirements": [],
-        "preconditions": [],
-        "reward": "Darkened Essence",
-        "rows": [
-          {
-            "name": "Darkened Essence",
-            "quantity": null,
-            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
-            "monster": "Pure Shadowscythe, Shadow Guardian (Monster) (1), Shadow Warrior (Monster) (1)",
-            "map": "/join shadowrealmpast",
-            "maxStack": 12000,
-            "requiredQuest": "Legion Fealty 1",
-            "sourceDetails": [
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Pure Shadowscythe, Shadow Guardian (Monster) (1), Shadow Warrior (Monster) (1)",
-                "mapJoin": "/join shadowrealmpast",
-                "requiredQuest": "Legion Fealty 1",
-                "unlockRequirements": [],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/darkened-essence",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/darkened-essence.html",
-                    "sourceHash": "3de958b45b892aeaea640bb230cc844e4a29adfd6b23c3191dc16c64b2259929",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/shadow-realm-past",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/shadow-realm-past.html",
-                    "sourceHash": "e29101af7eaa8cd6b86b47212a8ea154bcfd854bac013202847af7a08f241bbc",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              }
-            ],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
-                "sourceFile": "content-sources/class-acquisition/legion-revenant-s-quests.html",
-                "sourceHash": "e8d242c4665174614c00306e9df02121444f9909bbd7eeb2232822144e5ad61a",
-                "verifiedAt": "2026-11-15"
-              },
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/darkened-essence",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/darkened-essence.html",
-                "sourceHash": "3de958b45b892aeaea640bb230cc844e4a29adfd6b23c3191dc16c64b2259929",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "dracolich-contract": {
-    "name": "Dracolich Contract",
-    "method": "Drop",
-    "tasks": [
-      {
-        "id": "drop-dracolich-contract",
-        "quest": null,
-        "title": "Dracolich Contract",
-        "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
-        "requirements": [],
-        "preconditions": [],
-        "reward": "Dracolich Contract",
-        "rows": [
-          {
-            "name": "Dracolich Contract",
-            "quantity": null,
-            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
-            "monster": "Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5",
-            "map": "/join necrodungeon",
-            "maxStack": 20000,
-            "requiredQuest": "Legion Fealty 1",
-            "sourceDetails": [
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Dracolich Head 1, Dracolich Head 2, Dracolich Head 3, Dracolich Head 4, Dracolich Head 5",
-                "mapJoin": "/join necrodungeon",
-                "requiredQuest": "Legion Fealty 1",
-                "unlockRequirements": [],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/dracolich-contract",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/dracolich-contract.html",
-                    "sourceHash": "d74ae99a8ebca78660f846572852872973ddbeb22d05ec6a5217c1475f15ce0a",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/necropolis-dungeon",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necropolis-dungeon.html",
-                    "sourceHash": "860c478ed6810a4bd945dbb4655ec0b3cfd25e08f0335a8964232d30795df0a8",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              }
-            ],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
-                "sourceFile": "content-sources/class-acquisition/legion-revenant-s-quests.html",
-                "sourceHash": "e8d242c4665174614c00306e9df02121444f9909bbd7eeb2232822144e5ad61a",
-                "verifiedAt": "2026-11-15"
-              },
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/dracolich-contract",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/dracolich-contract.html",
-                "sourceHash": "d74ae99a8ebca78660f846572852872973ddbeb22d05ec6a5217c1475f15ce0a",
                 "verifiedAt": "2026-11-15"
               }
             ]
@@ -13402,14 +13214,14 @@
             "name": "Zephyrus Manifesto",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
-            "monster": "Proto-Air Dracolich, Tempest Dracolich (Level 26)",
+            "monster": "Proto-Air Dracolich",
             "map": "/join dragonheart",
             "maxStack": null,
             "requiredQuest": null,
             "sourceDetails": [
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Proto-Air Dracolich, Tempest Dracolich (Level 26)",
+                "monster": "Proto-Air Dracolich",
                 "mapJoin": "/join dragonheart",
                 "requiredQuest": null,
                 "unlockRequirements": [],
@@ -13426,6 +13238,13 @@
                     "url": "https://aqwwiki.wikidot.com/dragons-heart",
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/dragons-heart.html",
                     "sourceHash": "7a14bde236e3090aa880695a38acfbb1a0235b158ea34c75dd476021a5769334",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/proto-air-dracolich",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/proto-air-dracolich.html",
+                    "sourceHash": "8a9480682009407fef196dbbb51c65af2cd9701acaee315919bb2bc0089e61ae",
                     "verifiedAt": "2026-11-15"
                   }
                 ]
@@ -13854,142 +13673,6 @@
       }
     ]
   },
-  "shoelace-of-a-fallen-paladin": {
-    "name": "Shoelace of a Fallen Paladin",
-    "method": "Drop",
-    "tasks": [
-      {
-        "id": "drop-shoelace-of-a-fallen-paladin",
-        "quest": null,
-        "title": "Shoelace of a Fallen Paladin",
-        "source": "https://aqwwiki.wikidot.com/artix-s-quests",
-        "requirements": [],
-        "preconditions": [],
-        "reward": "Shoelace of a Fallen Paladin",
-        "rows": [
-          {
-            "name": "Shoelace of a Fallen Paladin",
-            "quantity": null,
-            "source": "https://aqwwiki.wikidot.com/artix-s-quests",
-            "monster": "Doomwood Bonemuncher, Doomwood Ectomancer, Doomwood Soldier, Doomwood Treeant (Level 10 (Version 1))",
-            "map": "/join doomwood",
-            "maxStack": 77,
-            "requiredQuest": "For Those Who Have Fallen",
-            "sourceDetails": [
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Doomwood Bonemuncher, Doomwood Ectomancer, Doomwood Soldier, Doomwood Treeant (Level 10 (Version 1))",
-                "mapJoin": "/join doomwood",
-                "requiredQuest": "For Those Who Have Fallen",
-                "unlockRequirements": [],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/shoelace-of-a-fallen-paladin",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/shoelace-of-a-fallen-paladin.html",
-                    "sourceHash": "1b935ff5cabfdde8aa5aec4d820506ea7e6c86c55b19906902292d32c91df97c",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/doomwood-forest",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/doomwood-forest.html",
-                    "sourceHash": "cd47540580f9d49385209d2022009ac36d6c6d930f93f5ae736d03644d510694",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Doomwood Bonemuncher, Doomwood Ectomancer, Doomwood Soldier, Doomwood Treeant (Level 10 (Version 1))",
-                "mapJoin": "/join necrotower",
-                "requiredQuest": "For Those Who Have Fallen",
-                "unlockRequirements": [],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/shoelace-of-a-fallen-paladin",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/shoelace-of-a-fallen-paladin.html",
-                    "sourceHash": "1b935ff5cabfdde8aa5aec4d820506ea7e6c86c55b19906902292d32c91df97c",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/necro-tower",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necro-tower.html",
-                    "sourceHash": "d493f069b495ccc08a1c90011fe63055c904d18340e04e93041c4268cec9797a",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Doomwood Bonemuncher, Doomwood Ectomancer, Doomwood Soldier, Doomwood Treeant (Level 10 (Version 1))",
-                "mapJoin": "/join necrou",
-                "requiredQuest": "For Those Who Have Fallen",
-                "unlockRequirements": [],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/shoelace-of-a-fallen-paladin",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/shoelace-of-a-fallen-paladin.html",
-                    "sourceHash": "1b935ff5cabfdde8aa5aec4d820506ea7e6c86c55b19906902292d32c91df97c",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/necro-u",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/necro-u.html",
-                    "sourceHash": "fc16121786e4daf6dc77e6d4e7bf9bbadf8d87496da07a24ae4657414f6e562e",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              },
-              {
-                "kind": "MONSTER_DROP",
-                "monster": "Doomwood Bonemuncher, Doomwood Ectomancer, Doomwood Soldier, Doomwood Treeant (Level 10 (Version 1))",
-                "mapJoin": "/join temple",
-                "requiredQuest": "For Those Who Have Fallen",
-                "unlockRequirements": [],
-                "evidence": [
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/shoelace-of-a-fallen-paladin",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/shoelace-of-a-fallen-paladin.html",
-                    "sourceHash": "1b935ff5cabfdde8aa5aec4d820506ea7e6c86c55b19906902292d32c91df97c",
-                    "verifiedAt": "2026-11-15"
-                  },
-                  {
-                    "source": "wiki",
-                    "url": "https://aqwwiki.wikidot.com/temple-of-the-light",
-                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/temple-of-the-light.html",
-                    "sourceHash": "51e504a2774921d956e04b961354fe2c14803bef02d6bf9bcdb9b4c56d4769de",
-                    "verifiedAt": "2026-11-15"
-                  }
-                ]
-              }
-            ],
-            "evidence": [
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/artix-s-quests",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/artix-s-quests.html",
-                "sourceHash": "72a72fcaa27e66cf6665c06f9620355646cd56c23f134f595ece620642be473f",
-                "verifiedAt": "2026-11-15"
-              },
-              {
-                "source": "wiki",
-                "url": "https://aqwwiki.wikidot.com/shoelace-of-a-fallen-paladin",
-                "sourceFile": "content-sources/farm/external-guide-evidence/wiki/shoelace-of-a-fallen-paladin.html",
-                "sourceHash": "1b935ff5cabfdde8aa5aec4d820506ea7e6c86c55b19906902292d32c91df97c",
-                "verifiedAt": "2026-11-15"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "eternity-flame": {
     "name": "Eternity Flame",
     "method": "Drop",
@@ -14208,14 +13891,14 @@
             "name": "Radiant Blade Enhancement",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
-            "monster": "Chaorrupted Good Lieutenant, Good Lieutenant",
+            "monster": "Chaorrupted Good Lieutenant",
             "map": "/join alliance",
             "maxStack": null,
             "requiredQuest": "Commandment",
             "sourceDetails": [
               {
                 "kind": "MONSTER_DROP",
-                "monster": "Chaorrupted Good Lieutenant, Good Lieutenant",
+                "monster": "Chaorrupted Good Lieutenant",
                 "mapJoin": "/join alliance",
                 "requiredQuest": "Commandment",
                 "unlockRequirements": [],
@@ -14232,6 +13915,43 @@
                     "url": "https://aqwwiki.wikidot.com/alliance",
                     "sourceFile": "content-sources/farm/external-guide-evidence/wiki/alliance.html",
                     "sourceHash": "78974322408159ae53562bbefdcf5e152d71e612ac64142d2fcda142c5982c63",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/chaorrupted-good-lieutenant",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/chaorrupted-good-lieutenant.html",
+                    "sourceHash": "269292ce436175def1aca82acccac458b68460c3ebecd44f4ecb4fdfba951986",
+                    "verifiedAt": "2026-11-15"
+                  }
+                ]
+              },
+              {
+                "kind": "MONSTER_DROP",
+                "monster": "Good Lieutenant",
+                "mapJoin": "/join alliance",
+                "requiredQuest": "Commandment",
+                "unlockRequirements": [],
+                "evidence": [
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/radiant-blade-enhancement",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/radiant-blade-enhancement.html",
+                    "sourceHash": "15faf096cf2f0f791a2d81be7179a5630f43f2e6bac5a398a932b5adeb30e3d3",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/alliance",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/alliance.html",
+                    "sourceHash": "78974322408159ae53562bbefdcf5e152d71e612ac64142d2fcda142c5982c63",
+                    "verifiedAt": "2026-11-15"
+                  },
+                  {
+                    "source": "wiki",
+                    "url": "https://aqwwiki.wikidot.com/good-lieutenant",
+                    "sourceFile": "content-sources/farm/external-guide-evidence/wiki/good-lieutenant.html",
+                    "sourceHash": "bc5beb19903138ed66e5bd25b1d98771ea3a95721de6297820ed4e7686f743be",
                     "verifiedAt": "2026-11-15"
                   }
                 ]

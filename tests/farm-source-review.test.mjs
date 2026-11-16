@@ -11,6 +11,15 @@ const catalog = read("src/content/farm/catalog-v2.generated.json");
 const review = read("content-sources/farm/review/enrichment-audit.json");
 const get = id => catalog.items.find(i => i.id === id);
 
+test("inline Quest prerequisites survive a following Notes list", () => {
+  const html = '<div id="page-content"><div class="yui-navset"><ul class="yui-nav"><li>Mine Crafting</li></ul><div class="yui-content"><div><p><strong>Requirements:</strong> Must have completed the \'A Loyal Follower\' quest.</p><p><strong>Notes:</strong></p><ul><li>This quest can only be completed once per day.</li></ul><p><strong>Items Required:</strong></p><ul><li>Raw Ore x30</li></ul></div></div></div></div>';
+  const quest = parseFarmReviewPage(html, "https://aqwwiki.wikidot.com/fixture").quests[0];
+  assert.deepEqual(quest.requirements, ["Must have completed the 'A Loyal Follower' quest."]);
+  assert.equal(quest.repeatability, "daily");
+  const list = html.replace("<strong>Requirements:</strong> Must have completed the 'A Loyal Follower' quest.", "<strong>Requirements:</strong>").replace("<p><strong>Notes:</strong></p>", "");
+  assert.deepEqual(parseFarmReviewPage(list, "https://aqwwiki.wikidot.com/fixture").quests[0].requirements, ["This quest can only be completed once per day."]);
+});
+
 test("Wiki DOM recipes retain an implicit single item and currency; nested operator scope is never flattened", () => {
   const html = '<div id="page-content"><ul><li>Merge the following:<ul><li>Base Weapon</li><li>Token x1,000</li><li>200,000 Gold</li></ul></li></ul></div>';
   const parsed = parseFarmReviewPage(html, "https://aqwwiki.wikidot.com/fixture");

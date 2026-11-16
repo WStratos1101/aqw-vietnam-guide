@@ -48,9 +48,18 @@ export function buildReviewedFarmWorkflows(items, materialSources, cachedPages =
         if (!mapPage || !mapFor(mapPage) || !monster) continue;
         const wholeMap = direct?.match(/^any monster in (.+)$/i)?.[1];
         if (wholeMap && link.name !== wholeMap) continue;
-        sourceDetails.push({ kind: "MONSTER_DROP", monster, mapJoin: mapFor(mapPage), requiredQuest,
+        // An item may drop from different monsters on different maps. Keep
+        // only monsters whose own location list supports this map.
+        const verifiedDrops = (resource.droppedBy || []).flatMap(drop => {
+          const monsterPage = pages.get(drop.wikiUrl);
+          return monsterPage?.locationLinks.some(location => location.url === link.url)
+            ? [{ monster: drop.name, monsterPage }] : [];
+        });
+        if (!direct && !verifiedDrops.length) continue;
+        for (const drop of direct ? [{ monster, monsterPage: null }] : verifiedDrops)
+        sourceDetails.push({ kind: "MONSTER_DROP", monster: drop.monster, mapJoin: mapFor(mapPage), requiredQuest,
           unlockRequirements: resource.text.split("\n").filter(line => /^(?:Must |Requires |You must |Only drops? |Can only )/.test(line)),
-          evidence: [evidence(resource), evidence(mapPage)] });
+          evidence: [evidence(resource), evidence(mapPage), ...(drop.monsterPage ? [evidence(drop.monsterPage)] : [])] });
       }
     }
     if (override.mapUrl) {

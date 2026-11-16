@@ -52,9 +52,13 @@ function rows(list, url) {
 function requirements(root) {
   const node = labelNode(root, "Requirements") || labelNode(root,"Requirement");
   if (!node) return [];
+  // Inline requirements can be followed by a Notes list. That list belongs
+  // to Notes, and must not replace the actual prerequisite in the paragraph.
+  const inline = field(wikiText(node.parentElement), "Requirements?");
+  if (inline) return [inline];
   const list = listAfter(node);
   if (list) return [...list.children].map(el => el.textContent.replace(/\s+/g, " ").trim());
-  return [field(wikiText(node.parentElement), "Requirements?")].filter(Boolean);
+  return [];
 }
 
 export function parseFarmReviewPage(html, url) {

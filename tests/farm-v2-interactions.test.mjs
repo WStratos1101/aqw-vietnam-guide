@@ -278,7 +278,7 @@ test("actual Quest tabs preserve completion, mode independence and keyboard navi
   await click(panel().querySelector('input'));assert.equal(panel().querySelector('input').checked,true);
   await click(button('[aria-label="Phương án farm"] button',"Farm bằng Insignia"));
   assert.match(host.querySelector('.fv32-insignia-sources').textContent,/31/);
-  await click(host.querySelectorAll(".fv31-step-numbers button")[7]);
+  await click(host.querySelector('.fv31-step-numbers button[title="Dage, Lord of the Undead Legion"]'));
   assert.match(panel().querySelector("table").textContent,/ultradage/);
   await click(button('[aria-label="Phương án farm"] button',"Farm thông thường"));
   await click(host.querySelectorAll('.fv31-step-numbers button')[3]);
