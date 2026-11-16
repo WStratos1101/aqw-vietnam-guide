@@ -197,6 +197,24 @@ await runQa(
             await screenshot("group-selector");
           },
         );
+        await step("Reaper's Oath Quest alternatives render actual rewards and materials", async () => {
+          await navigate("/farm/item/reaper-s-oath?farm-tab=guide", '[data-item-id="reaper-s-oath"]');
+          await page.getByRole("tab", { name: "Hướng dẫn Farm", exact: true }).click();
+          const choices = page.getByRole("group", { name: "Quest nhận thưởng", exact: true });
+          await expect(choices.getByRole("button")).toHaveCount(3);
+          for (const name of ["Obsidian Mining", "Soul Forgery", "Undead Legion Member Special"]) {
+            const option = choices.getByRole("button", { name, exact: true });
+            await expect(option).toBeVisible();
+            await option.click();
+            await expect(option).toHaveAttribute("aria-pressed", "true");
+            const panel = page.getByRole("region", { name: "Quest đang chọn", exact: true });
+            await expect(panel).toBeVisible();
+            await expect(panel).toContainText(name);
+            await expect(panel).toContainText("Reaper's Oath");
+            assert.ok(await panel.locator("tbody tr").count(), "selected Quest must show required materials");
+          }
+          await screenshot("reapers-oath-alternatives");
+        });
         await step("item direct route and image fallback", async () => {
           await navigate(
             "/farm/item/sin-of-the-abyss",

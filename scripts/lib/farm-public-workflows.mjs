@@ -244,7 +244,10 @@ export function applyFarmPublicWorkflows(items, cachedPages, materialSources, bo
         for(const row of rewardMatches)if(!route.sources.some(source=>source.url===row.page.url))route.sources.push({url:row.page.url,label:"AQW Wiki",sourceType:"wiki"});
       }
       const finish = route.questReward ? rewardMatches.filter(row => row.q.name.toLowerCase() === route.questReward.toLowerCase()) : [];
-      const alternatives = (route.questAlternatives || []).flatMap(option => byName(option.quest).filter(row => option.sources.includes(row.page.url)));
+      // Item links may point to a Quest section (#2) of the cached NPC page.
+      // Match the retained page body and require this exact item in its rewards.
+      const alternatives = [...new Set((route.questAlternatives || []).flatMap(option => rewardMatches.filter(row =>
+        row.q.name === option.quest && option.sources.some(url => url.split("#")[0] === row.page.url.split("#")[0]))))];
       const shopUnlocks=[];
       if(["Shop","Merge"].includes(route.method)) {
         const page=pages.get(item.wikiUrl);

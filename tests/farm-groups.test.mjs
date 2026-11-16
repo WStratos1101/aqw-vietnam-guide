@@ -73,7 +73,9 @@ test("catalog primary groups match exact canonical names and retain guide line e
         assert.ok(evidence.sourceBossId);assert.ok(evidence.insigniaQuantity>0);
       } else if(evidence.sourceDocument === "equipment-set-guide") {
         const source=collectionRecords.find(record=>record.id===item.id);
-        assert.ok(source,item.id);assert.equal(source.collectionEvidence.guideLines[0],evidence.sourceLine);
+        assert.ok(source,item.id);
+        const [start,end]=source.collectionEvidence.guideLines;
+        assert.ok(evidence.sourceLine>=start&&evidence.sourceLine<=end,item.id);
         assert.equal(source.collectionEvidence.sourceChapter,evidence.sourceChapter);
         assert.ok(fs.readFileSync(evidence.sourceFile,"utf8").split(/\r?\n/)[evidence.sourceLine-1]);
       } else {

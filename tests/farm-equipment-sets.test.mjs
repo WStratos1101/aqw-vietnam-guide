@@ -62,6 +62,27 @@ test("new equipment is distinct, source backed and has a working acquisition wor
   if(record.collectionEvidence.sourceChapter==="Hollowborn")assert.equal(item.primaryGroupId,"hollowborn",record.id);
  }
 });
+test("Reaper's Oath section links resolve to three evidenced alternative Quest workflows",()=>{
+ const item=catalog.items.find(item=>item.id==="reaper-s-oath");
+ const route=item.acquisitionRoutes.find(route=>route.questAlternatives?.length);
+ const registry=read("src/content/farm/quest-workflows.generated.json");
+ assert.deepEqual(route.questOptions.map(option=>option.name),["Obsidian Mining","Soul Forgery","Undead Legion Member Special"]);
+ assert.ok(route.questAlternatives.every(option=>option.sources.some(url=>url.endsWith("#2"))));
+ for(const option of route.questOptions){
+  const task=registry.quests[option.questId];
+  assert.equal(task.quest,option.name);
+  assert.ok(option.workflowIds.includes(option.questId));
+  assert.ok(route.questWorkflowIds.includes(option.questId));
+  assert.ok([...task.fixedRewards,...task.rewardChoices,...task.randomRewards,...task.randomChoiceRewards].some(reward=>reward.wikiUrl===item.wikiUrl));
+  assert.ok(task.rows.length);
+ }
+});
+test("alternative Quest links never duplicate public choice controls",()=>{
+ for(const item of catalog.items)for(const route of item.acquisitionRoutes){
+  const ids=(route.questOptions||[]).map(option=>option.questId);
+  assert.equal(new Set(ids).size,ids.length,item.id+":"+route.id);
+ }
+});
 test("set artwork uses the matching canonical image and verified bytes",()=>{
  for(const asset of assets){assert.equal(createHash("sha256").update(fs.readFileSync("public"+asset.imagePath)).digest("hex"),asset.fileHash);const item=catalog.items.find(item=>item.wikiUrl===asset.sourcePage);if(item)assert.equal(item.image,asset.imagePath,item.id);}
  for(const set of sets)for(const id of set.memberIds){const item=catalog.items.find(item=>item.id===id);assert.ok(item.image);assert.ok(fs.existsSync("public"+item.image));}

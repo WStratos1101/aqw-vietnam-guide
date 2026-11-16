@@ -33446,7 +33446,7 @@
           "purchase": null,
           "location": "N/A",
           "description": "Nơi nhận theo Wiki; chưa tách và xác minh từng tuyến.",
-          "mapCommand": null,
+          "mapCommand": "/join tercessuinotlim",
           "steps": [],
           "materialTree": null,
           "sources": [
@@ -33539,18 +33539,19 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
           ],
           "questFinishIds": [
-            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
           ],
           "questOptions": [
             {
               "name": "Twisted Items of Nulgath",
-              "questId": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+              "questId": "nulgath-s-quests:twisted-items-of-nulgath",
               "workflowIds": [
-                "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+                "nulgath-s-quests:twisted-items-of-nulgath"
               ]
             },
             {
@@ -33562,6 +33563,7 @@
             }
           ],
           "operationGroups": [],
+          "npc": "Nulgath (NPC)",
           "materialTotalsComplete": false
         }
       ],
@@ -34017,7 +34019,7 @@
           "purchase": null,
           "location": "N/A",
           "description": "Nơi nhận theo Wiki; chưa tách và xác minh từng tuyến.",
-          "mapCommand": null,
+          "mapCommand": "/join tercessuinotlim",
           "steps": [],
           "materialTree": null,
           "sources": [
@@ -34110,18 +34112,19 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
           ],
           "questFinishIds": [
-            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
           ],
           "questOptions": [
             {
               "name": "Twisted Items of Nulgath",
-              "questId": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+              "questId": "nulgath-s-quests:twisted-items-of-nulgath",
               "workflowIds": [
-                "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+                "nulgath-s-quests:twisted-items-of-nulgath"
               ]
             },
             {
@@ -34133,6 +34136,7 @@
             }
           ],
           "operationGroups": [],
+          "npc": "Nulgath (NPC)",
           "materialTotalsComplete": false
         }
       ],
@@ -35674,6 +35678,33 @@
             "nulgath-s-quests:contract-with-the-abyss",
             "oblivion-s-quests:deeper-and-deeper-into-darkness",
             "oblivion-s-quests:a-dark-temptation",
+            "chaos-lord-s-quest:defeat-the-13th-lord-of-chaos",
+            "final-showdown-s-quest:the-final-showdown",
+            "death-s-dealer-s-quests:arrive-in-the-underworld",
+            "death-s-dealer-s-quests:search-for-death-s-lair",
+            "death-s-dealer-s-quests:find-your-way-to-death-s-lair",
+            "death-s-dealer-s-quests:beat-death",
+            "artix-s-quests:reforging-the-blinding-light",
+            "artix-s-quests:secret-order-of-undead-slayers",
+            "artix-s-quests:essential-essences",
+            "artix-s-quests:bust-some-dust",
+            "artix-s-quests:a-loyal-follower",
+            "artix-s-quests:mine-crafting",
+            "artix-s-quests:celestial-copper-enchantment",
+            "artix-s-quests:sanctified-silver-enchantment",
+            "artix-s-quests:blessed-barium-enchantment",
+            "artix-s-quests:celestial-copper-of-destiny",
+            "artix-s-quests:basic-weapon-kit-construction",
+            "artix-s-quests:advanced-weapon-kit-construction",
+            "artix-s-quests:ultimate-weapon-kit-construction",
+            "artix-s-quests:finding-fragments-with-blinding-mace",
+            "artix-s-quests:finding-fragments-with-blinding-bow",
+            "artix-s-quests:finding-fragments-with-blinding-blade",
+            "artix-s-quests:the-blinding-light-of-destiny",
+            "confrontation-s-quests:build-drakath-s-armor",
+            "chaorrupted-time-travel-fairy-s-quest:ascended-drakath-gear",
+            "oblivion-s-quests:sacrifice-alod-version",
+            "oblivion-s-quests:sacrifice-blod-version",
             "oblivion-s-quests:cyber-void-paladin-set"
           ],
           "questFinishIds": [
@@ -36005,6 +36036,33 @@
             "nulgath-s-quests:contract-with-the-abyss",
             "oblivion-s-quests:deeper-and-deeper-into-darkness",
             "oblivion-s-quests:a-dark-temptation",
+            "chaos-lord-s-quest:defeat-the-13th-lord-of-chaos",
+            "final-showdown-s-quest:the-final-showdown",
+            "death-s-dealer-s-quests:arrive-in-the-underworld",
+            "death-s-dealer-s-quests:search-for-death-s-lair",
+            "death-s-dealer-s-quests:find-your-way-to-death-s-lair",
+            "death-s-dealer-s-quests:beat-death",
+            "artix-s-quests:reforging-the-blinding-light",
+            "artix-s-quests:secret-order-of-undead-slayers",
+            "artix-s-quests:essential-essences",
+            "artix-s-quests:bust-some-dust",
+            "artix-s-quests:a-loyal-follower",
+            "artix-s-quests:mine-crafting",
+            "artix-s-quests:celestial-copper-enchantment",
+            "artix-s-quests:sanctified-silver-enchantment",
+            "artix-s-quests:blessed-barium-enchantment",
+            "artix-s-quests:celestial-copper-of-destiny",
+            "artix-s-quests:basic-weapon-kit-construction",
+            "artix-s-quests:advanced-weapon-kit-construction",
+            "artix-s-quests:ultimate-weapon-kit-construction",
+            "artix-s-quests:finding-fragments-with-blinding-mace",
+            "artix-s-quests:finding-fragments-with-blinding-bow",
+            "artix-s-quests:finding-fragments-with-blinding-blade",
+            "artix-s-quests:the-blinding-light-of-destiny",
+            "confrontation-s-quests:build-drakath-s-armor",
+            "chaorrupted-time-travel-fairy-s-quest:ascended-drakath-gear",
+            "oblivion-s-quests:sacrifice-alod-version",
+            "oblivion-s-quests:sacrifice-blod-version",
             "oblivion-s-quests:cyber-void-paladin-set"
           ],
           "questFinishIds": [
@@ -36372,6 +36430,33 @@
             "nulgath-s-quests:contract-with-the-abyss",
             "oblivion-s-quests:deeper-and-deeper-into-darkness",
             "oblivion-s-quests:a-dark-temptation",
+            "chaos-lord-s-quest:defeat-the-13th-lord-of-chaos",
+            "final-showdown-s-quest:the-final-showdown",
+            "death-s-dealer-s-quests:arrive-in-the-underworld",
+            "death-s-dealer-s-quests:search-for-death-s-lair",
+            "death-s-dealer-s-quests:find-your-way-to-death-s-lair",
+            "death-s-dealer-s-quests:beat-death",
+            "artix-s-quests:reforging-the-blinding-light",
+            "artix-s-quests:secret-order-of-undead-slayers",
+            "artix-s-quests:essential-essences",
+            "artix-s-quests:bust-some-dust",
+            "artix-s-quests:a-loyal-follower",
+            "artix-s-quests:mine-crafting",
+            "artix-s-quests:celestial-copper-enchantment",
+            "artix-s-quests:sanctified-silver-enchantment",
+            "artix-s-quests:blessed-barium-enchantment",
+            "artix-s-quests:celestial-copper-of-destiny",
+            "artix-s-quests:basic-weapon-kit-construction",
+            "artix-s-quests:advanced-weapon-kit-construction",
+            "artix-s-quests:ultimate-weapon-kit-construction",
+            "artix-s-quests:finding-fragments-with-blinding-mace",
+            "artix-s-quests:finding-fragments-with-blinding-bow",
+            "artix-s-quests:finding-fragments-with-blinding-blade",
+            "artix-s-quests:the-blinding-light-of-destiny",
+            "confrontation-s-quests:build-drakath-s-armor",
+            "chaorrupted-time-travel-fairy-s-quest:ascended-drakath-gear",
+            "oblivion-s-quests:sacrifice-alod-version",
+            "oblivion-s-quests:sacrifice-blod-version",
             "oblivion-s-quests:cyber-void-paladin-set"
           ],
           "questFinishIds": [
@@ -36728,6 +36813,33 @@
             "nulgath-s-quests:contract-with-the-abyss",
             "oblivion-s-quests:deeper-and-deeper-into-darkness",
             "oblivion-s-quests:a-dark-temptation",
+            "chaos-lord-s-quest:defeat-the-13th-lord-of-chaos",
+            "final-showdown-s-quest:the-final-showdown",
+            "death-s-dealer-s-quests:arrive-in-the-underworld",
+            "death-s-dealer-s-quests:search-for-death-s-lair",
+            "death-s-dealer-s-quests:find-your-way-to-death-s-lair",
+            "death-s-dealer-s-quests:beat-death",
+            "artix-s-quests:reforging-the-blinding-light",
+            "artix-s-quests:secret-order-of-undead-slayers",
+            "artix-s-quests:essential-essences",
+            "artix-s-quests:bust-some-dust",
+            "artix-s-quests:a-loyal-follower",
+            "artix-s-quests:mine-crafting",
+            "artix-s-quests:celestial-copper-enchantment",
+            "artix-s-quests:sanctified-silver-enchantment",
+            "artix-s-quests:blessed-barium-enchantment",
+            "artix-s-quests:celestial-copper-of-destiny",
+            "artix-s-quests:basic-weapon-kit-construction",
+            "artix-s-quests:advanced-weapon-kit-construction",
+            "artix-s-quests:ultimate-weapon-kit-construction",
+            "artix-s-quests:finding-fragments-with-blinding-mace",
+            "artix-s-quests:finding-fragments-with-blinding-bow",
+            "artix-s-quests:finding-fragments-with-blinding-blade",
+            "artix-s-quests:the-blinding-light-of-destiny",
+            "confrontation-s-quests:build-drakath-s-armor",
+            "chaorrupted-time-travel-fairy-s-quest:ascended-drakath-gear",
+            "oblivion-s-quests:sacrifice-alod-version",
+            "oblivion-s-quests:sacrifice-blod-version",
             "oblivion-s-quests:cyber-void-paladin-set"
           ],
           "questFinishIds": [
@@ -41590,7 +41702,7 @@
           "purchase": null,
           "location": "N/A",
           "description": "Nơi nhận theo Wiki; chưa tách và xác minh từng tuyến.",
-          "mapCommand": null,
+          "mapCommand": "/join tercessuinotlim",
           "steps": [],
           "materialTree": null,
           "sources": [
@@ -41683,18 +41795,19 @@
           ],
           "insigniaSources": [],
           "questWorkflowIds": [
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
           ],
           "questFinishIds": [
-            "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
           ],
           "questOptions": [
             {
               "name": "Twisted Items of Nulgath",
-              "questId": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
+              "questId": "nulgath-s-quests:twisted-items-of-nulgath",
               "workflowIds": [
-                "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
+                "nulgath-s-quests:twisted-items-of-nulgath"
               ]
             },
             {
@@ -41706,6 +41819,7 @@
             }
           ],
           "operationGroups": [],
+          "npc": "Nulgath (NPC)",
           "materialTotalsComplete": false
         }
       ],
@@ -45878,7 +45992,8 @@
           ],
           "questFinishIds": [
             "nulgath-s-quests:demanding-items-of-nulgath",
-            "sword-of-nulgath-s-quests:demanding-items-of-nulgath"
+            "sword-of-nulgath-s-quests:demanding-items-of-nulgath",
+            "nulgath-s-quests:demanding-items-of-nulgath"
           ],
           "operationGroups": [],
           "materialTotalsComplete": false
@@ -80904,9 +81019,102 @@
             }
           ],
           "insigniaSources": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "nulgath-s-quests:contract-with-the-abyss",
+            "chaos-lord-s-quest:defeat-the-13th-lord-of-chaos",
+            "final-showdown-s-quest:the-final-showdown",
+            "death-s-dealer-s-quests:arrive-in-the-underworld",
+            "death-s-dealer-s-quests:search-for-death-s-lair",
+            "death-s-dealer-s-quests:find-your-way-to-death-s-lair",
+            "death-s-dealer-s-quests:beat-death",
+            "artix-s-quests:reforging-the-blinding-light",
+            "artix-s-quests:secret-order-of-undead-slayers",
+            "artix-s-quests:essential-essences",
+            "artix-s-quests:bust-some-dust",
+            "artix-s-quests:a-loyal-follower",
+            "artix-s-quests:mine-crafting",
+            "artix-s-quests:celestial-copper-enchantment",
+            "artix-s-quests:sanctified-silver-enchantment",
+            "artix-s-quests:blessed-barium-enchantment",
+            "artix-s-quests:celestial-copper-of-destiny",
+            "artix-s-quests:basic-weapon-kit-construction",
+            "artix-s-quests:advanced-weapon-kit-construction",
+            "artix-s-quests:ultimate-weapon-kit-construction",
+            "artix-s-quests:finding-fragments-with-blinding-mace",
+            "artix-s-quests:finding-fragments-with-blinding-bow",
+            "artix-s-quests:finding-fragments-with-blinding-blade",
+            "artix-s-quests:the-blinding-light-of-destiny",
+            "confrontation-s-quests:build-drakath-s-armor",
+            "chaorrupted-time-travel-fairy-s-quest:ascended-drakath-gear",
+            "oblivion-s-quests:sacrifice-alod-version",
+            "oblivion-s-quests:sacrifice-blod-version"
+          ],
+          "questFinishIds": [
+            "oblivion-s-quests:sacrifice-alod-version",
+            "oblivion-s-quests:sacrifice-blod-version"
+          ],
+          "questOptions": [
+            {
+              "name": "Sacrifice (ALoD Version)",
+              "questId": "oblivion-s-quests:sacrifice-alod-version",
+              "workflowIds": [
+                "nulgath-s-quests:contract-with-the-abyss",
+                "chaos-lord-s-quest:defeat-the-13th-lord-of-chaos",
+                "final-showdown-s-quest:the-final-showdown",
+                "death-s-dealer-s-quests:arrive-in-the-underworld",
+                "death-s-dealer-s-quests:search-for-death-s-lair",
+                "death-s-dealer-s-quests:find-your-way-to-death-s-lair",
+                "death-s-dealer-s-quests:beat-death",
+                "artix-s-quests:reforging-the-blinding-light",
+                "artix-s-quests:secret-order-of-undead-slayers",
+                "artix-s-quests:essential-essences",
+                "artix-s-quests:bust-some-dust",
+                "artix-s-quests:a-loyal-follower",
+                "artix-s-quests:mine-crafting",
+                "artix-s-quests:celestial-copper-enchantment",
+                "artix-s-quests:sanctified-silver-enchantment",
+                "artix-s-quests:blessed-barium-enchantment",
+                "artix-s-quests:celestial-copper-of-destiny",
+                "artix-s-quests:basic-weapon-kit-construction",
+                "artix-s-quests:advanced-weapon-kit-construction",
+                "artix-s-quests:ultimate-weapon-kit-construction",
+                "artix-s-quests:finding-fragments-with-blinding-mace",
+                "artix-s-quests:finding-fragments-with-blinding-bow",
+                "artix-s-quests:finding-fragments-with-blinding-blade",
+                "artix-s-quests:the-blinding-light-of-destiny",
+                "confrontation-s-quests:build-drakath-s-armor",
+                "chaorrupted-time-travel-fairy-s-quest:ascended-drakath-gear",
+                "oblivion-s-quests:sacrifice-alod-version"
+              ]
+            },
+            {
+              "name": "Sacrifice (BLoD Version)",
+              "questId": "oblivion-s-quests:sacrifice-blod-version",
+              "workflowIds": [
+                "nulgath-s-quests:contract-with-the-abyss",
+                "artix-s-quests:reforging-the-blinding-light",
+                "artix-s-quests:secret-order-of-undead-slayers",
+                "artix-s-quests:essential-essences",
+                "artix-s-quests:bust-some-dust",
+                "artix-s-quests:a-loyal-follower",
+                "artix-s-quests:mine-crafting",
+                "artix-s-quests:celestial-copper-enchantment",
+                "artix-s-quests:sanctified-silver-enchantment",
+                "artix-s-quests:blessed-barium-enchantment",
+                "artix-s-quests:celestial-copper-of-destiny",
+                "artix-s-quests:basic-weapon-kit-construction",
+                "artix-s-quests:advanced-weapon-kit-construction",
+                "artix-s-quests:ultimate-weapon-kit-construction",
+                "artix-s-quests:finding-fragments-with-blinding-mace",
+                "artix-s-quests:finding-fragments-with-blinding-bow",
+                "artix-s-quests:finding-fragments-with-blinding-blade",
+                "artix-s-quests:the-blinding-light-of-destiny",
+                "oblivion-s-quests:sacrifice-blod-version"
+              ]
+            }
+          ],
           "operationGroups": [],
+          "npc": "Oblivion",
           "materialTotalsComplete": false
         }
       ],
@@ -105020,6 +105228,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
@@ -105242,6 +105451,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
@@ -105466,6 +105676,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
@@ -105688,6 +105899,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
@@ -105910,6 +106122,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
@@ -106131,6 +106344,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory"
           ],
@@ -106429,6 +106643,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
@@ -106731,6 +106946,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
@@ -107027,6 +107243,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
@@ -107307,6 +107524,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
@@ -107590,6 +107808,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
@@ -107872,6 +108091,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
@@ -108151,6 +108371,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
@@ -108428,6 +108649,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
@@ -108710,6 +108932,7 @@
             "lae-s-quests:in-the-fiend-s-shadow",
             "nulgath-s-quests:contract-with-the-abyss",
             "nulgath-s-quests:juggernaut-items-of-nulgath",
+            "nulgath-s-quests:twisted-items-of-nulgath",
             "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
             "lae-s-quests:fiend-s-purgatory",
             "lae-s-quests:summoning-and-stuff",
@@ -123302,7 +123525,7 @@
           "sourceDocument": "equipment-set-guide",
           "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
           "sourceUrl": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit",
-          "sourceLine": 4340,
+          "sourceLine": 4341,
           "sourceChapter": "Nation",
           "goalName": "Evolved Fiend Talons",
           "recordKind": "equipment",
@@ -170911,7 +171134,7 @@
           "regionId": null,
           "method": "Quest",
           "location": "8-Bit Battleon Town · Dage's House · Dark Birthday · Underworld",
-          "mapCommand": null,
+          "mapCommand": "/join underworld",
           "steps": [],
           "sources": [
             {
@@ -170947,9 +171170,45 @@
           ],
           "insigniaSources": [],
           "guidePaths": [],
-          "questWorkflowIds": [],
-          "questFinishIds": [],
+          "questWorkflowIds": [
+            "dage-the-evil-s-quests:the-soul-forge-hammer-unlock-soul-forge",
+            "dage-the-evil-s-quests:obsidian-mining",
+            "dage-the-evil-s-quests:soul-forgery",
+            "dage-the-evil-s-quests:undead-legion-member-special"
+          ],
+          "questFinishIds": [
+            "dage-the-evil-s-quests:obsidian-mining",
+            "dage-the-evil-s-quests:soul-forgery",
+            "dage-the-evil-s-quests:undead-legion-member-special"
+          ],
+          "questOptions": [
+            {
+              "name": "Obsidian Mining",
+              "questId": "dage-the-evil-s-quests:obsidian-mining",
+              "workflowIds": [
+                "dage-the-evil-s-quests:the-soul-forge-hammer-unlock-soul-forge",
+                "dage-the-evil-s-quests:obsidian-mining"
+              ]
+            },
+            {
+              "name": "Soul Forgery",
+              "questId": "dage-the-evil-s-quests:soul-forgery",
+              "workflowIds": [
+                "dage-the-evil-s-quests:the-soul-forge-hammer-unlock-soul-forge",
+                "dage-the-evil-s-quests:soul-forgery"
+              ]
+            },
+            {
+              "name": "Undead Legion Member Special",
+              "questId": "dage-the-evil-s-quests:undead-legion-member-special",
+              "workflowIds": [
+                "dage-the-evil-s-quests:the-soul-forge-hammer-unlock-soul-forge",
+                "dage-the-evil-s-quests:undead-legion-member-special"
+              ]
+            }
+          ],
           "operationGroups": [],
+          "npc": "Dage the Evil (NPC)",
           "materialTotalsComplete": false
         }
       ],

@@ -1,3 +1,5 @@
+import fs from "node:fs";
+
 // Only exact canonical names in the user-supplied, chapter-filtered guide
 // assign a primary group. Parentheticals are retained; no prefix/name guessing.
 export function normalizeFactionGoalName(value) {
@@ -11,6 +13,8 @@ export function normalizeFactionGoalName(value) {
 
 export function assignFarmGroups(items, goals, manifest, aliases = [], mappings = [], legacy = {}, ultraEvidence = [], collectionRecords = []) {
   const collectionById = new Map(collectionRecords.map(record=>[record.id,record]));
+  const collectionGuidePath = "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt";
+  const collectionGuideLines = collectionRecords.length ? fs.readFileSync(collectionGuidePath, "utf8").split(/\r?\n/) : [];
   const collectionGroups={Hollowborn:"hollowborn",Nation:"nation",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Other Items":null};
   const groups = new Set(manifest.groups.map((group) => group.id));
   const aggregateKinds = new Set([
@@ -40,8 +44,11 @@ export function assignFarmGroups(items, goals, manifest, aliases = [], mappings 
     const collection = collectionById.get(item.id);
     if(collection && !explicit && !ultra){
       const groupId=collectionGroups[collection.collectionEvidence.sourceChapter];
+      const [start, end] = collection.collectionEvidence.guideLines;
+      const offset = collectionGuideLines.slice(start - 1, end).findIndex(line => line.trim());
+      if (groupId && offset < 0) throw Error("Missing collection guide evidence: " + item.id);
       item.primaryGroupId=groupId || null;item.groupIds=groupId?[groupId]:[];item.groupStatus=groupId?"verified":"unknown";
-      item.groupEvidence=groupId?[{groupId,status:"verified",sourceDocument:"equipment-set-guide",sourceFile:"content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",sourceUrl:collection.provenance[0].sourceUrl,sourceLine:collection.collectionEvidence.guideLines[0],sourceChapter:collection.collectionEvidence.sourceChapter,goalName:item.name,recordKind:"equipment",evidenceText:collection.collectionEvidence.setId,matchKind:"exact-collection-member"}]:[];
+      item.groupEvidence=groupId?[{groupId,status:"verified",sourceDocument:"equipment-set-guide",sourceFile:collectionGuidePath,sourceUrl:collection.provenance[0].sourceUrl,sourceLine:start+offset,sourceChapter:collection.collectionEvidence.sourceChapter,goalName:item.name,recordKind:"equipment",evidenceText:collection.collectionEvidence.setId,matchKind:"exact-collection-member"}]:[];
       continue;
     }
     if (ultra) {

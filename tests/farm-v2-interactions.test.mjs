@@ -440,6 +440,19 @@ test("VHL modes preserve Crystal costs and internally navigate to Ultra material
   assert.match(host.querySelector('[aria-label="Nguyên liệu đang chọn"]').textContent,/2/);
   assert.ok(window.location.search.includes('farm-material='));
 });
+test("Reaper's Oath renders and switches its evidenced Quest alternatives",async()=>{
+  await navigate("/farm/item/reaper-s-oath?farm-tab=guide");
+  await click(tab("Hướng dẫn Farm"));
+  for(const name of ["Obsidian Mining","Soul Forgery","Undead Legion Member Special"]){
+    const option=button('[aria-label="Quest nhận thưởng"] button',name);
+    await click(option);
+    assert.equal(option.getAttribute("aria-pressed"),"true");
+    const panel=host.querySelector('[aria-label="Quest đang chọn"]');
+    assert.match(panel.textContent,new RegExp(name));
+    assert.match(panel.textContent,/Reaper's Oath/);
+    assert.ok(panel.querySelector('tbody tr'),"selected Quest shows its actual required materials");
+  }
+});
 test("Legion Fealty final ingredients navigate to the selected Spellscroll source",async()=>{
   await navigate("/farm?item=legion-revenant-class");await click(tab("Hướng dẫn Farm"));
   await click(host.querySelectorAll('.fv31-step-numbers button')[3]);

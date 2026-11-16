@@ -24289,6 +24289,70 @@
       "unresolvedDependencies": [],
       "mapEvidence": []
     },
+    "nulgath-s-quests:twisted-items-of-nulgath": {
+      "id": "nulgath-s-quests:twisted-items-of-nulgath",
+      "quest": "Twisted Items of Nulgath",
+      "npc": "Nulgath (NPC)",
+      "location": "Tercessuinotlim",
+      "acceptanceMaps": [
+        "/join tercessuinotlim"
+      ],
+      "map": "/join tercessuinotlim",
+      "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+      "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
+      "preconditions": [
+        "Must have completed the 'Beyond the Portal' quest to access this location."
+      ],
+      "requirements": [],
+      "ownedItems": [],
+      "rows": [
+        {
+          "name": "Totem of Nulgath",
+          "itemId": "totem-of-nulgath",
+          "quantity": 3,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+        }
+      ],
+      "reward": "",
+      "fixedRewards": [],
+      "rewardChoices": [
+        {
+          "name": "DragonFire of Nulgath",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/dragonfire-of-nulgath"
+        },
+        {
+          "name": "Crimson Face Plate of Nulgath",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/crimson-face-plate-of-nulgath"
+        },
+        {
+          "name": "Crimson Plate of Nulgath",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/crimson-plate-of-nulgath"
+        }
+      ],
+      "randomRewards": [],
+      "randomChoiceRewards": [],
+      "repeatability": null,
+      "dependencies": [],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [
+        {
+          "name": "Beyond the Portal",
+          "requirement": "Must have completed the 'Beyond the Portal' quest to access this location."
+        }
+      ],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/tercessuinotlim",
+          "sourceFile": "content-sources/farm/external-guide-evidence/wiki/tercessuinotlim.html",
+          "sourceHash": "2178ac5be87c36fbaa3a5005573de9f1c9006a23a4c21f48c35f1dc131074fee"
+        }
+      ]
+    },
     "sword-of-nulgath-s-quests:twisted-items-of-nulgath": {
       "id": "sword-of-nulgath-s-quests:twisted-items-of-nulgath",
       "quest": "Twisted Items of Nulgath",
@@ -24432,7 +24496,10 @@
       "dependencies": [
         "nulgath-s-quests:contract-with-the-abyss",
         "oblivion-s-quests:deeper-and-deeper-into-darkness",
-        "oblivion-s-quests:a-dark-temptation"
+        "oblivion-s-quests:a-dark-temptation",
+        "chaorrupted-time-travel-fairy-s-quest:ascended-drakath-gear",
+        "oblivion-s-quests:sacrifice-alod-version",
+        "oblivion-s-quests:sacrifice-blod-version"
       ],
       "dependencyChoices": [],
       "unresolvedDependencies": [
@@ -29443,6 +29510,246 @@
       "unresolvedDependencies": [],
       "mapEvidence": []
     },
+    "oblivion-s-quests:sacrifice-alod-version": {
+      "id": "oblivion-s-quests:sacrifice-alod-version",
+      "quest": "Sacrifice (ALoD Version)",
+      "npc": "Oblivion",
+      "location": "Tercessuinotlim",
+      "acceptanceMaps": [
+        "/join tercessuinotlim"
+      ],
+      "map": "/join tercessuinotlim",
+      "source": "https://aqwwiki.wikidot.com/oblivion-s-quests",
+      "sourceHash": "6ed4155f67d1929e6eeacec02b6d9d693da7bc08bf4e621566a0438feed062f8",
+      "preconditions": [
+        "Must have completed the 'Contract With the Abyss' quest.",
+        "Must have Ascended Light of Destiny in your inventory.",
+        "Must have completed the 'Beyond the Portal' quest to access this location."
+      ],
+      "requirements": [],
+      "ownedItems": [
+        {
+          "name": "Ascended Light of Destiny",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ascended-light-of-destiny"
+        }
+      ],
+      "rows": [
+        {
+          "name": "Tainted Gem",
+          "itemId": "tainted-gem",
+          "quantity": 40,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Dark Crystal Shard",
+          "itemId": "dark-crystal-shard",
+          "quantity": 40,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Diamond of Nulgath",
+          "itemId": "diamond-of-nulgath",
+          "quantity": 40,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Totem of Nulgath",
+          "itemId": "totem-of-nulgath",
+          "quantity": 1,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Gem of Nulgath",
+          "itemId": "gem-of-nulgath",
+          "quantity": 20,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Void Aura",
+          "itemId": "void-aura",
+          "quantity": 6,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Emblem of Nulgath",
+          "itemId": "emblem-of-nulgath",
+          "quantity": 3,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        }
+      ],
+      "reward": "Void Light of Destiny ×1",
+      "fixedRewards": [
+        {
+          "name": "Void Light of Destiny",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-light-of-destiny"
+        }
+      ],
+      "rewardChoices": [],
+      "randomRewards": [],
+      "randomChoiceRewards": [],
+      "repeatability": null,
+      "dependencies": [
+        "nulgath-s-quests:contract-with-the-abyss",
+        "chaorrupted-time-travel-fairy-s-quest:ascended-drakath-gear"
+      ],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [
+        {
+          "name": "Beyond the Portal",
+          "requirement": "Must have completed the 'Beyond the Portal' quest to access this location."
+        }
+      ],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/tercessuinotlim",
+          "sourceFile": "content-sources/farm/external-guide-evidence/wiki/tercessuinotlim.html",
+          "sourceHash": "2178ac5be87c36fbaa3a5005573de9f1c9006a23a4c21f48c35f1dc131074fee"
+        }
+      ]
+    },
+    "oblivion-s-quests:sacrifice-blod-version": {
+      "id": "oblivion-s-quests:sacrifice-blod-version",
+      "quest": "Sacrifice (BLoD Version)",
+      "npc": "Oblivion",
+      "location": "Tercessuinotlim",
+      "acceptanceMaps": [
+        "/join tercessuinotlim"
+      ],
+      "map": "/join tercessuinotlim",
+      "source": "https://aqwwiki.wikidot.com/oblivion-s-quests",
+      "sourceHash": "6ed4155f67d1929e6eeacec02b6d9d693da7bc08bf4e621566a0438feed062f8",
+      "preconditions": [
+        "Must have completed the 'Contract With the Abyss' quest.",
+        "Must have Blinding Light of Destiny (Axe) in your inventory.",
+        "Must have completed the 'Beyond the Portal' quest to access this location."
+      ],
+      "requirements": [],
+      "ownedItems": [
+        {
+          "name": "Blinding Light of Destiny (Axe)",
+          "wikiUrl": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
+        }
+      ],
+      "rows": [
+        {
+          "name": "Tainted Gem",
+          "itemId": "tainted-gem",
+          "quantity": 40,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Dark Crystal Shard",
+          "itemId": "dark-crystal-shard",
+          "quantity": 40,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Diamond of Nulgath",
+          "itemId": "diamond-of-nulgath",
+          "quantity": 40,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Totem of Nulgath",
+          "itemId": "totem-of-nulgath",
+          "quantity": 1,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Gem of Nulgath",
+          "itemId": "gem-of-nulgath",
+          "quantity": 20,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Void Aura",
+          "itemId": "void-aura",
+          "quantity": 6,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        },
+        {
+          "name": "Emblem of Nulgath",
+          "itemId": "emblem-of-nulgath",
+          "quantity": 3,
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+        }
+      ],
+      "reward": "Void Light of Destiny ×1",
+      "fixedRewards": [
+        {
+          "name": "Void Light of Destiny",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-light-of-destiny"
+        }
+      ],
+      "rewardChoices": [],
+      "randomRewards": [],
+      "randomChoiceRewards": [],
+      "repeatability": null,
+      "dependencies": [
+        "nulgath-s-quests:contract-with-the-abyss",
+        "artix-s-quests:reforging-the-blinding-light",
+        "artix-s-quests:secret-order-of-undead-slayers",
+        "artix-s-quests:essential-essences",
+        "artix-s-quests:bust-some-dust",
+        "artix-s-quests:a-loyal-follower",
+        "artix-s-quests:mine-crafting",
+        "artix-s-quests:celestial-copper-enchantment",
+        "artix-s-quests:sanctified-silver-enchantment",
+        "artix-s-quests:blessed-barium-enchantment",
+        "artix-s-quests:celestial-copper-of-destiny",
+        "artix-s-quests:basic-weapon-kit-construction",
+        "artix-s-quests:advanced-weapon-kit-construction",
+        "artix-s-quests:ultimate-weapon-kit-construction",
+        "artix-s-quests:finding-fragments-with-blinding-mace",
+        "artix-s-quests:finding-fragments-with-blinding-bow",
+        "artix-s-quests:finding-fragments-with-blinding-blade",
+        "artix-s-quests:the-blinding-light-of-destiny"
+      ],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [
+        {
+          "name": "Beyond the Portal",
+          "requirement": "Must have completed the 'Beyond the Portal' quest to access this location."
+        }
+      ],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/tercessuinotlim",
+          "sourceFile": "content-sources/farm/external-guide-evidence/wiki/tercessuinotlim.html",
+          "sourceHash": "2178ac5be87c36fbaa3a5005573de9f1c9006a23a4c21f48c35f1dc131074fee"
+        }
+      ]
+    },
     "zee-s-quest:void-spartan": {
       "id": "zee-s-quest:void-spartan",
       "quest": "Void Spartan",
@@ -30719,6 +31026,7 @@
       "dependencies": [
         "lae-s-quests:in-the-fiend-s-shadow",
         "nulgath-s-quests:juggernaut-items-of-nulgath",
+        "nulgath-s-quests:twisted-items-of-nulgath",
         "sword-of-nulgath-s-quests:twisted-items-of-nulgath"
       ],
       "dependencyChoices": [],
@@ -36118,6 +36426,150 @@
         }
       ]
     },
+    "dage-the-evil-s-quests:obsidian-mining": {
+      "id": "dage-the-evil-s-quests:obsidian-mining",
+      "quest": "Obsidian Mining",
+      "npc": "Dage the Evil (NPC)",
+      "location": "8-Bit Battleon Town · Dage's House · Dark Birthday · Legion Castle · Underworld",
+      "acceptanceMaps": [
+        "/join underworld"
+      ],
+      "map": "/join underworld",
+      "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+      "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+      "preconditions": [
+        "Must have Soulforge Hammer in your inventory."
+      ],
+      "requirements": [],
+      "ownedItems": [
+        {
+          "name": "Soulforge Hammer",
+          "wikiUrl": "https://aqwwiki.wikidot.com/soulforge-hammer"
+        }
+      ],
+      "rows": [
+        {
+          "name": "Obsidian Deposit",
+          "itemId": "obsidian-deposit",
+          "quantity": 10,
+          "monster": "Burning Souleater (Monster)\nCrystallized Living Fire\nFireStorm Hatchling\nFire Dragon Warrior\nFire Imp (Monster) (1)\nFire Spirit (1)\nFlamethrower Dwakel\nLava Goblin\nLava Golem\nLava Mage (Version 1)\nLiving Fire (Level 31)\nMafic Dragon\nObsidian Golem\nOnyx Lava Dragon\nRed Bird\nRed Dragon (Monster)\nScoria Serpent\nShurpu Ring Guardian\nSkeletal Fire Mage\nSoultaker\nSsikari (Level 39)\nSulfur Imp\nTainted Phoenix\nVolcanic Ash Imp\nVolcanic Maggot\nXan (1)\nZellare",
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+        }
+      ],
+      "reward": "",
+      "fixedRewards": [],
+      "rewardChoices": [],
+      "randomRewards": [
+        {
+          "name": "Reaper's Oath",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/reaper-s-oath"
+        }
+      ],
+      "randomChoiceRewards": [
+        {
+          "name": "Obsidian Rock",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/obsidian-rock"
+        },
+        {
+          "name": "Obsidian Rock",
+          "quantity": 3,
+          "wikiUrl": "https://aqwwiki.wikidot.com/obsidian-rock"
+        },
+        {
+          "name": "Obsidian Rock",
+          "quantity": 5,
+          "wikiUrl": "https://aqwwiki.wikidot.com/obsidian-rock"
+        }
+      ],
+      "repeatability": null,
+      "dependencies": [
+        "dage-the-evil-s-quests:the-soul-forge-hammer-unlock-soul-forge"
+      ],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/underworld",
+          "sourceFile": "content-sources/farm/refinement/wiki/underworld.html",
+          "sourceHash": "f3ec79d1d1a40f19d062d1d786c2615681b8017d2278e07aacecb969040043c8"
+        }
+      ]
+    },
+    "dage-the-evil-s-quests:soul-forgery": {
+      "id": "dage-the-evil-s-quests:soul-forgery",
+      "quest": "Soul Forgery",
+      "npc": "Dage the Evil (NPC)",
+      "location": "8-Bit Battleon Town · Dage's House · Dark Birthday · Legion Castle · Underworld",
+      "acceptanceMaps": [
+        "/join underworld"
+      ],
+      "map": "/join underworld",
+      "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
+      "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
+      "preconditions": [
+        "Must have Soulforge Hammer in your inventory."
+      ],
+      "requirements": [],
+      "ownedItems": [
+        {
+          "name": "Soulforge Hammer",
+          "wikiUrl": "https://aqwwiki.wikidot.com/soulforge-hammer"
+        }
+      ],
+      "rows": [
+        {
+          "name": "Shard of a Soul",
+          "itemId": "shard-of-a-soul",
+          "quantity": 10,
+          "monster": "Ghost Monsters\nUndead and Zombie Monsters",
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
+        }
+      ],
+      "reward": "",
+      "fixedRewards": [],
+      "rewardChoices": [],
+      "randomRewards": [
+        {
+          "name": "Reaper's Oath",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/reaper-s-oath"
+        }
+      ],
+      "randomChoiceRewards": [
+        {
+          "name": "Solidified Soul",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/solidified-soul"
+        },
+        {
+          "name": "Solidified Soul",
+          "quantity": 3,
+          "wikiUrl": "https://aqwwiki.wikidot.com/solidified-soul"
+        },
+        {
+          "name": "Solidified Soul",
+          "quantity": 5,
+          "wikiUrl": "https://aqwwiki.wikidot.com/solidified-soul"
+        }
+      ],
+      "repeatability": null,
+      "dependencies": [
+        "dage-the-evil-s-quests:the-soul-forge-hammer-unlock-soul-forge"
+      ],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/underworld",
+          "sourceFile": "content-sources/farm/refinement/wiki/underworld.html",
+          "sourceHash": "f3ec79d1d1a40f19d062d1d786c2615681b8017d2278e07aacecb969040043c8"
+        }
+      ]
+    },
     "dage-the-evil-s-quests:image-of-dage": {
       "id": "dage-the-evil-s-quests:image-of-dage",
       "quest": "Image of Dage",
@@ -38835,78 +39287,6 @@
           "url": "https://aqwwiki.wikidot.com/ultra-dage",
           "sourceFile": "content-sources/farm/external-guide-evidence/wiki/ultra-dage.html",
           "sourceHash": "744232ed7ba1df1ee61caab9be85566eed87ae4783f0f7eadea3dc2e3341f805"
-        }
-      ]
-    },
-    "dage-the-evil-s-quests:obsidian-mining": {
-      "id": "dage-the-evil-s-quests:obsidian-mining",
-      "quest": "Obsidian Mining",
-      "npc": "Dage the Evil (NPC)",
-      "location": "8-Bit Battleon Town · Dage's House · Dark Birthday · Legion Castle · Underworld",
-      "acceptanceMaps": [
-        "/join underworld"
-      ],
-      "map": "/join underworld",
-      "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
-      "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
-      "preconditions": [
-        "Must have Soulforge Hammer in your inventory."
-      ],
-      "requirements": [],
-      "ownedItems": [
-        {
-          "name": "Soulforge Hammer",
-          "wikiUrl": "https://aqwwiki.wikidot.com/soulforge-hammer"
-        }
-      ],
-      "rows": [
-        {
-          "name": "Obsidian Deposit",
-          "itemId": "obsidian-deposit",
-          "quantity": 10,
-          "monster": "Burning Souleater (Monster)\nCrystallized Living Fire\nFireStorm Hatchling\nFire Dragon Warrior\nFire Imp (Monster) (1)\nFire Spirit (1)\nFlamethrower Dwakel\nLava Goblin\nLava Golem\nLava Mage (Version 1)\nLiving Fire (Level 31)\nMafic Dragon\nObsidian Golem\nOnyx Lava Dragon\nRed Bird\nRed Dragon (Monster)\nScoria Serpent\nShurpu Ring Guardian\nSkeletal Fire Mage\nSoultaker\nSsikari (Level 39)\nSulfur Imp\nTainted Phoenix\nVolcanic Ash Imp\nVolcanic Maggot\nXan (1)\nZellare",
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
-        }
-      ],
-      "reward": "",
-      "fixedRewards": [],
-      "rewardChoices": [],
-      "randomRewards": [
-        {
-          "name": "Reaper's Oath",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/reaper-s-oath"
-        }
-      ],
-      "randomChoiceRewards": [
-        {
-          "name": "Obsidian Rock",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/obsidian-rock"
-        },
-        {
-          "name": "Obsidian Rock",
-          "quantity": 3,
-          "wikiUrl": "https://aqwwiki.wikidot.com/obsidian-rock"
-        },
-        {
-          "name": "Obsidian Rock",
-          "quantity": 5,
-          "wikiUrl": "https://aqwwiki.wikidot.com/obsidian-rock"
-        }
-      ],
-      "repeatability": null,
-      "dependencies": [
-        "dage-the-evil-s-quests:the-soul-forge-hammer-unlock-soul-forge"
-      ],
-      "dependencyChoices": [],
-      "unresolvedDependencies": [],
-      "mapEvidence": [
-        {
-          "url": "https://aqwwiki.wikidot.com/underworld",
-          "sourceFile": "content-sources/farm/refinement/wiki/underworld.html",
-          "sourceHash": "f3ec79d1d1a40f19d062d1d786c2615681b8017d2278e07aacecb969040043c8"
         }
       ]
     },
@@ -44067,70 +44447,6 @@
       ],
       "mapEvidence": []
     },
-    "nulgath-s-quests:twisted-items-of-nulgath": {
-      "id": "nulgath-s-quests:twisted-items-of-nulgath",
-      "quest": "Twisted Items of Nulgath",
-      "npc": "Nulgath (NPC)",
-      "location": "Tercessuinotlim",
-      "acceptanceMaps": [
-        "/join tercessuinotlim"
-      ],
-      "map": "/join tercessuinotlim",
-      "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
-      "sourceHash": "4ad58f289ba172b19e07459b79a94906f52c4ec9bd7ae26b40dad5991def2e72",
-      "preconditions": [
-        "Must have completed the 'Beyond the Portal' quest to access this location."
-      ],
-      "requirements": [],
-      "ownedItems": [],
-      "rows": [
-        {
-          "name": "Totem of Nulgath",
-          "itemId": "totem-of-nulgath",
-          "quantity": 3,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
-        }
-      ],
-      "reward": "",
-      "fixedRewards": [],
-      "rewardChoices": [
-        {
-          "name": "DragonFire of Nulgath",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/dragonfire-of-nulgath"
-        },
-        {
-          "name": "Crimson Face Plate of Nulgath",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/crimson-face-plate-of-nulgath"
-        },
-        {
-          "name": "Crimson Plate of Nulgath",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/crimson-plate-of-nulgath"
-        }
-      ],
-      "randomRewards": [],
-      "randomChoiceRewards": [],
-      "repeatability": null,
-      "dependencies": [],
-      "dependencyChoices": [],
-      "unresolvedDependencies": [
-        {
-          "name": "Beyond the Portal",
-          "requirement": "Must have completed the 'Beyond the Portal' quest to access this location."
-        }
-      ],
-      "mapEvidence": [
-        {
-          "url": "https://aqwwiki.wikidot.com/tercessuinotlim",
-          "sourceFile": "content-sources/farm/external-guide-evidence/wiki/tercessuinotlim.html",
-          "sourceHash": "2178ac5be87c36fbaa3a5005573de9f1c9006a23a4c21f48c35f1dc131074fee"
-        }
-      ]
-    },
     "nulgath-s-quests:the-leery-contract": {
       "id": "nulgath-s-quests:the-leery-contract",
       "quest": "The Leery Contract",
@@ -49099,229 +49415,6 @@
       "unresolvedDependencies": [],
       "mapEvidence": []
     },
-    "oblivion-s-quests:sacrifice-blod-version": {
-      "id": "oblivion-s-quests:sacrifice-blod-version",
-      "quest": "Sacrifice (BLoD Version)",
-      "npc": "Oblivion",
-      "location": "Tercessuinotlim",
-      "acceptanceMaps": [
-        "/join tercessuinotlim"
-      ],
-      "map": "/join tercessuinotlim",
-      "source": "https://aqwwiki.wikidot.com/oblivion-s-quests",
-      "sourceHash": "6ed4155f67d1929e6eeacec02b6d9d693da7bc08bf4e621566a0438feed062f8",
-      "preconditions": [
-        "Must have completed the 'Contract With the Abyss' quest.",
-        "Must have Blinding Light of Destiny (Axe) in your inventory.",
-        "Must have completed the 'Beyond the Portal' quest to access this location."
-      ],
-      "requirements": [],
-      "ownedItems": [
-        {
-          "name": "Blinding Light of Destiny (Axe)",
-          "wikiUrl": "https://aqwwiki.wikidot.com/blinding-light-of-destiny-axe"
-        }
-      ],
-      "rows": [
-        {
-          "name": "Tainted Gem",
-          "itemId": "tainted-gem",
-          "quantity": 40,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Dark Crystal Shard",
-          "itemId": "dark-crystal-shard",
-          "quantity": 40,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Diamond of Nulgath",
-          "itemId": "diamond-of-nulgath",
-          "quantity": 40,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Totem of Nulgath",
-          "itemId": "totem-of-nulgath",
-          "quantity": 1,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Gem of Nulgath",
-          "itemId": "gem-of-nulgath",
-          "quantity": 20,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Void Aura",
-          "itemId": "void-aura",
-          "quantity": 6,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Emblem of Nulgath",
-          "itemId": "emblem-of-nulgath",
-          "quantity": 3,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        }
-      ],
-      "reward": "Void Light of Destiny ×1",
-      "fixedRewards": [
-        {
-          "name": "Void Light of Destiny",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/void-light-of-destiny"
-        }
-      ],
-      "rewardChoices": [],
-      "randomRewards": [],
-      "randomChoiceRewards": [],
-      "repeatability": null,
-      "dependencies": [
-        "nulgath-s-quests:contract-with-the-abyss"
-      ],
-      "dependencyChoices": [],
-      "unresolvedDependencies": [
-        {
-          "name": "Beyond the Portal",
-          "requirement": "Must have completed the 'Beyond the Portal' quest to access this location."
-        }
-      ],
-      "mapEvidence": [
-        {
-          "url": "https://aqwwiki.wikidot.com/tercessuinotlim",
-          "sourceFile": "content-sources/farm/external-guide-evidence/wiki/tercessuinotlim.html",
-          "sourceHash": "2178ac5be87c36fbaa3a5005573de9f1c9006a23a4c21f48c35f1dc131074fee"
-        }
-      ]
-    },
-    "oblivion-s-quests:sacrifice-alod-version": {
-      "id": "oblivion-s-quests:sacrifice-alod-version",
-      "quest": "Sacrifice (ALoD Version)",
-      "npc": "Oblivion",
-      "location": "Tercessuinotlim",
-      "acceptanceMaps": [
-        "/join tercessuinotlim"
-      ],
-      "map": "/join tercessuinotlim",
-      "source": "https://aqwwiki.wikidot.com/oblivion-s-quests",
-      "sourceHash": "6ed4155f67d1929e6eeacec02b6d9d693da7bc08bf4e621566a0438feed062f8",
-      "preconditions": [
-        "Must have completed the 'Contract With the Abyss' quest.",
-        "Must have Ascended Light of Destiny in your inventory.",
-        "Must have completed the 'Beyond the Portal' quest to access this location."
-      ],
-      "requirements": [],
-      "ownedItems": [
-        {
-          "name": "Ascended Light of Destiny",
-          "wikiUrl": "https://aqwwiki.wikidot.com/ascended-light-of-destiny"
-        }
-      ],
-      "rows": [
-        {
-          "name": "Tainted Gem",
-          "itemId": "tainted-gem",
-          "quantity": 40,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Dark Crystal Shard",
-          "itemId": "dark-crystal-shard",
-          "quantity": 40,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Diamond of Nulgath",
-          "itemId": "diamond-of-nulgath",
-          "quantity": 40,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Totem of Nulgath",
-          "itemId": "totem-of-nulgath",
-          "quantity": 1,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Gem of Nulgath",
-          "itemId": "gem-of-nulgath",
-          "quantity": 20,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Void Aura",
-          "itemId": "void-aura",
-          "quantity": 6,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        },
-        {
-          "name": "Emblem of Nulgath",
-          "itemId": "emblem-of-nulgath",
-          "quantity": 3,
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
-        }
-      ],
-      "reward": "Void Light of Destiny ×1",
-      "fixedRewards": [
-        {
-          "name": "Void Light of Destiny",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/void-light-of-destiny"
-        }
-      ],
-      "rewardChoices": [],
-      "randomRewards": [],
-      "randomChoiceRewards": [],
-      "repeatability": null,
-      "dependencies": [
-        "nulgath-s-quests:contract-with-the-abyss",
-        "chaorrupted-time-travel-fairy-s-quest:ascended-drakath-gear"
-      ],
-      "dependencyChoices": [],
-      "unresolvedDependencies": [
-        {
-          "name": "Beyond the Portal",
-          "requirement": "Must have completed the 'Beyond the Portal' quest to access this location."
-        }
-      ],
-      "mapEvidence": [
-        {
-          "url": "https://aqwwiki.wikidot.com/tercessuinotlim",
-          "sourceFile": "content-sources/farm/external-guide-evidence/wiki/tercessuinotlim.html",
-          "sourceHash": "2178ac5be87c36fbaa3a5005573de9f1c9006a23a4c21f48c35f1dc131074fee"
-        }
-      ]
-    },
     "dage-the-evil-s-quests:cleaning-up": {
       "id": "dage-the-evil-s-quests:cleaning-up",
       "quest": "Cleaning Up",
@@ -52263,78 +52356,6 @@
           "url": "https://aqwwiki.wikidot.com/shadow-battleon",
           "sourceFile": "content-sources/farm/equipment-sets/wiki/shadow-battleon.html",
           "sourceHash": "ad6b92298ff739a8b6c37a5cf31cd1412c66e1e7baf2cd685ad4bd30fed762cb"
-        }
-      ]
-    },
-    "dage-the-evil-s-quests:soul-forgery": {
-      "id": "dage-the-evil-s-quests:soul-forgery",
-      "quest": "Soul Forgery",
-      "npc": "Dage the Evil (NPC)",
-      "location": "8-Bit Battleon Town · Dage's House · Dark Birthday · Legion Castle · Underworld",
-      "acceptanceMaps": [
-        "/join underworld"
-      ],
-      "map": "/join underworld",
-      "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests",
-      "sourceHash": "d11bb577d4a972be6330a3c5a0bd7f115a620791b52c86f6f186c5f247ebf10b",
-      "preconditions": [
-        "Must have Soulforge Hammer in your inventory."
-      ],
-      "requirements": [],
-      "ownedItems": [
-        {
-          "name": "Soulforge Hammer",
-          "wikiUrl": "https://aqwwiki.wikidot.com/soulforge-hammer"
-        }
-      ],
-      "rows": [
-        {
-          "name": "Shard of a Soul",
-          "itemId": "shard-of-a-soul",
-          "quantity": 10,
-          "monster": "Ghost Monsters\nUndead and Zombie Monsters",
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests"
-        }
-      ],
-      "reward": "",
-      "fixedRewards": [],
-      "rewardChoices": [],
-      "randomRewards": [
-        {
-          "name": "Reaper's Oath",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/reaper-s-oath"
-        }
-      ],
-      "randomChoiceRewards": [
-        {
-          "name": "Solidified Soul",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/solidified-soul"
-        },
-        {
-          "name": "Solidified Soul",
-          "quantity": 3,
-          "wikiUrl": "https://aqwwiki.wikidot.com/solidified-soul"
-        },
-        {
-          "name": "Solidified Soul",
-          "quantity": 5,
-          "wikiUrl": "https://aqwwiki.wikidot.com/solidified-soul"
-        }
-      ],
-      "repeatability": null,
-      "dependencies": [
-        "dage-the-evil-s-quests:the-soul-forge-hammer-unlock-soul-forge"
-      ],
-      "dependencyChoices": [],
-      "unresolvedDependencies": [],
-      "mapEvidence": [
-        {
-          "url": "https://aqwwiki.wikidot.com/underworld",
-          "sourceFile": "content-sources/farm/refinement/wiki/underworld.html",
-          "sourceHash": "f3ec79d1d1a40f19d062d1d786c2615681b8017d2278e07aacecb969040043c8"
         }
       ]
     },
