@@ -62,7 +62,7 @@
     "start:unguarded": "node scripts/serve.mjs",
     "farm:sync": "node scripts/farm-data-sync.mjs",
     "farm:sync:report": "node scripts/farm-data-sync.mjs --report-only",
-    "test:farm-sync": "node --test tests/farm-data-sync.test.mjs && python3 tests/farm_sync_crawl_test.py"
+    "test:farm-sync": "node --test tests/farm-data-sync.test.mjs tests/farm-sync-engine.test.mjs && python3 tests/farm_sync_crawl_test.py"
   },
   "dependencies": {
     "@fontsource/source-sans-3": "5.3.1",

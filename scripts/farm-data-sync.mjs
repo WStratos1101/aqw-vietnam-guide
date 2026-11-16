@@ -2,13 +2,15 @@
 import fs from 'node:fs';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
+import { SyncEngine } from './lib/farm-sync-engine.mjs';
+import { inventoryQueue, discoverPages, preserveVerified, legacyFailureAudit } from './lib/farm-sync-inventory.mjs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import inventory, { auditCatalog } from '../Update/AQW_Farm_Inventory_V3/aqw-farm-inventory.mjs';
 export const root = fileURLToPath(new URL('../', import.meta.url));
 const out = path.join(root, 'Update/_farm-sources');
 const read = p => JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
-const write = (p,d) => { const file=path.join(root,p); fs.mkdirSync(path.dirname(file),{recursive:true}); fs.writeFileSync(file+'.tmp',JSON.stringify(d,null,2)+'\n'); fs.renameSync(file+'.tmp',file); };
+const write = (p,d) => { const file=path.join(root,p); fs.mkdirSync(path.dirname(file),{recursive:true}); const previous=fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):null; fs.writeFileSync(file+'.tmp',JSON.stringify(preserveVerified(previous,d),null,2)+'\n'); fs.renameSync(file+'.tmp',file); };
 export function disposition(row, role) {
   const conflict = ['URL_NAME_CONFLICT_CHECK_WIKI','AMBIGUOUS'].includes(row.status);
   return {...row, auditStatus:row.status, status:conflict?'ambiguous':row.status==='MATCHED_NEEDS_ROLE_REVIEW'?'present':`missing-${role}`, canonicalId:row.candidateIds?.length===1&&!conflict?row.candidateIds[0]:null, verificationStatus:'pending-role-and-wiki-review'};
@@ -71,11 +73,37 @@ export function report() {
   write('Update/_farm-sources/coverage.json',coverage);
   console.log(JSON.stringify({catalog:catalog.length,sets:productionSets.length,siteReferences:diff.siteReferences.length,docsTargets:diff.docsTargets.length,materials:diff.materialReferences.length,sources:Object.fromEntries(Object.entries(coverage.sources).map(([k,v])=>[k,{total:v.total,fetched:v.fetched,blocked:v.failures.length}]))},null,2));
 }
+function appendCheckpoint(stats){
+  const manifest=read('Update/_farm-sources/manifest.json');
+  const rows=Object.values(manifest),wiki=rows.filter(r=>r.kind==='wiki');
+  fs.appendFileSync(path.join(root,'Update/FARM_V3_PROGRESS.md'),`\n### Sync batch ${new Date().toISOString()} — PARTIAL\n\nTotal ${rows.length}; Wiki ${wiki.length}; successful cache snapshots ${rows.filter(r=>r.status==='fetched').length}; session CACHE_HIT ${stats.cacheHits}; session network success ${stats.success}; session failed ${stats.failed}; pending ${rows.filter(r=>r.status==='pending'||r.status==='blocked-unattempted').length}. No automatic catalog writes. Verified additions 0; catalog additions 0; sets modified 0. Evidence: manifest.json, last-run.json, circuits.json, url-inventory.json. TASK 1–7 remains PARTIAL/PENDING; publication disabled by workflow.\n`);
+}
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
   prepare();
   const args=process.argv.slice(2);
-  if(!args.includes('--report-only')){
-    const result=spawnSync('python3',['scripts/farm-sync-crawl.py',...args],{cwd:root,stdio:'inherit'});
-    report();if(result.status!==0)process.exitCode=result.status||1;
-  } else report();
+  if(args.includes('--report-only'))report();
+  else {
+    const value=(key,fallback)=>{const at=args.indexOf(key);return at<0?fallback:args[at+1];};
+    const mode=value('--mode','resume');
+    if(!['full','resume','retry-failed','incremental','audit'].includes(mode))throw Error('Invalid --mode');
+    legacyFailureAudit(out);
+    const rows=inventoryQueue(root,inventory);
+    if(mode==='audit'){report();}
+    else {
+      const number=(key,fallback)=>{const n=Number(value(key,fallback));if(!Number.isFinite(n)||n<0)throw Error('Invalid '+key);return n;};
+      const engine=new SyncEngine({directory:out,config:{version:read('package.json').version},discover:p=>discoverPages(p,inventory.sources.site),onBatch:stats=>{report();appendCheckpoint(stats);}});
+      const lock=path.join(out,'sync.lock');
+      try { fs.writeFileSync(lock,JSON.stringify({pid:process.pid,startedAt:new Date().toISOString()}),{flag:'wx'}); }
+      catch { throw Error('Sync lock exists: check process recorded in Update/_farm-sources/sync.lock before removing stale lock'); }
+      const interrupted=()=>{engine.checkpoint();if(fs.existsSync(lock))fs.unlinkSync(lock);process.exitCode=130;};
+      try {
+        process.once('SIGINT',()=>{interrupted();process.exit(130);});
+        process.once('SIGTERM',()=>{interrupted();process.exit(130);});
+        console.log(await engine.run(rows,{mode,limit:number('--limit',0),offline:args.includes('--offline'),refresh:args.includes('--refresh'),ttl:number('--ttl-hours',24)*3600000}));
+        if(!args.includes('--no-parse')){
+          const parsed=spawnSync(process.execPath,['scripts/farm-sync-parse.mjs'],{cwd:root,stdio:'inherit'});if(parsed.status!==0)process.exitCode=parsed.status||1;
+        }
+      } finally {fs.unlinkSync(lock);}
+    }
+  }
 }
