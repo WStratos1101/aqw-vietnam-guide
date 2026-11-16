@@ -1,5 +1,6 @@
 // Offline deterministic adapter: curated recipes remain authoritative; imports never infer routes.
 import fs from "node:fs";
+import { applyFarmV3Scope } from "./lib/farm-v3-scope.mjs";
 import { importUltraFarm } from "./lib/farm-ultra-import.mjs";
 import { assignFarmGroups } from "./lib/farm-groups.mjs";
 import { createHash } from "node:crypto";
@@ -554,6 +555,7 @@ const publicWorkflows = applyFarmPublicWorkflows(items, questWorkflows.cachedWik
   [...read("src/content/ultra/bosses.json"), ...ultraRecovery.bosses]);
 applyFarmRefinement(items, publicWorkflows.registry, publicWorkflows.pages, refinement);
 buildEquipmentSets(items, publicWorkflows.pages);
+write("content-sources/farm/refinement/v3-scope-audit.json",applyFarmV3Scope(items,publicWorkflows.registry,publicWorkflows.pages,read("src/content/farm/equipment-sets.generated.json").sets));
 write("src/content/farm/quest-workflows.generated.json", publicWorkflows.registry);
 
 const publicProfiles={...publicWorkflows.registry.materials,...read("content-sources/farm/material-guides.json"),...review.materialSources};

@@ -10,7 +10,7 @@ export function workflowTasks(route, registry, modeId = "standard", optionId) {
 export function sumMaterials(tasks) {
   const result = new Map();
   for (const task of tasks) for (const row of task.rows) {
-    if(row.usage === "owned" || task.numberOfRuns === 0)continue;
+    if(row.usage === "owned" || row.temporary === true || row.role === "tempQuestItem" || task.numberOfRuns === 0)continue;
     const id = row.itemId || materialId(row.name);
     const previous = result.get(id);
     const total = row.quantity == null ? null : row.quantity * (task.numberOfRuns || 1);
@@ -45,4 +45,16 @@ export function distinctFarmText(values, alreadyShown = []) {
   const key = text => text?.normalize("NFKC").replace(/\s+/g, " ").trim().toLowerCase();
   const seen = new Set(alreadyShown.filter(Boolean).map(key));
   return values.filter(value => { const normalized = key(value); if (!normalized || seen.has(normalized)) return false; seen.add(normalized); return true; });
+}
+
+export function mainWorkflowTasks(route, registry, modeId, optionId) {
+ const tasks=workflowTasks(route,registry,modeId,optionId);
+ return route.questGraph?tasks.filter(task=>route.questGraph.some(node=>node.questId===task.id&&node.display==='stepper')):tasks;
+}
+export function finalReceiptTasks(route,registry,mode) {
+ return (route.questGraph||[]).filter(node=>node.display==='finalReceipt').map(node=>registry.quests[node.questId]).filter(Boolean).map(task=>({...task,numberOfRuns:mode?.questRuns?.[task.id]??1}));
+}
+export function farmTimeLabel(time) {
+ if(!time||time.kind!=='gated'||!time.requiredRuns||!['daily','weekly','monthly'].includes(time.period))return null;
+ return `${time.requiredRuns} lượt ${time.period==='daily'?'Daily':time.period==='weekly'?'Weekly':'Monthly'} (${time.scope})`;
 }
