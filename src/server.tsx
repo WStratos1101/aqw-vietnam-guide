@@ -10,6 +10,7 @@ import { classProfiles, findClass } from "./content/classes";
 import { ultraBosses, findBoss } from "./content/ultra";
 import {challengeGuides,findChallenge} from './content/ultra/challenge-catalog';
 import { resolveRoute } from "./lib/routes";
+import { loreRegions, loreRegionHref, findLoreRegion } from "./content/lore-regions";
 import React from "react";
 import { renderToString } from "react-dom/server";
 import { App } from "./App";
@@ -33,6 +34,7 @@ export const routes = [
     ...challengeGuides.map(g=>g.href),
     ...Object.keys(categories).map((c) => "/" + c),
     ...guides.map(href),
+    ...loreRegions.map(loreRegionHref),
   ]),
 ];
 export function render(path: string) {
@@ -44,11 +46,13 @@ export function render(path: string) {
   const boss = findBoss(path.split("/")[2]);
   const entry = guides.find((e) => href(e) === path);
   const { category, is404, comingSoon } = resolveRoute(path, guides, categories);
+  const loreRegion = findLoreRegion(path);
+  const lorePending = !!loreRegion && (comingSoon || !entry);
   return {
     bodyUrl: comingSoon ? undefined : challenge?.bodyUrl || entry?.imported?.bodyUrl,
     html: renderToString(<App />),
     title:
-      (comingSoon ? "Thông tin đang được cập nhật" : is404
+      (lorePending && loreRegion ? loreRegion.name + " — Biên niên sử Lore" : comingSoon ? "Thông tin đang được cập nhật" : is404
         ? "Không tìm thấy trang"
         : (path === "/farm" ? "Farm Codex" : farmItem?.name) || challenge?.name || (path === "/challenge-dungeon" ? "Challenge Dungeon" : path === "/other-challenges" ? "Other Challenges" : undefined) || (path === "/class" ? "Class Codex" : (profile ? classIdentityLabel(profile.id) : undefined)) ||
           (path === "/ultra-boss"
@@ -61,6 +65,7 @@ export function render(path: string) {
           (path === "/gioi-thieu" ? "Giới thiệu" : "Cẩm nang phiêu lưu")) +
       " | AQW Vietnam Guide",
     description:
+      (lorePending ? loreRegion?.description : undefined) ||
       (comingSoon ? "Thông tin đang được cập nhật tại AQW Vietnam Guide." : undefined) ||
       (path === "/farm" || farmItem ? `Farm Codex: ${farmItem?.name || "trang bị theo Region"}. Cách nhận, nguyên liệu và nguồn Wiki, hướng dẫn cộng đồng.` : undefined) ||
       profile?.shortDescription ||

@@ -16,6 +16,8 @@ import { resolveRoute } from "./lib/routes";
 import React, { useEffect, useState, Component, type ReactNode } from "react";
 import { Header, Footer, Breadcrumb, disclaimer } from "./components/Shell";
 import { Home } from "./features/Home";
+import { LoreRegionPage } from "./features/LoreAtlas";
+import { findLoreRegion } from "./content/lore-regions";
 import { Library } from "./features/Library";
 import { Article } from "./features/Article";
 import { guides, categories } from "./content/data";
@@ -128,7 +130,7 @@ export function App() {
         !(
           /^\/(ultra-boss|challenge-dungeon|other-challenges)(?:\/|$)/.test(url.pathname) ||
           /^\/farm(?:\/item\/[^/]+)?$/.test(url.pathname) ||
-          isComingSoon(url.pathname) || url.pathname === "/" ||
+          isComingSoon(url.pathname) || !!findLoreRegion(url.pathname) || url.pathname === "/" ||
           url.pathname === "/class" ||
           url.pathname === "/class/thu-vien" ||
           (/^\/class\/[^/]+$/.test(url.pathname) &&
@@ -160,6 +162,8 @@ export function App() {
     guides,
     categories,
   );
+  const loreRegion = findLoreRegion(path);
+  const lorePending = !!loreRegion && (comingSoon || !entry);
   const farmItem = farmIndex.find(i=>i.id===farmItemId(path));
   const farmTitle = path === "/farm" ? "Farm Codex" : farmItem?.name;
   const classProfile = path.startsWith("/class/")
@@ -175,7 +179,8 @@ export function App() {
   const ultraTitle =
     path === "/ultra-boss" ? "Ultra Boss Codex" : ultraBoss?.name||challenge?.name;
   useEffect(() => {
-    document.title = `${comingSoon ? "Thông tin đang được cập nhật" : is404 ? "Không tìm thấy trang" : farmTitle || challengeTitle || classTitle || ultraTitle || entry?.title || (valid ? categories[category as SectionKey] : path === "/gioi-thieu" ? "Giới thiệu" : "Cẩm nang phiêu lưu")} | AQW Vietnam Guide`;
+    document.title = `${lorePending && loreRegion ? loreRegion.name + " — Biên niên sử Lore" : comingSoon ? "Thông tin đang được cập nhật" : is404 ? "Không tìm thấy trang" : farmTitle || challengeTitle || classTitle || ultraTitle || entry?.title || (valid ? categories[category as SectionKey] : path === "/gioi-thieu" ? "Giới thiệu" : "Cẩm nang phiêu lưu")} | AQW Vietnam Guide`;
+    if (lorePending && loreRegion) document.querySelector('meta[name="description"]')?.setAttribute("content", loreRegion.description);
     if (farmTitle) document.querySelector('meta[name="description"]')?.setAttribute("content",`Farm Codex: ${farmItem?.name || "trang bị theo Region"}. Cách nhận, nguyên liệu và nguồn Wiki, hướng dẫn cộng đồng.`);
     if (classTitle)
       document
@@ -220,11 +225,11 @@ export function App() {
       observer.observe(el);
     });
     return () => observer.disconnect();
-  }, [path, is404, entry, category, farmTitle, farmItem, ultraTitle, classTitle, classProfile, challengeTitle, comingSoon]);
+  }, [path, is404, entry, category, farmTitle, farmItem, ultraTitle, classTitle, classProfile, challengeTitle, comingSoon, lorePending, loreRegion]);
   return (
     <ErrorBoundary>
       <Header path={path} />
-      {comingSoon ? <ComingSoonPage/> : is404 ? (
+      {lorePending && loreRegion ? <LoreRegionPage region={loreRegion}/> : comingSoon ? <ComingSoonPage/> : is404 ? (
         <NotFound />
       ) : path === "/farm" || farmItem ? (
         <RouteView kind="farm-catalog" slug={farmItem?.id}/>

@@ -1,6 +1,7 @@
 import farmIndex from '../content/farm/index.json';
 import {farmItemId} from './farm-catalog.mjs';
 import {isComingSoon} from './site-feature-access.mjs';
+import {findLoreRegion} from "../content/lore-regions";
 import challengeCatalog from '../content/challenges/catalog.json';
 import {findClass,findBoss} from './route-summaries';
 import {findChallenge} from '../content/ultra/challenge-catalog';
@@ -23,7 +24,7 @@ export function resolveRoute(
       ? entries.find((g) => g.category === category && g.slug === slug)
       : undefined;
   const comingSoon = isComingSoon(path);
-  const is404 = !comingSoon &&
+  const is404 = !comingSoon && !findLoreRegion(path) &&
     path !== "/" &&
     path !== "/gioi-thieu" &&
     (category === "farm" && slug === "item"

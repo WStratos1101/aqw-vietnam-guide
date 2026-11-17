@@ -108,7 +108,7 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
               <dt>Progression</dt>
               <dd>
                 <span className="difficulty-badge">
-                  {profile.difficulty || "Newbie"}
+                  {profile.displayCategory === "HeroMart" ? "HeroMart" : (profile.difficulty || "Newbie")}
                 </span>
               </dd>
             </div>

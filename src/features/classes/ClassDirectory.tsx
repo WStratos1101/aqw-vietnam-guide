@@ -124,7 +124,7 @@ export function ClassDirectory() {
           role="group"
           aria-label="Phân loại Class"
         >
-          {["all", "Newbie", "Midgame", "Lategame", "Endgame", "Calendar"].map(
+          {["all", "Newbie", "Midgame", "Lategame", "Endgame", "Calendar", "HeroMart"].map(
             (value) => (
               <button
                 key={value}

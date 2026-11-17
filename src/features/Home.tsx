@@ -1,6 +1,7 @@
 import classes from "../content/home-starters.json";
 import poster from "../content/home-poster.json";
 import { useState } from "react";
+import { LoreAtlas } from "./LoreAtlas";
 import { ArrowRight, ArrowUpRight, ChevronDown, Search } from "lucide-react";
 const journey = [
   {
@@ -46,7 +47,7 @@ export function Home() {
           </div>
           <div className="hero-bottom">
             <span>Thế giới Lore đang chờ bạn.</span>
-            <a href="#bat-dau" aria-label="Cuộn tới Bắt đầu hành trình">
+            <a href="#bat-dau" aria-label="Cuộn tới Ngày anh hùng gọi tên">
               <ChevronDown size={24} />
             </a>
           </div>
@@ -67,53 +68,53 @@ export function Home() {
       <section className="start chapter" id="bat-dau">
         <div className="section-heading">
           <h2>
-            Bắt đầu
+            Ngày anh hùng
             <br />
-            hành trình.
+            gọi tên.
           </h2>
           <p>
-            Vừa đặt chân đến Battleon?
+            Tiếng chuông Battleon đã vang lên.
             <br />
-            Đi từng bước, hiểu từng cơ chế.
+            Lore đang chờ người đáp lời hiệu triệu.
           </p>
         </div>
         <div className="start-layout">
           <a href="/huong-dan/bat-dau" className="start-feature">
-            <span>Cho người mới</span>
+            <span>Lời hiệu triệu</span>
             <div>
               <h3>
-                Chặng đầu
-                <br />ở thế giới Lore
+                Ngọn lửa
+                <br />đầu tiên
               </h3>
               <p>
-                Giao diện, Class đầu tiên và cách đọc quest. Những điều nhỏ giúp
-                bạn tự tin bắt đầu.
+                Nhận nhiệm vụ đầu tiên, khoác lên mình bộ trang bị và bước ra khỏi cổng thành.
+                Ngay cả những huyền thoại vĩ đại nhất cũng từng là kẻ vô danh.
               </p>
               <span className="plain-link">
-                Mở hướng dẫn <ArrowUpRight />
+                Bước vào Lore <ArrowUpRight />
               </span>
             </div>
           </a>
           <div className="start-links">
-            <a href="/huong-dan">
-              <span>Chọn cách chiến đấu</span>
-              <p>Tìm hiểu bốn Class khởi đầu.</p>
+            <a href="#class-khoi-dau">
+              <span>Con đường của riêng bạn</span>
+              <p>Kiếm, ma pháp, ánh sáng hay bóng tối? Hãy chọn sức mạnh sẽ đồng hành cùng bạn.</p>
               <ArrowUpRight />
             </a>
             <a href="/he-thong/enhancement">
-              <span>Hiểu Enhancement</span>
-              <p>Một món đồ tốt cần lựa chọn phù hợp.</p>
+              <span>Khắc sức mạnh lên thép</span>
+              <p>Một lưỡi kiếm trở nên đáng sợ trong tay người biết cách đánh thức tiềm năng của nó.</p>
               <ArrowUpRight />
             </a>
             <a href="/cot-truyen/hanh-trinh-chaos">
-              <span>Theo mạch cốt truyện</span>
-              <p>Lần theo các chương về Chaos.</p>
+              <span>Những dấu hiệu của Chaos</span>
+              <p>Vương quốc rung chuyển, liên minh rạn nứt. Hãy lần theo dấu vết của biến cố đã đổi thay Lore.</p>
               <ArrowUpRight />
             </a>
           </div>
         </div>
       </section>
-      <section className="class-chapter chapter">
+      <section className="class-chapter chapter" id="class-khoi-dau">
         <div className="section-heading">
           <h2>
             Chọn con đường.
@@ -209,35 +210,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="farm-chapter chapter">
-        <div className="farm-art">
-          <img
-            src="/art/awe.svg"
-            alt="Biểu tượng kiếm tự tạo minh họa hành trình thu thập vật phẩm"
-            width="900"
-            height="650"
-            loading="lazy"
-          />
-        </div>
-        <div className="farm-copy">
-          <h2>
-            Từng bước.
-            <br />
-            Từng mảnh.
-          </h2>
-          <p>
-            Hướng dẫn farm có điều kiện, nguyên liệu và checklist. Hành trình
-            dài dễ theo dõi hơn khi bạn biết mình đang ở đâu.
-          </p>
-          <a href="/farm/blade-of-awe" className="button">
-            Farm Blade of Awe <ArrowUpRight size={20} />
-          </a>
-          <a href="/farm" className="plain-link">
-            Xem hướng dẫn farm <ArrowRight size={20} />
-          </a>
-          <span>Tiến độ lưu trên thiết bị · Không cần đăng nhập</span>
-        </div>
-      </section>
+      <LoreAtlas />
       <section className="atlas chapter">
         <div className="section-heading">
           <h2>

@@ -21,7 +21,88 @@ const newbieRoutes = {
   "oracle": "Oracle: Class Shop Battleon hoặc Ranad tại Class Hall A, 0 AC.",
   "berserker-beta-berserker-brutal-berserker": "Berserker: Legend Only tại Battleon, cần Membership; không bao gồm các skin thưởng gói nạp như một lộ trình tân thủ riêng."
 };
+// AQWVN_CLASS_CATEGORY_POLICY_V2
+const aqwvnTierOverrides = {
+  "stone-crusher-sc-infinity-titan-it": {
+    "tier": "Lategame",
+    "basis": "Phân tầng biên tập AQWVN: Stone Crusher / Infinity Titan."
+  },
+  "martial-artist-ma-master-martial-artist-mma": {
+    "tier": "Lategame",
+    "basis": "Phân tầng biên tập AQWVN: Martial Artist / Master Martial Artist."
+  },
+  "sovereign-of-storms-sos": {
+    "tier": "Lategame",
+    "basis": "Phân tầng biên tập AQWVN: Sovereign of Storms."
+  },
+  "abyssal-angel-aa-abyssal-angel-s-shadow-aas": {
+    "tier": "Lategame",
+    "basis": "Phân tầng biên tập AQWVN: Nation — Abyssal Angel / Shadow."
+  },
+  "archfiend-af": {
+    "tier": "Lategame",
+    "basis": "Phân tầng biên tập AQWVN: Nation — ArchFiend."
+  },
+  "classic-legion-doomknight-cldk": {
+    "tier": "Lategame",
+    "basis": "Phân tầng biên tập AQWVN: Legion — Classic Legion DoomKnight."
+  },
+  "legion-doomknight-ldk": {
+    "tier": "Lategame",
+    "basis": "Phân tầng biên tập AQWVN: Legion — Legion DoomKnight."
+  },
+  "exalted-soul-cleaver-esc-exalted-dark-harbinger-eh-dh": {
+    "tier": "Lategame",
+    "basis": "Phân tầng biên tập AQWVN: Legion — Exalted Soul Cleaver / Exalted Harbinger / Dark Harbinger."
+  },
+  "yami-no-ronin-ynr": {
+    "tier": "Lategame",
+    "basis": "Phân tầng biên tập AQWVN: Legion — Yami no Ronin (có tuyến nhiệm vụ của Dage)."
+  },
+  "king-s-echo-ke": {
+    "tier": "Endgame",
+    "basis": "Phân tầng biên tập AQWVN: King's Echo."
+  },
+  "kathool-adept-ka": {
+    "tier": "Endgame",
+    "basis": "Phân tầng biên tập AQWVN: Kathool Adept."
+  },
+  "lich": {
+    "tier": "Endgame",
+    "basis": "Phân tầng biên tập AQWVN: Lich."
+  },
+  "scion-of-flames-sof": {
+    "tier": "Endgame",
+    "basis": "Phân tầng biên tập AQWVN: Scion of Flames."
+  },
+  "void-highlord-vhl-debris-highlord-dhl": {
+    "tier": "Endgame",
+    "basis": "Phân tầng biên tập AQWVN: Nation — Void Highlord / Debris Highlord."
+  },
+  "legion-revenant-lr": {
+    "tier": "Endgame",
+    "basis": "Phân tầng biên tập AQWVN: Legion — Legion Revenant."
+  }
+};
+const aqwvnHeroMartIds = new Set([
+  "cardclasher-cc",
+  "great-thief-gt",
+  "legion-paladin-lp",
+  "master-of-moglins-mom-dark-master-of-moglins-dmom",
+  "not-a-mod-nam",
+  "paladinslayer-ps"
+]);
+export function displayClassCategory(profile,membership){
+ if(aqwvnHeroMartIds.has(profile.id)) return 'HeroMart';
+ if(membership.some(e=>e.classId===profile.id)) return 'Calendar';
+ return profile.progressionTier||profile.difficulty;
+}
+export function classCategoryPolicyReason(profile){
+ if(aqwvnHeroMartIds.has(profile.id)) return 'Phân nhóm biên tập AQWVN: HeroMart — Class merch/đổi mã, tách khỏi các giai đoạn progression.';
+ return aqwvnTierOverrides[profile.id]?.basis;
+}
 export function difficultyTier(profile,record){
+ if(Object.hasOwn(aqwvnTierOverrides,profile.id)) return {...aqwvnTierOverrides[profile.id],status:'editorial'};
  if(profile.id === "blaze-binder-bb-firelord-summoner-fls") return {tier:'Midgame',status:'editorial',basis:'Blaze Binder cần tuyến merge/tiến trình Firestorm Forge; không phải Class tân thủ.'};
  if(starterClassIds.has(profile.id)) return {tier:'Newbie',status:'editorial',basis:'Class cơ bản có thể chọn khi tạo nhân vật.'};
  if(Object.hasOwn(newbieRoutes,profile.id)) return {tier:'Newbie',status:'editorial',basis:newbieRoutes[profile.id]};

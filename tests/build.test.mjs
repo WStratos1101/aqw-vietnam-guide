@@ -4,6 +4,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 const routes = JSON.parse(fs.readFileSync("dist/routes.json", "utf8"));
+const loreRegionSlugs = ["battleon", "greenguard", "swordhaven", "shadowfall", "darkovia", "dwarfhold", "yokai-isle", "sandsea", "arcangrove", "doomwood", "chiral-valley", "mythsong", "bloodtusk", "thunderforge"];
 const htmlFor = (route) =>
   fs.readFileSync(
     route === "/" ? "dist/index.html" : path.join("dist", route, "index.html"),
@@ -26,7 +27,7 @@ test("all published routes ship readable HTML, one h1 and metadata", () => {
   assert.equal(
     routes.length,
     JSON.parse(fs.readFileSync("src/content/imported/catalog.json", "utf8"))
-      .length + 41 + JSON.parse(fs.readFileSync('src/content/ultra/recovery.json')).bosses.length + JSON.parse(fs.readFileSync('src/content/classes/calendar-extension.json')).profiles.length + JSON.parse(fs.readFileSync('src/content/challenges/catalog.json')).length + 2 + JSON.parse(fs.readFileSync('src/content/farm/index.json')).length,
+      .length + 41 + JSON.parse(fs.readFileSync('src/content/ultra/recovery.json')).bosses.length + JSON.parse(fs.readFileSync('src/content/classes/calendar-extension.json')).profiles.length + JSON.parse(fs.readFileSync('src/content/challenges/catalog.json')).length + 2 + JSON.parse(fs.readFileSync('src/content/farm/index.json')).length + loreRegionSlugs.length,
   );
   assert.equal(new Set(routes).size, routes.length);
   for (const route of routes) {
@@ -172,5 +173,21 @@ test("expanded Ultra guides prerender community content without remote image hot
     assert.match(html, /aqw-page-data/);
     assert(!html.match(/<img[^>]+https?:/));
     assert(!html.includes("Tuyến trang bị đang được đối chiếu"));
+  }
+});
+
+test("Lore atlas hotspot, mobile links and regional prerender", () => {
+  const home = htmlFor("/");
+  assert.match(home, /id="ban-do-lore"/);
+  assert.doesNotMatch(home, /Từng mảnh\./);
+  for (const slug of loreRegionSlugs) {
+    const route = "/cot-truyen/" + slug;
+    assert.ok(routes.includes(route), route);
+    assert.ok(home.includes('data-lore-pin="' + slug + '"'), route);
+    assert.ok(home.includes('data-lore-region="' + slug + '"'), route);
+    const page = htmlFor(route);
+    assert.ok(page.includes('data-lore-region-page="' + slug + '"'), route);
+    assert.ok(page.includes('href="/#ban-do-lore"'), route);
+    assert.doesNotMatch(page, /Lạc khỏi bản đồ/);
   }
 });
