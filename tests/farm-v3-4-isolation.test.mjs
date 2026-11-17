@@ -111,6 +111,17 @@ test('OR acquisition routes require selection and never add alternative costs',(
  assert.equal(planAcquisitions([{itemId:'target',quantity:1}],{a,b}).complete,false);
  assert.deepEqual(planAcquisitions([{itemId:'target',quantity:1}],{a,b},{routes:{target:'a'}}).totals,[{itemId:'gold',quantity:5}]);
 });
+test('same reward at multiple NPC panels becomes selectable alternatives, not combined quest steps',()=>{
+ const registry=JSON.parse(fs.readFileSync('src/content/farm/quest-workflows.generated.json'));
+ for(const id of ['wrought-ironblood-armblade','wrought-ironblood-armblades']){
+  const r=route(id);assert.equal(r.questOptions.length,6);
+  for(const option of r.questOptions){
+   const tasks=mainWorkflowTasks(r,registry,undefined,option.questId);
+   assert.equal(tasks.length,1);assert.equal(tasks[0].id,option.questId);
+  }
+  assert.equal(r.materialTotalsComplete,false);
+ }
+});
 test('material drilldown cannot reach unrelated profiles and terminates on cycles',()=>{
  const direct=[{itemId:'direct',name:'Direct',quantity:1}];
  const profiles={direct:{tasks:[{rows:[{itemId:'nested',name:'Nested',quantity:2}]}]},nested:{tasks:[{rows:direct}]},unrelated:{tasks:[{rows:[{itemId:'bad',name:'Bad',quantity:100}]}]}};

@@ -24,6 +24,8 @@ const additionalTransport=acquisitionReuse.pending.filter(row=>!transport.some(r
 const variantDecisions=read('content-sources/farm/refinement/v3-4-class-variant-review.json').rows;
 const reviewQueue=old.reviewQueue.map(row=>{
  const variant=variantDecisions.find(r=>r.url===row.url);if(variant)return {...row,status:variant.status,evidence:variant};
+ const removal=read('content-sources/farm/refinement/v3-4-class-scope.json').decisions.find(d=>d.wikiUrl===row.url);
+ if(removal)return {...row,status:'REMOVED_FROM_FARM_SCOPE',evidence:removal};
  const item=byUrl.get(row.url);if(item)return {...row,status:gaps(item).length?'PARTIAL_FIELDS':'VERIFIED_TARGET_FIELDS_PARTIAL_ROUTE',canonicalId:item.id,missingFields:gaps(item),materialTotalsComplete:item.acquisitionRoutes.every(r=>r.materialTotalsComplete)};
  return {...row,status:row.status||'PENDING'};
 });
@@ -41,8 +43,11 @@ const isolation=read('Update/FARM_V3_4_QUEST_ISOLATION_AUDIT.json');
 const qaFingerprint=createHash('sha256').update(JSON.stringify(fingerprint())).digest('hex');
 const browser={};
 for(const engine of ['chromium','webkit']){
- const file=`artifacts/qa/v3-2/farm/${engine}/results.json`,r=read(file);
- browser[engine]={file,startedAt:r.startedAt,finishedAt:r.finishedAt,reportedStatus:r.status,reportedFingerprint:r.sourceFingerprint,currentFingerprint:qaFingerprint,status:r.phase==='browser_launch'?'BLOCKED':r.sourceFingerprint!==qaFingerprint?'PENDING_LOCAL_RUN':r.status==='passed'?'PASS':r.phase==='ui'?'FAIL':'BLOCKED',currentSourceUIRun:r.sourceFingerprint===qaFingerprint&&r.status==='passed'?'VERIFIED':'PENDING_LOCAL_RUN',cause:r.cause,errors:r.errors};
+ const priorFile=`artifacts/qa/v3-2/farm/${engine}/results.json`,currentFile=`artifacts/qa/farm/v3-4/${engine}/results.json`;
+ const prior=read(priorFile),current=fs.existsSync(currentFile)?read(currentFile):null;
+ const file=current&&Date.parse(current.finishedAt||current.startedAt)>=Date.parse(prior.finishedAt||prior.startedAt)?currentFile:priorFile,r=file===currentFile?current:prior;
+ browser[engine]={file,startedAt:r.startedAt,finishedAt:r.finishedAt,reportedStatus:r.status,reportedFingerprint:r.sourceFingerprint,currentFingerprint:qaFingerprint,status:r.phase==='browser_launch'?'BLOCKED':r.sourceFingerprint!==qaFingerprint?'PENDING_LOCAL_RUN':r.status==='passed'?'PASS':r.phase==='ui'?'FAIL':'BLOCKED',currentSourceUIRun:r.sourceFingerprint===qaFingerprint&&r.status==='passed'?'VERIFIED':'PENDING_LOCAL_RUN',cause:r.cause,errors:r.errors,
+ previousLocalResult:{file:priorFile,status:prior.status,sourceFingerprint:prior.sourceFingerprint,finishedAt:prior.finishedAt,current:prior.sourceFingerprint===qaFingerprint}};
 }
 browser.nativeSafari='UNVERIFIED';
 const resolved=before.flatMap(i=>{const next=byId.get(i.id);if(!next)return [];const fields=gaps(i).filter(f=>!gaps(next).includes(f));return fields.length?[{id:i.id,fields}]:[];});

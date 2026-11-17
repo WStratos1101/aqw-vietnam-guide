@@ -61,6 +61,14 @@ export function isolateFarmQuests(items, registry, pages) {
     const finishIds = new Set(route.questFinishIds || []);
     let roots = rewardTasks.filter(t => finishIds.has(t.id));
     if (!roots.length && rewardTasks.length === 1) roots = rewardTasks;
+    // Several NPC/location panels can award the same variant. Keep each exact
+    // acquisition selectable; a shared reward never makes their costs an AND.
+    if (roots.length > 1 && !route.questOptions?.length) {
+      route.questOptions = roots.map(task => ({
+        name: `${task.quest} · ${task.npc} · ${task.location} · ${task.sectionIdentity}`,
+        questId: task.id, workflowIds: [task.id],
+      }));
+    }
     const receivingQuest = roots.length === 1 ? roots[0] : null;
     const isQuest = route.method === 'Quest';
     const exactRecipe = itemPage?.mergeRecipes?.length === 1 && itemPage.mergeRecipes[0].status === 'explicit-list' ? itemPage.mergeRecipes[0].tree : null;

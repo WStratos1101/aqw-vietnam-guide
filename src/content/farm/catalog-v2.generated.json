@@ -217904,6 +217904,146 @@
           "operationGroups": [],
           "npc": "Nulgath (NPC)",
           "materialTotalsComplete": false,
+          "questOptions": [
+            {
+              "name": "Nulgath's Roulette of Misfortune · Nulgath (NPC) · Enchanted Nulgath Nation House · Tercessuinotlim · nav-1/panel-1",
+              "questId": "nulgath-s-quests:nulgath-s-roulette-of-misfortune",
+              "workflowIds": [
+                "nulgath-s-quests:nulgath-s-roulette-of-misfortune"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Enchanted Nulgath Nation House · N/A · nav-0/panel-0",
+              "questId": "enchanted-nulgath-nation-house-s-quests:nulgath-s-roulette-of-misfortune",
+              "workflowIds": [
+                "enchanted-nulgath-nation-house-s-quests:nulgath-s-roulette-of-misfortune"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Mini King Klunk · N/A · nav-0/panel-1",
+              "questId": "mini-king-klunk-s-quests:nulgath-s-roulette-of-misfortune",
+              "workflowIds": [
+                "mini-king-klunk-s-quests:nulgath-s-roulette-of-misfortune"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/mini-king-klunk-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/mini-king-klunk-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Nulgath Larvae · N/A · nav-0/panel-1",
+              "questId": "nulgath-larvae-s-quests:nulgath-s-roulette-of-misfortune",
+              "workflowIds": [
+                "nulgath-larvae-s-quests:nulgath-s-roulette-of-misfortune"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/nulgath-larvae-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/nulgath-larvae-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Oblivion Blade of Nulgath (Pet) · N/A · nav-0/panel-1",
+              "questId": "oblivion-blade-of-nulgath-s-quests:nulgath-s-roulette-of-misfortune:72b57a88",
+              "workflowIds": [
+                "oblivion-blade-of-nulgath-s-quests:nulgath-s-roulette-of-misfortune:72b57a88"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Oblivion Blade of Nulgath Pet (Rare) · N/A · nav-1/panel-1",
+              "questId": "oblivion-blade-of-nulgath-s-quests:nulgath-s-roulette-of-misfortune:f56ccba6",
+              "workflowIds": [
+                "oblivion-blade-of-nulgath-s-quests:nulgath-s-roulette-of-misfortune:f56ccba6"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            }
+          ],
           "questGraph": [
             {
               "questId": "nulgath-s-quests:contract-with-the-abyss",
@@ -218184,6 +218324,146 @@
           "operationGroups": [],
           "npc": "Nulgath (NPC)",
           "materialTotalsComplete": false,
+          "questOptions": [
+            {
+              "name": "Nulgath's Roulette of Misfortune · Nulgath (NPC) · Enchanted Nulgath Nation House · Tercessuinotlim · nav-1/panel-1",
+              "questId": "nulgath-s-quests:nulgath-s-roulette-of-misfortune",
+              "workflowIds": [
+                "nulgath-s-quests:nulgath-s-roulette-of-misfortune"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Enchanted Nulgath Nation House · N/A · nav-0/panel-0",
+              "questId": "enchanted-nulgath-nation-house-s-quests:nulgath-s-roulette-of-misfortune",
+              "workflowIds": [
+                "enchanted-nulgath-nation-house-s-quests:nulgath-s-roulette-of-misfortune"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/enchanted-nulgath-nation-house-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Mini King Klunk · N/A · nav-0/panel-1",
+              "questId": "mini-king-klunk-s-quests:nulgath-s-roulette-of-misfortune",
+              "workflowIds": [
+                "mini-king-klunk-s-quests:nulgath-s-roulette-of-misfortune"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/mini-king-klunk-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/mini-king-klunk-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Nulgath Larvae · N/A · nav-0/panel-1",
+              "questId": "nulgath-larvae-s-quests:nulgath-s-roulette-of-misfortune",
+              "workflowIds": [
+                "nulgath-larvae-s-quests:nulgath-s-roulette-of-misfortune"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/nulgath-larvae-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/nulgath-larvae-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Oblivion Blade of Nulgath (Pet) · N/A · nav-0/panel-1",
+              "questId": "oblivion-blade-of-nulgath-s-quests:nulgath-s-roulette-of-misfortune:72b57a88",
+              "workflowIds": [
+                "oblivion-blade-of-nulgath-s-quests:nulgath-s-roulette-of-misfortune:72b57a88"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            },
+            {
+              "name": "Nulgath's Roulette of Misfortune · Oblivion Blade of Nulgath Pet (Rare) · N/A · nav-1/panel-1",
+              "questId": "oblivion-blade-of-nulgath-s-quests:nulgath-s-roulette-of-misfortune:f56ccba6",
+              "workflowIds": [
+                "oblivion-blade-of-nulgath-s-quests:nulgath-s-roulette-of-misfortune:f56ccba6"
+              ],
+              "directMaterials": [
+                {
+                  "name": "Mana Energy for Nulgath",
+                  "itemId": "mana-energy-for-nulgath",
+                  "quantity": 1,
+                  "wikiUrl": "https://aqwwiki.wikidot.com/mana-energy-for-nulgath",
+                  "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests"
+                },
+                {
+                  "name": "Charged Mana Energy for Nulgath",
+                  "itemId": "charged-mana-energy-for-nulgath",
+                  "quantity": 5,
+                  "source": "https://aqwwiki.wikidot.com/oblivion-blade-of-nulgath-s-quests",
+                  "monster": "Mana Falcon (Monster)\nMana Imp"
+                }
+              ]
+            }
+          ],
           "questGraph": [
             {
               "questId": "nulgath-s-quests:contract-with-the-abyss",
