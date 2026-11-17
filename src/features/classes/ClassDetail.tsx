@@ -1,3 +1,4 @@
+import classIntroductions from "../../content/classes/story-introductions.json";
 import {classIdentity,classIdentityLabel} from "../../lib/class-identity";
 import { acquisitionSummary } from "../../lib/class-presentation.mjs";
 import {
@@ -89,11 +90,9 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
           <p className="class-role">
             <ClassRoles roles={profile.role} />
           </p>
-          {!/(guide cộng đồng|hồ sơ Calendar|bộ kỹ năng và ghi chú|theo trang Class Wiki)/i.test(
-            profile.shortDescription,
-          ) && (
-            <p className="class-hero-description">{profile.shortDescription}</p>
-          )}
+          <p className="class-hero-description class-lore-intro" data-class-intro={selectedProfile.id}>
+            {(classIntroductions as Record<string, string>)[selectedProfile.id] ?? selectedProfile.shortDescription}
+          </p>
           <dl>
             <div>
               <dt>Phong cách</dt>
