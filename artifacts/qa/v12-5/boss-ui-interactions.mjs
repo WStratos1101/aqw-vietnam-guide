@@ -13982,7 +13982,7 @@ var recovery_default = {
   },
   details: {
     "god-of-the-depths": {
-      storyDescription: "N\u01A1i Kathool t\xE1i sinh, m\u1ED9t hi\u1EC7n th\xE2n c\u1EE7a God of the Depths tr\u1ED7i d\u1EADy t\u1EEB \u0111\xE1y bi\u1EC3n. Hai Sacrosanct Tendril b\u1EA3o v\u1EC7 s\u1EF1 hi\u1EC7n di\u1EC7n kh\u1ED5ng l\u1ED3 \u1EA5y.",
+      storyDescription: "B\xEAn d\u01B0\u1EDBi nh\u1EEFng t\u1EA7ng n\u01B0\u1EDBc t\u0103m t\u1ED1i, n\u01A1i Kathool t\xE1i sinh, m\u1ED9t hi\u1EC7n th\xE2n c\u1EE7a God of the Depths \u0111ang tr\u1ED7i d\u1EADy. Hai Sacrosanct Tendril v\u01B0\u01A1n m\xECnh b\u1EA3o v\u1EC7 s\u1EF1 hi\u1EC7n di\u1EC7n kh\u1ED5ng l\u1ED3 \u1EA5y. H\xE3y l\u1EB7n s\xE2u v\xE0o v\u1EF1c th\u1EB3m v\xE0 gi\u1EEF v\u1EEFng l\xFD tr\xED, b\u1EDFi c\xE1i gi\xE1 c\u1EE7a vi\u1EC7c nh\xECn v\xE0o b\xF3ng t\u1ED1i \u0111\xF4i khi l\xE0 \u0111\u1EC3 b\xF3ng t\u1ED1i nh\xECn l\u1EA1i m\xECnh.",
       storyStatus: "Bi\xEAn so\u1EA1n t\u1EEB l\u1EDDi d\u1EABn Quest",
       resetInfo: {
         label: "Quest ng\xE0y",
@@ -14023,7 +14023,7 @@ var recovery_default = {
       }
     },
     "kolr-usurper-of-flames": {
-      storyDescription: "Linh h\u1ED3n Kolr \u0111\xE3 b\u1ECB thi\xEAu r\u1EE5i b\u1EDFi ng\u1ECDn l\u1EEDa h\u1EAFn c\u01B0\u1EDBp t\u1EEB Aleister. \xDD ch\xED v\xE0 l\xF2ng c\u0103m h\u1EADn c\xF2n s\xF3t l\u1EA1i ti\u1EBFp t\u1EE5c ch\xE1y trong h\xECnh h\xE0i k\u1EBB so\xE1n \u0111o\u1EA1t.",
+      storyDescription: "Linh h\u1ED3n Kolr \u0111\xE3 b\u1ECB thi\xEAu r\u1EE5i b\u1EDFi ch\xEDnh ng\u1ECDn l\u1EEDa h\u1EAFn c\u01B0\u1EDBp t\u1EEB Aleister, nh\u01B0ng \xFD ch\xED v\xE0 l\xF2ng c\u0103m h\u1EADn v\u1EABn ch\u01B0a ch\u1ECBu t\u1EAFt. T\u1EEB tro t\xE0n, k\u1EBB so\xE1n \u0111o\u1EA1t ti\u1EBFp t\u1EE5c b\xF9ng ch\xE1y qua b\u1ED1n h\xECnh th\xE1i c\u1EE7a s\u1EE9c m\u1EA1nh. Gi\u1EEFa nh\u1EEFng ng\u1ECDn l\u1EEDa kh\xF4ng ng\u1EEBng bi\u1EBFn \u0111\u1ED5i, li\u1EC7u c\xE1c chi\u1EBFn binh c\xF3 th\u1EC3 d\u1EADp t\u1EAFt tham v\u1ECDng cu\u1ED1i c\xF9ng c\u1EE7a Kolr?",
       storyStatus: "Bi\xEAn so\u1EA1n t\u1EEB l\u1EDDi d\u1EABn Quest",
       resetInfo: {
         label: "Quest ng\xE0y",
@@ -14068,7 +14068,7 @@ var recovery_default = {
       ]
     },
     "astral-empyrean": {
-      storyDescription: "Hai m\u01B0\u01A1i t\xE1m Mansions h\u1EE3p nh\u1EA5t th\xE0nh Astral Empyrean, tr\u1EDF l\u1EA1i v\u1EDBi s\u1EE9c m\u1EA1nh c\u1EE7a c\xE1c v\xEC sao \u0111\u1EC3 th\u1EED th\xE1ch ng\u01B0\u1EDDi h\xF9ng m\u1ED9t l\u1EA7n n\u1EEFa.",
+      storyDescription: "Khi hai m\u01B0\u01A1i t\xE1m Mansions h\u1EE3p nh\u1EA5t, b\u1EA7u tr\u1EDDi nh\u01B0 h\u1ED9i t\u1EE5 s\u1EE9c m\u1EA1nh c\u1EE7a mu\xF4n v\xEC sao v\xE0o h\xECnh h\xE0i Astral Empyrean. Ch\xFAa r\u1ED3ng ng\xE2n h\xE0 tr\u1EDF l\u1EA1i \u0111\u1EC3 th\u1EED th\xE1ch ng\u01B0\u1EDDi h\xF9ng m\u1ED9t l\u1EA7n n\u1EEFa. H\xE3y ng\u1EA9ng \u0111\u1EA7u tr\u01B0\u1EDBc \xE1nh sao r\u1EF1c ch\xE1y v\xE0 ch\u1EE9ng minh r\u1EB1ng l\xF2ng d\u0169ng c\u1EA3m c\u1EE7a ph\xE0m nh\xE2n kh\xF4ng h\u1EC1 nh\u1ECF b\xE9 tr\u01B0\u1EDBc v\u0169 tr\u1EE5 bao la.",
       storyStatus: "Bi\xEAn so\u1EA1n t\u1EEB l\u1EDDi d\u1EABn Quest",
       resetInfo: {
         label: "Quest ng\xE0y",
@@ -14113,7 +14113,7 @@ var recovery_default = {
       ]
     },
     "champion-drakath": {
-      storyDescription: "T\u1EEB m\u1ED9t ho\xE0ng t\u1EED l\u01B0u vong, Drakath nh\u1EADn s\u1EE9c m\u1EA1nh c\u1EE7a Queen of Monsters v\xE0 tr\u1EDF th\xE0nh Champion of Chaos, k\u1EBB \u0111\u1EE9ng sau m\u01B0\u1EDDi ba Chaos Lords.",
+      storyDescription: "T\u1EEB m\u1ED9t ho\xE0ng t\u1EED l\u01B0u vong, Drakath \u0111\xE3 \u0111\xF3n nh\u1EADn s\u1EE9c m\u1EA1nh c\u1EE7a Queen of Monsters v\xE0 tr\u1EDF th\xE0nh Champion of Chaos, k\u1EBB \u0111\u1EE9ng sau m\u01B0\u1EDDi ba Chaos Lords. Nay, ch\xEDnh h\u1EAFn \u0111\u1EE9ng tr\u01B0\u1EDBc nh\u1EEFng ng\u01B0\u1EDDi h\xF9ng c\u1EE7a Lore. Khi h\u1ED7n mang cu\u1ED9n tr\xE0o, tr\u1EADn quy\u1EBFt \u0111\u1EA5u n\xE0y s\u1EBD th\u1EED th\xE1ch b\u1EA3n l\u0129nh c\u1EE7a nh\u1EEFng ng\u01B0\u1EDDi d\xE1m ch\u1ED1ng l\u1EA1i quy\u1EC1n n\u0103ng c\u1EE7a Chaos.",
       storyStatus: "Bi\xEAn so\u1EA1n trung t\xEDnh t\u1EEB ch\u01B0\u01A1ng ngu\u1ED3n",
       resetInfo: {
         label: "Quest tu\u1EA7n",
@@ -14158,7 +14158,7 @@ var recovery_default = {
       ]
     },
     "darkon-the-conductor": {
-      storyDescription: "Darkon tr\u1EDF v\u1EC1 t\u1EEB c\xF5i v\u0129nh h\u1EB1ng, mang theo kh\xE1t v\u1ECDng tr\u1EA3 th\xF9 v\xE0 b\u1EA3n nh\u1EA1c cu\u1ED1i c\xF9ng d\xE0nh cho Astravia.",
+      storyDescription: "Tr\u1EDF v\u1EC1 t\u1EEB c\xF5i v\u0129nh h\u1EB1ng, Darkon mang theo kh\xE1t v\u1ECDng b\xE1o th\xF9 v\xE0 b\u1EA3n nh\u1EA1c cu\u1ED1i c\xF9ng d\xE0nh cho Astravia. Gi\u1EDD \u0111\xE2y, s\xE2n kh\u1EA5u \u0111\xE3 s\u1EB5n s\xE0ng, nh\u1EA1c tr\u01B0\u1EDFng \u0111\xE3 n\xE2ng tay, v\xE0 nh\u1EEFng chi\u1EBFn binh tr\u1EDF th\xE0nh kh\xE1n gi\u1EA3 b\u1EA5t \u0111\u1EAFc d\u0129 c\u1EE7a kh\xFAc bi ca \u1EA5y. H\xE3y ph\xE1 v\u1EE1 v\xF2ng xo\xE1y c\u1EE7a b\u1EA3n giao h\u01B0\u1EDFng tr\u01B0\u1EDBc khi m\xE0n nhung kh\xE9p l\u1EA1i.",
       storyStatus: "Bi\xEAn so\u1EA1n trung t\xEDnh t\u1EEB ch\u01B0\u01A1ng ngu\u1ED3n",
       resetInfo: {
         label: "Quest tu\u1EA7n",
@@ -14203,7 +14203,7 @@ var recovery_default = {
       ]
     },
     "gramiel-the-graceful": {
-      storyDescription: "\u1EDE th\u1EBF gi\u1EDBi n\u01A1i ng\u01B0\u1EDDi h\xF9ng ch\u01B0a t\u1EEBng g\u1EB7p Lae, Gramiel \u0111\xE3 t\xE1i th\u0103ng hoa d\u01B0\u1EDBi quy\u1EC1n k\u1EBB t\u1EA1o ra m\xECnh. Ph\u1EA7n l\u1EDBn s\u1EF1 s\u1ED1ng tr\xEAn Lore \u1EDF ph\xEDa b\xEAn kia c\xE1nh c\u1EEDa \u0111\xE3 b\u1ECB x\xF3a s\u1ED5.",
+      storyDescription: "Ph\xEDa b\xEAn kia c\xE1nh c\u1EEDa h\xE0o quang l\xE0 m\u1ED9t Lore kh\xE1c, n\u01A1i ng\u01B0\u1EDDi h\xF9ng ch\u01B0a t\u1EEBng g\u1EB7p Lae. Gramiel \u0111\xE3 t\xE1i th\u0103ng hoa d\u01B0\u1EDBi quy\u1EC1n k\u1EBB t\u1EA1o ra m\xECnh, c\xF2n ph\u1EA7n l\u1EDBn s\u1EF1 s\u1ED1ng tr\xEAn th\u1EBF gi\u1EDBi \u1EA5y \u0111\xE3 b\u1ECB x\xF3a s\u1ED5. D\u1EABu t\u01B0\u01A1ng lai t\u01B0\u1EDFng ch\u1EEBng \u0111\xE3 kh\xE9p l\u1EA1i, nh\u1EEFng ng\u01B0\u1EDDi s\u1ED1ng s\xF3t v\u1EABn ch\u1ECDn chi\u1EBFn \u0111\u1EA5u. Tr\u1EADn quy\u1EBFt chi\u1EBFn v\u1EDBi Gramiel l\xE0 ch\xFAt hy v\u1ECDng cu\u1ED1i c\xF9ng h\u1ECD g\u1EEDi g\u1EAFm n\u01A1i ng\u01B0\u1EDDi h\xF9ng.",
       storyStatus: "Bi\xEAn so\u1EA1n t\u1EEB l\u1EDDi d\u1EABn Quest",
       resetInfo: {
         label: "Quest tu\u1EA7n",
@@ -14257,7 +14257,7 @@ var recovery_default = {
       ]
     },
     kasuko: {
-      storyDescription: "Kasuko \u0111\xF2i h\u1ECFi m\u1ED9t cu\u1ED9c quy\u1EBFt \u0111\u1EA5u \u0111\u1EC3 th\u1EED \xFD ch\xED c\u1EE7a lo\xE0i ng\u01B0\u1EDDi. Chi\u1EBFn th\u1EAFng con r\u1ED3ng l\xE0 c\xE1ch b\u1EA3o v\u1EC7 c\xE1c ng\xF4i l\xE0ng l\xE2n c\u1EADn kh\u1ECFi ng\u1ECDn l\u1EEDa c\u1EE7a n\xF3.",
+      storyDescription: "T\u1EA1i Lavarock Shore, Kasuko c\u1EA5t l\u1EDDi th\xE1ch \u0111\u1EA5u, mu\u1ED1n t\u1EADn m\u1EAFt ch\u1EE9ng ki\u1EBFn s\u1EE9c m\u1EA1nh \xFD ch\xED c\u1EE7a lo\xE0i ng\u01B0\u1EDDi. Ng\u1ECDn l\u1EEDa c\u1EE7a con r\u1ED3ng \u0111ang \u0111e d\u1ECDa nh\u1EEFng ng\xF4i l\xE0ng l\xE2n c\u1EADn, v\xE0 cu\u1ED9c quy\u1EBFt \u0111\u1EA5u l\xE0 c\u01A1 h\u1ED9i \u0111\u1EC3 b\u1EA3o v\u1EC7 h\u1ECD. H\xE3y b\u01B0\u1EDBc v\xE0o chi\u1EBFn \u0111\u1ECBa, n\u01A1i l\xF2ng qu\u1EA3 c\u1EA3m c\u1EE7a nh\u1EEFng nh\xE0 th\xE1m hi\u1EC3m s\u1EBD \u0111\u01B0\u1EE3c t\xF4i luy\u1EC7n gi\u1EEFa l\u1EEDa v\xE0 n\u01B0\u1EDBc.",
       storyStatus: "Bi\xEAn so\u1EA1n t\u1EEB l\u1EDDi d\u1EABn Quest",
       resetInfo: {
         label: "Quest ng\xE0y trong s\u1EF1 ki\u1EC7n",
@@ -14300,7 +14300,7 @@ var recovery_default = {
       }
     },
     "batara-kala": {
-      storyDescription: "Batara Kala l\xE0 th\u1EED th\xE1ch c\u1EE7a s\u1EF1 ki\u1EC7n Qu\u1ED1c kh\xE1nh Indonesia, ch\u1EDD \u0111\u1EE3i ng\u01B0\u1EDDi ch\u01A1i sau tuy\u1EBFn truy\u1EC7n Kala.",
+      storyDescription: "Nh\u1EEFng l\u1EC5 v\u1EADt d\xE0nh cho Batara Kala v\u1EABn ch\u01B0a \u0111\u1EE7 \u0111\u1EC3 xoa d\u1ECBu c\u01A1n \u0111\xF3i v\xE0 c\u01A1n th\u1ECBnh n\u1ED9 c\u1EE7a h\u1EAFn. Bao k\u1EBB ph\xE0m tr\u1EA7n t\u1EEBng \u0111\u1ED1i \u0111\u1EA7u v\u1EDBi h\u1EAFn \u0111\xE3 tr\u1EDF th\xE0nh n\u1EA1n nh\xE2n c\u1EE7a v\u1ECB th\u1EA7n c\xF5i \xE2m n\xE0y. Gi\u1EDD \u0111\u1EBFn l\u01B0\u1EE3t c\xE1c nh\xE0 th\xE1m hi\u1EC3m ti\u1EBFn v\xE0o cu\u1ED9c quy\u1EBFt \u0111\u1EA5u: \u0111\xE1nh b\u1EA1i Batara Kala, ho\u1EB7c tr\u1EDF th\xE0nh b\u1EEFa ti\u1EC7c ti\u1EBFp theo c\u1EE7a h\u1EAFn.",
       storyStatus: "Bi\xEAn so\u1EA1n trung t\xEDnh t\u1EEB ch\u01B0\u01A1ng ngu\u1ED3n",
       resetInfo: {
         label: "Quest ng\xE0y trong s\u1EF1 ki\u1EC7n",
@@ -14333,7 +14333,7 @@ var recovery_default = {
       }
     },
     "ultra-iara": {
-      storyDescription: "Truy\u1EC1n thuy\u1EBFt k\u1EC3 r\u1EB1ng Iara th\u1EDDi to\xE0n th\u1ECBnh m\u1EA1nh h\u01A1n hi\u1EC7n t\u1EA1i r\u1EA5t nhi\u1EC1u. Ch\u1EC9 nh\u1EEFng ng\u01B0\u1EDDi c\xF3 \xFD ch\xED b\u1EC1n b\u1EC9 nh\u1EA5t m\u1EDBi v\u01B0\u1EE3t qua \u0111\u01B0\u1EE3c ph\xE9p th\u1EED \u1EA5y.",
+      storyDescription: "Truy\u1EC1n thuy\u1EBFt k\u1EC3 r\u1EB1ng Iara \u1EDF th\u1EDDi to\xE0n th\u1ECBnh s\u1EDF h\u1EEFu s\u1EE9c m\u1EA1nh v\u01B0\u1EE3t xa h\xECnh h\xE0i hi\u1EC7n t\u1EA1i. Gi\u1EDD \u0111\xE2y, nh\u1EEFng nh\xE0 th\xE1m hi\u1EC3m c\xF3 d\u1ECBp \u0111\u1ED1i m\u1EB7t v\u1EDBi b\xF3ng d\xE1ng s\u1EE9c m\u1EA1nh huy ho\xE0ng \u1EA5y. H\xE3y mang theo \xFD ch\xED kh\xF4ng khu\u1EA5t ph\u1EE5c, b\u1EDFi ch\u1EC9 nh\u1EEFng ai \u0111\u1EE7 ki\xEAn \u0111\u1ECBnh m\u1EDBi c\xF3 th\u1EC3 v\u01B0\u1EE3t qua ph\xE9p th\u1EED m\xE0 Iara \u0111\u1EB7t ra.",
       storyStatus: "Bi\xEAn so\u1EA1n t\u1EEB l\u1EDDi d\u1EABn Quest",
       resetInfo: {
         label: "Quest ng\xE0y trong s\u1EF1 ki\u1EC7n",
@@ -14366,7 +14366,7 @@ var recovery_default = {
       }
     },
     "ultra-nulgath": {
-      storyDescription: "Nulgath the Archfiend l\xE0 l\xE3nh ch\xFAa c\u1EE7a Tercessuinotlim. T\u1EA1i ultranulgath, ng\u01B0\u1EDDi ch\u01A1i \u0111\u1ED1i m\u1EB7t v\u1EDBi Archfiend c\xF9ng Overfiend Blade.",
+      storyDescription: "T\u1EEB Tercessuinotlim, danh ti\u1EBFng c\u1EE7a Nulgath the Archfiend \u0111\xE3 tr\u1EDF th\xE0nh n\u1ED7i khi\u1EBFp s\u1EE3 \u0111\u1ED1i v\u1EDBi nh\u1EEFng k\u1EBB d\xE1m th\xE1ch th\u1EE9c Nation. Gi\u1EDD \u0111\xE2y, v\u1ECB l\xE3nh ch\xFAa \u1EA5y \u0111\u1EE9ng tr\u01B0\u1EDBc m\u1EB7t nh\u1EEFng nh\xE0 th\xE1m hi\u1EC3m c\xF9ng Overfiend Blade. Bao nhi\xEAu chi\u1EBFn c\xF4ng trong qu\xE1 kh\u1EE9 c\u0169ng ch\u1EB3ng c\xF2n \xFD ngh\u0129a n\u1EBFu h\u1ECD kh\xF4ng th\u1EC3 \u0111\u1EE9ng v\u1EEFng tr\u01B0\u1EDBc quy\u1EC1n n\u0103ng c\u1EE7a Archfiend.",
       storyStatus: "M\xF4 t\u1EA3 b\u1ED1i c\u1EA3nh trung t\xEDnh; kh\xF4ng m\u1EDF r\u1ED9ng t\xECnh ti\u1EBFt ch\u01B0a x\xE1c minh.",
       resetInfo: {
         label: "Quest tu\u1EA7n",
@@ -44601,10 +44601,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Vice Bolt: An infinite range attack that deals damage to 3 hostile targets. Aphotic Overdrive: An infinite range attack that deals damage to 4 hostile targets.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Lategame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Nation \u2014 Abyssal Angel / Shadow.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Lategame",
     progressionTierVerification: {
       status: "unverified",
       confidence: "low",
@@ -44621,7 +44621,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Lategame"
   },
   {
     id: "alpha-omega-doommega-ao",
@@ -44982,10 +44982,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Fiend Frenzy: Your abyssal power sends you and your allies into a Fiendish Frenzy, increasing Crit Damage by 120% for 8 seconds. If you have stacks of Archfiend's Mark, also apply Fiend Leech to yourself, a 2 second HoT that increases in power based on the number of Archfiend's Mark stacks.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Lategame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Nation \u2014 ArchFiend.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Lategame",
     progressionTierVerification: {
       status: "unverified",
       confidence: "low",
@@ -44997,7 +44997,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Lategame"
   },
   {
     id: "archmage-am",
@@ -45378,16 +45378,16 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Good looks: Your friends around you are captivated by your charisma and wisdom and are more motivated in combat. Applies Looking Sharp and Encouraged to you and up to 2 allies, which increases Crit Chance by 5%, stacking to 5, and Haste by 10%. Both effects last 10 seconds.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Newbie",
+    difficultyBasis: "Barber: Bev\u2019s Wig Shop, Battleon Town, 0 AC.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Newbie",
     progressionTierVerification: {
       status: "unverified",
       confidence: "low",
       evidence: []
     },
-    displayCategory: "Midgame"
+    displayCategory: "Newbie"
   },
   {
     id: "battlemage-dark-royal-battlemage-dbm-rbm",
@@ -45580,7 +45580,7 @@ var catalog_default = [
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Savage Swings: A short range attack that deals damage to 1 target. Breaker: A short range attack that deals damage to 1 target.",
     difficulty: "Newbie",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp theo \u0111i\u1EC1u ki\u1EC7n s\u1EDF h\u1EEFu v\xE0 h\u01B0\u1EDBng d\u1EABn Class \u0111\xE3 l\u01B0u; kh\xF4ng ph\u1EA3i nh\xE3n ch\xEDnh th\u1EE9c c\u1EE7a game.",
+    difficultyBasis: "Berserker: Legend Only t\u1EA1i Battleon, c\u1EA7n Membership; kh\xF4ng bao g\u1ED3m c\xE1c skin th\u01B0\u1EDFng g\xF3i n\u1EA1p nh\u01B0 m\u1ED9t l\u1ED9 tr\xECnh t\xE2n th\u1EE7 ri\xEAng.",
     difficultyStatus: "editorial",
     progressionTier: "Newbie",
     progressionTierVerification: {
@@ -45605,8 +45605,8 @@ var catalog_default = [
     ],
     roleBasis: "Vai tr\xF2 theo c\xE1ch s\u1EED d\u1EE5ng trong guide c\u1ED9ng \u0111\u1ED3ng; kh\xF4ng ph\u1EA3i b\u1EA3ng x\u1EBFp h\u1EA1ng ch\xEDnh th\u1EE9c.",
     playstyle: "Caster \u2022 DoT nhi\u1EC1u m\u1EE5c ti\xEAu",
-    difficulty: "Newbie",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Midgame",
+    difficultyBasis: "Blaze Binder c\u1EA7n tuy\u1EBFn merge/ti\u1EBFn tr\xECnh Firestorm Forge; kh\xF4ng ph\u1EA3i Class t\xE2n th\u1EE7.",
     acquisitionType: [
       "free",
       "reputation",
@@ -45664,7 +45664,7 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     difficultyStatus: "editorial",
-    progressionTier: "Newbie",
+    progressionTier: "Midgame",
     progressionTierVerification: {
       status: "editorial_inferred",
       confidence: "medium",
@@ -45696,7 +45696,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Newbie"
+    displayCategory: "Midgame"
   },
   {
     id: "blood-ancient-ba",
@@ -46256,10 +46256,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Auto Attack: A short range attack that deals damage to 1 target. Touch of Doom: A short range attack that deals damage to 1 target.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Lategame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Legion \u2014 Classic Legion DoomKnight.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Lategame",
     progressionTierVerification: {
       status: "editorial_inferred",
       confidence: "medium",
@@ -46286,7 +46286,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Lategame"
   },
   {
     id: "classic-ninja",
@@ -47872,10 +47872,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Soul Breaker: A short range attack that deals damage to 1 target. Soul Rend: A medium range attack that deals damage to 1 target.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Lategame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Legion \u2014 Exalted Soul Cleaver / Exalted Harbinger / Dark Harbinger.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Lategame",
     progressionTierVerification: {
       status: "unverified",
       confidence: "low",
@@ -47892,7 +47892,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Lategame"
   },
   {
     id: "flame-dragon-warrior-fdw",
@@ -48480,7 +48480,7 @@ var catalog_default = [
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Healing Word: Heals yourself or a friendly target for a large amount and up to 6 additional nearby targets for a smaller amount. Applies Radiance to the first target, healing them over time for 16 seconds.",
     difficulty: "Newbie",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp theo \u0111i\u1EC1u ki\u1EC7n s\u1EDF h\u1EEFu v\xE0 h\u01B0\u1EDBng d\u1EABn Class \u0111\xE3 l\u01B0u; kh\xF4ng ph\u1EA3i nh\xE3n ch\xEDnh th\u1EE9c c\u1EE7a game.",
+    difficultyBasis: "Class c\u01A1 b\u1EA3n c\xF3 th\u1EC3 ch\u1ECDn khi t\u1EA1o nh\xE2n v\u1EADt.",
     difficultyStatus: "editorial",
     progressionTier: "Newbie",
     progressionTierVerification: {
@@ -48760,10 +48760,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Nightmare Gaze: An infinite range attack that deals damage to 3 hostile targets. Tentacle Slam: An infinite range attack that deals damage to 3 hostile targets.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Endgame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Kathool Adept.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Endgame",
     progressionTierVerification: {
       status: "editorial_inferred",
       confidence: "medium",
@@ -48780,7 +48780,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Endgame"
   },
   {
     id: "king-s-echo-ke",
@@ -48829,10 +48829,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. King's Shield: Create a damage nullifying barrier, guarding against most forms of damage for 2 seconds and applying Focus for 4 seconds, which forces your target to attack only you for the duration. These effects can not occur again until CORVAK! is used. Also applies Royal Resolve, increasing your Damage Resistance by 50% whi",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Endgame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: King's Echo.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Endgame",
     progressionTierVerification: {
       status: "unverified",
       confidence: "low",
@@ -48844,7 +48844,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Endgame"
   },
   {
     id: "legendary-hero-lh-dark-legendary-hero-dlh",
@@ -49137,10 +49137,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Auto Attack: A short range attack that deals damage to 1 target. Touch of Doom: A short range attack that deals damage to 1 target.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Lategame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Legion \u2014 Legion DoomKnight.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Lategame",
     progressionTierVerification: {
       status: "editorial_inferred",
       confidence: "medium",
@@ -49162,7 +49162,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Lategame"
   },
   {
     id: "legion-revenant-lr",
@@ -49212,7 +49212,7 @@ var catalog_default = [
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Depraved Empowerment: Touch the darkness within yourself and your allies by drawing out their twisted inclinations. Applies Depravity, increasing you and your allies' Dodge, Crit Chance, and Outgoing Damage by 30%. Immorality strengthens your magic, increasing your Haste by 20%, Crit Damage by 30%, and healing you over time. A",
     difficulty: "Endgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp theo \u0111i\u1EC1u ki\u1EC7n s\u1EDF h\u1EEFu v\xE0 h\u01B0\u1EDBng d\u1EABn Class \u0111\xE3 l\u01B0u; kh\xF4ng ph\u1EA3i nh\xE3n ch\xEDnh th\u1EE9c c\u1EE7a game.",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Legion \u2014 Legion Revenant.",
     difficultyStatus: "editorial",
     progressionTier: "Endgame",
     progressionTierVerification: {
@@ -49290,10 +49290,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Hex: A long range attack that deals damage to 1 target. Undead Assault: A long range attack that deals damage to 1 target.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Endgame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Lich.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Endgame",
     progressionTierVerification: {
       status: "editorial_inferred",
       confidence: "medium",
@@ -49320,7 +49320,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Endgame"
   },
   {
     id: "lightcaster-lc",
@@ -49662,7 +49662,7 @@ var catalog_default = [
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Auto Attack: A short range attack that deals damage to 1 target. Fireball: A long range attack that deals damage to 1 target.",
     difficulty: "Newbie",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp theo \u0111i\u1EC1u ki\u1EC7n s\u1EDF h\u1EEFu v\xE0 h\u01B0\u1EDBng d\u1EABn Class \u0111\xE3 l\u01B0u; kh\xF4ng ph\u1EA3i nh\xE3n ch\xEDnh th\u1EE9c c\u1EE7a game.",
+    difficultyBasis: "Class c\u01A1 b\u1EA3n c\xF3 th\u1EC3 ch\u1ECDn khi t\u1EA1o nh\xE2n v\u1EADt.",
     difficultyStatus: "editorial",
     progressionTier: "Newbie",
     progressionTierVerification: {
@@ -49740,16 +49740,16 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Pummel: A short range attack that deals damage to 1 target. Frogzard's Crushing Jaw: A short range attack that deals damage to 1 target.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Lategame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Martial Artist / Master Martial Artist.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Lategame",
     progressionTierVerification: {
       status: "unverified",
       confidence: "low",
       evidence: []
     },
-    displayCategory: "Midgame"
+    displayCategory: "Lategame"
   },
   {
     id: "master-ranger-mr-ranger",
@@ -50144,7 +50144,7 @@ var catalog_default = [
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Auto Attack: A short range attack that deals damage to 1 target. Shuriken: A long range attack that deals damage to 1 target.",
     difficulty: "Newbie",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp theo \u0111i\u1EC1u ki\u1EC7n s\u1EDF h\u1EEFu v\xE0 h\u01B0\u1EDBng d\u1EABn Class \u0111\xE3 l\u01B0u; kh\xF4ng ph\u1EA3i nh\xE3n ch\xEDnh th\u1EE9c c\u1EE7a game.",
+    difficultyBasis: "Ninja: Mazumi\u2019s Shop, Greenguard West, Hit Job.",
     difficultyStatus: "editorial",
     progressionTier: "Newbie",
     progressionTierVerification: {
@@ -50286,16 +50286,16 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Auto Attack: A short range attack that deals damage to 1 target. Foresight: A short range status skill that applies to yourself.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Newbie",
+    difficultyBasis: "Oracle: Class Shop Battleon ho\u1EB7c Ranad t\u1EA1i Class Hall A, 0 AC.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Newbie",
     progressionTierVerification: {
       status: "unverified",
       confidence: "low",
       evidence: []
     },
-    displayCategory: "Midgame"
+    displayCategory: "Newbie"
   },
   {
     id: "paladin-silver-paladin",
@@ -50610,7 +50610,7 @@ var catalog_default = [
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Auto Attack: A short range attack that deals damage to 1 target. Viper's Kiss: A medium range attack that deals damage to 1 target.",
     difficulty: "Newbie",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp theo \u0111i\u1EC1u ki\u1EC7n s\u1EDF h\u1EEFu v\xE0 h\u01B0\u1EDBng d\u1EABn Class \u0111\xE3 l\u01B0u; kh\xF4ng ph\u1EA3i nh\xE3n ch\xEDnh th\u1EE9c c\u1EE7a game.",
+    difficultyBasis: "Class c\u01A1 b\u1EA3n c\xF3 th\u1EC3 ch\u1ECDn khi t\u1EA1o nh\xE2n v\u1EADt.",
     difficultyStatus: "editorial",
     progressionTier: "Newbie",
     progressionTierVerification: {
@@ -50762,10 +50762,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Flame of Maleno: An infinite range attack that deals damage to 1 target. Flame of Albedo: An infinite range attack that deals damage to 1 target.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Endgame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Scion of Flames.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Endgame",
     progressionTierVerification: {
       status: "editorial_inferred",
       confidence: "medium",
@@ -50782,7 +50782,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Endgame"
   },
   {
     id: "sentinel",
@@ -51226,10 +51226,10 @@ var catalog_default = [
     skillCount: 8,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Auto Attack: A short range attack that deals damage to 1 target. Storm Surge: An infinite range attack that deals damage to 1 target.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Lategame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Sovereign of Storms.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Lategame",
     progressionTierVerification: {
       status: "editorial_inferred",
       confidence: "medium",
@@ -51271,7 +51271,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Lategame"
   },
   {
     id: "star-captain-stc",
@@ -51378,10 +51378,10 @@ var catalog_default = [
     skillCount: 7,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Echoing Earth: Harness the residual energy of great battles from ages past trapped beneath the surface. Applies Resonance and Dissonance, which increases haste and crit chance by 30% for the caster and up to 6 friendly targets while improving mana regain. Lasts for 10 seconds. Has a 25% chance to apply Magnitude for 2 seconds.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Lategame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Stone Crusher / Infinity Titan.",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Lategame",
     progressionTierVerification: {
       status: "editorial_inferred",
       confidence: "medium",
@@ -51403,7 +51403,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Lategame"
   },
   {
     id: "thief-of-hours-toh",
@@ -52005,7 +52005,7 @@ var catalog_default = [
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Contract: An infinite range attack that deals damage to 1 target. Shackle: An infinite range attack that deals damage to 1 target.",
     difficulty: "Endgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp theo \u0111i\u1EC1u ki\u1EC7n s\u1EDF h\u1EEFu v\xE0 h\u01B0\u1EDBng d\u1EABn Class \u0111\xE3 l\u01B0u; kh\xF4ng ph\u1EA3i nh\xE3n ch\xEDnh th\u1EE9c c\u1EE7a game.",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Nation \u2014 Void Highlord / Debris Highlord.",
     difficultyStatus: "editorial",
     progressionTier: "Endgame",
     progressionTierVerification: {
@@ -52084,7 +52084,7 @@ var catalog_default = [
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Auto Attack: A short range attack that deals damage to 1 target. Decisive Strike: A short range attack that deals damage to 1 target.",
     difficulty: "Newbie",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp theo \u0111i\u1EC1u ki\u1EC7n s\u1EDF h\u1EEFu v\xE0 h\u01B0\u1EDBng d\u1EABn Class \u0111\xE3 l\u01B0u; kh\xF4ng ph\u1EA3i nh\xE3n ch\xEDnh th\u1EE9c c\u1EE7a game.",
+    difficultyBasis: "Class c\u01A1 b\u1EA3n c\xF3 th\u1EC3 ch\u1ECDn khi t\u1EA1o nh\xE2n v\u1EADt.",
     difficultyStatus: "editorial",
     progressionTier: "Newbie",
     progressionTierVerification: {
@@ -52162,10 +52162,10 @@ var catalog_default = [
     skillCount: 9,
     codexVersion: "12.1",
     roleBasis: "Ph\xE2n lo\u1EA1i bi\xEAn t\u1EADp t\u1EEB range/t\xE1c d\u1EE5ng Wiki \u0111\xE3 \u0111\u1ED1i chi\u1EBFu; kh\xF4ng ph\u1EA3i nh\xE3n vai tr\xF2 ch\xEDnh th\u1EE9c. Tachi: Sequentially cut through your opponent's defenses with three strikes, each dealing moderate damage. The first strike increases your Outgoing Damage by 20% for 10 seconds, the second strike increases your Outgoing Physical Damage by 20% for 8 seconds, and the third strike increases your Crit Damage by 150% for 6 seconds.",
-    difficulty: "Midgame",
-    difficultyBasis: "Ph\xE2n t\u1EA7ng t\u1EA1m th\u1EDDi; h\u1ED3 s\u01A1 ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 \u0111\xE1nh gi\xE1 to\xE0n b\u1ED9 \u0111\u1ED9 ph\u1EE9c t\u1EA1p rotation.",
+    difficulty: "Lategame",
+    difficultyBasis: "Ph\xE2n t\u1EA7ng bi\xEAn t\u1EADp AQWVN: Legion \u2014 Yami no Ronin (c\xF3 tuy\u1EBFn nhi\u1EC7m v\u1EE5 c\u1EE7a Dage).",
     difficultyStatus: "editorial",
-    progressionTier: "Midgame",
+    progressionTier: "Lategame",
     progressionTierVerification: {
       status: "unverified",
       confidence: "low",
@@ -52177,7 +52177,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "Lategame"
   },
   {
     id: "chronomancer-cm-chronomancer-prime-cmp",
@@ -52729,7 +52729,7 @@ var catalog_default = [
       confidence: "low",
       evidence: []
     },
-    displayCategory: "Midgame"
+    displayCategory: "HeroMart"
   },
   {
     id: "great-thief-gt",
@@ -52793,7 +52793,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "HeroMart"
   },
   {
     id: "legion-paladin-lp",
@@ -52852,7 +52852,7 @@ var catalog_default = [
       confidence: "low",
       evidence: []
     },
-    displayCategory: "Midgame"
+    displayCategory: "HeroMart"
   },
   {
     id: "master-of-moglins-mom-dark-master-of-moglins-dmom",
@@ -52931,7 +52931,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "HeroMart"
   },
   {
     id: "not-a-mod-nam",
@@ -52989,7 +52989,7 @@ var catalog_default = [
       confidence: "low",
       evidence: []
     },
-    displayCategory: "Midgame"
+    displayCategory: "HeroMart"
   },
   {
     id: "paladinslayer-ps",
@@ -53088,7 +53088,7 @@ var catalog_default = [
         }
       ]
     },
-    displayCategory: "Midgame"
+    displayCategory: "HeroMart"
   },
   {
     id: "calendar-chrono-commandant",
@@ -59958,7 +59958,7 @@ function useClassBody(profile) {
 }
 
 // src/features/classes/SkillIcon.tsx
-import { useState as useState3 } from "react";
+import { useEffect as useEffect2, useState as useState3 } from "react";
 import { jsx as jsx3 } from "react/jsx-runtime";
 function SkillIcon({
   skill,
@@ -59966,6 +59966,7 @@ function SkillIcon({
 }) {
   const [failed, setFailed] = useState3(false);
   const a = skill.iconAsset;
+  useEffect2(() => setFailed(false), [a?.imagePath]);
   const usable = a?.verificationStatus === "verified" && a.usageStatus === "approved_noncommercial" && a.skillId === skill.id && a.classId === skill.classId;
   return /* @__PURE__ */ jsx3("span", { className: "ability-icon", "data-skill-id": skill.id, children: usable && !failed ? /* @__PURE__ */ jsx3(
     "img",
@@ -63444,7 +63445,7 @@ import {
 // src/content/ultra/details.json
 var details_default = {
   "ultra-ezrajal": {
-    storyDescription: "Ezrajal l\xE0 m\u1ED9t qu\xFD t\u1ED9c Celestial v\xE0 k\u1EBB b\u1EA3o h\u1ED9 Tower of Exaltia. Qua Inn at the Edge of Time, cu\u1ED9c \u0111\u1ED1i \u0111\u1EA7u mang h\xECnh b\xF3ng t\xF2a th\xE1p t\u1EEB chi\u1EC1u kh\xF4ng gian DragonFable \u0111\u1EBFn Lore.",
+    storyDescription: "V\u01B0\u1EE3t qua Inn at the Edge of Time, d\u1EA5u t\xEDch c\u1EE7a Tower of Exaltia hi\u1EC7n ra nh\u01B0 m\u1ED9t l\u1EDDi th\xE1ch th\u1EE9c t\u1EEB chi\u1EC1u kh\xF4ng gian kh\xE1c. Ezrajal, qu\xFD t\u1ED9c Celestial v\xE0 ng\u01B0\u1EDDi b\u1EA3o h\u1ED9 t\xF2a th\xE1p, \u0111ang ch\u1EDD nh\u1EEFng k\u1EBB d\xE1m \u0111\u1EB7t ch\xE2n \u0111\u1EBFn \u0111\xE2y. Mu\u1ED1n ti\u1EBFn s\xE2u h\u01A1n, h\xE3y ch\u1EE9ng minh r\u1EB1ng c\xE1c ng\u01B0\u01A1i x\u1EE9ng \u0111\xE1ng v\u01B0\u1EE3t qua c\xE1nh c\u1ED5ng \u0111\u1EA7u ti\xEAn.",
     storyStatus: "M\xF4 t\u1EA3 b\u1ED1i c\u1EA3nh trung t\xEDnh; kh\xF4ng m\u1EDF r\u1ED9ng t\xECnh ti\u1EBFt ch\u01B0a x\xE1c minh.",
     resetInfo: {
       label: "Quest ng\xE0y",
@@ -64068,7 +64069,7 @@ var details_default = {
     ]
   },
   "ultra-warden": {
-    storyDescription: "The Warden l\xE0 m\u1ED9t t\u1EA1o v\u1EADt c\u1EE7a Tower of Exaltia, \u0111\u1EE9ng \u1EDF ch\u1EB7ng th\u1EE9 hai c\u1EE7a th\u1EED th\xE1ch. Inn at the Edge of Time \u0111\u01B0a ng\u01B0\u1EDDi ch\u01A1i t\u1EDBi cu\u1ED9c \u0111\u1ED1i \u0111\u1EA7u v\u1EDBi k\u1EBB canh gi\u1EEF t\u1EEB chi\u1EC1u kh\xF4ng gian DragonFable.",
+    storyDescription: "S\xE2u h\u01A1n trong th\u1EED th\xE1ch c\u1EE7a Tower of Exaltia, The Warden \u0111\u1EE9ng s\u1EEBng s\u1EEFng nh\u01B0 m\u1ED9t th\xE0nh l\u0169y kh\xF4ng th\u1EC3 lay chuy\u1EC3n. \u0110\u01B0\u1EE3c t\u1EA1o ra \u0111\u1EC3 canh gi\u1EEF t\xF2a th\xE1p, n\xF3 kh\xF4ng h\u1EC1 bi\u1EBFt \u0111\u1EBFn khoan nh\u01B0\u1EE3ng hay m\u1EC7t m\u1ECFi. Khi s\u1EE9c m\u1EA1nh cu\u1ED3ng n\u1ED9 \u0111\u01B0\u1EE3c gi\u1EA3i ph\xF3ng, m\u1ED7i b\u01B0\u1EDBc ti\u1EBFn \u0111\u1EC1u ph\u1EA3i \u0111\xE1nh \u0111\u1ED5i b\u1EB1ng l\xF2ng can \u0111\u1EA3m v\xE0 s\u1EF1 \u0111o\xE0n k\u1EBFt c\u1EE7a c\u1EA3 \u0111\u1ED9i.",
     storyStatus: "M\xF4 t\u1EA3 b\u1ED1i c\u1EA3nh trung t\xEDnh; kh\xF4ng m\u1EDF r\u1ED9ng t\xECnh ti\u1EBFt ch\u01B0a x\xE1c minh.",
     resetInfo: {
       label: "Quest ng\xE0y",
@@ -64124,7 +64125,7 @@ var details_default = {
     ]
   },
   "ultra-engineer": {
-    storyDescription: "The Engineer c\xF9ng nh\u1EEFng Drone l\xE0 m\u1ED9t ph\u1EA7n c\u1EE7a th\u1EED th\xE1ch Tower of Exaltia. T\u1EEB chi\u1EC1u kh\xF4ng gian DragonFable, \u0111\u1ED1i th\u1EE7 mang b\u1EA3n s\u1EAFc c\u01A1 kh\xED n\xE0y xu\u1EA5t hi\u1EC7n t\u1EA1i Inn at the Edge of Time c\u1EE7a AQW.",
+    storyDescription: "Ti\u1EBFng kim lo\u1EA1i va ch\u1EA1m vang l\xEAn gi\u1EEFa nh\u1EEFng c\u1ED7 m\xE1y c\u1EE7a Tower of Exaltia. The Engineer \u0111\xE3 s\u1EB5n s\xE0ng ti\u1EBFp \u0111\xF3n c\xE1c nh\xE0 th\xE1m hi\u1EC3m b\u1EB1ng nh\u1EEFng Drone \u0111\u01B0\u1EE3c \u0111i\u1EC1u khi\u1EC3n d\u01B0\u1EDBi quy\u1EC1n h\u1EAFn. Tr\u01B0\u1EDBc m\u1ED9t \u0111\u1ED1i th\u1EE7 bi\u1EBFn c\u1EA3 chi\u1EBFn tr\u01B0\u1EDDng th\xE0nh c\u1ED7 m\xE1y h\u1EE7y di\u1EC7t, ch\u1EC9 nh\u1EEFng chi\u1EBFn binh bi\u1EBFt ph\u1ED1i h\u1EE3p nh\u01B0 m\u1ED9t th\u1EC3 th\u1ED1ng nh\u1EA5t m\u1EDBi c\xF3 th\u1EC3 m\u1EDF ra con \u0111\u01B0\u1EDDng ph\xEDa tr\u01B0\u1EDBc.",
     storyStatus: "M\xF4 t\u1EA3 b\u1ED1i c\u1EA3nh trung t\xEDnh; kh\xF4ng m\u1EDF r\u1ED9ng t\xECnh ti\u1EBFt ch\u01B0a x\xE1c minh.",
     resetInfo: {
       label: "Quest ng\xE0y",
@@ -64757,7 +64758,7 @@ var details_default = {
     ]
   },
   "ultra-tyndarius": {
-    storyDescription: "Tyndarius t\u1EEBng l\xE0 t\u01B0\u1EDBng c\u1EE7a Queen of Monsters v\xE0 l\xE0 tai h\u1ECDa c\u1EE7a Embersea Isles. Khi li\xEAn minh v\u1EDBi Malgor, h\u1EAFn \u0111\u01B0a Firestorm Onslaught v\xE0o cu\u1ED9c x\xE2m l\u0103ng Plane of Fire b\u1EB1ng s\u1EE9c m\u1EA1nh ShadowFlame.",
+    storyDescription: "Ng\u1ECDn l\u1EEDa t\u1EEBng thi\xEAu \u0111\u1ED1t Embersea Isles nay l\u1EA1i b\xF9ng ch\xE1y trong tay Tyndarius, v\u1ECB t\u01B0\u1EDBng t\u1EEBng ph\u1EE5ng s\u1EF1 Queen of Monsters. Li\xEAn minh v\u1EDBi Malgor, h\u1EAFn d\u1EABn Firestorm Onslaught ti\u1EBFn v\xE0o Plane of Fire c\xF9ng s\u1EE9c m\u1EA1nh ShadowFlame. Gi\u1EEFa bi\u1EC3n l\u1EEDa cu\u1ED3ng n\u1ED9, h\xE3y \u0111\u1ED1i m\u1EB7t v\u1EDBi k\u1EBB mang tham v\u1ECDng khu\u1EA5t ph\u1EE5c c\u1EA3 nguy\xEAn t\u1ED1 m\xE0 h\u1EAFn ng\u1EF1 tr\u1ECB.",
     storyStatus: "M\xF4 t\u1EA3 b\u1ED1i c\u1EA3nh trung t\xEDnh; kh\xF4ng m\u1EDF r\u1ED9ng t\xECnh ti\u1EBFt ch\u01B0a x\xE1c minh.",
     resetInfo: {
       label: "Quest ng\xE0y",
@@ -65301,7 +65302,7 @@ var details_default = {
     ]
   },
   "ultra-dage": {
-    storyDescription: "Dage the Dark Lord g\u1EAFn li\u1EC1n v\u1EDBi Undead Legion. Th\u1EED th\xE1ch Ultra \u0111\u01B0a ng\u01B0\u1EDDi ch\u01A1i \u0111\u1ED1i di\u1EC7n quy\u1EC1n l\u1EF1c c\u1EE7a l\xE3nh ch\xFAa Legion t\u1EA1i ultradage.",
+    storyDescription: "Trong b\xF3ng t\u1ED1i c\u1EE7a Undead Legion, c\xE1i t\xEAn Dage the Dark Lord l\xE0 hi\u1EC7n th\xE2n c\u1EE7a quy\u1EC1n uy v\xE0 n\u1ED7i khi\u1EBFp s\u1EE3. Gi\u1EDD \u0111\xE2y, c\xE1c chi\u1EBFn binh c\u1EE7a Lore c\xF3 c\u01A1 h\u1ED9i \u0111\u1EE9ng tr\u01B0\u1EDBc ch\xEDnh v\u1ECB l\xE3nh ch\xFAa \u1EA5y. Nh\u01B0ng tr\u01B0\u1EDBc l\u01B0\u1EE1i ki\u1EBFm c\u1EE7a Dage, s\u1EE9c m\u1EA1nh \u0111\u01A1n thu\u1EA7n ch\u1EB3ng th\u1EC3 \u0111\u1ECBnh \u0111o\u1EA1t chi\u1EBFn th\u1EAFng; ch\u1EC9 m\u1ED9t kho\u1EA3nh kh\u1EAFc s\u01A1 h\u1EDF c\u0169ng \u0111\u1EE7 khi\u1EBFn m\u1ECDi hy v\u1ECDng tan bi\u1EBFn.",
     storyStatus: "M\xF4 t\u1EA3 b\u1ED1i c\u1EA3nh trung t\xEDnh; kh\xF4ng m\u1EDF r\u1ED9ng t\xECnh ti\u1EBFt ch\u01B0a x\xE1c minh.",
     resetInfo: {
       label: "Quest tu\u1EA7n",
@@ -65354,7 +65355,7 @@ var details_default = {
     ]
   },
   "ultra-nulgath": {
-    storyDescription: "Nulgath the Archfiend l\xE0 l\xE3nh ch\xFAa c\u1EE7a Tercessuinotlim. T\u1EA1i ultranulgath, ng\u01B0\u1EDDi ch\u01A1i \u0111\u1ED1i m\u1EB7t v\u1EDBi Archfiend c\xF9ng Overfiend Blade.",
+    storyDescription: "T\u1EEB Tercessuinotlim, danh ti\u1EBFng c\u1EE7a Nulgath the Archfiend \u0111\xE3 tr\u1EDF th\xE0nh n\u1ED7i khi\u1EBFp s\u1EE3 \u0111\u1ED1i v\u1EDBi nh\u1EEFng k\u1EBB d\xE1m th\xE1ch th\u1EE9c Nation. Gi\u1EDD \u0111\xE2y, v\u1ECB l\xE3nh ch\xFAa \u1EA5y \u0111\u1EE9ng tr\u01B0\u1EDBc m\u1EB7t nh\u1EEFng nh\xE0 th\xE1m hi\u1EC3m c\xF9ng Overfiend Blade. Bao nhi\xEAu chi\u1EBFn c\xF4ng trong qu\xE1 kh\u1EE9 c\u0169ng ch\u1EB3ng c\xF2n \xFD ngh\u0129a n\u1EBFu h\u1ECD kh\xF4ng th\u1EC3 \u0111\u1EE9ng v\u1EEFng tr\u01B0\u1EDBc quy\u1EC1n n\u0103ng c\u1EE7a Archfiend.",
     storyStatus: "M\xF4 t\u1EA3 b\u1ED1i c\u1EA3nh trung t\xEDnh; kh\xF4ng m\u1EDF r\u1ED9ng t\xECnh ti\u1EBFt ch\u01B0a x\xE1c minh.",
     resetInfo: {
       label: "Quest tu\u1EA7n",
@@ -67534,7 +67535,7 @@ var details_default = {
     ]
   },
   "ultra-drago": {
-    storyDescription: "M\u1ED9t nh\xE1nh kh\u1EA3 n\u0103ng kh\xE1c c\u1EE7a cu\u1ED9c t\u1EA5n c\xF4ng Astravia Castle \u0111\u1EB7t Hero b\xEAn c\u1EA1nh Re. Sau khi \u0111\u1ED9i qu\xE2n c\u1EE7a Drago b\u1ECB qu\xE9t s\u1EA1ch, nh\xE0 vua c\xF9ng hai t\u01B0\u1EDBng l\u0129nh cu\u1ED1i c\xF9ng v\u1EABn \u0111\u1EE9ng ch\u1EAFn tr\u01B0\u1EDBc ph\xE1n quy\u1EBFt \u0111ang \u0111\u1EBFn.",
+    storyDescription: "Trong m\u1ED9t kh\u1EA3 n\u0103ng kh\xE1c c\u1EE7a cu\u1ED9c chi\u1EBFn t\u1EA1i Astravia Castle, ng\u01B0\u1EDDi h\xF9ng s\xE1t c\xE1nh c\xF9ng Re ti\u1EBFn \u0111\u1EBFn tr\u01B0\u1EDBc ngai v\xE0ng. \u0110\u1ED9i qu\xE2n c\u1EE7a nh\xE0 vua \u0111\xE3 th\u1EA5t th\u1EE7, song King Draco v\u1EABn \u0111\u1EE9ng \u0111\xF3 v\u1EDBi hai t\u01B0\u1EDBng l\u0129nh cu\u1ED1i c\xF9ng. Gi\u1EEFa t\xE0n d\u01B0 c\u1EE7a m\u1ED9t v\u01B0\u01A1ng tri\u1EC1u, tr\u1EADn quy\u1EBFt \u0111\u1EA5u n\xE0y s\u1EBD \u0111\u1ECBnh \u0111o\u1EA1t li\u1EC7u ph\xE1n quy\u1EBFt d\xE0nh cho nh\xE0 vua c\xF3 th\u1EC3 \u0111\u01B0\u1EE3c th\u1EF1c thi hay kh\xF4ng.",
     storyStatus: "M\xF4 t\u1EA3 b\u1ED1i c\u1EA3nh trung t\xEDnh; kh\xF4ng m\u1EDF r\u1ED9ng t\xECnh ti\u1EBFt ch\u01B0a x\xE1c minh.",
     resetInfo: {
       label: "Quest tu\u1EA7n",
@@ -68405,7 +68406,7 @@ var details_default = {
     ]
   },
   "ultra-speaker": {
-    storyDescription: "The First Speaker l\xE0 Malgor, nh\xE2n v\u1EADt trung t\xE2m c\u1EE7a tuy\u1EBFn ShadowFlame. Cu\u1ED9c \u0111\u1ED1i \u0111\u1EA7u t\u1EA1i ultraspeaker n\u1ED1i v\u1EDBi h\xE0nh tr\xECnh ShadowFlame Onslaught v\xE0 Alliance of Crowns.",
+    storyDescription: "ShadowFlame \u0111\xE3 ph\u1EE7 b\xF3ng l\xEAn Lore, v\xE0 c\xE1i t\xEAn Malgor vang v\u1ECDng su\u1ED1t nh\u1EEFng cu\u1ED9c chi\u1EBFn m\xE0 n\xF3 \u0111\u1EC3 l\u1EA1i. Sau ShadowFlame Onslaught v\xE0 Alliance of Crowns, con \u0111\u01B0\u1EDDng c\u1EE7a nh\u1EEFng ng\u01B0\u1EDDi h\xF9ng cu\u1ED1i c\xF9ng d\u1EABn h\u1ECD \u0111\u1EBFn tr\u01B0\u1EDBc The First Speaker. \u1EDE \u0111\xE2y, l\xF2ng d\u0169ng c\u1EA3m kh\xF4ng th\xF4i l\xE0 ch\u01B0a \u0111\u1EE7; ch\u1EC9 m\u1ED9t kho\u1EA3nh kh\u1EAFc l\u1EA1c nh\u1ECBp c\u0169ng c\xF3 th\u1EC3 khi\u1EBFn c\u1EA3 \u0111\u1ED9i g\u1EE5c ng\xE3 tr\u01B0\u1EDBc quy\u1EC1n n\u0103ng c\u1EE7a h\u1EAFn.",
     storyStatus: "M\xF4 t\u1EA3 b\u1ED1i c\u1EA3nh trung t\xEDnh; kh\xF4ng m\u1EDF r\u1ED9ng t\xECnh ti\u1EBFt ch\u01B0a x\xE1c minh.",
     resetInfo: {
       label: "Quest tu\u1EA7n",
@@ -81978,7 +81979,7 @@ var aqw_assets_default = [
 ];
 
 // src/features/ultra/Asset.tsx
-import { useState as useState7, useEffect as useEffect2 } from "react";
+import { useState as useState7, useEffect as useEffect3 } from "react";
 import { ImageOff } from "lucide-react";
 import { Fragment as Fragment6, jsx as jsx8, jsxs as jsxs7 } from "react/jsx-runtime";
 var findAsset = (id) => [...assets_default, ...assets_default2].find((a) => a.id === id);
@@ -82000,7 +82001,7 @@ function Asset({
     localPath: verified.imagePath
   } : registered;
   const [failed, setFailed] = useState7(false);
-  useEffect2(() => setFailed(false), [id, asset?.localPath]);
+  useEffect3(() => setFailed(false), [id, asset?.localPath]);
   if (!asset || asset.usageStatus !== "approved" || !asset.localPath || failed)
     return /* @__PURE__ */ jsxs7(
       "div",
@@ -85640,7 +85641,7 @@ var equipment_default2 = {
 };
 
 // src/features/ultra/MaterialTree.tsx
-import { useEffect as useEffect3, useId as useId3, useState as useState10 } from "react";
+import { useEffect as useEffect4, useId as useId3, useState as useState10 } from "react";
 import { Package } from "lucide-react";
 
 // src/lib/material-requirements.mjs
@@ -85662,11 +85663,11 @@ function isState(value) {
   const s = value;
   return !!s.selections && typeof s.selections === "object" && !Array.isArray(s.selections) && Object.values(s.selections).every((v) => Array.isArray(v) && v.every((n) => Number.isInteger(n) && n >= 0)) && Array.isArray(s.done) && s.done.every((v) => typeof v === "string");
 }
-function MaterialTree({ tree, scope }) {
+function MaterialTree({ tree, scope, renderItem }) {
   const key = "aqw:materials:v2:" + scope, id = useId3();
   const [state, setState] = useState10({ selections: {}, done: [] });
   const [error, setError] = useState10("");
-  useEffect3(() => {
+  useEffect4(() => {
     const load = () => setState(readStoredValue(key, { selections: {}, done: [] }, isState));
     load();
     window.addEventListener("aqw-material-change", load);
@@ -85686,9 +85687,11 @@ function MaterialTree({ tree, scope }) {
     if (node.kind === "item") {
       const token = path + ":" + node.itemId;
       const asset = aqw_assets_default.find((a) => a.entityType === "item" && a.entityName === node.name && a.verificationStatus === "verified" && a.usageStatus === "approved" && a.imagePath);
-      return /* @__PURE__ */ jsx12("li", { className: "material-tree-item", children: /* @__PURE__ */ jsxs11("label", { children: [
-        /* @__PURE__ */ jsx12("input", { type: "checkbox", checked: state.done.includes(token), onChange: () => update({ ...state, done: state.done.includes(token) ? state.done.filter((k) => k !== token) : [...state.done, token] }) }),
-        asset ? /* @__PURE__ */ jsx12("img", { src: asset.imagePath, alt: "", width: 24, height: 24, loading: "lazy", style: { objectFit: "contain" } }) : /* @__PURE__ */ jsx12(Package, { size: 15, "aria-hidden": "true" }),
+      const checkbox = /* @__PURE__ */ jsx12("input", { type: "checkbox", checked: state.done.includes(token), onChange: () => update({ ...state, done: state.done.includes(token) ? state.done.filter((k) => k !== token) : [...state.done, token] }) });
+      const image = asset ? /* @__PURE__ */ jsx12("img", { src: asset.imagePath, alt: "", width: 24, height: 24, loading: "lazy", style: { objectFit: "contain" } }) : /* @__PURE__ */ jsx12(Package, { size: 15, "aria-hidden": "true" });
+      return /* @__PURE__ */ jsx12("li", { className: "material-tree-item", children: renderItem ? renderItem(node, checkbox, image) : /* @__PURE__ */ jsxs11("label", { children: [
+        checkbox,
+        image,
         /* @__PURE__ */ jsx12("span", { children: node.name }),
         /* @__PURE__ */ jsxs11("strong", { children: [
           "\xD7",
@@ -86415,12 +86418,12 @@ function EnemyInspection({ slug, encounter: supplied }) {
 }
 
 // src/features/ultra/BossOfficialTitle.tsx
-import { useEffect as useEffect4, useRef } from "react";
+import { useEffect as useEffect5, useRef } from "react";
 import { jsx as jsx19, jsxs as jsxs17 } from "react/jsx-runtime";
 function BossOfficialTitle({ name, eyebrow = "ULTRA BOSS" }) {
   const ref = useRef(null);
   const text = name.toUpperCase();
-  useEffect4(() => {
+  useEffect5(() => {
     const el = ref.current;
     if (!el) return;
     let live = true;
@@ -86449,7 +86452,7 @@ function BossOfficialTitle({ name, eyebrow = "ULTRA BOSS" }) {
 }
 
 // src/features/ultra/BossRecommendations.tsx
-import { useEffect as useEffect5, useState as useState12 } from "react";
+import { useEffect as useEffect6, useState as useState12 } from "react";
 
 // src/content/ultra/categories.ts
 var challengeCategoryFor = (slug) => ["ultra-ezrajal", "ultra-warden", "ultra-engineer", "ultra-tyndarius", "god-of-the-depths", "kolr-usurper-of-flames", "astral-empyrean"].includes(slug) ? "daily" : ["kasuko", "batara-kala", "ultra-iara"].includes(slug) ? "seasonal" : "weekly";
@@ -86505,7 +86508,7 @@ import { jsx as jsx21, jsxs as jsxs19 } from "react/jsx-runtime";
 var entries = ultraBosses.map((b) => ({ id: b.slug, name: bossDisplayName(b.slug, inspectionFor(b.slug)?.monsters.find((m) => m.id === "boss")?.canonicalName || b.name), href: "/ultra-boss/" + b.slug, image: b.images.portrait, category: challengeCategoryFor(b.slug) }));
 function BossRecommendations({ currentSlug }) {
   const [choices, setChoices] = useState12(() => eligibleBossRecommendations(entries, currentSlug).slice(0, 3));
-  useEffect5(() => {
+  useEffect6(() => {
     setChoices(chooseBossRecommendations(entries, currentSlug));
   }, [currentSlug]);
   return choices.length ? /* @__PURE__ */ jsxs19("section", { className: "ultra-section boss-recommendations", "aria-labelledby": "boss-recommendations-title", children: [
@@ -86541,7 +86544,7 @@ function isUltraGuideContent(value, bossId) {
 }
 
 // src/features/ultra/SourceSections.tsx
-import { useEffect as useEffect6, useState as useState13 } from "react";
+import { useEffect as useEffect7, useState as useState13 } from "react";
 import { jsx as jsx22, jsxs as jsxs20 } from "react/jsx-runtime";
 function initialContent(bossId) {
   const value = initialImportedBody();
@@ -86553,7 +86556,7 @@ function useUltraContent(boss) {
   );
   const [error, setError] = useState13("");
   const [attempt, setAttempt] = useState13(0);
-  useEffect6(() => {
+  useEffect7(() => {
     if (!boss.sourceContentUrl || content) return;
     const controller = new AbortController();
     fetch(boss.sourceContentUrl, { signal: controller.signal }).then((r) => {
@@ -86573,7 +86576,7 @@ function useUltraContent(boss) {
 }
 
 // src/features/ultra/UltraBoss.tsx
-import { useEffect as useEffect9, useState as useState16 } from "react";
+import { useEffect as useEffect10, useState as useState16 } from "react";
 import { ArrowLeft, ArrowRight as ArrowRight3, Search } from "lucide-react";
 
 // src/content/imported/catalog.json
@@ -96778,7 +96781,7 @@ function BossPanel({ boss }) {
 }
 
 // src/features/ultra/RPGEquipmentSelector.tsx
-import { useEffect as useEffect7, useRef as useRef2, useState as useState14 } from "react";
+import { useEffect as useEffect8, useRef as useRef2, useState as useState14 } from "react";
 import { ChevronLeft, ChevronRight as ChevronRight3, Swords as Swords7, Shield as Shield8, Shirt, Package as Package3 } from "lucide-react";
 
 // src/lib/equipment-category.mjs
@@ -96810,14 +96813,14 @@ function RPGEquipmentSelector({ routes, renderDetails }) {
   const strip = useRef2(null);
   const { choices, selected } = selectEquipment(routes, filter, selectedId);
   const [edges, setEdges] = useState14({ start: true, end: false });
-  useEffect7(() => {
+  useEffect8(() => {
     setSelectedId(selected?.id);
   }, [selected?.id]);
-  useEffect7(() => {
+  useEffect8(() => {
     const el = strip.current, button = el?.querySelector('[aria-pressed="true"]');
     if (el && button) el.scrollTo({ left: button.offsetLeft - el.offsetLeft - (el.clientWidth - button.clientWidth) / 2, behavior: "instant" });
   }, [filter, selected?.id]);
-  useEffect7(() => {
+  useEffect8(() => {
     const el = strip.current;
     if (!el) return;
     const update = () => setEdges({ start: el.scrollLeft < 2, end: el.scrollLeft + el.clientWidth >= el.scrollWidth - 2 });
@@ -96869,7 +96872,7 @@ function RPGEquipmentSelector({ routes, renderDetails }) {
 }
 
 // src/features/ultra/Equipment.tsx
-import { useEffect as useEffect8, useId as useId5, useState as useState15 } from "react";
+import { useEffect as useEffect9, useId as useId5, useState as useState15 } from "react";
 import { ChevronDown as ChevronDown4 } from "lucide-react";
 import { jsx as jsx25, jsxs as jsxs23 } from "react/jsx-runtime";
 var repeatLabels = {
@@ -96946,7 +96949,7 @@ function RouteQuests({
   const [done, setDone] = useState15(/* @__PURE__ */ new Set());
   const [error, setError] = useState15("");
   const [loaded, setLoaded] = useState15(false);
-  useEffect8(() => {
+  useEffect9(() => {
     const load = () => {
       setDone(
         new Set(
@@ -97059,7 +97062,7 @@ function Equipment({
 // src/features/ultra/UltraBoss.tsx
 import { Fragment as Fragment10, jsx as jsx26, jsxs as jsxs24 } from "react/jsx-runtime";
 function useReveal(key) {
-  useEffect9(() => {
+  useEffect10(() => {
     const elements = document.querySelectorAll(".ultra-reveal");
     if (matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window))
       return;
@@ -97082,7 +97085,7 @@ function useReveal(key) {
 function UltraDirectory() {
   const [query, setQuery] = useState16("");
   const [category, setCategory] = useState16("all");
-  useEffect9(() => {
+  useEffect10(() => {
     try {
       const saved = window.sessionStorage.getItem(
         "aqw:boss-directory:category"
