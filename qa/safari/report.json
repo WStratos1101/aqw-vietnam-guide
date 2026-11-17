@@ -1,13 +1,96 @@
 {
   "browser": "Safari via Apple safaridriver",
   "base": "http://127.0.0.1:4173",
-  "startedAt": "2026-11-07T15:13:22.090Z",
+  "startedAt": "2026-11-17T18:54:55.987Z",
   "status": "failed",
   "checks": [],
-  "viewports": [],
-  "screenshots": [],
+  "viewports": [
+    {
+      "width": 375,
+      "height": 812,
+      "mode": "window",
+      "route": "/"
+    },
+    {
+      "width": 768,
+      "height": 1000,
+      "mode": "window",
+      "route": "/"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "mode": "window",
+      "route": "/"
+    },
+    {
+      "width": 1920,
+      "height": 1000,
+      "mode": "window",
+      "route": "/"
+    }
+  ],
+  "screenshots": [
+    "qa/safari/home-375-01.png",
+    "qa/safari/home-375-02.png",
+    "qa/safari/home-375-03.png",
+    "qa/safari/home-375-04.png",
+    "qa/safari/home-375-05.png",
+    "qa/safari/home-375-06.png",
+    "qa/safari/home-375-07.png",
+    "qa/safari/home-375-08.png",
+    "qa/safari/home-375-09.png",
+    "qa/safari/home-375-10.png",
+    "qa/safari/home-375-11.png",
+    "qa/safari/home-375-12.png",
+    "qa/safari/home-768-01.png",
+    "qa/safari/home-768-02.png",
+    "qa/safari/home-768-03.png",
+    "qa/safari/home-768-04.png",
+    "qa/safari/home-768-05.png",
+    "qa/safari/home-768-06.png",
+    "qa/safari/home-768-07.png",
+    "qa/safari/home-768-08.png",
+    "qa/safari/home-1440-01.png",
+    "qa/safari/home-1440-02.png",
+    "qa/safari/home-1440-03.png",
+    "qa/safari/home-1440-04.png",
+    "qa/safari/home-1440-05.png",
+    "qa/safari/home-1440-06.png",
+    "qa/safari/home-1440-07.png",
+    "qa/safari/home-1440-08.png",
+    "qa/safari/home-1920-01.png",
+    "qa/safari/home-1920-02.png",
+    "qa/safari/home-1920-03.png",
+    "qa/safari/home-1920-04.png",
+    "qa/safari/home-1920-05.png",
+    "qa/safari/home-1920-06.png",
+    "qa/safari/home-1920-07.png",
+    "qa/safari/home-1920-08.png",
+    "qa/safari/home-1920-09.png"
+  ],
   "limitations": [],
-  "error": "safaridriver exited: {\"code\":1,\"signal\":null}. Enable Safari Remote Automation from a normal macOS terminal, and check sandbox/GUI access.",
+  "capabilities": {
+    "safari:platformVersion": "15.7.7",
+    "safari:automaticInspection": false,
+    "webkit:WebRTC": {
+      "DisableICECandidateFiltering": false,
+      "DisableInsecureMediaCapture": false
+    },
+    "webkit:alwaysAllowAutoplay": false,
+    "browserVersion": "26.2",
+    "strictFileInteractability": false,
+    "browserName": "Safari",
+    "safari:useSimulator": false,
+    "safari:automaticProfiling": false,
+    "setWindowRect": true,
+    "acceptInsecureCerts": false,
+    "safari:platformBuildVersion": "24G720",
+    "safari:experimentalWebSocketUrl": false,
+    "platformName": "macOS",
+    "safari:diagnose": false
+  },
+  "error": "Overflow at 375\n\ntrue !== false\n",
   "driverLog": "",
-  "finishedAt": "2026-11-07T15:13:22.621Z"
+  "finishedAt": "2026-11-17T18:55:39.340Z"
 }

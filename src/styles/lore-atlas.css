@@ -29,3 +29,28 @@
 #class-khoi-dau,#ban-do-lore{scroll-margin-top:100px}
 @media(max-width:900px){.lore-pin-name{display:none}.lore-pin-dot{width:30px;height:30px;font-size:12px}.lore-map-top{flex-wrap:wrap;gap:8px}.lore-map-top small{width:100%;margin-left:0}}
 @media(max-width:520px){.lore-map-stage{aspect-ratio:1000/800}.lore-pin-dot{width:25px;height:25px;font-size:10px;border-width:1px;box-shadow:0 0 0 2px #221835aa}.lore-pin{min-width:28px;min-height:28px;justify-content:center}.lore-map-top,.lore-map-caption{padding:10px 12px}.lore-region-card{padding:12px}}
+
+/* Official map: native aspect ratio and hotspots aligned to the source image. */
+.lore-official-viewport{overflow:auto;max-height:70vh;overscroll-behavior:contain;scrollbar-color:#ac9271 #151b23}
+.lore-official-viewport:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lore-official-stage{position:relative;isolation:isolate;aspect-ratio:742/444}
+.lore-official-image{display:block;width:100%;height:auto;aspect-ratio:742/444;user-select:none}
+.lore-official-pin,.lore-map-control{position:absolute;transform:translate(-50%,-50%);display:block;padding:0;background:transparent;border:1px solid transparent;border-radius:8px;cursor:pointer;z-index:2}
+.lore-official-pin{width:4.4%;height:8.1%;text-decoration:none!important}
+.lore-official-pin:hover,.lore-official-pin:focus-visible,.lore-map-control:hover,.lore-map-control:focus-visible{outline:2px solid #fbe6a0;outline-offset:1px;background:#fff5be30;box-shadow:0 0 13px #fbe6a099;z-index:4}
+.lore-map-tooltip{position:absolute;left:50%;bottom:100%;transform:translateX(-50%);background:#171823;color:#ffefc4;padding:.35rem .55rem;white-space:nowrap;box-shadow:0 3px 12px #0008;border:1px solid #c2a967;border-radius:4px;opacity:0;pointer-events:none;font-size:.85rem}
+.lore-official-pin:hover .lore-map-tooltip,.lore-official-pin:focus-visible .lore-map-tooltip{opacity:1}
+.lore-map-toolbar{display:flex;align-items:center;gap:6px;padding:8px 14px;flex-wrap:wrap}
+.lore-map-toolbar span{margin-right:auto;font-size:.8rem;color:#ccbfa6}
+.lore-map-toolbar button{background:#26252c;color:#f3e4c3;border:1px solid #ad9368;padding:.35rem .6rem;border-radius:3px;cursor:pointer}
+.lore-map-toolbar button:disabled{opacity:.45;cursor:default}
+.lore-map-caption a{color:#f3e4c3;text-decoration:underline}
+.lore-map-directory{margin:1rem 0}
+.lore-map-directory summary{cursor:pointer;font-weight:700;padding:12px 0}
+.lore-map-directory .lore-region-grid{margin-top:10px}
+.lore-map-directory .lore-region-card,.lore-extra-regions .lore-region-card{grid-template-columns:minmax(0,1fr) auto}
+.lore-extra-regions{margin-top:1.75rem}
+.lore-extra-regions h3{margin:0 0 .4rem;font-size:1.25rem}
+.lore-extra-regions p{margin-bottom:1rem;color:var(--muted)}
+.lore-official-stage .lore-map-control{min-height:0;min-width:0}
+.lore-atlas,.lore-map-frame,.lore-official-viewport{min-width:0;max-width:100%}

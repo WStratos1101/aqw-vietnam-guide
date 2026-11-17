@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 const routes = JSON.parse(fs.readFileSync("dist/routes.json", "utf8"));
-const loreRegionSlugs = ["battleon", "greenguard", "swordhaven", "shadowfall", "darkovia", "dwarfhold", "yokai-isle", "sandsea", "arcangrove", "doomwood", "chiral-valley", "mythsong", "bloodtusk", "thunderforge"];
+const loreRegionSlugs = ["battleon", "greenguard", "swordhaven", "shadowfall", "darkovia", "dwarfhold", "yokai-isle", "sandsea", "arcangrove", "doomwood", "chiral-valley", "mythsong", "bloodtusk", "thunderforge", "frozen-northlands", "throne-of-darkness", "chaos", "xans-lab", "mirror-realm", "skullholme", "oaklore-forest", "chronospan", "etherstorm-wastes", "dage-the-evil", "skull-punch", "northpointe-island", "fire-islands"];
 const htmlFor = (route) =>
   fs.readFileSync(
     route === "/" ? "dist/index.html" : path.join("dist", route, "index.html"),
@@ -179,11 +179,14 @@ test("expanded Ultra guides prerender community content without remote image hot
 test("Lore atlas hotspot, mobile links and regional prerender", () => {
   const home = htmlFor("/");
   assert.match(home, /id="ban-do-lore"/);
+  assert.match(home, /src="\/art\/aqw-world-map-official\.png"/);
+  assert.equal(fs.existsSync("dist/art/aqw-world-map-official.png"), true);
   assert.doesNotMatch(home, /Từng mảnh\./);
   for (const slug of loreRegionSlugs) {
     const route = "/cot-truyen/" + slug;
     assert.ok(routes.includes(route), route);
-    assert.ok(home.includes('data-lore-pin="' + slug + '"'), route);
+    const offMap = ["battleon", "swordhaven", "shadowfall"];
+    assert.equal(home.includes('data-lore-pin="' + slug + '"'), !offMap.includes(slug), route);
     assert.ok(home.includes('data-lore-region="' + slug + '"'), route);
     const page = htmlFor(route);
     assert.ok(page.includes('data-lore-region-page="' + slug + '"'), route);

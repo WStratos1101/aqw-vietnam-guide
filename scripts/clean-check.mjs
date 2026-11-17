@@ -9,7 +9,7 @@ const result = {
   source,
   target,
   method:
-    "Fresh independent node_modules reconstructed from exact lockfile versions; each file hash verified against pnpm cache integrity. Registry installation is not tested.",
+    "Fresh independent npm ci installation using exact package-lock.json versions and npm integrity verification.",
   steps: [],
   status: "running",
 };
@@ -30,7 +30,7 @@ for (const entry of [
   });
 try {
   for (const [command, args] of [
-    [process.execPath, ["scripts/restore-cache.mjs"]],
+    ["npm", ["ci", "--include=dev", "--prefer-offline", "--no-fund"]],
     ["npm", ["run", "content:import"]],
     ["npm", ["run", "typecheck"]],
     ["npm", ["run", "lint"]],
@@ -42,10 +42,10 @@ try {
     const run = spawnSync(command, args, {
       cwd: target,
       encoding: "utf8",
-      timeout: 120000,
+      timeout: 600000,
       env: {
         ...process.env,
-        npm_config_cache: path.join(target, ".npm-cache"),
+        
       },
     });
     const step = {
