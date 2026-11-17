@@ -13,13 +13,15 @@ export function normalizeFactionGoalName(value) {
 }
 
 export function assignFarmGroups(items, goals, manifest, aliases = [], mappings = [], legacy = {}, ultraEvidence = [], collectionRecords = []) {
-  const directiveFile = "content-sources/farm/refinement/v3-2-faction-overrides.json", directiveBytes = fs.readFileSync(directiveFile);
-  const directiveHash = createHash("sha256").update(directiveBytes).digest("hex");
-  const taskOverrides = new Map(JSON.parse(directiveBytes).map(entry=>[entry.itemId,entry]));
+  const taskOverrides = new Map();
+  for(const directiveFile of ["content-sources/farm/refinement/v3-2-faction-overrides.json","content-sources/farm/refinement/v3-3-faction-overrides.json"]){
+    const bytes=fs.readFileSync(directiveFile),sourceHash=createHash("sha256").update(bytes).digest("hex");
+    for(const entry of JSON.parse(bytes))taskOverrides.set(entry.itemId,{...entry,sourceFile:directiveFile,sourceHash});
+  }
   const collectionById = new Map(collectionRecords.map(record=>[record.id,record]));
   const collectionGuidePath = "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt";
   const collectionGuideLines = collectionRecords.length ? fs.readFileSync(collectionGuidePath, "utf8").split(/\r?\n/) : [];
-  const collectionGroups={Hollowborn:"hollowborn",Nation:"nation",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Other Items":null};
+  const collectionGroups={Hollowborn:"hollowborn",Nation:"nation",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Alternative Hero":"alternative-hero","Other Items":null};
   const groups = new Set(manifest.groups.map((group) => group.id));
   const aggregateKinds = new Set([
     "set",
@@ -48,7 +50,7 @@ export function assignFarmGroups(items, goals, manifest, aliases = [], mappings 
       item.primaryGroupId = directive.primaryGroupId;
       item.groupIds = [directive.primaryGroupId];
       item.groupStatus = "verified";
-      item.groupEvidence = [{groupId:directive.primaryGroupId,status:"verified",sourceDocument:"user-task-v3.2",sourceFile:"content-sources/farm/refinement/v3-2-faction-overrides.json",sourceUrl:item.wikiUrl,authority:directive.authority,sourceHash:directiveHash,goalName:item.name,sourceLine:null,sourceChapter:"Alternative Hero",recordKind:"equipment",evidenceText:directive.reason,matchKind:"exact-canonical-task-directive"}];
+      item.groupEvidence = [{groupId:directive.primaryGroupId,status:"verified",sourceDocument:directive.authority,sourceFile:directive.sourceFile,sourceUrl:item.wikiUrl,authority:directive.authority,sourceHash:directive.sourceHash,goalName:item.name,sourceLine:null,sourceChapter:directive.authority==="user-task-v3.2"?"Alternative Hero":directive.primaryGroupId,recordKind:"equipment",evidenceText:directive.reason,matchKind:"exact-canonical-task-directive"}];
       continue;
     }
     const old = legacy[item.id];

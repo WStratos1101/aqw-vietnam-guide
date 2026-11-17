@@ -16,6 +16,11 @@ const raw = new Map(stepSources.map(s => {
 for (const spec of stepCases) test(`source → production steps: ${spec.itemId}/${spec.modeId || 'default'}`, () => {
   const route = catalog.items.find(i => i.id === spec.itemId).acquisitionRoutes.find(r => r.id === spec.routeId);
   const tasks = mainWorkflowTasks(route, registry, spec.modeId);
+  for(const name of spec.conditionNames||[]){
+    const condition=route.questGraph.find(node=>registry.quests[node.questId]?.quest===name);
+    assert.equal(condition?.display,"condition",name);
+    assert.ok(raw.get(registry.quests[condition.questId].source)?.some(q=>q.name===name));
+  }
   assert.deepEqual(tasks.map(t => t.quest), spec.names);
   assert.equal(new Set(tasks.map(t => t.id)).size, spec.names.length);
   for (const task of tasks) {

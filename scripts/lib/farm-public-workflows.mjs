@@ -78,20 +78,20 @@ export function applyFarmPublicWorkflows(items, cachedPages, materialSources, bo
   for (const row of questRows) for (const reward of outputs(row.q)) {
     const key = reward.wikiUrl || reward.name;
     const entries = byReward.get(key) || [];
-    if (!entries.some(entry => entry.page.url === row.page.url && entry.q.name === row.q.name)) entries.push(row);
+    if (!entries.some(entry => entry.page.url === row.page.url && entry.q.sectionIdentity === row.q.sectionIdentity)) entries.push(row);
     byReward.set(key, entries);
   }
   const register = ({ page, q }) => {
     const variants = byName(q.name).filter(row => row.page.url === page.url);
-    const key = new URL(page.url).pathname.slice(1) + ":" + materialId(q.name) + (variants.length > 1 ? ":" + hash(q.requirements.join("\n")).slice(0,8) : "");
+    const key = new URL(page.url).pathname.slice(1) + ":" + materialId(q.name) + (variants.length > 1 ? ":" + hash(JSON.stringify([q.sectionIdentity,q.npc,q.location,q.required,outputs(q)])).slice(0,8) : "");
     if (registrations.has(key)) return key;
     registrations.set(key, true);
     const locations = [...new Set(q.locationLinks.filter(link => (link.name === q.location || q.locationNames?.includes(link.name))).map(link => mapFor(pages.get(link.url))).filter(Boolean))];
     const task = { id: key, quest: q.name, npc: q.npc, location: q.location || q.locationNames?.join(" · ") || null, acceptanceMaps:locations, map: locations.length === 1 ? locations[0] : null,
-      source: page.url, sourceHash: page.sourceHash, preconditions: q.requirements, requirements: [],
+      source: page.url, sourceHash: page.sourceHash, sectionIdentity: q.sectionIdentity, preconditions: q.requirements, requirements: [],
       ownedItems: [...new Map((q.ownedItems || []).map(item => [item.wikiUrl, item])).values()],
       rows: q.required.map(row => ({ name: row.name, itemId: materialId(row.name), quantity: row.quantity,
-        monster: row.monster || null, map: null, source: page.url })),
+        ...row, monster: row.monster || null, map: null, source: page.url })),
       reward: q.fixedRewards.map(r => `${r.name} ×${r.quantity}`).join("; "),
       fixedRewards: q.fixedRewards, rewardChoices: q.choiceRewards, randomRewards: q.randomRewards,
       randomChoiceRewards: q.randomChoiceRewards, repeatability: q.repeatability,
@@ -143,10 +143,19 @@ export function applyFarmPublicWorkflows(items, cachedPages, materialSources, bo
   // generic cached panel. No candidate text supplies quantities.
   const useReviewedTask = task => {
     if (!task.quest || !task.source) return null;
-    const row = questRows.find(row => row.page.url === task.source && row.q.name === task.quest);
-    if (!row) return null; // A merge/shop instruction is not a real Wiki Quest.
+    const candidates = questRows.filter(row => row.page.url === task.source && row.q.name === task.quest &&
+      (!task.sectionIdentity || row.q.sectionIdentity === task.sectionIdentity) &&
+      (!task.location || (row.q.location || row.q.locationNames?.join(' · ')) === task.location || row.q.locationNames?.includes(task.location)) &&
+      task.rows.length === row.q.required.length && task.rows.every(input => row.q.required.some(other => other.name === input.name && other.quantity === input.quantity)));
+    if (candidates.length !== 1) return null; // Ambiguous panels stay unverified.
+    const row = candidates[0];
     const key = row ? register(row) : new URL(task.source).pathname.slice(1) + ":" + materialId(task.quest);
     quests[key] = { ...(quests[key] || {}), ...task, id: key,
+      rows: task.rows.map(input => ({...row.q.required.find(other=>other.name===input.name&&other.quantity===input.quantity),...input})),
+      sourceHash: row.page.sourceHash, sectionIdentity: row.q.sectionIdentity,
+      fixedRewards: row.q.fixedRewards, rewardChoices: row.q.choiceRewards,
+      randomRewards: row.q.randomRewards, randomChoiceRewards: row.q.randomChoiceRewards,
+      reward: row.q.fixedRewards.map(reward => `${reward.name} ×${reward.quantity}`).join("; "),
       preconditions: quests[key]?.preconditions?.length ? quests[key].preconditions : task.preconditions || [],
       dependencies: quests[key]?.dependencies || [], ownedItems: quests[key]?.ownedItems || [] };
     return key;
@@ -256,7 +265,7 @@ export function applyFarmPublicWorkflows(items, cachedPages, materialSources, bo
           for(const line of (shop?.text || "").split("\n").filter(line=>/Must have completed/i.test(line))) {
             for(const name of [...new Set((shop.itemLinks || []).filter(link=>line.includes("'"+link.name+"'")).map(link=>link.name))]) {
               const links=(shop.itemLinks || []).filter(link=>link.name===name);
-              const matches=byName(name).filter(row=>links.some(link=>link.url===row.page.url));
+              const matches=byName(name).filter(row=>links.some(link=>new URL(link.url).origin+new URL(link.url).pathname===new URL(row.page.url).origin+new URL(row.page.url).pathname));
               if(matches.length===1)shopUnlocks.push(matches[0]);
             }
           }
@@ -308,10 +317,9 @@ export function applyFarmPublicWorkflows(items, cachedPages, materialSources, bo
     route.questWorkflowIds=ordered(route.questWorkflowIds);
     for(const option of route.questOptions || [])option.workflowIds=ordered(option.workflowIds);
     for(const mode of route.farmModes || []){
-      const selected=new Set(mode.questIds);
       mode.questIds=ordered(mode.questIds);
-      const unlocks=mode.questIds.filter(id=>!selected.has(id)).map(id=>({...quests[id],numberOfRuns:mode.questRuns[id] || 1}));
-      mode.materials=sumMaterials([{rows:mode.materials},...unlocks]);
+      // Completion gates are conditions. Their story costs do not belong to the
+      // selected acquisition mode. Keep the shared quest evidence in registry.
     }
   }
   applyDirectUltraGroups(items,pages,audit);

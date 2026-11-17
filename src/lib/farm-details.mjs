@@ -73,6 +73,8 @@ export function farmBoostState(item) {
 
 // Absence of an effect is not evidence that the item has no boost.
 export function farmBoost(item) {
+  if(item.boostReviewStatus === "none")return ["Không"];
+  if(item.boostReviewStatus === "unverified")return ["Chưa xác minh"];
   if(item.boosts?.length){
     const labels={classPoints:"Class Point",experience:"EXP",reputation:"Reputation",gold:"Gold"};
     return item.boosts.map(boost=>boost.kind==='damageToAll'?`Tăng ${boost.percent}% sát thương lên All Monsters khi trang bị.`:boost.kind==='damageToTagged'?`Tăng ${boost.percent}% sát thương lên ${boost.targets.join(', ')}.`:`Tăng ${boost.percent}% ${labels[boost.kind]||boost.kind}.`);

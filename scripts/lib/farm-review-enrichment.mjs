@@ -8,7 +8,7 @@ const hash = bytes => createHash("sha256").update(bytes).digest("hex");
 const wiki = url => String(url || "").split(/[?#]/)[0].replace(/^http:/, "https:");
 const subtypeByPath = { "/swords": "Sword", "/axes": "Axe", "/daggers": "Dagger", "/polearms": "Polearm", "/maces": "Mace", "/bows": "Bow", "/staves": "Staff", "/staffs": "Staff", "/wands": "Wand", "/guns": "Gun", "/gauntlets": "Gauntlet", "/handguns": "HandGun", "/rifles": "Rifle", "/whips": "Whip" };
 const categoryByPath = { "/weapons": "Weapons", "/armors": "Armors", "/helmets-hoods": "Helms", "/helmets": "Helms", "/capes-back-items": "Capes / Back Items", "/capes": "Capes / Back Items", "/pets": "Pets", "/classes": "Classes" };
-const insigniaBosses = { "Nulgath Insignia": "ultra-nulgath", "Dage the Evil Insignia": "ultra-dage", "Avatar Tyndarius Insignia": "ultra-tyndarius", "King Drago Insignia": "ultra-drago", "Malgor Insignia": "ultra-speaker", "Darkon Insignia": "darkon-the-conductor", "Ezrajal Insignia": "ultra-ezrajal", "Warden Insignia": "ultra-warden", "Engineer Insignia": "ultra-engineer" };
+const insigniaBosses = { "Champion Drakath Insignia": "champion-drakath", "Nulgath Insignia": "ultra-nulgath", "Dage the Evil Insignia": "ultra-dage", "Avatar Tyndarius Insignia": "ultra-tyndarius", "King Drago Insignia": "ultra-drago", "Malgor Insignia": "ultra-speaker", "Darkon Insignia": "darkon-the-conductor", "Ezrajal Insignia": "ultra-ezrajal", "Warden Insignia": "ultra-warden", "Engineer Insignia": "ultra-engineer" };
 
 export function loadFarmReviewPages(root = "content-sources/farm/review") {
   if (!fs.existsSync(root + "/pages.json")) return [];
@@ -141,7 +141,8 @@ export function enrichFarmReview(items, pages, bosses, approvals = [], candidate
           const oldTask = route.farmTasks?.find(t => t.quest === quest.name || (imported && t.id === "acquire"));
           const task = { id: oldTask?.id || "reviewed-acquire", quest: quest.name, npc: quest.npc, map: route.mapCommand,
             requirements: quest.requirements, preconditions: quest.requirements, reward: item.name,
-            source: questPage.url, rows: quest.required.map(r => ({ name: r.name, quantity: r.quantity, monster: r.monster || null, map: null, source: questPage.url })) };
+            source: questPage.url, sectionIdentity: quest.sectionIdentity,
+            rows: quest.required.map(r => ({ ...r, name: r.name, quantity: r.quantity, monster: r.monster || null, map: null, source: questPage.url })) };
           // NPC location never becomes the farming map of an unknown ingredient.
           route.farmTasks = [...(route.farmTasks || []).filter(t => t.id !== task.id && !(imported && t.quest === quest.name)), task];
           addSource(route, questPage.url);
@@ -172,7 +173,7 @@ export function enrichFarmReview(items, pages, bosses, approvals = [], candidate
       const candidate = candidates.find(c => c.itemId === item.id && c.status === "downloaded");
       if (approval && candidate) {
         if (!page || candidate.sourcePage !== item.wikiUrl || approval.fileHash !== candidate.fileHash ||
-            candidate.sourceHash !== page.sourceHash || !page.images.some(i => i.url === candidate.originalImageUrl) ||
+            candidate.sourceHash !== page.sourceHash || !page.images.some(i => i.url.replace(/^http:/,'https:') === candidate.originalImageUrl.replace(/^http:/,'https:')) ||
             hash(fs.readFileSync(candidate.candidatePath)) !== approval.fileHash)
           throw Error("Unverified Farm image approval: " + item.id);
         const path = "/images/aqw/farm-reviewed/" + candidate.candidatePath.split("/").at(-1);

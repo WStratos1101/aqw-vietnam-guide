@@ -124,6 +124,8 @@ test("curated identities, recipes, unknown routes, classes and approved art surv
   const legacy = read("src/content/farm/catalog.json");
   for (const old of legacy.items) {
     const item = catalog.items.find((i) => i.id === old.id);
+    const excluded=[...read("content-sources/farm/refinement/v3-3-class-scope.json").decisions,...read("content-sources/farm/refinement/v3-4-class-scope.json").decisions].find(row=>row.id===old.id);
+    if(excluded){assert.equal(item,undefined);assert.ok(excluded.evidence.excerpt);continue;}
     assert.ok(item, old.id);
     assert.equal(item.name, old.officialName);
     if (old.image) assert.equal(item.image, old.image.path);

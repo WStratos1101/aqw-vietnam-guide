@@ -3,10 +3,10 @@
 export const lrSteps = ['Legion Fealty 1', 'Legion Fealty 2', 'Legion Fealty 3'];
 export const stepCases = [
   { itemId: 'apprentice-of-awe', routeId: 'wiki-location', names: ['The Dawn of Lore'] },
-  { itemId: 'void-beetle-warlord', routeId: 'wiki-location', names: ['Metamorphosis', 'Still Hungry'] },
+  { itemId: 'void-beetle-warlord', routeId: 'wiki-location', names: ['Still Hungry'], conditionNames: ['Metamorphosis'] },
   { itemId: 'legion-revenant-class', routeId: 'wiki-location', modeId: 'standard', names: lrSteps },
   { itemId: 'legion-revenant-class', routeId: 'wiki-location', modeId: 'insignia', names: lrSteps },
-  { itemId: 'arch-doomknight', routeId: 'wiki-location', names: ['Gathering Power', "Death's Door", 'Chaotic Lords', 'A Means to an End'] },
+  { itemId: 'arch-doomknight', routeId: 'wiki-location', names: ['A Means to an End'], conditionNames: ['Gathering Power', "Death's Door", 'Chaotic Lords'] },
   { itemId: 'adept-of-awe', routeId: 'wiki-location', names: ['The Dawn of Lore', 'Mystical Magics', 'Science Rules', 'War: What is it Good For?', 'Which Came First, the Dragon or the Dragonoid?', 'Artifact Hunting'] },
 ];
 export const stepSources = [

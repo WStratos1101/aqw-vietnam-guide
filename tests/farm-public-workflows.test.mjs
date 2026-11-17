@@ -37,8 +37,8 @@ test("BLoD mining keeps its unlock, daily limit and verified material acquisitio
 });
 
 test("all public Nostalgia routes are removed while the ordinary NSOD recipe and every identity survive",()=>{
-  assert.equal(catalog.items.length,279+collectionRecords.length);
-  assert.equal(new Set(catalog.items.map(item=>item.id)).size,279+collectionRecords.length);
+  assert.equal(catalog.items.length,268+collectionRecords.length);
+  assert.equal(new Set(catalog.items.map(item=>item.id)).size,268+collectionRecords.length);
   assert.equal(audit.removedRoutes.length,5);assert.equal(audit.cleanedRoutes.length,1);
   for(const item of catalog.items)assert.doesNotMatch(JSON.stringify({brief:item.acquisitionBrief,details:item.wikiDetails}),/nostalgia/i);
   for(const item of catalog.items) for(const r of item.acquisitionRoutes){
@@ -99,7 +99,7 @@ test("direct Ultra group mapping uses exact Boss IDs and never follows indirect 
 test("Alternative Hero and Khác filters count unique identities without asserting unknown factions",()=>{
   const manifest=read("content-sources/farm/faction-groups.json");
   assert.equal(resolveGroup("Alternative Hero",manifest),"alternative-hero");
-  assert.equal(groupCounts([...catalog.items,...catalog.items],catalog.groups).find(group=>group.id==="alternative-hero").count,13);
+  assert.equal(groupCounts([...catalog.items,...catalog.items],catalog.groups).find(group=>group.id==="alternative-hero").count,21);
   assert.equal(groupCounts(catalog.items,catalog.groups).find(group=>group.id==="unknown").name,"Khác");
   assert.ok(catalog.items.filter(item=>matchesGroup(item,"unknown")).every(item=>item.primaryGroupId===null&&item.groupStatus==="unknown"));
 });
@@ -121,8 +121,8 @@ test("LR Insignia branch keeps LF1–3 unlock runs and the ×2 Wreath exchange",
   for(const name of [1,2,3].map(n=>"Legion Fealty "+n))assert.equal(q.find(task=>task.quest===name).numberOfRuns,1);
   assert.equal(quantities(mode.materials)["Dage the Evil Insignia"],31);assert.equal(quantities(mode.materials)["Legion Token"],5550);
   assert.equal(mode.insignia.questCompletions,7);
-  assert.equal(quantities(mode.materials)["Dage's Favor"],500);
-  assert.equal(quantities(mode.materials)["Obsidian Rock"],10);
+  assert.equal(quantities(mode.materials)["Dage's Favor"],300);
+  assert.equal(quantities(mode.materials)["Obsidian Rock"],undefined);
   assert.equal(quantities(mode.materials)["Dage the Dark Lord Defeated"],7);
   assert.ok(q.findIndex(task=>task.quest==="Training With Dage")<q.findIndex(task=>task.quest==="Dage, Lord of the Undead Legion"));
   assert.deepEqual(mode.finishingTasks.map(task=>task.numberOfRuns),[19,9,3]);

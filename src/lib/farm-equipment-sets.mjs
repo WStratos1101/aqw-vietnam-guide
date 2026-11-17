@@ -1,5 +1,5 @@
 import { farmItemHref } from "./farm-catalog.mjs";
-const order=["Weapons","Armors","Helms","Capes / Back Items","Pets","Classes"];
+const order=["Weapons","Armors","Helms","Capes / Back Items","Pets","Classes","Grounds"];
 export function equipmentSetMembers(set,items){
  const byId=new Map(items.map(item=>[item.id,item]));
  return set.memberIds.map(id=>byId.get(id)).filter(Boolean).sort((a,b)=>(order.indexOf(a.category)<0?order.length:order.indexOf(a.category))-(order.indexOf(b.category)<0?order.length:order.indexOf(b.category))||a.name.localeCompare(b.name,"en"));

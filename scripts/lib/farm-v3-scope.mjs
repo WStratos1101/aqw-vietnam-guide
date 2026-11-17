@@ -49,13 +49,16 @@ export function applyVerifiedFarmFields(items,pages,specs,details){
   if(!item.wikiDetails)item.wikiDetails=details({text:page.text,wikiUrl:spec.url,lastChecked:null},null);
   if(spec.membership){
     const html=fs.readFileSync(spec.sourceFile,"utf8");
-    if(spec.membership!=="non-member"||spec.membershipTag!=="freeplayer"||!html.includes('tag/freeplayer'))throw Error('Unproved membership '+spec.id);
+    const validTag=spec.membership==="non-member"?spec.membershipTag==="freeplayer":spec.membership==="member"&&spec.membershipTag==="legend";
+    const exactTag=spec.membershipTag==="legend"?/tag\/legend(?:#|["'])/.test(html):html.includes('tag/freeplayer');
+    if(!validTag||!exactTag)throw Error('Unproved membership '+spec.id);
     item.membership=spec.membership;item.wikiDetails.membership=spec.membership;
     item.fieldEvidence={...item.fieldEvidence,membership:spec.url};
   }
   item.wikiDetails.descriptionVi=spec.descriptionVi;
   item.descriptionVi=spec.descriptionVi;
-  item.rarity=spec.rarity;item.fieldEvidence={...item.fieldEvidence,rarity:spec.url};
+  if(spec.rarity){item.rarity=spec.rarity;item.fieldEvidence={...item.fieldEvidence,rarity:spec.url};}
+  if(spec.boostReviewStatus)item.boostReviewStatus=spec.boostReviewStatus;
   item.boosts=spec.boosts.map(boost=>({...boost,source:spec.url,sourceHash:spec.sourceHash,scope:'equipped'}));
   item.v3FieldEvidence={url:spec.url,sourceFile:spec.sourceFile,sourceHash:spec.sourceHash,quotes:spec.quotes,translationStatus:'reviewed_translation'};
   changed.push(item.id);

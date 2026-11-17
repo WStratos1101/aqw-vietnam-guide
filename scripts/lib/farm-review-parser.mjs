@@ -22,7 +22,7 @@ function field(text, label) {
 }
 
 function labelNode(root, label) {
-  return [...root.querySelectorAll("strong")].find(el => el.textContent.trim().toLowerCase() === label.toLowerCase() + ":");
+  return [...root.querySelectorAll("strong")].find(el => el.textContent.trim().replace(/:$/,'').toLowerCase() === label.toLowerCase());
 }
 
 function listAfter(node) {
@@ -45,7 +45,9 @@ function rows(list, url) {
     const monster = [...li.querySelectorAll("ul li")].find(el => /Dropped by/i.test(el.textContent));
     return [{ name, quantity: match ? Number(match[2].replaceAll(",", "")) : 1,
       ...(link ? { wikiUrl: new URL(link.getAttribute("href"), url).href } : {}),
-      ...(monster ? { monster: monster.textContent.replace(/Dropped by:?\s*/i, "").trim() } : {}) }];
+      ...(monster ? { monster: monster.textContent.replace(/Dropped by:?\s*/i, "").trim(),
+        ...(monster.querySelector('a[href]') ? {monsterWikiUrl:new URL(monster.querySelector('a[href]').getAttribute('href'),url).href} : {}) } : {}),
+      ...( /\((?:Temporary|Temp(?:orary)? Item)\)/i.test(value) ? {temporary:true} : {}) }];
   });
 }
 
@@ -61,43 +63,58 @@ function requirements(root) {
   return [];
 }
 
+function questContext(view) {
+  const context=[];
+  for(let el=view.previousElementSibling;el&&el.tagName!=='HR'&&!el.matches('.yui-navset');el=el.previousElementSibling)
+    if(['P','UL'].includes(el.tagName))context.unshift(el);
+  const parent=view.parentElement?.closest('.yui-navset');
+  return parent?[...questContext(parent),...context]:context;
+}
+
 export function parseFarmReviewPage(html, url) {
   {
     const doc = parser.parseFromString(html, "text/html"), body = doc.querySelector("#page-content");
     if (!body) throw Error("Missing Wiki main body");
     const text = wikiText(body);
     const quests = [];
-    for (const view of body.querySelectorAll(".yui-navset")) {
+    const views = [...body.querySelectorAll(".yui-navset")];
+    for (const [viewIndex, view] of views.entries()) {
       const labels = [...view.querySelectorAll(":scope > .yui-nav > li")].map(el => el.textContent.trim());
       const panels = [...view.querySelectorAll(":scope > .yui-content > div")];
-      const context = [];
-      for (let el = view.previousElementSibling; el && el.tagName !== "HR"; el = el.previousElementSibling)
-        if (["P","UL"].includes(el.tagName)) context.unshift(el);
+      const context = questContext(view);
       const contextText = context.map(wikiText).join("\n");
       const locationLabel=context.flatMap(root=>[...root.querySelectorAll("strong")]).find(node=>/^Quest Locations?:$/.test(node.textContent.trim()));
       const locationNames=listAfter(locationLabel)?[...listAfter(locationLabel).querySelectorAll("a[href]")].map(a=>a.textContent.trim()):[];
       for (const [index, panel] of panels.entries()) {
-        const required = labelNode(panel, "Items Required");
+        if (panel.matches('.yui-navset')) continue;
+        // A parent location tab can contain another quest navset. Its labels,
+        // requirements and rewards must never inherit those of a child quest.
+        const isolated = panel.cloneNode(true);
+        isolated.querySelectorAll(".yui-navset").forEach(node => node.remove());
+        const required = labelNode(isolated, "Items Required");
         if (!required || !labels[index]) continue; // Item artwork tabs are not quests.
-        const panelText = wikiText(panel);
-        const rewardList = listAfter(labelNode(panel, "Items") || labelNode(panel, "You may also choose one of"));
-        quests.push({ name: labels[index], locationNames, location: field(contextText, "Quest Locations?"), npc: field(contextText, "Quests Begun From"),
+        const panelText = wikiText(isolated);
+        const rewardList = listAfter(labelNode(isolated, "Items") || labelNode(isolated, "You may also choose one of"));
+        quests.push({ name: labels[index], sectionIdentity: `nav-${viewIndex}/panel-${index}`, sourceUrl: url,
+          locationNames, location: field(contextText, "Quest Locations?"), npc: field(contextText, "Quests Begun From"),
           previousQuest: labels[index - 1] || null,
-          ownedItems: [...context, panel].flatMap(root => [root,...root.querySelectorAll("li,p")]
+          ownedItems: [...context, isolated].flatMap(root => [root,...root.querySelectorAll("li,p")]
             .filter(node => ["P","LI"].includes(node.tagName) && /(?:in your inventory|in inventory)/i.test(node.textContent))
             .flatMap(node => [...node.querySelectorAll("a[href]")].filter(a=>node.textContent.indexOf(a.textContent)>=Math.max(0,node.textContent.search(/Must (?:have|own)/i))).map(a => ({ name: a.textContent.trim(), wikiUrl: new URL(a.getAttribute("href"), url).href })))),
           locationLinks: context.flatMap(el => [...el.querySelectorAll("a[href]")].map(a => ({ name: a.textContent.trim(), url: new URL(a.getAttribute("href"), url).href }))),
-          requirements: [...context.flatMap(requirements), ...requirements(panel)],
+          requirements: [...context.flatMap(requirements), ...requirements(isolated)],
           repeatability: /once.*per week/i.test(contextText + "\n" + panelText) ? "weekly" : /once.*per day/i.test(contextText + "\n" + panelText) ? "daily" : null,
           required: rows(listAfter(required), url), rewards: rows(rewardList, url),
-          fixedRewards: rows(listAfter(labelNode(panel, "Items")), url),
-          choiceRewards: rows(listAfter(labelNode(panel, "You may also choose one of")), url),
-          randomRewards: rows(listAfter(labelNode(panel, "You may also receive, at random")), url),
-          randomChoiceRewards: rows(listAfter(labelNode(panel, "You will receive one of the following items")), url),
+          fixedRewards: rows(listAfter(labelNode(isolated, "Items")), url),
+          choiceRewards: rows(listAfter(labelNode(isolated, "You may also choose one of")), url),
+          randomRewards: rows(listAfter(labelNode(isolated, "You may also receive, at random")), url),
+          randomChoiceRewards: rows(listAfter(labelNode(isolated, "You will receive one of the following items")), url),
           text: panelText });
       }
     }
     const locationBlock = text.match(/^Locations?:[ \t]*([^]*?)(?=^Price:)/im)?.[1]?.trim() || null;
+    const priceNode=labelNode(body,'Price');
+    const acquisitionLinks=priceNode?[...priceNode.parentElement.querySelectorAll('a[href]')].map(a=>({name:a.textContent.trim(),url:new URL(a.getAttribute('href'),url).href})):[];
     const locationNode = labelNode(body, "Location") || labelNode(body, "Locations");
     const locationLinks = [];
     // Collapsible location lists may be siblings of the Location paragraph.
@@ -137,7 +154,7 @@ export function parseFarmReviewPage(html, url) {
       if (!values.length || values.some(row => /\b(?:OR|AND)\b/.test(row.name))) return { status: "PENDING_STRUCTURE", tree: null };
       const tree = { kind: "allOf", requirements: values.map(row => {
         const currency = row.name.match(/^([\d,]+) (Gold|ACs?)$/);
-        return currency ? item(currency[2], Number(currency[1].replaceAll(",", "")), url) : item(row.name, row.quantity, url);
+        return currency ? item(currency[2], Number(currency[1].replaceAll(",", "")), url) : {...item(row.name, row.quantity, url), ...(row.wikiUrl ? {wikiUrl:row.wikiUrl} : {})};
       }) };
       return { status: validateMaterials(tree).length ? "PENDING_STRUCTURE" : "explicit-list", tree: validateMaterials(tree).length ? null : tree };
     });
@@ -146,6 +163,9 @@ export function parseFarmReviewPage(html, url) {
       return /^Dropped by:$/i.test(label.textContent.trim());
     })];
     const droppedBy=dropLists.flatMap(list=>rows(list,url));
+    const temporaryDrops=rows(listAfter(labelNode(body,'Temporary Items Dropped')),url).map(row=>({...row,
+      name:row.name.replace(/\s*\(Dropped during[^]*$/i,''),
+      requiredQuest:row.name.match(/Dropped during the '(.+)' quest/i)?.[1]||null}));
     const alternativeBlock = text.match(/^Reward from the following quests?:\n([^]*?)(?=^Sellback:)/im)?.[1] || "";
     const questAlternatives = alternativeBlock.split("\n").flatMap(line => {
       const match = line.match(/^'(.+)'(?:\s+\((.+)\))?$/);
@@ -169,7 +189,9 @@ export function parseFarmReviewPage(html, url) {
         purchase:{amount:Number(price[1].replaceAll(",","")),currency:/^gold$/i.test(price[2])?"Gold":"ACs"},
         requirements:cells.slice(0,-1).map(cell=>cell.textContent.trim()).filter(value=>value&&value!==link.textContent.trim()&&value!=="N/A")}];
     }));
-    return { text, quests, droppedBy, shopRows, shopInventory, price: field(text,"Price"), location: locationBlock?.replace(/\n/g, " · ") || null,
+    return { text, quests, droppedBy, temporaryDrops, shopRows, shopInventory, acquisitionLinks,
+      images:[...body.querySelectorAll('img[src]')].map(img=>({url:new URL(img.getAttribute('src'),url).href})),
+      price: field(text,"Price"), location: locationBlock?.replace(/\n/g, " · ") || null,
       itemLinks: [...body.querySelectorAll("a[href]")].filter(a => /^(?:\/|https?:\/\/aqwwiki\.wikidot\.com\/)/.test(a.getAttribute("href")))
         .map(a => ({ name: a.textContent.trim(), url: new URL(a.getAttribute("href"), url).href })),
       mergeRecipes, questAlternatives, locationLinks: [...new Map(locationLinks.map(link => [link.url + "|" + link.name, link])).values()],

@@ -1,4 +1,46 @@
 {
+  "champion-drakath-insignia": {
+    "name": "Champion Drakath Insignia",
+    "method": "Ultra Quest",
+    "bossId": "champion-drakath",
+    "bossName": "Champion Drakath",
+    "bossHref": "/ultra-boss/champion-drakath",
+    "sourcePage": "https://aqwwiki.wikidot.com/hero-s-quests",
+    "sourceHash": "abbb35cf40282a089d0e1185f82fc58fe56c21f1ab8d2d8709ef92342c142e45",
+    "mapEvidence": [
+      "https://aqwwiki.wikidot.com/champion-drakath-location"
+    ],
+    "tasks": [
+      {
+        "id": "insignia-champion-drakath-insignia",
+        "quest": "Drakath, Champion of Chaos",
+        "npc": "Hero (NPC)",
+        "map": "/join championdrakath",
+        "location": "Champion Drakath (Location)",
+        "requirements": [
+          "Must be Level 80."
+        ],
+        "preconditions": [
+          "Must be Level 80."
+        ],
+        "reward": "Champion Drakath Insignia ×5",
+        "rewardQuantity": 5,
+        "repeatability": "weekly",
+        "source": "https://aqwwiki.wikidot.com/hero-s-quests",
+        "bossId": "champion-drakath",
+        "bossName": "Champion Drakath",
+        "rows": [
+          {
+            "name": "Champion Drakath Defeated",
+            "quantity": 1,
+            "monster": "Champion Drakath (Monster)",
+            "map": "/join championdrakath",
+            "source": "https://aqwwiki.wikidot.com/hero-s-quests"
+          }
+        ]
+      }
+    ]
+  },
   "nulgath-insignia": {
     "name": "Nulgath Insignia",
     "method": "Ultra Quest",
@@ -1027,6 +1069,398 @@
       },
       {
         "id": "material-quest-15",
+        "quest": "Daily Exercise 1: Ultra Aeacus",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×100",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "Sparred with Ultra Aeacus",
+            "quantity": 1,
+            "monster": "Ultra Aeacus",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-16",
+        "quest": "Daily Exercise 2: Legion Lich Lord",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×150",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "Sparred With the Legion Lich Lord",
+            "quantity": 1,
+            "monster": "Legion Lich Lord (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-17",
+        "quest": "Daily Exercise 3: The Beast",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×150",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "The Beast Subdued",
+            "quantity": 1,
+            "monster": "The Beast (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-18",
+        "quest": "Daily Exercise 4: Devastator Deimos",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×150",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "Sparred With Devastator Deimos",
+            "quantity": 1,
+            "monster": "Devastator Deimos",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-19",
+        "quest": "Daily Exercise 5: God of the Depths",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Promotion in your inventory.",
+          "Must be Level 80."
+        ],
+        "preconditions": [
+          "Must have Legion Promotion in your inventory.",
+          "Must be Level 80."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×250",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "God of The Depths Subdued",
+            "quantity": 1,
+            "monster": "God of the Depths",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-20",
+        "quest": "Daily Exercise 6: Dage the Dark Lord",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×250",
+        "repeatability": "daily",
+        "rows": [
+          {
+            "name": "Sparred With Dage the Dark Lord",
+            "quantity": 1,
+            "monster": "Dage the Dark Lord",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-21",
+        "quest": "Mercutio's Soul",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Mercutio's Soul",
+            "quantity": 25,
+            "monster": "Mercutio (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-22",
+        "quest": "Ghostly Aracara Souls",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Ghostly Arcara Soul",
+            "quantity": 50,
+            "monster": "Ghostly Aracara",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-23",
+        "quest": "Ghostly Grizzlespit Souls",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Promotion in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Ghostly Grizzlespit Soul",
+            "quantity": 50,
+            "monster": "Ghostly Grizzlespit",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-24",
+        "quest": "Ghostly Zardman Souls",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Ghostly Zardman Soul",
+            "quantity": 50,
+            "monster": "Escaped Ghostly Zardman",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-25",
+        "quest": "Ghostly Wisteria Souls",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Ghostly Wisteria Soul",
+            "quantity": 25,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-26",
+        "quest": "Cyclops Warlord Ghost Souls",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Cyclops Warlord Ghost Soul",
+            "quantity": 50,
+            "monster": "Cyclops Warlord Ghost",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-27",
+        "quest": "Escaped Wendighost Souls",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Escaped Wendighost Soul",
+            "quantity": 50,
+            "monster": "Escaped Wendighost",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-28",
+        "quest": "Belrot the Ghost Souls",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Belrot the Ghost Soul",
+            "quantity": 50,
+            "monster": "Belrot the Ghost",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-29",
+        "quest": "Ghostly Deathgazer Souls",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Ghostly Deathgazer Soul",
+            "quantity": 50,
+            "monster": "Ghostly Deathgazer",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-30",
+        "quest": "Escaped Dai Tenghost Souls",
+        "npc": null,
+        "map": null,
+        "requirements": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "preconditions": [
+          "Must have Legion Soul Collector in your inventory."
+        ],
+        "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests",
+        "sourceHash": "180307adf11a111faecac76ba6e13b2803f28c7ea7f1b1d2e663fb432ca4776e",
+        "reward": "Legion Token ×1",
+        "rows": [
+          {
+            "name": "Dai Tenghost Soul",
+            "quantity": 50,
+            "monster": "Escaped Dai Tenghost",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/dage-the-evil-s-champion-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-31",
         "quest": "Legion Castle Quest",
         "npc": "Legion Castle",
         "map": null,
@@ -1316,8 +1750,8 @@
       {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
+        "npc": null,
+        "map": null,
         "preconditions": [
           "Must have completed the 'Break their Muti-kneecaps' quest.",
           "Must be Level 80."
@@ -1331,6 +1765,7 @@
         "rows": [
           {
             "name": "Flibbitiestgibbet's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/flibbitiestgibbet-s-essence",
             "itemId": "flibbitiestgibbet-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -1351,6 +1786,7 @@
           },
           {
             "name": "Nightbane's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/nightbane-s-essence",
             "itemId": "nightbane-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -1371,6 +1807,7 @@
           },
           {
             "name": "Xyfrag's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/xyfrag-s-essence",
             "itemId": "xyfrag-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -1439,13 +1876,6 @@
             "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
             "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
             "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
             "verifiedAt": "2026-11-15"
           }
         ]
@@ -1916,8 +2346,8 @@
       {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
+        "npc": null,
+        "map": null,
         "preconditions": [
           "Must have completed the 'Break their Muti-kneecaps' quest.",
           "Must be Level 80."
@@ -1931,6 +2361,7 @@
         "rows": [
           {
             "name": "Flibbitiestgibbet's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/flibbitiestgibbet-s-essence",
             "itemId": "flibbitiestgibbet-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -1951,6 +2382,7 @@
           },
           {
             "name": "Nightbane's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/nightbane-s-essence",
             "itemId": "nightbane-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -1971,6 +2403,7 @@
           },
           {
             "name": "Xyfrag's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/xyfrag-s-essence",
             "itemId": "xyfrag-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -2039,13 +2472,6 @@
             "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
             "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
             "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
             "verifiedAt": "2026-11-15"
           }
         ]
@@ -2450,8 +2876,8 @@
       {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
+        "npc": null,
+        "map": null,
         "preconditions": [
           "Must have completed the 'Break their Muti-kneecaps' quest.",
           "Must be Level 80."
@@ -2465,6 +2891,7 @@
         "rows": [
           {
             "name": "Flibbitiestgibbet's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/flibbitiestgibbet-s-essence",
             "itemId": "flibbitiestgibbet-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -2485,6 +2912,7 @@
           },
           {
             "name": "Nightbane's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/nightbane-s-essence",
             "itemId": "nightbane-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -2505,6 +2933,7 @@
           },
           {
             "name": "Xyfrag's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/xyfrag-s-essence",
             "itemId": "xyfrag-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -2573,13 +3002,6 @@
             "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
             "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
             "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
             "verifiedAt": "2026-11-15"
           }
         ]
@@ -2788,8 +3210,8 @@
       {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
+        "npc": null,
+        "map": null,
         "preconditions": [
           "Must have completed the 'Break their Muti-kneecaps' quest.",
           "Must be Level 80."
@@ -2803,6 +3225,7 @@
         "rows": [
           {
             "name": "Flibbitiestgibbet's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/flibbitiestgibbet-s-essence",
             "itemId": "flibbitiestgibbet-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -2823,6 +3246,7 @@
           },
           {
             "name": "Nightbane's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/nightbane-s-essence",
             "itemId": "nightbane-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -2843,6 +3267,7 @@
           },
           {
             "name": "Xyfrag's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/xyfrag-s-essence",
             "itemId": "xyfrag-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -2911,13 +3336,6 @@
             "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
             "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
             "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
             "verifiedAt": "2026-11-15"
           }
         ]
@@ -3385,8 +3803,8 @@
       {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
+        "npc": null,
+        "map": null,
         "preconditions": [
           "Must have completed the 'Break their Muti-kneecaps' quest.",
           "Must be Level 80."
@@ -3400,6 +3818,7 @@
         "rows": [
           {
             "name": "Flibbitiestgibbet's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/flibbitiestgibbet-s-essence",
             "itemId": "flibbitiestgibbet-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -3420,6 +3839,7 @@
           },
           {
             "name": "Nightbane's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/nightbane-s-essence",
             "itemId": "nightbane-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -3440,6 +3860,7 @@
           },
           {
             "name": "Xyfrag's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/xyfrag-s-essence",
             "itemId": "xyfrag-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -3508,13 +3929,6 @@
             "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
             "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
             "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
             "verifiedAt": "2026-11-15"
           }
         ]
@@ -3623,8 +4037,8 @@
       {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
+        "npc": null,
+        "map": null,
         "preconditions": [
           "Must have completed the 'Break their Muti-kneecaps' quest.",
           "Must be Level 80."
@@ -3638,6 +4052,7 @@
         "rows": [
           {
             "name": "Flibbitiestgibbet's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/flibbitiestgibbet-s-essence",
             "itemId": "flibbitiestgibbet-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -3658,6 +4073,7 @@
           },
           {
             "name": "Nightbane's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/nightbane-s-essence",
             "itemId": "nightbane-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -3678,6 +4094,7 @@
           },
           {
             "name": "Xyfrag's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/xyfrag-s-essence",
             "itemId": "xyfrag-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -3746,13 +4163,6 @@
             "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
             "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
             "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
             "verifiedAt": "2026-11-15"
           }
         ]
@@ -3877,8 +4287,8 @@
       {
         "id": "material-quest-0",
         "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Break their Muti-kneecaps' quest.",
           "Must be Level 80."
@@ -3918,8 +4328,8 @@
       {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
+        "npc": null,
+        "map": null,
         "preconditions": [
           "Must have completed the 'Break their Muti-kneecaps' quest.",
           "Must be Level 80."
@@ -3933,6 +4343,7 @@
         "rows": [
           {
             "name": "Flibbitiestgibbet's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/flibbitiestgibbet-s-essence",
             "itemId": "flibbitiestgibbet-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -3953,6 +4364,7 @@
           },
           {
             "name": "Nightbane's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/nightbane-s-essence",
             "itemId": "nightbane-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -3973,6 +4385,7 @@
           },
           {
             "name": "Xyfrag's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/xyfrag-s-essence",
             "itemId": "xyfrag-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -4042,13 +4455,6 @@
             "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
             "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
             "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
-            "verifiedAt": "2026-11-15"
           }
         ]
       }
@@ -4091,8 +4497,8 @@
       {
         "id": "material-quest-0",
         "quest": "Ultimate Weapon Kit Construction",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the previous quest."
         ],
@@ -4243,8 +4649,8 @@
       {
         "id": "material-quest-0",
         "quest": "Basic Weapon Kit Construction",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed at least one ''... of Destiny' quest."
         ],
@@ -4381,8 +4787,8 @@
       {
         "id": "material-quest-0",
         "quest": "Finding Fragments with Blinding Blade",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Blade of Destiny in your inventory."
@@ -4407,8 +4813,8 @@
       {
         "id": "material-quest-1",
         "quest": "Finding Fragments with Blinding Broadsword",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Broadsword of Destiny in your inventory."
@@ -4522,8 +4928,8 @@
       {
         "id": "material-quest-1",
         "quest": "Finding Fragments with Blinding Blade",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Blade of Destiny in your inventory."
@@ -4548,8 +4954,8 @@
       {
         "id": "material-quest-2",
         "quest": "Finding Fragments with Blinding Scythe",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Scythe of Destiny in your inventory."
@@ -4574,8 +4980,8 @@
       {
         "id": "material-quest-3",
         "quest": "Finding Fragments with Blinding Daggers",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Daggers of Destiny in your inventory."
@@ -4715,8 +5121,8 @@
       {
         "id": "material-quest-0",
         "quest": "Finding Fragments with Blinding Mace",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Mace of Destiny in your inventory."
@@ -4773,8 +5179,8 @@
       {
         "id": "material-quest-0",
         "quest": "Advanced Weapon Kit Construction",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the previous quest."
         ],
@@ -4925,8 +5331,8 @@
       {
         "id": "material-quest-0",
         "quest": "Finding Fragments with Blinding Broadsword",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Broadsword of Destiny in your inventory."
@@ -4951,8 +5357,8 @@
       {
         "id": "material-quest-1",
         "quest": "Finding Fragments with Blinding Scythe",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Scythe of Destiny in your inventory."
@@ -4977,8 +5383,8 @@
       {
         "id": "material-quest-2",
         "quest": "Finding Fragments with Blinding Bow",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Bow of Destiny in your inventory."
@@ -5909,6 +6315,84 @@
       }
     ]
   },
+  "pristine-skull": {
+    "name": "Pristine Skull",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "SO MANY SKULLS (Badge Quest)",
+        "npc": "Grimskull & Noxus",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'It Takes Two to Tango' quest from Grimskull or Noxus."
+        ],
+        "preconditions": [
+          "Must have completed the 'It Takes Two to Tango' quest from Grimskull or Noxus."
+        ],
+        "source": "https://aqwwiki.wikidot.com/grimskull-noxus-quests",
+        "sourceHash": "0f071c534f8440431cc99329c00de31cf6a5824191aabbc389cb22148ed87f9a",
+        "reward": "Pristine Skull ×1",
+        "rows": [
+          {
+            "name": "Colossal Vordred's Skull",
+            "quantity": 5,
+            "monster": "Colossal Vordred",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/grimskull-noxus-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "We Will Rebuild",
+        "npc": "Grimskull & Noxus",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'SO MANY SKULLS' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'SO MANY SKULLS' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/grimskull-noxus-quests",
+        "sourceHash": "0f071c534f8440431cc99329c00de31cf6a5824191aabbc389cb22148ed87f9a",
+        "reward": "Pristine Skull ×1",
+        "rows": [
+          {
+            "name": "Colossal Vordred's Skull",
+            "quantity": 15,
+            "monster": "Colossal Vordred",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/grimskull-noxus-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "We Will Rebuild (Legend)",
+        "npc": "Grimskull & Noxus",
+        "map": null,
+        "requirements": [
+          "Must have completed the 'SO MANY SKULLS' quest."
+        ],
+        "preconditions": [
+          "Must have completed the 'SO MANY SKULLS' quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/grimskull-noxus-quests",
+        "sourceHash": "0f071c534f8440431cc99329c00de31cf6a5824191aabbc389cb22148ed87f9a",
+        "reward": "Pristine Skull ×2",
+        "rows": [
+          {
+            "name": "Colossal Vordred's Skull",
+            "quantity": 15,
+            "monster": "Colossal Vordred",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/grimskull-noxus-quests"
+          }
+        ]
+      }
+    ]
+  },
   "archfiend-s-favor": {
     "name": "Archfiend's Favor",
     "method": "Quest",
@@ -6177,6 +6661,455 @@
       }
     ]
   },
+  "condensed-grace": {
+    "name": "Condensed Grace",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Trial of the Vessel (Weekly Quest)",
+        "npc": "Mysterious Figure (NPC)",
+        "map": "/join ultragramielhub",
+        "requirements": [
+          "Must have completed the 'Isa, Reversed - Realized' quest.",
+          "Must be Level 80.",
+          "Rank 10 Hollowborn."
+        ],
+        "preconditions": [
+          "Must have completed the 'Isa, Reversed - Realized' quest.",
+          "Must be Level 80.",
+          "Rank 10 Hollowborn."
+        ],
+        "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests",
+        "sourceHash": "fb709ff3f8d9bae788a4c270f7cd77207716ff9c6e4322cc926f71b67de7b884",
+        "reward": "Condensed Grace ×1",
+        "repeatability": "weekly",
+        "rows": [
+          {
+            "name": "Death's Power",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Hollow Soul (Misc)",
+            "quantity": 1500,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Vindicator Badge",
+            "quantity": 200,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Grace Orb",
+            "quantity": 400,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Gramiel's Emblem",
+            "quantity": 300,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Vindicator Crest",
+            "quantity": 100,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Echoes of a Forgotten Fate (Weekly Quest)",
+        "npc": "Mysterious Figure (NPC)",
+        "map": "/join ultragramielhub",
+        "requirements": [
+          "Must have completed the 'Isa, Reversed - Realized' quest.",
+          "Must be Level 80.",
+          "Rank 10 Hollowborn."
+        ],
+        "preconditions": [
+          "Must have completed the 'Isa, Reversed - Realized' quest.",
+          "Must be Level 80.",
+          "Rank 10 Hollowborn."
+        ],
+        "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests",
+        "sourceHash": "fb709ff3f8d9bae788a4c270f7cd77207716ff9c6e4322cc926f71b67de7b884",
+        "reward": "Condensed Grace ×1",
+        "repeatability": "weekly",
+        "rows": [
+          {
+            "name": "Death's Power",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Hollow Soul (Misc)",
+            "quantity": 75,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Vindicator Badge",
+            "quantity": 10,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Grace Orb",
+            "quantity": 20,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Gramiel's Emblem",
+            "quantity": 15,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Vindicator Crest",
+            "quantity": 5,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          },
+          {
+            "name": "Gramiel the Graceful's Insignia",
+            "quantity": 5,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/mysterious-figure-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "shadow-shield": {
+    "name": "Shadow Shield",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "ShadowScythe Class Daily",
+        "npc": null,
+        "map": "/join shadowfall",
+        "requirements": [
+          "Must be Level 50."
+        ],
+        "preconditions": [
+          "Must be Level 50."
+        ],
+        "source": "https://aqwwiki.wikidot.com/gravelyn-s-quests",
+        "sourceHash": "02c3ea5e44d69acb32327de7b3b7ef3f06d1f4a9108ecd44373987b067afde40",
+        "reward": "Shadow Shield ×2",
+        "rows": [
+          {
+            "name": "Broken Blade",
+            "quantity": 1,
+            "monster": "Citadel Crusader\nLightguard Caster (Version 2)\nLightguard Paladin (Version 2)\nSigrid Sunshield (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/gravelyn-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "ShadowScythe Quest Legend",
+        "npc": null,
+        "map": "/join shadowfall",
+        "requirements": [
+          "Must be Level 50."
+        ],
+        "preconditions": [
+          "Must be Level 50."
+        ],
+        "source": "https://aqwwiki.wikidot.com/gravelyn-s-quests",
+        "sourceHash": "02c3ea5e44d69acb32327de7b3b7ef3f06d1f4a9108ecd44373987b067afde40",
+        "reward": "Shadow Shield ×4",
+        "rows": [
+          {
+            "name": "Broken Blade",
+            "quantity": 1,
+            "monster": "Citadel Crusader\nLightguard Caster (Version 2)\nLightguard Paladin (Version 2)\nSigrid Sunshield (Monster)",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/gravelyn-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "abyssal-contract": {
+    "name": "Abyssal Contract",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Void Promotion",
+        "npc": "Oblivion",
+        "map": "/join tercessuinotlim",
+        "requirements": [
+          "Must have completed the 'Contract With the Abyss' quest.",
+          "Must be Level 50."
+        ],
+        "preconditions": [
+          "Must have completed the 'Contract With the Abyss' quest.",
+          "Must be Level 50."
+        ],
+        "source": "https://aqwwiki.wikidot.com/oblivion-s-quests",
+        "sourceHash": "6ed4155f67d1929e6eeacec02b6d9d693da7bc08bf4e621566a0438feed062f8",
+        "reward": "Abyssal Contract ×1",
+        "rows": [
+          {
+            "name": "Unidentified 13: \"The Contract of Nulgath\"",
+            "quantity": 3,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+          },
+          {
+            "name": "Pink Star Diamond of Nulgath",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+          },
+          {
+            "name": "Immortal Joe's Black Star",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+          },
+          {
+            "name": "Abyssal Star",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+          },
+          {
+            "name": "Gold Star of Avarice",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+          },
+          {
+            "name": "Blood Star of the Archfiend",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+          },
+          {
+            "name": "Dirtlicker Demoted",
+            "quantity": 1,
+            "monster": null,
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/oblivion-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-paladin-blade": {
+    "name": "Silver Exalted Paladin Blade",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Fifth Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Paladin Blade ×1",
+        "rows": [
+          {
+            "name": "Paladin Weapon Found",
+            "quantity": 1,
+            "monster": "Singer",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-paladin-axe": {
+    "name": "Silver Exalted Paladin Axe",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Fifth Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Paladin Axe ×1",
+        "rows": [
+          {
+            "name": "Paladin Weapon Found",
+            "quantity": 1,
+            "monster": "Singer",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-spears-of-light": {
+    "name": "Silver Exalted Spears of Light",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Fourth Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Spears of Light ×1",
+        "rows": [
+          {
+            "name": "Paladin Polearm Found",
+            "quantity": 1,
+            "monster": "Roach",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-helmet": {
+    "name": "Silver Exalted Helmet",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The First Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Helmet ×1",
+        "rows": [
+          {
+            "name": "Sticky Paladin Helm",
+            "quantity": 1,
+            "monster": "Ichor Dracolich",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-visor": {
+    "name": "Silver Exalted Visor",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The First Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Visor ×1",
+        "rows": [
+          {
+            "name": "Sticky Paladin Helm",
+            "quantity": 1,
+            "monster": "Ichor Dracolich",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
+  "silver-exalted-winged-visor": {
+    "name": "Silver Exalted Winged Visor",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "The Second Scroll",
+        "npc": "Jill'Ette",
+        "map": "/join lightguard",
+        "requirements": [
+          "Must have completed the previous quest."
+        ],
+        "preconditions": [
+          "Must have completed the previous quest."
+        ],
+        "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests",
+        "sourceHash": "bece354275fa9cab509ba151a39d947dc2ee07a967af439af7306b69f8c62c59",
+        "reward": "Silver Exalted Winged Visor ×1",
+        "rows": [
+          {
+            "name": "Paladin Helmet Wings",
+            "quantity": 1,
+            "monster": "Frostdeep Dweller",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/jill-ette-s-quests"
+          }
+        ]
+      }
+    ]
+  },
   "blinding-aura": {
     "name": "Blinding Aura",
     "method": "Quest",
@@ -6184,8 +7117,8 @@
       {
         "id": "material-quest-0",
         "quest": "Finding Fragments with Blinding Scythe",
-        "npc": "Artix (NPC)",
-        "map": "/join necropolis",
+        "npc": null,
+        "map": null,
         "requirements": [
           "Must have completed the 'Ultimate Weapon Kit Construction' quest.",
           "Must have Blinding Scythe of Destiny in your inventory."
@@ -6487,6 +7420,7 @@
         "rows": [
           {
             "name": "Aeacus Empowered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/aeacus-empowered",
             "itemId": "aeacus-empowered",
             "quantity": 50,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -6562,6 +7496,7 @@
           },
           {
             "name": "Tethered Soul",
+            "wikiUrl": "https://aqwwiki.wikidot.com/tethered-soul",
             "itemId": "tethered-soul",
             "quantity": 300,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -6614,6 +7549,7 @@
           },
           {
             "name": "Darkened Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/darkened-essence",
             "itemId": "darkened-essence",
             "quantity": 500,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -6642,6 +7578,7 @@
           },
           {
             "name": "Dracolich Contract",
+            "wikiUrl": "https://aqwwiki.wikidot.com/dracolich-contract",
             "itemId": "dracolich-contract",
             "quantity": 1000,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -6859,6 +7796,7 @@
         "rows": [
           {
             "name": "Grim Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/grim-cohort-conquered",
             "itemId": "grim-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -6911,6 +7849,7 @@
           },
           {
             "name": "Ancient Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/ancient-cohort-conquered",
             "itemId": "ancient-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -6963,6 +7902,7 @@
           },
           {
             "name": "Pirate Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/pirate-cohort-conquered",
             "itemId": "pirate-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7015,6 +7955,7 @@
           },
           {
             "name": "Battleon Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/battleon-cohort-conquered",
             "itemId": "battleon-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7067,6 +8008,7 @@
           },
           {
             "name": "Mirror Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/mirror-cohort-conquered",
             "itemId": "mirror-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7119,6 +8061,7 @@
           },
           {
             "name": "Darkblood Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/darkblood-cohort-conquered",
             "itemId": "darkblood-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7171,6 +8114,7 @@
           },
           {
             "name": "Vampire Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/vampire-cohort-conquered",
             "itemId": "vampire-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7223,6 +8167,7 @@
           },
           {
             "name": "Spirit Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/spirit-cohort-conquered",
             "itemId": "spirit-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7275,6 +8220,7 @@
           },
           {
             "name": "Dragon Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/dragon-cohort-conquered",
             "itemId": "dragon-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7327,6 +8273,7 @@
           },
           {
             "name": "Doomwood Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/doomwood-cohort-conquered",
             "itemId": "doomwood-cohort-conquered",
             "quantity": 400,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7567,6 +8514,7 @@
         "rows": [
           {
             "name": "Hooded Legion Cowl",
+            "wikiUrl": "https://aqwwiki.wikidot.com/hooded-legion-cowl",
             "itemId": "hooded-legion-cowl",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7595,6 +8543,7 @@
           },
           {
             "name": "Legion Token",
+            "wikiUrl": "https://aqwwiki.wikidot.com/legion-token",
             "itemId": "legion-token",
             "quantity": 4000,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7616,6 +8565,7 @@
           },
           {
             "name": "Dage's Favor",
+            "wikiUrl": "https://aqwwiki.wikidot.com/dage-s-favor",
             "itemId": "dage-s-favor",
             "quantity": 300,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7637,6 +8587,7 @@
           },
           {
             "name": "Emblem of Dage",
+            "wikiUrl": "https://aqwwiki.wikidot.com/emblem-of-dage",
             "itemId": "emblem-of-dage",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7658,6 +8609,7 @@
           },
           {
             "name": "Diamond Token of Dage",
+            "wikiUrl": "https://aqwwiki.wikidot.com/diamond-token-of-dage",
             "itemId": "diamond-token-of-dage",
             "quantity": 30,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7679,6 +8631,7 @@
           },
           {
             "name": "Dark Token",
+            "wikiUrl": "https://aqwwiki.wikidot.com/dark-token",
             "itemId": "dark-token",
             "quantity": 100,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
@@ -7995,8 +8948,8 @@
       {
         "id": "wrong-turn-at-voidbuquerque",
         "quest": "Wrong Turn at Voidbuquerque",
-        "npc": "Memory of Nulgath",
-        "map": "/join originul",
+        "npc": null,
+        "map": null,
         "preconditions": [
           "Must have completed the 'Break their Muti-kneecaps' quest.",
           "Must be Level 80."
@@ -8010,6 +8963,7 @@
         "rows": [
           {
             "name": "Flibbitiestgibbet's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/flibbitiestgibbet-s-essence",
             "itemId": "flibbitiestgibbet-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -8030,6 +8984,7 @@
           },
           {
             "name": "Nightbane's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/nightbane-s-essence",
             "itemId": "nightbane-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -8050,6 +9005,7 @@
           },
           {
             "name": "Xyfrag's ??? Essence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/xyfrag-s-essence",
             "itemId": "xyfrag-s-essence",
             "quantity": 1,
             "source": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
@@ -8117,13 +9073,6 @@
             "url": "https://aqwwiki.wikidot.com/memory-of-nulgath-s-quests",
             "sourceFile": "content-sources/farm/external-guide-evidence/wiki/memory-of-nulgath-s-quests.html",
             "sourceHash": "2c28260fecce588ef1f9d5b46202b07bb1a4dec50deecb725a604598dfd2634c",
-            "verifiedAt": "2026-11-15"
-          },
-          {
-            "source": "wiki",
-            "url": "https://aqwwiki.wikidot.com/originul",
-            "sourceFile": "content-sources/farm/external-guide-evidence/wiki/originul.html",
-            "sourceHash": "e53fc742284daf63d68967bb5ab0d43eda782f96ed1f72ccd84f9f8093054094",
             "verifiedAt": "2026-11-15"
           }
         ]
@@ -10497,6 +11446,7 @@
         "rows": [
           {
             "name": "Axe of the Prospector",
+            "wikiUrl": "https://aqwwiki.wikidot.com/axe-of-the-prospector",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Balboa (Monster)",
@@ -10720,6 +11670,7 @@
         "rows": [
           {
             "name": "Zardman's StoneHammer",
+            "wikiUrl": "https://aqwwiki.wikidot.com/zardman-s-stonehammer",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Zardman Grunt",
@@ -11377,6 +12328,7 @@
         "rows": [
           {
             "name": "Blinding Light Fragments",
+            "wikiUrl": "https://aqwwiki.wikidot.com/blinding-light-fragments",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Any monster that drops Undead Energy (besides Necrosian Walker)",
@@ -11841,6 +12793,7 @@
         "rows": [
           {
             "name": "Aeacus Empowered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/aeacus-empowered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "Ultra Aeacus",
@@ -11931,6 +12884,7 @@
         "rows": [
           {
             "name": "Tethered Soul",
+            "wikiUrl": "https://aqwwiki.wikidot.com/tethered-soul",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "Forgotten Soul",
@@ -11998,6 +12952,7 @@
         "rows": [
           {
             "name": "Grim Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/grim-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "any monster in Doom Vault",
@@ -12065,6 +13020,7 @@
         "rows": [
           {
             "name": "Ancient Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/ancient-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "Mummy (Monster) (2)",
@@ -12132,6 +13088,7 @@
         "rows": [
           {
             "name": "Pirate Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/pirate-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "any monster in Wrath (Location)",
@@ -12199,6 +13156,7 @@
         "rows": [
           {
             "name": "Battleon Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/battleon-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "any monster in Doom War (Location)",
@@ -12266,6 +13224,7 @@
         "rows": [
           {
             "name": "Mirror Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/mirror-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "any monster in OverWorld",
@@ -12333,6 +13292,7 @@
         "rows": [
           {
             "name": "Darkblood Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/darkblood-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "any monster in The Death Pits",
@@ -12400,6 +13360,7 @@
         "rows": [
           {
             "name": "Vampire Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/vampire-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "any monster in Maxius",
@@ -12467,6 +13428,7 @@
         "rows": [
           {
             "name": "Spirit Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/spirit-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "any monster in Curse Shore",
@@ -12534,6 +13496,7 @@
         "rows": [
           {
             "name": "Dragon Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/dragon-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "any monster in Dragon Bone",
@@ -12601,6 +13564,7 @@
         "rows": [
           {
             "name": "Doomwood Cohort Conquered",
+            "wikiUrl": "https://aqwwiki.wikidot.com/doomwood-cohort-conquered",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
             "monster": "any monster in Doomwood Forest",
@@ -12668,6 +13632,7 @@
         "rows": [
           {
             "name": "Sapphire Orb",
+            "wikiUrl": "https://aqwwiki.wikidot.com/sapphire-orb",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/barnaby-s-quest",
             "monster": "Legion Lich Lord (Monster)",
@@ -12735,6 +13700,7 @@
         "rows": [
           {
             "name": "Rumors of the Celestial Commander",
+            "wikiUrl": "https://aqwwiki.wikidot.com/rumors-of-the-celestial-commander",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/barnaby-s-quest",
             "monster": "Diabolical Warlord",
@@ -12802,6 +13768,7 @@
         "rows": [
           {
             "name": "Starlit Journal Page 1 Scraps",
+            "wikiUrl": "https://aqwwiki.wikidot.com/starlit-journal-page-1-scraps",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/barnaby-s-quest",
             "monster": "Animus of Ice (Level 35)",
@@ -12869,6 +13836,7 @@
         "rows": [
           {
             "name": "Starlit Journal Page 2 Scraps",
+            "wikiUrl": "https://aqwwiki.wikidot.com/starlit-journal-page-2-scraps",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/barnaby-s-quest",
             "monster": "Ivoliss (Monster)",
@@ -12936,6 +13904,7 @@
         "rows": [
           {
             "name": "Starlit Journal Page 3 Scraps",
+            "wikiUrl": "https://aqwwiki.wikidot.com/starlit-journal-page-3-scraps",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/barnaby-s-quest",
             "monster": "Nightbane",
@@ -13003,6 +13972,7 @@
         "rows": [
           {
             "name": "Starlit Journal Page 4 Scraps",
+            "wikiUrl": "https://aqwwiki.wikidot.com/starlit-journal-page-4-scraps",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/barnaby-s-quest",
             "monster": "Ultra SN.O.W",
@@ -13070,6 +14040,7 @@
         "rows": [
           {
             "name": "Map of the Celestial Seas",
+            "wikiUrl": "https://aqwwiki.wikidot.com/map-of-the-celestial-seas",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/barnaby-s-quest",
             "monster": "Empowered Prime",
@@ -13137,6 +14108,7 @@
         "rows": [
           {
             "name": "Coffer of the Stars",
+            "wikiUrl": "https://aqwwiki.wikidot.com/coffer-of-the-stars",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/barnaby-s-quest",
             "monster": "Archfiend Dragonlord (Monster)",
@@ -13204,6 +14176,7 @@
         "rows": [
           {
             "name": "Binky's Uni-horn",
+            "wikiUrl": "https://aqwwiki.wikidot.com/binky-s-uni-horn",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Binky (Monster)",
@@ -13271,6 +14244,7 @@
         "rows": [
           {
             "name": "Pyromancer Artifact",
+            "wikiUrl": "https://aqwwiki.wikidot.com/pyromancer-artifact",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Xan (1)",
@@ -13338,6 +14312,7 @@
         "rows": [
           {
             "name": "Zephyrus Manifesto",
+            "wikiUrl": "https://aqwwiki.wikidot.com/zephyrus-manifesto",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Proto-Air Dracolich",
@@ -13412,6 +14387,7 @@
         "rows": [
           {
             "name": "Karok's Glaceran Gem",
+            "wikiUrl": "https://aqwwiki.wikidot.com/karok-s-glaceran-gem",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Karok the Fallen (1)",
@@ -13479,6 +14455,7 @@
         "rows": [
           {
             "name": "Nightmare Kibble",
+            "wikiUrl": "https://aqwwiki.wikidot.com/nightmare-kibble",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "all monsters in Third Spell",
@@ -13546,6 +14523,7 @@
         "rows": [
           {
             "name": "Condensed Energy",
+            "wikiUrl": "https://aqwwiki.wikidot.com/condensed-energy",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Lightning Ball (Level 35)",
@@ -13613,6 +14591,7 @@
         "rows": [
           {
             "name": "Crystallized Mana Catalyst",
+            "wikiUrl": "https://aqwwiki.wikidot.com/crystallized-mana-catalyst",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Crystal Mana Construct",
@@ -13680,6 +14659,7 @@
         "rows": [
           {
             "name": "Just the Perfect Stick",
+            "wikiUrl": "https://aqwwiki.wikidot.com/just-the-perfect-stick",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Treeant (Level 3)",
@@ -13747,6 +14727,7 @@
         "rows": [
           {
             "name": "Feather of Paradise",
+            "wikiUrl": "https://aqwwiki.wikidot.com/feather-of-paradise",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Bird of Paradise (Monster)",
@@ -13814,6 +14795,7 @@
         "rows": [
           {
             "name": "Eternity Flame",
+            "wikiUrl": "https://aqwwiki.wikidot.com/eternity-flame",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Amia the Cult Leader",
@@ -13881,6 +14863,7 @@
         "rows": [
           {
             "name": "Skill Observed",
+            "wikiUrl": "https://aqwwiki.wikidot.com/skill-observed",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Painadin Overlord (Monster)",
@@ -13948,6 +14931,7 @@
         "rows": [
           {
             "name": "Spirit of Vindication",
+            "wikiUrl": "https://aqwwiki.wikidot.com/spirit-of-vindication",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Grand Inquisitor (Monster) (Level 25)",
@@ -14015,6 +14999,7 @@
         "rows": [
           {
             "name": "Radiant Blade Enhancement",
+            "wikiUrl": "https://aqwwiki.wikidot.com/radiant-blade-enhancement",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Chaorrupted Good Lieutenant",
@@ -14119,6 +15104,7 @@
         "rows": [
           {
             "name": "Prayer of Salvation",
+            "wikiUrl": "https://aqwwiki.wikidot.com/prayer-of-salvation",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Ultra Chaos Alteon",
@@ -14186,6 +15172,7 @@
         "rows": [
           {
             "name": "Acolyte's Braille",
+            "wikiUrl": "https://aqwwiki.wikidot.com/acolyte-s-braille",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Alliance Healer",
@@ -14253,6 +15240,7 @@
         "rows": [
           {
             "name": "Innocence",
+            "wikiUrl": "https://aqwwiki.wikidot.com/innocence",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Dove",
@@ -14320,6 +15308,7 @@
         "rows": [
           {
             "name": "Holy Magic Attunement",
+            "wikiUrl": "https://aqwwiki.wikidot.com/holy-magic-attunement",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Golden Caster",
@@ -14387,6 +15376,7 @@
         "rows": [
           {
             "name": "Ring of Mana Transposition",
+            "wikiUrl": "https://aqwwiki.wikidot.com/ring-of-mana-transposition",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Pettivox",
@@ -14454,6 +15444,7 @@
         "rows": [
           {
             "name": "Sacred Tome",
+            "wikiUrl": "https://aqwwiki.wikidot.com/sacred-tome",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Adventus",
@@ -14521,6 +15512,7 @@
         "rows": [
           {
             "name": "Spirit Lotus",
+            "wikiUrl": "https://aqwwiki.wikidot.com/spirit-lotus",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Lotus Spider (Level 30) (Version 1)",
@@ -14588,6 +15580,7 @@
         "rows": [
           {
             "name": "Cyanoblossom",
+            "wikiUrl": "https://aqwwiki.wikidot.com/cyanoblossom",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Wisterrora (1) (Version 2)",
@@ -14655,6 +15648,7 @@
         "rows": [
           {
             "name": "Radiant Magnolia",
+            "wikiUrl": "https://aqwwiki.wikidot.com/radiant-magnolia",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Trollola Plant",
@@ -14722,6 +15716,7 @@
         "rows": [
           {
             "name": "BrightOak Forest Sapling",
+            "wikiUrl": "https://aqwwiki.wikidot.com/brightoak-forest-sapling",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Nevanna",
@@ -14789,6 +15784,7 @@
         "rows": [
           {
             "name": "Forbidden Demon Seal",
+            "wikiUrl": "https://aqwwiki.wikidot.com/forbidden-demon-seal",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Malxas",
@@ -14856,6 +15852,7 @@
         "rows": [
           {
             "name": "Condensed Mana",
+            "wikiUrl": "https://aqwwiki.wikidot.com/condensed-mana",
             "quantity": null,
             "source": "https://aqwwiki.wikidot.com/artix-s-quests",
             "monster": "Unending Avatar",

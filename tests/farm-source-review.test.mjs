@@ -56,14 +56,15 @@ test("recovered merge recipes separate Gold, implicit quantity and prerequisites
     assert.equal(route.method,"Merge");
     assert.equal(materialLeaves(route.materialTree).find(n=>n.name==="Gold").quantity,quantity);
   }
-  assert.equal(get("blood-sorceress").acquisitionRoutes[0].method,"Drop");
-  assert.match(get("blood-sorceress").acquisitionRoutes[0].dropSource,/Scarletta/);
+  assert.equal(get("blood-sorceress"),undefined,"beginner prerequisite is excluded only from Farm");
+  const bloodSource=read("content-sources/farm/review/pages.json").find(p=>p.url==="https://aqwwiki.wikidot.com/blood-sorceress");
+  assert.match(parseFarmReviewPage(fs.readFileSync(bloodSource.sourceFile,"utf8"),bloodSource.url).text,/Scarletta/);
   assert.deepEqual(get("crag-bamboozle").acquisitionRoutes.map(r=>r.method),["Shop","Quest"]);
 });
 
 test("Insignias preserve direct recipe quantities and resolve exact source quests, NPCs, maps and Boss Codex identities", () => {
   const sources=read("src/content/farm/material-sources.generated.json");
-  assert.equal(Object.values(sources).filter(s=>s.bossId).length,9);
+  assert.equal(Object.values(sources).filter(s=>s.bossId).length,10);
   const expected = { "nulgath-insignia":["Nulgath, the Archfiend","Nulgath (NPC)",5],"dage-the-evil-insignia":["Dage, Lord of the Undead Legion","Calamitus",5],"avatar-tyndarius-insignia":["Ultra Avatar Tyndarius","Galanoth (NPC)",2],"malgor-insignia":["Malgor, The First Speaker","Vohu",5] };
   for(const [id,[quest,npc,quantity]] of Object.entries(expected)) {
     assert.equal(sources[id].tasks[0].quest,quest);
@@ -77,7 +78,7 @@ test("Insignias preserve direct recipe quantities and resolve exact source quest
     assert.equal(source.quantity,leaf.quantity,item.id);
     assert.equal(source.status,"verified-snapshot");
     assert.ok(source.quest&&source.npc&&source.map&&source.bossId,item.id);
-    const page=read("content-sources/farm/review/pages.json").find(p=>p.url===source.sourcePage);
+    const page=[...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/equipment-sets/sources.json").sources].find(p=>p.url===source.sourcePage);
     assert.equal(hash(fs.readFileSync(page.sourceFile)),source.sourceHash);
     linked++;
   }

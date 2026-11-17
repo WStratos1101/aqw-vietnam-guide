@@ -71,7 +71,7 @@ export function buildReviewedFarmWorkflows(items, materialSources, cachedPages =
         evidence: [evidence(questPage), evidence(mapPage)] });
     }
     const maxStack = resource?.text.match(/Stacks up to ([\d,]+)\./)?.[1];
-    return { name: row.name, itemId: materialId(row.name), quantity: row.quantity, source: questPage.url,
+    return { name: row.name, wikiUrl: row.wikiUrl, itemId: materialId(row.name), quantity: row.quantity, source: questPage.url,
       monster: sourceDetails[0]?.monster || row.monster?.replaceAll("\n", ", ") || null,
       map: sourceDetails[0]?.mapJoin || null,
       maxStack: maxStack ? Number(maxStack.replaceAll(",", "")) : null,

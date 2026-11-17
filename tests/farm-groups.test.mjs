@@ -53,7 +53,7 @@ const collectionRecords=read("content-sources/farm/equipment-sets/canonical-reco
 test("catalog primary groups match exact canonical names and retain guide line evidence", () => {
   const checked = structuredClone(catalog.items);
   assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence, collectionRecords);
-  applyDirectUltraGroups(checked,new Map([...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources].map(p=>[p.url,p])));
+  applyDirectUltraGroups(checked,new Map([...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources,...read("content-sources/farm/equipment-sets/sources.json").sources].map(p=>[p.url,p])));
   assert.deepEqual(checked, catalog.items);
   for (const item of checked) {
     assert.equal(item.groupIds.length, item.primaryGroupId ? 1 : 0, item.id);
@@ -78,10 +78,10 @@ test("catalog primary groups match exact canonical names and retain guide line e
         assert.ok(evidence.sourceLine>=start&&evidence.sourceLine<=end,item.id);
         assert.equal(source.collectionEvidence.sourceChapter,evidence.sourceChapter);
         assert.ok(fs.readFileSync(evidence.sourceFile,"utf8").split(/\r?\n/)[evidence.sourceLine-1]);
-      } else if(evidence.sourceDocument === "user-task-v3.2") {
+      } else if(["user-task-v3.2","user-task-v3.3"].includes(evidence.sourceDocument)) {
         const directive=read(evidence.sourceFile).find(entry=>entry.itemId===item.id);
         assert.ok(directive,item.id);assert.equal(directive.identitySource,item.wikiUrl);
-        assert.equal(directive.primaryGroupId,item.primaryGroupId);assert.equal(directive.authority,"user-task-v3.2");
+        assert.equal(directive.primaryGroupId,item.primaryGroupId);assert.equal(directive.authority,evidence.sourceDocument);
         assert.equal(evidence.sourceHash,createHash("sha256").update(fs.readFileSync(evidence.sourceFile)).digest("hex"));
       } else {
         assert.equal(evidence.sourceDocument, "manual-faction-guide");
@@ -191,10 +191,10 @@ test("all-inventory and faction counts count unique canonical identities exactly
     hollowborn: 7,
     "debris-astravian": 3,
     "alternative-hero": 13,
-    unknown: 69,
+    unknown: 58, // ten reviewed non-target Classes removed from Farm
   };
   for (const [id, count] of Object.entries(expected))
-    assert.equal(counts.find((entry) => entry.id === id)?.count, count + collectionRecords.filter(record=>({Nation:"nation",Hollowborn:"hollowborn",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Other Items":"unknown"})[record.collectionEvidence.sourceChapter]===id).length, id);
+    assert.equal(counts.find((entry) => entry.id === id)?.count, count + collectionRecords.filter(record=>({Nation:"nation",Hollowborn:"hollowborn",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Other Items":"unknown","Alternative Hero":"alternative-hero"})[record.collectionEvidence.sourceChapter]===id).length, id);
 });
 
 test("all filtered aggregate goals have an explicit expansion or a blocker", () => {
@@ -245,7 +245,7 @@ test("every catalog group assignment validates against manual guide provenance",
 test("canonical reward mappings survive goal fallback and generation is idempotent", () => {
   const checked = structuredClone(catalog.items);
   assignFarmGroups(checked, goals, manifest, aliases, itemMappings, legacyGroups, empoweredUltraEvidence, collectionRecords);
-  applyDirectUltraGroups(checked,new Map([...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources].map(p=>[p.url,p])));
+  applyDirectUltraGroups(checked,new Map([...read("content-sources/farm/review/pages.json"),...read("content-sources/farm/quest-workflow-review.json").sources,...read("content-sources/farm/equipment-sets/sources.json").sources].map(p=>[p.url,p])));
   assert.deepEqual(checked, catalog.items);
   for (const mapping of itemMappings) {
     const item = checked.find((entry) => entry.id === mapping.itemId);
@@ -265,7 +265,7 @@ test("canonical reward mappings survive goal fallback and generation is idempote
         `${goal.group_id}:${goal.source_line}:${goal.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}` === mapping.parentGoalId,
       ), mapping.itemId);
   }
-  assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 279 + collectionRecords.length);
+  assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 268 + collectionRecords.length);
 });
 
 test("direct Ultra Empower rewards map by verified boss quest, never by Empowered name or prerequisite", () => {

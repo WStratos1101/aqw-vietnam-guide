@@ -121,9 +121,9 @@ test("unknown-Region route remains discoverable for mapped canonical item and fi
   );
 });
 test("active item change resets tabs; tab keyboard controls focus and ARIA relationship", async () => {
-  await navigate("/farm?region=arcangrove&category=class&item=shaman&view=now");
+  await navigate("/farm?category=class&q=Infinity+Titan&item=infinity-titan-class&view=reference");
   assert.equal(host.querySelectorAll(".fv2-item").length, 1);
-  assert.equal(host.querySelector("[data-item-id]").dataset.itemId, "shaman");
+  assert.equal(host.querySelector("[data-item-id]").dataset.itemId, "infinity-titan-class");
   assert.equal(
     tab("Nguyên liệu"),
     undefined,
@@ -132,7 +132,7 @@ test("active item change resets tabs; tab keyboard controls focus and ARIA relat
   await click(tab("Cách nhận"));
   assert.match(
     host.querySelector("[role=tabpanel]").textContent,
-    /Arcangrove Rank 10/,
+    /0 ACs/,
   );
   await act(async () =>
     tab("Cách nhận").dispatchEvent(
@@ -170,7 +170,7 @@ test("deep-link slug, approved image error fallback, empty search and popstate f
   await navigate("/farm?q=no-matching-equipment");
   assert.equal(host.querySelectorAll(".fv2-item").length, 0);
   assert.ok(host.querySelector(".fv2-empty"));
-  await navigate("/farm?region=arcangrove&category=class&view=now");
+  await navigate("/farm?category=class&q=Infinity+Titan&view=reference");
   assert.equal(host.querySelectorAll(".fv2-item").length, 1);
   assert.equal(
     host
@@ -300,7 +300,7 @@ test("V3.1 Wiki info is localized, Sources cards removed, and Role filters share
     host.querySelector(".fv31-wiki-info").textContent,
     /Hiệu ứng đặc biệt|Điều kiện/,
   );
-  assert.match(host.querySelector(".fv2-boost").textContent, /Chưa xác minh/);
+  assert.equal(host.querySelector(".fv2-boost").textContent.trim(), "Không");
   assert.doesNotMatch(
     host.querySelector(".fv31-wiki-info").textContent,
     /Tên và loại khớp Wiki/,
@@ -434,7 +434,8 @@ test("VHL modes preserve Crystal costs and internally navigate to Ultra material
   assert.equal(host.querySelector('[aria-label="Hướng dẫn Farm nguyên liệu"]'),null);
   await click(tab("Nguyên liệu"));
   assert.equal(button('[aria-label="Phương án farm"] button',"Farm bằng Insignia").getAttribute("aria-pressed"),"true");
-  await click(button('[aria-label="Chọn nguyên liệu"] button',"Elders' Blood"));
+  await click(button('[aria-label="Chọn nguyên liệu"] button',"Void Crystal B"));
+  await click(button('.fv32-material-body table button',"Elders' Blood"));
   assert.match(host.querySelector('[aria-label="Nguyên liệu đang chọn"]').textContent,/2/);
   assert.ok(window.location.search.includes('farm-material='));
 });
@@ -474,7 +475,9 @@ test("material links open a single dedicated guide, keep the mode and display pu
   assert.match(notes.textContent,/31/);assert.match(notes.textContent,/5.550/);
   await click(tab("Nguyên liệu"));
   assert.equal(host.querySelectorAll('[aria-label="Hướng dẫn Farm nguyên liệu"]').length,1);
-  await click(button('[aria-label="Chọn nguyên liệu"] button',"Hooded Legion Cowl"));
+  await click(button('[aria-label="Chọn nguyên liệu"] button',"Exalted Crown"));
+  await click(button('[aria-label="Nguồn nguyên liệu"] button',"Legion Fealty 3"));
+  await click(button('.fv32-material-body table button',"Hooded Legion Cowl"));
   assert.equal(tab("Nguyên liệu").getAttribute("aria-selected"),"true");
   assert.match(window.location.search,/farm-mode=insignia/);
   const material=host.querySelector('[aria-label="Nguyên liệu đang chọn"]');
@@ -520,7 +523,7 @@ test("verified set inventory navigates to canonical Farm guides and standalone i
 });
 
 
-test("source fixtures retain all 1/2/3/4/6 numbered quests and matching content", async () => {
+test("source fixtures retain isolated numbered quests and matching content", async () => {
   const {stepCases}=await import('./fixtures/farm-step-cases.mjs');
   for(const spec of stepCases){
     await navigate('/farm?'+new URLSearchParams({item:spec.itemId,'farm-route':spec.routeId,'farm-tab':'guide',...(spec.modeId?{'farm-mode':spec.modeId}:{})}));

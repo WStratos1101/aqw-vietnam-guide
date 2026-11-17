@@ -207,15 +207,15 @@ test("completion snapshots are exact canonical bodies; incomplete indexed eviden
   const added = read(
     "content-sources/farm/import/ultra-import-audit.json",
   ).added.concat(collectionRecords.map(record=>record.id));
-  assert.equal(c.items.filter((i) => !added.includes(i.id)).length, 231);
+  assert.equal(c.items.filter((i) => !added.includes(i.id)).length, 220);
   assert.equal(
     c.items
       .filter((i) => !added.includes(i.id))
       .reduce((n, i) => n + i.acquisitionRoutes.length, 0),
-    231,
+    221,
   );
   const audit = read("content-sources/farm/import/detail-audit.json");
-  assert.equal(audit.filter((i) => i.completeWikiSnapshot).length, 231 + collectionRecords.length);
+  assert.equal(audit.filter((i) => i.completeWikiSnapshot).length, 220 + collectionRecords.length);
   const partial = c.items.find((i) => i.id === "aureate-shield-aegis");
   assert.equal(partial.wikiDetails.evidence.snapshotStatus, "partial");
   const translations = read(
@@ -317,8 +317,9 @@ test("recovered role relationships cite exact class evidence; Blood Sorceress is
     "content-sources/farm/import/class-role-overrides.json",
   );
   for (const [id, o] of Object.entries(overrides)) {
-    const item = c.items.find((i) => i.id === id),
-      record = records.find((r) => r.wikiUrl === item.wikiUrl);
+    const item = c.items.find((i) => i.id === id);
+    if(!item){assert.ok(read("content-sources/farm/refinement/v3-3-class-scope.json").decisions.some(row=>row.id===id));continue;}
+    const record = records.find((r) => r.wikiUrl === item.wikiUrl);
     assert.equal(
       o.sourceTextHash,
       createHash("sha256").update(record.text).digest("hex"),
@@ -329,14 +330,12 @@ test("recovered role relationships cite exact class evidence; Blood Sorceress is
       item.wikiUrl,
     );
   }
-  assert.deepEqual(
-    c.items.find((i) => i.id === "blood-sorceress").classRoles,
-    [],
-  );
+  assert.equal(c.items.find((i) => i.id === "blood-sorceress"),undefined);
+  assert.ok(read("content-sources/farm/refinement/v3-3-class-scope.json").decisions.some(row=>row.id==="blood-sorceress"&&row.reason.includes("Beginner")));
   assert.equal(
     c.items.filter((i) => i.category === "Classes" && i.classRoles.length)
       .length,
-    22,
+    39,
   );
 });
 

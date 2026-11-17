@@ -10,3 +10,4 @@ export function distinctFarmText(values: string[], alreadyShown?: (string | null
 export function mainWorkflowTasks(route: FarmV2RouteData, registry: { quests: Record<string,FarmTask> }, modeId?: string, optionId?: string): FarmTask[];
 export function finalReceiptTasks(route: FarmV2RouteData, registry: { quests: Record<string,FarmTask> }, mode?: FarmMode): FarmTask[];
 export function farmTimeLabel(time?: FarmTime): string | null;
+export function reachableMaterialRows(direct: FarmTask["rows"], profiles: Record<string,{tasks:FarmTask[]}>): FarmTask["rows"];

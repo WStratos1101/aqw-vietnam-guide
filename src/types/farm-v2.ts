@@ -54,6 +54,8 @@ export type FarmWikiDetails = {
   conflicts: string[];
 };
 export type FarmTask = {
+  sectionIdentity?: string;
+  sourceHash?: string;
   acceptanceMaps?: string[];
   id: string;
   quest: string | null;
@@ -131,6 +133,11 @@ export type FarmTime = {
   source: string; sourceHash: string; scope: string;
 };
 export type FarmV2RouteData = {
+  materialPlan?: {materials:FarmTask["rows"];status:string;gaps:{reason:string}[];equivalentCosts:{materialId:string;quantity:number;currency:string;amount:number;total:number}[]};
+  directMaterials?: FarmTask["rows"];
+  isolationStatus?: "VERIFIED_DIRECT" | "UNVERIFIED";
+  storyPrerequisites?: {questId:string;name:string;npc?:string|null;location?:string|null;source:string}[];
+  acquisitionDefinitionIds?: string[];
   questGraph?: {questId:string;role:string;display:"stepper"|"finalReceipt"|"condition";source:string}[];
   farmTime?: FarmTime;
   questWorkflowIds?: string[];
@@ -138,7 +145,7 @@ export type FarmV2RouteData = {
   materialTotalsComplete?: boolean;
   questFinishIds?: string[];
   operationGroups?: { beforeQuestId: string; tasks: FarmTask[] }[];
-  questOptions?: { name: string; questId: string; workflowIds: string[] }[];
+  questOptions?: { name: string; questId: string; workflowIds: string[]; directMaterials?: FarmTask["rows"] }[];
   farmModes?: FarmMode[];
   mixRule?: {dailyQuestId:string;weeklyQuestId:string;remainingMaterials:FarmTask["rows"]};
   farmTasks?: FarmTask[];
@@ -176,6 +183,7 @@ export type FarmMode = {
   insignias?: (FarmInsigniaSource & { perQuest?: number; questCompletions: number })[];
 };
 export type FarmV2Item = {
+  boostReviewStatus?: "verified" | "none" | "unverified";
   setIds?: string[];
   descriptionVi?: string | null;
   boosts?: {kind:string;percent:number;targets?:string[];source:string;sourceHash:string;scope:string}[];

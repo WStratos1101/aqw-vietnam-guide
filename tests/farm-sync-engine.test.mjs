@@ -59,3 +59,12 @@ test('incremental limit applies to expired valid cache as well as uncached URL',
  const {engine}=fixture(t,async()=>html);await engine.run([row('a'),row('b')]);const calls=engine.stats.requests;
  engine.stats.networkPages=0;await engine.run([row('a'),row('b')],{mode:'incremental',ttl:0,limit:1});assert.ok(engine.stats.requests-calls<=1);
 });
+
+test('selected batch never requests unrelated pending URLs or rewrites their status',async t=>{
+ const calls=[];const {engine,directory}=fixture(t,async url=>{calls.push(url);return html;});
+ const untouched={...row('unrelated'),status:'pending',syncStatus:'PENDING',priority:0};
+ engine.manifest[untouched.url]=untouched;engine.checkpoint();
+ await engine.run([row('selected')],{scope:'selected',limit:25});
+ assert.deepEqual(calls,[row('selected').url]);assert.deepEqual(engine.manifest[untouched.url],untouched);
+ assert.equal(JSON.parse(fs.readFileSync(path.join(directory,'manifest.json')))[untouched.url].syncStatus,'PENDING');
+});

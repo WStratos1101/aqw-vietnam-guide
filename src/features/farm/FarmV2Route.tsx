@@ -64,6 +64,8 @@ const categoryAliases: Record<string, string> = {
   cape: "Capes / Back Items",
   pet: "Pets",
   class: "Classes",
+  ground: "Grounds",
+  grounds: "Grounds",
 };
 const tabDefs = [
   { id: "overview", name: "Thông tin", Icon: Info },

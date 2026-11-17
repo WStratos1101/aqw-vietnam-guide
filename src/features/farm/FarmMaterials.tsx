@@ -5,26 +5,9 @@ import { useId, useState } from "react";
 import type { MaterialNode } from "../../lib/material-requirements.mjs";
 import type { FarmV2Item } from "../../types/farm-v2";
 import data from "../../content/farm/catalog-v2.generated.json";
-import { FarmRouteFacts, FarmActions } from "./FarmRouteFacts";
+import { FarmRouteFacts } from "./FarmRouteFacts";
 import { MaterialTree } from "../ultra/MaterialTree";
 const items = data.items as unknown as FarmV2Item[];
-// Reuse verified action text only when it names this exact material.
-function materialNotes(name: string) {
-  const notes = items
-    .flatMap((item) =>
-      item.acquisitionRoutes.flatMap((route) => route.guidePaths || []),
-    )
-    .filter((path) => path.verificationStatus === "verified")
-    .flatMap((path) => path.steps)
-    .filter(
-      (step) =>
-        step.sources.length &&
-        step.text
-          .toLocaleLowerCase("en")
-          .includes(name.toLocaleLowerCase("en")),
-    );
-  return [...new Map(notes.map((step) => [step.text, step])).values()];
-}
 export function FarmMaterials({
   tree,
   scope,
@@ -52,7 +35,6 @@ export function FarmMaterials({
         const routes = item?.acquisitionRoutes || [];
         const activeRoute =
           routes.find((r) => r.id === routeIds[token]) || routes[0];
-        const notes = opened === token && !item ? materialNotes(node.name) : [];
         return (
           <div className="fv2-material-row">
             <label aria-label={"Đã có " + node.name}>{checkbox}</label>
@@ -144,14 +126,6 @@ export function FarmMaterials({
                         farmTasks: materialGuide.tasks as FarmTask[],
                       }}
                     />
-                  ) : notes.length ? (
-                    <>
-                      {notes.map((step) => (
-                        <div key={step.text}>
-                          <FarmActions text={step.text} />
-                        </div>
-                      ))}
-                    </>
                   ) : (
                     <p>
                       Quái drop, Quest, NPC, map và điều kiện: chưa có thông tin

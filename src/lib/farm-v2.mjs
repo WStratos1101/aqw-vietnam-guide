@@ -6,6 +6,7 @@ export const categories = [
   "Capes / Back Items",
   "Pets",
   "Classes",
+  "Grounds",
 ];
 export function routesFor(item, region = "all") {
   const routes = item.acquisitionRoutes || [];
@@ -80,6 +81,11 @@ export function validateFarmV2(catalog) {
                 e.sourceFile === "content-sources/farm/refinement/v3-2-faction-overrides.json" &&
                 e.authority === "user-task-v3.2" && e.groupId === "alternative-hero" &&
                 e.sourceUrl === i.wikiUrl && /^[a-f0-9]{64}$/.test(e.sourceHash || "") &&
+                e.matchKind === "exact-canonical-task-directive") ||
+              (e.sourceDocument === "user-task-v3.3" &&
+                e.sourceFile === "content-sources/farm/refinement/v3-3-faction-overrides.json" &&
+                e.authority === "user-task-v3.3" && e.sourceUrl === i.wikiUrl &&
+                /^[a-f0-9]{64}$/.test(e.sourceHash || "") &&
                 e.matchKind === "exact-canonical-task-directive") ||
               (e.sourceDocument === "aqwwiki-ultra-quest" &&
                 url(e.sourceUrl) &&

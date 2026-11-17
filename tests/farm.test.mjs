@@ -97,7 +97,8 @@ test("source links and original imported Farm URLs remain distinct from item rou
   for (const item of items) {
     const href = farmItemHref(item.id);
     assert.equal(farmItemId(href), item.id);
-    assert.equal(resolveRoute(href, guides, categories).is404, false);
+    const excluded=read("content-sources/farm/refinement/v3-3-class-scope.json").decisions.some(row=>row.id===item.id);
+    assert.equal(resolveRoute(href, guides, categories).is404, excluded);
     assert.equal(isComingSoon(href), false);
   }
   for (const page of manifest.guideRecords) {

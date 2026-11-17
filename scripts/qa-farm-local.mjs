@@ -20,7 +20,7 @@ export function validateImport(bundle, result, current=fingerprint()){
   if(result.errors?.length||result.cases?.length!==4||!result.finishedAt)throw Error('Incomplete QA report.');
   for(const width of [390,768,1024,1440]){
     const c=result.cases.find(c=>c.width===width);
-    if(!c||c.status!=='passed'||c.consoleErrors?.length||!c.steps?.length||c.steps.some(s=>s.status!=='passed')||!c.steps.some(s=>s.name==='source-backed step counts 1/2/3/4/6 and farm mode reset')||!c.steps.some(s=>s.name==='no console, hydration or page errors'))throw Error(`Missing/pending/failed UI cases at ${width}px.`);
+    if(!c||c.status!=='passed'||c.consoleErrors?.length||!c.steps?.length||c.steps.some(s=>s.status!=='passed')||!c.steps.some(s=>s.name==='source-scoped quest steps and farm mode reset')||!c.steps.some(s=>s.name==='no console, hydration or page errors'))throw Error(`Missing/pending/failed UI cases at ${width}px.`);
   }
   if(!result.screenshots?.length)throw Error('Screenshots are required.');
   return true;

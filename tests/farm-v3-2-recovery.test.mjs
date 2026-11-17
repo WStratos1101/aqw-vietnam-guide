@@ -20,7 +20,7 @@ for(const id of ['higure','empowered-higure'])test(`${id}: exact item identity, 
  assert.equal(expected.length,id==='higure'?9:3);
  assert.ok(fs.existsSync('public'+item.image));assert.ok(item.descriptionVi);
  assert.equal(item.rarity,id==='higure'?'Seasonal Rarity':'Champion Rarity');
- assert.deepEqual(item.setIds,[], 'same merge shop is not proof of a visual set');
+ assert.deepEqual(item.setIds,['higure'], 'V3.4 explicitly verifies both Higure variants in the same family');
  const boosts=farmBoost(item).join(' ');assert.match(boosts,id==='higure'?/40%.*All Monsters/:/51%.*All Monsters/);
  assert.match(boosts,id==='higure'?/30% Class Point/:/35% Class Point/);assert.match(boosts,id==='higure'?/30% EXP/:/35% EXP/);
 });

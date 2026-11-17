@@ -93,7 +93,7 @@ await runQa(
         result.screenshots.push(path);
       };
       try {
-        await step("source-backed step counts 1/2/3/4/6 and farm mode reset", async () => {
+        await step("source-scoped quest steps and farm mode reset", async () => {
           await checkFarmSteps({page,base,expect,screenshot,recordTable:diagnostic=>(result.materialTables ||= []).push(diagnostic)});
           await screenshot("step-regression");
         });
@@ -116,36 +116,16 @@ await runQa(
           },
         );
         await step(
-          "legacy geography URL → Shaman acquisition/source and conditional tabs",
+          "canonical Class acquisition, retired target exclusion and legacy geography URL",
           async () => {
-            await navigate(
-              "/farm?region=arcangrove&category=class&item=shaman",
-              '[data-item-id="shaman"]',
-            );
-            await expect(
-              page
-                .locator(".fv2-categories button")
-                .filter({ hasText: "Classes" }),
-            ).toHaveAttribute("aria-pressed", "true");
-            await expect(page.locator(".fv2-item")).toHaveCount(1);
-            await expect(
-              page.locator('[data-inventory-item="shaman"]'),
-            ).toHaveAttribute("aria-pressed", "true");
-            await expect(page.locator('[data-item-id="shaman"]')).toBeVisible();
-            await expect(
-              page.getByRole("tab", { name: "Nguyên liệu", exact: true }),
-            ).toHaveCount(0);
-            await page
-              .getByRole("tab", { name: "Cách nhận", exact: true })
-              .click();
-            await expect(
-              page.locator(".fv2-tab-body[role=tabpanel]"),
-            ).toContainText("Arcangrove Rank 10");
-            await expect(page.locator(".fv2-sources")).toHaveCount(0);
-            await expect(
-              page.locator(".fv2-tab-body[role=tabpanel]"),
-            ).toContainText("Arcangrove Rep Shop");
-            await expect(page.locator(".fv2-specs")).toBeVisible();
+            await navigate("/farm?region=arcangrove&category=class&item=stonecrusher-merge", '[data-item-id="stonecrusher-merge"]');
+            await expect(page.locator('.fv2-categories button').filter({hasText:"Classes"})).toHaveAttribute("aria-pressed","true");
+            await expect(page.locator('[data-inventory-item="shaman"]')).toHaveCount(0);
+            await expect(page.locator('[data-item-id="stonecrusher-merge"]')).toBeVisible();
+            await page.getByRole("tab",{name:"Cách nhận",exact:true}).click();
+            await expect(page.locator('.fv2-tab-body[role=tabpanel]')).toContainText("Stonecrusher Class Merge Shop");
+            await expect(page.locator('.fv2-specs')).toBeVisible();
+            await expect(page.getByRole("tab",{name:"Nguyên liệu",exact:true})).toBeVisible();
           },
         );
         await step(
@@ -212,6 +192,23 @@ await runQa(
             await screenshot("group-selector");
           },
         );
+        await step("Malgor quest isolation, seven direct materials and responsive Light/Dark guide", async () => {
+          for(const theme of ['light','dark']){
+            await navigate('/farm?item=malgor-the-shadowlord&farm-tab=methods','[data-item-id="malgor-the-shadowlord"]');
+            if(await page.locator('html').getAttribute('data-theme')!==theme)await page.locator('.theme-toggle').click();
+            await page.getByRole('tab',{name:'Cách nhận',exact:true}).click();
+            await page.locator('.fv2-method details summary').click();
+            await expect(page.locator('.fv2-method details[open]')).toContainText('Your Hero');
+            await page.getByRole('tab',{name:'Hướng dẫn Farm',exact:true}).click();
+            await expect(page.locator('.fv31-step-numbers button')).toHaveCount(1);
+            await expect(page.getByRole('region',{name:'Quest đang chọn',exact:true})).toContainText("Build Malgor's Armor Set");
+            await page.getByRole('tab',{name:'Nguyên liệu',exact:true}).click();
+            const controls=page.getByRole('group',{name:'Chọn nguyên liệu',exact:true}).getByRole('button');
+            assert.deepEqual(await controls.allTextContents(),['Gold Voucher 500k','Timestream Ravager','ShadowFlame Defender','Mana Guardian','Dark Dragon Slayer','Mystical Devotee of Mana',"Dragon's Tear"]);
+            assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Malgor page must not overflow');
+            await screenshot('malgor-isolation-'+theme);
+          }
+        });
         await step("Reaper's Oath Quest alternatives render actual rewards and materials", async () => {
           await navigate("/farm/item/reaper-s-oath?farm-tab=guide", '[data-item-id="reaper-s-oath"]');
           await page.getByRole("tab", { name: "Hướng dẫn Farm", exact: true }).click();

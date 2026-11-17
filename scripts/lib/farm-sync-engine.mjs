@@ -137,9 +137,10 @@ export class SyncEngine {
     }else if(c.consecutive>=this.config.threshold){await this.transition(host,'OPEN',{probeAt:this.now()+Math.max(this.config.cooldown,err.retryAfterMs),lastError:err});}
     this.checkpoint();return null;
   }
-  async run(rows,{mode='resume',limit=0,offline=false,refresh=false,ttl=86400000}={}){
+  async run(rows,{mode='resume',limit=0,offline=false,refresh=false,ttl=86400000,scope='all'}={}){
     const unique=new Map();
-    for(const row of [...rows,...Object.values(this.manifest)]){const url=canonical(row.url);if(url){const old=unique.get(url)||{};unique.set(url,{...row,...old,url,aliases:[...new Set([...(old.aliases||[]),...(row.aliases||[]),row.url])]});}}
+    if(!['all','selected'].includes(scope))throw Error('Unknown sync scope: '+scope);
+    for(const row of [...rows,...(scope==='all'?Object.values(this.manifest):[])]){const url=canonical(row.url);if(url){const old=unique.get(url)||{};unique.set(url,{...row,...old,url,aliases:[...new Set([...(old.aliases||[]),...(row.aliases||[]),row.url])]});}}
     const queue=[...unique.values()].map(row=>['fetched','pending','blocked','blocked-unattempted','NOT_RELEVANT'].includes(row.status)?row:{...row,researchStatus:row.status,status:'pending',syncStatus:'PENDING'}).sort((a,b)=>(a.priority??100)-(b.priority??100));
     for(const row of queue){const old=this.manifest[row.url];this.manifest[row.url]={status:'pending',syncStatus:'PENDING',...row,...old,url:row.url};if(this.manifest[row.url].status==='blocked-unattempted')Object.assign(this.manifest[row.url],{status:'pending',syncStatus:'PENDING',legacyReason:this.manifest[row.url].reason});}
     this.checkpoint();let inBatch=0;

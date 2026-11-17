@@ -6,7 +6,7 @@ import { farmWikiFacts } from "./farm-wiki-facts.mjs";
 import { validateEquipmentSets } from "../../src/lib/farm-equipment-sets.mjs";
 const read=path=>JSON.parse(fs.readFileSync(path,"utf8"));
 const norm=value=>value.normalize("NFKC").replace(/[’‘]/g,"'").replace(/\s+/g," ").trim().toLowerCase();
-const category={Weapons:"Weapon",Armors:"Armor",Helms:"Helm","Capes / Back Items":"Cape",Pets:"Pet",Classes:"Class"};
+const category={Weapons:"Weapon",Armors:"Armor",Helms:"Helm","Capes / Back Items":"Cape",Pets:"Pet",Classes:"Class",Grounds:"Grounds"};
 const stableId=name=>name.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 export function buildEquipmentSets(items,pages){
  const root="content-sources/farm/equipment-sets",index=read(root+"/research-index.json").identities;
@@ -22,7 +22,7 @@ export function buildEquipmentSets(items,pages){
  const producers=new Map();for(const page of pages.values())for(const quest of page.quests)for(const reward of [...quest.fixedRewards,...quest.choiceRewards,...quest.randomRewards,...quest.randomChoiceRewards]){
   const names=producers.get(reward.wikiUrl)||[];names.push(quest.name);producers.set(reward.wikiUrl,names);
  }
- const variants={"cyber-void-paladin":"void-paladin","digital-archfiend-doomlord":"archfiend-doomlord","awakened-vordred":"vordred","gold-exalted-paladin":"silver-exalted-paladin"};
+ const variants={"classic-hollowborn-doomknight":"hollowborn-doomknight","cyber-void-paladin":"void-paladin","digital-archfiend-doomlord":"archfiend-doomlord","awakened-vordred":"vordred","gold-exalted-paladin":"silver-exalted-paladin"};
  for(const set of resolved.sets){
   const range=lines.slice(set.evidence.lines[0]-1,set.evidence.lines[1]);
   const inventory=set.inventoryEvidence;
@@ -44,7 +44,10 @@ export function buildEquipmentSets(items,pages){
     else {const source=pages.get(inventory.url);if(source?.sourceHash!==inventory.sourceHash)throw Error("Changed collection inventory evidence: "+set.id);inventoryReviewed=true;}
   }
   const members=set.members.map(member=>{
-   const item=byId.get(member.itemId),page=item&&pages.get(item.wikiUrl),offset=range.findIndex(line=>norm(line).includes(norm(member.name)));
+   const item=byId.get(member.itemId),page=item&&pages.get(item.wikiUrl);
+   const directOffset=range.findIndex(line=>norm(line).startsWith('→ '+norm(member.name)+':'));
+   const escaped=norm(member.name).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+   const offset=directOffset>=0?directOffset:range.findIndex(line=>new RegExp(escaped+'(?=$|[^\\p{L}\\p{N}])','u').test(norm(line)));
    const facts=page&&farmWikiFacts({text:page.text}),guideText=norm(range.join("\n"));
    const acquisitionVerified=page && ((producers.get(item?.wikiUrl)||[]).some(name=>guideText.includes(norm(name))) || (range[offset]?.trim().startsWith("→ "+member.name+":") && (page.droppedBy?.length>0 || /^Price:\s*N\/A\s*\(Dropped by/im.test(page.text))) || (facts.questReward?guideText.includes(norm(facts.questReward)):
       facts.materialTree?offset>=0:page.droppedBy?.some(monster=>guideText.includes(norm(monster.name)))));
@@ -59,7 +62,7 @@ export function buildEquipmentSets(items,pages){
   if(complete)production.push({id:set.id,name:set.name,sourceChapter:set.sourceChapter,memberIds:members.map(member=>member.itemId),sourceUrls:[sources.docs,...new Set(members.map(member=>member.evidence.wiki.url)),...(supplementalEvidence[set.id]||[])],...(variants[set.id]?{variantOf:variants[set.id]}:{}),evidence:members.map(member=>({itemId:member.itemId,...member.evidence}))});
  }
  for(const set of pendingSets){
-  if(reviewed.some(review=>review.name===set.name))continue;
+  if(reviewed.some(review=>review.name===set.name||review.id===stableId(set.name)))continue;
   const blocked=research.sets.find(entry=>entry.id===stableId(set.name));
   if(blocked){audit.push({...blocked,status:"BLOCKED"});continue;}
   const id=stableId(set.name),range=lines.slice(set.evidence.lines[0]-1,set.evidence.lines[1]),text=range.join("\n");

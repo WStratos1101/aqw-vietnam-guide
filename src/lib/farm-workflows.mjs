@@ -9,7 +9,14 @@ export function workflowTasks(route, registry, modeId = "standard", optionId) {
 
 export function sumMaterials(tasks) {
   const result = new Map();
-  for (const task of tasks) for (const row of task.rows) {
+  const acquisitions = new Map(), unshared = [];
+  for (const task of tasks) {
+    if (!task.sectionIdentity || !task.sourceHash || task.rewardChoices?.length || task.randomChoiceRewards?.length) { unshared.push(task); continue; }
+    const key = JSON.stringify([task.source,task.sectionIdentity,task.rows]);
+    const previous = acquisitions.get(key);
+    if (!previous || (task.numberOfRuns ?? 1) > (previous.numberOfRuns ?? 1)) acquisitions.set(key,task);
+  }
+  for (const task of [...unshared,...acquisitions.values()]) for (const row of task.rows) {
     if(row.usage === "owned" || row.temporary === true || row.role === "tempQuestItem" || task.numberOfRuns === 0)continue;
     const id = row.itemId || materialId(row.name);
     const previous = result.get(id);
@@ -50,6 +57,16 @@ export function distinctFarmText(values, alreadyShown = []) {
 export function mainWorkflowTasks(route, registry, modeId, optionId) {
  const tasks=workflowTasks(route,registry,modeId,optionId);
  return route.questGraph?tasks.filter(task=>route.questGraph.some(node=>node.questId===task.id&&node.display==='stepper')):tasks;
+}
+export function reachableMaterialRows(direct, profiles) {
+ const rows=new Map(),pending=[...direct];
+ for(let index=0;index<pending.length;index++){
+  const row=pending[index],id=row.itemId||materialId(row.name);
+  if(rows.has(id))continue;
+  rows.set(id,row);
+  for(const task of profiles[id]?.tasks||[])pending.push(...(task.rows||[]));
+ }
+ return [...rows.values()];
 }
 export function finalReceiptTasks(route,registry,mode) {
  return (route.questGraph||[]).filter(node=>node.display==='finalReceipt').map(node=>registry.quests[node.questId]).filter(Boolean).map(task=>({...task,numberOfRuns:mode?.questRuns?.[task.id]??1}));

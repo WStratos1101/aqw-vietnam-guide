@@ -54,7 +54,8 @@ test("every membership pins real guide and exact-item Wiki evidence",()=>{
  }
 });
 test("new equipment is distinct, source backed and has a working acquisition workflow",()=>{
- assert.equal(catalog.items.length,279+records.length);assert.equal(new Set(catalog.items.map(item=>item.id)).size,catalog.items.length);
+ const scopedOut=[...read("content-sources/farm/refinement/v3-3-class-scope.json").decisions,...read("content-sources/farm/refinement/v3-4-class-scope.json").decisions].filter(row=>row.decision==="RemovedFromFarm").length;
+ assert.equal(catalog.items.length,279+records.length-scopedOut);assert.equal(new Set(catalog.items.map(item=>item.id)).size,catalog.items.length);
  assert.equal(new Set(catalog.items.map(item=>item.wikiUrl)).size,catalog.items.length);
  for(const record of records){const item=catalog.items.find(item=>item.id===record.id);assert.ok(item,record.id);assert.equal(item.wikiUrl,record.wikiUrl);
   assert.ok(item.acquisitionRoutes.some(route=>route.questWorkflowIds?.length||route.materialTree?.requirements?.length||route.purchase||route.dropSource),record.id);
@@ -84,7 +85,7 @@ test("alternative Quest links never duplicate public choice controls",()=>{
  }
 });
 test("set artwork uses the matching canonical image and verified bytes",()=>{
- for(const asset of assets){assert.equal(createHash("sha256").update(fs.readFileSync("public"+asset.imagePath)).digest("hex"),asset.fileHash);const item=catalog.items.find(item=>item.wikiUrl===asset.sourcePage);if(item)assert.equal(item.image,asset.imagePath,item.id);}
+ for(const asset of assets){assert.equal(createHash("sha256").update(fs.readFileSync("public"+asset.imagePath)).digest("hex"),asset.fileHash);const item=catalog.items.find(item=>item.wikiUrl===asset.sourcePage);if(item)assert.equal(createHash("sha256").update(fs.readFileSync("public"+item.image)).digest("hex"),asset.fileHash,item.id);}
  for(const set of sets)for(const id of set.memberIds){const item=catalog.items.find(item=>item.id===id);assert.ok(item.image);assert.ok(fs.existsSync("public"+item.image));}
 });
 test("inventory ordering and links use canonical IDs, category, subtype and faction",()=>{

@@ -1,3 +1,6 @@
+import { applyFarmClassScope } from "./lib/farm-class-scope.mjs";
+import { isolateFarmQuests } from "./lib/farm-quest-isolation.mjs";
+import { applyRecoveredFarmMetadata } from "./lib/farm-metadata-recovery.mjs";
 // Offline deterministic adapter: curated recipes remain authoritative; imports never infer routes.
 import fs from "node:fs";
 import { applyFarmV3Scope, applyVerifiedFarmFields } from "./lib/farm-v3-scope.mjs";
@@ -289,7 +292,7 @@ for (const item of byWiki.values())
       item.sources = dedupe([...item.sources, source(page.url)]);
     }
   }
-const items = [...byWiki.values()];
+const items = applyFarmClassScope([...byWiki.values()], read("content-sources/farm/refinement/v3-3-class-scope.json"));
 const subtypes = {
   sword: "Sword",
   dagger: "Dagger",
@@ -389,6 +392,7 @@ for (const item of items) {
   );
   item.classRoles = roleMatch?.roles || [];
   if (roleMatch) {
+    item.classHref ||= roleMatch.classHref;
     item.classRoleEvidence = roleMatch;
   }
   if (record) {
@@ -561,6 +565,13 @@ for(const spec of read("content-sources/farm/refinement/v3-verified-fields.json"
   if(item && !item.wikiDetails && record)item.wikiDetails=farmWikiDetails(record,detailTranslations[spec.url]);
 }
 applyVerifiedFarmFields(items,publicWorkflows.pages,read("content-sources/farm/refinement/v3-verified-fields.json").records,farmWikiDetails);
+if(fs.existsSync("content-sources/farm/refinement/v3-4-metadata-review.json"))
+  applyRecoveredFarmMetadata(items,publicWorkflows.pages,read("content-sources/farm/refinement/v3-4-metadata-review.json").records);
+const isolation = isolateFarmQuests(items,publicWorkflows.registry,publicWorkflows.pages);
+write("Update/FARM_V3_4_QUEST_ISOLATION_AUDIT.json",isolation);
+write("Update/FARM_V3_4_MATERIAL_AUDIT.json",{schemaVersion:1,status:"PARTIAL",routesAudited:isolation.routesAudited,
+  routes:isolation.records.map(({itemId,routeId,directMaterialsAfter,dependenciesRetained,verificationStatus,materialTotalsComplete})=>
+    ({itemId,routeId,directMaterials:directMaterialsAfter,dependenciesRetained,verificationStatus,materialTotalsComplete}))});
 write("src/content/farm/quest-workflows.generated.json", publicWorkflows.registry);
 
 const publicProfiles={...publicWorkflows.registry.materials,...read("content-sources/farm/material-guides.json"),...review.materialSources};

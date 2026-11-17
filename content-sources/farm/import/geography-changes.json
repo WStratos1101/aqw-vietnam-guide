@@ -466,5 +466,20 @@
     "sources": [
       "https://aqwwiki.wikidot.com/heiwa-valley"
     ]
+  },
+  {
+    "itemId": "archmage-class",
+    "routeId": "wiki-location",
+    "before": {
+      "regionId": null,
+      "mapCommand": null
+    },
+    "after": {
+      "regionId": null,
+      "mapCommand": "/join archmage"
+    },
+    "sources": [
+      "https://aqwwiki.wikidot.com/archmage-location"
+    ]
   }
 ]
