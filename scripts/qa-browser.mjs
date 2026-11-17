@@ -1,3 +1,4 @@
+import "./qa-browser-env.mjs";
 // macOS external entry point; reuses the existing browser assertions and server lifecycle.
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -11,7 +12,7 @@ const requested = process.argv
 if (requested && !["chromium", "webkit"].includes(requested))
   throw Error("Engine must be chromium or webkit");
 const engines = requested ? [requested] : ["chromium", "webkit"];
-process.env.PLAYWRIGHT_BROWSERS_PATH = path.join(root, ".playwright-browsers");
+
 await fs.mkdir("qa/screenshots", { recursive: true });
 await fs.mkdir("qa/logs", { recursive: true });
 const report = {

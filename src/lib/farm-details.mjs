@@ -31,8 +31,52 @@ export function guidePaths(route) {
   return [];
 }
 
+// One display formatter for reviewed structured boosts and legacy Wiki effects.
+// It translates wording only; every percentage and named target is retained.
+export function formatFarmBoost(text) {
+  // Wiki sometimes embeds a boost in the item's lore description. Select the
+  // boost sentence before translating so description prose never reaches Boost.
+  const marker = text.search(/When equipped,\s*this item|\bThis item (?=(?:does|gives|provides|increases)\s)|\bItem (?=does\s+\d)/i);
+  if (marker >= 0) {
+    text = text.slice(marker);
+    const end = text.search(/when equipped(?=[.)]|$)/i);
+    if (end >= 0) text = text.slice(0, end + 'when equipped'.length);
+  }
+  return text.replace(/Description:\s*/gi, "")
+    .replace(/^When equipped,\s*this item /i, "Khi trang bị, vật phẩm ")
+    .replace(/^(?:This item|Item) /i, "")
+    .replace(/provides (?:a |an )?/gi, "tăng ")
+    .replace(/\b(?:does|gives) (?=\d)/gi, "tăng ")
+    .replace(/more damage to|Damage to All/gi, match=>/All/i.test(match)?"sát thương lên All Monsters":"sát thương lên")
+    .replace(/Damage to /gi, "sát thương lên ")
+    .replace(/bonus to /gi, "")
+    .replace(/% more /gi, "% ")
+    .replace(/^(\d+(?:[.,]\d+)?%) bonus /i, "Tăng $1 ")
+    .replace(/class points|\bCP\b/gi, "Class Point")
+    .replace(/experience|\bXP\b/gi, "EXP")
+    .replace(/\brep\b|reputation/gi, "Reputation")
+    .replace(/\bgold\b/gi, "Gold")
+    .replace(/all monsters|any monster/gi, "All Monsters")
+    .replace(/all tagged monsters/gi, "mọi quái có tag")
+    .replace(/(Chaos|Undead|Human|Dragon|Elemental)(?: tagged)? Monsters/gi, (_,race)=>race[0].toUpperCase()+race.slice(1).toLowerCase())
+    .replace(/gained when battling monsters or turning in quests|when battling monsters or turning in quests/gi, "khi đánh quái hoặc trả Quest")
+    .replace(/gained from quests/gi, "nhận được từ Quest")
+    .replace(/when equipped/gi, "khi trang bị")
+    .replace(/\band\b/gi, "và")
+    .trim();
+}
+
+export function farmBoostState(item) {
+  const values=farmBoost(item);
+  return values[0]==="Chưa xác minh"?"unverified":values[0]==="Không"?"none":"verified";
+}
+
 // Absence of an effect is not evidence that the item has no boost.
 export function farmBoost(item) {
+  if(item.boosts?.length){
+    const labels={classPoints:"Class Point",experience:"EXP",reputation:"Reputation",gold:"Gold"};
+    return item.boosts.map(boost=>boost.kind==='damageToAll'?`Tăng ${boost.percent}% sát thương lên All Monsters khi trang bị.`:boost.kind==='damageToTagged'?`Tăng ${boost.percent}% sát thương lên ${boost.targets.join(', ')}.`:`Tăng ${boost.percent}% ${labels[boost.kind]||boost.kind}.`);
+  }
   const details = item.wikiDetails;
   const effects = details?.specialEffectsVi?.length
     ? details.specialEffectsVi
@@ -44,14 +88,14 @@ export function farmBoost(item) {
         text,
       ),
   );
-  if (boosts.length) return [...new Set(boosts)];
+  if (boosts.length) return [...new Set(boosts.map(formatFarmBoost))];
   // Only an explicit reviewed statement can establish "none".
   if (
     effects.some((text) =>
       /^(?:Không có boost|No boosts?)[.!]?$/i.test(text.trim()),
     )
   )
-    return ["Không có boost"];
+    return ["Không"];
   return ["Chưa xác minh"];
 }
 

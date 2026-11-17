@@ -7,6 +7,7 @@ import {
   runQa,
   selectFarmBrowser,
   formatQaError,
+  classifyLaunchError,
 } from "../scripts/qa-runtime.mjs";
 
 test("FARM_BROWSER overrides legacy AQW_BROWSER; default is Chromium", () => {
@@ -149,4 +150,9 @@ test("invalid browser configuration fails before starting server", async (t) => 
   const result = await runQa("farm", () => {}, h.options);
   assert.equal(result.cause, "invalid_configuration");
   assert.match(result.errors[0], /Unsupported browser "safari"/);
+});
+
+test('browser cache stays in Update and DYLD symbol failure is explicit',()=>{
+ assert.equal(process.env.PLAYWRIGHT_BROWSERS_PATH,path.resolve('Update/_qa-browsers')+path.sep);
+ assert.equal(classifyLaunchError('Namespace DYLD, Code 4 Symbol missing _OBJC_CLASS_$__WKBrowserContext'),'dyld_symbol_missing');
 });

@@ -78,6 +78,11 @@ test("catalog primary groups match exact canonical names and retain guide line e
         assert.ok(evidence.sourceLine>=start&&evidence.sourceLine<=end,item.id);
         assert.equal(source.collectionEvidence.sourceChapter,evidence.sourceChapter);
         assert.ok(fs.readFileSync(evidence.sourceFile,"utf8").split(/\r?\n/)[evidence.sourceLine-1]);
+      } else if(evidence.sourceDocument === "user-task-v3.2") {
+        const directive=read(evidence.sourceFile).find(entry=>entry.itemId===item.id);
+        assert.ok(directive,item.id);assert.equal(directive.identitySource,item.wikiUrl);
+        assert.equal(directive.primaryGroupId,item.primaryGroupId);assert.equal(directive.authority,"user-task-v3.2");
+        assert.equal(evidence.sourceHash,createHash("sha256").update(fs.readFileSync(evidence.sourceFile)).digest("hex"));
       } else {
         assert.equal(evidence.sourceDocument, "manual-faction-guide");
         assert.ok(Number.isInteger(evidence.sourceLine));
@@ -182,11 +187,11 @@ test("all-inventory and faction counts count unique canonical identities exactly
     nation: 97,
     legion: 32,
     dragonkin: 4,
-    elemental: 12,
+    elemental: 11,
     hollowborn: 7,
     "debris-astravian": 3,
-    "alternative-hero": 8,
-    unknown: 73,
+    "alternative-hero": 13,
+    unknown: 69,
   };
   for (const [id, count] of Object.entries(expected))
     assert.equal(counts.find((entry) => entry.id === id)?.count, count + collectionRecords.filter(record=>({Nation:"nation",Hollowborn:"hollowborn",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Other Items":"unknown"})[record.collectionEvidence.sourceChapter]===id).length, id);
@@ -251,8 +256,10 @@ test("canonical reward mappings survive goal fallback and generation is idempote
       assert.ok(exclusion.sourceHash);
       continue;
     }
-    assert.equal(item.primaryGroupId, mapping.primaryGroupId, mapping.itemId);
-    assert.equal(item.groupEvidence[0].sourceLine, mapping.sourceLine, mapping.itemId);
+    const directive=read("content-sources/farm/refinement/v3-2-faction-overrides.json").find(entry=>entry.itemId===mapping.itemId);
+    assert.equal(item.primaryGroupId, directive?.primaryGroupId || mapping.primaryGroupId, mapping.itemId);
+    if(directive)assert.equal(item.groupEvidence[0].authority,"user-task-v3.2");
+    else assert.equal(item.groupEvidence[0].sourceLine, mapping.sourceLine, mapping.itemId);
     if (mapping.parentGoalId)
       assert.ok(goals.some((goal) =>
         `${goal.group_id}:${goal.source_line}:${goal.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}` === mapping.parentGoalId,

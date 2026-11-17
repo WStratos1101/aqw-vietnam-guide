@@ -1224,10 +1224,12 @@ html[data-theme="light"] .fv2-root {
 }
 .fv32-route-picker {
   display: flex;
-  gap: 6px;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 10px;
 }
 .fv32-route-picker button {
+  border-radius: 10px;
   background: var(--fv2-panel2);
   color: var(--fv2-text);
   min-height: 44px;
@@ -1236,7 +1238,11 @@ html[data-theme="light"] .fv2-root {
 }
 .fv32-route-picker button[aria-pressed="true"] {
   border-color: var(--fv2-accent);
+  background: var(--fv2-accent);
+  color: var(--fv2-accent-ink);
 }
+.fv32-route-picker button:hover { box-shadow: inset 0 0 0 1px var(--fv2-accent); }
+.fv32-route-picker button:focus-visible { outline: 3px solid var(--fv2-accent); outline-offset: 3px; }
 @media (max-width: 720px) {
   .fv2-groups nav {
     display: grid;
@@ -1288,10 +1294,10 @@ html[data-theme="light"] .fv2-root {
 
 /* The Quest view has three columns; keep quantities visible at 375px. */
 .fv32-workflow .fv32-table-scroll table { min-width: 0; width: 100%; table-layout: fixed; }
-.fv32-workflow .fv32-table-scroll th:first-child { width: 45%; }
-.fv32-workflow .fv32-table-scroll th:nth-child(2) { width: 24%; }
-.fv32-workflow .fv32-table-scroll th:nth-child(3) { width: 31%; }
-.fv32-workflow .fv32-table-scroll :is(th,td) { overflow-wrap: anywhere; padding: 8px; }
+.fv32-workflow .fv32-table-scroll th:first-child { width: 47%; }
+.fv32-workflow .fv32-table-scroll th:nth-child(2) { width: 20%; }
+.fv32-workflow .fv32-table-scroll th:nth-child(3) { width: 33%; }
+.fv32-workflow .fv32-table-scroll :is(th,td) { overflow-wrap: normal; word-break: normal; white-space: normal; padding: 8px; }
 .fv32-workflow .fv32-table-scroll :is(th,td):nth-child(2) { white-space: nowrap; text-align: right; }
 
 .fv-set-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(145px, 100%), 1fr)); gap: 12px; }
@@ -1303,3 +1309,54 @@ html[data-theme="light"] .fv2-root {
 .fv-set-name { display: flex; align-items: center; gap: 6px; font-weight: 700; }
 .fv-set-grid small { display: block; margin-top: 6px; }
 .fv-set select { max-width: 100%; }
+
+.fv2-specs-with-time > div:first-child { grid-column: auto; }
+@media (max-width: 540px) {
+  .fv2-specs-with-time { grid-template-columns: minmax(0, 1fr); }
+}
+
+
+
+@media (max-width: 480px) {
+  .fv32-workflow .fv32-table-scroll table { min-width: 340px; }
+}
+
+/* Shared Quest/total/dependency materials: the wrapper owns horizontal scroll.
+   Minimum widths protect word wrapping and the non-wrapping quantity column. */
+.fv2-root .fv32-workflow .fv32-table-scroll {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.fv2-root .fv32-workflow .fv32-table-scroll .fv32-material-table {
+  width: 100%;
+  min-width: 560px;
+  table-layout: fixed;
+  font: inherit;
+}
+.fv2-root .fv32-workflow .fv32-material-table[data-columns="4"] { min-width: 760px; }
+.fv2-root .fv32-workflow .fv32-material-table :is(th, td) {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  padding: 8px;
+}
+.fv2-root .fv32-workflow .fv32-material-table :is(th, td):nth-child(2) {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.fv2-root .fv32-workflow .fv32-material-table button {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  text-align: left;
+}
+.fv2-root .fv32-workflow .fv32-material-table th:first-child { width: 47%; }
+.fv2-root .fv32-workflow .fv32-material-table th:nth-child(2) { width: 20%; }
+.fv2-root .fv32-workflow .fv32-material-table th:nth-child(3) { width: 33%; }
+.fv2-root .fv32-workflow .fv32-material-table[data-columns="4"] th:first-child { width: 34%; }
+.fv2-root .fv32-workflow .fv32-material-table[data-columns="4"] th:nth-child(2) { width: 14%; }
+.fv2-root .fv32-workflow .fv32-material-table[data-columns="4"] th:nth-child(3) { width: 25%; }
+.fv2-root .fv32-workflow .fv32-material-table[data-columns="4"] th:nth-child(4) { width: 27%; }

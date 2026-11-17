@@ -26132,7 +26132,13 @@
         "text": "◆ Bước 1: Làm “Supplies to spin The Wheel of Chance” quest",
         "matchedItemIds": [
           "void-beetle-general-armaments",
-          "void-beetle-general-wings"
+          "void-beetle-general-wings",
+          "void-beetle-general-hood",
+          "void-beetle-general-helm",
+          "void-beetle-general-spikes",
+          "void-beetle-general-machete",
+          "void-beetle-general-machetes",
+          "void-beetle-general-spear"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -54702,7 +54708,9 @@
         "matchedItemIds": [
           "astravian-corsair",
           "astravian-corsair-hat",
-          "bearded-astravian-corsair-hat"
+          "bearded-astravian-corsair-hat",
+          "higure",
+          "empowered-higure"
         ],
         "excluded": [],
         "disposition": "imported-reference",
@@ -55086,7 +55094,10 @@
       {
         "line": 8210,
         "text": "\tDoom Fragment",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "higure",
+          "empowered-higure"
+        ],
         "excluded": [
           {
             "name": "Doom",
@@ -55099,8 +55110,8 @@
             "reason": "Wiki tags identify non-equipment or ambiguous category"
           }
         ],
-        "disposition": "excluded-reference",
-        "reason": "Non-equipment Wiki tags"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 8211,
@@ -77341,10 +77352,12 @@
       {
         "line": 1,
         "text": "Higure",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "higure"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 2,
@@ -77371,18 +77384,23 @@
       {
         "line": 4,
         "text": "Higure được yêu cầu hoặc cần để farm các Item sau:",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "higure"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 5,
         "text": "→ Empowered Higure.",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "higure",
+          "empowered-higure"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 6,
@@ -77453,10 +77471,12 @@
       {
         "line": 14,
         "text": "Yêu cầu trước khi bắt đầu farm Higure:",
-        "matchedItemIds": [],
+        "matchedItemIds": [
+          "higure"
+        ],
         "excluded": [],
-        "disposition": "pending-context-review",
-        "reason": "Not yet classified: may be equipment, material, quest, instruction or context; not silently excluded"
+        "disposition": "imported-reference",
+        "reason": "Literal item reference; technical facts require per-field verification"
       },
       {
         "line": 15,

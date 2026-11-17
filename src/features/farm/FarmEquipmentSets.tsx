@@ -24,6 +24,7 @@ export function FarmEquipmentSets({item,items,onItemClick}:{item:FarmV2Item;item
   }}>
     <div className="fv-set-art">{member.image && <img src={member.image} alt={member.name} width={145} height={145} loading="lazy"/>}</div>
     <span className="fv-set-name"><FarmTypeIcon name={member.subtype || member.category} fallbackName={member.category}/>{member.name}</span>
+    {(member.descriptionVi||member.wikiDetails?.descriptionVi) && <small>{member.descriptionVi||member.wikiDetails?.descriptionVi}</small>}
     {!farmBoost(member).includes("Chưa xác minh") && <small>{farmBoost(member).join(" · ")}</small>}
   </a>)}</div>
  </section>;

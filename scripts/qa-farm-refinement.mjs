@@ -11,7 +11,7 @@ await runQa("farm-refinement", async ({ browser, base, result, dir, expect })=>{
       if(await page.locator("html").getAttribute("data-theme")!==theme)await page.locator(".theme-toggle").click();
       await expect(page.getByRole("region",{name:"Hướng dẫn Farm nguyên liệu",exact:true})).toHaveCount(0);
       const notes=page.getByLabel("Lưu ý khi farm bằng Insignia",{exact:true});
-      await expect(notes.locator("table")).toHaveCount(3);await expect(notes).toContainText("5.550");
+      await expect(notes.locator("table")).toHaveCount(1);await expect(notes).toContainText("5.550");
       const insigniaImage=`${dir}/insignia-${theme}-${width}.png`;
       await page.screenshot({path:insigniaImage,fullPage:true});result.screenshots.push(insigniaImage);
       await page.getByRole("tab",{name:"Nguyên liệu",exact:true}).click();

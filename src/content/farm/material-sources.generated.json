@@ -6051,6 +6051,132 @@
       }
     ]
   },
+  "bounty-hunter-dubloon": {
+    "name": "Bounty Hunter Dubloon",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "material-quest-0",
+        "quest": "Cryptbreaker Bounty",
+        "npc": "Click on the Bounty Board on Screen 19.",
+        "map": "/join pirates",
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/lolosia-s-quests",
+        "sourceHash": "c856108de4b9114569783e2c8b2edfd9d8d65a714270d76b577d98186621ce65",
+        "reward": "Bounty Hunter Dubloon ×4",
+        "rows": [
+          {
+            "name": "Cryptbreaker's Head",
+            "quantity": 1,
+            "monster": "Cryptbreaker",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lolosia-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-1",
+        "quest": "Jon S'Nooooooo Bounty",
+        "npc": "Click on the Bounty Board on Screen 19.",
+        "map": "/join pirates",
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/lolosia-s-quests",
+        "sourceHash": "c856108de4b9114569783e2c8b2edfd9d8d65a714270d76b577d98186621ce65",
+        "reward": "Bounty Hunter Dubloon ×3",
+        "rows": [
+          {
+            "name": "Jon S'Nooooooo Defeated",
+            "quantity": 1,
+            "monster": "Jon S'Nooooooo",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lolosia-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-2",
+        "quest": "Ultra Drakonnan Bounty",
+        "npc": "Click on the Bounty Board on Screen 19.",
+        "map": "/join pirates",
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/lolosia-s-quests",
+        "sourceHash": "c856108de4b9114569783e2c8b2edfd9d8d65a714270d76b577d98186621ce65",
+        "reward": "Bounty Hunter Dubloon ×10",
+        "rows": [
+          {
+            "name": "Ultra Drakonnan Defeated",
+            "quantity": 1,
+            "monster": "Ultra Drakonnan",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lolosia-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-3",
+        "quest": "Module 005 Bounty",
+        "npc": "Click on the Bounty Board on Screen 19.",
+        "map": "/join pirates",
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/lolosia-s-quests",
+        "sourceHash": "c856108de4b9114569783e2c8b2edfd9d8d65a714270d76b577d98186621ce65",
+        "reward": "Bounty Hunter Dubloon ×12",
+        "rows": [
+          {
+            "name": "Module 005 Defeated",
+            "quantity": 1,
+            "monster": "Module 005",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lolosia-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-4",
+        "quest": "Very Trobblesome",
+        "npc": "Click on the Bounty Board on Screen 19.",
+        "map": "/join pirates",
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/lolosia-s-quests",
+        "sourceHash": "c856108de4b9114569783e2c8b2edfd9d8d65a714270d76b577d98186621ce65",
+        "reward": "Bounty Hunter Dubloon ×3",
+        "rows": [
+          {
+            "name": "Trobble Captured",
+            "quantity": 1,
+            "monster": "Troblor",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lolosia-s-quests"
+          }
+        ]
+      },
+      {
+        "id": "material-quest-5",
+        "quest": "Secret Treasure",
+        "npc": "Click on the Bounty Board on Screen 19.",
+        "map": "/join pirates",
+        "requirements": [],
+        "preconditions": [],
+        "source": "https://aqwwiki.wikidot.com/lolosia-s-quests",
+        "sourceHash": "c856108de4b9114569783e2c8b2edfd9d8d65a714270d76b577d98186621ce65",
+        "reward": "Bounty Hunter Dubloon ×40",
+        "rows": [
+          {
+            "name": "Hidden Treasure",
+            "quantity": 1,
+            "monster": "Aisha's Drake",
+            "map": null,
+            "source": "https://aqwwiki.wikidot.com/lolosia-s-quests"
+          }
+        ]
+      }
+    ]
+  },
   "blinding-aura": {
     "name": "Blinding Aura",
     "method": "Quest",

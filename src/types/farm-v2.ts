@@ -95,6 +95,8 @@ export type FarmTask = {
     maxStack?: number | null;
     requiredQuest?: string | null;
     usage?: "owned";
+    temporary?: boolean;
+    role?: string;
     sourceDetails?: {
       kind: string;
       monster?: string | null;
@@ -121,7 +123,16 @@ export type FarmInsigniaSource = {
   rewardQuantity?: number;
   repeatability?: string;
 };
+export type FarmTime = {
+  kind: "gated" | "estimate" | "unknown";
+  period: "daily" | "weekly" | "monthly" | "seasonal" | null;
+  requiredRuns: number; yieldPerRun: number; minimumResets: number;
+  rangeHours: [number,number] | null; assumptions: string[];
+  source: string; sourceHash: string; scope: string;
+};
 export type FarmV2RouteData = {
+  questGraph?: {questId:string;role:string;display:"stepper"|"finalReceipt"|"condition";source:string}[];
+  farmTime?: FarmTime;
   questWorkflowIds?: string[];
   completionTasks?: FarmTask[];
   materialTotalsComplete?: boolean;
@@ -150,6 +161,7 @@ export type FarmV2RouteData = {
   sources: Source[];
 };
 export type FarmMode = {
+  farmTime?: FarmTime;
   id: string;
   label: string;
   questIds: string[];
@@ -165,6 +177,8 @@ export type FarmMode = {
 };
 export type FarmV2Item = {
   setIds?: string[];
+  descriptionVi?: string | null;
+  boosts?: {kind:string;percent:number;targets?:string[];source:string;sourceHash:string;scope:string}[];
   id: string;
   name: string;
   originalName: string;

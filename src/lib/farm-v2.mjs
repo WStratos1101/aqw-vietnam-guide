@@ -76,6 +76,11 @@ export function validateFarmV2(catalog) {
               e.sourceFile &&
               Number.isInteger(e.sourceLine) &&
               e.sourceLine > 0) ||
+              (e.sourceDocument === "user-task-v3.2" &&
+                e.sourceFile === "content-sources/farm/refinement/v3-2-faction-overrides.json" &&
+                e.authority === "user-task-v3.2" && e.groupId === "alternative-hero" &&
+                e.sourceUrl === i.wikiUrl && /^[a-f0-9]{64}$/.test(e.sourceHash || "") &&
+                e.matchKind === "exact-canonical-task-directive") ||
               (e.sourceDocument === "aqwwiki-ultra-quest" &&
                 url(e.sourceUrl) &&
                 e.matchKind === "verified-direct-ultra-quest" &&

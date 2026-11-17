@@ -6,6 +6,14 @@ import {
   formatQaError,
 } from "./qa-runtime.mjs";
 import assert from "node:assert/strict";
+import { lrSteps } from "../tests/fixtures/farm-step-cases.mjs";
+import { checkMaterialTable } from "./lib/farm-material-table-qa.mjs";
+import { checkFarmSteps } from "./lib/farm-step-qa.mjs";
+import fs from "node:fs";
+import { createHash } from "node:crypto";
+import { fingerprint } from "./qa-farm-local.mjs";
+const sourceFingerprint = () => createHash("sha256").update(JSON.stringify(fingerprint())).digest("hex");
+const registry = JSON.parse(fs.readFileSync("src/content/farm/quest-workflows.generated.json", "utf8"));
 export const farmSmokeRoutes = [
   { path: "/farm/necrotic-sword-of-doom-nsod", selector: "main .article-body" },
   { path: "/class", selector: "main.class-directory" },
@@ -16,7 +24,10 @@ export const farmSmokeRoutes = [
 await runQa(
   "farm",
   async ({ browser, base, result, dir, expect }) => {
-    for (const width of [375, 768, 1024, 1440]) {
+    result.profile = "full";
+    result.sourceFingerprint = sourceFingerprint();
+    result.playwrightVersion = JSON.parse(fs.readFileSync("node_modules/@playwright/test/package.json", "utf8")).version;
+    for (const width of [390, 768, 1024, 1440]) {
       const page = await browser.newPage({
         viewport: { width, height: 1000 },
         reducedMotion: "reduce",
@@ -82,6 +93,10 @@ await runQa(
         result.screenshots.push(path);
       };
       try {
+        await step("source-backed step counts 1/2/3/4/6 and farm mode reset", async () => {
+          await checkFarmSteps({page,base,expect,screenshot,recordTable:diagnostic=>(result.materialTables ||= []).push(diagnostic)});
+          await screenshot("step-regression");
+        });
         await step(
           "load active Farm V2 inventory and canonical counts",
           async () => {
@@ -366,11 +381,17 @@ await runQa(
             await page.goBack();
             await expect(page.getByRole("tab",{name:"Cách nhận",exact:true})).toHaveAttribute("aria-selected","true");
             await page.getByRole("tab",{name:"Hướng dẫn Farm",exact:true}).click();
-            await expect(page.locator(".fv31-step-numbers button")).toHaveCount(4);
+            // TASK scope: LF1–LF3 farm materials; LF4 remains a separate final receipt.
+            await expect(page.locator('[data-item-id]')).toHaveAttribute('data-item-id','legion-revenant-class');
+            assert.equal(new URL(page.url()).searchParams.get('farm-route'),'wiki-location');
+            await expect(page.getByRole('button',{name:'Farm thông thường',exact:true})).toHaveAttribute('aria-pressed','true');
+            await expect(page.locator(".fv31-step-numbers button")).toHaveCount(lrSteps.length);
+            await expect(page.locator(".fv31-step-numbers button")).toHaveText(['1','2','3']);
 
             await page.locator(".fv31-step-numbers button").nth(1).click();
             await expect(page.locator(".fv31-step-content")).toContainText("Cohort Conquered");
-            for(const head of await page.locator(".fv31-step-content thead").all()) await expect(head.locator("th")).toHaveCount(3);
+            const lf2 = registry.quests["legion-revenant-s-quests:legion-fealty-2"];
+            await checkMaterialTable({wrapper:page.locator('.fv31-step-content .fv32-material-table').locator('..'),rows:lf2.rows,modeId:'standard',record:diagnostic=>(result.materialTables ||= []).push(diagnostic)});
             await page.getByRole("button",{name:"Farm bằng Insignia",exact:true}).click();
             await expect(page.locator(".fv32-insignia-sources")).toContainText("31");
             await expect(page.locator('.fv32-insignia-sources a')).toHaveAttribute("href","/ultra-boss/ultra-dage");
@@ -378,13 +399,10 @@ await runQa(
             await questTabs.first().focus();await page.keyboard.press("End");
             await expect(questTabs.last()).toBeFocused();
             await expect(page.locator(".fv31-step-content")).toContainText("Legion Fealty 4");
-            for(const table of await page.locator(".fv31-step-content .fv32-table-scroll").all()){
-              const visible=await table.evaluate(wrapper=>{
-                const bounds=wrapper.getBoundingClientRect();
-                return [...wrapper.querySelectorAll("tr > :nth-child(2)")].every(cell=>{const box=cell.getBoundingClientRect();return box.left>=bounds.left-1&&box.right<=bounds.right+1;});
-              });
-              assert.equal(visible,true,"Quest quantities remain visible without horizontal scrolling");
-            }
+            const lf3 = registry.quests["legion-revenant-s-quests:legion-fealty-3"];
+            await checkMaterialTable({wrapper:page.locator('.fv31-step-content .fv32-material-table').first().locator('..'),rows:lf3.rows,modeId:'insignia',record:diagnostic=>(result.materialTables ||= []).push(diagnostic)});
+            await expect(page.locator('section[aria-label="Cách nhận cuối"]')).toHaveCount(1);
+            await expect(page.locator('section[aria-label="Cách nhận cuối"]')).toContainText('Legion Fealty 4');
             await screenshot("v31-stepper");
             await navigate(
               "/farm?category=Classes&subtype=Support",
@@ -613,9 +631,11 @@ await runQa(
         }
       }
     }
+    result.sourceUnchangedOnCompletion = sourceFingerprint() === result.sourceFingerprint;
+    assert.equal(result.sourceUnchangedOnCompletion, true, "Source changed during UI QA");
   },
   {
     browserName: selectFarmBrowser(),
-    outputDir: "artifacts/qa/v3-2/farm/" + selectFarmBrowser(),
+    outputDir: process.env.AQW_FARM_QA_OUTPUT || "artifacts/qa/v3-2/farm/" + selectFarmBrowser(),
   },
 );

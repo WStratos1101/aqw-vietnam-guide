@@ -1,6 +1,7 @@
+import "./qa-browser-env.mjs";
 import fs from "node:fs";
 import path from "node:path";
-process.env.PLAYWRIGHT_BROWSERS_PATH = path.resolve(".playwright-browsers");
+
 const { chromium } = await import("@playwright/test");
 const root = "content-sources/farm/review", out = "artifacts/qa/farm/source-review";
 fs.mkdirSync(out, { recursive: true });

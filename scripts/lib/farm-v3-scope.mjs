@@ -1,5 +1,6 @@
 // Exact target scope over hash-checked Wiki panels already loaded by the build.
 // Quest registry and prerequisite facts remain available outside the main stepper.
+import fs from 'node:fs';
 import { sumMaterials } from '../../src/lib/farm-workflows.mjs';
 export function applyFarmV3Scope(items,registry,pages,sets){
  const changes=[];
@@ -7,7 +8,7 @@ export function applyFarmV3Scope(items,registry,pages,sets){
  const lr=[1,2,3,4].map(n=>quest('Legion Fealty '+n,'https://aqwwiki.wikidot.com/legion-revenant-s-quests'));
  const radiant=quest('The Goddess of War','https://aqwwiki.wikidot.com/vohu-s-quests');
  if(radiant.ownedItems.length!==6||!radiant.rows.some(r=>r.name==='Malgor Insignia'&&r.quantity===5)||!radiant.rows.some(r=>r.name.toLowerCase()==='goddess of war'&&r.quantity===1))throw Error('Changed Radiant recipe/ownership evidence');
- const aweNames=['The Dawn of Lore','Mystical Magics','Science Rules','War: What is it Good for?','Which Came First, the Dragon or the Dragonoid?','Artifact Hunting','What Does Lore Have in Store?','Awe-scention'];
+ const aweNames=['The Dawn of Lore','Mystical Magics','Science Rules','War: What is it Good For?','Which Came First, the Dragon or the Dragonoid?','Artifact Hunting','What Does Lore Have in Store?','Awe-scention'];
  const awe=aweNames.map(name=>quest(name,'https://aqwwiki.wikidot.com/trissa-s-quests'));
  const stop={'apprentice-of-awe':1,'adept-of-awe':6,'archmaster-of-awe':7,awescended:8};
  for(const item of items)for(const route of item.acquisitionRoutes){
@@ -38,4 +39,27 @@ export function applyFarmV3Scope(items,registry,pages,sets){
    }
  }
  return changes;
+}
+
+export function applyVerifiedFarmFields(items,pages,specs,details){
+ const changed=[];
+ for(const spec of specs){
+  const item=items.find(i=>i.id===spec.id&&i.wikiUrl===spec.url),page=pages.get(spec.url);
+  if(!item||!page||page.sourceHash!==spec.sourceHash||spec.quotes.some(q=>!page.text.includes(q)))throw Error('Changed V3 field proof '+spec.id);
+  if(!item.wikiDetails)item.wikiDetails=details({text:page.text,wikiUrl:spec.url,lastChecked:null},null);
+  if(spec.membership){
+    const html=fs.readFileSync(spec.sourceFile,"utf8");
+    if(spec.membership!=="non-member"||spec.membershipTag!=="freeplayer"||!html.includes('tag/freeplayer'))throw Error('Unproved membership '+spec.id);
+    item.membership=spec.membership;item.wikiDetails.membership=spec.membership;
+    item.fieldEvidence={...item.fieldEvidence,membership:spec.url};
+  }
+  item.wikiDetails.descriptionVi=spec.descriptionVi;
+  item.descriptionVi=spec.descriptionVi;
+  item.rarity=spec.rarity;item.fieldEvidence={...item.fieldEvidence,rarity:spec.url};
+  item.boosts=spec.boosts.map(boost=>({...boost,source:spec.url,sourceHash:spec.sourceHash,scope:'equipped'}));
+  item.v3FieldEvidence={url:spec.url,sourceFile:spec.sourceFile,sourceHash:spec.sourceHash,quotes:spec.quotes,translationStatus:'reviewed_translation'};
+  changed.push(item.id);
+ }
+ for(const item of items)if(!item.descriptionVi&&item.wikiDetails?.descriptionVi)item.descriptionVi=item.wikiDetails.descriptionVi;
+ return changed;
 }

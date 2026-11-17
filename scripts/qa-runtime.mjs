@@ -1,3 +1,4 @@
+import "./qa-browser-env.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -8,13 +9,6 @@ export const projectRoot = path.resolve(
   "..",
 );
 process.chdir(projectRoot);
-process.env.PLAYWRIGHT_BROWSERS_PATH = path.join(
-  projectRoot,
-  ".playwright-browsers",
-);
-const browserTemp = path.join(projectRoot, ".playwright-browsers", ".tmp");
-await fs.mkdir(browserTemp, { recursive: true });
-process.env.TMPDIR = browserTemp;
 export async function ensureServer() {
   if (process.env.AQW_QA_URL) {
     const url = process.env.AQW_QA_URL;
@@ -62,6 +56,7 @@ export async function ensureServer() {
   throw Error("Localhost unavailable: dev server startup timeout");
 }
 export function classifyLaunchError(message) {
+  if (/Symbol not found|Symbol missing|_OBJC_CLASS_\$__WKBrowserContext|Namespace DYLD/i.test(message)) return "dyld_symbol_missing";
   if (/Executable doesn't exist|ENOENT/i.test(message))
     return "browser_binary_missing";
   if (

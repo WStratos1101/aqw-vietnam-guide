@@ -21,7 +21,7 @@ export function retryAfter(value,now=Date.now()) {
   const date=Date.parse(value);return Number.isFinite(date)?Math.max(0,date-now):0;
 }
 export function failure(error) {
-  const code=error.cause?.code||error.code;
+  const code=error.cause?.code||error.code||error.cause?.errors?.[0]?.code;
   let category='UNKNOWN',status='RETRY_LATER',temporary=false,system=false;
   if(error.httpStatus){
     category=`HTTP_${error.httpStatus}`;
@@ -84,11 +84,11 @@ export class SyncEngine {
     this.stats={startedAt:new Date(now()).toISOString(),networkPages:0,requests:0,success:0,cacheHits:0,failed:0,pending:0};
   }
   read(file,fallback){const p=path.join(this.directory,file);return fs.existsSync(p)?JSON.parse(fs.readFileSync(p,'utf8')):fallback;}
-  checkpoint(){atomic(path.join(this.directory,'manifest.json'),this.manifest);atomic(path.join(this.directory,'circuits.json'),this.circuits);atomic(path.join(this.directory,'last-run.json'),this.stats);}
+  checkpoint(){this.stats.total=Object.keys(this.manifest).length;this.stats.pending=Object.values(this.manifest).filter(r=>r.status==='pending'||r.status==='blocked-unattempted').length;atomic(path.join(this.directory,'manifest.json'),this.manifest);atomic(path.join(this.directory,'circuits.json'),this.circuits);atomic(path.join(this.directory,'last-run.json'),this.stats);}
   cachePath(url){return path.join(this.directory,'pages',sha(url)+'.json');}
-  cache(url){try{return JSON.parse(fs.readFileSync(this.cachePath(url),'utf8'));}catch{return null;}}
+  cache(url){for(const alias of [url,...(this.manifest[url]?.aliases||[])]){try{const cached=JSON.parse(fs.readFileSync(this.cachePath(alias),'utf8'));if(validCache(cached))return cached;}catch{/* Uncached URL remains pending. */}}return null;}
   async pause(ms){let remaining=ms;while(remaining>0){const part=Math.min(remaining,30000);await this.wait(part);remaining-=part;}}
-  async transition(host,state,extra={}){this.circuits[host]={...this.circuits[host],...extra,state,changedAt:new Date(this.now()).toISOString()};this.checkpoint();}
+  async transition(host,state,extra={}){const old=this.circuits[host]||{};this.circuits[host]={...old,...extra,state,changedAt:new Date(this.now()).toISOString(),history:[...(old.history||[]),{from:old.state||'CLOSED',to:state,at:new Date(this.now()).toISOString()}].slice(-100)};this.checkpoint();}
   async gate(host){
     if(this.stopped.has(host))return false;
     const c=this.circuits[host]||{state:'CLOSED',consecutive:0};this.circuits[host]=c;
@@ -139,8 +139,8 @@ export class SyncEngine {
   }
   async run(rows,{mode='resume',limit=0,offline=false,refresh=false,ttl=86400000}={}){
     const unique=new Map();
-    for(const row of [...rows,...Object.values(this.manifest)]){const url=canonical(row.url);if(url)unique.set(url,{...row,...unique.get(url),url});}
-    const queue=[...unique.values()].sort((a,b)=>(a.priority??100)-(b.priority??100));
+    for(const row of [...rows,...Object.values(this.manifest)]){const url=canonical(row.url);if(url){const old=unique.get(url)||{};unique.set(url,{...row,...old,url,aliases:[...new Set([...(old.aliases||[]),...(row.aliases||[]),row.url])]});}}
+    const queue=[...unique.values()].map(row=>['fetched','pending','blocked','blocked-unattempted','NOT_RELEVANT'].includes(row.status)?row:{...row,researchStatus:row.status,status:'pending',syncStatus:'PENDING'}).sort((a,b)=>(a.priority??100)-(b.priority??100));
     for(const row of queue){const old=this.manifest[row.url];this.manifest[row.url]={status:'pending',syncStatus:'PENDING',...row,...old,url:row.url};if(this.manifest[row.url].status==='blocked-unattempted')Object.assign(this.manifest[row.url],{status:'pending',syncStatus:'PENDING',legacyReason:this.manifest[row.url].reason});}
     this.checkpoint();let inBatch=0;
     for(let index=0;index<queue.length;index++){

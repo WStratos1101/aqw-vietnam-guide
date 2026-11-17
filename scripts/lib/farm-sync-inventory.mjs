@@ -9,7 +9,13 @@ export function classify(row,{catalog=new Map(),missing=new Set(),setUrls=new Se
     const rules=[['Merge Shop',hints.has('merge')||/merge/.test(slug)],['Quest',hints.has('quest')||/quest/.test(slug)],['Shop',hints.has('shop')||/shop/.test(slug)],['NPC',hints.has('npc')],['Monster',hints.has('monster')],['Location',hints.has('map')||hints.has('location')],['Material',hints.has('material')],['Class',hints.has('class')],['Equipment',hints.has('equipment')||hints.has('item')]];
     const match=rules.find(([,yes])=>yes);if(match){category=match[0];evidence='source-hint-needs-wiki-verification';}
   }
-  return {...row,url,classification:{category,evidence,verified:false},priority:setUrls.has(url)?0:missing.has(url)?1:category==='Equipment'?10:['Quest','Shop','Merge Shop'].includes(category)?20:category==='Class'?30:70};
+  const meta=row.cachedMetadata;
+  if(meta){
+    const crumbs=meta.crumbs||[],tags=meta.tags||[];
+    const exact=crumbs.includes('/classes')?'Class':crumbs.some(c=>['/weapons','/armors','/helmets-hoods','/capes-back-items','/pets','/battle-pets'].includes(c))?'Equipment':crumbs.includes('/quests')?'Quest':crumbs.includes('/merge-shops')?'Merge Shop':crumbs.includes('/shops')||tags.includes('shop')?'Shop':crumbs.includes('/npcs')?'NPC':crumbs.includes('/monsters')?'Monster':crumbs.includes('/misc-items')?'Material':crumbs.includes('/locations')?'Location':'Other';
+    category=exact;evidence='hash-checked-wiki-breadcrumbs';
+  }
+  return {...row,url,classification:{category,evidence,verified:false},priority:setUrls.has(url)?0:missing.has(url)&&['Equipment','Class','Other'].includes(category)?1:category==='Equipment'?10:['Quest','Shop','Merge Shop'].includes(category)?20:category==='Class'?30:70};
 }
 export function inventoryQueue(root,inventory){
   const norm=s=>String(s).normalize('NFKC').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim().toLowerCase();
@@ -37,7 +43,9 @@ export function inventoryQueue(root,inventory){
     const old=map.get(url)||{};
     map.set(url,{...old,...row,url,aliases:[...new Set([...(old.aliases||[]),row.url])],setIds:[...new Set([...(old.setIds||[]),...(row.setId?[row.setId]:[])]) ]});
   }
-  const rows=[...map.values()].map(r=>r.kind==='wiki'?classify(r,{catalog:byUrl,missing,setUrls}):{...r,priority:50});
+  const parsedPath='Update/_farm-sources/wiki-parsed.json';
+  const parsed=fs.existsSync(path.join(root,parsedPath))?new Map(read(parsedPath).records.map(p=>[canonical(p.url),p.metadata])):new Map();
+  const rows=[...map.values()].map(r=>({...r,cachedMetadata:parsed.get(r.url)})).map(r=>r.kind==='wiki'?classify(r,{catalog:byUrl,missing,setUrls}):{...r,priority:50});
   atomic(path.join(root,'Update/_farm-sources/url-inventory.json'),{schemaVersion:1,complete:false,total:rows.length,wiki:rows.filter(r=>r.kind==='wiki').length,originalUnattempted:Object.values(manifest).filter(r=>r.status==='blocked-unattempted').length,categories:rows.filter(r=>r.kind==='wiki').reduce((a,r)=>(a[r.classification.category]=(a[r.classification.category]||0)+1,a),{}),rows});
   return rows;
 }

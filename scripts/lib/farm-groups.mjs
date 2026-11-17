@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { createHash } from "node:crypto";
 
 // Only exact canonical names in the user-supplied, chapter-filtered guide
 // assign a primary group. Parentheticals are retained; no prefix/name guessing.
@@ -12,6 +13,9 @@ export function normalizeFactionGoalName(value) {
 }
 
 export function assignFarmGroups(items, goals, manifest, aliases = [], mappings = [], legacy = {}, ultraEvidence = [], collectionRecords = []) {
+  const directiveFile = "content-sources/farm/refinement/v3-2-faction-overrides.json", directiveBytes = fs.readFileSync(directiveFile);
+  const directiveHash = createHash("sha256").update(directiveBytes).digest("hex");
+  const taskOverrides = new Map(JSON.parse(directiveBytes).map(entry=>[entry.itemId,entry]));
   const collectionById = new Map(collectionRecords.map(record=>[record.id,record]));
   const collectionGuidePath = "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt";
   const collectionGuideLines = collectionRecords.length ? fs.readFileSync(collectionGuidePath, "utf8").split(/\r?\n/) : [];
@@ -37,6 +41,16 @@ export function assignFarmGroups(items, goals, manifest, aliases = [], mappings 
   const mappingById = new Map(mappings.map((entry) => [entry.itemId, entry]));
   const ultraById = new Map(ultraEvidence.map((entry) => [entry.itemId, entry]));
   for (const item of items) {
+    const directive = taskOverrides.get(item.id);
+    if (directive) {
+      if (!groups.has(directive.primaryGroupId) || directive.identitySource !== item.wikiUrl) throw Error("Invalid V3.2 faction directive: " + item.id);
+      item.legacyGroupId = legacy[item.id]?.groupIds?.length === 1 ? legacy[item.id].groupIds[0] : null;
+      item.primaryGroupId = directive.primaryGroupId;
+      item.groupIds = [directive.primaryGroupId];
+      item.groupStatus = "verified";
+      item.groupEvidence = [{groupId:directive.primaryGroupId,status:"verified",sourceDocument:"user-task-v3.2",sourceFile:"content-sources/farm/refinement/v3-2-faction-overrides.json",sourceUrl:item.wikiUrl,authority:directive.authority,sourceHash:directiveHash,goalName:item.name,sourceLine:null,sourceChapter:"Alternative Hero",recordKind:"equipment",evidenceText:directive.reason,matchKind:"exact-canonical-task-directive"}];
+      continue;
+    }
     const old = legacy[item.id];
     item.legacyGroupId = old?.groupIds?.length === 1 ? old.groupIds[0] : null;
     const explicit = mappingById.get(item.id);

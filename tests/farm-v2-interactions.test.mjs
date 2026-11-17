@@ -267,21 +267,21 @@ test("actual Quest tabs preserve completion, mode independence and keyboard navi
   await click(button(".fv32-workflow-summary button","Legion Fealty 2"));
   assert.equal(tab("Hướng dẫn Farm").getAttribute("aria-selected"),"true");
   const panel=()=>host.querySelector('[aria-label="Quest đang chọn"]');
-  assert.equal(host.querySelectorAll('.fv31-step-numbers [role=tab]').length,4);
+  assert.equal(host.querySelectorAll('.fv31-step-numbers [role=tab]').length,3);
   assert.match(panel().textContent,/Legion Fealty 2/);
-  assert.ok([...panel().querySelectorAll('thead')].every(head=>head.querySelectorAll('th').length===3));
+  assert.deepEqual([...panel().querySelector('.fv32-material-table thead').querySelectorAll('th')].map(th=>th.textContent), ['Tên nguyên liệu','Số lượng','Map farm','Điều kiện farm']);
   assert.doesNotMatch(panel().querySelector('thead').textContent,/quái|Monster/);
   await act(async()=>host.querySelector('.fv31-step-numbers [role=tab]').dispatchEvent(new window.KeyboardEvent("keydown",{bubbles:true,key:"End"})));
   assert.match(panel().textContent,/Legion Fealty 4/);
-  assert.equal(document.activeElement,host.querySelectorAll(".fv31-step-numbers button")[3]);
-  assert.equal(host.querySelectorAll('.fv31-step-numbers [aria-selected=true]')[0].textContent,"4");
+  assert.equal(document.activeElement,host.querySelectorAll(".fv31-step-numbers button")[2]);
+  assert.equal(host.querySelectorAll('.fv31-step-numbers [aria-selected=true]')[0].textContent,"3");
   await click(panel().querySelector('input'));assert.equal(panel().querySelector('input').checked,true);
   await click(button('[aria-label="Phương án farm"] button',"Farm bằng Insignia"));
   assert.match(host.querySelector('.fv32-insignia-sources').textContent,/31/);
-  await click(host.querySelector('.fv31-step-numbers button[title="Dage, Lord of the Undead Legion"]'));
-  assert.match(panel().querySelector("table").textContent,/ultradage/);
+  assert.equal(host.querySelector('.fv31-step-numbers button[title="Dage, Lord of the Undead Legion"]'),null);
+  assert.match(host.querySelector('.fv32-insignia-sources').textContent,/ultradage/);
   await click(button('[aria-label="Phương án farm"] button',"Farm thông thường"));
-  await click(host.querySelectorAll('.fv31-step-numbers button')[3]);
+  await click(host.querySelectorAll('.fv31-step-numbers button')[2]);
   assert.equal(panel().querySelector('input').checked,true);
   await navigate("/farm?item=blade-of-awe");
   assert.equal(tab("Thông tin").getAttribute("aria-selected"),"true");
@@ -308,10 +308,8 @@ test("V3.1 Wiki info is localized, Sources cards removed, and Role filters share
   await click(tab("Cách nhận"));
   assert.equal(host.querySelector(".fv2-sources"), null);
   assert.equal(
-    host.querySelector(
-      'a[href="https://aqwwiki.wikidot.com/legion-revenant-class"]',
-    ),
-    null,
+    host.querySelector('.fv2-heading a').getAttribute('href'),
+    'https://aqwwiki.wikidot.com/legion-revenant-class',
   );
   const catalog = JSON.parse(
     await fs.readFile("src/content/farm/catalog-v2.generated.json", "utf8"),
@@ -421,7 +419,7 @@ test("multiple acquisition routes show the selected shop price or Quest reward w
   await navigate("/farm?item=crimson-plate-of-nulgath");
   await click(tab("Hướng dẫn Farm"));
   const questButtons=host.querySelectorAll('.fv31-step-numbers [role=tab]');
-  assert.equal(questButtons.length,0,"a single actual Quest needs no numbered navigation");
+  assert.equal(questButtons.length,1,"one valid Quest has exactly one numbered button");
   assert.ok([...questButtons].every(node=>node.title));
   assert.match(host.querySelector('.fv31-step-content').textContent,/Twisted Items of Nulgath/);
 });
@@ -455,12 +453,12 @@ test("Reaper's Oath renders and switches its evidenced Quest alternatives",async
 });
 test("Legion Fealty final ingredients navigate to the selected Spellscroll source",async()=>{
   await navigate("/farm?item=legion-revenant-class");await click(tab("Hướng dẫn Farm"));
-  await click(host.querySelectorAll('.fv31-step-numbers button')[3]);
+  await click(host.querySelectorAll('.fv31-step-numbers button')[2]);
   await click(button('.fv31-step-content button',"Revenant's Spellscroll"));
   const facts=host.querySelector('[aria-label="Nguyên liệu đang chọn"]');
   assert.match(facts.textContent,/Legion Fealty 1/);assert.match(facts.textContent,/20/);
   assert.match(facts.textContent,/Dracolich Contract/);
-  assert.equal(facts.querySelectorAll('thead th').length>=3,true);
+  assert.deepEqual([...facts.querySelector('.fv32-material-table thead').querySelectorAll('th')].map(th=>th.textContent),['Tên nguyên liệu','Số lượng','Map farm','Điều kiện farm']);
 });
 
 
@@ -468,7 +466,11 @@ test("material links open a single dedicated guide, keep the mode and display pu
   await navigate("/farm?item=legion-revenant-class&farm-tab=guide&farm-mode=insignia");
   assert.equal(host.querySelector('[aria-label="Hướng dẫn Farm nguyên liệu"]'),null);
   const notes=host.querySelector('[aria-label="Lưu ý khi farm bằng Insignia"]');
-  assert.equal(notes.querySelectorAll("table").length,3);
+  assert.equal(notes.querySelectorAll("table").length,1);
+  assert.equal(host.querySelector('[aria-label="Quest cần tự hoàn thành"]'),null);
+  assert.equal(host.querySelector('[aria-label="Tổng nguyên liệu"]'),null);
+  await click(button('[aria-label="Nội dung Insignia"] button',"Tổng nguyên liệu"));
+  assert.equal(host.querySelectorAll('[aria-label="Tổng nguyên liệu"]').length,1);
   assert.match(notes.textContent,/31/);assert.match(notes.textContent,/5.550/);
   await click(tab("Nguyên liệu"));
   assert.equal(host.querySelectorAll('[aria-label="Hướng dẫn Farm nguyên liệu"]').length,1);
@@ -515,4 +517,62 @@ test("verified set inventory navigates to canonical Farm guides and standalone i
   await navigate("/farm?item=void-paladin&farm-tab=sets&farm-set=void-paladin");
   assert.equal(tab("Set đồ").getAttribute("aria-selected"),"true");
   await navigate("/farm?item=legion-revenant-class");assert.equal(tab("Set đồ"),undefined);
+});
+
+
+test("source fixtures retain all 1/2/3/4/6 numbered quests and matching content", async () => {
+  const {stepCases}=await import('./fixtures/farm-step-cases.mjs');
+  for(const spec of stepCases){
+    await navigate('/farm?'+new URLSearchParams({item:spec.itemId,'farm-route':spec.routeId,'farm-tab':'guide',...(spec.modeId?{'farm-mode':spec.modeId}:{})}));
+    assert.equal(host.querySelector('[data-item-id]').dataset.itemId,spec.itemId);
+    const buttons=()=>[...host.querySelectorAll('.fv31-step-numbers button')];
+    assert.deepEqual(buttons().map(b=>b.textContent),spec.names.map((_,i)=>String(i+1)));
+    assert.deepEqual(buttons().map(b=>b.title),spec.names);
+    for(const [i,name] of spec.names.entries()){
+      await click(buttons()[i]);
+      assert.equal(buttons()[i].getAttribute('aria-selected'),'true');
+      assert.ok([...host.querySelectorAll('.fv31-step-content h4')].some(h=>h.textContent===name));
+    }
+    if(spec.itemId==='legion-revenant-class'){
+      assert.equal(host.querySelectorAll('section[aria-label="Cách nhận cuối"]').length,1);
+      assert.match(host.querySelector('section[aria-label="Cách nhận cuối"]').textContent,/Legion Fealty 4/);
+      await click(button('[aria-label="Phương án farm"] button',spec.modeId==='standard'?'Farm bằng Insignia':'Farm thông thường'));
+      assert.equal(buttons()[0].getAttribute('aria-selected'),'true');
+      assert.equal(buttons().length,3);
+      assert.doesNotMatch(host.querySelector('.fv31-step-content').textContent,/Legion Fealty 3|Training With Dage/);
+    }
+  }
+});
+
+
+test("direct merge renders once, canonical item link and currency reset UI stay correct",async()=>{
+  const catalog=JSON.parse(await fs.readFile('src/content/farm/catalog-v2.generated.json','utf8'));
+  for(const itemId of ['cape-of-awe','blade-of-awe']){
+    await navigate('/farm?item='+itemId+'&farm-tab=guide');
+    assert.equal(host.querySelectorAll('.fv31-step-content h4').length,1);
+    const link=[...host.querySelectorAll('.fv2-heading a')].find(a=>a.textContent==='Liên kết vật phẩm');
+    assert.equal(link.href,catalog.items.find(i=>i.id===itemId).wikiUrl);
+    assert.equal(link.target,'_blank');assert.equal(link.rel,'noopener noreferrer');
+  }
+  await navigate('/farm?item=legion-revenant-class&farm-tab=guide&farm-mode=insignia');
+  assert.doesNotMatch(host.textContent,/reset giữa các lượt; chỉ tính currency/);
+  assert.match(host.querySelector('.fv2-specs').textContent,/7 lượt Weekly/);
+});
+
+
+test("material totals use a separate Quest condition column without item accordions",async()=>{
+  await navigate('/farm?item=legion-revenant-class&farm-tab=guide&farm-mode=insignia');
+  await click(button('[aria-label="Nội dung Insignia"] button','Tổng nguyên liệu'));
+  const table=host.querySelector('[aria-label="Tổng nguyên liệu"] table');
+  assert.deepEqual([...table.querySelectorAll('th')].map(th=>th.textContent),['Tên nguyên liệu','Số lượng','Map farm','Điều kiện farm']);
+  assert.ok(table.querySelectorAll('tbody tr').length>0);
+  for(const row of table.querySelectorAll('tbody tr')){
+    assert.equal(row.children.length,4);
+    assert.equal(row.querySelector('details'),null);
+    assert.doesNotMatch(row.children[3].textContent,/Yêu cầu|phần thưởng|Chưa xác minh/);
+    assert.ok(row.children[1].textContent.trim());
+  }
+  const aeacus=[...table.querySelectorAll('tbody tr')].find(row=>row.children[0].textContent==='Aeacus Empowered');
+  assert.equal(aeacus.children[3].textContent,'Legion Fealty 1');
+  assert.equal(aeacus.children[2].textContent,'/join judgement');
 });

@@ -1,6 +1,7 @@
+import "../scripts/qa-browser-env.mjs";
 import {createRequire} from 'node:module';
 const require=createRequire(process.cwd()+'/package.json');
-process.env.PLAYWRIGHT_BROWSERS_PATH ||= process.cwd()+'/.playwright-browsers';
+
 const {chromium}=require('@playwright/test');
 const fs=require('node:fs');const assert=require('node:assert/strict');
 const browser=await chromium.launch({headless:true});

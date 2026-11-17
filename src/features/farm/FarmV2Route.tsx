@@ -1,3 +1,4 @@
+import { farmTimeLabel } from "../../lib/farm-workflows.mjs";
 import classRoleOptions from "../../data/class-roles.json";
 import {
   matchesFarmSubtype,
@@ -252,6 +253,8 @@ function Detail({
   const [focus,setFocus] = useState<WorkflowFocus>(readFocus);
   const [selectedRoute, setSelectedRoute] = useState(new URLSearchParams(typeof window === "undefined" ? "" : window.location.search).get("farm-route") || routes[0]?.id || "");
   const route = routes.find((r) => r.id === selectedRoute) || routes[0];
+  const farmTime = route?.farmModes?.find(mode=>mode.id===focus.modeId)?.farmTime || route?.farmModes?.[0]?.farmTime || route?.farmTime;
+  const timeLabel=farmTimeLabel(farmTime);
   const hasMaterials = (value?: FarmV2RouteData) => Boolean(value?.materialTree || value?.farmModes?.some(mode=>mode.materials.length) || value?.questWorkflowIds?.length || value?.farmTasks?.some(task => task.rows.length));
   const available = tabDefs.filter(
     (t) => (t.id !== "materials" || hasMaterials(route)) && (t.id !== "sets" || Boolean(item.setIds?.length)),
@@ -302,14 +305,15 @@ function Detail({
             {item.subtype ? " · " + item.subtype : ""}
           </span>
           <h2 id={id + "-title"}>{item.name}</h2>
-          <a href={"/farm/item/" + item.id}>Liên kết vật phẩm</a>
+          <a href={item.wikiUrl} target="_blank" rel="noopener noreferrer">Liên kết vật phẩm</a>
         </div>
       </div>
-      <div className="fv2-specs">
+      <div className={"fv2-specs"+(timeLabel?" fv2-specs-with-time":"")}>
         <div>
           <small>Boost</small>
           <strong className="fv2-boost">{farmBoost(item).join(" · ")}</strong>
         </div>
+        {timeLabel && <div title={farmTime?.assumptions.join(" ")}><small>Thời gian farm</small><strong>{timeLabel}</strong></div>}
         <div>
           <small>Membership</small>
           <strong>

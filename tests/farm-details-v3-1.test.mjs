@@ -379,17 +379,17 @@ test("every canonical item has acquisition facts; multi-Quest rewards are altern
 test("Boost keeps damage targets and percentages, distinguishes absent and explicit none", () => {
   assert.deepEqual(farmBoost({ effects: [] }), ["Chưa xác minh"]);
   assert.deepEqual(farmBoost({ effects: ["Không có boost"] }), [
-    "Không có boost",
+    "Không",
   ]);
   assert.deepEqual(farmBoost({ effects: ["Hồi 10% HP"] }), ["Chưa xác minh"]);
   assert.deepEqual(
     farmBoost(c.items.find((i) => i.id === "sin-of-the-abyss")),
-    ["Tăng 51% Damage to All và 25% Gold khi trang bị."],
+    ["Tăng 51% sát thương lên All Monsters và 25% Gold khi trang bị."],
   );
   assert.ok(
     farmBoost(c.items.find((i) => i.id === "head-of-the-legion-beast"))
       .join(" ")
-      .includes("30% Damage to Dragon"),
+      .includes("30% sát thương lên Dragon"),
   );
 });
 test("AQW type icon mappings retain verified local PNG bytes and the shared Gun/Bow classification", () => {

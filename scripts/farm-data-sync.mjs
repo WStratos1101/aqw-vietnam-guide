@@ -45,6 +45,8 @@ export function report() {
     pendingSetScopes:inventory.pendingSetScopes.map(s=>({...s,disposition:'pending-member-enumeration'}))};
   write('Update/FARM_V3_SOURCE_DIFF.json',diff);
   // Existing catalog records are exported verbatim with status, never promoted by a fetch alone.
+  const wikiParsed=fs.existsSync(path.join(out,'wiki-parsed.json'))?read('Update/_farm-sources/wiki-parsed.json').records:[];
+  write('Update/_farm-sources/wiki-staging.json',{schemaVersion:1,complete:false,records:wikiParsed.map(page=>({wikiUrl:page.url,name:page.metadata?.name||null,categoryBreadcrumbs:page.metadata?.crumbs||[],tags:page.metadata?.tags||[],sourceHash:page.sourceHash,sourceFile:page.sourceFile,identityReview:'pending',inCatalog:catalog.some(i=>i.wikiUrl===page.url),questPanels:page.quests,shopInventory:page.shopInventory,mergeRecipes:page.mergeRecipes}))});
   const envelope=records=>({schemaVersion:1,stage:'research',complete:false,records});
   write('Update/_farm-sources/items.json',envelope(catalog.map(i=>({canonicalId:i.id,catalogRecord:i,liveSourceStatus:manifest[i.wikiUrl]?.status||'pending',syncVerification:'pending'}))));
   const productionSets=read('src/content/farm/equipment-sets.generated.json').sets;
@@ -69,6 +71,8 @@ export function report() {
     liveDocs={url:docsEntry.url,sha256:cached.sha256,lineCount:liveLines.length,snapshotMatches:cached.text.replace(/\r\n/g,'\n').trim()===guide.replace(/\r\n/g,'\n').trim(),targets:[...inventory.guideTargets,...inventory.docSubtargets].map(r=>({name:r.name,guideId:r.guideId,snapshotLines:r.lines,liveLineRefs:liveLines.flatMap((line,i)=>line.includes(r.name)?[i+1]:[]),status:'pending-content-review'}))};
   }
   write('Update/_farm-sources/docs-analysis.json',{snapshot:coverage.docsSnapshot,live:liveDocs,status:liveDocs?'parsed-needs-review':'blocked-live-export'});
+  coverage.lastRun=fs.existsSync(path.join(out,'last-run.json'))?read('Update/_farm-sources/last-run.json'):null;
+  coverage.urlStatusCounts=Object.values(manifest).reduce((counts,row)=>{const status=row.syncStatus||(row.status==='fetched'?'SUCCESS':row.status==='blocked'?'RETRY_LATER':'PENDING');counts[status]=(counts[status]||0)+1;return counts;},{});
   coverage.setComparison=diff.sets.map(s=>{const prod=productionSets.find(p=>p.id===s.id);return {id:s.id,existingMembers:prod?.memberIds||[],missingCatalogMembers:s.members.filter(m=>!m.canonicalId),resolvedButNotInSet:s.members.filter(m=>m.canonicalId&&!prod?.memberIds.includes(m.canonicalId)),status:'pending-relation-verification'};});
   write('Update/_farm-sources/coverage.json',coverage);
   console.log(JSON.stringify({catalog:catalog.length,sets:productionSets.length,siteReferences:diff.siteReferences.length,docsTargets:diff.docsTargets.length,materials:diff.materialReferences.length,sources:Object.fromEntries(Object.entries(coverage.sources).map(([k,v])=>[k,{total:v.total,fetched:v.fetched,blocked:v.failures.length}]))},null,2));
@@ -79,8 +83,9 @@ function appendCheckpoint(stats){
   fs.appendFileSync(path.join(root,'Update/FARM_V3_PROGRESS.md'),`\n### Sync batch ${new Date().toISOString()} — PARTIAL\n\nTotal ${rows.length}; Wiki ${wiki.length}; successful cache snapshots ${rows.filter(r=>r.status==='fetched').length}; session CACHE_HIT ${stats.cacheHits}; session network success ${stats.success}; session failed ${stats.failed}; pending ${rows.filter(r=>r.status==='pending'||r.status==='blocked-unattempted').length}. No automatic catalog writes. Verified additions 0; catalog additions 0; sets modified 0. Evidence: manifest.json, last-run.json, circuits.json, url-inventory.json. TASK 1–7 remains PARTIAL/PENDING; publication disabled by workflow.\n`);
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
-  prepare();
   const args=process.argv.slice(2);
+  if(fs.existsSync(path.join(out,"sync.lock")))throw Error("Sync is already running; read coverage.json/last-run.json instead of writing another report");
+  prepare();
   if(args.includes('--report-only'))report();
   else {
     const value=(key,fallback)=>{const at=args.indexOf(key);return at<0?fallback:args[at+1];};
@@ -91,7 +96,7 @@ if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.ur
     if(mode==='audit'){report();}
     else {
       const number=(key,fallback)=>{const n=Number(value(key,fallback));if(!Number.isFinite(n)||n<0)throw Error('Invalid '+key);return n;};
-      const engine=new SyncEngine({directory:out,config:{version:read('package.json').version},discover:p=>discoverPages(p,inventory.sources.site),onBatch:stats=>{report();appendCheckpoint(stats);}});
+      const engine=new SyncEngine({directory:out,config:{version:read('package.json').version},discover:p=>discoverPages(p,inventory.sources.site),onBatch:stats=>{if(!args.includes('--no-parse')){const result=spawnSync(process.execPath,['scripts/farm-sync-parse.mjs'],{cwd:root,stdio:'inherit'});if(result.status!==0)throw Error('Wiki parsing failed; source checkpoint retained');}report();appendCheckpoint(stats);}});
       const lock=path.join(out,'sync.lock');
       try { fs.writeFileSync(lock,JSON.stringify({pid:process.pid,startedAt:new Date().toISOString()}),{flag:'wx'}); }
       catch { throw Error('Sync lock exists: check process recorded in Update/_farm-sources/sync.lock before removing stale lock'); }

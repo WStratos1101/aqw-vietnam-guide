@@ -99,7 +99,7 @@ test("direct Ultra group mapping uses exact Boss IDs and never follows indirect 
 test("Alternative Hero and Khác filters count unique identities without asserting unknown factions",()=>{
   const manifest=read("content-sources/farm/faction-groups.json");
   assert.equal(resolveGroup("Alternative Hero",manifest),"alternative-hero");
-  assert.equal(groupCounts([...catalog.items,...catalog.items],catalog.groups).find(group=>group.id==="alternative-hero").count,8);
+  assert.equal(groupCounts([...catalog.items,...catalog.items],catalog.groups).find(group=>group.id==="alternative-hero").count,13);
   assert.equal(groupCounts(catalog.items,catalog.groups).find(group=>group.id==="unknown").name,"Khác");
   assert.ok(catalog.items.filter(item=>matchesGroup(item,"unknown")).every(item=>item.primaryGroupId===null&&item.groupStatus==="unknown"));
 });

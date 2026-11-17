@@ -17,3 +17,6 @@ export function farmSubtypeOptions(
 export function guidePaths(route?: FarmV2RouteData): FarmGuidePath[];
 export function farmBoost(item: FarmV2Item): string[];
 export function conciseFarmText(text: string): string;
+
+export function formatFarmBoost(text: string): string;
+export function farmBoostState(item: FarmV2Item): 'verified' | 'none' | 'unverified';

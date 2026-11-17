@@ -1,0 +1,48 @@
+// Current-state inventory/reporting only. Never treats a cached page as reviewed.
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import inventory from '../Update/AQW_Farm_Inventory_V3/aqw-farm-inventory.mjs';
+import {farmBoostState} from '../src/lib/farm-details.mjs';
+const read=p=>JSON.parse(fs.readFileSync(p)), write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+const hash=v=>createHash('sha256').update(v).digest('hex');
+const catalog=read('src/content/farm/catalog-v2.generated.json'), sets=read('src/content/farm/equipment-sets.generated.json').sets;
+const previous=read('Update/FARM_V3_1_INVENTORY_AUDIT.json'), manifest=read('Update/_farm-sources/manifest.json');
+const byUrl=new Map(catalog.items.map(i=>[i.wikiUrl,i])), byId=new Map(catalog.items.map(i=>[i.id,i]));
+const norm=value=>String(value||'').normalize('NFKC').replace(/[’‘]/g,"'").replace(/\([^)]*\)/g,'').replace(/\b(?:Class|Guide)\b/gi,'').replace(/^\d+[.\s-]+/,'').replace(/\s+/g,' ').trim().toLowerCase();
+const known=value=>value!=null&&!/^(?:unknown|—|-|n\/a)?$/i.test(String(value).trim());
+const missing=item=>[
+ ...(!item.descriptionVi&&!item.wikiDetails?.descriptionVi?['descriptionVi']:[]),
+ ...(!known(item.membership)&&!known(item.wikiDetails?.membership)?['membership']:[]),
+ ...(!known(item.rarity)&&!known(item.wikiDetails?.rarity)?['rarity']:[]),
+ ...(!/^https:\/\/aqwwiki\.wikidot\.com\/[^/]+$/.test(item.wikiUrl)?['canonicalWikiUrl']:[]),
+ ...(farmBoostState(item)==='unverified'?['boostVerification']:[]),
+];
+const candidates=previous.candidates.map(row=>{
+ const item=byUrl.get(row.sourceUrl)||byUrl.get(row.canonicalWikiUrl)||(row.candidateIds?.length===1?byId.get(row.candidateIds[0]):null);
+ return {...row,...(item?{canonicalItemName:item.name,canonicalWikiUrl:item.wikiUrl,canonicalId:item.id,faction:item.primaryGroupId,itemType:item.category,setIds:item.setIds,productionStatus:'present',missingFields:missing(item)}:{})};
+});
+const fields=read('content-sources/farm/refinement/v3-verified-fields.json').records;
+const baselineFactions={'malgor-the-shadowlord':'elemental','shadowlord-s-helm':null,'goddess-of-war':null,'goddess-of-war-blades':null,'goddess-of-war-prestige-cloak':null};
+const changes={addedItems:['higure','empowered-higure'],addedSets:[],restoredSets:[],factionChanges:Object.entries(baselineFactions).map(([id,before])=>({id,before,after:byId.get(id).primaryGroupId})),addedClasses:[],removedClasses:[],translatedItems:['higure','empowered-higure','goddess-of-war','goddess-of-war-blades','goddess-of-war-cloak','goddess-of-war-prestige-cloak','malgor-the-shadowlord'],normalizedBoostItems:fields.filter(r=>['higure','empowered-higure','goddess-of-war','goddess-of-war-blades','goddess-of-war-cloak','goddess-of-war-prestige-cloak','malgor-the-shadowlord'].includes(r.id)).map(r=>r.id)};
+let syncProcess='no-lock';
+try{const lock=read('Update/_farm-sources/sync.lock');try{process.kill(lock.pid,0);syncProcess='alive';}catch(error){syncProcess=error.code==='ESRCH'?'stopped-stale-lock':'unknown-'+error.code;}}catch{}
+const manifestCounts={};for(const row of Object.values(manifest)){const status=row.syncStatus||row.status;manifestCounts[status]=(manifestCounts[status]||0)+1;}
+const production=catalog.items.map(item=>({id:item.id,name:item.name,wikiUrl:item.wikiUrl,faction:item.primaryGroupId,setIds:item.setIds,missingFields:missing(item),boostState:farmBoostState(item)}));
+const requiredTargets=previous.requiredTargets.map(row=>({...row,matches:catalog.items.filter(item=>norm(item.name)===norm(row.sourceItem)).map(item=>({id:item.id,name:item.name,wikiUrl:item.wikiUrl,category:item.category,setIds:item.setIds,missingFields:missing(item)}))}));
+const registry=read('src/content/farm/quest-workflows.generated.json');
+const unresolvedConditions=Object.values(registry.quests).flatMap(quest=>quest.rows.filter(row=>!row.requiredQuest&&!(row.sourceDetails||[]).some(s=>s.requiredQuest)).map(row=>({questId:quest.id,material:row.name,source:quest.source,status:'PENDING_QUEST_GATE_REVIEW',note:'No structured gate is not proof that no gate exists; a dash in the compact table is not a DONE audit.'})));
+const audit={schemaVersion:1,generatedAt:new Date().toISOString(),status:'PARTIAL',complete:false,packageVersion:read('package.json').version,catalogBeforeThisBatch:571,catalogAfter:catalog.items.length,setsBeforeThisBatch:33,setsAfter:sets.length,changesThisBatch:changes,metrics:{classes:catalog.items.filter(i=>i.category==='Classes').length,translatedDescriptions:catalog.items.filter(i=>!missing(i).includes('descriptionVi')).length,missingDescriptionVi:catalog.items.filter(i=>missing(i).includes('descriptionVi')).length,missingMembership:catalog.items.filter(i=>missing(i).includes('membership')).length,missingRarity:catalog.items.filter(i=>missing(i).includes('rarity')).length,invalidOrMissingCanonicalUrl:catalog.items.filter(i=>missing(i).includes('canonicalWikiUrl')).length,boostStates:production.reduce((counts,row)=>(counts[row.boostState]=(counts[row.boostState]||0)+1,counts),{}),boostUnverified:production.filter(i=>i.boostState==='unverified').length},sourceStatus:{syncProcess,manifestCounts,pendingUrls:Object.values(manifest).filter(r=>r.syncStatus==='PENDING'||r.status==='pending').map(r=>r.url),permanentFailures:Object.values(manifest).filter(r=>r.syncStatus==='PERMANENT_FAILURE').map(r=>r.url),sitesCached:Object.values(manifest).filter(r=>r.kind==='site'&&r.status==='fetched').length,sitesMediaReview:'PARTIAL; fetched != reviewed',docsLiveComparison:'PARTIAL; existing snapshots retained',canonicalIdentityAudit:'PARTIAL; syntactic URLs do not establish exact variants'},requiredTargets,candidates,production,sets:previous.sets,pendingSetScopes:previous.pendingSetScopes,materialQuestGateReview:{status:'PARTIAL',rowsWithoutStructuredQuestGate:unresolvedConditions.length,rows:unresolvedConditions},browserQA:{status:'PENDING_LOCAL_RUN',launchEvidence:'User reports Chromium and WebKit launch PASS, Playwright 1.65.0; not UI acceptance',historicalChromiumFailure:'artifacts/qa/farm/material-table/original-chromium-results.json',nativeSafari:'UNVERIFIED'}};
+write('Update/FARM_V3_2_INVENTORY_AUDIT.json',audit);
+const csv=value=>'"'+String(value??'').replaceAll('"','""')+'"';
+const header=['source item','canonical item name','canonical wiki URL','faction','item type','set ID','source evidence','production status','missing fields','verification status'];
+const rows=candidates.filter(r=>r.productionStatus!=='present'||r.missingFields.length).map(r=>[r.sourceItem,r.canonicalItemName,r.canonicalWikiUrl,r.faction,r.itemType,r.setIds?.join(';'),JSON.stringify({sourceKind:r.sourceKind,evidence:r.sourceEvidence}),r.productionStatus,r.missingFields.join(';'),r.verificationStatus]);
+for(const target of requiredTargets)if(!target.matches.length)rows.push([target.sourceItem,'','','','','',JSON.stringify({sourceKind:'explicit-user-target'}),'PENDING','exact-identity-and-acquisition-review','unverified']);
+fs.writeFileSync('Update/FARM_V3_2_MISSING_ITEMS.csv',[header,...rows].map(row=>row.map(csv).join(',')).join('\n')+'\n');
+const docFile='Update/AQW_Farm_Inventory_V3/FARMING_ITEM_GUIDE_SOURCE.txt', docBytes=fs.readFileSync(docFile),lines=docBytes.toString().split(/\r?\n/);
+const docTargets=inventory.guideTargets.filter(row=>/\bClass\b/.test(row.name)).map(row=>({name:norm(row.name),originalName:row.name,authority:'Docs-target-heading',sourceFile:docFile,sourceHash:hash(docBytes),guideId:row.guideId,lines:row.lines,excerpt:lines.slice(row.lines.start_line-1,Math.min(row.lines.start_line+2,row.lines.end_line)).join('\n')}));
+const knownClassNames=new Set([...docTargets.map(row=>row.name),...catalog.items.filter(i=>i.category==='Classes').map(i=>norm(i.originalName)),'chaos avenger']);
+const siteTargets=inventory.sourcePages.filter(page=>knownClassNames.has(norm(page.title))).map(page=>({name:norm(page.title),originalName:page.title,authority:'Sites-dedicated-guide-title',sourceUrl:page.url,pageId:page.id,contentReview:'PARTIAL: media and subheadings still require review'}));
+const union=[...new Set([...docTargets,...siteTargets].map(row=>row.name))];
+const classRows=catalog.items.filter(i=>i.category==='Classes').map(item=>({id:item.id,name:item.name,wikiUrl:item.wikiUrl,decision:union.includes(norm(item.originalName))?'Retained':'Unverified',evidence:[...docTargets,...siteTargets].filter(row=>row.name===norm(item.originalName)),scopeEffect:'No Class Codex deletion; no unsupported removal before role/media review.'}));
+write('Update/FARM_V3_2_CLASS_SCOPE_AUDIT.json',{schemaVersion:1,generatedAt:audit.generatedAt,status:'PARTIAL',complete:false,FARM_CLASS_TARGETS:union,unionScope:'Verified Docs headings + dedicated Site titles. Site media and Docs live union remain incomplete; this is not the full final whitelist.',docsTargets:docTargets,siteTargets,current:classRows,Added:[],Retained:classRows.filter(row=>row.decision==='Retained').map(r=>r.id),RemovedFromFarm:[],Unverified:classRows.filter(row=>row.decision==='Unverified').map(r=>r.id),missingTargets:union.filter(name=>!classRows.some(row=>norm(row.name)===name)),explicitRequiredClasses:['Chaos Avenger','Hollowborn Vindicator'],remainingWork:'Review every Site media/Docs live target and exact Wiki variant, import required Classes via existing Class references, then apply the evidence-backed Farm filter. Never remove Class Codex records.'});
+console.log(JSON.stringify({items:audit.catalogAfter,sets:audit.setsAfter,metrics:audit.metrics,manifestCounts,reviewRows:rows.length,knownClassTargets:union.length,retainedClasses:classRows.filter(r=>r.decision==='Retained').length}));
