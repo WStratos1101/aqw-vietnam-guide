@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { UserRound } from "lucide-react";
 import portraits from "../../content/classes/portraits.json";
+import starterPortraits from "../../content/home-starters.json";
 export function ClassAsset({
   id,
   name,
@@ -12,7 +13,10 @@ export function ClassAsset({
   compact?: boolean;
   eager?: boolean;
 }) {
-  const asset = portraits.find((a) => a.id === id);
+  const modernWarrior = id === "class-warrior-beast-warrior-pumpkin-lord-warlord"
+    ? starterPortraits.find((a) => a.classId === "warrior-beast-warrior-pumpkin-lord-warlord")?.portrait
+    : undefined;
+  const asset = modernWarrior ?? portraits.find((a) => a.id === id);
   const [failed, setFailed] = useState(false);
   return (
     <div className={`class-art ${compact ? "class-art-compact" : ""}`}>

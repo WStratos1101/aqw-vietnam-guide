@@ -4,9 +4,12 @@
     "classId": "warrior-beast-warrior-pumpkin-lord-warlord",
     "slug": "warrior-beast-warrior-pumpkin-lord-warlord",
     "role": [
-      "DPS"
+      "DPS",
+      "Tank"
     ],
-    "summary": "Cận chiến, sử dụng đòn đánh vật lý.",
+    "summary": "Trên những con đường dẫn ra khỏi Battleon, một thanh kiếm và lòng quả cảm đôi khi là tất cả những gì người chiến binh có. Warrior bước vào nơi hiểm nguy ập tới đầu tiên, dùng thép và ý chí để mở đường cho đồng đội.",
+    "playstyle": "Áp sát mục tiêu, phá phòng thủ, làm choáng và chống chịu đòn đánh.",
+    "damageType": "Vật lý",
     "enhancement": "Fighter",
     "portrait": {
       "imagePath": "/images/aqw/class-art/350c5b824d3cd19417ce5935.png",
@@ -36,9 +39,12 @@
     "classId": "mage-sorcerer",
     "slug": "mage-sorcerer",
     "role": [
-      "DPS"
+      "DPS",
+      "Support"
     ],
-    "summary": "Tấn công phép và kiểm soát nhiều kẻ địch.",
+    "summary": "Trong thế giới Lore, ngay cả một ngọn lửa nhỏ cũng có thể cất giấu quyền năng của cả một cơn bão. Mage theo đuổi tri thức về các nguyên tố, biến những bí thuật học được thành sức mạnh làm chủ chiến trường.",
+    "playstyle": "Phóng phép nguyên tố, gây sát thương diện rộng, làm suy yếu đối thủ và bảo vệ bản thân.",
+    "damageType": "Phép thuật",
     "enhancement": "Wizard",
     "portrait": {
       "id": "class-mage-sorcerer",
@@ -63,9 +69,12 @@
     "classId": "healer-acolyte-witch",
     "slug": "healer-acolyte-witch",
     "role": [
-      "Healer"
+      "Support",
+      "Heal"
     ],
-    "summary": "Hồi phục và hỗ trợ đồng đội.",
+    "summary": "Không phải mọi anh hùng đều bước vào trận chiến với khát vọng tiêu diệt kẻ thù. Healer mang theo sức mạnh chữa lành, giữ ngọn lửa hy vọng còn cháy khi những người đồng hành đã đứng bên bờ vực thất bại.",
+    "playstyle": "Hồi máu, duy trì sinh lực và mana, làm suy yếu kẻ địch bằng phép thuật.",
+    "damageType": "Phép thuật",
     "enhancement": "Healer",
     "portrait": {
       "id": "class-healer-acolyte-witch",
@@ -90,9 +99,12 @@
     "classId": "rogue-renegade",
     "slug": "rogue-renegade",
     "role": [
-      "DPS"
+      "DPS",
+      "Dodge"
     ],
-    "summary": "Chiến đấu bằng Dodge và sát thương theo thời gian.",
+    "summary": "Giữa những con hẻm tối và lối mòn bí mật của Lore, Rogue học cách sống sót bằng sự nhanh nhẹn thay vì sức mạnh thuần túy. Một nhát dao đúng thời điểm và một bước chân khỏi tầm nhìn có thể xoay chuyển cả một cuộc giao tranh.",
+    "playstyle": "Né tránh, duy trì độc tố và dồn sát thương khi đối thủ sơ hở.",
+    "damageType": "Vật lý",
     "enhancement": "Thief",
     "portrait": {
       "id": "class-rogue-renegade",

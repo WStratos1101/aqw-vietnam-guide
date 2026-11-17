@@ -8,11 +8,27 @@ export function acquisitionLabel(method){
  return method.other?.label||method.variantName;
 }
 export function acquisitionSummary(record){const methods=record?.methods||[];const current=methods.filter(m=>m.isAvailable!==false);const pool=current.length?current:methods;const labels=[...new Set(pool.map(acquisitionLabel))];return labels.length?(current.length?'':'Legacy · ')+labels[0]+(labels.length>1?` · +${labels.length-1} phương án`:''):'Chưa xác minh phương thức sở hữu';}
+// AQWVN: Newbie theo tuyến sở hữu ở khu tân thủ, không theo độ dễ của combo.
+const starterClassIds = new Set([
+  "healer-acolyte-witch",
+  "mage-sorcerer",
+  "rogue-renegade",
+  "warrior-beast-warrior-pumpkin-lord-warlord"
+]);
+const newbieRoutes = {
+  "ninja-assassin-ninja-warrior": "Ninja: Mazumi’s Shop, Greenguard West, Hit Job.",
+  "barber": "Barber: Bev’s Wig Shop, Battleon Town, 0 AC.",
+  "oracle": "Oracle: Class Shop Battleon hoặc Ranad tại Class Hall A, 0 AC.",
+  "berserker-beta-berserker-brutal-berserker": "Berserker: Legend Only tại Battleon, cần Membership; không bao gồm các skin thưởng gói nạp như một lộ trình tân thủ riêng."
+};
 export function difficultyTier(profile,record){
- const known=[[/void-highlord|legion-revenant|chaos-avenger|archmage|dragon-of-time|verus-doomknight|arcana-invoker|hollowborn-vindicator/,'Endgame'],[/archpaladin|lord-of-order|lightcaster/,'Lategame'],[/calendar-(timeless|underworld|corrupted)|archivist-of-time/,'Endgame'],[/^calendar-/,'Lategame'],[/^(warrior-|rogue-|mage-|healer-|oracle-|ninja-|berserker-|pirate-)/,'Newbie']];
+ if(profile.id === "blaze-binder-bb-firelord-summoner-fls") return {tier:'Midgame',status:'editorial',basis:'Blaze Binder cần tuyến merge/tiến trình Firestorm Forge; không phải Class tân thủ.'};
+ if(starterClassIds.has(profile.id)) return {tier:'Newbie',status:'editorial',basis:'Class cơ bản có thể chọn khi tạo nhân vật.'};
+ if(Object.hasOwn(newbieRoutes,profile.id)) return {tier:'Newbie',status:'editorial',basis:newbieRoutes[profile.id]};
+ const known=[[/void-highlord|legion-revenant|chaos-avenger|archmage|dragon-of-time|verus-doomknight|arcana-invoker|hollowborn-vindicator/,'Endgame'],[/archpaladin|lord-of-order|lightcaster/,'Lategame'],[/calendar-(timeless|underworld|corrupted)|archivist-of-time/,'Endgame'],[/^calendar-/,'Lategame']];
  const matched=known.find(([pattern])=>pattern.test(profile.id));
  const levels=(record?.methods||[]).map(m=>m.levelRequirement).filter(n=>typeof n==='number');const level=levels.length?Math.min(...levels):null;
- const tier=matched?.[1]||(level>=90?'Endgame':level>=70?'Lategame':level>=30?'Midgame':({'Cơ bản':'Newbie','Cần luyện tập':'Midgame','Nâng cao':'Lategame','Newbie':'Newbie','Midgame':'Midgame','Lategame':'Lategame','Endgame':'Endgame'}[profile.difficulty]||'Midgame'));
+ const tier=matched?.[1]||(level>=90?'Endgame':level>=70?'Lategame':level>=30?'Midgame':({'Cơ bản':'Midgame','Cần luyện tập':'Midgame','Nâng cao':'Lategame','Newbie':'Midgame','Midgame':'Midgame','Lategame':'Lategame','Endgame':'Endgame'}[profile.difficulty]||'Midgame'));
  return{tier,status:'editorial',basis:matched?'Phân tầng biên tập theo điều kiện sở hữu và hướng dẫn Class đã lưu; không phải nhãn chính thức của game.':level!==null?`Phân tầng tạm theo Level yêu cầu đã xác minh (${level}); cần tiếp tục rà độ phức tạp rotation.`:'Phân tầng tạm thời; hồ sơ chưa đủ căn cứ để đánh giá toàn bộ độ phức tạp rotation.'};
 }
 // A cooldown priority is an independent rule, never a sequence inferred from prose.

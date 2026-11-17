@@ -2,8 +2,26 @@ import classes from "../content/home-starters.json";
 import poster from "../content/home-poster.json";
 import { useState } from "react";
 import { ArrowRight, ArrowUpRight, ChevronDown, Search } from "lucide-react";
-import { guides, href } from "../content/data";
-import { EntryRow } from "./Library";
+const journey = [
+  {
+    "chapter": "Chương I",
+    "title": "Khởi đầu của câu chuyện",
+    "href": "/cot-truyen",
+    "description": "Từ những con đường quen thuộc của Battleon, số phận dẫn bạn đến những bí mật của thế giới Lore. Hãy lật mở trang đầu tiên, nơi một nhà thám hiểm vô danh có thể làm thay đổi cả lịch sử."
+  },
+  {
+    "chapter": "Chương II",
+    "title": "Món vũ khí đầu tiên",
+    "href": "/farm/item/blade-of-awe",
+    "description": "Năm mảnh di vật nằm rải rác, chờ người xứng đáng ghép lại thanh kiếm huyền thoại. Hãy lần theo dấu tích cổ xưa và rèn nên Blade of Awe, dấu ấn đầu tiên trên con đường trở thành huyền thoại."
+  },
+  {
+    "chapter": "Chương III",
+    "title": "Những người bạn, đồng minh hay kẻ thù",
+    "href": "/ultra-boss",
+    "description": "Không phải mọi kẻ đứng trước bạn đều là kẻ thù, và không phải mọi lời thề đều đáng tin. Khi đối mặt với những quyền năng hùng mạnh nhất của Lore, hãy chọn người sát cánh bên mình và tự viết nên kết cục của trận chiến."
+  }
+];
 export function Home() {
   const [active, setActive] = useState(0);
   const selected = classes[active];
@@ -16,7 +34,7 @@ export function Home() {
             <span>GUIDE</span>
           </h1>
           <p>
-            Cẩm nang phiêu lưu dành cho cộng đồng AdventureQuest Worlds Việt Nam
+            Từ Battleon đến những miền đất chưa được khám phá, mỗi bước chân mở ra một huyền thoại. Câu chuyện tiếp theo thuộc về bạn.
           </p>
           <div className="hero-actions">
             <a href="/huong-dan" className="button">
@@ -98,9 +116,9 @@ export function Home() {
       <section className="class-chapter chapter">
         <div className="section-heading">
           <h2>
-            Chọn Class.
+            Chọn con đường.
             <br />
-            Định lối chơi.
+            Khắc tên vào Lore.
           </h2>
           <a href="/class" className="plain-link">
             Mở Class database <ArrowUpRight />
@@ -147,8 +165,8 @@ export function Home() {
               ))}
             </div>
             <p>
-              Không có Class tốt nhất cho mọi hành trình. Bắt đầu từ cách bạn
-              muốn chơi.
+              Bốn con đường, bốn số phận. Hãy chọn cách bạn muốn để lại dấu
+              ấn của mình trong Lore.
             </p>
           </div>
           <div className="starter-class-art">
@@ -168,10 +186,18 @@ export function Home() {
             aria-labelledby={`class-tab-${active}`}
             key={active}
           >
-            <span>{selected.role.join(" / ")} · Class khởi đầu</span>
+            <span>{selected.role.join(" - ")} · Class khởi đầu</span>
             <h3>{selected.name}</h3>
-            <p>{selected.summary}</p>
+            <p data-starter-lore={selected.classId}>{selected.summary}</p>
             <dl>
+              <div>
+                <dt>Lối chơi</dt>
+                <dd>{selected.playstyle}</dd>
+              </div>
+              <div>
+                <dt>Loại sát thương</dt>
+                <dd>{selected.damageType}</dd>
+              </div>
               <div>
                 <dt>Enhancement</dt>
                 <dd>{selected.enhancement}</dd>
@@ -241,15 +267,20 @@ export function Home() {
       </section>
       <section className="updates chapter">
         <div className="section-heading">
-          <h2>Đọc tiếp.</h2>
-          <p>Hướng dẫn nổi bật và nội dung vừa cập nhật.</p>
+          <h2>Hành trình</h2>
+          <p>Ba chặng đường, từ buổi đầu ở Battleon tới những trận chiến làm nên truyền thuyết.</p>
         </div>
-        {[
-          guides[0],
-          guides.find((g) => g.slug === "cam-nang-aqw-vietnam")!,
-          guides.find((g) => g.category === "farm")!,
-        ].map((e) => (
-          <EntryRow key={href(e)} entry={e} />
+        {journey.map((step) => (
+          <a className="entry-row" href={step.href} key={step.href} data-home-journey={step.chapter}>
+            <div>
+              <span className="entry-category">{step.chapter}</span>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </div>
+            <div className="entry-meta">
+              <ArrowUpRight size={25} aria-hidden="true" />
+            </div>
+          </a>
         ))}
         <a className="plain-link all-guides" href="/huong-dan">
           Toàn bộ thư viện <ArrowUpRight />
