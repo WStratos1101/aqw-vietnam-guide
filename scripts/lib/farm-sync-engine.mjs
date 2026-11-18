@@ -34,7 +34,7 @@ export function failure(error) {
   else if(/TLS|SSL|CERT|SELF_SIGNED/.test(code||'')){category='TLS_SSL';system=true;}
   else if(error.name==='TimeoutError'||/ETIMEDOUT|UND_ERR_CONNECT_TIMEOUT|UND_ERR_HEADERS_TIMEOUT/.test(code||'')){category='TIMEOUT';temporary=true;system=true;}
   else if(error.category){category=error.category;status=error.category==='CAPTCHA'?'ACCESS_BLOCKED':error.category==='REDIRECT_LOOP'?'PERMANENT_FAILURE':'RETRY_LATER';}
-  return {category,status,temporary,system,code:code||null,message:error.message,httpStatus:error.httpStatus||null,retryAfterMs:error.retryAfterMs||0};
+  return {category,status,temporary,system,code:code||null,message:error.message,httpStatus:error.httpStatus||null,retryAfterMs:error.retryAfterMs||0,...(error.redirectTarget?{redirectFrom:error.redirectFrom,redirectTarget:error.redirectTarget,redirectStatus:error.redirectStatus}:{})};
 }
 export function parseBody(body,kind,url) {
   if(/(?:<title>[^<]*(?:captcha|access denied)|id=["']captcha|g-recaptcha|cf-chl-)/i.test(body))throw Object.assign(Error('Access challenge; no bypass attempted'),{category:'CAPTCHA'});
@@ -64,7 +64,7 @@ export async function request(url,config) {
     if(response.status>=300&&response.status<400){
       const next=new URL(response.headers.get('location'),current);
       await response.body?.cancel();
-      if(next.hostname!==new URL(url).hostname||next.protocol!=='https:')throw Object.assign(Error('Unexpected cross-domain redirect'),{category:'INVALID_HTML'});
+      if(next.hostname!==new URL(url).hostname||next.protocol!=='https:')throw Object.assign(Error('Unexpected cross-domain redirect'),{category:'INVALID_HTML',redirectFrom:current,redirectTarget:next.href,redirectStatus:response.status});
       current=next.href;continue;
     }
     if(!response.ok){await response.body?.cancel();throw Object.assign(Error(`HTTP ${response.status}`),{httpStatus:response.status,retryAfterMs:retryAfter(response.headers.get('retry-after'))});}

@@ -29532,25 +29532,15 @@
             "checkedAt": "2026-11-13T14:25:53.803371+00:00"
           },
           "insigniaSources": [],
-          "questWorkflowIds": [
-            "artix-s-quests:reforging-the-blinding-light",
-            "artix-s-quests:secret-order-of-undead-slayers",
-            "artix-s-quests:essential-essences",
-            "artix-s-quests:bust-some-dust",
-            "artix-s-quests:a-loyal-follower"
-          ],
-          "questFinishIds": [
-            "artix-s-quests:a-loyal-follower"
-          ],
+          "questWorkflowIds": [],
+          "questFinishIds": [],
           "operationGroups": [],
-          "npc": "Artix (NPC)",
           "completionTasks": [
             {
               "id": "receive-bow-of-destiny-wiki-location",
               "quest": null,
               "title": "Merge Bow of Destiny",
               "source": "https://aqwwiki.wikidot.com/bow-of-destiny",
-              "npc": "Artix (NPC)",
               "map": "/join necropolis",
               "location": "Light Merge - Necropolis",
               "preconditions": [],
@@ -29604,45 +29594,8 @@
             }
           ],
           "materialTotalsComplete": false,
-          "questGraph": [
-            {
-              "questId": "artix-s-quests:reforging-the-blinding-light",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:secret-order-of-undead-slayers",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:essential-essences",
-              "role": "mainFarm",
-              "display": "stepper",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:bust-some-dust",
-              "role": "mainFarm",
-              "display": "stepper",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:a-loyal-follower",
-              "role": "mainFarm",
-              "display": "stepper",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            }
-          ],
-          "storyPrerequisites": [
-            {
-              "questId": "artix-s-quests:secret-order-of-undead-slayers",
-              "name": "Secret Order of Undead Slayers",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            }
-          ],
+          "questGraph": [],
+          "storyPrerequisites": [],
           "directMaterials": [
             {
               "name": "Basic Weapon Kit",
@@ -32548,18 +32501,11 @@
                 "source": "https://aqwwiki.wikidot.com/broadsword-of-bane"
               },
               {
-                "name": "Dark Spirit Orb",
-                "itemId": "dark-spirit-orb",
-                "quantity": 15,
-                "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/broadsword-of-bane"
-              },
-              {
-                "name": "Corrupt Spirit Orb",
-                "itemId": "corrupt-spirit-orb",
-                "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/corrupt-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/broadsword-of-bane"
+                "name": "Dark Energy (Misc)",
+                "itemId": "dark-energy-misc",
+                "quantity": 5750,
+                "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               },
               {
                 "name": "Diabolical Aura",
@@ -43367,11 +43313,11 @@
                 "source": "https://aqwwiki.wikidot.com/daggers-of-destruction"
               },
               {
-                "name": "Dark Spirit Orb",
-                "itemId": "dark-spirit-orb",
-                "quantity": 50,
-                "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/daggers-of-destruction"
+                "name": "Dark Energy (Misc)",
+                "itemId": "dark-energy-misc",
+                "quantity": 2500,
+                "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               }
             ],
             "equivalentCosts": []
@@ -44385,17 +44331,17 @@
             "gaps": [],
             "materials": [
               {
-                "name": "Green Dragon Slayer's Halberd",
-                "itemId": "green-dragon-slayer-s-halberd",
-                "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/green-dragon-slayer-s-halberd",
+                "name": "Prismatic Seams",
+                "itemId": "prismatic-seams",
+                "quantity": 1250,
+                "wikiUrl": "https://aqwwiki.wikidot.com/prismatic-seams",
                 "source": "https://aqwwiki.wikidot.com/dark-dragon-slayer-s-halberd"
               },
               {
-                "name": "Prismatic Seams",
-                "itemId": "prismatic-seams",
-                "quantity": 1000,
-                "wikiUrl": "https://aqwwiki.wikidot.com/prismatic-seams",
+                "name": "Gold Voucher 500k",
+                "itemId": "gold-voucher-500k",
+                "quantity": 24,
+                "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-500k",
                 "source": "https://aqwwiki.wikidot.com/dark-dragon-slayer-s-halberd"
               },
               {
@@ -44410,13 +44356,6 @@
                 "itemId": "garish-remnant",
                 "quantity": 70,
                 "wikiUrl": "https://aqwwiki.wikidot.com/garish-remnant",
-                "source": "https://aqwwiki.wikidot.com/dark-dragon-slayer-s-halberd"
-              },
-              {
-                "name": "Gold Voucher 500k",
-                "itemId": "gold-voucher-500k",
-                "quantity": 20,
-                "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-500k",
                 "source": "https://aqwwiki.wikidot.com/dark-dragon-slayer-s-halberd"
               }
             ],
@@ -77536,25 +77475,15 @@
             "checkedAt": "2026-11-13T14:25:53.803371+00:00"
           },
           "insigniaSources": [],
-          "questWorkflowIds": [
-            "artix-s-quests:reforging-the-blinding-light",
-            "artix-s-quests:secret-order-of-undead-slayers",
-            "artix-s-quests:essential-essences",
-            "artix-s-quests:bust-some-dust",
-            "artix-s-quests:a-loyal-follower"
-          ],
-          "questFinishIds": [
-            "artix-s-quests:a-loyal-follower"
-          ],
+          "questWorkflowIds": [],
+          "questFinishIds": [],
           "operationGroups": [],
-          "npc": "Artix (NPC)",
           "completionTasks": [
             {
               "id": "receive-mace-of-destiny-wiki-location",
               "quest": null,
               "title": "Merge Mace of Destiny",
               "source": "https://aqwwiki.wikidot.com/mace-of-destiny",
-              "npc": "Artix (NPC)",
               "map": "/join necropolis",
               "location": "Light Merge - Necropolis",
               "preconditions": [],
@@ -77601,45 +77530,8 @@
             }
           ],
           "materialTotalsComplete": false,
-          "questGraph": [
-            {
-              "questId": "artix-s-quests:reforging-the-blinding-light",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:secret-order-of-undead-slayers",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:essential-essences",
-              "role": "mainFarm",
-              "display": "stepper",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:bust-some-dust",
-              "role": "mainFarm",
-              "display": "stepper",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:a-loyal-follower",
-              "role": "mainFarm",
-              "display": "stepper",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            }
-          ],
-          "storyPrerequisites": [
-            {
-              "questId": "artix-s-quests:secret-order-of-undead-slayers",
-              "name": "Secret Order of Undead Slayers",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            }
-          ],
+          "questGraph": [],
+          "storyPrerequisites": [],
           "directMaterials": [
             {
               "name": "Basic Weapon Kit",
@@ -82292,18 +82184,11 @@
                 "source": "https://aqwwiki.wikidot.com/broadsword-of-bane"
               },
               {
-                "name": "Dark Spirit Orb",
-                "itemId": "dark-spirit-orb",
-                "quantity": 15,
-                "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/daggers-of-destruction"
-              },
-              {
-                "name": "Corrupt Spirit Orb",
-                "itemId": "corrupt-spirit-orb",
-                "quantity": 2,
-                "wikiUrl": "https://aqwwiki.wikidot.com/corrupt-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/broadsword-of-bane"
+                "name": "Dark Energy (Misc)",
+                "itemId": "dark-energy-misc",
+                "quantity": 260750,
+                "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               },
               {
                 "name": "Diabolical Aura",
@@ -82317,13 +82202,6 @@
                 "itemId": "doomsoldier-weapon-kit",
                 "quantity": 1,
                 "wikiUrl": "https://aqwwiki.wikidot.com/doomsoldier-weapon-kit",
-                "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge"
-              },
-              {
-                "name": "Ominous Aura",
-                "itemId": "ominous-aura",
-                "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/ominous-aura",
                 "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge"
               },
               {
@@ -82726,24 +82604,17 @@
                 "source": "https://aqwwiki.wikidot.com/daggers-of-destruction"
               },
               {
-                "name": "Dark Spirit Orb",
-                "itemId": "dark-spirit-orb",
-                "quantity": 50,
-                "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/daggers-of-destruction"
+                "name": "Dark Energy (Misc)",
+                "itemId": "dark-energy-misc",
+                "quantity": 252500,
+                "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               },
               {
                 "name": "DoomSoldier Weapon Kit",
                 "itemId": "doomsoldier-weapon-kit",
                 "quantity": 1,
                 "wikiUrl": "https://aqwwiki.wikidot.com/doomsoldier-weapon-kit",
-                "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge"
-              },
-              {
-                "name": "Ominous Aura",
-                "itemId": "ominous-aura",
-                "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/ominous-aura",
                 "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge"
               },
               {
@@ -83143,11 +83014,18 @@
                 "source": "https://aqwwiki.wikidot.com/daggers-of-destruction"
               },
               {
-                "name": "Pernicious Palladium of Doom",
-                "itemId": "pernicious-palladium-of-doom",
+                "name": "Dark Energy (Misc)",
+                "itemId": "dark-energy-misc",
+                "quantity": 1043000,
+                "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
+              },
+              {
+                "name": "Pernicious Palladium",
+                "itemId": "pernicious-palladium",
                 "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom",
-                "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
+                "wikiUrl": "https://aqwwiki.wikidot.com/pernicious-palladium",
+                "source": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom"
               },
               {
                 "name": "Undead Energy",
@@ -83157,31 +83035,10 @@
                 "source": "https://aqwwiki.wikidot.com/mace-of-destiny"
               },
               {
-                "name": "Dark Spirit Orb",
-                "itemId": "dark-spirit-orb",
-                "quantity": 160,
-                "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/daggers-of-destruction"
-              },
-              {
-                "name": "Corrupt Spirit Orb",
-                "itemId": "corrupt-spirit-orb",
-                "quantity": 2,
-                "wikiUrl": "https://aqwwiki.wikidot.com/corrupt-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/broadsword-of-bane"
-              },
-              {
                 "name": "DoomSoldier Weapon Kit",
                 "itemId": "doomsoldier-weapon-kit",
                 "quantity": 1,
                 "wikiUrl": "https://aqwwiki.wikidot.com/doomsoldier-weapon-kit",
-                "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge"
-              },
-              {
-                "name": "Ominous Aura",
-                "itemId": "ominous-aura",
-                "quantity": 2,
-                "wikiUrl": "https://aqwwiki.wikidot.com/ominous-aura",
                 "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge"
               },
               {
@@ -85320,25 +85177,15 @@
             "checkedAt": "2026-11-13T14:25:53.803371+00:00"
           },
           "insigniaSources": [],
-          "questWorkflowIds": [
-            "artix-s-quests:reforging-the-blinding-light",
-            "artix-s-quests:secret-order-of-undead-slayers",
-            "artix-s-quests:essential-essences",
-            "artix-s-quests:bust-some-dust",
-            "artix-s-quests:a-loyal-follower"
-          ],
-          "questFinishIds": [
-            "artix-s-quests:a-loyal-follower"
-          ],
+          "questWorkflowIds": [],
+          "questFinishIds": [],
           "operationGroups": [],
-          "npc": "Artix (NPC)",
           "completionTasks": [
             {
               "id": "receive-scythe-of-destiny-wiki-location",
               "quest": null,
               "title": "Merge Scythe of Destiny",
               "source": "https://aqwwiki.wikidot.com/scythe-of-destiny",
-              "npc": "Artix (NPC)",
               "map": "/join necropolis",
               "location": "Light Merge - Necropolis",
               "preconditions": [],
@@ -85385,45 +85232,8 @@
             }
           ],
           "materialTotalsComplete": false,
-          "questGraph": [
-            {
-              "questId": "artix-s-quests:reforging-the-blinding-light",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:secret-order-of-undead-slayers",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:essential-essences",
-              "role": "mainFarm",
-              "display": "stepper",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:bust-some-dust",
-              "role": "mainFarm",
-              "display": "stepper",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:a-loyal-follower",
-              "role": "mainFarm",
-              "display": "stepper",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            }
-          ],
-          "storyPrerequisites": [
-            {
-              "questId": "artix-s-quests:secret-order-of-undead-slayers",
-              "name": "Secret Order of Undead Slayers",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            }
-          ],
+          "questGraph": [],
+          "storyPrerequisites": [],
           "directMaterials": [
             {
               "name": "Basic Weapon Kit",
@@ -85842,25 +85652,15 @@
           },
           "insigniaSources": [],
           "guidePaths": [],
-          "questWorkflowIds": [
-            "artix-s-quests:reforging-the-blinding-light",
-            "artix-s-quests:secret-order-of-undead-slayers",
-            "artix-s-quests:essential-essences",
-            "artix-s-quests:bust-some-dust",
-            "artix-s-quests:a-loyal-follower"
-          ],
-          "questFinishIds": [
-            "artix-s-quests:a-loyal-follower"
-          ],
+          "questWorkflowIds": [],
+          "questFinishIds": [],
           "operationGroups": [],
-          "npc": "Artix (NPC)",
           "completionTasks": [
             {
               "id": "receive-scythe-of-scourge-wiki-location",
               "quest": null,
               "title": "Merge Scythe of Scourge",
               "source": "https://aqwwiki.wikidot.com/scythe-of-scourge",
-              "npc": "Artix (NPC)",
               "map": "/join necropolis",
               "location": "Doom Merge (1) - Necropolis",
               "preconditions": [],
@@ -85912,45 +85712,8 @@
             }
           ],
           "materialTotalsComplete": false,
-          "questGraph": [
-            {
-              "questId": "artix-s-quests:reforging-the-blinding-light",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:secret-order-of-undead-slayers",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:essential-essences",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:bust-some-dust",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            },
-            {
-              "questId": "artix-s-quests:a-loyal-follower",
-              "role": "unlockCondition",
-              "display": "condition",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            }
-          ],
-          "storyPrerequisites": [
-            {
-              "questId": "artix-s-quests:a-loyal-follower",
-              "name": "A Loyal Follower",
-              "source": "https://aqwwiki.wikidot.com/artix-s-quests"
-            }
-          ],
+          "questGraph": [],
+          "storyPrerequisites": [],
           "directMaterials": [
             {
               "name": "DoomSquire Weapon Kit",
@@ -86002,31 +85765,24 @@
                 "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
               },
               {
-                "name": "Pernicious Palladium of Doom",
-                "itemId": "pernicious-palladium-of-doom",
+                "name": "Dark Energy (Misc)",
+                "itemId": "dark-energy-misc",
+                "quantity": 535500,
+                "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
+              },
+              {
+                "name": "Pernicious Palladium",
+                "itemId": "pernicious-palladium",
                 "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom",
-                "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
+                "wikiUrl": "https://aqwwiki.wikidot.com/pernicious-palladium",
+                "source": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom"
               },
               {
                 "name": "Undead Energy",
                 "itemId": "undead-energy",
                 "quantity": 10,
                 "wikiUrl": "https://aqwwiki.wikidot.com/undead-energy",
-                "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
-              },
-              {
-                "name": "Dark Spirit Orb",
-                "itemId": "dark-spirit-orb",
-                "quantity": 10,
-                "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
-              },
-              {
-                "name": "Corrupt Spirit Orb",
-                "itemId": "corrupt-spirit-orb",
-                "quantity": 2,
-                "wikiUrl": "https://aqwwiki.wikidot.com/corrupt-spirit-orb",
                 "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
               }
             ],
@@ -86829,18 +86585,11 @@
                 "source": "https://aqwwiki.wikidot.com/broadsword-of-bane"
               },
               {
-                "name": "Dark Spirit Orb",
-                "itemId": "dark-spirit-orb",
-                "quantity": 15,
-                "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
-              },
-              {
-                "name": "Corrupt Spirit Orb",
-                "itemId": "corrupt-spirit-orb",
-                "quantity": 2,
-                "wikiUrl": "https://aqwwiki.wikidot.com/corrupt-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/shadow-broadsword-of-bane"
+                "name": "Dark Energy (Misc)",
+                "itemId": "dark-energy-misc",
+                "quantity": 260750,
+                "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               },
               {
                 "name": "Diabolical Aura",
@@ -86854,13 +86603,6 @@
                 "itemId": "doomsoldier-weapon-kit",
                 "quantity": 1,
                 "wikiUrl": "https://aqwwiki.wikidot.com/doomsoldier-weapon-kit",
-                "source": "https://aqwwiki.wikidot.com/shadow-broadsword-of-bane"
-              },
-              {
-                "name": "Ominous Aura",
-                "itemId": "ominous-aura",
-                "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/ominous-aura",
                 "source": "https://aqwwiki.wikidot.com/shadow-broadsword-of-bane"
               }
             ],
@@ -87276,24 +87018,17 @@
                 "source": "https://aqwwiki.wikidot.com/daggers-of-destruction"
               },
               {
-                "name": "Dark Spirit Orb",
-                "itemId": "dark-spirit-orb",
-                "quantity": 50,
-                "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
+                "name": "Dark Energy (Misc)",
+                "itemId": "dark-energy-misc",
+                "quantity": 252500,
+                "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               },
               {
                 "name": "DoomSoldier Weapon Kit",
                 "itemId": "doomsoldier-weapon-kit",
                 "quantity": 1,
                 "wikiUrl": "https://aqwwiki.wikidot.com/doomsoldier-weapon-kit",
-                "source": "https://aqwwiki.wikidot.com/shadow-daggers-of-destruction"
-              },
-              {
-                "name": "Ominous Aura",
-                "itemId": "ominous-aura",
-                "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/ominous-aura",
                 "source": "https://aqwwiki.wikidot.com/shadow-daggers-of-destruction"
               }
             ],
@@ -88379,11 +88114,18 @@
                 "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
               },
               {
-                "name": "Pernicious Palladium of Doom",
-                "itemId": "pernicious-palladium-of-doom",
+                "name": "Dark Energy (Misc)",
+                "itemId": "dark-energy-misc",
+                "quantity": 1043000,
+                "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
+              },
+              {
+                "name": "Pernicious Palladium",
+                "itemId": "pernicious-palladium",
                 "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom",
-                "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
+                "wikiUrl": "https://aqwwiki.wikidot.com/pernicious-palladium",
+                "source": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom"
               },
               {
                 "name": "Undead Energy",
@@ -88393,31 +88135,10 @@
                 "source": "https://aqwwiki.wikidot.com/scythe-of-scourge"
               },
               {
-                "name": "Dark Spirit Orb",
-                "itemId": "dark-spirit-orb",
-                "quantity": 160,
-                "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge"
-              },
-              {
-                "name": "Corrupt Spirit Orb",
-                "itemId": "corrupt-spirit-orb",
-                "quantity": 2,
-                "wikiUrl": "https://aqwwiki.wikidot.com/corrupt-spirit-orb",
-                "source": "https://aqwwiki.wikidot.com/shadow-broadsword-of-bane"
-              },
-              {
                 "name": "DoomSoldier Weapon Kit",
                 "itemId": "doomsoldier-weapon-kit",
                 "quantity": 1,
                 "wikiUrl": "https://aqwwiki.wikidot.com/doomsoldier-weapon-kit",
-                "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge"
-              },
-              {
-                "name": "Ominous Aura",
-                "itemId": "ominous-aura",
-                "quantity": 2,
-                "wikiUrl": "https://aqwwiki.wikidot.com/ominous-aura",
                 "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge"
               }
             ],
@@ -199493,10 +199214,7 @@
             "fiend-shard-s-quests:evolve-the-fiend-shard",
             "fiend-shard-s-quests:the-fiend-shard-s-finale",
             "fiend-shard-s-quests:feed-the-fiend-shard",
-            "fiend-shard-s-quests:grow-the-fiend-shard",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale"
+            "fiend-shard-s-quests:grow-the-fiend-shard"
           ],
           "operationGroups": [],
           "npc": "Prime Fiend Shard",
@@ -199866,10 +199584,7 @@
             "fiend-shard-s-quests:evolve-the-fiend-shard",
             "fiend-shard-s-quests:the-fiend-shard-s-finale",
             "fiend-shard-s-quests:feed-the-fiend-shard",
-            "fiend-shard-s-quests:grow-the-fiend-shard",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale"
+            "fiend-shard-s-quests:grow-the-fiend-shard"
           ],
           "operationGroups": [],
           "npc": "Prime Fiend Shard",
@@ -200241,10 +199956,7 @@
             "fiend-shard-s-quests:evolve-the-fiend-shard",
             "fiend-shard-s-quests:the-fiend-shard-s-finale",
             "fiend-shard-s-quests:feed-the-fiend-shard",
-            "fiend-shard-s-quests:grow-the-fiend-shard",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale"
+            "fiend-shard-s-quests:grow-the-fiend-shard"
           ],
           "operationGroups": [],
           "npc": "Prime Fiend Shard",
@@ -231530,10 +231242,10 @@
             "materials": [
               {
                 "name": "Dark Energy (Misc)",
-                "itemId": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "itemId": "dark-energy-misc",
                 "quantity": 10000,
                 "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
-                "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               },
               {
                 "name": "(Necro) Scroll of Dark Arts",
@@ -232319,10 +232031,10 @@
             "materials": [
               {
                 "name": "Dark Energy (Misc)",
-                "itemId": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "itemId": "dark-energy-misc",
                 "quantity": 10000,
                 "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
-                "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               },
               {
                 "name": "(Necro) Scroll of Dark Arts",
@@ -233091,10 +232803,10 @@
             "materials": [
               {
                 "name": "Dark Energy (Misc)",
-                "itemId": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "itemId": "dark-energy-misc",
                 "quantity": 10000,
                 "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
-                "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               },
               {
                 "name": "(Necro) Scroll of Dark Arts",
@@ -233866,10 +233578,10 @@
             "materials": [
               {
                 "name": "Dark Energy (Misc)",
-                "itemId": "https://aqwwiki.wikidot.com/dark-energy-misc",
+                "itemId": "dark-energy-misc",
                 "quantity": 10000,
                 "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc",
-                "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+                "source": "https://aqwwiki.wikidot.com/dark-spirit-orb"
               },
               {
                 "name": "(Necro) Scroll of Dark Arts",
@@ -266945,11 +266657,46 @@
             "gaps": [],
             "materials": [
               {
-                "name": "DeathKnight Lord Armor",
-                "itemId": "deathknight-lord-armor",
+                "name": "DeathKnight Lord Gauntlets",
+                "itemId": "deathknight-lord-gauntlets",
                 "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-armor",
-                "source": "https://aqwwiki.wikidot.com/deathknight-lord-merge"
+                "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-gauntlets",
+                "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor"
+              },
+              {
+                "name": "DeathKnight Lord Greaves",
+                "itemId": "deathknight-lord-greaves",
+                "quantity": 1,
+                "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-greaves",
+                "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor"
+              },
+              {
+                "name": "DeathKnight Lord Chest Plate",
+                "itemId": "deathknight-lord-chest-plate",
+                "quantity": 1,
+                "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-chest-plate",
+                "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor"
+              },
+              {
+                "name": "DeathKnight Lord Hauberk",
+                "itemId": "deathknight-lord-hauberk",
+                "quantity": 1,
+                "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-hauberk",
+                "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor"
+              },
+              {
+                "name": "DeathKnight Lord Boots",
+                "itemId": "deathknight-lord-boots",
+                "quantity": 1,
+                "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-boots",
+                "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor"
+              },
+              {
+                "name": "Bonecastle Amulet",
+                "itemId": "bonecastle-amulet",
+                "quantity": 30,
+                "wikiUrl": "https://aqwwiki.wikidot.com/bonecastle-amulet",
+                "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor"
               },
               {
                 "name": "Shadow Skull",
@@ -273342,32 +273089,81 @@
             "gaps": [],
             "materials": [
               {
-                "name": "Vindicator Titan's Axes",
-                "itemId": "vindicator-titan-s-axes",
-                "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/vindicator-titan-s-axes",
-                "source": "https://aqwwiki.wikidot.com/titan-drakath-s-blades"
+                "name": "AntiTitan Supplies",
+                "itemId": "antititan-supplies",
+                "quantity": 100,
+                "wikiUrl": "https://aqwwiki.wikidot.com/antititan-supplies",
+                "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blades"
               },
               {
-                "name": "Titan Paladin's Blades",
-                "itemId": "titan-paladin-s-blades",
-                "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/titan-paladin-s-blades",
-                "source": "https://aqwwiki.wikidot.com/titan-drakath-s-blades"
+                "name": "Titanic Fluid",
+                "itemId": "titanic-fluid",
+                "quantity": 40,
+                "wikiUrl": "https://aqwwiki.wikidot.com/titanic-fluid",
+                "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blades"
               },
               {
-                "name": "Titanic Destroyer Blades",
-                "itemId": "titanic-destroyer-blades",
-                "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/titanic-destroyer-blades",
-                "source": "https://aqwwiki.wikidot.com/titan-drakath-s-blades"
+                "name": "Gold Voucher 200k",
+                "itemId": "gold-voucher-200k",
+                "quantity": 3,
+                "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-200k",
+                "source": "https://aqwwiki.wikidot.com/titanic-destroyer-blades"
               },
               {
-                "name": "Heroic Titan's Greatswords",
-                "itemId": "heroic-titan-s-greatswords",
+                "name": "Vindicator Titan's Axe",
+                "itemId": "vindicator-titan-s-axe",
                 "quantity": 1,
-                "wikiUrl": "https://aqwwiki.wikidot.com/heroic-titan-s-greatswords",
-                "source": "https://aqwwiki.wikidot.com/titan-drakath-s-blades"
+                "wikiUrl": "https://aqwwiki.wikidot.com/vindicator-titan-s-axe",
+                "source": "https://aqwwiki.wikidot.com/vindicator-titan-s-axes"
+              },
+              {
+                "name": "Titan Paladin's Blade",
+                "itemId": "titan-paladin-s-blade",
+                "quantity": 1,
+                "wikiUrl": "https://aqwwiki.wikidot.com/titan-paladin-s-blade",
+                "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blades"
+              },
+              {
+                "name": "Destroyer Essence",
+                "itemId": "destroyer-essence",
+                "quantity": 40,
+                "wikiUrl": "https://aqwwiki.wikidot.com/destroyer-essence",
+                "source": "https://aqwwiki.wikidot.com/titanic-destroyer-blades"
+              },
+              {
+                "name": "Titanic Destroyer Blade",
+                "itemId": "titanic-destroyer-blade",
+                "quantity": 1,
+                "wikiUrl": "https://aqwwiki.wikidot.com/titanic-destroyer-blade",
+                "source": "https://aqwwiki.wikidot.com/titanic-destroyer-blades"
+              },
+              {
+                "name": "Paladin Punished",
+                "itemId": "paladin-punished",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/warlic-s-quests",
+                "monster": "Titanic Paladin (Version 2)"
+              },
+              {
+                "name": "Doomknight Decimated",
+                "itemId": "doomknight-decimated",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/warlic-s-quests",
+                "monster": "Titanic DoomKnight (Version 2)"
+              },
+              {
+                "name": "Destroyer Destroyed",
+                "itemId": "destroyer-destroyed",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/warlic-s-quests",
+                "monster": "Titanic Destroyer (Monster)"
+              },
+              {
+                "name": "Titanic Tincture",
+                "itemId": "titanic-tincture",
+                "quantity": 30,
+                "wikiUrl": "https://aqwwiki.wikidot.com/titanic-tincture",
+                "source": "https://aqwwiki.wikidot.com/heroic-titan-s-greatswords"
               },
               {
                 "name": "Titan Drakath's Blade",
@@ -273667,10 +273463,7 @@
             "fiend-shard-s-quests:evolve-the-fiend-shard",
             "fiend-shard-s-quests:the-fiend-shard-s-finale",
             "fiend-shard-s-quests:feed-the-fiend-shard",
-            "fiend-shard-s-quests:grow-the-fiend-shard",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale",
-            "fiend-shard-s-quests:the-fiend-shard-s-finale"
+            "fiend-shard-s-quests:grow-the-fiend-shard"
           ],
           "operationGroups": [],
           "npc": "Prime Fiend Shard",

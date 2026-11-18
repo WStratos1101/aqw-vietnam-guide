@@ -60987,6 +60987,239 @@
           "sourceHash": "b0d2e629a9abce19a1f1a563f1ab16519ebce0dc4170a955f98a2c419e249668"
         }
       ]
+    },
+    "warlic-s-quests:topple-some-titans": {
+      "id": "warlic-s-quests:topple-some-titans",
+      "quest": "Topple some Titans!",
+      "npc": "Warlic",
+      "location": "Titan Strike",
+      "acceptanceMaps": [
+        "/join titanstrike"
+      ],
+      "map": "/join titanstrike",
+      "source": "https://aqwwiki.wikidot.com/warlic-s-quests",
+      "sourceHash": "bd1e7a26975a60a4d4f9e5a035d1982cb4dfb3b724aa06486f61dbfd516ce2b5",
+      "sectionIdentity": "nav-30/panel-3",
+      "preconditions": [
+        "Must have completed the 'Titanic Terror Times Two' quest.",
+        "Must have completed the previous quest."
+      ],
+      "requirements": [],
+      "ownedItems": [],
+      "rows": [
+        {
+          "name": "Paladin Punished",
+          "itemId": "paladin-punished",
+          "quantity": 1,
+          "monster": "Titanic Paladin (Version 2)",
+          "monsterWikiUrl": "https://aqwwiki.wikidot.com/titanic-paladin",
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+        },
+        {
+          "name": "Doomknight Decimated",
+          "itemId": "doomknight-decimated",
+          "quantity": 1,
+          "monster": "Titanic DoomKnight (Version 2)",
+          "monsterWikiUrl": "https://aqwwiki.wikidot.com/titanic-doomknight",
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+        },
+        {
+          "name": "Destroyer Destroyed",
+          "itemId": "destroyer-destroyed",
+          "quantity": 1,
+          "monster": "Titanic Destroyer (Monster)",
+          "monsterWikiUrl": "https://aqwwiki.wikidot.com/titanic-destroyer-monster",
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+        }
+      ],
+      "reward": "Heroic Titan's Greatsword ×1",
+      "fixedRewards": [
+        {
+          "name": "Heroic Titan's Greatsword",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/heroic-titan-s-greatsword"
+        }
+      ],
+      "rewardChoices": [],
+      "randomRewards": [],
+      "randomChoiceRewards": [],
+      "repeatability": null,
+      "dependencies": [
+        "warlic-s-quests:and-a-cup-of-chaos"
+      ],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [
+        {
+          "name": "Titanic Terror Times Two",
+          "requirement": "Must have completed the 'Titanic Terror Times Two' quest."
+        }
+      ],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/titan-strike",
+          "sourceFile": "Update/_offline-staging/20261117-081737/wiki/173b69736df6c5b137bbada07e1e015386710983304f42369ecc151d4e94a0b7.html",
+          "sourceHash": "173b69736df6c5b137bbada07e1e015386710983304f42369ecc151d4e94a0b7"
+        }
+      ]
+    },
+    "warlic-s-quests:and-a-cup-of-chaos": {
+      "id": "warlic-s-quests:and-a-cup-of-chaos",
+      "quest": "And A Cup of Chaos",
+      "npc": "Warlic",
+      "location": "Titan Strike",
+      "acceptanceMaps": [
+        "/join titanstrike"
+      ],
+      "map": "/join titanstrike",
+      "source": "https://aqwwiki.wikidot.com/warlic-s-quests",
+      "sourceHash": "bd1e7a26975a60a4d4f9e5a035d1982cb4dfb3b724aa06486f61dbfd516ce2b5",
+      "sectionIdentity": "nav-30/panel-2",
+      "preconditions": [
+        "Must have completed the 'Titanic Terror Times Two' quest.",
+        "Must have completed the previous quest."
+      ],
+      "requirements": [],
+      "ownedItems": [],
+      "rows": [
+        {
+          "name": "Diluted Destroyer Essence",
+          "itemId": "diluted-destroyer-essence",
+          "quantity": 1,
+          "monster": "Titanic Destroyer (Monster)",
+          "monsterWikiUrl": "https://aqwwiki.wikidot.com/titanic-destroyer-monster",
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+        }
+      ],
+      "reward": "",
+      "fixedRewards": [],
+      "rewardChoices": [],
+      "randomRewards": [],
+      "randomChoiceRewards": [],
+      "repeatability": null,
+      "dependencies": [
+        "warlic-s-quests:a-dose-of-darkness"
+      ],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [
+        {
+          "name": "Titanic Terror Times Two",
+          "requirement": "Must have completed the 'Titanic Terror Times Two' quest."
+        }
+      ],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/titan-strike",
+          "sourceFile": "Update/_offline-staging/20261117-081737/wiki/173b69736df6c5b137bbada07e1e015386710983304f42369ecc151d4e94a0b7.html",
+          "sourceHash": "173b69736df6c5b137bbada07e1e015386710983304f42369ecc151d4e94a0b7"
+        }
+      ]
+    },
+    "warlic-s-quests:a-dose-of-darkness": {
+      "id": "warlic-s-quests:a-dose-of-darkness",
+      "quest": "A Dose of Darkness...",
+      "npc": "Warlic",
+      "location": "Titan Strike",
+      "acceptanceMaps": [
+        "/join titanstrike"
+      ],
+      "map": "/join titanstrike",
+      "source": "https://aqwwiki.wikidot.com/warlic-s-quests",
+      "sourceHash": "bd1e7a26975a60a4d4f9e5a035d1982cb4dfb3b724aa06486f61dbfd516ce2b5",
+      "sectionIdentity": "nav-30/panel-1",
+      "preconditions": [
+        "Must have completed the 'Titanic Terror Times Two' quest.",
+        "Must have completed the previous quest."
+      ],
+      "requirements": [],
+      "ownedItems": [],
+      "rows": [
+        {
+          "name": "Dauntless Doomknight Essence",
+          "itemId": "dauntless-doomknight-essence",
+          "quantity": 1,
+          "monster": "Titanic DoomKnight (Version 2)",
+          "monsterWikiUrl": "https://aqwwiki.wikidot.com/titanic-doomknight",
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+        }
+      ],
+      "reward": "",
+      "fixedRewards": [],
+      "rewardChoices": [],
+      "randomRewards": [],
+      "randomChoiceRewards": [],
+      "repeatability": null,
+      "dependencies": [
+        "warlic-s-quests:a-little-light"
+      ],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [
+        {
+          "name": "Titanic Terror Times Two",
+          "requirement": "Must have completed the 'Titanic Terror Times Two' quest."
+        }
+      ],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/titan-strike",
+          "sourceFile": "Update/_offline-staging/20261117-081737/wiki/173b69736df6c5b137bbada07e1e015386710983304f42369ecc151d4e94a0b7.html",
+          "sourceHash": "173b69736df6c5b137bbada07e1e015386710983304f42369ecc151d4e94a0b7"
+        }
+      ]
+    },
+    "warlic-s-quests:a-little-light": {
+      "id": "warlic-s-quests:a-little-light",
+      "quest": "A Little Light...",
+      "npc": "Warlic",
+      "location": "Titan Strike",
+      "acceptanceMaps": [
+        "/join titanstrike"
+      ],
+      "map": "/join titanstrike",
+      "source": "https://aqwwiki.wikidot.com/warlic-s-quests",
+      "sourceHash": "bd1e7a26975a60a4d4f9e5a035d1982cb4dfb3b724aa06486f61dbfd516ce2b5",
+      "sectionIdentity": "nav-30/panel-0",
+      "preconditions": [
+        "Must have completed the 'Titanic Terror Times Two' quest."
+      ],
+      "requirements": [],
+      "ownedItems": [],
+      "rows": [
+        {
+          "name": "Pure Paladin Essence",
+          "itemId": "pure-paladin-essence",
+          "quantity": 1,
+          "monster": "Titanic Paladin (Version 2)",
+          "monsterWikiUrl": "https://aqwwiki.wikidot.com/titanic-paladin",
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+        }
+      ],
+      "reward": "",
+      "fixedRewards": [],
+      "rewardChoices": [],
+      "randomRewards": [],
+      "randomChoiceRewards": [],
+      "repeatability": null,
+      "dependencies": [],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [
+        {
+          "name": "Titanic Terror Times Two",
+          "requirement": "Must have completed the 'Titanic Terror Times Two' quest."
+        }
+      ],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/titan-strike",
+          "sourceFile": "Update/_offline-staging/20261117-081737/wiki/173b69736df6c5b137bbada07e1e015386710983304f42369ecc151d4e94a0b7.html",
+          "sourceHash": "173b69736df6c5b137bbada07e1e015386710983304f42369ecc151d4e94a0b7"
+        }
+      ]
     }
   },
   "materials": {
@@ -64845,6 +65078,45 @@
       "tasks": [],
       "sourceUrl": "https://aqwwiki.wikidot.com/diamond-of-nulgath"
     },
+    "green-dragon-slayer-s-halberd": {
+      "name": "Green Dragon Slayer's Halberd",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-green-dragon-slayer-s-halberd",
+          "quest": null,
+          "title": "Green Dragon Slayer's Halberd",
+          "source": "https://aqwwiki.wikidot.com/green-dragon-slayer-s-halberd",
+          "npc": null,
+          "map": null,
+          "location": "Streamwar Merge - Timestream War",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "prismatic-seams",
+              "name": "Prismatic Seams",
+              "quantity": 250,
+              "source": "https://aqwwiki.wikidot.com/green-dragon-slayer-s-halberd",
+              "wikiUrl": "https://aqwwiki.wikidot.com/prismatic-seams"
+            },
+            {
+              "kind": "item",
+              "itemId": "gold-voucher-500k",
+              "name": "Gold Voucher 500k",
+              "quantity": 4,
+              "source": "https://aqwwiki.wikidot.com/green-dragon-slayer-s-halberd",
+              "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-500k"
+            }
+          ],
+          "reward": "Green Dragon Slayer's Halberd ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "22d1c1ea9a6504d6ebfd786418f6915620b744a738be36d2dab6e87e3f859ea5"
+    },
     "crystallized-chaos": {
       "name": "Crystallized Chaos",
       "method": "Quest",
@@ -64916,7 +65188,7 @@
     },
     "voucher-of-nulgath-non-mem": {
       "name": "Voucher of Nulgath (non-mem)",
-      "method": "Quest",
+      "method": "Quest / Merge",
       "questIds": [
         "nulgath-s-quests:supplies-to-spin-the-wheel-of-chance",
         "nulgath-s-quests:nulgath-s-roulette-of-misfortune",
@@ -64942,8 +65214,39 @@
         "swindle-bilk-s-to-go-hut-s-quests:supplies-to-spin-the-wheel-of-chance",
         "swindle-bilk-s-to-go-hut-s-quests:the-assistant"
       ],
-      "tasks": [],
-      "sourceUrl": "https://aqwwiki.wikidot.com/voucher-of-nulgath-non-mem"
+      "tasks": [
+        {
+          "id": "material-merge-voucher-of-nulgath-non-mem",
+          "quest": null,
+          "title": "Voucher of Nulgath (non-mem)",
+          "source": "https://aqwwiki.wikidot.com/voucher-of-nulgath-non-mem",
+          "npc": "Dirtlicker's Shop",
+          "map": "/join tercessuinotlim",
+          "location": "Enchanted Nulgath Nation House · Swindle's Ripoff Emporium - Tercessuinotlim · Tercessuinotlim",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "unidentified-10",
+              "name": "Unidentified 10",
+              "quantity": 100,
+              "source": "https://aqwwiki.wikidot.com/voucher-of-nulgath-non-mem",
+              "wikiUrl": "https://aqwwiki.wikidot.com/unidentified-10"
+            },
+            {
+              "kind": "item",
+              "itemId": "gold",
+              "name": "Gold",
+              "quantity": 1000000,
+              "source": "https://aqwwiki.wikidot.com/voucher-of-nulgath-non-mem"
+            }
+          ],
+          "reward": "Voucher of Nulgath (non-mem) ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "d92c17c171850ca1e344645652e4fb48c2034917aae7c70c022f73299cb05232"
     },
     "dragonfire-of-nulgath": {
       "name": "DragonFire of Nulgath",
@@ -66158,6 +66461,115 @@
       "tasks": [],
       "sourceUrl": "https://aqwwiki.wikidot.com/unidentified-13"
     },
+    "pernicious-palladium-of-doom": {
+      "name": "Pernicious Palladium of Doom",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-pernicious-palladium-of-doom",
+          "quest": null,
+          "title": "Pernicious Palladium of Doom",
+          "source": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom",
+          "npc": "Geopetal",
+          "map": "/join dwarfhold",
+          "location": "Forge Metal - Dwarfhold Keep",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "corrupt-spirit-orb",
+              "name": "Corrupt Spirit Orb",
+              "quantity": 5,
+              "source": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom",
+              "wikiUrl": "https://aqwwiki.wikidot.com/corrupt-spirit-orb"
+            },
+            {
+              "kind": "item",
+              "itemId": "ominous-aura",
+              "name": "Ominous Aura",
+              "quantity": 2,
+              "source": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom",
+              "wikiUrl": "https://aqwwiki.wikidot.com/ominous-aura"
+            },
+            {
+              "kind": "item",
+              "itemId": "pernicious-palladium",
+              "name": "Pernicious Palladium",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/pernicious-palladium-of-doom",
+              "wikiUrl": "https://aqwwiki.wikidot.com/pernicious-palladium"
+            }
+          ],
+          "reward": "Pernicious Palladium of Doom ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "412f490ec7a4692a1d316892a92a0549009befddda205e2a9b6507f8172be512"
+    },
+    "dark-spirit-orb": {
+      "name": "Dark Spirit Orb",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-dark-spirit-orb",
+          "quest": null,
+          "title": "Dark Spirit Orb",
+          "source": "https://aqwwiki.wikidot.com/dark-spirit-orb",
+          "npc": null,
+          "map": "/join necropolis",
+          "location": "Necropolis",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "dark-energy-misc",
+              "name": "Dark Energy (Misc)",
+              "quantity": 50,
+              "source": "https://aqwwiki.wikidot.com/dark-spirit-orb",
+              "wikiUrl": "https://aqwwiki.wikidot.com/dark-energy-misc"
+            }
+          ],
+          "reward": "Dark Spirit Orb ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "4a85140651190a73da50ce8570ed1e07e602bc76f67b345797ff6868f49cd88b"
+    },
+    "corrupt-spirit-orb": {
+      "name": "Corrupt Spirit Orb",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-corrupt-spirit-orb",
+          "quest": null,
+          "title": "Corrupt Spirit Orb",
+          "source": "https://aqwwiki.wikidot.com/corrupt-spirit-orb",
+          "npc": null,
+          "map": "/join necropolis",
+          "location": "Doom Merge (1) - Necropolis",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "dark-spirit-orb",
+              "name": "Dark Spirit Orb",
+              "quantity": 100,
+              "source": "https://aqwwiki.wikidot.com/corrupt-spirit-orb",
+              "wikiUrl": "https://aqwwiki.wikidot.com/dark-spirit-orb"
+            }
+          ],
+          "reward": "Corrupt Spirit Orb ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "5ec6208f1f06002875bdb61a5461d45cf169023ba7c92a8933425397e7dbf5de"
+    },
     "gem-of-nulgath": {
       "name": "Gem of Nulgath",
       "method": "Quest",
@@ -66946,6 +67358,1337 @@
       "tasks": [],
       "sourceUrl": "https://aqwwiki.wikidot.com/doom-fragment"
     },
+    "dark-energy-misc": {
+      "name": "Dark Energy (Misc)",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-dark-energy-misc0",
+          "quest": null,
+          "title": "Abaddon",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Abaddon",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/abaddon"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc1",
+          "quest": null,
+          "title": "Anubis Deathguard",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Anubis Deathguard",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/anubis-deathguard"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc2",
+          "quest": null,
+          "title": "Aracara",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Aracara",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/aracara"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc3",
+          "quest": null,
+          "title": "Belrot the Fiend",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Belrot the Fiend",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/belrot-the-fiend"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc4",
+          "quest": null,
+          "title": "Black Knight (Monster)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Black Knight (Monster)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/black-knight-monster"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc5",
+          "quest": null,
+          "title": "Burning Souleater (Monster)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Burning Souleater (Monster)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/burning-souleater-monster"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc6",
+          "quest": null,
+          "title": "Cadaverous Creeper",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Cadaverous Creeper",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/cadaverous-creeper"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc7",
+          "quest": null,
+          "title": "Chaorrupted Evil Soldier",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Chaorrupted Evil Soldier",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/chaorrupted-evil-soldier"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc8",
+          "quest": null,
+          "title": "Chaos Drow (Level 11)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Chaos Drow (Level 11)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/chaos-drow"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc9",
+          "quest": null,
+          "title": "Chaos Vampire Knight (Monster)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Chaos Vampire Knight (Monster)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/chaos-vampire-knight-monster"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc10",
+          "quest": null,
+          "title": "Dark Draconian",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Dark Draconian",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/dark-draconian"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc11",
+          "quest": null,
+          "title": "Dark Elemental (Level 6)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Dark Elemental (Level 6)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/dark-elemental"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc12",
+          "quest": null,
+          "title": "Dark Makai (Level 25)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Dark Makai (Level 25)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/dark-makai"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc13",
+          "quest": null,
+          "title": "Dark Witch",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Dark Witch",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/dark-witch"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc14",
+          "quest": null,
+          "title": "Deady Monster",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Deady Monster",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/deady-monster"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc15",
+          "quest": null,
+          "title": "Deathmole",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Deathmole",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/deathmole"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc16",
+          "quest": null,
+          "title": "Deep Dweller",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Deep Dweller",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/deep-dweller"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc17",
+          "quest": null,
+          "title": "Doom Crawler",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Doom Crawler",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/doom-crawler"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc18",
+          "quest": null,
+          "title": "Doom Overlord",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Doom Overlord",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/doom-overlord"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc19",
+          "quest": null,
+          "title": "Dreadspider",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Dreadspider",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/dreadspider"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc20",
+          "quest": null,
+          "title": "Drow Assassin (Monster) (Version 1)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Drow Assassin (Monster) (Version 1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/drow-assassin-monster"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc21",
+          "quest": null,
+          "title": "Drow Soldier (1)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Drow Soldier (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/drow-soldier-1"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc22",
+          "quest": null,
+          "title": "Enraged Vordred",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Enraged Vordred",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/enraged-vordred"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc23",
+          "quest": null,
+          "title": "Evil Lieutenant",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Evil Lieutenant",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/evil-lieutenant"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc24",
+          "quest": null,
+          "title": "Evil Soldier",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Evil Soldier",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/evil-soldier"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc25",
+          "quest": null,
+          "title": "Evolved Overlord",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Evolved Overlord",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/evolved-overlord"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc26",
+          "quest": null,
+          "title": "Extreme Noxus (1)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Extreme Noxus (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/extreme-noxus-1"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc27",
+          "quest": null,
+          "title": "George Lowe-Viathan",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "George Lowe-Viathan",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/george-lowe-viathan"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc28",
+          "quest": null,
+          "title": "Gladius",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Gladius",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/gladius"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc29",
+          "quest": null,
+          "title": "Gressil",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Gressil",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/gressil"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc30",
+          "quest": null,
+          "title": "Groglurk",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Groglurk",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/groglurk"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc31",
+          "quest": null,
+          "title": "Hidden Spy",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Hidden Spy",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/hidden-spy"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc32",
+          "quest": null,
+          "title": "Inbunche (Monster)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Inbunche (Monster)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/inbunche-monster"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc33",
+          "quest": null,
+          "title": "IT",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "IT",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/it"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc34",
+          "quest": null,
+          "title": "Karasu",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Karasu",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/karasu"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc35",
+          "quest": null,
+          "title": "Lamia",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Lamia",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/lamia"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc36",
+          "quest": null,
+          "title": "Lycan Knight (Monster)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Lycan Knight (Monster)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/lycan-knight-monster"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc37",
+          "quest": null,
+          "title": "Mummy (Monster) (1)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Mummy (Monster) (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/mummy-monster-1"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc38",
+          "quest": null,
+          "title": "Nightmare Lieutenant",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Nightmare Lieutenant",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/nightmare-lieutenant"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc39",
+          "quest": null,
+          "title": "Nightmare Sky Pirate",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Nightmare Sky Pirate",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/nightmare-sky-pirate"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc40",
+          "quest": null,
+          "title": "Noxus (Monster)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Noxus (Monster)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/noxus-monster"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc41",
+          "quest": null,
+          "title": "Obsidian Golem",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Obsidian Golem",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/obsidian-golem"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc42",
+          "quest": null,
+          "title": "Rattlebones (Version 1)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Rattlebones (Version 1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/rattlebones"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc43",
+          "quest": null,
+          "title": "Sanguine Souleater",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Sanguine Souleater",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/sanguine-souleater"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc44",
+          "quest": null,
+          "title": "Screamfeeder",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Screamfeeder",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/screamfeeder"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc45",
+          "quest": null,
+          "title": "Shadow Creeper",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Shadow Creeper",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/shadow-creeper"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc46",
+          "quest": null,
+          "title": "Shadow Dragon (Level 25)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Shadow Dragon (Level 25)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/shadow-dragon"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc47",
+          "quest": null,
+          "title": "Shadow Imp (Level 15) (Version 1)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Shadow Imp (Level 15) (Version 1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/shadow-imp"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc48",
+          "quest": null,
+          "title": "Shadow Serpent",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Shadow Serpent",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/shadow-serpent"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc49",
+          "quest": null,
+          "title": "Shadow Vordred",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Shadow Vordred",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/shadow-vordred"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc50",
+          "quest": null,
+          "title": "Shadowstone Elemental",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Shadowstone Elemental",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/shadowstone-elemental"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc51",
+          "quest": null,
+          "title": "Shadowstone Support",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Shadowstone Support",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/shadowstone-support"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc52",
+          "quest": null,
+          "title": "Siren",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Siren",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/siren"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc53",
+          "quest": null,
+          "title": "Super Lowe-Viathan",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Super Lowe-Viathan",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/super-lowe-viathan"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc54",
+          "quest": null,
+          "title": "Tainted Elemental",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Tainted Elemental",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/tainted-elemental"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc55",
+          "quest": null,
+          "title": "Toxic Souleater (Monster)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Toxic Souleater (Monster)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/toxic-souleater-monster"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc56",
+          "quest": null,
+          "title": "Traitor Knight",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Traitor Knight",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/traitor-knight"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc57",
+          "quest": null,
+          "title": "Traitor Lieutenant",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Traitor Lieutenant",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/traitor-lieutenant"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc58",
+          "quest": null,
+          "title": "Twiggy Krueger",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Twiggy Krueger",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/twiggy-krueger"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc59",
+          "quest": null,
+          "title": "Ultra Vordred (1)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Ultra Vordred (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/ultra-vordred-1"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc60",
+          "quest": null,
+          "title": "Vordred (Monster) (2)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Vordred (Monster) (2)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/vordred-monster-2"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc61",
+          "quest": null,
+          "title": "Wendigo (Monster) (1)",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Wendigo (Monster) (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/wendigo-monster-1"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        },
+        {
+          "id": "material-drop-dark-energy-misc62",
+          "quest": null,
+          "title": "Wicked Witch",
+          "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+          "preconditions": [
+            "Must have completed the 'Dark Spirit Donation' quest for this item to drop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dark Energy (Misc)",
+              "quantity": null,
+              "monster": "Wicked Witch",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dark-energy-misc",
+              "monsterSource": "https://aqwwiki.wikidot.com/wicked-witch"
+            }
+          ],
+          "reward": "Dark Energy (Misc)"
+        }
+      ],
+      "sourceHash": "dae49b022b30f9fec3ac1449ba63471084b02d7d5c5a0dca5a7a9bb05aa04d39"
+    },
     "book-of-magus": {
       "name": "Book of Magus",
       "method": "Quest",
@@ -67025,6 +68768,307 @@
       ],
       "tasks": [],
       "sourceUrl": "https://aqwwiki.wikidot.com/arch-doomknight"
+    },
+    "deathknight-lord-armor": {
+      "name": "DeathKnight Lord Armor",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-deathknight-lord-armor",
+          "quest": null,
+          "title": "DeathKnight Lord Armor",
+          "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor",
+          "npc": null,
+          "map": null,
+          "location": "Bonecastle Tower Merge · Castle of Bone · Castle of Bone B · Castle of Bone C · Skull Tower of Gold · The Towers",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "deathknight-lord-gauntlets",
+              "name": "DeathKnight Lord Gauntlets",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor",
+              "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-gauntlets"
+            },
+            {
+              "kind": "item",
+              "itemId": "deathknight-lord-greaves",
+              "name": "DeathKnight Lord Greaves",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor",
+              "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-greaves"
+            },
+            {
+              "kind": "item",
+              "itemId": "deathknight-lord-chest-plate",
+              "name": "DeathKnight Lord Chest Plate",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor",
+              "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-chest-plate"
+            },
+            {
+              "kind": "item",
+              "itemId": "deathknight-lord-hauberk",
+              "name": "DeathKnight Lord Hauberk",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor",
+              "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-hauberk"
+            },
+            {
+              "kind": "item",
+              "itemId": "deathknight-lord-boots",
+              "name": "DeathKnight Lord Boots",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor",
+              "wikiUrl": "https://aqwwiki.wikidot.com/deathknight-lord-boots"
+            },
+            {
+              "kind": "item",
+              "itemId": "bonecastle-amulet",
+              "name": "Bonecastle Amulet",
+              "quantity": 30,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-armor",
+              "wikiUrl": "https://aqwwiki.wikidot.com/bonecastle-amulet"
+            }
+          ],
+          "reward": "DeathKnight Lord Armor ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "55ff990ac75c5cbb35c9f92b53a9bd18393de2519f5c319f89bd230f6fef380d"
+    },
+    "vindicator-titan-s-axes": {
+      "name": "Vindicator Titan's Axes",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-vindicator-titan-s-axes",
+          "quest": null,
+          "title": "Vindicator Titan's Axes",
+          "source": "https://aqwwiki.wikidot.com/vindicator-titan-s-axes",
+          "npc": null,
+          "map": null,
+          "location": "Titan Attack Gear - Titan Attack",
+          "preconditions": [
+            "Must have completed the 'Titanic Terror Times Two' quest to access this shop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "antititan-supplies",
+              "name": "AntiTitan Supplies",
+              "quantity": 50,
+              "source": "https://aqwwiki.wikidot.com/vindicator-titan-s-axes",
+              "wikiUrl": "https://aqwwiki.wikidot.com/antititan-supplies"
+            },
+            {
+              "kind": "item",
+              "itemId": "titanic-fluid",
+              "name": "Titanic Fluid",
+              "quantity": 20,
+              "source": "https://aqwwiki.wikidot.com/vindicator-titan-s-axes",
+              "wikiUrl": "https://aqwwiki.wikidot.com/titanic-fluid"
+            },
+            {
+              "kind": "item",
+              "itemId": "gold-voucher-200k",
+              "name": "Gold Voucher 200k",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/vindicator-titan-s-axes",
+              "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-200k"
+            },
+            {
+              "kind": "item",
+              "itemId": "vindicator-titan-s-axe",
+              "name": "Vindicator Titan's Axe",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/vindicator-titan-s-axes",
+              "wikiUrl": "https://aqwwiki.wikidot.com/vindicator-titan-s-axe"
+            }
+          ],
+          "reward": "Vindicator Titan's Axes ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "a428b8f1c04212afc8a45094b4fce73d2a73166e403d96c61760baff31c235a1"
+    },
+    "titan-paladin-s-blades": {
+      "name": "Titan Paladin's Blades",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-titan-paladin-s-blades",
+          "quest": null,
+          "title": "Titan Paladin's Blades",
+          "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blades",
+          "npc": null,
+          "map": null,
+          "location": "Titan Attack Gear - Titan Attack",
+          "preconditions": [
+            "Must have completed the 'Titanic Terror Times Two' quest to access this shop."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "antititan-supplies",
+              "name": "AntiTitan Supplies",
+              "quantity": 50,
+              "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blades",
+              "wikiUrl": "https://aqwwiki.wikidot.com/antititan-supplies"
+            },
+            {
+              "kind": "item",
+              "itemId": "titanic-fluid",
+              "name": "Titanic Fluid",
+              "quantity": 20,
+              "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blades",
+              "wikiUrl": "https://aqwwiki.wikidot.com/titanic-fluid"
+            },
+            {
+              "kind": "item",
+              "itemId": "gold-voucher-200k",
+              "name": "Gold Voucher 200k",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blades",
+              "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-200k"
+            },
+            {
+              "kind": "item",
+              "itemId": "titan-paladin-s-blade",
+              "name": "Titan Paladin's Blade",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blades",
+              "wikiUrl": "https://aqwwiki.wikidot.com/titan-paladin-s-blade"
+            }
+          ],
+          "reward": "Titan Paladin's Blades ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "626bed99b95983112598b3d355ed83df33ade64c05ea2e5f89a9149956e05230"
+    },
+    "titanic-destroyer-blades": {
+      "name": "Titanic Destroyer Blades",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-titanic-destroyer-blades",
+          "quest": null,
+          "title": "Titanic Destroyer Blades",
+          "source": "https://aqwwiki.wikidot.com/titanic-destroyer-blades",
+          "npc": "Alteon (NPC)",
+          "map": "/join titanstrike",
+          "location": "Titan Strike Gear - Titan Strike",
+          "preconditions": [
+            "Must have completed the 'The BIG Finish' quest."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "gold-voucher-200k",
+              "name": "Gold Voucher 200k",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/titanic-destroyer-blades",
+              "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-200k"
+            },
+            {
+              "kind": "item",
+              "itemId": "destroyer-essence",
+              "name": "Destroyer Essence",
+              "quantity": 40,
+              "source": "https://aqwwiki.wikidot.com/titanic-destroyer-blades",
+              "wikiUrl": "https://aqwwiki.wikidot.com/destroyer-essence"
+            },
+            {
+              "kind": "item",
+              "itemId": "titanic-destroyer-blade",
+              "name": "Titanic Destroyer Blade",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/titanic-destroyer-blades",
+              "wikiUrl": "https://aqwwiki.wikidot.com/titanic-destroyer-blade"
+            }
+          ],
+          "reward": "Titanic Destroyer Blades ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "bf88ad5cfb4da5501048b70564b44e63fa2b4bbf8e712fe00f49cd15bf2aed92"
+    },
+    "heroic-titan-s-greatswords": {
+      "name": "Heroic Titan's Greatswords",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-heroic-titan-s-greatswords",
+          "quest": null,
+          "title": "Heroic Titan's Greatswords",
+          "source": "https://aqwwiki.wikidot.com/heroic-titan-s-greatswords",
+          "npc": "Alteon (NPC)",
+          "map": "/join titanstrike",
+          "location": "Titan Strike Gear - Titan Strike",
+          "preconditions": [
+            "Must have completed the 'The BIG Finish' quest."
+          ],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "heroic-titan-s-greatsword",
+              "name": "Heroic Titan's Greatsword",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/heroic-titan-s-greatswords",
+              "wikiUrl": "https://aqwwiki.wikidot.com/heroic-titan-s-greatsword"
+            },
+            {
+              "kind": "item",
+              "itemId": "titanic-tincture",
+              "name": "Titanic Tincture",
+              "quantity": 30,
+              "source": "https://aqwwiki.wikidot.com/heroic-titan-s-greatswords",
+              "wikiUrl": "https://aqwwiki.wikidot.com/titanic-tincture"
+            }
+          ],
+          "reward": "Heroic Titan's Greatswords ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "45c07301b086fadbb69adff08c0d052cce56154fec8e9847733bda45594801eb"
+    },
+    "titan-drakath-s-blade": {
+      "name": "Titan Drakath's Blade",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-titan-drakath-s-blade0",
+          "quest": null,
+          "title": "Titan Drakath (Monster)",
+          "source": "https://aqwwiki.wikidot.com/titan-drakath-s-blade",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Titan Drakath's Blade",
+              "quantity": null,
+              "monster": "Titan Drakath (Monster)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/titan-drakath-s-blade"
+            }
+          ],
+          "reward": "Titan Drakath's Blade"
+        }
+      ],
+      "sourceHash": "226470c6fe9a798f2637d8d6248f9df891d8b56ec6af8f36e940e54e190d119b"
     },
     "goddess-of-war": {
       "name": "Goddess Of War",
@@ -67835,6 +69879,128 @@
       ],
       "tasks": [],
       "sourceUrl": "https://aqwwiki.wikidot.com/radiant-goddess-of-war"
+    },
+    "dragon-claw": {
+      "name": "Dragon Claw",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-dragon-claw0",
+          "quest": null,
+          "title": "Blood Dracolich",
+          "source": "https://aqwwiki.wikidot.com/dragon-claw",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dragon Claw",
+              "quantity": null,
+              "monster": "Blood Dracolich",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dragon-claw",
+              "monsterSource": "https://aqwwiki.wikidot.com/blood-dracolich"
+            }
+          ],
+          "reward": "Dragon Claw"
+        },
+        {
+          "id": "material-drop-dragon-claw1",
+          "quest": null,
+          "title": "Chaos Dracolich (Level 15)",
+          "source": "https://aqwwiki.wikidot.com/dragon-claw",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dragon Claw",
+              "quantity": null,
+              "monster": "Chaos Dracolich (Level 15)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dragon-claw",
+              "monsterSource": "https://aqwwiki.wikidot.com/chaos-dracolich"
+            }
+          ],
+          "reward": "Dragon Claw"
+        },
+        {
+          "id": "material-drop-dragon-claw2",
+          "quest": null,
+          "title": "Deluge Dracolich",
+          "source": "https://aqwwiki.wikidot.com/dragon-claw",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dragon Claw",
+              "quantity": null,
+              "monster": "Deluge Dracolich",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dragon-claw",
+              "monsterSource": "https://aqwwiki.wikidot.com/deluge-dracolich"
+            }
+          ],
+          "reward": "Dragon Claw"
+        },
+        {
+          "id": "material-drop-dragon-claw3",
+          "quest": null,
+          "title": "Granite Dracolich (Level 20)",
+          "source": "https://aqwwiki.wikidot.com/dragon-claw",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dragon Claw",
+              "quantity": null,
+              "monster": "Granite Dracolich (Level 20)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dragon-claw",
+              "monsterSource": "https://aqwwiki.wikidot.com/granite-dracolich"
+            }
+          ],
+          "reward": "Dragon Claw"
+        },
+        {
+          "id": "material-drop-dragon-claw4",
+          "quest": null,
+          "title": "Inferno Dracolich",
+          "source": "https://aqwwiki.wikidot.com/dragon-claw",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dragon Claw",
+              "quantity": null,
+              "monster": "Inferno Dracolich",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/dragon-claw",
+              "monsterSource": "https://aqwwiki.wikidot.com/inferno-dracolich"
+            }
+          ],
+          "reward": "Dragon Claw"
+        },
+        {
+          "id": "material-drop-dragon-claw5",
+          "quest": null,
+          "title": "Tempest Dracolich (Level 20)",
+          "source": "https://aqwwiki.wikidot.com/dragon-claw",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Dragon Claw",
+              "quantity": null,
+              "monster": "Tempest Dracolich (Level 20)",
+              "map": "/join dragontown",
+              "source": "https://aqwwiki.wikidot.com/dragon-claw",
+              "monsterSource": "https://aqwwiki.wikidot.com/tempest-dracolich"
+            }
+          ],
+          "reward": "Dragon Claw"
+        }
+      ],
+      "sourceHash": "c9c29ec444a6a55dd8fa2d8f22d7e0c327c7924000cb77a0092282f27320f72d"
     },
     "exalted-apotheosis": {
       "name": "Exalted Apotheosis",
@@ -73462,7 +75628,7 @@
           "quest": null,
           "title": "Shadow Broadsword of Bane",
           "source": "https://aqwwiki.wikidot.com/shadow-broadsword-of-bane",
-          "npc": "Doom Merge (1)",
+          "npc": null,
           "map": "/join necropolis",
           "location": "Doom Merge (1) - Necropolis",
           "preconditions": [],
@@ -73517,7 +75683,7 @@
           "quest": null,
           "title": "Shadow Daggers of Destruction",
           "source": "https://aqwwiki.wikidot.com/shadow-daggers-of-destruction",
-          "npc": "Doom Merge (1)",
+          "npc": null,
           "map": "/join necropolis",
           "location": "Doom Merge (1) - Necropolis",
           "preconditions": [],
@@ -73564,7 +75730,7 @@
           "quest": null,
           "title": "ShadowScythe of Scourge",
           "source": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge",
-          "npc": "Doom Merge (1)",
+          "npc": null,
           "map": "/join necropolis",
           "location": "Doom Merge (1) - Necropolis",
           "preconditions": [],
@@ -73901,6 +76067,37 @@
       ],
       "sourceHash": "860f3e6deeb7779e4a9fdacc5783ea384fd588042d5764f305d87106e5d586fc"
     },
+    "ominous-aura": {
+      "name": "Ominous Aura",
+      "method": "Merge",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-merge-ominous-aura",
+          "quest": null,
+          "title": "Ominous Aura",
+          "source": "https://aqwwiki.wikidot.com/ominous-aura",
+          "npc": null,
+          "map": "/join necropolis",
+          "location": "Doom Merge (1) - Necropolis",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "kind": "item",
+              "itemId": "corrupt-spirit-orb",
+              "name": "Corrupt Spirit Orb",
+              "quantity": 50,
+              "source": "https://aqwwiki.wikidot.com/ominous-aura",
+              "wikiUrl": "https://aqwwiki.wikidot.com/corrupt-spirit-orb"
+            }
+          ],
+          "reward": "Ominous Aura ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "74f2dbe5a95d98c4ebbdb213871a1e080c003cd587341071517bdd546fa51f4c"
+    },
     "daggers-of-destruction": {
       "name": "Daggers of Destruction",
       "method": "Merge",
@@ -73961,9 +76158,7 @@
           "npc": null,
           "map": "/join necropolis",
           "location": "Doom Merge (1) - Necropolis",
-          "preconditions": [
-            "Must have completed the 'A Loyal Follower' quest for this item to drop."
-          ],
+          "preconditions": [],
           "requirements": [],
           "rows": [
             {
@@ -81007,6 +83202,550 @@
       "tasks": [],
       "sourceUrl": "https://aqwwiki.wikidot.com/zorbak-s-staff-skull"
     },
+    "deathknight-lord-gauntlets": {
+      "name": "DeathKnight Lord Gauntlets",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-deathknight-lord-gauntlets0",
+          "quest": null,
+          "title": "Vaden (1)",
+          "source": "https://aqwwiki.wikidot.com/deathknight-lord-gauntlets",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "DeathKnight Lord Gauntlets",
+              "quantity": null,
+              "monster": "Vaden (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-gauntlets"
+            }
+          ],
+          "reward": "DeathKnight Lord Gauntlets"
+        }
+      ],
+      "sourceHash": "a6256b9985ffa020e5c65ec1cca37d6bed0c518e77881df539d0ac3473428e56"
+    },
+    "deathknight-lord-greaves": {
+      "name": "DeathKnight Lord Greaves",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-deathknight-lord-greaves0",
+          "quest": null,
+          "title": "Vaden (1)",
+          "source": "https://aqwwiki.wikidot.com/deathknight-lord-greaves",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "DeathKnight Lord Greaves",
+              "quantity": null,
+              "monster": "Vaden (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-greaves"
+            }
+          ],
+          "reward": "DeathKnight Lord Greaves"
+        }
+      ],
+      "sourceHash": "8f0082135298dbf102b7427ed2057f9dbc3b95d7c87a94a4dc2fc39fbe97409e"
+    },
+    "deathknight-lord-chest-plate": {
+      "name": "DeathKnight Lord Chest Plate",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-deathknight-lord-chest-plate0",
+          "quest": null,
+          "title": "Vaden (1)",
+          "source": "https://aqwwiki.wikidot.com/deathknight-lord-chest-plate",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "DeathKnight Lord Chest Plate",
+              "quantity": null,
+              "monster": "Vaden (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-chest-plate"
+            }
+          ],
+          "reward": "DeathKnight Lord Chest Plate"
+        }
+      ],
+      "sourceHash": "ae4ba88d5a2b154a62c5bba3027677bfc2d2963ec284565db6031b0bae325f4c"
+    },
+    "deathknight-lord-hauberk": {
+      "name": "DeathKnight Lord Hauberk",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-deathknight-lord-hauberk0",
+          "quest": null,
+          "title": "Vaden (1)",
+          "source": "https://aqwwiki.wikidot.com/deathknight-lord-hauberk",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "DeathKnight Lord Hauberk",
+              "quantity": null,
+              "monster": "Vaden (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-hauberk"
+            }
+          ],
+          "reward": "DeathKnight Lord Hauberk"
+        }
+      ],
+      "sourceHash": "2c5047be7ea6b9be3fcb23c44cb3dbed15dfa907b3f5743b9f7d2e736a4d817c"
+    },
+    "deathknight-lord-boots": {
+      "name": "DeathKnight Lord Boots",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-deathknight-lord-boots0",
+          "quest": null,
+          "title": "Vaden (1)",
+          "source": "https://aqwwiki.wikidot.com/deathknight-lord-boots",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "DeathKnight Lord Boots",
+              "quantity": null,
+              "monster": "Vaden (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/deathknight-lord-boots"
+            }
+          ],
+          "reward": "DeathKnight Lord Boots"
+        }
+      ],
+      "sourceHash": "57732f1244e900dd6c975448c7ebf56486c1ad62fc1c082d321af9b39a915155"
+    },
+    "antititan-supplies": {
+      "name": "AntiTitan Supplies",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-antititan-supplies0",
+          "quest": null,
+          "title": "AntiTitan Corps (Monster) (1)",
+          "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "AntiTitan Supplies",
+              "quantity": null,
+              "monster": "AntiTitan Corps (Monster) (1)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+              "monsterSource": "https://aqwwiki.wikidot.com/antititan-corps-monster-1"
+            }
+          ],
+          "reward": "AntiTitan Supplies"
+        },
+        {
+          "id": "material-drop-antititan-supplies1",
+          "quest": null,
+          "title": "AntiTitan Corps (Monster) (2)",
+          "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "AntiTitan Supplies",
+              "quantity": null,
+              "monster": "AntiTitan Corps (Monster) (2)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+              "monsterSource": "https://aqwwiki.wikidot.com/antititan-corps-monster-2"
+            }
+          ],
+          "reward": "AntiTitan Supplies"
+        },
+        {
+          "id": "material-drop-antititan-supplies2",
+          "quest": null,
+          "title": "Chaorrupted Bandit",
+          "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "AntiTitan Supplies",
+              "quantity": null,
+              "monster": "Chaorrupted Bandit",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+              "monsterSource": "https://aqwwiki.wikidot.com/chaorrupted-bandit"
+            }
+          ],
+          "reward": "AntiTitan Supplies"
+        },
+        {
+          "id": "material-drop-antititan-supplies3",
+          "quest": null,
+          "title": "Chaos Dweller",
+          "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "AntiTitan Supplies",
+              "quantity": null,
+              "monster": "Chaos Dweller",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+              "monsterSource": "https://aqwwiki.wikidot.com/chaos-dweller"
+            }
+          ],
+          "reward": "AntiTitan Supplies"
+        },
+        {
+          "id": "material-drop-antititan-supplies4",
+          "quest": null,
+          "title": "Chaos Wyvern",
+          "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "AntiTitan Supplies",
+              "quantity": null,
+              "monster": "Chaos Wyvern",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+              "monsterSource": "https://aqwwiki.wikidot.com/chaos-wyvern"
+            }
+          ],
+          "reward": "AntiTitan Supplies"
+        },
+        {
+          "id": "material-drop-antititan-supplies5",
+          "quest": null,
+          "title": "Chaotic Beholder",
+          "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "AntiTitan Supplies",
+              "quantity": null,
+              "monster": "Chaotic Beholder",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+              "monsterSource": "https://aqwwiki.wikidot.com/chaotic-beholder"
+            }
+          ],
+          "reward": "AntiTitan Supplies"
+        },
+        {
+          "id": "material-drop-antititan-supplies6",
+          "quest": null,
+          "title": "Corrosive Crawler",
+          "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "AntiTitan Supplies",
+              "quantity": null,
+              "monster": "Corrosive Crawler",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+              "monsterSource": "https://aqwwiki.wikidot.com/corrosive-crawler"
+            }
+          ],
+          "reward": "AntiTitan Supplies"
+        },
+        {
+          "id": "material-drop-antititan-supplies7",
+          "quest": null,
+          "title": "Supply Caravan",
+          "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "AntiTitan Supplies",
+              "quantity": null,
+              "monster": "Supply Caravan",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/antititan-supplies",
+              "monsterSource": "https://aqwwiki.wikidot.com/supply-caravan"
+            }
+          ],
+          "reward": "AntiTitan Supplies"
+        }
+      ],
+      "sourceHash": "028b7d7de926381e6293f212ee541054c4463a4d42f8b85decf355f401ec57f3"
+    },
+    "titanic-fluid": {
+      "name": "Titanic Fluid",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-titanic-fluid0",
+          "quest": null,
+          "title": "Titanic DoomKnight",
+          "source": "https://aqwwiki.wikidot.com/titanic-fluid",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Titanic Fluid",
+              "quantity": null,
+              "monster": "Titanic DoomKnight",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/titanic-fluid",
+              "monsterSource": "https://aqwwiki.wikidot.com/titanic-doomknight"
+            }
+          ],
+          "reward": "Titanic Fluid"
+        },
+        {
+          "id": "material-drop-titanic-fluid1",
+          "quest": null,
+          "title": "Titanic Paladin",
+          "source": "https://aqwwiki.wikidot.com/titanic-fluid",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Titanic Fluid",
+              "quantity": null,
+              "monster": "Titanic Paladin",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/titanic-fluid",
+              "monsterSource": "https://aqwwiki.wikidot.com/titanic-paladin"
+            }
+          ],
+          "reward": "Titanic Fluid"
+        },
+        {
+          "id": "material-drop-titanic-fluid2",
+          "quest": null,
+          "title": "Titanic Vindicator",
+          "source": "https://aqwwiki.wikidot.com/titanic-fluid",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Titanic Fluid",
+              "quantity": null,
+              "monster": "Titanic Vindicator",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/titanic-fluid",
+              "monsterSource": "https://aqwwiki.wikidot.com/titanic-vindicator"
+            }
+          ],
+          "reward": "Titanic Fluid"
+        }
+      ],
+      "sourceHash": "3205cdd8708440cef06495218734af47360910e797830e738e9c64523f92fcdb"
+    },
+    "gold-voucher-200k": {
+      "name": "Gold Voucher 200k",
+      "method": "Shop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-shop-gold-voucher-200k:titan-attack-gear:0",
+          "quest": null,
+          "title": "Gold Voucher 200k",
+          "source": "https://aqwwiki.wikidot.com/gold-voucher-200k",
+          "npc": null,
+          "location": "Titan Attack Gear - Titan Attack · Titan Strike Gear - Titan Strike",
+          "map": null,
+          "shop": "Titan Attack Gear",
+          "purchase": {
+            "amount": 200000,
+            "currency": "Gold"
+          },
+          "preconditions": [
+            "Must have completed the 'Titanic Terror Times Two' quest to access this shop."
+          ],
+          "requirements": [],
+          "rows": [],
+          "reward": "Gold Voucher 200k ×1",
+          "rewardQuantity": 1
+        },
+        {
+          "id": "material-shop-gold-voucher-200k:titan-strike-gear:0",
+          "quest": null,
+          "title": "Gold Voucher 200k",
+          "source": "https://aqwwiki.wikidot.com/gold-voucher-200k",
+          "npc": "Alteon (NPC)",
+          "location": "Titan Strike",
+          "map": "/join titanstrike",
+          "shop": "Titan Strike Gear",
+          "purchase": {
+            "amount": 200000,
+            "currency": "Gold"
+          },
+          "preconditions": [
+            "Must have completed the 'The BIG Finish' quest."
+          ],
+          "requirements": [],
+          "rows": [],
+          "reward": "Gold Voucher 200k ×1",
+          "rewardQuantity": 1
+        }
+      ],
+      "sourceHash": "99ba6cb5b3885758b13e6c816995d305e51de35ea0507aeff09bfd05fd8c2ffd"
+    },
+    "vindicator-titan-s-axe": {
+      "name": "Vindicator Titan's Axe",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-vindicator-titan-s-axe0",
+          "quest": null,
+          "title": "Titanic Vindicator",
+          "source": "https://aqwwiki.wikidot.com/vindicator-titan-s-axe",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Vindicator Titan's Axe",
+              "quantity": null,
+              "monster": "Titanic Vindicator",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/vindicator-titan-s-axe"
+            }
+          ],
+          "reward": "Vindicator Titan's Axe"
+        }
+      ],
+      "sourceHash": "ba3a394db037ccb3d9ddf912a16480483eb3af6c38fa6900a374c3511e2225d3"
+    },
+    "titan-paladin-s-blade": {
+      "name": "Titan Paladin's Blade",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-titan-paladin-s-blade0",
+          "quest": null,
+          "title": "Titanic Paladin",
+          "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blade",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Titan Paladin's Blade",
+              "quantity": null,
+              "monster": "Titanic Paladin",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/titan-paladin-s-blade"
+            }
+          ],
+          "reward": "Titan Paladin's Blade"
+        }
+      ],
+      "sourceHash": "fc16ca383a3a4b8c578eb07e32bd78ad1d4ed680c7c712cdffed8998ec10b725"
+    },
+    "destroyer-essence": {
+      "name": "Destroyer Essence",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-destroyer-essence0",
+          "quest": null,
+          "title": "Titanic Destroyer (Monster)",
+          "source": "https://aqwwiki.wikidot.com/destroyer-essence",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Destroyer Essence",
+              "quantity": null,
+              "monster": "Titanic Destroyer (Monster)",
+              "map": "/join titanstrike",
+              "source": "https://aqwwiki.wikidot.com/destroyer-essence"
+            }
+          ],
+          "reward": "Destroyer Essence"
+        }
+      ],
+      "sourceHash": "564c99feb4e2af6d548fb74e39de6c4b579d809b6d8f3064265ae89922e0fb81"
+    },
+    "titanic-destroyer-blade": {
+      "name": "Titanic Destroyer Blade",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-titanic-destroyer-blade0",
+          "quest": null,
+          "title": "Titanic Destroyer (Monster)",
+          "source": "https://aqwwiki.wikidot.com/titanic-destroyer-blade",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Titanic Destroyer Blade",
+              "quantity": null,
+              "monster": "Titanic Destroyer (Monster)",
+              "map": "/join titanstrike",
+              "source": "https://aqwwiki.wikidot.com/titanic-destroyer-blade"
+            }
+          ],
+          "reward": "Titanic Destroyer Blade"
+        }
+      ],
+      "sourceHash": "f7db06cf30b22c5c922d62084ea7262834c8c0c94d29e299d3d382d512748f6c"
+    },
+    "heroic-titan-s-greatsword": {
+      "name": "Heroic Titan's Greatsword",
+      "method": "Quest",
+      "questIds": [
+        "warlic-s-quests:topple-some-titans"
+      ],
+      "tasks": [],
+      "sourceUrl": "https://aqwwiki.wikidot.com/heroic-titan-s-greatsword"
+    },
+    "titanic-tincture": {
+      "name": "Titanic Tincture",
+      "method": "Drop",
+      "questIds": [],
+      "tasks": [
+        {
+          "id": "material-drop-titanic-tincture0",
+          "quest": null,
+          "title": "Titan Drakath (Monster)",
+          "source": "https://aqwwiki.wikidot.com/titanic-tincture",
+          "preconditions": [],
+          "requirements": [],
+          "rows": [
+            {
+              "name": "Titanic Tincture",
+              "quantity": null,
+              "monster": "Titan Drakath (Monster)",
+              "map": null,
+              "source": "https://aqwwiki.wikidot.com/titanic-tincture"
+            }
+          ],
+          "reward": "Titanic Tincture"
+        }
+      ],
+      "sourceHash": "29f30885792e74560cd6731e4fb75aa469b6da53e94f0de0ae72a59475a8dda0"
+    },
     "dual-blinding-light-of-destiny": {
       "name": "Dual Blinding Light of Destiny",
       "method": "Merge",
@@ -83753,7 +86492,6 @@
     "legion-undead-visor": "https://aqwwiki.wikidot.com/legion-undead-visor",
     "acquiescence": "https://aqwwiki.wikidot.com/acquiescence",
     "shadowbow-of-the-shadows": "https://aqwwiki.wikidot.com/shadowbow-of-the-shadows",
-    "doomknight-weapon-kit": "https://aqwwiki.wikidot.com/doomknight-weapon-kit",
     "shadow-broadsword-of-bane": "https://aqwwiki.wikidot.com/shadow-broadsword-of-bane",
     "shadow-daggers-of-destruction": "https://aqwwiki.wikidot.com/shadow-daggers-of-destruction",
     "shadowscythe-of-scourge": "https://aqwwiki.wikidot.com/shadowscythe-of-scourge",
@@ -83916,6 +86654,7 @@
     "mega-shadow-hunt-medal": "https://aqwwiki.wikidot.com/gravelyn-s-quests#ShadowBattleon",
     "dark-birthday-gift": "https://aqwwiki.wikidot.com/dage-the-evil-s-quests#6",
     "brightfall-light": "https://aqwwiki.wikidot.com/brightfall-light",
+    "unidentified-10": "https://aqwwiki.wikidot.com/unidentified-10",
     "chickencow-claw": "https://aqwwiki.wikidot.com/chickencow-claw",
     "cysero-s-doom-sock": "https://aqwwiki.wikidot.com/cysero-s-doom-sock",
     "death-s-cursed-hourglass": "https://aqwwiki.wikidot.com/death-s-cursed-hourglass",
@@ -83923,6 +86662,21 @@
     "sir-ver-s-broken-power-button": "https://aqwwiki.wikidot.com/sir-ver-s-broken-power-button",
     "unholy-wasabi": "https://aqwwiki.wikidot.com/unholy-wasabi",
     "zorbak-s-staff-skull": "https://aqwwiki.wikidot.com/zorbak-s-staff-skull",
+    "deathknight-lord-gauntlets": "https://aqwwiki.wikidot.com/deathknight-lord-gauntlets",
+    "deathknight-lord-greaves": "https://aqwwiki.wikidot.com/deathknight-lord-greaves",
+    "deathknight-lord-chest-plate": "https://aqwwiki.wikidot.com/deathknight-lord-chest-plate",
+    "deathknight-lord-hauberk": "https://aqwwiki.wikidot.com/deathknight-lord-hauberk",
+    "deathknight-lord-boots": "https://aqwwiki.wikidot.com/deathknight-lord-boots",
+    "bonecastle-amulet": "https://aqwwiki.wikidot.com/bonecastle-amulet",
+    "antititan-supplies": "https://aqwwiki.wikidot.com/antititan-supplies",
+    "titanic-fluid": "https://aqwwiki.wikidot.com/titanic-fluid",
+    "gold-voucher-200k": "https://aqwwiki.wikidot.com/gold-voucher-200k",
+    "vindicator-titan-s-axe": "https://aqwwiki.wikidot.com/vindicator-titan-s-axe",
+    "titan-paladin-s-blade": "https://aqwwiki.wikidot.com/titan-paladin-s-blade",
+    "destroyer-essence": "https://aqwwiki.wikidot.com/destroyer-essence",
+    "titanic-destroyer-blade": "https://aqwwiki.wikidot.com/titanic-destroyer-blade",
+    "heroic-titan-s-greatsword": "https://aqwwiki.wikidot.com/heroic-titan-s-greatsword",
+    "titanic-tincture": "https://aqwwiki.wikidot.com/titanic-tincture",
     "basic-wise-tonic-x3-wise-tonic-x2-life-potion": "https://aqwwiki.wikidot.com/basic-wise-tonic",
     "dual-blinding-light-of-destiny": "https://aqwwiki.wikidot.com/dual-blinding-light-of-destiny",
     "dual-hollowborn-oblivion-blade": "https://aqwwiki.wikidot.com/dual-hollowborn-oblivion-blade",

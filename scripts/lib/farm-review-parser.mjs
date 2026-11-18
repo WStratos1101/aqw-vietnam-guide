@@ -113,32 +113,22 @@ export function parseFarmReviewPage(html, url) {
       }
     }
     const locationBlock = text.match(/^Locations?:[ \t]*([^]*?)(?=^Price:)/im)?.[1]?.trim() || null;
-    const priceNode=labelNode(body,'Price');
-    const acquisitionLinks=priceNode?[...priceNode.parentElement.querySelectorAll('a[href]')].map(a=>({name:a.textContent.trim(),url:new URL(a.getAttribute('href'),url).href})):[];
-    const locationNode = labelNode(body, "Location") || labelNode(body, "Locations");
-    const locationLinks = [];
-    // Collapsible location lists may be siblings of the Location paragraph.
-    // Stop at Price so ingredient and "also see" links never become locations.
-    let inLocation = false;
-    for (const node of body.querySelectorAll("strong,a[href]")) {
-      if (node === locationNode) { inLocation = true; continue; }
-      if (!inLocation) continue;
-      if (node.tagName === "STRONG" && /^(?:Price|Note|Notes|Level|HP|Total HP|Attacks|Type|Description|Sellback):/.test(node.textContent.trim())) break;
-      if (node.tagName === "A") locationLinks.push({ name: node.textContent.trim(), url: new URL(node.getAttribute("href"), url).href });
-    }
-    if (locationNode?.parentElement.tagName === "P") {
-      const container = locationNode.parentElement;
-      let started = false;
-      for (const node of container.childNodes) {
-        if (node === locationNode) { started = true; continue; }
-        if (!started) continue;
-        if (node.nodeType === 1 && node.tagName === "STRONG" && /^(Price|Sellback):/.test(node.textContent)) break;
-        if (node.nodeType === 1) for (const a of [ ...(node.tagName === "A" ? [node] : []), ...node.querySelectorAll("a[href]") ])
-          locationLinks.push({ name:a.textContent.trim(), url:new URL(a.getAttribute("href"),url).href });
+    // Field links are bounded by the next label, even when all fields share
+    // one paragraph. A following Notes/Also-see list is never a location.
+    const boundedLinks = (label) => {
+      const start = labelNode(body, label);
+      const links = [];
+      let active = false;
+      for (const node of body.querySelectorAll("strong,a[href]")) {
+        if (node === start) { active = true; continue; }
+        if (!active) continue;
+        if (node.tagName === "STRONG" && /^(?:Price|Locations?|Notes?|Level|HP|Total HP|Attacks|Type|Description|Sellback|Rarity|Base Damage|Merge the following)(?::|$)/i.test(node.textContent.trim())) break;
+        if (node.tagName === "A") links.push({ name: node.textContent.trim(), url: new URL(node.getAttribute("href"), url).href });
       }
-      const list = listAfter(locationNode);
-      if (list) for (const a of list.querySelectorAll("a[href]")) locationLinks.push({ name:a.textContent.trim(), url:new URL(a.getAttribute("href"),url).href });
-    }
+      return links;
+    };
+    const acquisitionLinks = boundedLinks("Price");
+    const locationLinks = labelNode(body, "Location") ? boundedLinks("Location") : boundedLinks("Locations");
     const mergeLabels = [...body.querySelectorAll("strong")].filter(el => /^Merge the following:?$/.test(el.textContent.trim()));
     const mergeLists = [...new Set([
       ...mergeLabels.map(listAfter),

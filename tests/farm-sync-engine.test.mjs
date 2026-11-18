@@ -68,3 +68,14 @@ test('selected batch never requests unrelated pending URLs or rewrites their sta
  assert.deepEqual(calls,[row('selected').url]);assert.deepEqual(engine.manifest[untouched.url],untouched);
  assert.equal(JSON.parse(fs.readFileSync(path.join(directory,'manifest.json')))[untouched.url].syncStatus,'PENDING');
 });
+
+test('rejected redirect retains destination/status and never follows the target',async()=>{
+ const {request,failure}=await import('../scripts/lib/farm-sync-engine.mjs');
+ const originalFetch=globalThis.fetch,seen=[];
+ globalThis.fetch=async url=>{seen.push(url);return new Response(null,{status:302,headers:{location:'https://unexpected.example/item'}});};
+ try{
+  await assert.rejects(request('https://aqwwiki.wikidot.com/fixture',{timeout:1000}),error=>{
+   const result=failure(error);assert.equal(result.status,'RETRY_LATER');assert.equal(result.redirectTarget,'https://unexpected.example/item');assert.equal(result.redirectFrom,'https://aqwwiki.wikidot.com/fixture');assert.equal(result.redirectStatus,302);return true;
+  });assert.deepEqual(seen,['https://aqwwiki.wikidot.com/fixture']);
+ }finally{globalThis.fetch=originalFetch;}
+});
