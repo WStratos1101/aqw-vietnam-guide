@@ -320,8 +320,14 @@ try {
           ['.coming-soon-page a[href="/"]'],
         );
         await waitFor(
-          'return location.pathname === "/"',
+          'return location.pathname === "/" && !!document.querySelector(".hero") && !document.querySelector(".coming-soon-page")',
           "Coming-soon recovery failed",
+        );
+        await command("POST", "/back", {});
+        await waitFor(
+          'return location.pathname === arguments[0] && !!document.querySelector(".coming-soon-page")',
+          "Coming-soon history recovery failed",
+          [route],
         );
       });
     }

@@ -42,7 +42,41 @@ test('both declared feature gates render the exact recovery link targeted by Saf
    assert.equal(window.document.querySelector('h1').textContent,'Thông tin đang được cập nhật');
    const link=run(window.document,get('.coming-soon-page a[href="/"]'));
    assert.equal(link.getAttribute('href'),'/');assert.equal(link.textContent,'Về trang chủ');
+   assert.ok(link.hasAttribute('data-native-navigation'));
   }
+ }finally{await window.happyDOM.close();}
+});
+
+test('the visible recovery link keeps native navigation while ordinary home links retain SPA history',async()=>{
+ const app=ts.createSourceFile('App.tsx',fs.readFileSync('src/App.tsx','utf8'),ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
+ let handler;
+ function collect(node){
+  if(ts.isVariableDeclaration(node)&&node.name.getText(app)==='click')handler=node.initializer.getText(app);
+  ts.forEachChild(node,collect);
+ }
+ collect(app);assert.ok(handler);
+ const compiled=ts.transpileModule(`const click=${handler};`,{compilerOptions:{target:ts.ScriptTarget.ES2022}}).outputText;
+ const window=new Window({url:'http://localhost/huong-dan'});
+ const loads=[],pushes=[],renders=[];
+ try{
+  const click=new Function('location','URL','loadRouteViews','history','setPathname','window','isComingSoon','findLoreRegion',`${compiled};return click;`)(
+   window.location,window.URL,async path=>loads.push(path),{pushState:(...args)=>pushes.push(args)},path=>renders.push(path),{scrollTo(){}},isComingSoon,()=>undefined,
+  );
+  window.document.body.innerHTML='<a class="button" href="/" data-native-navigation>Về trang chủ</a><a class="brand" href="/">Trang chủ</a>';
+  const recovery=window.document.querySelector('.button');
+  const event=new window.MouseEvent('click',{bubbles:true,cancelable:true});
+  recovery.addEventListener('click',click);
+  // Dispatch to the handler without asking happy-dom to perform a document navigation.
+  const stopped=new Promise(resolve=>recovery.addEventListener('click',e=>{resolve(e.defaultPrevented);e.preventDefault();}));
+  recovery.dispatchEvent(event);
+  assert.equal(await stopped,false,'SPA must leave the recovery link default action intact');
+  assert.deepEqual(loads,[]);assert.deepEqual(pushes,[]);assert.deepEqual(renders,[]);
+  const ordinary=new window.MouseEvent('click',{cancelable:true});
+  Object.defineProperty(ordinary,'target',{value:window.document.querySelector('.brand')});
+  await click(ordinary);
+  assert.equal(ordinary.defaultPrevented,true);
+  assert.deepEqual(loads,['/']);assert.deepEqual(renders,['/']);
+  assert.deepEqual(pushes,[[{aqwPrevious:'/huong-dan'},'','/']]);
  }finally{await window.happyDOM.close();}
 });
 

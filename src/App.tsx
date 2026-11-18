@@ -124,7 +124,7 @@ export function App() {
       )
         return;
       const link = (event.target as Element).closest?.("a");
-      if (!link || link.target || link.hasAttribute("download")) return;
+      if (!link || link.target || link.hasAttribute("download") || link.hasAttribute("data-native-navigation")) return;
       const url = new URL(link.href, location.href);
       if (
         url.origin !== location.origin ||
