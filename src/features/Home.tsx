@@ -1,3 +1,4 @@
+import { LoreShowcase } from "./LoreShowcase";
 import classes from "../content/home-starters.json";
 import poster from "../content/home-poster.json";
 import { useState } from "react";
@@ -211,33 +212,7 @@ export function Home() {
         </div>
       </section>
       <LoreAtlas />
-      <section className="atlas chapter">
-        <div className="section-heading">
-          <h2>
-            Mở rộng
-            <br />
-            hành trang.
-          </h2>
-          <p>Tra cứu nhanh, rồi trở lại cuộc phiêu lưu.</p>
-        </div>
-        <div className="atlas-links">
-          <a href="/trang-bi">
-            <h3>Trang bị</h3>
-            <span>Nguồn sở hữu & điều kiện</span>
-            <ArrowUpRight />
-          </a>
-          <a href="/he-thong">
-            <h3>Hệ thống</h3>
-            <span>Enhancement & cơ chế game</span>
-            <ArrowUpRight />
-          </a>
-          <a href="/cot-truyen">
-            <h3>Thế giới Lore</h3>
-            <span>Các chương truyện & lối đi</span>
-            <ArrowUpRight />
-          </a>
-        </div>
-      </section>
+      <LoreShowcase />
       <section className="updates chapter">
         <div className="section-heading">
           <h2>Hành trình</h2>

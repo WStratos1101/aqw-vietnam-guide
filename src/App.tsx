@@ -15,6 +15,7 @@ import { NativeGuide } from "./features/NativeGuide";
 import { resolveRoute } from "./lib/routes";
 import React, { useEffect, useState, Component, type ReactNode } from "react";
 import { Header, Footer, Breadcrumb, disclaimer } from "./components/Shell";
+import "./styles/prose-justify.css";
 import { Home } from "./features/Home";
 import { LoreRegionPage } from "./features/LoreAtlas";
 import { findLoreRegion } from "./content/lore-regions";

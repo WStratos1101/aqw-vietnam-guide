@@ -1,0 +1,12 @@
+/* AQWVN: content prose only. Headings, navigation, UI labels and tables are not aligned by this rule. */
+main :is(p,[data-prose-paragraph],.prose-paragraph):not(:where(
+  header *,footer *,nav *,button *,[role="button"] *,[role="tab"] *,
+  table *,figcaption *,form *,label *,[role="status"] *,[role="alert"] *,
+  [data-no-justify], .no-justify, .no-justify *, .caption, .eyebrow,
+  .badge, .label, .chip, .tag, .status, .nav-label, .button, .button *,
+  .lore-map-caption, .lore-showcase-credit
+)) {
+  text-align: justify !important;
+  text-align-last: start !important;
+  text-justify: inter-word;
+}
