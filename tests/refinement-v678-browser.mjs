@@ -119,10 +119,10 @@ try {
           /Wiki ghi|Theo Wiki|Wiki cho biết|Nguồn ghi rằng|Theo dữ liệu|Đối chiếu Wiki/,
         );
         await expect(page.locator(".footer")).toContainText(
-          "AQW Vietnam Guide thuộc bản quyền của Guild AQW Vietnam Collectors",
+          "Bản quyền thuộc về Guild AQW Vietnam Collectors.",
         );
         await expect(page.locator(".footer")).toContainText(
-          "Bản quyền website thuộc về W.Stratos",
+          "Bản quyền Website thuộc về W.Stratos",
         );
         await expect(page.locator(".footer")).toContainText(
           "Version " + version,

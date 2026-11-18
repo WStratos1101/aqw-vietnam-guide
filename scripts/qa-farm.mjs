@@ -129,8 +129,10 @@ await runQa(
           },
         );
         await step(
-          "group navigation, category counts, keyboard and browser history",
+          "group navigation (375px on mobile), category counts, keyboard and browser history",
           async () => {
+            if (width === 390)
+              await page.setViewportSize({ width: 375, height: 1000 });
             await navigate(
               "/farm?group=awe&category=weapon&item=blade-of-awe",
               '[data-item-id="blade-of-awe"]',
@@ -191,7 +193,13 @@ await runQa(
             await expect(
               page.locator(".fv2-groups button[aria-pressed=true]"),
             ).toContainText("GOOD");
-            await screenshot("group-selector");
+            expect(
+              await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+              "Faction controls must fit the viewport",
+            ).toBe(true);
+            await screenshot(width === 390 ? "group-selector-375px" : "group-selector");
+            if (width === 390)
+              await page.setViewportSize({ width, height: 1000 });
           },
         );
         await step("Malgor quest isolation, seven direct materials and responsive Light/Dark guide", async () => {

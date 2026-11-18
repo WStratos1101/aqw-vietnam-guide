@@ -1,7 +1,7 @@
 {
   "browser": "Safari via Apple safaridriver",
   "base": "http://127.0.0.1:4173",
-  "startedAt": "2026-11-18T00:59:54.631Z",
+  "startedAt": "2026-11-18T01:14:56.206Z",
   "status": "failed",
   "checks": [],
   "viewports": [
@@ -41,7 +41,6 @@
     "qa/safari/home-375-08.png",
     "qa/safari/home-375-09.png",
     "qa/safari/home-375-10.png",
-    "qa/safari/home-375-11.png",
     "qa/safari/home-768-01.png",
     "qa/safari/home-768-02.png",
     "qa/safari/home-768-03.png",
@@ -65,7 +64,8 @@
     "qa/safari/home-1920-05.png",
     "qa/safari/home-1920-06.png",
     "qa/safari/home-1920-07.png",
-    "qa/safari/home-1920-08.png"
+    "qa/safari/home-1920-08.png",
+    "qa/safari/home-1920-09.png"
   ],
   "limitations": [],
   "capabilities": {
@@ -88,7 +88,1280 @@
     "platformName": "macOS",
     "safari:diagnose": false
   },
-  "error": "Overflow at 375\n\ntrue !== false\n",
+  "layoutDiagnostics": [
+    {
+      "route": "/",
+      "width": 375,
+      "overflowing": []
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflowing": [
+        {
+          "className": "",
+          "width": 352.0050048828125,
+          "tag": "IMG",
+          "right": 771.1908569335938
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflowing": [
+        {
+          "className": "",
+          "width": 629.1124877929688,
+          "tag": "IMG",
+          "right": 1444.9483642578125
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "overflowing": [
+        {
+          "className": "",
+          "width": 841.103271484375,
+          "tag": "IMG",
+          "right": 1927.739990234375
+        }
+      ]
+    },
+    {
+      "route": "/ultra-boss",
+      "width": 375,
+      "overflowing": [
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "ultra-boss-card",
+          "width": 540.203125,
+          "tag": "A",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-art",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-game-art ",
+          "width": 540.203125,
+          "tag": "IMG",
+          "right": 560.203125
+        },
+        {
+          "className": "ultra-card-copy",
+          "width": 540.203125,
+          "tag": "DIV",
+          "right": 560.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "H2",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-access",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-reward",
+          "width": 500.203125,
+          "tag": "P",
+          "right": 540.203125
+        },
+        {
+          "className": "ultra-card-action",
+          "width": 500.203125,
+          "tag": "SPAN",
+          "right": 540.203125
+        },
+        {
+          "className": "lucide lucide-arrow-right",
+          "width": 18,
+          "tag": "svg",
+          "right": 540.203125
+        },
+        {
+          "className": "",
+          "width": 10.5,
+          "tag": "path",
+          "right": 536.453125
+        },
+        {
+          "className": "",
+          "width": 5.25,
+          "tag": "path",
+          "right": 536.453125
+        }
+      ]
+    }
+  ],
+  "error": "Overflow at 375 on /ultra-boss: [{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"ultra-boss-card\",\"width\":540.203125,\"tag\":\"A\",\"right\":560.203125},{\"className\":\"ultra-card-art\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"ultra-game-art \",\"width\":540.203125,\"tag\":\"IMG\",\"right\":560.203125},{\"className\":\"ultra-card-copy\",\"width\":540.203125,\"tag\":\"DIV\",\"right\":560.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"H2\",\"right\":540.203125},{\"className\":\"\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-access\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-reward\",\"width\":500.203125,\"tag\":\"P\",\"right\":540.203125},{\"className\":\"ultra-card-action\",\"width\":500.203125,\"tag\":\"SPAN\",\"right\":540.203125},{\"className\":\"lucide lucide-arrow-right\",\"width\":18,\"tag\":\"svg\",\"right\":540.203125},{\"className\":\"\",\"width\":10.5,\"tag\":\"path\",\"right\":536.453125},{\"className\":\"\",\"width\":5.25,\"tag\":\"path\",\"right\":536.453125}]\n\ntrue !== false\n",
   "driverLog": "",
-  "finishedAt": "2026-11-18T01:00:32.853Z"
+  "finishedAt": "2026-11-18T01:15:33.653Z"
 }

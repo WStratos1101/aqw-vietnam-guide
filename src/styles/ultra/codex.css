@@ -133,6 +133,7 @@
 }
 .ultra-boss-card {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   text-decoration: none;
   background: var(--u-panel);
@@ -167,6 +168,8 @@
   transform: scale(1.035);
 }
 .ultra-card-copy {
+  min-width: 0;
+  overflow-wrap: anywhere;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -1236,7 +1239,7 @@
 }
 @media (max-width: 500px) {
   .ultra-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .ultra-card-art {
     aspect-ratio: 1.5;
