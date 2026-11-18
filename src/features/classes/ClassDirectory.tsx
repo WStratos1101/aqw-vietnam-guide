@@ -150,7 +150,7 @@ export function ClassDirectory() {
             >
               <option value="all">Mọi vai trò</option>
               {classRoleOptions.map((r) => (
-                <option key={r}>{r}</option>
+                <option key={r} value={r}>{r}</option>
               ))}
               <option value="unknown">Chưa phân loại</option>
             </select>

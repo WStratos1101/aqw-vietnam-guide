@@ -12917,7 +12917,7 @@ function ClassDirectory() {
               onChange: (e) => update(setRole, e.target.value),
               children: [
                 /* @__PURE__ */ jsx9("option", { value: "all", children: "M\u1ECDi vai tr\xF2" }),
-                class_roles_default.map((r) => /* @__PURE__ */ jsx9("option", { children: r }, r)),
+                class_roles_default.map((r) => /* @__PURE__ */ jsx9("option", { value: r, children: r }, r)),
                 /* @__PURE__ */ jsx9("option", { value: "unknown", children: "Ch\u01B0a ph\xE2n lo\u1EA1i" })
               ]
             }

@@ -105,7 +105,18 @@ test("Directory filters and acquisition tracker survive skill-system changes", a
   assert.equal(host.querySelectorAll(".class-card").length, 24);
   const families = await read("src/content/classes/calendar-families.json");
   const calendarAlternates = new Set(families.flatMap(f => f.variants.map(v => v.classId).filter(id => id !== f.primaryClassId)));
+  // Use Safari's selector against the rendered component, not a hand-built fixture.
+  const supportOption=host.querySelector('select[aria-label="Vai trò"] option[value=Support]');
+  assert.ok(supportOption, 'Safari must find the visible Support option by its explicit value');
+  assert.equal(supportOption.textContent, 'Support');
   const roleSelect=host.querySelector('.class-filters select');
+  await act(async()=>{roleSelect.value=supportOption.value;roleSelect.dispatchEvent(new Event('change',{bubbles:true}));});
+  assert.equal(roleSelect.value, 'Support');
+  const supportCount=catalog.filter(c => c.role.includes('Support') && !calendarAlternates.has(c.id)).length;
+  assert.ok(supportCount>0);
+  assert.equal(host.querySelectorAll('.class-card').length, Math.min(24, supportCount));
+  assert.ok([...host.querySelectorAll('.class-card')].every(card => card.textContent.includes('Support')));
+  assert.match(host.querySelector('.class-results').textContent, new RegExp(`^${supportCount} hồ sơ phù hợp`));
   await act(async()=>{roleSelect.value='Tank';roleSelect.dispatchEvent(new Event('change',{bubbles:true}));});
   assert.equal(
     host.querySelectorAll(".class-card").length,
