@@ -77,6 +77,29 @@ test("Class selection updates name and verified icon without retaining previous 
   const groups = [...host.querySelectorAll(".ability-groups button")];
   assert.ok(groups.some((g) => g.textContent.includes("Rank Passive")));
 });
+test("Directory search and empty-state reset stay synchronized", async () => {
+  await act(async () => root.render(createElement(ClassDirectory)));
+  const input = host.querySelector('.class-search input');
+  const setValue = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+  const search = async value => {
+    await act(async () => {
+      setValue.call(input, value);
+      input.dispatchEvent(new window.Event('input', {bubbles: true}));
+    });
+  };
+  await search('archpaladin');
+  assert.equal(host.querySelectorAll('.class-card').length, 1);
+  assert.match(host.querySelector('.class-card h2').textContent, /ArchPaladin/);
+  await search('zzzzzzzz');
+  assert.equal(host.querySelectorAll('.class-card').length, 0);
+  assert.ok(host.querySelector('.class-empty'));
+  await click(host.querySelector('.class-empty button'));
+  assert.equal(input.value, '');
+  assert.equal(host.querySelector('.class-empty'), null);
+  assert.equal(host.querySelectorAll('.class-card').length, 24);
+  assert.match(host.querySelector('.class-results').textContent, /Trang 1\//);
+  await act(async () => root.render(createElement('div')));
+});
 test("Directory filters and acquisition tracker survive skill-system changes", async () => {
   await act(async () => root.render(createElement(ClassDirectory)));
   assert.equal(host.querySelectorAll(".class-card").length, 24);

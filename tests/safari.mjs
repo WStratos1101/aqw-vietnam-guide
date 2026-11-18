@@ -71,6 +71,28 @@ async function navigate(route) {
   );
   await pause(200);
 }
+async function classDirectoryState() {
+  return execute(`
+    const input = document.querySelector('.class-search input');
+    const reset = document.querySelector('.class-empty button');
+    const rect = reset?.getBoundingClientRect();
+    const hit = rect && document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2);
+    return {
+      route: location.pathname + location.search,
+      width: innerWidth, height: innerHeight,
+      query: input?.value ?? null,
+      cards: document.querySelectorAll('.class-card').length,
+      results: document.querySelector('.class-results')?.textContent ?? null,
+      empty: !!document.querySelector('.class-empty'),
+      reset: reset ? {text: reset.textContent, disabled: reset.disabled,
+        rect: {x: rect.x, y: rect.y, width: rect.width, height: rect.height},
+        hit: hit ? {tag: hit.tagName, className: hit.className, text: hit.textContent?.slice(0, 160)} : null,
+        hitIsReset: hit === reset || reset.contains(hit)} : null,
+      activeElement: document.activeElement?.outerHTML.slice(0, 400),
+      error: document.querySelector('.message-page')?.textContent ?? null
+    };
+  `);
+}
 async function check(name, fn) {
   const context = await execute(
     "return {route:location.pathname+location.search, width:innerWidth, height:innerHeight}",
@@ -80,11 +102,21 @@ async function check(name, fn) {
     report.checks.push({ name, status: "pass", ...context });
     console.log("PASS", name);
   } catch (error) {
+    // Capture the actual failed UI without replacing the original error.
+    let diagnostics, diagnosticError;
+    try {
+      diagnostics = await classDirectoryState();
+      await screenshot(`failure-${report.checks.length + 1}`);
+    } catch (captureError) {
+      diagnosticError = captureError.message;
+    }
     report.checks.push({
       name,
       status: "failed",
       ...context,
       error: error.message,
+      diagnostics,
+      diagnosticError,
     });
     throw error;
   }
@@ -353,6 +385,7 @@ try {
       'return !!document.querySelector(".class-empty")',
       "Class empty state missing",
     );
+    report.classResetBeforeClick = await classDirectoryState();
     await click('return document.querySelector(".class-empty button")');
     await waitFor(
       'return document.querySelectorAll(".class-card").length>1 && document.querySelector(".class-search input").value === ""',

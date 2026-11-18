@@ -99,6 +99,29 @@ test('old home-link script demonstrates the division/NaN failure that arguments 
  assert.ok(Number.isNaN(selector));
 });
 
+test('Safari reset diagnostics distinguish stale input, missing cards and blocked reset controls', async()=>{
+ const helper=source.statements.find(node=>ts.isFunctionDeclaration(node)&&node.name?.text==='classDirectoryState');
+ assert.ok(helper);
+ const window=new Window({url:'http://localhost/class'});
+ try{
+  const document=window.document;
+  document.body.innerHTML='<label class="class-search"><input value="zzzzzzzz"></label><div class="class-results">0 hồ sơ phù hợp</div><section class="class-empty"><button>Xóa bộ lọc</button></section>';
+  const reset=document.querySelector('button');
+  document.elementFromPoint=()=>reset;
+  const snapshot=new Function('execute',helper.getText(source)+';return classDirectoryState;')(async script=>
+   new Function('document','location','innerWidth','innerHeight',script)(document,window.location,1440,1000));
+  const before=await snapshot();
+  assert.equal(before.route,'/class');assert.equal(before.query,'zzzzzzzz');assert.equal(before.cards,0);assert.equal(before.empty,true);assert.equal(before.reset.hitIsReset,true);
+  document.elementFromPoint=()=>document.body;
+  assert.equal((await snapshot()).reset.hitIsReset,false);
+  document.querySelector('.class-empty').remove();
+  document.querySelector('input').value='';
+  document.body.insertAdjacentHTML('beforeend','<a class="class-card"></a><a class="class-card"></a>');
+  const after=await snapshot();
+  assert.equal(after.query,'');assert.equal(after.cards,2);assert.equal(after.empty,false);assert.equal(after.reset,null);
+ }finally{await window.happyDOM.close();}
+});
+
 test('Class selectors and the wait helper forward quoted aria-label values as arguments',async()=>{
  const selected=[];let helper;
  function collect(node){
