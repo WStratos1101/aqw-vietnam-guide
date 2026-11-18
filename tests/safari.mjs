@@ -37,11 +37,12 @@ async function request(method, url, body) {
 }
 const command = (method, url, body) =>
   request(method, `/session/${session}${url}`, body);
+// Send selectors via args so CSS quotes never become JavaScript string delimiters.
 const execute = (script, args = []) =>
   command("POST", "/execute/sync", { script, args });
-async function waitFor(script, message) {
+async function waitFor(script, message, args = []) {
   for (let i = 0; i < 40; i++) {
-    if (await execute(script)) return;
+    if (await execute(script, args)) return;
     await pause(100);
   }
   throw Error(message);
@@ -289,7 +290,8 @@ try {
     });
     await check("TOC anchor", async () => {
       await click(
-        'return document.querySelector("a[href=\"#progress-title\"]")',
+        "return document.querySelector(arguments[0])",
+        ['a[href="#progress-title"]'],
       );
       assert.equal(await execute("return location.hash"), "#progress-title");
     });
@@ -314,7 +316,8 @@ try {
           "Thông tin đang được cập nhật",
         );
         await click(
-          'return document.querySelector(".coming-soon-page a[href=\"/\"]")',
+          "return document.querySelector(arguments[0])",
+          ['.coming-soon-page a[href="/"]'],
         );
         await waitFor(
           'return location.pathname === "/"',
@@ -352,11 +355,13 @@ try {
   });
   await check("Current Class role filter", async () => {
     await click(
-      'return document.querySelector("select[aria-label=\"Vai trò\"] option[value=Support]")',
+      "return document.querySelector(arguments[0])",
+      ['select[aria-label="Vai trò"] option[value=Support]'],
     );
     await waitFor(
-      'return document.querySelector("select[aria-label=\"Vai trò\"]").value === "Support" && document.querySelectorAll(".class-card").length>0 && Array.from(document.querySelectorAll(".class-card")).every(e=>e.textContent.includes("Support"))',
+      'return document.querySelector(arguments[0]).value === "Support" && document.querySelectorAll(".class-card").length>0 && Array.from(document.querySelectorAll(".class-card")).every(e=>e.textContent.includes("Support"))',
       "Support role filter failed",
+      ['select[aria-label="Vai trò"]'],
     );
   });
   await navigate("/class/archpaladin-ap");
@@ -391,7 +396,8 @@ try {
         "Class did not reload",
       );
       await click(
-        'return document.querySelector(".class-inspection-tabs button[aria-label=\"CÁCH LẤY CLASS\"]")',
+        "return document.querySelector(arguments[0])",
+        ['.class-inspection-tabs button[aria-label="CÁCH LẤY CLASS"]'],
       );
       await click(
         'return document.querySelector(".acquisition-unlock-route > summary")',
@@ -509,7 +515,8 @@ try {
     );
     await click('return document.querySelector(".menu-button")');
     await click(
-      'return document.querySelector("#mobile-nav a[href=\"/class\"]")',
+      "return document.querySelector(arguments[0])",
+      ['#mobile-nav a[href="/class"]'],
     );
     await waitFor(
       'return location.pathname === "/class" && !!document.querySelector(".class-search input") && !document.querySelector("#mobile-nav")',
@@ -550,7 +557,8 @@ try {
       );
       assert.equal(
         await execute(
-          'return document.querySelectorAll("article a[href*=\"docs.google.com/document\"]:not(.sources a)").length',
+          "return document.querySelectorAll(arguments[0]).length",
+          ['article a[href*="docs.google.com/document"]:not(.sources a)'],
         ),
         0,
       );
@@ -576,7 +584,8 @@ try {
   await check("Ultra directory and client navigation", async () => {
     await execute('window.__aqwNavigationProbe="alive"');
     await click(
-      'return document.querySelector("a[href=\"/ultra-boss/ultra-dage\"]")',
+      "return document.querySelector(arguments[0])",
+      ['a[href="/ultra-boss/ultra-dage"]'],
     );
     await waitFor(
       'return location.pathname==="/ultra-boss/ultra-dage" && !!document.querySelector(".ultra-inspect")',
