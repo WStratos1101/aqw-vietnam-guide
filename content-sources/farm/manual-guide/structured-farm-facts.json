@@ -1,0 +1,2530 @@
+{
+  "schemaVersion": 1,
+  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+  "items": {
+    "blinding-light-of-destiny": {
+      "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+      "routeId": "merge-1",
+      "preparation": {
+        "required": [
+          {
+            "text": "Complete Hs'Sakar's Quests at /join firestorm and the first 3 As'iiur Quests at /join airstorm.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  355,
+                  357
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          },
+          {
+            "text": "Complete Murray's Quests at /join citadel.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  355,
+                  358
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          },
+          {
+            "text": "Keep 10–15 inventory slots free.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  355,
+                  359
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          },
+          {
+            "text": "Unlock Arryd’s DoomWood Challenge Shop: defeat 100 skeletons on Screen 4 at /join doomwood without leaving that screen to earn the Reinforced badge.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  364,
+                  365,
+                  366
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          }
+        ],
+        "optional": [],
+        "recommended": []
+      },
+      "requiredOwnedItems": [],
+      "questChain": [
+        "blod-essential-essences",
+        "blod-bust-some-dust",
+        "blod-a-loyal-follower",
+        "blod-mine-crafting",
+        "blod-celestial-copper",
+        "blod-basic-kits",
+        "blod-advanced-kits",
+        "blod-ultimate-kits",
+        "blod-fragments-mace",
+        "blod-fragments-bow",
+        "blod-fragments-blade",
+        "blod-final-quest"
+      ],
+      "farmTasks": [
+        {
+          "id": "blod-essential-essences",
+          "quest": "Essential Essences",
+          "title": "Spirit Orb prerequisites",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                371,
+                372
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": null,
+          "requirements": [
+            "Quest giver: Artix at /join necropolis."
+          ],
+          "reward": "Spirit Orbs are used by the subsequent chain; this source does not give a fixed reward quantity for every turn-in.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Undead Essence",
+              "quantity": null,
+              "monster": "Skeleton Warriors",
+              "map": "/join battleunderb",
+              "sourceName": null,
+              "quantityPerTurn": 25,
+              "turnCount": null,
+              "totalRequired": null,
+              "maxStack": 1000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    372
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-bust-some-dust",
+          "quest": "Bust some Dust",
+          "title": "Spirit Orb prerequisites",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                374,
+                375
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": null,
+          "requirements": [
+            "Quest giver: Artix at /join necropolis."
+          ],
+          "reward": null,
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Bone Dust",
+              "quantity": null,
+              "monster": "Skeleton Warriors",
+              "map": "/join battleunderb",
+              "sourceName": null,
+              "quantityPerTurn": 40,
+              "turnCount": null,
+              "totalRequired": null,
+              "maxStack": 10000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    375
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-a-loyal-follower",
+          "quest": "A Loyal Follower",
+          "title": "Unlock Undead Energy drops",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                377,
+                379,
+                381
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": null,
+          "requirements": [
+            "Complete after obtaining 100 Spirit Orbs."
+          ],
+          "reward": null,
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Spirit Orb",
+              "quantity": null,
+              "monster": null,
+              "map": null,
+              "sourceName": "Essential Essences + Bust some Dust quests",
+              "quantityPerTurn": 100,
+              "turnCount": 1,
+              "totalRequired": 100,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    378
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Celestial Compass",
+              "quantity": null,
+              "monster": "Ephemerite",
+              "map": "/join timevoid",
+              "sourceName": "Room immediately to the left",
+              "quantityPerTurn": 1,
+              "turnCount": 1,
+              "totalRequired": 1,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    379
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-mine-crafting",
+          "quest": "Mine Crafting",
+          "title": "Daily metal route",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                399,
+                401
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": "Daily (1/day)",
+          "requirements": [
+            "Daily; one completion per day."
+          ],
+          "reward": "Copper / mining reward as described by the guide.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Raw Ore",
+              "quantity": null,
+              "monster": "Balboa",
+              "map": "/join stalagbite",
+              "sourceName": null,
+              "quantityPerTurn": 30,
+              "turnCount": 1,
+              "totalRequired": 30,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    401
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Axe of the Prospector",
+              "quantity": null,
+              "monster": "Balboa",
+              "map": "/join stalagbite",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 1,
+              "totalRequired": 1,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    401
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-celestial-copper",
+          "quest": "Celestial Copper of Destiny Quest",
+          "title": "Copper enchantment",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                404,
+                405,
+                406,
+                407,
+                408
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": null,
+          "requirements": [
+            "Quest giver: Artix at /join necropolis."
+          ],
+          "reward": null,
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Copper",
+              "quantity": null,
+              "monster": null,
+              "map": null,
+              "sourceName": "Mine Crafting quest",
+              "quantityPerTurn": 1,
+              "turnCount": 1,
+              "totalRequired": 1,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    405
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Undead Energy",
+              "quantity": null,
+              "monster": "Skeleton Warriors",
+              "map": "/join battleunderb",
+              "sourceName": null,
+              "quantityPerTurn": 25,
+              "turnCount": 1,
+              "totalRequired": 25,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    406
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Spirit Orb",
+              "quantity": null,
+              "monster": null,
+              "map": null,
+              "sourceName": "Essential Essences / Bust some Dust quests",
+              "quantityPerTurn": 5,
+              "turnCount": 1,
+              "totalRequired": 5,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    407
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Paladaffodil",
+              "quantity": null,
+              "monster": "Doomwood Treeants",
+              "map": "/join doomwood",
+              "sourceName": null,
+              "quantityPerTurn": 25,
+              "turnCount": 1,
+              "totalRequired": 25,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    408
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-basic-kits",
+          "quest": "Basic Weapon Kit Construction Quest",
+          "title": "Basic kits",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                426,
+                427,
+                428,
+                429,
+                430,
+                431,
+                432,
+                433,
+                434
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 3,
+          "requirements": [],
+          "reward": "3 Basic Weapon Kits, used once each for Mace, Bow and Blade.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Zardman's StoneHammer",
+              "quantity": null,
+              "monster": "Zardman Grunts",
+              "map": "/join forest",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    428
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Triple Ply Mummy Wrap",
+              "quantity": null,
+              "monster": "Mummies",
+              "map": "/join pyramid",
+              "sourceName": null,
+              "quantityPerTurn": 7,
+              "turnCount": 3,
+              "totalRequired": 21,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    429
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Golden Lacquer Finish",
+              "quantity": null,
+              "monster": "Golden Scarabs",
+              "map": "/join pyramid",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    430
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Noob Blade Oil",
+              "quantity": null,
+              "monster": "Horc Noobs",
+              "map": "/join noobshire",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    431
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Bronze Bush",
+              "quantity": null,
+              "monster": "Bronze Draconians",
+              "map": "/join lair",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    432
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Rocky Stone Sharpener",
+              "quantity": null,
+              "monster": "Rocks",
+              "map": "/join bloodtusk",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    433
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Burlap Cloth",
+              "quantity": null,
+              "monster": "Scarecrows",
+              "map": "/join farm",
+              "sourceName": null,
+              "quantityPerTurn": 4,
+              "turnCount": 3,
+              "totalRequired": 12,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    434
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-advanced-kits",
+          "quest": "Advanced Weapon Kit Construction Quest",
+          "title": "Advanced kits",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                436,
+                437,
+                438,
+                439,
+                440,
+                441,
+                442,
+                443,
+                444,
+                445
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 3,
+          "requirements": [],
+          "reward": "3 Advanced Weapon Kits, used once each for Mace, Bow and Blade.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "WolfClaw Hammer",
+              "quantity": null,
+              "monster": "Chaos Lycans",
+              "map": "/join safiria",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    438
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Superior Blade Oil",
+              "quantity": null,
+              "monster": "Dai Tengu",
+              "map": "/join hachiko",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    439
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Leatherwing Hide",
+              "quantity": null,
+              "monster": "Leatherwings",
+              "map": "/join pines",
+              "sourceName": null,
+              "quantityPerTurn": 10,
+              "turnCount": 3,
+              "totalRequired": 30,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    440
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Silver Brush",
+              "quantity": null,
+              "monster": "Chaos Vampire Knights",
+              "map": "/join lycan",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    441
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Brass Awl",
+              "quantity": null,
+              "monster": "Cyclops Raiders",
+              "map": "/join mobius",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    442
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Slate Stone Sharpener",
+              "quantity": null,
+              "monster": "Lich of the Stone",
+              "map": "/join darkoviaforest",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    443
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Leather Case",
+              "quantity": null,
+              "monster": "Tomb Robber",
+              "map": "/join sandport",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    444
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Shining Lacquer Finish",
+              "quantity": null,
+              "monster": "Lightning Ball",
+              "map": "/join airstorm",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 3,
+              "totalRequired": 3,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    445
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-ultimate-kits",
+          "quest": "Ultimate Weapon Kit Construction Quest",
+          "title": "Ultimate kits",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                447,
+                448,
+                449,
+                450,
+                451,
+                452,
+                453,
+                454,
+                455,
+                456,
+                457
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 4,
+          "requirements": [],
+          "reward": "4 Ultimate Weapon Kits: Mace, Bow, Blade and BLoD; quest can additionally drop Spirit Orb, Loyal Spirit Orb or Bright Aura.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Great Ornate Warhammer",
+              "quantity": null,
+              "monster": "Earth Elementals",
+              "map": "/join dragonplane",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 4,
+              "totalRequired": 4,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    449
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "No. 1337 Blade Oil",
+              "quantity": null,
+              "monster": "Chaos Lord Kitsune",
+              "map": "/join kitsune",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 4,
+              "totalRequired": 4,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    450
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Greenguard Dragon Hide",
+              "quantity": null,
+              "monster": "Greenguard Dragon",
+              "map": "/join greendragon",
+              "sourceName": null,
+              "quantityPerTurn": 3,
+              "turnCount": 4,
+              "totalRequired": 12,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    451
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Gold Brush",
+              "quantity": null,
+              "monster": "Chaos Sphinx",
+              "map": "/join sandcastle",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 4,
+              "totalRequired": 4,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    452
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Sharp Stone Sharpener",
+              "quantity": null,
+              "monster": "Rock Roc",
+              "map": "/join roc",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 4,
+              "totalRequired": 4,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    453
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Blinding Lacquer Finish",
+              "quantity": null,
+              "monster": "Grand Inquisitor",
+              "map": "/join citadel",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 4,
+              "totalRequired": 4,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    454
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Non-abrasive Power Powder",
+              "quantity": null,
+              "monster": "ProtoSartorium",
+              "map": "/join crashsite",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 4,
+              "totalRequired": 4,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    455
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Suede Travel Case",
+              "quantity": null,
+              "monster": "Harpy",
+              "map": "/join djinn",
+              "sourceName": null,
+              "quantityPerTurn": 1,
+              "turnCount": 4,
+              "totalRequired": 4,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    456
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-fragments-mace",
+          "quest": "Finding Fragments with Blinding Mace",
+          "title": "Mace fragment turn-ins",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                481,
+                483,
+                484,
+                555
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 75,
+          "requirements": [
+            "Quest must be accepted for the fragment drop."
+          ],
+          "reward": null,
+          "destination": null,
+          "notes": "Blinding Aura has 1% drop chance from this quest; keep it if it drops.",
+          "rows": [
+            {
+              "name": "Blinding Light Fragment",
+              "quantity": null,
+              "monster": "Skeleton Warriors",
+              "map": "/join battleunderb",
+              "sourceName": null,
+              "quantityPerTurn": 10,
+              "turnCount": 75,
+              "totalRequired": 750,
+              "maxStack": 1000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    483
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-fragments-bow",
+          "quest": "Finding Fragments with Blinding Bow",
+          "title": "Bow fragment turn-ins",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                481,
+                483,
+                484,
+                556
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 25,
+          "requirements": [
+            "Quest must be accepted for the fragment drop."
+          ],
+          "reward": null,
+          "destination": null,
+          "notes": "Blinding Aura has 1% drop chance from this quest; keep it if it drops.",
+          "rows": [
+            {
+              "name": "Blinding Light Fragment",
+              "quantity": null,
+              "monster": "Skeleton Warriors",
+              "map": "/join battleunderb",
+              "sourceName": null,
+              "quantityPerTurn": 10,
+              "turnCount": 25,
+              "totalRequired": 250,
+              "maxStack": 1000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    483
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-fragments-blade",
+          "quest": "Finding Fragments with Blinding Blade",
+          "title": "Blade fragment turn-ins",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                481,
+                483,
+                484,
+                557
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 10,
+          "requirements": [
+            "Quest must be accepted for the fragment drop."
+          ],
+          "reward": null,
+          "destination": null,
+          "notes": "Blinding Aura has 1% drop chance from this quest; keep it if it drops.",
+          "rows": [
+            {
+              "name": "Blinding Light Fragment",
+              "quantity": null,
+              "monster": "Skeleton Warriors",
+              "map": "/join battleunderb",
+              "sourceName": null,
+              "quantityPerTurn": 10,
+              "turnCount": 10,
+              "totalRequired": 100,
+              "maxStack": 1000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    483
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blod-final-quest",
+          "quest": "The Blinding Light of Destiny Quest",
+          "title": "Final turn-in and badge",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                545,
+                546,
+                547,
+                548,
+                549,
+                550,
+                551,
+                555,
+                556,
+                557,
+                562,
+                564
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": null,
+          "requirements": [
+            "Complete Finding Fragments with Blinding Mace 75 times, Bow 25 times and Blade 10 times."
+          ],
+          "reward": "Receive the Character Page Badge, then use “Get Your Blinding Light of Destiny” in Book of Lore → Badges → Achievement Badges to open the BLoD Shop.",
+          "destination": {
+            "npc": "Book of Lore",
+            "map": "Book of Lore → Badges → Achievement Badges",
+            "shop": "Blinding Light of Destiny Shop",
+            "item": "Blinding Light of Destiny"
+          },
+          "notes": null,
+          "rows": [
+            {
+              "name": "Spirit Orb",
+              "quantity": null,
+              "monster": null,
+              "map": null,
+              "sourceName": "Earlier BLoD steps",
+              "quantityPerTurn": 500,
+              "turnCount": 1,
+              "totalRequired": 500,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    547
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Loyal Spirit Orb",
+              "quantity": null,
+              "monster": null,
+              "map": null,
+              "sourceName": "Earlier BLoD steps",
+              "quantityPerTurn": 250,
+              "turnCount": 1,
+              "totalRequired": 250,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    548
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Bright Aura",
+              "quantity": null,
+              "monster": null,
+              "map": null,
+              "sourceName": "Blinding Bow route",
+              "quantityPerTurn": 125,
+              "turnCount": 1,
+              "totalRequired": 125,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    549
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Brilliant Aura",
+              "quantity": null,
+              "monster": null,
+              "map": null,
+              "sourceName": "Blinding Mace route",
+              "quantityPerTurn": 75,
+              "turnCount": 1,
+              "totalRequired": 75,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    550
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Blinding Aura",
+              "quantity": null,
+              "monster": null,
+              "map": null,
+              "sourceName": "1% from Mace/Bow/Blade fragment quests; 100% DC from Scythe",
+              "quantityPerTurn": 1,
+              "turnCount": 1,
+              "totalRequired": 1,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    551
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": "partial",
+      "unresolved": [
+        "Sanctified Silver and Blessed Barium enchantment quest quantities are referred to as similar to Copper but their exact ingredient rows are not enumerated in the cited excerpt.",
+        "Full intermediate Destiny weapon material tables and all map details are not yet represented."
+      ]
+    },
+    "blade-of-awe": {
+      "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+      "routeId": "merge-1",
+      "preparation": {
+        "required": [
+          {
+            "text": "Complete Valencia’s five quests at /join museum; start through “to the Crossroads”.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  2153
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          }
+        ],
+        "optional": [],
+        "recommended": [
+          {
+            "text": "For Find the Runes, the guide prefers /join escherion for easier solo farming, or /join djinn with a team despite the lower/higher trade-off described.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  2158,
+                  2160
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          }
+        ]
+      },
+      "requiredOwnedItems": [],
+      "questChain": [
+        "awe-stonewrit",
+        "awe-handle",
+        "awe-hilt",
+        "awe-blade",
+        "awe-runes"
+      ],
+      "farmTasks": [
+        {
+          "id": "awe-stonewrit",
+          "quest": "Find the Stonewrit!",
+          "title": "Find the Stonewrit!",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                2154
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 1,
+          "requirements": [],
+          "reward": "Quest completion advances Valencia’s five-quest chain.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Find the Stonewrit!",
+              "quantity": null,
+              "monster": "Any Dragon",
+              "map": "/join lair",
+              "sourceName": "Kill a matching monster to complete Valencia quest",
+              "quantityPerTurn": 1,
+              "turnCount": 1,
+              "totalRequired": 1,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    2154
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "awe-handle",
+          "quest": "Find the Handle!",
+          "title": "Find the Handle!",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                2155
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 1,
+          "requirements": [],
+          "reward": "Quest completion advances Valencia’s five-quest chain.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Find the Handle!",
+              "quantity": null,
+              "monster": "Any Elemental",
+              "map": "/join gilead",
+              "sourceName": "Kill a matching monster to complete Valencia quest",
+              "quantityPerTurn": 1,
+              "turnCount": 1,
+              "totalRequired": 1,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    2155
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "awe-hilt",
+          "quest": "Find the Hilt!",
+          "title": "Find the Hilt!",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                2156
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 1,
+          "requirements": [],
+          "reward": "Quest completion advances Valencia’s five-quest chain.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Find the Hilt!",
+              "quantity": null,
+              "monster": "Any Undead",
+              "map": "/join castleundead",
+              "sourceName": "Kill a matching monster to complete Valencia quest",
+              "quantityPerTurn": 1,
+              "turnCount": 1,
+              "totalRequired": 1,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    2156
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "awe-blade",
+          "quest": "Find the Blade!",
+          "title": "Find the Blade!",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                2157
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 1,
+          "requirements": [],
+          "reward": "Quest completion advances Valencia’s five-quest chain.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Find the Blade!",
+              "quantity": null,
+              "monster": "Chaos Beast",
+              "map": "/join hydra",
+              "sourceName": "Kill a matching monster to complete Valencia quest",
+              "quantityPerTurn": 1,
+              "turnCount": 1,
+              "totalRequired": 1,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    2157
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "awe-runes",
+          "quest": "Find the Runes!",
+          "title": "Find the Runes",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                2153,
+                2158,
+                2160,
+                2162
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 1,
+          "requirements": [
+            "Start at Valencia in /join museum and choose “to the Crossroads”.",
+            "The five Find quests are sequential."
+          ],
+          "reward": "Blade of Awe Character Page Badge; reaches Rank 6 Blade of Awe.",
+          "destination": {
+            "npc": "Valencia",
+            "map": "/join museum",
+            "shop": "Valencia Merge Shop",
+            "item": "Blade of Awe"
+          },
+          "notes": null,
+          "rows": [
+            {
+              "name": "Find the Runes! quest completion",
+              "quantity": null,
+              "monster": "Any Chaos Lord",
+              "map": null,
+              "sourceName": "Alternative: Escherion (0.05% DC) at /join escherion OR Tibicenas (0.5% DC) at /join djinn",
+              "quantityPerTurn": 1,
+              "turnCount": 1,
+              "totalRequired": 1,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [
+                "Any Chaos Lord",
+                "Escherion at /join escherion (0.05% DC)",
+                "Tibicenas at /join djinn (0.5% DC)"
+              ],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    2158,
+                    2160
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": "source_walkthrough",
+      "unresolved": [
+        "Rank 6 and shop unlock are recorded; no unsupported requirement is inferred for other Awe gear paths."
+      ]
+    },
+    "legion-revenant-class": {
+      "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+      "routeId": "wiki-location",
+      "preparation": {
+        "required": [
+          {
+            "text": "Rank 10 Reputation Evil.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  5308,
+                  5310
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          },
+          {
+            "text": "Level 80.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  5308,
+                  5311
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          },
+          {
+            "text": "Be a member of the Legion.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  5308,
+                  5312
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          }
+        ],
+        "optional": [],
+        "recommended": [
+          {
+            "text": "Teamwork and a suitable multi-target/DPS support team improve efficiency; the guide names Frostval Barbarian, Vampire Lord, Blaze Binder, Scarletta and Shaman as examples.",
+            "evidence": [
+              {
+                "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                "lines": [
+                  5315,
+                  5322,
+                  5323,
+                  5324,
+                  5325,
+                  5326
+                ],
+                "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+              }
+            ]
+          }
+        ]
+      },
+      "requiredOwnedItems": [
+        {
+          "itemId": "empowered-dark-caster",
+          "itemName": "A class in the Dark Caster family",
+          "quantity": 1,
+          "purpose": "Required to access /join revenant; any class name containing “Dark Caster” qualifies.",
+          "consumed": null,
+          "unlocks": "Access to /join revenant",
+          "evidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                5313
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ]
+        }
+      ],
+      "questChain": [
+        "legion-fealty-1",
+        "legion-fealty-2",
+        "legion-fealty-3",
+        "legion-fealty-4",
+        "legion-ultra-dage-weekly"
+      ],
+      "farmTasks": [
+        {
+          "id": "legion-fealty-1",
+          "quest": "Legion Fealty 1",
+          "title": "Revenant’s Spellscroll",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                5317,
+                5318,
+                5319,
+                5320,
+                5321,
+                5328,
+                5330,
+                5335,
+                5336,
+                5337,
+                5338,
+                5339,
+                5340,
+                5341,
+                5342,
+                5343,
+                5344,
+                5346,
+                5347,
+                5348,
+                5349
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 20,
+          "requirements": [
+            "This Quest must be completed once to unlock Legion Fealty 2.",
+            "Dracolich Contract room is story locked; complete the required story to proceed."
+          ],
+          "reward": "Revenant’s Spellscroll ×1 per turn; 20 turns provide enough for Legion Fealty 4.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Aeacus Empowered",
+              "quantity": null,
+              "monster": "Ultra Aeacus",
+              "map": "/join judgement",
+              "sourceName": null,
+              "quantityPerTurn": 50,
+              "turnCount": 20,
+              "totalRequired": 1000,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5317,
+                    5318,
+                    5335,
+                    5336,
+                    5337,
+                    5338
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Darkened Essence",
+              "quantity": null,
+              "monster": "Monsters in the guide route",
+              "map": "/join shadowrealmpast",
+              "sourceName": null,
+              "quantityPerTurn": 500,
+              "turnCount": 20,
+              "totalRequired": 10000,
+              "maxStack": 10000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5319,
+                    5329,
+                    5330,
+                    5339,
+                    5340,
+                    5341
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Dracolich Contract",
+              "quantity": null,
+              "monster": "Dracolich Heads",
+              "map": "/join necrodungeon",
+              "sourceName": null,
+              "quantityPerTurn": 1000,
+              "turnCount": 20,
+              "totalRequired": 20000,
+              "maxStack": 20000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5319,
+                    5320,
+                    5346,
+                    5347,
+                    5348,
+                    5349
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Tethered Soul",
+              "quantity": null,
+              "monster": "Monsters in /join revenant",
+              "map": "/join revenant",
+              "sourceName": null,
+              "quantityPerTurn": 300,
+              "turnCount": 20,
+              "totalRequired": 6000,
+              "maxStack": 6000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5321,
+                    5328,
+                    5330,
+                    5342,
+                    5343,
+                    5344
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "legion-fealty-2",
+          "quest": "Legion Fealty 2",
+          "title": "Conquest Wreath",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                5352,
+                5353,
+                5354,
+                5355,
+                5356,
+                5357,
+                5358,
+                5359,
+                5360,
+                5361,
+                5362,
+                5363,
+                5364,
+                5366,
+                5368,
+                5372,
+                5373,
+                5374,
+                5376,
+                5377,
+                5378,
+                5408,
+                5409,
+                5410
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 6,
+          "requirements": [
+            "Accept Legion Fealty 2 before farming Cohort Conquered items; they do not drop otherwise.",
+            "Complete Legion Fealty 1 once to unlock this Quest."
+          ],
+          "reward": "Conquest Wreath ×1 per turn; 6 turns supply the 6 needed for Legion Fealty 4.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Grim Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join doomvault",
+              "sourceName": "Screen 26",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5355,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Ancient Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join mummies",
+              "sourceName": "All screens except Screen 4",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5356,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Pirate Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join wrath",
+              "sourceName": "Screen 4",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5357,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Battleon Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join doomhaven",
+              "sourceName": "Screens 17–19",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5358,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Mirror Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join overworld",
+              "sourceName": "Screen 2",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5359,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Darkblood Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join deathpits",
+              "sourceName": "Screen 2",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5360,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Vampire Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join maxius",
+              "sourceName": "Screen 2",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5361,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Spirit Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join curseshore",
+              "sourceName": "Screens 1–2",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5362,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Dragon Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join dragonbone",
+              "sourceName": "Screen 6",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5363,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Doomwood Cohort Conquered",
+              "quantity": null,
+              "monster": "Any monsters in the map; accept LF2 first",
+              "map": "/join doomwood",
+              "sourceName": "Screen 8",
+              "quantityPerTurn": 400,
+              "turnCount": 6,
+              "totalRequired": 2400,
+              "maxStack": 2400,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5353,
+                    5354,
+                    5364,
+                    5372,
+                    5373,
+                    5374
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "legion-fealty-3",
+          "quest": "Legion Fealty 3",
+          "title": "Exalted Crown",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                5414,
+                5415,
+                5416,
+                5417,
+                5418,
+                5419,
+                5420,
+                5421,
+                5422,
+                5423,
+                5424,
+                5425,
+                5426,
+                5427,
+                5428,
+                5429,
+                5431,
+                5433,
+                5437,
+                5438,
+                5439,
+                5440,
+                5441,
+                5442,
+                5443,
+                5444,
+                5445,
+                5446,
+                5447,
+                5448,
+                5449,
+                5450,
+                5451,
+                5452,
+                5453,
+                5454,
+                5455,
+                5456,
+                5457,
+                5458,
+                5459,
+                5460
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": 10,
+          "requirements": [
+            "Complete Legion Fealty 2 once to unlock Legion Fealty 3.",
+            "Complete all Gresk’s Quests to unlock the two stated Shadowblast quests.",
+            "Complete Undead Legion Saga to access Caelgar’s Quests at /join seraphicwardage."
+          ],
+          "reward": "Exalted Crown ×1 per turn; 10 turns supply the 10 needed for Legion Fealty 4.",
+          "destination": null,
+          "notes": null,
+          "rows": [
+            {
+              "name": "Legion Token",
+              "quantity": null,
+              "monster": null,
+              "map": null,
+              "sourceName": "Legion Token Guide",
+              "quantityPerTurn": 4000,
+              "turnCount": 10,
+              "totalRequired": 40000,
+              "maxStack": null,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5415,
+                    5437,
+                    5438,
+                    5439,
+                    5440
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Hooded Legion Cowl",
+              "quantity": null,
+              "monster": null,
+              "map": "/join underworld",
+              "sourceName": "Dage’s Undead Legion Shop; 500,000 Gold per item at /join underworld",
+              "quantityPerTurn": 1,
+              "turnCount": 10,
+              "totalRequired": 10,
+              "maxStack": null,
+              "unit": "items; 500,000 Gold each; 5,000,000 Gold total",
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5416,
+                    5457,
+                    5458,
+                    5459,
+                    5460
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Dage's Favor",
+              "quantity": null,
+              "monster": null,
+              "map": "/join underworld",
+              "sourceName": "Dage’s Favor farm at Screens 8, 11 or 15",
+              "quantityPerTurn": 300,
+              "turnCount": 10,
+              "totalRequired": 3000,
+              "maxStack": 5000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5417,
+                    5441,
+                    5442,
+                    5443,
+                    5444
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Dark Token",
+              "quantity": null,
+              "monster": "Seraphic Commander",
+              "map": "/join seraphicwardage",
+              "sourceName": "Seraphic Medals, Mega Seraphic Medals, Seraphic Commanders quests",
+              "quantityPerTurn": 100,
+              "turnCount": 10,
+              "totalRequired": 1000,
+              "maxStack": 10000,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5418,
+                    5419,
+                    5453,
+                    5454,
+                    5455,
+                    5456
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Emblem of Dage",
+              "quantity": null,
+              "monster": null,
+              "map": "/join shadowblast",
+              "sourceName": "Legion Recruits: The Dark Path Waits quest at /join shadowblast",
+              "quantityPerTurn": 1,
+              "turnCount": 10,
+              "totalRequired": 10,
+              "maxStack": 500,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5420,
+                    5445,
+                    5446,
+                    5447,
+                    5448
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            },
+            {
+              "name": "Diamond Token of Dage",
+              "quantity": null,
+              "monster": null,
+              "map": "/join shadowblast",
+              "sourceName": "Legion Loyalty Rewarded quest at /join shadowblast",
+              "quantityPerTurn": 30,
+              "turnCount": 10,
+              "totalRequired": 300,
+              "maxStack": 300,
+              "unit": null,
+              "alternatives": [],
+              "evidence": [
+                {
+                  "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+                  "lines": [
+                    5421,
+                    5449,
+                    5450,
+                    5451,
+                    5452
+                  ],
+                  "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "legion-fealty-4",
+          "quest": "Legion Fealty 4",
+          "title": "Final class unlock and armor merge",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                5463,
+                5464,
+                5466,
+                5471
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "AND",
+          "routeKind": "required",
+          "repeatCount": null,
+          "requirements": [
+            "Complete each preceding Legion Fealty quest at least once to unlock the next.",
+            "Have the required 20 Revenant’s Spellscrolls, 6 Conquest Wreaths and 10 Exalted Crowns."
+          ],
+          "reward": "Completing Legion Fealty 4 awards the Character Page Badge and one additional Exalted Crown. The class is the goal of this questline.",
+          "destination": {
+            "npc": "Dage",
+            "map": "/join underworld",
+            "shop": "Dage’s Undead Legion Merge Shop",
+            "item": "Legion Revenant Armor"
+          },
+          "notes": "Keep the extra Exalted Crown; it is used to merge Legion Revenant Armor.",
+          "rows": []
+        },
+        {
+          "id": "legion-ultra-dage-weekly",
+          "quest": "Dage the Dark Lord (Weekly alternative)",
+          "title": "Supplemental weekly route",
+          "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+          "sourceEvidence": [
+            {
+              "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+              "lines": [
+                5468,
+                5469,
+                5473,
+                5476,
+                5477,
+                5478,
+                5479,
+                5480,
+                5481,
+                5482,
+                5483,
+                5484,
+                5487
+              ],
+              "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+            }
+          ],
+          "requirementMode": "OR",
+          "routeKind": "alternative",
+          "repeatCount": null,
+          "requirements": [
+            "Alternative support for reducing traditional Legion Fealty turns; the source describes Dage’s quest as weekly.",
+            "A primarily Ultra route takes 6 weeks and still requires LF1 once, LF3 once, LF2 twice."
+          ],
+          "reward": "Dage the Evil Insignia can be merged with Legion Token for Revenant’s Spellscroll, Conquest Wreath or Exalted Crown at Dage Challenge Merge Shop, /join ultradage.",
+          "destination": null,
+          "notes": "The guide points to the separate Challenge Boss Guide for boss combat details; those details are not invented here.",
+          "rows": []
+        }
+      ],
+      "coverage": "source_walkthrough",
+      "unresolved": [
+        "LF3 component-source subquests are listed but their complete individual input tables are not expanded here.",
+        "The guide’s recommended team classes are recommendations, not prerequisites."
+      ]
+    }
+  }
+}

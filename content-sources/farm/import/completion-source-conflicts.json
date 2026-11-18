@@ -1,0 +1,44 @@
+[
+  {
+    "id": "golden-hanzo-recipe",
+    "itemId": "golden-hanzo-void",
+    "field": "Merge materials",
+    "status": "RETAIN_WIKI_TECHNICAL_FACTS",
+    "sourceA": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/nation/afdl1",
+    "sourceALines": [
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "sourceAHash": "6b47118d6d57175259e18f2f43e6d5de1d4e95e1b0e6a490becb8c29701a925a",
+    "wikiUrl": "https://aqwwiki.wikidot.com/golden-hanzo-void",
+    "wikiHash": "13cc0f93923d1bd6b190da03b744411029ce911e24a11b4bda5ab203647007af",
+    "guideValue": "Archfiend's Favor 200; Diamond 50; Tainted Gem 30; Dark Crystal Shard 15; Approval 50; Voucher 1; Gold 100000",
+    "wikiValue": "Dark Crystal Shard 45; Diamond 75; Approval 50; Tainted Gem 45; Voucher 1; Gold 100000",
+    "decision": "Retain exact canonical Wiki recipe in acquisition brief; omit conflicting recipe from AFDL source walkthrough. Existing route and material baseline unchanged.",
+    "confidence": "medium",
+    "remaining": "Historical recipe/variant date not established; do not claim all source differences resolved."
+  },
+  {
+    "id": "ynr-dark-wisps-total",
+    "itemId": "yami-no-ronin-class",
+    "field": "Dark Wisps total",
+    "status": "UNRESOLVED",
+    "sourceA": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/legion/ynr",
+    "sourceALines": [
+      31,
+      32
+    ],
+    "sourceAHash": "475ceaa3bda4d03c8b4bcb9e63d6aa82523dd0f0b6da63a71ce5398b2b4b7eff",
+    "guideValue": "10 turns and total 4400 vs 444 per turn",
+    "decision": "Do not synthesize a verified complete YnR walkthrough until the Quest count/quantity is verified. Retain existing acquisition summary.",
+    "remaining": "Need authoritative Embracing the Darkness Quest requirements.",
+    "confidence": "low"
+  }
+]

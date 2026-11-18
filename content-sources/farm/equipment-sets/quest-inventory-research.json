@@ -1,0 +1,952 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-11-15",
+  "method": "Guide collection scope plus exact Wiki reward-group links. No name-prefix inference. Full pinned HTML and SHA-256 permit independent review.",
+  "sources": [
+    {
+      "url": "https://aqwwiki.wikidot.com/lolosia-s-quests",
+      "sourceFile": "content-sources/farm/equipment-sets/quest-research/lolosia-s-quests.html",
+      "sourceHash": "c856108de4b9114569783e2c8b2edfd9d8d65a714270d76b577d98186621ce65",
+      "status": "read",
+      "retainedSource": false
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/gravelyn-s-quests",
+      "sourceFile": "content-sources/farm/equipment-sets/quest-research/gravelyn-s-quests.html",
+      "sourceHash": "02c3ea5e44d69acb32327de7b3b7ef3f06d1f4a9108ecd44373987b067afde40",
+      "status": "read",
+      "retainedSource": false
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/coral-beach",
+      "sourceFile": "content-sources/farm/equipment-sets/quest-research/coral-beach.html",
+      "sourceHash": "4f0c0e00e915eed3235dc864671964def4a2542706678b0baea3de88eeff070a",
+      "status": "read",
+      "retainedSource": false
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/coral-beach-s-quest",
+      "sourceFile": "content-sources/farm/equipment-sets/quest-research/coral-beach-s-quest.html",
+      "sourceHash": "19a62f235ab0e7f899a1f3514485251b9b009ddebdc8233359c0e804c9ae0975",
+      "status": "read",
+      "retainedSource": false
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/beetle-general-pet-s-quests",
+      "sourceFile": "content-sources/farm/equipment-sets/quest-research/beetle-general-pet-s-quests.html",
+      "sourceHash": "8aa1f87ff545b9421eba7fd8c8449b8293e976eac9b3ef8f96e313680a5af39b",
+      "status": "read",
+      "retainedSource": false
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+      "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+      "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+      "status": "read",
+      "retainedSource": false
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/lae-s-quests",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/lae-s-quests.html",
+      "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d",
+      "status": "read",
+      "retainedSource": true
+    }
+  ],
+  "sets": [
+    {
+      "id": "astravian-corsair",
+      "name": "Astravian Corsair",
+      "sourceChapter": "Debris & Astravian",
+      "guide": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "seedLines": [
+          8161,
+          8223
+        ],
+        "collectionLines": [
+          8212,
+          8223
+        ]
+      },
+      "source": {
+        "url": "https://aqwwiki.wikidot.com/lolosia-s-quests",
+        "sourceFile": "content-sources/farm/equipment-sets/quest-research/lolosia-s-quests.html",
+        "sourceHash": "c856108de4b9114569783e2c8b2edfd9d8d65a714270d76b577d98186621ce65",
+        "status": "read",
+        "retainedSource": false
+      },
+      "scopedQuests": [
+        "Deep Trobble Treasure Chest"
+      ],
+      "members": [
+        {
+          "name": "Astravian Corsair",
+          "wikiUrl": "https://aqwwiki.wikidot.com/astravian-corsair",
+          "questName": "Deep Trobble Treasure Chest",
+          "sourceLines": [
+            850,
+            850
+          ]
+        },
+        {
+          "name": "Astravian Corsair Hat",
+          "wikiUrl": "https://aqwwiki.wikidot.com/astravian-corsair-hat",
+          "questName": "Deep Trobble Treasure Chest",
+          "sourceLines": [
+            851,
+            851
+          ]
+        },
+        {
+          "name": "Bearded Astravian Corsair Hat",
+          "wikiUrl": "https://aqwwiki.wikidot.com/bearded-astravian-corsair-hat",
+          "questName": "Deep Trobble Treasure Chest",
+          "sourceLines": [
+            852,
+            852
+          ]
+        },
+        {
+          "name": "Astravian Corsair Hat + Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/astravian-corsair-hat-locks",
+          "questName": "Deep Trobble Treasure Chest",
+          "sourceLines": [
+            853,
+            853
+          ]
+        },
+        {
+          "name": "Astravian Corsair's Coat",
+          "wikiUrl": "https://aqwwiki.wikidot.com/astravian-corsair-s-coat",
+          "questName": "Deep Trobble Treasure Chest",
+          "sourceLines": [
+            854,
+            854
+          ]
+        },
+        {
+          "name": "Astravian Corsair Coat and Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/astravian-corsair-coat-and-blade",
+          "questName": "Deep Trobble Treasure Chest",
+          "sourceLines": [
+            855,
+            855
+          ]
+        }
+      ],
+      "expectedCount": 6,
+      "complete": true,
+      "status": "VERIFIED_SCOPED_QUEST_INVENTORY",
+      "blockers": [],
+      "scopeNote": "Guide explicitly defines 1 armor, 3 helms and 2 capes. Only the guaranteed one-of-six group belongs to this collection; 11 random bonus rewards are excluded."
+    },
+    {
+      "id": "golden-inquisitor-of-shadowfall",
+      "name": "Golden Inquisitor of ShadowFall",
+      "sourceChapter": "Other Items",
+      "guide": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "seedLines": [
+          8902,
+          8906
+        ],
+        "collectionLines": [
+          8902,
+          8906
+        ]
+      },
+      "source": {
+        "url": "https://aqwwiki.wikidot.com/gravelyn-s-quests",
+        "sourceFile": "content-sources/farm/equipment-sets/quest-research/gravelyn-s-quests.html",
+        "sourceHash": "02c3ea5e44d69acb32327de7b3b7ef3f06d1f4a9108ecd44373987b067afde40",
+        "status": "read",
+        "retainedSource": false
+      },
+      "scopedQuests": [
+        "Inquisitor Inquiry"
+      ],
+      "members": [
+        {
+          "name": "Golden Inquisitor of ShadowFall",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-of-shadowfall",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2297,
+            2297
+          ]
+        },
+        {
+          "name": "Gilded Inquisitor's Female Morph",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gilded-inquisitor-s-female-morph",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2298,
+            2298
+          ]
+        },
+        {
+          "name": "Gilded Inquisitor's Male Morph",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gilded-inquisitor-s-male-morph",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2299,
+            2299
+          ]
+        },
+        {
+          "name": "Golden Inquisitor's Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-s-locks",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2300,
+            2300
+          ]
+        },
+        {
+          "name": "Golden Inquisitor's Hair",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-s-hair",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2301,
+            2301
+          ]
+        },
+        {
+          "name": "Golden Inquisitor's Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-s-helm",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2302,
+            2302
+          ]
+        },
+        {
+          "name": "Golden Inquisitor's Crested Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-s-crested-helm",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2303,
+            2303
+          ]
+        },
+        {
+          "name": "Golden Inquisitor's Spear",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-s-spear",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2304,
+            2304
+          ]
+        },
+        {
+          "name": "Golden Inquisitor's Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-s-blade",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2305,
+            2305
+          ]
+        },
+        {
+          "name": "Golden Inquisitor's Wrap",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-s-wrap",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2306,
+            2306
+          ]
+        },
+        {
+          "name": "Golden Inquisitor's Back Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-s-back-blade",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2307,
+            2307
+          ]
+        },
+        {
+          "name": "Golden Inquisitor's Back Blade + Wrap",
+          "wikiUrl": "https://aqwwiki.wikidot.com/golden-inquisitor-s-back-blade-wrap",
+          "questName": "Inquisitor Inquiry",
+          "sourceLines": [
+            2308,
+            2308
+          ]
+        }
+      ],
+      "expectedCount": 12,
+      "complete": true,
+      "status": "VERIFIED_SCOPED_QUEST_INVENTORY",
+      "blockers": [],
+      "scopeNote": "Guide identifies this full set as Inquisitor Inquiry daily rewards; all 12 equipment choices are included, including the two Gilded morphs."
+    },
+    {
+      "id": "the-point",
+      "name": "The Point",
+      "sourceChapter": "Other Items",
+      "guide": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "seedLines": [
+          9013,
+          9055
+        ],
+        "collectionLines": [
+          9013,
+          9038
+        ]
+      },
+      "source": {
+        "url": "https://aqwwiki.wikidot.com/coral-beach-s-quest",
+        "sourceFile": "content-sources/farm/equipment-sets/quest-research/coral-beach-s-quest.html",
+        "sourceHash": "19a62f235ab0e7f899a1f3514485251b9b009ddebdc8233359c0e804c9ae0975",
+        "status": "read",
+        "retainedSource": false
+      },
+      "scopedQuests": [
+        "Buried Treasure"
+      ],
+      "members": [
+        {
+          "name": "The Point",
+          "wikiUrl": "https://aqwwiki.wikidot.com/the-point",
+          "questName": "Buried Treasure",
+          "sourceLines": [
+            595,
+            595
+          ],
+          "retainedItemCategoryEvidence": {
+            "sourceFile": "content-sources/farm/review/wiki/the-point.html",
+            "sourceHash": "446236fd95098ac061f756da8c65de3df2099458cd8a7822e41fac35a2fa7a3d",
+            "breadcrumbs": [
+              {
+                "name": "AQWorlds Wiki",
+                "path": "/main"
+              },
+              {
+                "name": "Items",
+                "path": "/items"
+              },
+              {
+                "name": "Armors",
+                "path": "/armors"
+              }
+            ]
+          }
+        },
+        {
+          "name": "The Point Sword",
+          "wikiUrl": "https://aqwwiki.wikidot.com/the-point-sword",
+          "questName": "Buried Treasure",
+          "sourceLines": [
+            596,
+            596
+          ]
+        }
+      ],
+      "expectedCount": 2,
+      "complete": true,
+      "status": "VERIFIED_SCOPED_QUEST_INVENTORY",
+      "blockers": [],
+      "scopeNote": "Guide explicitly states two turn-ins for full set. Dark Scroll, tomes, seals and Lost Key are prerequisites, not members."
+    },
+    {
+      "id": "void-beetle-general",
+      "name": "Void Beetle General",
+      "sourceChapter": "Nation",
+      "guide": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "seedLines": [
+          3970,
+          3998
+        ],
+        "collectionLines": [
+          3970,
+          3998
+        ]
+      },
+      "source": {
+        "url": "https://aqwwiki.wikidot.com/beetle-general-pet-s-quests",
+        "sourceFile": "content-sources/farm/equipment-sets/quest-research/beetle-general-pet-s-quests.html",
+        "sourceHash": "8aa1f87ff545b9421eba7fd8c8449b8293e976eac9b3ef8f96e313680a5af39b",
+        "status": "read",
+        "retainedSource": false
+      },
+      "scopedQuests": [
+        "I'm Hungry"
+      ],
+      "members": [
+        {
+          "name": "Void Beetle General",
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-beetle-general",
+          "questName": "I'm Hungry",
+          "sourceLines": [
+            603,
+            603
+          ],
+          "retainedItemCategoryEvidence": {
+            "sourceFile": "content-sources/farm/review/wiki/void-beetle-general.html",
+            "sourceHash": "1073be22e95704f72f33f1f03b1ee33c7513e9c1a22ca5f6da13cf7b7ee052a9",
+            "breadcrumbs": [
+              {
+                "name": "AQWorlds Wiki",
+                "path": "/main"
+              },
+              {
+                "name": "Items",
+                "path": "/items"
+              },
+              {
+                "name": "Armors",
+                "path": "/armors"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Void Beetle General Hood",
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-beetle-general-hood",
+          "questName": "I'm Hungry",
+          "sourceLines": [
+            604,
+            604
+          ]
+        },
+        {
+          "name": "Void Beetle General Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-beetle-general-helm",
+          "questName": "I'm Hungry",
+          "sourceLines": [
+            605,
+            605
+          ]
+        },
+        {
+          "name": "Void Beetle General Spikes",
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-beetle-general-spikes",
+          "questName": "I'm Hungry",
+          "sourceLines": [
+            606,
+            606
+          ]
+        },
+        {
+          "name": "Void Beetle General Machete",
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-beetle-general-machete",
+          "questName": "I'm Hungry",
+          "sourceLines": [
+            607,
+            607
+          ]
+        },
+        {
+          "name": "Void Beetle General Machetes",
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-beetle-general-machetes",
+          "questName": "I'm Hungry",
+          "sourceLines": [
+            608,
+            608
+          ]
+        },
+        {
+          "name": "Void Beetle General Spear",
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-beetle-general-spear",
+          "questName": "I'm Hungry",
+          "sourceLines": [
+            609,
+            609
+          ]
+        },
+        {
+          "name": "Void Beetle General Armaments",
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-beetle-general-armaments",
+          "questName": "I'm Hungry",
+          "sourceLines": [
+            610,
+            610
+          ]
+        },
+        {
+          "name": "Void Beetle General Wings",
+          "wikiUrl": "https://aqwwiki.wikidot.com/void-beetle-general-wings",
+          "questName": "I'm Hungry",
+          "sourceLines": [
+            611,
+            611
+          ]
+        }
+      ],
+      "expectedCount": 9,
+      "complete": true,
+      "status": "VERIFIED_SCOPED_QUEST_INVENTORY",
+      "blockers": [],
+      "scopeNote": "Guide explicitly states 9 collection choices. Beetle EXP guaranteed material and the Beetle General Pet prerequisite are excluded."
+    },
+    {
+      "id": "elite-void",
+      "name": "Elite Void",
+      "sourceChapter": "Nation",
+      "guide": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "seedLines": [
+          5031,
+          5049
+        ],
+        "collectionLines": [
+          5031,
+          5049
+        ]
+      },
+      "source": {
+        "url": "https://aqwwiki.wikidot.com/casparilla-s-quests",
+        "sourceFile": "content-sources/farm/equipment-sets/quest-research/casparilla-s-quests.html",
+        "sourceHash": "c824e5283abe0124b9141cabf5f985267a277f9e51355b1d5296635368df7b36",
+        "status": "read",
+        "retainedSource": false
+      },
+      "scopedQuests": [
+        "Spoiled Dragon",
+        "The Unpredictable Element",
+        "There, But Not There",
+        "Slaying Humble"
+      ],
+      "members": [
+        {
+          "name": "Elite Void",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-void",
+          "questName": "Spoiled Dragon",
+          "sourceLines": [
+            854,
+            854
+          ],
+          "retainedItemCategoryEvidence": {
+            "sourceFile": "content-sources/farm/review/wiki/elite-void.html",
+            "sourceHash": "c1a60794e04ccbc6b1e264827d807079c8954ffecddd63db01cdce8757024086",
+            "breadcrumbs": [
+              {
+                "name": "AQWorlds Wiki",
+                "path": "/main"
+              },
+              {
+                "name": "Items",
+                "path": "/items"
+              },
+              {
+                "name": "Armors",
+                "path": "/armors"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Elite Void Horns",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-void-horns",
+          "questName": "Spoiled Dragon",
+          "sourceLines": [
+            855,
+            855
+          ]
+        },
+        {
+          "name": "Elite Void Plume",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-void-plume",
+          "questName": "Spoiled Dragon",
+          "sourceLines": [
+            856,
+            856
+          ]
+        },
+        {
+          "name": "Elite Void Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-void-cape",
+          "questName": "Spoiled Dragon",
+          "sourceLines": [
+            857,
+            857
+          ]
+        },
+        {
+          "name": "Elite Void Spiked Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-void-spiked-cape",
+          "questName": "Spoiled Dragon",
+          "sourceLines": [
+            858,
+            858
+          ]
+        },
+        {
+          "name": "Elite Void Sword",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-void-sword",
+          "questName": "The Unpredictable Element",
+          "sourceLines": [
+            911,
+            911
+          ]
+        },
+        {
+          "name": "Elite Void Broadsword",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-void-broadsword",
+          "questName": "There, But Not There",
+          "sourceLines": [
+            942,
+            942
+          ]
+        },
+        {
+          "name": "Elite Void Sword Pet",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-void-sword-pet",
+          "questName": "Slaying Humble",
+          "sourceLines": [
+            973,
+            973
+          ]
+        }
+      ],
+      "expectedCount": 8,
+      "complete": true,
+      "status": "VERIFIED_SCOPED_QUEST_INVENTORY",
+      "blockers": [],
+      "scopeNote": "Guide explicitly identifies Casparilla quest chain as Elite Void Set. First 9 scoped quests grant only currency/experience; Spoiled Dragon grants 5 collection choices and final 3 quests grant one each."
+    },
+    {
+      "id": "hollowborn-legacy-of-nulgath",
+      "name": "Hollowborn Legacy of Nulgath",
+      "sourceChapter": "Hollowborn",
+      "guide": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "seedLines": [
+          7265,
+          7289
+        ],
+        "collectionLines": [
+          7265,
+          7289
+        ]
+      },
+      "source": {
+        "url": "https://aqwwiki.wikidot.com/lae-s-quests",
+        "sourceFile": "content-sources/farm/equipment-sets/wiki/lae-s-quests.html",
+        "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d",
+        "status": "read",
+        "retainedSource": true
+      },
+      "scopedQuests": [
+        "Muddled Past"
+      ],
+      "members": [
+        {
+          "name": "Hollowborn Legacy of Nulgath",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-legacy-of-nulgath",
+          "questName": "Muddled Past",
+          "sourceLines": [
+            1820,
+            1820
+          ]
+        },
+        {
+          "name": "Hollowborn Legacy of Nulgath Hood (0 AC)",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-legacy-of-nulgath-hood-0-ac",
+          "questName": "Muddled Past",
+          "sourceLines": [
+            1821,
+            1821
+          ]
+        },
+        {
+          "name": "Hollowborn Cloak of Nulgath",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-cloak-of-nulgath",
+          "questName": "Muddled Past",
+          "sourceLines": [
+            1822,
+            1822
+          ]
+        },
+        {
+          "name": "Hollowborn Spear of Nulgath (0 AC)",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-spear-of-nulgath-0-ac",
+          "questName": "Muddled Past",
+          "sourceLines": [
+            1823,
+            1823
+          ]
+        },
+        {
+          "name": "Hollowborn Fiend Cloak of Nulgath (0 AC)",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-fiend-cloak-of-nulgath-0-ac",
+          "questName": "Muddled Past",
+          "sourceLines": [
+            1824,
+            1824
+          ]
+        },
+        {
+          "name": "Hollowborn Oblivion Blade Battle Pet",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-oblivion-blade-battle-pet",
+          "questName": "Muddled Past",
+          "sourceLines": [
+            1825,
+            1825
+          ]
+        }
+      ],
+      "expectedCount": 6,
+      "complete": true,
+      "status": "VERIFIED_SCOPED_QUEST_INVENTORY",
+      "blockers": [],
+      "scopeNote": "Guide explicit Rewards block at 7283–7288 defines these six members. Prior quest rewards and every turn-in prerequisite are excluded."
+    },
+    {
+      "id": "hollowborn-metamorphosis-of-nulgath",
+      "name": "Hollowborn Metamorphosis of Nulgath",
+      "sourceChapter": "Hollowborn",
+      "guide": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "seedLines": [
+          7290,
+          7335
+        ],
+        "collectionLines": [
+          7290,
+          7315
+        ]
+      },
+      "source": {
+        "url": "https://aqwwiki.wikidot.com/lae-s-quests",
+        "sourceFile": "content-sources/farm/equipment-sets/wiki/lae-s-quests.html",
+        "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d",
+        "status": "read",
+        "retainedSource": true
+      },
+      "scopedQuests": [
+        "Tug and Pull"
+      ],
+      "members": [
+        {
+          "name": "Hollowborn Metamorphosis of Nulgath",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-metamorphosis-of-nulgath",
+          "questName": "Tug and Pull",
+          "sourceLines": [
+            1866,
+            1866
+          ]
+        },
+        {
+          "name": "Hollowborn Archfiend",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-archfiend",
+          "questName": "Tug and Pull",
+          "sourceLines": [
+            1867,
+            1867
+          ]
+        },
+        {
+          "name": "Hollowborn Nulgath Morph",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-nulgath-morph",
+          "questName": "Tug and Pull",
+          "sourceLines": [
+            1868,
+            1868
+          ]
+        },
+        {
+          "name": "Hollowborn Hand of Nulgath",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-hand-of-nulgath",
+          "questName": "Tug and Pull",
+          "sourceLines": [
+            1869,
+            1869
+          ]
+        },
+        {
+          "name": "Hollowborn Battlefiend of Nulgath",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-battlefiend-of-nulgath",
+          "questName": "Tug and Pull",
+          "sourceLines": [
+            1870,
+            1870
+          ]
+        },
+        {
+          "name": "Hollowborn Shadows of the Oversoul",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-shadows-of-the-oversoul",
+          "questName": "Tug and Pull",
+          "sourceLines": [
+            1871,
+            1871
+          ]
+        },
+        {
+          "name": "Hollowborn Archfiend Runes",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-archfiend-runes",
+          "questName": "Tug and Pull",
+          "sourceLines": [
+            1872,
+            1872
+          ]
+        }
+      ],
+      "expectedCount": 7,
+      "complete": true,
+      "status": "VERIFIED_SCOPED_QUEST_INVENTORY",
+      "blockers": [],
+      "scopeNote": "Guide explicit Rewards block at 7306–7312 defines seven members. The following Roles Unreversed bonus quest is a distinct reward block and is recorded separately, not silently added to the named main-quest collection."
+    }
+  ],
+  "adjacentBonusReview": {
+    "name": "Roles Unreversed bonus rewards",
+    "sourceChapter": "Hollowborn",
+    "guideLines": [
+      7317,
+      7335
+    ],
+    "source": {
+      "url": "https://aqwwiki.wikidot.com/lae-s-quests",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/lae-s-quests.html",
+      "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d",
+      "status": "read",
+      "retainedSource": true
+    },
+    "questName": "Roles Unreversed",
+    "members": [
+      {
+        "name": "Hollowborn Hood of Nulgath",
+        "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-hood-of-nulgath",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1904,
+          1904
+        ]
+      },
+      {
+        "name": "Hollowborn Legacy of Nulgath Horns",
+        "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-legacy-of-nulgath-horns",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1905,
+          1905
+        ]
+      },
+      {
+        "name": "Hollowborn Skull of Nulgath (0 AC)",
+        "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-skull-of-nulgath-0-ac",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1906,
+          1906
+        ]
+      },
+      {
+        "name": "Dual Hollowborn Spear of Nulgath",
+        "wikiUrl": "https://aqwwiki.wikidot.com/dual-hollowborn-spear-of-nulgath",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1907,
+          1907
+        ]
+      },
+      {
+        "name": "Dual Hollowborn Phoenix Blade of Nulgath",
+        "wikiUrl": "https://aqwwiki.wikidot.com/dual-hollowborn-phoenix-blade-of-nulgath",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1908,
+          1908
+        ]
+      },
+      {
+        "name": "Dual Hollowborn Overfiend Blade of Nulgath",
+        "wikiUrl": "https://aqwwiki.wikidot.com/dual-hollowborn-overfiend-blade-of-nulgath",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1909,
+          1909
+        ]
+      },
+      {
+        "name": "Dual Hollowborn DragonBlade of Nulgath",
+        "wikiUrl": "https://aqwwiki.wikidot.com/dual-hollowborn-dragonblade-of-nulgath",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1910,
+          1910
+        ]
+      },
+      {
+        "name": "Dual Hollowborn Void Sword",
+        "wikiUrl": "https://aqwwiki.wikidot.com/dual-hollowborn-void-sword",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1911,
+          1911
+        ]
+      },
+      {
+        "name": "Dual Hollowborn Soulreaper of Nulgath",
+        "wikiUrl": "https://aqwwiki.wikidot.com/dual-hollowborn-soulreaper-of-nulgath",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1912,
+          1912
+        ]
+      },
+      {
+        "name": "Hollowborn Hands of Nulgath",
+        "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-hands-of-nulgath",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1913,
+          1913
+        ]
+      },
+      {
+        "name": "Hollowborn Mini-Nulgath Battle Pet (0 AC)",
+        "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-mini-nulgath-battle-pet-0-ac",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1914,
+          1914
+        ]
+      },
+      {
+        "name": "Hollowborn Nulgath Larvae",
+        "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-nulgath-larvae",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1915,
+          1915
+        ]
+      },
+      {
+        "name": "Hollowborn Void Orb",
+        "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-void-orb",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1916,
+          1916
+        ]
+      },
+      {
+        "name": "Hollowborn Shadow Morph of the Oversoul",
+        "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-shadow-morph-of-the-oversoul",
+        "questName": "Roles Unreversed",
+        "sourceLines": [
+          1917,
+          1917
+        ]
+      }
+    ],
+    "relationship": "Separate bonus quest after Tug and Pull. Main collection above is the explicit 7-member Rewards block; do not infer this bonus belongs to that named set solely from shared seed range.",
+    "complete": false,
+    "blockers": [
+      "No separate named collection identity is established by the guide. Hollowborn Void Orb needs equipment category verification before any equipment-only bonus inventory can be declared complete."
+    ]
+  }
+}

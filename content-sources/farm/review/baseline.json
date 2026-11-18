@@ -1,0 +1,6268 @@
+{
+  "capturedAt": "2026-11-14T17:22:37.269Z",
+  "items": [
+    {
+      "id": "blade-of-awe",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "awe",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Artifact Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "83a68b4a65df042c14deecd073298f11e946896447e8ec8fd810cf061c22725a",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Museum · Valencia",
+          "map": "/join museum"
+        },
+        {
+          "id": "merge-2",
+          "method": "Merge",
+          "location": "Nostalgia Quest · Yulgar's Dual Wield Drop Off",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "armor-of-awe",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "awe",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "6de015475c864f40492baffe0fcaa9753e17d3ce7a0676b2b2e4c439b785126a",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Museum · Valencia",
+          "map": "/join museum"
+        }
+      ]
+    },
+    {
+      "id": "helm-of-awe",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "awe",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b9dd8c868217e19d9101fb0b2cf12f7007b51a7743fbf2ca90cb02e37f581a8f",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Museum · Valencia",
+          "map": "/join museum"
+        }
+      ]
+    },
+    {
+      "id": "cape-of-awe",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "awe",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "392ffd0f508411e65d7798d87ff0eea4792dfa4598bf26e563158dbeb6d1ee17",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Museum · Valencia",
+          "map": "/join museum"
+        }
+      ]
+    },
+    {
+      "id": "aureate-shield-aegis",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "595fcc95edd13a969ffcc7406cd14f78648eba559b8b3690f7ecc052a896ab96",
+      "routes": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "location": "Dwarfhold Keep",
+          "map": "/join dwarfhold"
+        }
+      ]
+    },
+    {
+      "id": "polly-roger",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "595fcc95edd13a969ffcc7406cd14f78648eba559b8b3690f7ecc052a896ab96",
+      "routes": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "location": "Lolosia",
+          "map": "/join pirates"
+        }
+      ]
+    },
+    {
+      "id": "sepulchure-s-doomknight-armor",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Artifact Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "595fcc95edd13a969ffcc7406cd14f78648eba559b8b3690f7ecc052a896ab96",
+      "routes": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "location": "Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "blinding-light-of-destiny",
+      "category": "Weapons",
+      "subtype": "Axe",
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Artifact Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "0f5a3c1215d449646d479b6f70e9cadfedf064be7b0ccdf0b026463229811956",
+      "routes": [
+        {
+          "id": "book-of-lore",
+          "method": "Shop",
+          "location": "Blinding Light of Destiny (Shop) - Book of Lore Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+          "map": null
+        },
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Blinding Light of Destiny (Shop) - Book of Lore Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "necrotic-sword-of-doom",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "ca1f563b7541a5d33560348b30bfd69db2f14e4cdd642ea002001fc9c6fbcb8f",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Necrotic Sword of Doom (Shop) - Shadowfall Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+          "map": null
+        },
+        {
+          "id": "merge-2",
+          "method": "Merge",
+          "location": "Necrotic Sword of Doom (Shop) - Shadowfall Yulgar's Dual Wield Drop Off - Nostalgia Quest",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "sepulchure-s-original-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "595fcc95edd13a969ffcc7406cd14f78648eba559b8b3690f7ecc052a896ab96",
+      "routes": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "location": "SDKA Gift - Shadowfall Sepulchure ShadowScythe Armor - Book of Lore Shadowfall Toy Sepulchure Shop - Book of Lore",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "original-drakath-armor",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "chaos",
+      "image": null,
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "7517e8ad375e873b9296826c92db2ed12ae36f3b1a63cc9952ddeb13c0c43ade",
+      "routes": [
+        {
+          "id": "shop",
+          "method": "Shop",
+          "location": "Drakath's Armor - Book of Lore",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "chaorrupter-unlocked-free-player",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "chaos",
+      "image": null,
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "ebd493eec5ad773e82ed95fcbab6cbdf0f261e09b78d0207e7828cf13aad7edc",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Chaos War Merge - Chaos War (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "archfiend-doomlord",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "595fcc95edd13a969ffcc7406cd14f78648eba559b8b3690f7ecc052a896ab96",
+      "routes": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "head-of-the-legion-beast",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "272d6848e8af05c8302ec136361f5b0ec15a91f80b335f9cd30e75b16d08df69",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Seven Circles War Merge - Seven Circles War",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "exalted-apotheosis",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/weapons/item-apotheosis.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "6ede0565b674a50763469bd671997950e923e7fc547898eb079102a7dd6ea1bd",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Exaltia Merge Inn at the Edge of Time Ultra Engineer (Location) Ultra Ezrajal (Location) Ultra Warden (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dual-exalted-apotheosis",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/dual-exalted-apotheosis.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "d8080d0df635d3080acf5f5f6b6f0e1ee66dc02ad5dffb4d15687b1ff31a3443",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Exaltia Merge Inn at the Edge of Time Ultra Engineer (Location) Ultra Ezrajal (Location) Ultra Warden (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "sin-of-the-abyss",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/sin-of-the-abyss.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "5078feeef17f7d6413e57219aff5ef774a13d22a8cab6048117c50c8e27562ad",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Nulgath's Merge Shop - Ultra Nulgath",
+          "map": "/join ultranulgath"
+        }
+      ]
+    },
+    {
+      "id": "empowered-undead-champion",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/empowered-undead-champion.png",
+      "membership": "unknown",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "595fcc95edd13a969ffcc7406cd14f78648eba559b8b3690f7ecc052a896ab96",
+      "routes": [
+        {
+          "id": "quest",
+          "method": "Quest",
+          "location": "Ultra Dage",
+          "map": "/join ultradage"
+        }
+      ]
+    },
+    {
+      "id": "infernal-flame-khopesh",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/infernal-flame-khopesh.png",
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "2dc10d98b2009cfcf28e74921d9e32b593b5a15e5ee7165bcbb15584316b5d89",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "FireAvatar Merge - Fire Avatar FireAvatar Merge - Ultra Avatar Tyndarius (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "greatblade-of-the-entwined-eclipse",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/challenges/ea9e9977b56437b88c2f32d3.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "9cb299ac30b6de2d9dd49bcd448c5246918d99eb1fd5b61bfe56862ed4a361df",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Celestial Temple Forge - Eclipse Ascent",
+          "map": "/join templeshrine"
+        }
+      ]
+    },
+    {
+      "id": "greatblade-of-the-solstice-moon",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/challenges/afa443aae08044cce16048fc.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "5bf732398041fffc479d8a9379546d3e85242f2601c1f9e736dc3c12420c4301",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Celestial Temple Forge - Eclipse Ascent",
+          "map": "/join templeshrine"
+        }
+      ]
+    },
+    {
+      "id": "greatblade-of-the-midnight-sun",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/challenges/e508ae0b91cfbdb99875233f.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "b5a5fba3d4bcf9e4467e5dbe5d9ae686fb84d614cbc752bcf936bcffdb7d6df4",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Celestial Temple Forge - Eclipse Ascent",
+          "map": "/join templeshrine"
+        }
+      ]
+    },
+    {
+      "id": "drago-s-royal-guard",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/drago-s-royal-guard.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "7c629f3e20652d3196253636faf08ef93825562b7e4456fa266fb05d5ad9bba7",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Ultra Drago Merge - Ultra Drago",
+          "map": "/join ultradrago"
+        }
+      ]
+    },
+    {
+      "id": "malgor-s-shadowflame-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/malgor-s-shadowflame-blade.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "verified",
+      "recipesHash": "2607fcc4ac55abb2b6cff73264e4aec597c97605ab2561350d7c16badbfff3da",
+      "routes": [
+        {
+          "id": "merge-1",
+          "method": "Merge",
+          "location": "Ultra Speaker Merge - Ultra Speaker",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "shaman",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/classes/d5afc021cb0c69008d72f906.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "verified",
+      "recipesHash": "0ce3d30e623b9de000258689aa986b096ce90af6fa5104063b15ef8324ec5dff",
+      "routes": [
+        {
+          "id": "reputation",
+          "method": "Reputation",
+          "location": "Arcangrove Rep Shop · Rayst",
+          "map": "/join arcangrove"
+        }
+      ]
+    },
+    {
+      "id": "adeptus-kathooli",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-adeptus-kathooli.png",
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b147b59cc03fbae2233d026659c5d4db36a1cd3ed3c507f97e5b7b56f0dc15ad",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Kathool's Chest - God of the Depths Bonus Zone",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "altar-of-vordred",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Empower Vordred's Armor",
+          "location": "Stonewood",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "ancient-shogun-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "8354dfbe6b4338ddedf169c04722052b2c5cd0a668ee3c3978c35de927aa2095",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Dilligas' Merge Shop - Evil War Nulgath",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "ancient-shogun-katanas",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "d3b858b5b159d9491f632f20231dd04f2ba3a7489520fb5eb87ada80e6810bb0",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Dilligas' Merge Shop - Evil War Nulgath",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "arcane-blade-of-glory",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "10a1e0108cab501d404400d7d81544ccf449bf672be1e5c47049aa03d1a01558",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Chest Shop - River",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "arch-doomknight",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "A Means to an End",
+          "location": "Shadow Vault",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "archfiend-enchanted-orbs",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "2b4999839c6680c27a9c45d36345bada4e383fa247d5b3f55f86f9764fe5f2e3",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "ArchFiend Warlord Merge - Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "archfiend-warlord",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "27cf732aa7b7f441eb7ad48f247192bb320b6814199a42f1622ec70c0ea715c1",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "ArchFiend Warlord Merge - Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "armor-of-zular",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "awe",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Armor of Zular",
+          "location": "Djinn Gate",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "aspect-of-luxuria",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "f81118fefe1d4da3d30a15863e00db3332e58515e322c680a86ea4350c32e2df",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Seven Circles Merge - Seven Circles",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "astral-mantle",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Lumina Elementi",
+          "location": "Archmage (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "avatar-of-death-s-scythe",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Avatar of Death's Scythe",
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "awethur-s-accoutrements",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "awe",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": "Gear of Awe - Museum",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "beast-warrior",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "beetle-warlord-pet",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Metamorphosis",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "behemoth-blade-of-shadow",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "2aadece673d070d7cfd29dcaf68d2bf2201736a9b38498cfa9c225b84ee09765",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "PvP Trophy Shop - Game Menu",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "binky-s-uni-horn",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "routes": []
+    },
+    {
+      "id": "black-oversoul-cape",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "black-star-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Hidden Secret Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Third Spell",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blaze-of-awe",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-blaze-of-awe.png",
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Forging the Blaze of Awe",
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blinding-blade-of-destiny",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b6db8281ce83a3eb9d693029336f8a14db4e64ca416e4e0a761b91c66badf13d",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blinding-bow-of-destiny",
+      "category": "Weapons",
+      "subtype": "Bow",
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "2634b93ab0e3b5ca6604cb5f475ca41ab04a1407a348caeae6a5412359b239d3",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blinding-mace-of-destiny",
+      "category": "Weapons",
+      "subtype": "Mace",
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "9f70d94485db87929d7428f33afddc9462c372d8865e36718b1bec44ca3b9f86",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blinding-scythe-of-destiny",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b4d22f0ab99eef4760cbc67a5ce69a27f5acc38e82dcffd91091a295e80edfc3",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blood-ranger-bow",
+      "category": "Weapons",
+      "subtype": "Bow",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "14a676bb904408b3e9191fd2602144f19bc0959343c4a0e4b83a1e3fdebfab2a",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blood-ranger-cape",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "d6dea974843085e4b89ee97a28caac3cfc5050c04cf532d714356780af8117b4",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blood-ranger-morph",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "18735a091efd81527a98e1b24a28b45a707680cae09daeeebe23212830ed95d9",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blood-ranger-sword-and-sheath",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b31913c9d21bbe5d55230e99ab985ec2cbf40ce302598209046ae75a8863935e",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "blood-sorceress",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Tower of Mirrors",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "bounty-hunter-s-drone-pet",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Seasonal Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "bow-of-destiny",
+      "category": "Weapons",
+      "subtype": "Bow",
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b3769ab44157442b61e5a989d2d60c46e94bd0a6da00dee8155394584adc05e1",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Light Merge - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "bright-blade-of-destiny",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "c61e8fab618ce61de3829d32cd3d0efedbd58fb589db002f3adc7d405d8360ee",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Light Merge - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "bright-bow-of-destiny",
+      "category": "Weapons",
+      "subtype": "Bow",
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "77210a1810b16926ffeb64a89b925ae5bb41e1d6ba1e0f31bd11d42cb71fdf12",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Light Merge - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "bright-knight-armor",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "routes": []
+    },
+    {
+      "id": "bright-mace-of-destiny",
+      "category": "Weapons",
+      "subtype": "Mace",
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "95f3208358c901f0404dd015af768f22e4d5b361ce9896681a298dd087262bd0",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Light Merge - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "bright-paragon-pet",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Rare Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "bright-scythe-of-destiny",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "027721160fce3e96539d31e67facd36c5a2e83e295dd95a0a21e3097483be6b5",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Light Merge - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "broadsword-of-bane",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "3709bc657ed79cb25c94abb2cdfd0eb47134893980ceda0145934fa1e7c0af54",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "burning-sword-of-doom",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-burning-sword-of-doom.png",
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Forging the Burning Sword of Doom",
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "caladbolg",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Pay Homage to Caladbolg",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "candy-corn-crusher",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Seasonal Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "6e8997a8ba92da362670fbafe450fdc5c2ef8ba80c47d414cd8d602ef89c2e5b",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Harvest Merge - Feast",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "celestial-archfiend",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Artifact Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": "Fiend Shard (Shop) - Prime Fiend Shard",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "celestial-pirate-commander",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Seasonal Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Sailor of the Celestial Skies",
+          "location": "Lolosia",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "chibi-vordred",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Empower Vordred's Armor",
+          "location": "Stonewood",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "classic-hollowborn-doomknight-armor",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "hollowborn",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "A Dark Knight Rises",
+          "location": "Hollowdeep",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "classic-hollowborn-paladin-armor",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "hollowborn",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "The Post Summoning",
+          "location": "Hollowdeep",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "combat-soulreaper-of-nulgath",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Combat Style: Soulreaper of Nulgath",
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "corrupted-dragon-slayer",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Artifact Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Legion Exercise Number 4",
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "crag-bamboozle",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "routes": []
+    },
+    {
+      "id": "crested-void-war-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Destroyer Diamond Quest",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "crimson-face-plate-of-nulgath",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "crimson-orb-pet",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Rare Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": "Nulgath Birthday - Game Menu",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "crimson-plate-of-nulgath",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "crown-of-wrath",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "f076c0cb432373008c50a00ab4355fa055a265d6014e6fb1456e8987c7feecb9",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Seven Circles War Merge - Seven Circles War",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "crystal-phoenix-blade-of-nulgath",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "1f51e1511163b00c92e3ab244bbe79459925acedd5f00bbb2d3258d501e5f240",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "cursed-doomblade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "blacksmithing",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Upgrade Sepulchure's Undead Blade",
+          "location": "Battleon Town",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "cyber-crystal-phoenix-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "9a8347a155af5d4ab0676e1f6f1eba76a3530449666af5cb082d974aed9d0c65",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "cyber-void-cape",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Cyber Void Paladin Set",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "cyber-void-light-of-destiny",
+      "category": "Weapons",
+      "subtype": "Axe",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Cyber Void Paladin Set",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "cyber-void-paladin",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Cyber Void Paladin Set",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "cyber-void-paladin-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Cyber Void Paladin Set",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "daggers-of-destruction",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "ef32b88f5dc8c36847d97d909619aa8e012cf88f5100244df8dc92b212c226ab",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "dark-dragon-slayer",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "420d08acef45739433e5dbd46533143aa0667f477d93637ab143e9345710b111",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Streamwar Merge - Timestream War",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dark-dragon-slayer-s-halberd",
+      "category": "Weapons",
+      "subtype": "Polearm",
+      "primaryGroupId": "dragonkin",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Streamwar Merge - Timestream War",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dark-lord",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/classes/8e2b142cc245a0d6f9dda06c.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "46b16959683e8d6e05fefca101061c02a77391ba42e4c9cdb166b77ccfeec35a",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "darkon-s-debris-2-reconstructed",
+      "category": "Weapons",
+      "subtype": "Polearm",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-darkon-s-debris-2-reconstructed.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "65b399ba6cd5cf04c88dea089e9bdab46c8d345339f5763600f2842f35f75557",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Darkon Ultra Merge - Ultra Darkon",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "divine-mantle",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Lumina Elementi",
+          "location": "Archmage (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "divine-veil",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Lumina Elementi",
+          "location": "Archmage (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "divine-veil-and-locks",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Lumina Elementi",
+          "location": "Archmage (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "doomtech-doomknight",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "72b1399a2d819da7a2e397afc07333bd397220a5c31bffba1e5f4bcff133e4af",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "DoomPirate Haul - Doom Pirate",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dragon-of-time-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": "dragonkin",
+      "image": "/images/aqw/classes/5b95fad548430be49e22ea07.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Hero's Heartbeat",
+          "location": "Inn at the Edge of Time",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dragonblade-of-nulgath",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Artifact Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "fca98194edf0bc41fb116d0cf1b567784ea39794feeed6e2b2bf407b0003799e",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dragonfire-of-nulgath",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dragonlord-grandmaster",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Vasalkar Lair - Defend (2)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dragonlord-of-evil",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "42be364698ea2de9c28c6befb6d01543d317736785b9f144d6eb8c76bf9d7c2b",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Termina Temple Merge - Termina Temple",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dragonoid-of-hours",
+      "category": "Weapons",
+      "subtype": "Mace",
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "MQ Lesson",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dragonsoul-shinobi-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": "dragonkin",
+      "image": null,
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "028307d2eb6cd3134931081bbbc837114c296a1c28945bc93f621abd1cf66a17",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "DragonSoul Shinobi (Shop) - Shadow Fortress",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "drakath-the-eternal",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Eternal Drakath Set",
+          "location": "Eternal Chaos",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "drudgen-the-assistant",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "routes": []
+    },
+    {
+      "id": "dual-blinding-light-of-destiny",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "a16d59f6f1878d6ac3ba49bd5de14c80928f3817f1f30e7fc5fd1db427548904",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Yulgar's Dual Wield Shop - Nostalgia Quest",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dual-caladbolgs",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Pay Homage to Caladbolg",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dual-champion-blade-of-nulgath",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "member",
+      "rarity": "Rare Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "routes": []
+    },
+    {
+      "id": "dual-hollowborn-shadows-of-fate",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "hollowborn",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "The Post Summoning",
+          "location": "Hollowdeep",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dual-legion-soul-devourers",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "86f975a07815653cc00c7270b7adeddc483a2c100c0f13e50e4fc63bc60e2948",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Vulcar's Merge - Underworld",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dual-tainted-claymore-of-nulgath",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Combat Style: Tainted Claymore",
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "dual-toxic-void-katanas",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Destroyer Diamond Quest",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "ebony-dragonblade-of-nulgath",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Seasonal Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "routes": []
+    },
+    {
+      "id": "eclipse-emperor",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Hidden Secret Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Ascension of the Eclipse",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "eclipse-emperor-crown",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Hidden Secret Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Black Hole Sun",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "elite-void",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Spoiled Dragon",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "empowered-vordred-s-armor",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Empower Vordred's Armor",
+          "location": "Stonewood",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "eternity-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "19a2b16c143dc7dfd6172a5f2c7859fcc3cb1f487185e23990fe7f4714127deb",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-blood-guard",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Blood Tears",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-blood-of-nulgath",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-blood-orb",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "e0e5cc4160c6b55ad0742b766cd92888c6bafd5989e157ca6fcba7a872e4b0eb",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Dirtlicker's Shop - Arch Portal",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-fiend-cape",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Evolved Fiend Gear",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-fiend-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Evolved Fiend Gear",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-fiend-of-nulgath",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Evolved Primal Orb Quest",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-hex-staff",
+      "category": "Weapons",
+      "subtype": "Staff",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Empowering the Empowered",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-primal-orb",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": "6 Year Upgrade Badge - Book of Lore",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-shadow-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Emotions",
+          "location": "Evolved Shadow Orb",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-shadow-of-nulgath",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "evolved-shadow-orb",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "524a840b88a21ec454738f3a667bef9b27b88ac547aa834ff256127af9aea0b2",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Dirtlicker's Shop - Arch Portal",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "face-of-treachery",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "0c88f811f95cfe68df5116b2fb6e7d7733a5a82d0df2707761e66e2ff7fd948a",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Seven Circles War Merge - Seven Circles War",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "faces-of-violence",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "bc56d0645c90cfebc75492922183c02732454e85a3c3307991c36228b323709d",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Seven Circles War Merge - Seven Circles War",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "fiend-of-light",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Learn from the Past",
+          "location": "Darkplane",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "fire-champion-s-armor",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "dragonkin",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "cdf4c5a1c82f95651f142e3e4037be45233a91dbabcfaa7ac64a15af87b64c98",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "War Training Merge - War Training",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "fortitude-hubris",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Dual Wielding",
+          "location": "DragonRune Hall (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": "/images/aqw/classes/f2b7137f8a7dc04cca4c9b17.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Ice See You",
+          "location": "Ice Dungeon",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-s-cloak",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Cold Hearted",
+          "location": "Ice Dungeon",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-s-hair",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Cold Hearted",
+          "location": "Ice Dungeon",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-s-locks",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Cold Hearted",
+          "location": "Ice Dungeon",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "gemstone-of-nulgath",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "f3afefbee4f5059d755ccab588f146ffb3f908af7ee0abecec9b009005b3a8f0",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Dwobo's Shop - Crash Ruins",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "gluttony-s-maw",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "3f3682e34db00cede0c687dd107ff537d2b37265332ea0e0944a2ffa241e1b9f",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Seven Circles Merge - Seven Circles",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "gold-exalted-paladin",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "e09f48106b16f9b8e5c9e35ca8c21fabbbcaa50c22e4969a648e321f5f9b2cd4",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Paladin TreasureHunter - Lightguard Keep",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "golden-blade-of-fate-sword",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "1672907f1b4fac1292f4a85e16fe41430faeeeab650c84772a0583f8788f6806",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "golden-hanzo-void",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "routes": []
+    },
+    {
+      "id": "golden-inquisitor-of-shadowfall",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Inquisitor Inquiry",
+          "location": "Shadowfall",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "headless-pumpkin",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Seasonal Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "ad56619705d2ed14557b87669543348a21ba4b84923755203afc82a32ac2232d",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Harvest Merge - Feast",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "healer",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/classes/8b8ea1247d372ab67da9f8ba.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "hollowborn-dragonslayer-s-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "hollowborn",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b1eee1ea69f26aaa822fb6efb47718fec97a053ede0f7d19ca721299cc928e4a",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Shadowrealm Merge - Shadow Realm",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "hollowborn-oblivion-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "hollowborn",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "fba417e6f443bc7377974c5201ca4b17978cf6725c22bd2b782ed49433797f74",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "horned-void-war-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Destroyer Diamond Quest",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "infernal-flame-pyromancer",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-infernal-flame-pyromancer.png",
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "f53128749c3aaa0a296a77f90decafa1f3b1004430aea81e4e8ba05a2e253513",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "infinity-titan-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "unknown",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": "Infinity Titan Upgrade Bonus - Book of Lore",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "legendary-elemental-warrior",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": "/images/aqw/classes/61ec0d61c784b2db5b0c726d.png",
+      "membership": "unknown",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "0a6a2f989ee7e4cb1d4e753f81dfe2ac8af083a364422e7a69143d78ca94d07e",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "legendary-naval-commander",
+      "category": "Classes",
+      "subtype": "Gun",
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "legion-dragonblade-of-nulgath",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "f35f399d5f8f6f633f54faf7a12d4dc5702673f006fc1573b88ca2b07521c4cb",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "legion-forge-spawn",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "4f662221b31fe3cac6befb8d3fb5236ff747074f86ce29902e8454b1022b2ac6",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Vulcar's Merge - Underworld",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "legion-forge-visor",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "cbe08b118dbdf46714af304e984ddf4658f5b0d5f00f734ff6b0f8700f2d4d1d",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Vulcar's Merge - Underworld",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "legion-revenant-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/classes/e87eace937a53648665351b0.png",
+      "membership": "unknown",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Legion Fealty 4",
+          "location": "Revenant (Location)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "legion-soul-devourer",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Vulcar's Merge - Underworld",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "lightcaster-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": "good",
+      "image": "/images/aqw/classes/d09dd89c2e60e10dad4cce6c.png",
+      "membership": "unknown",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "LightCaster Class",
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "mace-of-destiny",
+      "category": "Weapons",
+      "subtype": "Mace",
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "167d0d20ec8ec309e2132f97a0338751cd2533037fdfe1916e8f0d07b46f34d5",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Light Merge - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "mage",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/classes/e44816bd8cb3ccc06ebe0cd8.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "malgor-the-shadowlord",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Build Malgor's Armor Set",
+          "location": "Mana Cradle",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "mini-void-shogun",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Shogun Farming Quest",
+          "location": "Heiwa Valley",
+          "map": "/join heiwavalley"
+        }
+      ]
+    },
+    {
+      "id": "mini-void-shogun-battlepet",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Shogun Farming Quest",
+          "location": "Heiwa Valley",
+          "map": "/join heiwavalley"
+        }
+      ]
+    },
+    {
+      "id": "mystical-devotee-of-mana",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "elemental",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b7d5b86426107acf77d374b2d75e703d08a19a830d04d330dd8bd201b4491fca",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Worlds Core Merge - World's Core",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "naval-commander-class",
+      "category": "Classes",
+      "subtype": "Gun",
+      "primaryGroupId": null,
+      "image": "/images/aqw/classes/d4308e8864d6ba47b7cd56bd.png",
+      "membership": "unknown",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": "0 AC Naval Commander - Naval Commander Chest",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "necrotic-blade-of-doom",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "708cfbe2d21f95ffb76921875501da47ab0b7218cac8267b4245d2d328132e95",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Necrotic Sword of Doom (Shop) - Shadowfall",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "necrotic-blade-of-the-underworld",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/necrotic-blade-of-the-underworld.png",
+      "membership": "unknown",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Necrotic Sword of the Underworld",
+          "location": "Ultra Dage",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "necrotic-bow-of-the-shadow",
+      "category": "Weapons",
+      "subtype": "Bow",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "9330122be2a67abd25a653ecaf1ba4e76f4a7ef2771280e1d7a54d3cce13bd86",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "necrotic-broadsword-of-bane",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "0a039f2d0116665672b38af6c11e11fe8b66c0b16b3bbd381e30e41ab53cb52e",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "necrotic-daggers-of-destruction",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "1229ec4e336e4c8130d88bf23040006f846acb5fe54a5512d66ae9f39bfd7e1c",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "necrotic-scythe-of-scourge",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "a7b709a4dc5239984c95ea6218e4db69498a3debce0963a8b4c561f8d0f5589a",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "necrotic-sword-of-the-abyss",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "77c1b937de15361d5ad99affe80ad0beb7fe490d8893692d213baffd17d35937",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Void Highlord Merge Shop - Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "oracle",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/classes/033df3b039c4579f2766c33e.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "paladin-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/classes/499756d937a90f4bfa12349e.png",
+      "membership": "member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "platinum-coin-of-nulgath-300",
+      "category": "Pets",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "prince-darkon-s-poleaxe",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-prince-darkon-s-poleaxe.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "02f0e871c6a9852ad56e44d36785e9c1a8012fe36a37f78c73cec3aa2ade646f",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Ultra Drago Merge - Ultra Drago",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "rogue",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/classes/f88690ed56560991dacdb2e8.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "scythe-of-destiny",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "2d4ff40b46664480f77959b5d97c3c8eff69b5531d8e21f78ca77f2b71ce263e",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Light Merge - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "scythe-of-scourge",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "sentinel",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/classes/3f349e1d275e31e86c65bc64.png",
+      "membership": "unknown",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "shadow-blade-of-despair",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "df854aa56fceca8c34eee189aa0fc25d4cd734ef6710c7b6e15e1611e4ea8aa1",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Chest Shop - River",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "shadow-broadsword-of-bane",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "dcbfd74b9bd22a4c8beb95279a1b663f0a5d8349e60690948d6fd03b5326fa87",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "shadow-daggers-of-destruction",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "14ebcf06a3b859446c9d8510c1ba58062aa6b65d5717145f1f821e84032649be",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "shadowlord-s-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Build Malgor's Armor Set",
+          "location": "Mana Cradle",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "shadowscythe-of-scourge",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "evil",
+      "image": null,
+      "membership": "member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "1f99a0de2ceabb4484a140e5be9749ff1dbf564e7c5772273d8164e2e40e932d",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Doom Merge (1) - Necropolis",
+          "map": "/join necropolis"
+        }
+      ]
+    },
+    {
+      "id": "silver-exalted-paladin",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "good",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "The Final Scroll",
+          "location": "LightGuard Keep",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "silver-paladin",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "stare-of-greed",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "unknown",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "0af89f9adf2db3893f53e02abc242a3c5111bc9b453e477af352c0ce2a3e503b",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Seven Circles Merge - Seven Circles",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "storm-knight",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "95b1135c6d34393d3620915352c0bb6f4790d207d385849c2bb26834f950d7da",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "storm-knight-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "59cdbbc6c464bcb5aae3594de7871100a85ca63bb2612e240c8c24307760e9cb",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "tainted-destruction-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Destroyer Diamond Quest",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "the-point",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Buried Treasure",
+          "location": "Coral Beach",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "toxic-void-katana",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Destroyer Diamond Quest",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "undead-spawn-minion",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Vulcar's Merge - Underworld",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "unstable-betrayal-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "69fdc4acf6b36e2a8c57cd45867f89a0a442803ef8723632814c6a9b5dacf62b",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Void Refuge Merge Shop - Void Refuge",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-battlemage",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Weird Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "The Flame Dragon",
+          "location": "Vasalkar Lair - Attack (2)",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-beetle-general",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "I'm Hungry",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-beetle-warlord",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Still Hungry",
+          "location": "N/A",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-destroyer",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Destroyer Diamond Quest",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-destruction-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Destroyer Diamond Quest",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-highlord-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/classes/0f298209b73522383e2c82da.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "54824953b399078ddd70af0df6e432c102f6c3d5865679a0730aeb1388ae65e9",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Merge",
+          "quest": null,
+          "location": "Void Highlord Merge Shop - Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-light-of-destiny",
+      "category": "Weapons",
+      "subtype": "Axe",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Other",
+          "quest": null,
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-paladin",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Deeper and Deeper into Darkness",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-paladin-cape",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "A Dark Temptation",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-paladin-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "A Dark Temptation",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-paladin-horns",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "A Dark Temptation",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-paladin-katana",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "A Dark Temptation",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-paladin-katanas",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "A Dark Temptation",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-shogun-armor",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Shogun Farming Quest",
+          "location": "Heiwa Valley",
+          "map": "/join heiwavalley"
+        }
+      ]
+    },
+    {
+      "id": "void-shogun-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Shogun Farming Quest",
+          "location": "Heiwa Valley",
+          "map": "/join heiwavalley"
+        }
+      ]
+    },
+    {
+      "id": "void-shogun-katana",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Shogun Farming Quest",
+          "location": "Heiwa Valley",
+          "map": "/join heiwavalley"
+        }
+      ]
+    },
+    {
+      "id": "void-shogun-katanas-on-your-hip",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Shogun Farming Quest",
+          "location": "Heiwa Valley",
+          "map": "/join heiwavalley"
+        }
+      ]
+    },
+    {
+      "id": "void-shogun-mask",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Shogun Farming Quest",
+          "location": "Heiwa Valley",
+          "map": "/join heiwavalley"
+        }
+      ]
+    },
+    {
+      "id": "void-shogun-masked-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Shogun Farming Quest",
+          "location": "Heiwa Valley",
+          "map": "/join heiwavalley"
+        }
+      ]
+    },
+    {
+      "id": "void-shogun-naginata",
+      "category": "Weapons",
+      "subtype": "Polearm",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Shogun Farming Quest",
+          "location": "Heiwa Valley",
+          "map": "/join heiwavalley"
+        }
+      ]
+    },
+    {
+      "id": "void-spartan",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Spartan",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-spartan-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Spartan",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-spartan-blade-and-shield",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Spartan",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-spartan-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Spartan",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-spartan-helm-and-scarf",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Spartan",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-spartan-shielded-cape",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Spartan",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-spartan-spear",
+      "category": "Weapons",
+      "subtype": "Polearm",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Spartan",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-spartan-spear-and-shield",
+      "category": "Weapons",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Spartan",
+          "location": "Tercessuinotlim",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-spear-of-war",
+      "category": "Weapons",
+      "subtype": "Polearm",
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Void Destroyer Diamond Quest",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-warlock",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Tools For the Job",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-warlock-cape",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Corrupted Touch",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-warlock-helm",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Corrupted Touch",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-warlock-hood",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Corrupted Touch",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-warlock-horns",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Corrupted Touch",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "void-warlock-tendrils-cape",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Corrupted Touch",
+          "location": "Enchanted Nulgath Nation House",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "warrior-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": null,
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Shop",
+          "quest": null,
+          "location": null,
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "yami-no-ronin-class",
+      "category": "Classes",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/classes/10f7b7f8d30d35ad384cdd9e.png",
+      "membership": "non-member",
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "89bec8f667e4db87565443a86b11772987b1a7dc240e80a4f883b8517ef74c69",
+      "routes": [
+        {
+          "id": "wiki-location",
+          "method": "Quest",
+          "quest": "Yami no Ronin",
+          "location": "Dark Ally",
+          "map": null
+        }
+      ]
+    },
+    {
+      "id": "infernal-flame-horns",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-infernal-flame-horns.png",
+      "membership": null,
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "8aae07a2cf0d5a95a7af0358878e42857dac383da1339608335e409a8d7f1aef",
+      "routes": [
+        {
+          "id": "ultra-route-infernal-flame-horns",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultratyndarius",
+          "map": "/join ultratyndarius",
+          "tasks": [
+            {
+              "id": "ingredient-infernal-flame-hood",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infernal-flame-hood",
+      "category": "Helms",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-infernal-flame-hood.png",
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b629d02011916c71913dfc857c1a02f91d684ca38c231f2d31d17c800051baf2",
+      "routes": [
+        {
+          "id": "ultra-route-infernal-flame-hood",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultratyndarius",
+          "map": "/join ultratyndarius",
+          "tasks": [
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infernal-claws-runes",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-infernal-claws-runes.png",
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "42bb1537948352647185e2dcfc9dfc5a779ddf226186f38a34c0e8ad768223ac",
+      "routes": [
+        {
+          "id": "ultra-route-infernal-claws-runes",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultratyndarius",
+          "map": "/join ultratyndarius",
+          "tasks": [
+            {
+              "id": "ingredient-infernal-flame-claws",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-infernal-flame-runes",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infernal-flame-claws",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-infernal-flame-claws.png",
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "182b522b331a6d47df8b5a88147839d71e130fe900cb021df8e02bc40c7e6abc",
+      "routes": [
+        {
+          "id": "ultra-route-infernal-flame-claws",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultratyndarius",
+          "map": "/join ultratyndarius",
+          "tasks": [
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infernal-flame-runes",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-infernal-flame-runes.png",
+      "membership": "non-member",
+      "rarity": "Legendary Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "24ad6df4e8db922e73cea55378e83c29d913f006f3e50110568a299b573a6675",
+      "routes": [
+        {
+          "id": "ultra-route-infernal-flame-runes",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultratyndarius",
+          "map": "/join ultratyndarius",
+          "tasks": [
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war-blade-of-courage",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-war-blade-of-courage.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "85e98f6b5b44bce8c5b304153fdf851a89dc6239182ffcda203ecb29425dc93e",
+      "routes": [
+        {
+          "id": "ultra-route-war-blade-of-courage",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war-blades-of-courage",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-war-blades-of-courage.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "8e2a1108f662f6fb2d4109a0ae32cc2b35bc4ddd8b06b2dfd86864a377ba0e6a",
+      "routes": [
+        {
+          "id": "ultra-route-war-blades-of-courage",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "ingredient-war-blade-of-courage",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war-blade-of-power",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-war-blade-of-power.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "39663c23031c2bc7b6528f436ed7810419325ca6599edf5c91042ad6882ea83b",
+      "routes": [
+        {
+          "id": "ultra-route-war-blade-of-power",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war-blade-of-speed",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-war-blade-of-speed.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "e4e582a2f22ccc7d0fb61004090726600e363c857bca20d6ae45a776abbe5b16",
+      "routes": [
+        {
+          "id": "ultra-route-war-blade-of-speed",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war-blades-of-speed",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-war-blades-of-speed.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "0fd51d39a249ced2f6ac50df572695f48a0e31fb4e342c90602a9aa938795860",
+      "routes": [
+        {
+          "id": "ultra-route-war-blades-of-speed",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "ingredient-war-blade-of-speed",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war-blade-of-strength",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-war-blade-of-strength.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b8dd362ef90ab2d063b90e6b4cdab9cfb4bd541c11ef3319bb2e88eb5f4af9de",
+      "routes": [
+        {
+          "id": "ultra-route-war-blade-of-strength",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war-blade-of-wisdom",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-war-blade-of-wisdom.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "478244930a23b6bda6361356f6c0205644b854eb0b61419243a0a2daeb37b3c5",
+      "routes": [
+        {
+          "id": "ultra-route-war-blade-of-wisdom",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goddess-of-war-blades",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-goddess-of-war-blades.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "5baa470ffe5ec7b3082a6ae0152026e8a752944337b3f639bebcef23186ae09c",
+      "routes": [
+        {
+          "id": "ultra-route-goddess-of-war-blades",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "ingredient-war-blade-of-courage",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-power",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-speed",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-strength",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-wisdom",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goddess-of-war-cloak",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-goddess-of-war-cloak.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "06f5b868722cc4aeaae5069c66aee78bee8c3f1315a55e7469c7b783b13d6a3d",
+      "routes": [
+        {
+          "id": "ultra-route-goddess-of-war-cloak",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goddess-of-war-prestige-cloak",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-goddess-of-war-prestige-cloak.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "61e43a86bac9d46e6a5c0aa0c55f8f85049f4c90da916fc7fe5f59ba5c8d230b",
+      "routes": [
+        {
+          "id": "ultra-route-goddess-of-war-prestige-cloak",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "ingredient-war-blade-of-courage",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-power",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-speed",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-strength",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-wisdom",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-goddess-of-war-blades",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-goddess-of-war-cloak",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goddess-of-war",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-goddess-of-war.png",
+      "membership": null,
+      "rarity": null,
+      "verificationStatus": "needs-review",
+      "recipesHash": "1f52afaf42db89275492e322db11a3cf932a210418e59c43aca1a437e17ebb4b",
+      "routes": [
+        {
+          "id": "ultra-route-goddess-of-war",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "ingredient-war-blade-of-courage",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-power",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-speed",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-strength",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-wisdom",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-goddess-of-war-blades",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-goddess-of-war-cloak",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-goddess-of-war-prestige-cloak",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radiant-goddess-of-war",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-radiant-goddess-of-war.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "a24432dadb6eb630481ecc402ca51dc80fa978915e2f6137ce5d2740b5f939a2",
+      "routes": [
+        {
+          "id": "ultra-route-radiant-goddess-of-war",
+          "method": "Quest",
+          "quest": "The Goddess of War",
+          "location": "ultraspeaker",
+          "map": "/join ultraspeaker",
+          "tasks": [
+            {
+              "id": "ingredient-war-blade-of-courage",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-power",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-speed",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-strength",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-war-blade-of-wisdom",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-goddess-of-war-blades",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-goddess-of-war-cloak",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-goddess-of-war-prestige-cloak",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "ingredient-goddess-of-war",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-overfiend-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-overfiend-blade.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "0aedcc66b2b529ebbc2b5a31b6a0dd32d98766660c61f837b6214bb3136c164b",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-overfiend-blade",
+          "method": "Quest",
+          "quest": "Empowered Overfiend Blade",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-ungodly-reavers",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-ungodly-reavers.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "55ae9403ce765fa6a951ea12563b8c4c2a8369e4582e3ffa7a9a04be348d1559",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-ungodly-reavers",
+          "method": "Quest",
+          "quest": "Empowered Ungodly Reavers",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-shadow-spear",
+      "category": "Weapons",
+      "subtype": "Polearm",
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-shadow-spear.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "261e37e8e90bbc451a467eb10ee200c11cdab04dbda0be686087209c4c421716",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-shadow-spear",
+          "method": "Quest",
+          "quest": "Empowered Shadow Spear",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-bloodletter",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-bloodletter.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "436e48155c27006589aee459b503365d87c7f29cce0df96162d5b0a55e190b65",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-bloodletter",
+          "method": "Quest",
+          "quest": "Empowered Bloodletter",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-prismatic-manslayer",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-prismatic-manslayer.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "d62ad84ea2f51e2d660e34a7f6add0e087fe8db7fa97d5dbb4baa51b8c4d4fb9",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-prismatic-manslayer",
+          "method": "Quest",
+          "quest": "Empowered Prismatic Manslayers",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-prismatic-manslayers",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-prismatic-manslayers.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "ffc746c9e0c4a78b2003a136e7750171ab9183340c6ec8092f31128ecdcf1622",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-prismatic-manslayers",
+          "method": "Quest",
+          "quest": "Empowered Prismatic Manslayers",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-oblivion-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-oblivion-blade.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "4b4a625842d3c18283cab30a2169ccc7c4c89036433627bebbaefd729f66176d",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-oblivion-blade",
+          "method": "Quest",
+          "quest": "Empowered Oblivion Blade",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-charged-oblivion-blade",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-charged-oblivion-blade.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "0e686f6fa0f05f200aaa5d538e001421904c1d93c857adbbb159ddf888203fc1",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-charged-oblivion-blade",
+          "method": "Quest",
+          "quest": "Empowered Charged Oblivion Blade",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-legacy-of-nulgath",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-legacy-of-nulgath.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "59872c7e9321f811b9fdc2720ed080a077cbad55428b7c14c982f62c8b316a3f",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-legacy-of-nulgath",
+          "method": "Quest",
+          "quest": "Empowered Legacy of Nulgath",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-worshipper-of-nulgath",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-worshipper-of-nulgath.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "7fb2705547c16badc28a4474237ff0a2ffa2dcd808dd3dfba04dcc218c553e55",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-worshipper-of-nulgath",
+          "method": "Quest",
+          "quest": "Empowered Worshipper of Nulgath",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-evolved-void",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-evolved-void.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b28c7cc1f5a811f576978f07aca2a02ba7ef64557bf72ee34d6c23c7ba4e1df6",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-evolved-void",
+          "method": "Quest",
+          "quest": "Empowered Evolved Void Armors 1",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-evolved-fiend",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-evolved-fiend.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "e716962a3077dcb6f0e64743b2c1d48116bc3ff6265a138893bc145ebd83748f",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-evolved-fiend",
+          "method": "Quest",
+          "quest": "Empowered Evolved Void Armors 1",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-evolved-blood",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-evolved-blood.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "98c283815c76c5875f52cabfce5a3b49d1f92b7e838a2c664ff5abcc91f4282a",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-evolved-blood",
+          "method": "Quest",
+          "quest": "Empowered Evolved Void Armors 2",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-evolved-hex",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-evolved-hex.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "b78cf28dc0b304ed54b6b31b421b00a06ebe65301f09681a7dfa3d00f7543494",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-evolved-hex",
+          "method": "Quest",
+          "quest": "Empowered Evolved Void Armors 2",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-evolved-shadow",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "nation",
+      "image": "/images/aqw/equipment/equipment-empowered-evolved-shadow.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "1db051b7e5e50cab2a144619ff16548d87256d863b7ff1ae7a33a1035f5626c0",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-evolved-shadow",
+          "method": "Quest",
+          "quest": "Empowered Evolved Void Armors 2",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-sole-bloodletter",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/equipment-empowered-sole-bloodletter.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "6b5948c468211b9891570ec36db59ea1ec9edfc3204f43196421ad772d760948",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-sole-bloodletter",
+          "method": "Quest",
+          "quest": "Sole Empowered Blood Blade",
+          "location": "ultranulgath",
+          "map": "/join ultranulgath",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-blademaster",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-blademaster.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "d3ea70fdb7a9dd0c54c7bed7eca42929e714f57e357ab20045030ec22d1788e1",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-blademaster",
+          "method": "Quest",
+          "quest": "Empowered BladeMaster",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-blademaster-s-katana",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-blademaster-s-katana.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "666103db83f85fb2152995426631f7b1ae3410b1b556493608d143de1e87123b",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-blademaster-s-katana",
+          "method": "Quest",
+          "quest": "Empowered BladeMaster",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-dual-katanas",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-dual-katanas.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "1776218e19def63ab2c8ad2b25abcc50ddb4acce351e92d8b5b53bc9696f1784",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-dual-katanas",
+          "method": "Quest",
+          "quest": "Empowered BladeMaster",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-caladbolg",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-caladbolg.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "1b62f830fe3b3f0e8e12878c45b9be9609c4b5cc53334d452bac3d581ddb3c21",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-caladbolg",
+          "method": "Quest",
+          "quest": "Empowered Caladbolg",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-dual-caladbolgs",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-dual-caladbolgs.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "77bd16b2c116b3f8ad4382a200110fa4b119a52cdce02bcc40bfadafe0b2aad3",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-dual-caladbolgs",
+          "method": "Quest",
+          "quest": "Empowered Caladbolg",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-dark-caster",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-dark-caster.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "8dd61bc521cd328512354d85cbc94874fe59278c1031b6526ae85064c7956a92",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-dark-caster",
+          "method": "Quest",
+          "quest": "Empowered Dark Caster",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-forge-spawn",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-forge-spawn.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "22c2ef979d2d84a0a972b13955e3deee8ec243be08af24730bd67f129d764559",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-forge-spawn",
+          "method": "Quest",
+          "quest": "Empowered Forge Spawn",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-lich-king",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-lich-king.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "43091029658a6633717bfc9a52026cbd3cb2ab2d7f77e96f3319182fc03979b2",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-lich-king",
+          "method": "Quest",
+          "quest": "Empowered Lich King",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-paragon-plate",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-paragon-plate.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "1382b5f5d7d94ca01250fa345da8fa82feb9460c9578ca3f3a94d2dd4f30ddf3",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-paragon-plate",
+          "method": "Quest",
+          "quest": "Empowered Paragon Plate",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-hollowborn-caladbolg",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "hollowborn",
+      "image": "/images/aqw/equipment/equipment-empowered-hollowborn-caladbolg.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "8fada5e9a50642073880f81a2f548c6d0d019e3a1b9e96eadbf598a7daf5ec33",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-hollowborn-caladbolg",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "ingredient-empowered-caladbolg",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-dual-hollowborn-caladbolgs",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": "hollowborn",
+      "image": "/images/aqw/equipment/equipment-empowered-dual-hollowborn-caladbolgs.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "6b6d480c0e7da6333934ad54e54804a3976f399e9d70f4f118c811e911e3ec72",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-dual-hollowborn-caladbolgs",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "ingredient-empowered-dual-caladbolgs",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-prismatic-paragon",
+      "category": "Armors",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-prismatic-paragon.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "5b438a4ce305f9c9c3e49270b561dd279d16926255577d1e4dc2e03fde53ad18",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-prismatic-paragon",
+          "method": "Quest",
+          "quest": "Empowered Prismatic Paragon",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sin-of-the-underworld",
+      "category": "Weapons",
+      "subtype": "Sword",
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-sin-of-the-underworld.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "a5342cb1f2d945386cba90fbbb30c68c699090a83c1f68eace60e9945b581289",
+      "routes": [
+        {
+          "id": "ultra-route-sin-of-the-underworld",
+          "method": "Quest",
+          "quest": "Sin of the Underworld",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empowered-bonfire-altar",
+      "category": "Capes / Back Items",
+      "subtype": null,
+      "primaryGroupId": "legion",
+      "image": "/images/aqw/equipment/equipment-empowered-bonfire-altar.png",
+      "membership": null,
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "8e3aee8e4932d915c3c22e3148d34c3910fa0f148d96de7276ff3a8223e5c2d3",
+      "routes": [
+        {
+          "id": "ultra-route-empowered-bonfire-altar",
+          "method": "Quest",
+          "quest": "Empowered Forge Spawn",
+          "location": "ultradage",
+          "map": "/join ultradage",
+          "tasks": [
+            {
+              "id": "weekly",
+              "npc": null,
+              "map": null
+            },
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exalted-duality",
+      "category": "Weapons",
+      "subtype": "Dagger",
+      "primaryGroupId": null,
+      "image": "/images/aqw/equipment/exalted-duality.png",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "verificationStatus": "needs-review",
+      "recipesHash": "62479fe7931b63712878187b7055d290a32eb5feef5ca33976e59d4ae36c9a68",
+      "routes": [
+        {
+          "id": "ultra-route-exalted-duality",
+          "method": "Merge",
+          "quest": null,
+          "location": "ultraezrajal",
+          "map": "/join ultraezrajal",
+          "tasks": [
+            {
+              "id": "acquire",
+              "npc": null,
+              "map": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

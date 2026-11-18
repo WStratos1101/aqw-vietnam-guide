@@ -1,0 +1,155 @@
+{
+  "scope": "Farm inventory only. Positive target headings and explicit newbie/prerequisite/comp exclusions; unresolved entries retained pending media review.",
+  "decisions": [
+    {
+      "id": "shaman",
+      "wikiUrl": "https://aqwwiki.wikidot.com/shaman",
+      "decision": "RemovedFromFarm",
+      "reason": "Team-comp DPS suggestion; Shaman Armor in StoneCrusher recipe is not a Shaman Class target.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          5324,
+          5324
+        ],
+        "excerpt": "→ Lấy một class làm DPS chủ lực: Blaze Binder, Scarletta hoặc Shaman."
+      }
+    },
+    {
+      "id": "beast-warrior",
+      "wikiUrl": "https://aqwwiki.wikidot.com/beast-warrior",
+      "decision": "RemovedFromFarm",
+      "reason": "Rank prerequisite for Evolved Fiend equipment quest.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          4345,
+          4345
+        ],
+        "excerpt": "→ Rank 10 Beast Warrior Class: mua từ Legend Only Shop của Ragnar ở Battleon."
+      }
+    },
+    {
+      "id": "blood-sorceress",
+      "wikiUrl": "https://aqwwiki.wikidot.com/blood-sorceress",
+      "decision": "RemovedFromFarm",
+      "reason": "Beginner progression and prerequisite for Scarlet Sorceress target; user excludes newbie classes.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          8758,
+          8758
+        ],
+        "excerpt": "→ Tiếp theo, lấy Blood Sorceress Class ở /join towerofmirrors bằng cách đánh Scarletta (DC không quá cao)."
+      }
+    },
+    {
+      "id": "healer",
+      "wikiUrl": "https://aqwwiki.wikidot.com/healer",
+      "decision": "RemovedFromFarm",
+      "reason": "Starter Class used as owned prerequisite, excluded by explicit user scope.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          2673,
+          2673
+        ],
+        "excerpt": "- Có Healer Class Rank 10 trong inventory (mua tại Juvania's Shop ở /join trainers)."
+      }
+    },
+    {
+      "id": "mage",
+      "wikiUrl": "https://aqwwiki.wikidot.com/mage",
+      "decision": "RemovedFromFarm",
+      "reason": "Starter Class used as owned prerequisite, excluded by explicit user scope.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          2699,
+          2699
+        ],
+        "excerpt": "- Có Mage Class Rank 10 trong inventory (mua tại Arcana's Shop ở /join trainers)."
+      }
+    },
+    {
+      "id": "rogue",
+      "wikiUrl": "https://aqwwiki.wikidot.com/rogue",
+      "decision": "RemovedFromFarm",
+      "reason": "Starter Class used as owned prerequisite, excluded by explicit user scope.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          2659,
+          2659
+        ],
+        "excerpt": "- Có Rogue Class Rank 10 trong inventory (mua tại Metrea's Shop ở /join trainers)."
+      }
+    },
+    {
+      "id": "warrior-class",
+      "wikiUrl": "https://aqwwiki.wikidot.com/warrior-class",
+      "decision": "RemovedFromFarm",
+      "reason": "Starter Class used as Rank prerequisite for Paladin; excluded by explicit user scope.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          664,
+          664
+        ],
+        "excerpt": "- Để làm vậy thì bạn cần: Với member thì mua Paladin Class (cần có 2 classes là Warrior Rank 10 và Healer Rank 10 trong inventory) cho các quests “Legendary Paladin\" và “Aptitude Test”, hoặc mua Silver Paladin Class nếu bạn có 2k ACs tại Artix ở /join necropolis, và bán nó đi để lấy lại 1.8k ACs sau khi hoàn thành các quests \"Silver Paladin\" và “Aptitude Test”."
+      }
+    },
+    {
+      "id": "oracle",
+      "wikiUrl": "https://aqwwiki.wikidot.com/oracle",
+      "decision": "RemovedFromFarm",
+      "reason": "Rank prerequisite for Evolved Hex equipment quest.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          4219,
+          4219
+        ],
+        "excerpt": "→ Rank 10 Oracle Class: lấy từ Class Shop ở Game Menu."
+      }
+    },
+    {
+      "id": "paladin-class",
+      "wikiUrl": "https://aqwwiki.wikidot.com/paladin-class",
+      "decision": "RemovedFromFarm",
+      "reason": "Alternative owned Class prerequisite for ArchPaladin quests, not the ArchPaladin target.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          664,
+          664
+        ],
+        "excerpt": "- Để làm vậy thì bạn cần: Với member thì mua Paladin Class (cần có 2 classes là Warrior Rank 10 và Healer Rank 10 trong inventory) cho các quests “Legendary Paladin\" và “Aptitude Test”, hoặc mua Silver Paladin Class nếu bạn có 2k ACs tại Artix ở /join necropolis, và bán nó đi để lấy lại 1.8k ACs sau khi hoàn thành các quests \"Silver Paladin\" và “Aptitude Test”."
+      }
+    },
+    {
+      "id": "silver-paladin",
+      "wikiUrl": "https://aqwwiki.wikidot.com/silver-paladin",
+      "decision": "RemovedFromFarm",
+      "reason": "Alternative owned Class prerequisite for ArchPaladin quests, not the ArchPaladin target.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          664,
+          664
+        ],
+        "excerpt": "- Để làm vậy thì bạn cần: Với member thì mua Paladin Class (cần có 2 classes là Warrior Rank 10 và Healer Rank 10 trong inventory) cho các quests “Legendary Paladin\" và “Aptitude Test”, hoặc mua Silver Paladin Class nếu bạn có 2k ACs tại Artix ở /join necropolis, và bán nó đi để lấy lại 1.8k ACs sau khi hoàn thành các quests \"Silver Paladin\" và “Aptitude Test”."
+      }
+    }
+  ]
+}

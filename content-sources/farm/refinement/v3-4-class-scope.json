@@ -1,0 +1,38 @@
+{
+  "decisions": [
+    {
+      "id": "sentinel",
+      "wikiUrl": "https://aqwwiki.wikidot.com/sentinel",
+      "decision": "RemovedFromFarm",
+      "role": "bossOrPvpStrategyClass",
+      "reason": "Docs and cached Sites Combat Trophy page recommend Sentinel skills for PvP farming; no acquisition target or Class family instruction. Wiki identity remains in Class Codex.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          8491,
+          8496
+        ],
+        "excerpt": "Sentinel (skill 2 gây DMG dựa trên 8% HP hiện tại)."
+      }
+    }
+  ],
+  "retained": [
+    {
+      "id": "infinity-titan-class",
+      "wikiUrl": "https://aqwwiki.wikidot.com/infinity-titan-class",
+      "decision": "Retained",
+      "role": "Class variant target",
+      "reason": "Explicit StoneCrusher alternative acquisition instruction in both offline Docs and cached Sites SC page; paid Upgrade Bonus variant is an actual instructed acquisition, not a battle suggestion.",
+      "evidence": {
+        "sourceFile": "content-sources/farm/build-evidence/FARM_DOCS_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          6633,
+          6633
+        ],
+        "excerpt": "Chỉ cần nạp gói ACs hoặc Membership bất kỳ có giá từ 9.95$ trở lên thì bạn sẽ có 1 điểm Upgrade Bonus, sau đó lựa chọn Package Infinity Titan là đã có bản reskin của StoneCrusher là Infinity Titan (IT) Class (xem chi tiết ở “Upgrade Bonus Packages”)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "source_file": "FARMING_ITEM_GUIDE_SOURCE.txt",
+  "source_sha256": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+  "source_lines": 9212,
+  "sources": {
+    "guide": "USER_SUPPLIED_LOCAL",
+    "google_doc": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit?tab=t.0",
+    "google_doc_read": "Connector text read in creation session; cross-format line alignment not guaranteed",
+    "aqw_wiki": "https://aqwwiki.wikidot.com/"
+  },
+  "limitations": [
+    "Guide record is an item/collection/utility guide candidate, not necessarily canonical equipment.",
+    "A ×N mention is NOT inherently a consumed material. Verify Quest or Merge source before promoting.",
+    "Quest near /join map does not prove this is its acceptance map.",
+    "Chapter is a SOURCE chapter, not proof of faction ownership for all mentioned items.",
+    "Raw guide text export can omit live embedded hyperlinks, tables or images."
+  ],
+  "chapters": [
+    {
+      "chapter_id": "I",
+      "chapter": "Farming List",
+      "start_line": 27,
+      "end_line": 340
+    },
+    {
+      "chapter_id": "II",
+      "chapter": "Good",
+      "start_line": 341,
+      "end_line": 1010
+    },
+    {
+      "chapter_id": "III",
+      "chapter": "Evil",
+      "start_line": 1011,
+      "end_line": 1929
+    },
+    {
+      "chapter_id": "IV",
+      "chapter": "Chaos",
+      "start_line": 1930,
+      "end_line": 2132
+    },
+    {
+      "chapter_id": "V",
+      "chapter": "Museum",
+      "start_line": 2133,
+      "end_line": 2324
+    },
+    {
+      "chapter_id": "VI",
+      "chapter": "Forge",
+      "start_line": 2325,
+      "end_line": 2806
+    },
+    {
+      "chapter_id": "VII",
+      "chapter": "Nation",
+      "start_line": 2807,
+      "end_line": 5093
+    },
+    {
+      "chapter_id": "VIII",
+      "chapter": "Legion",
+      "start_line": 5094,
+      "end_line": 6021
+    },
+    {
+      "chapter_id": "IX",
+      "chapter": "Dragonkin",
+      "start_line": 6022,
+      "end_line": 6234
+    },
+    {
+      "chapter_id": "X",
+      "chapter": "Elemental",
+      "start_line": 6235,
+      "end_line": 6776
+    },
+    {
+      "chapter_id": "XI",
+      "chapter": "Hollowborn",
+      "start_line": 6777,
+      "end_line": 7831
+    },
+    {
+      "chapter_id": "XII",
+      "chapter": "Debris & Astravian",
+      "start_line": 7832,
+      "end_line": 8223
+    },
+    {
+      "chapter_id": "XIII",
+      "chapter": "Other Items",
+      "start_line": 8224,
+      "end_line": 9212
+    }
+  ],
+  "guide_records_count": 74
+}

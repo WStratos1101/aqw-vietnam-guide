@@ -1,0 +1,60 @@
+{
+  "verifiedAt": "2026-11-15",
+  "sources": [
+    {
+      "url": "https://aqwwiki.wikidot.com/hooded-legion-cowl",
+      "sourceFile": "content-sources/farm/refinement/wiki/hooded-legion-cowl.html",
+      "sourceHash": "b3a3b03eb62261d4eafd740025da939c6fabf9d6c2ceb170d6d6e091995c98bc"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/undead-legion-shop",
+      "sourceFile": "content-sources/farm/refinement/wiki/undead-legion-shop.html",
+      "sourceHash": "390cac6a5e70df9e81e3a44e5b715e29d2edfa2246be9b08a512ba77cc56994a"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/underworld",
+      "sourceFile": "content-sources/farm/refinement/wiki/underworld.html",
+      "sourceHash": "f3ec79d1d1a40f19d062d1d786c2615681b8017d2278e07aacecb969040043c8"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/dage-challenge-merge",
+      "sourceFile": "content-sources/farm/refinement/wiki/dage-challenge-merge.html",
+      "sourceHash": "352ff5c8d4ee488a2ab124657580eae74d06ff69911f81b807a0dad938e62a9d"
+    }
+  ],
+  "purchaseGuides": [
+    {
+      "name": "Hooded Legion Cowl",
+      "url": "https://aqwwiki.wikidot.com/hooded-legion-cowl",
+      "preconditions": [
+        "Hoàn thành Quest 'Fail to the King' để mua."
+      ],
+      "locations": [
+        {
+          "npc": "Dage the Evil (NPC)",
+          "shop": "Undead Legion Shop",
+          "name": "Underworld",
+          "map": "/join underworld",
+          "evidence": [
+            {
+              "url": "https://aqwwiki.wikidot.com/hooded-legion-cowl",
+              "quote": "Must have completed the"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/undead-legion-shop",
+              "quote": "Dage the Evil (NPC)"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/undead-legion-shop",
+              "quote": "Underworld"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/underworld",
+              "quote": "Map Name: underworld"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "archmage-am": {
+    "source": "https://aqwwiki.wikidot.com/archmage-class",
+    "sourceFile": "content-sources/class-wiki/archmage-class.html",
+    "sourceHash": "d3015f3ffd47e503b32284fc02321261689e806748bc93fe51db1f1acbec61aa",
+    "basis": "Current non-passive ability order in exact named Wiki skill disclosures; same class records and icon assets only.",
+    "slots": [
+      {
+        "slot": 1,
+        "skillId": "wiki-active-incantation",
+        "name": "Incantation",
+        "iconAssetId": "skill-icon-f1d70aac755e6432cb8d"
+      },
+      {
+        "slot": 2,
+        "skillId": "wiki-active-immolation",
+        "name": "Immolation",
+        "iconAssetId": "skill-icon-ed848a6a0aff2ba97e10"
+      },
+      {
+        "slot": 3,
+        "skillId": "wiki-active-glacialimpact",
+        "name": "Glacial Impact",
+        "iconAssetId": "skill-icon-cf2ac7a67501ab889d2b"
+      },
+      {
+        "slot": 4,
+        "skillId": "wiki-active-supernova",
+        "name": "Supernova",
+        "iconAssetId": "skill-icon-22f8b94b3a5d1c7f007b"
+      },
+      {
+        "slot": 5,
+        "skillId": "wiki-active-arcanesigil",
+        "name": "Arcane Sigil",
+        "iconAssetId": "skill-icon-51370f9d1f68f711e701"
+      }
+    ]
+  },
+  "yami-no-ronin-ynr": {
+    "source": "https://aqwwiki.wikidot.com/yami-no-ronin-class",
+    "sourceFile": "content-sources/class-wiki/yami-no-ronin-class.html",
+    "sourceHash": "3edabd23ec43213e41feec693b1e92de5ef81e14444e407d1de7040934b4768c",
+    "basis": "Current non-passive ability order in exact named Wiki skill disclosures; same class records and icon assets only.",
+    "slots": [
+      {
+        "slot": 1,
+        "skillId": "skill-1",
+        "name": "Batto",
+        "iconAssetId": "skill-icon-718dcb46aaf0cee6948e"
+      },
+      {
+        "slot": 2,
+        "skillId": "skill-2",
+        "name": "Tachi",
+        "iconAssetId": "skill-icon-70142620223f38744f2c"
+      },
+      {
+        "slot": 3,
+        "skillId": "skill-3",
+        "name": "Yami no Maku",
+        "iconAssetId": "skill-icon-c21e956ef10ab880d348"
+      },
+      {
+        "slot": 4,
+        "skillId": "wiki-active-kettou",
+        "name": "Kettou",
+        "iconAssetId": "skill-icon-a0a5ee9b5e5ccbe78f71"
+      },
+      {
+        "slot": 5,
+        "skillId": "skill-5",
+        "name": "Jigen Kogeki",
+        "iconAssetId": "skill-icon-e030342d1e39fe68da79"
+      }
+    ]
+  }
+}

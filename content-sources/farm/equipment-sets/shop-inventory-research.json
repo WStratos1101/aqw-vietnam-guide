@@ -1,0 +1,2328 @@
+{
+  "schemaVersion": 1,
+  "researchStatus": "PINNED_WIKI_SHOP_INVENTORIES_REVIEWED",
+  "policy": "members are explicit guide targets or guide-scoped complete equipment inventories; candidateMembers are real identities whose collection boundary is unresolved and MUST NOT be automatically approved. Excluded rows are preserved to make selection auditable. No catalog IDs inferred.",
+  "guideSource": {
+    "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+    "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663"
+  },
+  "sources": [
+    {
+      "url": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/skullbreaker-knight-shop.html",
+      "sourceHash": "be0e853ca22bbee53fd4bbe05afa0575faa5fe8d205369d38565cc9c2bdf595c"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/worlds-core-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/worlds-core-merge.html",
+      "sourceHash": "b56569c221cfb8faf56a203694690c262d1ce71719f76cd3c776f83c7fc4b4cc"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/titan-strike-gear",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/titan-strike-gear.html",
+      "sourceHash": "64c8b734cc22331612b1dbdd50fd8d581a14f28f8831885e41149c708ff4ca78"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/infernal-archfiend-cape",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/infernal-archfiend-cape.html",
+      "sourceHash": "01cb0e9e41830ca482d84799ca24e3f15e695db62ec4393a86ace285bba96355"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/exalted-paladin-s-shroud",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/exalted-paladin-s-shroud.html",
+      "sourceHash": "88b24a90b77158771635b074012550e0a79eb90215c44386d85bf536a7a6ff65"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/paladin-treasurehunter.html",
+      "sourceHash": "b7a38f92a8971eba1b983b16d33eb16b5a99227779cc9185f40d4261d50748cc"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/harvest-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/harvest-merge.html",
+      "sourceHash": "4204d4c3bbbecaf5d720880a4a7117cc42f06299b796173a57ebfaa0b0d7acb2"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/shadowduat-merge-shop.html",
+      "sourceHash": "d1fbfe42683eea9787a0b75980885cac430bf2e35636292cd6bae368cb7ae794"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/celestial-fiend",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/celestial-fiend.html",
+      "sourceHash": "531c3d72b6dce83c8b38d3184d0f29b7077aacdbe97cdb2d9c0d0ed455332167"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/haku-war-shop",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/haku-war-shop.html",
+      "sourceHash": "34ab7690ccf8eaefb86654db07726397785492a39a9a96916da74d1b084f1b09"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/grave-rob-vordred",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/grave-rob-vordred.html",
+      "sourceHash": "a98a6ebc8d871fa8b2fe7abc380d45e123f4c11b682a4e79cb0161c39668bd9a"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/infernal-archfiend-helm",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/infernal-archfiend-helm.html",
+      "sourceHash": "1a76e96f43195e8c7566aeb79dcb88faa222633c741cfe237238295748983071"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/celestial-archfiend-helm",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/celestial-archfiend-helm.html",
+      "sourceHash": "0443e0df781084831d922c2a3d0b6dca2467706f3ca909dd591d75c4ff7e92ae"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/celestial-archfiend-sword",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/celestial-archfiend-sword.html",
+      "sourceHash": "1a4fd6c417570ae0518eb190f52b305b55d01de1dfe6cf2fc5150988cb34d879"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/colossal-wares",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/colossal-wares.html",
+      "sourceHash": "12925ed3190ede8ca4a286d4c8c82299d3877a0aacc77e694fce23ea655a286e"
+    },
+    {
+      "url": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+      "sourceFile": "content-sources/farm/equipment-sets/shop-research/fiend-shard-shop.html",
+      "sourceHash": "708ddb78941ace478bb0167cf5c284bbf2afbfff12c0ed6a7a2ca96689ce7e49"
+    }
+  ],
+  "collections": [
+    {
+      "id": "gold-exalted-paladin",
+      "name": "Gold Exalted Paladin",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          1002,
+          1010
+        ],
+        "scope": "Guide explicitly calls Gold Exalted Paladin set and names its shop. Ancient Alloy total111 equals all12 shop rows; Gold upgrades cost106, Shroud costs5."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/paladin-treasurehunter.html",
+          "sourceHash": "b7a38f92a8971eba1b983b16d33eb16b5a99227779cc9185f40d4261d50748cc"
+        },
+        {
+          "url": "https://aqwwiki.wikidot.com/exalted-paladin-s-shroud",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/exalted-paladin-s-shroud.html",
+          "sourceHash": "88b24a90b77158771635b074012550e0a79eb90215c44386d85bf536a7a6ff65"
+        }
+      ],
+      "members": [
+        {
+          "name": "Gold Exalted Paladin Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-paladin-blade",
+          "category": "Weapon",
+          "inventoryRow": "Gold Exalted Paladin Blade Rank 4 TreasureHunter Silver Exalted Paladin Blade x1 Ancient Alloy x12",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Paladin Axe",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-paladin-axe",
+          "category": "Weapon",
+          "inventoryRow": "Gold Exalted Paladin Axe Rank 4 TreasureHunter Silver Exalted Paladin Axe x1 Ancient Alloy x12",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Spears of Light",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-spears-of-light",
+          "category": "Weapon",
+          "inventoryRow": "Gold Exalted Spears of Light Rank 4 TreasureHunter Silver Exalted Spears of Light x1 Ancient Alloy x12",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Paladin Poleaxe",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-paladin-poleaxe",
+          "category": "Weapon",
+          "inventoryRow": "Gold Exalted Paladin Poleaxe Rank 4 TreasureHunter Silver Exalted Paladin Poleaxe x1 Ancient Alloy x12",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Paladin Spear",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-paladin-spear",
+          "category": "Weapon",
+          "inventoryRow": "Gold Exalted Paladin Spear Rank 4 TreasureHunter Silver Exalted Paladin Spear x1 Ancient Alloy x12",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Paladin",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-paladin",
+          "category": "Armor",
+          "inventoryRow": "Gold Exalted Paladin Rank 5 TreasureHunter Silver Exalted Paladin x1 Ancient Alloy x16",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Helmet",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-helmet",
+          "category": "Helm",
+          "inventoryRow": "Gold Exalted Helmet Rank 2 TreasureHunter Silver Exalted Helmet x1 Ancient Alloy x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Visor",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-visor",
+          "category": "Helm",
+          "inventoryRow": "Gold Exalted Visor Rank 2 TreasureHunter Silver Exalted Visor x1 Ancient Alloy x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Winged Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-winged-helm",
+          "category": "Helm",
+          "inventoryRow": "Gold Exalted Winged Helm Rank 4 TreasureHunter Silver Exalted Winged Helm x1 Ancient Alloy x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Winged Visor",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-winged-visor",
+          "category": "Helm",
+          "inventoryRow": "Gold Exalted Winged Visor Rank 4 TreasureHunter Silver Exalted Winged Visor x1 Ancient Alloy x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Gold Exalted Haloed Wings",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-exalted-haloed-wings",
+          "category": "Cape",
+          "inventoryRow": "Gold Exalted Haloed Wings Rank 3 TreasureHunter Silver Exalted Haloed Wings x1 Ancient Alloy x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [
+        {
+          "name": "Exalted Paladin's Shroud",
+          "wikiUrl": "https://aqwwiki.wikidot.com/exalted-paladin-s-shroud",
+          "category": "Cape",
+          "inventoryRow": "Exalted Paladin's Shroud Rank 3 TreasureHunter Ancient Alloy x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/paladin-treasurehunter",
+          "identityEvidence": "https://aqwwiki.wikidot.com/exalted-paladin-s-shroud",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        }
+      ],
+      "excludedInventoryRows": [],
+      "completeness": "PARTIAL_VARIANT_BOUNDARY",
+      "blockers": [
+        "Exalted Paladin's Shroud is a real cape row but lacks Gold identity and has no Silver prerequisite. Total111 corroborates guide broad shopping scope; it does not independently prove exclusive Gold variant membership. Keep candidate until owner accepts collection scope."
+      ]
+    },
+    {
+      "id": "vordred",
+      "name": "Vordred",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          1688,
+          1751
+        ],
+        "scope": "Line1740 explicitly directs obtaining full Vordred set from (Grave)Rob Vordred. Include6 equipment identities, exclude Voiduminance spell resource; do not add empowered quest rewards."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/grave-rob-vordred",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/grave-rob-vordred.html",
+          "sourceHash": "a98a6ebc8d871fa8b2fe7abc380d45e123f4c11b682a4e79cb0161c39668bd9a"
+        }
+      ],
+      "members": [
+        {
+          "name": "Vordred's Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/vordred-s-blade",
+          "category": "Weapon",
+          "inventoryRow": "Vordred's Blade 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/grave-rob-vordred",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Vordred's Armor",
+          "wikiUrl": "https://aqwwiki.wikidot.com/vordred-s-armor",
+          "category": "Armor",
+          "inventoryRow": "Vordred's Armor 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/grave-rob-vordred",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Vordred's Chestpiece",
+          "wikiUrl": "https://aqwwiki.wikidot.com/vordred-s-chestpiece",
+          "category": "Helm",
+          "inventoryRow": "Vordred's Chestpiece 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/grave-rob-vordred",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Vordred's Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/vordred-s-helm",
+          "category": "Helm",
+          "inventoryRow": "Vordred's Helm 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/grave-rob-vordred",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Vordred's Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/vordred-s-cape",
+          "category": "Cape",
+          "inventoryRow": "Vordred's Cape 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/grave-rob-vordred",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Rolling Vordred Head",
+          "wikiUrl": "https://aqwwiki.wikidot.com/rolling-vordred-head",
+          "category": "Pet",
+          "inventoryRow": "Rolling Vordred Head 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/grave-rob-vordred",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [],
+      "excludedInventoryRows": [
+        {
+          "name": "Voiduminance Necrock-Morph Spell",
+          "wikiUrl": "https://aqwwiki.wikidot.com/voiduminance-necrock-morph-spell",
+          "category": "Resource",
+          "inventoryRow": "Voiduminance Necrock-Morph Spell 15,000,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/grave-rob-vordred"
+        }
+      ],
+      "completeness": "COMPLETE_GUIDE_SCOPED_INVENTORY",
+      "blockers": []
+    },
+    {
+      "id": "skullbreaker-knight",
+      "name": "Skullbreaker Knight",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          1753,
+          1757
+        ],
+        "scope": "Guide identifies Skullbreaker Knight set via this merge and total335 Especially Unbroken Skull. All14 equipment rows sum335; this is a separate collection from Vordred."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/skullbreaker-knight-shop.html",
+          "sourceHash": "be0e853ca22bbee53fd4bbe05afa0575faa5fe8d205369d38565cc9c2bdf595c"
+        }
+      ],
+      "members": [
+        {
+          "name": "Skullbreaker's Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-blade",
+          "category": "Weapon",
+          "inventoryRow": "Skullbreaker's Blade Especially Unbroken Skull x40",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Axe",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-axe",
+          "category": "Weapon",
+          "inventoryRow": "Skullbreaker's Axe Especially Unbroken Skull x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Dual Skullbreaker's Reaver",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dual-skullbreaker-s-reaver",
+          "category": "Weapon",
+          "inventoryRow": "Dual Skullbreaker's Reaver Especially Unbroken Skull x20, Skullbreaker's Reaver x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Blade + Axe",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-blade-axe",
+          "category": "Weapon",
+          "inventoryRow": "Skullbreaker's Blade + Axe Especially Unbroken Skull x30, Skullbreaker's Blade x1, Skullbreaker's Axe x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Dagger",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-dagger",
+          "category": "Weapon",
+          "inventoryRow": "Skullbreaker's Dagger Especially Unbroken Skull x25",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Reaver",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-reaver",
+          "category": "Weapon",
+          "inventoryRow": "Skullbreaker's Reaver Especially Unbroken Skull x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Spear",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-spear",
+          "category": "Weapon",
+          "inventoryRow": "Skullbreaker's Spear Especially Unbroken Skull x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker Knight (Armor)",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-knight-armor",
+          "category": "Armor",
+          "inventoryRow": "Skullbreaker Knight (Armor) Especially Unbroken Skull x60",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker Knight's Hood",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-knight-s-hood",
+          "category": "Helm",
+          "inventoryRow": "Skullbreaker Knight's Hood Especially Unbroken Skull x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Hooded Skull",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-hooded-skull",
+          "category": "Helm",
+          "inventoryRow": "Skullbreaker's Hooded Skull Especially Unbroken Skull x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Shadow Hood",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-shadow-hood",
+          "category": "Helm",
+          "inventoryRow": "Skullbreaker's Shadow Hood Especially Unbroken Skull x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Cloak",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-cloak",
+          "category": "Cape",
+          "inventoryRow": "Skullbreaker's Cloak Especially Unbroken Skull x15",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Spiked Cloak",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-spiked-cloak",
+          "category": "Cape",
+          "inventoryRow": "Skullbreaker's Spiked Cloak Skullbreaker's Spikes x1, Skullbreaker's Cloak x1, Especially Unbroken Skull x15",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Skullbreaker's Spikes",
+          "wikiUrl": "https://aqwwiki.wikidot.com/skullbreaker-s-spikes",
+          "category": "Cape",
+          "inventoryRow": "Skullbreaker's Spikes Especially Unbroken Skull x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/skullbreaker-knight-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [],
+      "excludedInventoryRows": [],
+      "completeness": "COMPLETE_GUIDE_SCOPED_INVENTORY",
+      "blockers": []
+    },
+    {
+      "id": "awakened-vordred",
+      "name": "Awakened Vordred",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          1759,
+          1770
+        ],
+        "scope": "Bonus set explicitly named Awakened Vordred, original versions required. Four rows each upgrade an original Vordred armor/helm/chestpiece/cape; exclude unrelated Lich, Deathbound and Vestal inventories."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/colossal-wares",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/colossal-wares.html",
+          "sourceHash": "12925ed3190ede8ca4a286d4c8c82299d3877a0aacc77e694fce23ea655a286e"
+        }
+      ],
+      "members": [
+        {
+          "name": "Awakened Vordred",
+          "wikiUrl": "https://aqwwiki.wikidot.com/awakened-vordred",
+          "category": "Armor",
+          "inventoryRow": "Awakened Vordred N/A Gold Voucher 100k x20, Pristine Skull x66, Vordred's Armor x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Awakened Vordred Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/awakened-vordred-helm",
+          "category": "Helm",
+          "inventoryRow": "Awakened Vordred Helm N/A Gold Voucher 100k x10, Pristine Skull x33, Vordred's Helm x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Awakened Vordred Plate",
+          "wikiUrl": "https://aqwwiki.wikidot.com/awakened-vordred-plate",
+          "category": "Helm",
+          "inventoryRow": "Awakened Vordred Plate N/A Gold Voucher 100k x10, Pristine Skull x33, Vordred's Chestpiece x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Awakened Vordred Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/awakened-vordred-cape",
+          "category": "Cape",
+          "inventoryRow": "Awakened Vordred Cape N/A Gold Voucher 100k x10, Pristine Skull x33, Vordred's Cape x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [],
+      "excludedInventoryRows": [
+        {
+          "name": "Vestal Gold Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/vestal-gold-blade",
+          "category": "Weapon",
+          "inventoryRow": "Vestal Gold Blade N/A Gold Voucher 100k x2, Pristine Skull x25",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Vestal Gold Axe",
+          "wikiUrl": "https://aqwwiki.wikidot.com/vestal-gold-axe",
+          "category": "Weapon",
+          "inventoryRow": "Vestal Gold Axe N/A Gold Voucher 100k x2, Pristine Skull x25",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Lich's Necronomicon and Staff",
+          "wikiUrl": "https://aqwwiki.wikidot.com/lich-s-necronomicon-and-staff",
+          "category": "Weapon",
+          "inventoryRow": "Lich's Necronomicon and Staff Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Vestal Gold Axes",
+          "wikiUrl": "https://aqwwiki.wikidot.com/vestal-gold-axes",
+          "category": "Weapon",
+          "inventoryRow": "Vestal Gold Axes N/A Gold Voucher 100k x1, Pristine Skull x12, Vestal Gold Axe x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Vestal Gold Blades",
+          "wikiUrl": "https://aqwwiki.wikidot.com/vestal-gold-blades",
+          "category": "Weapon",
+          "inventoryRow": "Vestal Gold Blades N/A Gold Voucher 100k x1, Pristine Skull x12, Vestal Gold Blade x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Lich Necronomicon",
+          "wikiUrl": "https://aqwwiki.wikidot.com/lich-necronomicon",
+          "category": "Weapon",
+          "inventoryRow": "Lich Necronomicon Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Lich's Hex Staff",
+          "wikiUrl": "https://aqwwiki.wikidot.com/lich-s-hex-staff",
+          "category": "Weapon",
+          "inventoryRow": "Lich's Hex Staff Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Deathbound Knight",
+          "wikiUrl": "https://aqwwiki.wikidot.com/deathbound-knight",
+          "category": "Armor",
+          "inventoryRow": "Deathbound Knight N/A Gold Voucher 100k x3, Pristine Skull x50",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Lich Mantle",
+          "wikiUrl": "https://aqwwiki.wikidot.com/lich-mantle",
+          "category": "Armor",
+          "inventoryRow": "Lich Mantle Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Deathbound Knight Skull",
+          "wikiUrl": "https://aqwwiki.wikidot.com/deathbound-knight-skull",
+          "category": "Helm",
+          "inventoryRow": "Deathbound Knight Skull N/A Gold Voucher 100k x1, Pristine Skull x15",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Deathbound Thorn Crown",
+          "wikiUrl": "https://aqwwiki.wikidot.com/deathbound-thorn-crown",
+          "category": "Helm",
+          "inventoryRow": "Deathbound Thorn Crown N/A Gold Voucher 100k x1, Pristine Skull x10, Deathbound Thorn Hood x1, Deathbound Knight Skull x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Deathbound Thorn Hood",
+          "wikiUrl": "https://aqwwiki.wikidot.com/deathbound-thorn-hood",
+          "category": "Helm",
+          "inventoryRow": "Deathbound Thorn Hood N/A Gold Voucher 100k x1, Pristine Skull x15",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Lich Hood",
+          "wikiUrl": "https://aqwwiki.wikidot.com/lich-hood",
+          "category": "Helm",
+          "inventoryRow": "Lich Hood Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Lich Hood and Crown",
+          "wikiUrl": "https://aqwwiki.wikidot.com/lich-hood-and-crown",
+          "category": "Helm",
+          "inventoryRow": "Lich Hood and Crown Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Lich Morph",
+          "wikiUrl": "https://aqwwiki.wikidot.com/lich-morph",
+          "category": "Helm",
+          "inventoryRow": "Lich Morph Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Deathbound Knight Shroud",
+          "wikiUrl": "https://aqwwiki.wikidot.com/deathbound-knight-shroud",
+          "category": "Cape",
+          "inventoryRow": "Deathbound Knight Shroud N/A Gold Voucher 100k x1, Pristine Skull x15",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Lich Wings",
+          "wikiUrl": "https://aqwwiki.wikidot.com/lich-wings",
+          "category": "Cape",
+          "inventoryRow": "Lich Wings Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Army of the Dead",
+          "wikiUrl": "https://aqwwiki.wikidot.com/army-of-the-dead",
+          "category": "Pet",
+          "inventoryRow": "Army of the Dead Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Gold Voucher 100k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-100k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 100k 100,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Nicto's Necronomicon",
+          "wikiUrl": "https://aqwwiki.wikidot.com/nicto-s-necronomicon",
+          "category": "Resource",
+          "inventoryRow": "Nicto's Necronomicon Gold Voucher 100k x66, Grimskull's Favor x776, Noxus' Favor x776, Pristine Skull x66",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        },
+        {
+          "name": "Army of the Dead House Guards",
+          "wikiUrl": "https://aqwwiki.wikidot.com/army-of-the-dead-house-guards",
+          "category": "House Item",
+          "inventoryRow": "Army of the Dead House Guards Must have completed the ' Lich Class ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/colossal-wares"
+        }
+      ],
+      "completeness": "COMPLETE_SCOPED_UPGRADE_INVENTORY",
+      "blockers": []
+    },
+    {
+      "id": "titan-drakath",
+      "name": "Titan Drakath",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          2023,
+          2109
+        ],
+        "scope": "Guide explicitly enumerates four target subsections: Blades, Armor, Helm, Tentacles. All other armors/weapons are prerequisites, not members. Wiki shop renamed Titan Strike Gear versus guide Alteon’s Titan Gear II."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/titan-strike-gear",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/titan-strike-gear.html",
+          "sourceHash": "64c8b734cc22331612b1dbdd50fd8d581a14f28f8831885e41149c708ff4ca78"
+        }
+      ],
+      "members": [
+        {
+          "name": "Titan Drakath's Blades",
+          "wikiUrl": "https://aqwwiki.wikidot.com/titan-drakath-s-blades",
+          "category": "Weapon",
+          "inventoryRow": "Titan Drakath's Blades Vindicator Titan's Axes x1, Titan Paladin's Blades x1, Titanic Destroyer Blades x1, Heroic Titan's Greatswords x1, Titan Drakath's Blade x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Titan Drakath (Armor)",
+          "wikiUrl": "https://aqwwiki.wikidot.com/titan-drakath-armor",
+          "category": "Armor",
+          "inventoryRow": "Titan Drakath (Armor) Titan Paladin x1, Vindicator Titan XL x1, Titanic Destroyer (Armor) x1, Heroic Titan x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Titan Drakath's Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/titan-drakath-s-helm",
+          "category": "Helm",
+          "inventoryRow": "Titan Drakath's Helm Titan Paladin's Helm x1, Vindicator Titan's Helm x1, Titanic Destroyer Helm x1, Heroic Titan's Helm x1, Titan Drakath's Morph x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Titan Drakath's Tentacles",
+          "wikiUrl": "https://aqwwiki.wikidot.com/titan-drakath-s-tentacles",
+          "category": "Cape",
+          "inventoryRow": "Titan Drakath's Tentacles Titan Paladin's Cloak x1, Vindicator Titan's Cloak x1, Titanic Destroyer Tentacles x1, Heroic Titan's Cape x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [],
+      "excludedInventoryRows": [
+        {
+          "name": "Heroic Titan's Greatsword",
+          "wikiUrl": "https://aqwwiki.wikidot.com/heroic-titan-s-greatsword",
+          "category": "Weapon",
+          "inventoryRow": "Heroic Titan's Greatsword 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Heroic Titan's Greatswords",
+          "wikiUrl": "https://aqwwiki.wikidot.com/heroic-titan-s-greatswords",
+          "category": "Weapon",
+          "inventoryRow": "Heroic Titan's Greatswords Heroic Titan's Greatsword x1, Titanic Tincture x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Titanic Destroyer Blades",
+          "wikiUrl": "https://aqwwiki.wikidot.com/titanic-destroyer-blades",
+          "category": "Weapon",
+          "inventoryRow": "Titanic Destroyer Blades Gold Voucher 200k x1, Destroyer Essence x40, Titanic Destroyer Blade x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "AntiTitan Corps (Armor)",
+          "wikiUrl": "https://aqwwiki.wikidot.com/antititan-corps-armor",
+          "category": "Armor",
+          "inventoryRow": "AntiTitan Corps (Armor) Chaorrupted AntiTitan Corps x1, Titan Hunter x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Heroic Titan",
+          "wikiUrl": "https://aqwwiki.wikidot.com/heroic-titan",
+          "category": "Armor",
+          "inventoryRow": "Heroic Titan Gold Voucher 500k x1, Titanic Tincture x40",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Titanic Destroyer (Armor)",
+          "wikiUrl": "https://aqwwiki.wikidot.com/titanic-destroyer-armor",
+          "category": "Armor",
+          "inventoryRow": "Titanic Destroyer (Armor) Gold Voucher 500k x1, Destroyer Essence x60",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Heroic Titan's Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/heroic-titan-s-helm",
+          "category": "Helm",
+          "inventoryRow": "Heroic Titan's Helm Gold Voucher 100k x1, Titanic Tincture x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Titanic Destroyer Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/titanic-destroyer-helm",
+          "category": "Helm",
+          "inventoryRow": "Titanic Destroyer Helm Gold Voucher 100k x1, Destroyer Essence x20, Titanic Destroyer Morph x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Heroic Titan's Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/heroic-titan-s-cape",
+          "category": "Cape",
+          "inventoryRow": "Heroic Titan's Cape Gold Voucher 100k x1, Titanic Tincture x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Titanic Destroyer Tentacles",
+          "wikiUrl": "https://aqwwiki.wikidot.com/titanic-destroyer-tentacles",
+          "category": "Cape",
+          "inventoryRow": "Titanic Destroyer Tentacles Gold Voucher 100k x1, Destroyer Essence x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Gold Voucher 100k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-100k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 100k 100,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Gold Voucher 200k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-200k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 200k 200,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        },
+        {
+          "name": "Gold Voucher 500k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-500k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 500k 500,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/titan-strike-gear"
+        }
+      ],
+      "completeness": "COMPLETE_EXPLICIT_GUIDE_TARGETS",
+      "blockers": []
+    },
+    {
+      "id": "ouroboros-warlock",
+      "name": "Ouroboros Warlock",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          2110,
+          2131
+        ],
+        "scope": "Guide explicitly names armor, Umbral Metamorphosis Scythe and Tome and two component weapons. Full-shop collection scope stated at2131; all20 equipment rows sum1997 A Memory. Named Ouroboros subset versus broad full-shop scope remains a separate boundary."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/shadowduat-merge-shop.html",
+          "sourceHash": "d1fbfe42683eea9787a0b75980885cac430bf2e35636292cd6bae368cb7ae794"
+        }
+      ],
+      "members": [
+        {
+          "name": "Umbral Metamorphosis Scythe and Tome",
+          "wikiUrl": "https://aqwwiki.wikidot.com/umbral-metamorphosis-scythe-and-tome",
+          "category": "Weapon",
+          "inventoryRow": "Umbral Metamorphosis Scythe and Tome Gold Voucher 500k x2, A Memory x320, Forbidden Ouro Scythe x1, Umbra Metamorphosis Tome x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Ouroboros Warlock",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-warlock",
+          "category": "Armor",
+          "inventoryRow": "Ouroboros Warlock Gold Voucher 500k x20, A Memory x777",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [
+        {
+          "name": "Apophis Lector's Staff and Tome",
+          "wikiUrl": "https://aqwwiki.wikidot.com/apophis-lector-s-staff-and-tome",
+          "category": "Weapon",
+          "inventoryRow": "Apophis Lector's Staff and Tome Gold Voucher 100k x2, A Memory x60, Life and Rebirth Staff x1, Umbra Metamorphosis Tome x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Forbidden Metamorphosis Fang",
+          "wikiUrl": "https://aqwwiki.wikidot.com/forbidden-metamorphosis-fang",
+          "category": "Weapon",
+          "inventoryRow": "Forbidden Metamorphosis Fang Gold Voucher 100k x2, A Memory x60",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Life and Rebirth Staff",
+          "wikiUrl": "https://aqwwiki.wikidot.com/life-and-rebirth-staff",
+          "category": "Weapon",
+          "inventoryRow": "Life and Rebirth Staff Gold Voucher 100k x2, A Memory x60",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Doomed Metamorphosis Knight",
+          "wikiUrl": "https://aqwwiki.wikidot.com/doomed-metamorphosis-knight",
+          "category": "Armor",
+          "inventoryRow": "Doomed Metamorphosis Knight Metamorphosis Maw's Knight x1, Gold Voucher 100k x2, A Memory x120",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Doomed Metamorphosis' Loyal Knight",
+          "wikiUrl": "https://aqwwiki.wikidot.com/doomed-metamorphosis-loyal-knight",
+          "category": "Armor",
+          "inventoryRow": "Doomed Metamorphosis' Loyal Knight Metamorphosis Maw's Loyal Knight x1, Gold Voucher 100k x2, A Memory x120",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Doomed Metamorphosis Knight Hair",
+          "wikiUrl": "https://aqwwiki.wikidot.com/doomed-metamorphosis-knight-hair",
+          "category": "Helm",
+          "inventoryRow": "Doomed Metamorphosis Knight Hair Metamophosis Maw's Knight Hair x1, Gold Voucher 100k x2, A Memory x40",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Doomed Metamorphosis Knight Morph",
+          "wikiUrl": "https://aqwwiki.wikidot.com/doomed-metamorphosis-knight-morph",
+          "category": "Helm",
+          "inventoryRow": "Doomed Metamorphosis Knight Morph Metamophosis Maw's Knight Morph x1, Gold Voucher 100k x2, A Memory x40",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Ouroboros Crown",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-crown",
+          "category": "Helm",
+          "inventoryRow": "Ouroboros Crown Gold Voucher 100k x1, A Memory x20, Ouroboros Warlock Shag x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Ouroboros Warlock Crown Morph",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-warlock-crown-morph",
+          "category": "Helm",
+          "inventoryRow": "Ouroboros Warlock Crown Morph Gold Voucher 100k x1, A Memory x20, Ouroboros Warlock Hair x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Ouroboros Warlock Crowned Hood",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-warlock-crowned-hood",
+          "category": "Helm",
+          "inventoryRow": "Ouroboros Warlock Crowned Hood Gold Voucher 100k x1, A Memory x20, Ouroboros Warlock Hood x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Ouroboros Warlock Crowned Hood Morph",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-warlock-crowned-hood-morph",
+          "category": "Helm",
+          "inventoryRow": "Ouroboros Warlock Crowned Hood Morph Gold Voucher 100k x1, A Memory x40, Ouroboros Warlock Crowned Hood x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Ouroboros Warlock Hair",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-warlock-hair",
+          "category": "Helm",
+          "inventoryRow": "Ouroboros Warlock Hair Gold Voucher 100k x1, A Memory x40",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Ouroboros Warlock Hood",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-warlock-hood",
+          "category": "Helm",
+          "inventoryRow": "Ouroboros Warlock Hood Gold Voucher 100k x1, A Memory x40",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Ouroboros Warlock Shag",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-warlock-shag",
+          "category": "Helm",
+          "inventoryRow": "Ouroboros Warlock Shag Gold Voucher 100k x1, A Memory x40",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Ouroboros Warlock's Altar",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-warlock-s-altar",
+          "category": "Cape",
+          "inventoryRow": "Ouroboros Warlock's Altar Gold Voucher 100k x1, A Memory x20, Ouroboros' Unbroken Dream x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Ouroboros' Unbroken Dream",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ouroboros-unbroken-dream",
+          "category": "Cape",
+          "inventoryRow": "Ouroboros' Unbroken Dream Gold Voucher 100k x1, A Memory x40",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Umbra Metamorphosis Tome",
+          "wikiUrl": "https://aqwwiki.wikidot.com/umbra-metamorphosis-tome",
+          "category": "Weapon",
+          "inventoryRow": "Umbra Metamorphosis Tome Gold Voucher 100k x2, A Memory x60",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED",
+          "boundaryNote": "Explicitly mentioned as merge prerequisite; this alone is not set membership evidence."
+        },
+        {
+          "name": "Forbidden Ouro Scythe",
+          "wikiUrl": "https://aqwwiki.wikidot.com/forbidden-ouro-scythe",
+          "category": "Weapon",
+          "inventoryRow": "Forbidden Ouro Scythe Gold Voucher 100k x2, A Memory x60",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED",
+          "boundaryNote": "Explicitly mentioned as merge prerequisite; this alone is not set membership evidence."
+        }
+      ],
+      "excludedInventoryRows": [
+        {
+          "name": "Gold Voucher 100k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-100k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 100k 100,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop"
+        },
+        {
+          "name": "Gold Voucher 500k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-500k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 500k 500,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/shadowduat-merge-shop"
+        }
+      ],
+      "completeness": "PARTIAL_NAMED_COLLECTION_BOUNDARY",
+      "blockers": [
+        "Guide full-shop total1997 includes Doomed Metamorphosis Knight variants and Apophis/Life and Rebirth items. Do not auto-classify20 rows into named Ouroboros set solely from shop. Two explicit boosted targets recorded; remaining18 full-shop rows are candidates pending guide scope decision. Forbidden Ouro Scythe and Umbra Metamorphosis Tome are prerequisites, not automatically members."
+      ]
+    },
+    {
+      "id": "celestial-archfiend",
+      "name": "Celestial ArchFiend",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          4018,
+          4157
+        ],
+        "scope": "Guide jointly names Celestial and Infernal sets; lines4153-4155 explicitly separate armor and two boosted weapons per variant. Earlier reward families cannot be assigned by faction/shop/quest gate alone."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/fiend-shard-shop.html",
+          "sourceHash": "708ddb78941ace478bb0167cf5c284bbf2afbfff12c0ed6a7a2ca96689ce7e49"
+        },
+        {
+          "url": "https://aqwwiki.wikidot.com/celestial-archfiend-helm",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/celestial-archfiend-helm.html",
+          "sourceHash": "0443e0df781084831d922c2a3d0b6dca2467706f3ca909dd591d75c4ff7e92ae"
+        },
+        {
+          "url": "https://aqwwiki.wikidot.com/celestial-fiend",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/celestial-fiend.html",
+          "sourceHash": "531c3d72b6dce83c8b38d3184d0f29b7077aacdbe97cdb2d9c0d0ed455332167"
+        },
+        {
+          "url": "https://aqwwiki.wikidot.com/celestial-archfiend-sword",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/celestial-archfiend-sword.html",
+          "sourceHash": "1a4fd6c417570ae0518eb190f52b305b55d01de1dfe6cf2fc5150988cb34d879"
+        }
+      ],
+      "members": [
+        {
+          "name": "Celestial Abyss Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-abyss-blade",
+          "category": "Weapon",
+          "inventoryRow": "Celestial Abyss Blade Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Celestial Blade of Judgement",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-blade-of-judgement",
+          "category": "Weapon",
+          "inventoryRow": "Celestial Blade of Judgement Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Celestial ArchFiend",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend",
+          "category": "Armor",
+          "inventoryRow": "Celestial ArchFiend Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [
+        {
+          "name": "Celestial ArchFiend Sword",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-sword",
+          "category": "Weapon",
+          "inventoryRow": "Celestial ArchFiend Sword Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Celestial ArchFiend Swords",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-swords",
+          "category": "Weapon",
+          "inventoryRow": "Celestial ArchFiend Swords Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Celestial Fiend",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-fiend",
+          "category": "Armor",
+          "inventoryRow": "Celestial Fiend Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Celestial ArchFiend Halo Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-halo-helm",
+          "category": "Helm",
+          "inventoryRow": "Celestial ArchFiend Halo Helm Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Celestial ArchFiend Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-helm",
+          "category": "Helm",
+          "inventoryRow": "Celestial ArchFiend Helm Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Celestial ArchFiend Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-cape",
+          "category": "Cape",
+          "inventoryRow": "Celestial ArchFiend Cape Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Celestial ArchFiend Wings",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-wings",
+          "category": "Cape",
+          "inventoryRow": "Celestial ArchFiend Wings Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        }
+      ],
+      "excludedInventoryRows": [
+        {
+          "name": "Dagger of Abyssal Order",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dagger-of-abyssal-order",
+          "category": "Weapon",
+          "inventoryRow": "Dagger of Abyssal Order Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Infernal Abyss Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-abyss-blade",
+          "category": "Weapon",
+          "inventoryRow": "Infernal Abyss Blade Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Infernal ArchFiend Sword",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend-sword",
+          "category": "Weapon",
+          "inventoryRow": "Infernal ArchFiend Sword Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Infernal Blade of Judgement",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-blade-of-judgement",
+          "category": "Weapon",
+          "inventoryRow": "Infernal Blade of Judgement Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Sword of Abyssal Order",
+          "wikiUrl": "https://aqwwiki.wikidot.com/sword-of-abyssal-order",
+          "category": "Weapon",
+          "inventoryRow": "Sword of Abyssal Order Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Daggers of Abyssal Order",
+          "wikiUrl": "https://aqwwiki.wikidot.com/daggers-of-abyssal-order",
+          "category": "Weapon",
+          "inventoryRow": "Daggers of Abyssal Order Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Infernal ArchFiend Swords",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend-swords",
+          "category": "Weapon",
+          "inventoryRow": "Infernal ArchFiend Swords Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Nation Ordinance Weapons",
+          "wikiUrl": "https://aqwwiki.wikidot.com/nation-ordinance-weapons",
+          "category": "Weapon",
+          "inventoryRow": "Nation Ordinance Weapons Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Swords of Abyssal Order",
+          "wikiUrl": "https://aqwwiki.wikidot.com/swords-of-abyssal-order",
+          "category": "Weapon",
+          "inventoryRow": "Swords of Abyssal Order Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Infernal ArchFiend",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend",
+          "category": "Armor",
+          "inventoryRow": "Infernal ArchFiend Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Infernal ArchFiend Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend-helm",
+          "category": "Helm",
+          "inventoryRow": "Infernal ArchFiend Helm Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Horned Infernal ArchFiend Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/horned-infernal-archfiend-cape",
+          "category": "Cape",
+          "inventoryRow": "Horned Infernal ArchFiend Cape Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Infernal ArchFiend Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend-cape",
+          "category": "Cape",
+          "inventoryRow": "Infernal ArchFiend Cape Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Abyssal Magus' Ritual Circle",
+          "wikiUrl": "https://aqwwiki.wikidot.com/abyssal-magus-ritual-circle",
+          "category": "House Item",
+          "inventoryRow": "Abyssal Magus' Ritual Circle Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Abyssal Sorcerer's Ritual Circle",
+          "wikiUrl": "https://aqwwiki.wikidot.com/abyssal-sorcerer-s-ritual-circle",
+          "category": "House Item",
+          "inventoryRow": "Abyssal Sorcerer's Ritual Circle Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Gluttonous Maw",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gluttonous-maw",
+          "category": "Resource",
+          "inventoryRow": "Gluttonous Maw Must have completed the ' The Fiend Shard's Finale ' quest 0 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Ascended Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ascended-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Ascended Fiend Shard Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Dominating Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dominating-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Dominating Fiend Shard Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Event Horizon Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/event-horizon-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Event Horizon Fiend Shard Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Fiend Shard Fragment",
+          "wikiUrl": "https://aqwwiki.wikidot.com/fiend-shard-fragment",
+          "category": "House Item",
+          "inventoryRow": "Fiend Shard Fragment Must have completed the ' Famiglia di Carcano ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Gleaming Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gleaming-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Gleaming Fiend Shard Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Radiating Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/radiating-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Radiating Fiend Shard Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        }
+      ],
+      "completeness": "PARTIAL_VARIANT_BOUNDARY",
+      "blockers": [
+        "Earlier cosmetics/weapons and Celestial Fiend armor are actual rows but lack explicit per-collection enumeration in guide. Candidates are not approved members; generic Abyssal Order, ritual circles and shard furnishings excluded."
+      ]
+    },
+    {
+      "id": "infernal-archfiend",
+      "name": "Infernal ArchFiend",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          4018,
+          4157
+        ],
+        "scope": "Guide jointly names Celestial and Infernal sets; lines4153-4155 explicitly separate armor and two boosted weapons per variant. Earlier reward families cannot be assigned by faction/shop/quest gate alone."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/fiend-shard-shop.html",
+          "sourceHash": "708ddb78941ace478bb0167cf5c284bbf2afbfff12c0ed6a7a2ca96689ce7e49"
+        },
+        {
+          "url": "https://aqwwiki.wikidot.com/infernal-archfiend-helm",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/infernal-archfiend-helm.html",
+          "sourceHash": "1a76e96f43195e8c7566aeb79dcb88faa222633c741cfe237238295748983071"
+        },
+        {
+          "url": "https://aqwwiki.wikidot.com/infernal-archfiend-cape",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/infernal-archfiend-cape.html",
+          "sourceHash": "01cb0e9e41830ca482d84799ca24e3f15e695db62ec4393a86ace285bba96355"
+        }
+      ],
+      "members": [
+        {
+          "name": "Infernal Abyss Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-abyss-blade",
+          "category": "Weapon",
+          "inventoryRow": "Infernal Abyss Blade Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Infernal Blade of Judgement",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-blade-of-judgement",
+          "category": "Weapon",
+          "inventoryRow": "Infernal Blade of Judgement Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Infernal ArchFiend",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend",
+          "category": "Armor",
+          "inventoryRow": "Infernal ArchFiend Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [
+        {
+          "name": "Infernal ArchFiend Sword",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend-sword",
+          "category": "Weapon",
+          "inventoryRow": "Infernal ArchFiend Sword Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Infernal ArchFiend Swords",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend-swords",
+          "category": "Weapon",
+          "inventoryRow": "Infernal ArchFiend Swords Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Infernal ArchFiend Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend-helm",
+          "category": "Helm",
+          "inventoryRow": "Infernal ArchFiend Helm Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Horned Infernal ArchFiend Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/horned-infernal-archfiend-cape",
+          "category": "Cape",
+          "inventoryRow": "Horned Infernal ArchFiend Cape Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Infernal ArchFiend Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/infernal-archfiend-cape",
+          "category": "Cape",
+          "inventoryRow": "Infernal ArchFiend Cape Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        }
+      ],
+      "excludedInventoryRows": [
+        {
+          "name": "Celestial Abyss Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-abyss-blade",
+          "category": "Weapon",
+          "inventoryRow": "Celestial Abyss Blade Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Celestial ArchFiend Sword",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-sword",
+          "category": "Weapon",
+          "inventoryRow": "Celestial ArchFiend Sword Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Celestial Blade of Judgement",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-blade-of-judgement",
+          "category": "Weapon",
+          "inventoryRow": "Celestial Blade of Judgement Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Dagger of Abyssal Order",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dagger-of-abyssal-order",
+          "category": "Weapon",
+          "inventoryRow": "Dagger of Abyssal Order Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Sword of Abyssal Order",
+          "wikiUrl": "https://aqwwiki.wikidot.com/sword-of-abyssal-order",
+          "category": "Weapon",
+          "inventoryRow": "Sword of Abyssal Order Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Celestial ArchFiend Swords",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-swords",
+          "category": "Weapon",
+          "inventoryRow": "Celestial ArchFiend Swords Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Daggers of Abyssal Order",
+          "wikiUrl": "https://aqwwiki.wikidot.com/daggers-of-abyssal-order",
+          "category": "Weapon",
+          "inventoryRow": "Daggers of Abyssal Order Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Nation Ordinance Weapons",
+          "wikiUrl": "https://aqwwiki.wikidot.com/nation-ordinance-weapons",
+          "category": "Weapon",
+          "inventoryRow": "Nation Ordinance Weapons Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Swords of Abyssal Order",
+          "wikiUrl": "https://aqwwiki.wikidot.com/swords-of-abyssal-order",
+          "category": "Weapon",
+          "inventoryRow": "Swords of Abyssal Order Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Celestial ArchFiend",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend",
+          "category": "Armor",
+          "inventoryRow": "Celestial ArchFiend Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Celestial Fiend",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-fiend",
+          "category": "Armor",
+          "inventoryRow": "Celestial Fiend Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Celestial ArchFiend Halo Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-halo-helm",
+          "category": "Helm",
+          "inventoryRow": "Celestial ArchFiend Halo Helm Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Celestial ArchFiend Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-helm",
+          "category": "Helm",
+          "inventoryRow": "Celestial ArchFiend Helm Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Celestial ArchFiend Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-cape",
+          "category": "Cape",
+          "inventoryRow": "Celestial ArchFiend Cape Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Celestial ArchFiend Wings",
+          "wikiUrl": "https://aqwwiki.wikidot.com/celestial-archfiend-wings",
+          "category": "Cape",
+          "inventoryRow": "Celestial ArchFiend Wings Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Abyssal Magus' Ritual Circle",
+          "wikiUrl": "https://aqwwiki.wikidot.com/abyssal-magus-ritual-circle",
+          "category": "House Item",
+          "inventoryRow": "Abyssal Magus' Ritual Circle Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Abyssal Sorcerer's Ritual Circle",
+          "wikiUrl": "https://aqwwiki.wikidot.com/abyssal-sorcerer-s-ritual-circle",
+          "category": "House Item",
+          "inventoryRow": "Abyssal Sorcerer's Ritual Circle Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Gluttonous Maw",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gluttonous-maw",
+          "category": "Resource",
+          "inventoryRow": "Gluttonous Maw Must have completed the ' The Fiend Shard's Finale ' quest 0 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Ascended Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/ascended-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Ascended Fiend Shard Must have completed the ' The Fiend Shard's Demand ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Dominating Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dominating-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Dominating Fiend Shard Must have completed the ' Evolve the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Event Horizon Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/event-horizon-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Event Horizon Fiend Shard Must have completed the ' The Fiend Shard's Finale ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Fiend Shard Fragment",
+          "wikiUrl": "https://aqwwiki.wikidot.com/fiend-shard-fragment",
+          "category": "House Item",
+          "inventoryRow": "Fiend Shard Fragment Must have completed the ' Famiglia di Carcano ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Gleaming Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gleaming-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Gleaming Fiend Shard Must have completed the ' Feed the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        },
+        {
+          "name": "Radiating Fiend Shard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/radiating-fiend-shard",
+          "category": "House Item",
+          "inventoryRow": "Radiating Fiend Shard Must have completed the ' Grow the Fiend Shard ' quest 0 AC",
+          "inventorySource": "https://aqwwiki.wikidot.com/fiend-shard-shop"
+        }
+      ],
+      "completeness": "PARTIAL_VARIANT_BOUNDARY",
+      "blockers": [
+        "Earlier cosmetics/weapons and Celestial Fiend armor are actual rows but lack explicit per-collection enumeration in guide. Candidates are not approved members; generic Abyssal Order, ritual circles and shard furnishings excluded."
+      ]
+    },
+    {
+      "id": "enchanted-yokai-dragonslayer",
+      "name": "Enchanted Yokai Dragonslayer",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          6182,
+          6202
+        ],
+        "scope": "Guide explicitly names Enchanted armor and Enchanted Kisshoten Naginata. Full-shop total1800 Village’s Grace covers original and enchanted versions together, not an independent single-variant member boundary."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/haku-war-shop.html",
+          "sourceHash": "34ab7690ccf8eaefb86654db07726397785492a39a9a96916da74d1b084f1b09"
+        }
+      ],
+      "members": [
+        {
+          "name": "Enchanted Kisshoten Naginata",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-kisshoten-naginata",
+          "category": "Weapon",
+          "inventoryRow": "Enchanted Kisshoten Naginata Village's Grace x400, Kisshoten Naginata x1, Gold Voucher 500k x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Enchanted Yokai Dragonslayer",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-yokai-dragonslayer",
+          "category": "Armor",
+          "inventoryRow": "Enchanted Yokai Dragonslayer Village's Grace x500, Yokai Dragonslayer x1, Gold Voucher 500k x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [
+        {
+          "name": "Dragonbane Tanto",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dragonbane-tanto",
+          "category": "Weapon",
+          "inventoryRow": "Dragonbane Tanto Village's Grace x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Dragonbane Tanto",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-dragonbane-tanto",
+          "category": "Weapon",
+          "inventoryRow": "Enchanted Dragonbane Tanto Village's Grace x30, Dragonbane Tanto x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Luminous Mikazuki",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-luminous-mikazuki",
+          "category": "Weapon",
+          "inventoryRow": "Enchanted Luminous Mikazuki Village's Grace x30, Luminous Mikazuki x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Seven Fang Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-seven-fang-blade",
+          "category": "Weapon",
+          "inventoryRow": "Enchanted Seven Fang Blade Village's Grace x30, Seven Fang Blade x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Luminous Mikazuki",
+          "wikiUrl": "https://aqwwiki.wikidot.com/luminous-mikazuki",
+          "category": "Weapon",
+          "inventoryRow": "Luminous Mikazuki Village's Grace x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Seven Fang Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/seven-fang-blade",
+          "category": "Weapon",
+          "inventoryRow": "Seven Fang Blade Village's Grace x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Dual Dragonbane Tanto",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dual-dragonbane-tanto",
+          "category": "Weapon",
+          "inventoryRow": "Dual Dragonbane Tanto Village's Grace x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Dual Enchanted Dragonbane Tanto",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dual-enchanted-dragonbane-tanto",
+          "category": "Weapon",
+          "inventoryRow": "Dual Enchanted Dragonbane Tanto Village's Grace x30, Dual Dragonbane Tanto x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Dual Enchanted Luminous Mikazuki",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dual-enchanted-luminous-mikazuki",
+          "category": "Weapon",
+          "inventoryRow": "Dual Enchanted Luminous Mikazuki Village's Grace x30, Dual Luminous Mikazuki x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Dual Luminous Mikazuki",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dual-luminous-mikazuki",
+          "category": "Weapon",
+          "inventoryRow": "Dual Luminous Mikazuki Village's Grace x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Seven Fang Blades",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-seven-fang-blades",
+          "category": "Weapon",
+          "inventoryRow": "Enchanted Seven Fang Blades Village's Grace x30, Seven Fang Blades x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Seven Fang Blades",
+          "wikiUrl": "https://aqwwiki.wikidot.com/seven-fang-blades",
+          "category": "Weapon",
+          "inventoryRow": "Seven Fang Blades Village's Grace x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Kisshoten Naginata",
+          "wikiUrl": "https://aqwwiki.wikidot.com/kisshoten-naginata",
+          "category": "Weapon",
+          "inventoryRow": "Kisshoten Naginata Village's Grace x100",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Yokai Dragonslayer",
+          "wikiUrl": "https://aqwwiki.wikidot.com/yokai-dragonslayer",
+          "category": "Armor",
+          "inventoryRow": "Yokai Dragonslayer Village's Grace x200",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Noble Yokai Dragonslayer Beard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-noble-yokai-dragonslayer-beard",
+          "category": "Helm",
+          "inventoryRow": "Enchanted Noble Yokai Dragonslayer Beard Village's Grace x20, Noble Yokai Dragonslayer Beard x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Noble Yokai Dragonslayer Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-noble-yokai-dragonslayer-helm",
+          "category": "Helm",
+          "inventoryRow": "Enchanted Noble Yokai Dragonslayer Helm Village's Grace x20, Noble Yokai Dragonslayer Helm x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Yokai Dragonslayer Beard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-yokai-dragonslayer-beard",
+          "category": "Helm",
+          "inventoryRow": "Enchanted Yokai Dragonslayer Beard Village's Grace x20, Yokai Dragonslayer Beard x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Yokai Dragonslayer Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-yokai-dragonslayer-helm",
+          "category": "Helm",
+          "inventoryRow": "Enchanted Yokai Dragonslayer Helm Village's Grace x20, Yokai Dragonslayer Helm x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Noble Yokai Dragonslayer Beard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/noble-yokai-dragonslayer-beard",
+          "category": "Helm",
+          "inventoryRow": "Noble Yokai Dragonslayer Beard Village's Grace x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Noble Yokai Dragonslayer Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/noble-yokai-dragonslayer-helm",
+          "category": "Helm",
+          "inventoryRow": "Noble Yokai Dragonslayer Helm Village's Grace x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Yokai Dragonslayer Beard",
+          "wikiUrl": "https://aqwwiki.wikidot.com/yokai-dragonslayer-beard",
+          "category": "Helm",
+          "inventoryRow": "Yokai Dragonslayer Beard Village's Grace x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Yokai Dragonslayer Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/yokai-dragonslayer-helm",
+          "category": "Helm",
+          "inventoryRow": "Yokai Dragonslayer Helm Village's Grace x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Yokai Dragonslayer Quiver Cloak",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-yokai-dragonslayer-quiver-cloak",
+          "category": "Cape",
+          "inventoryRow": "Enchanted Yokai Dragonslayer Quiver Cloak Village's Grace x20, Yokai Dragonslayer Quiver Cloak x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Enchanted Yokai Dragonslayer War Cloak",
+          "wikiUrl": "https://aqwwiki.wikidot.com/enchanted-yokai-dragonslayer-war-cloak",
+          "category": "Cape",
+          "inventoryRow": "Enchanted Yokai Dragonslayer War Cloak Village's Grace x20, Yokai Dragonslayer War Cloak x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Yokai Dragonslayer Quiver Cloak",
+          "wikiUrl": "https://aqwwiki.wikidot.com/yokai-dragonslayer-quiver-cloak",
+          "category": "Cape",
+          "inventoryRow": "Yokai Dragonslayer Quiver Cloak Village's Grace x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        },
+        {
+          "name": "Yokai Dragonslayer War Cloak",
+          "wikiUrl": "https://aqwwiki.wikidot.com/yokai-dragonslayer-war-cloak",
+          "category": "Cape",
+          "inventoryRow": "Yokai Dragonslayer War Cloak Village's Grace x20",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop",
+          "membershipStatus": "CANDIDATE_BOUNDARY_UNRESOLVED"
+        }
+      ],
+      "excludedInventoryRows": [
+        {
+          "name": "Gold Voucher 500k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-500k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 500k 500,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/haku-war-shop"
+        }
+      ],
+      "completeness": "PARTIAL_VARIANT_BOUNDARY",
+      "blockers": [
+        "Preserve base and Enchanted identities separately; full-shop total1800 includes both original prerequisites and enchanted upgrades. Remaining26 equipment rows are candidates only, not automatic named-set members."
+      ]
+    },
+    {
+      "id": "mystical-devotee-of-mana",
+      "name": "Mystical Devotee of Mana",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          6527,
+          6547
+        ],
+        "scope": "Guide explicitly says exchange whole merge shop. Fifteen equipment rows cost36 Gold Voucher500k,46 Prismatic Seams,46 Unbound Thread,139 Acquiescence exactly matching guide. Include Manifestation of Mana, differently named orbs, Staff/Wand of Miracles; exclude voucher resource."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/worlds-core-merge.html",
+          "sourceHash": "b56569c221cfb8faf56a203694690c262d1ce71719f76cd3c776f83c7fc4b4cc"
+        }
+      ],
+      "members": [
+        {
+          "name": "Mystical Devotee's Scimitar",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mystical-devotee-s-scimitar",
+          "category": "Weapon",
+          "inventoryRow": "Mystical Devotee's Scimitar Gold Voucher 500k x3, Acquiescence x10, Unbound Thread x3, Prismatic Seams x3",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Mystical Chakrams Of Illusion",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mystical-chakrams-of-illusion",
+          "category": "Weapon",
+          "inventoryRow": "Mystical Chakrams Of Illusion Mystical Chakram Of Illusions x1, Acquiescence x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Mystical Devotee's Scimitars",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mystical-devotee-s-scimitars",
+          "category": "Weapon",
+          "inventoryRow": "Mystical Devotee's Scimitars Mystical Devotee's Scimitar x1, Acquiescence x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Mystical Chakram Of Illusions",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mystical-chakram-of-illusions",
+          "category": "Weapon",
+          "inventoryRow": "Mystical Chakram Of Illusions Gold Voucher 500k x3, Acquiescence x10, Unbound Thread x3, Prismatic Seams x3",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Staff Of Miracles",
+          "wikiUrl": "https://aqwwiki.wikidot.com/staff-of-miracles",
+          "category": "Weapon",
+          "inventoryRow": "Staff Of Miracles Gold Voucher 500k x3, Acquiescence x10, Unbound Thread x3, Prismatic Seams x3",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Wand Of Miracles",
+          "wikiUrl": "https://aqwwiki.wikidot.com/wand-of-miracles",
+          "category": "Weapon",
+          "inventoryRow": "Wand Of Miracles Gold Voucher 500k x3, Acquiescence x10, Unbound Thread x3, Prismatic Seams x3",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Mystical Devotee of Mana",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mystical-devotee-of-mana",
+          "category": "Armor",
+          "inventoryRow": "Mystical Devotee of Mana Gold Voucher 500k x5, Acquiescence x15, Unbound Thread x7, Prismatic Seams x7",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Mystical Devotee's Hair",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mystical-devotee-s-hair",
+          "category": "Helm",
+          "inventoryRow": "Mystical Devotee's Hair Gold Voucher 500k x1, Acquiescence x6, Unbound Thread x2, Prismatic Seams x2",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Mystical Devotee's Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mystical-devotee-s-locks",
+          "category": "Helm",
+          "inventoryRow": "Mystical Devotee's Locks Gold Voucher 500k x1, Acquiescence x6, Unbound Thread x2, Prismatic Seams x2",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Mythical Devotee's Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mythical-devotee-s-helm",
+          "category": "Helm",
+          "inventoryRow": "Mythical Devotee's Helm Gold Voucher 500k x1, Acquiescence x6, Unbound Thread x2, Prismatic Seams x2",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Mythical Devotee's Veil + Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mythical-devotee-s-veil-locks",
+          "category": "Helm",
+          "inventoryRow": "Mythical Devotee's Veil + Locks Gold Voucher 500k x1, Acquiescence x6, Unbound Thread x2, Prismatic Seams x2",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Miraculous Orb Of Divination",
+          "wikiUrl": "https://aqwwiki.wikidot.com/miraculous-orb-of-divination",
+          "category": "Cape",
+          "inventoryRow": "Miraculous Orb Of Divination Gold Voucher 500k x3, Acquiescence x10, Unbound Thread x3, Prismatic Seams x3",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Radiant Orb Of Clarity",
+          "wikiUrl": "https://aqwwiki.wikidot.com/radiant-orb-of-clarity",
+          "category": "Cape",
+          "inventoryRow": "Radiant Orb Of Clarity Gold Voucher 500k x3, Acquiescence x10, Unbound Thread x3, Prismatic Seams x3",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Mystical Orb Of Illusions",
+          "wikiUrl": "https://aqwwiki.wikidot.com/mystical-orb-of-illusions",
+          "category": "Pet",
+          "inventoryRow": "Mystical Orb Of Illusions Gold Voucher 500k x3, Acquiescence x10, Unbound Thread x3, Prismatic Seams x3",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Manifestation of Mana",
+          "wikiUrl": "https://aqwwiki.wikidot.com/manifestation-of-mana",
+          "category": "House Item",
+          "inventoryRow": "Manifestation of Mana Gold Voucher 500k x6, Acquiescence x20, Unbound Thread x10, Prismatic Seams x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [],
+      "excludedInventoryRows": [
+        {
+          "name": "Gold Voucher 500k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-500k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 500k 500,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/worlds-core-merge"
+        }
+      ],
+      "completeness": "COMPLETE_GUIDE_SCOPED_INVENTORY",
+      "blockers": [],
+      "reconciledGuideTotals": {
+        "Gold Voucher 500k": 36,
+        "Acquiescence": 139,
+        "Unbound Thread": 46,
+        "Prismatic Seams": 46
+      }
+    },
+    {
+      "id": "headless-pumpkin",
+      "name": "Headless Pumpkin",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "sourceHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+        "lines": [
+          8837,
+          8853
+        ],
+        "scope": "Guide explicitly distinguishes Headless Pumpkin set from Candy Corn Crusher. Its five rows cost7 Gold Voucher500k,290 Goredon sauce,145 Parfait,75 Ultra Turdrakogiblet,145 Rider Meat,215 Seed exactly matching guide totals."
+      },
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/harvest-merge",
+          "sourceFile": "content-sources/farm/equipment-sets/shop-research/harvest-merge.html",
+          "sourceHash": "4204d4c3bbbecaf5d720880a4a7117cc42f06299b796173a57ebfaa0b0d7acb2"
+        }
+      ],
+      "members": [
+        {
+          "name": "Headless Pumpkin Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/headless-pumpkin-blade",
+          "category": "Weapon",
+          "inventoryRow": "Headless Pumpkin Blade Gold Voucher 500k x2, Goredon's Zard Sauce x90, Harvest Golem Parfait x45, Ultra Turdrakogiblet x25, Wretched Rider Meat x45, Overgourd Seed x65",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Headless Pumpkin Blades",
+          "wikiUrl": "https://aqwwiki.wikidot.com/headless-pumpkin-blades",
+          "category": "Weapon",
+          "inventoryRow": "Headless Pumpkin Blades Gold Voucher 500k x1, Goredon's Zard Sauce x20, Harvest Golem Parfait x10, Ultra Turdrakogiblet x5, Wretched Rider Meat x10, Overgourd Seed x15, Headless Pumpkin Blade x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Headless Pumpkin",
+          "wikiUrl": "https://aqwwiki.wikidot.com/headless-pumpkin",
+          "category": "Armor",
+          "inventoryRow": "Headless Pumpkin Gold Voucher 500k x2, Goredon's Zard Sauce x90, Harvest Golem Parfait x45, Ultra Turdrakogiblet x25, Wretched Rider Meat x45, Overgourd Seed x65",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Headless Pumpkin's... Head?",
+          "wikiUrl": "https://aqwwiki.wikidot.com/headless-pumpkin-s-head",
+          "category": "Helm",
+          "inventoryRow": "Headless Pumpkin's... Head? Gold Voucher 500k x1, Goredon's Zard Sauce x45, Harvest Golem Parfait x25, Ultra Turdrakogiblet x10, Wretched Rider Meat x25, Overgourd Seed x35",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        },
+        {
+          "name": "Headless Pumpkin Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/headless-pumpkin-cape",
+          "category": "Cape",
+          "inventoryRow": "Headless Pumpkin Cape Gold Voucher 500k x1, Goredon's Zard Sauce x45, Harvest Golem Parfait x20, Ultra Turdrakogiblet x10, Wretched Rider Meat x20, Overgourd Seed x35",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge",
+          "membershipStatus": "GUIDE_SCOPED"
+        }
+      ],
+      "candidateMembers": [],
+      "excludedInventoryRows": [
+        {
+          "name": "Candy Corn Crusher Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-blade",
+          "category": "Weapon",
+          "inventoryRow": "Candy Corn Crusher Blade Gold Voucher 25k x3, Goredon's Zard Sauce x15, Harvest Golem Parfait x10, Ultra Turdrakogiblet x5, Wretched Rider Meat x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher Axe",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-axe",
+          "category": "Weapon",
+          "inventoryRow": "Candy Corn Crusher Axe Gold Voucher 25k x3, Goredon's Zard Sauce x15, Harvest Golem Parfait x10, Ultra Turdrakogiblet x5, Wretched Rider Meat x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher Drills",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-drills",
+          "category": "Resource",
+          "inventoryRow": "Candy Corn Crusher Drills Gold Voucher 25k x3, Goredon's Zard Sauce x15, Harvest Golem Parfait x10, Ultra Turdrakogiblet x5, Wretched Rider Meat x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Guncraft Shadowslayer Bigger Irons",
+          "wikiUrl": "https://aqwwiki.wikidot.com/guncraft-shadowslayer-bigger-irons",
+          "category": "Weapon",
+          "inventoryRow": "Guncraft Shadowslayer Bigger Irons Guncraft Shadowslayer Big Irons x1, Gold Voucher 25k x2, Iron Ore (2) x1, TurKing Claw x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Guncraft Shadowslayer Biggest Irons",
+          "wikiUrl": "https://aqwwiki.wikidot.com/guncraft-shadowslayer-biggest-irons",
+          "category": "Weapon",
+          "inventoryRow": "Guncraft Shadowslayer Biggest Irons Guncraft Shadowslayer Bigger Irons x1, Gold Voucher 25k x2, Iron Ore (2) x1, TurKing Claw x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Scarbucks Double Dessert",
+          "wikiUrl": "https://aqwwiki.wikidot.com/scarbucks-double-dessert",
+          "category": "Weapon",
+          "inventoryRow": "Scarbucks Double Dessert Gold Voucher 25k x2, Maple Leaf x2, Burnt Feather x20, Scarbucks Pumpkin Spice Latte x1, Scarbucks Pumpkin Pie x1",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Guncraft Shadowslayer Bigger Iron",
+          "wikiUrl": "https://aqwwiki.wikidot.com/guncraft-shadowslayer-bigger-iron",
+          "category": "Resource",
+          "inventoryRow": "Guncraft Shadowslayer Bigger Iron Guncraft Shadowslayer Big Iron x1, Gold Voucher 25k x2, Iron Ore (2) x1, TurKing Claw x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Guncraft Shadowslayer Biggest Iron",
+          "wikiUrl": "https://aqwwiki.wikidot.com/guncraft-shadowslayer-biggest-iron",
+          "category": "Resource",
+          "inventoryRow": "Guncraft Shadowslayer Biggest Iron Guncraft Shadowslayer Bigger Iron x1, Gold Voucher 25k x2, Iron Ore (2) x1, TurKing Claw x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Guncraft Shadowslayer Vulcan Cannon",
+          "wikiUrl": "https://aqwwiki.wikidot.com/guncraft-shadowslayer-vulcan-cannon",
+          "category": "Weapon",
+          "inventoryRow": "Guncraft Shadowslayer Vulcan Cannon Gold Voucher 25k x2, Iron Ore (2) x1, TurKing Claw x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Autumniphile",
+          "wikiUrl": "https://aqwwiki.wikidot.com/autumniphile",
+          "category": "Armor",
+          "inventoryRow": "Autumniphile Autumnal Civilian x1, Gold Voucher 25k x3, Maple Leaf x3, Burnt Feather x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher",
+          "category": "Armor",
+          "inventoryRow": "Candy Corn Crusher Gold Voucher 25k x4, Goredon's Zard Sauce x25, Harvest Golem Parfait x15, Ultra Turdrakogiblet x8, Wretched Rider Meat x15",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Elite Guncraft Shadowslayer",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-guncraft-shadowslayer",
+          "category": "Armor",
+          "inventoryRow": "Elite Guncraft Shadowslayer Gold Voucher 25k x3, Iron Ore (2) x2, TurKing Claw x15",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Autumnal Civilian Beret",
+          "wikiUrl": "https://aqwwiki.wikidot.com/autumnal-civilian-beret",
+          "category": "Helm",
+          "inventoryRow": "Autumnal Civilian Beret Autumnal Civilian Hair x1, Gold Voucher 25k x1, Maple Leaf x1, Burnt Feather x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Autumnal Civilian Beret + Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/autumnal-civilian-beret-locks",
+          "category": "Helm",
+          "inventoryRow": "Autumnal Civilian Beret + Locks Autumnal Locks x1, Gold Voucher 25k x1, Maple Leaf x1, Burnt Feather x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Autumniphile Beret",
+          "wikiUrl": "https://aqwwiki.wikidot.com/autumniphile-beret",
+          "category": "Helm",
+          "inventoryRow": "Autumniphile Beret Autumnal Civilian Beret x1, Gold Voucher 25k x1, Maple Leaf x1, Burnt Feather x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Autumniphile Beret + Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/autumniphile-beret-locks",
+          "category": "Helm",
+          "inventoryRow": "Autumniphile Beret + Locks Autumnal Civilian Beret + Locks x1, Gold Voucher 25k x1, Maple Leaf x1, Burnt Feather x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher Hat",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-hat",
+          "category": "Helm",
+          "inventoryRow": "Candy Corn Crusher Hat Gold Voucher 25k x2, Goredon's Zard Sauce x10, Harvest Golem Parfait x5, Ultra Turdrakogiblet x3, Wretched Rider Meat x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-helm",
+          "category": "Helm",
+          "inventoryRow": "Candy Corn Crusher Helm Gold Voucher 25k x2, Goredon's Zard Sauce x10, Harvest Golem Parfait x5, Ultra Turdrakogiblet x3, Wretched Rider Meat x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher Hood",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-hood",
+          "category": "Helm",
+          "inventoryRow": "Candy Corn Crusher Hood Gold Voucher 25k x2, Goredon's Zard Sauce x10, Harvest Golem Parfait x5, Ultra Turdrakogiblet x3, Wretched Rider Meat x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher Mask",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-mask",
+          "category": "Helm",
+          "inventoryRow": "Candy Corn Crusher Mask Gold Voucher 25k x2, Goredon's Zard Sauce x10, Harvest Golem Parfait x5, Ultra Turdrakogiblet x3, Wretched Rider Meat x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Elite Guncraft Masked Stetson",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-guncraft-masked-stetson",
+          "category": "Helm",
+          "inventoryRow": "Elite Guncraft Masked Stetson Gold Voucher 25k x1, Iron Ore (2) x1, TurKing Claw x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Elite Guncraft Masked Stetson Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-guncraft-masked-stetson-locks",
+          "category": "Helm",
+          "inventoryRow": "Elite Guncraft Masked Stetson Locks Gold Voucher 25k x1, Iron Ore (2) x1, TurKing Claw x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Elite Guncraft Stetson",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-guncraft-stetson",
+          "category": "Helm",
+          "inventoryRow": "Elite Guncraft Stetson Gold Voucher 25k x1, Iron Ore (2) x1, TurKing Claw x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Elite Guncraft Stetson Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-guncraft-stetson-locks",
+          "category": "Helm",
+          "inventoryRow": "Elite Guncraft Stetson Locks Gold Voucher 25k x1, Iron Ore (2) x1, TurKing Claw x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Elite Guncraft Vigilante Mask",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-guncraft-vigilante-mask",
+          "category": "Helm",
+          "inventoryRow": "Elite Guncraft Vigilante Mask Gold Voucher 25k x1, Iron Ore (2) x1, TurKing Claw x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Elite Guncraft Vigilante Masked Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/elite-guncraft-vigilante-masked-locks",
+          "category": "Helm",
+          "inventoryRow": "Elite Guncraft Vigilante Masked Locks Gold Voucher 25k x1, Iron Ore (2) x1, TurKing Claw x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Full Autumniphile Morph",
+          "wikiUrl": "https://aqwwiki.wikidot.com/full-autumniphile-morph",
+          "category": "Helm",
+          "inventoryRow": "Full Autumniphile Morph Autumniphile Beret x1, Gold Voucher 25k x1, Maple Leaf x1, Burnt Feather x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Full Autumniphile Morph + Locks",
+          "wikiUrl": "https://aqwwiki.wikidot.com/full-autumniphile-morph-locks",
+          "category": "Helm",
+          "inventoryRow": "Full Autumniphile Morph + Locks Autumniphile Beret + Locks x1, Gold Voucher 25k x1, Maple Leaf x1, Burnt Feather x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Autumnal Maple Leaves",
+          "wikiUrl": "https://aqwwiki.wikidot.com/autumnal-maple-leaves",
+          "category": "Cape",
+          "inventoryRow": "Autumnal Maple Leaves Gold Voucher 25k x2, Maple Leaf x2, Burnt Feather x15",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher Cape",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-cape",
+          "category": "Cape",
+          "inventoryRow": "Candy Corn Crusher Cape Gold Voucher 25k x2, Goredon's Zard Sauce x10, Harvest Golem Parfait x5, Ultra Turdrakogiblet x3, Wretched Rider Meat x5",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Guncraft Glory",
+          "wikiUrl": "https://aqwwiki.wikidot.com/guncraft-glory",
+          "category": "Cape",
+          "inventoryRow": "Guncraft Glory Gold Voucher 25k x2, Iron Ore (2) x2, TurKing Claw x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher Pet",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-pet",
+          "category": "Pet",
+          "inventoryRow": "Candy Corn Crusher Pet Gold Voucher 25k x3, Goredon's Zard Sauce x15, Harvest Golem Parfait x10, Ultra Turdrakogiblet x5, Wretched Rider Meat x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Guncraft Artillery Beast",
+          "wikiUrl": "https://aqwwiki.wikidot.com/guncraft-artillery-beast",
+          "category": "Pet",
+          "inventoryRow": "Guncraft Artillery Beast Gold Voucher 25k x2, Iron Ore (2) x1, TurKing Claw x10",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Candy Corn Crusher Rune",
+          "wikiUrl": "https://aqwwiki.wikidot.com/candy-corn-crusher-rune",
+          "category": "House Item",
+          "inventoryRow": "Candy Corn Crusher Rune Gold Voucher 500k x2, Goredon's Zard Sauce x60, Harvest Golem Parfait x30, Ultra Turdrakogiblet x15, Wretched Rider Meat x30",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Gold Voucher 25k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-25k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 25k 25,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        },
+        {
+          "name": "Gold Voucher 500k",
+          "wikiUrl": "https://aqwwiki.wikidot.com/gold-voucher-500k",
+          "category": "Resource",
+          "inventoryRow": "Gold Voucher 500k 500,000 Gold",
+          "inventorySource": "https://aqwwiki.wikidot.com/harvest-merge"
+        }
+      ],
+      "completeness": "COMPLETE_SCOPED_INVENTORY_TOTALS",
+      "blockers": [],
+      "reconciledGuideTotals": {
+        "Gold Voucher 500k": 7,
+        "Goredon's Zard Sauce": 290,
+        "Harvest Golem Parfait": 145,
+        "Ultra Turdrakogiblet": 75,
+        "Wretched Rider Meat": 145,
+        "Overgourd Seed": 215
+      }
+    }
+  ],
+  "verification": {
+    "pinnedSources": 16,
+    "duplicateIdentityCheck": "PASS within each inventory bucket",
+    "sourceHashCheck": "PASS SHA256 all pinned sources",
+    "reconciledMaterialTotals": {
+      "paladin-treasurehunter": {
+        "Ancient Alloy": 111
+      },
+      "skullbreaker-knight-shop": {
+        "Especially Unbroken Skull": 335
+      },
+      "shadowduat-merge-shop": {
+        "A Memory": 1997
+      },
+      "haku-war-shop": {
+        "Village’s Grace": 1800
+      },
+      "worlds-core-merge": {
+        "Acquiescence": 139
+      }
+    },
+    "browserQA": "NOT_RUN_RESEARCH_ONLY"
+  }
+}

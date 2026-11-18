@@ -1,0 +1,151 @@
+{
+  "as_of": "2026-11-15",
+  "scope": "These exact fields were cross-checked on named AQW Wiki pages in this session; do not extend their assertions to all other catalog entities.",
+  "records": [
+    {
+      "official_name": "Hollowborn Oblivion Blade",
+      "category": "Weapon",
+      "subtype": "Sword",
+      "wiki_url": "https://aqwwiki.wikidot.com/hollowborn-oblivion-blade",
+      "acquisition_routes": [
+        {"type": "quest_reward", "quest_name": "Summoning and Stuff", "quest_accept_map": null},
+        {"type": "quest_reward", "quest_name": "Trading and Stuff (Dual)", "quest_accept_map": null},
+        {"type": "quest_reward", "quest_name": "Trading and Stuff (Single)", "quest_accept_map": null},
+        {"type": "merge", "shop": "Yulgar's Dual Wield Drop Off", "location": "Nostalgia Quest", "ingredients": [{"name":"Dual Hollowborn Oblivion Blade","quantity":1}], "relationship_note": "Wiki identifies Dual Hollowborn Oblivion Blade ×1 as input to this single sword; do not invert recipe."}
+      ],
+      "locations_on_item_page": ["Tercessuinotlim", "Yulgar's Dual Wield Drop Off - Nostalgia Quest"],
+      "quest_acceptance_map_verified": false,
+      "status": "WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "ArchPaladin (0 AC)",
+      "category": "Class",
+      "wiki_url": "https://aqwwiki.wikidot.com/archpaladin-shop",
+      "acquisition_routes": [{"type":"quest_unlock_shop","final_quest":"Sacred Magic: Eden","shop":"ArchPaladin Shop","shop_npc":"Artix","shop_map":"Throne of Darkness Hub","price":"0 AC"}],
+      "status": "WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "ArchPaladin Armor",
+      "category": "Armor",
+      "wiki_url": "https://aqwwiki.wikidot.com/archpaladin-armor",
+      "acquisition_routes": [{"type":"quest_unlock_shop","final_quest":"Sacred Magic: Eden","shop":"ArchPaladin Shop","shop_npc":"Artix","shop_map":"Throne of Darkness Hub","price":"100000 Gold"}],
+      "status": "WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Blinding Light of Destiny",
+      "category": "Weapon",
+      "wiki_url": "https://aqwwiki.wikidot.com/story:blinding-light-of-destiny",
+      "final_quest": {
+        "name": "The Blinding Light of Destiny",
+        "quest_location":"Necropolis", "quest_npc":"Artix",
+        "items_required": [
+          {"name":"Bright Aura","quantity":125},
+          {"name":"Brilliant Aura","quantity":75},
+          {"name":"Blinding Aura","quantity":1},
+          {"name":"Spirit Orb (Misc)","quantity":500},
+          {"name":"Loyal Spirit Orb","quantity":250},
+          {"name":"Ultimate Weapon Kit","quantity":1}
+        ],
+        "quest_reward_item":"Get Your Blinding Light of Destiny",
+        "final_item_claim":"Book of Lore → Blinding Light of Destiny (Shop)"
+      },
+      "status": "WIKI_VERIFIED_FINAL_QUEST_NOT_FULL_WORKFLOW"
+    },
+    {
+      "official_name": "Blinding Blade of Destiny",
+      "category": "Weapon",
+      "subtype":"Sword",
+      "wiki_url":"https://aqwwiki.wikidot.com/blinding-blade-of-destiny",
+      "acquisition_routes":[{"type":"merge","shop":"Light Merge","shop_map":"Necropolis","ingredients":[{"name":"Bright Blade of Destiny","quantity":1},{"name":"Ultimate Weapon Kit","quantity":1}]}],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Blinding Bow of Destiny",
+      "category": "Weapon",
+      "subtype":"Bow",
+      "wiki_url":"https://aqwwiki.wikidot.com/blinding-bow-of-destiny",
+      "acquisition_routes":[{"type":"merge","shop":"Light Merge","shop_map":"Necropolis","ingredients":[{"name":"Bright Bow of Destiny","quantity":1},{"name":"Ultimate Weapon Kit","quantity":1}]}],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Blinding Daggers of Destiny",
+      "category": "Weapon",
+      "subtype":"Daggers",
+      "wiki_url":"https://aqwwiki.wikidot.com/blinding-daggers-of-destiny",
+      "acquisition_routes":[{"type":"merge","shop":"Light Merge","shop_map":"Necropolis","ingredients":[{"name":"Bright Daggers of Destiny","quantity":1},{"name":"Ultimate Weapon Kit","quantity":1}]}],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Blinding Scythe of Destiny",
+      "category": "Weapon",
+      "subtype":"Polearm",
+      "wiki_url":"https://aqwwiki.wikidot.com/blinding-scythe-of-destiny",
+      "acquisition_routes":[{"type":"merge","shop":"Light Merge","shop_map":"Necropolis","ingredients":[{"name":"Bright Scythe of Destiny","quantity":1},{"name":"Ultimate Weapon Kit","quantity":1}]}],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Ultimate Weapon Kit",
+      "category": "Resource",
+      "wiki_url":"https://aqwwiki.wikidot.com/ultimate-weapon-kit",
+      "acquisition_routes":[{"type":"quest_reward","quest_name":"Ultimate Weapon Kit Construction","quest_location":"Necropolis"}],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Roentgenium of Nulgath",
+      "category": "Resource",
+      "wiki_url":"https://aqwwiki.wikidot.com/roentgenium-of-nulgath",
+      "acquisition_routes":[
+        {"type":"quest_reward","quest_name":"Void HighLord's Challenge","location":"Tercessuinotlim","quantity_per_completion":null},
+        {"type":"merge_exchange","shop":"Nulgath's Merge Shop","shop_map":"Ultra Nulgath","inputs":[{"name":"Nulgath Insignia","quantity":5}],"outputs":[{"name":"Roentgenium of Nulgath","quantity":2}]}
+      ],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Legion Revenant (Class)",
+      "category":"Class",
+      "wiki_url":"https://aqwwiki.wikidot.com/legion-revenant-class",
+      "acquisition_routes":[{"type":"quest_reward","quest_name":"Legion Fealty 4","quest_location":"Revenant"}],
+      "final_quest_required_items":[{"name":"Exalted Crown","quantity":10},{"name":"Revenant's Spellscroll","quantity":20},{"name":"Conquest Wreath","quantity":6}],
+      "final_items_evidence_url":"https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+      "status":"WIKI_VERIFIED_FINAL_QUEST_NOT_FULL_WORKFLOW"
+    },
+    {
+      "official_name": "Exalted Crown",
+      "category":"Resource","wiki_url":"https://aqwwiki.wikidot.com/exalted-crown",
+      "acquisition_routes":[{"type":"quest_reward","quest_name":"Legion Fealty 3"},
+        {"type":"merge","shop":"Dage Challenge Merge","ingredients":[{"name":"Dage the Evil Insignia","quantity":1},{"name":"Legion Token","quantity":50}]}],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Conquest Wreath",
+      "category":"Resource","wiki_url":"https://aqwwiki.wikidot.com/conquest-wreath",
+      "acquisition_routes":[{"type":"quest_reward","quest_name":"Legion Fealty 2"},
+        {"type":"merge","shop":"Dage Challenge Merge","ingredients":[{"name":"Dage the Evil Insignia","quantity":1},{"name":"Legion Token","quantity":50}]}],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Revenant's Spellscroll",
+      "category":"Resource","wiki_url":"https://aqwwiki.wikidot.com/revenant-s-spellscroll",
+      "acquisition_routes":[{"type":"quest_reward","quest_name":"Legion Fealty 1"},
+        {"type":"merge","shop":"Dage Challenge Merge","ingredients":[{"name":"Dage the Evil Insignia","quantity":1},{"name":"Legion Token","quantity":50}]}],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Dage the Evil Insignia",
+      "category":"Resource","wiki_url":"https://aqwwiki.wikidot.com/dage-the-evil-insignia",
+      "acquisition_routes":[{"type":"weekly_quest_reward","quest_name":"Dage, Lord of the Undead Legion","ultra_boss":"Ultra Dage","quest_npc":"Calamitus","quest_map":"Ultra Dage","quantity_per_completion":null}],
+      "sources":["https://aqwwiki.wikidot.com/calamitus-quests"],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    },
+    {
+      "official_name": "Nulgath Insignia",
+      "category":"Resource","wiki_url":"https://aqwwiki.wikidot.com/nulgath-s-quests",
+      "acquisition_routes":[{"type":"weekly_quest_reward","quest_name":"Nulgath, the Archfiend","ultra_boss":"Ultra Nulgath","quest_npc":"Nulgath","quest_map":"Ultra Nulgath","quantity_per_completion":5}],
+      "status":"WIKI_VERIFIED_FIELDS_ONLY"
+    }
+  ],
+  "boss_quest_lookup": [
+    {"boss":"Ultra Nulgath","weekly_quest":"Nulgath, the Archfiend","npc":"Nulgath","map":"Ultra Nulgath","reward":"Nulgath Insignia","reward_count_verified":5,"source":"https://aqwwiki.wikidot.com/nulgath-s-quests"},
+    {"boss":"Ultra Dage","weekly_quest":"Dage, Lord of the Undead Legion","npc":"Calamitus","map":"Ultra Dage","reward":"Dage the Evil Insignia","reward_count_verified":null,"source":"https://aqwwiki.wikidot.com/calamitus-quests"}
+  ]
+}

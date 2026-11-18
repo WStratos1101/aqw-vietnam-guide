@@ -1,0 +1,2338 @@
+{
+  "schemaVersion": 1,
+  "sourceDocument": "content-sources/farm/manual-faction-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+  "goals": [
+    {
+      "goalId": "good:836:celestial-of-mysteries",
+      "aggregateName": "Celestial of Mysteries",
+      "groupId": "good",
+      "recordKind": "set",
+      "sourceLine": 836,
+      "sourceChapter": "II. Good",
+      "guideTitle": "Celestial of Mysteries (CoM) Guide",
+      "sectionLines": [
+        836,
+        878
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 836-878 and reward blocks none indexed."
+    },
+    {
+      "goalId": "good:967:silver-exalted-paladin",
+      "aggregateName": "Silver Exalted Paladin",
+      "groupId": "good",
+      "recordKind": "set",
+      "sourceLine": 967,
+      "sourceChapter": "II. Good",
+      "guideTitle": "Gold and Silver Exalted Paladin Guide",
+      "sectionLines": [
+        967,
+        1010
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "silver-exalted-paladin",
+          "itemName": "Silver Exalted Paladin",
+          "primaryGroup": "good",
+          "sourceLine": 972,
+          "evidenceType": "questline-set-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 967-1010 before marking complete."
+    },
+    {
+      "goalId": "good:970:gold-exalted-paladin",
+      "aggregateName": "Gold Exalted Paladin",
+      "groupId": "good",
+      "recordKind": "set",
+      "sourceLine": 970,
+      "sourceChapter": "II. Good",
+      "guideTitle": "Gold and Silver Exalted Paladin Guide",
+      "sectionLines": [
+        967,
+        1010
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "gold-exalted-paladin",
+          "itemName": "Gold Exalted Paladin",
+          "primaryGroup": "good",
+          "sourceLine": 970,
+          "evidenceType": "shop-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 967-1010 before marking complete."
+    },
+    {
+      "goalId": "good:848:archangel-of-mysteries",
+      "aggregateName": "Archangel of Mysteries",
+      "groupId": "good",
+      "recordKind": "set",
+      "sourceLine": 848,
+      "sourceChapter": "II. Good",
+      "guideTitle": "Celestial of Mysteries (CoM) Guide",
+      "sectionLines": [
+        836,
+        878
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 836-878 and reward blocks none indexed."
+    },
+    {
+      "goalId": "evil:1801:fabled-doomknight",
+      "aggregateName": "Fabled Doomknight",
+      "groupId": "evil",
+      "recordKind": "set",
+      "sourceLine": 1801,
+      "sourceChapter": "III. Evil",
+      "guideTitle": "Evil-theme Items Farming Guides",
+      "sectionLines": [
+        1798,
+        1929
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 1798-1929 and reward blocks none indexed."
+    },
+    {
+      "goalId": "evil:1820:arch-doomknight",
+      "aggregateName": "Arch DoomKnight",
+      "groupId": "evil",
+      "recordKind": "set",
+      "sourceLine": 1820,
+      "sourceChapter": "III. Evil",
+      "guideTitle": "Evil-theme Items Farming Guides",
+      "sectionLines": [
+        1798,
+        1929
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "arch-doomknight",
+          "itemName": "Arch DoomKnight",
+          "primaryGroup": "evil",
+          "sourceLine": 1820,
+          "evidenceType": "set-item-acquisition"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 1798-1929 before marking complete."
+    },
+    {
+      "goalId": "chaos:1989:drakath-the-eternal",
+      "aggregateName": "Drakath the Eternal",
+      "groupId": "chaos",
+      "recordKind": "set",
+      "sourceLine": 1989,
+      "sourceChapter": "IV. Chaos",
+      "guideTitle": "Drakath the Eternal (DtE) Guide",
+      "sectionLines": [
+        1989,
+        2022
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 1989-2022 and reward blocks none indexed."
+    },
+    {
+      "goalId": "chaos:2023:titan-drakath",
+      "aggregateName": "Titan Drakath",
+      "groupId": "chaos",
+      "recordKind": "set",
+      "sourceLine": 2023,
+      "sourceChapter": "IV. Chaos",
+      "guideTitle": "Titan Drakath (TD) Guide",
+      "sectionLines": [
+        2023,
+        2109
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 2023-2109 and reward blocks none indexed."
+    },
+    {
+      "goalId": "chaos:2110:ouroboros-warlock",
+      "aggregateName": "Ouroboros Warlock",
+      "groupId": "chaos",
+      "recordKind": "set",
+      "sourceLine": 2110,
+      "sourceChapter": "IV. Chaos",
+      "guideTitle": "Ouroboros Warlock (OW) Guide",
+      "sectionLines": [
+        2110,
+        2132
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 2110-2132 and reward blocks none indexed."
+    },
+    {
+      "goalId": "awe:2206:awescended-omni-set",
+      "aggregateName": "Awescended Omni Set",
+      "groupId": "awe",
+      "recordKind": "set",
+      "sourceLine": 2206,
+      "sourceChapter": "V. Museum",
+      "guideTitle": "Awescended Omni Set Guide",
+      "sectionLines": [
+        2206,
+        2324
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "armor-of-zular",
+          "itemName": "Armor of Zular",
+          "primaryGroup": "awe",
+          "sourceLine": 2278,
+          "evidenceType": "direct-acquisition-target"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 2206-2324 before marking complete."
+    },
+    {
+      "goalId": "nation:3649:archfiend-doomlord",
+      "aggregateName": "ArchFiend DoomLord",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 3649,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "ArchFiend DoomLord (AFDL1) Guide",
+      "sectionLines": [
+        3649,
+        3749
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "archfiend-doomlord",
+          "itemName": "ArchFiend DoomLord",
+          "primaryGroup": "nation",
+          "sourceLine": 3742,
+          "evidenceType": "aggregate-quest-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "The final ArchFiend DoomLord Armor is the one active canonical child (line 3716). The preceding Nulgath Demands Work quest yields four named intermediate equipment pieces (line 3710), all absent from the active catalog; Unidentified 35 is a required misc item, not a set piece.",
+      "unmatchedOutputs": [
+        {
+          "itemName": "Doomblade of Destruction",
+          "sourceLine": 3710,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named intermediate equipment in AFDL quest chain, but no matching canonical record in active catalog."
+        },
+        {
+          "itemName": "DoomLord's War Mask",
+          "sourceLine": 3710,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named intermediate equipment in AFDL quest chain, but no matching canonical record in active catalog."
+        },
+        {
+          "itemName": "ShadowFiend Cloak",
+          "sourceLine": 3710,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named intermediate equipment in AFDL quest chain, but no matching canonical record in active catalog."
+        },
+        {
+          "itemName": "Locks of the DoomLord",
+          "sourceLine": 3710,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named intermediate equipment in AFDL quest chain, but no matching canonical record in active catalog."
+        }
+      ]
+    },
+    {
+      "goalId": "nation:3783:void-paladin",
+      "aggregateName": "Void Paladin",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 3783,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Void Series Set Guide",
+      "sectionLines": [
+        3779,
+        4017
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "void-paladin-helm",
+          "itemName": "Void Paladin Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 3807,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-paladin-horns",
+          "itemName": "Void Paladin Horns",
+          "primaryGroup": "nation",
+          "sourceLine": 3808,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-paladin-katana",
+          "itemName": "Void Paladin Katana",
+          "primaryGroup": "nation",
+          "sourceLine": 3812,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-paladin-cape",
+          "itemName": "Void Paladin Cape",
+          "primaryGroup": "nation",
+          "sourceLine": 3810,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-paladin-katanas",
+          "itemName": "Void Paladin Katanas",
+          "primaryGroup": "nation",
+          "sourceLine": 3811,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-paladin",
+          "itemName": "Void Paladin",
+          "primaryGroup": "nation",
+          "sourceLine": 3824,
+          "evidenceType": "quest-reward"
+        }
+      ],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 3806,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Paladin Helm | Void Paladin Horns | Void Paladin Katana Cape | Void Paladin Cape | Void Paladin Katanas | Void Paladin Katana",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3824,
+          "excerpt": "Rewards:\tVoid Paladin",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3836,
+          "excerpt": "Rewards:\tVoid Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3841,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 4 lần để lấy hết items sau: | Cyber Void Paladin | Cyber Void Paladin Helm | Cyber Void Cape | Cyber Void Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3866,
+          "excerpt": "Rewards:\tDual Void Shogun Katanas (100% drop)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3893,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock (25% all DMG) | Void Warlock Scythe (40% all DMG) | Void Warlock Staff (40% all DMG) | Void Warlock Overfiend Blade (40% all DMG) | Void Warlock Overfiend Blade Pet (25% all DMG) | Void Warlock Crown (25% all DMG)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3910,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock Helm | Void Warlock Hood | Void Warlock Cape | Void Warlock Tendrils Cape | Void Warlock Tendrils | Void Warlock Horns",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3928,
+          "excerpt": "Rewards: \tNulgath House Guest (dịch chuyển thẳng đên Nulgath ở /join tercessuinotlim khi nhấn vào).",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3957,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 11 lần để lấy hết items sau: | Void Spartan | Void Spartan Daggers | Void Spartan Blade and Shield | Void Spartan Spear | Void Spartan Blade | Void Spartan Banners | Void Spartan Cape | Void Spartan Shielded Cape | Void Spartan Spear and Shield | Void Spartan Helm | Void Spartan Helm and Scarf",
+          "parentGuide": "Void Series Set Guide"
+        }
+      ],
+      "blocker": "6 canonical children linked; compare against all shop/reward outputs in lines 3779-4017 before marking complete."
+    },
+    {
+      "goalId": "nation:3783:cyber-void-paladin",
+      "aggregateName": "Cyber Void Paladin",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 3783,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Void Series Set Guide",
+      "sectionLines": [
+        3779,
+        4017
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "cyber-void-paladin-helm",
+          "itemName": "Cyber Void Paladin Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 3843,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "cyber-void-cape",
+          "itemName": "Cyber Void Cape",
+          "primaryGroup": "nation",
+          "sourceLine": 3844,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "cyber-void-paladin",
+          "itemName": "Cyber Void Paladin",
+          "primaryGroup": "nation",
+          "sourceLine": 3842,
+          "evidenceType": "quest-reward"
+        }
+      ],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 3806,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Paladin Helm | Void Paladin Horns | Void Paladin Katana Cape | Void Paladin Cape | Void Paladin Katanas | Void Paladin Katana",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3824,
+          "excerpt": "Rewards:\tVoid Paladin",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3836,
+          "excerpt": "Rewards:\tVoid Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3841,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 4 lần để lấy hết items sau: | Cyber Void Paladin | Cyber Void Paladin Helm | Cyber Void Cape | Cyber Void Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3866,
+          "excerpt": "Rewards:\tDual Void Shogun Katanas (100% drop)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3893,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock (25% all DMG) | Void Warlock Scythe (40% all DMG) | Void Warlock Staff (40% all DMG) | Void Warlock Overfiend Blade (40% all DMG) | Void Warlock Overfiend Blade Pet (25% all DMG) | Void Warlock Crown (25% all DMG)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3910,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock Helm | Void Warlock Hood | Void Warlock Cape | Void Warlock Tendrils Cape | Void Warlock Tendrils | Void Warlock Horns",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3928,
+          "excerpt": "Rewards: \tNulgath House Guest (dịch chuyển thẳng đên Nulgath ở /join tercessuinotlim khi nhấn vào).",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3957,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 11 lần để lấy hết items sau: | Void Spartan | Void Spartan Daggers | Void Spartan Blade and Shield | Void Spartan Spear | Void Spartan Blade | Void Spartan Banners | Void Spartan Cape | Void Spartan Shielded Cape | Void Spartan Spear and Shield | Void Spartan Helm | Void Spartan Helm and Scarf",
+          "parentGuide": "Void Series Set Guide"
+        }
+      ],
+      "blocker": "3 canonical children linked; compare against all shop/reward outputs in lines 3779-4017 before marking complete."
+    },
+    {
+      "goalId": "nation:3847:void-shogun",
+      "aggregateName": "Void Shogun",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 3847,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Void Series Set Guide",
+      "sectionLines": [
+        3779,
+        4017
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "void-shogun-mask",
+          "itemName": "Void Shogun Mask",
+          "primaryGroup": "nation",
+          "sourceLine": 3869,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-shogun-helm",
+          "itemName": "Void Shogun Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 3870,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-shogun-masked-helm",
+          "itemName": "Void Shogun Masked Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 3871,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-shogun-katana",
+          "itemName": "Void Shogun Katana",
+          "primaryGroup": "nation",
+          "sourceLine": 3874,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-shogun-naginata",
+          "itemName": "Void Shogun Naginata",
+          "primaryGroup": "nation",
+          "sourceLine": 3875,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "mini-void-shogun",
+          "itemName": "Mini Void Shogun",
+          "primaryGroup": "nation",
+          "sourceLine": 3876,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "mini-void-shogun-battlepet",
+          "itemName": "Mini Void Shogun Battlepet",
+          "primaryGroup": "nation",
+          "sourceLine": 3877,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-shogun-katanas-on-your-hip",
+          "itemName": "Void Shogun Katanas on your Hip",
+          "primaryGroup": "nation",
+          "sourceLine": 3878,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-shogun-armor",
+          "itemName": "Void Shogun (Armor)",
+          "primaryGroup": "nation",
+          "sourceLine": 3868,
+          "evidenceType": "canonical-alias-reward"
+        }
+      ],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 3806,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Paladin Helm | Void Paladin Horns | Void Paladin Katana Cape | Void Paladin Cape | Void Paladin Katanas | Void Paladin Katana",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3824,
+          "excerpt": "Rewards:\tVoid Paladin",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3836,
+          "excerpt": "Rewards:\tVoid Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3841,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 4 lần để lấy hết items sau: | Cyber Void Paladin | Cyber Void Paladin Helm | Cyber Void Cape | Cyber Void Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3866,
+          "excerpt": "Rewards:\tDual Void Shogun Katanas (100% drop)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3893,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock (25% all DMG) | Void Warlock Scythe (40% all DMG) | Void Warlock Staff (40% all DMG) | Void Warlock Overfiend Blade (40% all DMG) | Void Warlock Overfiend Blade Pet (25% all DMG) | Void Warlock Crown (25% all DMG)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3910,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock Helm | Void Warlock Hood | Void Warlock Cape | Void Warlock Tendrils Cape | Void Warlock Tendrils | Void Warlock Horns",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3928,
+          "excerpt": "Rewards: \tNulgath House Guest (dịch chuyển thẳng đên Nulgath ở /join tercessuinotlim khi nhấn vào).",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3957,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 11 lần để lấy hết items sau: | Void Spartan | Void Spartan Daggers | Void Spartan Blade and Shield | Void Spartan Spear | Void Spartan Blade | Void Spartan Banners | Void Spartan Cape | Void Spartan Shielded Cape | Void Spartan Spear and Shield | Void Spartan Helm | Void Spartan Helm and Scarf",
+          "parentGuide": "Void Series Set Guide"
+        }
+      ],
+      "blocker": "9 canonical children linked; compare against all shop/reward outputs in lines 3779-4017 before marking complete."
+    },
+    {
+      "goalId": "nation:3880:void-warlock",
+      "aggregateName": "Void Warlock",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 3880,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Void Series Set Guide",
+      "sectionLines": [
+        3779,
+        4017
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "void-warlock",
+          "itemName": "Void Warlock",
+          "primaryGroup": "nation",
+          "sourceLine": 3894,
+          "evidenceType": "quest-reward"
+        },
+        {
+          "canonicalId": "void-warlock-helm",
+          "itemName": "Void Warlock Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 3911,
+          "evidenceType": "quest-choice-reward"
+        },
+        {
+          "canonicalId": "void-warlock-hood",
+          "itemName": "Void Warlock Hood",
+          "primaryGroup": "nation",
+          "sourceLine": 3912,
+          "evidenceType": "quest-choice-reward"
+        },
+        {
+          "canonicalId": "void-warlock-cape",
+          "itemName": "Void Warlock Cape",
+          "primaryGroup": "nation",
+          "sourceLine": 3913,
+          "evidenceType": "quest-choice-reward"
+        },
+        {
+          "canonicalId": "void-warlock-tendrils-cape",
+          "itemName": "Void Warlock Tendrils Cape",
+          "primaryGroup": "nation",
+          "sourceLine": 3914,
+          "evidenceType": "quest-choice-reward"
+        },
+        {
+          "canonicalId": "void-warlock-horns",
+          "itemName": "Void Warlock Horns",
+          "primaryGroup": "nation",
+          "sourceLine": 3916,
+          "evidenceType": "quest-choice-reward"
+        }
+      ],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 3806,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Paladin Helm | Void Paladin Horns | Void Paladin Katana Cape | Void Paladin Cape | Void Paladin Katanas | Void Paladin Katana",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3824,
+          "excerpt": "Rewards:\tVoid Paladin",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3836,
+          "excerpt": "Rewards:\tVoid Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3841,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 4 lần để lấy hết items sau: | Cyber Void Paladin | Cyber Void Paladin Helm | Cyber Void Cape | Cyber Void Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3866,
+          "excerpt": "Rewards:\tDual Void Shogun Katanas (100% drop)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3893,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock (25% all DMG) | Void Warlock Scythe (40% all DMG) | Void Warlock Staff (40% all DMG) | Void Warlock Overfiend Blade (40% all DMG) | Void Warlock Overfiend Blade Pet (25% all DMG) | Void Warlock Crown (25% all DMG)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3910,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock Helm | Void Warlock Hood | Void Warlock Cape | Void Warlock Tendrils Cape | Void Warlock Tendrils | Void Warlock Horns",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3928,
+          "excerpt": "Rewards: \tNulgath House Guest (dịch chuyển thẳng đên Nulgath ở /join tercessuinotlim khi nhấn vào).",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3957,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 11 lần để lấy hết items sau: | Void Spartan | Void Spartan Daggers | Void Spartan Blade and Shield | Void Spartan Spear | Void Spartan Blade | Void Spartan Banners | Void Spartan Cape | Void Spartan Shielded Cape | Void Spartan Spear and Shield | Void Spartan Helm | Void Spartan Helm and Scarf",
+          "parentGuide": "Void Series Set Guide"
+        }
+      ],
+      "blocker": "Corrupted Touch lists 6 selectable rewards at lines 3911–3916; 5 match current canonical records, and Tools For the Job lists 6 more outputs at lines 3894–3899 but none of those five named variants are in the active catalog. Void Warlock Tendrils (line 3915) also lacks a canonical record.",
+      "unmatchedOutputs": [
+        {
+          "itemName": "Void Warlock Scythe",
+          "sourceLine": 3895,
+          "outputKind": "equipment-or-pet",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit quest-choice output in guide but no matching canonical identity exists in active 280-item catalog; do not synthesize an ID."
+        },
+        {
+          "itemName": "Void Warlock Staff",
+          "sourceLine": 3896,
+          "outputKind": "equipment-or-pet",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit quest-choice output in guide but no matching canonical identity exists in active 280-item catalog; do not synthesize an ID."
+        },
+        {
+          "itemName": "Void Warlock Overfiend Blade",
+          "sourceLine": 3897,
+          "outputKind": "equipment-or-pet",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit quest-choice output in guide but no matching canonical identity exists in active 280-item catalog; do not synthesize an ID."
+        },
+        {
+          "itemName": "Void Warlock Overfiend Blade Pet",
+          "sourceLine": 3898,
+          "outputKind": "equipment-or-pet",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit quest-choice output in guide but no matching canonical identity exists in active 280-item catalog; do not synthesize an ID."
+        },
+        {
+          "itemName": "Void Warlock Crown",
+          "sourceLine": 3899,
+          "outputKind": "equipment-or-pet",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit quest-choice output in guide but no matching canonical identity exists in active 280-item catalog; do not synthesize an ID."
+        },
+        {
+          "itemName": "Void Warlock Tendrils",
+          "sourceLine": 3915,
+          "outputKind": "equipment-or-pet",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit quest-choice output in guide but no matching canonical identity exists in active 280-item catalog; do not synthesize an ID."
+        }
+      ]
+    },
+    {
+      "goalId": "nation:3880:void-destroyer",
+      "aggregateName": "Void Destroyer",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 3880,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Void Series Set Guide",
+      "sectionLines": [
+        3779,
+        4017
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "void-spear-of-war",
+          "itemName": "Void Spear of War",
+          "primaryGroup": "nation",
+          "sourceLine": 3932,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "horned-void-war-helm",
+          "itemName": "Horned Void War Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 3933,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "crested-void-war-helm",
+          "itemName": "Crested Void War Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 3934,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "tainted-destruction-blade",
+          "itemName": "Tainted Destruction Blade",
+          "primaryGroup": "nation",
+          "sourceLine": 3936,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "toxic-void-katana",
+          "itemName": "Toxic Void Katana",
+          "primaryGroup": "nation",
+          "sourceLine": 3937,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "dual-toxic-void-katanas",
+          "itemName": "Dual Toxic Void Katanas",
+          "primaryGroup": "nation",
+          "sourceLine": 3938,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-destruction-blade",
+          "itemName": "Void Destruction Blade",
+          "primaryGroup": "nation",
+          "sourceLine": 3931,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-destroyer",
+          "itemName": "Void Destroyer",
+          "primaryGroup": "nation",
+          "sourceLine": 3930,
+          "evidenceType": "quest-reward"
+        }
+      ],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 3806,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Paladin Helm | Void Paladin Horns | Void Paladin Katana Cape | Void Paladin Cape | Void Paladin Katanas | Void Paladin Katana",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3824,
+          "excerpt": "Rewards:\tVoid Paladin",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3836,
+          "excerpt": "Rewards:\tVoid Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3841,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 4 lần để lấy hết items sau: | Cyber Void Paladin | Cyber Void Paladin Helm | Cyber Void Cape | Cyber Void Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3866,
+          "excerpt": "Rewards:\tDual Void Shogun Katanas (100% drop)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3893,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock (25% all DMG) | Void Warlock Scythe (40% all DMG) | Void Warlock Staff (40% all DMG) | Void Warlock Overfiend Blade (40% all DMG) | Void Warlock Overfiend Blade Pet (25% all DMG) | Void Warlock Crown (25% all DMG)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3910,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock Helm | Void Warlock Hood | Void Warlock Cape | Void Warlock Tendrils Cape | Void Warlock Tendrils | Void Warlock Horns",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3928,
+          "excerpt": "Rewards: \tNulgath House Guest (dịch chuyển thẳng đên Nulgath ở /join tercessuinotlim khi nhấn vào).",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3957,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 11 lần để lấy hết items sau: | Void Spartan | Void Spartan Daggers | Void Spartan Blade and Shield | Void Spartan Spear | Void Spartan Blade | Void Spartan Banners | Void Spartan Cape | Void Spartan Shielded Cape | Void Spartan Spear and Shield | Void Spartan Helm | Void Spartan Helm and Scarf",
+          "parentGuide": "Void Series Set Guide"
+        }
+      ],
+      "blocker": "Void Destroyer Diamond Quest lists 9 random rewards (lines 3928–3938). Eight are linked to canonical items; Wrap of the Void at line 3935 has no active canonical record. Nulgath House Guest is a mobility reward, not a Farming Codex equipment child.",
+      "unmatchedOutputs": [
+        {
+          "itemName": "Wrap of the Void",
+          "sourceLine": 3935,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit random quest output but no matching canonical identity exists in active catalog."
+        }
+      ]
+    },
+    {
+      "goalId": "nation:4153:celestial-archfiend",
+      "aggregateName": "Celestial ArchFiend",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4153,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Celestial & Infernal ArchFiend (CAF & IAF) Guide",
+      "sectionLines": [
+        4018,
+        4157
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "celestial-archfiend",
+          "itemName": "Celestial ArchFiend",
+          "primaryGroup": "nation",
+          "sourceLine": 4153,
+          "evidenceType": "aggregate-shop-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 4018-4157 before marking complete."
+    },
+    {
+      "goalId": "nation:4018:infernal-archfiend",
+      "aggregateName": "Infernal ArchFiend",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4018,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Celestial & Infernal ArchFiend (CAF & IAF) Guide",
+      "sectionLines": [
+        4018,
+        4157
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 4018-4157 and reward blocks none indexed."
+    },
+    {
+      "goalId": "nation:4165:evolved-blood-orb-set",
+      "aggregateName": "Evolved Blood Orb Set",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4165,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Evolved Orb of Nulgath Guide",
+      "sectionLines": [
+        4158,
+        4394
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "evolved-blood-orb",
+          "itemName": "Evolved Blood Orb",
+          "primaryGroup": "nation",
+          "sourceLine": 4169,
+          "evidenceType": "canonical-alias-reward"
+        },
+        {
+          "canonicalId": "evolved-blood-of-nulgath",
+          "itemName": "Evolved Blood of Nulgath",
+          "primaryGroup": "nation",
+          "sourceLine": 4176,
+          "evidenceType": "quest-output"
+        },
+        {
+          "canonicalId": "evolved-blood-guard",
+          "itemName": "Evolved Blood Guard",
+          "primaryGroup": "nation",
+          "sourceLine": 4193,
+          "evidenceType": "quest-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "3 canonical children linked; compare against all shop/reward outputs in lines 4158-4394 before marking complete."
+    },
+    {
+      "goalId": "nation:4205:evolved-hex-orb-set",
+      "aggregateName": "Evolved Hex Orb Set",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4205,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Evolved Orb of Nulgath Guide",
+      "sectionLines": [
+        4158,
+        4394
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "evolved-hex-staff",
+          "itemName": "Evolved Hex Staff",
+          "primaryGroup": "nation",
+          "sourceLine": 4234,
+          "evidenceType": "quest-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 4158-4394 before marking complete."
+    },
+    {
+      "goalId": "nation:4271:evolved-shadow-orb-set",
+      "aggregateName": "Evolved Shadow Orb Set",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4271,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Evolved Orb of Nulgath Guide",
+      "sectionLines": [
+        4158,
+        4394
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "evolved-shadow-of-nulgath",
+          "itemName": "Evolved Shadow of Nulgath",
+          "primaryGroup": "nation",
+          "sourceLine": 4283,
+          "evidenceType": "quest-output"
+        },
+        {
+          "canonicalId": "evolved-shadow-helm",
+          "itemName": "Evolved Shadow Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 4325,
+          "evidenceType": "quest-output"
+        },
+        {
+          "canonicalId": "evolved-shadow-orb",
+          "itemName": "Evolved Shadow Orb",
+          "primaryGroup": "nation",
+          "sourceLine": 4275,
+          "evidenceType": "canonical-alias-shop-output"
+        },
+        {
+          "canonicalId": "evolved-primal-orb",
+          "itemName": "Evolved Primal Orb",
+          "primaryGroup": "nation",
+          "sourceLine": 4337,
+          "evidenceType": "direct-item-goal"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "4 canonical children linked; compare against all shop/reward outputs in lines 4158-4394 before marking complete."
+    },
+    {
+      "goalId": "nation:4426:juggernaut-items-of-nulgath",
+      "aggregateName": "Juggernaut Items of Nulgath",
+      "groupId": "nation",
+      "recordKind": "collection",
+      "sourceLine": 4426,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "crystal-phoenix-blade-of-nulgath",
+          "itemName": "Crystal Phoenix Blade of Nulgath",
+          "primaryGroup": "nation",
+          "sourceLine": 4560,
+          "evidenceType": "quest-output"
+        },
+        {
+          "canonicalId": "dual-tainted-claymore-of-nulgath",
+          "itemName": "Dual Tainted Claymore of Nulgath",
+          "primaryGroup": "nation",
+          "sourceLine": 4468,
+          "evidenceType": "direct-item-goal"
+        },
+        {
+          "canonicalId": "combat-soulreaper-of-nulgath",
+          "itemName": "Combat Soulreaper of Nulgath",
+          "primaryGroup": "nation",
+          "sourceLine": 4494,
+          "evidenceType": "direct-item-goal"
+        },
+        {
+          "canonicalId": "dual-champion-blade-of-nulgath",
+          "itemName": "Dual Champion Blade of Nulgath",
+          "primaryGroup": "nation",
+          "sourceLine": 4526,
+          "evidenceType": "direct-item-goal"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "The guide separates the top-level Juggernaut quest (requirements only, lines 4426–4444) from Nulgath’s Combat Style subquests and Sword of Nulgath pet routes (4446–4600). Four outputs match active canonical items. The following explicit chapter outputs are absent from the 280-item catalog; AC-tagged outputs retain their stated membership limits.",
+      "unmatchedOutputs": [
+        {
+          "itemName": "Dual Dragonbone Axe of Nulgath",
+          "sourceLine": 4453,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        },
+        {
+          "itemName": "Dual Purified Claymore of Destiny",
+          "sourceLine": 4480,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        },
+        {
+          "itemName": "Dual Manslayer of Taro",
+          "sourceLine": 4510,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        },
+        {
+          "itemName": "Sword of Nulgath",
+          "sourceLine": 4542,
+          "outputKind": "pet",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        },
+        {
+          "itemName": "Guardian Crystal Phoenix Blade of Nulgath",
+          "sourceLine": 4560,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        },
+        {
+          "itemName": "Tainted Phoenix Blade of Nulgath",
+          "sourceLine": 4560,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        },
+        {
+          "itemName": "Battlefiend Blade of Nulgath",
+          "sourceLine": 4570,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        },
+        {
+          "itemName": "Void Avenger Scythe",
+          "sourceLine": 4574,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        },
+        {
+          "itemName": "Overfiend Blade of Nulgath",
+          "sourceLine": 4125,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        },
+        {
+          "itemName": "Ungodly Reavers of Nulgath",
+          "sourceLine": 4592,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Named guide target/output but no matching canonical identity in the active catalog; do not synthesize an item."
+        }
+      ]
+    },
+    {
+      "goalId": "nation:4624:archfiend-warlord-set",
+      "aggregateName": "ArchFiend Warlord Set",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4624,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "Section lines 4624–4689 gives the set heading and total inputs but no explicit list of ArchFiend Warlord shop outputs. The canonical Archfiend Warlord row matches only the aggregate heading, not a reward block; remain unassigned.",
+      "unmatchedOutputs": [
+        {
+          "itemName": "Archfiend Warlord (target identity)",
+          "sourceLine": 4624,
+          "outputKind": "aggregate-label",
+          "status": "IDENTITY_NOT_PROVEN",
+          "reason": "Section heading and full-set material totals do not enumerate direct shop output names; cannot prove the same-named canonical armor is a reward."
+        }
+      ]
+    },
+    {
+      "goalId": "nation:4701:archfiend-deathlord",
+      "aggregateName": "Archfiend DeathLord",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4701,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "gemstone-of-nulgath",
+          "itemName": "Gemstone of Nulgath",
+          "primaryGroup": "nation",
+          "sourceLine": 4775,
+          "evidenceType": "direct-item-goal"
+        },
+        {
+          "canonicalId": "unstable-betrayal-blade",
+          "itemName": "Unstable Betrayal Blade",
+          "primaryGroup": "nation",
+          "sourceLine": 4845,
+          "evidenceType": "direct-item-goal"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "2 canonical children linked; compare against all shop/reward outputs in lines 4395-5093 before marking complete."
+    },
+    {
+      "goalId": "nation:4904:blood-ranger-set",
+      "aggregateName": "Blood Ranger Set",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4904,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "blood-ranger-sword-and-sheath",
+          "itemName": "Blood Ranger Sword and Sheath",
+          "primaryGroup": "nation",
+          "sourceLine": 4913,
+          "evidenceType": "shop-output"
+        },
+        {
+          "canonicalId": "blood-ranger-bow",
+          "itemName": "Blood Ranger Bow",
+          "primaryGroup": "nation",
+          "sourceLine": 4919,
+          "evidenceType": "shop-output"
+        },
+        {
+          "canonicalId": "blood-ranger-morph",
+          "itemName": "Blood Ranger Morph",
+          "primaryGroup": "nation",
+          "sourceLine": 4939,
+          "evidenceType": "shop-output"
+        },
+        {
+          "canonicalId": "blood-ranger-cape",
+          "itemName": "Blood Ranger Cape",
+          "primaryGroup": "nation",
+          "sourceLine": 4950,
+          "evidenceType": "shop-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "Lines 4913–4956 enumerate 6 shop outputs. Four map to canonical records; Blood Ranger armor (line 4926) and Blood Ranger Quiver (line 4956) have no records in active catalog.",
+      "unmatchedOutputs": [
+        {
+          "itemName": "Blood Ranger (Armor)",
+          "sourceLine": 4926,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit Nulgath Diamond Shop item, but no canonical identity in active catalog."
+        },
+        {
+          "itemName": "Blood Ranger Quiver",
+          "sourceLine": 4956,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit Nulgath Diamond Shop item, but no canonical identity in active catalog."
+        }
+      ]
+    },
+    {
+      "goalId": "nation:4904:storm-knight-set",
+      "aggregateName": "Storm Knight Set",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4904,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "VERIFIED_COMPLETE",
+      "canonicalChildren": [
+        {
+          "canonicalId": "storm-knight",
+          "itemName": "Storm Knight",
+          "primaryGroup": "nation",
+          "sourceLine": 4932,
+          "evidenceType": "shop-output"
+        },
+        {
+          "canonicalId": "storm-knight-helm",
+          "itemName": "Storm Knight Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 4945,
+          "evidenceType": "shop-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "Nation theme table enumerates both outputs (armor line 4932 and helm line 4945); both canonical items are linked and mapped."
+    },
+    {
+      "goalId": "nation:4966:ancient-shogun-set",
+      "aggregateName": "Ancient Shogun Set",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 4966,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "ancient-shogun-katanas",
+          "itemName": "Ancient Shogun Katanas",
+          "primaryGroup": "nation",
+          "sourceLine": 4969,
+          "evidenceType": "shop-output"
+        },
+        {
+          "canonicalId": "ancient-shogun-helm",
+          "itemName": "Ancient Shogun Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 4998,
+          "evidenceType": "shop-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "Lines 4969–5014 enumerate 7 outputs. Ancient Shogun Katanas and Ancient Shogun Helm map to current canonical records; the other five named shop outputs are absent from the active catalog.",
+      "unmatchedOutputs": [
+        {
+          "itemName": "Ancient Shogun Katana",
+          "sourceLine": 4969,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit Dilligas Merge Shop output; no canonical record in active catalog."
+        },
+        {
+          "itemName": "Ancient Shogun Sheathed Katana",
+          "sourceLine": 4969,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit Dilligas Merge Shop output; no canonical record in active catalog."
+        },
+        {
+          "itemName": "Ancient Shogun Katana And Sheath",
+          "sourceLine": 4969,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit Dilligas Merge Shop output; no canonical record in active catalog."
+        },
+        {
+          "itemName": "Ancient Shogun Armor",
+          "sourceLine": 4984,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit Dilligas Merge Shop output; no canonical record in active catalog."
+        },
+        {
+          "itemName": "Ancient Shogun Back Arms",
+          "sourceLine": 5010,
+          "outputKind": "equipment",
+          "status": "NOT_IN_ACTIVE_CATALOG",
+          "reason": "Explicit Dilligas Merge Shop output; no canonical record in active catalog."
+        }
+      ]
+    },
+    {
+      "goalId": "nation:5031:elite-void-set",
+      "aggregateName": "Elite Void Set",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 5031,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "elite-void",
+          "itemName": "Elite Void",
+          "primaryGroup": "nation",
+          "sourceLine": 5031,
+          "evidenceType": "aggregate-member"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 4395-5093 before marking complete."
+    },
+    {
+      "goalId": "nation:5053:fiend-s-creed-blade",
+      "aggregateName": "Fiend's Creed Blade",
+      "groupId": "nation",
+      "recordKind": "weapon-group",
+      "sourceLine": 5053,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 4395-5093 and reward blocks none indexed."
+    },
+    {
+      "goalId": "nation:5067:wrought-ironblood-armblade",
+      "aggregateName": "Wrought Ironblood Armblade",
+      "groupId": "nation",
+      "recordKind": "weapon-group",
+      "sourceLine": 5067,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 4395-5093 and reward blocks none indexed."
+    },
+    {
+      "goalId": "nation:5075:warlord-of-nulgath-blade",
+      "aggregateName": "Warlord of Nulgath Blade",
+      "groupId": "nation",
+      "recordKind": "weapon-group",
+      "sourceLine": 5075,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 4395-5093 and reward blocks none indexed."
+    },
+    {
+      "goalId": "nation:5075:sin-of-the-warlord-cleaver",
+      "aggregateName": "Sin of the Warlord Cleaver",
+      "groupId": "nation",
+      "recordKind": "weapon-group",
+      "sourceLine": 5075,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 4395-5093 and reward blocks none indexed."
+    },
+    {
+      "goalId": "nation:5075:void-warmonger-armaments",
+      "aggregateName": "Void Warmonger Armaments",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 5075,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 4395-5093 and reward blocks none indexed."
+    },
+    {
+      "goalId": "nation:5086:fiendish-zweihander",
+      "aggregateName": "Fiendish Zweihander",
+      "groupId": "nation",
+      "recordKind": "weapon-group",
+      "sourceLine": 5086,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Nation-theme Items Farming Guides",
+      "sectionLines": [
+        4395,
+        5093
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 4395-5093 and reward blocks none indexed."
+    },
+    {
+      "goalId": "nation:3940:void-spartan",
+      "aggregateName": "Void Spartan",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 3940,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Void Series Set Guide",
+      "sectionLines": [
+        3779,
+        4017
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "void-spartan-blade",
+          "itemName": "Void Spartan Blade",
+          "primaryGroup": "nation",
+          "sourceLine": 3962,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-spartan-spear",
+          "itemName": "Void Spartan Spear",
+          "primaryGroup": "nation",
+          "sourceLine": 3961,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-spartan-blade-and-shield",
+          "itemName": "Void Spartan Blade and Shield",
+          "primaryGroup": "nation",
+          "sourceLine": 3960,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-spartan-shielded-cape",
+          "itemName": "Void Spartan Shielded Cape",
+          "primaryGroup": "nation",
+          "sourceLine": 3965,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-spartan-spear-and-shield",
+          "itemName": "Void Spartan Spear and Shield",
+          "primaryGroup": "nation",
+          "sourceLine": 3966,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-spartan-helm",
+          "itemName": "Void Spartan Helm",
+          "primaryGroup": "nation",
+          "sourceLine": 3967,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-spartan-helm-and-scarf",
+          "itemName": "Void Spartan Helm and Scarf",
+          "primaryGroup": "nation",
+          "sourceLine": 3968,
+          "evidenceType": "reward-or-shop-output"
+        },
+        {
+          "canonicalId": "void-spartan",
+          "itemName": "Void Spartan",
+          "primaryGroup": "nation",
+          "sourceLine": 3958,
+          "evidenceType": "quest-reward"
+        }
+      ],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 3806,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Paladin Helm | Void Paladin Horns | Void Paladin Katana Cape | Void Paladin Cape | Void Paladin Katanas | Void Paladin Katana",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3824,
+          "excerpt": "Rewards:\tVoid Paladin",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3836,
+          "excerpt": "Rewards:\tVoid Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3841,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 4 lần để lấy hết items sau: | Cyber Void Paladin | Cyber Void Paladin Helm | Cyber Void Cape | Cyber Void Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3866,
+          "excerpt": "Rewards:\tDual Void Shogun Katanas (100% drop)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3893,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock (25% all DMG) | Void Warlock Scythe (40% all DMG) | Void Warlock Staff (40% all DMG) | Void Warlock Overfiend Blade (40% all DMG) | Void Warlock Overfiend Blade Pet (25% all DMG) | Void Warlock Crown (25% all DMG)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3910,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock Helm | Void Warlock Hood | Void Warlock Cape | Void Warlock Tendrils Cape | Void Warlock Tendrils | Void Warlock Horns",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3928,
+          "excerpt": "Rewards: \tNulgath House Guest (dịch chuyển thẳng đên Nulgath ở /join tercessuinotlim khi nhấn vào).",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3957,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 11 lần để lấy hết items sau: | Void Spartan | Void Spartan Daggers | Void Spartan Blade and Shield | Void Spartan Spear | Void Spartan Blade | Void Spartan Banners | Void Spartan Cape | Void Spartan Shielded Cape | Void Spartan Spear and Shield | Void Spartan Helm | Void Spartan Helm and Scarf",
+          "parentGuide": "Void Series Set Guide"
+        }
+      ],
+      "blocker": "8 canonical children linked; compare against all shop/reward outputs in lines 3779-4017 before marking complete."
+    },
+    {
+      "goalId": "nation:3970:void-beetle-general",
+      "aggregateName": "Void Beetle General",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 3970,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Void Series Set Guide",
+      "sectionLines": [
+        3779,
+        4017
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 3806,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Paladin Helm | Void Paladin Horns | Void Paladin Katana Cape | Void Paladin Cape | Void Paladin Katanas | Void Paladin Katana",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3824,
+          "excerpt": "Rewards:\tVoid Paladin",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3836,
+          "excerpt": "Rewards:\tVoid Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3841,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 4 lần để lấy hết items sau: | Cyber Void Paladin | Cyber Void Paladin Helm | Cyber Void Cape | Cyber Void Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3866,
+          "excerpt": "Rewards:\tDual Void Shogun Katanas (100% drop)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3893,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock (25% all DMG) | Void Warlock Scythe (40% all DMG) | Void Warlock Staff (40% all DMG) | Void Warlock Overfiend Blade (40% all DMG) | Void Warlock Overfiend Blade Pet (25% all DMG) | Void Warlock Crown (25% all DMG)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3910,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock Helm | Void Warlock Hood | Void Warlock Cape | Void Warlock Tendrils Cape | Void Warlock Tendrils | Void Warlock Horns",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3928,
+          "excerpt": "Rewards: \tNulgath House Guest (dịch chuyển thẳng đên Nulgath ở /join tercessuinotlim khi nhấn vào).",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3957,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 11 lần để lấy hết items sau: | Void Spartan | Void Spartan Daggers | Void Spartan Blade and Shield | Void Spartan Spear | Void Spartan Blade | Void Spartan Banners | Void Spartan Cape | Void Spartan Shielded Cape | Void Spartan Spear and Shield | Void Spartan Helm | Void Spartan Helm and Scarf",
+          "parentGuide": "Void Series Set Guide"
+        }
+      ],
+      "blocker": "The guide says Beetle General Pet’s “I’m Hungry” quest awards one selected item per completion, 9 items total (lines 3974–3997), but does not enumerate the reward names. The same-name canonical row cannot be assumed to be one of those outputs. Pet acquisition also requires Temple Siege story and specified merge ingredients."
+    },
+    {
+      "goalId": "nation:3970:void-beetle-warlord",
+      "aggregateName": "Void Beetle Warlord",
+      "groupId": "nation",
+      "recordKind": "set",
+      "sourceLine": 3970,
+      "sourceChapter": "VII. Nation",
+      "guideTitle": "Void Series Set Guide",
+      "sectionLines": [
+        3779,
+        4017
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 3806,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Paladin Helm | Void Paladin Horns | Void Paladin Katana Cape | Void Paladin Cape | Void Paladin Katanas | Void Paladin Katana",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3824,
+          "excerpt": "Rewards:\tVoid Paladin",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3836,
+          "excerpt": "Rewards:\tVoid Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3841,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 4 lần để lấy hết items sau: | Cyber Void Paladin | Cyber Void Paladin Helm | Cyber Void Cape | Cyber Void Light of Destiny (tăng 75% DMG lên Undead)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3866,
+          "excerpt": "Rewards:\tDual Void Shogun Katanas (100% drop)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3893,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock (25% all DMG) | Void Warlock Scythe (40% all DMG) | Void Warlock Staff (40% all DMG) | Void Warlock Overfiend Blade (40% all DMG) | Void Warlock Overfiend Blade Pet (25% all DMG) | Void Warlock Crown (25% all DMG)",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3910,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 6 lần để lấy hết items sau: | Void Warlock Helm | Void Warlock Hood | Void Warlock Cape | Void Warlock Tendrils Cape | Void Warlock Tendrils | Void Warlock Horns",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3928,
+          "excerpt": "Rewards: \tNulgath House Guest (dịch chuyển thẳng đên Nulgath ở /join tercessuinotlim khi nhấn vào).",
+          "parentGuide": "Void Series Set Guide"
+        },
+        {
+          "sourceLine": 3957,
+          "excerpt": "Rewards: \tQuest dạng chọn item thưởng, nên bạn phải làm 11 lần để lấy hết items sau: | Void Spartan | Void Spartan Daggers | Void Spartan Blade and Shield | Void Spartan Spear | Void Spartan Blade | Void Spartan Banners | Void Spartan Cape | Void Spartan Shielded Cape | Void Spartan Spear and Shield | Void Spartan Helm | Void Spartan Helm and Scarf",
+          "parentGuide": "Void Series Set Guide"
+        }
+      ],
+      "blocker": "The guide says Beetle Warlord Pet’s “Still Hungry” quest awards one selected item per completion, 12 items total (lines 3999–4016), but does not enumerate the reward names. It requires Level 80, Beetle EXP ×8 and the Beetle Warlord Pet; the same-name canonical row is not direct reward evidence."
+    },
+    {
+      "goalId": "legion:5720:legion-bonfire-set",
+      "aggregateName": "Legion Bonfire Set",
+      "groupId": "legion",
+      "recordKind": "set",
+      "sourceLine": 5720,
+      "sourceChapter": "VIII. Legion",
+      "guideTitle": "Legion Bonfire Set Guide",
+      "sectionLines": [
+        5720,
+        5862
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "legion-soul-devourer",
+          "itemName": "Legion Soul Devourer",
+          "primaryGroup": "legion",
+          "sourceLine": 5794,
+          "evidenceType": "direct-item-goal"
+        },
+        {
+          "canonicalId": "dual-legion-soul-devourers",
+          "itemName": "Dual Legion Soul Devourers",
+          "primaryGroup": "legion",
+          "sourceLine": 5801,
+          "evidenceType": "direct-item-goal"
+        },
+        {
+          "canonicalId": "undead-spawn-minion",
+          "itemName": "Undead Spawn Minion",
+          "primaryGroup": "legion",
+          "sourceLine": 5809,
+          "evidenceType": "direct-item-goal"
+        },
+        {
+          "canonicalId": "legion-forge-spawn",
+          "itemName": "Legion Forge Spawn",
+          "primaryGroup": "legion",
+          "sourceLine": 5816,
+          "evidenceType": "direct-item-goal"
+        },
+        {
+          "canonicalId": "legion-forge-visor",
+          "itemName": "Legion Forge Visor",
+          "primaryGroup": "legion",
+          "sourceLine": 5824,
+          "evidenceType": "direct-item-goal"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "5 canonical children linked; compare against all shop/reward outputs in lines 5720-5862 before marking complete."
+    },
+    {
+      "goalId": "legion:5969:underworld-tribute-gear",
+      "aggregateName": "Underworld Tribute Gear",
+      "groupId": "legion",
+      "recordKind": "collection",
+      "sourceLine": 5969,
+      "sourceChapter": "VIII. Legion",
+      "guideTitle": "Legion-theme Items Farming Guides",
+      "sectionLines": [
+        5863,
+        6021
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 5863-6021 and reward blocks none indexed."
+    },
+    {
+      "goalId": "elemental:6441:elemental-warrior",
+      "aggregateName": "Elemental Warrior",
+      "groupId": "elemental",
+      "recordKind": "class-family",
+      "sourceLine": 6441,
+      "sourceChapter": "X. Elemental",
+      "guideTitle": "Elemental Warrior (LEW/UEW/MEW) Class Obtain Guide",
+      "sectionLines": [
+        6441,
+        6459
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "legendary-elemental-warrior",
+          "itemName": "Legendary Elemental Warrior",
+          "primaryGroup": "elemental",
+          "sourceLine": 6450,
+          "evidenceType": "merge-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 6441-6459 before marking complete."
+    },
+    {
+      "goalId": "elemental:6460:malgor-the-shadowlord",
+      "aggregateName": "Malgor the ShadowLord",
+      "groupId": "elemental",
+      "recordKind": "set",
+      "sourceLine": 6460,
+      "sourceChapter": "X. Elemental",
+      "guideTitle": "Malgor the ShadowLord (MSL) Guide",
+      "sectionLines": [
+        6460,
+        6526
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "malgor-the-shadowlord",
+          "itemName": "Malgor the ShadowLord",
+          "primaryGroup": "elemental",
+          "sourceLine": 6460,
+          "evidenceType": "aggregate-quest-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 6460-6526 before marking complete."
+    },
+    {
+      "goalId": "elemental:6527:mystical-devotee-of-mana",
+      "aggregateName": "Mystical Devotee of Mana",
+      "groupId": "elemental",
+      "recordKind": "set",
+      "sourceLine": 6527,
+      "sourceChapter": "X. Elemental",
+      "guideTitle": "Mystical Devotee of Mana (MDoM) Guide",
+      "sectionLines": [
+        6527,
+        6548
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "mystical-devotee-of-mana",
+          "itemName": "Mystical Devotee of Mana",
+          "primaryGroup": "elemental",
+          "sourceLine": 6512,
+          "evidenceType": "merge-output"
+        }
+      ],
+      "rewardBlocksInSection": [],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 6527-6548 before marking complete."
+    },
+    {
+      "goalId": "hollowborn:6823:hollowborn-paladin",
+      "aggregateName": "Hollowborn Paladin",
+      "groupId": "hollowborn",
+      "recordKind": "set",
+      "sourceLine": 6823,
+      "sourceChapter": "XI. Hollowborn",
+      "guideTitle": "Hollowborn Paladin (HBP) Guide",
+      "sectionLines": [
+        6823,
+        6921
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "classic-hollowborn-paladin-armor",
+          "itemName": "Classic Hollowborn Paladin Armor",
+          "primaryGroup": "hollowborn",
+          "sourceLine": 6909,
+          "evidenceType": "direct-item-goal"
+        },
+        {
+          "canonicalId": "dual-hollowborn-shadows-of-fate",
+          "itemName": "Dual Hollowborn Shadows of Fate",
+          "primaryGroup": "hollowborn",
+          "sourceLine": 6915,
+          "evidenceType": "direct-item-goal"
+        }
+      ],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 6865,
+          "excerpt": "Rewards:\tHollowborn Paladin (HBP)",
+          "parentGuide": "Hollowborn Paladin (HBP) Guide"
+        },
+        {
+          "sourceLine": 6877,
+          "excerpt": "Rewards:\tHollowborn Paladin Helmet",
+          "parentGuide": "Hollowborn Paladin (HBP) Guide"
+        },
+        {
+          "sourceLine": 6900,
+          "excerpt": "Rewards:\tHollowborn Shadow of Fate (HBSoF - 75% với Undead và 25% Gold)",
+          "parentGuide": "Hollowborn Paladin (HBP) Guide"
+        },
+        {
+          "sourceLine": 6908,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 9 lần để lấy hết items sau: | Classic Hollowborn Paladin Armor (CHBPA - 25% với Human) | Hollowborn Paladin Visor | Hollowborn Paladin Hood | Hollowborn Templar Helm | Hollowborn Paladin Cape | Hollowborn Paladin Cloak | Dual Hollowborn Shadows of Fate (DHBSoF - 75% với Undead và 25% Gold) | Hollowborn Daimyo Battlepet | Hollowborn Daimyo",
+          "parentGuide": "Hollowborn Paladin (HBP) Guide"
+        }
+      ],
+      "blocker": "2 canonical children linked; compare against all shop/reward outputs in lines 6823-6921 before marking complete."
+    },
+    {
+      "goalId": "hollowborn:6922:hollowborn-doomknight",
+      "aggregateName": "Hollowborn DoomKnight",
+      "groupId": "hollowborn",
+      "recordKind": "set",
+      "sourceLine": 6922,
+      "sourceChapter": "XI. Hollowborn",
+      "guideTitle": "Hollowborn DoomKnight (HBDK) Guide",
+      "sectionLines": [
+        6922,
+        7075
+      ],
+      "status": "PARTIAL",
+      "canonicalChildren": [
+        {
+          "canonicalId": "classic-hollowborn-doomknight-armor",
+          "itemName": "Classic Hollowborn DoomKnight (Armor)",
+          "primaryGroup": "hollowborn",
+          "sourceLine": 6965,
+          "evidenceType": "direct-item-goal"
+        }
+      ],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 6949,
+          "excerpt": "Rewards:\tNhận ngẫu nhiên Dark Fragment từ 2 đến 5 (để hoàn thành tất cả cần tổng cộng 125 cục)",
+          "parentGuide": "Hollowborn DoomKnight (HBDK) Guide"
+        },
+        {
+          "sourceLine": 6965,
+          "excerpt": "Rewards:\tClassic Hollowborn Doomknight",
+          "parentGuide": "Hollowborn DoomKnight (HBDK) Guide"
+        },
+        {
+          "sourceLine": 6981,
+          "excerpt": "Rewards:\tHollowborn Empress' Blade (15% với all DMG và 25% XP, Gold, Rep, CP)",
+          "parentGuide": "Hollowborn DoomKnight (HBDK) Guide"
+        },
+        {
+          "sourceLine": 6999,
+          "excerpt": "Rewards:\tHollowborn DoomKnight (HBDK - 51% với Human và 25% Gold)",
+          "parentGuide": "Hollowborn DoomKnight (HBDK) Guide"
+        }
+      ],
+      "blocker": "1 canonical children linked; compare against all shop/reward outputs in lines 6922-7075 before marking complete."
+    },
+    {
+      "goalId": "hollowborn:7076:hollowborn-envoy-of-chaos",
+      "aggregateName": "Hollowborn Envoy of Chaos",
+      "groupId": "hollowborn",
+      "recordKind": "set",
+      "sourceLine": 7076,
+      "sourceChapter": "XI. Hollowborn",
+      "guideTitle": "Hollowborn Envoy of Chaos (HBEoC) Guide",
+      "sectionLines": [
+        7076,
+        7212
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 7101,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 3 lần để lấy hết items sau: | Hollowborn Chaos Warrior (30% với Chaos) | Hollowborn Chaos Morph | Hollowborn Chaotic Wings",
+          "parentGuide": "Hollowborn Envoy of Chaos (HBEoC) Guide"
+        },
+        {
+          "sourceLine": 7117,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 3 lần để lấy hết items sau: | Hollowborn Omega Blades (50% với Chaos) | Hollowborn Omega Sword (50% với Chaos) | Hollowborn Chaos Unlocker (50% với Chaos)",
+          "parentGuide": "Hollowborn Envoy of Chaos (HBEoC) Guide"
+        },
+        {
+          "sourceLine": 7137,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 4 lần để lấy hết items sau: | Hollowborn Benevolent Locks | Hollowborn Malignant Locks | Hollowborn Face of Chaos | Hollowborn Gaze of Chaos",
+          "parentGuide": "Hollowborn Envoy of Chaos (HBEoC) Guide"
+        },
+        {
+          "sourceLine": 7156,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 3 lần để lấy hết items sau: | Hollowborn Eye of Chaos (25% Gold) | Hollowborn Wings of Chaos (25% Gold) | Hollowborn Chaotic Portal (House Item) (stack đến 2, tức làm 4 lần nếu muốn max stack item này)",
+          "parentGuide": "Hollowborn Envoy of Chaos (HBEoC) Guide"
+        },
+        {
+          "sourceLine": 7186,
+          "excerpt": "Rewards:\tHollowborn Envoy of Chaos (HBEoC - 50% với Chaos và 25% Gold)",
+          "parentGuide": "Hollowborn Envoy of Chaos (HBEoC) Guide"
+        },
+        {
+          "sourceLine": 7202,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 9 lần để lấy hết items sau: | Hollowborn Benevolent | Hollowborn Benevolent Morph | Hollowborn Malignant | Hollowborn Malignant Morph | Idle Hollowborn Envoy of Chaos (IHBEoC - 50% với Chaos và 25% Gold) | Hollowborn Blades of Chaos (HBBoC - 75% với Chaos và 25% Gold) | Hollowborn Omega Swords (50% với Chaos) | Hollowborn Chaos Unlockers (50% với Chaos) | Hollowborn Blade of Chaos (Floor) (stack đến 6, tức làm 15 lần nếu muốn max stack item này)",
+          "parentGuide": "Hollowborn Envoy of Chaos (HBEoC) Guide"
+        }
+      ],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 7076-7212 and reward blocks 7101, 7117, 7137, 7156, 7186, 7202."
+    },
+    {
+      "goalId": "hollowborn:7213:hollowborn-archfiend",
+      "aggregateName": "Hollowborn Archfiend",
+      "groupId": "hollowborn",
+      "recordKind": "set",
+      "sourceLine": 7213,
+      "sourceChapter": "XI. Hollowborn",
+      "guideTitle": "Hollowborn Archfiend (HBAF) Guide",
+      "sectionLines": [
+        7213,
+        7404
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 7234,
+          "excerpt": "Rewards:\tVoid Soul ×10 (cũng nhận được từ quest 2, để hoàn thành tất cả cần tổng cộng 150 cục)",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7252,
+          "excerpt": "Rewards:\tVoid Soul ×2 (cũng nhận được từ quest 1, để hoàn thành tất cả cần tổng cộng 150 cục)",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7283,
+          "excerpt": "Rewards:\tHollowborn Legacy of Nulgath (HBLoN - 40% với Dragon và Elememtal)",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7306,
+          "excerpt": "Rewards:\tHollowborn Metamorphosis of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7321,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 14 lần để lấy hết items sau: | Hollowborn Hood of Nulgath | Hollowborn Legacy of Nulgath Horns | Hollowborn Skull of Nulgath | Dual Hollowborn Spear of Nulgath | Dual Hollowborn Phoenix Blade of Nulgath | Dual Hollowborn Overfiend Blade of Nulgath | Dual Hollowborn DragonBlade of Nulgath (DHBDBoN - 75% với Dragon) | Dual Hollowborn Void Sword | Dual Hollowborn Soulreaper of Nulgath | Hollowborn Hands of Nulgath | Hollowborn Mini-Nulgath Battle Pet | Hollowborn Nulgath Larvae | Hollowborn Void Orb (mở khóa 4 quests bonus tiếp theo) | Hollowborn Shadow Morph of the Oversoul",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7350,
+          "excerpt": "Rewards:\tHollowborn Hex of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7365,
+          "excerpt": "Rewards:\tHollowborn Blood of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7383,
+          "excerpt": "Rewards:\tHollowborn Fiend of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7400,
+          "excerpt": "Rewards:\tHollowborn Shadow of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        }
+      ],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 7213-7404 and reward blocks 7234, 7252, 7283, 7306, 7321, 7350, 7365, 7383, 7400."
+    },
+    {
+      "goalId": "hollowborn:7405:hollowborn-lich-king",
+      "aggregateName": "Hollowborn Lich King",
+      "groupId": "hollowborn",
+      "recordKind": "set",
+      "sourceLine": 7405,
+      "sourceChapter": "XI. Hollowborn",
+      "guideTitle": "Hollowborn Lich King (HBLK) Guide",
+      "sectionLines": [
+        7405,
+        7647
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 7433,
+          "excerpt": "Rewards:\tSoul Fragment ×1 (để hoàn thành tất cả cần tổng cộng 168 cục)",
+          "parentGuide": "Hollowborn Lich King (HBLK) Guide"
+        },
+        {
+          "sourceLine": 7445,
+          "excerpt": "Rewards:\tLich King Fragment ×1 (để hoàn thành tất cả cần tổng cộng 18 cục)",
+          "parentGuide": "Hollowborn Lich King (HBLK) Guide"
+        },
+        {
+          "sourceLine": 7462,
+          "excerpt": "Rewards:\tHollowborn Lich King (HBLK - 40% với Undead, Human và 25% Gold)",
+          "parentGuide": "Hollowborn Lich King (HBLK) Guide"
+        },
+        {
+          "sourceLine": 7474,
+          "excerpt": "Rewards:\tAltar Of the Hollowborn Caladbolg",
+          "parentGuide": "Hollowborn Lich King (HBLK) Guide"
+        },
+        {
+          "sourceLine": 7491,
+          "excerpt": "Rewards:\tHollow Soul ×250",
+          "parentGuide": "Hollowborn Lich King (HBLK) Guide"
+        },
+        {
+          "sourceLine": 7505,
+          "excerpt": "Rewards:\tQuest dạng rớt ngẫu nhiên, tất cả đều 1% DC: | Hollowborn Caladbolg (HBCb - 45% với all DMG) | Dual Hollowborn Caladbolgs (DHBCb - 45% với all DMG) | Hollowborn Caladbolg Companion | Hollowborn Caladbolg Battle Companion",
+          "parentGuide": "Hollowborn Lich King (HBLK) Guide"
+        }
+      ],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 7405-7647 and reward blocks 7433, 7445, 7462, 7474, 7491, 7505."
+    },
+    {
+      "goalId": "hollowborn:7781:hollowborn-frost-king-queen-set",
+      "aggregateName": "Hollowborn Frost King & Queen Set",
+      "groupId": "hollowborn",
+      "recordKind": "set",
+      "sourceLine": 7781,
+      "sourceChapter": "XI. Hollowborn",
+      "guideTitle": "Hollowborn-theme Items Farming Guides",
+      "sectionLines": [
+        7648,
+        7831
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 7648-7831 and reward blocks none indexed."
+    },
+    {
+      "goalId": "hollowborn:7283:hollowborn-legacy-of-nulgath",
+      "aggregateName": "Hollowborn Legacy of Nulgath",
+      "groupId": "hollowborn",
+      "recordKind": "set",
+      "sourceLine": 7283,
+      "sourceChapter": "XI. Hollowborn",
+      "guideTitle": "Hollowborn Archfiend (HBAF) Guide",
+      "sectionLines": [
+        7213,
+        7404
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 7234,
+          "excerpt": "Rewards:\tVoid Soul ×10 (cũng nhận được từ quest 2, để hoàn thành tất cả cần tổng cộng 150 cục)",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7252,
+          "excerpt": "Rewards:\tVoid Soul ×2 (cũng nhận được từ quest 1, để hoàn thành tất cả cần tổng cộng 150 cục)",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7283,
+          "excerpt": "Rewards:\tHollowborn Legacy of Nulgath (HBLoN - 40% với Dragon và Elememtal)",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7306,
+          "excerpt": "Rewards:\tHollowborn Metamorphosis of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7321,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 14 lần để lấy hết items sau: | Hollowborn Hood of Nulgath | Hollowborn Legacy of Nulgath Horns | Hollowborn Skull of Nulgath | Dual Hollowborn Spear of Nulgath | Dual Hollowborn Phoenix Blade of Nulgath | Dual Hollowborn Overfiend Blade of Nulgath | Dual Hollowborn DragonBlade of Nulgath (DHBDBoN - 75% với Dragon) | Dual Hollowborn Void Sword | Dual Hollowborn Soulreaper of Nulgath | Hollowborn Hands of Nulgath | Hollowborn Mini-Nulgath Battle Pet | Hollowborn Nulgath Larvae | Hollowborn Void Orb (mở khóa 4 quests bonus tiếp theo) | Hollowborn Shadow Morph of the Oversoul",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7350,
+          "excerpt": "Rewards:\tHollowborn Hex of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7365,
+          "excerpt": "Rewards:\tHollowborn Blood of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7383,
+          "excerpt": "Rewards:\tHollowborn Fiend of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7400,
+          "excerpt": "Rewards:\tHollowborn Shadow of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        }
+      ],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 7213-7404 and reward blocks 7234, 7252, 7283, 7306, 7321, 7350, 7365, 7383, 7400."
+    },
+    {
+      "goalId": "hollowborn:7306:hollowborn-metamorphosis-of-nulgath",
+      "aggregateName": "Hollowborn Metamorphosis of Nulgath",
+      "groupId": "hollowborn",
+      "recordKind": "set",
+      "sourceLine": 7306,
+      "sourceChapter": "XI. Hollowborn",
+      "guideTitle": "Hollowborn Archfiend (HBAF) Guide",
+      "sectionLines": [
+        7213,
+        7404
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [
+        {
+          "sourceLine": 7234,
+          "excerpt": "Rewards:\tVoid Soul ×10 (cũng nhận được từ quest 2, để hoàn thành tất cả cần tổng cộng 150 cục)",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7252,
+          "excerpt": "Rewards:\tVoid Soul ×2 (cũng nhận được từ quest 1, để hoàn thành tất cả cần tổng cộng 150 cục)",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7283,
+          "excerpt": "Rewards:\tHollowborn Legacy of Nulgath (HBLoN - 40% với Dragon và Elememtal)",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7306,
+          "excerpt": "Rewards:\tHollowborn Metamorphosis of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7321,
+          "excerpt": "Rewards:\tQuest dạng chọn item thưởng, nên bạn phải làm 14 lần để lấy hết items sau: | Hollowborn Hood of Nulgath | Hollowborn Legacy of Nulgath Horns | Hollowborn Skull of Nulgath | Dual Hollowborn Spear of Nulgath | Dual Hollowborn Phoenix Blade of Nulgath | Dual Hollowborn Overfiend Blade of Nulgath | Dual Hollowborn DragonBlade of Nulgath (DHBDBoN - 75% với Dragon) | Dual Hollowborn Void Sword | Dual Hollowborn Soulreaper of Nulgath | Hollowborn Hands of Nulgath | Hollowborn Mini-Nulgath Battle Pet | Hollowborn Nulgath Larvae | Hollowborn Void Orb (mở khóa 4 quests bonus tiếp theo) | Hollowborn Shadow Morph of the Oversoul",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7350,
+          "excerpt": "Rewards:\tHollowborn Hex of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7365,
+          "excerpt": "Rewards:\tHollowborn Blood of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7383,
+          "excerpt": "Rewards:\tHollowborn Fiend of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        },
+        {
+          "sourceLine": 7400,
+          "excerpt": "Rewards:\tHollowborn Shadow of Nulgath",
+          "parentGuide": "Hollowborn Archfiend (HBAF) Guide"
+        }
+      ],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 7213-7404 and reward blocks 7234, 7252, 7283, 7306, 7321, 7350, 7365, 7383, 7400."
+    },
+    {
+      "goalId": "debris-astravian:8161:astravian-corsair",
+      "aggregateName": "Astravian Corsair",
+      "groupId": "debris-astravian",
+      "recordKind": "set",
+      "sourceLine": 8161,
+      "sourceChapter": "XII. Debris & Astravian",
+      "guideTitle": "Higure & Astravian Corsair Guide",
+      "sectionLines": [
+        8161,
+        8223
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 8161-8223 and reward blocks none indexed."
+    },
+    {
+      "goalId": "other-items:8226:celestial-pirate-commander",
+      "aggregateName": "Celestial Pirate Commander",
+      "groupId": "other-items",
+      "recordKind": "set",
+      "sourceLine": 8226,
+      "sourceChapter": "XIII. Other Items",
+      "guideTitle": "Celestial Pirate Commander (CPC) - Polly Roger (Polly)",
+      "sectionLines": [
+        8226,
+        8250
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 8226-8250 and reward blocks none indexed."
+    },
+    {
+      "goalId": "other-items:8837:headless-pumpkin-set",
+      "aggregateName": "Headless Pumpkin Set",
+      "groupId": "other-items",
+      "recordKind": "set",
+      "sourceLine": 8837,
+      "sourceChapter": "XIII. Other Items",
+      "guideTitle": "Scavenger Hunts",
+      "sectionLines": [
+        8752,
+        9212
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 8752-9212 and reward blocks none indexed."
+    },
+    {
+      "goalId": "other-items:8854:fortitude-hubris",
+      "aggregateName": "Fortitude + Hubris",
+      "groupId": "other-items",
+      "recordKind": "weapon-group",
+      "sourceLine": 8854,
+      "sourceChapter": "XIII. Other Items",
+      "guideTitle": "Scavenger Hunts",
+      "sectionLines": [
+        8752,
+        9212
+      ],
+      "status": "AGGREGATE_PENDING",
+      "canonicalChildren": [],
+      "rewardBlocksInSection": [],
+      "blocker": "No canonical child mapping is verified yet; inspect guide lines 8752-9212 and reward blocks none indexed."
+    }
+  ]
+}

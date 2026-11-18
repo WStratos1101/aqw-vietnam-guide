@@ -1,0 +1,566 @@
+{
+  "pauldron-relic": {
+    "name": "Pauldron Relic",
+    "method": "Quest / Merge",
+    "tasks": [
+      {
+        "id": "collect-pauldron-relic",
+        "title": "Pauldron Relic",
+        "quest": null,
+        "requirements": [
+          "Tên Quest cụ thể: chưa xác minh."
+        ],
+        "reward": "Merge Pauldron Fragment ×15 → Pauldron Relic ×1",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/museum/goa",
+        "map": "/join gravestrike",
+        "rows": [
+          {
+            "name": "Pauldron Shard",
+            "quantity": 225,
+            "monster": "Ultra Akriloth",
+            "map": "/join gravestrike"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/museum/goa",
+      "lines": [
+        39
+      ],
+      "sourceTextHash": "eaaff1e58acc13ab4e915f9cfb2356dee317a7406e50dee2c2a44d7fa7be07b9"
+    }
+  },
+  "breastplate-relic": {
+    "name": "Breastplate Relic",
+    "method": "Quest / Merge",
+    "tasks": [
+      {
+        "id": "collect-breastplate-relic",
+        "title": "Breastplate Relic",
+        "quest": null,
+        "requirements": [
+          "Tên Quest cụ thể: chưa xác minh."
+        ],
+        "reward": "Merge Breastplate Fragment ×10 → Breastplate Relic ×1",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/museum/goa",
+        "map": "/join aqlesson",
+        "rows": [
+          {
+            "name": "Breastplate Shard",
+            "quantity": 100,
+            "monster": "Carnax",
+            "map": "/join aqlesson"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/museum/goa",
+      "lines": [
+        40
+      ],
+      "sourceTextHash": "eaaff1e58acc13ab4e915f9cfb2356dee317a7406e50dee2c2a44d7fa7be07b9"
+    }
+  },
+  "vambrace-relic": {
+    "name": "Vambrace Relic",
+    "method": "Quest / Merge",
+    "tasks": [
+      {
+        "id": "collect-vambrace-relic",
+        "title": "Vambrace Relic",
+        "quest": null,
+        "requirements": [
+          "Tên Quest cụ thể: chưa xác minh."
+        ],
+        "reward": "Merge Vambrace Fragment ×15 → Vambrace Relic ×1",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/museum/goa",
+        "map": "/join bloodtitan",
+        "rows": [
+          {
+            "name": "Vambrace Shard",
+            "quantity": 225,
+            "monster": "Ultra Blood Titan",
+            "map": "/join bloodtitan"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/museum/goa",
+      "lines": [
+        41
+      ],
+      "sourceTextHash": "eaaff1e58acc13ab4e915f9cfb2356dee317a7406e50dee2c2a44d7fa7be07b9"
+    }
+  },
+  "roentgenium-of-nulgath": {
+    "name": "Roentgenium of Nulgath",
+    "method": "Daily Quest / Ultra Boss Insignia Exchange",
+    "tasks": [
+      {
+        "id": "void-highlords-challenge",
+        "title": "Quest truyền thống",
+        "quest": "Void HighLord's Challenge",
+        "npc": "Void HighLord (NPC)",
+        "map": "/join tercessuinotlim",
+        "requirements": [
+          "Chi phí trong bảng tính cho một lần trả Quest; Hadean Onyx và Voucher là điều kiện sở hữu, không phải nguyên liệu tiêu hao.",
+          "15 lần trả Quest thưởng 15 Roentgenium khi chỉ dùng nhánh truyền thống. Nếu đổi Insignia, giảm số lần Quest tương ứng; không cộng hai nhánh thành chi phí bắt buộc.",
+          "Map farm từng nguyên liệu và max stack chưa được đối chiếu đầy đủ; không dùng map giao Quest làm map drop."
+        ],
+        "reward": "Roentgenium of Nulgath ×1",
+        "repeatability": "daily (theo guide; Wiki snapshot không ghi nhịp lặp)",
+        "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest",
+        "rows": [
+          {
+            "name": "Black Knight Orb",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Nulgath Shaped Chocolate",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Elders' Blood",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Aelita's Emerald",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Unidentified 13",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Gem of Nulgath",
+            "quantity": 20,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Emblem of Nulgath",
+            "quantity": 20,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Essence of Nulgath",
+            "quantity": 50,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Tainted Gem",
+            "quantity": 100,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Nulgath's Approval",
+            "quantity": 300,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          },
+          {
+            "name": "Archfiend's Favor",
+            "quantity": 300,
+            "source": "https://aqwwiki.wikidot.com/void-highlord-s-quest"
+          }
+        ],
+        "preconditions": [
+          "Level 80.",
+          "Có Hadean Onyx of Nulgath và Voucher of Nulgath (non-mem) trong inventory."
+        ],
+        "rewardQuantity": 1,
+        "quantityScope": "perTurn",
+        "numberOfRuns": 15,
+        "totalRequired": 15,
+        "evidence": {
+          "sourceUrl": "https://aqwwiki.wikidot.com/void-highlord-s-quest",
+          "sourceType": "Wiki",
+          "sourceSection": "Items Required / Requirements / Items",
+          "verifiedAt": "2026-11-15",
+          "status": "verified-live",
+          "guideLines": [
+            3477,
+            3634
+          ]
+        }
+      },
+      {
+        "id": "ultra-nulgath-insignia-exchange",
+        "title": "Đổi Nulgath Insignia",
+        "quest": null,
+        "npc": "Nulgath (NPC)",
+        "map": "/join ultranulgath",
+        "requirements": [
+          "Đổi 5 Nulgath Insignia lấy 2 Roentgenium of Nulgath.",
+          "Guide ghi giới hạn farm 5 Nulgath Insignia mỗi tuần qua Ultra Boss."
+        ],
+        "reward": "Roentgenium of Nulgath ×2",
+        "source": "https://aqwwiki.wikidot.com/roentgenium-of-nulgath",
+        "rows": [
+          {
+            "name": "Nulgath Insignia",
+            "quantity": 5,
+            "monster": "Nulgath's Merge Shop",
+            "map": "/join ultranulgath",
+            "source": "https://aqwwiki.wikidot.com/roentgenium-of-nulgath"
+          }
+        ]
+      },
+      {
+        "id": "ultra-nulgath-insignia-reward",
+        "title": "Nhận Insignia từ Ultra Nulgath",
+        "quest": "Nulgath, the Archfiend",
+        "npc": "Nulgath (NPC)",
+        "map": "/join ultranulgath",
+        "requirements": [
+          "Level 80."
+        ],
+        "reward": "Nulgath Insignia ×5 · mỗi tuần",
+        "repeatability": "weekly",
+        "source": "https://aqwwiki.wikidot.com/nulgath-s-quests",
+        "bossId": "ultra-nulgath",
+        "bossName": "Ultra Nulgath",
+        "rows": [
+          {
+            "name": "Nulgath the Archfiend Defeated?",
+            "quantity": 1,
+            "monster": "Nulgath the Archfiend",
+            "map": "/join ultranulgath",
+            "source": "https://aqwwiki.wikidot.com/nulgath-s-quests"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "source": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+      "lines": [
+        3463,
+        3471
+      ],
+      "sourceTextHash": "2d16c4134b48acb409af95a310d7742d38b4bfe08d303d3e97b7cd4ea8b93663",
+      "wikiSources": [
+        "https://aqwwiki.wikidot.com/void-highlord-s-quest",
+        "https://aqwwiki.wikidot.com/roentgenium-of-nulgath",
+        "https://aqwwiki.wikidot.com/nulgath-insignia",
+        "https://aqwwiki.wikidot.com/nulgath-s-quests"
+      ],
+      "ultraBossId": "ultra-nulgath",
+      "docsLiveStatus": "SOURCE_BLOCKED: Google Docs edit URL inaccessible through web tool; supplied snapshot retained."
+    }
+  },
+  "gauntlet-relic": {
+    "name": "Gauntlet Relic",
+    "method": "Quest / Merge",
+    "tasks": [
+      {
+        "id": "collect-gauntlet-relic",
+        "title": "Gauntlet Relic",
+        "quest": null,
+        "requirements": [
+          "Tên Quest cụ thể: chưa xác minh.",
+          "Nhận Quest trước khi farm. Farm tại /join alteonbattle; không dùng /join ultraalteon."
+        ],
+        "reward": "Merge Gauntlet Fragment ×25 → Gauntlet Relic ×1",
+        "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/museum/goa",
+        "map": "/join alteonbattle",
+        "rows": [
+          {
+            "name": "Gauntlet Shard",
+            "quantity": 125,
+            "monster": "Ultra Alteon",
+            "map": "/join alteonbattle"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "source": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide/museum/goa",
+      "lines": [
+        42,
+        44
+      ],
+      "sourceTextHash": "eaaff1e58acc13ab4e915f9cfb2356dee317a7406e50dee2c2a44d7fa7be07b9"
+    }
+  },
+  "revenant-s-spellscroll": {
+    "name": "Revenant's Spellscroll",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "legion-fealty-1",
+        "quest": "Legion Fealty 1",
+        "npc": "Legion Revenant (NPC)",
+        "map": "/join revenant",
+        "preconditions": [
+          "Rank 10 Evil."
+        ],
+        "requirements": [
+          "Số lượng trong bảng là chi phí mỗi lượt Quest.",
+          "Số lượt mục tiêu chỉ áp dụng nhánh truyền thống; đổi Dage Insignia có thể giảm số lượt.",
+          "Nguồn farm từng nguyên liệu và max stack chưa đối chiếu đầy đủ với Wiki."
+        ],
+        "reward": "Revenant's Spellscroll ×1",
+        "rewardQuantity": 1,
+        "quantityScope": "perTurn",
+        "numberOfRuns": 20,
+        "totalRequired": 20,
+        "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+        "rows": [
+          {
+            "name": "Aeacus Empowered",
+            "quantity": 50,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Tethered Soul",
+            "quantity": 300,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Darkened Essence",
+            "quantity": 500,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Dracolich Contract",
+            "quantity": 1000,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+      "sourceFile": "content-sources/class-acquisition/legion-revenant-s-quests.html",
+      "sourceHash": "e8d242c4665174614c00306e9df02121444f9909bbd7eeb2232822144e5ad61a",
+      "sourceType": "Wiki",
+      "sourceSection": "Legion Fealty 1",
+      "verifiedAt": "2026-11-15",
+      "status": "verified-snapshot",
+      "guideLines": [
+        5303,
+        5468
+      ]
+    }
+  },
+  "conquest-wreath": {
+    "name": "Conquest Wreath",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "legion-fealty-2",
+        "quest": "Legion Fealty 2",
+        "npc": "Legion Revenant (NPC)",
+        "map": "/join revenant",
+        "preconditions": [
+          "Hoàn thành Legion Fealty 1.",
+          "Level 80."
+        ],
+        "requirements": [
+          "Số lượng trong bảng là chi phí mỗi lượt Quest.",
+          "Số lượt mục tiêu chỉ áp dụng nhánh truyền thống; đổi Dage Insignia có thể giảm số lượt.",
+          "Nguồn farm từng nguyên liệu và max stack chưa đối chiếu đầy đủ với Wiki."
+        ],
+        "reward": "Conquest Wreath ×1",
+        "rewardQuantity": 1,
+        "quantityScope": "perTurn",
+        "numberOfRuns": 6,
+        "totalRequired": 6,
+        "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+        "rows": [
+          {
+            "name": "Grim Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Ancient Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Pirate Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Battleon Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Mirror Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Darkblood Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Vampire Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Spirit Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Dragon Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Doomwood Cohort Conquered",
+            "quantity": 400,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+      "sourceFile": "content-sources/class-acquisition/legion-revenant-s-quests.html",
+      "sourceHash": "e8d242c4665174614c00306e9df02121444f9909bbd7eeb2232822144e5ad61a",
+      "sourceType": "Wiki",
+      "sourceSection": "Legion Fealty 2",
+      "verifiedAt": "2026-11-15",
+      "status": "verified-snapshot",
+      "guideLines": [
+        5303,
+        5468
+      ]
+    }
+  },
+  "exalted-crown": {
+    "name": "Exalted Crown",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "legion-fealty-3",
+        "quest": "Legion Fealty 3",
+        "npc": "Legion Revenant (NPC)",
+        "map": "/join revenant",
+        "preconditions": [
+          "Hoàn thành Legion Fealty 2."
+        ],
+        "requirements": [
+          "Số lượng trong bảng là chi phí mỗi lượt Quest.",
+          "Số lượt mục tiêu chỉ áp dụng nhánh truyền thống; đổi Dage Insignia có thể giảm số lượt.",
+          "Nguồn farm từng nguyên liệu và max stack chưa đối chiếu đầy đủ với Wiki."
+        ],
+        "reward": "Exalted Crown ×1",
+        "rewardQuantity": 1,
+        "quantityScope": "perTurn",
+        "numberOfRuns": 10,
+        "totalRequired": 10,
+        "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+        "rows": [
+          {
+            "name": "Hooded Legion Cowl",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Legion Token",
+            "quantity": 4000,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Dage's Favor",
+            "quantity": 300,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Emblem of Dage",
+            "quantity": 1,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Diamond Token of Dage",
+            "quantity": 30,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Dark Token",
+            "quantity": 100,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+      "sourceFile": "content-sources/class-acquisition/legion-revenant-s-quests.html",
+      "sourceHash": "e8d242c4665174614c00306e9df02121444f9909bbd7eeb2232822144e5ad61a",
+      "sourceType": "Wiki",
+      "sourceSection": "Legion Fealty 3",
+      "verifiedAt": "2026-11-15",
+      "status": "verified-snapshot",
+      "guideLines": [
+        5303,
+        5468
+      ]
+    }
+  },
+  "legion-revenant-class": {
+    "name": "Legion Revenant",
+    "method": "Quest",
+    "tasks": [
+      {
+        "id": "legion-fealty-4",
+        "quest": "Legion Fealty 4",
+        "npc": "Legion Revenant (NPC)",
+        "map": "/join revenant",
+        "preconditions": [
+          "Hoàn thành Legion Fealty 3."
+        ],
+        "requirements": [],
+        "reward": "Legion Revenant (Class)",
+        "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+        "rows": [
+          {
+            "name": "Exalted Crown",
+            "itemId": "exalted-crown",
+            "quantity": 10,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Revenant's Spellscroll",
+            "itemId": "revenant-s-spellscroll",
+            "quantity": 20,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          },
+          {
+            "name": "Conquest Wreath",
+            "itemId": "conquest-wreath",
+            "quantity": 6,
+            "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "source": "https://aqwwiki.wikidot.com/legion-revenant-s-quests",
+      "sourceFile": "content-sources/class-acquisition/legion-revenant-s-quests.html",
+      "sourceHash": "e8d242c4665174614c00306e9df02121444f9909bbd7eeb2232822144e5ad61a",
+      "sourceType": "Wiki",
+      "sourceSection": "Legion Fealty 4",
+      "verifiedAt": "2026-11-15",
+      "status": "verified-snapshot",
+      "guideLines": [
+        5303,
+        5468
+      ]
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "purpose": "Primary Farm group from verified Guide chapters and project-owner direct Ultra reward/exchange rules.",
+  "notes": [
+    "Faction assignments come only from exact canonical name matches to faction_goals.json, which is filtered by guide chapter.",
+    "Chapter XIII Other Items is an ungrouped section and never an assignable faction.",
+    "Goals List and I. Farming List are cross-cutting difficulty indexes and never assign groups.",
+    "Exact canonical items can have only one primaryGroupId; material and prerequisite mentions do not transfer groups.",
+    "Set/collection names are targets, not canonical items. Do not create synthetic identities; expand actual rewards only from source evidence.",
+    "Museum maps to AWE; Forge maps to BLACKSMITHING; XII Debris & Astravian is one combined group.",
+    "Verified direct Ultra outputs follow project mapping; intermediate material bosses never transfer a primary group."
+  ],
+  "siteUrl": "https://sites.google.com/view/vncollector/adventure-quest-worlds/farming-guide?authuser=0",
+  "docsUrl": "https://docs.google.com/document/d/1yPGo5Qa6hS70jy8AIHhUUnosSknAY9N_qH6m1NETIEA/edit?tab=t.0#heading=h.gnm1ja4pcwph",
+  "groups": [
+    {
+      "id": "good",
+      "name": "GOOD",
+      "kind": "alignment",
+      "aliases": [],
+      "guideChapter": "II. Good",
+      "fallback": "G"
+    },
+    {
+      "id": "evil",
+      "name": "EVIL",
+      "kind": "alignment",
+      "aliases": [],
+      "guideChapter": "III. Evil",
+      "fallback": "E"
+    },
+    {
+      "id": "chaos",
+      "name": "CHAOS",
+      "kind": "alignment",
+      "aliases": [],
+      "guideChapter": "IV. Chaos",
+      "fallback": "C"
+    },
+    {
+      "id": "awe",
+      "name": "AWE",
+      "kind": "collection",
+      "aliases": [
+        "museum"
+      ],
+      "guideChapter": "V. Museum",
+      "fallback": "A"
+    },
+    {
+      "id": "blacksmithing",
+      "name": "BLACKSMITHING",
+      "kind": "collection",
+      "aliases": [
+        "forge"
+      ],
+      "guideChapter": "VI. Forge",
+      "fallback": "B"
+    },
+    {
+      "id": "nation",
+      "name": "NATION",
+      "kind": "faction-theme",
+      "aliases": [],
+      "guideChapter": "VII. Nation",
+      "fallback": "N"
+    },
+    {
+      "id": "legion",
+      "name": "LEGION",
+      "kind": "faction-theme",
+      "aliases": [],
+      "guideChapter": "VIII. Legion",
+      "fallback": "L"
+    },
+    {
+      "id": "dragonkin",
+      "name": "DRAGONKIN",
+      "kind": "collection",
+      "aliases": [],
+      "guideChapter": "IX. Dragonkin",
+      "fallback": "D"
+    },
+    {
+      "id": "elemental",
+      "name": "ELEMENTAL",
+      "kind": "collection",
+      "aliases": [],
+      "guideChapter": "X. Elemental",
+      "fallback": "E"
+    },
+    {
+      "id": "hollowborn",
+      "name": "HOLLOWBORN",
+      "kind": "faction-theme",
+      "aliases": [],
+      "guideChapter": "XI. Hollowborn",
+      "fallback": "H"
+    },
+    {
+      "id": "debris-astravian",
+      "name": "Darkon's Debris",
+      "kind": "collection",
+      "aliases": [
+        "darkons-debris",
+        "DEBRIS & ASTRAVIAN"
+      ],
+      "guideChapter": "XII. Debris & Astravian",
+      "fallback": "D"
+    },
+    {
+      "id": "alternative-hero",
+      "name": "Alternative Hero",
+      "kind": "collection",
+      "aliases": [],
+      "guideChapter": null,
+      "fallback": "A"
+    }
+  ],
+  "mixedDocChapters": [],
+  "unknownGroupLabel": "Khác",
+  "mixedDocSections": [],
+  "overrides": {},
+  "groupSource": "content-sources/farm/manual-faction-guide/faction_goals.json",
+  "chapterXIIGroupId": "debris-astravian"
+}

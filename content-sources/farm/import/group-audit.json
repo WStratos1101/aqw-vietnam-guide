@@ -1,0 +1,801 @@
+{
+  "status": "PARTIAL",
+  "browser": "BROWSER_QA_PENDING",
+  "baseline": 232,
+  "canonicalTotal": 232,
+  "images": 33,
+  "routes": 228,
+  "counts": {
+    "all": 232,
+    "awe": 16,
+    "good": 29,
+    "chaos": 7,
+    "evil": 35,
+    "blacksmithing": 24,
+    "legion": 28,
+    "nation": 99,
+    "diablo": 0,
+    "hollowborn": 28,
+    "crystallis": 0,
+    "darkons-debris": 5,
+    "dragonkin": 7,
+    "elemental": 21,
+    "astravian": 0,
+    "other": 38,
+    "unknown": 10
+  },
+  "unknown": [
+    "chaorrupter-unlocked-free-player",
+    "exalted-apotheosis",
+    "dual-exalted-apotheosis",
+    "sin-of-the-abyss",
+    "infernal-flame-khopesh",
+    "greatblade-of-the-entwined-eclipse",
+    "greatblade-of-the-solstice-moon",
+    "greatblade-of-the-midnight-sun",
+    "drago-s-royal-guard",
+    "bright-knight-armor"
+  ],
+  "multiGroup": [
+    {
+      "id": "blade-of-awe",
+      "groupIds": [
+        "chaos",
+        "awe",
+        "blacksmithing",
+        "dragonkin",
+        "other"
+      ]
+    },
+    {
+      "id": "armor-of-awe",
+      "groupIds": [
+        "awe",
+        "blacksmithing",
+        "legion",
+        "evil",
+        "good",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "sepulchure-s-doomknight-armor",
+      "groupIds": [
+        "evil",
+        "blacksmithing",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "blinding-light-of-destiny",
+      "groupIds": [
+        "good",
+        "chaos",
+        "awe",
+        "blacksmithing",
+        "nation",
+        "elemental",
+        "hollowborn",
+        "other"
+      ]
+    },
+    {
+      "id": "necrotic-sword-of-doom",
+      "groupIds": [
+        "evil",
+        "blacksmithing",
+        "nation",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "sepulchure-s-original-helm",
+      "groupIds": [
+        "evil",
+        "awe",
+        "blacksmithing",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "original-drakath-armor",
+      "groupIds": [
+        "good",
+        "chaos",
+        "awe",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "shaman",
+      "groupIds": [
+        "legion",
+        "elemental"
+      ]
+    },
+    {
+      "id": "arch-doomknight",
+      "groupIds": [
+        "evil",
+        "awe"
+      ]
+    },
+    {
+      "id": "archfiend-enchanted-orbs",
+      "groupIds": [
+        "nation",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "archfiend-warlord",
+      "groupIds": [
+        "nation",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "blinding-blade-of-destiny",
+      "groupIds": [
+        "good",
+        "chaos"
+      ]
+    },
+    {
+      "id": "caladbolg",
+      "groupIds": [
+        "legion",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "classic-hollowborn-doomknight-armor",
+      "groupIds": [
+        "hollowborn",
+        "evil"
+      ]
+    },
+    {
+      "id": "crimson-face-plate-of-nulgath",
+      "groupIds": [
+        "nation",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "crimson-plate-of-nulgath",
+      "groupIds": [
+        "nation",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "crystal-phoenix-blade-of-nulgath",
+      "groupIds": [
+        "nation",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "cursed-doomblade",
+      "groupIds": [
+        "evil",
+        "blacksmithing"
+      ]
+    },
+    {
+      "id": "cyber-void-light-of-destiny",
+      "groupIds": [
+        "good",
+        "nation"
+      ]
+    },
+    {
+      "id": "dark-dragon-slayer",
+      "groupIds": [
+        "dragonkin",
+        "elemental"
+      ]
+    },
+    {
+      "id": "dark-lord",
+      "groupIds": [
+        "legion",
+        "other"
+      ]
+    },
+    {
+      "id": "dragon-of-time-class",
+      "groupIds": [
+        "awe",
+        "blacksmithing",
+        "dragonkin",
+        "other"
+      ]
+    },
+    {
+      "id": "dragonblade-of-nulgath",
+      "groupIds": [
+        "nation",
+        "legion",
+        "hollowborn",
+        "other"
+      ]
+    },
+    {
+      "id": "dragonfire-of-nulgath",
+      "groupIds": [
+        "nation",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "dragonoid-of-hours",
+      "groupIds": [
+        "good",
+        "evil",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "dragonsoul-shinobi-class",
+      "groupIds": [
+        "blacksmithing",
+        "dragonkin",
+        "other"
+      ]
+    },
+    {
+      "id": "drakath-the-eternal",
+      "groupIds": [
+        "chaos",
+        "blacksmithing",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "dual-hollowborn-shadows-of-fate",
+      "groupIds": [
+        "good",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "eternity-blade",
+      "groupIds": [
+        "blacksmithing",
+        "other"
+      ]
+    },
+    {
+      "id": "evolved-blood-orb",
+      "groupIds": [
+        "nation",
+        "other"
+      ]
+    },
+    {
+      "id": "fortitude-hubris",
+      "groupIds": [
+        "awe",
+        "elemental",
+        "other"
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-class",
+      "groupIds": [
+        "elemental",
+        "other"
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-s-cloak",
+      "groupIds": [
+        "elemental",
+        "other"
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-s-hair",
+      "groupIds": [
+        "elemental",
+        "other"
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-s-locks",
+      "groupIds": [
+        "elemental",
+        "other"
+      ]
+    },
+    {
+      "id": "golden-blade-of-fate-sword",
+      "groupIds": [
+        "dragonkin",
+        "other"
+      ]
+    },
+    {
+      "id": "healer",
+      "groupIds": [
+        "good",
+        "evil",
+        "blacksmithing",
+        "darkons-debris",
+        "other"
+      ]
+    },
+    {
+      "id": "legion-dragonblade-of-nulgath",
+      "groupIds": [
+        "nation",
+        "legion"
+      ]
+    },
+    {
+      "id": "legion-revenant-class",
+      "groupIds": [
+        "legion",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "lightcaster-class",
+      "groupIds": [
+        "good",
+        "legion"
+      ]
+    },
+    {
+      "id": "mage",
+      "groupIds": [
+        "good",
+        "evil",
+        "awe",
+        "blacksmithing",
+        "legion",
+        "dragonkin",
+        "elemental",
+        "darkons-debris",
+        "other",
+        "chaos",
+        "hollowborn",
+        "nation"
+      ]
+    },
+    {
+      "id": "malgor-the-shadowlord",
+      "groupIds": [
+        "blacksmithing",
+        "elemental"
+      ]
+    },
+    {
+      "id": "mystical-devotee-of-mana",
+      "groupIds": [
+        "elemental",
+        "other"
+      ]
+    },
+    {
+      "id": "necrotic-blade-of-the-underworld",
+      "groupIds": [
+        "evil",
+        "legion"
+      ]
+    },
+    {
+      "id": "necrotic-sword-of-the-abyss",
+      "groupIds": [
+        "evil",
+        "nation"
+      ]
+    },
+    {
+      "id": "paladin-class",
+      "groupIds": [
+        "good",
+        "evil",
+        "chaos",
+        "awe",
+        "blacksmithing",
+        "nation",
+        "elemental",
+        "hollowborn",
+        "darkons-debris",
+        "other"
+      ]
+    },
+    {
+      "id": "sentinel",
+      "groupIds": [
+        "hollowborn",
+        "darkons-debris",
+        "other",
+        "evil"
+      ]
+    },
+    {
+      "id": "silver-exalted-paladin",
+      "groupIds": [
+        "good",
+        "awe"
+      ]
+    },
+    {
+      "id": "void-destroyer",
+      "groupIds": [
+        "nation",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "void-highlord-class",
+      "groupIds": [
+        "blacksmithing",
+        "nation",
+        "elemental",
+        "hollowborn",
+        "evil"
+      ]
+    },
+    {
+      "id": "void-light-of-destiny",
+      "groupIds": [
+        "good",
+        "evil",
+        "nation"
+      ]
+    },
+    {
+      "id": "void-paladin",
+      "groupIds": [
+        "evil",
+        "nation"
+      ]
+    },
+    {
+      "id": "warrior-class",
+      "groupIds": [
+        "good",
+        "evil",
+        "blacksmithing",
+        "nation",
+        "legion",
+        "elemental",
+        "hollowborn",
+        "darkons-debris",
+        "other"
+      ]
+    }
+  ],
+  "siteDocsMismatches": [
+    {
+      "id": "blade-of-awe",
+      "site": [
+        "awe",
+        "chaos",
+        "dragonkin"
+      ],
+      "docs": [
+        "awe",
+        "blacksmithing",
+        "chaos",
+        "dragonkin",
+        "other"
+      ]
+    },
+    {
+      "id": "armor-of-awe",
+      "site": [
+        "awe",
+        "blacksmithing",
+        "evil",
+        "good",
+        "hollowborn",
+        "legion"
+      ],
+      "docs": [
+        "awe",
+        "blacksmithing",
+        "legion"
+      ]
+    },
+    {
+      "id": "blinding-light-of-destiny",
+      "site": [
+        "awe",
+        "blacksmithing",
+        "chaos",
+        "elemental",
+        "good",
+        "hollowborn",
+        "nation"
+      ],
+      "docs": [
+        "awe",
+        "blacksmithing",
+        "chaos",
+        "elemental",
+        "good",
+        "hollowborn",
+        "nation",
+        "other"
+      ]
+    },
+    {
+      "id": "caladbolg",
+      "site": [
+        "legion"
+      ],
+      "docs": [
+        "hollowborn",
+        "legion"
+      ]
+    },
+    {
+      "id": "classic-hollowborn-doomknight-armor",
+      "site": [
+        "evil",
+        "hollowborn"
+      ],
+      "docs": [
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "crimson-face-plate-of-nulgath",
+      "site": [
+        "nation"
+      ],
+      "docs": [
+        "hollowborn",
+        "nation"
+      ]
+    },
+    {
+      "id": "crimson-plate-of-nulgath",
+      "site": [
+        "nation"
+      ],
+      "docs": [
+        "hollowborn",
+        "nation"
+      ]
+    },
+    {
+      "id": "crystal-phoenix-blade-of-nulgath",
+      "site": [
+        "nation"
+      ],
+      "docs": [
+        "hollowborn",
+        "nation"
+      ]
+    },
+    {
+      "id": "cursed-doomblade",
+      "site": [
+        "evil"
+      ],
+      "docs": [
+        "blacksmithing",
+        "evil"
+      ]
+    },
+    {
+      "id": "dragon-of-time-class",
+      "site": [
+        "awe",
+        "blacksmithing",
+        "dragonkin"
+      ],
+      "docs": [
+        "awe",
+        "blacksmithing",
+        "dragonkin",
+        "other"
+      ]
+    },
+    {
+      "id": "dragonblade-of-nulgath",
+      "site": [
+        "legion",
+        "nation",
+        "other"
+      ],
+      "docs": [
+        "hollowborn",
+        "legion",
+        "nation",
+        "other"
+      ]
+    },
+    {
+      "id": "dragonfire-of-nulgath",
+      "site": [
+        "nation"
+      ],
+      "docs": [
+        "hollowborn",
+        "nation"
+      ]
+    },
+    {
+      "id": "dragonoid-of-hours",
+      "site": [
+        "good"
+      ],
+      "docs": [
+        "evil",
+        "good",
+        "hollowborn"
+      ]
+    },
+    {
+      "id": "dragonsoul-shinobi-class",
+      "site": [
+        "blacksmithing",
+        "other"
+      ],
+      "docs": [
+        "blacksmithing",
+        "dragonkin"
+      ]
+    },
+    {
+      "id": "eternity-blade",
+      "site": [
+        "blacksmithing"
+      ],
+      "docs": [
+        "blacksmithing",
+        "other"
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-class",
+      "site": [
+        "other"
+      ],
+      "docs": [
+        "elemental"
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-s-cloak",
+      "site": [
+        "other"
+      ],
+      "docs": [
+        "elemental"
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-s-hair",
+      "site": [
+        "other"
+      ],
+      "docs": [
+        "elemental"
+      ]
+    },
+    {
+      "id": "frost-spiritreaver-s-locks",
+      "site": [
+        "other"
+      ],
+      "docs": [
+        "elemental"
+      ]
+    },
+    {
+      "id": "legion-revenant-class",
+      "site": [
+        "legion"
+      ],
+      "docs": [
+        "hollowborn",
+        "legion"
+      ]
+    },
+    {
+      "id": "mage",
+      "site": [
+        "awe",
+        "blacksmithing",
+        "chaos",
+        "darkons-debris",
+        "dragonkin",
+        "elemental",
+        "evil",
+        "good",
+        "hollowborn",
+        "legion",
+        "nation",
+        "other"
+      ],
+      "docs": [
+        "awe",
+        "blacksmithing",
+        "darkons-debris",
+        "dragonkin",
+        "elemental",
+        "evil",
+        "good",
+        "legion"
+      ]
+    },
+    {
+      "id": "malgor-the-shadowlord",
+      "site": [
+        "elemental"
+      ],
+      "docs": [
+        "blacksmithing",
+        "elemental"
+      ]
+    },
+    {
+      "id": "mystical-devotee-of-mana",
+      "site": [
+        "elemental",
+        "other"
+      ],
+      "docs": [
+        "elemental"
+      ]
+    },
+    {
+      "id": "necrotic-blade-of-the-underworld",
+      "site": [
+        "evil"
+      ],
+      "docs": [
+        "evil",
+        "legion"
+      ]
+    },
+    {
+      "id": "sentinel",
+      "site": [
+        "darkons-debris",
+        "evil",
+        "hollowborn",
+        "other"
+      ],
+      "docs": [
+        "darkons-debris",
+        "hollowborn",
+        "other"
+      ]
+    },
+    {
+      "id": "void-destroyer",
+      "site": [
+        "nation"
+      ],
+      "docs": [
+        "hollowborn",
+        "nation"
+      ]
+    },
+    {
+      "id": "void-highlord-class",
+      "site": [
+        "blacksmithing",
+        "elemental",
+        "evil",
+        "nation"
+      ],
+      "docs": [
+        "blacksmithing",
+        "elemental",
+        "hollowborn",
+        "nation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "sets": [
+    {
+      "name": "ArchFiend Warlord",
+      "sourceChapter": "Nation",
+      "evidence": {
+        "source": "guide",
+        "lines": [
+          4624,
+          4700
+        ]
+      },
+      "status": "NEEDS_MEMBER_ENUMERATION",
+      "id": "archfiend-warlord",
+      "members": [],
+      "expectedCount": 0,
+      "inventoryEvidence": {
+        "kind": "reviewed-inventory",
+        "complete": false,
+        "proofs": [
+          {
+            "url": "https://aqwwiki.wikidot.com/archfiend-warlord-merge",
+            "sourceFile": "content-sources/farm/equipment-sets/seed-research/archfiend-warlord-merge.html",
+            "sourceHash": "066f1bc5fc58db226f7cad8342406d9b55d3cc2af2342fb0eea3d0af37daa199",
+            "quests": []
+          }
+        ],
+        "guideScope": "COLLECTION_SCOPE_BLOCKED",
+        "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+      },
+      "notes": "",
+      "blockers": [
+        "Guide identifies full set with material total and merge shop but does not enumerate member names. Shop includes Fiend Minion/Fiend Warrior progression and Mortal Fiend weapons; cannot equate every row with Archfiend Warlord solely from common shop."
+      ],
+      "candidateMembers": [],
+      "researchStatus": "COLLECTION_SCOPE_BLOCKED"
+    },
+    {
+      "name": "Hollowborn Bodyguard",
+      "sourceChapter": "Hollowborn",
+      "evidence": {
+        "source": "guide",
+        "lines": [
+          7648,
+          7780
+        ]
+      },
+      "status": "NEEDS_MEMBER_ENUMERATION",
+      "id": "hollowborn-bodyguard",
+      "members": [],
+      "expectedCount": 0,
+      "inventoryEvidence": {
+        "kind": "reviewed-inventory",
+        "complete": false,
+        "proofs": [
+          {
+            "url": "https://aqwwiki.wikidot.com/edden-s-treasures",
+            "sourceFile": "content-sources/farm/equipment-sets/seed-research/edden-s-treasures.html",
+            "sourceHash": "b19a67161ace5720f55c2c5379ecd8f03fbc3b83dec8668a507495351acf04a9",
+            "quests": []
+          }
+        ],
+        "guideScope": "COLLECTION_SCOPE_BLOCKED",
+        "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+      },
+      "notes": "",
+      "blockers": [
+        "Guide explicitly names both sets in Edden's Treasures but does not enumerate membership. Shop includes Krenos Spirit Katanas unrelated to either set. Prefix matching is insufficient to establish complete membership or to assign Hollowborn Battle Bodyguard pet."
+      ],
+      "candidateMembers": [],
+      "researchStatus": "COLLECTION_SCOPE_BLOCKED"
+    },
+    {
+      "name": "Hollowborn TreasureHunter",
+      "sourceChapter": "Hollowborn",
+      "evidence": {
+        "source": "guide",
+        "lines": [
+          7648,
+          7780
+        ]
+      },
+      "status": "NEEDS_MEMBER_ENUMERATION",
+      "id": "hollowborn-treasurehunter",
+      "members": [],
+      "expectedCount": 0,
+      "inventoryEvidence": {
+        "kind": "reviewed-inventory",
+        "complete": false,
+        "proofs": [
+          {
+            "url": "https://aqwwiki.wikidot.com/edden-s-treasures",
+            "sourceFile": "content-sources/farm/equipment-sets/seed-research/edden-s-treasures.html",
+            "sourceHash": "b19a67161ace5720f55c2c5379ecd8f03fbc3b83dec8668a507495351acf04a9",
+            "quests": []
+          }
+        ],
+        "guideScope": "COLLECTION_SCOPE_BLOCKED",
+        "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+      },
+      "notes": "",
+      "blockers": [
+        "Guide explicitly names both sets in Edden's Treasures but does not enumerate membership. Shop includes Krenos Spirit Katanas unrelated to either set. Prefix matching is insufficient to establish complete membership or to assign Hollowborn Battle Bodyguard pet."
+      ],
+      "candidateMembers": [],
+      "researchStatus": "COLLECTION_SCOPE_BLOCKED"
+    },
+    {
+      "name": "Elemental Warrior",
+      "sourceChapter": "Elemental",
+      "evidence": {
+        "source": "guide",
+        "lines": [
+          6441,
+          6459
+        ]
+      },
+      "status": "NEEDS_MEMBER_ENUMERATION",
+      "id": "elemental-warrior",
+      "members": [],
+      "expectedCount": 0,
+      "inventoryEvidence": {
+        "kind": "reviewed-inventory",
+        "complete": false,
+        "proofs": [],
+        "guideScope": "COLLECTION_SCOPE_BLOCKED",
+        "reviewFile": "content-sources/farm/equipment-sets/seed-collection-research.json"
+      },
+      "notes": "",
+      "blockers": [
+        "Guide describes three class acquisition paths (Legendary, Ultra, Mythic), and capes are required ownership/ingredients. It does not define an equipment set. Keep these three class variants separate; no class-family or cape membership inferred."
+      ],
+      "candidateMembers": [],
+      "researchStatus": "COLLECTION_SCOPE_BLOCKED"
+    }
+  ],
+  "aliases": [
+    {
+      "setId": "hollowborn-doomknight",
+      "name": "Classic Hollowborn Doomknight",
+      "wikiName": "Classic Hollowborn DoomKnight (Armor)",
+      "canonicalId": "classic-hollowborn-doomknight-armor",
+      "wikiUrl": "https://aqwwiki.wikidot.com/classic-hollowborn-doomknight-armor",
+      "sources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/classic-hollowborn-doomknight-armor",
+          "sourceFile": "content-sources/farm/review/wiki/classic-hollowborn-doomknight-armor.html",
+          "sourceHash": "cdbd970f486210a9830b1fbeee28c9bb82e3eb27a3a766f9f9fd73b84b5b5a85"
+        }
+      ],
+      "notes": "Armor page explicitly states reward from A Dark Knight Rises; changed from Misc in 2021. Reuse existing canonical armor identity."
+    }
+  ],
+  "scopeFindings": [
+    {
+      "setId": "hollowborn-paladin",
+      "decision": "EXPLICIT_GUIDE_COLLECTION_UMBRELLA",
+      "publishedMemberCountReviewed": 12,
+      "collectionCompleteness": "SUPPORTED_12_REWARDS",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "lineStart": 6823,
+        "lineEnd": 6921,
+        "anchors": [
+          {
+            "line": 6823,
+            "text": "2. Hollowborn Paladin (HBP) Guide"
+          },
+          {
+            "line": 6826,
+            "text": "Set có 2 weapons"
+          },
+          {
+            "line": 6908,
+            "text": "Quest dạng chọn item thưởng, nên bạn phải làm 9 lần"
+          }
+        ]
+      },
+      "wikiSources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/lae-s-quests",
+          "sourceFile": "content-sources/farm/equipment-sets/wiki/lae-s-quests.html",
+          "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d"
+        }
+      ],
+      "finding": "Guide explicitly calls this a set and names all 12 equipment rewards: three initial rewards plus nine Post Summoning choices. This supports an umbrella collection independently of common quest giver or shared faction. Classic and normal armors, single/dual weapons, and the two pets retain distinct canonical item identities. Hardcore Contract, classes, and other consumed/owned prerequisites are excluded.",
+      "remainingScopeIssue": "No unsupported extra parent members found. If product policy requires separate set cards for Classic versus normal acquisition variants, an umbrella alone does not satisfy that separate representation requirement; the Guide does not explicitly assign all common accessories between those hypothetical sub-sets."
+    },
+    {
+      "setId": "hollowborn-lich-king",
+      "decision": "EXPLICIT_GUIDE_COLLECTION_UMBRELLA_BUT_23_INCOMPLETE",
+      "publishedMemberCountReviewed": 23,
+      "collectionCompleteness": "PARTIAL_AT_LEAST_ONE_EXPLICIT_EQUIPMENT_REWARD_MISSING",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "lineStart": 7405,
+        "lineEnd": 7647,
+        "anchors": [
+          {
+            "line": 7405,
+            "text": "6. Hollowborn Lich King (HBLK) Guide"
+          },
+          {
+            "line": 7410,
+            "text": "Set đồ này có nhiều món"
+          },
+          {
+            "line": 7509,
+            "text": "Hollowborn Caladbolg Battle Companion"
+          },
+          {
+            "line": 7623,
+            "text": "Số lượng trên không bao gồm Quest Bonus."
+          }
+        ]
+      },
+      "wikiSources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/lae-s-quests",
+          "sourceFile": "content-sources/farm/equipment-sets/wiki/lae-s-quests.html",
+          "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d"
+        },
+        {
+          "url": "https://aqwwiki.wikidot.com/altar-of-the-hollowborn-caladbolg-s-quests",
+          "sourceFile": "content-sources/farm/equipment-sets/wiki/altar-of-the-hollowborn-caladbolg-s-quests.html",
+          "sourceHash": "2b3742fc3adf5e11f911bb275330c4cde23fec1577bd6611293150aa41b318c4"
+        }
+      ],
+      "finding": "The Guide explicitly labels the equipment as a set and enumerates rewards under its main and bonus sections, so an umbrella is not based solely on shared quest chain. Main quests give 19 equipment items (3+5+4+7); the two bonus quests name five additional equipment items. The 23-item seed omits Hollowborn Caladbolg Battle Companion, which is named by both Guide and retained Wiki reward inventory. Full Guide scope is at least 24 equipment rewards.",
+      "missingMembers": [
+        {
+          "name": "Hollowborn Caladbolg Battle Companion",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-caladbolg-battle-companion",
+          "sourceQuest": "Pay Homage to Caladbolg (Again)"
+        }
+      ],
+      "remainingScopeIssue": "Keep explicit progression/family boundaries visible for Undead Warrior, Legion Champion, Lich King, and Hollowborn Caladbolg equipment; do not invent independent child-set membership from prerequisite order. The Guide cost table explicitly excludes bonus quests, so that table cannot prove collection completeness. Altar Of the Hollowborn Caladbolg is a house-item reward/unlock and remains excluded from equipment membership. Empowered Caladbolgs remain distinct variants. No additional equipment beyond these explicitly enumerated 24 was found in the six scoped reward lists. Item-level category/artwork checks remain owner integration work.",
+      "reviewedFullEquipmentInventory": [
+        {
+          "name": "Hollowborn Undead Warrior",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-undead-warrior",
+          "sourceQuest": "Draftless",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Underworld Legacy Horns",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-underworld-legacy-horns",
+          "sourceQuest": "Draftless",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Underworld Legacy Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-underworld-legacy-helm",
+          "sourceQuest": "Draftless",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Legion Champion",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-legion-champion",
+          "sourceQuest": "Flow Stress",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Undead Legacy Horns",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-undead-legacy-horns",
+          "sourceQuest": "Flow Stress",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Undead Legacy Helm",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-undead-legacy-helm",
+          "sourceQuest": "Flow Stress",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Legion Champion Crest",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-legion-champion-crest",
+          "sourceQuest": "Flow Stress",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Soul Eater Blade",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-soul-eater-blade",
+          "sourceQuest": "Flow Stress",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Lich King",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-lich-king",
+          "sourceQuest": "Heat Treatment",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Lich King's Horns",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-lich-king-s-horns",
+          "sourceQuest": "Heat Treatment",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Lich King's Hood",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-lich-king-s-hood",
+          "sourceQuest": "Heat Treatment",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Lich King's Cloak",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-lich-king-s-cloak",
+          "sourceQuest": "Heat Treatment",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Soul Eater Blades",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-soul-eater-blades",
+          "sourceQuest": "Counterblow",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Lich King's Pride",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-lich-king-s-pride",
+          "sourceQuest": "Counterblow",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Lich King's Morph",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-lich-king-s-morph",
+          "sourceQuest": "Counterblow",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Lich King's Flaming Skull",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-lich-king-s-flaming-skull",
+          "sourceQuest": "Counterblow",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Apocalypse Flame",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-apocalypse-flame",
+          "sourceQuest": "Counterblow",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Apocalypse Flames",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-apocalypse-flames",
+          "sourceQuest": "Counterblow",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Shadow of the Legion",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-shadow-of-the-legion",
+          "sourceQuest": "Counterblow",
+          "sourceUrl": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Hollowborn Caladbolg",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-caladbolg",
+          "sourceQuest": "Pay Homage to Caladbolg (Again)",
+          "sourceUrl": "https://aqwwiki.wikidot.com/altar-of-the-hollowborn-caladbolg-s-quests"
+        },
+        {
+          "name": "Dual Hollowborn Caladbolgs",
+          "wikiUrl": "https://aqwwiki.wikidot.com/dual-hollowborn-caladbolgs",
+          "sourceQuest": "Pay Homage to Caladbolg (Again)",
+          "sourceUrl": "https://aqwwiki.wikidot.com/altar-of-the-hollowborn-caladbolg-s-quests"
+        },
+        {
+          "name": "Hollowborn Caladbolg Companion",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-caladbolg-companion",
+          "sourceQuest": "Pay Homage to Caladbolg (Again)",
+          "sourceUrl": "https://aqwwiki.wikidot.com/altar-of-the-hollowborn-caladbolg-s-quests"
+        },
+        {
+          "name": "Hollowborn Caladbolg Battle Companion",
+          "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-caladbolg-battle-companion",
+          "sourceQuest": "Pay Homage to Caladbolg (Again)",
+          "sourceUrl": "https://aqwwiki.wikidot.com/altar-of-the-hollowborn-caladbolg-s-quests"
+        },
+        {
+          "name": "Lesser Hollowborn Caladbolg",
+          "wikiUrl": "https://aqwwiki.wikidot.com/lesser-hollowborn-caladbolg",
+          "sourceQuest": "How Much For One Rib?",
+          "sourceUrl": "https://aqwwiki.wikidot.com/altar-of-the-hollowborn-caladbolg-s-quests"
+        }
+      ]
+    },
+    {
+      "setId": "hollowborn-archfiend",
+      "decision": "PARTIAL_GUIDE_CHAPTER_WITH_UNRESOLVED_VARIANT_BOUNDARIES",
+      "publishedMemberCountReviewed": 25,
+      "collectionCompleteness": "PARTIAL",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "lineStart": 7213,
+        "lineEnd": 7404,
+        "anchors": [
+          {
+            "line": 7213,
+            "text": "5. Hollowborn Archfiend (HBAF) Guide"
+          },
+          {
+            "line": 7317,
+            "text": "◆ Quest bonus 1: Roles Unreversed"
+          },
+          {
+            "line": 7339,
+            "text": "◆ Quest bonus 2: Hexed Void"
+          },
+          {
+            "line": 7354,
+            "text": "◆ Quest bonus 3: Blood for Blood"
+          },
+          {
+            "line": 7372,
+            "text": "◆ Quest bonus 4: Frontline Fiend"
+          },
+          {
+            "line": 7388,
+            "text": "◆ Quest bonus 5: Empty Void"
+          }
+        ]
+      },
+      "wikiSources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/lae-s-quests",
+          "sourceFile": "content-sources/farm/equipment-sets/wiki/lae-s-quests.html",
+          "sourceHash": "5b56a5e4ae2293bc427a8bb435750d1e5bf2b4752ccc5445b571d27e650ee69d"
+        }
+      ],
+      "finding": "The Guide names the 25 initial rewards explicitly, so they are documented outputs rather than inferred from faction/name matching. But the chapter also explicitly enumerates 14 Roles Unreversed choices and 17 Orb bonus rewards (3 Hex, 6 Blood, 4 Fiend, 4 Shadow), and it contains distinct Void/Legacy/Metamorphosis/Archfiend identities. Unlike Paladin and Lich King, the read range does not explicitly call every chapter output one equipment set; a broad Guide chapter and progression chain alone do not establish a single completed variant set.",
+      "remainingScopeIssue": "Do not mark parent25 DONE or present it as complete. Keep chapter umbrella scope explicitly partial, retain separate canonical variants, and require direct family/collection evidence before assigning the independently named bonus families to sub-sets. Owned Juggernaut/Twisted gear, Hollowborn Oblivion Blade, and Nulgath House Guest are prerequisites, not members merely because they unlock these quests. Archfiend Runes category still requires equipment eligibility review."
+    },
+    {
+      "setId": "hollowborn-frost-king-queen",
+      "decision": "JOINT_UMBRELLA_SUPPORTED_ROYAL_VARIANTS_STILL_PARTIAL",
+      "reviewedRewardCount": 16,
+      "collectionCompleteness": "FULL_JOINT_REWARD_INVENTORY_BUT_VARIANT_SCOPE_PARTIAL",
+      "guideEvidence": {
+        "sourceFile": "content-sources/farm/manual-guide/FARMING_ITEM_GUIDE_SOURCE.txt",
+        "lineStart": 7781,
+        "lineEnd": 7831,
+        "anchors": [
+          {
+            "line": 7781,
+            "text": "Hollowborn Frost King & Queen Set"
+          },
+          {
+            "line": 7805,
+            "text": "Note: Cần lặp lại 12 lần"
+          },
+          {
+            "line": 7822,
+            "text": "◆ Quest 3: Cold, Cold, COLD!"
+          }
+        ]
+      },
+      "wikiSources": [
+        {
+          "url": "https://aqwwiki.wikidot.com/the-hollow-hail-s-quests",
+          "sourceFile": "content-sources/farm/equipment-sets/wiki/the-hollow-hail-s-quests.html",
+          "sourceHash": "3e2d8cf7263b48cfed1acfea7ddb07f1f08e0b10e70c08ab9ad627184d3641b3"
+        }
+      ],
+      "finding": "The Guide expressly labels one joint King & Queen Set and discusses all three quest stages. A joint collection umbrella containing the 16 explicitly linked 0 AC equipment rewards is defensible and is not based solely on a common quest. Both armor identities and all King/Queen names must remain distinct; AC alternatives are not substituted.",
+      "publicationRecommendation": "Publishing joint16 is safe only when clearly labelled a joint Guide collection/reviewed reward inventory with PARTIAL variant coverage. It must remain PARTIAL for the user requirement to represent royal variants separately: the joint inventory does not itself resolve shared Frozen/Icy Crests or the two Necryomancer pets between King and Queen child sets. Do not assign those by quest sharing or mark royal split DONE."
+    }
+  ]
+}

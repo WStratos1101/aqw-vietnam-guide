@@ -1,0 +1,2380 @@
+{
+  "records": [
+    {
+      "id": "radiant-goddess-of-war",
+      "descriptionVi": "Chiến tranh nghiền nát những giấc mơ xuống bùn đất. Chỉ những kẻ hùng mạnh, đủ sức khai mở một kỷ nguyên mới cho Lore, mới trỗi dậy từ cảnh tàn sát. Nữ thần Chiến tranh khơi bùng ngọn lửa trong những người xứng đáng bằng cảm hứng thiêng liêng.",
+      "boosts": [
+        {
+          "kind": "damageToTagged",
+          "percent": 50,
+          "targets": [
+            "Chaos",
+            "Dragon",
+            "Elemental",
+            "Human",
+            "Undead"
+          ]
+        },
+        {
+          "kind": "classPoints",
+          "percent": 50
+        },
+        {
+          "kind": "reputation",
+          "percent": 50
+        },
+        {
+          "kind": "gold",
+          "percent": 30
+        }
+      ],
+      "url": "https://aqwwiki.wikidot.com/radiant-goddess-of-war",
+      "sourceFile": "content-sources/farm/review/wiki/radiant-goddess-of-war.html",
+      "sourceHash": "9ae4acb3f9d68cedc4c498b9293a3403721964354327a19dba607192dedce1cd",
+      "quotes": [
+        "Description: War, where the dreams of mice and men are ground into the mud. Only the mighty, those who can forge a new age for Lore, will rise from the carnage. The Goddess of War stokes the flames of the worthy with divine inspiration.",
+        "When equipped, this item provides a 50% bonus to Class Points and Reputation, 30% bonus to Gold gained when battling monsters or turning in quests and does 50% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ],
+      "rarity": "Champion Rarity"
+    },
+    {
+      "id": "adept-of-awe",
+      "descriptionVi": "Bộ giáp được trao cho những người có đóng góp nổi bật cho Lore's Conservators.",
+      "boosts": [
+        {
+          "kind": "damageToTagged",
+          "percent": 10,
+          "targets": [
+            "Chaos",
+            "Dragon",
+            "Elemental",
+            "Human",
+            "Undead"
+          ]
+        }
+      ],
+      "url": "https://aqwwiki.wikidot.com/adept-of-awe",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/adept-of-awe.html",
+      "sourceHash": "78cc742afbd9fc2e7e025147511dc0c359672daca9b8f9aaa7478ef07e5c37a1",
+      "quotes": [
+        "Description: Armor that is awarded to notable contributors of Lore's Conservators. This item does 10% more damage to all tagged monsters when equipped.",
+        "When equipped, this item does 10% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ],
+      "rarity": "Awesome Rarity"
+    },
+    {
+      "id": "adept-of-awe-battle-armblades",
+      "descriptionVi": "Một thợ săn kho báu thành thạo vẫn cần biết tự bảo vệ mình.",
+      "boosts": [
+        {
+          "kind": "damageToAll",
+          "percent": 15
+        }
+      ],
+      "url": "https://aqwwiki.wikidot.com/adept-of-awe-battle-armblades",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/adept-of-awe-battle-armblades.html",
+      "sourceHash": "ef64a5b6d95119fa57cc62657a11bdaf738a717c0aaf7fb6062ca197b2b7b9db",
+      "quotes": [
+        "Description: An adept Treasure Hunter still needs to defend themselves. This item does 15% more damage to all monsters when equipped."
+      ],
+      "rarity": "Awesome Rarity"
+    },
+    {
+      "id": "higure",
+      "url": "https://aqwwiki.wikidot.com/higure",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/higure.html",
+      "sourceHash": "adf85888f3351d73af2ae6017e5d32a70327c390969324459b7782ad2edfa96b",
+      "descriptionVi": "Không thể chạy thoát khỏi thanh kiếm đen này. Liệu có người hùng nào xứng đáng hơn để cầm nó?",
+      "rarity": "Seasonal Rarity",
+      "boosts": [
+        {
+          "kind": "damageToAll",
+          "percent": 40
+        },
+        {
+          "kind": "classPoints",
+          "percent": 30
+        },
+        {
+          "kind": "experience",
+          "percent": 30
+        },
+        {
+          "kind": "gold",
+          "percent": 30
+        },
+        {
+          "kind": "reputation",
+          "percent": 30
+        }
+      ],
+      "quotes": [
+        "Description: It is impossible to run away from this black blade. I wonder if there is a more worthy hero to wield it?",
+        "When equipped, this item provides a 30% bonus to Class Points, Gold, Reputation, and Experience gained when battling monsters or turning in quests and does 40% more damage to all monsters."
+      ]
+    },
+    {
+      "id": "empowered-higure",
+      "url": "https://aqwwiki.wikidot.com/empowered-higure",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/empowered-higure.html",
+      "sourceHash": "323fbdc801cea678fdf6fc83359361f30e958312f35e3fdc6cc831367b7333ae",
+      "descriptionVi": "Không thể chạy thoát khỏi thanh kiếm đen này. Liệu có người hùng nào xứng đáng hơn để cầm nó?",
+      "rarity": "Champion Rarity",
+      "boosts": [
+        {
+          "kind": "damageToAll",
+          "percent": 51
+        },
+        {
+          "kind": "classPoints",
+          "percent": 35
+        },
+        {
+          "kind": "experience",
+          "percent": 35
+        },
+        {
+          "kind": "gold",
+          "percent": 30
+        },
+        {
+          "kind": "reputation",
+          "percent": 30
+        }
+      ],
+      "quotes": [
+        "Description: It is impossible to run away from this black blade. I wonder if there is a more worthy hero to wield it?",
+        "When equipped, this item provides a 35% bonus to Class Points and Experience, 30% bonus to Gold and Reputation, and does 51% more damage to all monsters."
+      ]
+    },
+    {
+      "id": "goddess-of-war",
+      "url": "https://aqwwiki.wikidot.com/goddess-of-war",
+      "sourceFile": "content-sources/farm/review/wiki/goddess-of-war.html",
+      "sourceHash": "3f98e09d962042feb3c738a848677626551a846677b704d224f8cd2d34ec283f",
+      "descriptionVi": "Chiến tranh nghiền nát những giấc mơ xuống bùn đất. Chỉ những kẻ hùng mạnh, đủ sức khai mở một kỷ nguyên mới cho Lore, mới trỗi dậy từ cảnh tàn sát. Nữ thần Chiến tranh khơi bùng ngọn lửa trong những người xứng đáng bằng cảm hứng thiêng liêng.",
+      "boosts": [
+        {
+          "kind": "damageToTagged",
+          "percent": 40,
+          "targets": [
+            "Chaos",
+            "Dragon",
+            "Elemental",
+            "Human",
+            "Undead"
+          ]
+        },
+        {
+          "kind": "classPoints",
+          "percent": 30
+        },
+        {
+          "kind": "gold",
+          "percent": 30
+        },
+        {
+          "kind": "reputation",
+          "percent": 30
+        }
+      ],
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "quotes": [
+        "Description: War, where the dreams of mice and men are ground into the mud. Only the mighty, those who can forge a new age for Lore, will rise from the carnage. The Goddess of War stokes the flames of the worthy with divine inspiration.",
+        "When equipped, this item provides a 30% bonus to Class Points, Gold and Reputation and does 40% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ]
+    },
+    {
+      "id": "goddess-of-war-blades",
+      "url": "https://aqwwiki.wikidot.com/goddess-of-war-blades",
+      "sourceFile": "content-sources/farm/review/wiki/goddess-of-war-blades.html",
+      "sourceHash": "08c9cd849fec14e74851850cb358698e71a1cf8fade4f25877159acd43f7c4fe",
+      "descriptionVi": "Búa rèn nên lưỡi kiếm, còn lưỡi kiếm định hình tương lai. Nữ thần Chiến tranh ban phước cho những ai kiên trì vượt qua gian khổ. Lore cần vũ khí để sinh tồn, còn chiến tranh cần Lore để có ý nghĩa.",
+      "boosts": [
+        {
+          "kind": "damageToTagged",
+          "percent": 30,
+          "targets": [
+            "Chaos",
+            "Dragon",
+            "Elemental",
+            "Human",
+            "Undead"
+          ]
+        }
+      ],
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "quotes": [
+        "Description: Hammers may forge blades, but blades forge the future. The Goddess of War blesses those who face hardship and perservere in spite of it. Lore needs weapons to survive, and War needs Lore in order to have meaning.",
+        "When equipped, this item does 30% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ]
+    },
+    {
+      "id": "goddess-of-war-cloak",
+      "url": "https://aqwwiki.wikidot.com/goddess-of-war-cloak",
+      "sourceFile": "content-sources/farm/review/wiki/goddess-of-war-cloak.html",
+      "sourceHash": "9cce93270f99b86e3e658493aaa5f4a3ce9d82429a4c44ee9ba07efe2dbcd429",
+      "descriptionVi": "Ý chí chiến đấu, bảo vệ và tiến bước là những lý tưởng của Nữ thần Chiến tranh. Nữ thần khoác áo choàng lên những ai thể hiện được tầm nhìn ấy. Chỉ khi tự do mất đi, chiến tranh mới không còn cần thiết.",
+      "boosts": [
+        {
+          "kind": "classPoints",
+          "percent": 30
+        },
+        {
+          "kind": "gold",
+          "percent": 30
+        },
+        {
+          "kind": "reputation",
+          "percent": 30
+        }
+      ],
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "quotes": [
+        "Description: The will to fight, to defend, and to forge forward and the ideals of this Goddess of War. She drapes her cloak on those who can embody this vision. Only when freedom dies will war no longer be necessary.",
+        "When equipped, this item provides a 30% bonus to Class Points, Gold and Reputation."
+      ]
+    },
+    {
+      "id": "goddess-of-war-prestige-cloak",
+      "url": "https://aqwwiki.wikidot.com/goddess-of-war-prestige-cloak",
+      "sourceFile": "content-sources/farm/review/wiki/goddess-of-war-prestige-cloak.html",
+      "sourceHash": "3e7e9d4f8d37f17e2cd01895525ed3ebae83ff50e7aad15bf91c33cf45abb1db",
+      "descriptionVi": "Búa rèn nên lưỡi kiếm, còn lưỡi kiếm định hình tương lai. Nữ thần Chiến tranh ban phước cho những ai kiên trì vượt qua gian khổ. Lore cần vũ khí để sinh tồn, còn chiến tranh cần Lore để có ý nghĩa.",
+      "boosts": [
+        {
+          "kind": "damageToTagged",
+          "percent": 30,
+          "targets": [
+            "Chaos",
+            "Dragon",
+            "Elemental",
+            "Human",
+            "Undead"
+          ]
+        },
+        {
+          "kind": "classPoints",
+          "percent": 30
+        },
+        {
+          "kind": "gold",
+          "percent": 30
+        },
+        {
+          "kind": "reputation",
+          "percent": 30
+        }
+      ],
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "quotes": [
+        "Description: Hammers may forge blades, but blades forge the future. The Goddess of War blesses those who face hardship and perservere in spite of it. Lore needs weapons to survive, and War needs Lore in order to have meaning.",
+        "When equipped, this item provides a 30% bonus to Class Points, Gold and Reputation and does 30% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ]
+    },
+    {
+      "id": "malgor-the-shadowlord",
+      "url": "https://aqwwiki.wikidot.com/malgor-the-shadowlord",
+      "sourceFile": "content-sources/farm/review/wiki/malgor-the-shadowlord.html",
+      "sourceHash": "8dffe7a0e178a9d8172ad13ac682c44f1fd3455fd9252de0e1bb1055e8ac1ec7",
+      "descriptionVi": "Bộ giáp của Shadowlord, khởi nguồn của Shadowflame từng thiêu đốt Lore đến tận cốt lõi. Còn Malgor đến từ đâu… đó là bí mật nên được giữ kín cho đến khi thế giới và đấng sáng tạo sẵn sàng.",
+      "boosts": [
+        {
+          "kind": "damageToTagged",
+          "percent": 50,
+          "targets": [
+            "Elemental"
+          ]
+        }
+      ],
+      "rarity": "Epic Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "quotes": [
+        "Description: The armor of the Shadowlord, the origin of the Shadowflame that scorched Lore to its core. As for where Malgor himself came from…that is a secret best kept until the world and its creator are ready.",
+        "When equipped, this item does 50% more damage to Elemental Monsters."
+      ]
+    },
+    {
+      "id": "hollowborn-doomknight-helm-helm",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-doomknight-helm-helm",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-doomknight-helm-helm.html",
+      "sourceHash": "1801658c97e7e35ab4aeab61ae1dfc8dc6cfb02041354af984ea69a2147b619f",
+      "descriptionVi": "Chiếc mũ giáp dữ tợn, lạnh lẽo của một Hollowborn chỉ có một mục tiêu: đánh bại ánh sáng, gieo tai ương khắp thế giới và hồi sinh một sức mạnh đã mất.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A fierce, lifeless armet belonging to the Hollowborn whose singular goal is to vanquish the light, unleash doom upon the world, and resurrect a lost power."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-doomknight-hood-helm",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-doomknight-hood-helm",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-doomknight-hood-helm.html",
+      "sourceHash": "36d890fe9dfa5e89c1b45456657449f96ef59964d478336ab46f7bbb1606ca68",
+      "descriptionVi": "Gieo nỗi sợ vào tâm hồn đối thủ trong khi che giấu thân phận Hollowborn của ngươi!",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Strike fear into your opponents' souls while masking your true Hollowborn identity!"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-doom-cloak-cape",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-doom-cloak-cape",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-doom-cloak-cape.html",
+      "sourceHash": "bf49619644a5590d89139f1277fa26e7a0c46415a2e8da0457bfa98e106f87e9",
+      "descriptionVi": "Kiểu áo choàng của các Hollowborn DoomKnight, những chiến binh tinh nhuệ dưới trướng Shadowfiend!",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: The style of cloak worn by Hollowborn DoomKnights - the elite soldiers of the Shadowfiend!"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-empress-blade-sword",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-empress-blade-sword",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-empress-blade-sword.html",
+      "sourceHash": "d79963f476ba062a96db0c82f23db5737da3e9e711fbe518b4d19f03e9cb4af4",
+      "descriptionVi": "Thanh kiếm hoàng gia của Shadowscythe, được ý chí của Shadowfiend biến thành bóng tối thuần khiết.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [
+        {
+          "kind": "damageToAll",
+          "percent": 15
+        },
+        {
+          "kind": "classPoints",
+          "percent": 25
+        },
+        {
+          "kind": "experience",
+          "percent": 25
+        },
+        {
+          "kind": "gold",
+          "percent": 25
+        },
+        {
+          "kind": "reputation",
+          "percent": 25
+        }
+      ],
+      "quotes": [
+        "Description: The Royal blade of the Shadowscythe, transformed into pure darkness by the will of the Shadowfiend.",
+        "When equipped, this item provides a bonus of 25% to Class Points, EXP, Gold when battling monsters or turning in quests, Reputation gained from quests, and does 15% more damage to all monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-doomblade-sword",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-doomblade-sword",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-doomblade-sword.html",
+      "sourceHash": "398093c587a88f71d35fa629f32d4d443042ee9cbb6a92cc0548cb939eb5e7e5",
+      "descriptionVi": "Thanh kiếm này khao khát hủy diệt… Ngươi có chắc mình kiểm soát được thứ năng lượng hắc ám ấy không?",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [
+        {
+          "kind": "damageToAll",
+          "percent": 30
+        },
+        {
+          "kind": "classPoints",
+          "percent": 25
+        },
+        {
+          "kind": "experience",
+          "percent": 25
+        },
+        {
+          "kind": "gold",
+          "percent": 25
+        },
+        {
+          "kind": "reputation",
+          "percent": 25
+        }
+      ],
+      "quotes": [
+        "Description: This sword hungers for destruction… Are you sure you can control such dark energy?",
+        "When equipped, this item provides a bonus of 25% to Class Points, EXP, Gold when battling monsters or turning in quests, Reputation gained from quests, and does 30% more damage to all monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-doomknight-armor",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-doomknight-armor",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-doomknight-armor.html",
+      "sourceHash": "ef533c23f9024349c5dea076976e37df6d0db11e3acf0a39b874ebd51c3e1a24",
+      "descriptionVi": "Ngay cả sau cái chết, di sản kinh hoàng của Sepulchure vẫn tồn tại. Ngươi đã chứng minh với Shadowfiend sự đáng sợ và tận tụy của mình. Giờ hãy thực hiện ý nguyện của Sepulchure với tư cách Hollowborn DoomKnight đáng sợ nhất Lore!",
+      "rarity": "Champion Rarity",
+      "boosts": [
+        {
+          "kind": "damageToTagged",
+          "percent": 51,
+          "targets": [
+            "Human"
+          ]
+        },
+        {
+          "kind": "gold",
+          "percent": 25
+        }
+      ],
+      "quotes": [
+        "Description: Even AFTER death… Sepulchure's harrowing legacy lives on forever. You have proven to the Shadowfiend how terrifying and dedicated you are. Now you shall do Sepulchure's bidding as Lore's most terrifying Hollowborn Doomknight!",
+        "When equipped, this item provides a bonus of 25% Gold when battling monsters or turning in quests and does 51% more damage to Human Monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-sepulchure-s-helm-helm",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-sepulchure-s-helm-helm",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-sepulchure-s-helm-helm.html",
+      "sourceHash": "9b5cef28260a4288f46c1944d993bdf9c87b87b44f3fd27706fc747d76e950e8",
+      "descriptionVi": "Chiếc mũ đầu tiên Sepulchure chọn trên con đường trở thành thủ lĩnh Shadowscythe, nay được bóng tối Hollowdeep tiếp thêm sức mạnh.",
+      "rarity": "Epic Rarity",
+      "boosts": [
+        {
+          "kind": "gold",
+          "percent": 25
+        }
+      ],
+      "quotes": [
+        "Description: The first helm that Sepulchure chose on this road to becoming the Leader of the Shadowscythe, now empowered by the shadows of Hollowdeep.",
+        "When equipped, this item provides a bonus of 25% Gold when battling monsters or turning in quests."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-doom-shade-cape",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-doom-shade-cape",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-doom-shade-cape.html",
+      "sourceHash": "ebf6695b5c8a41bcc51646bbb64ae5ae91fccd34e675d2c3411ab8c57fd99afc",
+      "descriptionVi": "Được tạo nên từ bóng tối thuần khiết, tinh hoa của Sepulchure ôm lấy và theo ngươi trên hành trình mãi mãi.",
+      "rarity": "Epic Rarity",
+      "boosts": [
+        {
+          "kind": "gold",
+          "percent": 25
+        }
+      ],
+      "quotes": [
+        "Description: Made of pure shadows, Sepulchure's Essence embraces and follows you through your path, eternally.",
+        "When equipped, this item provides a bonus of 25% Gold when battling monsters or turning in quests."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-sword-of-doom-sword",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-sword-of-doom-sword",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-sword-of-doom-sword.html",
+      "sourceHash": "1bfcd6d7a906597a2c83ecff8645829337c46c393b0411f4e340c81ec2752b60",
+      "descriptionVi": "Những bóng tối này chỉ thôi thúc một điều… TAI ƯƠNG!!!",
+      "rarity": "Champion Rarity",
+      "boosts": [
+        {
+          "kind": "damageToAll",
+          "percent": 51
+        },
+        {
+          "kind": "gold",
+          "percent": 25
+        }
+      ],
+      "quotes": [
+        "Description: This shadows compel… DOOOOOOOOOOOM!!!",
+        "When equipped, this item provides a bonus of 25% Gold when battling monsters or turning in quests and does 51% more damage to all monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-caladbolg-battle-companion",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-caladbolg-battle-companion",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-caladbolg-battle-companion.html",
+      "sourceHash": "f1bc0d0eac97a6d8b685e5527aa7d2fa74870a30e00d1761870eb1d834ad1963",
+      "descriptionVi": "Trước ý chí Hollowborn bất khuất của ngươi, kẻ thù sẽ gục ngã và núi non phải cúi đầu.",
+      "rarity": "Champion Rarity",
+      "membership": "member",
+      "membershipTag": "legend",
+      "boosts": [],
+      "quotes": [
+        "Description: Against your indomitable Hollowborn will, your enemies will fall and the mountains will bow."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-legacy-of-nulgath-hood-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-legacy-of-nulgath-hood-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-legacy-of-nulgath-hood-0-ac.html",
+      "sourceHash": "ca126f89e8767177a901c669f1c3c4d2b2685391e0cd4cac6eb25f1a6864a74c",
+      "descriptionVi": "Giữ đầu ngươi khô ráo và linh hồn ngươi trong lời nguyền. Theo một cách nhìn nào đó, việc ngươi là Hollowborn khiến lời ấy càng đúng gấp bội.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Keeps your head dry, and your soul cursed. And from a certain point of view, doubly so because you're Hollowborn."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-spear-of-nulgath-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-spear-of-nulgath-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-spear-of-nulgath-0-ac.html",
+      "sourceHash": "26762a89a9d8bc75e151372668d8a6e7e6628244766667614c19807f0a452e18",
+      "descriptionVi": "Ngọn giáo được rèn từ bóng tối Underworld và được Shadow Fiend ban sự sống.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A spear forged from the shadows of the Underworld, and given life by the Shadow Fiend."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-fiend-cloak-of-nulgath-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-fiend-cloak-of-nulgath-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-fiend-cloak-of-nulgath-0-ac.html",
+      "sourceHash": "1949484481778f074278ed9648c9a257020efb8399e80aeea1d28c81ded7e34e",
+      "descriptionVi": "Ngươi đã để Void của Fiend nuốt chửng mình, và những bóng tối tranh giành từng phần của ngươi.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: You allowed the Fiend's Void to engulf you, and the shadows fought to have a piece."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "darkon-s-debris-1",
+      "url": "https://aqwwiki.wikidot.com/darkon-s-debris-1",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/darkon-s-debris-1.html",
+      "sourceHash": "a7dfb0b263860cce7cb11f467a8c41acf114395daabe3f114c57feb8b5c60b14",
+      "descriptionVi": "Cơ thể mới của cựu Thái tử được tạo nên từ buổi đầu cuộc hành trình cô độc. Darkon đã hoàn thành lời hứa của gia tộc với Arcana. Vòng tròn khép lại. Cát bụi trở về cát bụi. Đứa con của Alprecha tan vào hư vô, nơi hắn được sinh ra.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: The former Crown Prince's new body was created at the very beginning of his lonely journey. Darkon went on to successfully fulfil his family's promise with the Arcana. The circle is closed. Dust returns to dust. Alprecha's child fades to the nothingness he was born from."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "empowered-darkon-s-debris-1",
+      "url": "https://aqwwiki.wikidot.com/empowered-darkon-s-debris-1",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/empowered-darkon-s-debris-1.html",
+      "sourceHash": "6bf8068a29db453f8bbfee25c754ab1cae11902872adef939a78055fd7f2e8b0",
+      "descriptionVi": "Cơ thể mới của cựu Thái tử được tạo nên từ buổi đầu cuộc hành trình cô độc. Darkon đã hoàn thành lời hứa của gia tộc với Arcana. Vòng tròn khép lại. Cát bụi trở về cát bụi. Đứa con của Alprecha tan vào hư vô, nơi hắn được sinh ra.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [
+        {
+          "kind": "damageToAll",
+          "percent": 35
+        },
+        {
+          "kind": "classPoints",
+          "percent": 25
+        },
+        {
+          "kind": "experience",
+          "percent": 25
+        },
+        {
+          "kind": "gold",
+          "percent": 25
+        },
+        {
+          "kind": "reputation",
+          "percent": 25
+        }
+      ],
+      "quotes": [
+        "Description: The former Crown Prince's new body was created at the very beginning of his lonely journey. Darkon went on to successfully fulfil his family's promise with the Arcana. The circle is closed. Dust returns to dust. Alprecha's child fades to the nothingness he was born from. (Gives 35% more damage to monsters and 25% more Gold/XP/CP/Rep when equipped.)"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "darkon-s-debris-2-recovered",
+      "url": "https://aqwwiki.wikidot.com/darkon-s-debris-2-recovered",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/darkon-s-debris-2-recovered.html",
+      "sourceHash": "e88b4c084bec16addf3c27a08c2cf1ac5e38303a192342322f5f5ccd6eeb9e43",
+      "descriptionVi": "Khi một người bị biến thành Debris Weapon, không ai, kể cả Darkon và Scale, biết chắc linh hồn họ có còn lưu lại hay không. Nếu Suki vẫn ở đó, cô sẽ nghĩ gì về những tội ác bắt đầu từ ngày mình đến Astravia?",
+      "rarity": "Epic Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: When an individual is converted into a Debris Weapon, no one, not even Darkon and the Scale, knows for sure if the soul lingers. If Suki is still there, how would she feel about the atrocities set into motion by her arrival in Astravia?"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "dual-darkon-s-debris-2",
+      "url": "https://aqwwiki.wikidot.com/dual-darkon-s-debris-2",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/dual-darkon-s-debris-2.html",
+      "sourceHash": "d154d63dc53e056958a787a479da417acddb9559fdfbaa1867fea9d50638dc94",
+      "descriptionVi": "Được tạo nên từ Debris từng ngủ yên trong Suki Rivale của Astravia. Chính vũ trụ định đoạt Suki và Darkon phải chia lìa mãi mãi. Bằng một cách nhỏ bé, cựu Thái tử đã chống lại số phận ấy và níu giữ Suki đến tận cùng.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [
+        {
+          "kind": "damageToTagged",
+          "percent": 75,
+          "targets": [
+            "Human"
+          ]
+        }
+      ],
+      "quotes": [
+        "Description: Constructed from the Debris that lay dormant inside the Astravian Suki Rivale. The universe itself decreed that Suki and Darkon were to part forever. The former Prince, in a small way, defied this fate and clung to Suki to the very end. (Gives 75% more damage to Humans when equipped.)"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "chaos-avenger-armor",
+      "url": "https://aqwwiki.wikidot.com/chaos-avenger-armor",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/chaos-avenger-armor.html",
+      "sourceHash": "6a5f539cf13396cc21e3cfe12e51bf6ce9bb1bde4e7342938c99869fab95b317",
+      "descriptionVi": "Trong một dòng thời gian, The Hero đánh bại Drakath và đoạt lấy Chaos Amulet. Thay vì trở thành Slayer tìm cách hủy diệt Lore, The Hero đã trở thành Avenger cứu lấy thế giới.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: In one timeline, The Hero managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "chaos-avenger-s-greatsword",
+      "url": "https://aqwwiki.wikidot.com/chaos-avenger-s-greatsword",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/chaos-avenger-s-greatsword.html",
+      "sourceHash": "d250b4f907ade1ad07abab47e7c00a63c35e758e8a37c2092a10e20dfdf8a576",
+      "descriptionVi": "Trong một dòng thời gian, The Hero đánh bại Drakath và đoạt lấy Chaos Amulet. Thay vì trở thành Slayer tìm cách hủy diệt Lore, The Hero đã trở thành Avenger cứu lấy thế giới.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: In one timeline, The Hero managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "chaos-avenger-s-hook-blade",
+      "url": "https://aqwwiki.wikidot.com/chaos-avenger-s-hook-blade",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/chaos-avenger-s-hook-blade.html",
+      "sourceHash": "46fbad54990b2011ea649db9162fe7122057faac1e296f9e9d9d52dcd5f5fbba",
+      "descriptionVi": "Trong một dòng thời gian, The Hero đánh bại Drakath và đoạt lấy Chaos Amulet. Thay vì trở thành Slayer tìm cách hủy diệt Lore, The Hero đã trở thành Avenger cứu lấy thế giới.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: In one timeline, The Hero managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "chaos-avenger-s-armet",
+      "url": "https://aqwwiki.wikidot.com/chaos-avenger-s-armet",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/chaos-avenger-s-armet.html",
+      "sourceHash": "0b8319789f7b46eb705e10c3038b33d80e9977691fd3bfffc80759b2ad403a56",
+      "descriptionVi": "Trong một dòng thời gian, The Hero đánh bại Drakath và đoạt lấy Chaos Amulet. Thay vì trở thành Slayer tìm cách hủy diệt Lore, The Hero đã trở thành Avenger cứu lấy thế giới.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: In one timeline, The Hero managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "chaos-avenger-s-helm",
+      "url": "https://aqwwiki.wikidot.com/chaos-avenger-s-helm",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/chaos-avenger-s-helm.html",
+      "sourceHash": "91ca70d712b921b374f62b024e7a4f051f75ec9e1dac4609a9d107979565a550",
+      "descriptionVi": "Trong một dòng thời gian, The Hero đánh bại Drakath và đoạt lấy Chaos Amulet. Thay vì trở thành Slayer tìm cách hủy diệt Lore, The Hero đã trở thành Avenger cứu lấy thế giới.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: In one timeline, The Hero managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "chaos-avenger-s-tentacled-armet",
+      "url": "https://aqwwiki.wikidot.com/chaos-avenger-s-tentacled-armet",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/chaos-avenger-s-tentacled-armet.html",
+      "sourceHash": "d3da16f199b0e7e08e55eade9d297c498bdbd5d8850740d619de8d7f3c8b7ab6",
+      "descriptionVi": "Trong một dòng thời gian, The Hero đánh bại Drakath và đoạt lấy Chaos Amulet. Thay vì trở thành Slayer tìm cách hủy diệt Lore, The Hero đã trở thành Avenger cứu lấy thế giới.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: In one timeline, The Hero managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "chaos-avenger-s-cloak",
+      "url": "https://aqwwiki.wikidot.com/chaos-avenger-s-cloak",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/chaos-avenger-s-cloak.html",
+      "sourceHash": "b85dd515ff44e113e8d61cbaed989403ced4c0c605f745d81107d4968d126ac9",
+      "descriptionVi": "Trong một dòng thời gian, The Hero đánh bại Drakath và đoạt lấy Chaos Amulet. Thay vì trở thành Slayer tìm cách hủy diệt Lore, The Hero đã trở thành Avenger cứu lấy thế giới.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: In one timeline, The Hero managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "archpaladin-0-ac",
+      "url": "https://aqwwiki.wikidot.com/archpaladin-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/archpaladin-0-ac.html",
+      "sourceHash": "e8c6346cce95abd642d705b7f1367e90b26401259428088b1c12125b880ec9a2",
+      "descriptionVi": "Là chiến binh thuộc hàng ngũ cao quý nhất của Paladin Order, hãy dùng sức mạnh mới để bảo vệ đức hạnh và công lý. Bóng tối sẽ phải tháo chạy trước ánh sáng chính nghĩa của ngươi!",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Hybrid. As a warrior in one of the Paladin Order’s highest ranks. Use your newfound abilities to fight for virtue and justice, because darkness will flee at the very sight of your righteous light!",
+        "Description: A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage.",
+        "Description: Attack using a weapon infused with the power of light, weakening them up to 6 times, lasting 10 seconds. Your foes are commanded by the light, reducing their outgoing damage, Crit Chance, and Hit Chance by 5%, and Dodge and Defense by 10% per stack. Undead foes take extra damage from the holy light.",
+        "Description: A forgiving light encompasses you and up to 6 allies, recovering a great amount of health that always crits and granting you 20% defense and END for 15 seconds.",
+        "Description: Using holy magic, you temporarily seal the offensive powers of your opponent away. Your foe does 90% less damage for 7 seconds. Undead foes are stunned by the holy power of the seal for 3 seconds.",
+        "Description: Reduces incoming damage by 20%.",
+        "Description: Your credence grants you an extra 100% Endurance and 10% hit chance.",
+        "Description: Invoke your most powerful holy light spell, dealing massive damage to your foes. If your foes are sealed, your holy magic is even stronger, breaking the seal and doing double damage. The effects of the Broken Seal linger, reducing your opponent’s damage dealt by 15% for 25 seconds, stacking up to 2.",
+        "Description: Increases outgoing damage by 20% and Haste by 15%."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "king-s-echo",
+      "url": "https://aqwwiki.wikidot.com/king-s-echo",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/king-s-echo.html",
+      "sourceHash": "a307b11ac7f4bd7b496a097824ab4f88d5a937d8d1077ccb4255fae479824624",
+      "descriptionVi": "Ký ức về người đàn ông đã trở thành huyền thoại của hy vọng. Dân chúng cầu mong một vị vua dẫn dắt mình, và người ấy chính là Alden Alteon.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Wizard. A memory of the man who became a Legend of Hope. The people called upon a King to lead them, and that man was none other than Alden Alteon.",
+        "Description: The King's blade, its magical properties allow it to store and unleash energy. Damage dealt is based on Spell Power and Energy Infusion.",
+        "Description: The mace that liberated the weak from their oppressors. Deals damage based on your Spell Power and applies Censure, reducing your target's Damage Resistance, Crit Chance, and Dodge by 20% for 10 seconds.",
+        "Description: Channel a bolt of electricity through your sword, leaving behind Residual Energy which stacks to 8 and lasts 10 seconds.",
+        "Description: Create a damage nullifying barrier, guarding against most forms of damage for 2 seconds and applying Focus for 4 seconds, which forces your target to attack only you for the duration. These effects can not occur again until CORVAK! is used. Also applies Royal Resolve, increasing your Damage Resistance by 50% while healing you over time for 6 seconds.",
+        "Description: Endurance increased by 200% and Physical Resistance increased by 20%.",
+        "Description: Haste and Crit Chance increased by 25%.",
+        "Description: Call upon your dragon to unleash a powerful energy blast, dealing unavoidable critical damage based on your missing mana and refilling it. The blast Infuses all Residual Energy into your Dragon Sword for 20 seconds, increasing its damage based on the number of stacks and replacing any stacks that are currently Infused.",
+        "Description: Mana Costs reduced by 20% and Hit Chance, Outgoing Magic Damage, and Healing Power increased by 10%."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "lord-of-order-quest",
+      "url": "https://aqwwiki.wikidot.com/lord-of-order-quest",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/lord-of-order-quest.html",
+      "sourceHash": "7c0acada21102831d659776e6e68345785fd25fcbafa24be442093210d963776",
+      "descriptionVi": "Tuyến phòng thủ vững chắc trước những thế lực Chaos tha hóa. Họ chiến đấu vì Order và sự cân bằng của Mirror Realm.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancements: Wizard, Lucky. The best line of defense against the corrupt forces of Chaos. They work to achieve Order and balance in the Mirror Realm.",
+        "Description: Attack with an enchanted weapon, dealing damage based on both attack power and spell power.",
+        "Description: Heighten the inner peace within you and up to 6 allies, strengthening the foundations of your combat style. Applies Empowerment to all targets for 10 seconds, increasing Strength, Intellect, Endurance, Dexterity, Wisdom, and Luck by 20%.",
+        "Description: Purge corruption from yourself and up to 6 allies, healing everyone for a small amount. You return to battle with new strength-- applies Resurgence, increasing Outgoing Damage by 30% for 25 seconds.",
+        "Description: Cast a veil of magic that greatly heightens focus in yourself and up to 6 allies. Applies Clarity, increasing Haste by 30%, and Hit Chance and Critical Damage by 40% for 8 seconds.",
+        "Description: Increases Haste by 20%.",
+        "Description: Damage Resistance increased by 25%.",
+        "Description: Bestow the unrestrained power of order onto your target. Applies Quixotic for 4 seconds, reducing your target's Outgoing Physical and Magical damage by 105%, and Stability for 25 seconds, which prevents Quixotic from applying. Also applies Order, which reduces your target's Outgoing Damage by 4% for 15 seconds, stacks to 5.",
+        "Description: Starting at rank 1, all attacks result in critical hits and can never miss."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "verus-doomknight-class",
+      "url": "https://aqwwiki.wikidot.com/verus-doomknight-class",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/verus-doomknight-class.html",
+      "sourceHash": "6938d7aaae69fbb56d531473017a144db9560755791c246fb66c4015e6cece34",
+      "descriptionVi": "Sức mạnh vượt ngoài tưởng tượng. Quyền thống trị tuyệt đối Lore. Sự nhục nhã dành cho kẻ thù. Đó là những gì ngươi xứng đáng. Thế giới cần một Champion of Doom, và vai trò ấy đã được dành cho ngươi.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancements: Lucky. Power beyond imagination. Complete domination of Lore. The humiliation of your enemies. It's what you deserve. There needs to be a Champion of Doom, and that role was meant for you.",
+        "Description: Strike your target with your Doom Blade. Applies Weakened, reducing your target's outgoing damage by 15% for 20 seconds",
+        "Description: Ravage your target's soul, severely crippling their defenses. Applies Fractured Soul, reducing your target's Damage Resistance by 50% and Physical and Magical Resistance by 30% for 8 seconds.",
+        "Description: Carve into your target, draining life from them and applying Lingering Darkness, a DoT for 6 seconds.",
+        "Description: Raise spikes from the ground, piercing your target. Applies Spiked, reducing your target's Haste and Dodge by 15% for 8 seconds. Can't miss.",
+        "Description: Hit Chance and Haste increased by 20%.",
+        "Description: Endurance and Damage Resistance increased by 50%.",
+        "Description: Release calamitous shadows upon your target, inflicting them with Decay which negates all non lifesteal healing they receive for 3 seconds. If you have 10 stacks of Doom, they are consumed to apply Unleashed Doom, empowering your skills and increasing your outgoing damage by 25% and Haste by 50% for 8 seconds. Can't miss.",
+        "Description: Starting at rank 1, all skills (except Necrotic Blade) grant you 1 stack of Doom, which stacks to 10 and is used for Unleash Doom. While Unleashed Doom is active, you can't gain stacks of Doom. At rank 10, increases your Crit Chance by 10%."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "lich-class",
+      "url": "https://aqwwiki.wikidot.com/lich-class",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/lich-class.html",
+      "sourceHash": "808a3592d1c1768fd04ef3bc9e6b394a327e71ad33b80e6bdcbf6ab3c1c3b1cf",
+      "descriptionVi": "Chỉ trong cái chết, ngươi mới thật sự đón nhận bóng tối bên trong mình. Hãy dùng nó để dựng dậy một đạo quân tử thi và tiến công khắp Lore. Sức mạnh hắc ám nhất giờ thuộc về ngươi!",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Wizard. Only in death can you truly embrace the darkness that lies within you. Channel it to raise an army of the dead and lead an assault across Lore. The darkest power is now yours!",
+        "Description: Unleash a miasma of death, dealing physical damage based on your Spell Power. Applies Death Blight to Humans, an 8 second DoT that stacks to 25.",
+        "Description: Attack alongside your army. Deals double damage if Ex Mortis is active.",
+        "Description: Leech life from your target, dealing damage based on Attack Power while healing you. Applies Withered for 8 seconds, reducing your target's outgoing damage by 40% and Crit Chance and Dodge by 20%. If Ex Mortis is active, applies Necrotic Curse for 8 seconds, reducing your target's Magic Resistance by 40%, and Decay for 2 seconds, negating all non lifesteal healing received.",
+        "Description: Convert your life force into energy, damaging yourself based on Attack Power and restoring 20 mana. If Ex Mortis is active, applies Necrotic Edge, increasing your Crit Chance by 20% and reducing mana costs by 25% for 10 seconds.",
+        "Description: Damage Resistance and DoT Resistance increased by 30%.",
+        "Description: Haste increased by 30% and Hit Chance increased by 20%.",
+        "Description: Summons an army of undead minions to your side (only appears if summoned outside of combat). Applies Deathly Frenzy, increasing your outgoing damage by 150% for 10 seconds. You conjure your darkest magic, applying Ex Mortis which empowers the next skill you use.",
+        "Description: Upon taking lethal damage, negate that instance of damage and apply Survived Death, fully restoring your health and mana. This effect can only occur once every 45 seconds."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "archmage-class",
+      "url": "https://aqwwiki.wikidot.com/archmage-class",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/archmage-class.html",
+      "sourceHash": "d3015f3ffd47e503b32284fc02321261689e806748bc93fe51db1f1acbec61aa",
+      "descriptionVi": "Mana thấm đẫm mọi sự sống và khoảng không. ArchMage dẫn dắt dòng mana tự do trong không khí, tạo nên những hiện tượng vật chất và thay đổi dòng chảy của nó.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: *Note your Weapon Range will show 0-0 while this is equipped* Recommended enhancements: Wizard. Mana is a permeating force, present in all life and space. ArchMage guide the course of free-flowing mana in the air, creating phenomena in the physical world and altering its course.",
+        "Description: Incant an unavoidable status spell and inflict your foes with Leywilt, reducing Dodge by 35%, damage by 25%, and Crit Chance by 15% for 20 seconds.",
+        "Description: Set ablaze the mana current, consuming the foes around you in an intense inferno and thawing any afflicted with Cryostasis. The fire ravenously burns, dealing more damage the lower your MP and leaving them burning based on the damage dealt, stacking to 2 and lasting 6 seconds.",
+        "Description: Still the flow of the mana stream, flash freezing your foes in place and drawing in 15 mana for yourself. Your foes remain in Cryostasis, reducing their Hit Chance and Damage dealt by 30% while they take 30% increased magic damage for 6 seconds.",
+        "Description: Agitated mana bursts forth from you, engulfing your foes in a radiant supernova dealing more damage the lower your life force is.",
+        "Description: Your mastery over the magical arts increases your Hit Chance and Crit Chance by 25%.",
+        "Description: Your ability to attune with the mana flow and influence it grants you 15% Haste.",
+        "Description: Inscribe an Arcane Sigil, significantly increasing your magical power. Your Arcane Sigil increases your Damage Dealt by 30% for 30 seconds, but the Overload of the spell increases your mana costs by 50% for 4 seconds and costs 40% of your current health.",
+        "Description: From rank 5, your Sigils can use Arcane Flux to empower you, shifting you between two forms. At rank 10, 10% INT."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "kathool-adept",
+      "url": "https://aqwwiki.wikidot.com/kathool-adept",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/kathool-adept.html",
+      "sourceHash": "71d90e93e5cdadf43ab5b82e2534a384ceaffaf9ed46bf3c64f1216d1b4aaec1",
+      "descriptionVi": "Ngươi đã không thể cưỡng lại. Kathool cũng vậy.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Wizard. You could not resist, and neither could Kathool.",
+        "Description: Your opponent cannot resist your influence. Applies Madness to your target, reducing Crit Chance and Dodge by 10% + 0.8% per stack for 10 seconds, stacks to 50.",
+        "Description: Summon a tentacle that slams down on your target. Applies Feeding, an HoT that increases your Damage Resistance by 5% for 10 seconds, stacks to 10. While you have 5 stacks of Feeding, gain Writhe, increasing Physical Resistance, Magical Resistance, and Healing Power by 25%.",
+        "Description: Send forth a Tidal Wave that crashes into your target, dealing critical damage and applying Red Tide, reducing Damage Resistance by 10% + 1% per stack of Madness on them for 10 seconds.",
+        "Description: Manifest Tentacles from the Depths. If you have at least 5 Feeding stacks, they're consumed to apply Frenzied Feast, increasing Crit Damage and the damage of Tentacle Slam by 100%, and causing Nightmare Gaze to apply an additional stack of Madness. Lasts 5 seconds and stacks to 2. If you don't have Frenzied Feast, applies Bottom Feeder, doubling the number of Feeding stacks you gain and reducing Crit Damage by 200% for 3 seconds.",
+        "Description: Endurance increased by 30% and Damage Resistance increased by 15%.",
+        "Description: Intellect and Hit Chance increased by 20%.",
+        "Description: Call upon the God of the Depths, dealing unavoidable critical damage and applying effects based on your target's Madness stacks:",
+        "Description: Crit Chance increased by 25%. At 10 stacks of Feeding, applies Symbiogenesis, causing your next Frenzied Feast to share Writhe with your allies for 10 seconds."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "scion-of-flames-class",
+      "url": "https://aqwwiki.wikidot.com/scion-of-flames-class",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/scion-of-flames-class.html",
+      "sourceHash": "ba8420dc9d19c23caf612647abfb668de3cba9901042469e9b5014d4553566b5",
+      "descriptionVi": "Ngươi đã hạ một con quái thú và biến hắn thành người hùng. Ngọn lửa hủy diệt và tái sinh nay thuộc về ngươi. Hãy dùng chúng để thay đổi vận mệnh và định nghĩa sự hoàn hảo.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: *Note your Weapon Range will show 0-0 while this is equipped* Recommended enhancement: Wizard. You slew a beast, and turned him into a hero. The flames of Destruction and rebirth are yours. Use them to change destiny, and define perfection.",
+        "Description: Fuel the Flames of a Magnum Opus Forge, empowering the next skill you use for 20 seconds.",
+        "Description: Scorch your target with putrefying flames. Applies Black Flames to your target, a 6 second fast DoT. Black Flames are consumed by your other damaging skills to deal double damage and apply Cremate, reducing DoT Resistance by 10% for 10 seconds, stacks to 10.",
+        "Description: Consume your opponent in purifying fire! Applies White Flames to your target, a 10 second DoT that reduces Outgoing Damage, Crit Chance, and Dodge by 20%.",
+        "Description: Heals yourself with enlightening flames and applies Burning Ward for 6 seconds, increasing your Damage Resistance by 15%, healing you over time, and causing foes who strike you to take damage, up to 1,000 per hit.",
+        "Description: DoT Power increased by 25% and Damage Resistance increased by 30%.",
+        "Description: Hit Chance and Crit Chance increased by 15%, and Haste increased by 20%.",
+        "Description: Unleash an onslaught of unavoidable fire. Applies Red Flames to your target, a 10 second slow DoT.",
+        "Description: Your flames grant you near immunity to damage over time effects, increasing DoT Resistance to a max of 80% and preventing 20% of DoT Resistance debuffs."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "blaze-binder-merge",
+      "url": "https://aqwwiki.wikidot.com/blaze-binder-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/blaze-binder-merge.html",
+      "sourceHash": "d8f17893a8b96c93dd1d63cadf7d6783f6e915a0cc93a374cb3cb21daf152d25",
+      "descriptionVi": "Fire Binder điều khiển sức mạnh của lửa và bóng tối. Họ nổi danh vì thiêu kẻ thù thành tro rồi trói buộc linh hồn chúng vào sự phục dịch.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Wizard. Fire Binders control the power of fire and darkness. They are known to burn their enemies to a crisp and bind their souls into service.",
+        "Description: Blast your opponents at long range with force bolts.",
+        "Description: Unleash explosive flames on three enemies and then watch them burn with a small DoT for 4 seconds afterwards.",
+        "Description: Your smoke is infused with the power of Darkness and causes your opponents to have a reduced chance of hitting you and occasionally stuns them for 3 seconds. Inhaling the smoke also causes a large DoT lasting for 8 seconds.",
+        "Description: Kindle a flame within you, setting yourself ablaze. Applies Burning Ward which reduces damage taken by 40% while damaging opponents that attack you for 6 seconds, and Blazing Speed which increases haste by 15% for 14 seconds. You also use your darkness powers to restore your life from the ashes around you to apply an HoT for 8 seconds.",
+        "Description: 20% Damage to DoTs",
+        "Description: 10% Outgoing Damage",
+        "Description: You unleash a devastating burst of Dark Fire on 3 opponents. They all take heavy damage and continue to burn from a reasonable DoT for 8 seconds. The fire will also apply either a 10% DoT damage taken debuff or a -10% damage debuff to your enemy.",
+        "Description: Occasionally, your Haste and Mana Regen will GREATLY increase for a short time."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "frostval-barbarian-0-ac",
+      "url": "https://aqwwiki.wikidot.com/frostval-barbarian-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/frostval-barbarian-0-ac.html",
+      "sourceHash": "ce512c33fba06eede924f4728769171c75eefd26e2d762b2eff9628b3c7382fd",
+      "descriptionVi": "Mỗi dịp Frostval, những người du mục phương bắc này đi từ thị trấn này sang thị trấn khác, trao quà và bảo vệ người cần giúp đỡ. Đừng để mình có tên trong danh sách hư của họ, nếu không sẽ nhận món quà khét tiếng nhất: cơn cuồng nộ thuần túy.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Fighter. During Frostval these nomadic wanderers from the north travel from town to town giving gifts and protecting those in need. You don't want to be on their naughty list though, else be on the receiving end of their most infamous gift - their pure rage.",
+        "Description: Swing your poleaxe at your target, dealing unavoidable damage that can't crit. If Enrage is active, has 25% chance to stun your target for 1 second.",
+        "Description: Depress your foe with a wintry blast, dealing unavoidable damage that can't crit and applying Winter's Depress, reducing your target's Haste by 20% for 10 seconds, stacks to 4.",
+        "Description: Your allies are on the nice list, that means presents! Applies Frostval Gifts to you and your allies, a 10 second HoT. If you're Enraged, applies Frozen Beard to yourself instead of Frostval Gifts, increasing Damage Resistance by 30% for 10 seconds.",
+        "Description: Cast a wintry spell, restoring 20 mana for yourself and applying Silver Thaw, Silver Maw, and Silver Jaw to you and your allies. Silver Thaw reduces mana costs by 15%, Silver Maw increases Crit Chance by 10%, and Silver Jaw increases Crit Damage by 20%. Effects last 10 seconds and stack to 4.",
+        "Description: Reduces damage taken by 15%",
+        "Description: Increases haste by 50%",
+        "Description: Your foes are on the naughty list, that means a beating! Deals unavoidable damage that can't crit and applies Enrage, increasing your outgoing damage by 50% and removing Frostval Gifts from yourself.",
+        "Description: Increases Strength by 20%"
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "hollowborn-vindicator",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-vindicator",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-vindicator.html",
+      "sourceHash": "26070ab3fac1067a80fb7aa481bce4924f8306c592feb00ee1e62b8e124342fe",
+      "descriptionVi": "Trong một thời gian và không gian khác, Hero trở thành Hollowborn Vindicator, phòng tuyến cuối cùng trước một vị thần Celestial. Nếu Shadows vẫn còn sau tận thế, hẳn vẫn còn đủ ánh sáng để tạo nên chúng.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended Enhancement: Wizard. In another time and space, the Hero became the Hollowborn Vindicator, the last stand against a Celestial deity. If Shadows linger after the end, that means there's still enough light to cast them.",
+        "Description: A standard attack used by Dawn Vindicators to eradicate monsters. Deals damage based on your Spell Power while applying Reformation, reducing your target's Crit Chance and Dodge by 20% for 30 seconds.",
+        "Description: Punish those who deliver harm upon you, dealing increased damage the lower your health is and healing you for a portion of the damage dealt. Applies Hollow Reckoning, reducing your target's Damage Resistance by 6% for 10 seconds, stacking to 10.",
+        "Description: Siphon Grace from your opponent, consuming Grace Stolen and healing you based on the number of stacks. You gain Graceful, increasing Damage Resistance by 25% for 20 seconds and removing Decay if it's active. Can't miss.",
+        "Description: Purge the evil from this realm, dealing damage based on your target's Grace Stolen stacks. If you're not Decayed, applies Divine Decree to your target, reducing their outgoing damage by 60% for 8 seconds. Can't miss.",
+        "Description: Hit Chance increased by 15%.",
+        "Description: END increased by 150%.",
+        "Description: Call out to the Shadow Fiend to become Hollow for 15 seconds, increasing your Outgoing Damage by 100%, Crit Chance by 40%, and Haste by 10%. Shield yourself from death, applying Safeguard for 6 seconds which blocks up to 2,500 damage. Also applies Decay for 4 seconds, negating all non lifesteal healing you receive and prevent Safeguard from applying. Costs 50% of your max HP.",
+        "Description: Crit Chance increased by 15%."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "arcana-invoker",
+      "url": "https://aqwwiki.wikidot.com/arcana-invoker",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/arcana-invoker.html",
+      "sourceHash": "907143798578a2b7b4f17e1f6f4ba245e5719d08ce93435fa4025177ea0d45fc",
+      "descriptionVi": "Arcana Invoker đã ăn thịt một sinh vật nguyên thủy và được ban khả năng gọi tên, triệu dẫn sức mạnh thần thánh của họ. Họ tiếp nối vòng quay định mệnh và sai khiến số phận.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Wizard. The Arcana Invoker has consumed the flesh of a primordial, granted the ability to invoke their names and call upon their divine power. They continue the cycle of destiny, and command fate.",
+        "Description: Deliver a strike with your blade of flesh. Deals physical damage based on your Attack Power and Spell Power.",
+        "Description: Begin the cycle anew by summoning The Fool, increasing your Damage Resistance by 80% for 122 seconds.",
+        "Description: If The Fool is present, summon an Arcana. Arcana are summoned in a set order, with each one granting you a new effect and the effects of all previously summoned Arcana. Each time an Arcana is summoned, your Damage Resistance is reduced by 2% until The World is summoned.",
+        "Description: Channel a magical attack through your Arcana, applying a Reversed effect to your target based on your currently summoned Arcana. All effects last 22 seconds unless otherwise specified.",
+        "Description:",
+        "Description:",
+        "Description: Perform the Arcana's ritual, using your foe as the offering! Applies Sacrifice to your target, increasing the damage they take from each successive hit of this skill by 150%, up to 22 times.",
+        "Description: Haste, Hit Chance, and Crit Chance increased by 22%."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "chaos-avenger",
+      "url": "https://aqwwiki.wikidot.com/chaos-avenger",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/chaos-avenger.html",
+      "sourceHash": "0df114e811c5c3d7e566e4843e0881a96447b2102b26f48c225ecf08eb809d94",
+      "descriptionVi": "Trong một dòng thời gian, The Hero Dragon of Time đánh bại Drakath và đoạt Chaos Amulet. Thay vì trở thành Slayer tìm cách hủy diệt Lore, The Hero đã trở thành Avenger cứu lấy thế giới.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Lucky. In one timeline, The Hero Dragon of Time managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it.",
+        "Description: Swing your Greatsword down on your target for massive damage. Gain a stack of Chaos Fury, increasing your Crit Chance and Crit Damage by 15% for 12 seconds, stacks to 4. Deals double damage to Branded targets.",
+        "Description: Impale your target with your Greatsword to drain life from them. Chaorrupt your target's defenses, increasing the damage they take by 10% for 15 seconds, stacks to 4.",
+        "Description: Chaos manifests itself, dealing damage while randomly reducing your target's Dodge, Crit Chance, Hit Chance, Haste, and outgoing damage. Each debuff reduces its respective stat by 30% for 20 seconds. Also applies Focus for 4 seconds, which forces your target to attack only you for the duration. Can’t miss and always crits.",
+        "Description: Chaorrupt the raw energy around you and release a portion of it at your target, dealing damage while absorbing the remainder into your armor. Gain Chaotic Armor, healing you over time and granting you 60% defense for 15 seconds.",
+        "Description: Starting at rank 1, all skills (except Chaos Greatsword) Brand your target. Whenever your Chaos Greatsword strikes a Branded target, the Brand is consumed to deal double damage to them and apply Ravaged, which stacks to 8 and is used for Fury Unleashed.",
+        "Description: Strength increased by 50% and Crit Chance increased by 10%",
+        "Description: Deals damage and channels your fury into your greatsword. Gain Unstoppable Force, increasing your haste by 25% for 35 seconds. If your opponent is Ravaged, gain Fury Unleashed, increasing your outgoing damage by 50% for 10 seconds.",
+        "Description: Physical Damage taken reduced by 35% and Endurance increased by 200%."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "stonecrusher-merge",
+      "url": "https://aqwwiki.wikidot.com/stonecrusher-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/stonecrusher-merge.html",
+      "sourceHash": "85979963257c443234b065f096dc161cf6798e3c88404a99c8779d037e35761e",
+      "descriptionVi": "Kết hợp ma thuật tự nhiên của Shaman với sức mạnh của đất mẹ, rồi vận dụng những tinh hoa đã được chứng minh của Bard. Đó chính là class tối thượng đến từ Brightoak Grove!",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Healer. Infuse the natural magic of Shaman with the power of mother earth herself. Apply the tried and tested aspects of Bard, and you have the ultimate class from Brightoak Grove!",
+        "Description: A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+        "Description: Causes a stalagmite to erupt out of the ground at your opponents feet, dealing damage and crippling their defenses. Applies Bruised to the target, increasing all incoming damage in by 8% for 8 seconds. Stacks up to 5 times. Has a 25% chance to apply Magnitude for 2 seconds, increasing your outgoing magical damage by 275%. If Magnitude is applied, immediately has a 50% chance to stun for 4 seconds.",
+        "Description: Harness the residual energy of great battles from ages past trapped beneath the surface. Applies Resonance and Dissonance, increasing Haste and Crit Chance by 30% for the caster and up to 6 friendly targets while improving mana regain. Lasts for 10 seconds. Has a 25% chance to apply Magnitude for 2 seconds, increasing your outgoing magical damage by 275%. If Magnitude is applied, mana costs are immediately reduced for you and your party by 20% for 10 seconds.",
+        "Description: Draw upon the strength within the earth to conjure a barrier of stone. Applies Shielded, increasing Damage Resistance",
+        "Description: Increases haste by 20%",
+        "Description: Increases Endurance by 20%",
+        "Description: Rip open the ground beneath your opponents feet, dealing massive damage. Also applies Aftershock, a DoT that grows stronger with every attack that hits your opponent for 30 seconds. Has a 25% chance to apply Magnitude for 2 seconds, increasing your outgoing magical damage by 275%. If Magnitude is applied, the target becomes caught in a sinkhole, reducing crit rate and haste by 40% for 8 seconds."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "martial-artist-class",
+      "url": "https://aqwwiki.wikidot.com/martial-artist-class",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/martial-artist-class.html",
+      "sourceHash": "0f94172625dd9d2c330a6f5ae323b638aa106ad0a2aeda78e87d6bc401367f98",
+      "descriptionVi": "Bậc thầy võ thuật tung quyền cước mang sức mạnh của những mãnh thú vĩ đại nhất. Họ phiêu bạt qua đất liền và biển cả, rèn giũa kỹ nghệ đến hoàn mỹ và chỉ cúi đầu trước quy tắc danh dự của chính mình.",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended Enhancement: Lucky, Thief. A master of the martial arts, whose punches and kicks fly with the force of the land's greatest beasts. They drift across land and sea, honing their skills to perfection, and bow to no one but their own code of honor.",
+        "Description: Strike your target with a series of punches. Applies different effects based on your current Stance. Can't miss.",
+        "Description: Assume a Frogzard Stance, causing Pummel to reduce your target's Damage Resistance by 8%, stacks to 4. Frogzard based Stances also heal you over time while active. If you already have another non mixed Stance active, it's consumed and the applied effect changes:",
+        "Description: Assume a Gorillaphant Stance, causing Pummel to increase your Crit Damage by 15%, stacks to 6. Gorillaphant based Stances also increase your Crit Chance by 20% while active. If you already have another non mixed Stance active, it's consumed and the applied effect changes:",
+        "Description: Assume a Dragon Stance, causing Pummel to reduce your target's outgoing damage by 15%, stacks to 2. Your first use of pummel after switching to a Dragon based Stance applies Spinning dragon to your target, reducing their next hit to 0. if you already have another non mixed Stance active, it's consumed and the applied effect changes:",
+        "Description: Haste increased by 15%.",
+        "Description: Dodge increased by 30%.",
+        "Description: Concentrate, healing yourself and applying Fully Focused for 7 seconds. While active, Fully Focused reduces your Mana Costs by 100%.",
+        "Description: END and Damage Resistance increased by 20%."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "ultra-elemental-warrior",
+      "url": "https://aqwwiki.wikidot.com/ultra-elemental-warrior",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/ultra-elemental-warrior.html",
+      "sourceHash": "bebe19aedd7027feb0610aa53b5b96e2cae13bedf4d3f4f4034d62df4ccd89c9",
+      "descriptionVi": "Ngươi đã sử dụng sức mạnh của tám Elementals, và giờ có thể làm chủ chúng với tư cách Ultra Elemental Warrior!",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Hybrid. You've wielded the 8 Elementals and are now able to MASTER them as an Ultra Elemental Warrior!",
+        "Description: Strike your opponents from a further range with your Axe.",
+        "Description: Infuse yourself with Elemental Power, reducing your mana cost and Damage Taken by 15% for 5 seconds and priming your elemental abilities. Your blade rends the air, inflicting your foe with a Mana Rift, decreasing their Dodge and Crit Chance by 15% for 10 seconds. Cannot miss but cannot crit.",
+        "Description: Strike your opponent with fiery wrath, dealing large damage and converting your Elemental Power to Fire Magic. If you possess Earth Magic, the fusion makes you Incandescent, increasing your Endurance by 100% and Healing Intake by 200% for 20 seconds. If you possess Energy Magic, the fusion grants you Critical Mass, increasing your Crit Chance by 25% and Crit Damage by 125% for 10 seconds.",
+        "Description: Call upon the power of the earth, healing yourself. If Elemental Power is present, you heal twice as much and convert it into Earth magic. If you possess Fire Magic, the fusion creates Molten Armor, reducing the damage you take by 60% for 20 seconds. If you possess Energy Magic, the fusion grants you an Earthen Blessing, healing you for a small amount over the next 20 seconds.",
+        "Description: The power of darkness grants you 15% increased Strength and 75% increased Endurance.",
+        "Description: The power of Light grants you 15% increased Intellect and 12% increased Haste and Hit Chance.",
+        "Description: Overloaded mana bursts forth from your weapon, dealing great damage to your foe based on your current mana and converting your Elemental Power to Energy Magic. If you possess Fire Magic, the fusion turns you into a Superconductor, increasing your Damage by 50% for 10 seconds. If you possess Earth Magic, the fusion Grounds you, increasing your Haste by 20% for 10 seconds.",
+        "Description: Starting at rank 1, when invoking Elemental Power, you have a very small chance of creating powerful Ice Magic. Fusing this magic with different elements can lead to very brief but powerful effects."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "mythic-elemental-warrior-class",
+      "url": "https://aqwwiki.wikidot.com/mythic-elemental-warrior-class",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/mythic-elemental-warrior-class.html",
+      "sourceHash": "7e33f400fed22d33748e72544c25d3671e8ba8f2e8187d12db42824771b965b1",
+      "descriptionVi": "Ngươi đã sử dụng sức mạnh của tám Elementals, và giờ có thể làm chủ chúng với tư cách Ultra Elemental Warrior!",
+      "boosts": [],
+      "boostReviewStatus": "unverified",
+      "quotes": [
+        "Description: Recommended enhancement: Hybrid. You've wielded the 8 Elementals and are now able to MASTER them as an Ultra Elemental Warrior! (Skills, animations, and icons shared with Ultra and Legendary Elemental Warrior Class)",
+        "Description: Strike your opponents from a further range with your Axe.",
+        "Description: Infuse yourself with Elemental Power, reducing your mana cost and Damage Taken by 15% for 5 seconds and priming your elemental abilities. Your blade rends the air, inflicting your foe with a Mana Rift, decreasing their Dodge and Crit Chance by 15% for 10 seconds. Cannot miss but cannot crit.",
+        "Description: Strike your opponent with fiery wrath, dealing large damage and converting your Elemental Power to Fire Magic. If you possess Earth Magic, the fusion makes you Incandescent, increasing your Endurance by 100% and Healing Intake by 200% for 20 seconds. If you possess Energy Magic, the fusion grants you Critical Mass, increasing your Crit Chance by 25% and Crit Damage by 125% for 10 seconds.",
+        "Description: Call upon the power of the earth, healing yourself. If Elemental Power is present, you heal twice as much and convert it into Earth magic. If you possess Fire Magic, the fusion creates Molten Armor, reducing the damage you take by 60% for 20 seconds. If you possess Energy Magic, the fusion grants you an Earthen Blessing, healing you for a small amount over the next 20 seconds.",
+        "Description: The power of darkness grants you 15% increased Strength and 75% increased Endurance.",
+        "Description: The power of Light grants you 15% increased Intellect and 12% increased Haste and Hit Chance.",
+        "Description: Overloaded mana bursts forth from your weapon, dealing great damage to your foe based on your current mana and converting your Elemental Power to Energy Magic. If you possess Fire Magic, the fusion turns you into a Superconductor, increasing your Damage by 50% for 10 seconds. If you possess Earth Magic, the fusion Grounds you, increasing your Haste by 20% for 10 seconds.",
+        "Description: Starting at rank 1, when invoking Elemental Power, you have a very small chance of creating powerful Ice Magic. Fusing this magic with different elements can lead to very brief but powerful effects."
+      ],
+      "verificationScope": "Class target identity, approved artwork, source/role mapping and lore. Missing rarity/membership and full nested acquisition remain explicit gaps."
+    },
+    {
+      "id": "goddess-of-war-gauntlet",
+      "url": "https://aqwwiki.wikidot.com/goddess-of-war-gauntlet",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/goddess-of-war-gauntlet.html",
+      "sourceHash": "d9271e8c1e70bd06b941363ff5d9955a0fd39ce21b26001a4ca6939e33a78b59",
+      "descriptionVi": "Vừa là khiên, vừa là vũ khí. Vòng tuần hoàn bảo vệ và chinh phục góp phần giữ cân bằng, thúc đẩy Lore tiến về phía trước. Nhiệm vụ của Goddess of War là bảo đảm vòng quay ấy không bao giờ dừng lại.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A shield and a weapon. To defend and conquer, the constant cycle contributes to the balance and progress of Lore. The Goddess of War's role is to ensure that this wheel never stops spinning."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "goddess-of-war-gauntlets",
+      "url": "https://aqwwiki.wikidot.com/goddess-of-war-gauntlets",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/goddess-of-war-gauntlets.html",
+      "sourceHash": "2d288a9ae8ef12d6e28a657b3b559c629ea0e2df738ab27e86556e1f46053fcc",
+      "descriptionVi": "Vừa là khiên, vừa là vũ khí. Vòng tuần hoàn bảo vệ và chinh phục góp phần giữ cân bằng, thúc đẩy Lore tiến về phía trước. Nhiệm vụ của Goddess of War là bảo đảm vòng quay ấy không bao giờ dừng lại.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A shield and a weapon. To defend and conquer, the constant cycle contributes to the balance and progress of Lore. The Goddess of War's role is to ensure that this wheel never stops spinning."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "goddess-of-war-spear",
+      "url": "https://aqwwiki.wikidot.com/goddess-of-war-spear",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/goddess-of-war-spear.html",
+      "sourceHash": "31e1cdf735682e4bc95c853eb641a5c848f4bef917f43c0a51d472ba0bbc830a",
+      "descriptionVi": "Danh vị War được bao kẻ khao khát, bởi Lore và những người bước trên vùng đất này đều tôn sùng chiến trận. Ngọn giáo từng xuyên tim một vị thần suy yếu, không còn xứng đáng với danh vị ấy. Nữ thần đã vươn lên thế chỗ.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: The title of War is a coveted position, for battle is venerated by Lore and all those who march across its lands. This spear plunged into the heart of an ailing god who became unworthy of the title. The goddess rose in their place."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "goddess-of-war-helm",
+      "url": "https://aqwwiki.wikidot.com/goddess-of-war-helm",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/goddess-of-war-helm.html",
+      "sourceHash": "286985a748b58df45e1eb6e1df71b0895229c2913c4c8ab960e226f4ac1f96e2",
+      "descriptionVi": "Chiến tranh nghiền nát giấc mơ của muôn người xuống bùn đất. Chỉ những kẻ hùng mạnh, đủ sức mở ra một kỷ nguyên mới cho Lore, mới vươn lên từ cuộc tàn sát. Goddess of War dùng cảm hứng thần thánh để thắp lửa cho những người xứng đáng.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: War, where the dreams of mice and men are ground into the mud. Only the mighty, those who can forge a new age for Lore, will rise from the carnage. The Goddess of War stokes the flames of the worthy with divine inspiration."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "goddess-of-war-battlefield",
+      "url": "https://aqwwiki.wikidot.com/goddess-of-war-battlefield",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/goddess-of-war-battlefield.html",
+      "sourceHash": "102bdaa473f70d3471da9dfe2234187abc1e0e40acaf1eb2ea40de4cadb582cd",
+      "descriptionVi": "Chiến tranh nghiền nát giấc mơ của muôn người xuống bùn đất. Chỉ những kẻ hùng mạnh, đủ sức mở ra một kỷ nguyên mới cho Lore, mới vươn lên từ cuộc tàn sát. Goddess of War dùng cảm hứng thần thánh để thắp lửa cho những người xứng đáng.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: War, where the dreams of mice and men are ground into the mud. Only the mighty, those who can forge a new age for Lore, will rise from the carnage. The Goddess of War stokes the flames of the worthy with divine inspiration."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "empowered-chaos-avenger-armor",
+      "url": "https://aqwwiki.wikidot.com/empowered-chaos-avenger-armor",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/empowered-chaos-avenger-armor.html",
+      "sourceHash": "f9e1beb8cd05c522426ebc5cc390e7f4c5ec299b72dd7bb1e1506d9c899d5be2",
+      "descriptionVi": "Trong một dòng thời gian, The Hero đánh bại Drakath và đoạt được Chaos Amulet. Thay vì trở thành Slayer muốn hủy diệt Lore, The Hero trở thành Avenger cứu lấy thế giới.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [
+        {
+          "kind": "damageToTagged",
+          "percent": 50,
+          "targets": [
+            "Chaos"
+          ]
+        }
+      ],
+      "quotes": [
+        "Description: In one timeline, The Hero managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it. (Item does 50% more damage to Chaos monsters when equipped)"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-archfiend-runes",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-archfiend-runes",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-archfiend-runes.html",
+      "sourceHash": "2f1b5c65fc83ebdbed171298edbffe6f317fafae5f08758c01bf71cafbbbbca2",
+      "descriptionVi": "Các điều khoản trong hợp đồng của Nation phải luôn được tôn trọng, ngay cả tại Shadowrealm.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: The terms of a Nation contract is to be respected at all times, even in the Shadowrealm."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-chaotic-portal-cape",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-chaotic-portal-cape",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-chaotic-portal-cape.html",
+      "sourceHash": "fdca8a9433d8c61f04f1b2d56117236e2fe00c84741ab71f92c8a952129eaa88",
+      "descriptionVi": "Sau bao năm tháng phiêu lưu, bạn đã mở khóa mọi Chaos Rune trên cổng của Drakath — khoan đã, bên kia là Shadowrealm!",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [
+        {
+          "kind": "gold",
+          "percent": 25
+        }
+      ],
+      "quotes": [
+        "Description: After so many years and adventures, you have unlocked all of the Chaos Runes on Drakath's port - wait, that's the Shadowrealm!",
+        "When equipped, this item provides a 25% bonus to Gold when battling monsters or turning in quests."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-frost-king-s-skull-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-frost-king-s-skull-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-frost-king-s-skull-0-ac.html",
+      "sourceHash": "820f3a38a35a52282a5e5617bc4ed2d0e9420f481e631105d6a4610c3643b709",
+      "descriptionVi": "Kẻ thống trị nào lại đội hộp sọ của nạn nhân? Đó là kẻ muốn gửi đi một lời cảnh cáo.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: What kind of Ruler wears the skull of its victims? Well, one that wants to send a message."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-frost-king-s-stare-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-frost-king-s-stare-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-frost-king-s-stare-0-ac.html",
+      "sourceHash": "11e82d2a6773c0c09828e3b45f5aa5a0948add097bcba866f37cd50692db6a1a",
+      "descriptionVi": "Đôi mắt vô hồn này chỉ tập trung vào một mục đích: báo thù. Thế giới sắp thay đổi…",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: These eyes, though lifeless, focus on the sole purpose of vengeance. The world is about to change…"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-icy-crest-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-icy-crest-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-icy-crest-0-ac.html",
+      "sourceHash": "faebd57aa2178a0e494481e7f39380d669e34c42c2af7c69b991de2f068e9add",
+      "descriptionVi": "Biểu tượng do Bệ hạ lựa chọn. Nó nhắc nhở rằng đừng dừng lại cho đến khi cả thế giới bị băng bao phủ.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A symbol chosen by Your Highness. It's a reminder, to never stop until the whole world is encased in ice."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-frost-queen-s-scythe-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-frost-queen-s-scythe-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-frost-queen-s-scythe-0-ac.html",
+      "sourceHash": "0a66fa3bed27de47778bcda39d124f3c76847762ef1c3aff504730f4e479466d",
+      "descriptionVi": "Người ta nói lưỡi hái này là vũ khí duy nhất phá được lớp băng vĩnh cửu của Nữ hoàng. Bệ hạ nắm giữ cả sự diệt vong lẫn cứu rỗi của bạn.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: It is said this scythe is the only weapon capable of breaking the Queen's eternal ice. Her Highness holds both your doom and your salvation."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-frost-queen-s-tiara-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-frost-queen-s-tiara-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-frost-queen-s-tiara-0-ac.html",
+      "sourceHash": "449ecee12ca8fff6a3e11a39788beb551b159643df42f1df89e4364f38cbd2db",
+      "descriptionVi": "Đôi mắt vô hồn này chỉ tập trung vào một mục đích: báo thù. Thế giới sắp thay đổi…",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: These eyes, though lifeless, focus on the sole purpose of vengeance. The world is about to change…"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-frost-queen-s-skull-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-frost-queen-s-skull-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-frost-queen-s-skull-0-ac.html",
+      "sourceHash": "2b30ef8dc6467f36939eb9c3dff2fa00bdc651be11b0b030b553dc15aa5f3e23",
+      "descriptionVi": "Kẻ thống trị nào lại đội hộp sọ của nạn nhân? Đó là kẻ muốn gửi đi một lời cảnh cáo.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: What kind of Ruler wears the skull of its victims? Well, one that wants to send a message."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-frost-king-s-scepter-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-frost-king-s-scepter-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-frost-king-s-scepter-0-ac.html",
+      "sourceHash": "ac716d5332d2f102c32b245cad4e21f5b81c5f2639eee55f7e4681cc740cf881",
+      "descriptionVi": "Sức mạnh không chỉ để phô trương. Hãy đón nhận, sử dụng nó và trút mối thù lên thế giới này.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Power should not merely be displayed. Embrace it, wield it, and unleash vendetta upon this world."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-frost-king-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-frost-king-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-frost-king-0-ac.html",
+      "sourceHash": "b3e4f53cc142c5049a945e570f1dd26c2b335970217a851d374e7a441d4fb6e8",
+      "descriptionVi": "Một kết cục khác, một thời điểm khác, không còn ai cứu bạn. Sự tái sinh của bạn báo hiệu ngày tàn của thế giới đã đối xử bất công với bạn.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A different outcome, a different time, with no one to save you. Your rebirth means the end of a world that did you wrong."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-frost-queen-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-frost-queen-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-frost-queen-0-ac.html",
+      "sourceHash": "90b4a5d973a0e4883f917cb582b2db290c62e79151d94d397ea57cbe7ae17bee",
+      "descriptionVi": "Một kết cục khác, một thời điểm khác, không còn ai cứu bạn. Sự tái sinh của bạn báo hiệu ngày tàn của thế giới đã đối xử bất công với bạn.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A different outcome, a different time, with no one to save you. Your rebirth means the end of a world that did you wrong."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-necryomancer-s-servant-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-necryomancer-s-servant-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-necryomancer-s-servant-0-ac.html",
+      "sourceHash": "7938d49dbd79d6d2b1b680c6266c00d9337389022f11fee7d0602a777c2a2d2b",
+      "descriptionVi": "Kẻ sống đều mang tội; hình phạt của họ là phải chiến đấu ngay cả sau khi chết.",
+      "rarity": "Awesome Rarity",
+      "boosts": [],
+      "quotes": [
+        "Description: The living are sinners, and as punishment, they are forced to fight, even after death."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "celestial-commander-s-locks",
+      "url": "https://aqwwiki.wikidot.com/celestial-commander-s-locks",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/celestial-commander-s-locks.html",
+      "sourceHash": "f035bce19bbb4a058d2dad82e65275757868fadeeb31e3e4ee7765b15a1cc960",
+      "descriptionVi": "Dù dong buồm trên biển hay giữa bầu trời, chiến thắng luôn nằm trong tầm tay bạn.",
+      "rarity": "Seasonal Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Whether you sail the seas or the skies, victory is always within your reach.(Item does 30% more damage to all tagged monsters when equipped.)",
+        "When equipped, this item does 30% more damage to Dragon, Human, Undead, Chaos, and Elemental monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "celestial-commander-s-sword",
+      "url": "https://aqwwiki.wikidot.com/celestial-commander-s-sword",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/celestial-commander-s-sword.html",
+      "sourceHash": "7ed2a02b25b3949850d8aa1ff251b134413ed3f93ec9d409f9cb8e1c5ed12664",
+      "descriptionVi": "Dù dong buồm trên biển hay giữa bầu trời, chiến thắng luôn nằm trong tầm tay bạn.",
+      "rarity": "Seasonal Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Whether you sail the seas or the skies, victory is always within your reach.(Item does 30% more damage to all tagged monsters when equipped.)",
+        "When equipped, this item does 30% more damage to Dragon, Human, Undead, Chaos, and Elemental monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "celestial-commander-s-hat-morph",
+      "url": "https://aqwwiki.wikidot.com/celestial-commander-s-hat-morph",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/celestial-commander-s-hat-morph.html",
+      "sourceHash": "6054838ba0e51a49e99ac5e1294773fa3bc24d4ed013f85c49bc5412c1dfa4a1",
+      "descriptionVi": "Dù dong buồm trên biển hay giữa bầu trời, chiến thắng luôn nằm trong tầm tay bạn.",
+      "rarity": "Seasonal Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Whether you sail the seas or the skies, victory is always within your reach.(Item does 30% more damage to all tagged monsters when equipped.)",
+        "When equipped, this item does 30% more damage to Dragon, Human, Undead, Chaos, and Elemental monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "astravian-corsair-hat-locks",
+      "url": "https://aqwwiki.wikidot.com/astravian-corsair-hat-locks",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/astravian-corsair-hat-locks.html",
+      "sourceHash": "8a47f45740b0b5aab0397bd0755f4543de6ad577d8e1209210c8894c00001d8a",
+      "descriptionVi": "Mặt biển phản chiếu các vì sao. Khi ngôi sao của họ biến mất vào sâu trong vũ trụ, Corsair quỳ một gối và bỏ mũ để tưởng niệm.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: The sea mirrors the stars. When their star disappeared into the depths of space, the Corsair bent on one knee and took off their hat in mourning."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "astravian-corsair-s-coat",
+      "url": "https://aqwwiki.wikidot.com/astravian-corsair-s-coat",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/astravian-corsair-s-coat.html",
+      "sourceHash": "0ee0b0d7888a32452b672a66965a0941fb068d055fc0dbe228b6f4f6ff5cf645",
+      "descriptionVi": "Nhắc tên vị vua cuối cùng của Astravia trên tàu của Corsair thì bạn sẽ bị nhổ nước bọt vào mặt. Nhưng họ không thể phủ nhận: Drago có phong cách đáng để bắt chước.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Speak the last King of Astravia's name on board the Corsair's ship and you'll be spat at. But they can't deny, Drago had style worth stealing."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "astravian-corsair-coat-and-blade",
+      "url": "https://aqwwiki.wikidot.com/astravian-corsair-coat-and-blade",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/astravian-corsair-coat-and-blade.html",
+      "sourceHash": "5121f09bd5c2059d55ad66e03debb1be8814a70c9dcf5148cc7f3da88ed9bbf0",
+      "descriptionVi": "Nhắc tên vị vua cuối cùng của Astravia trên tàu của Corsair thì bạn sẽ bị nhổ nước bọt vào mặt. Nhưng họ không thể phủ nhận: Drago có phong cách đáng để bắt chước.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Speak the last King of Astravia's name on board the Corsair's ship and you'll be spat at. But they can't deny, Drago had style worth stealing."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "gilded-inquisitor-s-female-morph",
+      "url": "https://aqwwiki.wikidot.com/gilded-inquisitor-s-female-morph",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/gilded-inquisitor-s-female-morph.html",
+      "sourceHash": "aa78190f4ab5ef2b6bef557f8b5ed80f50e7e1e9a163f7de5104d4e7336c0903",
+      "descriptionVi": "Sau khi khuất phục trước sức hút từ bóng tối của Gravelyn, những cựu thành viên Citadel Inquisitors sẵn sàng đáp lời triệu tập chiến đấu của cô bất kể ngày đêm. Dù có chết, họ biết mình sẽ luôn trở lại phụng sự cô.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: After succumbing to the lure of Gravelyn's darkness, former members of the Citadel Inquisitors are ready to answer Gravelyn's call to battle at any time, day or night. Though they may die, they know they will always return in her service."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "gilded-inquisitor-s-male-morph",
+      "url": "https://aqwwiki.wikidot.com/gilded-inquisitor-s-male-morph",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/gilded-inquisitor-s-male-morph.html",
+      "sourceHash": "fb62486d8ca6bd34e5b1c79d2ed4279b9e0345859dd049f13a48db786ab627c5",
+      "descriptionVi": "Sau khi khuất phục trước sức hút từ bóng tối của Gravelyn, những cựu thành viên Citadel Inquisitors sẵn sàng đáp lời triệu tập chiến đấu của cô bất kể ngày đêm. Dù có chết, họ biết mình sẽ luôn trở lại phụng sự cô.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: After succumbing to the lure of Gravelyn's darkness, former members of the Citadel Inquisitors are ready to answer Gravelyn's call to battle at any time, day or night. Though they may die, they know they will always return in her service."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "golden-inquisitor-s-hair",
+      "url": "https://aqwwiki.wikidot.com/golden-inquisitor-s-hair",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/golden-inquisitor-s-hair.html",
+      "sourceHash": "016c8c703a5721296353f6c609e444ad65d398bb2b339f414f0dcad6f4bc0b74",
+      "descriptionVi": "Sau khi khuất phục trước sức hút từ bóng tối của Gravelyn, những cựu thành viên Citadel Inquisitors sẵn sàng đáp lời triệu tập chiến đấu của cô bất kể ngày đêm. Dù có chết, họ biết mình sẽ luôn trở lại phụng sự cô.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: After succumbing to the lure of Gravelyn's darkness, former members of the Citadel Inquisitors are ready to answer Gravelyn's call to battle at any time, day or night. Though they may die, they know they will always return in her service."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "shadowscythe-general-class-merge",
+      "url": "https://aqwwiki.wikidot.com/shadowscythe-general-class-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/shadowscythe-general-class-merge.html",
+      "sourceHash": "19cf4dc568f1478d749250ab71907f1bdfc7ea40bece54a9de7001c3abd9c3c3",
+      "descriptionVi": "Enhancement khuyên dùng: Lucky, Hybrid. Nhờ sức mạnh của Noxus, bạn tái sinh thành một Undead General! Paladin, Lightcaster và cả High Lord đều run sợ trước sự hiện diện hắc ám của bạn.",
+      "rarity": null,
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended enhancements: Lucky, Hybrid. By the power of Noxus, you have been reborn as an Undead General! Paladins, Lightcasters and even High Lords tremble at your dark presence."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "scarlet-sorceress-0-ac",
+      "url": "https://aqwwiki.wikidot.com/scarlet-sorceress-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/scarlet-sorceress-0-ac.html",
+      "sourceHash": "7c23f516b4b9baa92a6c8d2b650fff4c0a51ac452d178612f9309aa68033adcc",
+      "descriptionVi": "Enhancement khuyên dùng: Wizard. Blood Mage lấy sức mạnh từ máu trong huyết quản. Scarlet Sorceress tập trung vào sức mạnh từ những tấm gương kết hợp năng lượng Arcane.",
+      "rarity": null,
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended enhancement: Wizard. Blood Mages source their power from the blood in their veins. As for the Scarlet Sorceress, she focuses on the powers of her mirrors mixed in with Arcane energy."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "evolved-leprechaun-merge",
+      "url": "https://aqwwiki.wikidot.com/evolved-leprechaun-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/evolved-leprechaun-merge.html",
+      "sourceHash": "d6fba5c3d0acf2dccf3c3b9bd61fcd8afcbefc9e2e4a579e76c85099f77a7963",
+      "descriptionVi": "Enhancement khuyên dùng: Lucky. May mắn đứng về phía bạn. Bạn đã đưa việc trở thành Leprechaun lên một tầm cao mới, để vận may phi thường dẫn mình vào trận chiến!",
+      "rarity": null,
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended enhancement: Lucky. Luck is on your side. You have taken being a Leprechaun to a whole new level and you let your amazing Luck guide you into battle!"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "chrono-assassin-merge",
+      "url": "https://aqwwiki.wikidot.com/chrono-assassin-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/chrono-assassin-merge.html",
+      "sourceHash": "0e4f5e51764b2571192530afc1e8994608b32f02e534b95b920f354f9ec89d86",
+      "descriptionVi": "Enhancement khuyên dùng: Thief. Làm chủ thời gian và không gian như Xeven. Theo đúng nghĩa đen, xé toạc kết cấu thời gian trong vai Chrono Assassin.",
+      "rarity": null,
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended enhancement: Thief. Master time and space like Xeven. Tear through the fabric of time literally as a Chrono Assassin."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "dragonslayer-general-class-merge",
+      "url": "https://aqwwiki.wikidot.com/dragonslayer-general-class-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/dragonslayer-general-class-merge.html",
+      "sourceHash": "c47f605da71e8dd1c3c10fda06ab78da6445d34e40678d4ae10710912b4cc3a9",
+      "descriptionVi": "Enhancement khuyên dùng: Fighter. Chúc mừng, bạn đã chứng tỏ giá trị của một Dragonslayer để trở thành General! Chỉ những người giỏi nhất mới có thể dập tắt cơn thịnh nộ của các mãnh thú mạnh đến phi lý ấy và sống sót kể lại.",
+      "rarity": null,
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended enhancement: Fighter. Congratulations, you've proven your worth as a Dragonslayer to become a General! Only the best of the best can quell the wrath of such impossibly powerful beasts and live to tell the tale."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "doom-metal-necro",
+      "url": "https://aqwwiki.wikidot.com/doom-metal-necro",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/doom-metal-necro.html",
+      "sourceHash": "dae82b3b93a8fd29432830375bc4d8eef04f78718bd083553042bc4c8d5973c4",
+      "descriptionVi": "Bản sao của Heavy Metal Necro Class. Enhancement khuyên dùng: Fighter/Luck. Dark Metal Necro là thế lực đáng gờm trong mosh pit. Giống ban nhạc mà họ hâm mộ cuồng nhiệt, họ dùng những đoạn riff chết chóc, giọng hát hùng mạnh và thuật gọi hồn để buộc kẻ thù khuất phục.",
+      "rarity": null,
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: [Duplicate of Heavy Metal Necro Class] Recommended Enhancement: Fighter/Luck Dark Metal Necros are a force to be reckoned with in a mosh pit. Like the band they're die-hard fans of, they utilize their deathly riffs, mighty voices, and necromantic abilities to crush their foes into submission."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "unundead-goat",
+      "url": "https://aqwwiki.wikidot.com/unundead-goat",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/unundead-goat.html",
+      "sourceHash": "de2dbbf832d284affd6e5c337f01775f87d02729d46d4bdd6bc15e766f405290",
+      "descriptionVi": "Enhancement khuyên dùng: Fighter, Lucky. Maaaa. Baaaa. Này, lại là tôi đây. Có vẻ giờ chúng ta là dê rồi. Chà, cỏ ngon quá, và đi lại cả ngày thật vui. Ôi, tôi rất thích chẳng làm gì cả!",
+      "rarity": null,
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended enhancement: Fighter, Lucky. Maaaa. Baaaa. (Hey it's me again. Looks like we're a goat now. Yum, this grass is delicious, and walking around all day is so much fun. Wow, I just love doing absolutely nothing!"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "vampire-lord-class-merge",
+      "url": "https://aqwwiki.wikidot.com/vampire-lord-class-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/vampire-lord-class-merge.html",
+      "sourceHash": "1bf0ea30e342ea545662177c2aad20ab495234b8d200de62845325d8c7593934",
+      "descriptionVi": "Enhancement khuyên dùng: Wizard, Lucky. Vampire Lord cai trị những tôi tớ khát máu; nhờ uống máu người phàm, họ có thể sống mãi. Nhưng đừng cho họ xem gương, nếu không bạn có thể chẳng thích thứ mình không nhìn thấy đâu.",
+      "rarity": null,
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended Enhancements: Wizard, Lucky. Vampire Lords rule over their sanguine servants and, feasting on the blood of mortals, they can live forever. Don't show one a mirror though, or you might not like what you don't see."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "shadow-dragon-shinobi-class-merge",
+      "url": "https://aqwwiki.wikidot.com/shadow-dragon-shinobi-class-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/shadow-dragon-shinobi-class-merge.html",
+      "sourceHash": "a55ab67056652f56b293c66502f82cd0368bfb3a2e251ad76b9803b362bb8da2",
+      "descriptionVi": "Enhancement khuyên dùng: Thief. Ninja nổi tiếng khéo léo; Dragon được ca ngợi vì sức mạnh. Khi Ninja tu luyện theo con đường Dragon, họ sẽ thành Dragon Shinobi, bậc thầy chiến tranh tàn khốc!",
+      "rarity": null,
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended enhancement: Thief. Ninjas are hailed for their dexterity. Dragons are praised for their strength. And when the Ninja trains in the way of the Dragon, they shall become the Dragon Shinobi, master of brutal warfare!"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "heroic-naval-commander",
+      "url": "https://aqwwiki.wikidot.com/heroic-naval-commander",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/heroic-naval-commander.html",
+      "sourceHash": "68263704284ad66d40b741a6970cce6d317f9e7565365524306196c6001e7c80",
+      "descriptionVi": "Bản sao của Naval Commander Class. Enhancement khuyên dùng: Lucky, Thief. Yarrrr! Naval Commander thực thụ hiểu rằng phải chiến đấu cùng thủy thủ đoàn!",
+      "rarity": null,
+      "boosts": [],
+      "quotes": [
+        "Description: [Duplicate of Naval Commander Class] Recommended enhancement: Lucky, Thief. Yarrrr! True Naval commanders know they need to battle with a crew!"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "dragon-malgor-visage",
+      "url": "https://aqwwiki.wikidot.com/dragon-malgor-visage",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/dragon-malgor-visage.html",
+      "sourceHash": "b64824187c99505051bf51c96113a3e9ff26cf66010a75b94659eddb6fff94d4",
+      "descriptionVi": "Hình dạng Malgor tự nguyện chọn để gần gũi hơn với đấng tạo ra mình. Ngay ở đỉnh cao tiềm năng và sức mạnh, shadowflame của hắn vẫn không thể tạo nên hình ảnh tương xứng lý tưởng.",
+      "rarity": "Legendary Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A form voluntarily taken by Malgor, who wished to be closer to his creator. Even at the peak of his potential and power, his shadowflame can't make an ideal match"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "malgor-s-half-wing",
+      "url": "https://aqwwiki.wikidot.com/malgor-s-half-wing",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/malgor-s-half-wing.html",
+      "sourceHash": "fb4046d2e75c391529ff9349c3f1492222de47128f68739d7807f487f0a7eb05",
+      "descriptionVi": "Phần cơ thể hiếm khi thấy của Malgor. Nó là bằng chứng nguồn gốc, dấu ấn kiêu hãnh và cũng là nguồn cay đắng.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A part of Malgor that is seldom seen. It is proof of his orgins, a mark of pride, and a source of bitterness."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "malgor-s-half-wing-and-tail",
+      "url": "https://aqwwiki.wikidot.com/malgor-s-half-wing-and-tail",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/malgor-s-half-wing-and-tail.html",
+      "sourceHash": "73decf192ca6601c5f28550555e60b4cafdda1c7aabd6a284c8881d1a61c7280",
+      "descriptionVi": "Phần cơ thể hiếm khi thấy của Malgor. Nó là bằng chứng nguồn gốc, dấu ấn kiêu hãnh và cũng là nguồn cay đắng.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: A part of Malgor that is seldom seen. It is proof of his orgins, a mark of pride, and a source of bitterness."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "empowered-chaos-avenger-s-greatsword",
+      "url": "https://aqwwiki.wikidot.com/empowered-chaos-avenger-s-greatsword",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/empowered-chaos-avenger-s-greatsword.html",
+      "sourceHash": "e9fd9ce3b297809279fdb9ece505593c4170bf0c1b377d488a695510bb0aa39a",
+      "descriptionVi": "Trong một dòng thời gian, The Hero đánh bại Drakath và chiếm được Chaos Amulet của hắn. Thay vì trở thành Slayer tìm cách hủy diệt Lore, The Hero trở thành Avenger cứu lấy thế giới ấy.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: In one timeline, The Hero managed to defeat Drakath and get a hold of their Chaos Amulet. Instead of becoming the Slayer who tried to destroy Lore, The Hero became the Avenger that saved it. (Item does 75% more damage to Chaos monsters when equipped)"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "drago-s-royal-guard-s-helmet",
+      "url": "https://aqwwiki.wikidot.com/drago-s-royal-guard-s-helmet",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/drago-s-royal-guard-s-helmet.html",
+      "sourceHash": "0d6db2ccf643e57d665fdee6f956a289048abb1dbcf809416e4645a7dd8b0b60",
+      "descriptionVi": "Nhiều lính canh từng cố bỏ lại mũ, chạy trốn bạo chúa và những việc ác mình gây ra. Địa hình khắc nghiệt của Astravia luôn đẩy họ trở lại dưới bóng nhà vua.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Many a guard has tried to leave their helmet behind, fleeing from their tyrant and their own misdeeds. The unforgiving terrain of Astravia always turns them back to their King's shadow."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "drago-s-royal-guard-s-cloak",
+      "url": "https://aqwwiki.wikidot.com/drago-s-royal-guard-s-cloak",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/drago-s-royal-guard-s-cloak.html",
+      "sourceHash": "2779ab532fb18c5318957fed6363ba7a73bbf01d4b3490a06ae38d46c682cd8c",
+      "descriptionVi": "Đích thân Alprecha's Beloved khoác chiếc áo này lên vai những vệ sĩ tinh nhuệ. Đây là khoảng cách gần các vì sao nhất mà Royal Guard có thể chạm tới.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Alprecha's Beloved themselves would drape this cape over the shoulders of their elite protectors. This is as close as the Royal Guards can get to the stars."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "dene-s-axe",
+      "url": "https://aqwwiki.wikidot.com/dene-s-axe",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/dene-s-axe.html",
+      "sourceHash": "be6451b38d308e5b898113f319cc64595a34d2a0dd6d6d8ac115fee36363c1e5",
+      "descriptionVi": "Bằng chứng chiến thắng của bạn trước Executioner Dene. Re từng phải kiềm chế hết sức để không dùng chiếc rìu này chặt đầu hắn từ trước. Cô muốn dành vinh dự ấy cho bạn.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Proof of your victory over Executioner Dene. It took all of Re's self control to keep from chopping his head off with this axe earlier. She'd rather you have the honor.",
+        "When equipped, this item does 40% more damage to Human Monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "algie-s-bow",
+      "url": "https://aqwwiki.wikidot.com/algie-s-bow",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/algie-s-bow.html",
+      "sourceHash": "43216c4fdd5b95524673ae4e6271b909174656c20946b9d41b60569c94b09496",
+      "descriptionVi": "Bằng chứng chiến thắng của bạn trước Bowmaster Algie. Re nở nụ cười rộng hơn khi biết kẻ phản bội đã chết. “Muộn 22 năm”, cô nói.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Proof of your victory over Bowmaster Algie. Re's smile widened as she learned of the traitor's demise. \"22 years late\" she said.",
+        "When equipped, this item does 40% more damage to Human Monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "deathknight-lord-merge",
+      "url": "https://aqwwiki.wikidot.com/deathknight-lord-merge",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/deathknight-lord-merge.html",
+      "sourceHash": "da630199a83165295db7c655db9215b9afc1834caa16d1e3d966c2bae8524dfa",
+      "descriptionVi": "Enhancement khuyên dùng: Fighter. VADEN TÁN THÀNH LỰA CHỌN CỦA BẠN! Phiên bản class này cần 30 Shadow Skull từ quest My Final Recipe của Chef Ramskull ở /bonecastle, sau khi hoàn thành các quest của ông. Cần Membership để nhận Shadow Skull.",
+      "rarity": null,
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended enhancement: Fighter. VADEN APPROVES OF YOUR CHOICE! (This version of the class requires 30 Shadow Skulls from the My Final Recipe quest, available from Chef Ramskull in /bonecastle after completing his quests. Membership is required to obtain Shadow Skulls.)"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "archfiend-0-ac",
+      "url": "https://aqwwiki.wikidot.com/archfiend-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/archfiend-0-ac.html",
+      "sourceHash": "ef2d70c2835044a4a911a671f8dfd36a443cdbb18cd02e3c1f61cf559c60e14c",
+      "descriptionVi": "Enhancement khuyên dùng: Lucky. Các ArchFiend hùng mạnh của Abyss rút sức mạnh từ bóng tối vĩnh cửu và tràn qua kẻ thù như một làn sóng tàn sát. Bị trưng dụng phụng sự Abyssal Army đời đời, ArchFiend mãi trung thành.",
+      "rarity": null,
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Recommended Enhancement: Lucky. The mighty ArchFiends of the Abyss draw power from the eternal darkness, and wash over their foes in a wave of carnage. Conscripted into service for the Abyssal Army for an eternity, ArchFiends are forever loyal."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "gold-exalted-paladin-blade",
+      "url": "https://aqwwiki.wikidot.com/gold-exalted-paladin-blade",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/gold-exalted-paladin-blade.html",
+      "sourceHash": "3eeff9ac7d8c515e3c59a1a41bc05ad425b719427c8adf2d75a829dc405d18e2",
+      "descriptionVi": "Nếu Trolle'din có phiên bản giáp cải tiến này, hẳn ông khó mà bỏ mạng. Nhưng dù sao, người chúng ta đang nói tới vẫn là Trolle'din. Có lẽ ông vẫn sẽ mắc đúng cái bẫy ấy.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Had Trolle'din had the improved version of this armor, it is doubtful that he would have perished. Then again, this IS Trolle'din we are talking about. He probably would have fallen for the same trick."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "gold-exalted-paladin-axe",
+      "url": "https://aqwwiki.wikidot.com/gold-exalted-paladin-axe",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/gold-exalted-paladin-axe.html",
+      "sourceHash": "7c937a35e8a87c82668fc6bff7cf7dba6389ce44641ab28dc1a4562a465e3883",
+      "descriptionVi": "Nếu Trolle'din có phiên bản giáp cải tiến này, hẳn ông khó mà bỏ mạng. Nhưng dù sao, người chúng ta đang nói tới vẫn là Trolle'din. Có lẽ ông vẫn sẽ mắc đúng cái bẫy ấy.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Had Trolle'din had the improved version of this armor, it is doubtful that he would have perished. Then again, this IS Trolle'din we are talking about. He probably would have fallen for the same trick."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "gold-exalted-spears-of-light",
+      "url": "https://aqwwiki.wikidot.com/gold-exalted-spears-of-light",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/gold-exalted-spears-of-light.html",
+      "sourceHash": "c4a8ffd7f684ea0669b045ff12fed11ebdd46eeb36d92ed3a044e6437d0fe635",
+      "descriptionVi": "Nếu Trolle'din có phiên bản giáp cải tiến này, hẳn ông khó mà bỏ mạng. Nhưng dù sao, người chúng ta đang nói tới vẫn là Trolle'din. Có lẽ ông vẫn sẽ mắc đúng cái bẫy ấy.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Had Trolle'din had the improved version of this armor, it is doubtful that he would have perished. Then again, this IS Trolle'din we are talking about. He probably would have fallen for the same trick."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "gold-exalted-helmet",
+      "url": "https://aqwwiki.wikidot.com/gold-exalted-helmet",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/gold-exalted-helmet.html",
+      "sourceHash": "90b20fb2f185312ab1b03081556f20cd47f7ca0a61d9e2d519aa099f3f1cc9a3",
+      "descriptionVi": "Nếu Trolle'din có phiên bản giáp cải tiến này, hẳn ông khó mà bỏ mạng. Nhưng dù sao, người chúng ta đang nói tới vẫn chính là Trolle'din. Có lẽ ông vẫn sẽ mắc đúng cái bẫy ấy.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Had Trolle'din had the improved version of this armor, it is doubtful that he would have perished. Then again, this IS the Trolle'din we are talking about. He probably would have fallen for the same trick."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "gold-exalted-visor",
+      "url": "https://aqwwiki.wikidot.com/gold-exalted-visor",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/gold-exalted-visor.html",
+      "sourceHash": "dbc7c8bea5651ce0e7374a86edce19bf5ed656396fe3d62656fe4e89f9e92092",
+      "descriptionVi": "Nếu Trolle'din có phiên bản giáp cải tiến này, hẳn ông khó mà bỏ mạng. Nhưng dù sao, người chúng ta đang nói tới vẫn chính là Trolle'din. Có lẽ ông vẫn sẽ mắc đúng cái bẫy ấy.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Had Trolle'din had the improved version of this armor, it is doubtful that he would have perished. Then again, this IS the Trolle'din we are talking about. He probably would have fallen for the same trick."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "gold-exalted-winged-visor",
+      "url": "https://aqwwiki.wikidot.com/gold-exalted-winged-visor",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/gold-exalted-winged-visor.html",
+      "sourceHash": "fe8cbfe00b74b22ff276fccc9429ce3352606bddd959697d534243b91e971611",
+      "descriptionVi": "Nếu Trolle'din có phiên bản giáp cải tiến này, hẳn ông khó mà bỏ mạng. Nhưng dù sao, người chúng ta đang nói tới vẫn chính là Trolle'din. Có lẽ ông vẫn sẽ mắc đúng cái bẫy ấy.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Had Trolle'din had the improved version of this armor, it is doubtful that he would have perished. Then again, this IS the Trolle'din we are talking about. He probably would have fallen for the same trick."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "rolling-vordred-head",
+      "url": "https://aqwwiki.wikidot.com/rolling-vordred-head",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/rolling-vordred-head.html",
+      "sourceHash": "95cc3a84fd14005ba741cdd60a292b7549b89188ebaff4703f7047922db2389d",
+      "descriptionVi": "Có người nói đến tận hôm nay nó vẫn đang lăn theo bạn.",
+      "rarity": "Legendary Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Some say he's still rolling after you to this day."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "skullbreaker-s-blade",
+      "url": "https://aqwwiki.wikidot.com/skullbreaker-s-blade",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/skullbreaker-s-blade.html",
+      "sourceHash": "f70b3033697d9f64768c89527ed747bd915a8ad6c2fd5f2d7efa0fb93c96e435",
+      "descriptionVi": "BẠN LÀ SKULLBREAKER KNIGHT, ĐƯỢC PALADINSLAYER VORDRED HUẤN LUYỆN. PHẢI CÓ NHIỀU KỸ NĂNG VÀ ĐẬP VỠ RẤT NHIỀU ĐẦU LÂU MỚI ĐƯỢC HẮN CÔNG NHẬN. GIỜ ĐI ĐẬP THÊM NỮA. THÊM ĐẦU LÂU.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: YOU ARE A SKULLBREAKER KNIGHT, TRAINED BY PALADINSLAYER VORDRED. IT TOOK MUCH SKILL AND MANY BROKEN SKULLS TO GAIN HIS APPROVAL. NOW GO BREAK MORE. MORE SKULLS."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "skullbreaker-s-dagger",
+      "url": "https://aqwwiki.wikidot.com/skullbreaker-s-dagger",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/skullbreaker-s-dagger.html",
+      "sourceHash": "0e1f35393a410551bec29dfa4bd28e967ac9cee9ab9509a71734f2e60dd353ef",
+      "descriptionVi": "BẠN LÀ SKULLBREAKER KNIGHT, ĐƯỢC PALADINSLAYER VORDRED HUẤN LUYỆN. PHẢI CÓ NHIỀU KỸ NĂNG VÀ ĐẬP VỠ RẤT NHIỀU ĐẦU LÂU MỚI ĐƯỢC HẮN CÔNG NHẬN. GIỜ ĐI ĐẬP THÊM NỮA. THÊM ĐẦU LÂU.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: YOU ARE A SKULLBREAKER KNIGHT, TRAINED BY PALADINSLAYER VORDRED. IT TOOK MUCH SKILL AND MANY BROKEN SKULLS TO GAIN HIS APPROVAL. NOW GO BREAK MORE. MORE SKULLS."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "skullbreaker-s-reaver",
+      "url": "https://aqwwiki.wikidot.com/skullbreaker-s-reaver",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/skullbreaker-s-reaver.html",
+      "sourceHash": "ba0455fee1d85fa35755848349beba7dfdf30352e0c9a54b2991988af713162c",
+      "descriptionVi": "BẠN LÀ SKULLBREAKER KNIGHT, ĐƯỢC PALADINSLAYER VORDRED HUẤN LUYỆN. PHẢI CÓ NHIỀU KỸ NĂNG VÀ ĐẬP VỠ RẤT NHIỀU ĐẦU LÂU MỚI ĐƯỢC HẮN CÔNG NHẬN. GIỜ ĐI ĐẬP THÊM NỮA. THÊM ĐẦU LÂU.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: YOU ARE A SKULLBREAKER KNIGHT, TRAINED BY PALADINSLAYER VORDRED. IT TOOK MUCH SKILL AND MANY BROKEN SKULLS TO GAIN HIS APPROVAL. NOW GO BREAK MORE. MORE SKULLS."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "skullbreaker-knight-s-hood",
+      "url": "https://aqwwiki.wikidot.com/skullbreaker-knight-s-hood",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/skullbreaker-knight-s-hood.html",
+      "sourceHash": "6053a9596ec5b302379e00b773cf6e9db2e3ce5ec8e9730f043f4f89bf82fb52",
+      "descriptionVi": "BẠN LÀ SKULLBREAKER KNIGHT, ĐƯỢC PALADINSLAYER VORDRED HUẤN LUYỆN. PHẢI CÓ NHIỀU KỸ NĂNG VÀ ĐẬP VỠ RẤT NHIỀU ĐẦU LÂU MỚI ĐƯỢC HẮN CÔNG NHẬN. GIỜ ĐI ĐẬP THÊM NỮA. THÊM ĐẦU LÂU.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: YOU ARE A SKULLBREAKER KNIGHT, TRAINED BY PALADINSLAYER VORDRED. IT TOOK MUCH SKILL AND MANY BROKEN SKULLS TO GAIN HIS APPROVAL. NOW GO BREAK MORE. MORE SKULLS."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "skullbreaker-s-hooded-skull",
+      "url": "https://aqwwiki.wikidot.com/skullbreaker-s-hooded-skull",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/skullbreaker-s-hooded-skull.html",
+      "sourceHash": "1ab821308e7301f5d79e8af39e035920e5516c016653c2f431afaefba44f8e72",
+      "descriptionVi": "BẠN LÀ SKULLBREAKER KNIGHT, ĐƯỢC PALADINSLAYER VORDRED HUẤN LUYỆN. PHẢI CÓ NHIỀU KỸ NĂNG VÀ ĐẬP VỠ RẤT NHIỀU ĐẦU LÂU MỚI ĐƯỢC HẮN CÔNG NHẬN. GIỜ ĐI ĐẬP THÊM NỮA. THÊM ĐẦU LÂU.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: YOU ARE A SKULLBREAKER KNIGHT, TRAINED BY PALADINSLAYER VORDRED. IT TOOK MUCH SKILL AND MANY BROKEN SKULLS TO GAIN HIS APPROVAL. NOW GO BREAK MORE. MORE SKULLS."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "awakened-vordred",
+      "url": "https://aqwwiki.wikidot.com/awakened-vordred",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/awakened-vordred.html",
+      "sourceHash": "5317b128ae98f60c11a2bc2564b121c84658f3bd050ddcac3657e02a24b2842e",
+      "descriptionVi": "ĐOÁN XEM AI TRỞ LẠI VỚI ĐỘ NÉT CAO! NHƯNG CHƯA ĐỦ. THÊM ĐẦU LÂU. THÊM CÁI CHẾT. THÊM THỜI LƯỢNG XUẤT HIỆN CHO VORDRED.",
+      "rarity": "Seasonal Rarity",
+      "boosts": [],
+      "quotes": [
+        "Description: GUESS WHO'S BACK IN HIGH DEFINITION! BUT, IT'S NOT ENOUGH. MORE SKULLS. MORE DEATH. MORE SCREENTIME FOR VORDRED.",
+        "When equipped, this item does 40% more damage to Human monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "awakened-vordred-helm",
+      "url": "https://aqwwiki.wikidot.com/awakened-vordred-helm",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/awakened-vordred-helm.html",
+      "sourceHash": "d06c35e4e1b2d459e6363a043136eeb02ab82a85066219798d5d45aa1bd28f53",
+      "descriptionVi": "ĐOÁN XEM AI TRỞ LẠI VỚI ĐỘ NÉT CAO! NHƯNG CHƯA ĐỦ. THÊM ĐẦU LÂU. THÊM CÁI CHẾT. THÊM THỜI LƯỢNG XUẤT HIỆN CHO VORDRED.",
+      "rarity": "Seasonal Rarity",
+      "boosts": [],
+      "quotes": [
+        "Description: GUESS WHO'S BACK IN HIGH DEFINITION! BUT, IT'S NOT ENOUGH. MORE SKULLS. MORE DEATH. MORE SCREENTIME FOR VORDRED."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "awakened-vordred-cape",
+      "url": "https://aqwwiki.wikidot.com/awakened-vordred-cape",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/awakened-vordred-cape.html",
+      "sourceHash": "1aca4571507e2a6088b48dccccbd319d83035499d69a9b19935b69195b88de2d",
+      "descriptionVi": "NHỮNG CÁI ĐẦU LÂU KÊU LÁCH CÁCH VUI TAI KHI TA CHẠY TỚI CHỖ NGƯƠI.",
+      "rarity": "Seasonal Rarity",
+      "boosts": [],
+      "quotes": [
+        "Description: THE SKULLS MAKE FUNNY CLACK CLACK NOISES WHEN I RUN AT YOU."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "titan-drakath-s-blades",
+      "url": "https://aqwwiki.wikidot.com/titan-drakath-s-blades",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/titan-drakath-s-blades.html",
+      "sourceHash": "0ed88705303df213e92f1bf14c3c6b24279ccf047655397f8a8fb9812b7f4a82",
+      "descriptionVi": "Con trai của Progenitor, Nữ hoàng các Titan quái dị, Drakath từ lâu đã là quân cờ của bà. Tham vọng và cơn thịnh nộ của hắn sẽ tiếp tục đe dọa thế giới của chúng ta… tất cả thế giới của chúng ta, ở mọi thời đại.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Son of the Progenitor, the Queen of monstrous Titans, Drakath has long been her pawn. His ambition and fury will continue to threaten our world… all of our worlds, in all of its times.",
+        "Note: When equipped, this item does 60% more damage to Chaos Monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "celestial-abyss-blade",
+      "url": "https://aqwwiki.wikidot.com/celestial-abyss-blade",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/celestial-abyss-blade.html",
+      "sourceHash": "5c24533033e9383d622632624b324d4ee09795bc90811a38c509b095ace26135",
+      "descriptionVi": "Sa ngã là điều không tránh khỏi. Số phận và vực thẳm vốn là một.",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: The fall is inevitable. Fate and the abyss are one and the same.",
+        "When equipped, this item does 75% more damage to Elemental monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "mystical-devotee-s-scimitar",
+      "url": "https://aqwwiki.wikidot.com/mystical-devotee-s-scimitar",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/mystical-devotee-s-scimitar.html",
+      "sourceHash": "33d2efe735aebd71dd27e3d9f00c19b33f1c291364113c9379d5c97879ae419d",
+      "descriptionVi": "Khi nghỉ, thanh scimitar trông như một chuôi kiếm trang trí. Trong chiến đấu, mana bùng lên thành lưỡi kiếm cong. Nó thiêu đốt, đóng băng, gây sốc và trường tồn.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: At rest, the scimitar appears as an ornamental hilt. In battle, mana flares into the curve of a blade. It burns, freezes, shocks, and persists."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "mystical-chakrams-of-illusion",
+      "url": "https://aqwwiki.wikidot.com/mystical-chakrams-of-illusion",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/mystical-chakrams-of-illusion.html",
+      "sourceHash": "cb4b750b1bf90b57610bb738fe4908035bd37af8d98967c636d518c2627a0cac",
+      "descriptionVi": "Tạo ra rồi hủy diệt: lối đánh phù hợp với chakram khiến kẻ thù rối loạn vì ảo ảnh. Trận chiến phải kết thúc bằng sự tiêu diệt cả kẻ thù lẫn những lời dối trá.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Conjure and destroy - the fighting style that complements the chakrams confuses the enemy with illusions. The fight must end with the destruction of both enemy and lies."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "mystical-devotee-s-scimitars",
+      "url": "https://aqwwiki.wikidot.com/mystical-devotee-s-scimitars",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/mystical-devotee-s-scimitars.html",
+      "sourceHash": "6f30ee7a30f1eefe5ae112aea888e3d8494d172b58104d463378091ea1e2491e",
+      "descriptionVi": "Khi nghỉ, những thanh scimitar trông như các chuôi kiếm trang trí. Trong chiến đấu, mana bùng lên thành những lưỡi kiếm cong. Chúng thiêu đốt, đóng băng, gây sốc và trường tồn.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: At rest, the scimitars appears as ornamental hilts. In battle, mana flares into the curve of a blade. It burns, freezes, shocks, and persists."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "mystical-chakram-of-illusions",
+      "url": "https://aqwwiki.wikidot.com/mystical-chakram-of-illusions",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/mystical-chakram-of-illusions.html",
+      "sourceHash": "bf7996627f9c434b0ac16e54936b3a706a1bff9fbd4c0fa6d4b32b36422a6204",
+      "descriptionVi": "Tạo ra rồi hủy diệt: lối đánh phù hợp với chakram khiến kẻ thù rối loạn vì ảo ảnh. Trận chiến phải kết thúc bằng sự tiêu diệt cả kẻ thù lẫn những lời dối trá.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Conjure and destroy - the fighting style that complements the chakrams confuses the enemy with illusions. The fight must end with the destruction of both enemy and lies."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "wand-of-miracles",
+      "url": "https://aqwwiki.wikidot.com/wand-of-miracles",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/wand-of-miracles.html",
+      "sourceHash": "aa5fd2b5c883bf3bdaa909349f81d5486457158bc8766cb5fa0a09aa67fb0484",
+      "descriptionVi": "Sự sống vẫn tồn tại giữa vô vàn thế lực đe dọa bản thân nó đã là một phép màu. Với cây đũa phép này, hãy rút sức mạnh từ chính mạch sống của thế giới bạn.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Life being able to persist despite the numerous forces that threaten its existence is a miracle in of itself. With this wand, draw power from the very lifeblood of your world."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "mystical-devotee-s-hair",
+      "url": "https://aqwwiki.wikidot.com/mystical-devotee-s-hair",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/mystical-devotee-s-hair.html",
+      "sourceHash": "6734a91070ac3925bbcaca47de542733965228eb69cab1a6c535df7cca2e249d",
+      "descriptionVi": "Càng tận tâm tìm hiểu bản chất mana lâu, một số đặc điểm càng dần xuất hiện. Thường là sự tò mò cùng những lần bộc lộ cảm xúc mãnh liệt.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: The longer one devotes themselves to the nature of mana itself, the more certain characteristics begin to surface. Curiosity and flares of passionate temper are the usual."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "mystical-devotee-s-locks",
+      "url": "https://aqwwiki.wikidot.com/mystical-devotee-s-locks",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/mystical-devotee-s-locks.html",
+      "sourceHash": "9c48c242f8549ae23716a436fc2f5f9a9384cc9d2c95cdc9920bd9ef20fe9b42",
+      "descriptionVi": "Những người hòa hợp với bản chất thật của mana có tính cách mãnh liệt, dễ bị chú ý. Khi Devotee ngày càng hiếm, họ học cách làm vẻ ngoài bớt nổi bật lúc cần thiết.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Those in tune with the true nature of mana have passionate personalities, which tend to get noticed. As Devotees became rarer, they learned to tone down their appearancs when needed."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "manifestation-of-mana",
+      "url": "https://aqwwiki.wikidot.com/manifestation-of-mana",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/manifestation-of-mana.html",
+      "sourceHash": "406af2592481543413d55a2b89f6f2ee9489bf131d56449e5bad9bc825a6dcf3",
+      "descriptionVi": "Mana và những số phận chưa thành tựu tụ về lõi thế giới chúng ta. Tiềm năng thật sự của nó vẫn chưa được khai mở, bị ép vào trạng thái trì trệ. Một ngày nào đó nó có thể thức tỉnh.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Mana and unfulfilled fates gather in the core of our world. Its true potential remains untapped, forced into a state of stagnation. It may one day stir."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "archfiend-deathlord-helmet",
+      "url": "https://aqwwiki.wikidot.com/archfiend-deathlord-helmet",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/archfiend-deathlord-helmet.html",
+      "sourceHash": "dcb6510e27ac7f151c1ede5b1ab1b27b3b390833ef6a76a3582c1f6c87f3d6ed",
+      "descriptionVi": "“Bạn không thể suy nghĩ tích cực khi đội chiếc mũ chẳng bảo vệ nổi đầu mình.” — Vulnios, Void DeathKnight của Nulgath Nation.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: (Item does 20% more damage to all tagged monsters when equipped.)\"You can't think positive with a helm which can't protect your head.\" ~Vulnios, Void DeathKnight of the Nulgath Nation",
+        "When equipped, this item does 20% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "archfiend-deathlord-mask",
+      "url": "https://aqwwiki.wikidot.com/archfiend-deathlord-mask",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/archfiend-deathlord-mask.html",
+      "sourceHash": "4c1f373d803c0b3c78138c524e20716693b41c95c6f3fd1bab0a05a741d39739",
+      "descriptionVi": "“Bạn không thể suy nghĩ tích cực khi đội chiếc mũ chẳng bảo vệ nổi đầu mình.” — Vulnios, Void DeathKnight của Nulgath Nation.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: (Item does 20% more damage to all tagged monsters when equipped.)\"You can't think positive with a helm which can't protect your head.\" ~Vulnios, Void DeathKnight of the Nulgath Nation",
+        "When equipped, this item does 20% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "archfiend-deathlord-locks",
+      "url": "https://aqwwiki.wikidot.com/archfiend-deathlord-locks",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/archfiend-deathlord-locks.html",
+      "sourceHash": "9db74f3c39a44a844b44b279bd941d5d41444f0ebf852b557c185decac73a0ca",
+      "descriptionVi": "Vì Nulgath và Nation! Các ArchFiend Deathlord là những DeathKnight con người ưu tú của Nulgath Nation, dẫn Void Highlord ra trận!",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: (Item does 20% more damage to all tagged monsters when equipped.)For Nulgath and Nation! The ArchFiend Deathlords are superior human DeathKnights of the Nulgath Nation who lead Void Highlords to battle!",
+        "Note: When equipped, this item does 20% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "archfiend-deathlord-shag",
+      "url": "https://aqwwiki.wikidot.com/archfiend-deathlord-shag",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/archfiend-deathlord-shag.html",
+      "sourceHash": "c14181da007ac4c95eb815b3f3496727011d3c121d6f704161bf69e89994164a",
+      "descriptionVi": "Vì Nulgath và Nation! Các ArchFiend Deathlord là những DeathKnight con người ưu tú của Nulgath Nation, dẫn Void Highlord ra trận!",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: (Item does 20% more damage to all tagged monsters when equipped.)For Nulgath and Nation! The ArchFiend Deathlords are superior human DeathKnights of the Nulgath Nation who lead Void Highlords to battle!",
+        "Note: When equipped, this item does 20% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "deathlord-spines-of-nulgath",
+      "url": "https://aqwwiki.wikidot.com/deathlord-spines-of-nulgath",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/deathlord-spines-of-nulgath.html",
+      "sourceHash": "2fe319477e439f15336de2adf89e74b16a1e9db9861bbc62849cfb263ef55ef2",
+      "descriptionVi": "Vì Nulgath và Nation! Các ArchFiend Deathlord là những DeathKnight con người ưu tú của Nulgath Nation, dẫn Void Highlord ra trận!",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: (Item does 20% more damage to all tagged monsters when equipped.)For Nulgath and Nation! The ArchFiend Deathlords are superior human DeathKnights of the Nulgath Nation who lead Void Highlords to battle!",
+        "Note: When equipped, this item does 20% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "deathless-wings-of-nulgath",
+      "url": "https://aqwwiki.wikidot.com/deathless-wings-of-nulgath",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/deathless-wings-of-nulgath.html",
+      "sourceHash": "b8e18cf9dbdf895712cd08ae88768cd22035e294bd8a386db558d23296636121",
+      "descriptionVi": "Vì Nulgath và Nation! Các ArchFiend Deathlord là những DeathKnight con người ưu tú của Nulgath Nation, dẫn Void Highlord ra trận!",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: (Item does 20% more damage to all tagged monsters when equipped.)For Nulgath and Nation! The ArchFiend Deathlords are superior human DeathKnights of the Nulgath Nation who lead Void Highlords to battle!",
+        "Note: When equipped, this item does 20% more damage to Chaos, Dragon, Elemental, Human, and Undead monsters."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "lineage-of-devastation",
+      "url": "https://aqwwiki.wikidot.com/lineage-of-devastation",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/lineage-of-devastation.html",
+      "sourceHash": "d881edb7f580723e5e93f30202be621e696b4bbb6e88eeb47ccbf91215f9a0cc",
+      "descriptionVi": "Các đầu lâu trang trí thanh kiếm từng thuộc về những chủ nhân trước. Họ là những chiến binh mà hành vi tàn phá lấn át cả tên tuổi. Nhận vũ khí này, bạn gia nhập một dòng truyền thừa lâu đời của những huyền thoại tà ác.",
+      "rarity": "Awesome Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: The skulls that decorate this blade belonged to its previous masters. They were warriors whose acts of devastation overshadowed their own names. In claiming this weapon, you join a long lineage of evil legends."
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-soulreaper-of-nulgath-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-soulreaper-of-nulgath-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-soulreaper-of-nulgath-0-ac.html",
+      "sourceHash": "28b7ec0700ae01395171fb8d8351a89ee973657ff900967954ae685bfb0c677b",
+      "descriptionVi": "Nulgath nhận khế ước của bạn để đổi lấy Soulreaper of Nulgath. Archfiend kinh ngạc khi sắc màu Hollowborn của bạn thấm vào vũ khí. “Ta sẽ xem đó là hành vi vi phạm điều khoản giữa chúng ta.”",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: Nulgath takes your contract in exchange for the Soulreaper of Nulgath. The Archfiend marvels at how your Hollowborn colors seep into the weapon. \"I would consider that a breach of our terms.\""
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    },
+    {
+      "id": "hollowborn-hooded-makai-pet-0-ac",
+      "url": "https://aqwwiki.wikidot.com/hollowborn-hooded-makai-pet-0-ac",
+      "sourceFile": "content-sources/farm/equipment-sets/wiki/hollowborn-hooded-makai-pet-0-ac.html",
+      "sourceHash": "bbcdf399c6159e64d44c66be8dee00719a4a85be59a14d7770b846c949bcf80c",
+      "descriptionVi": "Makai cũng có thể thành Hollowborn sao? Tiếp theo là ai? Skew à?",
+      "rarity": "Champion Rarity",
+      "membership": "non-member",
+      "membershipTag": "freeplayer",
+      "boosts": [],
+      "quotes": [
+        "Description: The Makai can become Hollowborn too? Who's next? Skew?"
+      ],
+      "verificationScope": "Identity/artwork/description/explicit fields reviewed; no-boost absence is not verified none."
+    }
+  ]
+}
