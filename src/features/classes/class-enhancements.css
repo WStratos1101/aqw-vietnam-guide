@@ -1,0 +1,38 @@
+/* Scoped Class Codex Enhancements: does not change other pages */
+.class-interactive-inspection .class-inspection-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  --class-tab-count: 4;
+}
+.class-interactive-inspection .class-inspection-tabs::before,
+.class-interactive-inspection .class-inspection-tabs::after {
+  /* The existing tab highlight is measured against the new four-tab layout. */
+  --class-tab-count: 4;
+}
+.aqw-class-enh { color: inherit; padding: clamp(18px, 2.5vw, 30px); border: 1px solid color-mix(in srgb, currentColor 12%, transparent); border-radius: 16px; }
+.aqw-class-enh__heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: start; margin-bottom: 20px; }
+.aqw-class-enh__heading h2 { font-size: clamp(24px, 2.3vw, 34px); margin: 5px 0 8px; line-height: 1.2; }
+.aqw-class-enh__heading p { margin: 0; line-height: 1.55; }
+.aqw-class-enh__heading a { font-weight: 600; color: var(--class-accent-light, currentColor); white-space: nowrap; }
+.aqw-class-enh__eyebrow { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+.aqw-class-enh__modes { display: flex; gap: 9px; flex-wrap: wrap; margin-bottom: 18px; }
+.aqw-class-enh__modes button,.aqw-class-enh__choices button { color: inherit; font: inherit; font-weight: 650; border: 1px solid color-mix(in srgb, currentColor 28%, transparent); background: transparent; padding: 9px 12px; border-radius: 9px; cursor: pointer; }
+.aqw-class-enh__modes button[aria-pressed="true"],.aqw-class-enh__choices button[aria-pressed="true"] { background: var(--class-accent-dark, #6240a1); color: #fff; border-color: var(--class-accent-dark, #6240a1); }
+.aqw-class-enh button:focus-visible { outline: 3px solid var(--class-accent-light, #ad86e0); outline-offset: 3px; }
+.aqw-class-enh button:disabled { opacity: .45; cursor: not-allowed; }
+.aqw-class-enh__class { margin-bottom: 17px; padding: 16px 18px; background: color-mix(in srgb, currentColor 5%, transparent); border-radius: 12px; }
+.aqw-class-enh__class h3,.aqw-class-enh__slot h3 { font-size: 16px; font-weight: 800; display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+.aqw-class-enh__class h3 small { font-size: 12px; opacity: .7; font-weight: 600; }
+.aqw-class-enh__grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.aqw-class-enh__slot { min-width: 0; padding: 16px; background: color-mix(in srgb, currentColor 5%, transparent); border-radius: 12px; }
+.aqw-class-enh__choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.aqw-class-enh__choices button { font-size: 13px; min-height: 39px; max-width: 100%; overflow-wrap: anywhere; }
+.aqw-class-enh__unknown { font-size: 13px; line-height: 1.6; opacity: .7; margin: 0; }
+.aqw-class-enh__note { line-height: 1.6; font-size: 13px; margin: 18px 0 0; opacity: .85; }
+.aqw-class-enh__credit { margin: 8px 0 0; opacity: .65; font-size: 12px; }
+@media (max-width: 800px) { .aqw-class-enh__grid { grid-template-columns: 1fr; } }
+@media (max-width: 580px) {
+  .class-interactive-inspection .class-inspection-tabs { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .aqw-class-enh { padding: 15px; }
+  .aqw-class-enh__heading { flex-direction: column; }
+}

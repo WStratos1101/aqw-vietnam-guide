@@ -11,6 +11,8 @@ import { AcquisitionInfo } from "./AcquisitionInfo";
 import { classColors } from "../../lib/entity-colors.mjs";
 import { pickOtherClasses } from "../../lib/other-classes.mjs";
 import { ClassArtSelector } from "./ClassArtSelector";
+import { ArchmageGear } from "./ArchmageGear";
+import "../farm/farm-compact.css";
 import { ClassInspectionTabs } from "./ClassInspectionTabs";
 import { ClassRoles } from "./ClassRoles";
 import { useEffect, useState, type CSSProperties } from "react";
@@ -183,19 +185,20 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
         </section>
       ) : (
         <>
-          <ClassInspectionTabs profile={selectedProfile} body={inspectedBody} />
+          <ClassInspectionTabs profile={selectedProfile} body={inspectedBody} variantName={selectedName} />
+          {(selectedProfile.id.toLowerCase().includes("archmage") || profile.id.toLowerCase().includes("archmage")) && <ArchmageGear />}
           {profile.weaknesses.length > 0 && (
-            <aside className="class-practice-notes">
-              <h2>Lưu ý khi sử dụng</h2>
+            <details className="class-practice-notes aqw-cp-panel">
+              <summary className="aqw-cp-summary">Lưu ý khi sử dụng <small>Mở / thu gọn</small></summary>
               <ul>
                 {profile.weaknesses.map((s) => (
                   <li key={s}>{s}</li>
                 ))}
               </ul>
-            </aside>
+            </details>
           )}
-          <section className="class-section class-related">
-            <h2>Các Class Khác</h2>
+          <details className="class-section class-related aqw-cp-panel">
+            <summary className="aqw-cp-summary">Các Class Khác <small>Mở / thu gọn</small></summary>
             {related.length > 0 && (
               <div className="class-grid">
                 {related.map((c) => (
@@ -207,7 +210,7 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
               <a href="/he-thong/enhancement">Enhancement</a>
               <a href="/ultra-boss">Ultra Boss</a>
             </div>
-          </section>
+          </details>
         </>
       )}
     </main>

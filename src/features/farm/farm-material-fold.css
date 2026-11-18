@@ -1,0 +1,32 @@
+/* Farm material summary enhancements, scoped to existing Farm workflow. */
+.fv2-root .fv32-workflow .fv32-collapsible-material {
+  border: 1px solid var(--fv2-line);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-block: 16px 20px;
+  background: var(--fv2-panel, transparent);
+}
+.fv2-root .fv32-workflow .fv32-collapsible-material > summary {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  gap: 8px 16px; cursor: pointer; padding: 17px 20px;
+  font-size: 1.12rem; font-weight: 750; line-height: 1.55;
+  list-style: none; color: var(--fv2-text);
+}
+.fv2-root .fv32-workflow .fv32-collapsible-material > summary::-webkit-details-marker { display: none; }
+.fv2-root .fv32-workflow .fv32-collapsible-material > summary::after { content: "▾"; display: inline-block; transition: transform .15s ease; }
+.fv2-root .fv32-workflow .fv32-collapsible-material:not([open]) > summary::after { transform: rotate(-90deg); }
+.fv2-root .fv32-workflow .fv32-collapsible-material > summary:focus-visible { outline: 3px solid var(--fv2-accent); outline-offset: -3px; }
+.fv2-root .fv32-workflow .fv32-collapsible-material > summary small { font-size: .78rem; font-weight: 400; color: var(--fv2-muted); }
+.fv2-root .fv32-workflow .fv32-collapsible-material > .fv32-collapsible-body {
+  padding: 18px 20px 22px; border-top: 1px solid var(--fv2-line);
+}
+.fv2-root .fv32-workflow .fv32-collapsible-body > p { margin: 0 0 16px; line-height: 1.65; }
+.fv2-root .fv32-workflow .fv32-collapsible-body > :is(h3,h4) { margin: 16px 0 18px; }
+.fv2-root .fv32-workflow .fv32-collapsible-body > .fv32-table-scroll { margin-top: 12px; }
+@media (max-width: 600px) {
+  .fv2-root .fv32-workflow .fv32-collapsible-material > summary { padding: 14px; }
+  .fv2-root .fv32-workflow .fv32-collapsible-material > .fv32-collapsible-body { padding: 16px 12px 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fv2-root .fv32-workflow .fv32-collapsible-material > summary::after { transition: none; }
+}

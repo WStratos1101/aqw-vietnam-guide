@@ -1,12 +1,14 @@
 import { useId, useState, type CSSProperties } from "react";
-import { Swords, GitBranch, ScrollText } from "lucide-react";
+import { Swords, GitBranch, ScrollText, Sparkles } from "lucide-react";
 import type { AqwClass, ClassBody } from "../../types/classes";
 import { ClassSkills } from "./ClassSkills";
 import { ClassCombos } from "./ClassCombos";
 import { CalendarConsumables } from "./CalendarConsumables";
 import { ClassAcquisitionPanel } from "./ClassAcquisitionPanel";
+import { ClassEnhancementPanel } from "./ClassEnhancementPanel";
 import "../../styles/classes/inspection-v12-4.css";
-type Tab = "skills" | "combo" | "acquisition";
+import "./class-enhancements.css";
+type Tab = "skills" | "combo" | "enhancement" | "acquisition";
 const tabs = [
   { id: "skills" as Tab, label: "BỘ SKILL", short: "Kỹ năng", Icon: Swords },
   {
@@ -15,6 +17,7 @@ const tabs = [
     short: "Combo",
     Icon: GitBranch,
   },
+  { id: "enhancement" as Tab, label: "ENHANCEMENT", short: "Enhance", Icon: Sparkles },
   {
     id: "acquisition" as Tab,
     label: "CÁCH LẤY CLASS",
@@ -25,9 +28,11 @@ const tabs = [
 export function ClassInspectionTabs({
   profile,
   body,
+  variantName,
 }: {
   profile: AqwClass;
   body: ClassBody;
+  variantName?: string;
 }) {
   const [activeTab, setActiveTab] = useState<Tab>("skills");
   const [selectedSkillId, setSelectedSkillId] = useState<string>();
@@ -114,6 +119,8 @@ export function ClassInspectionTabs({
                 skills={skills}
                 onSelectSkill={setSelectedSkillId}
               />
+            ) : tab.id === "enhancement" ? (
+              <ClassEnhancementPanel profile={profile} variantName={variantName} />
             ) : (
               <ClassAcquisitionPanel profile={profile} body={body} />
             )}

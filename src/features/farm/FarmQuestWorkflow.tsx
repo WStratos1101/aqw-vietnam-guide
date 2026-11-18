@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { FarmMaterialTable } from "./FarmMaterialTable";
+import "./farm-material-fold.css";
 import { materialQuestConditions, materialTableMaps } from "../../lib/farm-material-table.mjs";
 import registryData from "../../content/farm/quest-workflows.generated.json";
 import materialData from "../../content/farm/material-sources.generated.json";
@@ -179,6 +180,18 @@ function TotalMaterials({rows,onMaterial,modeId}:{rows:Row[];onMaterial:Material
   return <FarmMaterialTable entries={entries} label="Tổng nguyên liệu" onMaterial={onMaterial} />;
 }
 
+/** Only hide a table if its material IDs and verified quantities match exactly.
+ * Distinct/unknown quantities stay visible, to avoid discarding information.
+ */
+function sameMaterialQuantities(direct: Row[], total: Row[]) {
+  if (!direct.length || direct.length !== total.length) return false;
+  if (direct.some(row => row.quantity == null) || total.some(row => row.quantity == null)) return false;
+  const first = new Map(direct.map(row => [keyFor(row), row.quantity]));
+  const second = new Map(total.map(row => [keyFor(row), row.quantity]));
+  return first.size === direct.length && second.size === total.length &&
+    [...first.entries()].every(([id, quantity]) => second.get(id) === quantity);
+}
+
 export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=false, itemId=route.id }: { route: FarmV2RouteData; focus: WorkflowFocus; onNavigate: (focus: WorkflowFocus) => void; materialsOnly?: boolean; itemId?: string }) {
   const { mode, tasks, finish, materials } = useFarmWorkflow(route, focus);
   const [insigniaView,setInsigniaView]=useState("quests");
@@ -189,6 +202,9 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
   const owned: Row[]=tasks.flatMap(task=>(task.ownedItems || []).map(item=>({name:item.name,itemId:materialId(item.name),quantity:1,usage:"owned" as const,source:item.wikiUrl})));
   const option = route.questOptions?.find(option=>option.questId===focus.optionId) || route.questOptions?.[0];
   const direct = option?.directMaterials ?? route.directMaterials ?? materials;
+  // Preserve all non-material rows. Never consider incomplete data equivalent.
+  const totalRows = materials.filter(row => (!("usage" in row) || row.usage !== "owned") && (!("temporary" in row) || !row.temporary) && (!("role" in row) || row.role !== "tempQuestItem") && !/^(?:Gold|ACs?)$/i.test(row.name));
+  const identicalMaterialTables = direct.length === totalRows.length && sameMaterialQuantities(direct, totalRows);
   const guideMaterials = direct.filter((row,index,rows)=>rows.findIndex(other=>keyFor(other)===keyFor(row))===index);
   const reachable = reachableMaterialRows([...guideMaterials,...owned],profiles) as Row[];
   const focusedRow = reachable.find(row=>keyFor(row)===focus.materialId);
@@ -256,9 +272,23 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
         {!quest && !finish.length && <><p>{route.location}</p>{route.mapCommand && <code>{route.mapCommand}</code>}<MaterialTable modeId={mode?.id} rows={materialLeaves(route.materialTree)} onMaterial={selectMaterial}/></>}
       </div>
     </section>}
-    {showMaterials && <><h3>Nguyên liệu trực tiếp</h3><MaterialTable rows={direct} modeId={mode?.id} onMaterial={selectMaterial}/>
-      <h3>Tổng nguyên liệu</h3>{!route.materialTotalsComplete && <p>Tổng nguyên liệu chưa được xác minh đầy đủ; bảng dưới chỉ gồm các bước đã ghi nhận của phương án đang chọn.</p>}
-      <TotalMaterials rows={materials} modeId={mode?.id} onMaterial={selectMaterial}/></> }
+    {showMaterials && <>
+      {!identicalMaterialTables && <details className="fv32-collapsible-material" data-aqw-material-table="direct">
+        <summary><span>Nguyên liệu trực tiếp</span><small>Nhấn để xem hoặc thu gọn</small></summary>
+        <div className="fv32-collapsible-body">
+          <p>Các nguyên liệu đầu vào của phương án đang chọn. Mở bảng tổng để xem toàn bộ vật liệu đã ghi nhận.</p>
+          <MaterialTable rows={direct} modeId={mode?.id} onMaterial={selectMaterial}/>
+        </div>
+      </details>}
+      <details className="fv32-collapsible-material" data-aqw-material-table="total" open>
+        <summary><span>Tổng nguyên liệu</span><small>Nhấn để thu gọn bảng</small></summary>
+        <div className="fv32-collapsible-body">
+          {!route.materialTotalsComplete && <p>Tổng nguyên liệu chưa được xác minh đầy đủ; bảng dưới chỉ gồm các bước đã ghi nhận của phương án đang chọn.</p>}
+          {identicalMaterialTables && <p>Bảng nguyên liệu trực tiếp trùng số lượng với bảng tổng nên đã được gộp, tránh hiển thị hai lần.</p>}
+          <TotalMaterials rows={materials} modeId={mode?.id} onMaterial={selectMaterial}/>
+        </div>
+      </details>
+    </>}
     {showMaterials && !!route.materialPlan?.equivalentCosts.length && <details><summary>Giá trị quy đổi</summary><ul>{route.materialPlan.equivalentCosts.map(cost=><li key={cost.materialId}>{cost.quantity} {direct.find(row=>keyFor(row)===cost.materialId)?.name||cost.materialId}: {cost.total.toLocaleString("vi-VN")} {cost.currency}. Giá trị tham khảo, không cộng thêm vào Tổng nguyên liệu.</li>)}</ul></details>}
     {showMaterials && !!allMaterials.length && <section aria-label="Hướng dẫn Farm nguyên liệu"><h3>Hướng dẫn Farm nguyên liệu</h3>
       <div className="fv32-route-picker" role="group" aria-label="Chọn nguyên liệu">{guideMaterials.map(row=><button type="button" key={keyFor(row)} aria-pressed={selectedMaterial && keyFor(selectedMaterial)===keyFor(row)} onClick={()=>selectMaterial(keyFor(row))}>{row.name}</button>)}</div>

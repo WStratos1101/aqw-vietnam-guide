@@ -12,9 +12,9 @@ const entries = [
     alt: "Nhân vật tóc trắng trong minh họa của Darkon",
   },
   {
-    id: "chronicles", number: "02", label: "Thế giới Lore", href: "/cot-truyen",
-    kicker: "THE CHRONICLES", title: ["Biên niên sử", "thế giới Lore"],
-    description: "Những vương quốc, cuộc chiến và huyền thoại còn chờ được khám phá.",
+    id: "chronicles", number: "02", label: "Hướng dẫn", href: "/huong-dan",
+    kicker: "THE GUIDES", title: ["Cẩm nang", "phiêu lưu"],
+    description: "Từ những bước chân đầu tiên đến các thử thách trên khắp Lore.",
     artist: "8X6·HAIIRO", artwork: "drago-iona.png",
     alt: "Drago và Iona trong minh họa của 8X6·HAIIRO",
   },

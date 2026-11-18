@@ -3,6 +3,7 @@ import { pathToFileURL } from "node:url";
 import fs from "node:fs";
 import path from "node:path";
 await build({
+  external: ['/images/*'],
   entryPoints: ["src/server.tsx"],
   bundle: true,
   platform: "node",

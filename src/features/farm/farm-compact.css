@@ -1,0 +1,25 @@
+/* Scoped styles. Do not change site-wide heading/card/table primitives. */
+.fv31-wiki-info.aqw-cp-wiki { margin-block: 18px; }
+.aqw-cp-wiki details { border: 1px solid var(--border, rgba(124,124,136,.28)); border-radius: 12px; background: transparent; overflow: hidden; }
+.aqw-cp-wiki summary, .class-detail .aqw-cp-summary { display: flex; gap: 12px; justify-content: space-between; align-items: center; cursor: pointer; padding: 16px 19px; font-size: 1.05rem; font-weight: 750; line-height: 1.5; list-style-position: inside; }
+.aqw-cp-wiki summary:focus-visible, .class-detail .aqw-cp-summary:focus-visible { outline: 3px solid var(--class-accent-light, #a68adb); outline-offset: 2px; }
+.aqw-cp-wiki summary::marker, .class-detail .aqw-cp-summary::marker { color: var(--class-accent-light, #a68adb); }
+.aqw-cp-wiki summary small, .class-detail .aqw-cp-summary small { font-size: .77rem; font-weight: 500; opacity: .78; margin-left: auto; }
+.aqw-cp-wiki details[open] > summary { border-bottom: 1px solid var(--border, rgba(124,124,136,.28)); margin-bottom: 15px; }
+.aqw-cp-wiki .aqw-cp-body { padding: 0 18px 18px; }
+.aqw-cp-wiki .fv31-wiki-fields { margin-top: 0; }
+.aqw-cp-wiki .fv31-wiki-fields > div { min-width: 0; }
+.aqw-cp-wiki .fv31-wiki-fields dt { display: block; margin-bottom: 8px; line-height: 1.45; }
+.aqw-cp-wiki .fv31-wiki-fields dd { overflow-wrap: anywhere; }
+.class-detail .aqw-cp-panel { border: 1px solid var(--class-accent-light, rgba(120,100,140,.35)); border-radius: 12px; margin-block: 24px; }
+.class-detail .aqw-cp-panel > .aqw-cp-body { padding: 4px 20px 20px; }
+.class-detail .aqw-cp-panel .aqw-cp-source { font-size: .83rem; opacity: .8; }
+.class-detail .aqw-cp-panel .aqw-cp-table-scroll { overflow-x: auto; }
+.class-detail .aqw-cp-gear-table { border-collapse: collapse; width: 100%; min-width: 560px; }
+.class-detail .aqw-cp-gear-table td, .class-detail .aqw-cp-gear-table th { padding: 11px 13px; text-align: left; border-bottom: 1px solid rgba(125,125,135,.22); line-height: 1.45; }
+.class-detail .aqw-cp-gear-table thead { opacity: .78; }
+.class-detail .aqw-cp-panel.class-related .class-grid { padding: 18px; }
+.class-detail .aqw-cp-panel.class-related .class-guide-links { padding: 4px 18px 20px; }
+@media (max-width: 600px) { .aqw-cp-wiki summary, .class-detail .aqw-cp-summary { padding: 14px 13px; } .aqw-cp-wiki .aqw-cp-body, .class-detail .aqw-cp-panel > .aqw-cp-body { padding: 0 13px 13px; } }
+
+.aqw-cp-wiki .aqw-cp-label { display: inline-flex; align-items: center; gap: 9px; }

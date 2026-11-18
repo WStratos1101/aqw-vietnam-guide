@@ -63,7 +63,7 @@ test("Real Class tabs expose one panel, support keyboard and preserve selected a
   ];
   const visible = () =>
     [...host.querySelectorAll("[data-class-panel]")].filter((p) => !p.hidden);
-  assert.equal(tabs().length, 3);
+  assert.equal(tabs().length, 4);
   assert.equal(visible().length, 1);
   assert.equal(visible()[0].dataset.classPanel, "skills");
   const slot = host.querySelectorAll(".ability-bar button")[1];
@@ -86,9 +86,12 @@ test("Real Class tabs expose one panel, support keyboard and preserve selected a
     ),
   );
   assert.equal(visible()[0].dataset.classPanel, "acquisition");
-  assert.equal(document.activeElement, tabs()[2]);
+  assert.equal(document.activeElement, tabs()[3]);
+  await click(tabs()[2]);
+  assert.equal(visible()[0].dataset.classPanel, "enhancement");
+  await click(tabs()[3]);
   await act(async () =>
-    tabs()[2].dispatchEvent(
+    tabs()[3].dispatchEvent(
       new KeyboardEvent("keydown", { key: "ArrowRight", bubbles: true }),
     ),
   );
@@ -106,7 +109,7 @@ test("Quest Reward shows only the named quest and preserves the independent AC s
   const main = () => [
     ...host.querySelectorAll(".class-inspection-tabs [role=tab]"),
   ];
-  await click(main()[2]);
+  await click(main()[3]);
   const methodButtons = () => [
     ...host.querySelectorAll(".acquisition-method-tabs button"),
   ];
@@ -125,7 +128,7 @@ test("Quest Reward shows only the named quest and preserves the independent AC s
   assert.match(host.querySelector(".acquisition-price").textContent, /AC/);
   await click(quest);
   await click(main()[0]);
-  await click(main()[2]);
+  await click(main()[3]);
   assert.ok(host.querySelector(".acquisition-quest-card"));
   assert.equal(
     host.querySelectorAll(".acquisition-quest-card input").length,
@@ -270,7 +273,7 @@ test("Calendar variant keeps the active tab and selected skill while changing ar
     selected,
   );
   const tabs = [...host.querySelectorAll(".class-inspection-tabs [role=tab]")];
-  await click(tabs[2]);
+  await click(tabs[3]);
   assert.equal(
     host.querySelector("[data-class-panel=acquisition]").hidden,
     false,

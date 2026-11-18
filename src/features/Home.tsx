@@ -1,3 +1,4 @@
+import { LoreShowcase as AQWOriginalLoreShowcase } from "./LoreShowcase"; // AQW-LORE-REPLACE-HERO-V7
 import { LoreShowcase } from "./JourneyShowcase";
 import classes from "../content/home-starters.json";
 import poster from "../content/home-poster.json";
@@ -47,55 +48,7 @@ export function Home() {
           </span>
         </div>
       </section>
-      <section className="start chapter" id="bat-dau">
-        <div className="section-heading">
-          <h2>
-            Ngày anh hùng
-            <br />
-            gọi tên.
-          </h2>
-          <p>
-            Tiếng chuông Battleon đã vang lên.
-            <br />
-            Lore đang chờ người đáp lời hiệu triệu.
-          </p>
-        </div>
-        <div className="start-layout">
-          <a href="/huong-dan/bat-dau" className="start-feature">
-            <span>Lời hiệu triệu</span>
-            <div>
-              <h3>
-                Ngọn lửa
-                <br />đầu tiên
-              </h3>
-              <p>
-                Nhận nhiệm vụ đầu tiên, khoác lên mình bộ trang bị và bước ra khỏi cổng thành.
-                Ngay cả những huyền thoại vĩ đại nhất cũng từng là kẻ vô danh.
-              </p>
-              <span className="plain-link">
-                Bước vào Lore <ArrowUpRight />
-              </span>
-            </div>
-          </a>
-          <div className="start-links">
-            <a href="#class-khoi-dau">
-              <span>Con đường của riêng bạn</span>
-              <p>Kiếm, ma pháp, ánh sáng hay bóng tối? Hãy chọn sức mạnh sẽ đồng hành cùng bạn.</p>
-              <ArrowUpRight />
-            </a>
-            <a href="/he-thong/enhancement">
-              <span>Khắc sức mạnh lên thép</span>
-              <p>Một lưỡi kiếm trở nên đáng sợ trong tay người biết cách đánh thức tiềm năng của nó.</p>
-              <ArrowUpRight />
-            </a>
-            <a href="/cot-truyen/hanh-trinh-chaos">
-              <span>Những dấu hiệu của Chaos</span>
-              <p>Vương quốc rung chuyển, liên minh rạn nứt. Hãy lần theo dấu vết của biến cố đã đổi thay Lore.</p>
-              <ArrowUpRight />
-            </a>
-          </div>
-        </div>
-      </section>
+      <AQWOriginalLoreShowcase />
       <section className="class-chapter chapter" id="class-khoi-dau">
         <div className="section-heading">
           <h2>
