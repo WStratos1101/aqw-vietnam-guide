@@ -3,6 +3,7 @@ import { isolateFarmQuests } from "./lib/farm-quest-isolation.mjs";
 import { applyRecoveredFarmMetadata } from "./lib/farm-metadata-recovery.mjs";
 // Offline deterministic adapter: curated recipes remain authoritative; imports never infer routes.
 import fs from "node:fs";
+import path from "node:path";
 import { applyFarmV3Scope, applyVerifiedFarmFields } from "./lib/farm-v3-scope.mjs";
 import { importUltraFarm } from "./lib/farm-ultra-import.mjs";
 import { assignFarmGroups } from "./lib/farm-groups.mjs";
@@ -22,7 +23,10 @@ import { loadVerifiedFarmPages } from "./lib/farm-review-parser.mjs";
 import { buildEquipmentSets } from "./lib/farm-equipment-sets.mjs";
 import { applyFarmRefinement } from "./lib/farm-refinement.mjs";
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
-const write = (p, d) => fs.writeFileSync(p, JSON.stringify(d, null, 2) + "\n");
+const write = (p, d) => {
+  fs.mkdirSync(path.dirname(p), { recursive: true });
+  fs.writeFileSync(p, JSON.stringify(d, null, 2) + "\n");
+};
 const legacy = read("src/content/farm/catalog.json");
 const assets = [...read("src/data/aqw-assets.json"), ...read("content-sources/farm/equipment-sets/assets.json")];
 const classProfiles = read("src/content/classes/catalog.json");

@@ -29,26 +29,8 @@ for (const entry of [
   fs.cpSync(path.join(source, entry), path.join(target, entry), {
     recursive: true,
   });
-// Copy only the offline evidence explicitly referenced by Farm build inputs.
-const farmEvidence = new Set();
-function collectEvidence(value) {
-  if (!value || typeof value !== "object") return;
-  for (const [key, child] of Object.entries(value)) {
-    if (["sourceFile", "guideSource", "candidatePath"].includes(key) && typeof child === "string" &&
-        /^Update\/_offline-(sources|staging)\//.test(child)) farmEvidence.add(child);
-    else collectEvidence(child);
-  }
-}
-for (const manifest of [
-  "refinement/v3-3-class-scope.json", "refinement/v3-4-class-scope.json",
-  "refinement/sources.json", "equipment-sets/sources.json",
-  "quest-workflow-review.json", "material-guides.json",
-  "review/image-candidates.json",
-]) collectEvidence(JSON.parse(fs.readFileSync(path.join(source, "content-sources/farm", manifest), "utf8")));
-for (const file of farmEvidence) {
-  fs.mkdirSync(path.dirname(path.join(target, file)), { recursive: true });
-  fs.copyFileSync(path.join(source, file), path.join(target, file));
-}
+// All production inputs live in the copied source directories. In particular,
+// offline Farm snapshots must be versionable content, never an ignored Update inbox.
 try {
   for (const [command, args] of [
     ["npm", ["ci", "--include=dev", "--prefer-offline", "--no-fund"]],
@@ -66,7 +48,6 @@ try {
       timeout: 600000,
       env: {
         ...process.env,
-        
       },
     });
     const step = {

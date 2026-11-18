@@ -677,6 +677,7 @@ fs.writeFileSync(
   JSON.stringify(pageReviews, null, 2) + "\n",
 );
 fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
+fs.mkdirSync("artifacts/qa/v12-11", { recursive: true });
 fs.writeFileSync(
   "artifacts/qa/v12-11/acquisition-recovery.json",
   JSON.stringify(
