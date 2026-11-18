@@ -1,7 +1,7 @@
 import { chromium, expect } from "@playwright/test";
 import fs from "node:fs/promises";
 import { build } from "esbuild";
-const base = process.env.AQW_QA_URL || "http://127.0.0.1:4173";
+import { ensureServer } from "../scripts/qa-runtime.mjs";
 const { version } = JSON.parse(await fs.readFile("package.json", "utf8"));
 await fs.mkdir("artifacts/qa", { recursive: true });
 const compiled = await build({
@@ -35,7 +35,7 @@ const encounters = JSON.parse(
 );
 const results = [];
 await fs.mkdir("qa/v678", { recursive: true });
-const browser = await chromium.launch();
+let browser;
 async function imageLoaded(locator) {
   await locator.scrollIntoViewIfNeeded();
   await expect(locator).toBeVisible();
@@ -43,7 +43,10 @@ async function imageLoaded(locator) {
     .poll(() => locator.evaluate((i) => i.complete && i.naturalWidth > 0))
     .toBe(true);
 }
+const server = await ensureServer();
+const base = server.url;
 try {
+  browser = await chromium.launch();
   for (const width of [375, 768, 1440, 1920])
     for (const theme of ["dark", "light"]) {
       const page = await browser.newPage({
@@ -202,7 +205,11 @@ try {
       await page.close();
     }
 } finally {
-  await browser.close();
+  try {
+    await browser?.close();
+  } finally {
+    await server.close();
+  }
   await fs.writeFile("qa/v678/report.json", JSON.stringify(results, null, 2));
 }
 console.log({

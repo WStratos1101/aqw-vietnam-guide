@@ -4,6 +4,7 @@ import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import {
+  ensureServer,
   runQa,
   selectFarmBrowser,
   formatQaError,
@@ -155,4 +156,41 @@ test("invalid browser configuration fails before starting server", async (t) => 
 test('browser cache stays in Update and DYLD symbol failure is explicit',()=>{
  assert.equal(process.env.PLAYWRIGHT_BROWSERS_PATH,path.resolve('Update/_qa-browsers')+path.sep);
  assert.equal(classifyLaunchError('Namespace DYLD, Code 4 Symbol missing _OBJC_CLASS_$__WKBrowserContext'),'dyld_symbol_missing');
+});
+
+
+test("explicit QA URL is checked and stays owned by the caller", async (t) => {
+  const previous = process.env.AQW_QA_URL;
+  process.env.AQW_QA_URL = "http://fixture.invalid:4173";
+  t.after(() => {
+    if (previous === undefined) delete process.env.AQW_QA_URL;
+    else process.env.AQW_QA_URL = previous;
+  });
+  const requests = [];
+  t.mock.method(globalThis, "fetch", async (url) => {
+    requests.push(url);
+    return new Response("<h1>AQW</h1>");
+  });
+  const server = await ensureServer();
+  assert.equal(server.url, process.env.AQW_QA_URL);
+  await server.close();
+  assert.deepEqual(requests, ["http://fixture.invalid:4173"]);
+});
+
+test("unavailable explicit QA URL fails before browser navigation", async (t) => {
+  const previous = process.env.AQW_QA_URL;
+  process.env.AQW_QA_URL = "http://fixture.invalid:4173";
+  t.after(() => {
+    if (previous === undefined) delete process.env.AQW_QA_URL;
+    else process.env.AQW_QA_URL = previous;
+  });
+  t.mock.method(globalThis, "fetch", async () =>
+    new Response("Unavailable", { status: 503 }),
+  );
+  await assert.rejects(ensureServer(), /Localhost unavailable: 503/);
+  const refused = new Error("connect ECONNREFUSED 127.0.0.1:4173");
+  t.mock.method(globalThis, "fetch", async () => {
+    throw refused;
+  });
+  await assert.rejects(ensureServer(), (error) => error === refused);
 });

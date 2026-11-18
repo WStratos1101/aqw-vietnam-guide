@@ -1,15 +1,18 @@
 import { chromium, expect } from "@playwright/test";
 import fs from "node:fs/promises";
-const base = process.env.AQW_QA_URL || "http://127.0.0.1:4173";
+import { ensureServer } from "../scripts/qa-runtime.mjs";
 const classes = JSON.parse(
   await fs.readFile("src/content/classes/catalog.json", "utf8"),
 );
 const archpaladin = classes.find((c) => c.id === "archpaladin-ap");
 const classRoute = "/class/" + archpaladin.slug;
 await fs.mkdir("qa/chromium", { recursive: true });
-const browser = await chromium.launch({ headless: true });
+let browser;
 const results = [];
+const server = await ensureServer();
+const base = server.url;
 try {
+  browser = await chromium.launch({ headless: true });
   for (const width of [375, 768, 1440, 1920]) {
     const page = await browser.newPage({
       viewport: { width, height: 900 },
@@ -114,7 +117,11 @@ try {
     await page.close();
   }
 } finally {
-  await browser.close();
+  try {
+    await browser?.close();
+  } finally {
+    await server.close();
+  }
   await fs.writeFile(
     "qa/chromium/report.json",
     JSON.stringify(results, null, 2),

@@ -2,9 +2,11 @@ import { spawn } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import assert from "node:assert/strict";
+import { ensureServer } from "../scripts/qa-runtime.mjs";
 import { isComingSoon } from "../src/lib/site-feature-access.mjs";
 
-const base = process.env.AQW_QA_URL || "http://127.0.0.1:4173";
+let base = process.env.AQW_QA_URL || null;
+let server;
 const driverBase = process.env.AQW_SAFARI_DRIVER_URL || "http://127.0.0.1:4444";
 const output = "qa/safari";
 fs.mkdirSync(output, { recursive: true });
@@ -64,10 +66,18 @@ async function fill(selector, value) {
   await command("POST", `/element/${id}/value`, { text: value });
 }
 async function navigate(route) {
+  report.currentStep = {
+    name: "navigate",
+    route,
+    url: base + route,
+    selector: "h1",
+  };
   await command("POST", "/url", { url: base + route });
+  const context = await execute("return {width:innerWidth,height:innerHeight}");
+  Object.assign(report.currentStep, context);
   await waitFor(
     'return document.readyState === "complete" && !!document.querySelector("h1")',
-    "Page did not render",
+    `Page did not render: ${JSON.stringify(report.currentStep)}`,
   );
   await pause(200);
 }
@@ -146,6 +156,11 @@ async function viewport(width, height) {
   return { width, height, actual, mode: "window-clamped" };
 }
 try {
+  report.phase = "server_start";
+  server = await ensureServer();
+  base = server.url;
+  report.base = base;
+  report.phase = "browser_launch";
   if (!process.env.AQW_SAFARI_DRIVER_URL) {
     driver = spawn("/usr/bin/safaridriver", ["--port", "4444"], {
       stdio: ["ignore", "pipe", "pipe"],
@@ -175,6 +190,7 @@ try {
   });
   session = created.sessionId;
   report.capabilities = created.capabilities;
+  report.phase = "ui";
   await navigate("/");
   await execute(
     'localStorage.removeItem("aqw:bookmarks");localStorage.removeItem("aqw:progress:blade-of-awe");',
@@ -804,6 +820,13 @@ try {
     } catch {}
   }
   if (driver && !driverExit) driver.kill();
+  try {
+    await server?.close();
+  } catch (error) {
+    report.status = "failed";
+    report.cleanupError = error.message;
+    process.exitCode = 1;
+  }
   report.driverLog = driverLog;
   report.finishedAt = new Date().toISOString();
   fs.writeFileSync(

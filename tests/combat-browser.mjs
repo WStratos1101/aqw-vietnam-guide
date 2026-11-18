@@ -1,13 +1,16 @@
 import { chromium, expect } from "@playwright/test";
 import fs from "node:fs/promises";
-const base = process.env.AQW_QA_URL || "http://127.0.0.1:4173";
+import { ensureServer } from "../scripts/qa-runtime.mjs";
 const encounter = JSON.parse(
   await fs.readFile("src/content/ultra/inspection.json", "utf8"),
 )["ultra-tyndarius"];
 await fs.mkdir("qa/combat", { recursive: true });
-const browser = await chromium.launch();
+let browser;
 const results = [];
+const server = await ensureServer();
+const base = server.url;
 try {
+  browser = await chromium.launch();
   for (const width of [375, 768, 1440, 1920]) {
     const page = await browser.newPage({
       viewport: { width, height: 1000 },
@@ -79,7 +82,11 @@ try {
     await page.close();
   }
 } finally {
-  await browser.close();
+  try {
+    await browser?.close();
+  } finally {
+    await server.close();
+  }
   await fs.writeFile("qa/combat/report.json", JSON.stringify(results, null, 2));
 }
 console.log(results);

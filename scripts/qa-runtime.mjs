@@ -24,6 +24,7 @@ export async function ensureServer() {
       s.close(() => resolve(p));
     });
   });
+  await fs.mkdir("artifacts/qa", { recursive: true });
   const log = await fs.open("artifacts/qa/server.log", "a");
   const child = spawn(
     process.execPath,
