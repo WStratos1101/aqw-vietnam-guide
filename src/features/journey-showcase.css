@@ -141,7 +141,7 @@ html.light .aqw-jny__tagline { color: #171619; }
 .aqw-jny__card--forging .aqw-jny__art::before { content: none !important; }
 .aqw-jny__card--forging .aqw-jny__art img {
   width: 100%; height: 100%; position: relative; z-index: 1;
-  object-fit: cover !important; object-position: center bottom !important;
+  object-fit: cover !important; object-position: center 50% !important;
   transform: none;
 }
 .aqw-jny__card--forging:hover .aqw-jny__art img { transform: none; }
