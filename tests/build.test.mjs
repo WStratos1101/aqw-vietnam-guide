@@ -181,6 +181,8 @@ test("Lore atlas hotspot, mobile links and regional prerender", () => {
   assert.match(home, /id="ban-do-lore"/);
   assert.match(home, /src="\/art\/aqw-world-map-official\.png"/);
   assert.equal(fs.existsSync("dist/art/aqw-world-map-official.png"), true);
+  assert.match(home, /data-lore-map-mode="fixed"/);
+  assert.doesNotMatch(home, /class="lore-map-control"|class="lore-map-toolbar"|class="lore-official-viewport"/);
   assert.doesNotMatch(home, /Từng mảnh\./);
   for (const slug of loreRegionSlugs) {
     const route = "/cot-truyen/" + slug;

@@ -1,5 +1,9 @@
-import { chromium } from "@playwright/test";
+import { chromium, expect } from "@playwright/test";
 import fs from "node:fs/promises";
+const base = process.env.AQW_QA_URL || "http://127.0.0.1:4173";
+const encounter = JSON.parse(
+  await fs.readFile("src/content/ultra/inspection.json", "utf8"),
+)["ultra-tyndarius"];
 await fs.mkdir("qa/combat", { recursive: true });
 const browser = await chromium.launch();
 const results = [];
@@ -11,39 +15,64 @@ try {
     });
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
-    await page.goto("http://127.0.0.1:4173/ultra-boss/ultra-tyndarius");
+    await page.goto(base + "/ultra-boss/ultra-tyndarius");
     await page.waitForLoadState("networkidle");
     const panel = page.locator(".ultra-inspect");
     await panel.scrollIntoViewIfNeeded();
-    await page.getByRole("tab", { name: "CƠ CHẾ", exact: true }).click();
-    const rows = page.locator(".boss-skill-entry");
-    const count = await rows.count();
-    await rows.nth(1).locator("summary").click();
-    const accordion = await rows.nth(1).evaluate((e) => e.open);
-    await panel.screenshot({ path: `qa/combat/${width}-mechanics.png` });
-    await page.getByRole("tab", { name: "STATS", exact: true }).click();
-    await page
-      .getByRole("tab", { name: "STATS", exact: true })
-      .press("ArrowLeft");
-    const keyboard =
-      (await page
-        .getByRole("tab", { name: "CƠ CHẾ", exact: true })
-        .getAttribute("aria-selected")) === "true";
-    await page.getByRole("tab", { name: "STATS", exact: true }).click();
-    const stats = await page.locator(".boss-stat-row").count();
+    let count = 0;
+    let stats = 0;
+    for (let i = 0; i < encounter.monsters.length; i++) {
+      const monster = encounter.monsters[i];
+      await page.locator(".monster-selector button").nth(i).click();
+      await expect(page.locator(".enemy-status-card-heading h4")).toHaveText(
+        monster.canonicalName,
+      );
+      await expect(page.locator(".enemy-status-card dl")).toContainText(
+        monster.maxHp.toLocaleString("vi-VN"),
+      );
+      stats += await page.locator(".enemy-status-card dl > div").count();
+      await page.getByRole("tab", { name: "KỸ NĂNG", exact: true }).click();
+      const rows = page.locator(".enemy-skill-entry.is-active");
+      const skills = encounter.activeSkills.filter(
+        (s) => s.monsterId === monster.id,
+      );
+      await expect(rows).toHaveCount(skills.length);
+      for (let j = 0; j < skills.length; j++) {
+        await expect(rows.nth(j).locator("summary")).toContainText(
+          skills[j].name,
+        );
+      }
+      count += await rows.count();
+      await rows.first().locator("summary").click();
+      await expect(rows.first()).toHaveAttribute("open", "");
+      await panel.screenshot({
+        path: `qa/combat/${width}-${monster.id}-skills.png`,
+      });
+      await rows.first().locator("summary").click();
+      await expect(rows.first()).not.toHaveAttribute("open", "");
+      await page.getByRole("tab", { name: "THÔNG SỐ", exact: true }).click();
+    }
+    const statsTab = page.getByRole("tab", { name: "THÔNG SỐ", exact: true });
+    const skillsTab = page.getByRole("tab", { name: "KỸ NĂNG", exact: true });
+    await statsTab.press("ArrowLeft");
+    await expect(skillsTab).toHaveAttribute("aria-selected", "true");
+    await expect(skillsTab).toBeFocused();
+    await skillsTab.press("ArrowRight");
+    await expect(statsTab).toHaveAttribute("aria-selected", "true");
+    await expect(statsTab).toBeFocused();
     const checks = await page.evaluate(() => ({
       overflow: document.documentElement.scrollWidth > innerWidth + 1,
-      panelOverflow: [
-        ...document.querySelectorAll(".ultra-inspect-content"),
-      ].some((e) => e.scrollWidth > e.clientWidth + 1),
+      panelOverflow: [...document.querySelectorAll(".enemy-skill-list")].some(
+        (e) => e.scrollWidth > e.clientWidth + 1,
+      ),
     }));
     await panel.screenshot({ path: `qa/combat/${width}-stats.png` });
     results.push({
       width,
       count,
       stats,
-      accordion,
-      keyboard,
+      accordion: true,
+      keyboard: true,
       ...checks,
       errors,
     });
@@ -57,8 +86,8 @@ console.log(results);
 if (
   results.some(
     (r) =>
-      r.count !== 6 ||
-      r.stats < 30 ||
+      r.count !== encounter.activeSkills.length ||
+      r.stats !== encounter.monsters.length * 2 ||
       !r.accordion ||
       !r.keyboard ||
       r.overflow ||

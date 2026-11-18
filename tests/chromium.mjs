@@ -1,6 +1,11 @@
-import { chromium } from "@playwright/test";
+import { chromium, expect } from "@playwright/test";
 import fs from "node:fs/promises";
 const base = process.env.AQW_QA_URL || "http://127.0.0.1:4173";
+const classes = JSON.parse(
+  await fs.readFile("src/content/classes/catalog.json", "utf8"),
+);
+const archpaladin = classes.find((c) => c.id === "archpaladin-ap");
+const classRoute = "/class/" + archpaladin.slug;
 await fs.mkdir("qa/chromium", { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const results = [];
@@ -13,7 +18,7 @@ try {
     for (const route of [
       "/",
       "/class",
-      "/class/archpaladin",
+      classRoute,
       "/ultra-boss",
       "/ultra-boss/ultra-ezrajal",
       "/ultra-boss/ultra-dage",
@@ -40,22 +45,41 @@ try {
           .map((i) => i.src),
         heading: document.querySelector("h1")?.textContent,
       }));
-      if (route === "/class/archpaladin") {
-        await page.locator('a[href="#combo"]').first().click();
-        await page.locator('input[type="checkbox"]').first().check();
+      if (route === classRoute) {
+        const combo = page.getByRole("tab", {
+          name: "HƯỚNG DẪN COMBO",
+          exact: true,
+        });
+        const acquisition = page.getByRole("tab", {
+          name: "CÁCH LẤY CLASS",
+          exact: true,
+        });
+        await combo.click();
+        await expect(page.locator('[data-class-panel="combo"]')).toBeVisible();
+        const openProgress = async () => {
+          await acquisition.click();
+          await page.locator(".acquisition-unlock-route > summary").click();
+        };
+        await openProgress();
+        const check = page
+          .locator('.class-obtain-steps input[type="checkbox"]')
+          .first();
+        await check.check();
         await page.reload();
-        await page.waitForFunction(
-          () =>
-            document.querySelector("input[type=checkbox]")?.checked === true,
-        );
-        checks.persisted = await page
-          .locator('input[type="checkbox"]')
-          .first()
-          .isChecked();
-        await page.locator('input[type="checkbox"]').first().uncheck();
+        await openProgress();
+        await expect(check).toBeChecked();
+        checks.persisted = await check.isChecked();
+        await check.uncheck();
       }
       if (route.includes("/ultra-boss/")) {
-        for (const tab of await page.getByRole("tab").all()) await tab.click();
+        await page.getByRole("tab", { name: "KỸ NĂNG", exact: true }).click();
+        await page
+          .getByRole("tab", { name: "ACTIVE SKILL", exact: true })
+          .click();
+        await page
+          .getByRole("tab", { name: "PASSIVE SKILL", exact: true })
+          .click();
+        await page.getByRole("tab", { name: "THÔNG SỐ", exact: true }).click();
         const team = page.locator(".ultra-team-toggle").first();
         if (await team.count()) {
           await team.click();

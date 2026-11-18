@@ -147,6 +147,8 @@ await runQa(
               good,
               "Faction switcher must remain visible in item detail",
             ).toBeVisible();
+            await good.scrollIntoViewIfNeeded();
+            await expect(good).toBeInViewport();
             await good.focus();
             await expect(good).toBeFocused();
             await good.press("Enter");

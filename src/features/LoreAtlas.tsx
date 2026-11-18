@@ -1,23 +1,10 @@
 import { ArrowUpRight, Compass } from "lucide-react";
-import { useRef, useState } from "react";
 import { loreRegions, loreRegionHref, type LoreRegion } from "../content/lore-regions";
 import "../styles/lore-atlas.css";
 
 export function LoreAtlas() {
-  const viewport = useRef<HTMLDivElement>(null);
-  const [zoom, setZoom] = useState(1);
   const pins = loreRegions.filter(region => region.x !== null && region.y !== null);
   const extra = loreRegions.filter(region => region.x === null || region.y === null);
-  const pan = (x:number,y:number) => viewport.current?.scrollBy({left:x,top:y,behavior:"smooth"});
-  const reset = () => {
-    setZoom(1);
-    viewport.current?.scrollTo({left:0,top:0});
-  };
-  const adjust = (delta:number) => setZoom(z => Math.max(1, Math.min(2, z+delta)));
-  const control = (label:string, x:number, y:number, w:number, h:number, action:()=>void) => (
-    <button type="button" className="lore-map-control" aria-label={label} title={label}
-      style={{left:x/742*100+"%",top:y/444*100+"%",width:w/742*100+"%",height:h/444*100+"%"}} onClick={action}/>
-  );
   return (
     <section className="chapter lore-atlas" id="ban-do-lore" aria-labelledby="lore-atlas-title">
       <div className="section-heading lore-atlas-heading">
@@ -26,32 +13,17 @@ export function LoreAtlas() {
       </div>
       <div className="lore-map-frame">
         <div className="lore-map-top"><Compass size={20} aria-hidden="true" /><span>WORLD MAP · LORE</span><small>Chạm vào biểu tượng vùng đất để khám phá</small></div>
-        <div className="lore-map-toolbar">
-          <span>Di chuyển bản đồ bằng cuộn ngang hoặc các mũi tên khi phóng to.</span>
-          <button type="button" onClick={()=>adjust(-.25)} disabled={zoom<=1} aria-label="Thu nhỏ bản đồ">−</button>
-          <button type="button" onClick={()=>adjust(.25)} disabled={zoom>=2} aria-label="Phóng to bản đồ">+</button>
-          <button type="button" onClick={reset}>Mặc định</button>
-        </div>
-        <div className="lore-official-viewport" ref={viewport} aria-label="Bản đồ Lore có thể cuộn" tabIndex={0}>
-          <div className="lore-official-stage" style={{width:zoom*100+"%",minWidth:742*zoom+"px"}}>
-            <img className="lore-official-image" src="/art/aqw-world-map-official.png" alt="World Map gốc trong AdventureQuest Worlds" width={742} height={444} loading="lazy" draggable={false}/>
+        <div className="lore-fixed-stage" data-lore-map-mode="fixed">
+            <img className="lore-fixed-image" src="/art/aqw-world-map-official.png" alt="World Map gốc trong AdventureQuest Worlds" width={2048} height={1230} loading="lazy" draggable={false}/>
             {pins.map(region => (
-              <a key={region.slug} className="lore-official-pin" href={loreRegionHref(region)}
+              <a key={region.slug} className="lore-fixed-pin" href={loreRegionHref(region)}
                 style={{left:region.x+"%",top:region.y+"%"}}
                 data-lore-pin={region.slug} aria-label={"Khám phá "+region.name} title={region.name}>
-                <span className="lore-map-tooltip" aria-hidden="true">{region.name}</span>
+                <span className="lore-fixed-tooltip" aria-hidden="true">{region.name}</span>
               </a>
             ))}
-            {control("Di chuyển lên",371,20,48,30,()=>pan(0,-180))}
-            {control("Di chuyển sang trái",20,221,27,56,()=>pan(-220,0))}
-            {control("Di chuyển sang phải",721,216,27,56,()=>pan(220,0))}
-            {control("Di chuyển xuống",372,425,48,31,()=>pan(0,180))}
-            {control("Lore Center",76,423,116,28,reset)}
-            {control("Thu nhỏ",650,427,29,29,()=>adjust(-.25))}
-            {control("Phóng to",685,427,29,29,()=>adjust(.25))}
-          </div>
         </div>
-        <div className="lore-map-caption">World Map trong game AQW · © Artix Entertainment · Ảnh lưu từ <a href="https://aqwwiki.wikidot.com/maps" target="_blank" rel="noreferrer">AQWorlds Wiki</a>. Các điểm bấm dẫn đến biên niên sử trên AQW Vietnam Guide.</div>
+        <div className="lore-map-caption">World Map trong game AQW · © Artix Entertainment · Chọn vùng đất để mở biên niên sử.</div>
       </div>
       <details className="lore-map-directory">
         <summary>Danh sách vùng đất trên bản đồ ({pins.length})</summary>

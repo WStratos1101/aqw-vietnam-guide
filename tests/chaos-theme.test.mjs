@@ -19,6 +19,7 @@ test('Theme toggle changes root and persists selection through remount',async()=
  globalThis.IS_REACT_ACT_ENVIRONMENT=true;
  const {createRoot}=await import('react-dom/client');
  const compiled=await build({stdin:{contents:"export {ThemeToggle} from './src/components/ThemeToggle';",resolveDir:process.cwd(),loader:'tsx'},bundle:true,write:false,platform:'node',format:'esm',packages:'external'});
+ fs.mkdirSync('artifacts/qa/chaos-theme',{recursive:true});
  fs.writeFileSync('artifacts/qa/chaos-theme/toggle.mjs',compiled.outputFiles[0].text);
  const {ThemeToggle}=await import('../artifacts/qa/chaos-theme/toggle.mjs');
  document.documentElement.dataset.theme='dark';const host=document.createElement('div');document.body.append(host);let root=createRoot(host);

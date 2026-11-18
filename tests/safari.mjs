@@ -160,12 +160,19 @@ try {
         "Fonts did not load",
       );
       assert.equal(await execute("return innerWidth"), width);
+      const overflowing = await execute(`return Array.from(document.querySelectorAll('body *')).filter(e => {
+        const r = e.getBoundingClientRect();
+        return r.width > 0 && (r.right > innerWidth + 1 || r.left < -1);
+      }).map(e => ({tag:e.tagName,className:e.className?.baseVal ?? e.className,
+        width:e.getBoundingClientRect().width,right:e.getBoundingClientRect().right}));`);
+      report.layoutDiagnostics ??= [];
+      report.layoutDiagnostics.push({route: targetRoute, width, overflowing});
       assert.equal(
         await execute(
           "return document.documentElement.scrollWidth > innerWidth",
         ),
         false,
-        `Overflow at ${width}`,
+        `Overflow at ${width} on ${targetRoute}: ${JSON.stringify(overflowing)}`,
       );
       const pages = await execute(
         "return Math.ceil(document.documentElement.scrollHeight/innerHeight)",

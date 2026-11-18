@@ -101,13 +101,16 @@
   align-items: center;
   border-bottom: 1px solid var(--ultra-control-border);
   min-width: min(100%, 320px);
+  max-width: 100%;
 }
 .ultra-directory-tools input[type="search"] {
   background: transparent;
   border: 0;
   color: var(--u-text);
   padding: 14px 0;
-  width: 100%;
+  flex: 1;
+  min-width: 0;
+  width: 0;
   font: inherit;
 }
 .ultra-ready-filter {

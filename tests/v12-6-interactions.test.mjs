@@ -2,6 +2,7 @@ import test from 'node:test';import assert from 'node:assert/strict';import fs f
 const win=new Window({url:'http://localhost/challenge-dungeon/the-gaol-of-eternal-torment-and-misery'});
 for(const k of ['window','document','HTMLElement','HTMLDetailsElement','Node','Event','MouseEvent','localStorage','MutationObserver'])globalThis[k]=k==='window'?win:win[k];globalThis.IS_REACT_ACT_ENVIRONMENT=true;
 const{createRoot}=await import('react-dom/client');
+await fs.mkdir('artifacts/qa/v12-6',{recursive:true});
 const output=await build({stdin:{contents:"export {ClassCombos} from './src/features/classes/ClassCombos';export {TargetEffects} from './src/features/classes/TargetEffects';export {ClassDirectory} from './src/features/classes/ClassDirectory';export {ClassArtSelector} from './src/features/classes/ClassArtSelector';export {ChallengeDetail} from './src/features/challenges/ChallengeCodex';",resolveDir:process.cwd(),loader:'tsx'},bundle:true,write:false,platform:'node',format:'esm',packages:'external',loader:{'.css':'empty'}});
 await fs.writeFile('artifacts/qa/v12-6/interactions.mjs',output.outputFiles[0].text);const{ClassDirectory,ClassArtSelector,ChallengeDetail,ClassCombos,TargetEffects}=await import('../artifacts/qa/v12-6/interactions.mjs');const read=async p=>JSON.parse(await fs.readFile(p));
 test('Art selector is conditional and changes only art within the same mounted screen',async()=>{

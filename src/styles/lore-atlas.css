@@ -54,3 +54,22 @@
 .lore-extra-regions p{margin-bottom:1rem;color:var(--muted)}
 .lore-official-stage .lore-map-control{min-height:0;min-width:0}
 .lore-atlas,.lore-map-frame,.lore-official-viewport{min-width:0;max-width:100%}
+
+/* Fixed HD World Map: no pan, zoom, clipping of image or nested scrolling. */
+.lore-fixed-stage{position:relative;isolation:isolate;width:100%;max-width:100%;min-width:0;aspect-ratio:2048/1230;overflow:hidden;overflow:clip}
+.lore-fixed-image{display:block;width:100%;height:auto;max-width:100%;aspect-ratio:2048/1230;user-select:none;pointer-events:none}
+.lore-fixed-pin{position:absolute;transform:translate(-50%,-50%);display:block;width:4.35%;height:7.2%;padding:0;min-width:0;min-height:0;background:transparent;border:1px solid transparent;border-radius:8px;cursor:pointer;z-index:2;text-decoration:none!important;box-sizing:border-box}
+.lore-fixed-pin:focus-visible{outline:2px solid #fbe6a0;outline-offset:1px;background:#fff5be30;box-shadow:0 0 13px #fbe6a099;z-index:4}
+.lore-fixed-tooltip{position:absolute;left:50%;bottom:100%;transform:translateX(-50%);background:#171823;color:#ffefc4;padding:.35rem .55rem;white-space:nowrap;box-shadow:0 3px 12px #0008;border:1px solid #c2a967;border-radius:4px;opacity:0;pointer-events:none;font-size:.85rem}
+.lore-fixed-pin[data-lore-pin="frozen-northlands"] .lore-fixed-tooltip{bottom:auto;top:100%}
+.lore-fixed-pin:focus-visible .lore-fixed-tooltip{opacity:1}
+@media (hover:hover){.lore-fixed-pin:hover{outline:2px solid #fbe6a0;outline-offset:1px;background:#fff5be30;box-shadow:0 0 13px #fbe6a099;z-index:4}.lore-fixed-pin:hover .lore-fixed-tooltip{opacity:1}}
+.lore-map-caption a{color:#f3e4c3;text-decoration:underline}
+.lore-map-directory{margin:1rem 0}
+.lore-map-directory summary{cursor:pointer;font-weight:700;padding:12px 0}
+.lore-map-directory .lore-region-grid{margin-top:10px}
+.lore-map-directory .lore-region-card,.lore-extra-regions .lore-region-card{grid-template-columns:minmax(0,1fr) auto}
+.lore-extra-regions{margin-top:1.75rem}
+.lore-extra-regions h3{margin:0 0 .4rem;font-size:1.25rem}
+.lore-extra-regions p{margin-bottom:1rem;color:var(--muted)}
+.lore-atlas,.lore-map-frame{min-width:0;max-width:100%}

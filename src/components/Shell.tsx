@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { ThemeToggle } from './ThemeToggle';
-import { APP_VERSION } from '../config/version';
+import { version as APP_VERSION } from '../../package.json';
 import { Menu, X, Search, ArrowUp, ArrowUpRight } from "lucide-react";
 export const nav = [
   ["/huong-dan", "Hướng dẫn"],
