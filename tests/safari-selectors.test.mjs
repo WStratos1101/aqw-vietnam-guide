@@ -130,7 +130,9 @@ test('Class selectors and the wait helper forward quoted aria-label values as ar
    const index=node.expression.getText(source)==='waitFor'?2:1,args=node.arguments[index];
    if(args&&ts.isArrayLiteralExpression(args)&&ts.isStringLiteralLike(args.elements[0])&&args.elements[0].text.includes('aria-label='))selected.push({script:node.arguments[0].text,args:[args.elements[0].text],wait: index===2});
   }ts.forEachChild(node,collect);
- }collect(source);assert.equal(selected.length,3);
+ }collect(source);assert.equal(selected.length,2);
+ const selectCalls=[];function findSelect(node){if(ts.isCallExpression(node)&&node.expression.getText(source)==='selectValue')selectCalls.push(node);ts.forEachChild(node,findSelect);}findSelect(source);
+ assert.ok(selectCalls.some(call=>call.arguments[0]?.text==='select[aria-label="Vai trò"]'&&call.arguments[1]?.text==='Support'),'Support selection uses the WebDriver select helper');
  const window=new Window();
  try{
   window.document.body.innerHTML='<select aria-label="Vai trò"><option value="Support" selected>Support</option></select><div class="class-card">Support</div><div class="class-inspection-tabs"><button aria-label="CÁCH LẤY CLASS">Acquisition</button></div>';

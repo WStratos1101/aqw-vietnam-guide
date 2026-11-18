@@ -1,29 +1,10 @@
-import { LoreShowcase } from "./LoreShowcase";
+import { LoreShowcase } from "./JourneyShowcase";
 import classes from "../content/home-starters.json";
 import poster from "../content/home-poster.json";
 import { useState } from "react";
 import { LoreAtlas } from "./LoreAtlas";
 import { ArrowRight, ArrowUpRight, ChevronDown, Search } from "lucide-react";
-const journey = [
-  {
-    "chapter": "Chương I",
-    "title": "Khởi đầu của câu chuyện",
-    "href": "/cot-truyen",
-    "description": "Từ những con đường quen thuộc của Battleon, số phận dẫn bạn đến những bí mật của thế giới Lore. Hãy lật mở trang đầu tiên, nơi một nhà thám hiểm vô danh có thể làm thay đổi cả lịch sử."
-  },
-  {
-    "chapter": "Chương II",
-    "title": "Món vũ khí đầu tiên",
-    "href": "/farm/item/blade-of-awe",
-    "description": "Năm mảnh di vật nằm rải rác, chờ người xứng đáng ghép lại thanh kiếm huyền thoại. Hãy lần theo dấu tích cổ xưa và rèn nên Blade of Awe, dấu ấn đầu tiên trên con đường trở thành huyền thoại."
-  },
-  {
-    "chapter": "Chương III",
-    "title": "Những người bạn, đồng minh hay kẻ thù",
-    "href": "/ultra-boss",
-    "description": "Không phải mọi kẻ đứng trước bạn đều là kẻ thù, và không phải mọi lời thề đều đáng tin. Khi đối mặt với những quyền năng hùng mạnh nhất của Lore, hãy chọn người sát cánh bên mình và tự viết nên kết cục của trận chiến."
-  }
-];
+
 export function Home() {
   const [active, setActive] = useState(0);
   const selected = classes[active];
@@ -213,27 +194,7 @@ export function Home() {
       </section>
       <LoreAtlas />
       <LoreShowcase />
-      <section className="updates chapter">
-        <div className="section-heading">
-          <h2>Hành trình</h2>
-          <p>Ba chặng đường, từ buổi đầu ở Battleon tới những trận chiến làm nên truyền thuyết.</p>
-        </div>
-        {journey.map((step) => (
-          <a className="entry-row" href={step.href} key={step.href} data-home-journey={step.chapter}>
-            <div>
-              <span className="entry-category">{step.chapter}</span>
-              <h3>{step.title}</h3>
-              <p>{step.description}</p>
-            </div>
-            <div className="entry-meta">
-              <ArrowUpRight size={25} aria-hidden="true" />
-            </div>
-          </a>
-        ))}
-        <a className="plain-link all-guides" href="/huong-dan">
-          Toàn bộ thư viện <ArrowUpRight />
-        </a>
-      </section>
+      
       <section className="search-chapter chapter">
         <h2>Bạn đang tìm gì?</h2>
         <form action="/huong-dan" className="home-search">

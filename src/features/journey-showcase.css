@@ -1,0 +1,189 @@
+/* All selectors are scoped to this one Home section. No global stylesheet changes. */
+.aqw-jny {
+  --aqw-jny-bg: #21132e;
+  --aqw-jny-cream: #faf9f6;
+  display: block;
+  background: var(--aqw-jny-bg);
+  color: #f4ecff;
+  padding: clamp(34px, 5vw, 64px) 0;
+  isolation: isolate;
+}
+.aqw-jny, .aqw-jny * { box-sizing: border-box; }
+.aqw-jny__wrap { width: min(100% - 48px, 1460px); margin: 0 auto; }
+.aqw-jny__header { display: flex; justify-content: space-between; align-items: end; gap: 36px; margin: 0 0 28px; }
+.aqw-jny__headline { font-family: inherit; font-size: clamp(38px, 4.3vw, 64px); letter-spacing: -.055em; line-height: 1.04; font-weight: 850; margin: 0; color: #f4ecff; max-width: 760px; }
+.aqw-jny__tagline { max-width: 380px; margin: 0 0 8px; font-size: clamp(14px, 1.25vw, 18px); line-height: 1.55; color: #eee4f5; text-align: right; }
+.aqw-jny__chapters { display: grid; gap: 12px; }
+.aqw-jny__card { min-height: 209px; position: relative; overflow: hidden; display: flex; align-items: center; isolation: isolate; background: var(--aqw-jny-cream); color: #141218; text-decoration: none; border: 1px solid rgba(55, 36, 67, .12); transition: transform .22s ease, box-shadow .22s ease; }
+.aqw-jny__card:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.18); }
+.aqw-jny__card:focus-visible { outline: 3px solid #f4bd67; outline-offset: 3px; }
+.aqw-jny__art { position: absolute; inset: 0 0 0 auto; width: 58%; z-index: -1; overflow: hidden; }
+.aqw-jny__art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .4s ease; }
+.aqw-jny__card--origin .aqw-jny__art img { object-position: 52% 43%; }
+.aqw-jny__card--forging .aqw-jny__art img { object-position: 40% 47%; }
+.aqw-jny__card--alliances .aqw-jny__art img { object-position: 50% 54%; }
+.aqw-jny__card:hover .aqw-jny__art img { transform: scale(1.035); }
+.aqw-jny__card::before { content: ""; position: absolute; z-index: 0; inset: 0; pointer-events: none; background: linear-gradient(to right, var(--aqw-jny-cream) 0%, var(--aqw-jny-cream) 42%, rgba(250,249,246,.97) 48%, rgba(250,249,246,.84) 53%, rgba(250,249,246,.42) 62%, transparent 73%); }
+.aqw-jny__copy { position: relative; z-index: 1; width: 58%; padding: 22px clamp(22px, 2.1vw, 35px); }
+.aqw-jny__eyebrow { display: block; font-size: 15px; font-weight: 750; margin-bottom: 9px; }
+.aqw-jny__title { font-size: clamp(25px, 2.15vw, 36px); font-weight: 850; line-height: 1.17; letter-spacing: -.035em; color: #16141a; margin: 0 0 12px; }
+.aqw-jny__description { margin: 0; font-size: clamp(14px, 1.12vw, 17px); font-weight: 450; line-height: 1.55; color: #26202a; text-align: justify; text-wrap: pretty; }
+.aqw-jny__arrow { position: absolute; top: 18px; right: 19px; z-index: 2; display: grid; place-items: center; width: 39px; height: 39px; color: #121014; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.12); font-size: 26px; line-height: 1; transition: transform .22s ease; }
+.aqw-jny__card:hover .aqw-jny__arrow { transform: translate(2px,-2px); }
+@media (max-width: 900px) {
+  .aqw-jny__wrap { width: min(100% - 32px, 1460px); }
+  .aqw-jny__header { align-items: start; flex-direction: column; gap: 10px; }
+  .aqw-jny__tagline { max-width: 100%; text-align: left; }
+  .aqw-jny__copy { width: 70%; }
+  .aqw-jny__art { width: 66%; }
+  .aqw-jny__card::before { background: linear-gradient(to right,var(--aqw-jny-cream) 0%,var(--aqw-jny-cream) 43%,rgba(250,249,246,.94) 53%,rgba(250,249,246,.2) 83%,transparent 100%); }
+}
+@media (max-width: 620px) {
+  .aqw-jny { padding: 32px 0; }
+  .aqw-jny__wrap { width: calc(100% - 24px); }
+  .aqw-jny__headline { font-size: clamp(33px, 9vw, 47px); }
+  .aqw-jny__header { margin-bottom: 20px; }
+  .aqw-jny__card { min-height: 390px; align-items: end; }
+  .aqw-jny__art { inset: 0 0 auto 0; width: 100%; height: 63%; }
+  .aqw-jny__art img { object-position: center 40%; }
+  .aqw-jny__card::before { background: linear-gradient(to bottom, transparent 0%, rgba(250,249,246,.10) 31%,rgba(250,249,246,.96) 57%,var(--aqw-jny-cream) 68%,var(--aqw-jny-cream) 100%); }
+  .aqw-jny__copy { width: 100%; padding: 16px 20px 23px; }
+  .aqw-jny__title { font-size: 25px; margin-bottom: 9px; }
+  .aqw-jny__description { font-size: 14px; }
+  .aqw-jny__arrow { top: 12px; right: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aqw-jny__card,.aqw-jny__art img,.aqw-jny__arrow { transition: none; }
+}
+
+/* When the existing page already renders its own heading, only replace its cards. */
+.aqw-jny--embedded { background: transparent; padding: 0; }
+.aqw-jny--embedded .aqw-jny__wrap { width: 100%; max-width: none; }
+
+/* AQW-JOURNEY-V4: BEGIN */
+/* The theme host is the closest parent section found by the scoped React hook.
+   The site's existing Dark Mode is untouched. */
+html[data-theme="light"] .aqw-jny-theme-host,
+body[data-theme="light"] .aqw-jny-theme-host,
+html.light .aqw-jny-theme-host {
+  background: #f5f4f0 !important;
+  color: #171619 !important;
+}
+html[data-theme="light"] .aqw-jny-theme-host :is(h1,h2,p):not(.aqw-jny__description):not(.aqw-jny__tagline),
+body[data-theme="light"] .aqw-jny-theme-host :is(h1,h2,p):not(.aqw-jny__description):not(.aqw-jny__tagline),
+html.light .aqw-jny-theme-host :is(h1,h2,p):not(.aqw-jny__description):not(.aqw-jny__tagline) {
+  color: #171619 !important;
+}
+/* When Journey is self-contained rather than embedded, it owns its own theme. */
+html[data-theme="light"] .aqw-jny:not(.aqw-jny--embedded),
+body[data-theme="light"] .aqw-jny:not(.aqw-jny--embedded),
+html.light .aqw-jny:not(.aqw-jny--embedded) {
+  background: #f5f4f0;
+  color: #171619;
+}
+html[data-theme="light"] .aqw-jny__headline,
+html[data-theme="light"] .aqw-jny__tagline,
+body[data-theme="light"] .aqw-jny__headline,
+body[data-theme="light"] .aqw-jny__tagline,
+html.light .aqw-jny__headline,
+html.light .aqw-jny__tagline { color: #171619; }
+/* The sword in Chapter II must remain completely visible, without cropping. */
+.aqw-jny__card--forging .aqw-jny__art {
+  background: #293047;
+}
+.aqw-jny__card--forging .aqw-jny__art::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: url("/images/journey/chapter-2-sword.webp") center / cover no-repeat;
+  filter: blur(17px) brightness(.64);
+  transform: scale(1.07);
+  z-index: 0;
+}
+.aqw-jny__card--forging .aqw-jny__art img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none;
+}
+.aqw-jny__card--forging:hover .aqw-jny__art img { transform: none; }
+/* Narrow screens: place the artwork above the text as the existing V3 layout does. */
+@media (max-width: 620px) {
+  .aqw-jny__card--forging .aqw-jny__art img { object-fit: contain; }
+}
+/* Class teaser: activated only after clicking Warrior/Mage/Healer/Rogue. */
+@keyframes aqw-v4-hero-art {
+  0% { opacity: 0; transform: translateY(20px) scale(.92); filter: blur(7px); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+@keyframes aqw-v4-hero-info {
+  0% { opacity: 0; transform: translateX(48px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.aqw-jny-class-art-enter {
+  animation: aqw-v4-hero-art 510ms cubic-bezier(.22,1,.36,1) both;
+}
+.aqw-jny-class-detail-enter {
+  animation: aqw-v4-hero-info 460ms cubic-bezier(.22,1,.36,1) 210ms both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .aqw-jny-class-art-enter,.aqw-jny-class-detail-enter { animation: none !important; }
+}
+/* AQW-JOURNEY-V4: END */
+
+/* AQW-JOURNEY-V5: BEGIN — Original user-supplied AQW cutscene, unmodified */
+/* Keep original Lae art byte-for-byte. Crop is purely viewport CSS, so the
+   dialogue bubble from the upper portion of the screenshot remains out of view. */
+.aqw-jny__card--forging .aqw-jny__art { background: #273b4a; }
+.aqw-jny__card--forging .aqw-jny__art::before { content: none !important; }
+.aqw-jny__card--forging .aqw-jny__art img {
+  width: 100%; height: 100%; position: relative; z-index: 1;
+  object-fit: cover !important; object-position: center bottom !important;
+  transform: none;
+}
+.aqw-jny__card--forging:hover .aqw-jny__art img { transform: none; }
+.aqw-jny__eyebrow { display: none !important; }
+.aqw-jny__copy { padding-top: clamp(24px, 2.5vw, 36px); padding-bottom: clamp(24px, 2.5vw, 36px); }
+.aqw-jny__card { min-height: 222px; }
+/* Motion is applied to the four starter-class teaser ONLY. No images or art
+   files for Class are modified. */
+@keyframes aqw-v5-class-art {
+  from { opacity: 0; transform: translate3d(-14px, 24px, 0) scale(.958); filter: blur(8px); }
+  to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); filter: blur(0); }
+}
+@keyframes aqw-v5-class-info {
+  from { opacity: 0; transform: translate3d(45px, 11px, 0) scale(.987); filter: blur(6px); }
+  to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); filter: blur(0); }
+}
+@keyframes aqw-v5-class-line {
+  from { opacity: 0; transform: translate3d(26px, 7px, 0); filter: blur(3px); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); filter: blur(0); }
+}
+.aqw-jny-class-art-enter {
+  animation: aqw-v5-class-art 850ms cubic-bezier(.16, .86, .20, 1) both !important;
+}
+.aqw-jny-class-detail-enter {
+  animation: aqw-v5-class-info 950ms cubic-bezier(.16, .80, .22, 1) 250ms both !important;
+}
+.aqw-jny-class-detail-enter > * {
+  animation: aqw-v5-class-line 780ms cubic-bezier(.16, .82, .24, 1) both;
+  animation-delay: calc(310ms + var(--aqw-v5-line-index, 0) * 95ms);
+}
+@media(max-width:620px) {
+  .aqw-jny__card { min-height: 382px; }
+  /* Small screens: enlarge source only through display CSS so speech bubble is
+     clipped out of the top; preserve all original character pixels. */
+  .aqw-jny__card--forging .aqw-jny__art img {
+    position: absolute; right: 0; bottom: 0; top: auto;
+    width: 150%; height: 150%; object-fit: cover !important;
+    object-position: right bottom !important;
+  }
+}
+@media(prefers-reduced-motion: reduce) {
+ .aqw-jny-class-art-enter, .aqw-jny-class-detail-enter,
+ .aqw-jny-class-detail-enter > * { animation: none !important; filter: none !important; }
+}
+/* AQW-JOURNEY-V5: END */

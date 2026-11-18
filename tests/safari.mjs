@@ -1,3 +1,4 @@
+import { requestSafariDriver } from "./lib/safari-webdriver.mjs";
 import { spawn } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
@@ -26,22 +27,25 @@ let driver,
   driverLog = "";
 const pause = (ms) => new Promise((r) => setTimeout(r, ms));
 async function request(method, url, body) {
-  const res = await fetch(driverBase + url, {
-    method,
-    headers: { "Content-Type": "application/json" },
-    body: body === undefined ? undefined : JSON.stringify(body),
-    signal: AbortSignal.timeout(15000),
+  return requestSafariDriver({
+    base: driverBase, method, endpoint: url, body, step: { ...report.currentStep, check: report.activeCheck, target: report.currentCommandTarget },
+    onError: diagnostic => (report.webdriverErrors ||= []).push(diagnostic),
   });
-  const json = await res.json();
-  if (!res.ok || json.value?.error)
-    throw Error(json.value?.message || `WebDriver HTTP ${res.status}`);
-  return json.value;
 }
 const command = (method, url, body) =>
   request(method, `/session/${session}${url}`, body);
 // Send selectors via args so CSS quotes never become JavaScript string delimiters.
 const execute = (script, args = []) =>
-  command("POST", "/execute/sync", { script, args });
+  command("POST", "/execute/sync", { script: `
+    if(!window.__aqwQaErrorTypes){
+      window.__aqwQaErrorTypes=[];
+      window.addEventListener('error',()=>window.__aqwQaErrorTypes.push('error'));
+      window.addEventListener('unhandledrejection',()=>window.__aqwQaErrorTypes.push('unhandledrejection'));
+      const original=console.error;
+      console.error=function(...values){window.__aqwQaErrorTypes.push('console.error');return original.apply(this,values);};
+    }
+    ${script}
+  `, args });
 async function waitFor(script, message, args = []) {
   for (let i = 0; i < 40; i++) {
     if (await execute(script, args)) return;
@@ -56,14 +60,95 @@ async function find(script, args = []) {
 }
 async function click(script, args = []) {
   const id = await find(script, args);
-  await command("POST", `/element/${id}/click`, {});
+  await revealElement({ "element-6066-11e4-a52e-4f735466cecf": id });
+  report.currentCommandTarget = await execute(`
+    const element=arguments[0],rect=element.getBoundingClientRect();
+    return {tag:element.tagName,type:element.getAttribute('type'),label:element.getAttribute('aria-label'),
+      disabled:!!element.disabled,visible:!!element.getClientRects().length,
+      closedDetails:!!Array.from(element.closest('details')?[element.closest('details')]:[]).find(d=>!d.open&&element.tagName!=='SUMMARY'),
+      hiddenAncestor:!!element.closest('[hidden],[inert]'),rect:{x:rect.x,y:rect.y,width:rect.width,height:rect.height}};
+  `, [{ "element-6066-11e4-a52e-4f735466cecf": id }]);
+  try { await command("POST", `/element/${id}/click`, {}); }
+  finally { delete report.currentCommandTarget; }
+}
+// Safari's Element Click can emit mouse-up before mouse-down after text entry.
+// Use an explicit native pointer sequence for the affected Class controls.
+async function pointerClick(selector) {
+  const id = await find("return document.querySelector(arguments[0])", [selector]);
+  await execute(`
+    const element=document.querySelector(arguments[0]);
+    window.__aqwClassPointer={down:false,up:false};
+    element.addEventListener('pointerdown',()=>{window.__aqwClassPointer.down=true;window.__aqwClassPointer.up=false;},{once:true});
+    element.addEventListener('pointerup',()=>{if(window.__aqwClassPointer.down)window.__aqwClassPointer.up=true;},{once:true});
+  `, [selector]);
+  try {
+    await command("POST", "/actions", {
+      actions: [{ type: "pointer", id: "class-controls", parameters: { pointerType: "mouse" }, actions: [
+        { type: "pointerMove", origin: { "element-6066-11e4-a52e-4f735466cecf": id }, x: 0, y: 0 },
+        { type: "pointerDown", button: 0 },
+      ] }],
+    });
+    await waitFor('return window.__aqwClassPointer.down', "Class control did not receive pointerdown");
+    await command("POST", "/actions", {
+      actions: [{ type: "pointer", id: "class-controls", parameters: { pointerType: "mouse" }, actions: [
+        { type: "pointerUp", button: 0 },
+      ] }],
+    });
+    await waitFor('return window.__aqwClassPointer.up', "Class control did not receive pointerup");
+  } finally {
+    await command("DELETE", "/actions");
+  }
+}
+// WebDriver has no select-by-value endpoint. Use the select DOM API and its
+// input/change events; verify the rendered filter result separately below.
+async function selectValue(selector, value) {
+  const selected = await execute(`
+    const select=document.querySelector(arguments[0]);
+    if(select?.tagName !== 'SELECT')throw Error('Select not found: '+arguments[0]);
+    const option=Array.from(select.options).find(o=>o.value===arguments[1]);
+    if(!option || option.disabled || option.parentElement.disabled)throw Error('Enabled option not found: '+arguments[1]);
+    select.value=option.value;
+    select.dispatchEvent(new Event('input',{bubbles:true}));
+    select.dispatchEvent(new Event('change',{bubbles:true}));
+    return select.value;
+  `, [selector, value]);
+  assert.equal(selected, value, "Select value did not update");
+}
+async function revealElement(element) {
+  await execute(`
+    const element=arguments[0],rect=element.getBoundingClientRect();
+    if(rect.top<0||rect.bottom>innerHeight||rect.left<0||rect.right>innerWidth)
+      element.scrollIntoView({block:"center",inline:"nearest",behavior:"instant"});
+  `, [element]);
+  await waitFor(`
+    const element=arguments[0],rect=element.getBoundingClientRect();
+    const hit=document.elementFromPoint(rect.x+rect.width/2,rect.y+rect.height/2);
+    return rect.width>0&&rect.height>0&&rect.top>=0&&rect.bottom<=innerHeight&&!!hit&&(hit===element||element.contains(hit));
+  `, "Control is not visible/hittable", [element]);
+}
+async function revealControl(selector) {
+  const element=await execute('return document.querySelector(arguments[0])', [selector]);
+  assert.ok(element, "Control not found: " + selector);
+  await revealElement(element);
 }
 async function fill(selector, value) {
   const id = await find("return document.querySelector(arguments[0])", [
     selector,
   ]);
-  await command("POST", `/element/${id}/clear`, {});
-  await command("POST", `/element/${id}/value`, { text: value });
+  if (value === "") {
+    // Safari Element Clear changes the DOM value without the native input
+    // event needed by a controlled search field. Delete through the keyboard.
+    await revealControl(selector);
+    let length = await execute("return document.querySelector(arguments[0]).value.length", [selector]);
+    while (length > 0) {
+      await command("POST", `/element/${id}/value`, { text: "\uE003" }); // native Backspace
+      await waitFor('return document.querySelector(arguments[0]).value.length < arguments[1]', "Search did not receive native deletion", [selector, length]);
+      length = await execute("return document.querySelector(arguments[0]).value.length", [selector]);
+    }
+  } else {
+    await command("POST", `/element/${id}/clear`, {});
+    await command("POST", `/element/${id}/value`, { text: value });
+  }
 }
 async function navigate(route) {
   report.currentStep = {
@@ -76,8 +161,9 @@ async function navigate(route) {
   const context = await execute("return {width:innerWidth,height:innerHeight}");
   Object.assign(report.currentStep, context);
   await waitFor(
-    'return document.readyState === "complete" && !!document.querySelector("h1")',
+    'return location.pathname === new URL(arguments[0],location.origin).pathname && document.readyState === "complete" && !!document.querySelector("h1")',
     `Page did not render: ${JSON.stringify(report.currentStep)}`,
+    [route],
   );
   await pause(200);
 }
@@ -104,13 +190,19 @@ async function classDirectoryState() {
   `);
 }
 async function check(name, fn) {
+  report.activeCheck = name;
   const context = await execute(
     "return {route:location.pathname+location.search, width:innerWidth, height:innerHeight}",
   );
+  report.currentStep = { name, ...context };
   try {
     await fn();
+    const browserErrors = await execute("return window.__aqwQaErrorTypes");
+    assert.deepEqual(browserErrors, [], "Browser runtime/console errors during " + name);
+    (report.consoleChecks ||= []).push({ name, errorCount: browserErrors.length });
     report.checks.push({ name, status: "pass", ...context });
     console.log("PASS", name);
+    delete report.activeCheck;
   } catch (error) {
     // Capture the actual failed UI without replacing the original error.
     let diagnostics, diagnosticError;
@@ -186,7 +278,9 @@ try {
   if (!ready)
     throw Error("Cannot connect to SafariDriver. See README Safari setup.");
   const created = await request("POST", "/session", {
-    capabilities: { alwaysMatch: { browserName: "safari" } },
+    // Safari's normal page-load wait hangs when Back traverses iframe history.
+    // Every navigation below instead waits for the destination UI explicitly.
+    capabilities: { alwaysMatch: { browserName: "safari", pageLoadStrategy: "none" } },
   });
   session = created.sessionId;
   report.capabilities = created.capabilities;
@@ -402,17 +496,14 @@ try {
       "Class empty state missing",
     );
     report.classResetBeforeClick = await classDirectoryState();
-    await click('return document.querySelector(".class-empty button")');
+    await pointerClick(".class-empty button");
     await waitFor(
-      'return document.querySelectorAll(".class-card").length>1 && document.querySelector(".class-search input").value === ""',
+      'return document.querySelectorAll(".class-card").length>1 && document.querySelector(".class-search input").value === "" && !document.querySelector(".class-empty")',
       "Class reset failed",
     );
   });
   await check("Current Class role filter", async () => {
-    await click(
-      "return document.querySelector(arguments[0])",
-      ['select[aria-label="Vai trò"] option[value=Support]'],
-    );
+    await selectValue('select[aria-label="Vai trò"]', "Support");
     await waitFor(
       'return document.querySelector(arguments[0]).value === "Support" && document.querySelectorAll(".class-card").length>0 && Array.from(document.querySelectorAll(".class-card")).every(e=>e.textContent.includes("Support"))',
       "Support role filter failed",
@@ -430,33 +521,46 @@ try {
       await click(
         'return document.querySelector(".class-inspection-tabs button")',
       );
-      const tab = await find(
-        'return document.querySelector(".class-inspection-tabs button")',
-      );
-      await command("POST", `/element/${tab}/value`, { text: "\uE010" }); // End
-      await waitFor(
-        'return !document.querySelector("[data-class-panel=acquisition]").hidden && document.activeElement.getAttribute("aria-label") === "CÁCH LẤY CLASS"',
-        "Class keyboard tab failed",
-      );
-      await click(
-        'return document.querySelector(".acquisition-unlock-route > summary")',
-      );
+      const keyboardTab = async (key, label) => {
+        report.currentStep.action = "Keyboard tab " + label;
+        await revealControl('.class-inspection-tabs button[aria-selected="true"]');
+        const tab = await find('return document.querySelector(".class-inspection-tabs button[aria-selected=true]")');
+        await command("POST", `/element/${tab}/value`, { text: key });
+        await waitFor(`
+          const selected=document.querySelector('.class-inspection-tabs button[aria-selected=true]');
+          return selected?.getAttribute('aria-label')===arguments[0]&&selected.tabIndex===0&&document.activeElement===selected;
+        `, "Class keyboard tab failed: " + label, [label]);
+        report.classKeyboardProgress.keys.push(label);
+      };
+      report.classKeyboardProgress = { keys: [] };
+      await keyboardTab("\uE010", "CÁCH LẤY CLASS"); // End
+      await keyboardTab("\uE011", "BỘ SKILL"); // Home
+      await keyboardTab("\uE014", "HƯỚNG DẪN COMBO"); // ArrowRight
+      await keyboardTab("\uE012", "BỘ SKILL"); // ArrowLeft
+      await keyboardTab("\uE010", "CÁCH LẤY CLASS");
+      await waitFor('return !document.querySelector("[data-class-panel=acquisition]").hidden', "Acquisition panel did not open");
+      await revealControl(".acquisition-unlock-route > summary");
+      await click('return document.querySelector(".acquisition-unlock-route > summary")');
+      await waitFor('return document.querySelector(".acquisition-unlock-route").open', "Class acquisition route did not open");
       const previous = await execute(
         'return document.querySelector(".class-obtain-steps input").checked',
       );
+      report.classKeyboardProgress.before = previous;
       await click('return document.querySelector(".class-obtain-steps input")');
+      await waitFor('return document.querySelector(".class-obtain-steps input").checked === arguments[0]', "Progress checkbox did not update", [!previous]);
       await command("POST", "/refresh", {});
       await waitFor(
         'return !!document.querySelector(".class-inspection-tabs")',
         "Class did not reload",
       );
+      await revealControl('.class-inspection-tabs button[aria-label="CÁCH LẤY CLASS"]');
       await click(
         "return document.querySelector(arguments[0])",
         ['.class-inspection-tabs button[aria-label="CÁCH LẤY CLASS"]'],
       );
-      await click(
-        'return document.querySelector(".acquisition-unlock-route > summary")',
-      );
+      await revealControl(".acquisition-unlock-route > summary");
+      await click('return document.querySelector(".acquisition-unlock-route > summary")');
+      await waitFor('return document.querySelector(".acquisition-unlock-route").open', "Class acquisition route did not open");
       await waitFor(
         'return !!document.querySelector(".class-obtain-steps input:not(:disabled)")',
         "Progress did not load",
@@ -467,7 +571,14 @@ try {
         ),
         !previous,
       );
+      report.classKeyboardProgress.afterRefresh = await execute('return document.querySelector(".class-obtain-steps input").checked');
+      await keyboardTab("\uE011", "BỘ SKILL");
+      await keyboardTab("\uE010", "CÁCH LẤY CLASS");
+      assert.equal(await execute('return document.querySelector(".class-obtain-steps input").checked'), !previous, "Progress reset after tab switch");
+      report.classKeyboardProgress.afterTabSwitch = await execute('return document.querySelector(".class-obtain-steps input").checked');
+      await revealControl(".class-obtain-steps input");
       await click('return document.querySelector(".class-obtain-steps input")');
+      await waitFor('return document.querySelector(".class-obtain-steps input").checked === arguments[0]', "Progress cleanup did not restore prior state", [previous]);
     },
   );
   await navigate("/farm/item/blade-of-awe");
@@ -504,7 +615,11 @@ try {
         ),
         before,
       );
-      await click('return document.querySelector(".fv2-item")');
+      const selectedItem = await execute('return document.querySelector(".fv2-item").dataset.inventoryItem');
+      await revealControl(".fv2-item");
+      const inventoryButton = await find('return document.querySelector(".fv2-item")');
+      await command("POST", `/element/${inventoryButton}/value`, { text: "\uE007" }); // native Enter activates the button
+      await waitFor('return new URLSearchParams(location.search).get("item")===arguments[0]&&document.querySelector("[data-item-id]")?.dataset.itemId===arguments[0]', "Farm item selection did not finish before history navigation", [selectedItem]);
       await command("POST", "/back", {});
       await waitFor(
         'return location.pathname === "/farm" && !new URLSearchParams(location.search).has("item")',
@@ -523,11 +638,20 @@ try {
       const previous = await execute(
         'return document.querySelector(".fv31-step-complete input").checked',
       );
+      await execute(`
+        window.__aqwFarmProgressEvents=[];
+        const input=document.querySelector('.fv31-step-complete input');
+        for(const type of ['pointerdown','pointerup','click','input','change'])
+          input.addEventListener(type,event=>window.__aqwFarmProgressEvents.push({type,trusted:event.isTrusted,checked:input.checked}));
+      `);
       await click('return document.querySelector(".fv31-step-complete input")');
+      await waitFor('return document.querySelector(".fv31-step-complete input").checked === arguments[0]', "Farm quest checkbox did not update", [!previous]);
+      report.farmProgressBeforeRefresh = await execute(`return {checked:document.querySelector('.fv31-step-complete input').checked,events:window.__aqwFarmProgressEvents}`);
       await command("POST", "/refresh", {});
       await waitFor(
-        'return !!document.querySelector(".fv31-step-complete input")',
+        'return document.querySelector(".fv31-step-complete input")?.checked === arguments[0]',
         "Farm quest progress did not reload",
+        [!previous],
       );
       assert.equal(
         await execute(
@@ -535,7 +659,9 @@ try {
         ),
         !previous,
       );
+      report.farmProgressAfterRefresh = await execute('return document.querySelector(".fv31-step-complete input").checked');
       await click('return document.querySelector(".fv31-step-complete input")');
+      await waitFor('return document.querySelector(".fv31-step-complete input").checked === arguments[0]', "Farm progress cleanup failed", [previous]);
     },
   );
   await navigate("/");
