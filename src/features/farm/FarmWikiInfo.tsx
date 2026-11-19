@@ -61,7 +61,7 @@ export function FarmWikiInfo({ item, route }: { item: FarmV2Item; route?: FarmV2
   if (!hasBody) return null;
   return (
     <div className="fv31-wiki-info aqw-cp-wiki">
-      <details open>
+      <details>
         <summary><span className="aqw-cp-label">{ItemIcon && <ItemIcon size={18} aria-hidden="true" />}Thông tin vật phẩm</span><small>Nhấn để mở hoặc thu gọn</small></summary>
         <div className="aqw-cp-body">
           {fields.length > 0 && <dl className="fv31-wiki-fields">

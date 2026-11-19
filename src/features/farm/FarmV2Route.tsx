@@ -259,7 +259,7 @@ function Detail({
   const timeLabel=farmTimeLabel(farmTime);
   const hasMaterials = (value?: FarmV2RouteData) => Boolean(value?.materialTree || value?.farmModes?.some(mode=>mode.materials.length) || value?.questWorkflowIds?.length || value?.farmTasks?.some(task => task.rows.length));
   const available = tabDefs.filter(
-    (t) => (t.id !== "materials" || hasMaterials(route)) && (t.id !== "sets" || Boolean(item.setIds?.length)),
+    (t) => (t.id !== "materials" || hasMaterials(route)) && (t.id !== "sets" || Boolean(item.setIds?.length) || /^(?:Empowered )?Higure$/i.test(item.name.trim())),
   );
   const [tab, setTab] = useState<Tab>(() => (new URLSearchParams(typeof window === "undefined" ? "" : window.location.search).get("farm-tab") as Tab) || "overview");
   const navigateWorkflow = (next: WorkflowFocus) => {

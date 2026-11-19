@@ -1,0 +1,20 @@
+/* V3: scoped Farm refinements only; no site-wide styles. */
+.fv2-root .fv33-verified-quest {
+  margin: 18px 0 8px;
+  padding: 18px 20px;
+  border: 1px solid var(--fv2-line, #ccc);
+  border-left: 4px solid var(--fv2-accent, #89532f);
+  border-radius: 8px;
+  background: var(--fv2-panel, transparent);
+  color: var(--fv2-text, inherit);
+}
+.fv2-root .fv33-verified-quest h5 { margin: 0 0 14px; font-size: 1.06rem; line-height: 1.5; }
+.fv2-root .fv33-verified-quest p { margin: 10px 0; line-height: 1.65; }
+.fv2-root .fv33-verified-quest ul { padding-left: 1.25rem; margin: 12px 0 18px; }
+.fv2-root .fv33-verified-quest li { margin: 7px 0; line-height: 1.55; }
+.fv2-root .fv33-material-guide .fv32-collapsible-body .fv32-route-picker { margin-block: 16px 20px; }
+.fv2-root .fv33-material-guide .fv32-material-body { margin-top: 20px; }
+.fv2-root .fv33-set-related { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--fv2-line, #ccc); }
+.fv2-root .fv33-set-related h4 { margin: 0 0 12px; }
+.fv2-root .fv33-set-related p { line-height: 1.6; }
+.fv2-root .fv33-set-related li { padding: 5px 0; }

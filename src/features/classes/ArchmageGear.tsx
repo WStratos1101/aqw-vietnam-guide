@@ -17,7 +17,7 @@ const items = [
 
 export function ArchmageGear() {
   return (
-    <details className="class-section aqw-cp-panel" data-aqw-archmage-rewards open>
+    <details className="class-section aqw-cp-panel" data-aqw-archmage-rewards>
       <summary className="aqw-cp-summary">Trang bị ArchMage <small>{items.length} phần thưởng quest · mở/thu gọn</small></summary>
       <div className="aqw-cp-body">
         <p>Danh sách vật phẩm có thể nhận thông qua chuỗi quest ArchMage. Không tính vật phẩm trả phí hoặc gói Upgrade Bonus là tuyến farm.</p>

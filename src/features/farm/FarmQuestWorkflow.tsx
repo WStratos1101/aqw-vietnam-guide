@@ -1,6 +1,8 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { FarmMaterialTable } from "./FarmMaterialTable";
 import "./farm-material-fold.css";
+import "./farm-refinement-v3.css";
+import { distinctMaterialQuestChoices, verifiedMaterialQuest } from "../../lib/farm-quest-display.mjs";
 import { materialQuestConditions, materialTableMaps } from "../../lib/farm-material-table.mjs";
 import registryData from "../../content/farm/quest-workflows.generated.json";
 import materialData from "../../content/farm/material-sources.generated.json";
@@ -125,7 +127,8 @@ export function FarmWorkflowSummary({ route, focus, onNavigate, brief }: { route
 
 function MaterialBody({ row, modeId, plan, totalKnown, onMaterial }: { row: Row; modeId?: string; plan?: FarmTask[]; totalKnown?: boolean; onMaterial: MaterialClick }) {
   const profile = profiles[keyFor(row)];
-  const availableTasks=materialTasksForMode(profile?.tasks || [], modeId);
+  const availableTasks=distinctMaterialQuestChoices(materialTasksForMode(profile?.tasks || [], modeId));
+  const verified=verifiedMaterialQuest(row.name);
   const [selected, setSelected] = useState(modeId === "insignia" ? Math.max(0, availableTasks.findIndex(task => !task.quest)) : 0);
   const task = availableTasks[selected] || availableTasks[0];
   const output = [...(task?.fixedRewards || []),...(task?.rewardChoices || [])].find(reward=>reward.name===row.name);
@@ -147,13 +150,21 @@ function MaterialBody({ row, modeId, plan, totalKnown, onMaterial }: { row: Row;
         {input.requiredQuest && <p>Cần nhận Quest: {input.requiredQuest}</p>}
       </div>)}
       {task.rewardChoices?.some(reward=>reward.name===row.name) && <p>Chọn phần thưởng <b>{row.name}</b> khi trả Quest.</p>}
-      <QuestBody modeId={modeId} alreadyShown={[row.name,...task.rows.filter(input=>input.name===row.name).map(input=>input.monster)]} task={task.quest ? effective! : {...effective!,map:task.rows.some(input=>input.name===row.name&&input.map===task.map)?undefined:task.map,rows:task.rows.filter(input=>input.name!==row.name)}} onMaterial={onMaterial} />
+      <QuestBody modeId={modeId} alreadyShown={[row.name, task.quest || "",...task.rows.filter(input=>input.name===row.name).map(input=>input.monster)]} task={task.quest ? effective! : {...effective!,map:task.rows.some(input=>input.name===row.name&&input.map===task.map)?undefined:task.map,rows:task.rows.filter(input=>input.name!==row.name)}} onMaterial={onMaterial} />
       {!task.purchase && runs && runs>1 && task.rows.length>0 && <details><summary>Tổng nguyên liệu cho {runs} lượt</summary><MaterialTable modeId={modeId} rows={sumMaterials([effective!])} onMaterial={onMaterial}/></details>}
     </> : <>
       {row.monster && <p><b>Monster:</b> {row.monster}</p>}{row.map && <p><code>{row.map}</code></p>}
       {distinctFarmText((row.sourceDetails || []).flatMap(source=>[source.monster || "", source.mapJoin || ""]),[row.monster,row.map]).map(text=><p key={text}>{text.startsWith("/join ")?<code>{text}</code>:text}</p>)}
       {(registry.materialLinks?.[keyFor(row)] || row.source) && <p><a href={registry.materialLinks?.[keyFor(row)] || row.source} target="_blank" rel="noreferrer">Xem trên AQW Wiki</a></p>}
     </>}
+    {verified && (!task?.quest || !task?.rows?.length) && <aside className="fv33-verified-quest" aria-label="Quest đã đối chiếu nguồn">
+      <h5>Hướng dẫn Quest đã đối chiếu</h5>
+      <p><b>Quest:</b> {verified.quest} · <b>NPC:</b> {verified.npc} · <code>{verified.map}</code></p>
+      {row.quantity != null && <p><b>Số lượt dự kiến:</b> {Math.ceil(row.quantity/verified.quantityPerTurn)} lượt (mỗi lượt nhận {verified.quantityPerTurn} vật phẩm).</p>}
+      <p><b>Điều kiện:</b> {verified.prerequisites.join("; ")}</p>
+      <ul>{verified.ingredients.map(input => <li key={input.name}>{input.name} ×{input.quantity} · {input.source} · <code>{input.map}</code></li>)}</ul>
+      <a href={verified.url} rel="noopener noreferrer" target="_blank">Đối chiếu quest trên AQW Wiki</a>
+    </aside>}
   </div>;
 }
 
@@ -210,12 +221,14 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
   const focusedRow = reachable.find(row=>keyFor(row)===focus.materialId);
   const allMaterials = [...guideMaterials,...owned, ...Object.values(extra).filter(row=>reachable.some(allowed=>keyFor(allowed)===keyFor(row))),...(focusedRow?[focusedRow]:[])].filter((row,index,rows) => rows.findIndex(other=>keyFor(other)===keyFor(row))===index);
   const selectedMaterial = allMaterials.find(row => keyFor(row) === focus.materialId) || allMaterials[0];
+  const guideDetailsRef=useRef<HTMLDetailsElement>(null);
   const keyboardSelection=useRef(false);
   const questRef = useRef<HTMLDivElement>(null), materialRef = useRef<HTMLDivElement>(null), id = useId();
   const progressKey=`aqw:farm-quest:${itemId}:${route.id}:${mode?.id || "standard"}:${focus.optionId || "primary"}`;
   const [completed,setCompleted]=useState<string[]>([]);
   useEffect(()=>{try{const stored=JSON.parse(localStorage.getItem(progressKey)||"[]");setCompleted(Array.isArray(stored)?stored:[]);}catch{setCompleted([]);}},[progressKey]);
   const selectMaterial: MaterialClick = (material) => {
+    if(guideDetailsRef.current)guideDetailsRef.current.open=true;
     if (!allMaterials.some(row => keyFor(row)===material)) {
       const found = reachable.find(row=>keyFor(row)===material);
       if (found) setExtra(current=>({...current,[material]:found}));
@@ -223,6 +236,7 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
     onNavigate({ ...focus, materialId: material, questId: undefined });
   };
   useEffect(() => {
+    if (focus.materialId && guideDetailsRef.current) guideDetailsRef.current.open=true;
     const target = focus.materialId ? materialRef.current : focus.questId ? questRef.current : null;
     target?.scrollIntoView?.({ block: "start", behavior: "auto" });
     if(!keyboardSelection.current)target?.focus({ preventScroll: true });
@@ -280,8 +294,8 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
           <MaterialTable rows={direct} modeId={mode?.id} onMaterial={selectMaterial}/>
         </div>
       </details>}
-      <details className="fv32-collapsible-material" data-aqw-material-table="total" open>
-        <summary><span>Tổng nguyên liệu</span><small>Nhấn để thu gọn bảng</small></summary>
+      <details className="fv32-collapsible-material" data-aqw-material-table="total">
+        <summary><span>Tổng nguyên liệu</span><small>Nhấn để mở bảng</small></summary>
         <div className="fv32-collapsible-body">
           {!route.materialTotalsComplete && <p>Tổng nguyên liệu chưa được xác minh đầy đủ; bảng dưới chỉ gồm các bước đã ghi nhận của phương án đang chọn.</p>}
           {identicalMaterialTables && <p>Bảng nguyên liệu trực tiếp trùng số lượng với bảng tổng nên đã được gộp, tránh hiển thị hai lần.</p>}
@@ -290,9 +304,12 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
       </details>
     </>}
     {showMaterials && !!route.materialPlan?.equivalentCosts.length && <details><summary>Giá trị quy đổi</summary><ul>{route.materialPlan.equivalentCosts.map(cost=><li key={cost.materialId}>{cost.quantity} {direct.find(row=>keyFor(row)===cost.materialId)?.name||cost.materialId}: {cost.total.toLocaleString("vi-VN")} {cost.currency}. Giá trị tham khảo, không cộng thêm vào Tổng nguyên liệu.</li>)}</ul></details>}
-    {showMaterials && !!allMaterials.length && <section aria-label="Hướng dẫn Farm nguyên liệu"><h3>Hướng dẫn Farm nguyên liệu</h3>
-      <div className="fv32-route-picker" role="group" aria-label="Chọn nguyên liệu">{guideMaterials.map(row=><button type="button" key={keyFor(row)} aria-pressed={selectedMaterial && keyFor(selectedMaterial)===keyFor(row)} onClick={()=>selectMaterial(keyFor(row))}>{row.name}</button>)}</div>
-      <div ref={materialRef} tabIndex={-1} role="region" aria-label="Nguyên liệu đang chọn">{selectedMaterial && <MaterialBody key={keyFor(selectedMaterial)+mode?.id} row={selectedMaterial} totalKnown={route.materialTotalsComplete} modeId={mode?.id} plan={mode?.finishingTasks} onMaterial={selectMaterial}/>}</div>
-    </section>}
+    {showMaterials && !!allMaterials.length && <details ref={guideDetailsRef} className="fv32-collapsible-material fv33-material-guide" data-aqw-material-guide>
+      <summary><span>Hướng dẫn Farm nguyên liệu</span><small>Nhấn để mở hoặc thu gọn</small></summary>
+      <div className="fv32-collapsible-body">
+        <div className="fv32-route-picker" role="group" aria-label="Chọn nguyên liệu">{guideMaterials.map(row=><button type="button" key={keyFor(row)} aria-pressed={selectedMaterial && keyFor(selectedMaterial)===keyFor(row)} onClick={()=>selectMaterial(keyFor(row))}>{row.name}</button>)}</div>
+        <div ref={materialRef} tabIndex={-1} role="region" aria-label="Nguyên liệu đang chọn">{selectedMaterial && <MaterialBody key={keyFor(selectedMaterial)+mode?.id} row={selectedMaterial} totalKnown={route.materialTotalsComplete} modeId={mode?.id} plan={mode?.finishingTasks} onMaterial={selectMaterial}/>}</div>
+      </div>
+    </details>}
   </div>;
 }
