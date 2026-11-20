@@ -193,8 +193,10 @@ test("all-inventory and faction counts count unique canonical identities exactly
     "alternative-hero": 13,
     unknown: 58, // ten reviewed non-target Classes removed from Farm
   };
+  const coverageIds = new Set(read("src/content/farm/guide-coverage-v4.json").map(item => item.id));
+  const coverageItems = catalog.items.filter(item => coverageIds.has(item.id));
   for (const [id, count] of Object.entries(expected))
-    assert.equal(counts.find((entry) => entry.id === id)?.count, count + collectionRecords.filter(record=>({Nation:"nation",Hollowborn:"hollowborn",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Other Items":"unknown","Alternative Hero":"alternative-hero"})[record.collectionEvidence.sourceChapter]===id).length, id);
+    assert.equal(counts.find((entry) => entry.id === id)?.count, count + collectionRecords.filter(record=>({Nation:"nation",Hollowborn:"hollowborn",Evil:"evil",Legion:"legion",Museum:"awe",Good:"good",Chaos:"chaos",Dragonkin:"dragonkin",Elemental:"elemental","Debris & Astravian":"debris-astravian","Other Items":"unknown","Alternative Hero":"alternative-hero"})[record.collectionEvidence.sourceChapter]===id).length + coverageItems.filter(item => (item.primaryGroupId || "unknown") === id).length, id);
 });
 
 test("all filtered aggregate goals have an explicit expansion or a blocker", () => {
@@ -265,7 +267,7 @@ test("canonical reward mappings survive goal fallback and generation is idempote
         `${goal.group_id}:${goal.source_line}:${goal.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}` === mapping.parentGoalId,
       ), mapping.itemId);
   }
-  assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 268 + collectionRecords.length);
+  assert.equal(checked.filter((item) => Object.hasOwn(item, "legacyGroupId")).length, 268 + collectionRecords.length + read("src/content/farm/guide-coverage-v4.json").length);
 });
 
 test("direct Ultra Empower rewards map by verified boss quest, never by Empowered name or prerequisite", () => {

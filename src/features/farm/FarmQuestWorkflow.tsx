@@ -212,7 +212,11 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
   useEffect(()=>setExtra({}),[route.id,mode?.id,focus.optionId,focus.dailyRuns]);
   const owned: Row[]=tasks.flatMap(task=>(task.ownedItems || []).map(item=>({name:item.name,itemId:materialId(item.name),quantity:1,usage:"owned" as const,source:item.wikiUrl})));
   const option = route.questOptions?.find(option=>option.questId===focus.optionId) || route.questOptions?.[0];
-  const direct = option?.directMaterials ?? route.directMaterials ?? materials;
+  const direct = option?.directMaterials?.length
+    ? option.directMaterials
+    : route.directMaterials?.length
+      ? route.directMaterials
+      : materials;
   // Preserve all non-material rows. Never consider incomplete data equivalent.
   const totalRows = materials.filter(row => (!("usage" in row) || row.usage !== "owned") && (!("temporary" in row) || !row.temporary) && (!("role" in row) || row.role !== "tempQuestItem") && !/^(?:Gold|ACs?)$/i.test(row.name));
   const identicalMaterialTables = direct.length === totalRows.length && sameMaterialQuantities(direct, totalRows);
@@ -304,7 +308,7 @@ export function FarmQuestWorkflow({ route, focus, onNavigate, materialsOnly=fals
       </details>
     </>}
     {showMaterials && !!route.materialPlan?.equivalentCosts.length && <details><summary>Giá trị quy đổi</summary><ul>{route.materialPlan.equivalentCosts.map(cost=><li key={cost.materialId}>{cost.quantity} {direct.find(row=>keyFor(row)===cost.materialId)?.name||cost.materialId}: {cost.total.toLocaleString("vi-VN")} {cost.currency}. Giá trị tham khảo, không cộng thêm vào Tổng nguyên liệu.</li>)}</ul></details>}
-    {showMaterials && !!allMaterials.length && <details ref={guideDetailsRef} className="fv32-collapsible-material fv33-material-guide" data-aqw-material-guide>
+    {showMaterials && !!allMaterials.length && <details ref={guideDetailsRef} className="fv32-collapsible-material fv33-material-guide" data-aqw-material-guide aria-label="Hướng dẫn Farm nguyên liệu">
       <summary><span>Hướng dẫn Farm nguyên liệu</span><small>Nhấn để mở hoặc thu gọn</small></summary>
       <div className="fv32-collapsible-body">
         <div className="fv32-route-picker" role="group" aria-label="Chọn nguyên liệu">{guideMaterials.map(row=><button type="button" key={keyFor(row)} aria-pressed={selectedMaterial && keyFor(selectedMaterial)===keyFor(row)} onClick={()=>selectMaterial(keyFor(row))}>{row.name}</button>)}</div>

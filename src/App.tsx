@@ -17,6 +17,7 @@ import React, { useEffect, useState, Component, type ReactNode } from "react";
 import { Header, Footer, Breadcrumb, disclaimer } from "./components/Shell";
 import "./styles/prose-justify.css";
 import { Home } from "./features/Home";
+import { SystemArchiveV4 } from "./features/SystemArchiveV4";
 import { LoreRegionPage } from "./features/LoreAtlas";
 import { findLoreRegion } from "./content/lore-regions";
 import { Library } from "./features/Library";
@@ -250,6 +251,8 @@ export function App() {
         <RouteView key={ultraBoss.id} kind="ultra-detail" slug={ultraBoss.slug}/>
       ) : path === "/" ? (
         <Home />
+      ) : path === "/he-thong" ? (
+        <SystemArchiveV4 />
       ) : path === "/gioi-thieu" ? (
         <About />
       ) : entry ? (

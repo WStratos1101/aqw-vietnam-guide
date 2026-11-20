@@ -37,8 +37,9 @@ test("BLoD mining keeps its unlock, daily limit and verified material acquisitio
 });
 
 test("all public Nostalgia routes are removed while the ordinary NSOD recipe and every identity survive",()=>{
-  assert.equal(catalog.items.length,268+collectionRecords.length);
-  assert.equal(new Set(catalog.items.map(item=>item.id)).size,268+collectionRecords.length);
+  const coverageCount=read("src/content/farm/guide-coverage-v4.json").length;
+  assert.equal(catalog.items.length,268+collectionRecords.length+coverageCount);
+  assert.equal(new Set(catalog.items.map(item=>item.id)).size,268+collectionRecords.length+coverageCount);
   assert.equal(audit.removedRoutes.length,5);assert.equal(audit.cleanedRoutes.length,1);
   for(const item of catalog.items)assert.doesNotMatch(JSON.stringify({brief:item.acquisitionBrief,details:item.wikiDetails}),/nostalgia/i);
   for(const item of catalog.items) for(const r of item.acquisitionRoutes){

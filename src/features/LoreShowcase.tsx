@@ -5,22 +5,22 @@ import "../styles/lore-showcase.css";
 const base = "/art/lore-showcase/";
 const entries = [
   {
-    id: "armory", number: "01", label: "Trang bị", href: "/trang-bi",
-    kicker: "THE ARMORY", title: ["Kho báu", "huyền thoại"],
+    id: "armory", label: "Trang bị", href: "/trang-bi",
+    title: ["Kho báu", "huyền thoại"],
     description: "Truy tìm những báu vật xứng tầm với danh hiệu anh hùng.",
     artist: "Darkon", artwork: "darkon.png",
     alt: "Nhân vật tóc trắng trong minh họa của Darkon",
   },
   {
-    id: "chronicles", number: "02", label: "Hướng dẫn", href: "/huong-dan",
-    kicker: "THE GUIDES", title: ["Cẩm nang", "phiêu lưu"],
+    id: "chronicles", label: "Hướng dẫn", href: "/huong-dan",
+    title: ["Cẩm nang", "phiêu lưu"],
     description: "Từ những bước chân đầu tiên đến các thử thách trên khắp Lore.",
     artist: "8X6·HAIIRO", artwork: "drago-iona.png",
     alt: "Drago và Iona trong minh họa của 8X6·HAIIRO",
   },
   {
-    id: "forge", number: "03", label: "Hệ thống", href: "/he-thong",
-    kicker: "THE FORGE", title: ["Khai phá", "sức mạnh"],
+    id: "forge", label: "Hệ thống", href: "/he-thong",
+    title: ["Khai phá", "sức mạnh"],
     description: "Làm chủ Enhancement, chỉ số và cơ chế chiến đấu.",
     artist: "Lae", artwork: "lae-paladia.png",
     alt: "Founders of Paladia, minh họa của Lae",
@@ -38,7 +38,6 @@ export function LoreShowcase() {
     <section className="chapter lore-showcase" data-lore-showcase aria-labelledby="lore-showcase-title">
       <div className="lore-showcase-heading">
         <div>
-          <span className="lore-showcase-eyebrow">THE ADVENTURER’S ARCHIVE / 03 PATHS</span>
           <h2 id="lore-showcase-title">Di sản của <span>Lore.</span></h2>
         </div>
         <p>Vũ khí, sức mạnh và câu chuyện đã định hình thế giới AdventureQuest Worlds.</p>
@@ -58,10 +57,8 @@ export function LoreShowcase() {
                 className="lore-showcase-link" aria-label={entry.label + " — " + entry.title.join(" ")}>
                 <img src={base + image} alt={alt} loading="lazy" decoding="async"
                   className="lore-showcase-art" draggable={false} />
-                <span className="lore-showcase-number">{entry.number}</span>
                 <span className="lore-showcase-credit">ART / {entry.artist}</span>
                 <div className="lore-showcase-copy">
-                  <span className="lore-showcase-kicker">{entry.kicker}</span>
                   <h3>{entry.title[0]}<br />{entry.title[1]}</h3>
                   <p>{entry.description}</p>
                   <div className="lore-showcase-cta">
@@ -84,11 +81,11 @@ export function LoreShowcase() {
         })}
       </div>
       <div className="lore-showcase-footer">
-        <span>✦ BATTLE ON! / JUSTICE. CHAOS. LEGACY.</span>
+        <span>Battle on · Justice. Chaos. Legacy.</span>
         <div className="lore-showcase-indicator" aria-hidden="true">
           {entries.map(entry => <i key={entry.id} className={active === entry.id ? "is-active" : ""} />)}
         </div>
-        <span>CHARACTER ART SHOWCASE — 01</span>
+        <span>AQW character art</span>
       </div>
     </section>
   );

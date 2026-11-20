@@ -18,18 +18,18 @@ export function Home() {
             <span>GUIDE</span>
           </h1>
           <p>
-            Từ Battleon đến những miền đất chưa được khám phá, mỗi bước chân mở ra một huyền thoại. Câu chuyện tiếp theo thuộc về bạn.
+            Tra cứu Class, nhiệm vụ, đường farm và cơ chế của AdventureQuest Worlds bằng tiếng Việt.
           </p>
           <div className="hero-actions">
             <a href="/huong-dan" className="button">
-              Khám phá hướng dẫn <ArrowUpRight size={20} />
+              Khám phá cẩm nang <ArrowUpRight size={20} />
             </a>
             <a href="/class" className="plain-link">
               Tìm Class phù hợp <ArrowRight size={20} />
             </a>
           </div>
           <div className="hero-bottom">
-            <span>Thế giới Lore đang chờ bạn.</span>
+            <span>Khởi hành từ Battleon.</span>
             <a href="#bat-dau" aria-label="Cuộn tới Ngày anh hùng gọi tên">
               <ChevronDown size={24} />
             </a>
@@ -149,7 +149,7 @@ export function Home() {
       <LoreShowcase />
       
       <section className="search-chapter chapter">
-        <h2>Bạn đang tìm gì?</h2>
+        <h2>Tra cứu AQW</h2>
         <form action="/huong-dan" className="home-search">
           <label className="sr-only" htmlFor="home-q">
             Tìm kiếm toàn bộ thư viện
@@ -158,7 +158,7 @@ export function Home() {
           <input
             id="home-q"
             name="q"
-            placeholder="Class, vật phẩm, hướng dẫn…"
+            placeholder="Tên Class, Item hoặc Quest"
             required
           />
           <button aria-label="Tìm trong thư viện">

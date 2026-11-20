@@ -61,6 +61,34 @@ test("active V2 catalog has unique canonical equipment, valid routes/sources/mat
     "Weapons",
   );
 });
+test("Guide Coverage V4 items use canonical Farm catalog records without duplicate identities", () => {
+  const coverage = read("src/content/farm/guide-coverage-v4.json");
+  const expectedIds = [
+    "nightmare-carnax-s-guardians",
+    "hollowborn-reaper-s-scythe",
+    "void-avenger-scythe",
+    "taro-s-prismatic-manslayer",
+    "ultimate-lich-king",
+    "burning-blade-of-abezeth",
+    "archfiend-baby-dragon",
+    "burning-blade",
+    "providence",
+    "sheathed-providence",
+    "prismatic-sigil",
+    "prismatic-floating-sigil",
+  ];
+  assert.deepEqual(coverage.map((item) => item.id).sort(), expectedIds.sort());
+  assert.equal(new Set(catalog.items.map((item) => item.id)).size, catalog.items.length);
+  assert.equal(new Set(catalog.items.map((item) => item.wikiUrl)).size, catalog.items.length);
+  for (const extra of coverage) {
+    const item = catalog.items.find((entry) => entry.id === extra.id);
+    assert.ok(item, `${extra.id} should be in the regular Farm catalog`);
+    assert.equal(item.wikiUrl, extra.wikiUrl);
+    assert.equal(item.verificationStatus, "needs-review");
+    assert.ok(item.acquisitionRoutes.length, `${extra.id} should have a sourced route`);
+    assert.ok(item.sources.some((source) => source.url === extra.wikiUrl));
+  }
+});
 test("Hollowborn Oblivion Blade keeps the Wiki recipe and separates Quest reward routes", () => {
   const item = catalog.items.find((entry) => entry.id === "hollowborn-oblivion-blade");
   assert.ok(item);

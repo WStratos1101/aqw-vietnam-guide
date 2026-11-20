@@ -1,0 +1,11 @@
+/* AQWVN V4.1: prominent, scoped guide coverage discovery */
+.aqw-guide-v41 { margin: 1.2rem 0 1.6rem; padding: 1.15rem 1.3rem; border: 1px solid rgba(170,140,85,.45); border-radius: 15px; background: rgba(200,180,120,.065); }
+.aqw-guide-v41 h2 { margin: 0 0 .45rem; font-size: clamp(1.12rem, 2vw, 1.4rem); }
+.aqw-guide-v41 p { margin: .2rem 0 1rem; line-height: 1.5; }
+.aqw-guide-v41-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: .65rem .8rem; }
+.aqw-guide-v41-grid a { display: block; padding: .65rem .75rem; border: 1px solid rgba(170,140,85,.28); border-radius: 10px; text-decoration: underline; text-underline-offset: 3px; }
+.aqw-guide-v41-grid a:hover,.aqw-guide-v41-grid a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.aqw-guide-v41-classes article { padding: .85rem; border: 1px solid rgba(170,140,85,.28); border-radius: 10px; }
+.aqw-guide-v41-classes article h3 { margin: 0 0 .4rem; font-size: 1.03rem; }
+.aqw-guide-v41-classes article p { margin: .3rem 0; }
+.aqw-guide-v41-classes article small { display: block; line-height: 1.55; }

@@ -55,7 +55,8 @@ test("every membership pins real guide and exact-item Wiki evidence",()=>{
 });
 test("new equipment is distinct, source backed and has a working acquisition workflow",()=>{
  const scopedOut=[...read("content-sources/farm/refinement/v3-3-class-scope.json").decisions,...read("content-sources/farm/refinement/v3-4-class-scope.json").decisions].filter(row=>row.decision==="RemovedFromFarm").length;
- assert.equal(catalog.items.length,279+records.length-scopedOut);assert.equal(new Set(catalog.items.map(item=>item.id)).size,catalog.items.length);
+ const coverageCount=read("src/content/farm/guide-coverage-v4.json").length;
+ assert.equal(catalog.items.length,279+records.length-scopedOut+coverageCount);assert.equal(new Set(catalog.items.map(item=>item.id)).size,catalog.items.length);
  assert.equal(new Set(catalog.items.map(item=>item.wikiUrl)).size,catalog.items.length);
  for(const record of records){const item=catalog.items.find(item=>item.id===record.id);assert.ok(item,record.id);assert.equal(item.wikiUrl,record.wikiUrl);
   assert.ok(item.acquisitionRoutes.some(route=>route.questWorkflowIds?.length||route.materialTree?.requirements?.length||route.purchase||route.dropSource),record.id);

@@ -46441,6 +46441,104 @@
         }
       ]
     },
+    "lae-s-quests:archfiend-dragon-egg": {
+      "id": "lae-s-quests:archfiend-dragon-egg",
+      "quest": "ArchFiend Dragon Egg",
+      "npc": "Lae",
+      "location": "Tercessuinotlim",
+      "acceptanceMaps": [
+        "/join tercessuinotlim"
+      ],
+      "map": "/join tercessuinotlim",
+      "source": "https://aqwwiki.wikidot.com/lae-s-quests",
+      "sourceHash": "76dbe6b61098c1a06fe068903e458ab78c6a93521069aae393efb13155d99580",
+      "sectionIdentity": "nav-0/panel-4",
+      "preconditions": [
+        "Must be Level 40.",
+        "Must have completed the 'Beyond the Portal' quest to access this location."
+      ],
+      "requirements": [
+        "Must be Level 40."
+      ],
+      "ownedItems": [],
+      "rows": [
+        {
+          "name": "Breath of Life",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/breath-of-life",
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Fire Guardian Dragon Soul",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/fire-guardian-dragon-soul",
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Fresh Soul",
+          "quantity": 10,
+          "wikiUrl": "https://aqwwiki.wikidot.com/fresh-soul",
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Unidentified 36",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/unidentified-36",
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "Fiendish Brimstone",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/fiendish-brimstone",
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+        },
+        {
+          "name": "ArchFiend Dragon Egg",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/archfiend-dragon-egg",
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+        }
+      ],
+      "reward": "ArchFiend Baby Dragon Pet ×1",
+      "fixedRewards": [
+        {
+          "name": "ArchFiend Baby Dragon Pet",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet"
+        }
+      ],
+      "rewardChoices": [],
+      "randomRewards": [],
+      "randomChoiceRewards": [],
+      "repeatability": null,
+      "dependencies": [],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [
+        {
+          "name": "Beyond the Portal",
+          "requirement": "Must have completed the 'Beyond the Portal' quest to access this location."
+        }
+      ],
+      "mapEvidence": [
+        {
+          "url": "https://aqwwiki.wikidot.com/tercessuinotlim",
+          "sourceFile": "content-sources/farm/external-guide-evidence/wiki/tercessuinotlim.html",
+          "sourceHash": "2178ac5be87c36fbaa3a5005573de9f1c9006a23a4c21f48c35f1dc131074fee"
+        }
+      ]
+    },
     "gravelyn-s-quests:the-summoning": {
       "id": "gravelyn-s-quests:the-summoning",
       "quest": "The Summoning",
@@ -54429,6 +54527,74 @@
       ],
       "mapEvidence": []
     },
+    "sword-of-nulgath-s-quests:empowering-items": {
+      "id": "sword-of-nulgath-s-quests:empowering-items",
+      "quest": "Empowering Items",
+      "npc": null,
+      "location": "N/A",
+      "acceptanceMaps": [],
+      "map": null,
+      "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests",
+      "sourceHash": "cabbaef78037954ee18c5bd2f55d4a22ac337076030dbbb3aa6cdc8c95d998e7",
+      "sectionIdentity": "nav-0/panel-2",
+      "preconditions": [],
+      "requirements": [],
+      "ownedItems": [],
+      "rows": [
+        {
+          "name": "Unidentified 13 (Quest Item): \"The Contract of Nulgath\"",
+          "itemId": "unidentified-13-quest-item-the-contract-of-nulgath",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/the-contract-of-nulgath",
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
+        },
+        {
+          "name": "Diamond of Nulgath",
+          "itemId": "diamond-of-nulgath",
+          "quantity": 10,
+          "wikiUrl": "https://aqwwiki.wikidot.com/diamond-of-nulgath",
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
+        },
+        {
+          "name": "Unidentified Item of Nulgath: \"Iron Scythe of Nulgath\"",
+          "itemId": "unidentified-item-of-nulgath-iron-scythe-of-nulgath",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/iron-scythe-of-nulgath",
+          "monster": null,
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
+        },
+        {
+          "name": "Undead Bruiser Sigil",
+          "itemId": "undead-bruiser-sigil",
+          "quantity": 1,
+          "monster": "Undead Bruiser (Level 35)",
+          "monsterWikiUrl": "https://aqwwiki.wikidot.com/undead-bruiser",
+          "map": null,
+          "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
+        }
+      ],
+      "reward": "Death Scythe of Nulgath ×1",
+      "fixedRewards": [
+        {
+          "name": "Death Scythe of Nulgath",
+          "quantity": 1,
+          "wikiUrl": "https://aqwwiki.wikidot.com/death-scythe-of-nulgath"
+        }
+      ],
+      "rewardChoices": [],
+      "randomRewards": [],
+      "randomChoiceRewards": [],
+      "repeatability": null,
+      "dependencies": [],
+      "dependencyChoices": [],
+      "unresolvedDependencies": [],
+      "mapEvidence": []
+    },
     "nulgath-s-quests:the-leery-contract": {
       "id": "nulgath-s-quests:the-leery-contract",
       "quest": "The Leery Contract",
@@ -56408,74 +56574,6 @@
           "sourceHash": "2178ac5be87c36fbaa3a5005573de9f1c9006a23a4c21f48c35f1dc131074fee"
         }
       ]
-    },
-    "sword-of-nulgath-s-quests:empowering-items": {
-      "id": "sword-of-nulgath-s-quests:empowering-items",
-      "quest": "Empowering Items",
-      "npc": null,
-      "location": "N/A",
-      "acceptanceMaps": [],
-      "map": null,
-      "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests",
-      "sourceHash": "cabbaef78037954ee18c5bd2f55d4a22ac337076030dbbb3aa6cdc8c95d998e7",
-      "sectionIdentity": "nav-0/panel-2",
-      "preconditions": [],
-      "requirements": [],
-      "ownedItems": [],
-      "rows": [
-        {
-          "name": "Unidentified 13 (Quest Item): \"The Contract of Nulgath\"",
-          "itemId": "unidentified-13-quest-item-the-contract-of-nulgath",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/the-contract-of-nulgath",
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
-        },
-        {
-          "name": "Diamond of Nulgath",
-          "itemId": "diamond-of-nulgath",
-          "quantity": 10,
-          "wikiUrl": "https://aqwwiki.wikidot.com/diamond-of-nulgath",
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
-        },
-        {
-          "name": "Unidentified Item of Nulgath: \"Iron Scythe of Nulgath\"",
-          "itemId": "unidentified-item-of-nulgath-iron-scythe-of-nulgath",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/iron-scythe-of-nulgath",
-          "monster": null,
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
-        },
-        {
-          "name": "Undead Bruiser Sigil",
-          "itemId": "undead-bruiser-sigil",
-          "quantity": 1,
-          "monster": "Undead Bruiser (Level 35)",
-          "monsterWikiUrl": "https://aqwwiki.wikidot.com/undead-bruiser",
-          "map": null,
-          "source": "https://aqwwiki.wikidot.com/sword-of-nulgath-s-quests"
-        }
-      ],
-      "reward": "Death Scythe of Nulgath ×1",
-      "fixedRewards": [
-        {
-          "name": "Death Scythe of Nulgath",
-          "quantity": 1,
-          "wikiUrl": "https://aqwwiki.wikidot.com/death-scythe-of-nulgath"
-        }
-      ],
-      "rewardChoices": [],
-      "randomRewards": [],
-      "randomChoiceRewards": [],
-      "repeatability": null,
-      "dependencies": [],
-      "dependencyChoices": [],
-      "unresolvedDependencies": [],
-      "mapEvidence": []
     },
     "drudgen-the-assistant-s-quests:secret-item": {
       "id": "drudgen-the-assistant-s-quests:secret-item",
@@ -69282,6 +69380,42 @@
       ],
       "sourceHash": "22bfc7cf48bfc77db7d07d6333c7d9a6150ddfc5896de9c813188e0874880c86"
     },
+    "death-scythe-of-nulgath": {
+      "name": "Death Scythe of Nulgath",
+      "method": "Quest",
+      "questIds": [
+        "sword-of-nulgath-s-quests:empowering-items"
+      ],
+      "tasks": [],
+      "sourceUrl": "https://aqwwiki.wikidot.com/death-scythe-of-nulgath"
+    },
+    "ungodly-reavers-of-nulgath": {
+      "name": "Ungodly Reavers of Nulgath",
+      "method": "Quest",
+      "questIds": [
+        "nulgath-s-quests:juggernaut-items-of-nulgath"
+      ],
+      "tasks": [],
+      "sourceUrl": "https://aqwwiki.wikidot.com/ungodly-reavers-of-nulgath"
+    },
+    "fresh-soul": {
+      "name": "Fresh Soul",
+      "method": "Quest",
+      "questIds": [
+        "lae-s-quests:let-s-make-a-deal"
+      ],
+      "tasks": [],
+      "sourceUrl": "https://aqwwiki.wikidot.com/fresh-soul"
+    },
+    "unidentified-36": {
+      "name": "Unidentified 36",
+      "method": "Quest",
+      "questIds": [
+        "lae-s-quests:let-s-make-a-deal"
+      ],
+      "tasks": [],
+      "sourceUrl": "https://aqwwiki.wikidot.com/unidentified-36"
+    },
     "obsidian-rock": {
       "name": "Obsidian Rock",
       "method": "Quest",
@@ -69596,15 +69730,6 @@
       ],
       "tasks": [],
       "sourceUrl": "https://aqwwiki.wikidot.com/overfiend-blade-of-nulgath"
-    },
-    "ungodly-reavers-of-nulgath": {
-      "name": "Ungodly Reavers of Nulgath",
-      "method": "Quest",
-      "questIds": [
-        "nulgath-s-quests:juggernaut-items-of-nulgath"
-      ],
-      "tasks": [],
-      "sourceUrl": "https://aqwwiki.wikidot.com/ungodly-reavers-of-nulgath"
     },
     "legacy-of-nulgath": {
       "name": "Legacy of Nulgath",
@@ -71302,24 +71427,6 @@
       "tasks": [],
       "sourceUrl": "https://aqwwiki.wikidot.com/ascended-light-of-destiny"
     },
-    "fresh-soul": {
-      "name": "Fresh Soul",
-      "method": "Quest",
-      "questIds": [
-        "lae-s-quests:let-s-make-a-deal"
-      ],
-      "tasks": [],
-      "sourceUrl": "https://aqwwiki.wikidot.com/fresh-soul"
-    },
-    "unidentified-36": {
-      "name": "Unidentified 36",
-      "method": "Quest",
-      "questIds": [
-        "lae-s-quests:let-s-make-a-deal"
-      ],
-      "tasks": [],
-      "sourceUrl": "https://aqwwiki.wikidot.com/unidentified-36"
-    },
     "archfiend-enchanted-orbs": {
       "name": "ArchFiend Enchanted Orbs",
       "method": "Merge",
@@ -72106,15 +72213,6 @@
       ],
       "tasks": [],
       "sourceUrl": "https://aqwwiki.wikidot.com/small-hammer"
-    },
-    "death-scythe-of-nulgath": {
-      "name": "Death Scythe of Nulgath",
-      "method": "Quest",
-      "questIds": [
-        "sword-of-nulgath-s-quests:empowering-items"
-      ],
-      "tasks": [],
-      "sourceUrl": "https://aqwwiki.wikidot.com/death-scythe-of-nulgath"
     },
     "archtoken-i": {
       "name": "ArchToken I",
@@ -85593,6 +85691,19 @@
     "fatal-keraunos": "https://aqwwiki.wikidot.com/fatal-keraunos",
     "yami-no-ronin-katana": "https://aqwwiki.wikidot.com/yami-no-ronin-katana",
     "dual-legion-soul-devourers": "https://aqwwiki.wikidot.com/dual-legion-soul-devourers",
+    "batwing-scythe": "https://aqwwiki.wikidot.com/batwing-scythe",
+    "death-scythe-of-nulgath": "https://aqwwiki.wikidot.com/death-scythe-of-nulgath",
+    "ungodly-reavers-of-nulgath": "https://aqwwiki.wikidot.com/ungodly-reavers-of-nulgath",
+    "scythe-of-sisyphean": "https://aqwwiki.wikidot.com/scythe-of-sisyphean",
+    "the-scythe-of-eternal-rest": "https://aqwwiki.wikidot.com/the-scythe-of-eternal-rest",
+    "dracolich-destroyer-scythe": "https://aqwwiki.wikidot.com/dracolich-destroyer-scythe",
+    "letter-from-asuka-and-tendou": "https://aqwwiki.wikidot.com/letter-from-asuka-and-tendou",
+    "breath-of-life": "https://aqwwiki.wikidot.com/breath-of-life",
+    "fire-guardian-dragon-soul": "https://aqwwiki.wikidot.com/fire-guardian-dragon-soul",
+    "fresh-soul": "https://aqwwiki.wikidot.com/fresh-soul",
+    "unidentified-36": "https://aqwwiki.wikidot.com/unidentified-36",
+    "fiendish-brimstone": "https://aqwwiki.wikidot.com/fiendish-brimstone",
+    "archfiend-dragon-egg": "https://aqwwiki.wikidot.com/archfiend-dragon-egg",
     "obsidian-rock": "https://aqwwiki.wikidot.com/obsidian-rock",
     "souls-of-heresy": "https://aqwwiki.wikidot.com/souls-of-heresy",
     "underworld-blade-of-doom": "https://aqwwiki.wikidot.com/underworld-blade-of-doom",
@@ -85651,7 +85762,6 @@
     "unidentified-21-axe-dragonbone-axe": "https://aqwwiki.wikidot.com/dragonbone-axe",
     "purified-claymore-of-destiny": "https://aqwwiki.wikidot.com/purified-claymore-of-destiny",
     "overfiend-blade-of-nulgath": "https://aqwwiki.wikidot.com/overfiend-blade-of-nulgath",
-    "ungodly-reavers-of-nulgath": "https://aqwwiki.wikidot.com/ungodly-reavers-of-nulgath",
     "shadow-spear-of-nulgath": "https://aqwwiki.wikidot.com/shadow-spear-of-nulgath",
     "bloodletter-of-nulgath": "https://aqwwiki.wikidot.com/bloodletter-of-nulgath",
     "taro-s-prismatic-manslayer": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer",
@@ -85779,15 +85889,9 @@
     "diabolical-minion-s-seed": "https://aqwwiki.wikidot.com/diabolical-minion-s-seed",
     "4th-dimension-gem": "https://aqwwiki.wikidot.com/4th-dimension-gem",
     "celestial-seal": "https://aqwwiki.wikidot.com/celestial-seal",
-    "fresh-soul": "https://aqwwiki.wikidot.com/fresh-soul",
-    "unidentified-36": "https://aqwwiki.wikidot.com/unidentified-36",
     "archfiend-enchanted-orbs": "https://aqwwiki.wikidot.com/archfiend-enchanted-orbs",
     "law-of-conservation-of-energy": "https://aqwwiki.wikidot.com/law-of-conservation-of-energy",
     "dual-oblivion-blade-of-nulgath": "https://aqwwiki.wikidot.com/dual-oblivion-blade-of-nulgath",
-    "breath-of-life": "https://aqwwiki.wikidot.com/breath-of-life",
-    "fire-guardian-dragon-soul": "https://aqwwiki.wikidot.com/fire-guardian-dragon-soul",
-    "fiendish-brimstone": "https://aqwwiki.wikidot.com/fiendish-brimstone",
-    "archfiend-dragon-egg": "https://aqwwiki.wikidot.com/archfiend-dragon-egg",
     "soul-potion": "https://aqwwiki.wikidot.com/soul-potion",
     "fallen-soul": "https://aqwwiki.wikidot.com/fallen-soul",
     "lae-s-hardcore-contract": "https://aqwwiki.wikidot.com/lae-s-hardcore-contract",
@@ -85901,7 +86005,6 @@
     "doom-worm-creepers": "https://aqwwiki.wikidot.com/doom-worm-creepers",
     "tainted-soul": "https://aqwwiki.wikidot.com/tainted-soul",
     "the-secret-2": "https://aqwwiki.wikidot.com/the-secret-2",
-    "death-scythe-of-nulgath": "https://aqwwiki.wikidot.com/death-scythe-of-nulgath",
     "archtoken-i": "https://aqwwiki.wikidot.com/archtoken-i",
     "combat-trophy": "https://aqwwiki.wikidot.com/combat-trophy",
     "archtoken-ii": "https://aqwwiki.wikidot.com/archtoken-ii",
@@ -86270,11 +86373,6 @@
     "beetle-general-pet": "https://aqwwiki.wikidot.com/beetle-general-pet",
     "warrior-claymore-blade": "https://aqwwiki.wikidot.com/warrior-claymore-blade",
     "claw-of-nulgath": "https://aqwwiki.wikidot.com/claw-of-nulgath",
-    "batwing-scythe": "https://aqwwiki.wikidot.com/batwing-scythe",
-    "scythe-of-sisyphean": "https://aqwwiki.wikidot.com/scythe-of-sisyphean",
-    "the-scythe-of-eternal-rest": "https://aqwwiki.wikidot.com/the-scythe-of-eternal-rest",
-    "dracolich-destroyer-scythe": "https://aqwwiki.wikidot.com/dracolich-destroyer-scythe",
-    "letter-from-asuka-and-tendou": "https://aqwwiki.wikidot.com/letter-from-asuka-and-tendou",
     "archfiend-s-collection-chest-2022": "https://aqwwiki.wikidot.com/archfiend-s-collection-chest-2022",
     "underworld-legacy-collection-chest": "https://aqwwiki.wikidot.com/underworld-legacy-collection-chest",
     "undead-warrior-armor": "https://aqwwiki.wikidot.com/undead-warrior-armor",

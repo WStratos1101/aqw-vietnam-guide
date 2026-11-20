@@ -8,7 +8,7 @@ export function LoreAtlas() {
   return (
     <section className="chapter lore-atlas" id="ban-do-lore" aria-labelledby="lore-atlas-title">
       <div className="section-heading lore-atlas-heading">
-        <h2 id="lore-atlas-title">Thế giới sau<br />chân trời.</h2>
+        <h2 id="lore-atlas-title">Vùng đất Lore.</h2>
         <p>Vượt qua những cánh rừng cổ, những vương quốc chìm trong bóng tối và những vùng đất chưa từng đặt chân tới. Mỗi miền đất của Lore đều mang một câu chuyện đang chờ được kể.</p>
       </div>
       <div className="lore-map-frame">
@@ -49,7 +49,6 @@ export function LoreAtlas() {
 export function LoreRegionPage({region}:{region:LoreRegion}) {
   return <main id="main" className="lore-region-page" data-lore-region-page={region.slug}>
     <a href="/#ban-do-lore" className="plain-link">← Trở về bản đồ Lore</a>
-    <span className="lore-region-kicker">BIÊN NIÊN SỬ LORE</span>
     <h1>{region.name}</h1>
     <p className="lore-region-intro">{region.description}</p>
     <div className="lore-region-pending">

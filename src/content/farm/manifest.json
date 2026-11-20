@@ -26,7 +26,7 @@
     "mappedItems": 7,
     "unknownRegionItems": 18,
     "unmappedGuideRecords": 55,
-    "unmappedGoalRecords": 59,
+    "unmappedGoalRecords": 51,
     "unresolvedSources": 8,
     "imageItems": 10
   },
@@ -525,6 +525,10 @@
       "href": "/farm/archmage-am",
       "sourceIndex": 7273,
       "itemIds": [
+        "prismatic-floating-sigil",
+        "sheathed-providence",
+        "prismatic-sigil",
+        "providence",
         "blinding-light-of-destiny"
       ]
     },
@@ -805,7 +809,9 @@
       "id": "line-65",
       "title": "Nightmare Carnax's Guardians",
       "sourceIndex": 65,
-      "itemIds": []
+      "itemIds": [
+        "nightmare-carnax-s-guardians"
+      ]
     },
     {
       "id": "line-67",
@@ -989,13 +995,17 @@
       "id": "line-125",
       "title": "Hollowborn Reaper's Scythe",
       "sourceIndex": 125,
-      "itemIds": []
+      "itemIds": [
+        "hollowborn-reaper-s-scythe"
+      ]
     },
     {
       "id": "line-127",
       "title": "Void Avenger Scythe",
       "sourceIndex": 127,
-      "itemIds": []
+      "itemIds": [
+        "void-avenger-scythe"
+      ]
     },
     {
       "id": "line-129",
@@ -1109,7 +1119,9 @@
       "id": "line-164",
       "title": "Taro's Prismatic Manslayer",
       "sourceIndex": 164,
-      "itemIds": []
+      "itemIds": [
+        "taro-s-prismatic-manslayer"
+      ]
     },
     {
       "id": "line-166",
@@ -1171,13 +1183,17 @@
       "id": "line-184",
       "title": "Ultimate Lich King",
       "sourceIndex": 184,
-      "itemIds": []
+      "itemIds": [
+        "ultimate-lich-king"
+      ]
     },
     {
       "id": "line-187",
       "title": "Burning Blade of Abezeth",
       "sourceIndex": 187,
-      "itemIds": []
+      "itemIds": [
+        "burning-blade-of-abezeth"
+      ]
     },
     {
       "id": "line-189",
@@ -1211,13 +1227,17 @@
       "id": "line-197",
       "title": "ArchFiend Baby Dragon",
       "sourceIndex": 197,
-      "itemIds": []
+      "itemIds": [
+        "archfiend-baby-dragon"
+      ]
     },
     {
       "id": "line-200",
       "title": "Burning Blade",
       "sourceIndex": 200,
-      "itemIds": []
+      "itemIds": [
+        "burning-blade"
+      ]
     },
     {
       "id": "line-202",

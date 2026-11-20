@@ -529,6 +529,30 @@ assignFarmGroups(
   empoweredUltraFactionEvidence,
   collectionRecords,
 );
+// AQWVN Guide Coverage V4: source-driven, idempotent Farm additions.
+const coverageV4 = read("src/content/farm/guide-coverage-v4.json");
+const coverageIds = new Set();
+const coverageUrls = new Set();
+const coverageItems = structuredClone(coverageV4);
+assignFarmGroups(
+  coverageItems,
+  manualFactionGoals,
+  groupManifest,
+  factionGoalAliases,
+  factionItemMappings,
+  legacyFactionGroups,
+  empoweredUltraFactionEvidence,
+  collectionRecords,
+);
+for (const extra of coverageItems) {
+  if (coverageIds.has(extra.id) || coverageUrls.has(extra.wikiUrl))
+    throw new Error(`Duplicate Guide Coverage V4 identity: ${extra.id} / ${extra.wikiUrl}`);
+  coverageIds.add(extra.id);
+  coverageUrls.add(extra.wikiUrl);
+  if (items.some(item => item.id === extra.id || item.wikiUrl === extra.wikiUrl))
+    throw new Error(`Guide Coverage V4 conflicts with canonical Farm record: ${extra.id} / ${extra.wikiUrl}`);
+  items.push(extra);
+}
 const reviewRoot = "content-sources/farm/review";
 const optionalReview = name => fs.existsSync(`${reviewRoot}/${name}.json`) ? read(`${reviewRoot}/${name}.json`) : [];
 const ultraRecovery = read("src/content/ultra/recovery.json");

@@ -73,7 +73,35 @@ async function click(script, args = []) {
 }
 // Safari's Element Click can emit mouse-up before mouse-down after text entry.
 // Use an explicit native pointer sequence for the affected Class controls.
+// AQW_SAFARI_ULTRA_KEYBOARD_CONTROLS_V2
+// Focus a real control and activate it through native WebDriver keyboard actions.
+async function activateUltraControl(selector, index = 0, key = "\uE007") {
+  const info = await execute(`
+    const el = document.querySelectorAll(arguments[0])[arguments[1]];
+    if (!el) return {ready:false, reason:"missing", selector:arguments[0], index:arguments[1]};
+    const valid = el.tagName === "BUTTON" || (el.tagName === "INPUT" && el.type === "checkbox");
+    if (!valid || el.disabled || el.closest("[hidden],[inert]") || !el.getClientRects().length)
+      return {ready:false, reason:"hidden-or-disabled", html:el.outerHTML.slice(0,250)};
+    el.scrollIntoView({block:"center", inline:"center", behavior:"instant"});
+    el.focus({preventScroll:true});
+    return {ready:document.activeElement === el, reason:"focus", html:el.outerHTML.slice(0,250)};
+  `, [selector, index]);
+  assert.ok(info?.ready, "Ultra control not keyboard-focusable: " + JSON.stringify(info));
+  try {
+    await command("POST", "/actions", {
+      actions: [{type:"key", id:"aqw-ultra-keyboard-v2", actions:[
+        {type:"keyDown", value:key},
+        {type:"keyUp", value:key}
+      ]}]
+    });
+  } finally {
+    try {await command("DELETE", "/actions");} catch {}
+  }
+}
+
 async function pointerClick(selector) {
+  // Ensure Safari's native pointer target is inside the visible viewport.
+  await revealControl(selector);
   const id = await find("return document.querySelector(arguments[0])", [selector]);
   await execute(`
     const element=document.querySelector(arguments[0]);
@@ -151,22 +179,60 @@ async function fill(selector, value) {
   }
 }
 async function navigate(route) {
+  // AQW_SAFARI_ROUTE_COLLECT_STABILITY_V3: pageLoadStrategy=none returns
+  // before the new document is ready. Check the destination, not old DOM.
+  const target = new URL(route, base);
   report.currentStep = {
-    name: "navigate",
-    route,
-    url: base + route,
-    selector: "h1",
+    name: "navigate", route, url: target.href, selector: "h1",
   };
-  await command("POST", "/url", { url: base + route });
-  const context = await execute("return {width:innerWidth,height:innerHeight}");
-  Object.assign(report.currentStep, context);
-  await waitFor(
-    'return location.pathname === new URL(arguments[0],location.origin).pathname && document.readyState === "complete" && !!document.querySelector("h1")',
-    `Page did not render: ${JSON.stringify(report.currentStep)}`,
-    [route],
-  );
-  await pause(200);
+  await command("POST", "/frame", { id: null });
+  await command("POST", "/url", { url: target.href });
+  let lastObserved = null;
+  let lastTransientError = null;
+  // Up to ~24s wall time plus WebDriver latency, only if page loads slowly.
+  // Most navigations return immediately as soon as the correct h1 exists.
+  for (let attempt = 0; attempt < 120; attempt++) {
+    try {
+      const state = await execute(`
+        return {
+          href: location.href,
+          pathname: location.pathname,
+          readyState: document.readyState,
+          title: document.title,
+          h1: document.querySelector("h1")?.textContent?.trim()?.slice(0,120) || null,
+          bodySnippet: document.body?.innerText?.trim()?.slice(0,160) || null,
+          width: innerWidth, height: innerHeight
+        };
+      `);
+      lastObserved = state;
+      if (state.pathname === target.pathname && state.readyState === "complete" && state.h1) {
+        report.currentStep.width = state.width;
+        report.currentStep.height = state.height;
+        await pause(200);
+        return;
+      }
+    } catch (error) {
+      const message = String(error?.message ?? error);
+      // Safari can briefly invalidate its JS execution context mid-navigation.
+      // A permanent session/window failure is fatal, never swallowed.
+      if (/no such window|invalid session id|session not created|ECONNREFUSED|connection refused/i.test(message)) throw error;
+      if (!/no such frame|javascript error|stale element reference/i.test(message)) throw error;
+      lastTransientError = message;
+      if (/no such frame/i.test(message)) {
+        try { await command("POST", "/frame", { id: null }); }
+        catch (frameError) {
+          if (!/no such frame/i.test(String(frameError?.message))) throw frameError;
+        }
+      }
+    }
+    await pause(200);
+  }
+  // Distinguish a wrong URL, a partially loaded document, and a missing h1.
+  report.currentStep.lastObserved = lastObserved;
+  report.currentStep.lastTransientError = lastTransientError;
+  throw Error("Page did not render: " + JSON.stringify(report.currentStep));
 }
+
 async function classDirectoryState() {
   return execute(`
     const input = document.querySelector('.class-search input');
@@ -189,6 +255,10 @@ async function classDirectoryState() {
     };
   `);
 }
+// AQW_SAFARI_COLLECT_ALL_V1 — optional, diagnostic-only mode.
+// Normal npm run test:safari behavior is unchanged unless the env var is set.
+const collectAll = process.env.AQW_SAFARI_COLLECT_ALL === "1";
+const collectedFailures = [];
 async function check(name, fn) {
   report.activeCheck = name;
   const context = await execute(
@@ -220,7 +290,18 @@ async function check(name, fn) {
       diagnostics,
       diagnosticError,
     });
-    throw error;
+    // AQW_SAFARI_COLLECT_ALL_V1: collect independent UI failures, but never
+    // continue with an invalid WebDriver session/window/frame.
+    const safariFailure = String(error?.message ?? error);
+    const sessionBroken = /no such (?:frame|window)|invalid session id|session not created|ECONNREFUSED|connection refused|not connected to (?:the )?browser/i.test(safariFailure);
+    if (!collectAll || sessionBroken) throw error;
+    collectedFailures.push({ name, route: context.route, error: safariFailure });
+    console.error("FAIL", name, "—", safariFailure);
+    delete report.activeCheck;
+    // Prevent one already-recorded browser console error from causing every
+    // subsequent check to fail for the same event. The original error remains
+    // in report.checks and cannot turn into PASS.
+    try { await execute("window.__aqwQaErrorTypes=[]; return true"); } catch {}
   }
 }
 async function screenshot(name) {
@@ -549,9 +630,11 @@ try {
       await click('return document.querySelector(".class-obtain-steps input")');
       await waitFor('return document.querySelector(".class-obtain-steps input").checked === arguments[0]', "Progress checkbox did not update", [!previous]);
       await command("POST", "/refresh", {});
+      await command("POST", "/frame", { id: null });
       await waitFor(
-        'return !!document.querySelector(".class-inspection-tabs")',
-        "Class did not reload",
+        'return location.pathname === "/class/archpaladin-ap" && !!document.querySelector(arguments[0])',
+        "Class acquisition tab did not finish reloading",
+        ['.class-inspection-tabs button[aria-label="CÁCH LẤY CLASS"]'],
       );
       await revealControl('.class-inspection-tabs button[aria-label="CÁCH LẤY CLASS"]');
       await click(
@@ -631,37 +714,80 @@ try {
   await check(
     "Current Farm quest progress persists across refresh",
     async () => {
-      await waitFor(
-        'return !!document.querySelector(".fv31-step-complete input")',
-        "Farm quest progress missing",
-      );
+      // AQW_SAFARI_FARM_SETTLE_V1: SSR can briefly show a Quest checkbox
+      // before React hydrates and replaces the selected Farm workflow.
+      // Require several consecutive observations, not one transient match.
+      let farmStableObservations = 0;
+      for (let attempt = 0; attempt < 60 && farmStableObservations < 5; attempt++) {
+        const ready = await execute(
+          'return location.pathname === "/farm/item/legion-revenant-class" && !!document.querySelector(".fv31-step-complete input")',
+        );
+        farmStableObservations = ready ? farmStableObservations + 1 : 0;
+        if (farmStableObservations < 5) await pause(150);
+      }
+      assert.equal(farmStableObservations, 5, "Farm checkbox missing or unstable after React hydration");
       const previous = await execute(
-        'return document.querySelector(".fv31-step-complete input").checked',
+        'return document.querySelector(".fv31-step-complete input")?.checked ?? null',
       );
+      assert.notEqual(previous, null, "Farm checkbox disappeared immediately after settling");
       await execute(`
         window.__aqwFarmProgressEvents=[];
         const input=document.querySelector('.fv31-step-complete input');
+        if(!input)throw Error('Farm checkbox disappeared before event instrumentation');
         for(const type of ['pointerdown','pointerup','click','input','change'])
           input.addEventListener(type,event=>window.__aqwFarmProgressEvents.push({type,trusted:event.isTrusted,checked:input.checked}));
       `);
       await click('return document.querySelector(".fv31-step-complete input")');
-      await waitFor('return document.querySelector(".fv31-step-complete input").checked === arguments[0]', "Farm quest checkbox did not update", [!previous]);
-      report.farmProgressBeforeRefresh = await execute(`return {checked:document.querySelector('.fv31-step-complete input').checked,events:window.__aqwFarmProgressEvents}`);
+      await waitFor('return document.querySelector(".fv31-step-complete input")?.checked === arguments[0]', "Farm quest checkbox did not update", [!previous]);
+      report.farmProgressBeforeRefresh = await execute(`return {checked:document.querySelector('.fv31-step-complete input')?.checked ?? null,events:window.__aqwFarmProgressEvents}`);
+      assert.notEqual(report.farmProgressBeforeRefresh.checked, null, "Farm checkbox disappeared after click");
+      // AQW_SAFARI_FARM_REFRESH_DOCUMENT_V2: pageLoadStrategy "none" lets
+      // /refresh return while the OLD document is still visible. Check a
+      // new document's timeOrigin before accepting persisted progress.
+      // React hydration can replace SSR nodes, so require stable observations.
+      const farmDocumentOriginBeforeRefresh = await execute('return performance.timeOrigin');
       await command("POST", "/refresh", {});
-      await waitFor(
-        'return document.querySelector(".fv31-step-complete input")?.checked === arguments[0]',
-        "Farm quest progress did not reload",
-        [!previous],
+      let farmRefreshStable = 0;
+      let farmRefreshState = null;
+      for (let attempt = 0; attempt < 100 && farmRefreshStable < 7; attempt++) {
+        try {
+          farmRefreshState = await execute(`
+            const input = document.querySelector('.fv31-step-complete input');
+            return {
+              origin: performance.timeOrigin,
+              pathname: location.pathname,
+              search: location.search,
+              readyState: document.readyState,
+              checked: input ? input.checked : null,
+            };
+          `);
+          const freshDocument = farmRefreshState.origin !== farmDocumentOriginBeforeRefresh;
+          const correctRoute = farmRefreshState.pathname === '/farm/item/legion-revenant-class' &&
+            new URLSearchParams(farmRefreshState.search).get('farm-tab') === 'guide';
+          const ready = freshDocument && correctRoute &&
+            farmRefreshState.readyState === 'complete' &&
+            farmRefreshState.checked === !previous;
+          farmRefreshStable = ready ? farmRefreshStable + 1 : 0;
+        } catch (error) {
+          // Navigation may temporarily invalidate the SafariDriver frame.
+          // Only recover that known transient error; never hide test failures.
+          if (!/no such frame/i.test(String(error?.message))) throw error;
+          farmRefreshStable = 0;
+          try {
+            await command("POST", "/frame", { id: null });
+          } catch (resetError) {
+            if (!/no such frame/i.test(String(resetError?.message))) throw resetError;
+          }
+        }
+        if (farmRefreshStable < 7) await pause(150);
+      }
+      assert.equal(farmRefreshStable, 7,
+        'Farm quest progress did not persist in the NEW document: ' +
+        JSON.stringify({ previous, expected: !previous, state: farmRefreshState })
       );
-      assert.equal(
-        await execute(
-          'return document.querySelector(".fv31-step-complete input").checked',
-        ),
-        !previous,
-      );
-      report.farmProgressAfterRefresh = await execute('return document.querySelector(".fv31-step-complete input").checked');
+      report.farmProgressAfterRefresh = farmRefreshState.checked;
       await click('return document.querySelector(".fv31-step-complete input")');
-      await waitFor('return document.querySelector(".fv31-step-complete input").checked === arguments[0]', "Farm progress cleanup failed", [previous]);
+      await waitFor('return document.querySelector(".fv31-step-complete input")?.checked === arguments[0]', "Farm progress cleanup failed", [previous]);
     },
   );
   await navigate("/");
@@ -721,7 +847,19 @@ try {
     "/he-thong/thuat-ngu-aqw",
     "/trang-bi/general-boosted",
   ]) {
-    await navigate(route);
+    // AQW_SAFARI_ROUTE_COLLECT_STABILITY_V3: route checks are independent.
+    // In collect-all only, report the failed navigation and try the next route.
+    try {
+      await navigate(route);
+    } catch (error) {
+      const message = String(error?.message ?? error);
+      if (!collectAll || /no such (?:window|frame)|invalid session id|session not created|ECONNREFUSED|connection refused/i.test(message)) throw error;
+      const failure = { name: "Route " + route, route, status: "failed", error: message };
+      report.checks.push(failure);
+      collectedFailures.push({ name: failure.name, route, error: message });
+      console.error("FAIL", failure.name, "—", message);
+      continue;
+    }
     await check("Route " + route, async () =>
       assert.equal(
         await execute('return document.querySelectorAll("h1").length'),
@@ -763,6 +901,21 @@ try {
 
   await navigate("/ultra-boss");
   await check("Ultra directory and client navigation", async () => {
+    // AQW_ULTRA_DIRECTORY_WAIT_FOR_CARD_V1
+    // The directory can retain its Daily/Weekly/Seasonal filter across navigations.
+    // Interact with the real UI to expose Ultra Dage; never bypass the assertion.
+    await waitFor(
+      'return !!document.querySelector(".challenge-filters button")',
+      "Ultra directory filters did not render",
+    );
+    await click(
+      'return Array.from(document.querySelectorAll(".challenge-filters button")).find(b=>b.textContent.trim()==="Tất cả")',
+    );
+    await waitFor(
+      'return !!document.querySelector(arguments[0])',
+      "Ultra Dage card missing even with All filter",
+      ['a[href="/ultra-boss/ultra-dage"]'],
+    );
     await execute('window.__aqwNavigationProbe="alive"');
     await click(
       "return document.querySelector(arguments[0])",
@@ -777,7 +930,10 @@ try {
   await check(
     "Current Ultra copy command or actionable Safari refusal",
     async () => {
-      await click('return document.querySelector(".command button")');
+      // Safari may reject a native pointer click on the visible Copy button.
+      // Activate the focused real button using WebDriver keyboard actions,
+      // preserving trusted user input and verifying the resulting feedback.
+      await activateUltraControl(".command button");
       await waitFor(
         'return !!document.querySelector(".copy-status").textContent.trim()',
         "Copy feedback missing",
@@ -842,36 +998,47 @@ try {
     );
   });
   await check("Ultra multiple team accordions", async () => {
-    const toggles = await execute(
-      'return Array.from(document.querySelectorAll(".ultra-team-toggle"))',
+    const toggleCount = await execute(
+      'return document.querySelectorAll(".ultra-team-toggle").length',
     );
-    assert.ok(toggles.length >= 2, "Expected multiple team accordions");
-    for (const el of toggles) {
-      await command(
-        "POST",
-        `/element/${el["element-6066-11e4-a52e-4f735466cecf"]}/click`,
-        {},
+    assert.ok(toggleCount >= 2, "Expected multiple team accordions");
+    for (let i = 0; i < toggleCount; i++) {
+      const alreadyOpen = await execute(
+        'return document.querySelectorAll(".ultra-team-toggle")[arguments[0]]?.getAttribute("aria-expanded") === "true"',
+        [i],
+      );
+      if (alreadyOpen) {
+        await activateUltraControl(".ultra-team-toggle", i);
+        await waitFor(
+          'return document.querySelectorAll(".ultra-team-toggle")[arguments[0]]?.getAttribute("aria-expanded") === "false"',
+          "Team accordion did not close", [i],
+        );
+      }
+      await activateUltraControl(".ultra-team-toggle", i);
+      await waitFor(
+        'return document.querySelectorAll(".ultra-team-toggle")[arguments[0]]?.getAttribute("aria-expanded") === "true"',
+        "Team accordion did not open with Enter", [i],
       );
     }
     assert.equal(
       await execute(
         'return document.querySelectorAll(".ultra-team-toggle[aria-expanded=true]").length',
       ),
-      toggles.length,
+      toggleCount,
     );
   });
   await check(
     "Ultra equipment switch and durable scoped progress",
     async () => {
-      await click(
-        'return document.querySelectorAll(".ultra-equipment-choice")[0]',
-      );
+      await activateUltraControl(".ultra-equipment-choice", 0);
       const previous = await execute(
         'return document.querySelector(".ultra-quest-check input").checked',
       );
-      await click('return document.querySelector(".ultra-quest-check input")');
-      await click(
-        'return document.querySelectorAll(".ultra-equipment-choice")[1]',
+      await activateUltraControl(".ultra-quest-check input", 0, "\uE00D");
+      await activateUltraControl(".ultra-equipment-choice", 1);
+      await waitFor(
+        'return document.querySelectorAll(".ultra-equipment-choice")[1]?.getAttribute("aria-pressed") === "true"',
+        "Ultra equipment selection did not switch",
       );
       await pause(100);
       assert.match(
@@ -880,9 +1047,7 @@ try {
         ),
         /Empowered Undead Champion/,
       );
-      await click(
-        'return document.querySelectorAll(".ultra-equipment-choice")[0]',
-      );
+      await activateUltraControl(".ultra-equipment-choice", 0);
       await pause(100);
       assert.equal(
         await execute(
@@ -901,7 +1066,7 @@ try {
         ),
         !previous,
       );
-      await click('return document.querySelector(".ultra-quest-check input")');
+      await activateUltraControl(".ultra-quest-check input", 0, "\uE00D");
     },
   );
   await check("Ultra back to top has icon only", async () => {
@@ -929,7 +1094,15 @@ try {
       /Lạc khỏi bản đồ/,
     ),
   );
-  report.status = "passed";
+  // AQW_SAFARI_COLLECT_ALL_V1: the process must be nonzero if ANY check failed.
+  if (collectAll && collectedFailures.length) {
+    report.status = "failed";
+    report.error = `${collectedFailures.length} Safari checks failed in collect-all mode`;
+    process.exitCode = 1;
+    console.error(`SAFARI COLLECT ALL: ${collectedFailures.length} failed checks`);
+  } else {
+    report.status = "passed";
+  }
   report.limitations.push(
     "Reduced motion follows macOS accessibility settings; verify enabled state manually.",
     "Safari screenshots are viewport captures, one per scroll segment.",
@@ -952,6 +1125,11 @@ try {
     report.status = "failed";
     report.cleanupError = error.message;
     process.exitCode = 1;
+  }
+  if (collectAll) {
+    report.collectAll = true;
+    report.collectedFailures = collectedFailures;
+    report.failedCheckCount = report.checks.filter(check => check.status === "failed").length;
   }
   report.driverLog = driverLog;
   report.finishedAt = new Date().toISOString();

@@ -59,6 +59,15 @@ const goalRecords = goalNodes.map((n) => ({
   sourceIndex: n.sourceIndex,
   itemIds: [],
 }));
+// Goal-to-item links: do not mark quest chains or Houses as physical items.
+for (const extra of JSON.parse(fs.readFileSync("src/content/farm/guide-coverage-v4.json", "utf8"))) {
+  const goal = goalRecords.find((g) => g.title.toLowerCase() === extra.name.toLowerCase());
+  if (goal && !goal.itemIds.includes(extra.id)) goal.itemIds.push(extra.id);
+  if (["providence", "prismatic-sigil", "sheathed-providence", "prismatic-floating-sigil"].includes(extra.id)) {
+    const archmage = guideRecords.find(g => g.href === "/farm/archmage-am");
+    if (archmage && !archmage.itemIds.includes(extra.id)) archmage.itemIds.push(extra.id);
+  }
+}
 const items = snapshot.items.map((item) => {
   const needle = norm(aliases[item.id] || item.officialName);
   const mentions = source.nodes

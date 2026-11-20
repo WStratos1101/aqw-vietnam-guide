@@ -17,6 +17,7 @@ export const siteFeatureAccess = Object.freeze({
   ultraBoss: { prefix: "/ultra-boss", status: "enabled" },
 });
 export function comingSoonRoute(path) {
+  if (path === "/he-thong") return undefined; // AQWVN System V4 index only
   return Object.values(siteFeatureAccess).find(
     (f) =>
       f.status === "comingSoon" &&

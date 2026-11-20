@@ -207,10 +207,11 @@ test("completion snapshots are exact canonical bodies; incomplete indexed eviden
   const added = read(
     "content-sources/farm/import/ultra-import-audit.json",
   ).added.concat(collectionRecords.map(record=>record.id));
-  assert.equal(c.items.filter((i) => !added.includes(i.id)).length, 220);
+  const coverageIds = new Set(read("src/content/farm/guide-coverage-v4.json").map(item => item.id));
+  const snapshotItems = c.items.filter((i) => !added.includes(i.id) && !coverageIds.has(i.id));
+  assert.equal(snapshotItems.length, 220);
   assert.equal(
-    c.items
-      .filter((i) => !added.includes(i.id))
+    snapshotItems
       .reduce((n, i) => n + i.acquisitionRoutes.length, 0),
     221,
   );
@@ -221,7 +222,7 @@ test("completion snapshots are exact canonical bodies; incomplete indexed eviden
   const translations = read(
     "content-sources/farm/import/detail-translations.json",
   );
-  for (const item of c.items.filter((i) => !added.includes(i.id))) {
+  for (const item of snapshotItems) {
     assert.ok(item.wikiDetails.descriptionVi, item.id);
     const record = records.find((r) => r.wikiUrl === item.wikiUrl);
     assert.equal(
@@ -343,6 +344,14 @@ test("every canonical item has acquisition facts; multi-Quest rewards are altern
   for (const item of c.items) {
     const b = item.acquisitionBrief,
       record = records.find((r) => r.wikiUrl === item.wikiUrl);
+    const coverage = read("src/content/farm/guide-coverage-v4.json").find(entry => entry.id === item.id);
+    if (coverage) {
+      assert.equal(b.source, item.wikiUrl, item.id);
+      assert.ok(b.text?.length, item.id);
+      assert.ok(coverage.fieldEvidence?.method, item.id + ": acquisition source evidence missing");
+      continue;
+    }
+    assert.ok(record, item.id + ": exact item snapshot missing");
     assert.equal(b.source, item.wikiUrl, item.id);
     assert.equal(
       b.sourceTextHash,

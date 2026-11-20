@@ -2,10 +2,10 @@
 
 :root[data-theme=dark]{
  color-scheme:dark;
- --theme-ground:#08050D;--theme-panel:#130D1D;--theme-raised:#20132F;--theme-line:#4B3265;
- --theme-accent:#A65BFA;--theme-hover:#D2A5FF;--theme-focus:#C58BFF;--theme-text:#F5F0FF;--theme-secondary:#B9AACD;
+ --theme-ground:#111315;--theme-panel:#191c1f;--theme-raised:#24282c;--theme-line:#3a3f43;
+ --theme-accent:#c5a76a;--theme-hover:#dfc58e;--theme-focus:#efd995;--theme-text:#f1eee6;--theme-secondary:#b7b5ae;
  --paper:var(--theme-ground);--ink:var(--theme-text);--surface:var(--theme-panel);--muted:var(--theme-secondary);--graphite:var(--theme-raised);--accent:var(--theme-accent);--sage:var(--theme-raised);
- --theme-inverse-surface:var(--theme-panel);--theme-inverse-text:var(--theme-text);--theme-accent-ink:var(--theme-ground);
+ --theme-inverse-surface:#0b0d0f;--theme-inverse-text:var(--theme-text);--theme-accent-ink:#15130e;
  --dark-theme-accent:var(--theme-accent);--chaos-ground:var(--theme-ground);--chaos-surface:var(--theme-panel);--chaos-raised:var(--theme-raised);--chaos-border:var(--theme-line);--chaos-accent:var(--theme-accent);--chaos-hover:var(--theme-hover);--chaos-text:var(--theme-text);--chaos-secondary:var(--theme-secondary);
  --ultra-obsidian:var(--theme-ground);--ultra-charcoal:var(--theme-panel);--ultra-gold:var(--theme-accent);--ultra-bone:var(--theme-text);--ultra-muted:var(--theme-secondary);--ultra-raised:var(--theme-raised);--ultra-border:var(--theme-line);--ultra-control-border:var(--theme-line);
  --class-midnight:var(--theme-ground);--class-slate:var(--theme-panel);--class-raised:var(--theme-raised);--class-gold:var(--theme-accent);--class-white:var(--theme-text);--class-muted:var(--theme-secondary);--class-line:var(--theme-line);

@@ -5,9 +5,9 @@ import {Window} from 'happy-dom';
 import {build} from 'esbuild';
 import {act,createElement} from 'react';
 const css=fs.readFileSync('src/styles/themes.css','utf8');
-test('Chaos palette is owned by dark source tokens; Light palette is unchanged',()=>{
+test('Dark archive palette is owned by dark source tokens; Light palette is unchanged',()=>{
  const dark=css.match(/:root\[data-theme=dark\]\{([\s\S]*?)\}/)[1];
- for(const [name,value]of Object.entries({ground:'#08050D',panel:'#130D1D',raised:'#20132F',line:'#4B3265',accent:'#A65BFA',hover:'#D2A5FF',focus:'#C58BFF',text:'#F5F0FF',secondary:'#B9AACD'}))assert.ok(dark.includes(`--theme-${name}:${value}`),name);
+ for(const [name,value]of Object.entries({ground:'#111315',panel:'#191c1f',raised:'#24282c',line:'#3a3f43',accent:'#c5a76a',hover:'#dfc58e',focus:'#efd995',text:'#f1eee6',secondary:'#b7b5ae'}))assert.ok(dark.includes(`--theme-${name}:${value}`),name);
  const light=css.match(/:root\[data-theme=light\]\{[^}]*\}/)[0];
  assert.equal(light,fs.readFileSync('tests/fixtures/light-theme-palette.css','utf8'));
  assert.ok(!light.includes('--chaos-'));

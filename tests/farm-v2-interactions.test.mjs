@@ -522,6 +522,36 @@ test("verified set inventory navigates to canonical Farm guides and standalone i
   await navigate("/farm?item=legion-revenant-class");assert.equal(tab("Set đồ"),undefined);
 });
 
+test("all twelve V4 items are searchable in the regular directory and open canonical detail tabs",async()=>{
+  const coverage=JSON.parse(await fs.readFile("src/content/farm/guide-coverage-v4.json","utf8"));
+  const catalog=JSON.parse(await fs.readFile("src/content/farm/catalog-v2.generated.json","utf8"));
+  for(const item of coverage){
+    const canonical=catalog.items.find(entry=>entry.id===item.id);
+    assert.ok(canonical,`${item.name} has a canonical generated record`);
+    await navigate(`/farm?q=${encodeURIComponent(item.name)}&category=${encodeURIComponent(item.category)}&view=reference`);
+    const row=host.querySelector(`[data-inventory-item="${item.id}"]`);
+    assert.ok(row,`${item.name} appears through normal search`);
+    await click(row);
+    assert.equal(host.querySelector("[data-item-id]")?.dataset.itemId,item.id);
+    assert.equal(host.querySelector("[role=tab][aria-selected=true]")?.textContent.trim(),"Thông tin");
+    assert.ok(tab("Cách nhận"),`${item.name} uses the shared acquisition tab`);
+    assert.ok(tab("Hướng dẫn Farm"),`${item.name} uses the shared guide tab`);
+    const route=canonical.acquisitionRoutes[0];
+    const hasMaterials=Boolean(route.materialTree||route.farmModes?.some(mode=>mode.materials.length)||route.questWorkflowIds?.length||route.farmTasks?.some(task=>task.rows.length));
+    assert.equal(Boolean(tab("Nguyên liệu")),hasMaterials,`${item.name} only shows its materials tab when the route has material data`);
+    assert.equal(Boolean(tab("Set đồ")),Boolean(canonical.setIds?.length||/^(?:Empowered )?Higure$/i.test(item.name.trim())));
+    assert.match(host.querySelector(".fv2-heading")?.textContent||"",new RegExp(item.name.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")));
+    await click(tab("Cách nhận"));
+    assert.ok(host.querySelector("[role=tabpanel]"),`${item.name} acquisition renders in the shared panel`);
+    await click(tab("Hướng dẫn Farm"));
+    assert.ok(host.querySelector("[role=tabpanel]"),`${item.name} guide renders in the shared panel`);
+    if(hasMaterials){
+      await click(tab("Nguyên liệu"));
+      assert.ok(host.querySelector("[role=tabpanel]"),`${item.name} materials render in the shared panel`);
+    }
+  }
+});
+
 
 test("source fixtures retain isolated numbered quests and matching content", async () => {
   const {stepCases}=await import('./fixtures/farm-step-cases.mjs');
