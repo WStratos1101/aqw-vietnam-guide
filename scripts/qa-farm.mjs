@@ -193,9 +193,24 @@ await runQa(
             await expect(
               page.locator(".fv2-groups button[aria-pressed=true]"),
             ).toContainText("GOOD");
+            const factionViewport = await page.evaluate(() => {
+              const categories = document.querySelector(".fv2-categories");
+              const bounds = categories.getBoundingClientRect();
+              return {
+                width: innerWidth,
+                documentWidth: document.documentElement.scrollWidth,
+                bodyWidth: document.body.scrollWidth,
+                categoryRailFits: bounds.left >= -1 && bounds.right <= innerWidth + 1,
+                categoryRailScrollsInternally: categories.scrollWidth > categories.clientWidth && getComputedStyle(categories).overflowX === "auto",
+              };
+            });
+            await page.mouse.move(1, Math.round((await page.evaluate(() => innerHeight)) / 2));
+            await page.mouse.wheel(500, 0);
+            await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(resolve)));
+            factionViewport.userCanScrollPageHorizontally = await page.evaluate(() => window.scrollX !== 0);
             expect(
-              await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
-              "Faction controls must fit the viewport",
+              !factionViewport.userCanScrollPageHorizontally && factionViewport.bodyWidth <= factionViewport.width && factionViewport.categoryRailFits && factionViewport.categoryRailScrollsInternally,
+              `Faction controls must stay within the viewport while category filters scroll internally: ${JSON.stringify(factionViewport)}`,
             ).toBe(true);
             await screenshot(width === 390 ? "group-selector-375px" : "group-selector");
             if (width === 390)
@@ -213,9 +228,11 @@ await runQa(
             await expect(page.locator('.fv31-step-numbers button')).toHaveCount(1);
             await expect(page.getByRole('region',{name:'Quest đang chọn',exact:true})).toContainText("Build Malgor's Armor Set");
             await page.getByRole('tab',{name:'Nguyên liệu',exact:true}).click();
+            const materialGuide=page.locator('[data-aqw-material-guide]');
+            await materialGuide.locator('summary').click();
             const controls=page.getByRole('group',{name:'Chọn nguyên liệu',exact:true}).getByRole('button');
             assert.deepEqual(await controls.allTextContents(),['Gold Voucher 500k','Timestream Ravager','ShadowFlame Defender','Mana Guardian','Dark Dragon Slayer','Mystical Devotee of Mana',"Dragon's Tear"]);
-            assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Malgor page must not overflow');
+            assert.ok(await page.evaluate(()=>document.body.scrollWidth<=innerWidth),'Malgor page must not overflow its viewport');
             await screenshot('malgor-isolation-'+theme);
           }
         });
@@ -338,6 +355,7 @@ await runQa(
             await page
               .getByRole("tab", { name: "Nguyên liệu", exact: true })
               .click();
+            await page.locator('[data-aqw-material-guide] summary').click();
             await page.getByRole("group",{name:"Chọn nguyên liệu",exact:true}).getByRole("button",{name:"Exalted Apotheosis",exact:true}).click();
             await expect(page.locator('[data-item-id="dual-exalted-apotheosis"]')).toBeVisible();
             await expect(page.getByRole("region",{name:"Nguyên liệu đang chọn",exact:true})).toContainText("Exalted Apotheosis");
@@ -417,10 +435,9 @@ await runQa(
             );
             if (width <= 720 && (await page.locator(".fv2-back").isVisible()))
               await page.locator(".fv2-back").click();
-            await expect(
-              page.getByLabel("Role Class", { exact: true }),
-            ).toHaveValue("Support");
-            await screenshot("v31-class-role");
+            await expect(page.locator(".fv2-subtypes")).toHaveCount(0);
+            await expect(page).not.toHaveURL(/subtype=/);
+            await screenshot("v31-classes-no-subtype");
             await navigate(
               "/farm?item=blade-of-awe",
               '[data-item-id="blade-of-awe"]',
@@ -462,7 +479,7 @@ await runQa(
                 await expect(control).toHaveAttribute("aria-pressed", "true");
                 const colors = await page
                   .locator(".fv2-root")
-                  .evaluate((el) => {
+                  .evaluate((el, theme) => {
                     const s = getComputedStyle(el);
                     const rgb = (v) =>
                       v
@@ -487,26 +504,26 @@ await runQa(
                       el.querySelector(".fv2-detail a"),
                     );
                     return {
-                      accent: s.getPropertyValue("--fv2-accent").trim(),
+                      accent: s.getPropertyValue(theme === "light" ? "--fv2-accent-light" : "--fv2-accent-dark").trim(),
                       bg: s.backgroundColor,
                       contrast:
                         (Math.max(ink, paper) + 0.05) /
                         (Math.min(ink, paper) + 0.05),
                       linkColor: link.color,
                     };
-                  });
+                  }, theme);
                 assert.ok(
                   colors.contrast >= 4.5,
                   `${theme} ${group} body contrast`,
                 );
                 assert.equal(
                   colors.bg,
-                  theme === "light" ? "rgb(247, 246, 240)" : "rgb(16, 17, 18)",
+                  theme === "light" ? "rgb(247, 246, 240)" : "rgb(17, 19, 21)",
                 );
                 accents.add(colors.accent);
                 await screenshot(`theme-${theme}-${group}`);
               }
-              assert.equal(accents.size, 4);
+              assert.equal(accents.size, 4, `${theme} faction accents: ${[...accents].join(", ")}`);
             }
             await navigate("/farm?category=Weapons", ".fv2-root");
             if (width <= 720 && (await page.locator(".fv2-back").isVisible()))

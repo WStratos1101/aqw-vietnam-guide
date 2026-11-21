@@ -53,6 +53,9 @@ export async function checkFarmSteps({ page, base, expect, screenshot, recordTab
     await expect(page.locator('.fv32-workflow')).toBeVisible();
     if (await page.locator('html').getAttribute('data-theme') !== theme) await page.locator('.theme-toggle').click();
     await page.getByRole('button',{name:'Tổng nguyên liệu',exact:true}).click();
+    const totalMaterials = page.locator('details[data-aqw-material-table="total"]');
+    await expect(totalMaterials).toHaveCount(1);
+    await totalMaterials.locator('summary').click();
     const table=page.getByRole('region',{name:'Tổng nguyên liệu',exact:true});
     const route = catalog.items.find(item=>item.id==='legion-revenant-class').acquisitionRoutes.find(route=>route.id==='wiki-location');
     const rows = route.farmModes.find(mode=>mode.id==='insignia').materials.filter(row=>row.usage!=="owned"&&!row.temporary&&row.role!=="tempQuestItem"&&!/^(?:Gold|ACs?)$/i.test(row.name));

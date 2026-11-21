@@ -77,7 +77,10 @@ async function click(script, args = []) {
 // Focus a real control and activate it through native WebDriver keyboard actions.
 async function activateUltraControl(selector, index = 0, key = "\uE007") {
   const info = await execute(`
-    const el = document.querySelectorAll(arguments[0])[arguments[1]];
+    const matches = [...document.querySelectorAll(arguments[0])];
+    const el = typeof arguments[1] === "string"
+      ? matches.find(candidate => candidate.getAttribute("aria-label") === arguments[1])
+      : matches[arguments[1]];
     if (!el) return {ready:false, reason:"missing", selector:arguments[0], index:arguments[1]};
     const valid = el.tagName === "BUTTON" || (el.tagName === "INPUT" && el.type === "checkbox");
     if (!valid || el.disabled || el.closest("[hidden],[inert]") || !el.getClientRects().length)
@@ -1030,25 +1033,35 @@ try {
   await check(
     "Ultra equipment switch and durable scoped progress",
     async () => {
-      await activateUltraControl(".ultra-equipment-choice", 0);
+      const initialEquipment = await execute(
+        'return document.querySelector(".ultra-equipment-choice[aria-pressed=true]")?.getAttribute("aria-label")',
+      );
+      assert.ok(initialEquipment, "Initial Ultra equipment selection is present");
       const previous = await execute(
         'return document.querySelector(".ultra-quest-check input").checked',
       );
       await activateUltraControl(".ultra-quest-check input", 0, "\uE00D");
-      await activateUltraControl(".ultra-equipment-choice", 1);
+      await activateUltraControl(".ultra-equipment-choice", "Empowered Undead Champion");
       await waitFor(
-        'return document.querySelectorAll(".ultra-equipment-choice")[1]?.getAttribute("aria-pressed") === "true"',
+        'return Array.from(document.querySelectorAll(".ultra-equipment-choice")).some(e=>e.getAttribute("aria-label")==="Empowered Undead Champion" && e.getAttribute("aria-pressed")==="true")',
         "Ultra equipment selection did not switch",
       );
-      await pause(100);
+      await waitFor(
+        'return document.querySelector(".equipment-selected-content h3")?.textContent.includes("Empowered Undead Champion")',
+        "Selected Ultra equipment details did not update",
+      );
       assert.match(
         await execute(
           'return document.querySelector(".equipment-selected-content h3").textContent',
         ),
         /Empowered Undead Champion/,
       );
-      await activateUltraControl(".ultra-equipment-choice", 0);
-      await pause(100);
+      await activateUltraControl(".ultra-equipment-choice", initialEquipment);
+      await waitFor(
+        'return document.querySelector(".equipment-selected-content h3")?.textContent.includes(arguments[0])',
+        "Initial Ultra equipment details did not return",
+        [initialEquipment],
+      );
       assert.equal(
         await execute(
           'return document.querySelector(".ultra-quest-check input").checked',

@@ -9,6 +9,7 @@ const files: Record<string, string> = {
   "Capes / Back Items": "Cloak_Table.png",
   Pets: "Pet_Table.png",
   Classes: "class_table.png",
+  Grounds: "Ground_Table.png",
   Sword: "Sword_Table.png",
   Axe: "Axe_Table.png",
   Dagger: "Dagger_Table.png",
@@ -21,11 +22,16 @@ const files: Record<string, string> = {
 export function FarmTypeIcon({ name, fallbackName }: { name: string; fallbackName?: string }) {
   const [failed, setFailed] = useState(false);
   const file = files[name] || (fallbackName ? files[fallbackName] : undefined);
-  return file && !failed ? (
+  const source = file?.startsWith("https://")
+    ? file
+    : file
+      ? "/images/aqw/farm-types/" + file
+      : undefined;
+  return source && !failed ? (
     <>
       <img
         className="fv2-type-icon"
-        src={"/images/aqw/farm-types/" + file}
+        src={source}
         alt=""
         aria-hidden="true"
         width={28}

@@ -1,23 +1,22 @@
 export const UNKNOWN_CLASS_ROLE = "unknown";
 export function matchesFarmSubtype(item, category, subtype) {
   if (!subtype) return true;
-  return category === "Classes"
-    ? subtype === UNKNOWN_CLASS_ROLE
-      ? !(item.classRoles || []).length
-      : (item.classRoles || []).includes(subtype)
-    : item.subtype === subtype;
+  // The visible subtype rail is weapon-only. Treat stale URLs from the old
+  // cross-category filters as unfiltered instead of silently narrowing data.
+  return category === "Weapons" && item.category === "Weapons"
+    ? item.subtype === subtype
+    : true;
 }
 export function farmSubtypeOptions(items, category, roles) {
-  return category === "Classes"
-    ? [...roles, UNKNOWN_CLASS_ROLE]
-    : [
-        ...new Set(
-          items
-            .filter((i) => category === "all" || i.category === category)
-            .map((i) => i.subtype)
-            .filter(Boolean),
-        ),
-      ];
+  if (category !== "Weapons") return [];
+  return [
+    ...new Set(
+      items
+        .filter((i) => i.category === "Weapons")
+        .map((i) => i.subtype)
+        .filter(Boolean),
+    ),
+  ];
 }
 export function guidePaths(route) {
   if (!route) return [];
@@ -62,8 +61,30 @@ export function formatFarmBoost(text) {
     .replace(/gained when battling monsters or turning in quests|when battling monsters or turning in quests/gi, "khi đánh quái hoặc trả Quest")
     .replace(/gained from quests/gi, "nhận được từ Quest")
     .replace(/when equipped/gi, "khi trang bị")
+    .replace(/^Khi trang bị, vật phẩm /i, "Khi trang bị, ")
     .replace(/\band\b/gi, "và")
+    .replace(/,\s*(?=và\s)/gi, " ")
     .trim();
+}
+
+function collapseTaggedBoostDuplicates(boosts) {
+  const explicitTargets = ["Chaos", "Dragon", "Elemental", "Human", "Undead"];
+  const genericTagged = (text) => {
+    const match = text.match(/(\d+(?:[.,]\d+)?)%.*(?:all tagged monsters|mọi quái có tag)/i);
+    return match?.[1]?.replace(",", ".") || null;
+  };
+  const hasAllTargets = (text) =>
+    explicitTargets.every((target) => new RegExp(`\\b${target}\\b`, "i").test(text));
+  const isEquipped = (text) => /when equipped|khi trang bị/i.test(text);
+  return boosts.filter((text) => {
+    const amount = genericTagged(text);
+    if (!amount || !isEquipped(text)) return true;
+    return !boosts.some((other) => {
+      if (other === text || genericTagged(other)) return false;
+      const otherAmount = other.match(/(\d+(?:[.,]\d+)?)%/)?.[1]?.replace(",", ".");
+      return otherAmount === amount && hasAllTargets(other) && isEquipped(other);
+    });
+  });
 }
 
 export function farmBoostState(item) {
@@ -77,7 +98,16 @@ export function farmBoost(item) {
   if(item.boostReviewStatus === "unverified")return ["Chưa xác minh"];
   if(item.boosts?.length){
     const labels={classPoints:"Class Point",experience:"EXP",reputation:"Reputation",gold:"Gold"};
-    return item.boosts.map(boost=>boost.kind==='damageToAll'?`Tăng ${boost.percent}% sát thương lên All Monsters khi trang bị.`:boost.kind==='damageToTagged'?`Tăng ${boost.percent}% sát thương lên ${boost.targets.join(', ')}.`:`Tăng ${boost.percent}% ${labels[boost.kind]||boost.kind}.`);
+    const unique = new Map();
+    for (const boost of item.boosts) {
+      const key = JSON.stringify({
+        kind: boost.kind,
+        percent: boost.percent,
+        targets: boost.targets ? [...boost.targets].sort() : [],
+      });
+      if (!unique.has(key)) unique.set(key, boost);
+    }
+    return [...unique.values()].map(boost=>boost.kind==='damageToAll'?`Tăng ${boost.percent}% sát thương lên All Monsters khi trang bị.`:boost.kind==='damageToTagged'?`Tăng ${boost.percent}% sát thương lên ${boost.targets.join(', ')}.`:`Tăng ${boost.percent}% ${labels[boost.kind]||boost.kind}.`);
   }
   const details = item.wikiDetails;
   const effects = details?.specialEffectsVi?.length
@@ -90,7 +120,8 @@ export function farmBoost(item) {
         text,
       ),
   );
-  if (boosts.length) return [...new Set(boosts.map(formatFarmBoost))];
+  if (boosts.length)
+    return collapseTaggedBoostDuplicates([...new Set(boosts.map(formatFarmBoost))]);
   // Only an explicit reviewed statement can establish "none".
   if (
     effects.some((text) =>

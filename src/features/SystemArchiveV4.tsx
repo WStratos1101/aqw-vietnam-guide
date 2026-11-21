@@ -42,6 +42,7 @@ export function SystemArchiveV4() {
 
   return (
     <main id="main" className="aqw-system-v4" style={{ background: 'var(--paper)', width: '100%' }}>
+      <h1 className="sr-only">Hệ thống AQW</h1>
       <iframe
         ref={iframeRef}
         title="Hệ thống AQW — Cơ chế chiến đấu, chỉ số, Enhancement, Scroll và Potion"

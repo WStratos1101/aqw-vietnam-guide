@@ -311,19 +311,25 @@ test("direct Ultra Empower rewards map by verified boss quest, never by Empowere
       .every((entry) => entry.insigniaName === "Dage the Evil Insignia"),
     true,
   );
-  const empoweredAuditRows = fs
-    .readFileSync("FARM_FACTION_PENDING_ITEMS.csv", "utf8")
-    .split(/\r?\n/)
-    .filter((line) => /^empowered-[^,]+,/.test(line));
-  assert.equal(empoweredAuditRows.length, 31);
-  assert.equal(
-    new Set(empoweredAuditRows.map((line) => line.split(",", 1)[0])).size,
-    31,
+  // The historical pending-items CSV is not a production input. Assert against
+  // the current canonical catalog and hash-pinned Wiki evidence instead.
+  const empoweredCatalogItems = catalog.items.filter((item) =>
+    item.id.startsWith("empowered-"),
   );
-  assert.match(
-    empoweredAuditRows.find((line) =>
-      line.startsWith("empowered-sole-bloodletter,"),
+  assert.equal(empoweredCatalogItems.length, 35);
+  assert.equal(
+    new Set(empoweredCatalogItems.map((item) => item.id)).size,
+    empoweredCatalogItems.length,
+  );
+  const soleBloodletter = byId.get("empowered-sole-bloodletter");
+  assert.equal(soleBloodletter.primaryGroupId, "nation");
+  assert.ok(
+    soleBloodletter.groupEvidence.some(
+      (entry) =>
+        entry.sourceDocument === "aqwwiki-ultra-exchange" &&
+        entry.status === "verified" &&
+        entry.insigniaName === "Nulgath Insignia" &&
+        entry.insigniaQuantity === 25,
     ),
-    /UNKNOWN_NO_SOURCE/,
   );
 });

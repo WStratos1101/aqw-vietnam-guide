@@ -6,6 +6,7 @@ import { farmWikiDetails } from "../scripts/lib/farm-wiki-details.mjs";
 import { farmClassRoles } from "../scripts/lib/farm-class-media.mjs";
 import {
   matchesFarmSubtype,
+  farmSubtypeOptions,
   guidePaths,
   farmBoost,
   conciseFarmText,
@@ -109,16 +110,17 @@ test("Class Role is reused from exact Codex source or verified same-skill varian
       );
   }
   const fixture = { id: "one", classRoles: ["DPS", "Support"] };
+  assert.deepEqual(farmSubtypeOptions([fixture], "all", []), []);
+  assert.deepEqual(farmSubtypeOptions([fixture], "Classes", ["DPS"]), []);
   assert.equal(matchesFarmSubtype(fixture, "Classes", "DPS"), true);
-  assert.equal(matchesFarmSubtype(fixture, "Classes", "Support"), true);
-  assert.equal(matchesFarmSubtype(fixture, "Classes", "Endgame"), false);
+  assert.equal(matchesFarmSubtype(fixture, "Classes", "Endgame"), true);
+  const weapon = { category: "Weapons", subtype: "Sword" };
+  assert.deepEqual(farmSubtypeOptions([weapon], "Weapons", []), ["Sword"]);
+  assert.equal(matchesFarmSubtype(weapon, "Weapons", "Sword"), true);
+  assert.equal(matchesFarmSubtype(weapon, "Weapons", "Axe"), false);
   assert.equal(
     [fixture].filter((i) => matchesFarmSubtype(i, "Classes", "DPS")).length,
     1,
-  );
-  assert.equal(
-    matchesFarmSubtype({ classRoles: [] }, "Classes", "unknown"),
-    true,
   );
   assert.equal(
     farmClassRoles(
@@ -391,8 +393,23 @@ test("Boost keeps damage targets and percentages, distinguishes absent and expli
   ]);
   assert.deepEqual(farmBoost({ effects: ["Hồi 10% HP"] }), ["Chưa xác minh"]);
   assert.deepEqual(
+    farmBoost(c.items.find((i) => i.id === "adept-of-awe-hood")),
+    ["Khi trang bị, tăng 10% sát thương lên Chaos, Dragon, Elemental, Human và Undead."],
+  );
+  assert.deepEqual(
     farmBoost(c.items.find((i) => i.id === "sin-of-the-abyss")),
     ["Tăng 51% sát thương lên All Monsters và 25% Gold khi trang bị."],
+  );
+  assert.deepEqual(
+    farmBoost({ boosts: [
+      { kind: "damageToAll", percent: 10 },
+      { kind: "damageToAll", percent: 10 },
+      { kind: "gold", percent: 25 },
+    ] }),
+    [
+      "Tăng 10% sát thương lên All Monsters khi trang bị.",
+      "Tăng 25% Gold.",
+    ],
   );
   assert.ok(
     farmBoost(c.items.find((i) => i.id === "head-of-the-legion-beast"))
@@ -404,6 +421,7 @@ test("AQW type icon mappings retain verified local PNG bytes and the shared Gun/
   const manifest = read("content-sources/farm/type-icons.json");
   assert.equal(manifest.source, "https://aqwwiki.wikidot.com/key");
   assert.equal(manifest.mapping.Bow, manifest.mapping.Gun);
+  assert.equal(manifest.mapping.Grounds, "Ground_Table.png");
   for (const name of [
     "Sword",
     "Axe",
@@ -419,6 +437,7 @@ test("AQW type icon mappings retain verified local PNG bytes and the shared Gun/
     "Capes / Back Items",
     "Pets",
     "Classes",
+    "Grounds",
   ]) {
     const asset = manifest.assets.find((a) =>
       a.path.endsWith("/" + manifest.mapping[name]),

@@ -126,6 +126,22 @@ function initialState(slug?: string): State {
       : "",
   };
 }
+function normalizeSubtypeUrl(state: State) {
+  if (typeof window === "undefined") return;
+  const params = new URLSearchParams(window.location.search);
+  const requested = params.get("subtype");
+  if (
+    !requested ||
+    farmSubtypeOptions(catalog.items, state.category, classRoleOptions).includes(requested)
+  ) return;
+  params.delete("subtype");
+  const search = params.toString();
+  window.history.replaceState(
+    window.history.state,
+    "",
+    window.location.pathname + (search ? `?${search}` : "") + window.location.hash,
+  );
+}
 const isNow = (i: Item) =>
   i.verificationStatus === "verified" &&
   i.availability === "available" &&
@@ -447,17 +463,20 @@ export function FarmV2Route({ slug }: { slug?: string }) {
   useEffect(() => {
     const load = () => {
       const next = initialState();
+      normalizeSubtypeUrl(next);
       setState(next);
       setDetailMobile(Boolean(next.selected));
       setReturns([]);
     };
     window.addEventListener("popstate", load);
+    normalizeSubtypeUrl(state);
     return () => window.removeEventListener("popstate", load);
   }, []);
   useEffect(() => {
     if (lastSlug.current === slug) return;
     lastSlug.current = slug;
     const next = initialState(slug);
+    normalizeSubtypeUrl(next);
     setState(next);
     setDetailMobile(Boolean(next.selected));
     setReturns([]);
@@ -558,6 +577,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
           />
         </label>
       </header>
+      <p className="aqwvn-page-quip" data-aqwvn-typo="v1">Thấy món đồ lấp lánh kia không? Nghe bảo rơi dễ lắm. Ừ, cứ tin thế đi. Giờ chuẩn bị farm thêm vài trăm lượt nhé!</p>
       {region !== "all" && (
         <p className="fv2-muted">
           Đang dùng bộ lọc địa lý từ liên kết cũ:{" "}
@@ -639,24 +659,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
               </button>
             ))}
           </div>
-          {subtypes.length > 0 &&
-            (category === "Classes" ? (
-              <label className="fv2-subtype-label">
-                Role{" "}
-                <select
-                  aria-label="Role Class"
-                  value={subtype}
-                  onChange={(e) => update({ subtype: e.target.value })}
-                >
-                  <option value="">Tất cả</option>
-                  {subtypes.map((s) => (
-                    <option key={s} value={s}>
-                      {s === "unknown" ? "Chưa phân loại" : s}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            ) : (
+          {category === "Weapons" && subtypes.length > 0 && (
               <div className="fv2-subtypes" role="group" aria-label="Subtype">
                 {["", ...subtypes].map((s) => (
                   <button
@@ -671,7 +674,7 @@ export function FarmV2Route({ slug }: { slug?: string }) {
                   </button>
                 ))}
               </div>
-            ))}
+            )}
           <p className="fv2-count">
             {filtered.length} trang bị ·{" "}
             {counts.find((r) => r.id === group)?.name}

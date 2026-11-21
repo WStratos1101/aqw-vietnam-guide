@@ -6,6 +6,12 @@ import { useState } from "react";
 import { LoreAtlas } from "./LoreAtlas";
 import { ArrowRight, ArrowUpRight, ChevronDown, Search } from "lucide-react";
 
+const aqwvnStarterPlaystyle: Record<string, string> = { // AQWVN-TYPOGRAPHY-V1
+  "Warrior": "Lao lên giữ tuyến đầu, dùng những đòn áp sát để ép đối thủ lùi bước. Phá phòng ngự, làm choáng đúng nhịp và che chắn đồng đội trước những cú đánh hiểm.",
+  "Mage": "Gọi bão lửa và phép nguyên tố lên chiến trường, tấn công nhiều mục tiêu rồi bào mòn thế trận bằng hiệu ứng suy yếu; luôn tính trước lúc phải tự bảo vệ mình.",
+  "Healer": "Giữ ngọn lửa sinh mệnh cho cả đội: hồi phục trước đòn hiểm, duy trì nhịp Mana và làm suy yếu kẻ địch bằng những phép thuật hỗ trợ.",
+  "Rogue": "Lướt qua tầm kiếm của đối thủ, né đòn vào gang tấc và gieo độc tố từng nhịp. Đợi kẻ địch lộ sơ hở rồi dồn sát thương trước khi biến mất vào bóng tối."
+};
 export function Home() {
   const [active, setActive] = useState(0);
   const selected = classes[active];
@@ -49,8 +55,8 @@ export function Home() {
         </div>
       </section>
       <AQWOriginalLoreShowcase />
-      <section className="class-chapter chapter" id="class-khoi-dau">
-        <div className="section-heading">
+      <section className="class-chapter chapter" id="bat-dau">
+        <div className="section-heading" id="class-khoi-dau">
           <h2>
             Chọn con đường.
             <br />
@@ -101,8 +107,7 @@ export function Home() {
               ))}
             </div>
             <p>
-              Bốn con đường, bốn số phận. Hãy chọn cách bạn muốn để lại dấu
-              ấn của mình trong Lore.
+              Bốn nẻo đường từ Battleon mở ra trước mắt, nhưng chỉ một lối mang dấu chân của bạn. Chọn Class, cầm vũ khí lên và viết chương đầu của chính mình giữa những trận chiến của Lore.
             </p>
           </div>
           <div className="starter-class-art">
@@ -128,7 +133,7 @@ export function Home() {
             <dl>
               <div>
                 <dt>Lối chơi</dt>
-                <dd>{selected.playstyle}</dd>
+                <dd>{aqwvnStarterPlaystyle[selected.name] ?? selected.playstyle}</dd>
               </div>
               <div>
                 <dt>Loại sát thương</dt>

@@ -55,6 +55,9 @@
   color: var(--u-text);
   overflow-wrap: anywhere;
 }
+.ultra-codex .boss-display-title {
+  color: var(--boss-accent);
+}
 .ultra-codex p,
 .ultra-codex li {
   line-height: 1.65;

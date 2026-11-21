@@ -159,9 +159,95 @@
 :root[data-theme="dark"] .last .eyebrow { color: var(--accent-strong); }
 :root[data-theme="dark"] .hero .eyebrow { margin-bottom: 18px; }
 </style>
+<style id="aqwvn-typography-v1">
+/* AQWVN SYSTEM IFRAME TYPOGRAPHY V1 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+:root{--aqwvn-title:#946315}
+:root[data-theme=dark]{--aqwvn-title:#aa6bf1}
+html,body,button,input,select,textarea{font-family:'Montserrat',Arial,sans-serif !important}
+.hero h1,.last h2{
+  /* Black Chancery is deferred until the embedded font's outline license and Vietnamese glyph set are verified. */
+  font-family:'Montserrat',Arial,sans-serif!important;
+  font-style:normal!important;font-weight:800!important;
+  color:var(--aqwvn-title)!important;letter-spacing:-.052em!important;
+  line-height:1.02!important;text-transform:uppercase!important;
+}
+.hero h1 em{font-family:inherit!important;color:inherit!important;font-style:normal!important}
+.hero__right>p{font-size:clamp(16px,1.6vw,21px);font-weight:500;line-height:1.55;letter-spacing:-.017em}
+.section__desc,.combat-info p,.stat-card p,.enh-left p,.enh-right p,.smallnote{line-height:1.55!important;letter-spacing:-.014em}
+.section__title{letter-spacing:-.045em!important;line-height:1.1!important}
+@media(max-width:520px){.hero h1{font-size:clamp(48px,11vw,62px)!important}}
+
+</style>
+<style id="aqwvn-ui-refinement-v2">
+/* AQWVN System refined V2. This iframe CSS is appended last. */
+/* Long official hero title: prevent diacritics colliding with previous lines. */
+.hero { min-width:0; grid-template-columns:minmax(0,1.14fr) minmax(0,.86fr); align-items:start; }
+.hero > * { min-width:0; }
+.hero h1 {
+  display:block;
+  font-size: clamp(35px, 6.1vw, 100px) !important;
+  line-height: 1.14 !important;
+  letter-spacing: -0.038em !important;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  max-width: 100%;
+  padding: .13em .02em .16em 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.hero .eyebrow{margin-bottom:22px !important;line-height:1.5;}
+.hero__right{min-width:0;padding-top:8px;}
+/* All SELECTED cards follow one identity: Fighter lime in Light, Chaos purple in Dark. */
+:root { --aqwvn-selected-bg:#e8ff37; --aqwvn-selected-ink:#151319; }
+:root[data-theme="dark"] { --aqwvn-selected-bg:#a65bfa; --aqwvn-selected-ink:#160b22; }
+:root .enh-item[aria-pressed="true"],
+:root .statbtn[aria-pressed="true"],
+:root .pill[aria-selected="true"],
+:root .enh-filter[aria-pressed="true"],
+:root .catalog .section__toggle[aria-expanded="true"],
+:root .catalog .section__toggle.featured {
+  background: var(--aqwvn-selected-bg) !important;
+  border-color: var(--aqwvn-selected-bg) !important;
+  color: var(--aqwvn-selected-ink) !important;
+}
+:root .enh-item[aria-pressed="true"] .enh-item__slot,
+:root .statbtn[aria-pressed="true"] span:last-child,
+:root .catalog .section__toggle[aria-expanded="true"] :is(.section__title,.section__desc),
+:root .catalog .section__toggle.featured :is(.section__title,.section__desc) {
+  color: var(--aqwvn-selected-ink) !important;
+}
+:root .catalog .section__toggle[aria-expanded="true"] .plus {
+  background: var(--aqwvn-selected-ink);
+  color: var(--aqwvn-selected-bg);
+  border-color: var(--aqwvn-selected-ink);
+}
+/* Theme identity belongs to each enhancement description, not to selection tiles. */
+.enh-detail[data-aqw-enh-tone] {
+  border-left: 5px solid var(--aqw-enh-color, var(--accent)) !important;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--aqw-enh-color) 38%, transparent);
+}
+.enh-detail[data-aqw-enh-tone] .eyebrow { color: var(--aqw-enh-color, var(--accent)) !important; }
+.enh-detail__link { display:none !important; }
+/* Keep short words together but allow small viewports to wrap safely. */
+.enh-right h3 { white-space:normal !important; font-size:clamp(20px,3.3vw,45px)!important; line-height:1.15!important; }
+/* A single shared quote line, scrollable on narrow screens rather than cropped. */
+.hero__right > p.aqwvn-system-quip {
+  white-space:nowrap; max-width:100%; overflow-x:auto;
+  text-wrap:nowrap; scrollbar-width:thin;
+  border-left:4px solid var(--accent); padding-left:16px;
+  font-size:clamp(12px,1.03vw,17px); line-height:1.45;
+}
+@media(max-width:760px){
+  .hero{grid-template-columns:1fr; gap:22px;}
+  .hero h1{font-size:clamp(31px,8vw,58px)!important;line-height:1.17!important;}
+  .hero__right{width:100%;max-width:100%;}
+}
+
+</style>
 </head>
 <body>
-<main><div class="wrap"><div class="breadcrumb">TRANG CHỦ <span aria-hidden="true">/</span> <b>HỆ THỐNG</b></div><section class="hero"><div><div class="eyebrow">THE SYSTEM ARCHIVE / AQW MECHANICS</div><h1>Giải mã<br/><em>sức mạnh.</em></h1></div><div class="hero__right"><p>Mọi chiến thắng trên Lore đều có một quy luật phía sau. Hãy giải mã sức mạnh, chọn đúng bí thuật và làm chủ từng khoảnh khắc của trận chiến.</p></div></section>
+<main><div class="wrap"><div class="breadcrumb">TRANG CHỦ <span aria-hidden="true">/</span> <b>HỆ THỐNG</b></div><section class="hero"><div><div class="eyebrow">THE SYSTEM ARCHIVE / AQW MECHANICS</div><h1>Giải mã<br/><em>sức mạnh.</em></h1></div><div class="hero__right"><p>Bấm Skill mãi mà boss vẫn đứng trơ? Khoan đổ lỗi cho vũ khí. Mở bảng chỉ số ra. Có khi Haste của bạn mới là thủ phạm!</p></div></section>
 <div class="catalog" id="catalog"><div class="catalog__head"><span class="eyebrow">BỐN LĨNH VỰC CỐT LÕI</span><span>Chọn để khám phá</span></div>
 <section class="section" id="combat"><h2><button aria-controls="panel-combat" aria-expanded="false" aria-label="Cơ chế chiến đấu — nhấn để mở hoặc đóng" class="section__toggle" id="toggle-combat" title="Mở hoặc đóng Cơ chế chiến đấu"><span class="section__no">01 / COMBAT</span><span class="section__title">Cơ chế
 chiến đấu</span><span class="section__desc">Haste, Crit, Dodge và những quy luật định đoạt chiến trường.</span><span aria-hidden="true" class="plus">↗</span></button></h2><div aria-labelledby="toggle-combat" class="section__panel" hidden="" id="panel-combat" role="region"><div class="panel-top"><span class="eyebrow">COMBAT MECHANICS / BATTLE LAWS</span></div>
@@ -233,7 +319,6 @@ function renderEnh(){
  const items=enhancementData[enhMode].filter(x=>enhMode!=='forge'||x.slot===forgeSlot);document.getElementById('enh-count').textContent=items.length+' BÍ THUẬT';
  const host=document.getElementById('enh-items');host.replaceChildren(...items.map((item,i)=>{const b=safeNode('button','enh-item');b.type='button';b.setAttribute('aria-pressed',String(enhSelected===i));b.append(safeNode('span','enh-item__slot',item.slot.toUpperCase()),safeNode('strong','enh-item__name',item.name),safeNode('span','enh-item__mark','↗'));b.addEventListener('click',()=>{enhSelected=i;renderEnh()});return b}));
  const item=items[enhSelected]||items[0];const detail=document.getElementById('enh-detail');detail.replaceChildren(safeNode('span','eyebrow','ẤN THUẬT ĐƯỢC CHỌN / '+item.slot.toUpperCase()),safeNode('h4','',item.name),safeNode('p','enh-detail__lead',item.lead),safeNode('p','enh-detail__effect',item.impact),safeNode('div','enh-detail__unlock','MỞ KHÓA · '+item.req));
- if(item.url){const a=safeNode('a','enh-detail__link','Xem cơ chế trên AQW / Wiki ↗');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';detail.appendChild(a)}
 }
 document.querySelectorAll('[data-enh]').forEach(b=>b.addEventListener('click',()=>{enhMode=b.dataset.enh;enhSelected=0;renderEnh()}));renderEnh();
 let supply='potion',supplyOpen=-1;
@@ -263,6 +348,24 @@ document.querySelectorAll('a[href^="/"]').forEach(a=>a.addEventListener('click',
 document.addEventListener('click',()=>requestAnimationFrame(()=>setTimeout(sendHeight,440)));
 document.addEventListener('input',()=>requestAnimationFrame(()=>setTimeout(sendHeight,60)));
 requestAnimationFrame(sendHeight);
+})();
+</script>
+<script id="aqwvn-ui-refinement-v2-theme">
+(function () {
+const tones = {"modes": {"normal": "#ad8650", "awe": "#b59a46", "forge": "#4a90ad"}, "normal": {"fighter": "#b94737", "thief": "#398e93", "wizard": "#5680c5", "healer": "#5b9f73", "hybrid": "#9e7f5e", "lucky": "#b88a27", "spellbreaker": "#885ab5", "adventurer": "#929090"}};
+const el = document.getElementById('enh-detail');
+if (!el) return;
+const sync = () => {
+  const mode = document.querySelector('[data-enh][aria-selected="true"]')?.dataset.enh || 'normal';
+  const name = el.querySelector('h4')?.textContent?.trim().toLowerCase() || '';
+  const color = (mode === 'normal' ? tones.normal[name] : null) || tones.modes[mode] || tones.modes.normal;
+  el.dataset.aqwEnhTone = mode;
+  el.style.setProperty('--aqw-enh-color', color);
+};
+new MutationObserver(sync).observe(el, {childList:true});
+sync();
+const intro = document.querySelector('.hero__right > p');
+if (intro) intro.classList.add('aqwvn-system-quip');
 })();
 </script>
 </body>

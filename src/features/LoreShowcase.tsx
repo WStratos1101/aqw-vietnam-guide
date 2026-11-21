@@ -40,7 +40,7 @@ export function LoreShowcase() {
         <div>
           <h2 id="lore-showcase-title">Di sản của <span>Lore.</span></h2>
         </div>
-        <p>Vũ khí, sức mạnh và câu chuyện đã định hình thế giới AdventureQuest Worlds.</p>
+        <p>Từ chiến tích của những anh hùng vô danh đến di sản của các vương quốc đã mất, mỗi báu vật và lời thề nơi Lore đều đợi một người đủ gan bước tiếp.</p>
       </div>
       <div className="lore-showcase-panels"
         onMouseLeave={() => setActive("chronicles")}>

@@ -104,13 +104,9 @@ export function UltraDirectory() {
     <main id="main" className="ultra-codex ultra-directory">
       <header className="ultra-directory-intro">
         <p className="ultra-eyebrow">AdventureQuest Worlds / Endgame codex</p>
-        <h1 className="codex-heading">
-          Ultra Boss
-          <br />
-          <em className="codex-display">Codex</em>
-        </h1>
+        <h1 className="codex-heading">Ultra Boss <em className="codex-display">Codex</em></h1>
         <p>
-          Hồ sơ Ultra Boss dành cho những trận đánh cần cả đội cùng hiểu cơ chế.
+          Thấy con Ú tà đằng kia không? Ừ đúng rồi đấy, bạn sợ à? Gọi đủ bốn người rồi vào xử nó thôi!
         </p>
         <div className="ultra-directory-tools">
           <label>

@@ -12,7 +12,7 @@ const descriptions: Record<SectionKey, string> = {
   farm: "Từ điều kiện đầu tiên đến món đồ trong hành trang.",
   "trang-bi": "Tên gốc, nguồn sở hữu và những điều cần kiểm tra.",
   "he-thong": "Hiểu cơ chế. Chơi có chủ đích.",
-  "cot-truyen": "Một lối đi qua những chương truyện của Lore.",
+  "cot-truyen": "Định cứu cả Lore mà còn chưa biết Drakath là ai à? Thôi được, mở biên niên sử ra trước khi Chaos đến gõ cửa nhé!",
 };
 export function EntryRow({ entry }: { entry: Entry }) {
   const locked = isComingSoon(href(entry));

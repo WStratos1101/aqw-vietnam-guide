@@ -5,6 +5,20 @@ import { createHash } from "node:crypto";
 const read = (p) => JSON.parse(fs.readFileSync(p)),
   ss = read("src/content/ultra/speaker-strategies.json"),
   guide = read("public/content/ultra/ultra-speaker.json");
+test("Ultra Boss detail titles retain boss-specific accents in both themes", () => {
+  const presentation = read("src/content/presentation/bosses.json");
+  const bosses = ["ultra-speaker", "ultra-dage", "ultra-nulgath"].map(
+    (id) => presentation[id],
+  );
+  assert.ok(bosses.every((boss) => boss?.dark && boss?.light));
+  assert.equal(new Set(bosses.map((boss) => boss.dark.toLowerCase())).size, 3);
+  assert.equal(new Set(bosses.map((boss) => boss.light.toLowerCase())).size, 3);
+  const css = fs.readFileSync("src/styles/ultra/codex.css", "utf8");
+  assert.match(css, /\.ultra-codex\s+\.boss-display-title\s*\{[^}]*color:\s*var\(--boss-accent\)/s);
+  const themeCss = fs.readFileSync("src/styles/v12-12-overrides.css", "utf8");
+  assert.match(themeCss, /--boss-accent:\s*var\(--boss-accent-dark\)/);
+  assert.match(themeCss, /--boss-accent:\s*var\(--boss-accent-light\)/);
+});
 test("Six Speaker teams are bound to six distinct source tables, never one reused rotation", () => {
   assert.equal(ss.length, 6);
   assert.equal(new Set(ss.map((t) => t.sourceTableId)).size, 6);

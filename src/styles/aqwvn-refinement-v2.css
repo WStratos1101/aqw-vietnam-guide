@@ -1,0 +1,40 @@
+/* AQWVN targeted refinement V2: one-line quotes and safe headline metrics. */
+:root { --aqwvn-refinement-gold: #946315; --aqwvn-refinement-chaos: #a65bfa; }
+/* The three Codex quotes share the same pattern, including Ultra's intro quote. */
+.aqwvn-page-quip,
+.ultra-directory-intro > p:not(.ultra-eyebrow) {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100% !important;
+  width: 100%;
+  padding: 11px 0 11px 20px;
+  margin: 12px 0 24px;
+  border-left: 4px solid var(--aqwvn-headline-color, var(--aqwvn-refinement-gold));
+  font-family: var(--aqwvn-body-font, 'Montserrat', sans-serif);
+  font-size: clamp(12px, 1.05vw, 17px) !important;
+  line-height: 1.4 !important;
+  font-weight: 500;
+  white-space: nowrap;
+  text-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  text-overflow: clip;
+}
+:root[data-theme='dark'] .aqwvn-page-quip,
+:root[data-theme='dark'] .ultra-directory-intro > p:not(.ultra-eyebrow) {
+  border-left-color: var(--aqwvn-refinement-chaos);
+  color: #d6c8e8;
+}
+/* Preserve the individual canonical boss heading colors. */
+.ultra-detail .boss-official-heading,
+.ultra-detail .boss-title-fit { min-width: 0; }
+/* Set-card styles live in its feature stylesheet, not here. */
+@media(max-width:800px) {
+  .aqwvn-page-quip,
+  .ultra-directory-intro > p:not(.ultra-eyebrow) {
+    font-size: 13px !important;
+    padding-left: 14px;
+    -webkit-overflow-scrolling: touch;
+  }
+}

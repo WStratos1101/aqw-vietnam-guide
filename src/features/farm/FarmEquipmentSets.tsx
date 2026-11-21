@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import setData from "../../content/farm/equipment-sets.generated.json";
 import { equipmentSetMembers, farmSetItemHref, type FarmEquipmentSet } from "../../lib/farm-equipment-sets.mjs";
-import { farmBoost } from "../../lib/farm-details.mjs";
 import type { FarmV2Item } from "../../types/farm-v2";
 import { factionTokens } from "./faction-tokens";
-import { FarmTypeIcon } from "./FarmTypeIcon";
 import "./farm-refinement-v3.css";
+import "./set-card-v2.css"; // AQWVN-UI-REFINEMENT-V2
 export const farmEquipmentSets=setData.sets as FarmEquipmentSet[];
 export function FarmEquipmentSets({item,items,onItemClick}:{item:FarmV2Item;items:FarmV2Item[];onItemClick:(id:string)=>void}){
  const isHigure=/^(?:Empowered )?Higure$/i.test(item.name.trim());
@@ -20,15 +19,13 @@ export function FarmEquipmentSets({item,items,onItemClick}:{item:FarmV2Item;item
   {sets.length>1 && <label>Chọn set <select value={active.id} onChange={event=>{
     setSelected(event.target.value);const url=new URL(window.location.href);url.searchParams.set("farm-set",event.target.value);window.history.pushState(window.history.state,"",url.pathname+url.search);
   }}>{sets.map(set=><option value={set.id} key={set.id}>{set.name}</option>)}</select></label>}
-  <h3>{active.name}</h3><p>{members.length} trang bị trong set · {related.length} vũ khí cùng hướng dẫn</p>
+  <div className="fv-set-heading"><h3>{active.name}</h3><output aria-label={`Số trang bị trong set: ${members.length}`}>{members.length}</output></div>
   <div className="fv-set-grid">{members.map(member=><a key={member.id} href={farmSetItemHref(member)} aria-current={member.id===item.id?"page":undefined} onClick={event=>{
     if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
     event.preventDefault();const current=new URL(window.location.href);current.searchParams.set("farm-tab","sets");current.searchParams.set("farm-set",active.id);window.history.replaceState(window.history.state,"",current.pathname+current.search);onItemClick(member.id);
   }}>
     <div className="fv-set-art">{member.image && <img src={member.image} alt={member.name} width={145} height={145} loading="lazy"/>}</div>
-    <span className="fv-set-name"><FarmTypeIcon name={member.subtype || member.category} fallbackName={member.category}/>{member.name}</span>
-    {(member.descriptionVi||member.wikiDetails?.descriptionVi) && <small>{member.descriptionVi||member.wikiDetails?.descriptionVi}</small>}
-    {!farmBoost(member).includes("Chưa xác minh") && <small>{farmBoost(member).join(" · ")}</small>}
+    <span className="fv-set-name">{member.name}</span>
   </a>)}</div>
   {related.length>0 && <div className="fv33-set-related"><h4>Vũ khí liên quan · Higure &amp; Astravian Corsair</h4><p>Hai vũ khí cùng tuyến hướng dẫn, không tính vào 6 phần trang phục nhận từ rương.</p><ul>{related.map(entry=><li key={entry.id}><a href={farmSetItemHref(entry)} onClick={event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();onItemClick(entry.id);}}>{entry.name}</a></li>)}</ul></div>}
  </section>;

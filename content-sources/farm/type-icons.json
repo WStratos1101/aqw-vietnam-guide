@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-14",
+  "checkedAt": "2026-11-20",
   "source": "https://aqwwiki.wikidot.com/key",
   "credit": "AQWorlds / Artix Entertainment; AQW Wiki Key",
-  "note": "Wiki classification icons; Gun/Bow share Gun_Table.png as explicitly documented by the Key. Weapons uses the verified Sword type as a representative category icon.",
+    "note": "Wiki classification icons; Gun/Bow share Gun_Table.png as explicitly documented by the Key. Weapons uses the verified Sword type as a representative category icon. Grounds uses the official Ground_Table.png Wiki tag, locally cached with its source hash.",
   "mapping": {
     "Weapons": "Sword_Table.png",
     "Armors": "Armor_Table.png",
@@ -10,6 +10,7 @@
     "Capes / Back Items": "Cloak_Table.png",
     "Pets": "Pet_Table.png",
     "Classes": "class_table.png",
+    "Grounds": "Ground_Table.png",
     "Sword": "Sword_Table.png",
     "Axe": "Axe_Table.png",
     "Dagger": "Dagger_Table.png",
@@ -21,6 +22,12 @@
     "Inventory": "Inventory.png"
   },
   "assets": [
+    {
+      "path": "/images/aqw/farm-types/Ground_Table.png",
+      "source": "https://aqwwiki.wdfiles.com/local--files/image-tags/Ground_Table.png",
+      "sha256": "74f0687baa27901e28deec108c46283e3e058fc15b5f1ddd7ab0fbb50341a7d5",
+      "verification": "Downloaded from the official AQW Wiki image host and visually inspected as the 25×25 Ground type ring icon; categorized as Ground on Wiki shop listings (Featured Gear Shop)."
+    },
     {
       "path": "/images/aqw/farm-types/Armor_Table.png",
       "source": "https://aqwwiki.wdfiles.com/local--files/image-tags/Armor_Table.png",

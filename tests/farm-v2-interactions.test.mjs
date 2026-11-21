@@ -290,6 +290,7 @@ test("actual Quest tabs preserve completion, mode independence and keyboard navi
   assert.doesNotMatch(panel().textContent,/Nostalgia|Bước 1\s*\/\s*1/);
 });
 test("V3.1 Wiki info is localized, Sources cards removed, and Role filters share Codex membership/history", async () => {
+  await act(async () => root.render(createElement(Directory)));
   await navigate("/farm?item=legion-revenant-class");
   assert.match(host.querySelector(".fv31-wiki-info").textContent, /Wizard/);
   assert.match(
@@ -314,47 +315,27 @@ test("V3.1 Wiki info is localized, Sources cards removed, and Role filters share
   const catalog = JSON.parse(
     await fs.readFile("src/content/farm/catalog-v2.generated.json", "utf8"),
   );
-  const roles = JSON.parse(
-    await fs.readFile("src/data/class-roles.json", "utf8"),
-  );
-  await navigate("/farm?category=Classes&subtype=Support");
-  const selector = host.querySelector('[aria-label="Role Class"]');
-  assert.ok(selector);
-  assert.equal(selector.value, "Support");
-  assert.deepEqual(
-    [...selector.options].map((o) => o.value),
-    ["", ...roles, "unknown"],
-  );
-  const expected = catalog.items.filter(
-    (i) => i.category === "Classes" && i.classRoles.includes("Support"),
-  );
-  assert.equal(host.querySelectorAll(".fv2-item").length, expected.length);
-  assert.equal(
-    new Set(
-      [...host.querySelectorAll(".fv2-item")].map(
-        (i) => i.dataset.inventoryItem,
-      ),
-    ).size,
-    expected.length,
-  );
-  await click(button(".fv2-categories button", "Weapons"));
-  assert.equal(host.querySelector('[aria-label="Role Class"]'), null);
+  await navigate("/farm?category=all&subtype=Sword");
+  assert.equal(host.querySelector(".fv2-subtypes"), null);
   assert.doesNotMatch(window.location.search, /subtype=/);
   await navigate("/farm?category=Classes&subtype=Support");
-  assert.equal(
-    host.querySelector('[aria-label="Role Class"]').value,
-    "Support",
-  );
+  assert.equal(host.querySelector(".fv2-subtypes"), null);
+  assert.doesNotMatch(window.location.search, /subtype=/);
+  assert.equal(host.querySelectorAll(".fv2-item").length, catalog.items.filter((i) => i.category === "Classes").length);
+  await click(host.querySelector('.fv2-categories button[aria-label="Weapons"]'));
+  assert.ok(host.querySelector(".fv2-subtypes"));
+  assert.doesNotMatch(window.location.search, /subtype=/);
+  await navigate("/farm?category=Armors&subtype=Support");
+  assert.equal(host.querySelector(".fv2-subtypes"), null);
+  assert.doesNotMatch(window.location.search, /subtype=/);
   await click(button(".fv2-groups button", "AWE"));
   assert.doesNotMatch(window.location.search, /subtype=/);
-  await navigate("/farm?category=Classes&subtype=Endgame");
-  assert.equal(host.querySelector('[aria-label="Role Class"]').value, "");
-  await navigate("/farm?category=Classes&subtype=unknown");
-  assert.equal(
-    host.querySelectorAll(".fv2-item").length,
-    catalog.items.filter(
-      (i) => i.category === "Classes" && !i.classRoles.length,
-    ).length,
+  await navigate("/farm?category=Grounds&subtype=unrelated");
+  assert.equal(host.querySelector(".fv2-subtypes"), null);
+  assert.doesNotMatch(window.location.search, /subtype=/);
+  assert.match(
+    host.querySelector('.fv2-categories button[aria-label="Grounds"] img').src,
+    /Ground_Table\.png$/,
   );
 });
 test("Farming Codex icons, Boost and exclusive material lookup preserve source and keyboard controls", async () => {

@@ -1,0 +1,75 @@
+/* AQWVN Farm Set V2: only item artwork + canonical name. */
+.fv2-root .fv-set-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+  margin: 0 0 24px;
+}
+.fv2-root .fv-set-heading h3 {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.fv2-root .fv-set-heading output {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  min-width: 49px;
+  height: 43px;
+  padding: 0 12px;
+  background: var(--fv2-surface, #eceae5);
+  color: var(--fv2-ink, #15151a);
+  border: 1px solid var(--fv2-line, #bbb);
+  font-variant-numeric: tabular-nums;
+  font-size: 19px;
+  font-weight: 800;
+  border-radius: 6px;
+}
+.fv2-root .fv-set-grid > a {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  grid-template-rows: minmax(130px, 165px) auto;
+  gap: 14px;
+  min-width: 0;
+  height: auto;
+  padding: 18px 12px 20px;
+  text-decoration: none;
+}
+.fv2-root .fv-set-grid .fv-set-art {
+  min-width: 0;
+  width: 100%;
+  height: 165px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.fv2-root .fv-set-grid .fv-set-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 160px;
+  object-fit: contain;
+}
+.fv2-root .fv-set-grid .fv-set-name {
+  display: block;
+  text-align: center;
+  font-size: clamp(13px, 1.15vw, 17px);
+  line-height: 1.35;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+:root[data-theme="dark"] .fv2-root .fv-set-heading output {
+  background: #25162f;
+  color: #ead5ff;
+  border-color: #6c4894;
+}
+@media(max-width:600px){
+  .fv2-root .fv-set-grid > a{grid-template-rows:110px auto; padding:12px 8px;}
+  .fv2-root .fv-set-grid .fv-set-art{height:110px;}
+  .fv2-root .fv-set-grid .fv-set-art img{max-height:108px;}
+  .fv2-root .fv-set-heading output{min-width:42px;height:38px;font-size:16px;}
+}

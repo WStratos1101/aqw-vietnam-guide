@@ -1,0 +1,116 @@
+/* AQWVN TYPOGRAPHY V1 — only presentation, never alters game mechanics. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --aqwvn-headline-gold: #946315;
+  --aqwvn-headline-chaos: #aa6bf1;
+  --aqwvn-headline-color: var(--aqwvn-headline-gold);
+  /* Black Chancery remains the requested first choice once its exact
+     outline license and Vietnamese glyph coverage can be verified. */
+  --aqwvn-headline-font: 'Montserrat', Arial, sans-serif;
+  --aqwvn-body-font: 'Montserrat', Arial, sans-serif;
+}
+:root[data-theme='dark'] { --aqwvn-headline-color: var(--aqwvn-headline-chaos); }
+
+/* The body's reading face, including the independently-styled codex roots. */
+html,
+body,
+button,
+input,
+select,
+textarea,
+.ultra-codex,
+.class-codex,
+.fv2-root,
+.library-page,
+.native-article,
+.lore-showcase,
+.aqw-jny,
+.lore-atlas,
+.lore-region-page {
+  font-family: var(--aqwvn-body-font) !important;
+}
+:where(p, li, dd) { letter-spacing: -0.012em; }
+:where(.hero-copy > p, .section-heading > p, .lore-showcase-heading > p,
+  .class-hero-description, .ultra-directory-intro > p,
+  .page-intro > p, .ultra-description, .class-select > p) {
+  line-height: 1.53 !important;
+  letter-spacing: -0.018em;
+}
+/* Don't tamper with join commands, formulas or technical fragments. */
+code, pre, kbd { font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace !important; }
+
+/* Only HERO / MAIN headings. Never uppercase canonical class, boss or item names. */
+.hero-copy > h1,
+.lore-showcase-heading h2,
+.lore-atlas-heading > h2,
+.class-chapter > .section-heading h2,
+.class-intro > div > h1,
+.fv2-top h1,
+.ultra-directory-intro h1,
+.library-page .page-intro h1,
+.lore-region-page > h1,
+  .article-page:not(.boss-article) .article-intro > h1,
+.search-chapter > h2 {
+  font-family: var(--aqwvn-headline-font) !important;
+  color: var(--aqwvn-headline-color) !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+  text-transform: uppercase !important;
+  letter-spacing: -0.052em !important;
+  line-height: 1.02 !important;
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+/* Separate nested lettering from the older italic serif Codex treatment. */
+.ultra-directory-intro h1 em,
+.ultra-directory-intro h1 .codex-display,
+.lore-showcase-heading h2 span,
+.class-intro h1 em {
+  font-family: var(--aqwvn-headline-font) !important;
+  color: var(--aqwvn-headline-color) !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  letter-spacing: inherit !important;
+}
+/* One shared scale for the three primary Codex directory titles. */
+.ultra-directory-intro h1,
+.class-directory .class-intro h1,
+.fv2-top h1 {
+  font-size: clamp(34px, 5.8vw, 104px) !important;
+  line-height: 1.02 !important;
+  max-width: 100%;
+}
+.ultra-directory-intro h1 {
+  white-space: nowrap !important;
+  text-wrap: nowrap !important;
+}
+/* Ensure the starter section and related headline don't spill out on mobile. */
+.hero-copy > h1 { font-size: clamp(47px, 7.3vw, 130px) !important; }
+.lore-showcase-heading h2 { font-size: clamp(40px, 6.3vw, 106px) !important; }
+.aqwvn-page-quip {
+  max-width: min(830px, 100%);
+  margin: 13px 0 30px;
+  padding: 0 0 0 20px;
+  border-left: 3px solid var(--aqwvn-headline-color);
+  color: var(--muted, #56535d);
+  font-family: var(--aqwvn-body-font);
+  font-size: clamp(15px, 1.5vw, 19px);
+  font-weight: 500;
+  letter-spacing: -0.014em;
+  line-height: 1.58;
+}
+:root[data-theme='dark'] .aqwvn-page-quip { color: #d5c6e7; }
+:root[data-theme='light'] .ultra-directory-intro > p:not(.ultra-eyebrow) { color: #56535d; }
+:root[data-theme='dark'] .ultra-directory-intro > p:not(.ultra-eyebrow) { color: #d5c6e7; }
+/* Scope those large headlines only; data-grid titles retain their proper capitalization. */
+@media (max-width: 760px) {
+  .ultra-directory-intro h1,
+  .class-directory .class-intro h1,
+  .fv2-top h1 {
+    font-size: clamp(27px, 7.05vw, 48px) !important;
+  }
+  .ultra-directory-intro h1 { white-space: normal !important; text-wrap: wrap !important; }
+  .hero-copy > h1 { font-size: clamp(37px, 8.8vw, 65px) !important; }
+  .aqwvn-page-quip { padding-left: 13px; margin-bottom: 22px; }
+}

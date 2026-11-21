@@ -108,6 +108,7 @@ export function ClassDirectory() {
           <h1 className="codex-heading">Class Codex</h1>
         </div>
       </header>
+      <p className="aqwvn-page-quip" data-aqwvn-typo="v1">Kiếm, phép, khiên hay dao găm? Chọn Class cho hợp tay trước đã. Boss không quan tâm bạn mặc đồ đẹp đến đâu đâu.</p>
       <section className="class-filter-panel" aria-label="Tìm và lọc Class">
         <label className="class-search">
           <Search size={20} />

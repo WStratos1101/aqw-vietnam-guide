@@ -649,6 +649,43 @@ publicWorkflows.audit.coverage={canonicalItems:items.length,removedNostalgiaRout
 write("content-sources/farm/review/public-workflow-audit.json",publicWorkflows.audit);
 write("src/content/farm/material-sources.generated.json", review.materialSources);
 write(`${reviewRoot}/enrichment-audit.json`, { changes: review.changes, conflicts: review.conflicts, excluded: review.excluded, routeCorrections: review.routeCorrections });
+// Source Recovery 2026-11-20 is a fact-level overlay on canonical Farm
+// records. Apply it after all refiners so later build stages cannot erase
+// recovered fields or explicitly pending evidence.
+const sourceRecovery = read("content-sources/farm/source-recovery/items-20261120.json");
+const recoveryId = name => name.normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "-").replace(/^-|-$/g, "");
+const recoveryMaterial = (node, source) => {
+  if (!node) return null;
+  if (Array.isArray(node)) {
+    if (typeof node[0] === "string" && Number.isSafeInteger(node[1])) {
+      return { kind: "item", itemId: recoveryId(node[0]), name: node[0], quantity: node[1], source };
+    }
+    return { kind: "allOf", requirements: node.map(([name, quantity]) => ({ kind: "item", itemId: recoveryId(name), name, quantity, source })) };
+  }
+  if (node.kind === "item") return { ...node, source: node.source || source };
+  if (node.kind === "allOf" || node.kind === "anyOf") {
+    return {
+      kind: node.kind,
+      ...(node.kind === "anyOf" ? { requiredChoices: node.requiredChoices || 1 } : {}),
+      requirements: node.requirements.map(child => recoveryMaterial(child, source)),
+    };
+  }
+  throw new Error(`Invalid recovered material node: ${JSON.stringify(node)}`);
+};
+const recoveryRows = (rows, source) => (rows || []).map(([name, quantity]) => ({ itemId: recoveryId(name), name, quantity, source }));
+for (const recovered of sourceRecovery.records) {
+  const item = items.find(candidate => candidate.id === recovered.id);
+  if (!item) throw new Error(`Source Recovery record has no canonical item: ${recovered.id}`);
+  if (item.wikiUrl !== recovered.wikiUrl) throw new Error(`Source Recovery Wiki identity mismatch: ${recovered.id}`);
+  Object.assign(item, recovered.data);
+  const route = item.acquisitionRoutes.find(candidate => candidate.id === recovered.route.id);
+  if (!route) throw new Error(`Source Recovery route is missing: ${recovered.id}/${recovered.route.id}`);
+  const source = recovered.route.source || recovered.wikiUrl;
+  Object.assign(route, recovered.route);
+  if (recovered.route.materialTree) route.materialTree = recoveryMaterial(recovered.route.materialTree, source);
+  if (recovered.route.directMaterials) route.directMaterials = recoveryRows(recovered.route.directMaterials, source);
+  route.sources = [...new Map([...(route.sources || []), { url: source, label: "AQW Wiki", sourceType: "wiki" }].map(entry => [entry.url, entry])).values()];
+}
 const usedRegions = new Set(items.flatMap((i) => i.regions));
 const catalog = {
   schemaVersion: 2,

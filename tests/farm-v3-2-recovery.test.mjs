@@ -38,7 +38,7 @@ test('boost display retains percentages and named targets; none requires explici
  assert.deepEqual([...text.matchAll(/\d+%/g)].map(m=>m[0]),['25%','75%']);
  const description="The infamous helm once shattered a kingdom. This item does 15% more damage to any monster, and gives 25% more class points, experience, gold, and rep when equipped. Extra lore.";
  const concise=formatFarmBoost(description);assert.doesNotMatch(concise,/infamous|kingdom|Extra lore|This item|gives|when equipped/);
- assert.match(concise,/15% sát thương lên All Monsters/);assert.match(concise,/25% Class Point, EXP, Gold, và Reputation/);
+ assert.match(concise,/15% sát thương lên All Monsters/);assert.match(concise,/25% Class Point, EXP, Gold và Reputation/);
  assert.equal(formatFarmBoost("Narrative. (Item does 40% more damage to dragon tagged monsters when equipped.) More narrative."),"tăng 40% sát thương lên Dragon khi trang bị");
  assert.match(formatFarmBoost("This item does 20% more damage to all tagged monsters when equipped."),/mọi quái có tag/);
  assert.doesNotMatch(farmBoost(get('goddess-of-war')).join(' '),/EXP/);

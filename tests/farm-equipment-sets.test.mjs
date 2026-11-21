@@ -46,6 +46,21 @@ test("production membership has no duplicates or dangling IDs and reverse links 
  assert.ok(validateEquipmentSets([{id:"bad",memberIds:["missing","missing"]}],catalog.items).length>=2);
  for(const set of sets){assert.equal(audit.sets.find(row=>row.id===set.id).status,"DONE");assert.equal(set.memberIds.length,audit.sets.find(row=>row.id===set.id).members.length);}
 });
+test("Headless Pumpkin has its source-reviewed five-piece set; unresolved names stay unlinked",()=>{
+ const set=sets.find(row=>row.id==="headless-pumpkin");
+ assert.ok(set);
+ assert.deepEqual(set.memberIds,[
+  "headless-pumpkin-blade",
+  "headless-pumpkin-blades",
+  "headless-pumpkin",
+  "headless-pumpkin-s-head",
+  "headless-pumpkin-cape",
+ ]);
+ assert.equal(equipmentSetMembers(set,catalog.items).length,5);
+ assert.ok(!sets.some(row=>row.id==="archfiend-warlord"||row.id==="fiend-of-light"));
+ const research=read("content-sources/farm/equipment-sets/seed-collection-research.json").sets.find(row=>row.id==="archfiend-warlord");
+ assert.match(research.blockers.join(" "),/does not enumerate member names/i);
+});
 test("every membership pins real guide and exact-item Wiki evidence",()=>{
  for(const set of sets)for(const evidence of set.evidence){
   const item=catalog.items.find(item=>item.id===evidence.itemId);assert.equal(item.wikiUrl,evidence.wiki.url);

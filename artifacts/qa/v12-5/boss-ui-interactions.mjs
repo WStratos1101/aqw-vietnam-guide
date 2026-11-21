@@ -97113,11 +97113,10 @@ function UltraDirectory() {
     /* @__PURE__ */ jsxs24("header", { className: "ultra-directory-intro", children: [
       /* @__PURE__ */ jsx26("p", { className: "ultra-eyebrow", children: "AdventureQuest Worlds / Endgame codex" }),
       /* @__PURE__ */ jsxs24("h1", { className: "codex-heading", children: [
-        "Ultra Boss",
-        /* @__PURE__ */ jsx26("br", {}),
+        "Ultra Boss ",
         /* @__PURE__ */ jsx26("em", { className: "codex-display", children: "Codex" })
       ] }),
-      /* @__PURE__ */ jsx26("p", { children: "H\u1ED3 s\u01A1 Ultra Boss d\xE0nh cho nh\u1EEFng tr\u1EADn \u0111\xE1nh c\u1EA7n c\u1EA3 \u0111\u1ED9i c\xF9ng hi\u1EC3u c\u01A1 ch\u1EBF." }),
+      /* @__PURE__ */ jsx26("p", { children: "Th\u1EA5y con \xDA t\xE0 \u0111\u1EB1ng kia kh\xF4ng? \u1EEA \u0111\xFAng r\u1ED3i \u0111\u1EA5y, b\u1EA1n s\u1EE3 \xE0? G\u1ECDi \u0111\u1EE7 b\u1ED1n ng\u01B0\u1EDDi r\u1ED3i v\xE0o x\u1EED n\xF3 th\xF4i!" }),
       /* @__PURE__ */ jsxs24("div", { className: "ultra-directory-tools", children: [
         /* @__PURE__ */ jsxs24("label", { children: [
           /* @__PURE__ */ jsx26(Search, { size: 18 }),

@@ -312804,25 +312804,32 @@
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians",
       "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
-      "effects": [],
-      "lastChecked": "2026-11-19",
+      "membership": "non-member",
+      "rarity": "Benevolent Rarity",
+      "availability": "unknown",
+      "effects": [
+        "35% damage to all monsters",
+        "25% Class Points",
+        "25% EXP",
+        "25% Gold",
+        "25% Reputation"
+      ],
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki identity, recipe, rarity and boost fields were reconciled. Exact artwork was not downloaded/visually verified; nested ingredient sources and current in-game access remain unverified.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "current-in-game-availability",
+        "nested-material-sources",
+        "shop-npc-and-map-command"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians",
         "category": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians",
-        "method": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians"
+        "rarity": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians",
+        "membership": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians",
+        "effects": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians",
+        "materials": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians"
       },
       "acquisitionRoutes": [
         {
@@ -312831,7 +312838,10 @@
           "method": "Merge",
           "location": "Nightmare Carnax Merge · Dark Carnax",
           "mapCommand": null,
-          "steps": [],
+          "steps": [
+            "Collect the six listed merge ingredients.",
+            "Open Nightmare Carnax Merge at Dark Carnax and merge the item."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians",
@@ -312955,7 +312965,8 @@
           "storyPrerequisites": [],
           "directMaterials": [],
           "acquisitionDefinitionIds": [],
-          "isolationStatus": "UNVERIFIED"
+          "isolationStatus": "UNVERIFIED",
+          "source": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians"
         }
       ],
       "regions": [],
@@ -312987,7 +312998,14 @@
         "source": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/nightmare-carnax-s-guardians",
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki search/page text did not expose a resolvable direct artwork URL; direct host connection from this environment failed."
+      }
     },
     {
       "id": "hollowborn-reaper-s-scythe",
@@ -312999,26 +313017,30 @@
       "previewImage": null,
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe",
-      "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
-      "effects": [],
-      "lastChecked": "2026-11-19",
+      "level": 100,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "availability": "unknown",
+      "effects": [
+        "40% damage to all monsters"
+      ],
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki confirms level 100, Awesome Rarity, Rank 9 Hollowborn, five merge inputs and 40% all-monster boost. Ingredient acquisition chains and exact artwork download remain outstanding.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "current-in-game-availability",
+        "nested-material-sources",
+        "shop-map-command"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe",
         "category": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe",
-        "method": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe"
+        "level": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe",
+        "rarity": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe",
+        "membership": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe",
+        "effects": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe",
+        "materials": "https://aqwwiki.wikidot.com/shadowrealm-merge"
       },
       "acquisitionRoutes": [
         {
@@ -313027,16 +313049,63 @@
           "method": "Merge",
           "location": "Shadowrealm Merge · Shadow Realm",
           "mapCommand": null,
-          "steps": [],
+          "steps": [
+            "Reach Hollowborn Rank 9.",
+            "Obtain the five required items, then merge at Shadowrealm Merge in Shadow Realm."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe",
               "label": "AQW Wiki",
               "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/shadowrealm-merge",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
             }
           ],
           "description": "Công thức merge theo trang Wiki; các điều kiện mở khóa và đường farm nguyên liệu phụ cần tiếp tục đối chiếu.",
-          "materialTree": null,
+          "materialTree": {
+            "kind": "allOf",
+            "requirements": [
+              {
+                "kind": "item",
+                "itemId": "hollowborn-reaper-s-minion",
+                "name": "Hollowborn Reaper's Minion",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/shadowrealm-merge"
+              },
+              {
+                "kind": "item",
+                "itemId": "death-s-scythe-2",
+                "name": "Death's Scythe (2)",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/shadowrealm-merge"
+              },
+              {
+                "kind": "item",
+                "itemId": "hollowborn-reaper-s-daggers",
+                "name": "Hollowborn Reaper's Daggers",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/shadowrealm-merge"
+              },
+              {
+                "kind": "item",
+                "itemId": "hollowborn-reaper-s-kamas",
+                "name": "Hollowborn Reaper's Kamas",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/shadowrealm-merge"
+              },
+              {
+                "kind": "item",
+                "itemId": "hollowborn-reaper-s-kama",
+                "name": "Hollowborn Reaper's Kama",
+                "quantity": 1,
+                "source": "https://aqwwiki.wikidot.com/shadowrealm-merge"
+              }
+            ]
+          },
           "questReward": null,
           "insigniaSources": [],
           "guidePaths": [],
@@ -313062,7 +313131,14 @@
           "storyPrerequisites": [],
           "directMaterials": [],
           "acquisitionDefinitionIds": [],
-          "isolationStatus": "UNVERIFIED"
+          "isolationStatus": "UNVERIFIED",
+          "prerequisites": [
+            {
+              "value": "Hollowborn Reputation Rank 9",
+              "source": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe"
+            }
+          ],
+          "source": "https://aqwwiki.wikidot.com/shadowrealm-merge"
         }
       ],
       "regions": [],
@@ -313110,7 +313186,15 @@
         "source": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/hollowborn-reaper-s-scythe",
+        "candidateFilename": "t4w4UMV.png",
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki identifies the image filename, but direct image bytes could not be fetched/decoded from this environment."
+      }
     },
     {
       "id": "void-avenger-scythe",
@@ -313123,34 +313207,40 @@
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/void-avenger-scythe",
       "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
-      "effects": [],
-      "lastChecked": "2026-11-19",
+      "membership": "non-member",
+      "rarity": "Hidden Secret Rarity",
+      "availability": "unknown",
+      "effects": [
+        "40% damage to all monsters"
+      ],
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki confirms reward identity, rarity, boost and Skew quest prerequisites/turn-ins. Full ingredient acquisition chain and local artwork remain unverified.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "current-in-game-availability",
+        "all-nested-quest-material-sources"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/void-avenger-scythe",
         "category": "https://aqwwiki.wikidot.com/void-avenger-scythe",
-        "method": "https://aqwwiki.wikidot.com/void-avenger-scythe"
+        "rarity": "https://aqwwiki.wikidot.com/void-avenger-scythe",
+        "membership": "https://aqwwiki.wikidot.com/void-avenger-scythe",
+        "effects": "https://aqwwiki.wikidot.com/void-avenger-scythe",
+        "acquisition": "https://aqwwiki.wikidot.com/skew-s-quests"
       },
       "acquisitionRoutes": [
         {
           "id": "guide-coverage-source",
           "regionId": null,
           "method": "Quest",
-          "location": "Tercessuinotlim",
+          "location": "Tercessuinotlim · Skew",
           "mapCommand": "/join tercessuinotlim",
-          "steps": [],
+          "steps": [
+            "Meet Skew in /join tercessuinotlim.",
+            "Complete Eternal Rest (Rank 10 Evil and Level 90 required).",
+            "Turn in the listed items; the quest rewards Void Avenger Scythe."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/void-avenger-scythe",
@@ -313166,7 +313256,7 @@
           "description": "Nhận từ quest “Eternal Rest”; kiểm tra điều kiện mở khóa và nguyên liệu tại trang Wiki.",
           "materialTree": null,
           "questReward": "Eternal Rest",
-          "npc": "Skew (NPC)",
+          "npc": "Skew",
           "farmTasks": [
             {
               "id": "reviewed-acquire",
@@ -313299,80 +313389,69 @@
           "storyPrerequisites": [],
           "directMaterials": [
             {
-              "name": "Batwing Scythe",
               "itemId": "batwing-scythe",
+              "name": "Batwing Scythe",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/batwing-scythe",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "Dark Crystal Shard",
               "itemId": "dark-crystal-shard",
+              "name": "Dark Crystal Shard",
               "quantity": 200,
-              "wikiUrl": "https://aqwwiki.wikidot.com/dark-crystal-shard",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "Death Scythe of Nulgath",
               "itemId": "death-scythe-of-nulgath",
+              "name": "Death Scythe of Nulgath",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/death-scythe-of-nulgath",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "Ungodly Reavers of Nulgath",
               "itemId": "ungodly-reavers-of-nulgath",
+              "name": "Ungodly Reavers of Nulgath",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/ungodly-reavers-of-nulgath",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "Scythe of Sisyphean",
               "itemId": "scythe-of-sisyphean",
+              "name": "Scythe of Sisyphean",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/scythe-of-sisyphean",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "Heart of the Void",
               "itemId": "heart-of-the-void",
+              "name": "Heart of the Void",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/heart-of-the-void",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "The Scythe of Eternal Rest",
               "itemId": "the-scythe-of-eternal-rest",
+              "name": "The Scythe of Eternal Rest",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/the-scythe-of-eternal-rest",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "Nulgath's Approval",
               "itemId": "nulgath-s-approval",
+              "name": "Nulgath's Approval",
               "quantity": 1000,
-              "wikiUrl": "https://aqwwiki.wikidot.com/nulgath-s-approval",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "Dracolich Destroyer Scythe",
               "itemId": "dracolich-destroyer-scythe",
+              "name": "Dracolich Destroyer Scythe",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/dracolich-destroyer-scythe",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "Void Aura",
               "itemId": "void-aura",
+              "name": "Void Aura",
               "quantity": 150,
-              "wikiUrl": "https://aqwwiki.wikidot.com/void-aura",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             },
             {
-              "name": "Letter from Asuka and Tendou",
               "itemId": "letter-from-asuka-and-tendou",
+              "name": "Letter from Asuka and Tendou",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/letter-from-asuka-and-tendou",
               "source": "https://aqwwiki.wikidot.com/skew-s-quests"
             }
           ],
@@ -313482,7 +313561,18 @@
               }
             ],
             "equivalentCosts": []
-          }
+          },
+          "prerequisites": [
+            {
+              "value": "Level 90",
+              "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+            },
+            {
+              "value": "Rank 10 Evil",
+              "source": "https://aqwwiki.wikidot.com/skew-s-quests"
+            }
+          ],
+          "source": "https://aqwwiki.wikidot.com/skew-s-quests"
         }
       ],
       "regions": [],
@@ -313530,7 +313620,15 @@
         "source": "https://aqwwiki.wikidot.com/void-avenger-scythe"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/void-avenger-scythe",
+        "candidateFilename": "cLxJY4u.png",
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki exposes candidate filename only; direct asset connection/download failed."
+      }
     },
     {
       "id": "taro-s-prismatic-manslayer",
@@ -313543,37 +313641,47 @@
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer",
       "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
-      "effects": [],
-      "lastChecked": "2026-11-19",
+      "membership": "member",
+      "rarity": "Legendary Rarity",
+      "availability": "unknown",
+      "effects": [
+        "30% damage to all monsters"
+      ],
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki confirms the specific quest reward, boost and item identity. The quest has level/faction/owned-item requirements and five turn-ins; exact direct art download and nested material farm routes remain outstanding.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "current-in-game-availability",
+        "nested-material-sources"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer",
         "category": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer",
-        "method": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer"
+        "rarity": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer",
+        "effects": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer",
+        "acquisition": "https://aqwwiki.wikidot.com/taro-s-quests"
       },
       "acquisitionRoutes": [
         {
           "id": "guide-coverage-source",
           "regionId": null,
           "method": "Quest",
-          "location": "Tercessuinotlim",
-          "mapCommand": null,
-          "steps": [],
+          "location": "Tercessuinotlim · Taro",
+          "mapCommand": "/join tercessuinotlim",
+          "steps": [
+            "Meet Taro in /join tercessuinotlim.",
+            "Meet Level 80, Rank 10 Good and own Taro's Manslayer.",
+            "Complete A Test of Temptation and choose Taro's Prismatic Manslayer from the reward choices."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer",
+              "label": "AQW Wiki",
+              "sourceType": "wiki"
+            },
+            {
+              "url": "https://aqwwiki.wikidot.com/taro-s-quests",
               "label": "AQW Wiki",
               "sourceType": "wiki"
             }
@@ -313589,9 +313697,56 @@
           "materialTotalsComplete": false,
           "questGraph": [],
           "storyPrerequisites": [],
-          "directMaterials": [],
+          "directMaterials": [
+            {
+              "itemId": "tainted-gem",
+              "name": "Tainted Gem",
+              "quantity": 200,
+              "source": "https://aqwwiki.wikidot.com/taro-s-quests"
+            },
+            {
+              "itemId": "dark-crystal-shard",
+              "name": "Dark Crystal Shard",
+              "quantity": 125,
+              "source": "https://aqwwiki.wikidot.com/taro-s-quests"
+            },
+            {
+              "itemId": "diamond-of-nulgath",
+              "name": "Diamond of Nulgath",
+              "quantity": 300,
+              "source": "https://aqwwiki.wikidot.com/taro-s-quests"
+            },
+            {
+              "itemId": "gem-of-nulgath",
+              "name": "Gem of Nulgath",
+              "quantity": 75,
+              "source": "https://aqwwiki.wikidot.com/taro-s-quests"
+            },
+            {
+              "itemId": "blood-gem-of-the-archfiend",
+              "name": "Blood Gem of the Archfiend",
+              "quantity": 35,
+              "source": "https://aqwwiki.wikidot.com/taro-s-quests"
+            }
+          ],
           "acquisitionDefinitionIds": [],
-          "isolationStatus": "UNVERIFIED"
+          "isolationStatus": "UNVERIFIED",
+          "npc": "Taro",
+          "prerequisites": [
+            {
+              "value": "Level 80",
+              "source": "https://aqwwiki.wikidot.com/taro-s-quests"
+            },
+            {
+              "value": "Rank 10 Good",
+              "source": "https://aqwwiki.wikidot.com/taro-s-quests"
+            },
+            {
+              "value": "Taro's Manslayer in inventory",
+              "source": "https://aqwwiki.wikidot.com/taro-s-quests"
+            }
+          ],
+          "source": "https://aqwwiki.wikidot.com/taro-s-quests"
         }
       ],
       "regions": [],
@@ -313639,38 +313794,50 @@
         "source": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/taro-s-prismatic-manslayer",
+        "candidateFilenames": [
+          "nziL7EC.png",
+          "MT9Opia.png"
+        ],
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki exposes Normal/Animated candidate filenames; exact image bytes were not obtained for visual matching."
+      }
     },
     {
       "id": "ultimate-lich-king",
-      "name": "Ultimate Lich King",
+      "name": "Ultimate Lich King (Permanent)",
       "originalName": "Ultimate Lich King (Permanent)",
       "category": "Armors",
-      "subtype": null,
+      "subtype": "Armor",
       "image": null,
       "previewImage": null,
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent",
-      "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
+      "level": 30,
+      "membership": "non-member",
+      "rarity": "Epic Rarity",
+      "availability": "available",
       "effects": [],
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Permanent variant and 10,000 Legion Token recipe confirmed. Availability refers to the permanent merge listing; exact NPC route/purchasability in a live account and local artwork are unverified.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "live-in-game-access",
+        "exact-route-specific-npc"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent",
         "category": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent",
-        "method": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent"
+        "level": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent",
+        "rarity": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent",
+        "membership": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent",
+        "materials": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent",
+        "availability": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent"
       },
       "acquisitionRoutes": [
         {
@@ -313678,8 +313845,11 @@
           "regionId": null,
           "method": "Merge",
           "location": "Undead Legion Merge · Underworld",
-          "mapCommand": null,
-          "steps": [],
+          "mapCommand": "/join underworld",
+          "steps": [
+            "Meet Dage the Evil at the Undead Legion Merge in /join underworld.",
+            "Merge the permanent armor using 10,000 Legion Tokens. Do not confuse it with Ultimate Lich King (Temporary)."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent",
@@ -313733,7 +313903,9 @@
           "storyPrerequisites": [],
           "directMaterials": [],
           "acquisitionDefinitionIds": [],
-          "isolationStatus": "UNVERIFIED"
+          "isolationStatus": "UNVERIFIED",
+          "npc": "Dage the Evil",
+          "source": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent"
         }
       ],
       "regions": [],
@@ -313765,7 +313937,15 @@
         "source": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/ultimate-lich-king-permanent",
+        "candidateFilename": "5bRL1cx.png",
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki names the item image, but direct asset bytes could not be downloaded and decoded."
+      }
     },
     {
       "id": "burning-blade-of-abezeth",
@@ -313777,26 +313957,28 @@
       "previewImage": null,
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth",
-      "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
-      "effects": [],
-      "lastChecked": "2026-11-19",
+      "level": 80,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "availability": "available",
+      "effects": [
+        "30% damage to all monsters"
+      ],
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki confirms two alternative recipes, level, rarity and boost. Ingredient farming paths, shop NPC/map commands and local normal/animated artwork remain unverified.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "nested-ingredient-sources",
+        "exact-shop-access-map-command"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth",
         "category": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth",
-        "method": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth"
+        "level": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth",
+        "rarity": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth",
+        "effects": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth",
+        "materials": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth"
       },
       "acquisitionRoutes": [
         {
@@ -313805,7 +313987,9 @@
           "method": "Merge",
           "location": "Celestial Champion · Celestial Arena",
           "mapCommand": null,
-          "steps": [],
+          "steps": [
+            "At Celestial Champion's merge, choose either recipe: Champion Sash x20 and Gold Voucher 500k x3, or Dual Burning Blades Of Abezeth x1."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth",
@@ -313815,21 +313999,39 @@
           ],
           "description": "Công thức merge theo trang Wiki; các điều kiện mở khóa và đường farm nguyên liệu phụ cần tiếp tục đối chiếu.",
           "materialTree": {
-            "kind": "allOf",
+            "kind": "anyOf",
+            "requiredChoices": 1,
             "requirements": [
               {
-                "kind": "item",
-                "itemId": "champion-sash",
-                "name": "Champion Sash",
-                "quantity": 20,
-                "source": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth"
+                "kind": "allOf",
+                "requirements": [
+                  {
+                    "kind": "item",
+                    "itemId": "champion-sash",
+                    "name": "Champion Sash",
+                    "quantity": 20,
+                    "source": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth"
+                  },
+                  {
+                    "kind": "item",
+                    "itemId": "gold-voucher-500k",
+                    "name": "Gold Voucher 500k",
+                    "quantity": 3,
+                    "source": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth"
+                  }
+                ]
               },
               {
-                "kind": "item",
-                "itemId": "gold-voucher-500k",
-                "name": "Gold Voucher 500k",
-                "quantity": 3,
-                "source": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth"
+                "kind": "allOf",
+                "requirements": [
+                  {
+                    "kind": "item",
+                    "itemId": "dual-burning-blades-of-abezeth",
+                    "name": "Dual Burning Blades Of Abezeth",
+                    "quantity": 1,
+                    "source": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth"
+                  }
+                ]
               }
             ]
           },
@@ -313873,7 +314075,9 @@
           "storyPrerequisites": [],
           "directMaterials": [],
           "acquisitionDefinitionIds": [],
-          "isolationStatus": "UNVERIFIED"
+          "isolationStatus": "UNVERIFIED",
+          "npc": "Celestial Champion",
+          "source": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth"
         }
       ],
       "regions": [],
@@ -313905,47 +314109,60 @@
         "source": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/burning-blade-of-abezeth",
+        "candidateFilenames": [
+          "j8fNWKt.png",
+          "NcC420r.png"
+        ],
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki exposes normal/animated file candidates; direct bytes unavailable for inspection and local copying."
+      }
     },
     {
       "id": "archfiend-baby-dragon",
-      "name": "ArchFiend Baby Dragon",
-      "originalName": "Archfiend Baby Dragon Pet",
+      "name": "ArchFiend Baby Dragon Pet",
+      "originalName": "ArchFiend Baby Dragon Pet",
       "category": "Pets",
-      "subtype": null,
+      "subtype": "Pet",
       "image": null,
       "previewImage": null,
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet",
       "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
+      "membership": "non-member",
+      "rarity": "Awesome Rarity",
+      "availability": "unknown",
       "effects": [],
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki and Lae's quest page confirm the level 40 quest reward, required items and 0 AC price. Two time-limited Book of Lore shops are bonus package gates, not farm routes. Local item art and nested sources remain unverified.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "current-in-game-access",
+        "nested-quest-material-sources"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet",
         "category": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet",
-        "method": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet"
+        "rarity": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet",
+        "membership": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet",
+        "acquisition": "https://aqwwiki.wikidot.com/lae-s-quests"
       },
       "acquisitionRoutes": [
         {
           "id": "guide-coverage-source",
           "regionId": null,
           "method": "Quest",
-          "location": "Tercessuinotlim",
+          "location": "Tercessuinotlim · Lae",
           "mapCommand": "/join tercessuinotlim",
-          "steps": [],
+          "steps": [
+            "Meet Lae in /join tercessuinotlim at Level 40 or higher.",
+            "Complete ArchFiend Dragon Egg and receive ArchFiend Baby Dragon Pet."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet",
@@ -314050,45 +314267,39 @@
           "storyPrerequisites": [],
           "directMaterials": [
             {
-              "name": "Breath of Life",
               "itemId": "breath-of-life",
+              "name": "Breath of Life",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/breath-of-life",
               "source": "https://aqwwiki.wikidot.com/lae-s-quests"
             },
             {
-              "name": "Fire Guardian Dragon Soul",
               "itemId": "fire-guardian-dragon-soul",
+              "name": "Fire Guardian Dragon Soul",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/fire-guardian-dragon-soul",
               "source": "https://aqwwiki.wikidot.com/lae-s-quests"
             },
             {
-              "name": "Fresh Soul",
               "itemId": "fresh-soul",
+              "name": "Fresh Soul",
               "quantity": 10,
-              "wikiUrl": "https://aqwwiki.wikidot.com/fresh-soul",
               "source": "https://aqwwiki.wikidot.com/lae-s-quests"
             },
             {
-              "name": "Unidentified 36",
               "itemId": "unidentified-36",
+              "name": "Unidentified 36",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/unidentified-36",
               "source": "https://aqwwiki.wikidot.com/lae-s-quests"
             },
             {
-              "name": "Fiendish Brimstone",
               "itemId": "fiendish-brimstone",
+              "name": "Fiendish Brimstone",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/fiendish-brimstone",
               "source": "https://aqwwiki.wikidot.com/lae-s-quests"
             },
             {
-              "name": "ArchFiend Dragon Egg",
               "itemId": "archfiend-dragon-egg",
+              "name": "ArchFiend Dragon Egg",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/archfiend-dragon-egg",
               "source": "https://aqwwiki.wikidot.com/lae-s-quests"
             }
           ],
@@ -314136,7 +314347,14 @@
               }
             ],
             "equivalentCosts": []
-          }
+          },
+          "prerequisites": [
+            {
+              "value": "Level 40",
+              "source": "https://aqwwiki.wikidot.com/lae-s-quests"
+            }
+          ],
+          "source": "https://aqwwiki.wikidot.com/lae-s-quests"
         }
       ],
       "regions": [],
@@ -314168,11 +314386,18 @@
         "source": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/archfiend-baby-dragon-pet",
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki text did not provide a direct artwork URL and shell connection to Wiki image host failed."
+      }
     },
     {
       "id": "burning-blade",
-      "name": "Burning Blade",
+      "name": "Burning Blade (2)",
       "originalName": "Burning Blade (2)",
       "category": "Weapons",
       "subtype": "Sword",
@@ -314181,25 +314406,26 @@
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/burning-blade-2",
       "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
-      "effects": [],
-      "lastChecked": "2026-11-19",
+      "membership": "non-member",
+      "rarity": "Boss Drop Rarity",
+      "availability": "available",
+      "effects": [
+        "15% damage to all monsters"
+      ],
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki distinguishes this permanent (2) drop from rare Burning Blade (1), lists 1% drop evidence and a 15% all-monster boost. Current event/map access and local normal/animated artwork remain unverified.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "live-map-availability"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/burning-blade-2",
         "category": "https://aqwwiki.wikidot.com/burning-blade-2",
-        "method": "https://aqwwiki.wikidot.com/burning-blade-2"
+        "rarity": "https://aqwwiki.wikidot.com/burning-blade-2",
+        "membership": "https://aqwwiki.wikidot.com/burning-blade-2",
+        "effects": "https://aqwwiki.wikidot.com/burning-blade-2",
+        "acquisition": "https://aqwwiki.wikidot.com/burning-blade-2"
       },
       "acquisitionRoutes": [
         {
@@ -314207,8 +314433,10 @@
           "regionId": null,
           "method": "Drop",
           "location": "Lost Ruins War · Diabolical Warlord",
-          "mapCommand": null,
-          "steps": [],
+          "mapCommand": "/join lostruinswar",
+          "steps": [
+            "Defeat Diabolical Warlord in Lost Ruins War; the Wiki reports a 1% drop chance."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/burning-blade-2",
@@ -314243,7 +314471,10 @@
           "storyPrerequisites": [],
           "directMaterials": [],
           "acquisitionDefinitionIds": [],
-          "isolationStatus": "UNVERIFIED"
+          "isolationStatus": "UNVERIFIED",
+          "npc": null,
+          "dropSource": "Diabolical Warlord",
+          "source": "https://aqwwiki.wikidot.com/burning-blade-2"
         }
       ],
       "regions": [],
@@ -314275,47 +314506,61 @@
         "source": "https://aqwwiki.wikidot.com/burning-blade-2"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/burning-blade-2",
+        "candidateFilenames": [
+          "TNNwR7f.png",
+          "3MtaInd.png"
+        ],
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki exposes normal/animated candidates, but image download and visual variant inspection were unavailable."
+      }
     },
     {
       "id": "prismatic-floating-sigil",
       "name": "Prismatic Floating Sigil",
       "originalName": "Prismatic Floating Sigil",
       "category": "Capes / Back Items",
-      "subtype": null,
+      "subtype": "Cape / Back Item",
       "image": null,
       "previewImage": null,
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/prismatic-floating-sigil",
       "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "availability": "unknown",
       "effects": [],
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki item page and Warlic's quest page confirm reward of Lumina Elementi, classifies this as back item and confirms all turn-ins. Exact current access, item artwork and full source trails for every quest material are incomplete.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "live-quest-access",
+        "nested-material-sources"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/prismatic-floating-sigil",
         "category": "https://aqwwiki.wikidot.com/prismatic-floating-sigil",
-        "method": "https://aqwwiki.wikidot.com/prismatic-floating-sigil"
+        "rarity": "https://aqwwiki.wikidot.com/prismatic-floating-sigil",
+        "membership": "https://aqwwiki.wikidot.com/prismatic-floating-sigil",
+        "acquisition": "https://aqwwiki.wikidot.com/warlic-s-quests"
       },
       "acquisitionRoutes": [
         {
           "id": "guide-coverage-source",
           "regionId": null,
           "method": "Quest",
-          "location": "Archmage (Location)",
-          "mapCommand": null,
-          "steps": [],
+          "location": "ArchMage (Location) · Warlic",
+          "mapCommand": "/join archmage",
+          "steps": [
+            "Meet Warlic at ArchMage (Location).",
+            "Complete the preceding ArchMage quest chain and meet Level 100.",
+            "Turn in the Lumina Elementi requirements; select this reward."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/prismatic-floating-sigil",
@@ -314511,45 +314756,45 @@
           ],
           "directMaterials": [
             {
-              "name": "Elysium",
+              "itemId": "valiance",
+              "name": "Valiance",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+            },
+            {
               "itemId": "elysium",
+              "name": "Elysium",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/forge-weapon-enhancements",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Prismatic Seams",
               "itemId": "prismatic-seams",
+              "name": "Prismatic Seams",
               "quantity": 2000,
-              "wikiUrl": "https://aqwwiki.wikidot.com/prismatic-seams",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Unbound Thread",
               "itemId": "unbound-thread",
+              "name": "Unbound Thread",
               "quantity": 100,
-              "wikiUrl": "https://aqwwiki.wikidot.com/unbound-thread",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Unbound Tome",
               "itemId": "unbound-tome",
+              "name": "Unbound Tome",
               "quantity": 30,
-              "wikiUrl": "https://aqwwiki.wikidot.com/unbound-tome",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Book of Arcana",
               "itemId": "book-of-arcana",
+              "name": "Book of Arcana",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/book-of-arcana",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Elemental Binding",
               "itemId": "elemental-binding",
+              "name": "Elemental Binding",
               "quantity": 2500,
-              "wikiUrl": "https://aqwwiki.wikidot.com/elemental-binding",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             }
           ],
@@ -314752,7 +314997,14 @@
               }
             ],
             "equivalentCosts": []
-          }
+          },
+          "prerequisites": [
+            {
+              "value": "Level 100 and completion of previous ArchMage quests",
+              "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+            }
+          ],
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
         }
       ],
       "regions": [],
@@ -314784,47 +315036,58 @@
         "source": "https://aqwwiki.wikidot.com/prismatic-floating-sigil"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/prismatic-floating-sigil",
+        "candidateFilename": "mdkT73m.png",
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki candidate filename exists in page text but local image bytes were unavailable."
+      }
     },
     {
       "id": "sheathed-providence",
       "name": "Sheathed Providence",
       "originalName": "Sheathed Providence",
       "category": "Capes / Back Items",
-      "subtype": null,
+      "subtype": "Back Item",
       "image": null,
       "previewImage": null,
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/sheathed-providence",
       "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "availability": "unknown",
       "effects": [],
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki confirms back weapon appearance, rarity and Lumina Elementi reward. Full quest prerequisites and materials are recorded from the shared quest page; exact art download/live access remain blocked.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "live-quest-access",
+        "nested-material-sources"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/sheathed-providence",
         "category": "https://aqwwiki.wikidot.com/sheathed-providence",
-        "method": "https://aqwwiki.wikidot.com/sheathed-providence"
+        "rarity": "https://aqwwiki.wikidot.com/sheathed-providence",
+        "membership": "https://aqwwiki.wikidot.com/sheathed-providence",
+        "acquisition": "https://aqwwiki.wikidot.com/warlic-s-quests"
       },
       "acquisitionRoutes": [
         {
           "id": "guide-coverage-source",
           "regionId": null,
           "method": "Quest",
-          "location": "Archmage (Location)",
-          "mapCommand": null,
-          "steps": [],
+          "location": "ArchMage (Location) · Warlic",
+          "mapCommand": "/join archmage",
+          "steps": [
+            "Meet Warlic at ArchMage (Location).",
+            "Complete the preceding ArchMage quest chain and meet Level 100.",
+            "Turn in the Lumina Elementi requirements; select this reward."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/sheathed-providence",
@@ -315020,45 +315283,45 @@
           ],
           "directMaterials": [
             {
-              "name": "Elysium",
+              "itemId": "valiance",
+              "name": "Valiance",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+            },
+            {
               "itemId": "elysium",
+              "name": "Elysium",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/forge-weapon-enhancements",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Prismatic Seams",
               "itemId": "prismatic-seams",
+              "name": "Prismatic Seams",
               "quantity": 2000,
-              "wikiUrl": "https://aqwwiki.wikidot.com/prismatic-seams",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Unbound Thread",
               "itemId": "unbound-thread",
+              "name": "Unbound Thread",
               "quantity": 100,
-              "wikiUrl": "https://aqwwiki.wikidot.com/unbound-thread",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Unbound Tome",
               "itemId": "unbound-tome",
+              "name": "Unbound Tome",
               "quantity": 30,
-              "wikiUrl": "https://aqwwiki.wikidot.com/unbound-tome",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Book of Arcana",
               "itemId": "book-of-arcana",
+              "name": "Book of Arcana",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/book-of-arcana",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Elemental Binding",
               "itemId": "elemental-binding",
+              "name": "Elemental Binding",
               "quantity": 2500,
-              "wikiUrl": "https://aqwwiki.wikidot.com/elemental-binding",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             }
           ],
@@ -315261,7 +315524,14 @@
               }
             ],
             "equivalentCosts": []
-          }
+          },
+          "prerequisites": [
+            {
+              "value": "Level 100 and completion of previous ArchMage quests",
+              "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+            }
+          ],
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
         }
       ],
       "regions": [],
@@ -315293,47 +315563,57 @@
         "source": "https://aqwwiki.wikidot.com/sheathed-providence"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/sheathed-providence",
+        "directUrl": null,
+        "localPath": null,
+        "reason": "No direct Wiki artwork bytes could be retrieved for visual validation."
+      }
     },
     {
       "id": "prismatic-sigil",
       "name": "Prismatic Sigil",
       "originalName": "Prismatic Sigil",
       "category": "Grounds",
-      "subtype": null,
+      "subtype": "Ground",
       "image": null,
       "previewImage": null,
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/prismatic-sigil",
       "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "availability": "unknown",
       "effects": [],
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki tag identifies this as a Ground, not cape or helm; quest, rarity and turn-ins are shared with Lumina Elementi rewards. Exact item art and nested source chains remain unverified.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "live-quest-access",
+        "nested-material-sources"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/prismatic-sigil",
         "category": "https://aqwwiki.wikidot.com/prismatic-sigil",
-        "method": "https://aqwwiki.wikidot.com/prismatic-sigil"
+        "rarity": "https://aqwwiki.wikidot.com/prismatic-sigil",
+        "membership": "https://aqwwiki.wikidot.com/prismatic-sigil",
+        "acquisition": "https://aqwwiki.wikidot.com/warlic-s-quests"
       },
       "acquisitionRoutes": [
         {
           "id": "guide-coverage-source",
           "regionId": null,
           "method": "Quest",
-          "location": "Archmage (Location)",
-          "mapCommand": null,
-          "steps": [],
+          "location": "ArchMage (Location) · Warlic",
+          "mapCommand": "/join archmage",
+          "steps": [
+            "Meet Warlic at ArchMage (Location).",
+            "Complete the preceding ArchMage quest chain and meet Level 100.",
+            "Turn in the Lumina Elementi requirements; select this reward."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/prismatic-sigil",
@@ -315529,45 +315809,45 @@
           ],
           "directMaterials": [
             {
-              "name": "Elysium",
+              "itemId": "valiance",
+              "name": "Valiance",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+            },
+            {
               "itemId": "elysium",
+              "name": "Elysium",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/forge-weapon-enhancements",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Prismatic Seams",
               "itemId": "prismatic-seams",
+              "name": "Prismatic Seams",
               "quantity": 2000,
-              "wikiUrl": "https://aqwwiki.wikidot.com/prismatic-seams",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Unbound Thread",
               "itemId": "unbound-thread",
+              "name": "Unbound Thread",
               "quantity": 100,
-              "wikiUrl": "https://aqwwiki.wikidot.com/unbound-thread",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Unbound Tome",
               "itemId": "unbound-tome",
+              "name": "Unbound Tome",
               "quantity": 30,
-              "wikiUrl": "https://aqwwiki.wikidot.com/unbound-tome",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Book of Arcana",
               "itemId": "book-of-arcana",
+              "name": "Book of Arcana",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/book-of-arcana",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Elemental Binding",
               "itemId": "elemental-binding",
+              "name": "Elemental Binding",
               "quantity": 2500,
-              "wikiUrl": "https://aqwwiki.wikidot.com/elemental-binding",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             }
           ],
@@ -315770,7 +316050,14 @@
               }
             ],
             "equivalentCosts": []
-          }
+          },
+          "prerequisites": [
+            {
+              "value": "Level 100 and completion of previous ArchMage quests",
+              "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+            }
+          ],
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
         }
       ],
       "regions": [],
@@ -315802,7 +316089,14 @@
         "source": "https://aqwwiki.wikidot.com/prismatic-sigil"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/prismatic-sigil",
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki exact ground artwork could not be downloaded and visually matched."
+      }
     },
     {
       "id": "providence",
@@ -315815,34 +316109,40 @@
       "imageEvidence": null,
       "wikiUrl": "https://aqwwiki.wikidot.com/providence",
       "level": null,
-      "membership": null,
-      "rarity": null,
-      "availability": null,
-      "effects": [],
-      "lastChecked": "2026-11-19",
+      "membership": "non-member",
+      "rarity": "Champion Rarity",
+      "availability": "unknown",
+      "effects": [
+        "51% damage to all monsters"
+      ],
+      "lastChecked": "2026-11-20",
       "verificationStatus": "needs-review",
-      "reviewReason": "Đã đối chiếu tên và phương pháp nhận với AQW Wiki. Chưa xác nhận trực tiếp trong game; các bước, vùng và art chưa kiểm đầy đủ.",
+      "reviewReason": "Wiki confirms Staff category, Champion Rarity, 51% all-monster damage and Lumina Elementi reward. Exact image bytes, live access and nested ingredient farm paths remain unverified.",
       "unknownFields": [
-        "image",
-        "region",
-        "membership",
-        "rarity",
-        "availability",
-        "complete-quest-route"
+        "verified-local-image",
+        "live-quest-access",
+        "nested-material-sources"
       ],
       "fieldEvidence": {
         "name": "https://aqwwiki.wikidot.com/providence",
         "category": "https://aqwwiki.wikidot.com/providence",
-        "method": "https://aqwwiki.wikidot.com/providence"
+        "rarity": "https://aqwwiki.wikidot.com/providence",
+        "membership": "https://aqwwiki.wikidot.com/providence",
+        "effects": "https://aqwwiki.wikidot.com/providence",
+        "acquisition": "https://aqwwiki.wikidot.com/warlic-s-quests"
       },
       "acquisitionRoutes": [
         {
           "id": "guide-coverage-source",
           "regionId": null,
           "method": "Quest",
-          "location": "Archmage (Location)",
-          "mapCommand": null,
-          "steps": [],
+          "location": "ArchMage (Location) · Warlic",
+          "mapCommand": "/join archmage",
+          "steps": [
+            "Meet Warlic at ArchMage (Location).",
+            "Complete the preceding ArchMage quest chain and meet Level 100.",
+            "Turn in the Lumina Elementi requirements; select Providence (Staff) as the reward."
+          ],
           "sources": [
             {
               "url": "https://aqwwiki.wikidot.com/providence",
@@ -316038,45 +316338,45 @@
           ],
           "directMaterials": [
             {
-              "name": "Elysium",
+              "itemId": "valiance",
+              "name": "Valiance",
+              "quantity": 1,
+              "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+            },
+            {
               "itemId": "elysium",
+              "name": "Elysium",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/forge-weapon-enhancements",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Prismatic Seams",
               "itemId": "prismatic-seams",
+              "name": "Prismatic Seams",
               "quantity": 2000,
-              "wikiUrl": "https://aqwwiki.wikidot.com/prismatic-seams",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Unbound Thread",
               "itemId": "unbound-thread",
+              "name": "Unbound Thread",
               "quantity": 100,
-              "wikiUrl": "https://aqwwiki.wikidot.com/unbound-thread",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Unbound Tome",
               "itemId": "unbound-tome",
+              "name": "Unbound Tome",
               "quantity": 30,
-              "wikiUrl": "https://aqwwiki.wikidot.com/unbound-tome",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Book of Arcana",
               "itemId": "book-of-arcana",
+              "name": "Book of Arcana",
               "quantity": 1,
-              "wikiUrl": "https://aqwwiki.wikidot.com/book-of-arcana",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             },
             {
-              "name": "Elemental Binding",
               "itemId": "elemental-binding",
+              "name": "Elemental Binding",
               "quantity": 2500,
-              "wikiUrl": "https://aqwwiki.wikidot.com/elemental-binding",
               "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
             }
           ],
@@ -316279,7 +316579,14 @@
               }
             ],
             "equivalentCosts": []
-          }
+          },
+          "prerequisites": [
+            {
+              "value": "Level 100 and completion of previous ArchMage quests",
+              "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
+            }
+          ],
+          "source": "https://aqwwiki.wikidot.com/warlic-s-quests"
         }
       ],
       "regions": [],
@@ -316311,7 +316618,15 @@
         "source": "https://aqwwiki.wikidot.com/providence"
       },
       "legacyGroupId": null,
-      "setIds": []
+      "setIds": [],
+      "recoveryImage": {
+        "status": "blocked-download",
+        "wikiPage": "https://aqwwiki.wikidot.com/providence",
+        "candidateFilename": "NSyVXo9.png",
+        "directUrl": null,
+        "localPath": null,
+        "reason": "Wiki candidate filename is available from page text, but no local image bytes could be fetched/decoded."
+      }
     }
   ]
 }

@@ -12869,6 +12869,7 @@ function ClassDirectory() {
       /* @__PURE__ */ jsx9("p", { className: "class-label", children: "AdventureQuest Worlds" }),
       /* @__PURE__ */ jsx9("h1", { className: "codex-heading", children: "Class Codex" })
     ] }) }),
+    /* @__PURE__ */ jsx9("p", { className: "aqwvn-page-quip", "data-aqwvn-typo": "v1", children: "Ki\u1EBFm, ph\xE9p, khi\xEAn hay dao g\u0103m? Ch\u1ECDn Class cho h\u1EE3p tay tr\u01B0\u1EDBc \u0111\xE3. Boss kh\xF4ng quan t\xE2m b\u1EA1n m\u1EB7c \u0111\u1ED3 \u0111\u1EB9p \u0111\u1EBFn \u0111\xE2u \u0111\xE2u." }),
     /* @__PURE__ */ jsxs8("section", { className: "class-filter-panel", "aria-label": "T\xECm v\xE0 l\u1ECDc Class", children: [
       /* @__PURE__ */ jsxs8("label", { className: "class-search", children: [
         /* @__PURE__ */ jsx9(Search, { size: 20 }),
