@@ -1380,7 +1380,7 @@ function ClassRoles({
 }
 
 // src/features/classes/ClassDirectory.tsx
-import { useState as useState6 } from "react";
+import { useEffect as useEffect2, useState as useState6 } from "react";
 import { Search, ArrowRight as ArrowRight2 } from "lucide-react";
 
 // src/content/classes/catalog.json
@@ -12793,6 +12793,65 @@ function ClassAsset({
   ) });
 }
 
+// src/features/classes/class-directory-history-v4.ts
+var RETURN_KEY = "aqwvn:class-directory:v4:return";
+var STAGES = /* @__PURE__ */ new Set(["all", "Newbie", "Midgame", "Lategame", "Endgame", "Calendar", "HeroMart"]);
+var ACQUISITIONS = /* @__PURE__ */ new Set(["all", "free", "reputation", "questline", "member", "seasonal", "token", "ac-shop", "unknown"]);
+function readClassDirectoryState() {
+  if (typeof window === "undefined") return { category: "all", query: "", role: "all", acquisition: "all", page: 1 };
+  const search = new URLSearchParams(window.location.search);
+  const stage = search.get("stage") || "all";
+  const pageRaw = Number(search.get("page") || "1");
+  const acquisition = search.get("acquisition") || "all";
+  const role = search.get("role") || "all";
+  return {
+    category: STAGES.has(stage) ? stage : "all",
+    query: (search.get("q") || "").slice(0, 200),
+    role: role.length <= 90 ? role : "all",
+    acquisition: ACQUISITIONS.has(acquisition) ? acquisition : "all",
+    page: Number.isSafeInteger(pageRaw) && pageRaw >= 1 && pageRaw <= 1e3 ? pageRaw : 1
+  };
+}
+function persistClassDirectoryState(state) {
+  if (typeof window === "undefined" || window.location.pathname.replace(/\/$/, "") !== "/class") return;
+  const url = new URL(window.location.href);
+  for (const name of ["stage", "q", "role", "acquisition", "page"]) url.searchParams.delete(name);
+  if (state.category !== "all") url.searchParams.set("stage", state.category);
+  if (state.query.trim()) url.searchParams.set("q", state.query.trim());
+  if (state.role !== "all") url.searchParams.set("role", state.role);
+  if (state.acquisition !== "all") url.searchParams.set("acquisition", state.acquisition);
+  if (state.page > 1) url.searchParams.set("page", String(state.page));
+  const next = url.pathname + url.search + url.hash;
+  if (next !== window.location.pathname + window.location.search + window.location.hash) {
+    window.history.replaceState(window.history.state, "", next);
+  }
+}
+function rememberClassDirectoryLocation() {
+  if (typeof window === "undefined" || window.location.pathname.replace(/\/$/, "") !== "/class") return;
+  try {
+    sessionStorage.setItem(RETURN_KEY, JSON.stringify({
+      url: window.location.pathname + window.location.search,
+      scrollY: Math.max(0, Math.round(window.scrollY)),
+      restore: true
+    }));
+  } catch {
+  }
+}
+function validReturnUrl(candidate) {
+  return typeof candidate === "string" && /^\/class(?:\?.*)?$/.test(candidate) && candidate.length < 1800;
+}
+function restoreClassDirectoryScroll() {
+  if (typeof window === "undefined" || window.location.pathname.replace(/\/$/, "") !== "/class") return;
+  try {
+    const payload = JSON.parse(sessionStorage.getItem(RETURN_KEY) || "{}");
+    if (!payload.restore || !validReturnUrl(payload.url) || payload.url !== window.location.pathname + window.location.search) return;
+    sessionStorage.setItem(RETURN_KEY, JSON.stringify({ ...payload, restore: false }));
+    const y = typeof payload.scrollY === "number" && Number.isFinite(payload.scrollY) ? payload.scrollY : 0;
+    requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, Math.max(0, y))));
+  } catch {
+  }
+}
+
 // src/features/classes/ClassDirectory.tsx
 import { jsx as jsx9, jsxs as jsxs8 } from "react/jsx-runtime";
 function ClassCard({ profile }) {
@@ -12803,6 +12862,7 @@ function ClassCard({ profile }) {
     "a",
     {
       href: `/class/${profile.slug}`,
+      onClick: rememberClassDirectoryLocation,
       className: "class-card",
       style: {
         "--class-accent-dark": classColors(profile).dark,
@@ -12822,12 +12882,13 @@ function ClassCard({ profile }) {
   );
 }
 function ClassDirectory() {
-  const [category, setCategory] = useState6("all");
-  const [query, setQuery] = useState6("");
-  const [role, setRole] = useState6("all");
+  const [directoryStart] = useState6(readClassDirectoryState);
+  const [category, setCategory] = useState6(directoryStart.category);
+  const [query, setQuery] = useState6(directoryStart.query);
+  const [role, setRole] = useState6(directoryStart.role);
   const [difficulty, setDifficulty] = useState6("all");
-  const [acquisition, setAcquisition] = useState6("all");
-  const [page, setPage] = useState6(1);
+  const [acquisition, setAcquisition] = useState6(directoryStart.acquisition);
+  const [page, setPage] = useState6(directoryStart.page);
   const cards = classProfiles.filter((c) => primaryCalendarClass(c.id) === c.id).map((c) => {
     const family = calendarFamily(c.id);
     if (!family) return { ...c, aliases: [...c.aliases, ...classIdentityAliases(c.id)] };
@@ -12860,6 +12921,12 @@ function ClassDirectory() {
   const pages = Math.max(1, Math.ceil(filtered.length / 24));
   const current = Math.min(page, pages);
   const list = filtered.slice((current - 1) * 24, current * 24);
+  useEffect2(() => {
+    persistClassDirectoryState({ category, query, role, acquisition, page: current });
+  }, [category, query, role, acquisition, current]);
+  useEffect2(() => {
+    restoreClassDirectoryScroll();
+  }, []);
   const update = (fn, v) => {
     fn(v);
     setPage(1);
@@ -13023,12 +13090,12 @@ function ClassArtSelector({ classId, image, name, onSelect }) {
 }
 
 // src/features/ultra/BossOfficialTitle.tsx
-import { useEffect as useEffect2, useRef as useRef2 } from "react";
+import { useEffect as useEffect3, useRef as useRef2 } from "react";
 import { jsx as jsx11, jsxs as jsxs10 } from "react/jsx-runtime";
 function BossOfficialTitle({ name, eyebrow = "ULTRA BOSS" }) {
   const ref = useRef2(null);
   const text = name.toUpperCase();
-  useEffect2(() => {
+  useEffect3(() => {
     const el = ref.current;
     if (!el) return;
     let live = true;
@@ -58940,7 +59007,7 @@ function assignmentsFor(slug, teamId) {
 }
 
 // src/features/challenges/ChallengeCodex.tsx
-import { useEffect as useEffect7, useState as useState19 } from "react";
+import { useEffect as useEffect8, useState as useState19 } from "react";
 import { ArrowLeft, Check as Check2, MapPin as MapPin3, ChevronRight as ChevronRight4, Swords as Swords9, ScrollText } from "lucide-react";
 
 // src/content/challenges/catalog.json
@@ -69641,7 +69708,7 @@ var aqw_assets_default = [
 ];
 
 // src/features/ultra/Asset.tsx
-import { useState as useState9, useEffect as useEffect3 } from "react";
+import { useState as useState9, useEffect as useEffect4 } from "react";
 import { ImageOff } from "lucide-react";
 
 // src/content/ultra/assets.json
@@ -69859,7 +69926,7 @@ function Asset({
     localPath: verified.imagePath
   } : registered;
   const [failed, setFailed] = useState9(false);
-  useEffect3(() => setFailed(false), [id, asset?.localPath]);
+  useEffect4(() => setFailed(false), [id, asset?.localPath]);
   if (!asset || asset.usageStatus !== "approved" || !asset.localPath || failed)
     return /* @__PURE__ */ jsxs12(
       "div",
@@ -84879,7 +84946,7 @@ var ultraBosses = [...bosses_default, ...recovery_default.bosses].map((b) => ({ 
 var findBoss = (slug) => ultraBosses.find((boss) => boss.slug === slug);
 
 // src/features/classes/useClassBody.ts
-import { useEffect as useEffect4, useState as useState11 } from "react";
+import { useEffect as useEffect5, useState as useState11 } from "react";
 
 // src/lib/imported.ts
 function initialImportedBody() {
@@ -84901,7 +84968,7 @@ function useClassBody(profile) {
   });
   const [error, setError] = useState11("");
   const [attempt, setAttempt] = useState11(0);
-  useEffect4(() => {
+  useEffect5(() => {
     if (body) return;
     const controller = new AbortController();
     fetch(profile.bodyUrl, { signal: controller.signal }).then((r) => {
@@ -86890,7 +86957,7 @@ var equipment_default2 = {
 };
 
 // src/features/ultra/MaterialTree.tsx
-import { useEffect as useEffect5, useId as useId6, useState as useState16 } from "react";
+import { useEffect as useEffect6, useId as useId6, useState as useState16 } from "react";
 import { Package } from "lucide-react";
 
 // src/lib/material-requirements.mjs
@@ -86916,7 +86983,7 @@ function MaterialTree({ tree, scope, renderItem }) {
   const key2 = "aqw:materials:v2:" + scope, id = useId6();
   const [state, setState] = useState16({ selections: {}, done: [] });
   const [error, setError] = useState16("");
-  useEffect5(() => {
+  useEffect6(() => {
     const load = () => setState(readStoredValue(key2, { selections: {}, done: [] }, isState));
     load();
     window.addEventListener("aqw-material-change", load);
@@ -87568,7 +87635,7 @@ function EnemyInspection({ slug, encounter: supplied }) {
 }
 
 // src/features/ultra/RPGEquipmentSelector.tsx
-import { useEffect as useEffect6, useRef as useRef3, useState as useState18 } from "react";
+import { useEffect as useEffect7, useRef as useRef3, useState as useState18 } from "react";
 import { ChevronLeft, ChevronRight as ChevronRight3, Swords as Swords8, Shield as Shield9, Shirt, Package as Package3 } from "lucide-react";
 
 // src/lib/equipment-category.mjs
@@ -87600,14 +87667,14 @@ function RPGEquipmentSelector({ routes, renderDetails }) {
   const strip = useRef3(null);
   const { choices, selected } = selectEquipment(routes, filter, selectedId);
   const [edges, setEdges] = useState18({ start: true, end: false });
-  useEffect6(() => {
+  useEffect7(() => {
     setSelectedId(selected?.id);
   }, [selected?.id]);
-  useEffect6(() => {
+  useEffect7(() => {
     const el = strip.current, button = el?.querySelector('[aria-pressed="true"]');
     if (el && button) el.scrollTo({ left: button.offsetLeft - el.offsetLeft - (el.clientWidth - button.clientWidth) / 2, behavior: "instant" });
   }, [filter, selected?.id]);
-  useEffect6(() => {
+  useEffect7(() => {
     const el = strip.current;
     if (!el) return;
     const update = () => setEdges({ start: el.scrollLeft < 2, end: el.scrollLeft + el.clientWidth >= el.scrollWidth - 2 });
@@ -87685,7 +87752,7 @@ function ChallengeDetail({ summary }) {
   const [done, setDone] = useState19([]);
   const [saveError, setSaveError] = useState19("");
   const key2 = "aqw:challenge:v12-6:" + summary.id;
-  useEffect7(() => {
+  useEffect8(() => {
     const controller = new AbortController();
     fetch(summary.bodyUrl, { signal: controller.signal }).then((r) => {
       if (!r.ok) throw Error("Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c d\u1EEF li\u1EC7u Challenge");
