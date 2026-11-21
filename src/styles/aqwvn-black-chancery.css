@@ -1,0 +1,102 @@
+/* AQWVN-BLACK-CHANCERY-V3: presentation-only; after existing theme & typography CSS. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'AQWVN Black Chancery';
+  src: url('/fonts/aqwvn-black-chancery.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+:root {
+  --aqwvn-black-chancery-font: 'AQWVN Black Chancery', 'Montserrat', Georgia, serif;
+  --aqwvn-content-font: 'Montserrat', 'Source Sans 3', Arial, sans-serif;
+  --aqwvn-black-chancery-title: #875b17;
+  --codex-display-font: var(--aqwvn-black-chancery-font);
+  --codex-display-weight: 400;
+  --codex-display-style: normal;
+  --codex-display-tracking: .005em;
+  --aqwvn-headline-font: var(--aqwvn-black-chancery-font);
+  --aqwvn-headline-color: var(--aqwvn-black-chancery-title);
+  --codex-title-gold: var(--aqwvn-black-chancery-title);
+}
+:root[data-theme='dark'] {
+  --aqwvn-black-chancery-title: #ae77f4;
+  --codex-title-gold: var(--aqwvn-black-chancery-title);
+}
+:root[data-theme='light'] {
+  --aqwvn-black-chancery-title: #875b17;
+  --codex-title-gold: var(--aqwvn-black-chancery-title);
+}
+/* Reading text is Montserrat; game data and technical labels retain their own layout. */
+html body,
+html body :is(button, input, textarea, select),
+html body :is(.fv2-root, .class-codex, .ultra-codex, .native-article, .library-page, .lore-showcase),
+html body :is(.aqwvn-page-quip, .ultra-directory-intro > p:not(.ultra-eyebrow)) {
+  font-family: var(--aqwvn-content-font) !important;
+}
+html body :is(code, pre, kbd) {
+  font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace !important;
+}
+/* Page-level titles only. Excludes boss names, class names and item names. */
+html body :is(
+  .hero-copy > h1,
+  .page-intro > h1,
+  .article-intro > h1,
+  .about-page > h1,
+  .lore-showcase-heading > h2,
+  .lore-atlas-heading > h2,
+  .class-chapter > .section-heading h2,
+  .class-directory .class-intro h1,
+  .fv2-root .fv2-top h1,
+  .ultra-directory .ultra-directory-intro h1,
+  .library-page .page-intro h1,
+  .search-chapter > h2
+) {
+  font-family: var(--aqwvn-black-chancery-font) !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: .005em !important;
+  line-height: 1.18 !important;
+  color: var(--aqwvn-black-chancery-title) !important;
+  text-transform: uppercase !important;
+  overflow-wrap: normal;
+}
+/* Nested Codex line and highlighted heading spans must use the same face. */
+html body :is(
+  .ultra-directory .ultra-directory-intro h1 .codex-display,
+  .ultra-directory .ultra-directory-intro h1 em,
+  .class-directory .class-intro h1 em,
+  .lore-showcase-heading h2 span
+) {
+  font-family: var(--aqwvn-black-chancery-font) !important;
+  color: var(--aqwvn-black-chancery-title) !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: inherit !important;
+}
+/* A single title scale for all three Codex directories. */
+html body :is(
+  .ultra-directory .ultra-directory-intro h1,
+  .class-directory .class-intro h1,
+  .fv2-root .fv2-top h1
+) {
+  font-size: clamp(38px, 5.6vw, 98px) !important;
+  max-width: 100%;
+}
+@media (min-width: 1100px) {
+  html body .ultra-directory .ultra-directory-intro h1 { white-space: nowrap !important; }
+  html body .ultra-directory .ultra-directory-intro h1 br { display: none !important; }
+}
+@media (max-width: 1099px) {
+  html body .ultra-directory .ultra-directory-intro h1 { white-space: normal !important; }
+}
+@media (max-width: 720px) {
+  html body :is(
+    .ultra-directory .ultra-directory-intro h1,
+    .class-directory .class-intro h1,
+    .fv2-root .fv2-top h1
+  ) { font-size: clamp(34px, 7.2vw, 56px) !important; }
+  html body :is(.hero-copy > h1, .lore-showcase-heading > h2, .page-intro > h1) {
+    font-size: clamp(38px, 9vw, 64px) !important;
+  }
+}
