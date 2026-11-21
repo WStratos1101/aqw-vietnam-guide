@@ -1,0 +1,26 @@
+/* AQWVN FONT SCOPE V4: stylesheet is injected LAST in the independent System iframe. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@font-face{font-family:'AQWVN Gilroy ExtraBold';src:url('/fonts/aqwvn-gilroy-extrabold.ttf') format('truetype');font-style:normal;font-weight:800;font-display:swap}
+@font-face{font-family:'AQWVN Black Chancery';src:url('/fonts/aqwvn-black-chancery.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+:root{--aqwvn-v4-general-title:#795612}
+:root[data-theme='dark']{--aqwvn-v4-general-title:#a65bfa}
+:root[data-theme='light']{--aqwvn-v4-general-title:#795612}
+html body,html body :is(button,input,select,textarea){font-family:'Montserrat',Arial,sans-serif!important}
+/* General Codex alone uses Black Chancery. */
+html body .hero h1{
+ font-family:'AQWVN Black Chancery',Georgia,serif!important;
+ font-style:normal!important;font-weight:400!important;
+ letter-spacing:.005em!important;line-height:1.17!important;
+ color:var(--aqwvn-v4-general-title)!important;
+ text-transform:uppercase!important;overflow-wrap:normal;
+ font-size:clamp(62px,7.4vw,116px)!important;
+}
+html body .hero h1 em{font:inherit!important;color:inherit!important}
+/* Other major headings in System remain Gilroy (not Chancery). */
+html body .last h2{
+ font-family:'AQWVN Gilroy ExtraBold','Montserrat',Arial,sans-serif!important;
+ font-style:normal!important;font-weight:800!important;
+ letter-spacing:-.052em!important;line-height:1.04!important;
+ color:var(--aqwvn-v4-general-title)!important;
+}
+@media(max-width:520px){html body .hero h1{font-size:clamp(42px,10vw,68px)!important}}

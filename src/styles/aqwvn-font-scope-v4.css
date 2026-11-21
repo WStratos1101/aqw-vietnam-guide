@@ -1,0 +1,122 @@
+/* AQWVN FONT SCOPE V4: intentionally loaded after Typography V1 and Black Chancery V3.
+   Exclusively title fonts. Never change boss-specific colors, art or entity data. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'AQWVN Gilroy ExtraBold';
+  src: url('/fonts/aqwvn-gilroy-extrabold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AQWVN Black Chancery';
+  src: url('/fonts/aqwvn-black-chancery.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+:root {
+  --aqwvn-v4-gilroy: 'AQWVN Gilroy ExtraBold', 'Montserrat', sans-serif;
+  --aqwvn-v4-chancery: 'AQWVN Black Chancery', Georgia, serif;
+  --aqwvn-v4-body: 'Montserrat', 'Source Sans 3', sans-serif;
+  --aqwvn-v4-title: #795612;
+  /* Undo V3's global Black Chancery variables. Targeted headings below opt back in. */
+  --aqwvn-headline-font: var(--aqwvn-v4-gilroy);
+  --aqwvn-content-font: var(--aqwvn-v4-body);
+  --codex-display-font: var(--aqwvn-v4-gilroy);
+  --codex-display-weight: 800;
+  --codex-display-style: normal;
+  --codex-display-tracking: -.052em;
+}
+:root[data-theme='dark'] { --aqwvn-v4-title: #a65bfa; }
+:root[data-theme='light'] { --aqwvn-v4-title: #795612; }
+html body,
+html body :is(button, select, input, textarea),
+html body :is(.fv2-root, .class-codex, .ultra-codex, .lore-showcase, .lore-atlas, .native-article) {
+  font-family: var(--aqwvn-v4-body) !important;
+}
+html body :is(pre, code, kbd) { font-family: ui-monospace, Menlo, monospace !important; }
+/* Main titles outside Farming/Ultra/General Codex use Gilroy ExtraBold. */
+html body :is(
+  .hero-copy > h1,
+  .page-intro > h1,
+  .article-intro > h1,
+  .about-page > h1,
+  .lore-showcase-heading > h2,
+  .lore-atlas-heading > h2,
+  .class-chapter > .section-heading h2,
+  .class-directory .class-intro h1,
+  .library-page .page-intro h1,
+  .search-chapter > h2,
+  .lore-region-page > h1
+) {
+  font-family: var(--aqwvn-v4-gilroy) !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  letter-spacing: -.052em !important;
+  line-height: 1.02 !important;
+  color: var(--aqwvn-v4-title) !important;
+}
+html body .lore-showcase-heading h2 span,
+html body .class-directory .class-intro h1 em {
+  font-family: var(--aqwvn-v4-gilroy) !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  color: var(--aqwvn-v4-title) !important;
+}
+/* ONLY the two directory titles below use Black Chancery on the React site. */
+html body .fv2-root .fv2-top h1.codex-heading,
+html body .ultra-codex.ultra-directory .ultra-directory-intro h1.codex-heading,
+html body .ultra-codex.ultra-directory .ultra-directory-intro h1 .codex-display,
+html body .ultra-codex.ultra-directory .ultra-directory-intro h1 em {
+  font-family: var(--aqwvn-v4-chancery) !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: .005em !important;
+  line-height: 1.13 !important;
+  color: var(--aqwvn-v4-title) !important;
+}
+html body .class-directory .class-intro h1.codex-heading {
+  font-family: var(--aqwvn-v4-gilroy) !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+  letter-spacing: -.052em !important;
+  line-height: 1.02 !important;
+  color: var(--aqwvn-v4-title) !important;
+}
+html body :is(
+  .ultra-codex.ultra-directory .ultra-directory-intro h1.codex-heading,
+  .class-directory .class-intro h1.codex-heading,
+  .fv2-root .fv2-top h1.codex-heading
+) {
+  font-size: clamp(38px, 5.4vw, 99px) !important;
+  max-width: 100%;
+}
+@media (min-width: 1100px) {
+  html body .ultra-codex.ultra-directory .ultra-directory-intro h1.codex-heading {
+    white-space: nowrap !important;
+  }
+  html body .ultra-codex.ultra-directory .ultra-directory-intro h1 br {
+    display: none !important;
+  }
+  html body .ultra-codex.ultra-directory .ultra-directory-intro h1 .codex-display::before {
+    content: ' ';
+    white-space: pre;
+  }
+}
+@media (max-width: 1099px) {
+  html body .ultra-codex.ultra-directory .ultra-directory-intro h1.codex-heading {
+    white-space: normal !important;
+  }
+  html body .ultra-codex.ultra-directory .ultra-directory-intro h1 .codex-display::before {
+    content: '';
+  }
+}
+@media (max-width: 720px) {
+  html body :is(
+    .ultra-codex.ultra-directory .ultra-directory-intro h1.codex-heading,
+    .class-directory .class-intro h1.codex-heading,
+    .fv2-root .fv2-top h1.codex-heading
+  ) { font-size: clamp(34px, 7.2vw, 56px) !important; }
+}
+/* Boss titles and class/item display names intentionally not selected. */

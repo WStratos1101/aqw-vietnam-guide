@@ -8,12 +8,13 @@ import { calendarCategory, calendarOrder } from "../../lib/class-ui-v12-8.mjs";
 import { classColors } from "../../lib/entity-colors.mjs";
 import calendar from "../../content/classes/calendar-membership.json";
 import { ClassRoles } from "./ClassRoles";
-import { useState, type CSSProperties } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { Search, ArrowRight } from "lucide-react";
 import { classProfiles } from "../../content/classes";
 import { filterClasses } from "../../lib/classes";
 import type { AqwClass } from "../../types/classes";
 import { ClassAsset } from "./ClassAsset";
+import { readClassDirectoryState, persistClassDirectoryState, rememberClassDirectoryLocation, restoreClassDirectoryScroll } from "./class-directory-history-v4"; // AQWVN-FONT-CLASS-HISTORY-V4
 
 export function ClassCard({ profile }: { profile: AqwClass }) {
   const family = calendarFamily(profile.id);
@@ -22,6 +23,7 @@ export function ClassCard({ profile }: { profile: AqwClass }) {
   return (
     <a
       href={`/class/${profile.slug}`}
+      onClick={rememberClassDirectoryLocation}
       className="class-card"
       style={
         {
@@ -51,12 +53,13 @@ export function ClassCard({ profile }: { profile: AqwClass }) {
   );
 }
 export function ClassDirectory() {
-  const [category, setCategory] = useState("all");
-  const [query, setQuery] = useState("");
-  const [role, setRole] = useState("all");
+  const [directoryStart] = useState(readClassDirectoryState);
+  const [category, setCategory] = useState(directoryStart.category);
+  const [query, setQuery] = useState(directoryStart.query);
+  const [role, setRole] = useState(directoryStart.role);
   const [difficulty, setDifficulty] = useState("all");
-  const [acquisition, setAcquisition] = useState("all");
-  const [page, setPage] = useState(1);
+  const [acquisition, setAcquisition] = useState(directoryStart.acquisition);
+  const [page, setPage] = useState(directoryStart.page);
   const cards = classProfiles
     .filter((c) => primaryCalendarClass(c.id) === c.id)
     .map((c) => {
@@ -96,6 +99,10 @@ export function ClassDirectory() {
   const pages = Math.max(1, Math.ceil(filtered.length / 24));
   const current = Math.min(page, pages);
   const list = filtered.slice((current - 1) * 24, current * 24);
+  useEffect(() => {
+    persistClassDirectoryState({ category, query, role, acquisition, page: current });
+  }, [category, query, role, acquisition, current]);
+  useEffect(() => { restoreClassDirectoryScroll(); }, []);
   const update = (fn: (s: string) => void, v: string) => {
     fn(v);
     setPage(1);

@@ -21,6 +21,7 @@ import type { AqwClass } from "../../types/classes";
 import { classProfiles } from "../../content/classes";
 import { useClassBody } from "./useClassBody";
 import { ClassCard } from "./ClassDirectory";
+import { getClassDirectoryReturnUrl } from "./class-directory-history-v4"; // AQWVN-FONT-CLASS-HISTORY-V4
 export function ClassDetail({ profile }: { profile: AqwClass }) {
   const family = calendarFamily(profile.id);
   const defaultIdentity=classIdentity(profile.id);
@@ -74,7 +75,7 @@ export function ClassDetail({ profile }: { profile: AqwClass }) {
       <div className="class-back-row">
         <button
           onClick={() => {
-            history.pushState(null, "", "/class");
+            history.pushState({ aqwPrevious: location.pathname + location.search }, "", getClassDirectoryReturnUrl());
             window.dispatchEvent(new PopStateEvent("popstate"));
             scrollTo(0, 0);
           }}
